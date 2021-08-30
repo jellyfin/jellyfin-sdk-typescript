@@ -77,7 +77,7 @@ export interface ActivityLogEntry {
      */
     UserPrimaryImageTag?: string | null;
     /**
-     * Gets or sets the log severity.
+     * 
      * @type {LogLevel}
      * @memberof ActivityLogEntry
      */

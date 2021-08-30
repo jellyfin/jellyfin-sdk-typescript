@@ -31,11 +31,11 @@ export interface PlaybackStartInfo {
      */
     CanSeek?: boolean;
     /**
-     * Gets or sets the item.
+     * 
      * @type {BaseItemDto}
      * @memberof PlaybackStartInfo
      */
-    Item?: BaseItemDto | null;
+    Item?: BaseItemDto;
     /**
      * Gets or sets the item identifier.
      * @type {string}
@@ -109,7 +109,7 @@ export interface PlaybackStartInfo {
      */
     AspectRatio?: string | null;
     /**
-     * Gets or sets the play method.
+     * 
      * @type {PlayMethod}
      * @memberof PlaybackStartInfo
      */
@@ -127,7 +127,7 @@ export interface PlaybackStartInfo {
      */
     PlaySessionId?: string | null;
     /**
-     * Gets or sets the repeat mode.
+     * 
      * @type {RepeatMode}
      * @memberof PlaybackStartInfo
      */

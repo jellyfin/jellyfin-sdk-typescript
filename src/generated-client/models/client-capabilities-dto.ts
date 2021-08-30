@@ -65,11 +65,11 @@ export interface ClientCapabilitiesDto {
      */
     SupportsSync?: boolean;
     /**
-     * Gets or sets the device profile.
+     * 
      * @type {DeviceProfile}
      * @memberof ClientCapabilitiesDto
      */
-    DeviceProfile?: DeviceProfile | null;
+    DeviceProfile?: DeviceProfile;
     /**
      * Gets or sets the app store url.
      * @type {string}

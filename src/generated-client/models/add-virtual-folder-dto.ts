@@ -22,11 +22,11 @@ import { LibraryOptions } from './library-options';
  */
 export interface AddVirtualFolderDto {
     /**
-     * Gets or sets library options.
+     * 
      * @type {LibraryOptions}
      * @memberof AddVirtualFolderDto
      */
-    LibraryOptions?: LibraryOptions | null;
+    LibraryOptions?: LibraryOptions;
 }
 
 

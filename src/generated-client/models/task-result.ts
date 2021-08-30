@@ -34,7 +34,7 @@ export interface TaskResult {
      */
     EndTimeUtc?: string;
     /**
-     * Gets or sets the status.
+     * 
      * @type {TaskCompletionStatus}
      * @memberof TaskResult
      */

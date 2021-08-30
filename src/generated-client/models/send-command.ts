@@ -46,7 +46,7 @@ export interface SendCommand {
      */
     PositionTicks?: number | null;
     /**
-     * Gets the command.
+     * 
      * @type {SendCommandType}
      * @memberof SendCommand
      */

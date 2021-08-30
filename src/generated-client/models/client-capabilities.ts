@@ -65,11 +65,11 @@ export interface ClientCapabilities {
      */
     SupportsSync?: boolean;
     /**
-     * Defines the MediaBrowser.Model.Dlna.DeviceProfile.
+     * 
      * @type {DeviceProfile}
      * @memberof ClientCapabilities
      */
-    DeviceProfile?: DeviceProfile | null;
+    DeviceProfile?: DeviceProfile;
     /**
      * 
      * @type {string}

@@ -33,7 +33,7 @@ export interface SessionInfo {
      * @type {PlayerStateInfo}
      * @memberof SessionInfo
      */
-    PlayState?: PlayerStateInfo | null;
+    PlayState?: PlayerStateInfo;
     /**
      * 
      * @type {Array<SessionUserInfo>}
@@ -45,7 +45,7 @@ export interface SessionInfo {
      * @type {ClientCapabilities}
      * @memberof SessionInfo
      */
-    Capabilities?: ClientCapabilities | null;
+    Capabilities?: ClientCapabilities;
     /**
      * Gets or sets the remote end point.
      * @type {string}
@@ -107,23 +107,23 @@ export interface SessionInfo {
      */
     DeviceType?: string | null;
     /**
-     * Gets or sets the now playing item.
+     * 
      * @type {BaseItemDto}
      * @memberof SessionInfo
      */
-    NowPlayingItem?: BaseItemDto | null;
+    NowPlayingItem?: BaseItemDto;
     /**
-     * Class BaseItem.
+     * 
      * @type {BaseItem}
      * @memberof SessionInfo
      */
-    FullNowPlayingItem?: BaseItem | null;
+    FullNowPlayingItem?: BaseItem;
     /**
-     * This is strictly used as a data transfer object from the api layer.  This holds information about a BaseItem in a format that is convenient for the client.
+     * 
      * @type {BaseItemDto}
      * @memberof SessionInfo
      */
-    NowViewingItem?: BaseItemDto | null;
+    NowViewingItem?: BaseItemDto;
     /**
      * Gets or sets the device id.
      * @type {string}
@@ -141,7 +141,7 @@ export interface SessionInfo {
      * @type {TranscodingInfo}
      * @memberof SessionInfo
      */
-    TranscodingInfo?: TranscodingInfo | null;
+    TranscodingInfo?: TranscodingInfo;
     /**
      * Gets a value indicating whether this instance is active.
      * @type {boolean}

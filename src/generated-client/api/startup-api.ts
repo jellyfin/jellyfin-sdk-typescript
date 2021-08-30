@@ -26,8 +26,6 @@ import { StartupConfigurationDto } from '../models';
 import { StartupRemoteAccessDto } from '../models';
 // @ts-ignore
 import { StartupUserDto } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * StartupApi - axios parameter creator
  * @export
@@ -169,13 +167,13 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Sets remote access and UPnP.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The startup remote access dto.
+         * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRemoteAccess: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('setRemoteAccess', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        setRemoteAccess: async (startupRemoteAccessDto: StartupRemoteAccessDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'startupRemoteAccessDto' is not null or undefined
+            assertParamExists('setRemoteAccess', 'startupRemoteAccessDto', startupRemoteAccessDto)
             const localVarPath = `/Startup/RemoteAccess`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -198,7 +196,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(startupRemoteAccessDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -208,13 +206,13 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Sets the initial startup wizard configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated startup configuration.
+         * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateInitialConfiguration: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateInitialConfiguration', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        updateInitialConfiguration: async (startupConfigurationDto: StartupConfigurationDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'startupConfigurationDto' is not null or undefined
+            assertParamExists('updateInitialConfiguration', 'startupConfigurationDto', startupConfigurationDto)
             const localVarPath = `/Startup/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -237,7 +235,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(startupConfigurationDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -247,11 +245,11 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Sets the user name and password.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The DTO containing username and password.
+         * @param {StartupUserDto} [startupUserDto] The DTO containing username and password.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateStartupUser: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateStartupUser: async (startupUserDto?: StartupUserDto, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/User`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -274,7 +272,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(startupUserDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -334,34 +332,34 @@ export const StartupApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Sets remote access and UPnP.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The startup remote access dto.
+         * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async setRemoteAccess(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.setRemoteAccess(uNKNOWNBASETYPE, options);
+        async setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.setRemoteAccess(startupRemoteAccessDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Sets the initial startup wizard configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated startup configuration.
+         * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateInitialConfiguration(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateInitialConfiguration(uNKNOWNBASETYPE, options);
+        async updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateInitialConfiguration(startupConfigurationDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Sets the user name and password.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The DTO containing username and password.
+         * @param {StartupUserDto} [startupUserDto] The DTO containing username and password.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateStartupUser(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateStartupUser(uNKNOWNBASETYPE, options);
+        async updateStartupUser(startupUserDto?: StartupUserDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateStartupUser(startupUserDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -413,32 +411,32 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Sets remote access and UPnP.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The startup remote access dto.
+         * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRemoteAccess(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.setRemoteAccess(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: any): AxiosPromise<void> {
+            return localVarFp.setRemoteAccess(startupRemoteAccessDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the initial startup wizard configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated startup configuration.
+         * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateInitialConfiguration(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateInitialConfiguration(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateInitialConfiguration(startupConfigurationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the user name and password.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The DTO containing username and password.
+         * @param {StartupUserDto} [startupUserDto] The DTO containing username and password.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateStartupUser(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateStartupUser(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateStartupUser(startupUserDto?: StartupUserDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateStartupUser(startupUserDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -451,10 +449,10 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
 export interface StartupApiSetRemoteAccessRequest {
     /**
      * The startup remote access dto.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {StartupRemoteAccessDto}
      * @memberof StartupApiSetRemoteAccess
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly startupRemoteAccessDto: StartupRemoteAccessDto
 }
 
 /**
@@ -465,10 +463,10 @@ export interface StartupApiSetRemoteAccessRequest {
 export interface StartupApiUpdateInitialConfigurationRequest {
     /**
      * The updated startup configuration.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {StartupConfigurationDto}
      * @memberof StartupApiUpdateInitialConfiguration
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly startupConfigurationDto: StartupConfigurationDto
 }
 
 /**
@@ -479,10 +477,10 @@ export interface StartupApiUpdateInitialConfigurationRequest {
 export interface StartupApiUpdateStartupUserRequest {
     /**
      * The DTO containing username and password.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {StartupUserDto}
      * @memberof StartupApiUpdateStartupUser
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly startupUserDto?: StartupUserDto
 }
 
 /**
@@ -545,7 +543,7 @@ export class StartupApi extends BaseAPI {
      * @memberof StartupApi
      */
     public setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: any) {
-        return StartupApiFp(this.configuration).setRemoteAccess(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return StartupApiFp(this.configuration).setRemoteAccess(requestParameters.startupRemoteAccessDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -557,7 +555,7 @@ export class StartupApi extends BaseAPI {
      * @memberof StartupApi
      */
     public updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: any) {
-        return StartupApiFp(this.configuration).updateInitialConfiguration(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return StartupApiFp(this.configuration).updateInitialConfiguration(requestParameters.startupConfigurationDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -569,6 +567,6 @@ export class StartupApi extends BaseAPI {
      * @memberof StartupApi
      */
     public updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: any) {
-        return StartupApiFp(this.configuration).updateStartupUser(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return StartupApiFp(this.configuration).updateStartupUser(requestParameters.startupUserDto, options).then((request) => request(this.axios, this.basePath));
     }
 }

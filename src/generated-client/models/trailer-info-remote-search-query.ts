@@ -26,7 +26,7 @@ export interface TrailerInfoRemoteSearchQuery {
      * @type {TrailerInfo}
      * @memberof TrailerInfoRemoteSearchQuery
      */
-    SearchInfo?: TrailerInfo | null;
+    SearchInfo?: TrailerInfo;
     /**
      * 
      * @type {string}

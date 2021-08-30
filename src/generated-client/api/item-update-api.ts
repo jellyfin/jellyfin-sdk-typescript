@@ -26,8 +26,6 @@ import { BaseItemDto } from '../models';
 import { MetadataEditorInfo } from '../models';
 // @ts-ignore
 import { ProblemDetails } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * ItemUpdateApi - axios parameter creator
  * @export
@@ -75,15 +73,15 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
          * 
          * @summary Updates an item.
          * @param {string} itemId The item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item properties.
+         * @param {BaseItemDto} baseItemDto The new item properties.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItem: async (itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateItem: async (itemId: string, baseItemDto: BaseItemDto, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('updateItem', 'itemId', itemId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateItem', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'baseItemDto' is not null or undefined
+            assertParamExists('updateItem', 'baseItemDto', baseItemDto)
             const localVarPath = `/Items/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -107,7 +105,7 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(baseItemDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -181,12 +179,12 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
          * 
          * @summary Updates an item.
          * @param {string} itemId The item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item properties.
+         * @param {BaseItemDto} baseItemDto The new item properties.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateItem(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateItem(itemId, uNKNOWNBASETYPE, options);
+        async updateItem(itemId: string, baseItemDto: BaseItemDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateItem(itemId, baseItemDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -225,12 +223,12 @@ export const ItemUpdateApiFactory = function (configuration?: Configuration, bas
          * 
          * @summary Updates an item.
          * @param {string} itemId The item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item properties.
+         * @param {BaseItemDto} baseItemDto The new item properties.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItem(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateItem(itemId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateItem(itemId: string, baseItemDto: BaseItemDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateItem(itemId, baseItemDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -275,10 +273,10 @@ export interface ItemUpdateApiUpdateItemRequest {
 
     /**
      * The new item properties.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {BaseItemDto}
      * @memberof ItemUpdateApiUpdateItem
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly baseItemDto: BaseItemDto
 }
 
 /**
@@ -330,7 +328,7 @@ export class ItemUpdateApi extends BaseAPI {
      * @memberof ItemUpdateApi
      */
     public updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: any) {
-        return ItemUpdateApiFp(this.configuration).updateItem(requestParameters.itemId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemUpdateApiFp(this.configuration).updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

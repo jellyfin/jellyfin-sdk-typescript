@@ -27,8 +27,6 @@ import { ProblemDetails } from '../models';
 // @ts-ignore
 import { RemoteSubtitleInfo } from '../models';
 // @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
-// @ts-ignore
 import { UploadSubtitleDto } from '../models';
 /**
  * SubtitleApi - axios parameter creator
@@ -503,15 +501,15 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * 
          * @summary Upload an external subtitle file.
          * @param {string} itemId The item the subtitle belongs to.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The request body.
+         * @param {UploadSubtitleDto} uploadSubtitleDto The request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadSubtitle: async (itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        uploadSubtitle: async (itemId: string, uploadSubtitleDto: UploadSubtitleDto, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('uploadSubtitle', 'itemId', itemId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('uploadSubtitle', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'uploadSubtitleDto' is not null or undefined
+            assertParamExists('uploadSubtitle', 'uploadSubtitleDto', uploadSubtitleDto)
             const localVarPath = `/Videos/{itemId}/Subtitles`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -535,7 +533,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(uploadSubtitleDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -684,12 +682,12 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * 
          * @summary Upload an external subtitle file.
          * @param {string} itemId The item the subtitle belongs to.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The request body.
+         * @param {UploadSubtitleDto} uploadSubtitleDto The request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async uploadSubtitle(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.uploadSubtitle(itemId, uNKNOWNBASETYPE, options);
+        async uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.uploadSubtitle(itemId, uploadSubtitleDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -825,12 +823,12 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
          * 
          * @summary Upload an external subtitle file.
          * @param {string} itemId The item the subtitle belongs to.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The request body.
+         * @param {UploadSubtitleDto} uploadSubtitleDto The request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadSubtitle(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.uploadSubtitle(itemId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: any): AxiosPromise<void> {
+            return localVarFp.uploadSubtitle(itemId, uploadSubtitleDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1172,10 +1170,10 @@ export interface SubtitleApiUploadSubtitleRequest {
 
     /**
      * The request body.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UploadSubtitleDto}
      * @memberof SubtitleApiUploadSubtitle
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly uploadSubtitleDto: UploadSubtitleDto
 }
 
 /**
@@ -1301,6 +1299,6 @@ export class SubtitleApi extends BaseAPI {
      * @memberof SubtitleApi
      */
     public uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: any) {
-        return SubtitleApiFp(this.configuration).uploadSubtitle(requestParameters.itemId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SubtitleApiFp(this.configuration).uploadSubtitle(requestParameters.itemId, requestParameters.uploadSubtitleDto, options).then((request) => request(this.axios, this.basePath));
     }
 }

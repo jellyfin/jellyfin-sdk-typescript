@@ -22,7 +22,7 @@ import { ImageType } from './image-type';
  */
 export interface ImageOption {
     /**
-     * Gets or sets the type.
+     * 
      * @type {ImageType}
      * @memberof ImageOption
      */

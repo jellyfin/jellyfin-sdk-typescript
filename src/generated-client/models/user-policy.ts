@@ -252,7 +252,7 @@ export interface UserPolicy {
      */
     PasswordResetProviderId?: string | null;
     /**
-     * Enum SyncPlayUserAccessType.
+     * 
      * @type {SyncPlayUserAccessType}
      * @memberof UserPolicy
      */

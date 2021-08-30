@@ -34,7 +34,7 @@ export interface DeviceProfileInfo {
      */
     Name?: string | null;
     /**
-     * Gets or sets the type.
+     * 
      * @type {DeviceProfileType}
      * @memberof DeviceProfileInfo
      */

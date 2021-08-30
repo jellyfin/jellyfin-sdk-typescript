@@ -168,7 +168,7 @@ export interface SystemInfo {
      */
     HasUpdateAvailable?: boolean;
     /**
-     * Enum describing the location of the FFmpeg tool.
+     * 
      * @type {FFmpegLocation}
      * @memberof SystemInfo
      */

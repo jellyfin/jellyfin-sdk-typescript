@@ -23,11 +23,11 @@ import { QueueItem } from './queue-item';
  */
 export interface PlaybackStopInfo {
     /**
-     * Gets or sets the item.
+     * 
      * @type {BaseItemDto}
      * @memberof PlaybackStopInfo
      */
-    Item?: BaseItemDto | null;
+    Item?: BaseItemDto;
     /**
      * Gets or sets the item identifier.
      * @type {string}

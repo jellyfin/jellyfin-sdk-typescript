@@ -221,7 +221,7 @@ export interface MediaStream {
      */
     Profile?: string | null;
     /**
-     * Gets or sets the type.
+     * 
      * @type {MediaStreamType}
      * @memberof MediaStream
      */
@@ -251,11 +251,11 @@ export interface MediaStream {
      */
     IsExternal?: boolean;
     /**
-     * Gets or sets the method.
+     * 
      * @type {SubtitleDeliveryMethod}
      * @memberof MediaStream
      */
-    DeliveryMethod?: SubtitleDeliveryMethod | null;
+    DeliveryMethod?: SubtitleDeliveryMethod;
     /**
      * Gets or sets the delivery URL.
      * @type {string}

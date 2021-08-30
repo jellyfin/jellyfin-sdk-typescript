@@ -26,7 +26,7 @@ export interface ArtistInfoRemoteSearchQuery {
      * @type {ArtistInfo}
      * @memberof ArtistInfoRemoteSearchQuery
      */
-    SearchInfo?: ArtistInfo | null;
+    SearchInfo?: ArtistInfo;
     /**
      * 
      * @type {string}

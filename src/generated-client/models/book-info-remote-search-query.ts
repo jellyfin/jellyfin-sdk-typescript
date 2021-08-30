@@ -26,7 +26,7 @@ export interface BookInfoRemoteSearchQuery {
      * @type {BookInfo}
      * @memberof BookInfoRemoteSearchQuery
      */
-    SearchInfo?: BookInfo | null;
+    SearchInfo?: BookInfo;
     /**
      * 
      * @type {string}

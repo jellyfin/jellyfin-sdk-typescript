@@ -28,7 +28,7 @@ export interface ObjectGroupUpdate {
      */
     GroupId?: string;
     /**
-     * Gets the update type.
+     * 
      * @type {GroupUpdateType}
      * @memberof ObjectGroupUpdate
      */

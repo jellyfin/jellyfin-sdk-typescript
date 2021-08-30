@@ -52,7 +52,7 @@ export interface ConfigurationPageInfo {
      */
     DisplayName?: string | null;
     /**
-     * Enum ConfigurationPageType.
+     * 
      * @type {ConfigurationPageType}
      * @memberof ConfigurationPageInfo
      */

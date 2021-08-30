@@ -70,11 +70,11 @@ export interface PlaybackInfoDto {
      */
     LiveStreamId?: string | null;
     /**
-     * Gets or sets the device profile.
+     * 
      * @type {DeviceProfile}
      * @memberof PlaybackInfoDto
      */
-    DeviceProfile?: DeviceProfile | null;
+    DeviceProfile?: DeviceProfile;
     /**
      * Gets or sets a value indicating whether to enable direct play.
      * @type {boolean}

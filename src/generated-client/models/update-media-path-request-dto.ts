@@ -28,7 +28,7 @@ export interface UpdateMediaPathRequestDto {
      */
     Name: string;
     /**
-     * Gets or sets library folder path information.
+     * 
      * @type {MediaPathInfo}
      * @memberof UpdateMediaPathRequestDto
      */

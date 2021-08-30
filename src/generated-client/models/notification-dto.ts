@@ -64,7 +64,7 @@ export interface NotificationDto {
      */
     Url?: string | null;
     /**
-     * Gets or sets the notification level.
+     * 
      * @type {NotificationLevel}
      * @memberof NotificationDto
      */

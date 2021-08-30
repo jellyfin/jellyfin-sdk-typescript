@@ -34,7 +34,7 @@ export interface PlayRequest {
      */
     StartPositionTicks?: number | null;
     /**
-     * Gets or sets the play command.
+     * 
      * @type {PlayCommand}
      * @memberof PlayRequest
      */

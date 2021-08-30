@@ -34,11 +34,11 @@ export interface AdminNotificationDto {
      */
     Description?: string | null;
     /**
-     * Gets or sets the notification level.
+     * 
      * @type {NotificationLevel}
      * @memberof AdminNotificationDto
      */
-    NotificationLevel?: NotificationLevel | null;
+    NotificationLevel?: NotificationLevel;
     /**
      * Gets or sets the notification url.
      * @type {string}

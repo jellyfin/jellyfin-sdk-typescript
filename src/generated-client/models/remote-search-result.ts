@@ -85,7 +85,7 @@ export interface RemoteSearchResult {
      * @type {RemoteSearchResult}
      * @memberof RemoteSearchResult
      */
-    AlbumArtist?: RemoteSearchResult | null;
+    AlbumArtist?: RemoteSearchResult;
     /**
      * 
      * @type {Array<RemoteSearchResult>}

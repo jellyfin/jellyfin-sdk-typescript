@@ -35,11 +35,11 @@ export interface PlaybackInfoResponse {
      */
     PlaySessionId?: string | null;
     /**
-     * Gets or sets the error code.
+     * 
      * @type {PlaybackErrorCode}
      * @memberof PlaybackInfoResponse
      */
-    ErrorCode?: PlaybackErrorCode | null;
+    ErrorCode?: PlaybackErrorCode;
 }
 
 

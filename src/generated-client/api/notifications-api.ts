@@ -30,8 +30,6 @@ import { NotificationResultDto } from '../models';
 import { NotificationTypeInfo } from '../models';
 // @ts-ignore
 import { NotificationsSummaryDto } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * NotificationsApi - axios parameter creator
  * @export
@@ -41,13 +39,13 @@ export const NotificationsApiAxiosParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary Sends a notification to all admins.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The notification request.
+         * @param {AdminNotificationDto} adminNotificationDto The notification request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createAdminNotification: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('createAdminNotification', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        createAdminNotification: async (adminNotificationDto: AdminNotificationDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'adminNotificationDto' is not null or undefined
+            assertParamExists('createAdminNotification', 'adminNotificationDto', adminNotificationDto)
             const localVarPath = `/Notifications/Admin`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -70,7 +68,7 @@ export const NotificationsApiAxiosParamCreator = function (configuration?: Confi
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(adminNotificationDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -304,12 +302,12 @@ export const NotificationsApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Sends a notification to all admins.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The notification request.
+         * @param {AdminNotificationDto} adminNotificationDto The notification request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createAdminNotification(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createAdminNotification(uNKNOWNBASETYPE, options);
+        async createAdminNotification(adminNotificationDto: AdminNotificationDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createAdminNotification(adminNotificationDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -389,12 +387,12 @@ export const NotificationsApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary Sends a notification to all admins.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The notification request.
+         * @param {AdminNotificationDto} adminNotificationDto The notification request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createAdminNotification(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.createAdminNotification(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createAdminNotification(adminNotificationDto: AdminNotificationDto, options?: any): AxiosPromise<void> {
+            return localVarFp.createAdminNotification(adminNotificationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -465,10 +463,10 @@ export const NotificationsApiFactory = function (configuration?: Configuration, 
 export interface NotificationsApiCreateAdminNotificationRequest {
     /**
      * The notification request.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {AdminNotificationDto}
      * @memberof NotificationsApiCreateAdminNotification
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly adminNotificationDto: AdminNotificationDto
 }
 
 /**
@@ -543,7 +541,7 @@ export class NotificationsApi extends BaseAPI {
      * @memberof NotificationsApi
      */
     public createAdminNotification(requestParameters: NotificationsApiCreateAdminNotificationRequest, options?: any) {
-        return NotificationsApiFp(this.configuration).createAdminNotification(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return NotificationsApiFp(this.configuration).createAdminNotification(requestParameters.adminNotificationDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

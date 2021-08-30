@@ -28,11 +28,11 @@ export interface UpdateLibraryOptionsDto {
      */
     Id?: string;
     /**
-     * Gets or sets library options.
+     * 
      * @type {LibraryOptions}
      * @memberof UpdateLibraryOptionsDto
      */
-    LibraryOptions?: LibraryOptions | null;
+    LibraryOptions?: LibraryOptions;
 }
 
 

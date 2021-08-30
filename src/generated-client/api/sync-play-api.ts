@@ -54,8 +54,6 @@ import { SetPlaylistItemRequestDto } from '../models';
 import { SetRepeatModeRequestDto } from '../models';
 // @ts-ignore
 import { SetShuffleModeRequestDto } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * SyncPlayApi - axios parameter creator
  * @export
@@ -65,13 +63,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Notify SyncPlay group that member is buffering.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {BufferRequestDto} bufferRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayBuffering: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayBuffering', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayBuffering: async (bufferRequestDto: BufferRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'bufferRequestDto' is not null or undefined
+            assertParamExists('syncPlayBuffering', 'bufferRequestDto', bufferRequestDto)
             const localVarPath = `/SyncPlay/Buffering`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -94,7 +92,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(bufferRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -104,13 +102,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Create a new SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings of the new group.
+         * @param {NewGroupRequestDto} newGroupRequestDto The settings of the new group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayCreateGroup: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayCreateGroup', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayCreateGroup: async (newGroupRequestDto: NewGroupRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'newGroupRequestDto' is not null or undefined
+            assertParamExists('syncPlayCreateGroup', 'newGroupRequestDto', newGroupRequestDto)
             const localVarPath = `/SyncPlay/New`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -133,7 +131,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(newGroupRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -176,13 +174,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Join an existing SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The group to join.
+         * @param {JoinGroupRequestDto} joinGroupRequestDto The group to join.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayJoinGroup: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayJoinGroup', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayJoinGroup: async (joinGroupRequestDto: JoinGroupRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'joinGroupRequestDto' is not null or undefined
+            assertParamExists('syncPlayJoinGroup', 'joinGroupRequestDto', joinGroupRequestDto)
             const localVarPath = `/SyncPlay/Join`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -205,7 +203,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(joinGroupRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -248,13 +246,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to move an item in the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new position for the item.
+         * @param {MovePlaylistItemRequestDto} movePlaylistItemRequestDto The new position for the item.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayMovePlaylistItem: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayMovePlaylistItem', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayMovePlaylistItem: async (movePlaylistItemRequestDto: MovePlaylistItemRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'movePlaylistItemRequestDto' is not null or undefined
+            assertParamExists('syncPlayMovePlaylistItem', 'movePlaylistItemRequestDto', movePlaylistItemRequestDto)
             const localVarPath = `/SyncPlay/MovePlaylistItem`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -277,7 +275,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(movePlaylistItemRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -287,13 +285,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request next item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {NextItemRequestDto} nextItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayNextItem: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayNextItem', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayNextItem: async (nextItemRequestDto: NextItemRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'nextItemRequestDto' is not null or undefined
+            assertParamExists('syncPlayNextItem', 'nextItemRequestDto', nextItemRequestDto)
             const localVarPath = `/SyncPlay/NextItem`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -316,7 +314,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(nextItemRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -359,13 +357,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Update session ping.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new ping.
+         * @param {PingRequestDto} pingRequestDto The new ping.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPing: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayPing', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayPing: async (pingRequestDto: PingRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'pingRequestDto' is not null or undefined
+            assertParamExists('syncPlayPing', 'pingRequestDto', pingRequestDto)
             const localVarPath = `/SyncPlay/Ping`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -388,7 +386,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(pingRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -398,13 +396,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request previous item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {PreviousItemRequestDto} previousItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPreviousItem: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayPreviousItem', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayPreviousItem: async (previousItemRequestDto: PreviousItemRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'previousItemRequestDto' is not null or undefined
+            assertParamExists('syncPlayPreviousItem', 'previousItemRequestDto', previousItemRequestDto)
             const localVarPath = `/SyncPlay/PreviousItem`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -427,7 +425,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(previousItemRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -437,13 +435,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to queue items to the playlist of a SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to add.
+         * @param {QueueRequestDto} queueRequestDto The items to add.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayQueue: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayQueue', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayQueue: async (queueRequestDto: QueueRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'queueRequestDto' is not null or undefined
+            assertParamExists('syncPlayQueue', 'queueRequestDto', queueRequestDto)
             const localVarPath = `/SyncPlay/Queue`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -466,7 +464,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(queueRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -476,13 +474,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Notify SyncPlay group that member is ready for playback.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {ReadyRequestDto} readyRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayReady: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayReady', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayReady: async (readyRequestDto: ReadyRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'readyRequestDto' is not null or undefined
+            assertParamExists('syncPlayReady', 'readyRequestDto', readyRequestDto)
             const localVarPath = `/SyncPlay/Ready`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -505,7 +503,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(readyRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -515,13 +513,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to remove items from the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to remove.
+         * @param {RemoveFromPlaylistRequestDto} removeFromPlaylistRequestDto The items to remove.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayRemoveFromPlaylist: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlayRemoveFromPlaylist', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlayRemoveFromPlaylist: async (removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'removeFromPlaylistRequestDto' is not null or undefined
+            assertParamExists('syncPlayRemoveFromPlaylist', 'removeFromPlaylistRequestDto', removeFromPlaylistRequestDto)
             const localVarPath = `/SyncPlay/RemoveFromPlaylist`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -544,7 +542,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(removeFromPlaylistRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -554,13 +552,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request seek in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playback position.
+         * @param {SeekRequestDto} seekRequestDto The new playback position.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySeek: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySeek', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySeek: async (seekRequestDto: SeekRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'seekRequestDto' is not null or undefined
+            assertParamExists('syncPlaySeek', 'seekRequestDto', seekRequestDto)
             const localVarPath = `/SyncPlay/Seek`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -583,7 +581,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(seekRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -593,13 +591,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request SyncPlay group to ignore member during group-wait.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings to set.
+         * @param {IgnoreWaitRequestDto} ignoreWaitRequestDto The settings to set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetIgnoreWait: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySetIgnoreWait', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySetIgnoreWait: async (ignoreWaitRequestDto: IgnoreWaitRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'ignoreWaitRequestDto' is not null or undefined
+            assertParamExists('syncPlaySetIgnoreWait', 'ignoreWaitRequestDto', ignoreWaitRequestDto)
             const localVarPath = `/SyncPlay/SetIgnoreWait`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -622,7 +620,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(ignoreWaitRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -632,13 +630,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to set new playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playlist to play in the group.
+         * @param {PlayRequestDto} playRequestDto The new playlist to play in the group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetNewQueue: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySetNewQueue', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySetNewQueue: async (playRequestDto: PlayRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playRequestDto' is not null or undefined
+            assertParamExists('syncPlaySetNewQueue', 'playRequestDto', playRequestDto)
             const localVarPath = `/SyncPlay/SetNewQueue`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -661,7 +659,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(playRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -671,13 +669,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to change playlist item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item to play.
+         * @param {SetPlaylistItemRequestDto} setPlaylistItemRequestDto The new item to play.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetPlaylistItem: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySetPlaylistItem', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySetPlaylistItem: async (setPlaylistItemRequestDto: SetPlaylistItemRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'setPlaylistItemRequestDto' is not null or undefined
+            assertParamExists('syncPlaySetPlaylistItem', 'setPlaylistItemRequestDto', setPlaylistItemRequestDto)
             const localVarPath = `/SyncPlay/SetPlaylistItem`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -700,7 +698,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(setPlaylistItemRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -710,13 +708,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to set repeat mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new repeat mode.
+         * @param {SetRepeatModeRequestDto} setRepeatModeRequestDto The new repeat mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetRepeatMode: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySetRepeatMode', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySetRepeatMode: async (setRepeatModeRequestDto: SetRepeatModeRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'setRepeatModeRequestDto' is not null or undefined
+            assertParamExists('syncPlaySetRepeatMode', 'setRepeatModeRequestDto', setRepeatModeRequestDto)
             const localVarPath = `/SyncPlay/SetRepeatMode`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -739,7 +737,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(setRepeatModeRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -749,13 +747,13 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Request to set shuffle mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new shuffle mode.
+         * @param {SetShuffleModeRequestDto} setShuffleModeRequestDto The new shuffle mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetShuffleMode: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('syncPlaySetShuffleMode', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        syncPlaySetShuffleMode: async (setShuffleModeRequestDto: SetShuffleModeRequestDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'setShuffleModeRequestDto' is not null or undefined
+            assertParamExists('syncPlaySetShuffleMode', 'setShuffleModeRequestDto', setShuffleModeRequestDto)
             const localVarPath = `/SyncPlay/SetShuffleMode`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -778,7 +776,7 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(setShuffleModeRequestDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -864,23 +862,23 @@ export const SyncPlayApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Notify SyncPlay group that member is buffering.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {BufferRequestDto} bufferRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayBuffering(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayBuffering(uNKNOWNBASETYPE, options);
+        async syncPlayBuffering(bufferRequestDto: BufferRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayBuffering(bufferRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Create a new SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings of the new group.
+         * @param {NewGroupRequestDto} newGroupRequestDto The settings of the new group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayCreateGroup(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayCreateGroup(uNKNOWNBASETYPE, options);
+        async syncPlayCreateGroup(newGroupRequestDto: NewGroupRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayCreateGroup(newGroupRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -896,12 +894,12 @@ export const SyncPlayApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Join an existing SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The group to join.
+         * @param {JoinGroupRequestDto} joinGroupRequestDto The group to join.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayJoinGroup(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayJoinGroup(uNKNOWNBASETYPE, options);
+        async syncPlayJoinGroup(joinGroupRequestDto: JoinGroupRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayJoinGroup(joinGroupRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -917,23 +915,23 @@ export const SyncPlayApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Request to move an item in the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new position for the item.
+         * @param {MovePlaylistItemRequestDto} movePlaylistItemRequestDto The new position for the item.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayMovePlaylistItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayMovePlaylistItem(uNKNOWNBASETYPE, options);
+        async syncPlayMovePlaylistItem(movePlaylistItemRequestDto: MovePlaylistItemRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayMovePlaylistItem(movePlaylistItemRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request next item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {NextItemRequestDto} nextItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayNextItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayNextItem(uNKNOWNBASETYPE, options);
+        async syncPlayNextItem(nextItemRequestDto: NextItemRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayNextItem(nextItemRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -949,122 +947,122 @@ export const SyncPlayApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Update session ping.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new ping.
+         * @param {PingRequestDto} pingRequestDto The new ping.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayPing(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayPing(uNKNOWNBASETYPE, options);
+        async syncPlayPing(pingRequestDto: PingRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayPing(pingRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request previous item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {PreviousItemRequestDto} previousItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayPreviousItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayPreviousItem(uNKNOWNBASETYPE, options);
+        async syncPlayPreviousItem(previousItemRequestDto: PreviousItemRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayPreviousItem(previousItemRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to queue items to the playlist of a SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to add.
+         * @param {QueueRequestDto} queueRequestDto The items to add.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayQueue(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayQueue(uNKNOWNBASETYPE, options);
+        async syncPlayQueue(queueRequestDto: QueueRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayQueue(queueRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Notify SyncPlay group that member is ready for playback.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {ReadyRequestDto} readyRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayReady(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayReady(uNKNOWNBASETYPE, options);
+        async syncPlayReady(readyRequestDto: ReadyRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayReady(readyRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to remove items from the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to remove.
+         * @param {RemoveFromPlaylistRequestDto} removeFromPlaylistRequestDto The items to remove.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlayRemoveFromPlaylist(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayRemoveFromPlaylist(uNKNOWNBASETYPE, options);
+        async syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request seek in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playback position.
+         * @param {SeekRequestDto} seekRequestDto The new playback position.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySeek(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySeek(uNKNOWNBASETYPE, options);
+        async syncPlaySeek(seekRequestDto: SeekRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySeek(seekRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request SyncPlay group to ignore member during group-wait.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings to set.
+         * @param {IgnoreWaitRequestDto} ignoreWaitRequestDto The settings to set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySetIgnoreWait(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetIgnoreWait(uNKNOWNBASETYPE, options);
+        async syncPlaySetIgnoreWait(ignoreWaitRequestDto: IgnoreWaitRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetIgnoreWait(ignoreWaitRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to set new playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playlist to play in the group.
+         * @param {PlayRequestDto} playRequestDto The new playlist to play in the group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySetNewQueue(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetNewQueue(uNKNOWNBASETYPE, options);
+        async syncPlaySetNewQueue(playRequestDto: PlayRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetNewQueue(playRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to change playlist item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item to play.
+         * @param {SetPlaylistItemRequestDto} setPlaylistItemRequestDto The new item to play.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySetPlaylistItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetPlaylistItem(uNKNOWNBASETYPE, options);
+        async syncPlaySetPlaylistItem(setPlaylistItemRequestDto: SetPlaylistItemRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetPlaylistItem(setPlaylistItemRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to set repeat mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new repeat mode.
+         * @param {SetRepeatModeRequestDto} setRepeatModeRequestDto The new repeat mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySetRepeatMode(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetRepeatMode(uNKNOWNBASETYPE, options);
+        async syncPlaySetRepeatMode(setRepeatModeRequestDto: SetRepeatModeRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetRepeatMode(setRepeatModeRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Request to set shuffle mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new shuffle mode.
+         * @param {SetShuffleModeRequestDto} setShuffleModeRequestDto The new shuffle mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async syncPlaySetShuffleMode(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetShuffleMode(uNKNOWNBASETYPE, options);
+        async syncPlaySetShuffleMode(setShuffleModeRequestDto: SetShuffleModeRequestDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.syncPlaySetShuffleMode(setShuffleModeRequestDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -1100,22 +1098,22 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Notify SyncPlay group that member is buffering.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {BufferRequestDto} bufferRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayBuffering(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayBuffering(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayBuffering(bufferRequestDto: BufferRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayBuffering(bufferRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Create a new SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings of the new group.
+         * @param {NewGroupRequestDto} newGroupRequestDto The settings of the new group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayCreateGroup(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayCreateGroup(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayCreateGroup(newGroupRequestDto: NewGroupRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayCreateGroup(newGroupRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1129,12 +1127,12 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Join an existing SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The group to join.
+         * @param {JoinGroupRequestDto} joinGroupRequestDto The group to join.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayJoinGroup(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayJoinGroup(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayJoinGroup(joinGroupRequestDto: JoinGroupRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayJoinGroup(joinGroupRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1148,22 +1146,22 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Request to move an item in the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new position for the item.
+         * @param {MovePlaylistItemRequestDto} movePlaylistItemRequestDto The new position for the item.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayMovePlaylistItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayMovePlaylistItem(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayMovePlaylistItem(movePlaylistItemRequestDto: MovePlaylistItemRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayMovePlaylistItem(movePlaylistItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request next item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {NextItemRequestDto} nextItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayNextItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayNextItem(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayNextItem(nextItemRequestDto: NextItemRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayNextItem(nextItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1177,112 +1175,112 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Update session ping.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new ping.
+         * @param {PingRequestDto} pingRequestDto The new ping.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPing(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayPing(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayPing(pingRequestDto: PingRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayPing(pingRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request previous item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The current item information.
+         * @param {PreviousItemRequestDto} previousItemRequestDto The current item information.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPreviousItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayPreviousItem(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayPreviousItem(previousItemRequestDto: PreviousItemRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayPreviousItem(previousItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to queue items to the playlist of a SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to add.
+         * @param {QueueRequestDto} queueRequestDto The items to add.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayQueue(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayQueue(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayQueue(queueRequestDto: QueueRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayQueue(queueRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Notify SyncPlay group that member is ready for playback.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The player status.
+         * @param {ReadyRequestDto} readyRequestDto The player status.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayReady(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayReady(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayReady(readyRequestDto: ReadyRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayReady(readyRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to remove items from the playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The items to remove.
+         * @param {RemoveFromPlaylistRequestDto} removeFromPlaylistRequestDto The items to remove.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayRemoveFromPlaylist(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayRemoveFromPlaylist(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request seek in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playback position.
+         * @param {SeekRequestDto} seekRequestDto The new playback position.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySeek(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySeek(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySeek(seekRequestDto: SeekRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySeek(seekRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request SyncPlay group to ignore member during group-wait.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The settings to set.
+         * @param {IgnoreWaitRequestDto} ignoreWaitRequestDto The settings to set.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetIgnoreWait(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetIgnoreWait(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySetIgnoreWait(ignoreWaitRequestDto: IgnoreWaitRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySetIgnoreWait(ignoreWaitRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set new playlist in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new playlist to play in the group.
+         * @param {PlayRequestDto} playRequestDto The new playlist to play in the group.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetNewQueue(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetNewQueue(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySetNewQueue(playRequestDto: PlayRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySetNewQueue(playRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to change playlist item in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new item to play.
+         * @param {SetPlaylistItemRequestDto} setPlaylistItemRequestDto The new item to play.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetPlaylistItem(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetPlaylistItem(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySetPlaylistItem(setPlaylistItemRequestDto: SetPlaylistItemRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySetPlaylistItem(setPlaylistItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set repeat mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new repeat mode.
+         * @param {SetRepeatModeRequestDto} setRepeatModeRequestDto The new repeat mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetRepeatMode(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetRepeatMode(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySetRepeatMode(setRepeatModeRequestDto: SetRepeatModeRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySetRepeatMode(setRepeatModeRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set shuffle mode in SyncPlay group.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new shuffle mode.
+         * @param {SetShuffleModeRequestDto} setShuffleModeRequestDto The new shuffle mode.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetShuffleMode(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetShuffleMode(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        syncPlaySetShuffleMode(setShuffleModeRequestDto: SetShuffleModeRequestDto, options?: any): AxiosPromise<void> {
+            return localVarFp.syncPlaySetShuffleMode(setShuffleModeRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1313,10 +1311,10 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
 export interface SyncPlayApiSyncPlayBufferingRequest {
     /**
      * The player status.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {BufferRequestDto}
      * @memberof SyncPlayApiSyncPlayBuffering
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly bufferRequestDto: BufferRequestDto
 }
 
 /**
@@ -1327,10 +1325,10 @@ export interface SyncPlayApiSyncPlayBufferingRequest {
 export interface SyncPlayApiSyncPlayCreateGroupRequest {
     /**
      * The settings of the new group.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {NewGroupRequestDto}
      * @memberof SyncPlayApiSyncPlayCreateGroup
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly newGroupRequestDto: NewGroupRequestDto
 }
 
 /**
@@ -1341,10 +1339,10 @@ export interface SyncPlayApiSyncPlayCreateGroupRequest {
 export interface SyncPlayApiSyncPlayJoinGroupRequest {
     /**
      * The group to join.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {JoinGroupRequestDto}
      * @memberof SyncPlayApiSyncPlayJoinGroup
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly joinGroupRequestDto: JoinGroupRequestDto
 }
 
 /**
@@ -1355,10 +1353,10 @@ export interface SyncPlayApiSyncPlayJoinGroupRequest {
 export interface SyncPlayApiSyncPlayMovePlaylistItemRequest {
     /**
      * The new position for the item.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MovePlaylistItemRequestDto}
      * @memberof SyncPlayApiSyncPlayMovePlaylistItem
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly movePlaylistItemRequestDto: MovePlaylistItemRequestDto
 }
 
 /**
@@ -1369,10 +1367,10 @@ export interface SyncPlayApiSyncPlayMovePlaylistItemRequest {
 export interface SyncPlayApiSyncPlayNextItemRequest {
     /**
      * The current item information.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {NextItemRequestDto}
      * @memberof SyncPlayApiSyncPlayNextItem
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly nextItemRequestDto: NextItemRequestDto
 }
 
 /**
@@ -1383,10 +1381,10 @@ export interface SyncPlayApiSyncPlayNextItemRequest {
 export interface SyncPlayApiSyncPlayPingRequest {
     /**
      * The new ping.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PingRequestDto}
      * @memberof SyncPlayApiSyncPlayPing
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly pingRequestDto: PingRequestDto
 }
 
 /**
@@ -1397,10 +1395,10 @@ export interface SyncPlayApiSyncPlayPingRequest {
 export interface SyncPlayApiSyncPlayPreviousItemRequest {
     /**
      * The current item information.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PreviousItemRequestDto}
      * @memberof SyncPlayApiSyncPlayPreviousItem
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly previousItemRequestDto: PreviousItemRequestDto
 }
 
 /**
@@ -1411,10 +1409,10 @@ export interface SyncPlayApiSyncPlayPreviousItemRequest {
 export interface SyncPlayApiSyncPlayQueueRequest {
     /**
      * The items to add.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {QueueRequestDto}
      * @memberof SyncPlayApiSyncPlayQueue
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly queueRequestDto: QueueRequestDto
 }
 
 /**
@@ -1425,10 +1423,10 @@ export interface SyncPlayApiSyncPlayQueueRequest {
 export interface SyncPlayApiSyncPlayReadyRequest {
     /**
      * The player status.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ReadyRequestDto}
      * @memberof SyncPlayApiSyncPlayReady
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly readyRequestDto: ReadyRequestDto
 }
 
 /**
@@ -1439,10 +1437,10 @@ export interface SyncPlayApiSyncPlayReadyRequest {
 export interface SyncPlayApiSyncPlayRemoveFromPlaylistRequest {
     /**
      * The items to remove.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {RemoveFromPlaylistRequestDto}
      * @memberof SyncPlayApiSyncPlayRemoveFromPlaylist
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto
 }
 
 /**
@@ -1453,10 +1451,10 @@ export interface SyncPlayApiSyncPlayRemoveFromPlaylistRequest {
 export interface SyncPlayApiSyncPlaySeekRequest {
     /**
      * The new playback position.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SeekRequestDto}
      * @memberof SyncPlayApiSyncPlaySeek
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly seekRequestDto: SeekRequestDto
 }
 
 /**
@@ -1467,10 +1465,10 @@ export interface SyncPlayApiSyncPlaySeekRequest {
 export interface SyncPlayApiSyncPlaySetIgnoreWaitRequest {
     /**
      * The settings to set.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {IgnoreWaitRequestDto}
      * @memberof SyncPlayApiSyncPlaySetIgnoreWait
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly ignoreWaitRequestDto: IgnoreWaitRequestDto
 }
 
 /**
@@ -1481,10 +1479,10 @@ export interface SyncPlayApiSyncPlaySetIgnoreWaitRequest {
 export interface SyncPlayApiSyncPlaySetNewQueueRequest {
     /**
      * The new playlist to play in the group.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PlayRequestDto}
      * @memberof SyncPlayApiSyncPlaySetNewQueue
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly playRequestDto: PlayRequestDto
 }
 
 /**
@@ -1495,10 +1493,10 @@ export interface SyncPlayApiSyncPlaySetNewQueueRequest {
 export interface SyncPlayApiSyncPlaySetPlaylistItemRequest {
     /**
      * The new item to play.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SetPlaylistItemRequestDto}
      * @memberof SyncPlayApiSyncPlaySetPlaylistItem
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly setPlaylistItemRequestDto: SetPlaylistItemRequestDto
 }
 
 /**
@@ -1509,10 +1507,10 @@ export interface SyncPlayApiSyncPlaySetPlaylistItemRequest {
 export interface SyncPlayApiSyncPlaySetRepeatModeRequest {
     /**
      * The new repeat mode.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SetRepeatModeRequestDto}
      * @memberof SyncPlayApiSyncPlaySetRepeatMode
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly setRepeatModeRequestDto: SetRepeatModeRequestDto
 }
 
 /**
@@ -1523,10 +1521,10 @@ export interface SyncPlayApiSyncPlaySetRepeatModeRequest {
 export interface SyncPlayApiSyncPlaySetShuffleModeRequest {
     /**
      * The new shuffle mode.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SetShuffleModeRequestDto}
      * @memberof SyncPlayApiSyncPlaySetShuffleMode
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly setShuffleModeRequestDto: SetShuffleModeRequestDto
 }
 
 /**
@@ -1545,7 +1543,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayBuffering(requestParameters: SyncPlayApiSyncPlayBufferingRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayBuffering(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayBuffering(requestParameters.bufferRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1557,7 +1555,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayCreateGroup(requestParameters: SyncPlayApiSyncPlayCreateGroupRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayCreateGroup(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayCreateGroup(requestParameters.newGroupRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1580,7 +1578,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayJoinGroup(requestParameters: SyncPlayApiSyncPlayJoinGroupRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayJoinGroup(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayJoinGroup(requestParameters.joinGroupRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1603,7 +1601,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayMovePlaylistItem(requestParameters: SyncPlayApiSyncPlayMovePlaylistItemRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayMovePlaylistItem(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayMovePlaylistItem(requestParameters.movePlaylistItemRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1615,7 +1613,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayNextItem(requestParameters: SyncPlayApiSyncPlayNextItemRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayNextItem(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayNextItem(requestParameters.nextItemRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1638,7 +1636,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayPing(requestParameters: SyncPlayApiSyncPlayPingRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayPing(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayPing(requestParameters.pingRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1650,7 +1648,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayPreviousItem(requestParameters: SyncPlayApiSyncPlayPreviousItemRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayPreviousItem(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayPreviousItem(requestParameters.previousItemRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1662,7 +1660,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayQueue(requestParameters: SyncPlayApiSyncPlayQueueRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayQueue(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayQueue(requestParameters.queueRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1674,7 +1672,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayReady(requestParameters: SyncPlayApiSyncPlayReadyRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayReady(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayReady(requestParameters.readyRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1686,7 +1684,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlayRemoveFromPlaylist(requestParameters: SyncPlayApiSyncPlayRemoveFromPlaylistRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlayRemoveFromPlaylist(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlayRemoveFromPlaylist(requestParameters.removeFromPlaylistRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1698,7 +1696,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySeek(requestParameters: SyncPlayApiSyncPlaySeekRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySeek(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySeek(requestParameters.seekRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1710,7 +1708,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySetIgnoreWait(requestParameters: SyncPlayApiSyncPlaySetIgnoreWaitRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySetIgnoreWait(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySetIgnoreWait(requestParameters.ignoreWaitRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1722,7 +1720,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySetNewQueue(requestParameters: SyncPlayApiSyncPlaySetNewQueueRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySetNewQueue(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySetNewQueue(requestParameters.playRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1734,7 +1732,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySetPlaylistItem(requestParameters: SyncPlayApiSyncPlaySetPlaylistItemRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySetPlaylistItem(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySetPlaylistItem(requestParameters.setPlaylistItemRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1746,7 +1744,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySetRepeatMode(requestParameters: SyncPlayApiSyncPlaySetRepeatModeRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySetRepeatMode(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySetRepeatMode(requestParameters.setRepeatModeRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1758,7 +1756,7 @@ export class SyncPlayApi extends BaseAPI {
      * @memberof SyncPlayApi
      */
     public syncPlaySetShuffleMode(requestParameters: SyncPlayApiSyncPlaySetShuffleModeRequest, options?: any) {
-        return SyncPlayApiFp(this.configuration).syncPlaySetShuffleMode(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SyncPlayApiFp(this.configuration).syncPlaySetShuffleMode(requestParameters.setShuffleModeRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

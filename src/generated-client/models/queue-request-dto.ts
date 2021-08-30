@@ -28,7 +28,7 @@ export interface QueueRequestDto {
      */
     ItemIds?: Array<string> | null;
     /**
-     * Gets or sets the mode in which to add the new items.
+     * 
      * @type {GroupQueueMode}
      * @memberof QueueRequestDto
      */

@@ -71,13 +71,13 @@ export interface PlayerStateInfo {
      */
     MediaSourceId?: string | null;
     /**
-     * Gets or sets the play method.
+     * 
      * @type {PlayMethod}
      * @memberof PlayerStateInfo
      */
-    PlayMethod?: PlayMethod | null;
+    PlayMethod?: PlayMethod;
     /**
-     * Gets or sets the repeat mode.
+     * 
      * @type {RepeatMode}
      * @memberof PlayerStateInfo
      */

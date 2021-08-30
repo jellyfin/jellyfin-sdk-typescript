@@ -34,7 +34,7 @@ export interface LiveTvServiceInfo {
      */
     HomePageUrl?: string | null;
     /**
-     * Gets or sets the status.
+     * 
      * @type {LiveTvServiceStatus}
      * @memberof LiveTvServiceInfo
      */

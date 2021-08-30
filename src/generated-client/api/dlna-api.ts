@@ -26,8 +26,6 @@ import { DeviceProfile } from '../models';
 import { DeviceProfileInfo } from '../models';
 // @ts-ignore
 import { ProblemDetails } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * DlnaApi - axios parameter creator
  * @export
@@ -37,11 +35,11 @@ export const DlnaApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Creates a profile.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createProfile: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        createProfile: async (deviceProfile?: DeviceProfile, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Dlna/Profiles`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -64,7 +62,7 @@ export const DlnaApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(deviceProfile, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -215,11 +213,11 @@ export const DlnaApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a profile.
          * @param {string} profileId Profile id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateProfile: async (profileId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateProfile: async (profileId: string, deviceProfile?: DeviceProfile, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'profileId' is not null or undefined
             assertParamExists('updateProfile', 'profileId', profileId)
             const localVarPath = `/Dlna/Profiles/{profileId}`
@@ -245,7 +243,7 @@ export const DlnaApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(deviceProfile, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -265,12 +263,12 @@ export const DlnaApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Creates a profile.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createProfile(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createProfile(uNKNOWNBASETYPE, options);
+        async createProfile(deviceProfile?: DeviceProfile, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createProfile(deviceProfile, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -319,12 +317,12 @@ export const DlnaApiFp = function(configuration?: Configuration) {
          * 
          * @summary Updates a profile.
          * @param {string} profileId Profile id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateProfile(profileId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateProfile(profileId, uNKNOWNBASETYPE, options);
+        async updateProfile(profileId: string, deviceProfile?: DeviceProfile, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateProfile(profileId, deviceProfile, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -340,12 +338,12 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Creates a profile.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createProfile(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.createProfile(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createProfile(deviceProfile?: DeviceProfile, options?: any): AxiosPromise<void> {
+            return localVarFp.createProfile(deviceProfile, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -389,12 +387,12 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
          * 
          * @summary Updates a profile.
          * @param {string} profileId Profile id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Device profile.
+         * @param {DeviceProfile} [deviceProfile] Device profile.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateProfile(profileId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateProfile(profileId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateProfile(profileId: string, deviceProfile?: DeviceProfile, options?: any): AxiosPromise<void> {
+            return localVarFp.updateProfile(profileId, deviceProfile, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -407,10 +405,10 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
 export interface DlnaApiCreateProfileRequest {
     /**
      * Device profile.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {DeviceProfile}
      * @memberof DlnaApiCreateProfile
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly deviceProfile?: DeviceProfile
 }
 
 /**
@@ -456,10 +454,10 @@ export interface DlnaApiUpdateProfileRequest {
 
     /**
      * Device profile.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {DeviceProfile}
      * @memberof DlnaApiUpdateProfile
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly deviceProfile?: DeviceProfile
 }
 
 /**
@@ -478,7 +476,7 @@ export class DlnaApi extends BaseAPI {
      * @memberof DlnaApi
      */
     public createProfile(requestParameters: DlnaApiCreateProfileRequest = {}, options?: any) {
-        return DlnaApiFp(this.configuration).createProfile(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return DlnaApiFp(this.configuration).createProfile(requestParameters.deviceProfile, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -536,6 +534,6 @@ export class DlnaApi extends BaseAPI {
      * @memberof DlnaApi
      */
     public updateProfile(requestParameters: DlnaApiUpdateProfileRequest, options?: any) {
-        return DlnaApiFp(this.configuration).updateProfile(requestParameters.profileId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return DlnaApiFp(this.configuration).updateProfile(requestParameters.profileId, requestParameters.deviceProfile, options).then((request) => request(this.axios, this.basePath));
     }
 }

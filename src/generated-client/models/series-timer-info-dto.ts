@@ -198,11 +198,11 @@ export interface SeriesTimerInfoDto {
      */
     Days?: Array<DayOfWeek> | null;
     /**
-     * Gets or sets the day pattern.
+     * 
      * @type {DayPattern}
      * @memberof SeriesTimerInfoDto
      */
-    DayPattern?: DayPattern | null;
+    DayPattern?: DayPattern;
     /**
      * Gets or sets the image tags.
      * @type {{ [key: string]: string; }}

@@ -26,7 +26,7 @@ export interface PersonLookupInfoRemoteSearchQuery {
      * @type {PersonLookupInfo}
      * @memberof PersonLookupInfoRemoteSearchQuery
      */
-    SearchInfo?: PersonLookupInfo | null;
+    SearchInfo?: PersonLookupInfo;
     /**
      * 
      * @type {string}

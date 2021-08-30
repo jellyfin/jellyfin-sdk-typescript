@@ -26,7 +26,7 @@ export interface MovieInfoRemoteSearchQuery {
      * @type {MovieInfo}
      * @memberof MovieInfoRemoteSearchQuery
      */
-    SearchInfo?: MovieInfo | null;
+    SearchInfo?: MovieInfo;
     /**
      * 
      * @type {string}

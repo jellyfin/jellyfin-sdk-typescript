@@ -31,8 +31,6 @@ import { PlaybackStopInfo } from '../models';
 // @ts-ignore
 import { RepeatMode } from '../models';
 // @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
-// @ts-ignore
 import { UserItemDataDto } from '../models';
 /**
  * PlaystateApi - axios parameter creator
@@ -410,11 +408,11 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Reports playback progress within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback progress info.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackProgress: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        reportPlaybackProgress: async (playbackProgressInfo?: PlaybackProgressInfo, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing/Progress`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -437,7 +435,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackProgressInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -447,11 +445,11 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Reports playback has started within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback start info.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStart: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        reportPlaybackStart: async (playbackStartInfo?: PlaybackStartInfo, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -474,7 +472,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStartInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -484,11 +482,11 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Reports playback has stopped within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback stop info.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStopped: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        reportPlaybackStopped: async (playbackStopInfo?: PlaybackStopInfo, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing/Stopped`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -511,7 +509,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStopInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -626,34 +624,34 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Reports playback progress within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback progress info.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackProgress(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackProgress(uNKNOWNBASETYPE, options);
+        async reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackProgress(playbackProgressInfo, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Reports playback has started within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback start info.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackStart(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStart(uNKNOWNBASETYPE, options);
+        async reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStart(playbackStartInfo, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Reports playback has stopped within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback stop info.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackStopped(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStopped(uNKNOWNBASETYPE, options);
+        async reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStopped(playbackStopInfo, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -758,32 +756,32 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Reports playback progress within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback progress info.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackProgress(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackProgress(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: any): AxiosPromise<void> {
+            return localVarFp.reportPlaybackProgress(playbackProgressInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports playback has started within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback start info.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStart(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackStart(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: any): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStart(playbackStartInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports playback has stopped within a session.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The playback stop info.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStopped(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackStopped(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: any): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStopped(playbackStopInfo, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1083,10 +1081,10 @@ export interface PlaystateApiPingPlaybackSessionRequest {
 export interface PlaystateApiReportPlaybackProgressRequest {
     /**
      * The playback progress info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PlaybackProgressInfo}
      * @memberof PlaystateApiReportPlaybackProgress
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly playbackProgressInfo?: PlaybackProgressInfo
 }
 
 /**
@@ -1097,10 +1095,10 @@ export interface PlaystateApiReportPlaybackProgressRequest {
 export interface PlaystateApiReportPlaybackStartRequest {
     /**
      * The playback start info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PlaybackStartInfo}
      * @memberof PlaystateApiReportPlaybackStart
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly playbackStartInfo?: PlaybackStartInfo
 }
 
 /**
@@ -1111,10 +1109,10 @@ export interface PlaystateApiReportPlaybackStartRequest {
 export interface PlaystateApiReportPlaybackStoppedRequest {
     /**
      * The playback stop info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PlaybackStopInfo}
      * @memberof PlaystateApiReportPlaybackStopped
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly playbackStopInfo?: PlaybackStopInfo
 }
 
 /**
@@ -1205,7 +1203,7 @@ export class PlaystateApi extends BaseAPI {
      * @memberof PlaystateApi
      */
     public reportPlaybackProgress(requestParameters: PlaystateApiReportPlaybackProgressRequest = {}, options?: any) {
-        return PlaystateApiFp(this.configuration).reportPlaybackProgress(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return PlaystateApiFp(this.configuration).reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1217,7 +1215,7 @@ export class PlaystateApi extends BaseAPI {
      * @memberof PlaystateApi
      */
     public reportPlaybackStart(requestParameters: PlaystateApiReportPlaybackStartRequest = {}, options?: any) {
-        return PlaystateApiFp(this.configuration).reportPlaybackStart(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return PlaystateApiFp(this.configuration).reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1229,6 +1227,6 @@ export class PlaystateApi extends BaseAPI {
      * @memberof PlaystateApi
      */
     public reportPlaybackStopped(requestParameters: PlaystateApiReportPlaybackStoppedRequest = {}, options?: any) {
-        return PlaystateApiFp(this.configuration).reportPlaybackStopped(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return PlaystateApiFp(this.configuration).reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(this.axios, this.basePath));
     }
 }

@@ -71,13 +71,13 @@ export interface RemoteImageInfo {
      */
     Language?: string | null;
     /**
-     * Gets or sets the type.
+     * 
      * @type {ImageType}
      * @memberof RemoteImageInfo
      */
     Type?: ImageType;
     /**
-     * Gets or sets the type of the rating.
+     * 
      * @type {RatingType}
      * @memberof RemoteImageInfo
      */

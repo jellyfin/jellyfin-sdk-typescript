@@ -30,8 +30,6 @@ import { ImageType } from '../models';
 import { ItemFields } from '../models';
 // @ts-ignore
 import { PlaylistCreationResult } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * PlaylistsApi - axios parameter creator
  * @export
@@ -92,11 +90,11 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
          * @param {string} [mediaType] The media type.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The create playlist payload.
+         * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/Playlists`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -135,7 +133,7 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(createPlaylistDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -338,12 +336,12 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
          * @param {string} [mediaType] The media type.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The create playlist payload.
+         * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createPlaylist(name, ids, userId, mediaType, uNKNOWNBASETYPE, options);
+        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -419,12 +417,12 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
          * @param {string} [mediaType] The media type.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] The create playlist payload.
+         * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<PlaylistCreationResult> {
-            return localVarFp.createPlaylist(name, ids, userId, mediaType, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: any): AxiosPromise<PlaylistCreationResult> {
+            return localVarFp.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -534,10 +532,10 @@ export interface PlaylistsApiCreatePlaylistRequest {
 
     /**
      * The create playlist payload.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {CreatePlaylistDto}
      * @memberof PlaylistsApiCreatePlaylist
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly createPlaylistDto?: CreatePlaylistDto
 }
 
 /**
@@ -687,7 +685,7 @@ export class PlaylistsApi extends BaseAPI {
      * @memberof PlaylistsApi
      */
     public createPlaylist(requestParameters: PlaylistsApiCreatePlaylistRequest = {}, options?: any) {
-        return PlaylistsApiFp(this.configuration).createPlaylist(requestParameters.name, requestParameters.ids, requestParameters.userId, requestParameters.mediaType, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return PlaylistsApiFp(this.configuration).createPlaylist(requestParameters.name, requestParameters.ids, requestParameters.userId, requestParameters.mediaType, requestParameters.createPlaylistDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

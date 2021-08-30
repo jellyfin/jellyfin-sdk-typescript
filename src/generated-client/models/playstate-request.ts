@@ -22,7 +22,7 @@ import { PlaystateCommand } from './playstate-command';
  */
 export interface PlaystateRequest {
     /**
-     * Enum PlaystateCommand.
+     * 
      * @type {PlaystateCommand}
      * @memberof PlaystateRequest
      */

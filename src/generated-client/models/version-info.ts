@@ -28,11 +28,11 @@ export interface VersionInfo {
      */
     version?: string | null;
     /**
-     * Gets the version as a System.Version.
+     * 
      * @type {Version}
      * @memberof VersionInfo
      */
-    VersionNumber?: Version | null;
+    VersionNumber?: Version;
     /**
      * Gets or sets the changelog for this version.
      * @type {string}

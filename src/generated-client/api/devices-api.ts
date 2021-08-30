@@ -28,8 +28,6 @@ import { DeviceInfoQueryResult } from '../models';
 import { DeviceOptions } from '../models';
 // @ts-ignore
 import { ProblemDetails } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * DevicesApi - axios parameter creator
  * @export
@@ -203,15 +201,15 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Update device options.
          * @param {string} id Device Id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Device Options.
+         * @param {DeviceOptions} deviceOptions Device Options.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateDeviceOptions: async (id: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateDeviceOptions: async (id: string, deviceOptions: DeviceOptions, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'id' is not null or undefined
             assertParamExists('updateDeviceOptions', 'id', id)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateDeviceOptions', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'deviceOptions' is not null or undefined
+            assertParamExists('updateDeviceOptions', 'deviceOptions', deviceOptions)
             const localVarPath = `/Devices/Options`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -238,7 +236,7 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(deviceOptions, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -304,12 +302,12 @@ export const DevicesApiFp = function(configuration?: Configuration) {
          * 
          * @summary Update device options.
          * @param {string} id Device Id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Device Options.
+         * @param {DeviceOptions} deviceOptions Device Options.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateDeviceOptions(id: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateDeviceOptions(id, uNKNOWNBASETYPE, options);
+        async updateDeviceOptions(id: string, deviceOptions: DeviceOptions, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateDeviceOptions(id, deviceOptions, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -367,12 +365,12 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Update device options.
          * @param {string} id Device Id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Device Options.
+         * @param {DeviceOptions} deviceOptions Device Options.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateDeviceOptions(id: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateDeviceOptions(id, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateDeviceOptions(id: string, deviceOptions: DeviceOptions, options?: any): AxiosPromise<void> {
+            return localVarFp.updateDeviceOptions(id, deviceOptions, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -455,10 +453,10 @@ export interface DevicesApiUpdateDeviceOptionsRequest {
 
     /**
      * Device Options.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {DeviceOptions}
      * @memberof DevicesApiUpdateDeviceOptions
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly deviceOptions: DeviceOptions
 }
 
 /**
@@ -525,6 +523,6 @@ export class DevicesApi extends BaseAPI {
      * @memberof DevicesApi
      */
     public updateDeviceOptions(requestParameters: DevicesApiUpdateDeviceOptionsRequest, options?: any) {
-        return DevicesApiFp(this.configuration).updateDeviceOptions(requestParameters.id, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return DevicesApiFp(this.configuration).updateDeviceOptions(requestParameters.id, requestParameters.deviceOptions, options).then((request) => request(this.axios, this.basePath));
     }
 }

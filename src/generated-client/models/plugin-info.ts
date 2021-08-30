@@ -29,11 +29,11 @@ export interface PluginInfo {
      */
     Name?: string | null;
     /**
-     * Gets or sets the version.
+     * 
      * @type {Version}
      * @memberof PluginInfo
      */
-    Version?: Version | null;
+    Version?: Version;
     /**
      * Gets or sets the name of the configuration file.
      * @type {string}
@@ -65,7 +65,7 @@ export interface PluginInfo {
      */
     HasImage?: boolean;
     /**
-     * Gets or sets a value indicating the status of the plugin.
+     * 
      * @type {PluginStatus}
      * @memberof PluginInfo
      */

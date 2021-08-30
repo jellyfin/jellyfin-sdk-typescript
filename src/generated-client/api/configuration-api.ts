@@ -26,8 +26,6 @@ import { MediaEncoderPathDto } from '../models';
 import { MetadataOptions } from '../models';
 // @ts-ignore
 import { ServerConfiguration } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * ConfigurationApi - axios parameter creator
  * @export
@@ -140,13 +138,13 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary Updates application configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Configuration.
+         * @param {ServerConfiguration} serverConfiguration Configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateConfiguration', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'serverConfiguration' is not null or undefined
+            assertParamExists('updateConfiguration', 'serverConfiguration', serverConfiguration)
             const localVarPath = `/System/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -169,7 +167,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(serverConfiguration, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -179,13 +177,13 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
         /**
          * 
          * @summary Updates the path to the media encoder.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Media encoder path form body.
+         * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaEncoderPath: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateMediaEncoderPath', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        updateMediaEncoderPath: async (mediaEncoderPathDto: MediaEncoderPathDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'mediaEncoderPathDto' is not null or undefined
+            assertParamExists('updateMediaEncoderPath', 'mediaEncoderPathDto', mediaEncoderPathDto)
             const localVarPath = `/System/MediaEncoder/Path`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -208,7 +206,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(mediaEncoderPathDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -296,23 +294,23 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Updates application configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Configuration.
+         * @param {ServerConfiguration} serverConfiguration Configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateConfiguration(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(uNKNOWNBASETYPE, options);
+        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfiguration, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates the path to the media encoder.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Media encoder path form body.
+         * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateMediaEncoderPath(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateMediaEncoderPath(uNKNOWNBASETYPE, options);
+        async updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateMediaEncoderPath(mediaEncoderPathDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -367,22 +365,22 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary Updates application configuration.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Configuration.
+         * @param {ServerConfiguration} serverConfiguration Configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateConfiguration(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateConfiguration(serverConfiguration: ServerConfiguration, options?: any): AxiosPromise<void> {
+            return localVarFp.updateConfiguration(serverConfiguration, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates the path to the media encoder.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Media encoder path form body.
+         * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaEncoderPath(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateMediaEncoderPath(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateMediaEncoderPath(mediaEncoderPathDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -419,10 +417,10 @@ export interface ConfigurationApiGetNamedConfigurationRequest {
 export interface ConfigurationApiUpdateConfigurationRequest {
     /**
      * Configuration.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ServerConfiguration}
      * @memberof ConfigurationApiUpdateConfiguration
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly serverConfiguration: ServerConfiguration
 }
 
 /**
@@ -433,10 +431,10 @@ export interface ConfigurationApiUpdateConfigurationRequest {
 export interface ConfigurationApiUpdateMediaEncoderPathRequest {
     /**
      * Media encoder path form body.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MediaEncoderPathDto}
      * @memberof ConfigurationApiUpdateMediaEncoderPath
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly mediaEncoderPathDto: MediaEncoderPathDto
 }
 
 /**
@@ -503,7 +501,7 @@ export class ConfigurationApi extends BaseAPI {
      * @memberof ConfigurationApi
      */
     public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: any) {
-        return ConfigurationApiFp(this.configuration).updateConfiguration(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ConfigurationApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -515,7 +513,7 @@ export class ConfigurationApi extends BaseAPI {
      * @memberof ConfigurationApi
      */
     public updateMediaEncoderPath(requestParameters: ConfigurationApiUpdateMediaEncoderPathRequest, options?: any) {
-        return ConfigurationApiFp(this.configuration).updateMediaEncoderPath(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ConfigurationApiFp(this.configuration).updateMediaEncoderPath(requestParameters.mediaEncoderPathDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

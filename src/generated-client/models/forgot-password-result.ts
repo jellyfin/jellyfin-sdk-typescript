@@ -22,7 +22,7 @@ import { ForgotPasswordAction } from './forgot-password-action';
  */
 export interface ForgotPasswordResult {
     /**
-     * Gets or sets the action.
+     * 
      * @type {ForgotPasswordAction}
      * @memberof ForgotPasswordResult
      */

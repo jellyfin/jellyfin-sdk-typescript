@@ -22,23 +22,23 @@ import { ThemeMediaResult } from './theme-media-result';
  */
 export interface AllThemeMediaResult {
     /**
-     * Class ThemeMediaResult.
+     * 
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    ThemeVideosResult?: ThemeMediaResult | null;
+    ThemeVideosResult?: ThemeMediaResult;
     /**
-     * Class ThemeMediaResult.
+     * 
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    ThemeSongsResult?: ThemeMediaResult | null;
+    ThemeSongsResult?: ThemeMediaResult;
     /**
-     * Class ThemeMediaResult.
+     * 
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    SoundtrackSongsResult?: ThemeMediaResult | null;
+    SoundtrackSongsResult?: ThemeMediaResult;
 }
 
 

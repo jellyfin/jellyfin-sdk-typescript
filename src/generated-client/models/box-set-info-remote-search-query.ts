@@ -26,7 +26,7 @@ export interface BoxSetInfoRemoteSearchQuery {
      * @type {BoxSetInfo}
      * @memberof BoxSetInfoRemoteSearchQuery
      */
-    SearchInfo?: BoxSetInfo | null;
+    SearchInfo?: BoxSetInfo;
     /**
      * 
      * @type {string}

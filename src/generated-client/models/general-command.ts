@@ -22,7 +22,7 @@ import { GeneralCommandType } from './general-command-type';
  */
 export interface GeneralCommand {
     /**
-     * This exists simply to identify a set of known commands.
+     * 
      * @type {GeneralCommandType}
      * @memberof GeneralCommand
      */

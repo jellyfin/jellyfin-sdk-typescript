@@ -89,17 +89,17 @@ export interface UserDto {
      */
     LastActivityDate?: string | null;
     /**
-     * Gets or sets the configuration.
+     * 
      * @type {UserConfiguration}
      * @memberof UserDto
      */
-    Configuration?: UserConfiguration | null;
+    Configuration?: UserConfiguration;
     /**
-     * Gets or sets the policy.
+     * 
      * @type {UserPolicy}
      * @memberof UserDto
      */
-    Policy?: UserPolicy | null;
+    Policy?: UserPolicy;
     /**
      * Gets or sets the primary image aspect ratio.
      * @type {number}

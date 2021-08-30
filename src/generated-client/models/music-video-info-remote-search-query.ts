@@ -26,7 +26,7 @@ export interface MusicVideoInfoRemoteSearchQuery {
      * @type {MusicVideoInfo}
      * @memberof MusicVideoInfoRemoteSearchQuery
      */
-    SearchInfo?: MusicVideoInfo | null;
+    SearchInfo?: MusicVideoInfo;
     /**
      * 
      * @type {string}

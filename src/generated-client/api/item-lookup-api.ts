@@ -44,8 +44,6 @@ import { RemoteSearchResult } from '../models';
 import { SeriesInfoRemoteSearchQuery } from '../models';
 // @ts-ignore
 import { TrailerInfoRemoteSearchQuery } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * ItemLookupApi - axios parameter creator
  * @export
@@ -56,16 +54,16 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
          * 
          * @summary Applies search criteria to an item and refreshes metadata.
          * @param {string} itemId Item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The remote search result.
+         * @param {RemoteSearchResult} remoteSearchResult The remote search result.
          * @param {boolean} [replaceAllImages] Optional. Whether or not to replace all images. Default: True.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        applySearchCriteria: async (itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, replaceAllImages?: boolean, options: any = {}): Promise<RequestArgs> => {
+        applySearchCriteria: async (itemId: string, remoteSearchResult: RemoteSearchResult, replaceAllImages?: boolean, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('applySearchCriteria', 'itemId', itemId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('applySearchCriteria', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'remoteSearchResult' is not null or undefined
+            assertParamExists('applySearchCriteria', 'remoteSearchResult', remoteSearchResult)
             const localVarPath = `/Items/RemoteSearch/Apply/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -93,7 +91,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(remoteSearchResult, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -103,13 +101,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get book remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BookInfoRemoteSearchQuery} bookInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBookRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getBookRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getBookRemoteSearchResults: async (bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'bookInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getBookRemoteSearchResults', 'bookInfoRemoteSearchQuery', bookInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/Book`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -132,7 +130,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(bookInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -142,13 +140,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get box set remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BoxSetInfoRemoteSearchQuery} boxSetInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBoxSetRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getBoxSetRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getBoxSetRemoteSearchResults: async (boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'boxSetInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getBoxSetRemoteSearchResults', 'boxSetInfoRemoteSearchQuery', boxSetInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/BoxSet`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -171,7 +169,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(boxSetInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -218,13 +216,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get movie remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MovieInfoRemoteSearchQuery} movieInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getMovieRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getMovieRemoteSearchResults: async (movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'movieInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getMovieRemoteSearchResults', 'movieInfoRemoteSearchQuery', movieInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/Movie`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -247,7 +245,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(movieInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -257,13 +255,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get music album remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {AlbumInfoRemoteSearchQuery} albumInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicAlbumRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getMusicAlbumRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getMusicAlbumRemoteSearchResults: async (albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'albumInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getMusicAlbumRemoteSearchResults', 'albumInfoRemoteSearchQuery', albumInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/MusicAlbum`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -286,7 +284,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(albumInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -296,13 +294,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get music artist remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {ArtistInfoRemoteSearchQuery} artistInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicArtistRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getMusicArtistRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getMusicArtistRemoteSearchResults: async (artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'artistInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getMusicArtistRemoteSearchResults', 'artistInfoRemoteSearchQuery', artistInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/MusicArtist`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -325,7 +323,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(artistInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -335,13 +333,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get music video remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MusicVideoInfoRemoteSearchQuery} musicVideoInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicVideoRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getMusicVideoRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getMusicVideoRemoteSearchResults: async (musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'musicVideoInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getMusicVideoRemoteSearchResults', 'musicVideoInfoRemoteSearchQuery', musicVideoInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/MusicVideo`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -364,7 +362,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(musicVideoInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -374,13 +372,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get person remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {PersonLookupInfoRemoteSearchQuery} personLookupInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersonRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getPersonRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getPersonRemoteSearchResults: async (personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'personLookupInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getPersonRemoteSearchResults', 'personLookupInfoRemoteSearchQuery', personLookupInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/Person`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -403,7 +401,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(personLookupInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -413,13 +411,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get series remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {SeriesInfoRemoteSearchQuery} seriesInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeriesRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getSeriesRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getSeriesRemoteSearchResults: async (seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'seriesInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getSeriesRemoteSearchResults', 'seriesInfoRemoteSearchQuery', seriesInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/Series`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -442,7 +440,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(seriesInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -452,13 +450,13 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Get trailer remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {TrailerInfoRemoteSearchQuery} trailerInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrailerRemoteSearchResults: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('getTrailerRemoteSearchResults', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        getTrailerRemoteSearchResults: async (trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'trailerInfoRemoteSearchQuery' is not null or undefined
+            assertParamExists('getTrailerRemoteSearchResults', 'trailerInfoRemoteSearchQuery', trailerInfoRemoteSearchQuery)
             const localVarPath = `/Items/RemoteSearch/Trailer`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -481,7 +479,7 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(trailerInfoRemoteSearchQuery, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -502,35 +500,35 @@ export const ItemLookupApiFp = function(configuration?: Configuration) {
          * 
          * @summary Applies search criteria to an item and refreshes metadata.
          * @param {string} itemId Item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The remote search result.
+         * @param {RemoteSearchResult} remoteSearchResult The remote search result.
          * @param {boolean} [replaceAllImages] Optional. Whether or not to replace all images. Default: True.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async applySearchCriteria(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, replaceAllImages?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.applySearchCriteria(itemId, uNKNOWNBASETYPE, replaceAllImages, options);
+        async applySearchCriteria(itemId: string, remoteSearchResult: RemoteSearchResult, replaceAllImages?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.applySearchCriteria(itemId, remoteSearchResult, replaceAllImages, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get book remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BookInfoRemoteSearchQuery} bookInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBookRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getBookRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getBookRemoteSearchResults(bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getBookRemoteSearchResults(bookInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get box set remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BoxSetInfoRemoteSearchQuery} boxSetInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBoxSetRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getBoxSetRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -547,78 +545,78 @@ export const ItemLookupApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Get movie remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MovieInfoRemoteSearchQuery} movieInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMovieRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getMovieRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getMovieRemoteSearchResults(movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getMovieRemoteSearchResults(movieInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get music album remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {AlbumInfoRemoteSearchQuery} albumInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMusicAlbumRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicAlbumRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get music artist remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {ArtistInfoRemoteSearchQuery} artistInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMusicArtistRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicArtistRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get music video remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MusicVideoInfoRemoteSearchQuery} musicVideoInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMusicVideoRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicVideoRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get person remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {PersonLookupInfoRemoteSearchQuery} personLookupInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPersonRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getPersonRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get series remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {SeriesInfoRemoteSearchQuery} seriesInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSeriesRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getSeriesRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get trailer remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {TrailerInfoRemoteSearchQuery} trailerInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTrailerRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getTrailerRemoteSearchResults(uNKNOWNBASETYPE, options);
+        async getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSearchResult>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -635,33 +633,33 @@ export const ItemLookupApiFactory = function (configuration?: Configuration, bas
          * 
          * @summary Applies search criteria to an item and refreshes metadata.
          * @param {string} itemId Item id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The remote search result.
+         * @param {RemoteSearchResult} remoteSearchResult The remote search result.
          * @param {boolean} [replaceAllImages] Optional. Whether or not to replace all images. Default: True.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        applySearchCriteria(itemId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, replaceAllImages?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.applySearchCriteria(itemId, uNKNOWNBASETYPE, replaceAllImages, options).then((request) => request(axios, basePath));
+        applySearchCriteria(itemId: string, remoteSearchResult: RemoteSearchResult, replaceAllImages?: boolean, options?: any): AxiosPromise<void> {
+            return localVarFp.applySearchCriteria(itemId, remoteSearchResult, replaceAllImages, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get book remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BookInfoRemoteSearchQuery} bookInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBookRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getBookRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getBookRemoteSearchResults(bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getBookRemoteSearchResults(bookInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get box set remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {BoxSetInfoRemoteSearchQuery} boxSetInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBoxSetRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getBoxSetRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -676,72 +674,72 @@ export const ItemLookupApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Get movie remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MovieInfoRemoteSearchQuery} movieInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMovieRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getMovieRemoteSearchResults(movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMovieRemoteSearchResults(movieInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music album remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {AlbumInfoRemoteSearchQuery} albumInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicAlbumRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicAlbumRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music artist remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {ArtistInfoRemoteSearchQuery} artistInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicArtistRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicArtistRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music video remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {MusicVideoInfoRemoteSearchQuery} musicVideoInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicVideoRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicVideoRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get person remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {PersonLookupInfoRemoteSearchQuery} personLookupInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersonRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getPersonRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get series remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {SeriesInfoRemoteSearchQuery} seriesInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeriesRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getSeriesRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get trailer remote search.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Remote search query.
+         * @param {TrailerInfoRemoteSearchQuery} trailerInfoRemoteSearchQuery Remote search query.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrailerRemoteSearchResults(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getTrailerRemoteSearchResults(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -761,10 +759,10 @@ export interface ItemLookupApiApplySearchCriteriaRequest {
 
     /**
      * The remote search result.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {RemoteSearchResult}
      * @memberof ItemLookupApiApplySearchCriteria
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly remoteSearchResult: RemoteSearchResult
 
     /**
      * Optional. Whether or not to replace all images. Default: True.
@@ -782,10 +780,10 @@ export interface ItemLookupApiApplySearchCriteriaRequest {
 export interface ItemLookupApiGetBookRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {BookInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetBookRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery
 }
 
 /**
@@ -796,10 +794,10 @@ export interface ItemLookupApiGetBookRemoteSearchResultsRequest {
 export interface ItemLookupApiGetBoxSetRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {BoxSetInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetBoxSetRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery
 }
 
 /**
@@ -824,10 +822,10 @@ export interface ItemLookupApiGetExternalIdInfosRequest {
 export interface ItemLookupApiGetMovieRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MovieInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetMovieRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery
 }
 
 /**
@@ -838,10 +836,10 @@ export interface ItemLookupApiGetMovieRemoteSearchResultsRequest {
 export interface ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {AlbumInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetMusicAlbumRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery
 }
 
 /**
@@ -852,10 +850,10 @@ export interface ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest {
 export interface ItemLookupApiGetMusicArtistRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ArtistInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetMusicArtistRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery
 }
 
 /**
@@ -866,10 +864,10 @@ export interface ItemLookupApiGetMusicArtistRemoteSearchResultsRequest {
 export interface ItemLookupApiGetMusicVideoRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MusicVideoInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetMusicVideoRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery
 }
 
 /**
@@ -880,10 +878,10 @@ export interface ItemLookupApiGetMusicVideoRemoteSearchResultsRequest {
 export interface ItemLookupApiGetPersonRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {PersonLookupInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetPersonRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery
 }
 
 /**
@@ -894,10 +892,10 @@ export interface ItemLookupApiGetPersonRemoteSearchResultsRequest {
 export interface ItemLookupApiGetSeriesRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SeriesInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetSeriesRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery
 }
 
 /**
@@ -908,10 +906,10 @@ export interface ItemLookupApiGetSeriesRemoteSearchResultsRequest {
 export interface ItemLookupApiGetTrailerRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {TrailerInfoRemoteSearchQuery}
      * @memberof ItemLookupApiGetTrailerRemoteSearchResults
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery
 }
 
 /**
@@ -930,7 +928,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public applySearchCriteria(requestParameters: ItemLookupApiApplySearchCriteriaRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).applySearchCriteria(requestParameters.itemId, requestParameters.uNKNOWNBASETYPE, requestParameters.replaceAllImages, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).applySearchCriteria(requestParameters.itemId, requestParameters.remoteSearchResult, requestParameters.replaceAllImages, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -942,7 +940,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getBookRemoteSearchResults(requestParameters: ItemLookupApiGetBookRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getBookRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getBookRemoteSearchResults(requestParameters.bookInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -954,7 +952,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getBoxSetRemoteSearchResults(requestParameters: ItemLookupApiGetBoxSetRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getBoxSetRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getBoxSetRemoteSearchResults(requestParameters.boxSetInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -978,7 +976,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getMovieRemoteSearchResults(requestParameters: ItemLookupApiGetMovieRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getMovieRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getMovieRemoteSearchResults(requestParameters.movieInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -990,7 +988,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getMusicAlbumRemoteSearchResults(requestParameters: ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getMusicAlbumRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getMusicAlbumRemoteSearchResults(requestParameters.albumInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1002,7 +1000,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getMusicArtistRemoteSearchResults(requestParameters: ItemLookupApiGetMusicArtistRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getMusicArtistRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getMusicArtistRemoteSearchResults(requestParameters.artistInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1014,7 +1012,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getMusicVideoRemoteSearchResults(requestParameters: ItemLookupApiGetMusicVideoRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getMusicVideoRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getMusicVideoRemoteSearchResults(requestParameters.musicVideoInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1026,7 +1024,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getPersonRemoteSearchResults(requestParameters: ItemLookupApiGetPersonRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getPersonRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getPersonRemoteSearchResults(requestParameters.personLookupInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1038,7 +1036,7 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getSeriesRemoteSearchResults(requestParameters: ItemLookupApiGetSeriesRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getSeriesRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getSeriesRemoteSearchResults(requestParameters.seriesInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1050,6 +1048,6 @@ export class ItemLookupApi extends BaseAPI {
      * @memberof ItemLookupApi
      */
     public getTrailerRemoteSearchResults(requestParameters: ItemLookupApiGetTrailerRemoteSearchResultsRequest, options?: any) {
-        return ItemLookupApiFp(this.configuration).getTrailerRemoteSearchResults(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return ItemLookupApiFp(this.configuration).getTrailerRemoteSearchResults(requestParameters.trailerInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
     }
 }

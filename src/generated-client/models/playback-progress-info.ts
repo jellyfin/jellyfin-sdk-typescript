@@ -31,11 +31,11 @@ export interface PlaybackProgressInfo {
      */
     CanSeek?: boolean;
     /**
-     * Gets or sets the item.
+     * 
      * @type {BaseItemDto}
      * @memberof PlaybackProgressInfo
      */
-    Item?: BaseItemDto | null;
+    Item?: BaseItemDto;
     /**
      * Gets or sets the item identifier.
      * @type {string}
@@ -109,7 +109,7 @@ export interface PlaybackProgressInfo {
      */
     AspectRatio?: string | null;
     /**
-     * Gets or sets the play method.
+     * 
      * @type {PlayMethod}
      * @memberof PlaybackProgressInfo
      */
@@ -127,7 +127,7 @@ export interface PlaybackProgressInfo {
      */
     PlaySessionId?: string | null;
     /**
-     * Gets or sets the repeat mode.
+     * 
      * @type {RepeatMode}
      * @memberof PlaybackProgressInfo
      */

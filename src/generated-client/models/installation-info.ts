@@ -35,11 +35,11 @@ export interface InstallationInfo {
      */
     Name?: string | null;
     /**
-     * Gets or sets the version.
+     * 
      * @type {Version}
      * @memberof InstallationInfo
      */
-    Version?: Version | null;
+    Version?: Version;
     /**
      * Gets or sets the changelog for this version.
      * @type {string}
@@ -59,11 +59,11 @@ export interface InstallationInfo {
      */
     Checksum?: string | null;
     /**
-     * Gets or sets package information for the installation.
+     * 
      * @type {PackageInfo}
      * @memberof InstallationInfo
      */
-    PackageInfo?: PackageInfo | null;
+    PackageInfo?: PackageInfo;
 }
 
 

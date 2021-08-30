@@ -39,8 +39,6 @@ import { ProblemDetails } from '../models';
 // @ts-ignore
 import { QuickConnectDto } from '../models';
 // @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
-// @ts-ignore
 import { UpdateUserEasyPassword } from '../models';
 // @ts-ignore
 import { UpdateUserPassword } from '../models';
@@ -105,13 +103,13 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Authenticates a user by name.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
+         * @param {AuthenticateUserByName} authenticateUserByName The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('authenticateUserByName', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        authenticateUserByName: async (authenticateUserByName: AuthenticateUserByName, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'authenticateUserByName' is not null or undefined
+            assertParamExists('authenticateUserByName', 'authenticateUserByName', authenticateUserByName)
             const localVarPath = `/Users/AuthenticateByName`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -131,7 +129,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(authenticateUserByName, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -141,13 +139,13 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Authenticates a user with quick connect.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
+         * @param {QuickConnectDto} quickConnectDto The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('authenticateWithQuickConnect', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        authenticateWithQuickConnect: async (quickConnectDto: QuickConnectDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'quickConnectDto' is not null or undefined
+            assertParamExists('authenticateWithQuickConnect', 'quickConnectDto', quickConnectDto)
             const localVarPath = `/Users/AuthenticateWithQuickConnect`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -167,7 +165,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(quickConnectDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -177,13 +175,13 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Creates a user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The create user by name request body.
+         * @param {CreateUserByName} createUserByName The create user by name request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('createUserByName', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        createUserByName: async (createUserByName: CreateUserByName, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'createUserByName' is not null or undefined
+            assertParamExists('createUserByName', 'createUserByName', createUserByName)
             const localVarPath = `/Users/New`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -206,7 +204,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(createUserByName, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -253,13 +251,13 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Initiates the forgot password process for a local user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password request containing the entered username.
+         * @param {ForgotPasswordDto} forgotPasswordDto The forgot password request containing the entered username.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('forgotPassword', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        forgotPassword: async (forgotPasswordDto: ForgotPasswordDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'forgotPasswordDto' is not null or undefined
+            assertParamExists('forgotPassword', 'forgotPasswordDto', forgotPasswordDto)
             const localVarPath = `/Users/ForgotPassword`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -279,7 +277,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(forgotPasswordDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -289,13 +287,13 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Redeems a forgot password pin.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password pin request containing the entered pin.
+         * @param {ForgotPasswordPinDto} forgotPasswordPinDto The forgot password pin request containing the entered pin.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('forgotPasswordPin', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        forgotPasswordPin: async (forgotPasswordPinDto: ForgotPasswordPinDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'forgotPasswordPinDto' is not null or undefined
+            assertParamExists('forgotPasswordPin', 'forgotPasswordPinDto', forgotPasswordPinDto)
             const localVarPath = `/Users/ForgotPassword/Pin`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -315,7 +313,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(forgotPasswordPinDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -469,15 +467,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a user.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated user model.
+         * @param {UserDto} userDto The updated user model.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser: async (userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateUser: async (userId: string, userDto: UserDto, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUser', 'userId', userId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateUser', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'userDto' is not null or undefined
+            assertParamExists('updateUser', 'userDto', userDto)
             const localVarPath = `/Users/{userId}`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -501,7 +499,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(userDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -512,15 +510,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a user configuration.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user configuration.
+         * @param {UserConfiguration} userConfiguration The new user configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration: async (userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateUserConfiguration: async (userId: string, userConfiguration: UserConfiguration, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserConfiguration', 'userId', userId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateUserConfiguration', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'userConfiguration' is not null or undefined
+            assertParamExists('updateUserConfiguration', 'userConfiguration', userConfiguration)
             const localVarPath = `/Users/{userId}/Configuration`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -544,7 +542,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(userConfiguration, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -555,15 +553,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a user\'s easy password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
+         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserEasyPassword: async (userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateUserEasyPassword: async (userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserEasyPassword', 'userId', userId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateUserEasyPassword', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'updateUserEasyPassword' is not null or undefined
+            assertParamExists('updateUserEasyPassword', 'updateUserEasyPassword', updateUserEasyPassword)
             const localVarPath = `/Users/{userId}/EasyPassword`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -587,7 +585,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(updateUserEasyPassword, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -598,15 +596,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a user\'s password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword: async (userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateUserPassword: async (userId: string, updateUserPassword: UpdateUserPassword, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserPassword', 'userId', userId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateUserPassword', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'updateUserPassword' is not null or undefined
+            assertParamExists('updateUserPassword', 'updateUserPassword', updateUserPassword)
             const localVarPath = `/Users/{userId}/Password`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -630,7 +628,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(updateUserPassword, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -641,15 +639,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * 
          * @summary Updates a user policy.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user policy.
+         * @param {UserPolicy} userPolicy The new user policy.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy: async (userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateUserPolicy: async (userId: string, userPolicy: UserPolicy, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserPolicy', 'userId', userId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('updateUserPolicy', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'userPolicy' is not null or undefined
+            assertParamExists('updateUserPolicy', 'userPolicy', userPolicy)
             const localVarPath = `/Users/{userId}/Policy`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -673,7 +671,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(userPolicy, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -706,34 +704,34 @@ export const UserApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Authenticates a user by name.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
+         * @param {AuthenticateUserByName} authenticateUserByName The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateUserByName(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUserByName(uNKNOWNBASETYPE, options);
+        async authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUserByName(authenticateUserByName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Authenticates a user with quick connect.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
+         * @param {QuickConnectDto} quickConnectDto The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateWithQuickConnect(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateWithQuickConnect(uNKNOWNBASETYPE, options);
+        async authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateWithQuickConnect(quickConnectDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Creates a user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The create user by name request body.
+         * @param {CreateUserByName} createUserByName The create user by name request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createUserByName(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createUserByName(uNKNOWNBASETYPE, options);
+        async createUserByName(createUserByName: CreateUserByName, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createUserByName(createUserByName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -750,23 +748,23 @@ export const UserApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Initiates the forgot password process for a local user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password request containing the entered username.
+         * @param {ForgotPasswordDto} forgotPasswordDto The forgot password request containing the entered username.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPassword(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPassword(uNKNOWNBASETYPE, options);
+        async forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPassword(forgotPasswordDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Redeems a forgot password pin.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password pin request containing the entered pin.
+         * @param {ForgotPasswordPinDto} forgotPasswordPinDto The forgot password pin request containing the entered pin.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPasswordPin(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPasswordPin(uNKNOWNBASETYPE, options);
+        async forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPasswordPin(forgotPasswordPinDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -816,60 +814,60 @@ export const UserApiFp = function(configuration?: Configuration) {
          * 
          * @summary Updates a user.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated user model.
+         * @param {UserDto} userDto The updated user model.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUser(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userId, uNKNOWNBASETYPE, options);
+        async updateUser(userId: string, userDto: UserDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userId, userDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user configuration.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user configuration.
+         * @param {UserConfiguration} userConfiguration The new user configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserConfiguration(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userId, uNKNOWNBASETYPE, options);
+        async updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userId, userConfiguration, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user\'s easy password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
+         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserEasyPassword(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserEasyPassword(userId, uNKNOWNBASETYPE, options);
+        async updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserEasyPassword(userId, updateUserEasyPassword, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user\'s password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPassword(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(userId, uNKNOWNBASETYPE, options);
+        async updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(userId, updateUserPassword, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user policy.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user policy.
+         * @param {UserPolicy} userPolicy The new user policy.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPolicy(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPolicy(userId, uNKNOWNBASETYPE, options);
+        async updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPolicy(userId, userPolicy, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -897,32 +895,32 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Authenticates a user by name.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
+         * @param {AuthenticateUserByName} authenticateUserByName The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUserByName(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: any): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateUserByName(authenticateUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Authenticates a user with quick connect.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
+         * @param {QuickConnectDto} quickConnectDto The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateWithQuickConnect(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: any): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateWithQuickConnect(quickConnectDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The create user by name request body.
+         * @param {CreateUserByName} createUserByName The create user by name request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<UserDto> {
-            return localVarFp.createUserByName(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createUserByName(createUserByName: CreateUserByName, options?: any): AxiosPromise<UserDto> {
+            return localVarFp.createUserByName(createUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -937,22 +935,22 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Initiates the forgot password process for a local user.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password request containing the entered username.
+         * @param {ForgotPasswordDto} forgotPasswordDto The forgot password request containing the entered username.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<ForgotPasswordResult> {
-            return localVarFp.forgotPassword(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: any): AxiosPromise<ForgotPasswordResult> {
+            return localVarFp.forgotPassword(forgotPasswordDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Redeems a forgot password pin.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The forgot password pin request containing the entered pin.
+         * @param {ForgotPasswordPinDto} forgotPasswordPinDto The forgot password pin request containing the entered pin.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<PinRedeemResult> {
-            return localVarFp.forgotPasswordPin(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: any): AxiosPromise<PinRedeemResult> {
+            return localVarFp.forgotPasswordPin(forgotPasswordPinDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -997,56 +995,56 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * 
          * @summary Updates a user.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The updated user model.
+         * @param {UserDto} userDto The updated user model.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUser(userId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateUser(userId: string, userDto: UserDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUser(userId, userDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user configuration.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user configuration.
+         * @param {UserConfiguration} userConfiguration The new user configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserConfiguration(userId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserConfiguration(userId, userConfiguration, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s easy password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
+         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserEasyPassword(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserEasyPassword(userId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserEasyPassword(userId, updateUserEasyPassword, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s password.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPassword(userId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserPassword(userId, updateUserPassword, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user policy.
          * @param {string} userId The user id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The new user policy.
+         * @param {UserPolicy} userPolicy The new user policy.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy(userId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPolicy(userId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserPolicy(userId, userPolicy, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1087,10 +1085,10 @@ export interface UserApiAuthenticateUserRequest {
 export interface UserApiAuthenticateUserByNameRequest {
     /**
      * The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {AuthenticateUserByName}
      * @memberof UserApiAuthenticateUserByName
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly authenticateUserByName: AuthenticateUserByName
 }
 
 /**
@@ -1101,10 +1099,10 @@ export interface UserApiAuthenticateUserByNameRequest {
 export interface UserApiAuthenticateWithQuickConnectRequest {
     /**
      * The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {QuickConnectDto}
      * @memberof UserApiAuthenticateWithQuickConnect
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly quickConnectDto: QuickConnectDto
 }
 
 /**
@@ -1115,10 +1113,10 @@ export interface UserApiAuthenticateWithQuickConnectRequest {
 export interface UserApiCreateUserByNameRequest {
     /**
      * The create user by name request body.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {CreateUserByName}
      * @memberof UserApiCreateUserByName
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly createUserByName: CreateUserByName
 }
 
 /**
@@ -1143,10 +1141,10 @@ export interface UserApiDeleteUserRequest {
 export interface UserApiForgotPasswordRequest {
     /**
      * The forgot password request containing the entered username.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ForgotPasswordDto}
      * @memberof UserApiForgotPassword
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly forgotPasswordDto: ForgotPasswordDto
 }
 
 /**
@@ -1157,10 +1155,10 @@ export interface UserApiForgotPasswordRequest {
 export interface UserApiForgotPasswordPinRequest {
     /**
      * The forgot password pin request containing the entered pin.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ForgotPasswordPinDto}
      * @memberof UserApiForgotPasswordPin
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly forgotPasswordPinDto: ForgotPasswordPinDto
 }
 
 /**
@@ -1213,10 +1211,10 @@ export interface UserApiUpdateUserRequest {
 
     /**
      * The updated user model.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UserDto}
      * @memberof UserApiUpdateUser
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly userDto: UserDto
 }
 
 /**
@@ -1234,10 +1232,10 @@ export interface UserApiUpdateUserConfigurationRequest {
 
     /**
      * The new user configuration.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UserConfiguration}
      * @memberof UserApiUpdateUserConfiguration
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly userConfiguration: UserConfiguration
 }
 
 /**
@@ -1255,10 +1253,10 @@ export interface UserApiUpdateUserEasyPasswordRequest {
 
     /**
      * The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UpdateUserEasyPassword}
      * @memberof UserApiUpdateUserEasyPassword
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly updateUserEasyPassword: UpdateUserEasyPassword
 }
 
 /**
@@ -1276,10 +1274,10 @@ export interface UserApiUpdateUserPasswordRequest {
 
     /**
      * The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UpdateUserPassword}
      * @memberof UserApiUpdateUserPassword
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly updateUserPassword: UpdateUserPassword
 }
 
 /**
@@ -1297,10 +1295,10 @@ export interface UserApiUpdateUserPolicyRequest {
 
     /**
      * The new user policy.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {UserPolicy}
      * @memberof UserApiUpdateUserPolicy
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly userPolicy: UserPolicy
 }
 
 /**
@@ -1331,7 +1329,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: any) {
-        return UserApiFp(this.configuration).authenticateUserByName(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).authenticateUserByName(requestParameters.authenticateUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1343,7 +1341,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: any) {
-        return UserApiFp(this.configuration).authenticateWithQuickConnect(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).authenticateWithQuickConnect(requestParameters.quickConnectDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1355,7 +1353,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: any) {
-        return UserApiFp(this.configuration).createUserByName(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).createUserByName(requestParameters.createUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1379,7 +1377,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: any) {
-        return UserApiFp(this.configuration).forgotPassword(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).forgotPassword(requestParameters.forgotPasswordDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1391,7 +1389,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: any) {
-        return UserApiFp(this.configuration).forgotPasswordPin(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).forgotPasswordPin(requestParameters.forgotPasswordPinDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1449,7 +1447,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUser(requestParameters: UserApiUpdateUserRequest, options?: any) {
-        return UserApiFp(this.configuration).updateUser(requestParameters.userId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUser(requestParameters.userId, requestParameters.userDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1461,7 +1459,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: any) {
-        return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userId, requestParameters.userConfiguration, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1473,7 +1471,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserEasyPassword(requestParameters: UserApiUpdateUserEasyPasswordRequest, options?: any) {
-        return UserApiFp(this.configuration).updateUserEasyPassword(requestParameters.userId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserEasyPassword(requestParameters.userId, requestParameters.updateUserEasyPassword, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1485,7 +1483,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: any) {
-        return UserApiFp(this.configuration).updateUserPassword(requestParameters.userId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserPassword(requestParameters.userId, requestParameters.updateUserPassword, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1497,6 +1495,6 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: any) {
-        return UserApiFp(this.configuration).updateUserPolicy(requestParameters.userId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserPolicy(requestParameters.userId, requestParameters.userPolicy, options).then((request) => request(this.axios, this.basePath));
     }
 }

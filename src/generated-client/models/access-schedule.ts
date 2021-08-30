@@ -34,7 +34,7 @@ export interface AccessSchedule {
      */
     UserId: string;
     /**
-     * Gets or sets the day of week.
+     * 
      * @type {DynamicDayOfWeek}
      * @memberof AccessSchedule
      */

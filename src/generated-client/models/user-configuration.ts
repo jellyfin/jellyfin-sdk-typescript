@@ -52,7 +52,7 @@ export interface UserConfiguration {
      */
     GroupedFolders?: Array<string> | null;
     /**
-     * An enum representing a subtitle playback mode.
+     * 
      * @type {SubtitlePlaybackMode}
      * @memberof UserConfiguration
      */

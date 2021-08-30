@@ -38,8 +38,6 @@ import { MediaUpdateInfoDto } from '../models';
 import { ProblemDetails } from '../models';
 // @ts-ignore
 import { ThemeMediaResult } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * LibraryApi - axios parameter creator
  * @export
@@ -999,13 +997,13 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The update paths.
+         * @param {MediaUpdateInfoDto} mediaUpdateInfoDto The update paths.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMedia: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('postUpdatedMedia', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        postUpdatedMedia: async (mediaUpdateInfoDto: MediaUpdateInfoDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'mediaUpdateInfoDto' is not null or undefined
+            assertParamExists('postUpdatedMedia', 'mediaUpdateInfoDto', mediaUpdateInfoDto)
             const localVarPath = `/Library/Media/Updated`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1028,7 +1026,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(mediaUpdateInfoDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -1427,12 +1425,12 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The update paths.
+         * @param {MediaUpdateInfoDto} mediaUpdateInfoDto The update paths.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postUpdatedMedia(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.postUpdatedMedia(uNKNOWNBASETYPE, options);
+        async postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.postUpdatedMedia(mediaUpdateInfoDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -1725,12 +1723,12 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The update paths.
+         * @param {MediaUpdateInfoDto} mediaUpdateInfoDto The update paths.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMedia(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedMedia(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: any): AxiosPromise<void> {
+            return localVarFp.postUpdatedMedia(mediaUpdateInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2291,10 +2289,10 @@ export interface LibraryApiPostAddedSeriesRequest {
 export interface LibraryApiPostUpdatedMediaRequest {
     /**
      * The update paths.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MediaUpdateInfoDto}
      * @memberof LibraryApiPostUpdatedMedia
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly mediaUpdateInfoDto: MediaUpdateInfoDto
 }
 
 /**
@@ -2600,7 +2598,7 @@ export class LibraryApi extends BaseAPI {
      * @memberof LibraryApi
      */
     public postUpdatedMedia(requestParameters: LibraryApiPostUpdatedMediaRequest, options?: any) {
-        return LibraryApiFp(this.configuration).postUpdatedMedia(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LibraryApiFp(this.configuration).postUpdatedMedia(requestParameters.mediaUpdateInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

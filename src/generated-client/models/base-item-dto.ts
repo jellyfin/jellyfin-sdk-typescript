@@ -172,11 +172,11 @@ export interface BaseItemDto {
      */
     ForcedSortName?: string | null;
     /**
-     * Gets or sets the video3 D format.
+     * 
      * @type {Video3DFormat}
      * @memberof BaseItemDto
      */
-    Video3DFormat?: Video3DFormat | null;
+    Video3DFormat?: Video3DFormat;
     /**
      * Gets or sets the premiere date.
      * @type {string}
@@ -280,11 +280,11 @@ export interface BaseItemDto {
      */
     RunTimeTicks?: number | null;
     /**
-     * Gets or sets the play access.
+     * 
      * @type {PlayAccess}
      * @memberof BaseItemDto
      */
-    PlayAccess?: PlayAccess | null;
+    PlayAccess?: PlayAccess;
     /**
      * Gets or sets the aspect ratio.
      * @type {string}
@@ -412,11 +412,11 @@ export interface BaseItemDto {
      */
     LocalTrailerCount?: number | null;
     /**
-     * User data for this item based on the user it\'s being requested for.
+     * 
      * @type {UserItemDataDto}
      * @memberof BaseItemDto
      */
-    UserData?: UserItemDataDto | null;
+    UserData?: UserItemDataDto;
     /**
      * Gets or sets the recursive item count.
      * @type {number}
@@ -562,11 +562,11 @@ export interface BaseItemDto {
      */
     MediaStreams?: Array<MediaStream> | null;
     /**
-     * Gets or sets the type of the video.
+     * 
      * @type {VideoType}
      * @memberof BaseItemDto
      */
-    VideoType?: VideoType | null;
+    VideoType?: VideoType;
     /**
      * Gets or sets the part count.
      * @type {number}
@@ -664,17 +664,17 @@ export interface BaseItemDto {
      */
     Chapters?: Array<ChapterInfo> | null;
     /**
-     * Gets or sets the type of the location.
+     * 
      * @type {LocationType}
      * @memberof BaseItemDto
      */
-    LocationType?: LocationType | null;
+    LocationType?: LocationType;
     /**
-     * Gets or sets the type of the iso.
+     * 
      * @type {IsoType}
      * @memberof BaseItemDto
      */
-    IsoType?: IsoType | null;
+    IsoType?: IsoType;
     /**
      * Gets or sets the type of the media.
      * @type {string}
@@ -800,7 +800,7 @@ export interface BaseItemDto {
      * @type {ImageOrientation}
      * @memberof BaseItemDto
      */
-    ImageOrientation?: ImageOrientation | null;
+    ImageOrientation?: ImageOrientation;
     /**
      * 
      * @type {number}
@@ -880,17 +880,17 @@ export interface BaseItemDto {
      */
     EpisodeTitle?: string | null;
     /**
-     * Gets or sets the type of the channel.
+     * 
      * @type {ChannelType}
      * @memberof BaseItemDto
      */
-    ChannelType?: ChannelType | null;
+    ChannelType?: ChannelType;
     /**
-     * Gets or sets the audio.
+     * 
      * @type {ProgramAudio}
      * @memberof BaseItemDto
      */
-    Audio?: ProgramAudio | null;
+    Audio?: ProgramAudio;
     /**
      * Gets or sets a value indicating whether this instance is movie.
      * @type {boolean}
@@ -940,11 +940,11 @@ export interface BaseItemDto {
      */
     TimerId?: string | null;
     /**
-     * Gets or sets the current program.
+     * 
      * @type {BaseItemDto}
      * @memberof BaseItemDto
      */
-    CurrentProgram?: BaseItemDto | null;
+    CurrentProgram?: BaseItemDto;
 }
 
 

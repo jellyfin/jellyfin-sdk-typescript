@@ -28,11 +28,11 @@ export interface NotificationsSummaryDto {
      */
     UnreadCount?: number;
     /**
-     * Gets or sets the maximum unread notification level.
+     * 
      * @type {NotificationLevel}
      * @memberof NotificationsSummaryDto
      */
-    MaxUnreadNotificationLevel?: NotificationLevel | null;
+    MaxUnreadNotificationLevel?: NotificationLevel;
 }
 
 

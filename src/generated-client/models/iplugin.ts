@@ -40,11 +40,11 @@ export interface IPlugin {
      */
     Id?: string;
     /**
-     * Gets the plugin version.
+     * 
      * @type {Version}
      * @memberof IPlugin
      */
-    Version?: Version | null;
+    Version?: Version;
     /**
      * Gets the path to the assembly file.
      * @type {string}

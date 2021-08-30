@@ -57,7 +57,7 @@ export interface MediaSourceInfo {
      * @type {MediaProtocol}
      * @memberof MediaSourceInfo
      */
-    EncoderProtocol?: MediaProtocol | null;
+    EncoderProtocol?: MediaProtocol;
     /**
      * 
      * @type {MediaSourceType}
@@ -195,19 +195,19 @@ export interface MediaSourceInfo {
      * @type {VideoType}
      * @memberof MediaSourceInfo
      */
-    VideoType?: VideoType | null;
+    VideoType?: VideoType;
     /**
      * 
      * @type {IsoType}
      * @memberof MediaSourceInfo
      */
-    IsoType?: IsoType | null;
+    IsoType?: IsoType;
     /**
      * 
      * @type {Video3DFormat}
      * @memberof MediaSourceInfo
      */
-    Video3DFormat?: Video3DFormat | null;
+    Video3DFormat?: Video3DFormat;
     /**
      * 
      * @type {Array<MediaStream>}
@@ -237,7 +237,7 @@ export interface MediaSourceInfo {
      * @type {TransportStreamTimestamp}
      * @memberof MediaSourceInfo
      */
-    Timestamp?: TransportStreamTimestamp | null;
+    Timestamp?: TransportStreamTimestamp;
     /**
      * 
      * @type {{ [key: string]: string; }}

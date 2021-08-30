@@ -71,7 +71,7 @@ export interface DisplayPreferencesDto {
      */
     CustomPrefs?: { [key: string]: string; } | null;
     /**
-     * An enum representing the axis that should be scrolled.
+     * 
      * @type {ScrollDirection}
      * @memberof DisplayPreferencesDto
      */
@@ -89,7 +89,7 @@ export interface DisplayPreferencesDto {
      */
     RememberSorting?: boolean;
     /**
-     * An enum representing the sorting order.
+     * 
      * @type {SortOrder}
      * @memberof DisplayPreferencesDto
      */

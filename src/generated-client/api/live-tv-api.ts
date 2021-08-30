@@ -62,8 +62,6 @@ import { TimerInfoDtoQueryResult } from '../models';
 import { TunerChannelMapping } from '../models';
 // @ts-ignore
 import { TunerHostInfo } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * LiveTvApi - axios parameter creator
  * @export
@@ -76,11 +74,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {string} [pw] Password.
          * @param {boolean} [validateListings] Validate listings.
          * @param {boolean} [validateLogin] Validate login.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New listings info.
+         * @param {ListingsProviderInfo} [listingsProviderInfo] New listings info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addListingProvider: async (pw?: string, validateListings?: boolean, validateLogin?: boolean, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        addListingProvider: async (pw?: string, validateListings?: boolean, validateLogin?: boolean, listingsProviderInfo?: ListingsProviderInfo, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/ListingProviders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -115,7 +113,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(listingsProviderInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -125,11 +123,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Adds a tuner host.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New tuner host.
+         * @param {TunerHostInfo} [tunerHostInfo] New tuner host.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addTunerHost: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        addTunerHost: async (tunerHostInfo?: TunerHostInfo, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/TunerHosts`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -152,7 +150,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(tunerHostInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -236,11 +234,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Creates a live tv series timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createSeriesTimer: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        createSeriesTimer: async (seriesTimerInfoDto?: SeriesTimerInfoDto, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/SeriesTimers`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -263,7 +261,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(seriesTimerInfoDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -273,11 +271,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Creates a live tv timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createTimer: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        createTimer: async (timerInfoDto?: TimerInfoDto, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/Timers`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -300,7 +298,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(timerInfoDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -1197,11 +1195,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Gets available live tv epgs.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Request body.
+         * @param {GetProgramsDto} [getProgramsDto] Request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPrograms: async (uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        getPrograms: async (getProgramsDto?: GetProgramsDto, options: any = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/Programs`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1224,7 +1222,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(getProgramsDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -2009,13 +2007,13 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Set channel mappings.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The set channel mapping dto.
+         * @param {SetChannelMappingDto} setChannelMappingDto The set channel mapping dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setChannelMapping: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('setChannelMapping', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        setChannelMapping: async (setChannelMappingDto: SetChannelMappingDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'setChannelMappingDto' is not null or undefined
+            assertParamExists('setChannelMapping', 'setChannelMappingDto', setChannelMappingDto)
             const localVarPath = `/LiveTv/ChannelMappings`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -2038,7 +2036,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(setChannelMappingDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -2049,11 +2047,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * 
          * @summary Updates a live tv series timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateSeriesTimer: async (timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateSeriesTimer: async (timerId: string, seriesTimerInfoDto?: SeriesTimerInfoDto, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'timerId' is not null or undefined
             assertParamExists('updateSeriesTimer', 'timerId', timerId)
             const localVarPath = `/LiveTv/SeriesTimers/{timerId}`
@@ -2079,7 +2077,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(seriesTimerInfoDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -2090,11 +2088,11 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * 
          * @summary Updates a live tv timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateTimer: async (timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        updateTimer: async (timerId: string, timerInfoDto?: TimerInfoDto, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'timerId' is not null or undefined
             assertParamExists('updateTimer', 'timerId', timerId)
             const localVarPath = `/LiveTv/Timers/{timerId}`
@@ -2120,7 +2118,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(timerInfoDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -2143,23 +2141,23 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * @param {string} [pw] Password.
          * @param {boolean} [validateListings] Validate listings.
          * @param {boolean} [validateLogin] Validate login.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New listings info.
+         * @param {ListingsProviderInfo} [listingsProviderInfo] New listings info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addListingProvider(pw?: string, validateListings?: boolean, validateLogin?: boolean, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ListingsProviderInfo>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.addListingProvider(pw, validateListings, validateLogin, uNKNOWNBASETYPE, options);
+        async addListingProvider(pw?: string, validateListings?: boolean, validateLogin?: boolean, listingsProviderInfo?: ListingsProviderInfo, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ListingsProviderInfo>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.addListingProvider(pw, validateListings, validateLogin, listingsProviderInfo, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Adds a tuner host.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New tuner host.
+         * @param {TunerHostInfo} [tunerHostInfo] New tuner host.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addTunerHost(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TunerHostInfo>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.addTunerHost(uNKNOWNBASETYPE, options);
+        async addTunerHost(tunerHostInfo?: TunerHostInfo, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TunerHostInfo>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.addTunerHost(tunerHostInfo, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -2187,23 +2185,23 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Creates a live tv series timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createSeriesTimer(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createSeriesTimer(uNKNOWNBASETYPE, options);
+        async createSeriesTimer(seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createSeriesTimer(seriesTimerInfoDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Creates a live tv timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createTimer(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.createTimer(uNKNOWNBASETYPE, options);
+        async createTimer(timerInfoDto?: TimerInfoDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.createTimer(timerInfoDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -2445,12 +2443,12 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Gets available live tv epgs.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Request body.
+         * @param {GetProgramsDto} [getProgramsDto] Request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPrograms(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getPrograms(uNKNOWNBASETYPE, options);
+        async getPrograms(getProgramsDto?: GetProgramsDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPrograms(getProgramsDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -2662,36 +2660,36 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Set channel mappings.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The set channel mapping dto.
+         * @param {SetChannelMappingDto} setChannelMappingDto The set channel mapping dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async setChannelMapping(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TunerChannelMapping>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.setChannelMapping(uNKNOWNBASETYPE, options);
+        async setChannelMapping(setChannelMappingDto: SetChannelMappingDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TunerChannelMapping>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.setChannelMapping(setChannelMappingDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a live tv series timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateSeriesTimer(timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateSeriesTimer(timerId, uNKNOWNBASETYPE, options);
+        async updateSeriesTimer(timerId: string, seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateSeriesTimer(timerId, seriesTimerInfoDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a live tv timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateTimer(timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateTimer(timerId, uNKNOWNBASETYPE, options);
+        async updateTimer(timerId: string, timerInfoDto?: TimerInfoDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateTimer(timerId, timerInfoDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -2710,22 +2708,22 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {string} [pw] Password.
          * @param {boolean} [validateListings] Validate listings.
          * @param {boolean} [validateLogin] Validate login.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New listings info.
+         * @param {ListingsProviderInfo} [listingsProviderInfo] New listings info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addListingProvider(pw?: string, validateListings?: boolean, validateLogin?: boolean, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<ListingsProviderInfo> {
-            return localVarFp.addListingProvider(pw, validateListings, validateLogin, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        addListingProvider(pw?: string, validateListings?: boolean, validateLogin?: boolean, listingsProviderInfo?: ListingsProviderInfo, options?: any): AxiosPromise<ListingsProviderInfo> {
+            return localVarFp.addListingProvider(pw, validateListings, validateLogin, listingsProviderInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Adds a tuner host.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New tuner host.
+         * @param {TunerHostInfo} [tunerHostInfo] New tuner host.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addTunerHost(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<TunerHostInfo> {
-            return localVarFp.addTunerHost(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        addTunerHost(tunerHostInfo?: TunerHostInfo, options?: any): AxiosPromise<TunerHostInfo> {
+            return localVarFp.addTunerHost(tunerHostInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2750,22 +2748,22 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Creates a live tv series timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createSeriesTimer(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.createSeriesTimer(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createSeriesTimer(seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): AxiosPromise<void> {
+            return localVarFp.createSeriesTimer(seriesTimerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a live tv timer.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createTimer(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.createTimer(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        createTimer(timerInfoDto?: TimerInfoDto, options?: any): AxiosPromise<void> {
+            return localVarFp.createTimer(timerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2989,12 +2987,12 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets available live tv epgs.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] Request body.
+         * @param {GetProgramsDto} [getProgramsDto] Request body.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPrograms(uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getPrograms(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        getPrograms(getProgramsDto?: GetProgramsDto, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getPrograms(getProgramsDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3191,34 +3189,34 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Set channel mappings.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The set channel mapping dto.
+         * @param {SetChannelMappingDto} setChannelMappingDto The set channel mapping dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setChannelMapping(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<TunerChannelMapping> {
-            return localVarFp.setChannelMapping(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        setChannelMapping(setChannelMappingDto: SetChannelMappingDto, options?: any): AxiosPromise<TunerChannelMapping> {
+            return localVarFp.setChannelMapping(setChannelMappingDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a live tv series timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New series timer info.
+         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateSeriesTimer(timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateSeriesTimer(timerId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateSeriesTimer(timerId: string, seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateSeriesTimer(timerId, seriesTimerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a live tv timer.
          * @param {string} timerId Timer id.
-         * @param {UNKNOWN_BASE_TYPE} [uNKNOWNBASETYPE] New timer info.
+         * @param {TimerInfoDto} [timerInfoDto] New timer info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateTimer(timerId: string, uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.updateTimer(timerId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        updateTimer(timerId: string, timerInfoDto?: TimerInfoDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updateTimer(timerId, timerInfoDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -3252,10 +3250,10 @@ export interface LiveTvApiAddListingProviderRequest {
 
     /**
      * New listings info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ListingsProviderInfo}
      * @memberof LiveTvApiAddListingProvider
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly listingsProviderInfo?: ListingsProviderInfo
 }
 
 /**
@@ -3266,10 +3264,10 @@ export interface LiveTvApiAddListingProviderRequest {
 export interface LiveTvApiAddTunerHostRequest {
     /**
      * New tuner host.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {TunerHostInfo}
      * @memberof LiveTvApiAddTunerHost
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly tunerHostInfo?: TunerHostInfo
 }
 
 /**
@@ -3308,10 +3306,10 @@ export interface LiveTvApiCancelTimerRequest {
 export interface LiveTvApiCreateSeriesTimerRequest {
     /**
      * New series timer info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SeriesTimerInfoDto}
      * @memberof LiveTvApiCreateSeriesTimer
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly seriesTimerInfoDto?: SeriesTimerInfoDto
 }
 
 /**
@@ -3322,10 +3320,10 @@ export interface LiveTvApiCreateSeriesTimerRequest {
 export interface LiveTvApiCreateTimerRequest {
     /**
      * New timer info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {TimerInfoDto}
      * @memberof LiveTvApiCreateTimer
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly timerInfoDto?: TimerInfoDto
 }
 
 /**
@@ -3896,10 +3894,10 @@ export interface LiveTvApiGetProgramRequest {
 export interface LiveTvApiGetProgramsRequest {
     /**
      * Request body.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {GetProgramsDto}
      * @memberof LiveTvApiGetPrograms
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly getProgramsDto?: GetProgramsDto
 }
 
 /**
@@ -4435,10 +4433,10 @@ export interface LiveTvApiResetTunerRequest {
 export interface LiveTvApiSetChannelMappingRequest {
     /**
      * The set channel mapping dto.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SetChannelMappingDto}
      * @memberof LiveTvApiSetChannelMapping
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly setChannelMappingDto: SetChannelMappingDto
 }
 
 /**
@@ -4456,10 +4454,10 @@ export interface LiveTvApiUpdateSeriesTimerRequest {
 
     /**
      * New series timer info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {SeriesTimerInfoDto}
      * @memberof LiveTvApiUpdateSeriesTimer
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly seriesTimerInfoDto?: SeriesTimerInfoDto
 }
 
 /**
@@ -4477,10 +4475,10 @@ export interface LiveTvApiUpdateTimerRequest {
 
     /**
      * New timer info.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {TimerInfoDto}
      * @memberof LiveTvApiUpdateTimer
      */
-    readonly uNKNOWNBASETYPE?: UNKNOWN_BASE_TYPE
+    readonly timerInfoDto?: TimerInfoDto
 }
 
 /**
@@ -4499,7 +4497,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public addListingProvider(requestParameters: LiveTvApiAddListingProviderRequest = {}, options?: any) {
-        return LiveTvApiFp(this.configuration).addListingProvider(requestParameters.pw, requestParameters.validateListings, requestParameters.validateLogin, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).addListingProvider(requestParameters.pw, requestParameters.validateListings, requestParameters.validateLogin, requestParameters.listingsProviderInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4511,7 +4509,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public addTunerHost(requestParameters: LiveTvApiAddTunerHostRequest = {}, options?: any) {
-        return LiveTvApiFp(this.configuration).addTunerHost(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).addTunerHost(requestParameters.tunerHostInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4547,7 +4545,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public createSeriesTimer(requestParameters: LiveTvApiCreateSeriesTimerRequest = {}, options?: any) {
-        return LiveTvApiFp(this.configuration).createSeriesTimer(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).createSeriesTimer(requestParameters.seriesTimerInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4559,7 +4557,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public createTimer(requestParameters: LiveTvApiCreateTimerRequest = {}, options?: any) {
-        return LiveTvApiFp(this.configuration).createTimer(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).createTimer(requestParameters.timerInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4772,7 +4770,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public getPrograms(requestParameters: LiveTvApiGetProgramsRequest = {}, options?: any) {
-        return LiveTvApiFp(this.configuration).getPrograms(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).getPrograms(requestParameters.getProgramsDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4953,7 +4951,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public setChannelMapping(requestParameters: LiveTvApiSetChannelMappingRequest, options?: any) {
-        return LiveTvApiFp(this.configuration).setChannelMapping(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).setChannelMapping(requestParameters.setChannelMappingDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4965,7 +4963,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public updateSeriesTimer(requestParameters: LiveTvApiUpdateSeriesTimerRequest, options?: any) {
-        return LiveTvApiFp(this.configuration).updateSeriesTimer(requestParameters.timerId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).updateSeriesTimer(requestParameters.timerId, requestParameters.seriesTimerInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -4977,6 +4975,6 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public updateTimer(requestParameters: LiveTvApiUpdateTimerRequest, options?: any) {
-        return LiveTvApiFp(this.configuration).updateTimer(requestParameters.timerId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).updateTimer(requestParameters.timerId, requestParameters.timerInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 }

@@ -64,11 +64,11 @@ export interface DeviceInfo {
      */
     DateLastActivity?: string;
     /**
-     * Gets or sets the capabilities.
+     * 
      * @type {ClientCapabilities}
      * @memberof DeviceInfo
      */
-    Capabilities?: ClientCapabilities | null;
+    Capabilities?: ClientCapabilities;
     /**
      * 
      * @type {string}

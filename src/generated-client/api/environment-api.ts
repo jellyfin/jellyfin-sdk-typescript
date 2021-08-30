@@ -27,8 +27,6 @@ import { FileSystemEntryInfo } from '../models';
 // @ts-ignore
 import { ProblemDetails } from '../models';
 // @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
-// @ts-ignore
 import { ValidatePathDto } from '../models';
 /**
  * EnvironmentApi - axios parameter creator
@@ -229,13 +227,13 @@ export const EnvironmentApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Validates path.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Validate request object.
+         * @param {ValidatePathDto} validatePathDto Validate request object.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        validatePath: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('validatePath', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        validatePath: async (validatePathDto: ValidatePathDto, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'validatePathDto' is not null or undefined
+            assertParamExists('validatePath', 'validatePathDto', validatePathDto)
             const localVarPath = `/Environment/ValidatePath`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -258,7 +256,7 @@ export const EnvironmentApiAxiosParamCreator = function (configuration?: Configu
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(validatePathDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -333,12 +331,12 @@ export const EnvironmentApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Validates path.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Validate request object.
+         * @param {ValidatePathDto} validatePathDto Validate request object.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async validatePath(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.validatePath(uNKNOWNBASETYPE, options);
+        async validatePath(validatePathDto: ValidatePathDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.validatePath(validatePathDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -404,12 +402,12 @@ export const EnvironmentApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Validates path.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE Validate request object.
+         * @param {ValidatePathDto} validatePathDto Validate request object.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        validatePath(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.validatePath(uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        validatePath(validatePathDto: ValidatePathDto, options?: any): AxiosPromise<void> {
+            return localVarFp.validatePath(validatePathDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -464,10 +462,10 @@ export interface EnvironmentApiGetParentPathRequest {
 export interface EnvironmentApiValidatePathRequest {
     /**
      * Validate request object.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ValidatePathDto}
      * @memberof EnvironmentApiValidatePath
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly validatePathDto: ValidatePathDto
 }
 
 /**
@@ -544,6 +542,6 @@ export class EnvironmentApi extends BaseAPI {
      * @memberof EnvironmentApi
      */
     public validatePath(requestParameters: EnvironmentApiValidatePathRequest, options?: any) {
-        return EnvironmentApiFp(this.configuration).validatePath(requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return EnvironmentApiFp(this.configuration).validatePath(requestParameters.validatePathDto, options).then((request) => request(this.axios, this.basePath));
     }
 }

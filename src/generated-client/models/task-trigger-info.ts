@@ -40,11 +40,11 @@ export interface TaskTriggerInfo {
      */
     IntervalTicks?: number | null;
     /**
-     * Gets or sets the day of week.
+     * 
      * @type {DayOfWeek}
      * @memberof TaskTriggerInfo
      */
-    DayOfWeek?: DayOfWeek | null;
+    DayOfWeek?: DayOfWeek;
     /**
      * Gets or sets the maximum runtime ticks.
      * @type {number}

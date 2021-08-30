@@ -162,7 +162,7 @@ export interface TimerInfoDto {
      */
     KeepUntil?: KeepUntil;
     /**
-     * Gets or sets the status.
+     * 
      * @type {RecordingStatus}
      * @memberof TimerInfoDto
      */
@@ -186,11 +186,11 @@ export interface TimerInfoDto {
      */
     RunTimeTicks?: number | null;
     /**
-     * Gets or sets the program information.
+     * 
      * @type {BaseItemDto}
      * @memberof TimerInfoDto
      */
-    ProgramInfo?: BaseItemDto | null;
+    ProgramInfo?: BaseItemDto;
 }
 
 

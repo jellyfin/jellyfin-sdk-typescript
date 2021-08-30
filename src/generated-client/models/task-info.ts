@@ -30,7 +30,7 @@ export interface TaskInfo {
      */
     Name?: string | null;
     /**
-     * Gets or sets the state of the task.
+     * 
      * @type {TaskState}
      * @memberof TaskInfo
      */
@@ -48,11 +48,11 @@ export interface TaskInfo {
      */
     Id?: string | null;
     /**
-     * Gets or sets the last execution result.
+     * 
      * @type {TaskResult}
      * @memberof TaskInfo
      */
-    LastExecutionResult?: TaskResult | null;
+    LastExecutionResult?: TaskResult;
     /**
      * Gets or sets the triggers.
      * @type {Array<TaskTriggerInfo>}

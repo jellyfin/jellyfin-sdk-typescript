@@ -34,7 +34,7 @@ export interface GroupInfoDto {
      */
     GroupName?: string | null;
     /**
-     * Gets the group state.
+     * 
      * @type {GroupStateType}
      * @memberof GroupInfoDto
      */

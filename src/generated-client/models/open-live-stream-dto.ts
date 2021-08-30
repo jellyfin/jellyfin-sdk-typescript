@@ -89,11 +89,11 @@ export interface OpenLiveStreamDto {
      */
     EnableDirectStream?: boolean | null;
     /**
-     * Gets or sets the device profile.
+     * 
      * @type {DeviceProfile}
      * @memberof OpenLiveStreamDto
      */
-    DeviceProfile?: DeviceProfile | null;
+    DeviceProfile?: DeviceProfile;
     /**
      * Gets or sets the device play protocols.
      * @type {Array<MediaProtocol>}

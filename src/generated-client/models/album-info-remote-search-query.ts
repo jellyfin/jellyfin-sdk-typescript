@@ -26,7 +26,7 @@ export interface AlbumInfoRemoteSearchQuery {
      * @type {AlbumInfo}
      * @memberof AlbumInfoRemoteSearchQuery
      */
-    SearchInfo?: AlbumInfo | null;
+    SearchInfo?: AlbumInfo;
     /**
      * 
      * @type {string}

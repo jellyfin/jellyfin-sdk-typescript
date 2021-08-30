@@ -23,17 +23,17 @@ import { UserDto } from './user-dto';
  */
 export interface AuthenticationResult {
     /**
-     * Class UserDto.
+     * 
      * @type {UserDto}
      * @memberof AuthenticationResult
      */
-    User?: UserDto | null;
+    User?: UserDto;
     /**
-     * Class SessionInfo.
+     * 
      * @type {SessionInfo}
      * @memberof AuthenticationResult
      */
-    SessionInfo?: SessionInfo | null;
+    SessionInfo?: SessionInfo;
     /**
      * 
      * @type {string}

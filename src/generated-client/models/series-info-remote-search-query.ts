@@ -26,7 +26,7 @@ export interface SeriesInfoRemoteSearchQuery {
      * @type {SeriesInfo}
      * @memberof SeriesInfoRemoteSearchQuery
      */
-    SearchInfo?: SeriesInfo | null;
+    SearchInfo?: SeriesInfo;
     /**
      * 
      * @type {string}

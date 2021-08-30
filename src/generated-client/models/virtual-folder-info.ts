@@ -35,17 +35,17 @@ export interface VirtualFolderInfo {
      */
     Locations?: Array<string> | null;
     /**
-     * Gets or sets the type of the collection.
+     * 
      * @type {CollectionTypeOptions}
      * @memberof VirtualFolderInfo
      */
-    CollectionType?: CollectionTypeOptions | null;
+    CollectionType?: CollectionTypeOptions;
     /**
      * 
      * @type {LibraryOptions}
      * @memberof VirtualFolderInfo
      */
-    LibraryOptions?: LibraryOptions | null;
+    LibraryOptions?: LibraryOptions;
     /**
      * Gets or sets the item identifier.
      * @type {string}

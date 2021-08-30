@@ -45,11 +45,11 @@ export interface ServerConfiguration {
      */
     CachePath?: string | null;
     /**
-     * Gets or sets the last known version that was ran using the configuration.
+     * 
      * @type {Version}
      * @memberof ServerConfiguration
      */
-    PreviousVersion?: Version | null;
+    PreviousVersion?: Version;
     /**
      * Gets or sets the stringified PreviousVersion to be stored/loaded,  because System.Version itself isn\'t xml-serializable.
      * @type {string}
@@ -333,7 +333,7 @@ export interface ServerConfiguration {
      */
     EnableDashboardResponseCaching?: boolean;
     /**
-     * Gets or sets the image saving convention.
+     * 
      * @type {ImageSavingConvention}
      * @memberof ServerConfiguration
      */

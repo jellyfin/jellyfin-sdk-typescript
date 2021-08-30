@@ -36,8 +36,6 @@ import { PlayCommand } from '../models';
 import { PlaystateCommand } from '../models';
 // @ts-ignore
 import { SessionInfo } from '../models';
-// @ts-ignore
-import { UNKNOWN_BASE_TYPE } from '../models';
 /**
  * SessionApi - axios parameter creator
  * @export
@@ -399,14 +397,14 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Updates capabilities for a device.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.ClientCapabilities.
+         * @param {ClientCapabilitiesDto} clientCapabilitiesDto The MediaBrowser.Model.Session.ClientCapabilities.
          * @param {string} [id] The session id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postFullCapabilities: async (uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, id?: string, options: any = {}): Promise<RequestArgs> => {
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('postFullCapabilities', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+        postFullCapabilities: async (clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options: any = {}): Promise<RequestArgs> => {
+            // verify required parameter 'clientCapabilitiesDto' is not null or undefined
+            assertParamExists('postFullCapabilities', 'clientCapabilitiesDto', clientCapabilitiesDto)
             const localVarPath = `/Sessions/Capabilities/Full`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -433,7 +431,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(clientCapabilitiesDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -563,15 +561,15 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Issues a full general command to a client.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.GeneralCommand.
+         * @param {GeneralCommand} generalCommand The MediaBrowser.Model.Session.GeneralCommand.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendFullGeneralCommand: async (sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        sendFullGeneralCommand: async (sessionId: string, generalCommand: GeneralCommand, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendFullGeneralCommand', 'sessionId', sessionId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('sendFullGeneralCommand', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'generalCommand' is not null or undefined
+            assertParamExists('sendFullGeneralCommand', 'generalCommand', generalCommand)
             const localVarPath = `/Sessions/{sessionId}/Command`
                 .replace(`{${"sessionId"}}`, encodeURIComponent(String(sessionId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -595,7 +593,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(generalCommand, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -647,15 +645,15 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Issues a command to a client to display a message to the user.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
+         * @param {MessageCommand} messageCommand The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendMessageCommand: async (sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options: any = {}): Promise<RequestArgs> => {
+        sendMessageCommand: async (sessionId: string, messageCommand: MessageCommand, options: any = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendMessageCommand', 'sessionId', sessionId)
-            // verify required parameter 'uNKNOWNBASETYPE' is not null or undefined
-            assertParamExists('sendMessageCommand', 'uNKNOWNBASETYPE', uNKNOWNBASETYPE)
+            // verify required parameter 'messageCommand' is not null or undefined
+            assertParamExists('sendMessageCommand', 'messageCommand', messageCommand)
             const localVarPath = `/Sessions/{sessionId}/Message`
                 .replace(`{${"sessionId"}}`, encodeURIComponent(String(sessionId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -679,7 +677,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(uNKNOWNBASETYPE, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(messageCommand, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -884,13 +882,13 @@ export const SessionApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Updates capabilities for a device.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.ClientCapabilities.
+         * @param {ClientCapabilitiesDto} clientCapabilitiesDto The MediaBrowser.Model.Session.ClientCapabilities.
          * @param {string} [id] The session id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postFullCapabilities(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, id?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.postFullCapabilities(uNKNOWNBASETYPE, id, options);
+        async postFullCapabilities(clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.postFullCapabilities(clientCapabilitiesDto, id, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -931,12 +929,12 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * 
          * @summary Issues a full general command to a client.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.GeneralCommand.
+         * @param {GeneralCommand} generalCommand The MediaBrowser.Model.Session.GeneralCommand.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendFullGeneralCommand(sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.sendFullGeneralCommand(sessionId, uNKNOWNBASETYPE, options);
+        async sendFullGeneralCommand(sessionId: string, generalCommand: GeneralCommand, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.sendFullGeneralCommand(sessionId, generalCommand, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -955,12 +953,12 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * 
          * @summary Issues a command to a client to display a message to the user.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
+         * @param {MessageCommand} messageCommand The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendMessageCommand(sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.sendMessageCommand(sessionId, uNKNOWNBASETYPE, options);
+        async sendMessageCommand(sessionId: string, messageCommand: MessageCommand, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.sendMessageCommand(sessionId, messageCommand, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -1088,13 +1086,13 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Updates capabilities for a device.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.ClientCapabilities.
+         * @param {ClientCapabilitiesDto} clientCapabilitiesDto The MediaBrowser.Model.Session.ClientCapabilities.
          * @param {string} [id] The session id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postFullCapabilities(uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, id?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postFullCapabilities(uNKNOWNBASETYPE, id, options).then((request) => request(axios, basePath));
+        postFullCapabilities(clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options?: any): AxiosPromise<void> {
+            return localVarFp.postFullCapabilities(clientCapabilitiesDto, id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1131,12 +1129,12 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Issues a full general command to a client.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.GeneralCommand.
+         * @param {GeneralCommand} generalCommand The MediaBrowser.Model.Session.GeneralCommand.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendFullGeneralCommand(sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.sendFullGeneralCommand(sessionId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        sendFullGeneralCommand(sessionId: string, generalCommand: GeneralCommand, options?: any): AxiosPromise<void> {
+            return localVarFp.sendFullGeneralCommand(sessionId, generalCommand, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1153,12 +1151,12 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Issues a command to a client to display a message to the user.
          * @param {string} sessionId The session id.
-         * @param {UNKNOWN_BASE_TYPE} uNKNOWNBASETYPE The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
+         * @param {MessageCommand} messageCommand The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendMessageCommand(sessionId: string, uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE, options?: any): AxiosPromise<void> {
-            return localVarFp.sendMessageCommand(sessionId, uNKNOWNBASETYPE, options).then((request) => request(axios, basePath));
+        sendMessageCommand(sessionId: string, messageCommand: MessageCommand, options?: any): AxiosPromise<void> {
+            return localVarFp.sendMessageCommand(sessionId, messageCommand, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1391,10 +1389,10 @@ export interface SessionApiPostCapabilitiesRequest {
 export interface SessionApiPostFullCapabilitiesRequest {
     /**
      * The MediaBrowser.Model.Session.ClientCapabilities.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {ClientCapabilitiesDto}
      * @memberof SessionApiPostFullCapabilities
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly clientCapabilitiesDto: ClientCapabilitiesDto
 
     /**
      * The session id.
@@ -1461,10 +1459,10 @@ export interface SessionApiSendFullGeneralCommandRequest {
 
     /**
      * The MediaBrowser.Model.Session.GeneralCommand.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {GeneralCommand}
      * @memberof SessionApiSendFullGeneralCommand
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly generalCommand: GeneralCommand
 }
 
 /**
@@ -1503,10 +1501,10 @@ export interface SessionApiSendMessageCommandRequest {
 
     /**
      * The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
-     * @type {UNKNOWN_BASE_TYPE}
+     * @type {MessageCommand}
      * @memberof SessionApiSendMessageCommand
      */
-    readonly uNKNOWNBASETYPE: UNKNOWN_BASE_TYPE
+    readonly messageCommand: MessageCommand
 }
 
 /**
@@ -1663,7 +1661,7 @@ export class SessionApi extends BaseAPI {
      * @memberof SessionApi
      */
     public postFullCapabilities(requestParameters: SessionApiPostFullCapabilitiesRequest, options?: any) {
-        return SessionApiFp(this.configuration).postFullCapabilities(requestParameters.uNKNOWNBASETYPE, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+        return SessionApiFp(this.configuration).postFullCapabilities(requestParameters.clientCapabilitiesDto, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1710,7 +1708,7 @@ export class SessionApi extends BaseAPI {
      * @memberof SessionApi
      */
     public sendFullGeneralCommand(requestParameters: SessionApiSendFullGeneralCommandRequest, options?: any) {
-        return SessionApiFp(this.configuration).sendFullGeneralCommand(requestParameters.sessionId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SessionApiFp(this.configuration).sendFullGeneralCommand(requestParameters.sessionId, requestParameters.generalCommand, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1734,7 +1732,7 @@ export class SessionApi extends BaseAPI {
      * @memberof SessionApi
      */
     public sendMessageCommand(requestParameters: SessionApiSendMessageCommandRequest, options?: any) {
-        return SessionApiFp(this.configuration).sendMessageCommand(requestParameters.sessionId, requestParameters.uNKNOWNBASETYPE, options).then((request) => request(this.axios, this.basePath));
+        return SessionApiFp(this.configuration).sendMessageCommand(requestParameters.sessionId, requestParameters.messageCommand, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

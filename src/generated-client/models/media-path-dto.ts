@@ -34,11 +34,11 @@ export interface MediaPathDto {
      */
     Path?: string | null;
     /**
-     * Gets or sets the path info.
+     * 
      * @type {MediaPathInfo}
      * @memberof MediaPathDto
      */
-    PathInfo?: MediaPathInfo | null;
+    PathInfo?: MediaPathInfo;
 }
 
 
