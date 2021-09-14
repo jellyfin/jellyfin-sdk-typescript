@@ -1,5 +1,9 @@
 # jellyfin-sdk-typescript
 
+A TypeScript SDK for Jellyfin.
+
+> Warning: This project is under active development and is not ready for production use. API changes _will_ occur.
+
 ## Usage
 
 ```js
