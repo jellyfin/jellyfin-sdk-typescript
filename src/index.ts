@@ -1,14 +1,66 @@
-import globalInstance from 'axios';
+import globalInstance, { AxiosResponse } from 'axios';
 
-import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
+import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticateUserByName, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
+import { ClientInfo } from './models/client-info';
+import { DeviceInfo } from './models/device-info';
 
 export class Jellyfin {
 	configuration;
 	axiosInstance;
 
-	constructor(configuration = new Configuration(), axiosInstance = globalInstance) {
+	clientInfo;
+	deviceInfo;
+
+	token = '';
+
+	constructor(
+		configuration = new Configuration(),
+		axiosInstance = globalInstance,
+		clientInfo: ClientInfo = { Name: 'jellyfin-sdk-typescript', Version: 'v0.1.0' },
+		// FIXME: The device info should always be required.
+		deviceInfo: DeviceInfo = { Name: 'device-name', Id: 'device-id' }
+	) {
 		this.configuration = configuration;
 		this.axiosInstance = axiosInstance;
+
+		this.clientInfo = clientInfo;
+		this.deviceInfo = deviceInfo;
+
+		// The api client should automatically use the apiKey value as the X-Emby-Authorization
+		// header, so we should ensure it is set.
+		this.configuration.apiKey = this.authorizationHeader;
+	}
+
+	/**
+	 * Convenience method for authenticating a user by name and updating the internal state.
+	 * @param authenticateUserByNameParam The authentication parameters object.
+	 */
+	authenticateUserByName(authenticateUserByNameParam: AuthenticateUserByName): Promise<AxiosResponse<AuthenticationResult>> {
+		return this.userApi.authenticateUserByName(
+			// The axios client does some strange wrapping of the param object
+			{ authenticateUserByName: authenticateUserByNameParam },
+			// The authorization header is required for the request to succeed
+			{ headers: { 'X-Emby-Authorization': this.authorizationHeader } }
+		).then(response => {
+			// Update the current token and configuration object
+			this.token = response.data.AccessToken || '';
+			this.configuration.apiKey = this.authorizationHeader;
+			return response;
+		});
+	}
+
+	/**
+	 * Generates the authorization header value based on the current state.
+	 */
+	get authorizationHeader(): string {
+		// TODO: We should ensure values are properly escaped
+		return [
+			`MediaBrowser Client="${this.clientInfo.Name}"`,
+			`Device="${this.deviceInfo.Name}"`,
+			`DeviceId="${this.deviceInfo.Id}"`,
+			`Version="${this.clientInfo.Version}"`,
+			`Token="${this.token}"`
+		].join(', ');
 	}
 
 	get activityLogApi(): ActivityLogApi {
