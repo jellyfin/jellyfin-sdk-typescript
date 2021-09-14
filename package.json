@@ -14,8 +14,7 @@
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "test": "jest --watchAll"
   },
-  "author": "",
-  "license": "MIT",
+  "license": "MPL-2.0",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.3.10",
     "@tsconfig/recommended": "^1.0.1",
