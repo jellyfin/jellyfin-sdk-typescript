@@ -1,0 +1,46 @@
+[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / VideosApiGetAdditionalPartRequest
+
+# Interface: VideosApiGetAdditionalPartRequest
+
+[generated-client](../modules/generated_client.md).VideosApiGetAdditionalPartRequest
+
+Request parameters for getAdditionalPart operation in VideosApi.
+
+**`export`**
+
+**`interface`** VideosApiGetAdditionalPartRequest
+
+## Table of contents
+
+### Properties
+
+- [itemId](generated_client.VideosApiGetAdditionalPartRequest.md#itemid)
+- [userId](generated_client.VideosApiGetAdditionalPartRequest.md#userid)
+
+## Properties
+
+### itemId
+
+• `Readonly` **itemId**: `string`
+
+The item id.
+
+**`memberof`** VideosApiGetAdditionalPart
+
+#### Defined in
+
+[generated-client/api/videos-api.ts:1831](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L1831)
+
+___
+
+### userId
+
+• `Optional` `Readonly` **userId**: `string`
+
+Optional. Filter by user id, and attach user data.
+
+**`memberof`** VideosApiGetAdditionalPart
+
+#### Defined in
+
+[generated-client/api/videos-api.ts:1838](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L1838)

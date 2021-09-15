@@ -1,0 +1,31 @@
+[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateApiPingPlaybackSessionRequest
+
+# Interface: PlaystateApiPingPlaybackSessionRequest
+
+[generated-client](../modules/generated_client.md).PlaystateApiPingPlaybackSessionRequest
+
+Request parameters for pingPlaybackSession operation in PlaystateApi.
+
+**`export`**
+
+**`interface`** PlaystateApiPingPlaybackSessionRequest
+
+## Table of contents
+
+### Properties
+
+- [playSessionId](generated_client.PlaystateApiPingPlaybackSessionRequest.md#playsessionid)
+
+## Properties
+
+### playSessionId
+
+• `Readonly` **playSessionId**: `string`
+
+Playback session id.
+
+**`memberof`** PlaystateApiPingPlaybackSession
+
+#### Defined in
+
+[generated-client/api/playstate-api.ts:1073](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/playstate-api.ts#L1073)
