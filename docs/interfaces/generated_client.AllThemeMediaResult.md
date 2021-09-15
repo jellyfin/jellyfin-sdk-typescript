@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/all-theme-media-result.ts#L41)
+[generated-client/models/all-theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/all-theme-media-result.ts#L41)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/all-theme-media-result.ts#L35)
+[generated-client/models/all-theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/all-theme-media-result.ts#L35)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/all-theme-media-result.ts#L29)
+[generated-client/models/all-theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/all-theme-media-result.ts#L29)

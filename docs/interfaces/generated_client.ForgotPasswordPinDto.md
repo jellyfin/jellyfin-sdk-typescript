@@ -28,4 +28,4 @@ Gets or sets the entered pin to have the password reset.
 
 #### Defined in
 
-[generated-client/models/forgot-password-pin-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/forgot-password-pin-dto.ts#L28)
+[generated-client/models/forgot-password-pin-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/forgot-password-pin-dto.ts#L28)

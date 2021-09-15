@@ -29,7 +29,7 @@ The GUID of the associated assembly.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/package-api.ts#L456)
+[generated-client/api/package-api.ts:456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/package-api.ts#L456)
 
 ___
 
@@ -43,4 +43,4 @@ The name of the package.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/package-api.ts#L449)
+[generated-client/api/package-api.ts:449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/package-api.ts#L449)

@@ -29,7 +29,7 @@ The MediaBrowser.Model.Session.GeneralCommand.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1465](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1465)
+[generated-client/api/session-api.ts:1465](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1465)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1458](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1458)
+[generated-client/api/session-api.ts:1458](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1458)

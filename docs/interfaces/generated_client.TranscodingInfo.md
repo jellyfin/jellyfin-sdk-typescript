@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L89)
+[generated-client/models/transcoding-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L89)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L29)
+[generated-client/models/transcoding-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L29)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L59)
+[generated-client/models/transcoding-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L59)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L71)
+[generated-client/models/transcoding-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L71)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L41)
+[generated-client/models/transcoding-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L41)
 
 ___
 
@@ -95,7 +95,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L65)
+[generated-client/models/transcoding-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L65)
 
 ___
 
@@ -107,7 +107,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L83)
+[generated-client/models/transcoding-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L83)
 
 ___
 
@@ -119,7 +119,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L53)
+[generated-client/models/transcoding-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L53)
 
 ___
 
@@ -131,7 +131,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L47)
+[generated-client/models/transcoding-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L47)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L95)
+[generated-client/models/transcoding-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L95)
 
 ___
 
@@ -155,7 +155,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L35)
+[generated-client/models/transcoding-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L35)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/transcoding-info.ts#L77)
+[generated-client/models/transcoding-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/transcoding-info.ts#L77)

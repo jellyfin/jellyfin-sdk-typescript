@@ -33,7 +33,7 @@ The specific media type of an MediaBrowser.Model.Providers.ExternalIdInfo.
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L24)
+[generated-client/models/external-id-media-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L24)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L25)
+[generated-client/models/external-id-media-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L25)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L26)
+[generated-client/models/external-id-media-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L26)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L27)
+[generated-client/models/external-id-media-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L27)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L28)
+[generated-client/models/external-id-media-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L28)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L29)
+[generated-client/models/external-id-media-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L29)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L30)
+[generated-client/models/external-id-media-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L30)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L31)
+[generated-client/models/external-id-media-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L31)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L32)
+[generated-client/models/external-id-media-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L32)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L33)
+[generated-client/models/external-id-media-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L33)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L34)
+[generated-client/models/external-id-media-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L34)
 
 ___
 
@@ -143,4 +143,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-media-type.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/external-id-media-type.ts#L35)
+[generated-client/models/external-id-media-type.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/external-id-media-type.ts#L35)

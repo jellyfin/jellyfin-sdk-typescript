@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[generated-client/models/notification-type-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/notification-type-info.ts#L46)
+[generated-client/models/notification-type-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/notification-type-info.ts#L46)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-type-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/notification-type-info.ts#L40)
+[generated-client/models/notification-type-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/notification-type-info.ts#L40)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-type-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/notification-type-info.ts#L52)
+[generated-client/models/notification-type-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/notification-type-info.ts#L52)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-type-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/notification-type-info.ts#L34)
+[generated-client/models/notification-type-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/notification-type-info.ts#L34)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-type-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/notification-type-info.ts#L28)
+[generated-client/models/notification-type-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/notification-type-info.ts#L28)

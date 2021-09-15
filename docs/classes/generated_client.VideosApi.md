@@ -56,7 +56,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,7 +90,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -117,7 +117,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3270)
+[generated-client/api/videos-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3270)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3282)
+[generated-client/api/videos-api.ts:3282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3282)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3294)
+[generated-client/api/videos-api.ts:3294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3294)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3306)
+[generated-client/api/videos-api.ts:3306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3306)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3318)
+[generated-client/api/videos-api.ts:3318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3318)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3330)
+[generated-client/api/videos-api.ts:3330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3330)
 
 ___
 
@@ -279,4 +279,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L3342)
+[generated-client/api/videos-api.ts:3342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L3342)

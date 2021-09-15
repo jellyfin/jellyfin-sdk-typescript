@@ -76,7 +76,7 @@ Optional. If true, the original file will be streamed statically without any enc
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2216)
+[generated-client/api/videos-api.ts:2216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2216)
 
 ___
 
@@ -90,7 +90,7 @@ Whether or not to allow copying of the audio stream url.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2307)
+[generated-client/api/videos-api.ts:2307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2307)
 
 ___
 
@@ -104,7 +104,7 @@ Whether or not to allow copying of the video stream url.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2300)
+[generated-client/api/videos-api.ts:2300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2300)
 
 ___
 
@@ -118,7 +118,7 @@ Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this wi
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2335)
+[generated-client/api/videos-api.ts:2335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2335)
 
 ___
 
@@ -132,7 +132,7 @@ Optional. Specify a specific number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2342)
+[generated-client/api/videos-api.ts:2342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2342)
 
 ___
 
@@ -146,7 +146,7 @@ Optional. Specify a audio codec to encode to, e.g. mp3. If omitted the server wi
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2286)
+[generated-client/api/videos-api.ts:2286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2286)
 
 ___
 
@@ -160,7 +160,7 @@ Optional. Specify a specific audio sample rate, e.g. 44100.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2321)
+[generated-client/api/videos-api.ts:2321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2321)
 
 ___
 
@@ -174,7 +174,7 @@ Optional. The index of the audio stream to use. If omitted the first audio strea
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2517)
+[generated-client/api/videos-api.ts:2517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2517)
 
 ___
 
@@ -188,7 +188,7 @@ Optional. Whether to break on non key frames.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2314)
+[generated-client/api/videos-api.ts:2314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2314)
 
 ___
 
@@ -202,7 +202,7 @@ The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2209)
+[generated-client/api/videos-api.ts:2209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2209)
 
 ___
 
@@ -216,7 +216,7 @@ Optional. The MediaBrowser.Model.Dlna.EncodingContext.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2531)
+[generated-client/api/videos-api.ts:2531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2531)
 
 ___
 
@@ -230,7 +230,7 @@ Whether or not to copy timestamps when transcoding with an offset. Defaults to f
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2384)
+[generated-client/api/videos-api.ts:2384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2384)
 
 ___
 
@@ -244,7 +244,7 @@ Optional. The limit of how many cpu cores to use.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2475)
+[generated-client/api/videos-api.ts:2475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2475)
 
 ___
 
@@ -258,7 +258,7 @@ Optional. Whether to deinterlace the video.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2454)
+[generated-client/api/videos-api.ts:2454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2454)
 
 ___
 
@@ -272,7 +272,7 @@ The device id of the client requesting. Used to stop encoding processes when nee
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2279)
+[generated-client/api/videos-api.ts:2279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2279)
 
 ___
 
@@ -286,7 +286,7 @@ Optional. The dlna device profile id to utilize.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2237)
+[generated-client/api/videos-api.ts:2237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2237)
 
 ___
 
@@ -300,7 +300,7 @@ Whether or not to allow automatic stream copy if requested values match the orig
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2293)
+[generated-client/api/videos-api.ts:2293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2293)
 
 ___
 
@@ -314,7 +314,7 @@ Optional. Whether to enable the MpegtsM2Ts mode.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2489)
+[generated-client/api/videos-api.ts:2489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2489)
 
 ___
 
@@ -328,7 +328,7 @@ Optional. A specific video framerate to encode to, e.g. 23.976. Generally this s
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2370)
+[generated-client/api/videos-api.ts:2370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2370)
 
 ___
 
@@ -342,7 +342,7 @@ Optional. The fixed vertical resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2405)
+[generated-client/api/videos-api.ts:2405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2405)
 
 ___
 
@@ -356,7 +356,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2202)
+[generated-client/api/videos-api.ts:2202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2202)
 
 ___
 
@@ -370,7 +370,7 @@ Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2363)
+[generated-client/api/videos-api.ts:2363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2363)
 
 ___
 
@@ -384,7 +384,7 @@ The live stream id.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2482)
+[generated-client/api/videos-api.ts:2482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2482)
 
 ___
 
@@ -398,7 +398,7 @@ Optional. The maximum audio bit depth.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2328)
+[generated-client/api/videos-api.ts:2328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2328)
 
 ___
 
@@ -412,7 +412,7 @@ Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2349)
+[generated-client/api/videos-api.ts:2349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2349)
 
 ___
 
@@ -426,7 +426,7 @@ Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generall
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2377)
+[generated-client/api/videos-api.ts:2377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2377)
 
 ___
 
@@ -440,7 +440,7 @@ Optional.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2433)
+[generated-client/api/videos-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2433)
 
 ___
 
@@ -454,7 +454,7 @@ Optional. The maximum video bit depth.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2440)
+[generated-client/api/videos-api.ts:2440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2440)
 
 ___
 
@@ -468,7 +468,7 @@ The media version id, if playing an alternate version.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2272)
+[generated-client/api/videos-api.ts:2272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2272)
 
 ___
 
@@ -482,7 +482,7 @@ The minimum number of segments.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2265)
+[generated-client/api/videos-api.ts:2265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2265)
 
 ___
 
@@ -496,7 +496,7 @@ The streaming parameters.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2223)
+[generated-client/api/videos-api.ts:2223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2223)
 
 ___
 
@@ -510,7 +510,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2244)
+[generated-client/api/videos-api.ts:2244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2244)
 
 ___
 
@@ -524,7 +524,7 @@ Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, 
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2356)
+[generated-client/api/videos-api.ts:2356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2356)
 
 ___
 
@@ -538,7 +538,7 @@ Optional. Whether to require avc.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2447)
+[generated-client/api/videos-api.ts:2447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2447)
 
 ___
 
@@ -552,7 +552,7 @@ Optional. Whether to require a non anamorphic stream.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2461)
+[generated-client/api/videos-api.ts:2461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2461)
 
 ___
 
@@ -566,7 +566,7 @@ The segment container.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2251](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2251)
+[generated-client/api/videos-api.ts:2251](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2251)
 
 ___
 
@@ -580,7 +580,7 @@ The segment length.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2258)
+[generated-client/api/videos-api.ts:2258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2258)
 
 ___
 
@@ -594,7 +594,7 @@ Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2391)
+[generated-client/api/videos-api.ts:2391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2391)
 
 ___
 
@@ -612,7 +612,7 @@ Optional. The streaming options.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2538)
+[generated-client/api/videos-api.ts:2538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2538)
 
 ___
 
@@ -626,7 +626,7 @@ Optional. Specify a subtitle codec to encode to.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2503)
+[generated-client/api/videos-api.ts:2503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2503)
 
 ___
 
@@ -640,7 +640,7 @@ Optional. Specify the subtitle delivery method.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2426)
+[generated-client/api/videos-api.ts:2426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2426)
 
 ___
 
@@ -654,7 +654,7 @@ Optional. The index of the subtitle stream to use. If omitted no subtitles will 
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2419)
+[generated-client/api/videos-api.ts:2419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2419)
 
 ___
 
@@ -668,7 +668,7 @@ The tag.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2230](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2230)
+[generated-client/api/videos-api.ts:2230](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2230)
 
 ___
 
@@ -682,7 +682,7 @@ Optional. The transcoding reason.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2510)
+[generated-client/api/videos-api.ts:2510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2510)
 
 ___
 
@@ -696,7 +696,7 @@ Optional. The maximum number of audio channels to transcode.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2468)
+[generated-client/api/videos-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2468)
 
 ___
 
@@ -710,7 +710,7 @@ Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this wil
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2412)
+[generated-client/api/videos-api.ts:2412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2412)
 
 ___
 
@@ -724,7 +724,7 @@ Optional. Specify a video codec to encode to, e.g. h264. If omitted the server w
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2496)
+[generated-client/api/videos-api.ts:2496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2496)
 
 ___
 
@@ -738,7 +738,7 @@ Optional. The index of the video stream to use. If omitted the first video strea
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2524)
+[generated-client/api/videos-api.ts:2524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2524)
 
 ___
 
@@ -752,4 +752,4 @@ Optional. The fixed horizontal resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:2398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/videos-api.ts#L2398)
+[generated-client/api/videos-api.ts:2398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/videos-api.ts#L2398)

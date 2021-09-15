@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/metadata-refresh-mode.ts#L26)
+[generated-client/models/metadata-refresh-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-refresh-mode.ts#L26)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/metadata-refresh-mode.ts#L27)
+[generated-client/models/metadata-refresh-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-refresh-mode.ts#L27)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/metadata-refresh-mode.ts#L24)
+[generated-client/models/metadata-refresh-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-refresh-mode.ts#L24)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/metadata-refresh-mode.ts#L25)
+[generated-client/models/metadata-refresh-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-refresh-mode.ts#L25)

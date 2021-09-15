@@ -56,7 +56,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,7 +90,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -117,7 +117,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:543](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L543)
+[generated-client/api/notifications-api.ts:543](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L543)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:554](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L554)
+[generated-client/api/notifications-api.ts:554](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L554)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L565)
+[generated-client/api/notifications-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L565)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:577](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L577)
+[generated-client/api/notifications-api.ts:577](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L577)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:589](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L589)
+[generated-client/api/notifications-api.ts:589](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L589)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L601)
+[generated-client/api/notifications-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L601)
 
 ___
 
@@ -277,4 +277,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:613](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/notifications-api.ts#L613)
+[generated-client/api/notifications-api.ts:613](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/notifications-api.ts#L613)

@@ -28,4 +28,4 @@ The updated startup configuration.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/startup-api.ts#L469)
+[generated-client/api/startup-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/startup-api.ts#L469)

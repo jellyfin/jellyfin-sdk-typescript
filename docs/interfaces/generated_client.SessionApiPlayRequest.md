@@ -35,7 +35,7 @@ Optional. The index of the audio stream to play.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1318)
+[generated-client/api/session-api.ts:1318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1318)
 
 ___
 
@@ -49,7 +49,7 @@ The ids of the items to play, comma delimited.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1297)
+[generated-client/api/session-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1297)
 
 ___
 
@@ -63,7 +63,7 @@ Optional. The media source id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1311)
+[generated-client/api/session-api.ts:1311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1311)
 
 ___
 
@@ -77,7 +77,7 @@ The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who hav
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1290)
+[generated-client/api/session-api.ts:1290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1290)
 
 ___
 
@@ -91,7 +91,7 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1283)
+[generated-client/api/session-api.ts:1283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1283)
 
 ___
 
@@ -105,7 +105,7 @@ Optional. The start index.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1332)
+[generated-client/api/session-api.ts:1332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1332)
 
 ___
 
@@ -119,7 +119,7 @@ The starting position of the first item.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1304)
+[generated-client/api/session-api.ts:1304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1304)
 
 ___
 
@@ -133,4 +133,4 @@ Optional. The index of the subtitle stream to play.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/session-api.ts#L1325)
+[generated-client/api/session-api.ts:1325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/session-api.ts#L1325)

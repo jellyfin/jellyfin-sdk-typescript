@@ -57,7 +57,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -91,7 +91,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -118,7 +118,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6109)
+[generated-client/api/dynamic-hls-api.ts:6109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6109)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6121)
+[generated-client/api/dynamic-hls-api.ts:6121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6121)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6133)
+[generated-client/api/dynamic-hls-api.ts:6133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6133)
 
 ___
 
@@ -199,7 +199,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6145)
+[generated-client/api/dynamic-hls-api.ts:6145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6145)
 
 ___
 
@@ -226,7 +226,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6157)
+[generated-client/api/dynamic-hls-api.ts:6157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6157)
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6169)
+[generated-client/api/dynamic-hls-api.ts:6169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6169)
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6181)
+[generated-client/api/dynamic-hls-api.ts:6181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6181)
 
 ___
 
@@ -307,4 +307,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/dynamic-hls-api.ts#L6193)
+[generated-client/api/dynamic-hls-api.ts:6193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/dynamic-hls-api.ts#L6193)

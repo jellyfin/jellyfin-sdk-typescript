@@ -28,4 +28,4 @@ Task Id.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/scheduled-tasks-api.ts#L375)
+[generated-client/api/scheduled-tasks-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/scheduled-tasks-api.ts#L375)

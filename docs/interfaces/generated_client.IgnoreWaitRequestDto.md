@@ -28,4 +28,4 @@ Gets or sets a value indicating whether the client should be ignored.
 
 #### Defined in
 
-[generated-client/models/ignore-wait-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/ignore-wait-request-dto.ts#L28)
+[generated-client/models/ignore-wait-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/ignore-wait-request-dto.ts#L28)

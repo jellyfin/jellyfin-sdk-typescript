@@ -27,7 +27,7 @@ Gets or sets the end date.
 
 #### Defined in
 
-[generated-client/models/guide-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/guide-info.ts#L34)
+[generated-client/models/guide-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/guide-info.ts#L34)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the start date.
 
 #### Defined in
 
-[generated-client/models/guide-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/guide-info.ts#L28)
+[generated-client/models/guide-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/guide-info.ts#L28)

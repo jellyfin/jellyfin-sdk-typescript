@@ -30,7 +30,7 @@ Optional. Determines whether or not parent items should be searched for theme me
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/library-api.ts#L2246)
+[generated-client/api/library-api.ts:2246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/library-api.ts#L2246)
 
 ___
 
@@ -44,7 +44,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/library-api.ts#L2232)
+[generated-client/api/library-api.ts:2232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/library-api.ts#L2232)
 
 ___
 
@@ -58,4 +58,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/library-api.ts#L2239)
+[generated-client/api/library-api.ts:2239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/library-api.ts#L2239)

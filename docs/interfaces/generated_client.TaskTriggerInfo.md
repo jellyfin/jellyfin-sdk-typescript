@@ -30,7 +30,7 @@ Class TaskTriggerInfo.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/task-trigger-info.ts#L47)
+[generated-client/models/task-trigger-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/task-trigger-info.ts#L47)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the interval.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/task-trigger-info.ts#L41)
+[generated-client/models/task-trigger-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/task-trigger-info.ts#L41)
 
 ___
 
@@ -58,7 +58,7 @@ Gets or sets the maximum runtime ticks.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/task-trigger-info.ts#L53)
+[generated-client/models/task-trigger-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/task-trigger-info.ts#L53)
 
 ___
 
@@ -72,7 +72,7 @@ Gets or sets the time of day.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/task-trigger-info.ts#L35)
+[generated-client/models/task-trigger-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/task-trigger-info.ts#L35)
 
 ___
 
@@ -86,4 +86,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/models/task-trigger-info.ts#L29)
+[generated-client/models/task-trigger-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/task-trigger-info.ts#L29)

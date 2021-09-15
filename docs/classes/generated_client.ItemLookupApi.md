@@ -60,7 +60,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -94,7 +94,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -121,7 +121,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L930)
+[generated-client/api/item-lookup-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L930)
 
 ___
 
@@ -148,7 +148,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L942)
+[generated-client/api/item-lookup-api.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L942)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L954)
+[generated-client/api/item-lookup-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L954)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L966)
+[generated-client/api/item-lookup-api.ts:966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L966)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:978](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L978)
+[generated-client/api/item-lookup-api.ts:978](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L978)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:990](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L990)
+[generated-client/api/item-lookup-api.ts:990](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L990)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1002](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L1002)
+[generated-client/api/item-lookup-api.ts:1002](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L1002)
 
 ___
 
@@ -310,7 +310,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L1014)
+[generated-client/api/item-lookup-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L1014)
 
 ___
 
@@ -337,7 +337,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1026](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L1026)
+[generated-client/api/item-lookup-api.ts:1026](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L1026)
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L1038)
+[generated-client/api/item-lookup-api.ts:1038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L1038)
 
 ___
 
@@ -391,4 +391,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/item-lookup-api.ts#L1050)
+[generated-client/api/item-lookup-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-lookup-api.ts#L1050)

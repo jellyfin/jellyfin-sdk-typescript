@@ -31,7 +31,7 @@ Optional. Filter log entries if it has user id, or not.
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/activity-log-api.ts#L168)
+[generated-client/api/activity-log-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/activity-log-api.ts#L168)
 
 ___
 
@@ -45,7 +45,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/activity-log-api.ts#L154)
+[generated-client/api/activity-log-api.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/activity-log-api.ts#L154)
 
 ___
 
@@ -59,7 +59,7 @@ Optional. The minimum date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/activity-log-api.ts#L161)
+[generated-client/api/activity-log-api.ts:161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/activity-log-api.ts#L161)
 
 ___
 
@@ -73,4 +73,4 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/activity-log-api.ts#L147)
+[generated-client/api/activity-log-api.ts:147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/activity-log-api.ts#L147)

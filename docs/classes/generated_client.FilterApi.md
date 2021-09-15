@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/filter-api.ts#L385)
+[generated-client/api/filter-api.ts:385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/filter-api.ts#L385)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/filter-api.ts#L397)
+[generated-client/api/filter-api.ts:397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/filter-api.ts#L397)

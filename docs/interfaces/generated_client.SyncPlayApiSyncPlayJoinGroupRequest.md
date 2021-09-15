@@ -28,4 +28,4 @@ The group to join.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/46678c1/src/generated-client/api/sync-play-api.ts#L1345)
+[generated-client/api/sync-play-api.ts:1345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1345)
