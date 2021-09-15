@@ -4,6 +4,14 @@
     "declaration": true,
     "noImplicitAny": true
   },
+  "typedocOptions": {
+    "entryPoints": [
+      "./src/index.ts",
+      "./src/models/index.ts",
+      "./src/generated-client/index.ts"
+    ],
+    "out": "docs"
+  },
   "include": [
     "src/**/*"
   ],
