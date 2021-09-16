@@ -30,7 +30,7 @@ Optional. The date the item was played.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:814](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/playstate-api.ts#L814)
+[generated-client/api/playstate-api.ts:814](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L814)
 
 ___
 
@@ -44,7 +44,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/playstate-api.ts#L807)
+[generated-client/api/playstate-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L807)
 
 ___
 
@@ -58,4 +58,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/playstate-api.ts#L800)
+[generated-client/api/playstate-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L800)

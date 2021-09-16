@@ -28,4 +28,4 @@ The path.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/environment-api.ts#L454)
+[generated-client/api/environment-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/environment-api.ts#L454)

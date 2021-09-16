@@ -49,7 +49,7 @@ SystemApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
+| `configuration?` | [`Configuration`](index.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -59,7 +59,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
 
 #### Inherited from
 
@@ -93,7 +93,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -119,7 +119,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/system-api.ts:610](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L610)
+[generated-client/api/system-api.ts:610](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L610)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L622)
+[generated-client/api/system-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L622)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L633)
+[generated-client/api/system-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L633)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L644)
+[generated-client/api/system-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L644)
 
 ___
 
@@ -224,7 +224,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:655](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L655)
+[generated-client/api/system-api.ts:655](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L655)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L666)
+[generated-client/api/system-api.ts:666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L666)
 
 ___
 
@@ -276,7 +276,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L677)
+[generated-client/api/system-api.ts:677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L677)
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L688)
+[generated-client/api/system-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L688)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L699)
+[generated-client/api/system-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L699)
 
 ___
 
@@ -354,4 +354,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/system-api.ts#L710)
+[generated-client/api/system-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/system-api.ts#L710)

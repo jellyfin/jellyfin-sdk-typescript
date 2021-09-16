@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[generated-client/models/day-pattern.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/day-pattern.ts#L24)
+[generated-client/models/day-pattern.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/day-pattern.ts#L24)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/day-pattern.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/day-pattern.ts#L25)
+[generated-client/models/day-pattern.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/day-pattern.ts#L25)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/day-pattern.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/day-pattern.ts#L26)
+[generated-client/models/day-pattern.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/day-pattern.ts#L26)

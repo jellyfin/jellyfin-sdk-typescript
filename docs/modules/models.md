@@ -4,7 +4,19 @@
 
 ## Table of contents
 
-### Interfaces
+### References
 
-- [ClientInfo](../interfaces/models.ClientInfo.md)
-- [DeviceInfo](../interfaces/models.DeviceInfo.md)
+- [ClientInfo](models.md#clientinfo)
+- [DeviceInfo](models.md#deviceinfo)
+
+## References
+
+### ClientInfo
+
+• **ClientInfo**: `Object`
+
+___
+
+### DeviceInfo
+
+• **DeviceInfo**: `Object`

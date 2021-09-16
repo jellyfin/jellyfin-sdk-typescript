@@ -28,4 +28,4 @@ Quick connect code to authorize.
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/quick-connect-api.ts#L449)
+[generated-client/api/quick-connect-api.ts:449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/quick-connect-api.ts#L449)

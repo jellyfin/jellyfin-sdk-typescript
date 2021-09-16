@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:57](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L57)
+[generated-client/models/metadata-editor-info.ts:57](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L57)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:63](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L63)
+[generated-client/models/metadata-editor-info.ts:63](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L63)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L39)
+[generated-client/models/metadata-editor-info.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L39)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L45)
+[generated-client/models/metadata-editor-info.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L45)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L51)
+[generated-client/models/metadata-editor-info.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L51)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/metadata-editor-info.ts#L33)
+[generated-client/models/metadata-editor-info.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/metadata-editor-info.ts#L33)

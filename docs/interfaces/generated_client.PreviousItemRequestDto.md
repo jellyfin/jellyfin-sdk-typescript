@@ -28,4 +28,4 @@ Gets or sets the playing item identifier.
 
 #### Defined in
 
-[generated-client/models/previous-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/previous-item-request-dto.ts#L28)
+[generated-client/models/previous-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/previous-item-request-dto.ts#L28)

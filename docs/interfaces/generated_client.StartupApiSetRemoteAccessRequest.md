@@ -28,4 +28,4 @@ The startup remote access dto.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/startup-api.ts#L455)
+[generated-client/api/startup-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L455)

@@ -29,7 +29,7 @@ Container type.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3515)
+[generated-client/api/live-tv-api.ts:3515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3515)
 
 ___
 
@@ -43,4 +43,4 @@ Stream id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3508)
+[generated-client/api/live-tv-api.ts:3508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3508)

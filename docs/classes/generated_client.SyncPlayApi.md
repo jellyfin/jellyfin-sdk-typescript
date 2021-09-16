@@ -60,7 +60,7 @@ SyncPlayApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
+| `configuration?` | [`Configuration`](index.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -70,7 +70,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -96,7 +96,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
 
 #### Inherited from
 
@@ -104,7 +104,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -131,7 +131,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1545)
+[generated-client/api/sync-play-api.ts:1545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1545)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1557)
+[generated-client/api/sync-play-api.ts:1557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1557)
 
 ___
 
@@ -184,7 +184,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1568](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1568)
+[generated-client/api/sync-play-api.ts:1568](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1568)
 
 ___
 
@@ -211,7 +211,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1580)
+[generated-client/api/sync-play-api.ts:1580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1580)
 
 ___
 
@@ -237,7 +237,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1591](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1591)
+[generated-client/api/sync-play-api.ts:1591](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1591)
 
 ___
 
@@ -264,7 +264,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1603](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1603)
+[generated-client/api/sync-play-api.ts:1603](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1603)
 
 ___
 
@@ -291,7 +291,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1615)
+[generated-client/api/sync-play-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1615)
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1626](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1626)
+[generated-client/api/sync-play-api.ts:1626](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1626)
 
 ___
 
@@ -344,7 +344,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1638](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1638)
+[generated-client/api/sync-play-api.ts:1638](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1638)
 
 ___
 
@@ -371,7 +371,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1650](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1650)
+[generated-client/api/sync-play-api.ts:1650](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1650)
 
 ___
 
@@ -398,7 +398,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1662](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1662)
+[generated-client/api/sync-play-api.ts:1662](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1662)
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1674](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1674)
+[generated-client/api/sync-play-api.ts:1674](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1674)
 
 ___
 
@@ -452,7 +452,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1686)
+[generated-client/api/sync-play-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1686)
 
 ___
 
@@ -479,7 +479,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1698)
+[generated-client/api/sync-play-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1698)
 
 ___
 
@@ -506,7 +506,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1710)
+[generated-client/api/sync-play-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1710)
 
 ___
 
@@ -533,7 +533,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1722)
+[generated-client/api/sync-play-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1722)
 
 ___
 
@@ -560,7 +560,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1734)
+[generated-client/api/sync-play-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1734)
 
 ___
 
@@ -587,7 +587,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1746)
+[generated-client/api/sync-play-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1746)
 
 ___
 
@@ -614,7 +614,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1758)
+[generated-client/api/sync-play-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1758)
 
 ___
 
@@ -640,7 +640,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1769](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1769)
+[generated-client/api/sync-play-api.ts:1769](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1769)
 
 ___
 
@@ -666,4 +666,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/sync-play-api.ts#L1780)
+[generated-client/api/sync-play-api.ts:1780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/sync-play-api.ts#L1780)

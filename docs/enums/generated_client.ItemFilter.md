@@ -30,7 +30,7 @@ Enum ItemFilter.
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L31)
+[generated-client/models/item-filter.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L31)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L28)
+[generated-client/models/item-filter.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L28)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L32)
+[generated-client/models/item-filter.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L32)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L24)
+[generated-client/models/item-filter.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L24)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L25)
+[generated-client/models/item-filter.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L25)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L27)
+[generated-client/models/item-filter.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L27)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L29)
+[generated-client/models/item-filter.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L29)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L26)
+[generated-client/models/item-filter.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L26)
 
 ___
 
@@ -110,4 +110,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/item-filter.ts#L30)
+[generated-client/models/item-filter.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/item-filter.ts#L30)

@@ -28,4 +28,4 @@ Optional. To attach default values based on a program.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3445)
+[generated-client/api/live-tv-api.ts:3445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3445)

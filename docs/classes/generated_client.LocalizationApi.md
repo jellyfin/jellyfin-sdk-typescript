@@ -43,7 +43,7 @@ LocalizationApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
+| `configuration?` | [`Configuration`](index.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -53,7 +53,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -79,7 +79,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
 
 #### Inherited from
 
@@ -87,7 +87,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/localization-api.ts#L282)
+[generated-client/api/localization-api.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/localization-api.ts#L282)
 
 ___
 
@@ -139,7 +139,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/localization-api.ts#L293)
+[generated-client/api/localization-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/localization-api.ts#L293)
 
 ___
 
@@ -165,7 +165,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/localization-api.ts#L304)
+[generated-client/api/localization-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/localization-api.ts#L304)
 
 ___
 
@@ -191,4 +191,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/localization-api.ts#L315)
+[generated-client/api/localization-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/localization-api.ts#L315)

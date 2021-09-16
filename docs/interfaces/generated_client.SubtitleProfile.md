@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[generated-client/models/subtitle-profile.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/subtitle-profile.ts#L53)
+[generated-client/models/subtitle-profile.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/subtitle-profile.ts#L53)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-profile.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/subtitle-profile.ts#L41)
+[generated-client/models/subtitle-profile.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/subtitle-profile.ts#L41)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-profile.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/subtitle-profile.ts#L29)
+[generated-client/models/subtitle-profile.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/subtitle-profile.ts#L29)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-profile.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/subtitle-profile.ts#L47)
+[generated-client/models/subtitle-profile.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/subtitle-profile.ts#L47)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-profile.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/subtitle-profile.ts#L35)
+[generated-client/models/subtitle-profile.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/subtitle-profile.ts#L35)

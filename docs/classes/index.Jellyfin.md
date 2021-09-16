@@ -29,50 +29,50 @@
 
 | Name | Type |
 | :------ | :------ |
-| `clientInfo` | [`ClientInfo`](../interfaces/models.ClientInfo.md) |
-| `deviceInfo` | [`DeviceInfo`](../interfaces/models.DeviceInfo.md) |
+| `clientInfo` | [`ClientInfo`](../interfaces/index.ClientInfo.md) |
+| `deviceInfo` | [`DeviceInfo`](../interfaces/index.DeviceInfo.md) |
 
 #### Defined in
 
-[index.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/index.ts#L19)
+[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L16)
 
 ## Properties
 
 ### clientInfo
 
-• **clientInfo**: [`ClientInfo`](../interfaces/models.ClientInfo.md)
+• **clientInfo**: [`ClientInfo`](../interfaces/index.ClientInfo.md)
 
 #### Defined in
 
-[index.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/index.ts#L16)
+[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L13)
 
 ___
 
 ### deviceInfo
 
-• **deviceInfo**: [`DeviceInfo`](../interfaces/models.DeviceInfo.md)
+• **deviceInfo**: [`DeviceInfo`](../interfaces/index.DeviceInfo.md)
 
 #### Defined in
 
-[index.ts:17](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/index.ts#L17)
+[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L14)
 
 ## Methods
 
 ### createApi
 
-▸ **createApi**(`configuration`, `axiosInstance?`): `Api`
+▸ **createApi**(`configuration`, `axiosInstance?`): [`Api`](index.Api.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `configuration` | [`Configuration`](generated_client.Configuration.md) |
+| `configuration` | [`Configuration`](index.Configuration.md) |
 | `axiosInstance` | `AxiosStatic` |
 
 #### Returns
 
-`Api`
+[`Api`](index.Api.md)
 
 #### Defined in
 
-[index.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/index.ts#L28)
+[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L25)

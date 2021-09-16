@@ -39,7 +39,7 @@ The audio stream index.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L760)
+[generated-client/api/media-info-api.ts:760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L760)
 
 ___
 
@@ -53,7 +53,7 @@ Whether to enable direct play. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L788)
+[generated-client/api/media-info-api.ts:788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L788)
 
 ___
 
@@ -67,7 +67,7 @@ Whether to enable direct stream. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:795](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L795)
+[generated-client/api/media-info-api.ts:795](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L795)
 
 ___
 
@@ -81,7 +81,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:781](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L781)
+[generated-client/api/media-info-api.ts:781](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L781)
 
 ___
 
@@ -95,7 +95,7 @@ The maximum number of audio channels.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:774](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L774)
+[generated-client/api/media-info-api.ts:774](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L774)
 
 ___
 
@@ -109,7 +109,7 @@ The maximum streaming bitrate.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L746)
+[generated-client/api/media-info-api.ts:746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L746)
 
 ___
 
@@ -123,7 +123,7 @@ The open live stream dto.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L802)
+[generated-client/api/media-info-api.ts:802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L802)
 
 ___
 
@@ -137,7 +137,7 @@ The open token.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L725)
+[generated-client/api/media-info-api.ts:725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L725)
 
 ___
 
@@ -151,7 +151,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:739](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L739)
+[generated-client/api/media-info-api.ts:739](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L739)
 
 ___
 
@@ -165,7 +165,7 @@ The start time in ticks.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L753)
+[generated-client/api/media-info-api.ts:753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L753)
 
 ___
 
@@ -179,7 +179,7 @@ The subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:767](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L767)
+[generated-client/api/media-info-api.ts:767](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L767)
 
 ___
 
@@ -193,4 +193,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:732](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/media-info-api.ts#L732)
+[generated-client/api/media-info-api.ts:732](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/media-info-api.ts#L732)

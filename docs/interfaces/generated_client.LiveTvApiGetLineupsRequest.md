@@ -31,7 +31,7 @@ Country.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3480)
+[generated-client/api/live-tv-api.ts:3480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3480)
 
 ___
 
@@ -45,7 +45,7 @@ Provider id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3459)
+[generated-client/api/live-tv-api.ts:3459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3459)
 
 ___
 
@@ -59,7 +59,7 @@ Location.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3473)
+[generated-client/api/live-tv-api.ts:3473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3473)
 
 ___
 
@@ -73,4 +73,4 @@ Provider type.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/live-tv-api.ts#L3466)
+[generated-client/api/live-tv-api.ts:3466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/live-tv-api.ts#L3466)

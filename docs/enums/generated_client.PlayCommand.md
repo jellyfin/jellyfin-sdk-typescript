@@ -26,7 +26,7 @@ Enum PlayCommand.
 
 #### Defined in
 
-[generated-client/models/play-command.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/play-command.ts#L27)
+[generated-client/models/play-command.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/play-command.ts#L27)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-command.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/play-command.ts#L26)
+[generated-client/models/play-command.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/play-command.ts#L26)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-command.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/play-command.ts#L25)
+[generated-client/models/play-command.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/play-command.ts#L25)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-command.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/play-command.ts#L24)
+[generated-client/models/play-command.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/play-command.ts#L24)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/play-command.ts#L28)
+[generated-client/models/play-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/play-command.ts#L28)

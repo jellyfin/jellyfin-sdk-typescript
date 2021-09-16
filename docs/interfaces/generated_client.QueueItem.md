@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/queue-item.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/queue-item.ts#L28)
+[generated-client/models/queue-item.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/queue-item.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/queue-item.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/queue-item.ts#L34)
+[generated-client/models/queue-item.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/queue-item.ts#L34)

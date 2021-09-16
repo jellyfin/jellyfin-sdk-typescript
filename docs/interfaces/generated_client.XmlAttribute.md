@@ -29,7 +29,7 @@ Gets or sets the name of the attribute.
 
 #### Defined in
 
-[generated-client/models/xml-attribute.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/xml-attribute.ts#L28)
+[generated-client/models/xml-attribute.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/xml-attribute.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the value of the attribute.
 
 #### Defined in
 
-[generated-client/models/xml-attribute.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/xml-attribute.ts#L34)
+[generated-client/models/xml-attribute.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/xml-attribute.ts#L34)

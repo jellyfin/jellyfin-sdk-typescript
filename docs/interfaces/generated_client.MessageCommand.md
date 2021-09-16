@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/message-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/message-command.ts#L28)
+[generated-client/models/message-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/message-command.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/message-command.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/message-command.ts#L34)
+[generated-client/models/message-command.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/message-command.ts#L34)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/message-command.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/message-command.ts#L40)
+[generated-client/models/message-command.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/message-command.ts#L40)

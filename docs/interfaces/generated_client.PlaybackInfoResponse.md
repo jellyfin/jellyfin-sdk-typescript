@@ -28,7 +28,7 @@ Class PlaybackInfoResponse.
 
 #### Defined in
 
-[generated-client/models/playback-info-response.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/playback-info-response.ts#L42)
+[generated-client/models/playback-info-response.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/playback-info-response.ts#L42)
 
 ___
 
@@ -42,7 +42,7 @@ Gets or sets the media sources.
 
 #### Defined in
 
-[generated-client/models/playback-info-response.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/playback-info-response.ts#L30)
+[generated-client/models/playback-info-response.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/playback-info-response.ts#L30)
 
 ___
 
@@ -56,4 +56,4 @@ Gets or sets the play session identifier.
 
 #### Defined in
 
-[generated-client/models/playback-info-response.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/playback-info-response.ts#L36)
+[generated-client/models/playback-info-response.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/playback-info-response.ts#L36)

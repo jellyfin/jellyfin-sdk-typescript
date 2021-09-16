@@ -28,4 +28,4 @@ The tvdbId.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2281](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/library-api.ts#L2281)
+[generated-client/api/library-api.ts:2281](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/library-api.ts#L2281)

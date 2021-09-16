@@ -29,7 +29,7 @@ Gets the name.
 
 #### Defined in
 
-[generated-client/models/image-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/image-provider-info.ts#L29)
+[generated-client/models/image-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/image-provider-info.ts#L29)
 
 ___
 
@@ -43,4 +43,4 @@ Gets the supported image types.
 
 #### Defined in
 
-[generated-client/models/image-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/models/image-provider-info.ts#L35)
+[generated-client/models/image-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/image-provider-info.ts#L35)

@@ -28,4 +28,4 @@ Configuration key.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/configuration-api.ts#L451)
+[generated-client/api/configuration-api.ts:451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/configuration-api.ts#L451)

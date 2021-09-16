@@ -42,7 +42,7 @@ ItemUpdateApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
+| `configuration?` | [`Configuration`](index.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -78,7 +78,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-update-api.ts#L318)
+[generated-client/api/item-update-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/item-update-api.ts#L318)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-update-api.ts#L330)
+[generated-client/api/item-update-api.ts:330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/item-update-api.ts#L330)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e430881/src/generated-client/api/item-update-api.ts#L342)
+[generated-client/api/item-update-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/item-update-api.ts#L342)
