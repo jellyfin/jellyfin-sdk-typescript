@@ -8,7 +8,7 @@ import { AxiosInstance } from 'axios';
 import { Api } from './api';
 import { ClientInfo, DeviceInfo } from './models';
 
-interface JellyfinParameters {
+export interface JellyfinParameters {
 	clientInfo: ClientInfo,
 	deviceInfo: DeviceInfo
 }
