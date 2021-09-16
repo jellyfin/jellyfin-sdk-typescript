@@ -37,4 +37,9 @@ console.log('Users =>', users.data);
 // cumbersome to use.
 const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
 console.log('Auth =>', auth.data);
+
+// Authentication state is stored internally in the Api class, so now
+// requests that require authentication can be made normally
+const libraries = await api.libraryApi.getMediaFolders();
+console.log('Libraries =>', libraries.data);
 ```
