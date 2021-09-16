@@ -11,10 +11,10 @@ import { ClientInfo, DeviceInfo } from '../models';
 export function getAuthorizationHeader(clientInfo: ClientInfo, deviceInfo: DeviceInfo, accessToken = ''): string {
 	// TODO: We should ensure values are properly escaped
 	return [
-		`MediaBrowser Client="${clientInfo.Name}"`,
-		`Device="${deviceInfo.Name}"`,
-		`DeviceId="${deviceInfo.Id}"`,
-		`Version="${clientInfo.Version}"`,
+		`MediaBrowser Client="${clientInfo.name}"`,
+		`Device="${deviceInfo.name}"`,
+		`DeviceId="${deviceInfo.id}"`,
+		`Version="${clientInfo.version}"`,
 		`Token="${accessToken}"`
 	].join(', ');
 }

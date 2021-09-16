@@ -8,6 +8,6 @@
  * An interface representing a client application.
  */
 export interface ClientInfo {
-	Name: string,
-	Version: string
+	name: string,
+	version: string
 }

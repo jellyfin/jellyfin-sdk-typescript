@@ -8,22 +8,22 @@ import { getAuthorizationHeader } from '..';
 describe('Authentication', () => {
 	it('should return the correct header value without token', () => {
 		const header = getAuthorizationHeader({
-			Name: 'SDK Test',
-			Version: '0.0.0'
+			name: 'SDK Test',
+			version: '0.0.0'
 		}, {
-			Name: 'Test Device',
-			Id: 'TESTID'
+			name: 'Test Device',
+			id: 'TESTID'
 		});
 		expect(header).toEqual('MediaBrowser Client="SDK Test", Device="Test Device", DeviceId="TESTID", Version="0.0.0", Token=""');
 	});
 
 	it('should return the correct header value with token', () => {
 		const header = getAuthorizationHeader({
-			Name: 'SDK Test',
-			Version: '0.0.0'
+			name: 'SDK Test',
+			version: '0.0.0'
 		}, {
-			Name: 'Test Device',
-			Id: 'TESTID'
+			name: 'Test Device',
+			id: 'TESTID'
 		}, 'TESTTOKEN');
 		expect(header).toEqual('MediaBrowser Client="SDK Test", Device="Test Device", DeviceId="TESTID", Version="0.0.0", Token="TESTTOKEN"');
 	});

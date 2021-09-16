@@ -8,6 +8,6 @@
  * An interface representing a client device.
  */
 export interface DeviceInfo {
-	Id: string,
-	Name: string
+	id: string,
+	name: string
 }

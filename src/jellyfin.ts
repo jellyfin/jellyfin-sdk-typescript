@@ -22,9 +22,9 @@ export class Jellyfin {
 	deviceInfo;
 
 	constructor(
-		clientInfo: ClientInfo = { Name: 'jellyfin-sdk-typescript', Version: 'v0.1.0' },
+		clientInfo: ClientInfo = { name: 'jellyfin-sdk-typescript', version: 'v0.1.0' },
 		// FIXME: The device info should always be required.
-		deviceInfo: DeviceInfo = { Name: 'device-name', Id: 'device-id' }
+		deviceInfo: DeviceInfo = { name: 'device-name', id: 'device-id' }
 	) {
 		this.clientInfo = clientInfo;
 		this.deviceInfo = deviceInfo;
