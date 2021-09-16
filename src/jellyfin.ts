@@ -9,6 +9,14 @@ import { Api } from './api';
 import { Configuration } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
 
+/**
+ * The minimum supported server version.
+ */
+export const MINIMUM_VERSION = '10.7.0';
+
+/**
+ * Class representing the Jellyfin SDK.
+ */
 export class Jellyfin {
 	clientInfo;
 	deviceInfo;

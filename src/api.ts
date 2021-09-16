@@ -10,8 +10,14 @@ import { ClientInfo, DeviceInfo } from './models';
 
 import { getAuthorizationHeader } from '.';
 
+/**
+ * The authorization header field name.
+ */
 export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
 
+/**
+ * Class representing the Jellyfin API.
+ */
 export class Api {
 	clientInfo;
 	deviceInfo;
