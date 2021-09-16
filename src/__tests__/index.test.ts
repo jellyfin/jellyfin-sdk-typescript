@@ -15,7 +15,7 @@ test('Test the BaseAPI constructor', () => {
 
 	const api = jellyfin.createApi(TEST_CONFIGURATION);
 	expect(api.configuration.basePath).toEqual(SERVER_URL);
-	expect(api.authorizationHeader).toEqual('MediaBrowser Client="jellyfin-sdk-typescript", Device="device-name", DeviceId="device-id", Version="v0.1.0", Token=""')
+	expect(api.authorizationHeader).toEqual('MediaBrowser Client="jellyfin-sdk-typescript", Device="device-name", DeviceId="device-id", Version="v0.1.0", Token=""');
 });
 
 test('Test public users api', async () => {
@@ -52,6 +52,6 @@ test('Test library api', async () => {
 	await api.authenticateUserByName({ Username: 'demo', Pw: '' });
 
 	const libraries = await api.libraryApi.getMediaFolders();
-	console.log('Libraries =>', libraries.data);
+	// console.log('Libraries =>', libraries.data);
 	expect(libraries.data).toBeTruthy();
 });
