@@ -1,5 +1,4 @@
-import { Jellyfin } from '..';
-import { Configuration } from '../generated-client';
+import { Configuration, Jellyfin } from '..';
 
 // FIXME: These tests should be mocked and not calling an actual server
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
