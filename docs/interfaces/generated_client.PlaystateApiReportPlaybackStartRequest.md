@@ -28,4 +28,4 @@ The playback start info.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L1101)
+[generated-client/api/playstate-api.ts:1101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playstate-api.ts#L1101)

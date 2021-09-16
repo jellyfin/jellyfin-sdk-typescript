@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,7 +89,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L473)
+[generated-client/api/image-by-name-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L473)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L484)
+[generated-client/api/image-by-name-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L484)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L496)
+[generated-client/api/image-by-name-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L496)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L507)
+[generated-client/api/image-by-name-api.ts:507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L507)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:519](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L519)
+[generated-client/api/image-by-name-api.ts:519](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L519)
 
 ___
 
@@ -248,4 +248,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/image-by-name-api.ts#L530)
+[generated-client/api/image-by-name-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L530)

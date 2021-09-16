@@ -29,7 +29,7 @@ The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/user-api.ts#L1259)
+[generated-client/api/user-api.ts:1259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L1259)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/user-api.ts#L1252)
+[generated-client/api/user-api.ts:1252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L1252)

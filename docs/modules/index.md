@@ -19,6 +19,7 @@
 ### Variables
 
 - [AUTHORIZATION_HEADER](index.md#authorization_header)
+- [MINIMUM_VERSION](index.md#minimum_version)
 
 ### Functions
 
@@ -30,9 +31,23 @@
 
 • **AUTHORIZATION\_HEADER**: ``"X-Emby-Authorization"``
 
+The authorization header field name.
+
 #### Defined in
 
-[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/api.ts#L13)
+[api.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/api.ts#L16)
+
+___
+
+### MINIMUM\_VERSION
+
+• **MINIMUM\_VERSION**: ``"10.7.0"``
+
+The minimum supported server version.
+
+#### Defined in
+
+[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L15)
 
 ## Functions
 
@@ -56,4 +71,4 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/utils.ts#L12)
+[utils.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/utils.ts#L12)

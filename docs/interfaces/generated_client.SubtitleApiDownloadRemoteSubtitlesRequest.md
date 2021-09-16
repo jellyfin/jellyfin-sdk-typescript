@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/subtitle-api.ts#L868)
+[generated-client/api/subtitle-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L868)
 
 ___
 
@@ -43,4 +43,4 @@ The subtitle id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:875](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/subtitle-api.ts#L875)
+[generated-client/api/subtitle-api.ts:875](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L875)

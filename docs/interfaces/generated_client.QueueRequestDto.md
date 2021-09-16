@@ -29,7 +29,7 @@ Gets or sets the items to enqueue.
 
 #### Defined in
 
-[generated-client/models/queue-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/queue-request-dto.ts#L29)
+[generated-client/models/queue-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/queue-request-dto.ts#L29)
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/queue-request-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/queue-request-dto.ts#L35)
+[generated-client/models/queue-request-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/queue-request-dto.ts#L35)

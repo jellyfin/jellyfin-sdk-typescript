@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1887](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/videos-api.ts#L1887)
+[generated-client/api/videos-api.ts:1887](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/videos-api.ts#L1887)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/videos-api.ts#L1894)
+[generated-client/api/videos-api.ts:1894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/videos-api.ts#L1894)

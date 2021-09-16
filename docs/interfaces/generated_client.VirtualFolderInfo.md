@@ -33,7 +33,7 @@ Used to hold information about a user\'s list of configured virtual folders.
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L42)
+[generated-client/models/virtual-folder-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L42)
 
 ___
 
@@ -47,7 +47,7 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L54)
+[generated-client/models/virtual-folder-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L54)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L48)
+[generated-client/models/virtual-folder-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L48)
 
 ___
 
@@ -73,7 +73,7 @@ Gets or sets the locations.
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L36)
+[generated-client/models/virtual-folder-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L36)
 
 ___
 
@@ -87,7 +87,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L30)
+[generated-client/models/virtual-folder-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L30)
 
 ___
 
@@ -101,7 +101,7 @@ Gets or sets the primary image item identifier.
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L60)
+[generated-client/models/virtual-folder-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L60)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L66)
+[generated-client/models/virtual-folder-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L66)
 
 ___
 
@@ -125,4 +125,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/virtual-folder-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/virtual-folder-info.ts#L72)
+[generated-client/models/virtual-folder-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/virtual-folder-info.ts#L72)

@@ -30,7 +30,7 @@ Attachment Index.
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/video-attachments-api.ts#L146)
+[generated-client/api/video-attachments-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L146)
 
 ___
 
@@ -44,7 +44,7 @@ Media Source ID.
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/video-attachments-api.ts#L139)
+[generated-client/api/video-attachments-api.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L139)
 
 ___
 
@@ -58,4 +58,4 @@ Video ID.
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/video-attachments-api.ts#L132)
+[generated-client/api/video-attachments-api.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L132)

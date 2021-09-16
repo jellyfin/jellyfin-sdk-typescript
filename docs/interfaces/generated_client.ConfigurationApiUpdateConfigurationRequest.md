@@ -28,4 +28,4 @@ Configuration.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/configuration-api.ts#L423)
+[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/configuration-api.ts#L423)

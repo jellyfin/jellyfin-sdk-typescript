@@ -28,4 +28,4 @@ Media encoder path form body.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/configuration-api.ts#L437)
+[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/configuration-api.ts#L437)

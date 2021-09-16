@@ -4,6 +4,8 @@
 
 [index](../modules/index.md).Jellyfin
 
+Class representing the Jellyfin SDK.
+
 ## Table of contents
 
 ### Constructors
@@ -34,7 +36,7 @@
 
 #### Defined in
 
-[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L16)
+[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L24)
 
 ## Properties
 
@@ -44,7 +46,7 @@
 
 #### Defined in
 
-[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L13)
+[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L21)
 
 ___
 
@@ -54,7 +56,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L14)
+[jellyfin.ts:22](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L22)
 
 ## Methods
 
@@ -75,4 +77,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L25)
+[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L33)

@@ -28,4 +28,4 @@ The new shuffle mode.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/sync-play-api.ts#L1527)
+[generated-client/api/sync-play-api.ts:1527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/sync-play-api.ts#L1527)

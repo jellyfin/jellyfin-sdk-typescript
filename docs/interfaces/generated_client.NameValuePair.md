@@ -27,7 +27,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/name-value-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/name-value-pair.ts#L28)
+[generated-client/models/name-value-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/name-value-pair.ts#L28)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the value.
 
 #### Defined in
 
-[generated-client/models/name-value-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/name-value-pair.ts#L34)
+[generated-client/models/name-value-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/name-value-pair.ts#L34)

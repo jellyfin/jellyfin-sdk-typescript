@@ -110,7 +110,7 @@ Gets or sets the number of days we should retain activity logs.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L508)
+[generated-client/models/server-configuration.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L508)
 
 ___
 
@@ -124,7 +124,7 @@ Gets or sets a value indicating whether Autodiscovery is enabled.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L178)
+[generated-client/models/server-configuration.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L178)
 
 ___
 
@@ -138,7 +138,7 @@ Gets or sets a value indicating whether Autodiscovery tracing is enabled.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L172)
+[generated-client/models/server-configuration.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L172)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L364)
+[generated-client/models/server-configuration.ts:364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L364)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets the cache path.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L46)
+[generated-client/models/server-configuration.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L46)
 
 ___
 
@@ -178,7 +178,7 @@ Gets or sets the password required to access the X.509 certificate data in the f
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L220)
+[generated-client/models/server-configuration.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L220)
 
 ___
 
@@ -192,7 +192,7 @@ Gets or sets the filesystem path of an X.509 certificate to use for SSL.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:214](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L214)
+[generated-client/models/server-configuration.ts:214](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L214)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:424](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L424)
+[generated-client/models/server-configuration.ts:424](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L424)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:382](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L382)
+[generated-client/models/server-configuration.ts:382](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L382)
 
 ___
 
@@ -230,7 +230,7 @@ Gets or sets the cors hosts.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L496)
+[generated-client/models/server-configuration.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L496)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:250](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L250)
+[generated-client/models/server-configuration.ts:250](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L250)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L406)
+[generated-client/models/server-configuration.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L406)
 
 ___
 
@@ -268,7 +268,7 @@ Gets or sets a value indicating whether [enable case sensitive item ids].
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L244)
+[generated-client/models/server-configuration.ts:244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L244)
 
 ___
 
@@ -282,7 +282,7 @@ Gets or sets a value indicating whether [enable dashboard response caching].  Al
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L334)
+[generated-client/models/server-configuration.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L334)
 
 ___
 
@@ -294,7 +294,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:436](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L436)
+[generated-client/models/server-configuration.ts:436](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L436)
 
 ___
 
@@ -306,7 +306,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:394](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L394)
+[generated-client/models/server-configuration.ts:394](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L394)
 
 ___
 
@@ -318,7 +318,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:400](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L400)
+[generated-client/models/server-configuration.ts:400](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L400)
 
 ___
 
@@ -332,7 +332,7 @@ Gets or sets a value indicating whether to use HTTPS.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L202)
+[generated-client/models/server-configuration.ts:202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L202)
 
 ___
 
@@ -346,7 +346,7 @@ Gets or sets a value indicating whether IPV4 capability is enabled.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L100)
+[generated-client/models/server-configuration.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L100)
 
 ___
 
@@ -360,7 +360,7 @@ Gets or sets a value indicating whether IPV6 capability is enabled.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L94)
+[generated-client/models/server-configuration.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L94)
 
 ___
 
@@ -374,7 +374,7 @@ Gets or sets a value indicating whether to enable prometheus metrics exporting.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L70)
+[generated-client/models/server-configuration.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L70)
 
 ___
 
@@ -388,7 +388,7 @@ Gets a value indicating whether multi-socket binding is available.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L148)
+[generated-client/models/server-configuration.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L148)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:448](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L448)
+[generated-client/models/server-configuration.ts:448](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L448)
 
 ___
 
@@ -412,7 +412,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:208](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L208)
+[generated-client/models/server-configuration.ts:208](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L208)
 
 ___
 
@@ -426,7 +426,7 @@ Gets or sets a value indicating whether access outside of the LAN is permitted.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L238)
+[generated-client/models/server-configuration.ts:238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L238)
 
 ___
 
@@ -440,7 +440,7 @@ Gets or sets a value indicating whether detailed ssdp logs are sent to the conso
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L106)
+[generated-client/models/server-configuration.ts:106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L106)
 
 ___
 
@@ -454,7 +454,7 @@ Gets or sets a value indicating whether slow server responses should be logged a
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L484)
+[generated-client/models/server-configuration.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L484)
 
 ___
 
@@ -468,7 +468,7 @@ Gets or sets a value indicating whether to enable automatic port forwarding.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L64)
+[generated-client/models/server-configuration.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L64)
 
 ___
 
@@ -482,7 +482,7 @@ Gets or sets the time (in seconds) between the pings of SSDP gateway monitor.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L142)
+[generated-client/models/server-configuration.ts:142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L142)
 
 ___
 
@@ -496,7 +496,7 @@ Gets or sets the ports that HDHomerun uses.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L160)
+[generated-client/models/server-configuration.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L160)
 
 ___
 
@@ -510,7 +510,7 @@ Gets or sets the HTTP server port number.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L190)
+[generated-client/models/server-configuration.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L190)
 
 ___
 
@@ -524,7 +524,7 @@ Gets or sets the HTTPS server port number.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L196)
+[generated-client/models/server-configuration.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L196)
 
 ___
 
@@ -538,7 +538,7 @@ Gets or sets a value indicating whether address names that match MediaBrowser.Mo
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L130)
+[generated-client/models/server-configuration.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L130)
 
 ___
 
@@ -550,7 +550,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L466)
+[generated-client/models/server-configuration.ts:466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L466)
 
 ___
 
@@ -562,7 +562,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:340](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L340)
+[generated-client/models/server-configuration.ts:340](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L340)
 
 ___
 
@@ -576,7 +576,7 @@ Gets or sets a value indicating whether this instance is port authorized.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L226)
+[generated-client/models/server-configuration.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L226)
 
 ___
 
@@ -590,7 +590,7 @@ Gets or sets a value indicating whether <seealso cref=\"P:MediaBrowser.Model.Con
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L460)
+[generated-client/models/server-configuration.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L460)
 
 ___
 
@@ -604,7 +604,7 @@ Gets or sets a value indicating whether this instance is first run.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L40)
+[generated-client/models/server-configuration.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L40)
 
 ___
 
@@ -618,7 +618,7 @@ Gets or sets the known proxies.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:502](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L502)
+[generated-client/models/server-configuration.ts:502](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L502)
 
 ___
 
@@ -632,7 +632,7 @@ Gets or sets the how many metadata refreshes can run concurrently.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L520)
+[generated-client/models/server-configuration.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L520)
 
 ___
 
@@ -646,7 +646,7 @@ Gets or sets the delay in seconds that we will wait after a file system change t
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L328)
+[generated-client/models/server-configuration.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L328)
 
 ___
 
@@ -660,7 +660,7 @@ Gets or sets the how the library scan fans out.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:514](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L514)
+[generated-client/models/server-configuration.ts:514](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L514)
 
 ___
 
@@ -674,7 +674,7 @@ Gets or sets the interface addresses which Jellyfin will bind to. If empty, all 
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:418](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L418)
+[generated-client/models/server-configuration.ts:418](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L418)
 
 ___
 
@@ -688,7 +688,7 @@ Gets or sets the subnets that are deemed to make up the LAN.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L412)
+[generated-client/models/server-configuration.ts:412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L412)
 
 ___
 
@@ -702,7 +702,7 @@ Gets or sets the number of days we should retain log files.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L34)
+[generated-client/models/server-configuration.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L34)
 
 ___
 
@@ -716,7 +716,7 @@ Gets or sets the remaining minutes of a book that can be played while still savi
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L322)
+[generated-client/models/server-configuration.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L322)
 
 ___
 
@@ -730,7 +730,7 @@ Gets or sets the maximum percentage of an item that can be played while still sa
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L304)
+[generated-client/models/server-configuration.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L304)
 
 ___
 
@@ -744,7 +744,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L274)
+[generated-client/models/server-configuration.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L274)
 
 ___
 
@@ -756,7 +756,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:262](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L262)
+[generated-client/models/server-configuration.ts:262](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L262)
 
 ___
 
@@ -768,7 +768,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L346)
+[generated-client/models/server-configuration.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L346)
 
 ___
 
@@ -782,7 +782,7 @@ Gets or sets the metadata path.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L256)
+[generated-client/models/server-configuration.ts:256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L256)
 
 ___
 
@@ -796,7 +796,7 @@ Gets or sets the minimum minutes of a book that must be played in order for play
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L316)
+[generated-client/models/server-configuration.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L316)
 
 ___
 
@@ -810,7 +810,7 @@ Gets or sets the minimum duration that an item must have in order to be eligible
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L310)
+[generated-client/models/server-configuration.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L310)
 
 ___
 
@@ -824,7 +824,7 @@ Gets or sets the minimum percentage of an item that must be played in order for 
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:298](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L298)
+[generated-client/models/server-configuration.ts:298](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L298)
 
 ___
 
@@ -836,7 +836,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:472](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L472)
+[generated-client/models/server-configuration.ts:472](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L472)
 
 ___
 
@@ -848,7 +848,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L430)
+[generated-client/models/server-configuration.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L430)
 
 ___
 
@@ -862,7 +862,7 @@ Gets or sets the preferred metadata language.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L268)
+[generated-client/models/server-configuration.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L268)
 
 ___
 
@@ -874,7 +874,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L52)
+[generated-client/models/server-configuration.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L52)
 
 ___
 
@@ -888,7 +888,7 @@ Gets or sets the stringified PreviousVersion to be stored/loaded,  because Syste
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L58)
+[generated-client/models/server-configuration.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L58)
 
 ___
 
@@ -902,7 +902,7 @@ Gets or sets the public HTTPS port.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L184)
+[generated-client/models/server-configuration.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L184)
 
 ___
 
@@ -916,7 +916,7 @@ Gets or sets the public mapped port.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L76)
+[generated-client/models/server-configuration.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L76)
 
 ___
 
@@ -930,7 +930,7 @@ Gets or sets PublishedServerUri to advertise for specific subnets.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L166)
+[generated-client/models/server-configuration.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L166)
 
 ___
 
@@ -944,7 +944,7 @@ Gets or sets a value indicating whether quick connect is available for use on th
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L232)
+[generated-client/models/server-configuration.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L232)
 
 ___
 
@@ -956,7 +956,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L388)
+[generated-client/models/server-configuration.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L388)
 
 ___
 
@@ -970,7 +970,7 @@ Gets or sets the filter for remote IP connectivity. Used in conjuntion with <see
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L454)
+[generated-client/models/server-configuration.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L454)
 
 ___
 
@@ -984,7 +984,7 @@ Gets or sets a value indicating whether older plugins should automatically be de
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L526)
+[generated-client/models/server-configuration.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L526)
 
 ___
 
@@ -998,7 +998,7 @@ Gets or sets a value indicating whether the server should force connections over
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:442](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L442)
+[generated-client/models/server-configuration.ts:442](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L442)
 
 ___
 
@@ -1012,7 +1012,7 @@ Gets or sets a value indicating whether an IP address is to be used to filter th
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L112)
+[generated-client/models/server-configuration.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L112)
 
 ___
 
@@ -1024,7 +1024,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:376](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L376)
+[generated-client/models/server-configuration.ts:376](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L376)
 
 ___
 
@@ -1036,7 +1036,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:358](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L358)
+[generated-client/models/server-configuration.ts:358](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L358)
 
 ___
 
@@ -1048,7 +1048,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:352](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L352)
+[generated-client/models/server-configuration.ts:352](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L352)
 
 ___
 
@@ -1062,7 +1062,7 @@ Gets or sets the threshold for the slow response time warning in ms.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L490)
+[generated-client/models/server-configuration.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L490)
 
 ___
 
@@ -1076,7 +1076,7 @@ Gets or sets characters to be removed from strings to create a sort name.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L286)
+[generated-client/models/server-configuration.ts:286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L286)
 
 ___
 
@@ -1090,7 +1090,7 @@ Gets or sets words to be removed from strings to create a sort name.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L292)
+[generated-client/models/server-configuration.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L292)
 
 ___
 
@@ -1104,7 +1104,7 @@ Gets or sets characters to be replaced with a \' \' in strings to create a sort 
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L280)
+[generated-client/models/server-configuration.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L280)
 
 ___
 
@@ -1118,7 +1118,7 @@ Gets or sets a value indicating whether all IPv6 interfaces should be treated as
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L154)
+[generated-client/models/server-configuration.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L154)
 
 ___
 
@@ -1132,7 +1132,7 @@ Gets or sets client udp port range.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L88)
+[generated-client/models/server-configuration.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L88)
 
 ___
 
@@ -1146,7 +1146,7 @@ Gets or sets the number of times SSDP UDP messages are sent.
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L118)
+[generated-client/models/server-configuration.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L118)
 
 ___
 
@@ -1160,7 +1160,7 @@ Gets or sets the delay between each groups of SSDP messages (in ms).
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L124)
+[generated-client/models/server-configuration.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L124)
 
 ___
 
@@ -1172,7 +1172,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L370)
+[generated-client/models/server-configuration.ts:370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L370)
 
 ___
 
@@ -1186,7 +1186,7 @@ Gets or sets a value indicating whether the http port should be mapped as part o
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L82)
+[generated-client/models/server-configuration.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L82)
 
 ___
 
@@ -1198,7 +1198,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L478)
+[generated-client/models/server-configuration.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L478)
 
 ___
 
@@ -1212,4 +1212,4 @@ Gets or sets a value indicating the interfaces that should be ignored. The list 
 
 #### Defined in
 
-[generated-client/models/server-configuration.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/server-configuration.ts#L136)
+[generated-client/models/server-configuration.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/server-configuration.ts#L136)

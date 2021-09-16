@@ -31,7 +31,7 @@ Gets or sets the date created.
 
 #### Defined in
 
-[generated-client/models/font-file.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/font-file.ts#L40)
+[generated-client/models/font-file.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/font-file.ts#L40)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the date modified.
 
 #### Defined in
 
-[generated-client/models/font-file.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/font-file.ts#L46)
+[generated-client/models/font-file.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/font-file.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/font-file.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/font-file.ts#L28)
+[generated-client/models/font-file.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/font-file.ts#L28)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets the size.
 
 #### Defined in
 
-[generated-client/models/font-file.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/font-file.ts#L34)
+[generated-client/models/font-file.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/font-file.ts#L34)

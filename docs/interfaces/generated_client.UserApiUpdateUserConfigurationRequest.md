@@ -29,7 +29,7 @@ The new user configuration.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/user-api.ts#L1238)
+[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L1238)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/user-api.ts#L1231)
+[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L1231)

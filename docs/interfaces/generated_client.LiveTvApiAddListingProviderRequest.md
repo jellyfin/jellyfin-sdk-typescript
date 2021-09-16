@@ -31,7 +31,7 @@ New listings info.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/live-tv-api.ts#L3256)
+[generated-client/api/live-tv-api.ts:3256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L3256)
 
 ___
 
@@ -45,7 +45,7 @@ Password.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/live-tv-api.ts#L3235)
+[generated-client/api/live-tv-api.ts:3235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L3235)
 
 ___
 
@@ -59,7 +59,7 @@ Validate listings.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/live-tv-api.ts#L3242)
+[generated-client/api/live-tv-api.ts:3242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L3242)
 
 ___
 
@@ -73,4 +73,4 @@ Validate login.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/live-tv-api.ts#L3249)
+[generated-client/api/live-tv-api.ts:3249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L3249)

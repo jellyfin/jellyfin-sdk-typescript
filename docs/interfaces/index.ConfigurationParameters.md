@@ -33,7 +33,7 @@ Do not edit the class manually.
 
 #### Defined in
 
-[generated-client/configuration.ts:20](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L20)
+[generated-client/configuration.ts:20](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L20)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:17](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L17)
+[generated-client/configuration.ts:17](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L17)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:22](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L22)
+[generated-client/configuration.ts:22](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L22)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L21)
+[generated-client/configuration.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L21)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L23)
+[generated-client/configuration.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L23)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L19)
+[generated-client/configuration.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L19)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-[generated-client/configuration.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/configuration.ts#L18)
+[generated-client/configuration.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/configuration.ts#L18)

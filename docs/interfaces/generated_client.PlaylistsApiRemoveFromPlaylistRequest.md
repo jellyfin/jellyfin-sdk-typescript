@@ -29,7 +29,7 @@ The item ids, comma delimited.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:657](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playlists-api.ts#L657)
+[generated-client/api/playlists-api.ts:657](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playlists-api.ts#L657)
 
 ___
 
@@ -43,4 +43,4 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:650](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playlists-api.ts#L650)
+[generated-client/api/playlists-api.ts:650](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playlists-api.ts#L650)

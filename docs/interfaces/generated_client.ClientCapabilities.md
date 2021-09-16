@@ -33,7 +33,7 @@
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L78)
+[generated-client/models/client-capabilities.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L78)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L72)
+[generated-client/models/client-capabilities.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L72)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L84)
+[generated-client/models/client-capabilities.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L84)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L54)
+[generated-client/models/client-capabilities.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L54)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L30)
+[generated-client/models/client-capabilities.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L30)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L36)
+[generated-client/models/client-capabilities.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L36)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L48)
+[generated-client/models/client-capabilities.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L48)
 
 ___
 
@@ -117,7 +117,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L42)
+[generated-client/models/client-capabilities.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L42)
 
 ___
 
@@ -129,7 +129,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L60)
+[generated-client/models/client-capabilities.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L60)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/client-capabilities.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/client-capabilities.ts#L66)
+[generated-client/models/client-capabilities.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/client-capabilities.ts#L66)

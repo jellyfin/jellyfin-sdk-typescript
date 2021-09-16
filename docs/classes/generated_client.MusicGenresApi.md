@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/music-genres-api.ts#L447)
+[generated-client/api/music-genres-api.ts:447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/music-genres-api.ts#L447)
 
 ___
 
@@ -141,4 +141,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/music-genres-api.ts#L460)
+[generated-client/api/music-genres-api.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/music-genres-api.ts#L460)

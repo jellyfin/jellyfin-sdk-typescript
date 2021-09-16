@@ -56,7 +56,7 @@ Gets or sets the album.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L148)
+[generated-client/models/search-hint.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L148)
 
 ___
 
@@ -70,7 +70,7 @@ Gets or sets the album artist.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L160)
+[generated-client/models/search-hint.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L160)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L154)
+[generated-client/models/search-hint.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L154)
 
 ___
 
@@ -96,7 +96,7 @@ Gets or sets the artists.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L166)
+[generated-client/models/search-hint.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L166)
 
 ___
 
@@ -110,7 +110,7 @@ Gets or sets the backdrop image item identifier.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L94)
+[generated-client/models/search-hint.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L94)
 
 ___
 
@@ -124,7 +124,7 @@ Gets or sets the backdrop image tag.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L88)
+[generated-client/models/search-hint.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L88)
 
 ___
 
@@ -138,7 +138,7 @@ Gets or sets the channel identifier.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L184)
+[generated-client/models/search-hint.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L184)
 
 ___
 
@@ -152,7 +152,7 @@ Gets or sets the name of the channel.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L190)
+[generated-client/models/search-hint.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L190)
 
 ___
 
@@ -164,7 +164,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L130)
+[generated-client/models/search-hint.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L130)
 
 ___
 
@@ -178,7 +178,7 @@ Gets or sets the episode count.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L178)
+[generated-client/models/search-hint.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L178)
 
 ___
 
@@ -190,7 +190,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L34)
+[generated-client/models/search-hint.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L34)
 
 ___
 
@@ -204,7 +204,7 @@ Gets or sets the index number.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L52)
+[generated-client/models/search-hint.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L52)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L106)
+[generated-client/models/search-hint.ts:106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L106)
 
 ___
 
@@ -230,7 +230,7 @@ Gets or sets the item id.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L28)
+[generated-client/models/search-hint.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L28)
 
 ___
 
@@ -244,7 +244,7 @@ Gets or sets the matched term.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L46)
+[generated-client/models/search-hint.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L46)
 
 ___
 
@@ -258,7 +258,7 @@ Gets or sets the type of the media.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L118)
+[generated-client/models/search-hint.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L118)
 
 ___
 
@@ -272,7 +272,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L40)
+[generated-client/models/search-hint.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L40)
 
 ___
 
@@ -286,7 +286,7 @@ Gets or sets the parent index number.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L64)
+[generated-client/models/search-hint.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L64)
 
 ___
 
@@ -300,7 +300,7 @@ Gets or sets the primary image aspect ratio.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L196)
+[generated-client/models/search-hint.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L196)
 
 ___
 
@@ -314,7 +314,7 @@ Gets or sets the image tag.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L70)
+[generated-client/models/search-hint.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L70)
 
 ___
 
@@ -328,7 +328,7 @@ Gets or sets the production year.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L58)
+[generated-client/models/search-hint.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L58)
 
 ___
 
@@ -342,7 +342,7 @@ Gets or sets the run time ticks.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L112)
+[generated-client/models/search-hint.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L112)
 
 ___
 
@@ -356,7 +356,7 @@ Gets or sets the series.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L136)
+[generated-client/models/search-hint.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L136)
 
 ___
 
@@ -370,7 +370,7 @@ Gets or sets the song count.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L172)
+[generated-client/models/search-hint.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L172)
 
 ___
 
@@ -382,7 +382,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L124)
+[generated-client/models/search-hint.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L124)
 
 ___
 
@@ -394,7 +394,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L142)
+[generated-client/models/search-hint.ts:142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L142)
 
 ___
 
@@ -408,7 +408,7 @@ Gets or sets the thumb image item identifier.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L82)
+[generated-client/models/search-hint.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L82)
 
 ___
 
@@ -422,7 +422,7 @@ Gets or sets the thumb image tag.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L76)
+[generated-client/models/search-hint.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L76)
 
 ___
 
@@ -436,4 +436,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/search-hint.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/search-hint.ts#L100)
+[generated-client/models/search-hint.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/search-hint.ts#L100)

@@ -26,4 +26,4 @@ Class SetShuffleModeRequestDto.
 
 #### Defined in
 
-[generated-client/models/set-shuffle-mode-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/set-shuffle-mode-request-dto.ts#L29)
+[generated-client/models/set-shuffle-mode-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/set-shuffle-mode-request-dto.ts#L29)
