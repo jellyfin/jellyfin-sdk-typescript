@@ -9,9 +9,7 @@ A TypeScript SDK for Jellyfin.
 ```js
 // Create a new instance of the SDK
 const jellyfin = new Jellyfin();
-const api = jellyfin.createApi(new Configuration({
-    basePath: 'https://demo.jellyfin.org/stable'
-}));
+const api = jellyfin.createApi('https://demo.jellyfin.org/stable');
 
 // Each API endpoint is exposed via a getter on the SDK instance using
 // a shared Configuration and Axios instance. For example the /System APIs

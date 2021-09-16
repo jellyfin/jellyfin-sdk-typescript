@@ -3,7 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-import globalInstance, { AxiosResponse } from 'axios';
+import globalInstance, { AxiosInstance, AxiosResponse } from 'axios';
 
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticateUserByName, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
@@ -19,28 +19,31 @@ export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
  * Class representing the Jellyfin API.
  */
 export class Api {
+	basePath;
 	clientInfo;
 	deviceInfo;
-	configuration;
+	accessToken;
 	axiosInstance;
-	accessToken = '';
 
 	constructor(
+		basePath: string,
 		clientInfo: ClientInfo,
 		deviceInfo: DeviceInfo,
-		configuration: Configuration,
-		axiosInstance = globalInstance
+		accessToken = '',
+		axiosInstance: AxiosInstance = globalInstance
 	) {
+		this.basePath = basePath;
 		this.clientInfo = clientInfo;
 		this.deviceInfo = deviceInfo;
-		this.configuration = configuration;
+		this.accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+	}
 
-		// The api client should automatically use the apiKey value as the X-Emby-Authorization
-		// header, so we should ensure it is set.
-		if (!this.configuration.apiKey) {
-			this.configuration.apiKey = this.authorizationHeader;
-		}
+	private get configuration(): Configuration {
+		return new Configuration({
+			basePath: this.basePath,
+			apiKey: this.authorizationHeader
+		});
 	}
 
 	/**
@@ -56,7 +59,6 @@ export class Api {
 		).then(response => {
 			// Update the current token and configuration object
 			this.accessToken = response.data.AccessToken || '';
-			this.configuration.apiKey = this.authorizationHeader;
 			return response;
 		});
 	}

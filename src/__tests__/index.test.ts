@@ -3,29 +3,24 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-import { Configuration, Jellyfin } from '..';
+import { Jellyfin } from '..';
 
 // FIXME: These tests should be mocked and not calling an actual server
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
-
-const TEST_CONFIGURATION = new Configuration({
-	// basePath: 'http://localhost:8096'
-	basePath: SERVER_URL
-});
 
 describe('Test the Base SDK', () => {
 	it('create an api instance', () => {
 		const jellyfin = new Jellyfin();
 		expect(jellyfin).not.toBeNull();
 
-		const api = jellyfin.createApi(TEST_CONFIGURATION);
-		expect(api.configuration.basePath).toEqual(SERVER_URL);
+		const api = jellyfin.createApi(SERVER_URL);
+		expect(api.basePath).toEqual(SERVER_URL);
 		expect(api.authorizationHeader).toEqual('MediaBrowser Client="jellyfin-sdk-typescript", Device="device-name", DeviceId="device-id", Version="v0.1.0", Token=""');
 	});
 
 	it('public users api', async () => {
 		const jellyfin = new Jellyfin();
-		const api = jellyfin.createApi(TEST_CONFIGURATION);
+		const api = jellyfin.createApi(SERVER_URL);
 
 		const users = await api.userApi.getPublicUsers();
 		// console.log('Users =>', users.data);
@@ -34,7 +29,7 @@ describe('Test the Base SDK', () => {
 
 	it('public system info api', async () => {
 		const jellyfin = new Jellyfin();
-		const api = jellyfin.createApi(TEST_CONFIGURATION);
+		const api = jellyfin.createApi(SERVER_URL);
 
 		const info = await api.systemApi.getPublicSystemInfo();
 		// console.log('Info =>', info.data);
@@ -43,7 +38,7 @@ describe('Test the Base SDK', () => {
 
 	it('user login api', async () => {
 		const jellyfin = new Jellyfin();
-		const api = jellyfin.createApi(TEST_CONFIGURATION);
+		const api = jellyfin.createApi(SERVER_URL);
 
 		const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
 		// console.log('Auth =>', auth.data);
@@ -52,7 +47,7 @@ describe('Test the Base SDK', () => {
 
 	it('library api', async () => {
 		const jellyfin = new Jellyfin();
-		const api = jellyfin.createApi(TEST_CONFIGURATION);
+		const api = jellyfin.createApi(SERVER_URL);
 
 		await api.authenticateUserByName({ Username: 'demo', Pw: '' });
 

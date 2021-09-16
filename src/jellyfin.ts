@@ -3,10 +3,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-import globalInstance from 'axios';
+import { AxiosInstance } from 'axios';
 
 import { Api } from './api';
-import { Configuration } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
 
 /**
@@ -30,7 +29,7 @@ export class Jellyfin {
 		this.deviceInfo = deviceInfo;
 	}
 
-	createApi(configuration: Configuration, axiosInstance = globalInstance): Api {
-		return new Api(this.clientInfo, this.deviceInfo, configuration, axiosInstance);
+	createApi(basePath: string, accessToken?: string, axiosInstance?: AxiosInstance): Api {
+		return new Api(basePath, this.clientInfo, this.deviceInfo, accessToken, axiosInstance);
 	}
 }
