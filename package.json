@@ -13,6 +13,7 @@
     "build:sdk": "tsc --outDir dist/",
     "docs": "typedoc --tsconfig .",
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
+    "lint": "eslint \".\"",
     "test": "jest --watchAll"
   },
   "license": "MPL-2.0",
