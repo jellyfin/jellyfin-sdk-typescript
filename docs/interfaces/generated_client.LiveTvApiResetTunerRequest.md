@@ -28,4 +28,4 @@ Tuner id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4425](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/live-tv-api.ts#L4425)
+[generated-client/api/live-tv-api.ts:4425](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/live-tv-api.ts#L4425)

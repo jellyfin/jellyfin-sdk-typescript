@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,7 +84,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -110,4 +110,4 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/time-sync-api.ts#L117)
+[generated-client/api/time-sync-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/time-sync-api.ts#L117)

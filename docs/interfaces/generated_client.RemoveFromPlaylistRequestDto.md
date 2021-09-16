@@ -28,4 +28,4 @@ Gets or sets the playlist identifiers ot the items.
 
 #### Defined in
 
-[generated-client/models/remove-from-playlist-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/remove-from-playlist-request-dto.ts#L28)
+[generated-client/models/remove-from-playlist-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/remove-from-playlist-request-dto.ts#L28)

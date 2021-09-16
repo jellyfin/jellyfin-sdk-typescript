@@ -62,7 +62,7 @@
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L67)
+[generated-client/models/user-policy.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L67)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L247)
+[generated-client/models/user-policy.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L247)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L73)
+[generated-client/models/user-policy.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L73)
 
 ___
 
@@ -98,7 +98,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L235)
+[generated-client/models/user-policy.ts:235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L235)
 
 ___
 
@@ -110,7 +110,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L229)
+[generated-client/models/user-policy.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L229)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L55)
+[generated-client/models/user-policy.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L55)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L187)
+[generated-client/models/user-policy.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L187)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L175)
+[generated-client/models/user-policy.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L175)
 
 ___
 
@@ -158,7 +158,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L199)
+[generated-client/models/user-policy.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L199)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L115)
+[generated-client/models/user-policy.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L115)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L139)
+[generated-client/models/user-policy.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L139)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L145)
+[generated-client/models/user-policy.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L145)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L151)
+[generated-client/models/user-policy.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L151)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L103)
+[generated-client/models/user-policy.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L103)
 
 ___
 
@@ -230,7 +230,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L97)
+[generated-client/models/user-policy.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L97)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L163)
+[generated-client/models/user-policy.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L163)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L109)
+[generated-client/models/user-policy.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L109)
 
 ___
 
@@ -266,7 +266,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L127)
+[generated-client/models/user-policy.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L127)
 
 ___
 
@@ -278,7 +278,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L223)
+[generated-client/models/user-policy.ts:223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L223)
 
 ___
 
@@ -290,7 +290,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L91)
+[generated-client/models/user-policy.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L91)
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L79)
+[generated-client/models/user-policy.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L79)
 
 ___
 
@@ -314,7 +314,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L85)
+[generated-client/models/user-policy.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L85)
 
 ___
 
@@ -328,7 +328,7 @@ Gets or sets a value indicating whether [enable synchronize].
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L157)
+[generated-client/models/user-policy.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L157)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L61)
+[generated-client/models/user-policy.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L61)
 
 ___
 
@@ -352,7 +352,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L121)
+[generated-client/models/user-policy.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L121)
 
 ___
 
@@ -364,7 +364,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L181)
+[generated-client/models/user-policy.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L181)
 
 ___
 
@@ -376,7 +376,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L169)
+[generated-client/models/user-policy.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L169)
 
 ___
 
@@ -388,7 +388,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L193)
+[generated-client/models/user-policy.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L193)
 
 ___
 
@@ -400,7 +400,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L133)
+[generated-client/models/user-policy.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L133)
 
 ___
 
@@ -412,7 +412,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L205)
+[generated-client/models/user-policy.ts:205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L205)
 
 ___
 
@@ -426,7 +426,7 @@ Gets or sets a value indicating whether this instance is administrator.
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L31)
+[generated-client/models/user-policy.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L31)
 
 ___
 
@@ -440,7 +440,7 @@ Gets or sets a value indicating whether this instance is disabled.
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L43)
+[generated-client/models/user-policy.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L43)
 
 ___
 
@@ -454,7 +454,7 @@ Gets or sets a value indicating whether this instance is hidden.
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L37)
+[generated-client/models/user-policy.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L37)
 
 ___
 
@@ -466,7 +466,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L211)
+[generated-client/models/user-policy.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L211)
 
 ___
 
@@ -478,7 +478,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L217)
+[generated-client/models/user-policy.ts:217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L217)
 
 ___
 
@@ -492,7 +492,7 @@ Gets or sets the max parental rating.
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L49)
+[generated-client/models/user-policy.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L49)
 
 ___
 
@@ -504,7 +504,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L253)
+[generated-client/models/user-policy.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L253)
 
 ___
 
@@ -516,7 +516,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:241](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L241)
+[generated-client/models/user-policy.ts:241](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L241)
 
 ___
 
@@ -528,4 +528,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-policy.ts:259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/user-policy.ts#L259)
+[generated-client/models/user-policy.ts:259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/user-policy.ts#L259)

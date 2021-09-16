@@ -23,7 +23,7 @@ An enum representing the sorting order.
 
 #### Defined in
 
-[generated-client/models/sort-order.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/sort-order.ts#L24)
+[generated-client/models/sort-order.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/sort-order.ts#L24)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/sort-order.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/sort-order.ts#L25)
+[generated-client/models/sort-order.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/sort-order.ts#L25)

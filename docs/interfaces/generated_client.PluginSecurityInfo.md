@@ -29,7 +29,7 @@ Gets or sets a value indicating whether is mb supporter.
 
 #### Defined in
 
-[generated-client/models/plugin-security-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/plugin-security-info.ts#L34)
+[generated-client/models/plugin-security-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/plugin-security-info.ts#L34)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the supporter key.
 
 #### Defined in
 
-[generated-client/models/plugin-security-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/plugin-security-info.ts#L28)
+[generated-client/models/plugin-security-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/plugin-security-info.ts#L28)

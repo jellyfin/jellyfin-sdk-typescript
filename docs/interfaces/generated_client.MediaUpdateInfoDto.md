@@ -28,4 +28,4 @@ Gets or sets the list of updates.
 
 #### Defined in
 
-[generated-client/models/media-update-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/media-update-info-dto.ts#L29)
+[generated-client/models/media-update-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/media-update-info-dto.ts#L29)

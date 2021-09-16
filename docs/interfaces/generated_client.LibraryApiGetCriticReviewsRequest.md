@@ -26,4 +26,4 @@ Request parameters for getCriticReviews operation in LibraryApi.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1826](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/library-api.ts#L1826)
+[generated-client/api/library-api.ts:1826](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L1826)

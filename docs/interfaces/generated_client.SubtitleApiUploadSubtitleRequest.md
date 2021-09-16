@@ -29,7 +29,7 @@ The item the subtitle belongs to.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/subtitle-api.ts#L1169)
+[generated-client/api/subtitle-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/subtitle-api.ts#L1169)
 
 ___
 
@@ -43,4 +43,4 @@ The request body.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/subtitle-api.ts#L1176)
+[generated-client/api/subtitle-api.ts:1176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/subtitle-api.ts#L1176)

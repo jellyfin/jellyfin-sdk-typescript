@@ -29,7 +29,7 @@ The collection id.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/collection-api.ts#L335)
+[generated-client/api/collection-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/collection-api.ts#L335)
 
 ___
 
@@ -43,4 +43,4 @@ Item ids, comma delimited.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/collection-api.ts#L342)
+[generated-client/api/collection-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/collection-api.ts#L342)

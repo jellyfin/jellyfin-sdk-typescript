@@ -28,4 +28,4 @@ Profile Id.
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/dlna-api.ts#L439)
+[generated-client/api/dlna-api.ts:439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/dlna-api.ts#L439)

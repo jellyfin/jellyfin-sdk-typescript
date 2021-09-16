@@ -32,7 +32,7 @@ Class MetadataOptions.
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L58)
+[generated-client/models/metadata-options.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L58)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L46)
+[generated-client/models/metadata-options.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L46)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L34)
+[generated-client/models/metadata-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L34)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L64)
+[generated-client/models/metadata-options.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L64)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L28)
+[generated-client/models/metadata-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L28)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L40)
+[generated-client/models/metadata-options.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L40)
 
 ___
 
@@ -104,4 +104,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-options.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/metadata-options.ts#L52)
+[generated-client/models/metadata-options.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/metadata-options.ts#L52)

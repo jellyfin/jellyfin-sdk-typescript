@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/tuner-channel-mapping.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/tuner-channel-mapping.ts#L46)
+[generated-client/models/tuner-channel-mapping.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/tuner-channel-mapping.ts#L46)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/tuner-channel-mapping.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/tuner-channel-mapping.ts#L28)
+[generated-client/models/tuner-channel-mapping.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/tuner-channel-mapping.ts#L28)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/tuner-channel-mapping.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/tuner-channel-mapping.ts#L40)
+[generated-client/models/tuner-channel-mapping.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/tuner-channel-mapping.ts#L40)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/tuner-channel-mapping.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/tuner-channel-mapping.ts#L34)
+[generated-client/models/tuner-channel-mapping.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/tuner-channel-mapping.ts#L34)

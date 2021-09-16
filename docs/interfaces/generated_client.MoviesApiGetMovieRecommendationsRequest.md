@@ -32,7 +32,7 @@ The max number of categories to return.
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/movies-api.ts#L175)
+[generated-client/api/movies-api.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/movies-api.ts#L175)
 
 ___
 
@@ -46,7 +46,7 @@ Optional. The fields to return.
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/movies-api.ts#L168)
+[generated-client/api/movies-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/movies-api.ts#L168)
 
 ___
 
@@ -60,7 +60,7 @@ The max number of items to return per category.
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/movies-api.ts#L182)
+[generated-client/api/movies-api.ts:182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/movies-api.ts#L182)
 
 ___
 
@@ -74,7 +74,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/movies-api.ts#L161)
+[generated-client/api/movies-api.ts:161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/movies-api.ts#L161)
 
 ___
 
@@ -88,4 +88,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/movies-api.ts#L154)
+[generated-client/api/movies-api.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/movies-api.ts#L154)

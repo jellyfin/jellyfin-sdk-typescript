@@ -33,7 +33,7 @@ Whether to enable the total record count.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L193)
+[generated-client/api/suggestions-api.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L193)
 
 ___
 
@@ -47,7 +47,7 @@ Optional. The limit.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L186)
+[generated-client/api/suggestions-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L186)
 
 ___
 
@@ -61,7 +61,7 @@ The media types.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:165](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L165)
+[generated-client/api/suggestions-api.ts:165](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L165)
 
 ___
 
@@ -75,7 +75,7 @@ Optional. The start index.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L179)
+[generated-client/api/suggestions-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L179)
 
 ___
 
@@ -89,7 +89,7 @@ The type.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L172)
+[generated-client/api/suggestions-api.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L172)
 
 ___
 
@@ -103,4 +103,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:158](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/suggestions-api.ts#L158)
+[generated-client/api/suggestions-api.ts:158](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/suggestions-api.ts#L158)

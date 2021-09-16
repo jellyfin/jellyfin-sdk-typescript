@@ -31,7 +31,7 @@ Gets or sets the display name.
 
 #### Defined in
 
-[generated-client/models/country-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/country-info.ts#L34)
+[generated-client/models/country-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/country-info.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/country-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/country-info.ts#L28)
+[generated-client/models/country-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/country-info.ts#L28)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the name of the three letter ISO region.
 
 #### Defined in
 
-[generated-client/models/country-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/country-info.ts#L46)
+[generated-client/models/country-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/country-info.ts#L46)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets the name of the two letter ISO region.
 
 #### Defined in
 
-[generated-client/models/country-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/country-info.ts#L40)
+[generated-client/models/country-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/country-info.ts#L40)

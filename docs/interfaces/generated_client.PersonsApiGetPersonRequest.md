@@ -29,7 +29,7 @@ Person name.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/persons-api.ts#L283)
+[generated-client/api/persons-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/persons-api.ts#L283)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/persons-api.ts#L290)
+[generated-client/api/persons-api.ts:290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/persons-api.ts#L290)
