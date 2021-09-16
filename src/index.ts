@@ -4,6 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 import globalInstance from 'axios';
+
 import { Api } from './api';
 
 import { Configuration } from './generated-client';

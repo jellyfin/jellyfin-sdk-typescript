@@ -2,16 +2,25 @@ module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
 	plugins: [
-		'@typescript-eslint'
+		'@typescript-eslint',
+		'import'
 	],
 	env: {
 		node: true
 	},
 	extends: [
 		'eslint:recommended',
-		'plugin:@typescript-eslint/recommended'
+		'plugin:@typescript-eslint/recommended',
+		'plugin:import/errors',
+		'plugin:import/warnings',
+		'plugin:import/typescript'
 	],
 	rules: {
+		'import/order': ['error', {
+			'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
+			'newlines-between': 'always-and-inside-groups'
+		}],
+
 		'array-callback-return': ['error'],
 		'block-spacing': ['error'],
 		'brace-style': ['error', '1tbs', { 'allowSingleLine': true }],

@@ -4,10 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 import globalInstance, { AxiosResponse } from 'axios';
-import { getAuthorizationHeader } from '.';
 
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticateUserByName, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
+
+import { getAuthorizationHeader } from '.';
 
 export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
 
