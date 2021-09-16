@@ -28,4 +28,4 @@ The library name and options.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:752](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/library-structure-api.ts#L752)
+[generated-client/api/library-structure-api.ts:752](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/library-structure-api.ts#L752)

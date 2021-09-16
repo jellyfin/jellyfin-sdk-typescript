@@ -8,4 +8,3 @@
 
 - [generated-client](modules/generated_client.md)
 - [index](modules/index.md)
-- [models](modules/models.md)

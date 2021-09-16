@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/recommendation-dto.ts#L42)
+[generated-client/models/recommendation-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/recommendation-dto.ts#L42)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/recommendation-dto.ts#L48)
+[generated-client/models/recommendation-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/recommendation-dto.ts#L48)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/recommendation-dto.ts#L30)
+[generated-client/models/recommendation-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/recommendation-dto.ts#L30)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/recommendation-dto.ts#L36)
+[generated-client/models/recommendation-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/recommendation-dto.ts#L36)

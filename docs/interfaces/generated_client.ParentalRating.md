@@ -29,7 +29,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/parental-rating.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/parental-rating.ts#L28)
+[generated-client/models/parental-rating.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/parental-rating.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the value.
 
 #### Defined in
 
-[generated-client/models/parental-rating.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/parental-rating.ts#L34)
+[generated-client/models/parental-rating.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/parental-rating.ts#L34)

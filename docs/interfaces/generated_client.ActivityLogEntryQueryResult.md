@@ -28,7 +28,7 @@ Gets or sets the items.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/activity-log-entry-query-result.ts#L29)
+[generated-client/models/activity-log-entry-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/activity-log-entry-query-result.ts#L29)
 
 ___
 
@@ -42,7 +42,7 @@ The index of the first record in Items.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/activity-log-entry-query-result.ts#L41)
+[generated-client/models/activity-log-entry-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/activity-log-entry-query-result.ts#L41)
 
 ___
 
@@ -56,4 +56,4 @@ The total number of records available.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/activity-log-entry-query-result.ts#L35)
+[generated-client/models/activity-log-entry-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/activity-log-entry-query-result.ts#L35)

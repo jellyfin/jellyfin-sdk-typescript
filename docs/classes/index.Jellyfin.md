@@ -34,7 +34,7 @@
 
 #### Defined in
 
-[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L16)
+[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L16)
 
 ## Properties
 
@@ -44,7 +44,7 @@
 
 #### Defined in
 
-[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L13)
+[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L13)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L14)
+[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L14)
 
 ## Methods
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/jellyfin.ts#L25)
+[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/jellyfin.ts#L25)

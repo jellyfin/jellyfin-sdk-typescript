@@ -23,7 +23,7 @@ An enum representing the axis that should be scrolled.
 
 #### Defined in
 
-[generated-client/models/scroll-direction.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/scroll-direction.ts#L24)
+[generated-client/models/scroll-direction.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/scroll-direction.ts#L24)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/scroll-direction.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/scroll-direction.ts#L25)
+[generated-client/models/scroll-direction.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/scroll-direction.ts#L25)

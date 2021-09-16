@@ -28,4 +28,4 @@ Server UUID.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/dlna-server-api.ts#L1021)
+[generated-client/api/dlna-server-api.ts:1021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/dlna-server-api.ts#L1021)

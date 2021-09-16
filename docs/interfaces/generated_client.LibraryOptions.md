@@ -48,7 +48,7 @@
 
 #### Defined in
 
-[generated-client/models/library-options.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L90)
+[generated-client/models/library-options.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L90)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L120)
+[generated-client/models/library-options.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L120)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L132)
+[generated-client/models/library-options.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L132)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L72)
+[generated-client/models/library-options.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L72)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L42)
+[generated-client/models/library-options.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L42)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L84)
+[generated-client/models/library-options.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L84)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L78)
+[generated-client/models/library-options.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L78)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L66)
+[generated-client/models/library-options.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L66)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L30)
+[generated-client/models/library-options.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L30)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L36)
+[generated-client/models/library-options.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L36)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L48)
+[generated-client/models/library-options.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L48)
 
 ___
 
@@ -180,7 +180,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L126)
+[generated-client/models/library-options.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L126)
 
 ___
 
@@ -194,7 +194,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/library-options.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L102)
+[generated-client/models/library-options.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L102)
 
 ___
 
@@ -206,7 +206,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L114)
+[generated-client/models/library-options.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L114)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L54)
+[generated-client/models/library-options.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L54)
 
 ___
 
@@ -232,7 +232,7 @@ Gets or sets the preferred metadata language.
 
 #### Defined in
 
-[generated-client/models/library-options.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L96)
+[generated-client/models/library-options.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L96)
 
 ___
 
@@ -244,7 +244,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L162)
+[generated-client/models/library-options.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L162)
 
 ___
 
@@ -256,7 +256,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L60)
+[generated-client/models/library-options.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L60)
 
 ___
 
@@ -268,7 +268,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L168)
+[generated-client/models/library-options.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L168)
 
 ___
 
@@ -280,7 +280,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L108)
+[generated-client/models/library-options.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L108)
 
 ___
 
@@ -292,7 +292,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L150)
+[generated-client/models/library-options.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L150)
 
 ___
 
@@ -304,7 +304,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L144)
+[generated-client/models/library-options.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L144)
 
 ___
 
@@ -316,7 +316,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L156)
+[generated-client/models/library-options.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L156)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L138)
+[generated-client/models/library-options.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L138)
 
 ___
 
@@ -340,4 +340,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-options.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/library-options.ts#L174)
+[generated-client/models/library-options.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/library-options.ts#L174)

@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,7 +84,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -111,4 +111,4 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/suggestions-api.ts#L211)
+[generated-client/api/suggestions-api.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/suggestions-api.ts#L211)

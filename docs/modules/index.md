@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/api.ts#L13)
+[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/api.ts#L13)
 
 ## Functions
 
@@ -56,4 +56,4 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/utils.ts#L12)
+[utils.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/utils.ts#L12)

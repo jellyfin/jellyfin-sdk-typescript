@@ -36,7 +36,7 @@ The audio stream index.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:968](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L968)
+[generated-client/api/playstate-api.ts:968](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L968)
 
 ___
 
@@ -50,7 +50,7 @@ Indicates if the client can seek.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1003](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L1003)
+[generated-client/api/playstate-api.ts:1003](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L1003)
 
 ___
 
@@ -64,7 +64,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L954)
+[generated-client/api/playstate-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L954)
 
 ___
 
@@ -78,7 +78,7 @@ The live stream id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:989](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L989)
+[generated-client/api/playstate-api.ts:989](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L989)
 
 ___
 
@@ -92,7 +92,7 @@ The id of the MediaSource.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:961](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L961)
+[generated-client/api/playstate-api.ts:961](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L961)
 
 ___
 
@@ -106,7 +106,7 @@ The play method.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:982](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L982)
+[generated-client/api/playstate-api.ts:982](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L982)
 
 ___
 
@@ -120,7 +120,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:996](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L996)
+[generated-client/api/playstate-api.ts:996](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L996)
 
 ___
 
@@ -134,7 +134,7 @@ The subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:975](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L975)
+[generated-client/api/playstate-api.ts:975](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L975)
 
 ___
 
@@ -148,4 +148,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:947](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/playstate-api.ts#L947)
+[generated-client/api/playstate-api.ts:947](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/playstate-api.ts#L947)

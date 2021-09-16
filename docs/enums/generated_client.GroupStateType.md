@@ -25,7 +25,7 @@ Enum GroupState.
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/group-state-type.ts#L24)
+[generated-client/models/group-state-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/group-state-type.ts#L24)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/group-state-type.ts#L26)
+[generated-client/models/group-state-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/group-state-type.ts#L26)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/group-state-type.ts#L27)
+[generated-client/models/group-state-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/group-state-type.ts#L27)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/group-state-type.ts#L25)
+[generated-client/models/group-state-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/group-state-type.ts#L25)

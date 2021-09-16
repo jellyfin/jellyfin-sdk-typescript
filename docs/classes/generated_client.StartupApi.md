@@ -56,7 +56,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,7 +90,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L500)
+[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L500)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L511)
+[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L511)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L522)
+[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L522)
 
 ___
 
@@ -194,7 +194,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L533)
+[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L533)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L545)
+[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L545)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L557)
+[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L557)
 
 ___
 
@@ -275,4 +275,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/startup-api.ts#L569)
+[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/startup-api.ts#L569)

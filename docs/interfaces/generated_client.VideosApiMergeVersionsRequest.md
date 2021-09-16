@@ -28,4 +28,4 @@ Item id list. This allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:3364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/api/videos-api.ts#L3364)
+[generated-client/api/videos-api.ts:3364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/api/videos-api.ts#L3364)

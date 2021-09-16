@@ -66,7 +66,7 @@ Gets or sets the AlbumArtPn.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L132)
+[generated-client/models/device-profile.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L132)
 
 ___
 
@@ -80,7 +80,7 @@ Gets or sets the CodecProfiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L252)
+[generated-client/models/device-profile.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L252)
 
 ___
 
@@ -94,7 +94,7 @@ Gets or sets the ContainerProfiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L246)
+[generated-client/models/device-profile.ts:246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L246)
 
 ___
 
@@ -108,7 +108,7 @@ Gets or sets the direct play profiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L234)
+[generated-client/models/device-profile.ts:234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L234)
 
 ___
 
@@ -122,7 +122,7 @@ Gets or sets a value indicating whether EnableAlbumArtInDidl.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L102)
+[generated-client/models/device-profile.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L102)
 
 ___
 
@@ -136,7 +136,7 @@ Gets or sets a value indicating whether EnableMSMediaReceiverRegistrar.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L216)
+[generated-client/models/device-profile.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L216)
 
 ___
 
@@ -150,7 +150,7 @@ Gets or sets a value indicating whether EnableSingleAlbumArtLimit.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L108)
+[generated-client/models/device-profile.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L108)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets a value indicating whether EnableSingleSubtitleLimit.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L114)
+[generated-client/models/device-profile.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L114)
 
 ___
 
@@ -178,7 +178,7 @@ Gets or sets the FriendlyName.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L54)
+[generated-client/models/device-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L54)
 
 ___
 
@@ -192,7 +192,7 @@ Gets or sets the Id.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L42)
+[generated-client/models/device-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L42)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L48)
+[generated-client/models/device-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L48)
 
 ___
 
@@ -218,7 +218,7 @@ Gets or sets a value indicating whether IgnoreTranscodeByteRangeRequests.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L222)
+[generated-client/models/device-profile.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L222)
 
 ___
 
@@ -232,7 +232,7 @@ Gets or sets the Manufacturer.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L60)
+[generated-client/models/device-profile.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L60)
 
 ___
 
@@ -246,7 +246,7 @@ Gets or sets the ManufacturerUrl.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L66)
+[generated-client/models/device-profile.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L66)
 
 ___
 
@@ -260,7 +260,7 @@ Gets or sets the MaxAlbumArtHeight.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L144)
+[generated-client/models/device-profile.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L144)
 
 ___
 
@@ -274,7 +274,7 @@ Gets or sets the MaxAlbumArtWidth.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L138)
+[generated-client/models/device-profile.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L138)
 
 ___
 
@@ -288,7 +288,7 @@ Gets or sets the MaxIconHeight.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L156)
+[generated-client/models/device-profile.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L156)
 
 ___
 
@@ -302,7 +302,7 @@ Gets or sets the MaxIconWidth.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L150)
+[generated-client/models/device-profile.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L150)
 
 ___
 
@@ -316,7 +316,7 @@ Gets or sets the MaxStaticBitrate.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L168)
+[generated-client/models/device-profile.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L168)
 
 ___
 
@@ -330,7 +330,7 @@ Gets or sets the MaxStaticMusicBitrate.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L180)
+[generated-client/models/device-profile.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L180)
 
 ___
 
@@ -344,7 +344,7 @@ Gets or sets the MaxStreamingBitrate.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L162)
+[generated-client/models/device-profile.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L162)
 
 ___
 
@@ -358,7 +358,7 @@ Gets or sets the ModelDescription.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L78)
+[generated-client/models/device-profile.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L78)
 
 ___
 
@@ -372,7 +372,7 @@ Gets or sets the ModelName.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L72)
+[generated-client/models/device-profile.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L72)
 
 ___
 
@@ -386,7 +386,7 @@ Gets or sets the ModelNumber.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L84)
+[generated-client/models/device-profile.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L84)
 
 ___
 
@@ -400,7 +400,7 @@ Gets or sets the ModelUrl.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L90)
+[generated-client/models/device-profile.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L90)
 
 ___
 
@@ -414,7 +414,7 @@ Gets or sets the MusicStreamingTranscodingBitrate.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L174)
+[generated-client/models/device-profile.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L174)
 
 ___
 
@@ -428,7 +428,7 @@ Gets or sets the Name.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L36)
+[generated-client/models/device-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L36)
 
 ___
 
@@ -442,7 +442,7 @@ Gets or sets the ProtocolInfo.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L192)
+[generated-client/models/device-profile.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L192)
 
 ___
 
@@ -456,7 +456,7 @@ Gets or sets a value indicating whether RequiresPlainFolders.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L210)
+[generated-client/models/device-profile.ts:210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L210)
 
 ___
 
@@ -470,7 +470,7 @@ Gets or sets a value indicating whether RequiresPlainVideoItems.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L204)
+[generated-client/models/device-profile.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L204)
 
 ___
 
@@ -484,7 +484,7 @@ Gets or sets the ResponseProfiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L258)
+[generated-client/models/device-profile.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L258)
 
 ___
 
@@ -498,7 +498,7 @@ Gets or sets the SerialNumber.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L96)
+[generated-client/models/device-profile.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L96)
 
 ___
 
@@ -512,7 +512,7 @@ Gets or sets the content of the aggregationFlags element in the urn:schemas-sony
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L186)
+[generated-client/models/device-profile.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L186)
 
 ___
 
@@ -526,7 +526,7 @@ Gets or sets the SubtitleProfiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L264)
+[generated-client/models/device-profile.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L264)
 
 ___
 
@@ -540,7 +540,7 @@ Gets or sets the SupportedMediaTypes.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L120)
+[generated-client/models/device-profile.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L120)
 
 ___
 
@@ -554,7 +554,7 @@ Gets or sets the TimelineOffsetSeconds.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L198)
+[generated-client/models/device-profile.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L198)
 
 ___
 
@@ -568,7 +568,7 @@ Gets or sets the transcoding profiles.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L240)
+[generated-client/models/device-profile.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L240)
 
 ___
 
@@ -582,7 +582,7 @@ Gets or sets the UserId.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L126)
+[generated-client/models/device-profile.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L126)
 
 ___
 
@@ -596,4 +596,4 @@ Gets or sets the XmlRootAttributes.
 
 #### Defined in
 
-[generated-client/models/device-profile.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/350a9a5/src/generated-client/models/device-profile.ts#L228)
+[generated-client/models/device-profile.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/0f61f16/src/generated-client/models/device-profile.ts#L228)
