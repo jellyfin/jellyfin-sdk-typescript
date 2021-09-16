@@ -44,3 +44,14 @@ test('Test user login api', async () => {
 	// console.log('Auth =>', auth.data);
 	expect(auth.data).toBeTruthy();
 });
+
+test('Test library api', async () => {
+	const jellyfin = new Jellyfin();
+	const api = jellyfin.createApi(TEST_CONFIGURATION);
+
+	await api.authenticateUserByName({ Username: 'demo', Pw: '' });
+
+	const libraries = await api.libraryApi.getMediaFolders();
+	console.log('Libraries =>', libraries.data);
+	expect(libraries.data).toBeTruthy();
+});
