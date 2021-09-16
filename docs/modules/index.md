@@ -13,6 +13,7 @@
 
 - [ClientInfo](../interfaces/index.ClientInfo.md)
 - [DeviceInfo](../interfaces/index.DeviceInfo.md)
+- [JellyfinParameters](../interfaces/index.JellyfinParameters.md)
 
 ### Variables
 
@@ -33,7 +34,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/api.ts#L16)
+[api.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/api.ts#L16)
 
 ___
 
@@ -45,7 +46,7 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L14)
+[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/jellyfin.ts#L19)
 
 ## Functions
 
@@ -69,4 +70,4 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/utils/authentication.ts#L11)
+[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/utils/authentication.ts#L11)

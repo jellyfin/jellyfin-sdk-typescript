@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/hls-segment-api.ts#L415)
+[generated-client/api/hls-segment-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/hls-segment-api.ts#L415)
 
 ___
 
@@ -43,4 +43,4 @@ The segment id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:422](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/hls-segment-api.ts#L422)
+[generated-client/api/hls-segment-api.ts:422](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/hls-segment-api.ts#L422)

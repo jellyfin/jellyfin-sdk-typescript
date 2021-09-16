@@ -28,4 +28,4 @@ The settings of the new group.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/sync-play-api.ts#L1331)
+[generated-client/api/sync-play-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/sync-play-api.ts#L1331)

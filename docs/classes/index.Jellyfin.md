@@ -25,18 +25,17 @@ Class representing the Jellyfin SDK.
 
 ### constructor
 
-• **new Jellyfin**(`clientInfo?`, `deviceInfo?`)
+• **new Jellyfin**(`parameters`)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `clientInfo` | [`ClientInfo`](../interfaces/index.ClientInfo.md) |
-| `deviceInfo` | [`DeviceInfo`](../interfaces/index.DeviceInfo.md) |
+| `parameters` | [`JellyfinParameters`](../interfaces/index.JellyfinParameters.md) |
 
 #### Defined in
 
-[jellyfin.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L23)
+[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/jellyfin.ts#L28)
 
 ## Properties
 
@@ -46,7 +45,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:20](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L20)
+[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/jellyfin.ts#L25)
 
 ___
 
@@ -56,7 +55,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L21)
+[jellyfin.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/jellyfin.ts#L26)
 
 ## Methods
 
@@ -78,4 +77,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L32)
+[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/jellyfin.ts#L33)

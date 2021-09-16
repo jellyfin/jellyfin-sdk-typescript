@@ -32,7 +32,7 @@ The create playlist payload.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L538)
+[generated-client/api/playlists-api.ts:538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playlists-api.ts#L538)
 
 ___
 
@@ -46,7 +46,7 @@ The item ids.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L517)
+[generated-client/api/playlists-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playlists-api.ts#L517)
 
 ___
 
@@ -60,7 +60,7 @@ The media type.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L531)
+[generated-client/api/playlists-api.ts:531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playlists-api.ts#L531)
 
 ___
 
@@ -74,7 +74,7 @@ The playlist name.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L510)
+[generated-client/api/playlists-api.ts:510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playlists-api.ts#L510)
 
 ___
 
@@ -88,4 +88,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L524)
+[generated-client/api/playlists-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playlists-api.ts#L524)

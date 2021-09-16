@@ -28,4 +28,4 @@ The DTO containing username and password.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:483](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/startup-api.ts#L483)
+[generated-client/api/startup-api.ts:483](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/startup-api.ts#L483)

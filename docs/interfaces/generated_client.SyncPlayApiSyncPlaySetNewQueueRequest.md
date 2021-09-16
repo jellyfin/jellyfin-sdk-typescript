@@ -28,4 +28,4 @@ The new playlist to play in the group.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/sync-play-api.ts#L1485)
+[generated-client/api/sync-play-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/sync-play-api.ts#L1485)

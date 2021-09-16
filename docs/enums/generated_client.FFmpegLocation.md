@@ -25,7 +25,7 @@ Enum describing the location of the FFmpeg tool.
 
 #### Defined in
 
-[generated-client/models/ffmpeg-location.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/ffmpeg-location.ts#L26)
+[generated-client/models/ffmpeg-location.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/ffmpeg-location.ts#L26)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/ffmpeg-location.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/ffmpeg-location.ts#L24)
+[generated-client/models/ffmpeg-location.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/ffmpeg-location.ts#L24)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/ffmpeg-location.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/ffmpeg-location.ts#L25)
+[generated-client/models/ffmpeg-location.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/ffmpeg-location.ts#L25)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/ffmpeg-location.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/ffmpeg-location.ts#L27)
+[generated-client/models/ffmpeg-location.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/ffmpeg-location.ts#L27)

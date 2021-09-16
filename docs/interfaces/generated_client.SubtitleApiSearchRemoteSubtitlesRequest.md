@@ -30,7 +30,7 @@ Optional. Only show subtitles which are a perfect match.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1155](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1155)
+[generated-client/api/subtitle-api.ts:1155](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/subtitle-api.ts#L1155)
 
 ___
 
@@ -44,7 +44,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1141](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1141)
+[generated-client/api/subtitle-api.ts:1141](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/subtitle-api.ts#L1141)
 
 ___
 
@@ -58,4 +58,4 @@ The language of the subtitles.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1148)
+[generated-client/api/subtitle-api.ts:1148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/subtitle-api.ts#L1148)

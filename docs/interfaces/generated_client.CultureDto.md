@@ -32,7 +32,7 @@ Gets or sets the display name.
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/culture-dto.ts#L34)
+[generated-client/models/culture-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/culture-dto.ts#L34)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/culture-dto.ts#L28)
+[generated-client/models/culture-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/culture-dto.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ Gets or sets the name of the three letter ISO language.
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/culture-dto.ts#L46)
+[generated-client/models/culture-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/culture-dto.ts#L46)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/culture-dto.ts#L52)
+[generated-client/models/culture-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/culture-dto.ts#L52)
 
 ___
 
@@ -86,4 +86,4 @@ Gets or sets the name of the two letter ISO language.
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/culture-dto.ts#L40)
+[generated-client/models/culture-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/culture-dto.ts#L40)

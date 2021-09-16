@@ -28,4 +28,4 @@ The playback stop info.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playstate-api.ts#L1115)
+[generated-client/api/playstate-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/playstate-api.ts#L1115)

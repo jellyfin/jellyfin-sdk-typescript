@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/timer-event-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/timer-event-info.ts#L28)
+[generated-client/models/timer-event-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/timer-event-info.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/timer-event-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/timer-event-info.ts#L34)
+[generated-client/models/timer-event-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/timer-event-info.ts#L34)

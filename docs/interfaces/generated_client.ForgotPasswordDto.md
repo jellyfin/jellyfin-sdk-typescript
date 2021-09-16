@@ -28,4 +28,4 @@ Gets or sets the entered username to have its password reset.
 
 #### Defined in
 
-[generated-client/models/forgot-password-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/forgot-password-dto.ts#L28)
+[generated-client/models/forgot-password-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/forgot-password-dto.ts#L28)

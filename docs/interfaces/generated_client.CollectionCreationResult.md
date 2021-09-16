@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/collection-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/collection-creation-result.ts#L28)
+[generated-client/models/collection-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/collection-creation-result.ts#L28)

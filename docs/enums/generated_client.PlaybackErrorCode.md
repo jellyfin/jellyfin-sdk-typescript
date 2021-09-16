@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[generated-client/models/playback-error-code.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/playback-error-code.ts#L25)
+[generated-client/models/playback-error-code.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/playback-error-code.ts#L25)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-error-code.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/playback-error-code.ts#L24)
+[generated-client/models/playback-error-code.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/playback-error-code.ts#L24)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-error-code.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/playback-error-code.ts#L26)
+[generated-client/models/playback-error-code.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/playback-error-code.ts#L26)

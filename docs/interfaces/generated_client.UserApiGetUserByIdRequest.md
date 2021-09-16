@@ -28,4 +28,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-api.ts#L1175)
+[generated-client/api/user-api.ts:1175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/user-api.ts#L1175)

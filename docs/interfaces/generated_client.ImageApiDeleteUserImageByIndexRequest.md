@@ -30,7 +30,7 @@ Request parameters for deleteUserImageByIndex operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5892](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L5892)
+[generated-client/api/image-api.ts:5892](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/image-api.ts#L5892)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5899](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L5899)
+[generated-client/api/image-api.ts:5899](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/image-api.ts#L5899)
 
 ___
 
@@ -58,4 +58,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5885](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L5885)
+[generated-client/api/image-api.ts:5885](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/image-api.ts#L5885)

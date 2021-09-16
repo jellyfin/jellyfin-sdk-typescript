@@ -29,7 +29,7 @@ The MediaBrowser.Model.Session.ClientCapabilities.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/session-api.ts#L1395)
+[generated-client/api/session-api.ts:1395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/session-api.ts#L1395)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/session-api.ts#L1402)
+[generated-client/api/session-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/session-api.ts#L1402)

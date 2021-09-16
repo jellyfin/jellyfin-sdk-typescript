@@ -29,7 +29,7 @@ Gets or sets media path.
 
 #### Defined in
 
-[generated-client/models/media-update-info-path-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-update-info-path-dto.ts#L28)
+[generated-client/models/media-update-info-path-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/media-update-info-path-dto.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets media update type.  Created, Modified, Deleted.
 
 #### Defined in
 
-[generated-client/models/media-update-info-path-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-update-info-path-dto.ts#L34)
+[generated-client/models/media-update-info-path-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/media-update-info-path-dto.ts#L34)

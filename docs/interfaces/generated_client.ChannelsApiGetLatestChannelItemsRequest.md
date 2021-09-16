@@ -33,7 +33,7 @@ Optional. Specify one or more channel id\&#39;s, comma delimited.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:653](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L653)
+[generated-client/api/channels-api.ts:653](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L653)
 
 ___
 
@@ -47,7 +47,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:646](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L646)
+[generated-client/api/channels-api.ts:646](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L646)
 
 ___
 
@@ -61,7 +61,7 @@ Optional. Specify additional filters to apply.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L639)
+[generated-client/api/channels-api.ts:639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L639)
 
 ___
 
@@ -75,7 +75,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:632](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L632)
+[generated-client/api/channels-api.ts:632](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L632)
 
 ___
 
@@ -89,7 +89,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:625](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L625)
+[generated-client/api/channels-api.ts:625](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L625)
 
 ___
 
@@ -103,4 +103,4 @@ Optional. User Id.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:618](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L618)
+[generated-client/api/channels-api.ts:618](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/channels-api.ts#L618)

@@ -28,4 +28,4 @@ Optional. Filter by folders that are marked hidden, or not.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1910](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-api.ts#L1910)
+[generated-client/api/library-api.ts:1910](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/api/library-api.ts#L1910)

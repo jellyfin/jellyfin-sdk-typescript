@@ -10,7 +10,16 @@ A TypeScript SDK for Jellyfin.
 
 ```js
 // Create a new instance of the SDK
-const jellyfin = new Jellyfin();
+const jellyfin = new Jellyfin({
+    clientInfo: {
+        name: 'My Client Application',
+        version: '1.0.0'
+    },
+    deviceInfo: {
+        name: 'Device Name',
+        id: 'unique-device-id'
+    }
+});
 const api = jellyfin.createApi('https://demo.jellyfin.org/stable');
 
 // Each API endpoint is exposed via a getter on the SDK instance using

@@ -29,7 +29,7 @@ Gets or sets view option id.
 
 #### Defined in
 
-[generated-client/models/special-view-option-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/special-view-option-dto.ts#L34)
+[generated-client/models/special-view-option-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/special-view-option-dto.ts#L34)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets view option name.
 
 #### Defined in
 
-[generated-client/models/special-view-option-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/special-view-option-dto.ts#L28)
+[generated-client/models/special-view-option-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/special-view-option-dto.ts#L28)

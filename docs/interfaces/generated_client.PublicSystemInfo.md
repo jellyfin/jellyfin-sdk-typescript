@@ -32,7 +32,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L58)
+[generated-client/models/public-system-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L58)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the local address.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L28)
+[generated-client/models/public-system-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ Gets or sets the operating system.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L52)
+[generated-client/models/public-system-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L52)
 
 ___
 
@@ -74,7 +74,7 @@ Gets or sets the product name. This is the AssemblyProduct name.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L46)
+[generated-client/models/public-system-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L46)
 
 ___
 
@@ -88,7 +88,7 @@ Gets or sets the name of the server.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L34)
+[generated-client/models/public-system-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L34)
 
 ___
 
@@ -102,7 +102,7 @@ Gets or sets a value indicating whether the startup wizard is completed.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L64)
+[generated-client/models/public-system-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L64)
 
 ___
 
@@ -116,4 +116,4 @@ Gets or sets the server version.
 
 #### Defined in
 
-[generated-client/models/public-system-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/public-system-info.ts#L40)
+[generated-client/models/public-system-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/public-system-info.ts#L40)

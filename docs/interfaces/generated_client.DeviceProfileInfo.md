@@ -28,7 +28,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/device-profile-info.ts#L29)
+[generated-client/models/device-profile-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/device-profile-info.ts#L29)
 
 ___
 
@@ -42,7 +42,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/device-profile-info.ts#L35)
+[generated-client/models/device-profile-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/device-profile-info.ts#L35)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/device-profile-info.ts#L41)
+[generated-client/models/device-profile-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/device-profile-info.ts#L41)

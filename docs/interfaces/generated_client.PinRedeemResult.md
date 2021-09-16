@@ -27,7 +27,7 @@ Gets or sets a value indicating whether this MediaBrowser.Model.Users.PinRedeemR
 
 #### Defined in
 
-[generated-client/models/pin-redeem-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/pin-redeem-result.ts#L28)
+[generated-client/models/pin-redeem-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/pin-redeem-result.ts#L28)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the users reset.
 
 #### Defined in
 
-[generated-client/models/pin-redeem-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/pin-redeem-result.ts#L34)
+[generated-client/models/pin-redeem-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/pin-redeem-result.ts#L34)

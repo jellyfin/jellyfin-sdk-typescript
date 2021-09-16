@@ -24,7 +24,7 @@ Enum TaskState.
 
 #### Defined in
 
-[generated-client/models/task-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/task-state.ts#L25)
+[generated-client/models/task-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/task-state.ts#L25)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/task-state.ts#L24)
+[generated-client/models/task-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/task-state.ts#L24)
 
 ___
 
@@ -44,4 +44,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/task-state.ts#L26)
+[generated-client/models/task-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b0f5501/src/generated-client/models/task-state.ts#L26)
