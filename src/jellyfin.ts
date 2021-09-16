@@ -8,6 +8,11 @@ import { AxiosInstance } from 'axios';
 import { Api } from './api';
 import { ClientInfo, DeviceInfo } from './models';
 
+interface JellyfinParameters {
+	clientInfo: ClientInfo,
+	deviceInfo: DeviceInfo
+}
+
 /**
  * The minimum supported server version.
  */
@@ -20,13 +25,9 @@ export class Jellyfin {
 	clientInfo;
 	deviceInfo;
 
-	constructor(
-		clientInfo: ClientInfo = { name: 'jellyfin-sdk-typescript', version: 'v0.1.0' },
-		// FIXME: The device info should always be required.
-		deviceInfo: DeviceInfo = { name: 'device-name', id: 'device-id' }
-	) {
-		this.clientInfo = clientInfo;
-		this.deviceInfo = deviceInfo;
+	constructor(parameters: JellyfinParameters) {
+		this.clientInfo = parameters.clientInfo;
+		this.deviceInfo = parameters.deviceInfo;
 	}
 
 	createApi(basePath: string, accessToken?: string, axiosInstance?: AxiosInstance): Api {

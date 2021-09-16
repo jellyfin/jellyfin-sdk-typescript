@@ -8,18 +8,34 @@ import { Jellyfin } from '..';
 // FIXME: These tests should be mocked and not calling an actual server
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
 
+const TEST_CLIENT = {
+	name: 'sdk-test-client',
+	version: '0.0.0'
+};
+
+const TEST_DEVICE = {
+	name: 'device-name',
+	id: 'device-id'
+};
+
 describe('Test the Base SDK', () => {
 	it('create an api instance', () => {
-		const jellyfin = new Jellyfin();
+		const jellyfin = new Jellyfin({
+			clientInfo: TEST_CLIENT,
+			deviceInfo: TEST_DEVICE
+		});
 		expect(jellyfin).not.toBeNull();
 
 		const api = jellyfin.createApi(SERVER_URL);
 		expect(api.basePath).toEqual(SERVER_URL);
-		expect(api.authorizationHeader).toEqual('MediaBrowser Client="jellyfin-sdk-typescript", Device="device-name", DeviceId="device-id", Version="v0.1.0", Token=""');
+		expect(api.authorizationHeader).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token=""');
 	});
 
 	it('public users api', async () => {
-		const jellyfin = new Jellyfin();
+		const jellyfin = new Jellyfin({
+			clientInfo: TEST_CLIENT,
+			deviceInfo: TEST_DEVICE
+		});
 		const api = jellyfin.createApi(SERVER_URL);
 
 		const users = await api.userApi.getPublicUsers();
@@ -28,7 +44,10 @@ describe('Test the Base SDK', () => {
 	});
 
 	it('public system info api', async () => {
-		const jellyfin = new Jellyfin();
+		const jellyfin = new Jellyfin({
+			clientInfo: TEST_CLIENT,
+			deviceInfo: TEST_DEVICE
+		});
 		const api = jellyfin.createApi(SERVER_URL);
 
 		const info = await api.systemApi.getPublicSystemInfo();
@@ -37,7 +56,10 @@ describe('Test the Base SDK', () => {
 	});
 
 	it('user login api', async () => {
-		const jellyfin = new Jellyfin();
+		const jellyfin = new Jellyfin({
+			clientInfo: TEST_CLIENT,
+			deviceInfo: TEST_DEVICE
+		});
 		const api = jellyfin.createApi(SERVER_URL);
 
 		const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
@@ -46,7 +68,10 @@ describe('Test the Base SDK', () => {
 	});
 
 	it('library api', async () => {
-		const jellyfin = new Jellyfin();
+		const jellyfin = new Jellyfin({
+			clientInfo: TEST_CLIENT,
+			deviceInfo: TEST_DEVICE
+		});
 		const api = jellyfin.createApi(SERVER_URL);
 
 		await api.authenticateUserByName({ Username: 'demo', Pw: '' });
