@@ -50,12 +50,28 @@ module.exports = {
 	},
 	overrides: [
 		{
-			files: [
-				'./src/**'
-			],
+			files: [ './src/**' ],
 			env: {
 				node: false,
 				browser: true
+			}
+		},
+		{
+			files: [ './**/*.test.ts' ],
+			plugins: [ 'jest' ],
+			env: {
+				node: false,
+				browser: false,
+				'jest/globals': true
+			},
+			extends: [
+				'plugin:jest/recommended',
+				'plugin:jest/style'
+			],
+			rules: {
+				'jest/consistent-test-it': [ 'error' ],
+				'jest/lowercase-name': [ 'error', { 'ignoreTopLevelDescribe': true } ],
+				'jest/require-top-level-describe': [ 'error' ]
 			}
 		}
 	]
