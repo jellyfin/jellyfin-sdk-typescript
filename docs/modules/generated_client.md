@@ -4,11 +4,6 @@
 
 ## Table of contents
 
-### References
-
-- [Configuration](generated_client.md#configuration)
-- [ConfigurationParameters](generated_client.md#configurationparameters)
-
 ### Enumerations
 
 - [Architecture](../enums/generated_client.Architecture.md)
@@ -93,6 +88,7 @@
 - [BrandingApi](../classes/generated_client.BrandingApi.md)
 - [ChannelsApi](../classes/generated_client.ChannelsApi.md)
 - [CollectionApi](../classes/generated_client.CollectionApi.md)
+- [Configuration](../classes/generated_client.Configuration.md)
 - [ConfigurationApi](../classes/generated_client.ConfigurationApi.md)
 - [DashboardApi](../classes/generated_client.DashboardApi.md)
 - [DevicesApi](../classes/generated_client.DevicesApi.md)
@@ -204,6 +200,7 @@
 - [ConfigurationApiUpdateMediaEncoderPathRequest](../interfaces/generated_client.ConfigurationApiUpdateMediaEncoderPathRequest.md)
 - [ConfigurationApiUpdateNamedConfigurationRequest](../interfaces/generated_client.ConfigurationApiUpdateNamedConfigurationRequest.md)
 - [ConfigurationPageInfo](../interfaces/generated_client.ConfigurationPageInfo.md)
+- [ConfigurationParameters](../interfaces/generated_client.ConfigurationParameters.md)
 - [ContainerProfile](../interfaces/generated_client.ContainerProfile.md)
 - [ControlResponse](../interfaces/generated_client.ControlResponse.md)
 - [CountryInfo](../interfaces/generated_client.CountryInfo.md)
@@ -881,18 +878,6 @@
 - [YearsApiFactory](generated_client.md#yearsapifactory)
 - [YearsApiFp](generated_client.md#yearsapifp)
 
-## References
-
-### Configuration
-
-• **Configuration**: `Object`
-
-___
-
-### ConfigurationParameters
-
-• **ConfigurationParameters**: `Object`
-
 ## Functions
 
 ### ActivityLogApiAxiosParamCreator
@@ -907,7 +892,7 @@ ActivityLogApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -919,7 +904,7 @@ ActivityLogApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/activity-log-api.ts#L29)
+[generated-client/api/activity-log-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/activity-log-api.ts#L29)
 
 ___
 
@@ -935,7 +920,7 @@ ActivityLogApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -949,7 +934,7 @@ ActivityLogApi - factory interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/activity-log-api.ts#L117)
+[generated-client/api/activity-log-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/activity-log-api.ts#L117)
 
 ___
 
@@ -965,7 +950,7 @@ ActivityLogApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -977,7 +962,7 @@ ActivityLogApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:93](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/activity-log-api.ts#L93)
+[generated-client/api/activity-log-api.ts:93](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/activity-log-api.ts#L93)
 
 ___
 
@@ -993,7 +978,7 @@ ApiKeyApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1007,7 +992,7 @@ ApiKeyApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/api-key-api.ts#L29)
+[generated-client/api/api-key-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/api-key-api.ts#L29)
 
 ___
 
@@ -1023,7 +1008,7 @@ ApiKeyApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1039,7 +1024,7 @@ ApiKeyApi - factory interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/api-key-api.ts#L190)
+[generated-client/api/api-key-api.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/api-key-api.ts#L190)
 
 ___
 
@@ -1055,7 +1040,7 @@ ApiKeyApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1069,7 +1054,7 @@ ApiKeyApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/api-key-api.ts#L148)
+[generated-client/api/api-key-api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/api-key-api.ts#L148)
 
 ___
 
@@ -1085,7 +1070,7 @@ ArtistsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1099,7 +1084,7 @@ ArtistsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/artists-api.ts#L37)
+[generated-client/api/artists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/artists-api.ts#L37)
 
 ___
 
@@ -1115,7 +1100,7 @@ ArtistsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1131,7 +1116,7 @@ ArtistsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/artists-api.ts#L556)
+[generated-client/api/artists-api.ts:556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/artists-api.ts#L556)
 
 ___
 
@@ -1147,7 +1132,7 @@ ArtistsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1161,7 +1146,7 @@ ArtistsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/artists-api.ts#L454)
+[generated-client/api/artists-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/artists-api.ts#L454)
 
 ___
 
@@ -1177,7 +1162,7 @@ AudioApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1192,7 +1177,7 @@ AudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/audio-api.ts#L31)
+[generated-client/api/audio-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/audio-api.ts#L31)
 
 ___
 
@@ -1208,7 +1193,7 @@ AudioApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1225,7 +1210,7 @@ AudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/audio-api.ts#L1380)
+[generated-client/api/audio-api.ts:1380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/audio-api.ts#L1380)
 
 ___
 
@@ -1241,7 +1226,7 @@ AudioApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1256,7 +1241,7 @@ AudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/audio-api.ts#L1134)
+[generated-client/api/audio-api.ts:1134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/audio-api.ts#L1134)
 
 ___
 
@@ -1272,7 +1257,7 @@ BrandingApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1286,7 +1271,7 @@ BrandingApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/branding-api.ts#L29)
+[generated-client/api/branding-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/branding-api.ts#L29)
 
 ___
 
@@ -1302,7 +1287,7 @@ BrandingApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1318,7 +1303,7 @@ BrandingApi - factory interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/branding-api.ts#L168)
+[generated-client/api/branding-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/branding-api.ts#L168)
 
 ___
 
@@ -1334,7 +1319,7 @@ BrandingApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1348,7 +1333,7 @@ BrandingApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/branding-api.ts#L128)
+[generated-client/api/branding-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/branding-api.ts#L128)
 
 ___
 
@@ -1364,7 +1349,7 @@ ChannelsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1380,7 +1365,7 @@ ChannelsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/channels-api.ts#L37)
+[generated-client/api/channels-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L37)
 
 ___
 
@@ -1396,7 +1381,7 @@ ChannelsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1414,7 +1399,7 @@ ChannelsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/channels-api.ts#L401)
+[generated-client/api/channels-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L401)
 
 ___
 
@@ -1430,7 +1415,7 @@ ChannelsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1446,7 +1431,7 @@ ChannelsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/channels-api.ts#L319)
+[generated-client/api/channels-api.ts:319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/channels-api.ts#L319)
 
 ___
 
@@ -1462,7 +1447,7 @@ CollectionApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1476,7 +1461,7 @@ CollectionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/collection-api.ts#L29)
+[generated-client/api/collection-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/collection-api.ts#L29)
 
 ___
 
@@ -1492,7 +1477,7 @@ CollectionApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1508,7 +1493,7 @@ CollectionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/collection-api.ts#L227)
+[generated-client/api/collection-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/collection-api.ts#L227)
 
 ___
 
@@ -1524,7 +1509,7 @@ CollectionApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1538,7 +1523,7 @@ CollectionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/collection-api.ts#L179)
+[generated-client/api/collection-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/collection-api.ts#L179)
 
 ___
 
@@ -1554,7 +1539,7 @@ ConfigurationApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1571,7 +1556,7 @@ ConfigurationApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/configuration-api.ts#L33)
+[generated-client/api/configuration-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/configuration-api.ts#L33)
 
 ___
 
@@ -1587,7 +1572,7 @@ ConfigurationApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1606,7 +1591,7 @@ ConfigurationApi - factory interface
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/configuration-api.ts#L334)
+[generated-client/api/configuration-api.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/configuration-api.ts#L334)
 
 ___
 
@@ -1622,7 +1607,7 @@ ConfigurationApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1639,7 +1624,7 @@ ConfigurationApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/configuration-api.ts#L260)
+[generated-client/api/configuration-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/configuration-api.ts#L260)
 
 ___
 
@@ -1655,7 +1640,7 @@ DashboardApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1668,7 +1653,7 @@ DashboardApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dashboard-api.ts#L33)
+[generated-client/api/dashboard-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dashboard-api.ts#L33)
 
 ___
 
@@ -1684,7 +1669,7 @@ DashboardApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1699,7 +1684,7 @@ DashboardApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dashboard-api.ts#L150)
+[generated-client/api/dashboard-api.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dashboard-api.ts#L150)
 
 ___
 
@@ -1715,7 +1700,7 @@ DashboardApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1728,7 +1713,7 @@ DashboardApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dashboard-api.ts#L117)
+[generated-client/api/dashboard-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dashboard-api.ts#L117)
 
 ___
 
@@ -1744,7 +1729,7 @@ DevicesApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1760,7 +1745,7 @@ DevicesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/devices-api.ts#L35)
+[generated-client/api/devices-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/devices-api.ts#L35)
 
 ___
 
@@ -1776,7 +1761,7 @@ DevicesApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1794,7 +1779,7 @@ DevicesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/devices-api.ts#L320)
+[generated-client/api/devices-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/devices-api.ts#L320)
 
 ___
 
@@ -1810,7 +1795,7 @@ DevicesApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1826,7 +1811,7 @@ DevicesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/devices-api.ts#L253)
+[generated-client/api/devices-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/devices-api.ts#L253)
 
 ___
 
@@ -1842,7 +1827,7 @@ DisplayPreferencesApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1855,7 +1840,7 @@ DisplayPreferencesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/display-preferences-api.ts#L29)
+[generated-client/api/display-preferences-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/display-preferences-api.ts#L29)
 
 ___
 
@@ -1871,7 +1856,7 @@ DisplayPreferencesApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1886,7 +1871,7 @@ DisplayPreferencesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/display-preferences-api.ts#L183)
+[generated-client/api/display-preferences-api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/display-preferences-api.ts#L183)
 
 ___
 
@@ -1902,7 +1887,7 @@ DisplayPreferencesApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1915,7 +1900,7 @@ DisplayPreferencesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/display-preferences-api.ts#L146)
+[generated-client/api/display-preferences-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/display-preferences-api.ts#L146)
 
 ___
 
@@ -1931,7 +1916,7 @@ DlnaApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -1948,7 +1933,7 @@ DlnaApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-api.ts#L33)
+[generated-client/api/dlna-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-api.ts#L33)
 
 ___
 
@@ -1964,7 +1949,7 @@ DlnaApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -1983,7 +1968,7 @@ DlnaApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-api.ts#L335)
+[generated-client/api/dlna-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-api.ts#L335)
 
 ___
 
@@ -1999,7 +1984,7 @@ DlnaApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2016,7 +2001,7 @@ DlnaApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-api.ts#L260)
+[generated-client/api/dlna-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-api.ts#L260)
 
 ___
 
@@ -2032,7 +2017,7 @@ DlnaServerApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2059,7 +2044,7 @@ DlnaServerApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-server-api.ts#L29)
+[generated-client/api/dlna-server-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-server-api.ts#L29)
 
 ___
 
@@ -2075,7 +2060,7 @@ DlnaServerApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2104,7 +2089,7 @@ DlnaServerApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:773](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-server-api.ts#L773)
+[generated-client/api/dlna-server-api.ts:773](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-server-api.ts#L773)
 
 ___
 
@@ -2120,7 +2105,7 @@ DlnaServerApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2147,7 +2132,7 @@ DlnaServerApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:586](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dlna-server-api.ts#L586)
+[generated-client/api/dlna-server-api.ts:586](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dlna-server-api.ts#L586)
 
 ___
 
@@ -2163,7 +2148,7 @@ DynamicHlsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2182,7 +2167,7 @@ DynamicHlsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dynamic-hls-api.ts#L31)
+[generated-client/api/dynamic-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dynamic-hls-api.ts#L31)
 
 ___
 
@@ -2198,7 +2183,7 @@ DynamicHlsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2219,7 +2204,7 @@ DynamicHlsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:2776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dynamic-hls-api.ts#L2776)
+[generated-client/api/dynamic-hls-api.ts:2776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dynamic-hls-api.ts#L2776)
 
 ___
 
@@ -2235,7 +2220,7 @@ DynamicHlsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2254,7 +2239,7 @@ DynamicHlsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:2288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/dynamic-hls-api.ts#L2288)
+[generated-client/api/dynamic-hls-api.ts:2288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/dynamic-hls-api.ts#L2288)
 
 ___
 
@@ -2270,7 +2255,7 @@ EnvironmentApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2287,7 +2272,7 @@ EnvironmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/environment-api.ts#L35)
+[generated-client/api/environment-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/environment-api.ts#L35)
 
 ___
 
@@ -2303,7 +2288,7 @@ EnvironmentApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2322,7 +2307,7 @@ EnvironmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/environment-api.ts#L349)
+[generated-client/api/environment-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/environment-api.ts#L349)
 
 ___
 
@@ -2338,7 +2323,7 @@ EnvironmentApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2355,7 +2340,7 @@ EnvironmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/environment-api.ts#L273)
+[generated-client/api/environment-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/environment-api.ts#L273)
 
 ___
 
@@ -2371,7 +2356,7 @@ FilterApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2384,7 +2369,7 @@ FilterApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/filter-api.ts#L31)
+[generated-client/api/filter-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/filter-api.ts#L31)
 
 ___
 
@@ -2400,7 +2385,7 @@ FilterApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2415,7 +2400,7 @@ FilterApi - factory interface
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/filter-api.ts#L220)
+[generated-client/api/filter-api.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/filter-api.ts#L220)
 
 ___
 
@@ -2431,7 +2416,7 @@ FilterApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2444,7 +2429,7 @@ FilterApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/filter-api.ts#L176)
+[generated-client/api/filter-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/filter-api.ts#L176)
 
 ___
 
@@ -2460,7 +2445,7 @@ GenresApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2473,7 +2458,7 @@ GenresApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/genres-api.ts#L35)
+[generated-client/api/genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/genres-api.ts#L35)
 
 ___
 
@@ -2489,7 +2474,7 @@ GenresApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2504,7 +2489,7 @@ GenresApi - factory interface
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/genres-api.ts#L247)
+[generated-client/api/genres-api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/genres-api.ts#L247)
 
 ___
 
@@ -2520,7 +2505,7 @@ GenresApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2533,7 +2518,7 @@ GenresApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/genres-api.ts#L199)
+[generated-client/api/genres-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/genres-api.ts#L199)
 
 ___
 
@@ -2549,7 +2534,7 @@ HlsSegmentApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2565,7 +2550,7 @@ HlsSegmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/hls-segment-api.ts#L29)
+[generated-client/api/hls-segment-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/hls-segment-api.ts#L29)
 
 ___
 
@@ -2581,7 +2566,7 @@ HlsSegmentApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2599,7 +2584,7 @@ HlsSegmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/hls-segment-api.ts#L320)
+[generated-client/api/hls-segment-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/hls-segment-api.ts#L320)
 
 ___
 
@@ -2615,7 +2600,7 @@ HlsSegmentApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2631,7 +2616,7 @@ HlsSegmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/hls-segment-api.ts#L248)
+[generated-client/api/hls-segment-api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/hls-segment-api.ts#L248)
 
 ___
 
@@ -2647,7 +2632,7 @@ ImageApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2696,7 +2681,7 @@ ImageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L35)
+[generated-client/api/image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L35)
 
 ___
 
@@ -2712,7 +2697,7 @@ ImageApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2763,7 +2748,7 @@ ImageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/image-api.ts:4878](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L4878)
+[generated-client/api/image-api.ts:4878](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L4878)
 
 ___
 
@@ -2779,7 +2764,7 @@ ImageApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2828,7 +2813,7 @@ ImageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/image-api.ts:3924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L3924)
+[generated-client/api/image-api.ts:3924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L3924)
 
 ___
 
@@ -2844,7 +2829,7 @@ ImageByNameApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2861,7 +2846,7 @@ ImageByNameApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L31)
+[generated-client/api/image-by-name-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-by-name-api.ts#L31)
 
 ___
 
@@ -2877,7 +2862,7 @@ ImageByNameApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -2896,7 +2881,7 @@ ImageByNameApi - factory interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L329)
+[generated-client/api/image-by-name-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-by-name-api.ts#L329)
 
 ___
 
@@ -2912,7 +2897,7 @@ ImageByNameApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2929,7 +2914,7 @@ ImageByNameApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-by-name-api.ts#L253)
+[generated-client/api/image-by-name-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-by-name-api.ts#L253)
 
 ___
 
@@ -2945,7 +2930,7 @@ InstantMixApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -2965,7 +2950,7 @@ InstantMixApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/instant-mix-api.ts#L33)
+[generated-client/api/instant-mix-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/instant-mix-api.ts#L33)
 
 ___
 
@@ -2981,7 +2966,7 @@ InstantMixApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3003,7 +2988,7 @@ InstantMixApi - factory interface
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:872](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/instant-mix-api.ts#L872)
+[generated-client/api/instant-mix-api.ts:872](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/instant-mix-api.ts#L872)
 
 ___
 
@@ -3019,7 +3004,7 @@ InstantMixApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3039,7 +3024,7 @@ InstantMixApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/instant-mix-api.ts#L698)
+[generated-client/api/instant-mix-api.ts:698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/instant-mix-api.ts#L698)
 
 ___
 
@@ -3055,7 +3040,7 @@ ItemLookupApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3077,7 +3062,7 @@ ItemLookupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-lookup-api.ts#L51)
+[generated-client/api/item-lookup-api.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-lookup-api.ts#L51)
 
 ___
 
@@ -3093,7 +3078,7 @@ ItemLookupApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3117,7 +3102,7 @@ ItemLookupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-lookup-api.ts#L629)
+[generated-client/api/item-lookup-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-lookup-api.ts#L629)
 
 ___
 
@@ -3133,7 +3118,7 @@ ItemLookupApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3155,7 +3140,7 @@ ItemLookupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-lookup-api.ts#L496)
+[generated-client/api/item-lookup-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-lookup-api.ts#L496)
 
 ___
 
@@ -3171,7 +3156,7 @@ ItemRefreshApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3183,7 +3168,7 @@ ItemRefreshApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-refresh-api.ts#L31)
+[generated-client/api/item-refresh-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-refresh-api.ts#L31)
 
 ___
 
@@ -3199,7 +3184,7 @@ ItemRefreshApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3213,7 +3198,7 @@ ItemRefreshApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-refresh-api.ts#L122)
+[generated-client/api/item-refresh-api.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-refresh-api.ts#L122)
 
 ___
 
@@ -3229,7 +3214,7 @@ ItemRefreshApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3241,7 +3226,7 @@ ItemRefreshApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-refresh-api.ts#L97)
+[generated-client/api/item-refresh-api.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-refresh-api.ts#L97)
 
 ___
 
@@ -3257,7 +3242,7 @@ ItemUpdateApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3271,7 +3256,7 @@ ItemUpdateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-update-api.ts#L33)
+[generated-client/api/item-update-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-update-api.ts#L33)
 
 ___
 
@@ -3287,7 +3272,7 @@ ItemUpdateApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3303,7 +3288,7 @@ ItemUpdateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-update-api.ts#L209)
+[generated-client/api/item-update-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-update-api.ts#L209)
 
 ___
 
@@ -3319,7 +3304,7 @@ ItemUpdateApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3333,7 +3318,7 @@ ItemUpdateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/item-update-api.ts#L164)
+[generated-client/api/item-update-api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/item-update-api.ts#L164)
 
 ___
 
@@ -3349,7 +3334,7 @@ ItemsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3363,7 +3348,7 @@ ItemsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/items-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L43)
+[generated-client/api/items-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L43)
 
 ___
 
@@ -3379,7 +3364,7 @@ ItemsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3395,7 +3380,7 @@ ItemsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L1249)
+[generated-client/api/items-api.ts:1249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L1249)
 
 ___
 
@@ -3411,7 +3396,7 @@ ItemsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3425,7 +3410,7 @@ ItemsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L1035)
+[generated-client/api/items-api.ts:1035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L1035)
 
 ___
 
@@ -3441,7 +3426,7 @@ LibraryApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3477,7 +3462,7 @@ LibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-api.ts#L45)
+[generated-client/api/library-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-api.ts#L45)
 
 ___
 
@@ -3493,7 +3478,7 @@ LibraryApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3531,7 +3516,7 @@ LibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-api.ts#L1476)
+[generated-client/api/library-api.ts:1476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-api.ts#L1476)
 
 ___
 
@@ -3547,7 +3532,7 @@ LibraryApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3583,7 +3568,7 @@ LibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-api.ts#L1157)
+[generated-client/api/library-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-api.ts#L1157)
 
 ___
 
@@ -3599,7 +3584,7 @@ LibraryStructureApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3618,7 +3603,7 @@ LibraryStructureApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-structure-api.ts#L41)
+[generated-client/api/library-structure-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-structure-api.ts#L41)
 
 ___
 
@@ -3634,7 +3619,7 @@ LibraryStructureApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3655,7 +3640,7 @@ LibraryStructureApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-structure-api.ts#L506)
+[generated-client/api/library-structure-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-structure-api.ts#L506)
 
 ___
 
@@ -3671,7 +3656,7 @@ LibraryStructureApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3690,7 +3675,7 @@ LibraryStructureApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/library-structure-api.ts#L399)
+[generated-client/api/library-structure-api.ts:399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/library-structure-api.ts#L399)
 
 ___
 
@@ -3706,7 +3691,7 @@ LiveTvApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3758,7 +3743,7 @@ LiveTvApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L69)
+[generated-client/api/live-tv-api.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L69)
 
 ___
 
@@ -3774,7 +3759,7 @@ LiveTvApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3828,7 +3813,7 @@ LiveTvApi - factory interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L2702)
+[generated-client/api/live-tv-api.ts:2702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L2702)
 
 ___
 
@@ -3844,7 +3829,7 @@ LiveTvApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3896,7 +3881,7 @@ LiveTvApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L2135)
+[generated-client/api/live-tv-api.ts:2135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L2135)
 
 ___
 
@@ -3912,7 +3897,7 @@ LocalizationApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3927,7 +3912,7 @@ LocalizationApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/localization-api.ts#L35)
+[generated-client/api/localization-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/localization-api.ts#L35)
 
 ___
 
@@ -3943,7 +3928,7 @@ LocalizationApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -3960,7 +3945,7 @@ LocalizationApi - factory interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/localization-api.ts#L226)
+[generated-client/api/localization-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/localization-api.ts#L226)
 
 ___
 
@@ -3976,7 +3961,7 @@ LocalizationApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -3991,7 +3976,7 @@ LocalizationApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/localization-api.ts#L176)
+[generated-client/api/localization-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/localization-api.ts#L176)
 
 ___
 
@@ -4007,7 +3992,7 @@ MediaInfoApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4023,7 +4008,7 @@ MediaInfoApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/media-info-api.ts#L37)
+[generated-client/api/media-info-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/media-info-api.ts#L37)
 
 ___
 
@@ -4039,7 +4024,7 @@ MediaInfoApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4057,7 +4042,7 @@ MediaInfoApi - factory interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/media-info-api.ts#L463)
+[generated-client/api/media-info-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/media-info-api.ts#L463)
 
 ___
 
@@ -4073,7 +4058,7 @@ MediaInfoApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4089,7 +4074,7 @@ MediaInfoApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:371](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/media-info-api.ts#L371)
+[generated-client/api/media-info-api.ts:371](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/media-info-api.ts#L371)
 
 ___
 
@@ -4105,7 +4090,7 @@ MoviesApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4117,7 +4102,7 @@ MoviesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/movies-api.ts#L31)
+[generated-client/api/movies-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/movies-api.ts#L31)
 
 ___
 
@@ -4133,7 +4118,7 @@ MoviesApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4147,7 +4132,7 @@ MoviesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/movies-api.ts#L123)
+[generated-client/api/movies-api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/movies-api.ts#L123)
 
 ___
 
@@ -4163,7 +4148,7 @@ MoviesApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4175,7 +4160,7 @@ MoviesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/movies-api.ts#L98)
+[generated-client/api/movies-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/movies-api.ts#L98)
 
 ___
 
@@ -4191,7 +4176,7 @@ MusicGenresApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4204,7 +4189,7 @@ MusicGenresApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/music-genres-api.ts#L35)
+[generated-client/api/music-genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/music-genres-api.ts#L35)
 
 ___
 
@@ -4220,7 +4205,7 @@ MusicGenresApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4235,7 +4220,7 @@ MusicGenresApi - factory interface
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/music-genres-api.ts#L249)
+[generated-client/api/music-genres-api.ts:249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/music-genres-api.ts#L249)
 
 ___
 
@@ -4251,7 +4236,7 @@ MusicGenresApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4264,7 +4249,7 @@ MusicGenresApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/music-genres-api.ts#L200)
+[generated-client/api/music-genres-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/music-genres-api.ts#L200)
 
 ___
 
@@ -4280,7 +4265,7 @@ NotificationsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4298,7 +4283,7 @@ NotificationsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/notifications-api.ts#L37)
+[generated-client/api/notifications-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/notifications-api.ts#L37)
 
 ___
 
@@ -4314,7 +4299,7 @@ NotificationsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4334,7 +4319,7 @@ NotificationsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/notifications-api.ts#L384)
+[generated-client/api/notifications-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/notifications-api.ts#L384)
 
 ___
 
@@ -4350,7 +4335,7 @@ NotificationsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4368,7 +4353,7 @@ NotificationsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/notifications-api.ts#L299)
+[generated-client/api/notifications-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/notifications-api.ts#L299)
 
 ___
 
@@ -4384,7 +4369,7 @@ PackageApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4401,7 +4386,7 @@ PackageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/package-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/package-api.ts#L33)
+[generated-client/api/package-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/package-api.ts#L33)
 
 ___
 
@@ -4417,7 +4402,7 @@ PackageApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4436,7 +4421,7 @@ PackageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/package-api.ts#L356)
+[generated-client/api/package-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/package-api.ts#L356)
 
 ___
 
@@ -4452,7 +4437,7 @@ PackageApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4469,7 +4454,7 @@ PackageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:278](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/package-api.ts#L278)
+[generated-client/api/package-api.ts:278](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/package-api.ts#L278)
 
 ___
 
@@ -4485,7 +4470,7 @@ PersonsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4498,7 +4483,7 @@ PersonsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/persons-api.ts#L39)
+[generated-client/api/persons-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/persons-api.ts#L39)
 
 ___
 
@@ -4514,7 +4499,7 @@ PersonsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4529,7 +4514,7 @@ PersonsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:233](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/persons-api.ts#L233)
+[generated-client/api/persons-api.ts:233](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/persons-api.ts#L233)
 
 ___
 
@@ -4545,7 +4530,7 @@ PersonsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4558,7 +4543,7 @@ PersonsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/persons-api.ts#L188)
+[generated-client/api/persons-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/persons-api.ts#L188)
 
 ___
 
@@ -4574,7 +4559,7 @@ PlaylistsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4590,7 +4575,7 @@ PlaylistsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playlists-api.ts#L37)
+[generated-client/api/playlists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L37)
 
 ___
 
@@ -4606,7 +4591,7 @@ PlaylistsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4624,7 +4609,7 @@ PlaylistsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playlists-api.ts#L398)
+[generated-client/api/playlists-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L398)
 
 ___
 
@@ -4640,7 +4625,7 @@ PlaylistsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4656,7 +4641,7 @@ PlaylistsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playlists-api.ts#L316)
+[generated-client/api/playlists-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playlists-api.ts#L316)
 
 ___
 
@@ -4672,7 +4657,7 @@ PlaystateApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4692,7 +4677,7 @@ PlaystateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playstate-api.ts#L39)
+[generated-client/api/playstate-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playstate-api.ts#L39)
 
 ___
 
@@ -4708,7 +4693,7 @@ PlaystateApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4730,7 +4715,7 @@ PlaystateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playstate-api.ts#L664)
+[generated-client/api/playstate-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playstate-api.ts#L664)
 
 ___
 
@@ -4746,7 +4731,7 @@ PlaystateApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4766,7 +4751,7 @@ PlaystateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playstate-api.ts#L526)
+[generated-client/api/playstate-api.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playstate-api.ts#L526)
 
 ___
 
@@ -4782,7 +4767,7 @@ PluginsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4803,7 +4788,7 @@ PluginsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/plugins-api.ts#L35)
+[generated-client/api/plugins-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/plugins-api.ts#L35)
 
 ___
 
@@ -4819,7 +4804,7 @@ PluginsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4842,7 +4827,7 @@ PluginsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/plugins-api.ts#L555)
+[generated-client/api/plugins-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/plugins-api.ts#L555)
 
 ___
 
@@ -4858,7 +4843,7 @@ PluginsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4879,7 +4864,7 @@ PluginsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/plugins-api.ts#L430)
+[generated-client/api/plugins-api.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/plugins-api.ts#L430)
 
 ___
 
@@ -4895,7 +4880,7 @@ QuickConnectApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4913,7 +4898,7 @@ QuickConnectApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/quick-connect-api.ts#L33)
+[generated-client/api/quick-connect-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/quick-connect-api.ts#L33)
 
 ___
 
@@ -4929,7 +4914,7 @@ QuickConnectApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -4949,7 +4934,7 @@ QuickConnectApi - factory interface
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/quick-connect-api.ts#L366)
+[generated-client/api/quick-connect-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/quick-connect-api.ts#L366)
 
 ___
 
@@ -4965,7 +4950,7 @@ QuickConnectApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -4983,7 +4968,7 @@ QuickConnectApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/quick-connect-api.ts#L283)
+[generated-client/api/quick-connect-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/quick-connect-api.ts#L283)
 
 ___
 
@@ -4999,7 +4984,7 @@ RemoteImageApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5013,7 +4998,7 @@ RemoteImageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/remote-image-api.ts#L35)
+[generated-client/api/remote-image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/remote-image-api.ts#L35)
 
 ___
 
@@ -5029,7 +5014,7 @@ RemoteImageApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5045,7 +5030,7 @@ RemoteImageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/remote-image-api.ts#L242)
+[generated-client/api/remote-image-api.ts:242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/remote-image-api.ts#L242)
 
 ___
 
@@ -5061,7 +5046,7 @@ RemoteImageApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5075,7 +5060,7 @@ RemoteImageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/remote-image-api.ts#L192)
+[generated-client/api/remote-image-api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/remote-image-api.ts#L192)
 
 ___
 
@@ -5091,7 +5076,7 @@ ScheduledTasksApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5107,7 +5092,7 @@ ScheduledTasksApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/scheduled-tasks-api.ts#L33)
+[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/scheduled-tasks-api.ts#L33)
 
 ___
 
@@ -5123,7 +5108,7 @@ ScheduledTasksApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5141,7 +5126,7 @@ ScheduledTasksApi - factory interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/scheduled-tasks-api.ts#L306)
+[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/scheduled-tasks-api.ts#L306)
 
 ___
 
@@ -5157,7 +5142,7 @@ ScheduledTasksApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5173,7 +5158,7 @@ ScheduledTasksApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/scheduled-tasks-api.ts#L239)
+[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/scheduled-tasks-api.ts#L239)
 
 ___
 
@@ -5189,7 +5174,7 @@ SearchApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5201,7 +5186,7 @@ SearchApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/search-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/search-api.ts#L29)
+[generated-client/api/search-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/search-api.ts#L29)
 
 ___
 
@@ -5217,7 +5202,7 @@ SearchApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5231,7 +5216,7 @@ SearchApi - factory interface
 
 #### Defined in
 
-[generated-client/api/search-api.ts:201](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/search-api.ts#L201)
+[generated-client/api/search-api.ts:201](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/search-api.ts#L201)
 
 ___
 
@@ -5247,7 +5232,7 @@ SearchApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5259,7 +5244,7 @@ SearchApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/search-api.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/search-api.ts#L163)
+[generated-client/api/search-api.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/search-api.ts#L163)
 
 ___
 
@@ -5275,7 +5260,7 @@ SessionApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5302,7 +5287,7 @@ SessionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/session-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/session-api.ts#L43)
+[generated-client/api/session-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/session-api.ts#L43)
 
 ___
 
@@ -5318,7 +5303,7 @@ SessionApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5347,7 +5332,7 @@ SessionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:997](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/session-api.ts#L997)
+[generated-client/api/session-api.ts:997](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/session-api.ts#L997)
 
 ___
 
@@ -5363,7 +5348,7 @@ SessionApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5390,7 +5375,7 @@ SessionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:786](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/session-api.ts#L786)
+[generated-client/api/session-api.ts:786](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/session-api.ts#L786)
 
 ___
 
@@ -5406,7 +5391,7 @@ StartupApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5424,7 +5409,7 @@ StartupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/startup-api.ts#L33)
+[generated-client/api/startup-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/startup-api.ts#L33)
 
 ___
 
@@ -5440,7 +5425,7 @@ StartupApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5460,7 +5445,7 @@ StartupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/startup-api.ts#L372)
+[generated-client/api/startup-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/startup-api.ts#L372)
 
 ___
 
@@ -5476,7 +5461,7 @@ StartupApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5494,7 +5479,7 @@ StartupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/startup-api.ts#L289)
+[generated-client/api/startup-api.ts:289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/startup-api.ts#L289)
 
 ___
 
@@ -5510,7 +5495,7 @@ StudiosApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5523,7 +5508,7 @@ StudiosApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/studios-api.ts#L35)
+[generated-client/api/studios-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/studios-api.ts#L35)
 
 ___
 
@@ -5539,7 +5524,7 @@ StudiosApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5554,7 +5539,7 @@ StudiosApi - factory interface
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/studios-api.ts#L253)
+[generated-client/api/studios-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/studios-api.ts#L253)
 
 ___
 
@@ -5570,7 +5555,7 @@ StudiosApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5583,7 +5568,7 @@ StudiosApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/studios-api.ts#L204)
+[generated-client/api/studios-api.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/studios-api.ts#L204)
 
 ___
 
@@ -5599,7 +5584,7 @@ SubtitleApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5620,7 +5605,7 @@ SubtitleApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L35)
+[generated-client/api/subtitle-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L35)
 
 ___
 
@@ -5636,7 +5621,7 @@ SubtitleApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5659,7 +5644,7 @@ SubtitleApi - factory interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L700)
+[generated-client/api/subtitle-api.ts:700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L700)
 
 ___
 
@@ -5675,7 +5660,7 @@ SubtitleApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5696,7 +5681,7 @@ SubtitleApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:550](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L550)
+[generated-client/api/subtitle-api.ts:550](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L550)
 
 ___
 
@@ -5712,7 +5697,7 @@ SuggestionsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5724,7 +5709,7 @@ SuggestionsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/suggestions-api.ts#L29)
+[generated-client/api/suggestions-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/suggestions-api.ts#L29)
 
 ___
 
@@ -5740,7 +5725,7 @@ SuggestionsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5754,7 +5739,7 @@ SuggestionsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/suggestions-api.ts#L126)
+[generated-client/api/suggestions-api.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/suggestions-api.ts#L126)
 
 ___
 
@@ -5770,7 +5755,7 @@ SuggestionsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5782,7 +5767,7 @@ SuggestionsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/suggestions-api.ts#L100)
+[generated-client/api/suggestions-api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/suggestions-api.ts#L100)
 
 ___
 
@@ -5798,7 +5783,7 @@ SyncPlayApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5830,7 +5815,7 @@ SyncPlayApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/sync-play-api.ts#L61)
+[generated-client/api/sync-play-api.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/sync-play-api.ts#L61)
 
 ___
 
@@ -5846,7 +5831,7 @@ SyncPlayApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -5880,7 +5865,7 @@ SyncPlayApi - factory interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1095](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/sync-play-api.ts#L1095)
+[generated-client/api/sync-play-api.ts:1095](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/sync-play-api.ts#L1095)
 
 ___
 
@@ -5896,7 +5881,7 @@ SyncPlayApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5928,7 +5913,7 @@ SyncPlayApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/sync-play-api.ts#L859)
+[generated-client/api/sync-play-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/sync-play-api.ts#L859)
 
 ___
 
@@ -5944,7 +5929,7 @@ SystemApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -5965,7 +5950,7 @@ SystemApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/system-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/system-api.ts#L37)
+[generated-client/api/system-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/system-api.ts#L37)
 
 ___
 
@@ -5981,7 +5966,7 @@ SystemApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6004,7 +5989,7 @@ SystemApi - factory interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/system-api.ts#L485)
+[generated-client/api/system-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/system-api.ts#L485)
 
 ___
 
@@ -6020,7 +6005,7 @@ SystemApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6041,7 +6026,7 @@ SystemApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/system-api.ts#L374)
+[generated-client/api/system-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/system-api.ts#L374)
 
 ___
 
@@ -6057,7 +6042,7 @@ TimeSyncApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6069,7 +6054,7 @@ TimeSyncApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/time-sync-api.ts#L29)
+[generated-client/api/time-sync-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/time-sync-api.ts#L29)
 
 ___
 
@@ -6085,7 +6070,7 @@ TimeSyncApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6099,7 +6084,7 @@ TimeSyncApi - factory interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/time-sync-api.ts#L88)
+[generated-client/api/time-sync-api.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/time-sync-api.ts#L88)
 
 ___
 
@@ -6115,7 +6100,7 @@ TimeSyncApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6127,7 +6112,7 @@ TimeSyncApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/time-sync-api.ts#L68)
+[generated-client/api/time-sync-api.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/time-sync-api.ts#L68)
 
 ___
 
@@ -6143,7 +6128,7 @@ TrailersApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6155,7 +6140,7 @@ TrailersApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/trailers-api.ts#L43)
+[generated-client/api/trailers-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/trailers-api.ts#L43)
 
 ___
 
@@ -6171,7 +6156,7 @@ TrailersApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6185,7 +6170,7 @@ TrailersApi - factory interface
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/trailers-api.ts#L587)
+[generated-client/api/trailers-api.ts:587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/trailers-api.ts#L587)
 
 ___
 
@@ -6201,7 +6186,7 @@ TrailersApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6213,7 +6198,7 @@ TrailersApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:488](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/trailers-api.ts#L488)
+[generated-client/api/trailers-api.ts:488](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/trailers-api.ts#L488)
 
 ___
 
@@ -6229,7 +6214,7 @@ TvShowsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6244,7 +6229,7 @@ TvShowsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L35)
+[generated-client/api/tv-shows-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L35)
 
 ___
 
@@ -6260,7 +6245,7 @@ TvShowsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6277,7 +6262,7 @@ TvShowsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L500)
+[generated-client/api/tv-shows-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L500)
 
 ___
 
@@ -6293,7 +6278,7 @@ TvShowsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6308,7 +6293,7 @@ TvShowsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L404)
+[generated-client/api/tv-shows-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L404)
 
 ___
 
@@ -6324,7 +6309,7 @@ UniversalAudioApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6337,7 +6322,7 @@ UniversalAudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/universal-audio-api.ts#L27)
+[generated-client/api/universal-audio-api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/universal-audio-api.ts#L27)
 
 ___
 
@@ -6353,7 +6338,7 @@ UniversalAudioApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6368,7 +6353,7 @@ UniversalAudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/universal-audio-api.ts#L346)
+[generated-client/api/universal-audio-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/universal-audio-api.ts#L346)
 
 ___
 
@@ -6384,7 +6369,7 @@ UniversalAudioApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6397,7 +6382,7 @@ UniversalAudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/universal-audio-api.ts#L280)
+[generated-client/api/universal-audio-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/universal-audio-api.ts#L280)
 
 ___
 
@@ -6413,7 +6398,7 @@ UserApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6440,7 +6425,7 @@ UserApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L55)
+[generated-client/api/user-api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-api.ts#L55)
 
 ___
 
@@ -6456,7 +6441,7 @@ UserApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6485,7 +6470,7 @@ UserApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:880](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L880)
+[generated-client/api/user-api.ts:880](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-api.ts#L880)
 
 ___
 
@@ -6501,7 +6486,7 @@ UserApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6528,7 +6513,7 @@ UserApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L688)
+[generated-client/api/user-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-api.ts#L688)
 
 ___
 
@@ -6544,7 +6529,7 @@ UserLibraryApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6565,7 +6550,7 @@ UserLibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-library-api.ts#L37)
+[generated-client/api/user-library-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-library-api.ts#L37)
 
 ___
 
@@ -6581,7 +6566,7 @@ UserLibraryApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6604,7 +6589,7 @@ UserLibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:642](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-library-api.ts#L642)
+[generated-client/api/user-library-api.ts:642](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-library-api.ts#L642)
 
 ___
 
@@ -6620,7 +6605,7 @@ UserLibraryApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6641,7 +6626,7 @@ UserLibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-library-api.ts#L503)
+[generated-client/api/user-library-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-library-api.ts#L503)
 
 ___
 
@@ -6657,7 +6642,7 @@ UserViewsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6670,7 +6655,7 @@ UserViewsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-views-api.ts#L33)
+[generated-client/api/user-views-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-views-api.ts#L33)
 
 ___
 
@@ -6686,7 +6671,7 @@ UserViewsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6701,7 +6686,7 @@ UserViewsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-views-api.ts#L160)
+[generated-client/api/user-views-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-views-api.ts#L160)
 
 ___
 
@@ -6717,7 +6702,7 @@ UserViewsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6730,7 +6715,7 @@ UserViewsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-views-api.ts#L125)
+[generated-client/api/user-views-api.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-views-api.ts#L125)
 
 ___
 
@@ -6746,7 +6731,7 @@ VideoAttachmentsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6758,7 +6743,7 @@ VideoAttachmentsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L29)
+[generated-client/api/video-attachments-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-attachments-api.ts#L29)
 
 ___
 
@@ -6774,7 +6759,7 @@ VideoAttachmentsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6788,7 +6773,7 @@ VideoAttachmentsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L103)
+[generated-client/api/video-attachments-api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-attachments-api.ts#L103)
 
 ___
 
@@ -6804,7 +6789,7 @@ VideoAttachmentsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6816,7 +6801,7 @@ VideoAttachmentsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-attachments-api.ts#L80)
+[generated-client/api/video-attachments-api.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-attachments-api.ts#L80)
 
 ___
 
@@ -6832,7 +6817,7 @@ VideoHlsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6844,7 +6829,7 @@ VideoHlsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/video-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-hls-api.ts#L31)
+[generated-client/api/video-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-hls-api.ts#L31)
 
 ___
 
@@ -6860,7 +6845,7 @@ VideoHlsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6874,7 +6859,7 @@ VideoHlsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/video-hls-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-hls-api.ts#L404)
+[generated-client/api/video-hls-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-hls-api.ts#L404)
 
 ___
 
@@ -6890,7 +6875,7 @@ VideoHlsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6902,7 +6887,7 @@ VideoHlsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/video-hls-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/video-hls-api.ts#L332)
+[generated-client/api/video-hls-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/video-hls-api.ts#L332)
 
 ___
 
@@ -6918,7 +6903,7 @@ VideosApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -6936,7 +6921,7 @@ VideosApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/videos-api.ts#L35)
+[generated-client/api/videos-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/videos-api.ts#L35)
 
 ___
 
@@ -6952,7 +6937,7 @@ VideosApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -6972,7 +6957,7 @@ VideosApi - factory interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/videos-api.ts#L1585)
+[generated-client/api/videos-api.ts:1585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/videos-api.ts#L1585)
 
 ___
 
@@ -6988,7 +6973,7 @@ VideosApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -7006,7 +6991,7 @@ VideosApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/videos-api.ts#L1297)
+[generated-client/api/videos-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/videos-api.ts#L1297)
 
 ___
 
@@ -7022,7 +7007,7 @@ YearsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -7035,7 +7020,7 @@ YearsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/years-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/years-api.ts#L39)
+[generated-client/api/years-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/years-api.ts#L39)
 
 ___
 
@@ -7051,7 +7036,7 @@ YearsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 | `basePath?` | `string` |
 | `axios?` | `AxiosInstance` |
 
@@ -7066,7 +7051,7 @@ YearsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/years-api.ts:245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/years-api.ts#L245)
+[generated-client/api/years-api.ts:245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/years-api.ts#L245)
 
 ___
 
@@ -7082,7 +7067,7 @@ YearsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/index.Configuration.md) |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
 
 #### Returns
 
@@ -7095,4 +7080,4 @@ YearsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/years-api.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/years-api.ts#L198)
+[generated-client/api/years-api.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/years-api.ts#L198)

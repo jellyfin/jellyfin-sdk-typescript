@@ -41,7 +41,7 @@ PersonsApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](index.Configuration.md) |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -77,7 +77,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
 
 #### Inherited from
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/persons-api.ts#L406)
+[generated-client/api/persons-api.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/persons-api.ts#L406)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:418](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/persons-api.ts#L418)
+[generated-client/api/persons-api.ts:418](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/persons-api.ts#L418)

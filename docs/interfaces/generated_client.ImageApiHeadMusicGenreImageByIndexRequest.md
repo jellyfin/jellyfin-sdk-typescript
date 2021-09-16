@@ -46,7 +46,7 @@ Optional. Add a played indicator.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8972](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8972)
+[generated-client/api/image-api.ts:8972](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8972)
 
 ___
 
@@ -60,7 +60,7 @@ Optional. Apply a background color for transparent images.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8986)
+[generated-client/api/image-api.ts:8986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8986)
 
 ___
 
@@ -74,7 +74,7 @@ Optional. Blur image.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8979)
+[generated-client/api/image-api.ts:8979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8979)
 
 ___
 
@@ -88,7 +88,7 @@ Optional. Specify if whitespace should be cropped out of the image. True/False. 
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8965)
+[generated-client/api/image-api.ts:8965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8965)
 
 ___
 
@@ -102,7 +102,7 @@ Height of box to fill.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8958](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8958)
+[generated-client/api/image-api.ts:8958](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8958)
 
 ___
 
@@ -116,7 +116,7 @@ Width of box to fill.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8951](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8951)
+[generated-client/api/image-api.ts:8951](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8951)
 
 ___
 
@@ -130,7 +130,7 @@ Optional. Apply a foreground layer on top of the image.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8993)
+[generated-client/api/image-api.ts:8993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8993)
 
 ___
 
@@ -144,7 +144,7 @@ Determines the output format of the image - original,gif,jpg,png.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8895](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8895)
+[generated-client/api/image-api.ts:8895](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8895)
 
 ___
 
@@ -158,7 +158,7 @@ The fixed image height to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8937](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8937)
+[generated-client/api/image-api.ts:8937](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8937)
 
 ___
 
@@ -172,7 +172,7 @@ Image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8881](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8881)
+[generated-client/api/image-api.ts:8881](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8881)
 
 ___
 
@@ -186,7 +186,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8874](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8874)
+[generated-client/api/image-api.ts:8874](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8874)
 
 ___
 
@@ -200,7 +200,7 @@ The maximum image height to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8909](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8909)
+[generated-client/api/image-api.ts:8909](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8909)
 
 ___
 
@@ -214,7 +214,7 @@ The maximum image width to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8902](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8902)
+[generated-client/api/image-api.ts:8902](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8902)
 
 ___
 
@@ -228,7 +228,7 @@ Music genre name.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8867)
+[generated-client/api/image-api.ts:8867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8867)
 
 ___
 
@@ -242,7 +242,7 @@ Optional. Percent to render for the percent played overlay.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8916](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8916)
+[generated-client/api/image-api.ts:8916](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8916)
 
 ___
 
@@ -256,7 +256,7 @@ Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8944)
+[generated-client/api/image-api.ts:8944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8944)
 
 ___
 
@@ -270,7 +270,7 @@ Optional. Supply the cache tag from the item object to receive strong caching he
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8888)
+[generated-client/api/image-api.ts:8888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8888)
 
 ___
 
@@ -284,7 +284,7 @@ Optional. Unplayed count overlay to render.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8923](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8923)
+[generated-client/api/image-api.ts:8923](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8923)
 
 ___
 
@@ -298,4 +298,4 @@ The fixed image width to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:8930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L8930)
+[generated-client/api/image-api.ts:8930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L8930)

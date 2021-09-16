@@ -43,7 +43,7 @@ TvShowsApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](index.Configuration.md) |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -53,7 +53,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -79,7 +79,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
 
 #### Inherited from
 
@@ -87,7 +87,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -114,7 +114,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:953](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L953)
+[generated-client/api/tv-shows-api.ts:953](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L953)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L965)
+[generated-client/api/tv-shows-api.ts:965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L965)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:977](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L977)
+[generated-client/api/tv-shows-api.ts:977](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L977)
 
 ___
 
@@ -195,4 +195,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:989](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/tv-shows-api.ts#L989)
+[generated-client/api/tv-shows-api.ts:989](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/tv-shows-api.ts#L989)

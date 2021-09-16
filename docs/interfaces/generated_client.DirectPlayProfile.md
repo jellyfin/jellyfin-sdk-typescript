@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/direct-play-profile.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/direct-play-profile.ts#L35)
+[generated-client/models/direct-play-profile.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/direct-play-profile.ts#L35)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/direct-play-profile.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/direct-play-profile.ts#L29)
+[generated-client/models/direct-play-profile.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/direct-play-profile.ts#L29)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/direct-play-profile.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/direct-play-profile.ts#L47)
+[generated-client/models/direct-play-profile.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/direct-play-profile.ts#L47)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/direct-play-profile.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/direct-play-profile.ts#L41)
+[generated-client/models/direct-play-profile.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/direct-play-profile.ts#L41)

@@ -42,7 +42,7 @@ ItemsApi - object-oriented interface
 
 | Name | Type |
 | :------ | :------ |
-| `configuration?` | [`Configuration`](index.Configuration.md) |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
 | `basePath` | `string` |
 | `axios` | `AxiosInstance` |
 
@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -78,7 +78,7 @@ ___
 
 ### configuration
 
-• `Protected` **configuration**: `undefined` \| [`Configuration`](index.Configuration.md)
+• `Protected` **configuration**: `undefined` \| [`Configuration`](generated_client.Configuration.md)
 
 #### Inherited from
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L2710)
+[generated-client/api/items-api.ts:2710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L2710)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L2722)
+[generated-client/api/items-api.ts:2722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L2722)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/items-api.ts#L2734)
+[generated-client/api/items-api.ts:2734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/items-api.ts#L2734)

@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L24)
+[generated-client/models/media-protocol.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L24)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L30)
+[generated-client/models/media-protocol.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L30)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L25)
+[generated-client/models/media-protocol.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L25)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L26)
+[generated-client/models/media-protocol.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L26)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L29)
+[generated-client/models/media-protocol.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L29)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L27)
+[generated-client/models/media-protocol.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L27)
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/media-protocol.ts#L28)
+[generated-client/models/media-protocol.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/media-protocol.ts#L28)

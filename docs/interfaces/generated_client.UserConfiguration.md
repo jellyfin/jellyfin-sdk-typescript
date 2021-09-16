@@ -42,7 +42,7 @@ Gets or sets the audio language preference.
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L29)
+[generated-client/models/user-configuration.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L29)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L65)
+[generated-client/models/user-configuration.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L65)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L47)
+[generated-client/models/user-configuration.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L47)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L71)
+[generated-client/models/user-configuration.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L71)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L113)
+[generated-client/models/user-configuration.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L113)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L53)
+[generated-client/models/user-configuration.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L53)
 
 ___
 
@@ -114,7 +114,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L95)
+[generated-client/models/user-configuration.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L95)
 
 ___
 
@@ -126,7 +126,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L83)
+[generated-client/models/user-configuration.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L83)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L89)
+[generated-client/models/user-configuration.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L89)
 
 ___
 
@@ -150,7 +150,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L77)
+[generated-client/models/user-configuration.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L77)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets a value indicating whether [play default audio track].
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L35)
+[generated-client/models/user-configuration.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L35)
 
 ___
 
@@ -176,7 +176,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L101)
+[generated-client/models/user-configuration.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L101)
 
 ___
 
@@ -188,7 +188,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L107)
+[generated-client/models/user-configuration.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L107)
 
 ___
 
@@ -202,7 +202,7 @@ Gets or sets the subtitle language preference.
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L41)
+[generated-client/models/user-configuration.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L41)
 
 ___
 
@@ -214,4 +214,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/user-configuration.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/user-configuration.ts#L59)
+[generated-client/models/user-configuration.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/user-configuration.ts#L59)

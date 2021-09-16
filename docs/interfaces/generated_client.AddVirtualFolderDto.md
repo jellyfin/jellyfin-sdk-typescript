@@ -26,4 +26,4 @@ Add virtual folder dto.
 
 #### Defined in
 
-[generated-client/models/add-virtual-folder-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/add-virtual-folder-dto.ts#L29)
+[generated-client/models/add-virtual-folder-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/add-virtual-folder-dto.ts#L29)

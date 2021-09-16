@@ -29,7 +29,7 @@ Request parameters for setItemImageByIndex operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L9966)
+[generated-client/api/image-api.ts:9966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L9966)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9959](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L9959)
+[generated-client/api/image-api.ts:9959](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L9959)
 
 ___
 
@@ -57,7 +57,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9952](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L9952)
+[generated-client/api/image-api.ts:9952](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L9952)
 
 ___
 
@@ -71,4 +71,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9945](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/image-api.ts#L9945)
+[generated-client/api/image-api.ts:9945](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/image-api.ts#L9945)

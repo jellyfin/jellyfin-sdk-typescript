@@ -33,7 +33,7 @@ Class PlayRequest.
 
 #### Defined in
 
-[generated-client/models/play-request.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L59)
+[generated-client/models/play-request.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L59)
 
 ___
 
@@ -47,7 +47,7 @@ Gets or sets the controlling user identifier.
 
 #### Defined in
 
-[generated-client/models/play-request.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L47)
+[generated-client/models/play-request.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L47)
 
 ___
 
@@ -61,7 +61,7 @@ Gets or sets the item ids.
 
 #### Defined in
 
-[generated-client/models/play-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L29)
+[generated-client/models/play-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L29)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-request.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L65)
+[generated-client/models/play-request.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L65)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L41)
+[generated-client/models/play-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L41)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-request.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L71)
+[generated-client/models/play-request.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L71)
 
 ___
 
@@ -111,7 +111,7 @@ Gets or sets the start position ticks that the first item should be played at.
 
 #### Defined in
 
-[generated-client/models/play-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L35)
+[generated-client/models/play-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L35)
 
 ___
 
@@ -123,4 +123,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-request.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/play-request.ts#L53)
+[generated-client/models/play-request.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/play-request.ts#L53)

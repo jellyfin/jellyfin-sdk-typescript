@@ -28,4 +28,4 @@ Plugin id.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:719](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/plugins-api.ts#L719)
+[generated-client/api/plugins-api.ts:719](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/plugins-api.ts#L719)

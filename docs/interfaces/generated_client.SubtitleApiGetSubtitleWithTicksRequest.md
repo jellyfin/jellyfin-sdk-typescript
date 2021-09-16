@@ -40,7 +40,7 @@ Optional. Whether to add a VTT time map.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1127)
+[generated-client/api/subtitle-api.ts:1127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1127)
 
 ___
 
@@ -54,7 +54,7 @@ Optional. Whether to copy the timestamps.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1120)
+[generated-client/api/subtitle-api.ts:1120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1120)
 
 ___
 
@@ -68,7 +68,7 @@ Optional. The end position of the subtitle in ticks.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1113)
+[generated-client/api/subtitle-api.ts:1113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1113)
 
 ___
 
@@ -82,7 +82,7 @@ The format of the returned subtitle.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1106)
+[generated-client/api/subtitle-api.ts:1106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1106)
 
 ___
 
@@ -96,7 +96,7 @@ The subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1092](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1092)
+[generated-client/api/subtitle-api.ts:1092](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1092)
 
 ___
 
@@ -110,7 +110,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1078](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1078)
+[generated-client/api/subtitle-api.ts:1078](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1078)
 
 ___
 
@@ -124,7 +124,7 @@ The media source id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1085](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1085)
+[generated-client/api/subtitle-api.ts:1085](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1085)
 
 ___
 
@@ -138,7 +138,7 @@ The (route) format of the returned subtitle.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1071](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1071)
+[generated-client/api/subtitle-api.ts:1071](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1071)
 
 ___
 
@@ -152,7 +152,7 @@ The (route) subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1057)
+[generated-client/api/subtitle-api.ts:1057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1057)
 
 ___
 
@@ -166,7 +166,7 @@ The (route) item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1043](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1043)
+[generated-client/api/subtitle-api.ts:1043](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1043)
 
 ___
 
@@ -180,7 +180,7 @@ The (route) media source id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1050)
+[generated-client/api/subtitle-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1050)
 
 ___
 
@@ -194,7 +194,7 @@ The (route) start position of the subtitle in ticks.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1064](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1064)
+[generated-client/api/subtitle-api.ts:1064](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1064)
 
 ___
 
@@ -208,4 +208,4 @@ The start position of the subtitle in ticks.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1099](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/subtitle-api.ts#L1099)
+[generated-client/api/subtitle-api.ts:1099](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/subtitle-api.ts#L1099)

@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[generated-client/models/forgot-password-action.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/forgot-password-action.ts#L24)
+[generated-client/models/forgot-password-action.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/forgot-password-action.ts#L24)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/forgot-password-action.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/forgot-password-action.ts#L26)
+[generated-client/models/forgot-password-action.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/forgot-password-action.ts#L26)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/forgot-password-action.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/forgot-password-action.ts#L25)
+[generated-client/models/forgot-password-action.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/forgot-password-action.ts#L25)

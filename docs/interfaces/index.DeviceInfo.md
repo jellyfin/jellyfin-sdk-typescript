@@ -10,25 +10,25 @@ An interface representing a client device.
 
 ### Properties
 
-- [Id](index.DeviceInfo.md#id)
-- [Name](index.DeviceInfo.md#name)
+- [id](index.DeviceInfo.md#id)
+- [name](index.DeviceInfo.md#name)
 
 ## Properties
 
-### Id
+### id
 
-• **Id**: `string`
+• **id**: `string`
 
 #### Defined in
 
-[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/models/device-info.ts#L11)
+[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/models/device-info.ts#L11)
 
 ___
 
-### Name
+### name
 
-• **Name**: `string`
+• **name**: `string`
 
 #### Defined in
 
-[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/models/device-info.ts#L12)
+[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/models/device-info.ts#L12)

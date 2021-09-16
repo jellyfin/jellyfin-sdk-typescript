@@ -36,7 +36,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L24)
+[jellyfin.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L23)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L21)
+[jellyfin.ts:20](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L20)
 
 ___
 
@@ -56,20 +56,21 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:22](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L22)
+[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L21)
 
 ## Methods
 
 ### createApi
 
-▸ **createApi**(`configuration`, `axiosInstance?`): [`Api`](index.Api.md)
+▸ **createApi**(`basePath`, `accessToken?`, `axiosInstance?`): [`Api`](index.Api.md)
 
 #### Parameters
 
 | Name | Type |
 | :------ | :------ |
-| `configuration` | [`Configuration`](index.Configuration.md) |
-| `axiosInstance` | `AxiosStatic` |
+| `basePath` | `string` |
+| `accessToken?` | `string` |
+| `axiosInstance?` | `AxiosInstance` |
 
 #### Returns
 
@@ -77,4 +78,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/jellyfin.ts#L33)
+[jellyfin.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/jellyfin.ts#L32)

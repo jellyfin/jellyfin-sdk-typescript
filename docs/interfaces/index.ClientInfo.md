@@ -10,25 +10,25 @@ An interface representing a client application.
 
 ### Properties
 
-- [Name](index.ClientInfo.md#name)
-- [Version](index.ClientInfo.md#version)
+- [name](index.ClientInfo.md#name)
+- [version](index.ClientInfo.md#version)
 
 ## Properties
 
-### Name
+### name
 
-• **Name**: `string`
+• **name**: `string`
 
 #### Defined in
 
-[models/client-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/models/client-info.ts#L11)
+[models/client-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/models/client-info.ts#L11)
 
 ___
 
-### Version
+### version
 
-• **Version**: `string`
+• **version**: `string`
 
 #### Defined in
 
-[models/client-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/models/client-info.ts#L12)
+[models/client-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/models/client-info.ts#L12)

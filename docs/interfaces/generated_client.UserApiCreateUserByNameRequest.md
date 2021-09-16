@@ -28,4 +28,4 @@ The create user by name request body.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/user-api.ts#L1119)
+[generated-client/api/user-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/user-api.ts#L1119)

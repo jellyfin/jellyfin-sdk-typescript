@@ -31,7 +31,7 @@ Optional. Filter by channel id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4390](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L4390)
+[generated-client/api/live-tv-api.ts:4390](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L4390)
 
 ___
 
@@ -45,7 +45,7 @@ Optional. Filter by timers that are active.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L4404)
+[generated-client/api/live-tv-api.ts:4404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L4404)
 
 ___
 
@@ -59,7 +59,7 @@ Optional. Filter by timers that are scheduled.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L4411)
+[generated-client/api/live-tv-api.ts:4411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L4411)
 
 ___
 
@@ -73,4 +73,4 @@ Optional. Filter by timers belonging to a series timer.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/live-tv-api.ts#L4397)
+[generated-client/api/live-tv-api.ts:4397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/live-tv-api.ts#L4397)

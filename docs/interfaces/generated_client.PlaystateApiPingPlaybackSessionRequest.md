@@ -28,4 +28,4 @@ Playback session id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1073](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/api/playstate-api.ts#L1073)
+[generated-client/api/playstate-api.ts:1073](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/api/playstate-api.ts#L1073)

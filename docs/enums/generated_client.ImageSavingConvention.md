@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/image-saving-convention.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/image-saving-convention.ts#L25)
+[generated-client/models/image-saving-convention.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/image-saving-convention.ts#L25)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/image-saving-convention.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c0c5b18/src/generated-client/models/image-saving-convention.ts#L24)
+[generated-client/models/image-saving-convention.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/644c849/src/generated-client/models/image-saving-convention.ts#L24)
