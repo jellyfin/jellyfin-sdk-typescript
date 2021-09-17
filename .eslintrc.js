@@ -36,6 +36,7 @@ module.exports = {
 		'no-multiple-empty-lines': ['error', { 'max': 1 }],
 		'no-restricted-globals': ['error'],
 		'no-trailing-spaces': ['error'],
+		'no-unreachable': ['error'],
 		'no-unused-expressions': ['error', { 'allowShortCircuit': true, 'allowTernary': true, 'allowTaggedTemplates': true }],
 		'one-var': ['error', 'never'],
 		'padded-blocks': ['error', 'never'],
