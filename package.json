@@ -1,7 +1,7 @@
 {
   "name": "jellyfin-sdk-typescript",
   "version": "0.1.0",
-  "description": "",
+  "description": "A TypeScript SDK for Jellyfin.",
   "keywords": [
     "jellyfin"
   ],
