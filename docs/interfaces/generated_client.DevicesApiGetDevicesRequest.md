@@ -29,7 +29,7 @@ Gets or sets a value indicating whether [supports synchronize].
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/devices-api.ts#L431)
+[generated-client/api/devices-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/devices-api.ts#L431)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the user identifier.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/devices-api.ts#L438)
+[generated-client/api/devices-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/devices-api.ts#L438)

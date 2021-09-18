@@ -28,4 +28,4 @@ Validate request object.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/environment-api.ts#L468)
+[generated-client/api/environment-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/environment-api.ts#L468)

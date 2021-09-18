@@ -29,7 +29,7 @@ The name of the image.
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/image-by-name-api.ts#L406)
+[generated-client/api/image-by-name-api.ts:406](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-by-name-api.ts#L406)
 
 ___
 
@@ -43,4 +43,4 @@ Image Type (primary, backdrop, logo, etc).
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:413](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/image-by-name-api.ts#L413)
+[generated-client/api/image-by-name-api.ts:413](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-by-name-api.ts#L413)

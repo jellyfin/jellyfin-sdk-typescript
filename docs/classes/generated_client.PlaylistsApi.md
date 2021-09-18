@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/playlists-api.ts#L675)
+[generated-client/api/playlists-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L675)
 
 ___
 
@@ -144,7 +144,7 @@ For backwards compatibility parameters can be sent via Query or Body, with Query
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/playlists-api.ts#L687)
+[generated-client/api/playlists-api.ts:687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L687)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/playlists-api.ts#L699)
+[generated-client/api/playlists-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L699)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/playlists-api.ts#L711)
+[generated-client/api/playlists-api.ts:711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L711)
 
 ___
 
@@ -225,4 +225,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:723](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/playlists-api.ts#L723)
+[generated-client/api/playlists-api.ts:723](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L723)

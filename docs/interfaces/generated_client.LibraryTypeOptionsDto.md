@@ -32,7 +32,7 @@ Gets or sets the default image options.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-type-options-dto.ts#L55)
+[generated-client/models/library-type-options-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-type-options-dto.ts#L55)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the image fetchers.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-type-options-dto.ts#L43)
+[generated-client/models/library-type-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-type-options-dto.ts#L43)
 
 ___
 
@@ -60,7 +60,7 @@ Gets or sets the metadata fetchers.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-type-options-dto.ts#L37)
+[generated-client/models/library-type-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-type-options-dto.ts#L37)
 
 ___
 
@@ -74,7 +74,7 @@ Gets or sets the supported image types.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-type-options-dto.ts#L49)
+[generated-client/models/library-type-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-type-options-dto.ts#L49)
 
 ___
 
@@ -88,4 +88,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-type-options-dto.ts#L31)
+[generated-client/models/library-type-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-type-options-dto.ts#L31)

@@ -32,7 +32,7 @@ Exclude artist ids.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L2057)
+[generated-client/api/library-api.ts:2057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2057)
 
 ___
 
@@ -46,7 +46,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2078](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L2078)
+[generated-client/api/library-api.ts:2078](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2078)
 
 ___
 
@@ -60,7 +60,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L2050)
+[generated-client/api/library-api.ts:2050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2050)
 
 ___
 
@@ -74,7 +74,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2071](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L2071)
+[generated-client/api/library-api.ts:2071](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2071)
 
 ___
 
@@ -88,4 +88,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2064](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/library-api.ts#L2064)
+[generated-client/api/library-api.ts:2064](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2064)

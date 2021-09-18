@@ -27,7 +27,7 @@ The notification summary DTO.
 
 #### Defined in
 
-[generated-client/models/notifications-summary-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/notifications-summary-dto.ts#L35)
+[generated-client/models/notifications-summary-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/notifications-summary-dto.ts#L35)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the number of unread notifications.
 
 #### Defined in
 
-[generated-client/models/notifications-summary-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/notifications-summary-dto.ts#L29)
+[generated-client/models/notifications-summary-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/notifications-summary-dto.ts#L29)

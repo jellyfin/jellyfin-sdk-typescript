@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/rating-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/rating-type.ts#L25)
+[generated-client/models/rating-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/rating-type.ts#L25)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/rating-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/rating-type.ts#L24)
+[generated-client/models/rating-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/rating-type.ts#L24)

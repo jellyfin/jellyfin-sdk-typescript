@@ -28,4 +28,4 @@ The settings to set.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/sync-play-api.ts#L1471)
+[generated-client/api/sync-play-api.ts:1471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/sync-play-api.ts#L1471)

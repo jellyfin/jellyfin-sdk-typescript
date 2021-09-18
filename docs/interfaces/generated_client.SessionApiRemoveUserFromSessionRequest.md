@@ -29,7 +29,7 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/session-api.ts#L1416)
+[generated-client/api/session-api.ts:1416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1416)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/session-api.ts#L1423)
+[generated-client/api/session-api.ts:1423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1423)

@@ -30,7 +30,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-lookup-api.ts#L758)
+[generated-client/api/item-lookup-api.ts:758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-lookup-api.ts#L758)
 
 ___
 
@@ -44,7 +44,7 @@ The remote search result.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:765](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-lookup-api.ts#L765)
+[generated-client/api/item-lookup-api.ts:765](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-lookup-api.ts#L765)
 
 ___
 
@@ -58,4 +58,4 @@ Optional. Whether or not to replace all images. Default: True.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:772](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-lookup-api.ts#L772)
+[generated-client/api/item-lookup-api.ts:772](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-lookup-api.ts#L772)

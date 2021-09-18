@@ -29,7 +29,7 @@ Gets or sets a value indicating whether default enabled.
 
 #### Defined in
 
-[generated-client/models/library-option-info-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-option-info-dto.ts#L34)
+[generated-client/models/library-option-info-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-option-info-dto.ts#L34)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets name.
 
 #### Defined in
 
-[generated-client/models/library-option-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/library-option-info-dto.ts#L28)
+[generated-client/models/library-option-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/library-option-info-dto.ts#L28)

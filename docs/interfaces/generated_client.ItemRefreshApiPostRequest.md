@@ -32,7 +32,7 @@ Request parameters for post operation in ItemRefreshApi.
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-refresh-api.ts#L167)
+[generated-client/api/item-refresh-api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L167)
 
 ___
 
@@ -46,7 +46,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-refresh-api.ts#L153)
+[generated-client/api/item-refresh-api.ts:153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L153)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-refresh-api.ts#L160)
+[generated-client/api/item-refresh-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L160)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-refresh-api.ts#L181)
+[generated-client/api/item-refresh-api.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L181)
 
 ___
 
@@ -88,4 +88,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/api/item-refresh-api.ts#L174)
+[generated-client/api/item-refresh-api.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L174)

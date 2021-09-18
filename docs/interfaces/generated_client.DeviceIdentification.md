@@ -34,7 +34,7 @@ Gets or sets the name of the friendly.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L29)
+[generated-client/models/device-identification.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L29)
 
 ___
 
@@ -48,7 +48,7 @@ Gets or sets the headers.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L77)
+[generated-client/models/device-identification.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L77)
 
 ___
 
@@ -62,7 +62,7 @@ Gets or sets the manufacturer.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L65)
+[generated-client/models/device-identification.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L65)
 
 ___
 
@@ -76,7 +76,7 @@ Gets or sets the manufacturer URL.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L71)
+[generated-client/models/device-identification.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L71)
 
 ___
 
@@ -90,7 +90,7 @@ Gets or sets the model description.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L53)
+[generated-client/models/device-identification.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L53)
 
 ___
 
@@ -104,7 +104,7 @@ Gets or sets the name of the model.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L47)
+[generated-client/models/device-identification.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L47)
 
 ___
 
@@ -118,7 +118,7 @@ Gets or sets the model number.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L35)
+[generated-client/models/device-identification.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L35)
 
 ___
 
@@ -132,7 +132,7 @@ Gets or sets the model URL.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L59)
+[generated-client/models/device-identification.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L59)
 
 ___
 
@@ -146,4 +146,4 @@ Gets or sets the serial number.
 
 #### Defined in
 
-[generated-client/models/device-identification.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/device-identification.ts#L41)
+[generated-client/models/device-identification.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-identification.ts#L41)

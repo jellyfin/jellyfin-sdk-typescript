@@ -28,4 +28,4 @@ Gets or sets the ping time.
 
 #### Defined in
 
-[generated-client/models/ping-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/ping-request-dto.ts#L28)
+[generated-client/models/ping-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/ping-request-dto.ts#L28)

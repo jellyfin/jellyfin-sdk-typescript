@@ -30,7 +30,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/startup-configuration-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/startup-configuration-dto.ts#L34)
+[generated-client/models/startup-configuration-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/startup-configuration-dto.ts#L34)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the preferred language for the metadata.
 
 #### Defined in
 
-[generated-client/models/startup-configuration-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/startup-configuration-dto.ts#L40)
+[generated-client/models/startup-configuration-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/startup-configuration-dto.ts#L40)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets UI language culture.
 
 #### Defined in
 
-[generated-client/models/startup-configuration-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/7534c86/src/generated-client/models/startup-configuration-dto.ts#L28)
+[generated-client/models/startup-configuration-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/startup-configuration-dto.ts#L28)
