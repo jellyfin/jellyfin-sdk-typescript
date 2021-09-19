@@ -9,14 +9,10 @@ import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticateUserByName
 import { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 
-/**
- * The authorization header field name.
- */
+/** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
 
-/**
- * Class representing the Jellyfin API.
- */
+/** Class representing the Jellyfin API. */
 export class Api {
 	basePath;
 	clientInfo;

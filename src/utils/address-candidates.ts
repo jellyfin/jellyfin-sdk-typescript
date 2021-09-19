@@ -8,10 +8,18 @@ import Url from 'url-parse';
 
 import { HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort } from './url';
 
+/** The default http port for Jellyfin servers. */
 export const JF_HTTP_PORT = 8096;
 
+/** The default https port for Jellyfin servers. */
 export const JF_HTTPS_PORT = 8920;
 
+/**
+ * Gets a list of address candidates as Url objects
+ * from a provided url address string.
+ * @param input A server url address string.
+ * @returns A list of potential server Url objects.
+ */
 export function getAddressCandidates(input: string): Array<Url> {
 	const candidates: Array<Url> = [];
 

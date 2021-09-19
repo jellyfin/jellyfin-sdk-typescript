@@ -13,14 +13,10 @@ export interface JellyfinParameters {
 	deviceInfo: DeviceInfo
 }
 
-/**
- * The minimum supported server version.
- */
+/** The minimum supported server version. */
 export const MINIMUM_VERSION = '10.7.0';
 
-/**
- * Class representing the Jellyfin SDK.
- */
+/** Class representing the Jellyfin SDK. */
 export class Jellyfin {
 	clientInfo;
 	deviceInfo;
@@ -30,6 +26,13 @@ export class Jellyfin {
 		this.deviceInfo = parameters.deviceInfo;
 	}
 
+	/**
+	 * Creates an Api instance for a given server path.
+	 * @param basePath A base path of a server.
+	 * @param accessToken An (optional) access token to use for authentication.
+	 * @param axiosInstance An (optional) Axios instance for the Api to use.
+	 * @returns An Api instance.
+	 */
 	createApi(basePath: string, accessToken?: string, axiosInstance?: AxiosInstance): Api {
 		return new Api(basePath, this.clientInfo, this.deviceInfo, accessToken, axiosInstance);
 	}
