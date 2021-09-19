@@ -32,7 +32,7 @@ Enum GroupUpdateType.
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L32)
+[generated-client/models/group-update-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L32)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L31)
+[generated-client/models/group-update-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L31)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L26)
+[generated-client/models/group-update-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L26)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L27)
+[generated-client/models/group-update-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L27)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L33)
+[generated-client/models/group-update-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L33)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L34)
+[generated-client/models/group-update-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L34)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L30)
+[generated-client/models/group-update-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L30)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L29)
+[generated-client/models/group-update-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L29)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L28)
+[generated-client/models/group-update-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L28)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L24)
+[generated-client/models/group-update-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L24)
 
 ___
 
@@ -132,4 +132,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-update-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/group-update-type.ts#L25)
+[generated-client/models/group-update-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/group-update-type.ts#L25)

@@ -29,7 +29,7 @@ Optional filter by IsDisabled&#x3D;true or false.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1196)
+[generated-client/api/user-api.ts:1196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/user-api.ts#L1196)
 
 ___
 
@@ -43,4 +43,4 @@ Optional filter by IsHidden&#x3D;true or false.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1189)
+[generated-client/api/user-api.ts:1189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/user-api.ts#L1189)

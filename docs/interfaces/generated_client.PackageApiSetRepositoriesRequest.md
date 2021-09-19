@@ -28,4 +28,4 @@ The list of package repositories.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/package-api.ts#L505)
+[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/package-api.ts#L505)

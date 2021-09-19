@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/container-profile.ts#L36)
+[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/container-profile.ts#L36)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/container-profile.ts#L42)
+[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/container-profile.ts#L42)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/container-profile.ts#L30)
+[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/container-profile.ts#L30)

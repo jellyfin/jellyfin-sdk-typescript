@@ -28,4 +28,4 @@ Channel id.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/channels-api.ts#L485)
+[generated-client/api/channels-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/channels-api.ts#L485)

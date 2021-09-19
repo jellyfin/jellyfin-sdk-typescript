@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:820](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L820)
+[generated-client/api/media-info-api.ts:820](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/media-info-api.ts#L820)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L832)
+[generated-client/api/media-info-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/media-info-api.ts#L832)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L844)
+[generated-client/api/media-info-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/media-info-api.ts#L844)
 
 ___
 
@@ -198,7 +198,7 @@ For backwards compatibility parameters can be sent via Query or Body, with Query
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:856](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L856)
+[generated-client/api/media-info-api.ts:856](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/media-info-api.ts#L856)
 
 ___
 
@@ -225,4 +225,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L868)
+[generated-client/api/media-info-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/media-info-api.ts#L868)

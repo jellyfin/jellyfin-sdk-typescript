@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[generated-client/models/problem-details.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/problem-details.ts#L48)
+[generated-client/models/problem-details.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/problem-details.ts#L48)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/problem-details.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/problem-details.ts#L54)
+[generated-client/models/problem-details.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/problem-details.ts#L54)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/problem-details.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/problem-details.ts#L42)
+[generated-client/models/problem-details.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/problem-details.ts#L42)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/problem-details.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/problem-details.ts#L36)
+[generated-client/models/problem-details.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/problem-details.ts#L36)
 
 ___
 
@@ -80,4 +80,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/problem-details.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/problem-details.ts#L30)
+[generated-client/models/problem-details.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/problem-details.ts#L30)

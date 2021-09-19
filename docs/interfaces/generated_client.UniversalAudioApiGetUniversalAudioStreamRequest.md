@@ -45,7 +45,7 @@ Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this wi
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L480)
+[generated-client/api/universal-audio-api.ts:480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L480)
 
 ___
 
@@ -59,7 +59,7 @@ Optional. The audio codec to transcode to.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L452)
+[generated-client/api/universal-audio-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L452)
 
 ___
 
@@ -73,7 +73,7 @@ Optional. Whether to break on non key frames.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L529)
+[generated-client/api/universal-audio-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L529)
 
 ___
 
@@ -87,7 +87,7 @@ Optional. The audio container.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:424](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L424)
+[generated-client/api/universal-audio-api.ts:424](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L424)
 
 ___
 
@@ -101,7 +101,7 @@ The device id of the client requesting. Used to stop encoding processes when nee
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L438)
+[generated-client/api/universal-audio-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L438)
 
 ___
 
@@ -115,7 +115,7 @@ Whether to enable redirection. Defaults to true.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L536)
+[generated-client/api/universal-audio-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L536)
 
 ___
 
@@ -129,7 +129,7 @@ Optional. Whether to enable remote media.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L522)
+[generated-client/api/universal-audio-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L522)
 
 ___
 
@@ -143,7 +143,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:417](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L417)
+[generated-client/api/universal-audio-api.ts:417](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L417)
 
 ___
 
@@ -157,7 +157,7 @@ Optional. The maximum audio bit depth.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L515)
+[generated-client/api/universal-audio-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L515)
 
 ___
 
@@ -171,7 +171,7 @@ Optional. The maximum number of audio channels.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L459)
+[generated-client/api/universal-audio-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L459)
 
 ___
 
@@ -185,7 +185,7 @@ Optional. The maximum audio sample rate.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L508)
+[generated-client/api/universal-audio-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L508)
 
 ___
 
@@ -199,7 +199,7 @@ Optional. The maximum streaming bitrate.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L473)
+[generated-client/api/universal-audio-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L473)
 
 ___
 
@@ -213,7 +213,7 @@ The media version id, if playing an alternate version.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L431)
+[generated-client/api/universal-audio-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L431)
 
 ___
 
@@ -227,7 +227,7 @@ Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L487)
+[generated-client/api/universal-audio-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L487)
 
 ___
 
@@ -241,7 +241,7 @@ Optional. The number of how many audio channels to transcode to.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L466)
+[generated-client/api/universal-audio-api.ts:466](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L466)
 
 ___
 
@@ -255,7 +255,7 @@ Optional. The container to transcode to.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:494](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L494)
+[generated-client/api/universal-audio-api.ts:494](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L494)
 
 ___
 
@@ -269,7 +269,7 @@ Optional. The transcoding protocol.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L501)
+[generated-client/api/universal-audio-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L501)
 
 ___
 
@@ -283,4 +283,4 @@ Optional. The user id.
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/universal-audio-api.ts#L445)
+[generated-client/api/universal-audio-api.ts:445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/universal-audio-api.ts#L445)

@@ -30,7 +30,7 @@ Enum MetadataFields.
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L24)
+[generated-client/models/metadata-field.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L24)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L25)
+[generated-client/models/metadata-field.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L25)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L29)
+[generated-client/models/metadata-field.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L29)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L32)
+[generated-client/models/metadata-field.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L32)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L30)
+[generated-client/models/metadata-field.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L30)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L26)
+[generated-client/models/metadata-field.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L26)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L31)
+[generated-client/models/metadata-field.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L31)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L27)
+[generated-client/models/metadata-field.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L27)
 
 ___
 
@@ -110,4 +110,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/metadata-field.ts#L28)
+[generated-client/models/metadata-field.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/metadata-field.ts#L28)

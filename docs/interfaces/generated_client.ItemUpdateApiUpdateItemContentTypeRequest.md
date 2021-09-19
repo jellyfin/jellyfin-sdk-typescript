@@ -29,7 +29,7 @@ The content type of the item.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/item-update-api.ts#L300)
+[generated-client/api/item-update-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/item-update-api.ts#L300)
 
 ___
 
@@ -43,4 +43,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/item-update-api.ts#L293)
+[generated-client/api/item-update-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/item-update-api.ts#L293)

@@ -31,7 +31,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L457)
+[generated-client/api/hls-segment-api.ts:457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/hls-segment-api.ts#L457)
 
 ___
 
@@ -45,7 +45,7 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:464](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L464)
+[generated-client/api/hls-segment-api.ts:464](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/hls-segment-api.ts#L464)
 
 ___
 
@@ -59,7 +59,7 @@ The segment container.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L478)
+[generated-client/api/hls-segment-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/hls-segment-api.ts#L478)
 
 ___
 
@@ -73,4 +73,4 @@ The segment id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L471)
+[generated-client/api/hls-segment-api.ts:471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/hls-segment-api.ts#L471)

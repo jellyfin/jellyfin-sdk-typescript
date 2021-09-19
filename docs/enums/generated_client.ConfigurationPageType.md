@@ -23,7 +23,7 @@ Enum ConfigurationPageType.
 
 #### Defined in
 
-[generated-client/models/configuration-page-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/configuration-page-type.ts#L25)
+[generated-client/models/configuration-page-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/configuration-page-type.ts#L25)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/configuration-page-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/configuration-page-type.ts#L24)
+[generated-client/models/configuration-page-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/configuration-page-type.ts#L24)

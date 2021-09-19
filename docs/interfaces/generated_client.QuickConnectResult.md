@@ -33,7 +33,7 @@ Gets a value indicating whether this request is authorized.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L28)
+[generated-client/models/quick-connect-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L28)
 
 ___
 
@@ -47,7 +47,7 @@ Gets or sets the private access token.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L46)
+[generated-client/models/quick-connect-result.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L46)
 
 ___
 
@@ -61,7 +61,7 @@ Gets or sets the user facing code used so the user can quickly differentiate thi
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L40)
+[generated-client/models/quick-connect-result.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L40)
 
 ___
 
@@ -75,7 +75,7 @@ Gets or sets the DateTime that this request was created.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L58)
+[generated-client/models/quick-connect-result.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L58)
 
 ___
 
@@ -89,7 +89,7 @@ Gets or sets an error message.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L52)
+[generated-client/models/quick-connect-result.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L52)
 
 ___
 
@@ -103,4 +103,4 @@ Gets or sets the secret value used to uniquely identify this request. Can be use
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/quick-connect-result.ts#L34)
+[generated-client/models/quick-connect-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/quick-connect-result.ts#L34)

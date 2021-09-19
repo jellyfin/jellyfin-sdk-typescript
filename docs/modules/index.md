@@ -6,7 +6,7 @@
 
 ### Namespaces
 
-- [Utils](index.Utils.md)
+- [utils](index.utils.md)
 
 ### Classes
 
@@ -34,7 +34,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/api.ts#L15)
+[api.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/api.ts#L15)
 
 ___
 
@@ -46,4 +46,4 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L19)
+[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L19)

@@ -58,7 +58,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -92,7 +92,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -119,7 +119,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1615)
+[generated-client/api/instant-mix-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1615)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1627)
+[generated-client/api/instant-mix-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1627)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1640)
+[generated-client/api/instant-mix-api.ts:1640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1640)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1652](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1652)
+[generated-client/api/instant-mix-api.ts:1652](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1652)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1664)
+[generated-client/api/instant-mix-api.ts:1664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1664)
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1677)
+[generated-client/api/instant-mix-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1677)
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1689)
+[generated-client/api/instant-mix-api.ts:1689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1689)
 
 ___
 
@@ -312,7 +312,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1701)
+[generated-client/api/instant-mix-api.ts:1701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1701)
 
 ___
 
@@ -339,4 +339,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1713)
+[generated-client/api/instant-mix-api.ts:1713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/instant-mix-api.ts#L1713)

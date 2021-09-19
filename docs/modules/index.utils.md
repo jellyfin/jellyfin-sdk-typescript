@@ -1,27 +1,27 @@
-[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [index](index.md) / Utils
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [index](index.md) / utils
 
-# Namespace: Utils
+# Namespace: utils
 
-[index](index.md).Utils
+[index](index.md).utils
 
 ## Table of contents
 
 ### Variables
 
-- [HTTPS_PORT](index.Utils.md#https_port)
-- [HTTPS_PROTOCOL](index.Utils.md#https_protocol)
-- [HTTP_PORT](index.Utils.md#http_port)
-- [HTTP_PROTOCOL](index.Utils.md#http_protocol)
-- [JF_HTTPS_PORT](index.Utils.md#jf_https_port)
-- [JF_HTTP_PORT](index.Utils.md#jf_http_port)
+- [HTTPS_PORT](index.utils.md#https_port)
+- [HTTPS_PROTOCOL](index.utils.md#https_protocol)
+- [HTTP_PORT](index.utils.md#http_port)
+- [HTTP_PROTOCOL](index.utils.md#http_protocol)
+- [JF_HTTPS_PORT](index.utils.md#jf_https_port)
+- [JF_HTTP_PORT](index.utils.md#jf_http_port)
 
 ### Functions
 
-- [copyUrl](index.Utils.md#copyurl)
-- [getAddressCandidates](index.Utils.md#getaddresscandidates)
-- [getAuthorizationHeader](index.Utils.md#getauthorizationheader)
-- [getDefaultPort](index.Utils.md#getdefaultport)
-- [parseUrl](index.Utils.md#parseurl)
+- [copyUrl](index.utils.md#copyurl)
+- [getAddressCandidates](index.utils.md#getaddresscandidates)
+- [getAuthorizationHeader](index.utils.md#getauthorizationheader)
+- [getDefaultPort](index.utils.md#getdefaultport)
+- [parseUrl](index.utils.md#parseurl)
 
 ## Variables
 
@@ -31,7 +31,7 @@
 
 #### Defined in
 
-[utils/url.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L14)
+[utils/url.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L14)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L10)
+[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L10)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[utils/url.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L12)
+[utils/url.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L12)
 
 ___
 
@@ -61,7 +61,7 @@ ___
 
 #### Defined in
 
-[utils/url.ts:8](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L8)
+[utils/url.ts:8](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L8)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/address-candidates.ts#L13)
+[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L13)
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 #### Defined in
 
-[utils/address-candidates.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/address-candidates.ts#L11)
+[utils/address-candidates.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L11)
 
 ## Functions
 
@@ -105,7 +105,7 @@ A copy of the original Url.
 
 #### Defined in
 
-[utils/url.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L21)
+[utils/url.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L21)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[utils/address-candidates.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/address-candidates.ts#L15)
+[utils/address-candidates.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L15)
 
 ___
 
@@ -149,7 +149,7 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/authentication.ts#L11)
+[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/authentication.ts#L11)
 
 ___
 
@@ -173,7 +173,7 @@ The default port number of the protocol.
 
 #### Defined in
 
-[utils/url.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L30)
+[utils/url.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L30)
 
 ___
 
@@ -197,4 +197,4 @@ The Url object.
 
 #### Defined in
 
-[utils/url.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/utils/url.ts#L41)
+[utils/url.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L41)

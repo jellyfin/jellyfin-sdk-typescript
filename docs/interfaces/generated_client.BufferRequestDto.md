@@ -31,7 +31,7 @@ Gets or sets a value indicating whether the client playback is unpaused.
 
 #### Defined in
 
-[generated-client/models/buffer-request-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/buffer-request-dto.ts#L40)
+[generated-client/models/buffer-request-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/buffer-request-dto.ts#L40)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the playlist item identifier of the playing item.
 
 #### Defined in
 
-[generated-client/models/buffer-request-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/buffer-request-dto.ts#L46)
+[generated-client/models/buffer-request-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/buffer-request-dto.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the position ticks.
 
 #### Defined in
 
-[generated-client/models/buffer-request-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/buffer-request-dto.ts#L34)
+[generated-client/models/buffer-request-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/buffer-request-dto.ts#L34)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets when the request has been made by the client.
 
 #### Defined in
 
-[generated-client/models/buffer-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/buffer-request-dto.ts#L28)
+[generated-client/models/buffer-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/buffer-request-dto.ts#L28)
