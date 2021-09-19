@@ -1,0 +1,74 @@
+name: Code quality
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  eslint:
+    name: Lint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+          check-latest: true
+          cache: npm
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
+
+      - name: Run eslint
+        run: npm run lint
+
+  typescript:
+    name: TypeScript Build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+          check-latest: true
+          cache: npm
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
+
+      - name: Run TypeScript build
+        run: npx tsc --noEmit
+
+  jest:
+    name: Test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v2.3.4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2.4.0
+        with:
+          node-version: 14
+          check-latest: true
+          cache: npm
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
+
+      - name: Run jest
+        run: npx jest --coverage
+
+      - name: Upload coverage
+        uses: codecov/codecov-action@v2.0.3
