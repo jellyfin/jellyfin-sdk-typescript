@@ -8,4 +8,4 @@
 export * from './api';
 export * from './jellyfin';
 export * from './models';
-export * from './utils';
+export * as Utils from './utils';
