@@ -1,0 +1,8 @@
+__tests__
+coverage
+docs
+node_modules
+scripts
+jest.config.js
+openapi.json
+openapitools.json

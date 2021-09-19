@@ -1,5 +1,5 @@
 {
-  "name": "jellyfin-sdk-typescript",
+  "name": "@thornbill/jellyfin-sdk",
   "version": "0.1.0",
   "description": "A TypeScript SDK for Jellyfin.",
   "keywords": [
@@ -7,6 +7,14 @@
   ],
   "main": "./dist/index.js",
   "typings": "./dist/index.d.ts",
+  "license": "MPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thornbill/jellyfin-sdk-typescript.git"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "build": "npm run build:generated-client && npm run build:sdk",
     "build:generated-client": "openapi-generator-cli generate",
@@ -14,9 +22,9 @@
     "docs": "typedoc --tsconfig .",
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "lint": "eslint \".\"",
+    "prepublishOnly": "npm run build:sdk",
     "test": "jest --watchAll"
   },
-  "license": "MPL-2.0",
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "^2.3.10",
     "@tsconfig/recommended": "^1.0.1",
