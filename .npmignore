@@ -3,6 +3,7 @@ coverage
 docs
 node_modules
 scripts
+src
 jest.config.js
 openapi.json
 openapitools.json
