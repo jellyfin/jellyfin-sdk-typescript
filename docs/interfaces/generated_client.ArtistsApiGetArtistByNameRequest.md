@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ArtistsApiGetArtistByNameRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ArtistsApiGetArtistByNameRequest
 
 # Interface: ArtistsApiGetArtistByNameRequest
 
@@ -29,7 +29,7 @@ Studio name.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/artists-api.ts#L879)
+[generated-client/api/artists-api.ts:879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/artists-api.ts#L879)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/artists-api.ts#L886)
+[generated-client/api/artists-api.ts:886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/artists-api.ts#L886)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ScheduledTasksApiGetTaskRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ScheduledTasksApiGetTaskRequest
 
 # Interface: ScheduledTasksApiGetTaskRequest
 
@@ -28,4 +28,4 @@ Task Id.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/scheduled-tasks-api.ts#L375)
+[generated-client/api/scheduled-tasks-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/scheduled-tasks-api.ts#L375)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiPostCapabilitiesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiPostCapabilitiesRequest
 
 # Interface: SessionApiPostCapabilitiesRequest
 
@@ -33,7 +33,7 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1346)
+[generated-client/api/session-api.ts:1346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1346)
 
 ___
 
@@ -47,7 +47,7 @@ A list of playable media types, comma delimited. Audio, Video, Book, Photo.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1353)
+[generated-client/api/session-api.ts:1353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1353)
 
 ___
 
@@ -61,7 +61,7 @@ A list of supported remote control commands, comma delimited.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1360)
+[generated-client/api/session-api.ts:1360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1360)
 
 ___
 
@@ -75,7 +75,7 @@ Determines whether media can be played remotely..
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1367)
+[generated-client/api/session-api.ts:1367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1367)
 
 ___
 
@@ -89,7 +89,7 @@ Determines whether the device supports a unique identifier.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1381)
+[generated-client/api/session-api.ts:1381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1381)
 
 ___
 
@@ -103,4 +103,4 @@ Determines whether sync is supported.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1374)
+[generated-client/api/session-api.ts:1374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1374)

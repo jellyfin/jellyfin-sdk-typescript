@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlayAccess
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlayAccess
 
 # Enumeration: PlayAccess
 
@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/play-access.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/play-access.ts#L24)
+[generated-client/models/play-access.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/play-access.ts#L24)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-access.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/play-access.ts#L25)
+[generated-client/models/play-access.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/play-access.ts#L25)

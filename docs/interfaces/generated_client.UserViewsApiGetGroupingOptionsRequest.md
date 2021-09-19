@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserViewsApiGetGroupingOptionsRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserViewsApiGetGroupingOptionsRequest
 
 # Interface: UserViewsApiGetGroupingOptionsRequest
 
@@ -28,4 +28,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-views-api.ts#L200)
+[generated-client/api/user-views-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-views-api.ts#L200)

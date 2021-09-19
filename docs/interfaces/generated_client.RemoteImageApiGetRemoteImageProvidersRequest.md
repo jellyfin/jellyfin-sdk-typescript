@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / RemoteImageApiGetRemoteImageProvidersRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / RemoteImageApiGetRemoteImageProvidersRequest
 
 # Interface: RemoteImageApiGetRemoteImageProvidersRequest
 
@@ -28,4 +28,4 @@ Item Id.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/remote-image-api.ts#L324)
+[generated-client/api/remote-image-api.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/remote-image-api.ts#L324)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Jellyfin
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / Jellyfin
 
 # Class: Jellyfin
 
@@ -35,7 +35,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L28)
+[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L28)
 
 ## Properties
 
@@ -45,7 +45,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L25)
+[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L25)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L26)
+[jellyfin.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L26)
 
 ## Methods
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L33)
+[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L33)

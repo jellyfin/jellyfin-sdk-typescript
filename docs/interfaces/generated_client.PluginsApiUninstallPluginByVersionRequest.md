@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiUninstallPluginByVersionRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiUninstallPluginByVersionRequest
 
 # Interface: PluginsApiUninstallPluginByVersionRequest
 
@@ -29,7 +29,7 @@ Plugin id.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:782](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L782)
+[generated-client/api/plugins-api.ts:782](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L782)
 
 ___
 
@@ -43,4 +43,4 @@ Plugin version.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:789](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L789)
+[generated-client/api/plugins-api.ts:789](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L789)

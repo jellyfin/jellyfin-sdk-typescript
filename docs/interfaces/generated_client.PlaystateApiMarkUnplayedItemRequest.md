@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateApiMarkUnplayedItemRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateApiMarkUnplayedItemRequest
 
 # Interface: PlaystateApiMarkUnplayedItemRequest
 
@@ -29,7 +29,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playstate-api.ts#L835)
+[generated-client/api/playstate-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playstate-api.ts#L835)
 
 ___
 
@@ -43,4 +43,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:828](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playstate-api.ts#L828)
+[generated-client/api/playstate-api.ts:828](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playstate-api.ts#L828)

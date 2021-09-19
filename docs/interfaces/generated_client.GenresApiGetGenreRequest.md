@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / GenresApiGetGenreRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / GenresApiGetGenreRequest
 
 # Interface: GenresApiGetGenreRequest
 
@@ -29,7 +29,7 @@ The genre name.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/genres-api.ts#L300)
+[generated-client/api/genres-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/genres-api.ts#L300)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/genres-api.ts#L307)
+[generated-client/api/genres-api.ts:307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/genres-api.ts#L307)

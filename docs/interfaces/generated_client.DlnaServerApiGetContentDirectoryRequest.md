@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaServerApiGetContentDirectoryRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaServerApiGetContentDirectoryRequest
 
 # Interface: DlnaServerApiGetContentDirectoryRequest
 
@@ -28,4 +28,4 @@ Server UUID.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/dlna-server-api.ts#L993)
+[generated-client/api/dlna-server-api.ts:993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/dlna-server-api.ts#L993)

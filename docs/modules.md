@@ -1,6 +1,6 @@
-[jellyfin-sdk-typescript](README.md) / Modules
+[@thornbill/jellyfin-sdk](README.md) / Modules
 
-# jellyfin-sdk-typescript
+# @thornbill/jellyfin-sdk
 
 ## Table of contents
 

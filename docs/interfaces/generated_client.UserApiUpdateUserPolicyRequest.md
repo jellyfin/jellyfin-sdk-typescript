@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiUpdateUserPolicyRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiUpdateUserPolicyRequest
 
 # Interface: UserApiUpdateUserPolicyRequest
 
@@ -29,7 +29,7 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1294)
+[generated-client/api/user-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1294)
 
 ___
 
@@ -43,4 +43,4 @@ The new user policy.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1301)
+[generated-client/api/user-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1301)

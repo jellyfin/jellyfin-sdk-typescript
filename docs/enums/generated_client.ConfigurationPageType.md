@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationPageType
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationPageType
 
 # Enumeration: ConfigurationPageType
 
@@ -23,7 +23,7 @@ Enum ConfigurationPageType.
 
 #### Defined in
 
-[generated-client/models/configuration-page-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/configuration-page-type.ts#L25)
+[generated-client/models/configuration-page-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/configuration-page-type.ts#L25)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/configuration-page-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/configuration-page-type.ts#L24)
+[generated-client/models/configuration-page-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/configuration-page-type.ts#L24)

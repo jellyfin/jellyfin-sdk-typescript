@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / NotificationsApiSetUnreadRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / NotificationsApiSetUnreadRequest
 
 # Interface: NotificationsApiSetUnreadRequest
 
@@ -26,4 +26,4 @@ Request parameters for setUnread operation in NotificationsApi.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/notifications-api.ts#L525)
+[generated-client/api/notifications-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/notifications-api.ts#L525)

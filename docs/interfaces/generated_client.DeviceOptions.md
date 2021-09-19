@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DeviceOptions
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DeviceOptions
 
 # Interface: DeviceOptions
 
@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/device-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-options.ts#L28)
+[generated-client/models/device-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-options.ts#L28)

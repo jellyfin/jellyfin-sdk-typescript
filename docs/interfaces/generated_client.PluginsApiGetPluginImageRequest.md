@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiGetPluginImageRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiGetPluginImageRequest
 
 # Interface: PluginsApiGetPluginImageRequest
 
@@ -29,7 +29,7 @@ Plugin id.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:733](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L733)
+[generated-client/api/plugins-api.ts:733](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L733)
 
 ___
 
@@ -43,4 +43,4 @@ Plugin version.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:740](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L740)
+[generated-client/api/plugins-api.ts:740](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L740)

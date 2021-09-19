@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DevicesApiGetDevicesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DevicesApiGetDevicesRequest
 
 # Interface: DevicesApiGetDevicesRequest
 
@@ -29,7 +29,7 @@ Gets or sets a value indicating whether [supports synchronize].
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/devices-api.ts#L431)
+[generated-client/api/devices-api.ts:431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/devices-api.ts#L431)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the user identifier.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/devices-api.ts#L438)
+[generated-client/api/devices-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/devices-api.ts#L438)

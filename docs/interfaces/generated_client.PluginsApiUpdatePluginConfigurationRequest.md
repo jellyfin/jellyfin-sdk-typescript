@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiUpdatePluginConfigurationRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApiUpdatePluginConfigurationRequest
 
 # Interface: PluginsApiUpdatePluginConfigurationRequest
 
@@ -28,4 +28,4 @@ Plugin id.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:803](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L803)
+[generated-client/api/plugins-api.ts:803](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L803)

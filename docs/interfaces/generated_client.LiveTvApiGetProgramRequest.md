@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetProgramRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetProgramRequest
 
 # Interface: LiveTvApiGetProgramRequest
 
@@ -29,7 +29,7 @@ Program id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3879)
+[generated-client/api/live-tv-api.ts:3879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3879)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3886)
+[generated-client/api/live-tv-api.ts:3886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3886)

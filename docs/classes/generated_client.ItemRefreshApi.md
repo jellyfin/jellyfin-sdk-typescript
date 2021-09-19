@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemRefreshApi
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemRefreshApi
 
 # Class: ItemRefreshApi
 
@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,7 +84,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -111,4 +111,4 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-refresh-api.ts#L199)
+[generated-client/api/item-refresh-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/item-refresh-api.ts#L199)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetChannelRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetChannelRequest
 
 # Interface: LiveTvApiGetChannelRequest
 
@@ -29,7 +29,7 @@ Channel id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3410](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3410)
+[generated-client/api/live-tv-api.ts:3410](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3410)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3417](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3417)
+[generated-client/api/live-tv-api.ts:3417](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3417)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemUpdateApiGetMetadataEditorInfoRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemUpdateApiGetMetadataEditorInfoRequest
 
 # Interface: ItemUpdateApiGetMetadataEditorInfoRequest
 
@@ -28,4 +28,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-update-api.ts#L258)
+[generated-client/api/item-update-api.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/item-update-api.ts#L258)

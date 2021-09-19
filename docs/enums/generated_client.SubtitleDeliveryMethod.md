@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleDeliveryMethod
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleDeliveryMethod
 
 # Enumeration: SubtitleDeliveryMethod
 
@@ -23,7 +23,7 @@
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/subtitle-delivery-method.ts#L25)
+[generated-client/models/subtitle-delivery-method.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/subtitle-delivery-method.ts#L25)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/subtitle-delivery-method.ts#L24)
+[generated-client/models/subtitle-delivery-method.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/subtitle-delivery-method.ts#L24)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/subtitle-delivery-method.ts#L26)
+[generated-client/models/subtitle-delivery-method.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/subtitle-delivery-method.ts#L26)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/subtitle-delivery-method.ts#L27)
+[generated-client/models/subtitle-delivery-method.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/subtitle-delivery-method.ts#L27)

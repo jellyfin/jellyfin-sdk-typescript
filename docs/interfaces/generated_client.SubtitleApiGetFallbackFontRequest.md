@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiGetFallbackFontRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiGetFallbackFontRequest
 
 # Interface: SubtitleApiGetFallbackFontRequest
 
@@ -28,4 +28,4 @@ The name of the fallback font file to get.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L889)
+[generated-client/api/subtitle-api.ts:889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L889)

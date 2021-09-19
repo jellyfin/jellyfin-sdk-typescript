@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / JellyfinParameters
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / JellyfinParameters
 
 # Interface: JellyfinParameters
 
@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[jellyfin.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L12)
+[jellyfin.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L12)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/jellyfin.ts#L13)
+[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/jellyfin.ts#L13)

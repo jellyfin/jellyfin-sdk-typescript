@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiAddMediaPathRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiAddMediaPathRequest
 
 # Interface: LibraryStructureApiAddMediaPathRequest
 
@@ -29,7 +29,7 @@ The media path dto.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:612](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L612)
+[generated-client/api/library-structure-api.ts:612](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L612)
 
 ___
 
@@ -43,4 +43,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L619)
+[generated-client/api/library-structure-api.ts:619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L619)

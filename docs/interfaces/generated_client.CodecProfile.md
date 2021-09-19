@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CodecProfile
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CodecProfile
 
 # Interface: CodecProfile
 
@@ -28,7 +28,7 @@
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/codec-profile.ts#L42)
+[generated-client/models/codec-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/codec-profile.ts#L42)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/codec-profile.ts#L48)
+[generated-client/models/codec-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/codec-profile.ts#L48)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/codec-profile.ts#L36)
+[generated-client/models/codec-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/codec-profile.ts#L36)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/codec-profile.ts#L54)
+[generated-client/models/codec-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/codec-profile.ts#L54)
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/codec-profile.ts#L30)
+[generated-client/models/codec-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/codec-profile.ts#L30)

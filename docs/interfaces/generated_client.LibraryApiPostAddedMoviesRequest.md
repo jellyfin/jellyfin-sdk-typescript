@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiPostAddedMoviesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiPostAddedMoviesRequest
 
 # Interface: LibraryApiPostAddedMoviesRequest
 
@@ -29,7 +29,7 @@ The imdbId.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2267)
+[generated-client/api/library-api.ts:2267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2267)
 
 ___
 
@@ -43,4 +43,4 @@ The tmdbId.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2260)
+[generated-client/api/library-api.ts:2260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2260)

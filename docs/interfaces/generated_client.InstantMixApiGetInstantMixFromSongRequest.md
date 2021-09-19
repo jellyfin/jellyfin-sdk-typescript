@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / InstantMixApiGetInstantMixFromSongRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / InstantMixApiGetInstantMixFromSongRequest
 
 # Interface: InstantMixApiGetInstantMixFromSongRequest
 
@@ -35,7 +35,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1597](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1597)
+[generated-client/api/instant-mix-api.ts:1597](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1597)
 
 ___
 
@@ -49,7 +49,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1576)
+[generated-client/api/instant-mix-api.ts:1576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1576)
 
 ___
 
@@ -63,7 +63,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1583)
+[generated-client/api/instant-mix-api.ts:1583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1583)
 
 ___
 
@@ -77,7 +77,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1569)
+[generated-client/api/instant-mix-api.ts:1569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1569)
 
 ___
 
@@ -91,7 +91,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1548](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1548)
+[generated-client/api/instant-mix-api.ts:1548](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1548)
 
 ___
 
@@ -105,7 +105,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1590](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1590)
+[generated-client/api/instant-mix-api.ts:1590](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1590)
 
 ___
 
@@ -119,7 +119,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1562](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1562)
+[generated-client/api/instant-mix-api.ts:1562](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1562)
 
 ___
 
@@ -133,4 +133,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/instant-mix-api.ts#L1555)
+[generated-client/api/instant-mix-api.ts:1555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/instant-mix-api.ts#L1555)

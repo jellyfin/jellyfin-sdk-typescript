@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvInfo
 
 # Interface: LiveTvInfo
 
@@ -28,7 +28,7 @@ Gets or sets the enabled users.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/live-tv-info.ts#L41)
+[generated-client/models/live-tv-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/live-tv-info.ts#L41)
 
 ___
 
@@ -42,7 +42,7 @@ Gets or sets a value indicating whether this instance is enabled.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/live-tv-info.ts#L35)
+[generated-client/models/live-tv-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/live-tv-info.ts#L35)
 
 ___
 
@@ -56,4 +56,4 @@ Gets or sets the services.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/live-tv-info.ts#L29)
+[generated-client/models/live-tv-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/live-tv-info.ts#L29)

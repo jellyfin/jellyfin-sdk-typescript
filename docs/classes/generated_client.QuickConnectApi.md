@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / QuickConnectApi
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / QuickConnectApi
 
 # Class: QuickConnectApi
 
@@ -56,7 +56,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,7 +90,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:494](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L494)
+[generated-client/api/quick-connect-api.ts:494](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L494)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L506)
+[generated-client/api/quick-connect-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L506)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:518](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L518)
+[generated-client/api/quick-connect-api.ts:518](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L518)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L530)
+[generated-client/api/quick-connect-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L530)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L541)
+[generated-client/api/quick-connect-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L541)
 
 ___
 
@@ -249,7 +249,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L552)
+[generated-client/api/quick-connect-api.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L552)
 
 ___
 
@@ -275,4 +275,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/quick-connect-api.ts#L563)
+[generated-client/api/quick-connect-api.ts:563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/quick-connect-api.ts#L563)

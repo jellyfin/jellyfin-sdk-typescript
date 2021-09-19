@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiUpdateLibraryOptionsRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiUpdateLibraryOptionsRequest
 
 # Interface: LibraryStructureApiUpdateLibraryOptionsRequest
 
@@ -28,4 +28,4 @@ The library name and options.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:752](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L752)
+[generated-client/api/library-structure-api.ts:752](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L752)

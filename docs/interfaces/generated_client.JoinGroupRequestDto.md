@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / JoinGroupRequestDto
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / JoinGroupRequestDto
 
 # Interface: JoinGroupRequestDto
 
@@ -28,4 +28,4 @@ Gets or sets the group identifier.
 
 #### Defined in
 
-[generated-client/models/join-group-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/join-group-request-dto.ts#L28)
+[generated-client/models/join-group-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/join-group-request-dto.ts#L28)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiUpdateUserConfigurationRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiUpdateUserConfigurationRequest
 
 # Interface: UserApiUpdateUserConfigurationRequest
 
@@ -29,7 +29,7 @@ The new user configuration.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1238)
+[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1238)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1231)
+[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1231)

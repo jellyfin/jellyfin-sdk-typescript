@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaServerApiGetMediaReceiverRegistrar2Request
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaServerApiGetMediaReceiverRegistrar2Request
 
 # Interface: DlnaServerApiGetMediaReceiverRegistrar2Request
 
@@ -28,4 +28,4 @@ Server UUID.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/dlna-server-api.ts#L1112)
+[generated-client/api/dlna-server-api.ts:1112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/dlna-server-api.ts#L1112)

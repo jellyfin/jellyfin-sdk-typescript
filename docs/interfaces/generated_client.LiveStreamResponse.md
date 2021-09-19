@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveStreamResponse
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveStreamResponse
 
 # Interface: LiveStreamResponse
 
@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/live-stream-response.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/live-stream-response.ts#L29)
+[generated-client/models/live-stream-response.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/live-stream-response.ts#L29)

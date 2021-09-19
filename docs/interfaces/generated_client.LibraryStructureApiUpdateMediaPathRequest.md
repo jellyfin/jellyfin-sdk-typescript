@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiUpdateMediaPathRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiUpdateMediaPathRequest
 
 # Interface: LibraryStructureApiUpdateMediaPathRequest
 
@@ -28,4 +28,4 @@ The name of the library and path infos.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L766)
+[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L766)

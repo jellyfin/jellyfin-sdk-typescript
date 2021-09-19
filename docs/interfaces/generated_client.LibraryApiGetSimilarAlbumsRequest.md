@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetSimilarAlbumsRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetSimilarAlbumsRequest
 
 # Interface: LibraryApiGetSimilarAlbumsRequest
 
@@ -32,7 +32,7 @@ Exclude artist ids.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1931)
+[generated-client/api/library-api.ts:1931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1931)
 
 ___
 
@@ -46,7 +46,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1952](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1952)
+[generated-client/api/library-api.ts:1952](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1952)
 
 ___
 
@@ -60,7 +60,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1924)
+[generated-client/api/library-api.ts:1924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1924)
 
 ___
 
@@ -74,7 +74,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1945](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1945)
+[generated-client/api/library-api.ts:1945](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1945)
 
 ___
 
@@ -88,4 +88,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1938](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1938)
+[generated-client/api/library-api.ts:1938](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1938)

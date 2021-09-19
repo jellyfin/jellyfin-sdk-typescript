@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiPostUpdatedMediaRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiPostUpdatedMediaRequest
 
 # Interface: LibraryApiPostUpdatedMediaRequest
 
@@ -28,4 +28,4 @@ The update paths.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2295)
+[generated-client/api/library-api.ts:2295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2295)

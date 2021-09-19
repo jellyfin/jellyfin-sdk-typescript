@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UtcTimeResponse
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UtcTimeResponse
 
 # Interface: UtcTimeResponse
 
@@ -29,7 +29,7 @@ Gets the UTC time when request has been received.
 
 #### Defined in
 
-[generated-client/models/utc-time-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/utc-time-response.ts#L28)
+[generated-client/models/utc-time-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/utc-time-response.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets the UTC time when response has been sent.
 
 #### Defined in
 
-[generated-client/models/utc-time-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/utc-time-response.ts#L34)
+[generated-client/models/utc-time-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/utc-time-response.ts#L34)

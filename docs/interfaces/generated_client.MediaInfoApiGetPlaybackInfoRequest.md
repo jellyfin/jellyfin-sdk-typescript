@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / MediaInfoApiGetPlaybackInfoRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / MediaInfoApiGetPlaybackInfoRequest
 
 # Interface: MediaInfoApiGetPlaybackInfoRequest
 
@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/media-info-api.ts#L585)
+[generated-client/api/media-info-api.ts:585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L585)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:592](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/media-info-api.ts#L592)
+[generated-client/api/media-info-api.ts:592](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/media-info-api.ts#L592)

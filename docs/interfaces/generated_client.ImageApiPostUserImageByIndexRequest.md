@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiPostUserImageByIndexRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiPostUserImageByIndexRequest
 
 # Interface: ImageApiPostUserImageByIndexRequest
 
@@ -29,7 +29,7 @@ Request parameters for postUserImageByIndex operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L9903)
+[generated-client/api/image-api.ts:9903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L9903)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L9889)
+[generated-client/api/image-api.ts:9889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L9889)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9896](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L9896)
+[generated-client/api/image-api.ts:9896](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L9896)
 
 ___
 
@@ -71,4 +71,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9882](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L9882)
+[generated-client/api/image-api.ts:9882](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L9882)

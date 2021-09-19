@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / AuthenticateUserByName
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / AuthenticateUserByName
 
 # Interface: AuthenticateUserByName
 
@@ -30,7 +30,7 @@ Gets or sets the sha1-hashed password.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/authenticate-user-by-name.ts#L40)
+[generated-client/models/authenticate-user-by-name.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/authenticate-user-by-name.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the plain text password.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/authenticate-user-by-name.ts#L34)
+[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/authenticate-user-by-name.ts#L34)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the username.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/authenticate-user-by-name.ts#L28)
+[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/authenticate-user-by-name.ts#L28)

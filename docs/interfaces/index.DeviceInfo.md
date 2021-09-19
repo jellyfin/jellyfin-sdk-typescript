@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / DeviceInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [index](../modules/index.md) / DeviceInfo
 
 # Interface: DeviceInfo
 
@@ -21,7 +21,7 @@ An interface representing a client device.
 
 #### Defined in
 
-[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/models/device-info.ts#L11)
+[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/models/device-info.ts#L11)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/models/device-info.ts#L12)
+[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/models/device-info.ts#L12)

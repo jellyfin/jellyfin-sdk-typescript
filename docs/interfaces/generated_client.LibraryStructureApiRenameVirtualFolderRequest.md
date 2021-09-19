@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiRenameVirtualFolderRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiRenameVirtualFolderRequest
 
 # Interface: LibraryStructureApiRenameVirtualFolderRequest
 
@@ -30,7 +30,7 @@ The name of the virtual folder.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:724](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L724)
+[generated-client/api/library-structure-api.ts:724](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L724)
 
 ___
 
@@ -44,7 +44,7 @@ The new name.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:731](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L731)
+[generated-client/api/library-structure-api.ts:731](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L731)
 
 ___
 
@@ -58,4 +58,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:738](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L738)
+[generated-client/api/library-structure-api.ts:738](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L738)

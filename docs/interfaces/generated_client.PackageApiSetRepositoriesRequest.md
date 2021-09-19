@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PackageApiSetRepositoriesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PackageApiSetRepositoriesRequest
 
 # Interface: PackageApiSetRepositoriesRequest
 
@@ -28,4 +28,4 @@ The list of package repositories.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/package-api.ts#L505)
+[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/package-api.ts#L505)

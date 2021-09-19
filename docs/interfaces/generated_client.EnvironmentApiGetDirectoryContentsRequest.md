@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / EnvironmentApiGetDirectoryContentsRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / EnvironmentApiGetDirectoryContentsRequest
 
 # Interface: EnvironmentApiGetDirectoryContentsRequest
 
@@ -30,7 +30,7 @@ An optional filter to include or exclude folders from the results. true/false.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/environment-api.ts#L440)
+[generated-client/api/environment-api.ts:440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/environment-api.ts#L440)
 
 ___
 
@@ -44,7 +44,7 @@ An optional filter to include or exclude files from the results. true/false.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/environment-api.ts#L433)
+[generated-client/api/environment-api.ts:433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/environment-api.ts#L433)
 
 ___
 
@@ -58,4 +58,4 @@ The path.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/environment-api.ts#L426)
+[generated-client/api/environment-api.ts:426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/environment-api.ts#L426)

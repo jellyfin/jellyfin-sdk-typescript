@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetMediaFoldersRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetMediaFoldersRequest
 
 # Interface: LibraryApiGetMediaFoldersRequest
 
@@ -28,4 +28,4 @@ Optional. Filter by folders that are marked hidden, or not.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1910](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L1910)
+[generated-client/api/library-api.ts:1910](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L1910)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiSendGeneralCommandRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiSendGeneralCommandRequest
 
 # Interface: SessionApiSendGeneralCommandRequest
 
@@ -29,7 +29,7 @@ The command to send.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1486](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1486)
+[generated-client/api/session-api.ts:1486](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1486)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1479)
+[generated-client/api/session-api.ts:1479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1479)

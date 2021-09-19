@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / RepositoryInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / RepositoryInfo
 
 # Interface: RepositoryInfo
 
@@ -30,7 +30,7 @@ Gets or sets a value indicating whether the repository is enabled.
 
 #### Defined in
 
-[generated-client/models/repository-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/repository-info.ts#L40)
+[generated-client/models/repository-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/repository-info.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/repository-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/repository-info.ts#L28)
+[generated-client/models/repository-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/repository-info.ts#L28)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the URL.
 
 #### Defined in
 
-[generated-client/models/repository-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/repository-info.ts#L34)
+[generated-client/models/repository-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/repository-info.ts#L34)

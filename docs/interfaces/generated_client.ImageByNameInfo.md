@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageByNameInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageByNameInfo
 
 # Interface: ImageByNameInfo
 
@@ -30,7 +30,7 @@ Gets or sets the context.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/image-by-name-info.ts#L40)
+[generated-client/models/image-by-name-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/image-by-name-info.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the length of the file.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/image-by-name-info.ts#L46)
+[generated-client/models/image-by-name-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/image-by-name-info.ts#L46)
 
 ___
 
@@ -58,7 +58,7 @@ Gets or sets the format.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/image-by-name-info.ts#L52)
+[generated-client/models/image-by-name-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/image-by-name-info.ts#L52)
 
 ___
 
@@ -72,7 +72,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/image-by-name-info.ts#L28)
+[generated-client/models/image-by-name-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/image-by-name-info.ts#L28)
 
 ___
 
@@ -86,4 +86,4 @@ Gets or sets the theme.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/image-by-name-info.ts#L34)
+[generated-client/models/image-by-name-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/image-by-name-info.ts#L34)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageByNameApiGetRatingImageRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageByNameApiGetRatingImageRequest
 
 # Interface: ImageByNameApiGetRatingImageRequest
 
@@ -29,7 +29,7 @@ The name of the image.
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-by-name-api.ts#L455)
+[generated-client/api/image-by-name-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-by-name-api.ts#L455)
 
 ___
 
@@ -43,4 +43,4 @@ The theme to get the image from.
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:448](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-by-name-api.ts#L448)
+[generated-client/api/image-by-name-api.ts:448](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-by-name-api.ts#L448)

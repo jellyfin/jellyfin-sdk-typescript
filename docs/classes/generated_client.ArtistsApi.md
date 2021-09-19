@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ArtistsApi
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ArtistsApi
 
 # Class: ArtistsApi
 
@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/artists-api.ts#L1121)
+[generated-client/api/artists-api.ts:1121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/artists-api.ts#L1121)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/artists-api.ts#L1133)
+[generated-client/api/artists-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/artists-api.ts#L1133)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/artists-api.ts#L1145)
+[generated-client/api/artists-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/artists-api.ts#L1145)

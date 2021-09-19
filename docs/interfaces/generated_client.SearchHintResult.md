@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SearchHintResult
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SearchHintResult
 
 # Interface: SearchHintResult
 
@@ -29,7 +29,7 @@ Gets or sets the search hints.
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/search-hint-result.ts#L29)
+[generated-client/models/search-hint-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/search-hint-result.ts#L29)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the total record count.
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/search-hint-result.ts#L35)
+[generated-client/models/search-hint-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/search-hint-result.ts#L35)

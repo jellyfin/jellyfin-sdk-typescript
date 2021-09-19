@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApi
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PluginsApi
 
 # Class: PluginsApi
 
@@ -59,7 +59,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -93,7 +93,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -120,7 +120,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L835)
+[generated-client/api/plugins-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L835)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L847)
+[generated-client/api/plugins-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L847)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L859)
+[generated-client/api/plugins-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L859)
 
 ___
 
@@ -201,7 +201,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:871](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L871)
+[generated-client/api/plugins-api.ts:871](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L871)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L883)
+[generated-client/api/plugins-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L883)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L894)
+[generated-client/api/plugins-api.ts:894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L894)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L907)
+[generated-client/api/plugins-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L907)
 
 ___
 
@@ -310,7 +310,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:919](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L919)
+[generated-client/api/plugins-api.ts:919](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L919)
 
 ___
 
@@ -339,7 +339,7 @@ Accepts plugin configuration as JSON body.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L931)
+[generated-client/api/plugins-api.ts:931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L931)
 
 ___
 
@@ -368,4 +368,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/plugins-api.ts#L944)
+[generated-client/api/plugins-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/plugins-api.ts#L944)

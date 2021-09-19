@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateRequest
 
 # Interface: PlaystateRequest
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-request.ts#L29)
+[generated-client/models/playstate-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-request.ts#L29)
 
 ___
 
@@ -40,7 +40,7 @@ Gets or sets the controlling user identifier.
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-request.ts#L41)
+[generated-client/models/playstate-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-request.ts#L41)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-request.ts#L35)
+[generated-client/models/playstate-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-request.ts#L35)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PackageInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PackageInfo
 
 # Interface: PackageInfo
 
@@ -35,7 +35,7 @@ Gets or sets the category.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L53)
+[generated-client/models/package-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L53)
 
 ___
 
@@ -49,7 +49,7 @@ Gets or sets a long description of the plugin containing features or helpful exp
 
 #### Defined in
 
-[generated-client/models/package-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L35)
+[generated-client/models/package-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L35)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets the guid of the assembly associated with this plugin.  This is used
 
 #### Defined in
 
-[generated-client/models/package-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L59)
+[generated-client/models/package-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L59)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets the image url for the package.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L71)
+[generated-client/models/package-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L71)
 
 ___
 
@@ -91,7 +91,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L29)
+[generated-client/models/package-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L29)
 
 ___
 
@@ -105,7 +105,7 @@ Gets or sets a short overview of what the plugin does.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L41)
+[generated-client/models/package-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L41)
 
 ___
 
@@ -119,7 +119,7 @@ Gets or sets the owner.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L47)
+[generated-client/models/package-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L47)
 
 ___
 
@@ -133,4 +133,4 @@ Gets or sets the versions.
 
 #### Defined in
 
-[generated-client/models/package-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/package-info.ts#L65)
+[generated-client/models/package-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/package-info.ts#L65)

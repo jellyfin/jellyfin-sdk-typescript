@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiDeleteItemImageByIndexRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiDeleteItemImageByIndexRequest
 
 # Interface: ImageApiDeleteItemImageByIndexRequest
 
@@ -30,7 +30,7 @@ The image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L5843)
+[generated-client/api/image-api.ts:5843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L5843)
 
 ___
 
@@ -44,7 +44,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5836](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L5836)
+[generated-client/api/image-api.ts:5836](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L5836)
 
 ___
 
@@ -58,4 +58,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5829](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L5829)
+[generated-client/api/image-api.ts:5829](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L5829)

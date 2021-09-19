@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiGetItemImageInfosRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ImageApiGetItemImageInfosRequest
 
 # Interface: ImageApiGetItemImageInfosRequest
 
@@ -28,4 +28,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:6753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/image-api.ts#L6753)
+[generated-client/api/image-api.ts:6753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/image-api.ts#L6753)

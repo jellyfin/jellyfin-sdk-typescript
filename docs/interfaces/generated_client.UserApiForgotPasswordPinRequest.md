@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiForgotPasswordPinRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiForgotPasswordPinRequest
 
 # Interface: UserApiForgotPasswordPinRequest
 
@@ -28,4 +28,4 @@ The forgot password pin request containing the entered pin.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1161)
+[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1161)

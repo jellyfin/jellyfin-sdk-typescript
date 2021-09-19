@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionApiCreateCollectionRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionApiCreateCollectionRequest
 
 # Interface: CollectionApiCreateCollectionRequest
 
@@ -31,7 +31,7 @@ Item Ids to add to the collection.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L307)
+[generated-client/api/collection-api.ts:307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L307)
 
 ___
 
@@ -45,7 +45,7 @@ Whether or not to lock the new collection.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L321)
+[generated-client/api/collection-api.ts:321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L321)
 
 ___
 
@@ -59,7 +59,7 @@ The name of the collection.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L300)
+[generated-client/api/collection-api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L300)
 
 ___
 
@@ -73,4 +73,4 @@ Optional. Create the collection within a specific folder.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L314)
+[generated-client/api/collection-api.ts:314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L314)

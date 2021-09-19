@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserLibraryApiGetLocalTrailersRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserLibraryApiGetLocalTrailersRequest
 
 # Interface: UserLibraryApiGetLocalTrailersRequest
 
@@ -29,7 +29,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:932](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-library-api.ts#L932)
+[generated-client/api/user-library-api.ts:932](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-library-api.ts#L932)
 
 ___
 
@@ -43,4 +43,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:925](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-library-api.ts#L925)
+[generated-client/api/user-library-api.ts:925](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-library-api.ts#L925)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateCommand
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaystateCommand
 
 # Enumeration: PlaystateCommand
 
@@ -30,7 +30,7 @@ Enum PlaystateCommand.
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L31)
+[generated-client/models/playstate-command.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L31)
 
 ___
 
@@ -40,7 +40,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L27)
+[generated-client/models/playstate-command.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L27)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L25)
+[generated-client/models/playstate-command.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L25)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L32)
+[generated-client/models/playstate-command.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L32)
 
 ___
 
@@ -70,7 +70,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L28)
+[generated-client/models/playstate-command.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L28)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L30)
+[generated-client/models/playstate-command.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L30)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L29)
+[generated-client/models/playstate-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L29)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L24)
+[generated-client/models/playstate-command.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L24)
 
 ___
 
@@ -110,4 +110,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-command.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/playstate-command.ts#L26)
+[generated-client/models/playstate-command.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/playstate-command.ts#L26)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetRecordingRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetRecordingRequest
 
 # Interface: LiveTvApiGetRecordingRequest
 
@@ -29,7 +29,7 @@ Recording id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L4033)
+[generated-client/api/live-tv-api.ts:4033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L4033)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4040](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L4040)
+[generated-client/api/live-tv-api.ts:4040](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L4040)

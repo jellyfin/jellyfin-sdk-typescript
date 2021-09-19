@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / EnvironmentApiGetParentPathRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / EnvironmentApiGetParentPathRequest
 
 # Interface: EnvironmentApiGetParentPathRequest
 
@@ -28,4 +28,4 @@ The path.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/environment-api.ts#L454)
+[generated-client/api/environment-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/environment-api.ts#L454)

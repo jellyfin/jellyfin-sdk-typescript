@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ScheduledTasksApiGetTasksRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ScheduledTasksApiGetTasksRequest
 
 # Interface: ScheduledTasksApiGetTasksRequest
 
@@ -29,7 +29,7 @@ Optional filter tasks that are enabled, or not.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:396](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/scheduled-tasks-api.ts#L396)
+[generated-client/api/scheduled-tasks-api.ts:396](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/scheduled-tasks-api.ts#L396)
 
 ___
 
@@ -43,4 +43,4 @@ Optional filter tasks that are hidden, or not.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:389](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/scheduled-tasks-api.ts#L389)
+[generated-client/api/scheduled-tasks-api.ts:389](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/scheduled-tasks-api.ts#L389)

@@ -1,4 +1,4 @@
-jellyfin-sdk-typescript / [Modules](modules.md)
+@thornbill/jellyfin-sdk / [Modules](modules.md)
 
 # jellyfin-sdk-typescript
 

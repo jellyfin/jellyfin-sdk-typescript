@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DisplayPreferencesApiUpdateDisplayPreferencesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DisplayPreferencesApiUpdateDisplayPreferencesRequest
 
 # Interface: DisplayPreferencesApiUpdateDisplayPreferencesRequest
 
@@ -31,7 +31,7 @@ Client.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/display-preferences-api.ts#L267)
+[generated-client/api/display-preferences-api.ts:267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/display-preferences-api.ts#L267)
 
 ___
 
@@ -45,7 +45,7 @@ New Display Preferences object.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/display-preferences-api.ts#L274)
+[generated-client/api/display-preferences-api.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/display-preferences-api.ts#L274)
 
 ___
 
@@ -59,7 +59,7 @@ Display preferences id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/display-preferences-api.ts#L253)
+[generated-client/api/display-preferences-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/display-preferences-api.ts#L253)
 
 ___
 
@@ -73,4 +73,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/display-preferences-api.ts#L260)
+[generated-client/api/display-preferences-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/display-preferences-api.ts#L260)

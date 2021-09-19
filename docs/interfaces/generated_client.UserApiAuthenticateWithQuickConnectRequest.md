@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiAuthenticateWithQuickConnectRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiAuthenticateWithQuickConnectRequest
 
 # Interface: UserApiAuthenticateWithQuickConnectRequest
 
@@ -28,4 +28,4 @@ The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1105)
+[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1105)

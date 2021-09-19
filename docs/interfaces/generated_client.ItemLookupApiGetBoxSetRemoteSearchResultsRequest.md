@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemLookupApiGetBoxSetRemoteSearchResultsRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ItemLookupApiGetBoxSetRemoteSearchResultsRequest
 
 # Interface: ItemLookupApiGetBoxSetRemoteSearchResultsRequest
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/item-lookup-api.ts#L800)
+[generated-client/api/item-lookup-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/item-lookup-api.ts#L800)

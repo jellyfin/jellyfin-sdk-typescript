@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiRemoveVirtualFolderRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryStructureApiRemoveVirtualFolderRequest
 
 # Interface: LibraryStructureApiRemoveVirtualFolderRequest
 
@@ -29,7 +29,7 @@ The name of the folder.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:703](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L703)
+[generated-client/api/library-structure-api.ts:703](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L703)
 
 ___
 
@@ -43,4 +43,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-structure-api.ts#L710)
+[generated-client/api/library-structure-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-structure-api.ts#L710)

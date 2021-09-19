@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiDeleteSubtitleRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiDeleteSubtitleRequest
 
 # Interface: SubtitleApiDeleteSubtitleRequest
 
@@ -29,7 +29,7 @@ The index of the subtitle file.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:854](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L854)
+[generated-client/api/subtitle-api.ts:854](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L854)
 
 ___
 
@@ -43,4 +43,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L847)
+[generated-client/api/subtitle-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L847)

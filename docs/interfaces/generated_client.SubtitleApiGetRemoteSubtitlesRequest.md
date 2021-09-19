@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiGetRemoteSubtitlesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiGetRemoteSubtitlesRequest
 
 # Interface: SubtitleApiGetRemoteSubtitlesRequest
 
@@ -28,4 +28,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L903)
+[generated-client/api/subtitle-api.ts:903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L903)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiAddTunerHostRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiAddTunerHostRequest
 
 # Interface: LiveTvApiAddTunerHostRequest
 
@@ -28,4 +28,4 @@ New tuner host.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3270)
+[generated-client/api/live-tv-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3270)

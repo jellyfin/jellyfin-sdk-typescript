@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / MusicGenresApiGetMusicGenreRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / MusicGenresApiGetMusicGenreRequest
 
 # Interface: MusicGenresApiGetMusicGenreRequest
 
@@ -29,7 +29,7 @@ The genre name.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/music-genres-api.ts#L303)
+[generated-client/api/music-genres-api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/music-genres-api.ts#L303)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/music-genres-api.ts#L310)
+[generated-client/api/music-genres-api.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/music-genres-api.ts#L310)

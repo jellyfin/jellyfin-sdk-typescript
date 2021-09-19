@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiSearchRemoteSubtitlesRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SubtitleApiSearchRemoteSubtitlesRequest
 
 # Interface: SubtitleApiSearchRemoteSubtitlesRequest
 
@@ -30,7 +30,7 @@ Optional. Only show subtitles which are a perfect match.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1155](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L1155)
+[generated-client/api/subtitle-api.ts:1155](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L1155)
 
 ___
 
@@ -44,7 +44,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1141](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L1141)
+[generated-client/api/subtitle-api.ts:1141](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L1141)
 
 ___
 
@@ -58,4 +58,4 @@ The language of the subtitles.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/subtitle-api.ts#L1148)
+[generated-client/api/subtitle-api.ts:1148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/subtitle-api.ts#L1148)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / WakeOnLanInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / WakeOnLanInfo
 
 # Interface: WakeOnLanInfo
 
@@ -29,7 +29,7 @@ Gets the MAC address of the device.
 
 #### Defined in
 
-[generated-client/models/wake-on-lan-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/wake-on-lan-info.ts#L28)
+[generated-client/models/wake-on-lan-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/wake-on-lan-info.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the wake-on-LAN port.
 
 #### Defined in
 
-[generated-client/models/wake-on-lan-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/wake-on-lan-info.ts#L34)
+[generated-client/models/wake-on-lan-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/wake-on-lan-info.ts#L34)

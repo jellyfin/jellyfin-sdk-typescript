@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiAuthenticateUserRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UserApiAuthenticateUserRequest
 
 # Interface: UserApiAuthenticateUserRequest
 
@@ -30,7 +30,7 @@ The password sha1-hash.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1077)
+[generated-client/api/user-api.ts:1077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1077)
 
 ___
 
@@ -44,7 +44,7 @@ The password as plain text.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1070)
+[generated-client/api/user-api.ts:1070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1070)
 
 ___
 
@@ -58,4 +58,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/user-api.ts#L1063)
+[generated-client/api/user-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/user-api.ts#L1063)

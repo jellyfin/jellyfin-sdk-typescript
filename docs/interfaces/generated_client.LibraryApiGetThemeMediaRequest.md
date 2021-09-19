@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetThemeMediaRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LibraryApiGetThemeMediaRequest
 
 # Interface: LibraryApiGetThemeMediaRequest
 
@@ -30,7 +30,7 @@ Optional. Determines whether or not parent items should be searched for theme me
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2190)
+[generated-client/api/library-api.ts:2190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2190)
 
 ___
 
@@ -44,7 +44,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2176)
+[generated-client/api/library-api.ts:2176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2176)
 
 ___
 
@@ -58,4 +58,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/library-api.ts#L2183)
+[generated-client/api/library-api.ts:2183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/library-api.ts#L2183)

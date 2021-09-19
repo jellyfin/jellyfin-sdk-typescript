@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionCreationResult
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionCreationResult
 
 # Interface: CollectionCreationResult
 
@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/collection-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/collection-creation-result.ts#L28)
+[generated-client/models/collection-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/collection-creation-result.ts#L28)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetLiveStreamFileRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / LiveTvApiGetLiveStreamFileRequest
 
 # Interface: LiveTvApiGetLiveStreamFileRequest
 
@@ -29,7 +29,7 @@ Container type.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3515)
+[generated-client/api/live-tv-api.ts:3515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3515)
 
 ___
 
@@ -43,4 +43,4 @@ Stream id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/live-tv-api.ts#L3508)
+[generated-client/api/live-tv-api.ts:3508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/live-tv-api.ts#L3508)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ControlResponse
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ControlResponse
 
 # Interface: ControlResponse
 
@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/control-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/control-response.ts#L28)
+[generated-client/models/control-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/control-response.ts#L28)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/control-response.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/control-response.ts#L40)
+[generated-client/models/control-response.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/control-response.ts#L40)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/control-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/control-response.ts#L34)
+[generated-client/models/control-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/control-response.ts#L34)

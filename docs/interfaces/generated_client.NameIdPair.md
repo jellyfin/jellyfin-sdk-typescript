@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / NameIdPair
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / NameIdPair
 
 # Interface: NameIdPair
 
@@ -27,7 +27,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/name-id-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/name-id-pair.ts#L34)
+[generated-client/models/name-id-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/name-id-pair.ts#L34)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/name-id-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/name-id-pair.ts#L28)
+[generated-client/models/name-id-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/name-id-pair.ts#L28)

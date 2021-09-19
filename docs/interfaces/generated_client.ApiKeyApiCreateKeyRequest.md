@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ApiKeyApiCreateKeyRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ApiKeyApiCreateKeyRequest
 
 # Interface: ApiKeyApiCreateKeyRequest
 
@@ -28,4 +28,4 @@ Name of the app using the authentication key.
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/api-key-api.ts#L236)
+[generated-client/api/api-key-api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/api-key-api.ts#L236)

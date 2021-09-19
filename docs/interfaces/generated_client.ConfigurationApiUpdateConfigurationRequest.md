@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationApiUpdateConfigurationRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationApiUpdateConfigurationRequest
 
 # Interface: ConfigurationApiUpdateConfigurationRequest
 
@@ -28,4 +28,4 @@ Configuration.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/configuration-api.ts#L423)
+[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/configuration-api.ts#L423)

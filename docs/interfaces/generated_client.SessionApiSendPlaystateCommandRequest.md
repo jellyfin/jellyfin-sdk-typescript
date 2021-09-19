@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiSendPlaystateCommandRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiSendPlaystateCommandRequest
 
 # Interface: SessionApiSendPlaystateCommandRequest
 
@@ -31,7 +31,7 @@ The MediaBrowser.Model.Session.PlaystateCommand.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1528](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1528)
+[generated-client/api/session-api.ts:1528](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1528)
 
 ___
 
@@ -45,7 +45,7 @@ The optional controlling user id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1542](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1542)
+[generated-client/api/session-api.ts:1542](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1542)
 
 ___
 
@@ -59,7 +59,7 @@ The optional position ticks.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1535)
+[generated-client/api/session-api.ts:1535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1535)
 
 ___
 
@@ -73,4 +73,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1521](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1521)
+[generated-client/api/session-api.ts:1521](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1521)

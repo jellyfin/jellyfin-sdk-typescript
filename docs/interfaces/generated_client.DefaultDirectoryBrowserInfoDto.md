@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DefaultDirectoryBrowserInfoDto
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DefaultDirectoryBrowserInfoDto
 
 # Interface: DefaultDirectoryBrowserInfoDto
 
@@ -28,4 +28,4 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/default-directory-browser-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/default-directory-browser-info-dto.ts#L28)
+[generated-client/models/default-directory-browser-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/default-directory-browser-info-dto.ts#L28)

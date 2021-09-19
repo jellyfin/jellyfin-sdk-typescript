@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaylistsApiAddToPlaylistRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaylistsApiAddToPlaylistRequest
 
 # Interface: PlaylistsApiAddToPlaylistRequest
 
@@ -30,7 +30,7 @@ Item id, comma delimited.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L489)
+[generated-client/api/playlists-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L489)
 
 ___
 
@@ -44,7 +44,7 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L482)
+[generated-client/api/playlists-api.ts:482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L482)
 
 ___
 
@@ -58,4 +58,4 @@ The userId.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L496)
+[generated-client/api/playlists-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L496)

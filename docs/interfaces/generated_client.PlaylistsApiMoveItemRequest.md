@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaylistsApiMoveItemRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / PlaylistsApiMoveItemRequest
 
 # Interface: PlaylistsApiMoveItemRequest
 
@@ -30,7 +30,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L629)
+[generated-client/api/playlists-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L629)
 
 ___
 
@@ -44,7 +44,7 @@ The new index.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:636](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L636)
+[generated-client/api/playlists-api.ts:636](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L636)
 
 ___
 
@@ -58,4 +58,4 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/playlists-api.ts#L622)
+[generated-client/api/playlists-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/playlists-api.ts#L622)

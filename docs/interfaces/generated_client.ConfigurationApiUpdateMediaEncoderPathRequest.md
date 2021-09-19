@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationApiUpdateMediaEncoderPathRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / ConfigurationApiUpdateMediaEncoderPathRequest
 
 # Interface: ConfigurationApiUpdateMediaEncoderPathRequest
 
@@ -28,4 +28,4 @@ Media encoder path form body.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/configuration-api.ts#L437)
+[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/configuration-api.ts#L437)

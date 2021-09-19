@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionApiRemoveFromCollectionRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / CollectionApiRemoveFromCollectionRequest
 
 # Interface: CollectionApiRemoveFromCollectionRequest
 
@@ -29,7 +29,7 @@ The collection id.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L335)
+[generated-client/api/collection-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L335)
 
 ___
 
@@ -43,4 +43,4 @@ Item ids, comma delimited.
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/collection-api.ts#L342)
+[generated-client/api/collection-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/collection-api.ts#L342)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / QueryFiltersLegacy
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / QueryFiltersLegacy
 
 # Interface: QueryFiltersLegacy
 
@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/query-filters-legacy.ts#L28)
+[generated-client/models/query-filters-legacy.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/query-filters-legacy.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/query-filters-legacy.ts#L40)
+[generated-client/models/query-filters-legacy.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/query-filters-legacy.ts#L40)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/query-filters-legacy.ts#L34)
+[generated-client/models/query-filters-legacy.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/query-filters-legacy.ts#L34)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/query-filters-legacy.ts#L46)
+[generated-client/models/query-filters-legacy.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/query-filters-legacy.ts#L46)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / BrandingApi
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / BrandingApi
 
 # Class: BrandingApi
 
@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/branding-api.ts#L215)
+[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/branding-api.ts#L215)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/branding-api.ts#L226)
+[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/branding-api.ts#L226)
 
 ___
 
@@ -164,4 +164,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/branding-api.ts#L237)
+[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/branding-api.ts#L237)

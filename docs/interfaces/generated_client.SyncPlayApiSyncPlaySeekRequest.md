@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SyncPlayApiSyncPlaySeekRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SyncPlayApiSyncPlaySeekRequest
 
 # Interface: SyncPlayApiSyncPlaySeekRequest
 
@@ -28,4 +28,4 @@ The new playback position.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/sync-play-api.ts#L1457)
+[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/sync-play-api.ts#L1457)

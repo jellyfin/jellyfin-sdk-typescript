@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaApiCreateProfileRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DlnaApiCreateProfileRequest
 
 # Interface: DlnaApiCreateProfileRequest
 
@@ -28,4 +28,4 @@ Device profile.
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/dlna-api.ts#L411)
+[generated-client/api/dlna-api.ts:411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/dlna-api.ts#L411)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiRemoveUserFromSessionRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / SessionApiRemoveUserFromSessionRequest
 
 # Interface: SessionApiRemoveUserFromSessionRequest
 
@@ -29,7 +29,7 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1416)
+[generated-client/api/session-api.ts:1416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1416)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/session-api.ts#L1423)
+[generated-client/api/session-api.ts:1423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/session-api.ts#L1423)

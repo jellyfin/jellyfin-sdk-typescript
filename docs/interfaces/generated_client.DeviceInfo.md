@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DeviceInfo
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / DeviceInfo
 
 # Interface: DeviceInfo
 
@@ -34,7 +34,7 @@ Gets or sets the name of the application.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L47)
+[generated-client/models/device-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L47)
 
 ___
 
@@ -48,7 +48,7 @@ Gets or sets the application version.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L53)
+[generated-client/models/device-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L53)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L71)
+[generated-client/models/device-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L71)
 
 ___
 
@@ -74,7 +74,7 @@ Gets or sets the date last modified.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L65)
+[generated-client/models/device-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L65)
 
 ___
 
@@ -86,7 +86,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L77)
+[generated-client/models/device-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L77)
 
 ___
 
@@ -100,7 +100,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L35)
+[generated-client/models/device-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L35)
 
 ___
 
@@ -114,7 +114,7 @@ Gets or sets the last user identifier.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L59)
+[generated-client/models/device-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L59)
 
 ___
 
@@ -128,7 +128,7 @@ Gets or sets the last name of the user.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L41)
+[generated-client/models/device-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L41)
 
 ___
 
@@ -140,4 +140,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/device-info.ts#L29)
+[generated-client/models/device-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/device-info.ts#L29)

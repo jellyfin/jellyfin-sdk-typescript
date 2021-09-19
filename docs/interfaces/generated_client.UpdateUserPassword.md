@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UpdateUserPassword
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / UpdateUserPassword
 
 # Interface: UpdateUserPassword
 
@@ -31,7 +31,7 @@ Gets or sets the current sha1-hashed password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/update-user-password.ts#L28)
+[generated-client/models/update-user-password.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/update-user-password.ts#L28)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the current plain text password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/update-user-password.ts#L34)
+[generated-client/models/update-user-password.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/update-user-password.ts#L34)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the new plain text password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/update-user-password.ts#L40)
+[generated-client/models/update-user-password.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/update-user-password.ts#L40)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets a value indicating whether to reset the password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/models/update-user-password.ts#L46)
+[generated-client/models/update-user-password.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/models/update-user-password.ts#L46)

@@ -1,4 +1,4 @@
-[jellyfin-sdk-typescript](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / HlsSegmentApiGetHlsAudioSegmentLegacyAacRequest
+[@thornbill/jellyfin-sdk](../README.md) / [Modules](../modules.md) / [generated-client](../modules/generated_client.md) / HlsSegmentApiGetHlsAudioSegmentLegacyAacRequest
 
 # Interface: HlsSegmentApiGetHlsAudioSegmentLegacyAacRequest
 
@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:394](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/hls-segment-api.ts#L394)
+[generated-client/api/hls-segment-api.ts:394](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L394)
 
 ___
 
@@ -43,4 +43,4 @@ The segment id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/e4df7f8/src/generated-client/api/hls-segment-api.ts#L401)
+[generated-client/api/hls-segment-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/21a118e/src/generated-client/api/hls-segment-api.ts#L401)
