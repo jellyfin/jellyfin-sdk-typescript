@@ -4,22 +4,60 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '..';
+import axios from 'axios';
+import { mocked } from 'ts-jest/utils';
+
+import { Api, AUTHORIZATION_HEADER } from '..';
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from '../generated-client';
+import { getAuthorizationHeader } from '../utils';
+
+const SERVER_URL = 'https://example.com';
+
+const TEST_CLIENT = {
+	name: 'sdk-test-client',
+	version: '0.0.0'
+};
+
+const TEST_DEVICE = {
+	name: 'device-name',
+	id: 'device-id'
+};
+
+jest.mock('axios');
+const mockAxios = mocked(axios, true);
 
 describe('Api', () => {
+	it('should authenticate and update state', async () => {
+		const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
+		const USER_CREDENTIALS = {
+			Username: 'test',
+			Pw: ''
+		};
+
+		mockAxios.request.mockResolvedValueOnce({
+			data: { AccessToken: TEST_ACCESS_TOKEN }
+		});
+
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
+		await api.authenticateUserByName(USER_CREDENTIALS);
+
+		expect(mockAxios.request.mock.calls).toHaveLength(1);
+
+		const requestData = mockAxios.request.mock.calls[0][0];
+		expect(requestData.url).toBe(`${SERVER_URL}/Users/AuthenticateByName`);
+		expect(requestData.headers[AUTHORIZATION_HEADER]).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
+		expect(requestData.data).toBe(JSON.stringify(USER_CREDENTIALS));
+
+		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
+	});
+
+	it('should return the correct authorization header value', () => {
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
+		expect(api.authorizationHeader).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
+	});
+
 	it('should return api instances', () => {
-		const api = new Api(
-			'http://example.com',
-			{
-				name: 'Api Test',
-				version: '1.0.0'
-			},
-			{
-				name: 'Test Device',
-				id: 'test-id'
-			}
-		);
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 
 		expect(api.activityLogApi).toBeInstanceOf(ActivityLogApi);
 		expect(api.apiKeyApi).toBeInstanceOf(ApiKeyApi);

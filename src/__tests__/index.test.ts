@@ -3,6 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
+
 import { Jellyfin } from '..';
 
 // FIXME: These tests should be mocked and not calling an actual server
@@ -18,19 +19,8 @@ const TEST_DEVICE = {
 	id: 'device-id'
 };
 
-describe('Test the Base SDK', () => {
-	it('create an api instance', () => {
-		const jellyfin = new Jellyfin({
-			clientInfo: TEST_CLIENT,
-			deviceInfo: TEST_DEVICE
-		});
-		expect(jellyfin).not.toBeNull();
-
-		const api = jellyfin.createApi(SERVER_URL);
-		expect(api.basePath).toEqual(SERVER_URL);
-		expect(api.authorizationHeader).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token=""');
-	});
-
+// Skipping because this is an integration test
+describe.skip('Test the Base SDK', () => {
 	it('public users api', async () => {
 		const jellyfin = new Jellyfin({
 			clientInfo: TEST_CLIENT,
