@@ -1,9 +1,16 @@
+.github
+.vscode
 __tests__
+
 coverage
 docs
 node_modules
 scripts
 src
+
+.eslintignore
+.eslintrc.js
+codecov.yml
 jest.config.js
 openapi.json
 openapitools.json
