@@ -12,6 +12,18 @@ A TypeScript SDK for Jellyfin.
 
 > Warning: This project is under active development and is not ready for production use. API changes _will_ occur.
 
+## Install
+
+```sh
+npm i --save @thornbill/jellyfin-sdk
+```
+
+or
+
+```sh
+yarn add @thornbill/jellyfin-sdk
+```
+
 ## Usage
 
 ```js
