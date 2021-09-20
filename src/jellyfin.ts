@@ -3,9 +3,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
+
 import { AxiosInstance } from 'axios';
 
 import { Api } from './api';
+import { Discovery } from './discovery';
 import { ClientInfo, DeviceInfo } from './models';
 
 export interface JellyfinParameters {
@@ -20,10 +22,12 @@ export const MINIMUM_VERSION = '10.7.0';
 export class Jellyfin {
 	clientInfo;
 	deviceInfo;
+	discovery;
 
 	constructor(parameters: JellyfinParameters) {
 		this.clientInfo = parameters.clientInfo;
 		this.deviceInfo = parameters.deviceInfo;
+		this.discovery = new Discovery(this);
 	}
 
 	/**
