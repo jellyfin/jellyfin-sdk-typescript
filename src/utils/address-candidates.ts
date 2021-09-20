@@ -15,12 +15,12 @@ export const JF_HTTP_PORT = 8096;
 export const JF_HTTPS_PORT = 8920;
 
 /**
- * Gets a list of address candidates as Url objects
+ * Gets a list of address candidates url strings
  * from a provided url address string.
  * @param input A server url address string.
- * @returns A list of potential server Url objects.
+ * @returns A list of potential server addresses.
  */
-export function getAddressCandidates(input: string): Array<Url> {
+export function getAddressCandidates(input: string): Array<string> {
 	const candidates: Array<Url> = [];
 
 	try {
@@ -54,7 +54,7 @@ export function getAddressCandidates(input: string): Array<Url> {
 				}
 			});
 
-		return candidates;
+		return candidates.map(candidate => candidate.toString());
 	} catch (err) {
 		console.warn(err);
 		return [];
