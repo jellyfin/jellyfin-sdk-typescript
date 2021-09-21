@@ -5,18 +5,7 @@
  */
 
 import { Api, Jellyfin } from '..';
-
-const SERVER_URL = 'https://example.com';
-
-const TEST_CLIENT = {
-	name: 'sdk-test-client',
-	version: '0.0.0'
-};
-
-const TEST_DEVICE = {
-	name: 'device-name',
-	id: 'device-id'
-};
+import { TEST_CLIENT, TEST_DEVICE, SERVER_URL } from '../__helpers__/common';
 
 describe('Jellyfin', () => {
 	it('should create an api instance', () => {

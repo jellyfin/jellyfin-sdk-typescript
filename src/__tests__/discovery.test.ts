@@ -5,17 +5,9 @@
  */
 
 import { Jellyfin } from '..';
+import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { Discovery } from '../discovery';
 
-const TEST_CLIENT = {
-	name: 'sdk-test-client',
-	version: '0.0.0'
-};
-
-const TEST_DEVICE = {
-	name: 'device-name',
-	id: 'device-id'
-};
 describe('Discovery', () => {
 	it('should return a list of candidates', () => {
 		const jellyfin = new Jellyfin({

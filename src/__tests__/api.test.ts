@@ -8,20 +8,9 @@ import axios from 'axios';
 import { mocked } from 'ts-jest/utils';
 
 import { Api, AUTHORIZATION_HEADER } from '..';
+import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from '../generated-client';
 import { getAuthorizationHeader } from '../utils';
-
-const SERVER_URL = 'https://example.com';
-
-const TEST_CLIENT = {
-	name: 'sdk-test-client',
-	version: '0.0.0'
-};
-
-const TEST_DEVICE = {
-	name: 'device-name',
-	id: 'device-id'
-};
 
 jest.mock('axios');
 const mockAxios = mocked(axios, true);

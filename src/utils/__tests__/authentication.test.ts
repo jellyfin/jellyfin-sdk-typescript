@@ -3,28 +3,18 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
+
 import { getAuthorizationHeader } from '..';
+import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 
 describe('Authentication', () => {
 	it('should return the correct header value without token', () => {
-		const header = getAuthorizationHeader({
-			name: 'SDK Test',
-			version: '0.0.0'
-		}, {
-			name: 'Test Device',
-			id: 'TESTID'
-		});
-		expect(header).toEqual('MediaBrowser Client="SDK Test", Device="Test Device", DeviceId="TESTID", Version="0.0.0", Token=""');
+		const header = getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE);
+		expect(header).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token=""');
 	});
 
 	it('should return the correct header value with token', () => {
-		const header = getAuthorizationHeader({
-			name: 'SDK Test',
-			version: '0.0.0'
-		}, {
-			name: 'Test Device',
-			id: 'TESTID'
-		}, 'TESTTOKEN');
-		expect(header).toEqual('MediaBrowser Client="SDK Test", Device="Test Device", DeviceId="TESTID", Version="0.0.0", Token="TESTTOKEN"');
+		const header = getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE, 'TESTTOKEN');
+		expect(header).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token="TESTTOKEN"');
 	});
 });
