@@ -6,6 +6,7 @@
 
 // TODO: Should the generated client be exported?
 export * from './api';
+export * from './discovery';
 export * from './jellyfin';
 export * from './models';
 export * as utils from './utils';
