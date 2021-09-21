@@ -46,7 +46,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
+		const auth = await api.authenticateUserByName('demo');
 		// console.log('Auth =>', auth.data);
 		expect(auth.data).toBeTruthy();
 
@@ -60,7 +60,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		await api.authenticateUserByName({ Username: 'demo', Pw: '' });
+		await api.authenticateUserByName('demo');
 
 		const libraries = await api.libraryApi.getMediaFolders();
 		// console.log('Libraries =>', libraries.data);

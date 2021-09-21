@@ -45,10 +45,10 @@ export class Api {
 	 * Convenience method for authenticating a user by name and updating the internal state.
 	 * @param authenticateUserByNameParam The authentication parameters object.
 	 */
-	authenticateUserByName(authenticateUserByNameParam: AuthenticateUserByName): Promise<AxiosResponse<AuthenticationResult>> {
+	authenticateUserByName(username: string, password?: string): Promise<AxiosResponse<AuthenticationResult>> {
 		return this.userApi.authenticateUserByName(
 			// The axios client does some strange wrapping of the param object
-			{ authenticateUserByName: authenticateUserByNameParam },
+			{ authenticateUserByName: { Username: username, Pw: password } },
 			// The authorization header is required for the request to succeed
 			{ headers: { [AUTHORIZATION_HEADER]: this.authorizationHeader } }
 		).then(response => {

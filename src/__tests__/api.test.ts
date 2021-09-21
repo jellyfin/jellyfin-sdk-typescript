@@ -38,7 +38,7 @@ describe('Api', () => {
 		});
 
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
-		await api.authenticateUserByName(USER_CREDENTIALS);
+		await api.authenticateUserByName('test', '');
 
 		expect(mockAxios.request.mock.calls).toHaveLength(1);
 
