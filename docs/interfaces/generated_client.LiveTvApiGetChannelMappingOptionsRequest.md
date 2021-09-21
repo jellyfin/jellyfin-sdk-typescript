@@ -28,4 +28,4 @@ Provider id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L3431)
+[generated-client/api/live-tv-api.ts:3431](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L3431)

@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/localization-option.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/localization-option.ts#L28)
+[generated-client/models/localization-option.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/localization-option.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/localization-option.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/localization-option.ts#L34)
+[generated-client/models/localization-option.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/localization-option.ts#L34)

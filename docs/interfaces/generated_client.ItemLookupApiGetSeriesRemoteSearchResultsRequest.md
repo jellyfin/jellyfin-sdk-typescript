@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:898](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/item-lookup-api.ts#L898)
+[generated-client/api/item-lookup-api.ts:898](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/item-lookup-api.ts#L898)

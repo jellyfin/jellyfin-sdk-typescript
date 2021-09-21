@@ -28,4 +28,4 @@ The access token to delete.
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:250](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/api-key-api.ts#L250)
+[generated-client/api/api-key-api.ts:250](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/api-key-api.ts#L250)

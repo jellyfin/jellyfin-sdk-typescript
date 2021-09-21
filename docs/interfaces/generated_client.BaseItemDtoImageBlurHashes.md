@@ -42,7 +42,7 @@ Gets or sets the blurhashes for the image tags.  Maps image type to dictionary m
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L34)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L34)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L40)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L40)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L46)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L46)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L70)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L70)
 
 ___
 
@@ -106,7 +106,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L94)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L94)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L88)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L88)
 
 ___
 
@@ -138,7 +138,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L64)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L64)
 
 ___
 
@@ -154,7 +154,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L52)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L52)
 
 ___
 
@@ -170,7 +170,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L82)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L82)
 
 ___
 
@@ -186,7 +186,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L28)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L28)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L100)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L100)
 
 ___
 
@@ -218,7 +218,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L76)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L76)
 
 ___
 
@@ -234,4 +234,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto-image-blur-hashes.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L58)
+[generated-client/models/base-item-dto-image-blur-hashes.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/base-item-dto-image-blur-hashes.ts#L58)

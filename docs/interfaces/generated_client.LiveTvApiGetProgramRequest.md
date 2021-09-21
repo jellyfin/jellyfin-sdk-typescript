@@ -29,7 +29,7 @@ Program id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L3879)
+[generated-client/api/live-tv-api.ts:3879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L3879)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L3886)
+[generated-client/api/live-tv-api.ts:3886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L3886)

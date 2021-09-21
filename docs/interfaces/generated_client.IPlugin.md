@@ -34,7 +34,7 @@ Gets the path to the assembly file.
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L53)
+[generated-client/models/iplugin.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L53)
 
 ___
 
@@ -48,7 +48,7 @@ Gets a value indicating whether the plugin can be uninstalled.
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L59)
+[generated-client/models/iplugin.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L59)
 
 ___
 
@@ -62,7 +62,7 @@ Gets the full path to the data folder, where the plugin can store any miscellane
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L65)
+[generated-client/models/iplugin.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L65)
 
 ___
 
@@ -76,7 +76,7 @@ Gets the Description.
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L35)
+[generated-client/models/iplugin.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L35)
 
 ___
 
@@ -90,7 +90,7 @@ Gets the unique id.
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L41)
+[generated-client/models/iplugin.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L41)
 
 ___
 
@@ -104,7 +104,7 @@ Gets the name of the plugin.
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L29)
+[generated-client/models/iplugin.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L29)
 
 ___
 
@@ -116,4 +116,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/iplugin.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/iplugin.ts#L47)
+[generated-client/models/iplugin.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/iplugin.ts#L47)

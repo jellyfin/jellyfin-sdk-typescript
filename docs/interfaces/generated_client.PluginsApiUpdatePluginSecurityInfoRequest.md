@@ -28,4 +28,4 @@ Plugin security info.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:817](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/plugins-api.ts#L817)
+[generated-client/api/plugins-api.ts:817](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/plugins-api.ts#L817)

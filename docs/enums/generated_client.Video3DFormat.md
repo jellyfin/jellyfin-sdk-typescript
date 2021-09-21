@@ -24,7 +24,7 @@
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/video3-dformat.ts#L25)
+[generated-client/models/video3-dformat.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/video3-dformat.ts#L25)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/video3-dformat.ts#L26)
+[generated-client/models/video3-dformat.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/video3-dformat.ts#L26)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/video3-dformat.ts#L24)
+[generated-client/models/video3-dformat.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/video3-dformat.ts#L24)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/video3-dformat.ts#L27)
+[generated-client/models/video3-dformat.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/video3-dformat.ts#L27)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/video3-dformat.ts#L28)
+[generated-client/models/video3-dformat.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/video3-dformat.ts#L28)

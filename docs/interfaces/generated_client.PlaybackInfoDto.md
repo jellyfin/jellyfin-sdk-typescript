@@ -42,7 +42,7 @@ Gets or sets a value indicating whether to allow audio stream copy.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L107)
+[generated-client/models/playback-info-dto.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L107)
 
 ___
 
@@ -56,7 +56,7 @@ Gets or sets a value indicating whether to enable video stream copy.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L101)
+[generated-client/models/playback-info-dto.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L101)
 
 ___
 
@@ -70,7 +70,7 @@ Gets or sets the audio stream index.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L47)
+[generated-client/models/playback-info-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L47)
 
 ___
 
@@ -84,7 +84,7 @@ Gets or sets a value indicating whether to auto open the live stream.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L113)
+[generated-client/models/playback-info-dto.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L113)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L77)
+[generated-client/models/playback-info-dto.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L77)
 
 ___
 
@@ -110,7 +110,7 @@ Gets or sets a value indicating whether to enable direct play.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L83)
+[generated-client/models/playback-info-dto.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L83)
 
 ___
 
@@ -124,7 +124,7 @@ Gets or sets a value indicating whether to enable direct stream.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L89)
+[generated-client/models/playback-info-dto.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L89)
 
 ___
 
@@ -138,7 +138,7 @@ Gets or sets a value indicating whether to enable transcoding.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L95)
+[generated-client/models/playback-info-dto.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L95)
 
 ___
 
@@ -152,7 +152,7 @@ Gets or sets the live stream id.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L71)
+[generated-client/models/playback-info-dto.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L71)
 
 ___
 
@@ -166,7 +166,7 @@ Gets or sets the max audio channels.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L59)
+[generated-client/models/playback-info-dto.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L59)
 
 ___
 
@@ -180,7 +180,7 @@ Gets or sets the max streaming bitrate.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L35)
+[generated-client/models/playback-info-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L35)
 
 ___
 
@@ -194,7 +194,7 @@ Gets or sets the media source id.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L65)
+[generated-client/models/playback-info-dto.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L65)
 
 ___
 
@@ -208,7 +208,7 @@ Gets or sets the start time in ticks.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L41)
+[generated-client/models/playback-info-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L41)
 
 ___
 
@@ -222,7 +222,7 @@ Gets or sets the subtitle stream index.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L53)
+[generated-client/models/playback-info-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L53)
 
 ___
 
@@ -236,4 +236,4 @@ Gets or sets the playback userId.
 
 #### Defined in
 
-[generated-client/models/playback-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playback-info-dto.ts#L29)
+[generated-client/models/playback-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playback-info-dto.ts#L29)

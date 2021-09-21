@@ -31,7 +31,7 @@ Gets or sets the notification description.
 
 #### Defined in
 
-[generated-client/models/admin-notification-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/admin-notification-dto.ts#L35)
+[generated-client/models/admin-notification-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/admin-notification-dto.ts#L35)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the notification name.
 
 #### Defined in
 
-[generated-client/models/admin-notification-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/admin-notification-dto.ts#L29)
+[generated-client/models/admin-notification-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/admin-notification-dto.ts#L29)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/admin-notification-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/admin-notification-dto.ts#L41)
+[generated-client/models/admin-notification-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/admin-notification-dto.ts#L41)
 
 ___
 
@@ -71,4 +71,4 @@ Gets or sets the notification url.
 
 #### Defined in
 
-[generated-client/models/admin-notification-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/admin-notification-dto.ts#L47)
+[generated-client/models/admin-notification-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/admin-notification-dto.ts#L47)

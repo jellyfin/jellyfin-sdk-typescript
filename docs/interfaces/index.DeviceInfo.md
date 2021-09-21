@@ -21,7 +21,7 @@ An interface representing a client device.
 
 #### Defined in
 
-[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/models/device-info.ts#L11)
+[models/device-info.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/models/device-info.ts#L11)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/models/device-info.ts#L12)
+[models/device-info.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/models/device-info.ts#L12)

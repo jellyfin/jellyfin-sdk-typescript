@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/profile-condition.ts#L30)
+[generated-client/models/profile-condition.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/profile-condition.ts#L30)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/profile-condition.ts#L48)
+[generated-client/models/profile-condition.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/profile-condition.ts#L48)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/profile-condition.ts#L36)
+[generated-client/models/profile-condition.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/profile-condition.ts#L36)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/profile-condition.ts#L42)
+[generated-client/models/profile-condition.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/profile-condition.ts#L42)

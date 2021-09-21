@@ -30,7 +30,7 @@ Gets the name.
 
 #### Defined in
 
-[generated-client/models/file-system-entry-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/file-system-entry-info.ts#L29)
+[generated-client/models/file-system-entry-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/file-system-entry-info.ts#L29)
 
 ___
 
@@ -44,7 +44,7 @@ Gets the path.
 
 #### Defined in
 
-[generated-client/models/file-system-entry-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/file-system-entry-info.ts#L35)
+[generated-client/models/file-system-entry-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/file-system-entry-info.ts#L35)
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/file-system-entry-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/file-system-entry-info.ts#L41)
+[generated-client/models/file-system-entry-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/file-system-entry-info.ts#L41)

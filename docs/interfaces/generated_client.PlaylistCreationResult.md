@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/playlist-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/playlist-creation-result.ts#L28)
+[generated-client/models/playlist-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/playlist-creation-result.ts#L28)

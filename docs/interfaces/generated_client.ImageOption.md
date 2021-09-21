@@ -28,7 +28,7 @@ Gets or sets the limit.
 
 #### Defined in
 
-[generated-client/models/image-option.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/image-option.ts#L35)
+[generated-client/models/image-option.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/image-option.ts#L35)
 
 ___
 
@@ -42,7 +42,7 @@ Gets or sets the minimum width.
 
 #### Defined in
 
-[generated-client/models/image-option.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/image-option.ts#L41)
+[generated-client/models/image-option.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/image-option.ts#L41)
 
 ___
 
@@ -54,4 +54,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/image-option.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/image-option.ts#L29)
+[generated-client/models/image-option.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/image-option.ts#L29)

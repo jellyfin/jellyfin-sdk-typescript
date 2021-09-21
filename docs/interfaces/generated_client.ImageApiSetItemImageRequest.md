@@ -28,7 +28,7 @@ Request parameters for setItemImage operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/image-api.ts#L9931)
+[generated-client/api/image-api.ts:9931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9931)
 
 ___
 
@@ -42,7 +42,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/image-api.ts#L9924)
+[generated-client/api/image-api.ts:9924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9924)
 
 ___
 
@@ -56,4 +56,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9917](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/image-api.ts#L9917)
+[generated-client/api/image-api.ts:9917](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9917)

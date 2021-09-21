@@ -29,7 +29,7 @@ Gets or sets a value indicating whether disabled providers should be included.
 
 #### Defined in
 
-[generated-client/models/person-lookup-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/person-lookup-info-remote-search-query.ts#L47)
+[generated-client/models/person-lookup-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/person-lookup-info-remote-search-query.ts#L47)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/person-lookup-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/person-lookup-info-remote-search-query.ts#L35)
+[generated-client/models/person-lookup-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/person-lookup-info-remote-search-query.ts#L35)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/person-lookup-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/person-lookup-info-remote-search-query.ts#L29)
+[generated-client/models/person-lookup-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/person-lookup-info-remote-search-query.ts#L29)
 
 ___
 
@@ -67,4 +67,4 @@ Will only search within the given provider when set.
 
 #### Defined in
 
-[generated-client/models/person-lookup-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/person-lookup-info-remote-search-query.ts#L41)
+[generated-client/models/person-lookup-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/person-lookup-info-remote-search-query.ts#L41)

@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[discovery.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/discovery.ts#L14)
+[discovery.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/discovery.ts#L14)
 
 ## Properties
 
@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[discovery.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/discovery.ts#L12)
+[discovery.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/discovery.ts#L12)
 
 ## Methods
 
@@ -67,4 +67,4 @@ A list of potential server addresses.
 
 #### Defined in
 
-[discovery.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/discovery.ts#L24)
+[discovery.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/discovery.ts#L24)

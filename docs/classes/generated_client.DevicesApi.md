@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/devices-api.ts#L477)
+[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/devices-api.ts#L477)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/devices-api.ts#L489)
+[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/devices-api.ts#L489)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/devices-api.ts#L501)
+[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/devices-api.ts#L501)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/devices-api.ts#L513)
+[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/devices-api.ts#L513)
 
 ___
 
@@ -223,4 +223,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/devices-api.ts#L525)
+[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/devices-api.ts#L525)

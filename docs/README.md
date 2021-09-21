@@ -57,7 +57,7 @@ console.log('Users =>', users.data);
 // A helper method for authentication has been added to the SDK because
 // the default method exposed in the generated Axios client is rather
 // cumbersome to use.
-const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
+const auth = await api.authenticateUserByName('demo', '');
 console.log('Auth =>', auth.data);
 
 // Authentication state is stored internally in the Api class, so now

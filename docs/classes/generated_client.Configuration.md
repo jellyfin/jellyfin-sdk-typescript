@@ -38,7 +38,7 @@
 
 #### Defined in
 
-[generated-client/configuration.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L77)
+[generated-client/configuration.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L77)
 
 ## Properties
 
@@ -56,7 +56,7 @@ parameter for oauth2 security
 
 #### Defined in
 
-[generated-client/configuration.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L53)
+[generated-client/configuration.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L53)
 
 ___
 
@@ -72,7 +72,7 @@ parameter for apiKey security
 
 #### Defined in
 
-[generated-client/configuration.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L32)
+[generated-client/configuration.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L32)
 
 ___
 
@@ -86,7 +86,7 @@ base options for axios calls
 
 #### Defined in
 
-[generated-client/configuration.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L67)
+[generated-client/configuration.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L67)
 
 ___
 
@@ -100,7 +100,7 @@ override base path
 
 #### Defined in
 
-[generated-client/configuration.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L60)
+[generated-client/configuration.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L60)
 
 ___
 
@@ -118,7 +118,7 @@ do not support the FormData class can still run the generated client.
 
 #### Defined in
 
-[generated-client/configuration.ts:75](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L75)
+[generated-client/configuration.ts:75](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L75)
 
 ___
 
@@ -132,7 +132,7 @@ parameter for basic security
 
 #### Defined in
 
-[generated-client/configuration.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L46)
+[generated-client/configuration.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L46)
 
 ___
 
@@ -146,7 +146,7 @@ parameter for basic security
 
 #### Defined in
 
-[generated-client/configuration.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L39)
+[generated-client/configuration.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L39)
 
 ## Methods
 
@@ -175,4 +175,4 @@ True if the given MIME is JSON, false otherwise.
 
 #### Defined in
 
-[generated-client/configuration.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/configuration.ts#L97)
+[generated-client/configuration.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/configuration.ts#L97)

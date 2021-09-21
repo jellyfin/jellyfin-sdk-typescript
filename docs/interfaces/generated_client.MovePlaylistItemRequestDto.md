@@ -29,7 +29,7 @@ Gets or sets the new position.
 
 #### Defined in
 
-[generated-client/models/move-playlist-item-request-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/move-playlist-item-request-dto.ts#L34)
+[generated-client/models/move-playlist-item-request-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/move-playlist-item-request-dto.ts#L34)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the playlist identifier of the item.
 
 #### Defined in
 
-[generated-client/models/move-playlist-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/move-playlist-item-request-dto.ts#L28)
+[generated-client/models/move-playlist-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/move-playlist-item-request-dto.ts#L28)
