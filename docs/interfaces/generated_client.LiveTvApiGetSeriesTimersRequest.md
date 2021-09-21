@@ -29,7 +29,7 @@ Optional. Sort by SortName or Priority.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/live-tv-api.ts#L4355)
+[generated-client/api/live-tv-api.ts:4355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L4355)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Sort in Ascending or Descending order.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4362](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/live-tv-api.ts#L4362)
+[generated-client/api/live-tv-api.ts:4362](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L4362)

@@ -28,4 +28,4 @@ Gets or sets the playlist identifier of the playing item.
 
 #### Defined in
 
-[generated-client/models/set-playlist-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/set-playlist-item-request-dto.ts#L28)
+[generated-client/models/set-playlist-item-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/set-playlist-item-request-dto.ts#L28)

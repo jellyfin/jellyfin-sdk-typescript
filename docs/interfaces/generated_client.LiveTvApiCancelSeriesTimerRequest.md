@@ -28,4 +28,4 @@ Timer id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3284](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/live-tv-api.ts#L3284)
+[generated-client/api/live-tv-api.ts:3284](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/live-tv-api.ts#L3284)

@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/general-command.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/general-command.ts#L41)
+[generated-client/models/general-command.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/general-command.ts#L41)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/general-command.ts#L35)
+[generated-client/models/general-command.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/general-command.ts#L35)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/general-command.ts#L29)
+[generated-client/models/general-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/general-command.ts#L29)

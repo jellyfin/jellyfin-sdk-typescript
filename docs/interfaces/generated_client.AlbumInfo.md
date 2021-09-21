@@ -38,7 +38,7 @@ Gets or sets the album artist.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L89)
+[generated-client/models/album-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L89)
 
 ___
 
@@ -52,7 +52,7 @@ Gets or sets the artist provider ids.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L95)
+[generated-client/models/album-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L95)
 
 ___
 
@@ -64,7 +64,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/album-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L65)
+[generated-client/models/album-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L65)
 
 ___
 
@@ -76,7 +76,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/album-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L83)
+[generated-client/models/album-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L83)
 
 ___
 
@@ -90,7 +90,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L47)
+[generated-client/models/album-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L47)
 
 ___
 
@@ -104,7 +104,7 @@ Gets or sets the metadata language.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L41)
+[generated-client/models/album-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L41)
 
 ___
 
@@ -118,7 +118,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L29)
+[generated-client/models/album-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L29)
 
 ___
 
@@ -130,7 +130,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/album-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L71)
+[generated-client/models/album-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L71)
 
 ___
 
@@ -144,7 +144,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L35)
+[generated-client/models/album-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L35)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/album-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L77)
+[generated-client/models/album-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L77)
 
 ___
 
@@ -170,7 +170,7 @@ Gets or sets the provider ids.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L53)
+[generated-client/models/album-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L53)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/album-info.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L101)
+[generated-client/models/album-info.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L101)
 
 ___
 
@@ -196,4 +196,4 @@ Gets or sets the year.
 
 #### Defined in
 
-[generated-client/models/album-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/album-info.ts#L59)
+[generated-client/models/album-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/album-info.ts#L59)

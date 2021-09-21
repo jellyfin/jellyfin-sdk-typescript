@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/authentication-result.ts#L42)
+[generated-client/models/authentication-result.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/authentication-result.ts#L42)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/authentication-result.ts#L48)
+[generated-client/models/authentication-result.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/authentication-result.ts#L48)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/authentication-result.ts#L36)
+[generated-client/models/authentication-result.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/authentication-result.ts#L36)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/authentication-result.ts#L30)
+[generated-client/models/authentication-result.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/authentication-result.ts#L30)

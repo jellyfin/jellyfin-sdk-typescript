@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,7 +89,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L485)
+[generated-client/api/environment-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L485)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L497)
+[generated-client/api/environment-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L497)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L508)
+[generated-client/api/environment-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L508)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L520)
+[generated-client/api/environment-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L520)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:532](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L532)
+[generated-client/api/environment-api.ts:532](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L532)
 
 ___
 
@@ -250,4 +250,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:544](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/environment-api.ts#L544)
+[generated-client/api/environment-api.ts:544](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/environment-api.ts#L544)

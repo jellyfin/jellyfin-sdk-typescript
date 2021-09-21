@@ -28,4 +28,4 @@ The name of the page.
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/dashboard-api.ts#L209)
+[generated-client/api/dashboard-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/dashboard-api.ts#L209)

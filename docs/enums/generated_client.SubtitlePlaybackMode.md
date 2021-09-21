@@ -26,7 +26,7 @@ An enum representing a subtitle playback mode.
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/subtitle-playback-mode.ts#L25)
+[generated-client/models/subtitle-playback-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/subtitle-playback-mode.ts#L25)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/subtitle-playback-mode.ts#L24)
+[generated-client/models/subtitle-playback-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/subtitle-playback-mode.ts#L24)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/subtitle-playback-mode.ts#L27)
+[generated-client/models/subtitle-playback-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/subtitle-playback-mode.ts#L27)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/subtitle-playback-mode.ts#L26)
+[generated-client/models/subtitle-playback-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/subtitle-playback-mode.ts#L26)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/subtitle-playback-mode.ts#L28)
+[generated-client/models/subtitle-playback-mode.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/subtitle-playback-mode.ts#L28)

@@ -29,7 +29,7 @@ The command to send.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/session-api.ts#L1563)
+[generated-client/api/session-api.ts:1563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/session-api.ts#L1563)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/session-api.ts#L1556)
+[generated-client/api/session-api.ts:1556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/session-api.ts#L1556)

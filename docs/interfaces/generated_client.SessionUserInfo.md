@@ -29,7 +29,7 @@ Gets or sets the user identifier.
 
 #### Defined in
 
-[generated-client/models/session-user-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/session-user-info.ts#L28)
+[generated-client/models/session-user-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/session-user-info.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the name of the user.
 
 #### Defined in
 
-[generated-client/models/session-user-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/session-user-info.ts#L34)
+[generated-client/models/session-user-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/session-user-info.ts#L34)

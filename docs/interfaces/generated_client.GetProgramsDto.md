@@ -54,7 +54,7 @@ Gets or sets the channels to return guide information for.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L31)
+[generated-client/models/get-programs-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L31)
 
 ___
 
@@ -68,7 +68,7 @@ Gets or sets the image types to include in the output.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L163)
+[generated-client/models/get-programs-dto.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L163)
 
 ___
 
@@ -82,7 +82,7 @@ Gets or sets include image information in output.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L145)
+[generated-client/models/get-programs-dto.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L145)
 
 ___
 
@@ -96,7 +96,7 @@ Gets or sets a value indicating whether retrieve total record count.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L151)
+[generated-client/models/get-programs-dto.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L151)
 
 ___
 
@@ -110,7 +110,7 @@ Gets or sets include user data.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L169)
+[generated-client/models/get-programs-dto.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L169)
 
 ___
 
@@ -124,7 +124,7 @@ Gets or sets specify additional fields of information to return in the output. T
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L187)
+[generated-client/models/get-programs-dto.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L187)
 
 ___
 
@@ -138,7 +138,7 @@ Gets or sets the genre ids to return guide information for.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L139)
+[generated-client/models/get-programs-dto.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L139)
 
 ___
 
@@ -152,7 +152,7 @@ Gets or sets the genres to return guide information for.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L133)
+[generated-client/models/get-programs-dto.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L133)
 
 ___
 
@@ -166,7 +166,7 @@ Gets or sets filter by programs that have completed airing, or not.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L49)
+[generated-client/models/get-programs-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L49)
 
 ___
 
@@ -180,7 +180,7 @@ Gets or sets the max number of images to return, per image type.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L157)
+[generated-client/models/get-programs-dto.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L157)
 
 ___
 
@@ -194,7 +194,7 @@ Gets or sets filter by programs that are currently airing, or not.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L55)
+[generated-client/models/get-programs-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L55)
 
 ___
 
@@ -208,7 +208,7 @@ Gets or sets filter for kids.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L97)
+[generated-client/models/get-programs-dto.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L97)
 
 ___
 
@@ -222,7 +222,7 @@ Gets or sets filter for movies.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L79)
+[generated-client/models/get-programs-dto.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L79)
 
 ___
 
@@ -236,7 +236,7 @@ Gets or sets filter for news.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L91)
+[generated-client/models/get-programs-dto.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L91)
 
 ___
 
@@ -250,7 +250,7 @@ Gets or sets filter for series.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L85)
+[generated-client/models/get-programs-dto.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L85)
 
 ___
 
@@ -264,7 +264,7 @@ Gets or sets filter for sports.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L103)
+[generated-client/models/get-programs-dto.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L103)
 
 ___
 
@@ -278,7 +278,7 @@ Gets or sets filter by library series id.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L181)
+[generated-client/models/get-programs-dto.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L181)
 
 ___
 
@@ -292,7 +292,7 @@ Gets or sets the maximum number of records to return.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L115)
+[generated-client/models/get-programs-dto.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L115)
 
 ___
 
@@ -306,7 +306,7 @@ Gets or sets the maximum premiere end date.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L73)
+[generated-client/models/get-programs-dto.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L73)
 
 ___
 
@@ -320,7 +320,7 @@ Gets or sets the maximum premiere start date.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L61)
+[generated-client/models/get-programs-dto.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L61)
 
 ___
 
@@ -334,7 +334,7 @@ Gets or sets the minimum premiere end date.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L67)
+[generated-client/models/get-programs-dto.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L67)
 
 ___
 
@@ -348,7 +348,7 @@ Gets or sets the minimum premiere start date.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L43)
+[generated-client/models/get-programs-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L43)
 
 ___
 
@@ -362,7 +362,7 @@ Gets or sets filter by series timer id.  Optional.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L175)
+[generated-client/models/get-programs-dto.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L175)
 
 ___
 
@@ -376,7 +376,7 @@ Gets or sets specify one or more sort orders, comma delimited. Options: Name, St
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L121)
+[generated-client/models/get-programs-dto.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L121)
 
 ___
 
@@ -390,7 +390,7 @@ Gets or sets sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L127)
+[generated-client/models/get-programs-dto.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L127)
 
 ___
 
@@ -404,7 +404,7 @@ Gets or sets the record index to start at. All items with a lower index will be 
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L109)
+[generated-client/models/get-programs-dto.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L109)
 
 ___
 
@@ -418,4 +418,4 @@ Gets or sets optional. Filter by user id.
 
 #### Defined in
 
-[generated-client/models/get-programs-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/get-programs-dto.ts#L37)
+[generated-client/models/get-programs-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/get-programs-dto.ts#L37)

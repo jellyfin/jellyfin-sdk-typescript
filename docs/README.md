@@ -1,10 +1,30 @@
 @thornbill/jellyfin-sdk / [Modules](modules.md)
 
-# jellyfin-sdk-typescript
+<h1 align="center">jellyfin-sdk-typescript</h1>
+
+<p align="center">
+<a href="https://github.com/thornbill/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/thornbill/jellyfin-sdk-typescript"></a>
+<a href="https://github.com/thornbill/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/thornbill/jellyfin-sdk-typescript.svg"/></a>
+<a href="https://codecov.io/gh/thornbill/jellyfin-sdk-typescript">
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/thornbill/jellyfin-sdk-typescript?token=Wk8RS9tDnb">
+</a>
+</p>
 
 A TypeScript SDK for Jellyfin.
 
 > Warning: This project is under active development and is not ready for production use. API changes _will_ occur.
+
+## Install
+
+```sh
+npm i --save @thornbill/jellyfin-sdk
+```
+
+or
+
+```sh
+yarn add @thornbill/jellyfin-sdk
+```
 
 ## Usage
 
@@ -44,4 +64,8 @@ console.log('Auth =>', auth.data);
 // requests that require authentication can be made normally
 const libraries = await api.libraryApi.getMediaFolders();
 console.log('Libraries =>', libraries.data);
+
+// A helper method for logging out the current user has been added to the
+// SDK so the internal state is updated correctly.
+await api.logout();
 ```

@@ -29,7 +29,7 @@ Gets or sets media encoder path.
 
 #### Defined in
 
-[generated-client/models/media-encoder-path-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/media-encoder-path-dto.ts#L28)
+[generated-client/models/media-encoder-path-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/media-encoder-path-dto.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets media encoder path type.
 
 #### Defined in
 
-[generated-client/models/media-encoder-path-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/media-encoder-path-dto.ts#L34)
+[generated-client/models/media-encoder-path-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/media-encoder-path-dto.ts#L34)

@@ -16,6 +16,7 @@ Class representing the Jellyfin SDK.
 
 - [clientInfo](index.Jellyfin.md#clientinfo)
 - [deviceInfo](index.Jellyfin.md#deviceinfo)
+- [discovery](index.Jellyfin.md#discovery)
 
 ### Methods
 
@@ -35,7 +36,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L28)
+[jellyfin.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L27)
 
 ## Properties
 
@@ -45,7 +46,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L25)
+[jellyfin.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L23)
 
 ___
 
@@ -55,7 +56,17 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L26)
+[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L24)
+
+___
+
+### discovery
+
+• **discovery**: [`Discovery`](index.Discovery.md)
+
+#### Defined in
+
+[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L25)
 
 ## Methods
 
@@ -63,18 +74,22 @@ ___
 
 ▸ **createApi**(`basePath`, `accessToken?`, `axiosInstance?`): [`Api`](index.Api.md)
 
+Creates an Api instance for a given server path.
+
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `basePath` | `string` |
-| `accessToken?` | `string` |
-| `axiosInstance?` | `AxiosInstance` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `basePath` | `string` | A base path of a server. |
+| `accessToken?` | `string` | An (optional) access token to use for authentication. |
+| `axiosInstance?` | `AxiosInstance` | An (optional) Axios instance for the Api to use. |
 
 #### Returns
 
 [`Api`](index.Api.md)
 
+An Api instance.
+
 #### Defined in
 
-[jellyfin.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L33)
+[jellyfin.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L40)

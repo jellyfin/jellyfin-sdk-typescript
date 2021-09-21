@@ -30,7 +30,7 @@ Class ChapterInfo.
 
 #### Defined in
 
-[generated-client/models/chapter-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/chapter-info.ts#L46)
+[generated-client/models/chapter-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/chapter-info.ts#L46)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the image path.
 
 #### Defined in
 
-[generated-client/models/chapter-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/chapter-info.ts#L40)
+[generated-client/models/chapter-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/chapter-info.ts#L40)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/chapter-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/chapter-info.ts#L52)
+[generated-client/models/chapter-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/chapter-info.ts#L52)
 
 ___
 
@@ -70,7 +70,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/chapter-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/chapter-info.ts#L34)
+[generated-client/models/chapter-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/chapter-info.ts#L34)
 
 ___
 
@@ -84,4 +84,4 @@ Gets or sets the start position ticks.
 
 #### Defined in
 
-[generated-client/models/chapter-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/chapter-info.ts#L28)
+[generated-client/models/chapter-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/chapter-info.ts#L28)

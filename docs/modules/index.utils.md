@@ -29,9 +29,11 @@
 
 • **HTTPS\_PORT**: ``443``
 
+The default port for the https protocol.
+
 #### Defined in
 
-[utils/url.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L14)
+[utils/url.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L19)
 
 ___
 
@@ -39,9 +41,11 @@ ___
 
 • **HTTPS\_PROTOCOL**: ``"https:"``
 
+The https protocol string.
+
 #### Defined in
 
-[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L10)
+[utils/url.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L13)
 
 ___
 
@@ -49,9 +53,11 @@ ___
 
 • **HTTP\_PORT**: ``80``
 
+The default port for the http protocol.
+
 #### Defined in
 
-[utils/url.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L12)
+[utils/url.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L16)
 
 ___
 
@@ -59,9 +65,11 @@ ___
 
 • **HTTP\_PROTOCOL**: ``"http:"``
 
+The http protocol string.
+
 #### Defined in
 
-[utils/url.ts:8](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L8)
+[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L10)
 
 ___
 
@@ -69,9 +77,11 @@ ___
 
 • **JF\_HTTPS\_PORT**: ``8920``
 
+The default https port for Jellyfin servers.
+
 #### Defined in
 
-[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L13)
+[utils/address-candidates.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/address-candidates.ts#L15)
 
 ___
 
@@ -79,9 +89,11 @@ ___
 
 • **JF\_HTTP\_PORT**: ``8096``
 
+The default http port for Jellyfin servers.
+
 #### Defined in
 
-[utils/address-candidates.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L11)
+[utils/address-candidates.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/address-candidates.ts#L12)
 
 ## Functions
 
@@ -105,27 +117,32 @@ A copy of the original Url.
 
 #### Defined in
 
-[utils/url.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L21)
+[utils/url.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L26)
 
 ___
 
 ### getAddressCandidates
 
-▸ **getAddressCandidates**(`input`): `Url`[]
+▸ **getAddressCandidates**(`input`): `string`[]
+
+Gets a list of address candidates url strings
+from a provided url address string.
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `input` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `input` | `string` | A server url address string. |
 
 #### Returns
 
-`Url`[]
+`string`[]
+
+A list of potential server addresses.
 
 #### Defined in
 
-[utils/address-candidates.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/address-candidates.ts#L15)
+[utils/address-candidates.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/address-candidates.ts#L23)
 
 ___
 
@@ -149,7 +166,7 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/authentication.ts#L11)
+[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/authentication.ts#L11)
 
 ___
 
@@ -173,7 +190,7 @@ The default port number of the protocol.
 
 #### Defined in
 
-[utils/url.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L30)
+[utils/url.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L35)
 
 ___
 
@@ -197,4 +214,4 @@ The Url object.
 
 #### Defined in
 
-[utils/url.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/utils/url.ts#L41)
+[utils/url.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/utils/url.ts#L46)

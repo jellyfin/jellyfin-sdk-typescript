@@ -29,7 +29,7 @@ Gets or sets the value to substitute.
 
 #### Defined in
 
-[generated-client/models/path-substitution.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/path-substitution.ts#L28)
+[generated-client/models/path-substitution.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/path-substitution.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the value to substitution with.
 
 #### Defined in
 
-[generated-client/models/path-substitution.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/path-substitution.ts#L34)
+[generated-client/models/path-substitution.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/path-substitution.ts#L34)

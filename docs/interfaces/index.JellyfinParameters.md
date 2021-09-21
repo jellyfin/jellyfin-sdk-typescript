@@ -19,7 +19,7 @@
 
 #### Defined in
 
-[jellyfin.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L12)
+[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L14)
 
 ___
 
@@ -29,4 +29,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L13)
+[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L15)

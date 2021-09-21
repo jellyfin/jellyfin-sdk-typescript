@@ -31,7 +31,7 @@ Gets or sets the items.
 
 #### Defined in
 
-[generated-client/models/theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/theme-media-result.ts#L29)
+[generated-client/models/theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/theme-media-result.ts#L29)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the owner id.
 
 #### Defined in
 
-[generated-client/models/theme-media-result.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/theme-media-result.ts#L47)
+[generated-client/models/theme-media-result.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/theme-media-result.ts#L47)
 
 ___
 
@@ -59,7 +59,7 @@ The index of the first record in Items.
 
 #### Defined in
 
-[generated-client/models/theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/theme-media-result.ts#L41)
+[generated-client/models/theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/theme-media-result.ts#L41)
 
 ___
 
@@ -73,4 +73,4 @@ The total number of records available.
 
 #### Defined in
 
-[generated-client/models/theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/models/theme-media-result.ts#L35)
+[generated-client/models/theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/models/theme-media-result.ts#L35)

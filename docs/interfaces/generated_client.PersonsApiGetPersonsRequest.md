@@ -40,7 +40,7 @@ Optional. If specified, person results will be filtered on items related to said
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L374)
+[generated-client/api/persons-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L374)
 
 ___
 
@@ -54,7 +54,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L353)
+[generated-client/api/persons-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L353)
 
 ___
 
@@ -68,7 +68,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L388)
+[generated-client/api/persons-api.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L388)
 
 ___
 
@@ -82,7 +82,7 @@ Optional, include user data.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L339)
+[generated-client/api/persons-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L339)
 
 ___
 
@@ -96,7 +96,7 @@ Optional. If specified results will be filtered to exclude those containing the 
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L360)
+[generated-client/api/persons-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L360)
 
 ___
 
@@ -110,7 +110,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L318)
+[generated-client/api/persons-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L318)
 
 ___
 
@@ -124,7 +124,7 @@ Optional. Specify additional filters to apply.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L325)
+[generated-client/api/persons-api.ts:325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L325)
 
 ___
 
@@ -138,7 +138,7 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L346)
+[generated-client/api/persons-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L346)
 
 ___
 
@@ -152,7 +152,7 @@ Optional filter by items that are marked as favorite, or not. userId is required
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L332)
+[generated-client/api/persons-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L332)
 
 ___
 
@@ -166,7 +166,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L304)
+[generated-client/api/persons-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L304)
 
 ___
 
@@ -180,7 +180,7 @@ Optional. If specified results will be filtered to include only those containing
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L367)
+[generated-client/api/persons-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L367)
 
 ___
 
@@ -194,7 +194,7 @@ The search term.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L311)
+[generated-client/api/persons-api.ts:311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L311)
 
 ___
 
@@ -208,4 +208,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/persons-api.ts#L381)
+[generated-client/api/persons-api.ts:381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/persons-api.ts#L381)

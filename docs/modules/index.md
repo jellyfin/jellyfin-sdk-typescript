@@ -11,6 +11,7 @@
 ### Classes
 
 - [Api](../classes/index.Api.md)
+- [Discovery](../classes/index.Discovery.md)
 - [Jellyfin](../classes/index.Jellyfin.md)
 
 ### Interfaces
@@ -34,7 +35,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/api.ts#L15)
+[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/api.ts#L13)
 
 ___
 
@@ -46,4 +47,4 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/jellyfin.ts#L19)
+[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/jellyfin.ts#L19)

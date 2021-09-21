@@ -29,7 +29,7 @@ Optional. Get counts of favorite items.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1875](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/library-api.ts#L1875)
+[generated-client/api/library-api.ts:1875](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/library-api.ts#L1875)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Get counts from a specific user\&#39;s library.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/library-api.ts#L1868)
+[generated-client/api/library-api.ts:1868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/library-api.ts#L1868)

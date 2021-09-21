@@ -31,7 +31,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/filter-api.ts#L360)
+[generated-client/api/filter-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/filter-api.ts#L360)
 
 ___
 
@@ -45,7 +45,7 @@ Optional. Filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/filter-api.ts#L367)
+[generated-client/api/filter-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/filter-api.ts#L367)
 
 ___
 
@@ -59,7 +59,7 @@ Optional. Parent id.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/filter-api.ts#L353)
+[generated-client/api/filter-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/filter-api.ts#L353)
 
 ___
 
@@ -73,4 +73,4 @@ Optional. User id.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/1142a3e/src/generated-client/api/filter-api.ts#L346)
+[generated-client/api/filter-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/b5d0506/src/generated-client/api/filter-api.ts#L346)
