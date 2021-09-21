@@ -4,5 +4,5 @@ module.exports = {
 	runner: 'groups',
 	testEnvironment: 'node',
 	collectCoverageFrom: [ 'src/**' ],
-	coveragePathIgnorePatterns: [ 'generated-client' ]
+	coveragePathIgnorePatterns: [ '__helpers__', 'generated-client' ]
 };
