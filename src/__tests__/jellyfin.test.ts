@@ -7,6 +7,11 @@
 import { Api, Jellyfin } from '..';
 import { TEST_CLIENT, TEST_DEVICE, SERVER_URL } from '../__helpers__/common';
 
+/**
+ * Api Jellyfin tests.
+ *
+ * @group unit
+ */
 describe('Jellyfin', () => {
 	it('should create an api instance', () => {
 		const ACCESS_TOKEN = 'ACCESS TOKEN';

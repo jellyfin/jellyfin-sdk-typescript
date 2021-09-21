@@ -68,7 +68,7 @@ jobs:
         run: npm ci --no-audit
 
       - name: Run jest
-        run: npx jest --coverage
+        run: npx jest --coverage --group=unit
 
       - name: Upload coverage
         uses: codecov/codecov-action@v2.1.0

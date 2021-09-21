@@ -5,22 +5,16 @@
  */
 
 import { Jellyfin } from '..';
+import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 
-// FIXME: These tests should be mocked and not calling an actual server
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
 
-const TEST_CLIENT = {
-	name: 'sdk-test-client',
-	version: '0.0.0'
-};
-
-const TEST_DEVICE = {
-	name: 'device-name',
-	id: 'device-id'
-};
-
-// Skipping because this is an integration test
-describe.skip('Test the Base SDK', () => {
+/**
+ * SDK integration tests.
+ *
+ * @group integration
+ */
+describe('Test the Base SDK', () => {
 	it('public users api', async () => {
 		const jellyfin = new Jellyfin({
 			clientInfo: TEST_CLIENT,

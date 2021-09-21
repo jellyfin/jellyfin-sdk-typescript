@@ -6,6 +6,11 @@
 
 import { getAddressCandidates } from '..';
 
+/**
+ * Address Candidates tests.
+ *
+ * @group unit/utils
+ */
 describe('Address Candidates', () => {
 	describe('getAddressCandidates()', () => {
 		it('should return candidates for a given domain', () => {

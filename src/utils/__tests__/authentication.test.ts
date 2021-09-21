@@ -7,6 +7,11 @@
 import { getAuthorizationHeader } from '..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 
+/**
+ * Authentication tests.
+ *
+ * @group unit/utils
+ */
 describe('Authentication', () => {
 	it('should return the correct header value without token', () => {
 		const header = getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE);

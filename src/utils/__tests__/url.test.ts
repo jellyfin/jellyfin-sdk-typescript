@@ -8,6 +8,11 @@ import Url from 'url-parse';
 
 import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl } from '..';
 
+/**
+ * Url tests.
+ *
+ * @group unit/utils
+ */
 describe('Url', () => {
 	describe('copyUrl()', () => {
 		it('should return a copy', () => {

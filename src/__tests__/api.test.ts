@@ -15,6 +15,11 @@ import { getAuthorizationHeader } from '../utils';
 jest.mock('axios');
 const mockAxios = mocked(axios, true);
 
+/**
+ * Api class tests.
+ *
+ * @group unit
+ */
 describe('Api', () => {
 	it('should authenticate and update state', async () => {
 		const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';

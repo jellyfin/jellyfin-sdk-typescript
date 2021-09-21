@@ -8,6 +8,11 @@ import { Jellyfin } from '..';
 import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { Discovery } from '../discovery';
 
+/**
+ * Discovery class tests.
+ *
+ * @group unit
+ */
 describe('Discovery', () => {
 	it('should return a list of candidates', () => {
 		const jellyfin = new Jellyfin({
