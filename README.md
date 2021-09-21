@@ -62,4 +62,8 @@ console.log('Auth =>', auth.data);
 // requests that require authentication can be made normally
 const libraries = await api.libraryApi.getMediaFolders();
 console.log('Libraries =>', libraries.data);
+
+// A helper method for logging out the current user has been added to the
+// SDK so the internal state is updated correctly.
+await api.logout();
 ```

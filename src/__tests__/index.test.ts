@@ -49,6 +49,8 @@ describe('Test the Base SDK', () => {
 		const auth = await api.authenticateUserByName({ Username: 'demo', Pw: '' });
 		// console.log('Auth =>', auth.data);
 		expect(auth.data).toBeTruthy();
+
+		await api.logout();
 	});
 
 	it('library api', async () => {
@@ -63,5 +65,7 @@ describe('Test the Base SDK', () => {
 		const libraries = await api.libraryApi.getMediaFolders();
 		// console.log('Libraries =>', libraries.data);
 		expect(libraries.data).toBeTruthy();
+
+		await api.logout();
 	});
 });

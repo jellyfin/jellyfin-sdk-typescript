@@ -15,14 +15,19 @@ import { getAuthorizationHeader } from '../utils';
 jest.mock('axios');
 const mockAxios = mocked(axios, true);
 
+const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
+
 /**
  * Api class tests.
  *
  * @group unit
  */
 describe('Api', () => {
+	afterEach(() => {
+		jest.clearAllMocks();
+	});
+
 	it('should authenticate and update state', async () => {
-		const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
 		const USER_CREDENTIALS = {
 			Username: 'test',
 			Pw: ''
@@ -43,6 +48,21 @@ describe('Api', () => {
 		expect(requestData.data).toBe(JSON.stringify(USER_CREDENTIALS));
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
+	});
+
+	it('should logout and update state', async () => {
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+
+		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
+
+		await api.logout();
+
+		expect(mockAxios.request.mock.calls).toHaveLength(1);
+
+		const requestData = mockAxios.request.mock.calls[0][0];
+		expect(requestData.url).toBe(`${SERVER_URL}/Sessions/Logout`);
+
+		expect(api.accessToken).toBe('');
 	});
 
 	it('should return the correct authorization header value', () => {
