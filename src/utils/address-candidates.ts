@@ -6,13 +6,44 @@
 
 import Url from 'url-parse';
 
-import { HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort } from './url';
+import { HTTPS_PORT, HTTP_PORT, HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort } from './url';
 
 /** The default http port for Jellyfin servers. */
 export const JF_HTTP_PORT = 8096;
 
 /** The default https port for Jellyfin servers. */
 export const JF_HTTPS_PORT = 8920;
+
+/**
+ * Gets the score of a url based on common server setups.
+ * @param url The url to evaluate.
+ * @returns The score.
+ */
+function getScore(url: Url): number {
+	let score = 0;
+
+	// Prefer secure connections
+	if (url.protocol === HTTPS_PROTOCOL) {
+		score += 5;
+	} else {
+		score -= 5;
+	}
+
+	if (url.port === JF_HTTP_PORT.toString()) {
+		score += 2; // Using the Jellyfin http port is common
+	} else if (url.port === JF_HTTPS_PORT.toString()) {
+		score -= 1; // Using the Jellyfin https port is not common
+	}
+
+	// Prefer default ports for http(s) protocols
+	if (url.protocol === HTTPS_PROTOCOL && (!url.port || url.port === HTTPS_PORT.toString())) {
+		score += 3;
+	} else if (url.protocol === HTTP_PROTOCOL && (!url.port || url.port === HTTP_PORT.toString())) {
+		score += 3;
+	}
+
+	return score;
+}
 
 /**
  * Gets a list of address candidates url strings
@@ -54,7 +85,9 @@ export function getAddressCandidates(input: string): Array<string> {
 				}
 			});
 
-		return candidates.map(candidate => candidate.toString());
+		return candidates
+			.sort((a, b) => getScore(b) - getScore(a))
+			.map(candidate => candidate.toString());
 	} catch (err) {
 		console.warn(err);
 		return [];
