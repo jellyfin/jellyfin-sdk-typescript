@@ -18,11 +18,12 @@
   "scripts": {
     "build": "npm run build:generated-client && npm run build:sdk",
     "build:generated-client": "openapi-generator-cli generate",
-    "build:sdk": "tsc --outDir dist/",
+    "build:sdk": "tsc",
+    "clean:build:sdk": "tsc --build --clean && tsc",
     "docs": "typedoc --tsconfig .",
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "lint": "eslint \".\"",
-    "prepublishOnly": "npm run build:sdk",
+    "prepublishOnly": "npm run clean:build:sdk",
     "test": "jest --watchAll --group=unit"
   },
   "devDependencies": {
