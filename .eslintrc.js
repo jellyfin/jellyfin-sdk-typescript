@@ -29,6 +29,7 @@ module.exports = {
 		'eol-last': ['error'],
 		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
 		'jsx-quotes': ['error', 'prefer-single'],
+		'key-spacing': ['error'],
 		'keyword-spacing': ['error'],
 		'max-statements-per-line': ['error'],
 		'no-floating-decimal': ['error'],
@@ -47,6 +48,7 @@ module.exports = {
 		'space-before-blocks': ['error'],
 		'space-before-function-paren': ['error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
 		'space-infix-ops': 'error',
+		'@typescript-eslint/type-annotation-spacing': ['error'],
 		'yoda': 'error'
 	},
 	overrides: [
