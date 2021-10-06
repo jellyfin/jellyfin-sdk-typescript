@@ -27,6 +27,7 @@ module.exports = {
 		'brace-style': ['error', '1tbs', { 'allowSingleLine': true }],
 		'comma-dangle': ['error', 'never'],
 		'comma-spacing': ['error'],
+		'curly': ['error', 'multi-line'],
 		'eol-last': ['error'],
 		'indent': ['error', 'tab', { 'SwitchCase': 1 }],
 		'jsx-quotes': ['error', 'prefer-single'],
