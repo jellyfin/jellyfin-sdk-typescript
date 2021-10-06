@@ -7,3 +7,4 @@
 export * from './address-candidates';
 export * from './authentication';
 export * from './url';
+export * from './browser-profiles';
