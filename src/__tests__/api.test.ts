@@ -44,7 +44,7 @@ describe('Api', () => {
 
 		const requestData = mockAxios.request.mock.calls[0][0];
 		expect(requestData.url).toBe(`${SERVER_URL}/Users/AuthenticateByName`);
-		expect(requestData.headers[AUTHORIZATION_HEADER]).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
+		expect(requestData.headers?.[AUTHORIZATION_HEADER]).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
 		expect(requestData.data).toBe(JSON.stringify(USER_CREDENTIALS));
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
