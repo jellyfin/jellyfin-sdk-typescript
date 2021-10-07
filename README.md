@@ -39,7 +39,16 @@ const jellyfin = new Jellyfin({
         id: 'unique-device-id'
     }
 });
-const api = jellyfin.createApi('https://demo.jellyfin.org/stable');
+
+// Find a valid server by trying to connect using common protocols and ports.
+// Each server receives a score based on security, speed, and other criteria.
+const servers = await jellyfin.discovery.getRecommendedServerCandidates('demo.jellyfin.org/stable');
+// A utility function for finding the best result is available.
+// If there is no "best" server, an error message should be displayed.
+const best = jellyfin.discovery.findBestServer(servers);
+
+// Create an API instance
+const api = jellyfin.createApi(best.address);
 
 // Each API endpoint is exposed via a getter on the SDK instance using
 // a shared Configuration and Axios instance. For example the /System APIs

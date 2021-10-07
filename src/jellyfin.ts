@@ -7,13 +7,18 @@
 import { AxiosInstance } from 'axios';
 
 import { Api } from './api';
-import { Discovery } from './discovery';
+import { DiscoveryService } from './discovery';
 import { ClientInfo, DeviceInfo } from './models';
 
+/** Parameters to create a Jellyfin SDK instance. */
 export interface JellyfinParameters {
 	clientInfo: ClientInfo,
 	deviceInfo: DeviceInfo
 }
+
+// NOTE: This must be updated manually on updates.
+/** The current API version of the generated client. */
+export const API_VERSION = '10.7.7';
 
 /** The minimum supported server version. */
 export const MINIMUM_VERSION = '10.7.0';
@@ -27,7 +32,7 @@ export class Jellyfin {
 	constructor(parameters: JellyfinParameters) {
 		this.clientInfo = parameters.clientInfo;
 		this.deviceInfo = parameters.deviceInfo;
-		this.discovery = new Discovery(this);
+		this.discovery = new DiscoveryService(this);
 	}
 
 	/**

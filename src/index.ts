@@ -5,8 +5,9 @@
  */
 
 // TODO: Should the generated client be exported?
+export * as discovery from './discovery';
+export * as utils from './utils';
+
 export * from './api';
-export * from './discovery';
 export * from './jellyfin';
 export * from './models';
-export * as utils from './utils';
