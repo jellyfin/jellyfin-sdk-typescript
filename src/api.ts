@@ -61,7 +61,7 @@ export class Api {
 	/**
 	 * Convenience method for logging out and updating the internal state.
 	 */
-	logout(): Promise<AxiosResponse> {
+	logout(): Promise<AxiosResponse<never> | AxiosResponse<void>> {
 		return this.sessionApi.reportSessionEnded().then(response => {
 			this.accessToken = '';
 			return response;
