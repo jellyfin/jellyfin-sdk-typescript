@@ -28,4 +28,4 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/default-directory-browser-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/default-directory-browser-info-dto.ts#L28)
+[generated-client/models/default-directory-browser-info-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/default-directory-browser-info-dto.ts#L28)

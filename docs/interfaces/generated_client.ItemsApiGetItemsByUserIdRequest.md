@@ -107,7 +107,7 @@ Optional. Return items that are siblings of a supplied item.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2083](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2083)
+[generated-client/api/items-api.ts:2083](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2083)
 
 ___
 
@@ -121,7 +121,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2426)
+[generated-client/api/items-api.ts:2426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2426)
 
 ___
 
@@ -135,7 +135,7 @@ Optional. If specified, results will be filtered based on album id. This allows 
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2447)
+[generated-client/api/items-api.ts:2447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2447)
 
 ___
 
@@ -149,7 +149,7 @@ Optional. If specified, results will be filtered based on album. This allows mul
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2440)
+[generated-client/api/items-api.ts:2440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2440)
 
 ___
 
@@ -163,7 +163,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2419)
+[generated-client/api/items-api.ts:2419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2419)
 
 ___
 
@@ -177,7 +177,7 @@ Optional. If specified, results will be filtered based on artists. This allows m
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2405)
+[generated-client/api/items-api.ts:2405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2405)
 
 ___
 
@@ -191,7 +191,7 @@ Whether or not to hide items behind their boxsets.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2496)
+[generated-client/api/items-api.ts:2496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2496)
 
 ___
 
@@ -205,7 +205,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2433)
+[generated-client/api/items-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2433)
 
 ___
 
@@ -219,7 +219,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2370)
+[generated-client/api/items-api.ts:2370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2370)
 
 ___
 
@@ -233,7 +233,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2587)
+[generated-client/api/items-api.ts:2587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2587)
 
 ___
 
@@ -247,7 +247,7 @@ Optional. Enable the total record count.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2580)
+[generated-client/api/items-api.ts:2580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2580)
 
 ___
 
@@ -261,7 +261,7 @@ Optional, include user data.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2356)
+[generated-client/api/items-api.ts:2356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2356)
 
 ___
 
@@ -275,7 +275,7 @@ Optional. If specified, results will be filtered based on artist id. This allows
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2412)
+[generated-client/api/items-api.ts:2412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2412)
 
 ___
 
@@ -289,7 +289,7 @@ Optional. If specified, results will be filtered by exxcluding item ids. This al
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2216)
+[generated-client/api/items-api.ts:2216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2216)
 
 ___
 
@@ -303,7 +303,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2272)
+[generated-client/api/items-api.ts:2272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2272)
 
 ___
 
@@ -317,7 +317,7 @@ Optional. If specified, results will be filtered based on the LocationType. This
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2125)
+[generated-client/api/items-api.ts:2125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2125)
 
 ___
 
@@ -331,7 +331,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2265)
+[generated-client/api/items-api.ts:2265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2265)
 
 ___
 
@@ -345,7 +345,7 @@ Optional. Specify additional filters to apply. This allows multiple, comma delim
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2286)
+[generated-client/api/items-api.ts:2286](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2286)
 
 ___
 
@@ -359,7 +359,7 @@ Optional. If specified, results will be filtered based on genre id. This allows 
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2573](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2573)
+[generated-client/api/items-api.ts:2573](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2573)
 
 ___
 
@@ -373,7 +373,7 @@ Optional. If specified, results will be filtered based on genre. This allows mul
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2328)
+[generated-client/api/items-api.ts:2328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2328)
 
 ___
 
@@ -387,7 +387,7 @@ Optional filter by items that have an imdb id or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2195)
+[generated-client/api/items-api.ts:2195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2195)
 
 ___
 
@@ -401,7 +401,7 @@ Optional filter by items that have official ratings.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2489)
+[generated-client/api/items-api.ts:2489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2489)
 
 ___
 
@@ -415,7 +415,7 @@ Optional filter by items that have an overview or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2188)
+[generated-client/api/items-api.ts:2188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2188)
 
 ___
 
@@ -429,7 +429,7 @@ Optional filter by items that have or do not have a parental rating.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2097](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2097)
+[generated-client/api/items-api.ts:2097](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2097)
 
 ___
 
@@ -443,7 +443,7 @@ Optional filter by items with special features.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2069)
+[generated-client/api/items-api.ts:2069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2069)
 
 ___
 
@@ -457,7 +457,7 @@ Optional filter by items with subtitles.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2062](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2062)
+[generated-client/api/items-api.ts:2062](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2062)
 
 ___
 
@@ -471,7 +471,7 @@ Optional filter by items with theme songs.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2048](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2048)
+[generated-client/api/items-api.ts:2048](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2048)
 
 ___
 
@@ -485,7 +485,7 @@ Optional filter by items with theme videos.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2055)
+[generated-client/api/items-api.ts:2055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2055)
 
 ___
 
@@ -499,7 +499,7 @@ Optional filter by items that have a tmdb id or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2202)
+[generated-client/api/items-api.ts:2202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2202)
 
 ___
 
@@ -513,7 +513,7 @@ Optional filter by items with trailers.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2076](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2076)
+[generated-client/api/items-api.ts:2076](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2076)
 
 ___
 
@@ -527,7 +527,7 @@ Optional filter by items that have a tvdb id or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2209)
+[generated-client/api/items-api.ts:2209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2209)
 
 ___
 
@@ -541,7 +541,7 @@ Optional. If specific items are needed, specify a list of item id\&#39;s to retr
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2454)
+[generated-client/api/items-api.ts:2454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2454)
 
 ___
 
@@ -555,7 +555,7 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2363)
+[generated-client/api/items-api.ts:2363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2363)
 
 ___
 
@@ -569,7 +569,7 @@ Optional. If specified, results will be filtered based on those containing image
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2307)
+[generated-client/api/items-api.ts:2307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2307)
 
 ___
 
@@ -583,7 +583,7 @@ Optional. If specified, results will be filtered based on the item type. This al
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2279)
+[generated-client/api/items-api.ts:2279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2279)
 
 ___
 
@@ -597,7 +597,7 @@ Optional filter by items that are 3D, or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2531)
+[generated-client/api/items-api.ts:2531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2531)
 
 ___
 
@@ -611,7 +611,7 @@ Optional filter by items that are 4K or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2111](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2111)
+[generated-client/api/items-api.ts:2111](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2111)
 
 ___
 
@@ -625,7 +625,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2293)
+[generated-client/api/items-api.ts:2293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2293)
 
 ___
 
@@ -639,7 +639,7 @@ Optional filter by items that are HD or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2104)
+[generated-client/api/items-api.ts:2104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2104)
 
 ___
 
@@ -653,7 +653,7 @@ Optional filter by items that are locked.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2475)
+[generated-client/api/items-api.ts:2475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2475)
 
 ___
 
@@ -667,7 +667,7 @@ Optional filter by items that are missing episodes or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2132)
+[generated-client/api/items-api.ts:2132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2132)
 
 ___
 
@@ -681,7 +681,7 @@ Optional filter by items that are placeholders.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2482)
+[generated-client/api/items-api.ts:2482](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2482)
 
 ___
 
@@ -695,7 +695,7 @@ Optional filter by items that are played, or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2321)
+[generated-client/api/items-api.ts:2321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2321)
 
 ___
 
@@ -709,7 +709,7 @@ Optional filter by items that are unaired episodes or not.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2139)
+[generated-client/api/items-api.ts:2139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2139)
 
 ___
 
@@ -723,7 +723,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2230](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2230)
+[generated-client/api/items-api.ts:2230](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2230)
 
 ___
 
@@ -737,7 +737,7 @@ Optional. If specified, results will be filtered based on LocationType. This all
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2118)
+[generated-client/api/items-api.ts:2118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2118)
 
 ___
 
@@ -751,7 +751,7 @@ Optional. Filter by the maximum height of the item.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2524)
+[generated-client/api/items-api.ts:2524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2524)
 
 ___
 
@@ -765,7 +765,7 @@ Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2041](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2041)
+[generated-client/api/items-api.ts:2041](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2041)
 
 ___
 
@@ -779,7 +779,7 @@ Optional. The maximum premiere date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2181)
+[generated-client/api/items-api.ts:2181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2181)
 
 ___
 
@@ -793,7 +793,7 @@ Optional. Filter by the maximum width of the item.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2517)
+[generated-client/api/items-api.ts:2517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2517)
 
 ___
 
@@ -807,7 +807,7 @@ Optional filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2300)
+[generated-client/api/items-api.ts:2300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2300)
 
 ___
 
@@ -821,7 +821,7 @@ Optional filter by minimum community rating.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2146)
+[generated-client/api/items-api.ts:2146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2146)
 
 ___
 
@@ -835,7 +835,7 @@ Optional filter by minimum critic rating.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2153)
+[generated-client/api/items-api.ts:2153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2153)
 
 ___
 
@@ -849,7 +849,7 @@ Optional. The minimum last saved date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2167)
+[generated-client/api/items-api.ts:2167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2167)
 
 ___
 
@@ -863,7 +863,7 @@ Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2174)
+[generated-client/api/items-api.ts:2174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2174)
 
 ___
 
@@ -877,7 +877,7 @@ Optional. Filter by the minimum height of the item.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2510)
+[generated-client/api/items-api.ts:2510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2510)
 
 ___
 
@@ -891,7 +891,7 @@ Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2468)
+[generated-client/api/items-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2468)
 
 ___
 
@@ -905,7 +905,7 @@ Optional. The minimum premiere date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2160)
+[generated-client/api/items-api.ts:2160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2160)
 
 ___
 
@@ -919,7 +919,7 @@ Optional. Filter by the minimum width of the item.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2503)
+[generated-client/api/items-api.ts:2503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2503)
 
 ___
 
@@ -933,7 +933,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2559)
+[generated-client/api/items-api.ts:2559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2559)
 
 ___
 
@@ -947,7 +947,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2552)
+[generated-client/api/items-api.ts:2552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2552)
 
 ___
 
@@ -961,7 +961,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2545)
+[generated-client/api/items-api.ts:2545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2545)
 
 ___
 
@@ -975,7 +975,7 @@ Optional. If specified, results will be filtered based on OfficialRating. This a
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2335)
+[generated-client/api/items-api.ts:2335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2335)
 
 ___
 
@@ -989,7 +989,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2258)
+[generated-client/api/items-api.ts:2258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2258)
 
 ___
 
@@ -1003,7 +1003,7 @@ Optional filter by parent index number.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2090](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2090)
+[generated-client/api/items-api.ts:2090](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2090)
 
 ___
 
@@ -1017,7 +1017,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2377)
+[generated-client/api/items-api.ts:2377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2377)
 
 ___
 
@@ -1031,7 +1031,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2384)
+[generated-client/api/items-api.ts:2384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2384)
 
 ___
 
@@ -1045,7 +1045,7 @@ Optional. If specified, along with Person, results will be filtered to include o
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2391)
+[generated-client/api/items-api.ts:2391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2391)
 
 ___
 
@@ -1059,7 +1059,7 @@ When searching within folders, this determines whether or not the search will be
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2237)
+[generated-client/api/items-api.ts:2237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2237)
 
 ___
 
@@ -1073,7 +1073,7 @@ Optional. Filter based on a search term.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2244)
+[generated-client/api/items-api.ts:2244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2244)
 
 ___
 
@@ -1087,7 +1087,7 @@ Optional filter by Series Status. Allows multiple, comma delimeted.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2538)
+[generated-client/api/items-api.ts:2538](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2538)
 
 ___
 
@@ -1101,7 +1101,7 @@ Optional. Specify one or more sort orders, comma delimeted. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2314)
+[generated-client/api/items-api.ts:2314](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2314)
 
 ___
 
@@ -1115,7 +1115,7 @@ Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2251](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2251)
+[generated-client/api/items-api.ts:2251](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2251)
 
 ___
 
@@ -1129,7 +1129,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2223)
+[generated-client/api/items-api.ts:2223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2223)
 
 ___
 
@@ -1143,7 +1143,7 @@ Optional. If specified, results will be filtered based on studio id. This allows
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2566](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2566)
+[generated-client/api/items-api.ts:2566](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2566)
 
 ___
 
@@ -1157,7 +1157,7 @@ Optional. If specified, results will be filtered based on studio. This allows mu
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2398)
+[generated-client/api/items-api.ts:2398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2398)
 
 ___
 
@@ -1171,7 +1171,7 @@ Optional. If specified, results will be filtered based on tag. This allows multi
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2342)
+[generated-client/api/items-api.ts:2342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2342)
 
 ___
 
@@ -1185,7 +1185,7 @@ The user id supplied as query parameter.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2034](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2034)
+[generated-client/api/items-api.ts:2034](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2034)
 
 ___
 
@@ -1199,7 +1199,7 @@ Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, com
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2461)
+[generated-client/api/items-api.ts:2461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2461)
 
 ___
 
@@ -1213,4 +1213,4 @@ Optional. If specified, results will be filtered based on production year. This 
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/items-api.ts#L2349)
+[generated-client/api/items-api.ts:2349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/items-api.ts#L2349)

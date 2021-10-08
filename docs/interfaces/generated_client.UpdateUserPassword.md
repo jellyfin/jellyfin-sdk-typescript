@@ -31,7 +31,7 @@ Gets or sets the current sha1-hashed password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/update-user-password.ts#L28)
+[generated-client/models/update-user-password.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-user-password.ts#L28)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the current plain text password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/update-user-password.ts#L34)
+[generated-client/models/update-user-password.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-user-password.ts#L34)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the new plain text password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/update-user-password.ts#L40)
+[generated-client/models/update-user-password.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-user-password.ts#L40)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets a value indicating whether to reset the password.
 
 #### Defined in
 
-[generated-client/models/update-user-password.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/update-user-password.ts#L46)
+[generated-client/models/update-user-password.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-user-password.ts#L46)

@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/collection-api.ts#L360)
+[generated-client/api/collection-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/collection-api.ts#L360)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/collection-api.ts#L372)
+[generated-client/api/collection-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/collection-api.ts#L372)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/collection-api.ts#L384)
+[generated-client/api/collection-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/collection-api.ts#L384)

@@ -6,26 +6,51 @@
 
 ### Namespaces
 
+- [discovery](index.discovery.md)
 - [utils](index.utils.md)
+
+### Enumerations
+
+- [RecommendedServerInfoScore](../enums/index.RecommendedServerInfoScore.md)
 
 ### Classes
 
 - [Api](../classes/index.Api.md)
-- [Discovery](../classes/index.Discovery.md)
 - [Jellyfin](../classes/index.Jellyfin.md)
+- [ProductNameIssue](../classes/index.ProductNameIssue.md)
+- [RecommendedServerIssue](../classes/index.RecommendedServerIssue.md)
+- [SlowResponseIssue](../classes/index.SlowResponseIssue.md)
+- [SystemInfoIssue](../classes/index.SystemInfoIssue.md)
+- [VersionMissingIssue](../classes/index.VersionMissingIssue.md)
+- [VersionOutdatedIssue](../classes/index.VersionOutdatedIssue.md)
+- [VersionUnsupportedIssue](../classes/index.VersionUnsupportedIssue.md)
 
 ### Interfaces
 
 - [ClientInfo](../interfaces/index.ClientInfo.md)
 - [DeviceInfo](../interfaces/index.DeviceInfo.md)
 - [JellyfinParameters](../interfaces/index.JellyfinParameters.md)
+- [RecommendedServerInfo](../interfaces/index.RecommendedServerInfo.md)
 
 ### Variables
 
-- [AUTHORIZATION_HEADER](index.md#authorization_header)
-- [MINIMUM_VERSION](index.md#minimum_version)
+- [API\_VERSION](index.md#api_version)
+- [AUTHORIZATION\_HEADER](index.md#authorization_header)
+- [MINIMUM\_VERSION](index.md#minimum_version)
 
 ## Variables
+
+### API\_VERSION
+
+• **API\_VERSION**: ``"10.7.7"``
+
+The current API version of the generated client.
+
+#### Defined in
+
+[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L21)
+
+___
 
 ### AUTHORIZATION\_HEADER
 
@@ -35,7 +60,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/api.ts#L13)
+[api.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L13)
 
 ___
 
@@ -47,4 +72,4 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L19)
+[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L24)

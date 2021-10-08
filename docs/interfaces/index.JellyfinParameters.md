@@ -4,6 +4,8 @@
 
 [index](../modules/index.md).JellyfinParameters
 
+Parameters to create a Jellyfin SDK instance.
+
 ## Table of contents
 
 ### Properties
@@ -19,7 +21,7 @@
 
 #### Defined in
 
-[jellyfin.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L14)
+[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L15)
 
 ___
 
@@ -29,4 +31,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L15)
+[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L16)

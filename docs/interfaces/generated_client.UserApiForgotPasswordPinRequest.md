@@ -28,4 +28,4 @@ The forgot password pin request containing the entered pin.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/user-api.ts#L1161)
+[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-api.ts#L1161)

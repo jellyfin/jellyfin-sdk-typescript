@@ -28,4 +28,4 @@ The new playback position.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/sync-play-api.ts#L1457)
+[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/sync-play-api.ts#L1457)

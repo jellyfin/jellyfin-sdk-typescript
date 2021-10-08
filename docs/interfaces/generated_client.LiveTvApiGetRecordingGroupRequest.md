@@ -28,4 +28,4 @@ Group id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4068](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L4068)
+[generated-client/api/live-tv-api.ts:4068](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/live-tv-api.ts#L4068)

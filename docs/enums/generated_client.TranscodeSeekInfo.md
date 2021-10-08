@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/transcode-seek-info.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/transcode-seek-info.ts#L24)
+[generated-client/models/transcode-seek-info.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/transcode-seek-info.ts#L24)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-seek-info.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/transcode-seek-info.ts#L25)
+[generated-client/models/transcode-seek-info.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/transcode-seek-info.ts#L25)

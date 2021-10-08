@@ -28,4 +28,4 @@ The name of the library and path infos.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/library-structure-api.ts#L766)
+[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/library-structure-api.ts#L766)

@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/name-guid-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/name-guid-pair.ts#L34)
+[generated-client/models/name-guid-pair.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/name-guid-pair.ts#L34)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/name-guid-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/name-guid-pair.ts#L28)
+[generated-client/models/name-guid-pair.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/name-guid-pair.ts#L28)

@@ -106,7 +106,7 @@ Optional. Return items that are siblings of a supplied item.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:741](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L741)
+[generated-client/api/trailers-api.ts:741](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L741)
 
 ___
 
@@ -120,7 +120,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1077)
+[generated-client/api/trailers-api.ts:1077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1077)
 
 ___
 
@@ -134,7 +134,7 @@ Optional. If specified, results will be filtered based on album id. This allows 
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1098](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1098)
+[generated-client/api/trailers-api.ts:1098](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1098)
 
 ___
 
@@ -148,7 +148,7 @@ Optional. If specified, results will be filtered based on album. This allows mul
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1091)
+[generated-client/api/trailers-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1091)
 
 ___
 
@@ -162,7 +162,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1070)
+[generated-client/api/trailers-api.ts:1070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1070)
 
 ___
 
@@ -176,7 +176,7 @@ Optional. If specified, results will be filtered based on artists. This allows m
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1056](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1056)
+[generated-client/api/trailers-api.ts:1056](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1056)
 
 ___
 
@@ -190,7 +190,7 @@ Whether or not to hide items behind their boxsets.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1147)
+[generated-client/api/trailers-api.ts:1147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1147)
 
 ___
 
@@ -204,7 +204,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1084](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1084)
+[generated-client/api/trailers-api.ts:1084](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1084)
 
 ___
 
@@ -218,7 +218,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1021)
+[generated-client/api/trailers-api.ts:1021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1021)
 
 ___
 
@@ -232,7 +232,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1238)
+[generated-client/api/trailers-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1238)
 
 ___
 
@@ -246,7 +246,7 @@ Optional. Enable the total record count.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1231)
+[generated-client/api/trailers-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1231)
 
 ___
 
@@ -260,7 +260,7 @@ Optional, include user data.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1007](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1007)
+[generated-client/api/trailers-api.ts:1007](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1007)
 
 ___
 
@@ -274,7 +274,7 @@ Optional. If specified, results will be filtered based on artist id. This allows
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1063)
+[generated-client/api/trailers-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1063)
 
 ___
 
@@ -288,7 +288,7 @@ Optional. If specified, results will be filtered by excluding item ids. This all
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:874](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L874)
+[generated-client/api/trailers-api.ts:874](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L874)
 
 ___
 
@@ -302,7 +302,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L930)
+[generated-client/api/trailers-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L930)
 
 ___
 
@@ -316,7 +316,7 @@ Optional. If specified, results will be filtered based on the LocationType. This
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:783](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L783)
+[generated-client/api/trailers-api.ts:783](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L783)
 
 ___
 
@@ -330,7 +330,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:923](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L923)
+[generated-client/api/trailers-api.ts:923](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L923)
 
 ___
 
@@ -344,7 +344,7 @@ Optional. Specify additional filters to apply. This allows multiple, comma delim
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:937](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L937)
+[generated-client/api/trailers-api.ts:937](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L937)
 
 ___
 
@@ -358,7 +358,7 @@ Optional. If specified, results will be filtered based on genre id. This allows 
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1224)
+[generated-client/api/trailers-api.ts:1224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1224)
 
 ___
 
@@ -372,7 +372,7 @@ Optional. If specified, results will be filtered based on genre. This allows mul
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L979)
+[generated-client/api/trailers-api.ts:979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L979)
 
 ___
 
@@ -386,7 +386,7 @@ Optional filter by items that have an imdb id or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:853](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L853)
+[generated-client/api/trailers-api.ts:853](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L853)
 
 ___
 
@@ -400,7 +400,7 @@ Optional filter by items that have official ratings.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1140)
+[generated-client/api/trailers-api.ts:1140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1140)
 
 ___
 
@@ -414,7 +414,7 @@ Optional filter by items that have an overview or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L846)
+[generated-client/api/trailers-api.ts:846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L846)
 
 ___
 
@@ -428,7 +428,7 @@ Optional filter by items that have or do not have a parental rating.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:755](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L755)
+[generated-client/api/trailers-api.ts:755](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L755)
 
 ___
 
@@ -442,7 +442,7 @@ Optional filter by items with special features.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:727](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L727)
+[generated-client/api/trailers-api.ts:727](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L727)
 
 ___
 
@@ -456,7 +456,7 @@ Optional filter by items with subtitles.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:720](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L720)
+[generated-client/api/trailers-api.ts:720](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L720)
 
 ___
 
@@ -470,7 +470,7 @@ Optional filter by items with theme songs.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:706](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L706)
+[generated-client/api/trailers-api.ts:706](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L706)
 
 ___
 
@@ -484,7 +484,7 @@ Optional filter by items with theme videos.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L713)
+[generated-client/api/trailers-api.ts:713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L713)
 
 ___
 
@@ -498,7 +498,7 @@ Optional filter by items that have a tmdb id or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:860](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L860)
+[generated-client/api/trailers-api.ts:860](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L860)
 
 ___
 
@@ -512,7 +512,7 @@ Optional filter by items with trailers.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L734)
+[generated-client/api/trailers-api.ts:734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L734)
 
 ___
 
@@ -526,7 +526,7 @@ Optional filter by items that have a tvdb id or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L867)
+[generated-client/api/trailers-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L867)
 
 ___
 
@@ -540,7 +540,7 @@ Optional. If specific items are needed, specify a list of item id\&#39;s to retr
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1105)
+[generated-client/api/trailers-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1105)
 
 ___
 
@@ -554,7 +554,7 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1014)
+[generated-client/api/trailers-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1014)
 
 ___
 
@@ -568,7 +568,7 @@ Optional. If specified, results will be filtered based on those containing image
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:958](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L958)
+[generated-client/api/trailers-api.ts:958](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L958)
 
 ___
 
@@ -582,7 +582,7 @@ Optional filter by items that are 3D, or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1182)
+[generated-client/api/trailers-api.ts:1182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1182)
 
 ___
 
@@ -596,7 +596,7 @@ Optional filter by items that are 4K or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:769](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L769)
+[generated-client/api/trailers-api.ts:769](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L769)
 
 ___
 
@@ -610,7 +610,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L944)
+[generated-client/api/trailers-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L944)
 
 ___
 
@@ -624,7 +624,7 @@ Optional filter by items that are HD or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:762](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L762)
+[generated-client/api/trailers-api.ts:762](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L762)
 
 ___
 
@@ -638,7 +638,7 @@ Optional filter by items that are locked.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1126)
+[generated-client/api/trailers-api.ts:1126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1126)
 
 ___
 
@@ -652,7 +652,7 @@ Optional filter by items that are missing episodes or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:790](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L790)
+[generated-client/api/trailers-api.ts:790](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L790)
 
 ___
 
@@ -666,7 +666,7 @@ Optional filter by items that are placeholders.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1133)
+[generated-client/api/trailers-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1133)
 
 ___
 
@@ -680,7 +680,7 @@ Optional filter by items that are played, or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:972](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L972)
+[generated-client/api/trailers-api.ts:972](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L972)
 
 ___
 
@@ -694,7 +694,7 @@ Optional filter by items that are unaired episodes or not.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:797](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L797)
+[generated-client/api/trailers-api.ts:797](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L797)
 
 ___
 
@@ -708,7 +708,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L888)
+[generated-client/api/trailers-api.ts:888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L888)
 
 ___
 
@@ -722,7 +722,7 @@ Optional. If specified, results will be filtered based on LocationType. This all
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L776)
+[generated-client/api/trailers-api.ts:776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L776)
 
 ___
 
@@ -736,7 +736,7 @@ Optional. Filter by the maximum height of the item.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1175)
+[generated-client/api/trailers-api.ts:1175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1175)
 
 ___
 
@@ -750,7 +750,7 @@ Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L699)
+[generated-client/api/trailers-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L699)
 
 ___
 
@@ -764,7 +764,7 @@ Optional. The maximum premiere date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:839](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L839)
+[generated-client/api/trailers-api.ts:839](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L839)
 
 ___
 
@@ -778,7 +778,7 @@ Optional. Filter by the maximum width of the item.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1168)
+[generated-client/api/trailers-api.ts:1168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1168)
 
 ___
 
@@ -792,7 +792,7 @@ Optional filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:951](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L951)
+[generated-client/api/trailers-api.ts:951](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L951)
 
 ___
 
@@ -806,7 +806,7 @@ Optional filter by minimum community rating.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:804](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L804)
+[generated-client/api/trailers-api.ts:804](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L804)
 
 ___
 
@@ -820,7 +820,7 @@ Optional filter by minimum critic rating.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:811](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L811)
+[generated-client/api/trailers-api.ts:811](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L811)
 
 ___
 
@@ -834,7 +834,7 @@ Optional. The minimum last saved date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:825](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L825)
+[generated-client/api/trailers-api.ts:825](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L825)
 
 ___
 
@@ -848,7 +848,7 @@ Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L832)
+[generated-client/api/trailers-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L832)
 
 ___
 
@@ -862,7 +862,7 @@ Optional. Filter by the minimum height of the item.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1161)
+[generated-client/api/trailers-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1161)
 
 ___
 
@@ -876,7 +876,7 @@ Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1119)
+[generated-client/api/trailers-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1119)
 
 ___
 
@@ -890,7 +890,7 @@ Optional. The minimum premiere date. Format &#x3D; ISO.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:818](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L818)
+[generated-client/api/trailers-api.ts:818](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L818)
 
 ___
 
@@ -904,7 +904,7 @@ Optional. Filter by the minimum width of the item.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1154)
+[generated-client/api/trailers-api.ts:1154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1154)
 
 ___
 
@@ -918,7 +918,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1210)
+[generated-client/api/trailers-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1210)
 
 ___
 
@@ -932,7 +932,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1203)
+[generated-client/api/trailers-api.ts:1203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1203)
 
 ___
 
@@ -946,7 +946,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1196)
+[generated-client/api/trailers-api.ts:1196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1196)
 
 ___
 
@@ -960,7 +960,7 @@ Optional. If specified, results will be filtered based on OfficialRating. This a
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L986)
+[generated-client/api/trailers-api.ts:986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L986)
 
 ___
 
@@ -974,7 +974,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:916](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L916)
+[generated-client/api/trailers-api.ts:916](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L916)
 
 ___
 
@@ -988,7 +988,7 @@ Optional filter by parent index number.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:748](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L748)
+[generated-client/api/trailers-api.ts:748](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L748)
 
 ___
 
@@ -1002,7 +1002,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1028](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1028)
+[generated-client/api/trailers-api.ts:1028](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1028)
 
 ___
 
@@ -1016,7 +1016,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1035)
+[generated-client/api/trailers-api.ts:1035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1035)
 
 ___
 
@@ -1030,7 +1030,7 @@ Optional. If specified, along with Person, results will be filtered to include o
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1042](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1042)
+[generated-client/api/trailers-api.ts:1042](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1042)
 
 ___
 
@@ -1044,7 +1044,7 @@ When searching within folders, this determines whether or not the search will be
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:895](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L895)
+[generated-client/api/trailers-api.ts:895](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L895)
 
 ___
 
@@ -1058,7 +1058,7 @@ Optional. Filter based on a search term.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:902](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L902)
+[generated-client/api/trailers-api.ts:902](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L902)
 
 ___
 
@@ -1072,7 +1072,7 @@ Optional filter by Series Status. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1189)
+[generated-client/api/trailers-api.ts:1189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1189)
 
 ___
 
@@ -1086,7 +1086,7 @@ Optional. Specify one or more sort orders, comma delimited. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L965)
+[generated-client/api/trailers-api.ts:965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L965)
 
 ___
 
@@ -1100,7 +1100,7 @@ Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:909](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L909)
+[generated-client/api/trailers-api.ts:909](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L909)
 
 ___
 
@@ -1114,7 +1114,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:881](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L881)
+[generated-client/api/trailers-api.ts:881](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L881)
 
 ___
 
@@ -1128,7 +1128,7 @@ Optional. If specified, results will be filtered based on studio id. This allows
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1217)
+[generated-client/api/trailers-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1217)
 
 ___
 
@@ -1142,7 +1142,7 @@ Optional. If specified, results will be filtered based on studio. This allows mu
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1049](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1049)
+[generated-client/api/trailers-api.ts:1049](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1049)
 
 ___
 
@@ -1156,7 +1156,7 @@ Optional. If specified, results will be filtered based on tag. This allows multi
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L993)
+[generated-client/api/trailers-api.ts:993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L993)
 
 ___
 
@@ -1170,7 +1170,7 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:692](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L692)
+[generated-client/api/trailers-api.ts:692](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L692)
 
 ___
 
@@ -1184,7 +1184,7 @@ Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, com
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1112)
+[generated-client/api/trailers-api.ts:1112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1112)
 
 ___
 
@@ -1198,4 +1198,4 @@ Optional. If specified, results will be filtered based on production year. This 
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:1000](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/trailers-api.ts#L1000)
+[generated-client/api/trailers-api.ts:1000](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/trailers-api.ts#L1000)

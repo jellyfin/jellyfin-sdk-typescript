@@ -28,4 +28,4 @@ The name of the log file to get.
 
 #### Defined in
 
-[generated-client/api/system-api.ts:593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/system-api.ts#L593)
+[generated-client/api/system-api.ts:593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/system-api.ts#L593)

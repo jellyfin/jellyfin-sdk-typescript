@@ -28,4 +28,4 @@ The forgot password request containing the entered username.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/user-api.ts#L1147)
+[generated-client/api/user-api.ts:1147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-api.ts#L1147)

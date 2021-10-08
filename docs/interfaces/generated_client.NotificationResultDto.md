@@ -29,7 +29,7 @@ Gets or sets the current page of notifications.
 
 #### Defined in
 
-[generated-client/models/notification-result-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/notification-result-dto.ts#L29)
+[generated-client/models/notification-result-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/notification-result-dto.ts#L29)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the total number of notifications.
 
 #### Defined in
 
-[generated-client/models/notification-result-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/notification-result-dto.ts#L35)
+[generated-client/models/notification-result-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/notification-result-dto.ts#L35)

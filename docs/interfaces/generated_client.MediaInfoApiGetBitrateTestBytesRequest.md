@@ -28,4 +28,4 @@ The bitrate. Defaults to 102400.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:571](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/media-info-api.ts#L571)
+[generated-client/api/media-info-api.ts:571](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/media-info-api.ts#L571)

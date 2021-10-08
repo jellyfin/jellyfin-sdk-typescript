@@ -36,7 +36,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:928](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L928)
+[generated-client/api/tv-shows-api.ts:928](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L928)
 
 ___
 
@@ -50,7 +50,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:914](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L914)
+[generated-client/api/tv-shows-api.ts:914](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L914)
 
 ___
 
@@ -64,7 +64,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:935](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L935)
+[generated-client/api/tv-shows-api.ts:935](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L935)
 
 ___
 
@@ -78,7 +78,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L900)
+[generated-client/api/tv-shows-api.ts:900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L900)
 
 ___
 
@@ -92,7 +92,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:921](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L921)
+[generated-client/api/tv-shows-api.ts:921](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L921)
 
 ___
 
@@ -106,7 +106,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:893](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L893)
+[generated-client/api/tv-shows-api.ts:893](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L893)
 
 ___
 
@@ -120,7 +120,7 @@ Optional. Specify this to localize the search to a specific item or folder. Omit
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L907)
+[generated-client/api/tv-shows-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L907)
 
 ___
 
@@ -134,7 +134,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L886)
+[generated-client/api/tv-shows-api.ts:886](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L886)
 
 ___
 
@@ -148,4 +148,4 @@ The user id of the user to get the upcoming episodes for.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/tv-shows-api.ts#L879)
+[generated-client/api/tv-shows-api.ts:879](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/tv-shows-api.ts#L879)

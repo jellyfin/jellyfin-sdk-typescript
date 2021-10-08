@@ -31,7 +31,7 @@ Gets or sets the metadata readers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/library-options-result-dto.ts#L36)
+[generated-client/models/library-options-result-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/library-options-result-dto.ts#L36)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the metadata savers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/library-options-result-dto.ts#L30)
+[generated-client/models/library-options-result-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/library-options-result-dto.ts#L30)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the subtitle fetchers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/library-options-result-dto.ts#L42)
+[generated-client/models/library-options-result-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/library-options-result-dto.ts#L42)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets the type options.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/library-options-result-dto.ts#L48)
+[generated-client/models/library-options-result-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/library-options-result-dto.ts#L48)

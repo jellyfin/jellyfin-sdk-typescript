@@ -29,7 +29,7 @@ Request parameters for postUserImage operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9868)
+[generated-client/api/image-api.ts:9868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/image-api.ts#L9868)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9854](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9854)
+[generated-client/api/image-api.ts:9854](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/image-api.ts#L9854)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9861](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9861)
+[generated-client/api/image-api.ts:9861](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/image-api.ts#L9861)
 
 ___
 
@@ -71,4 +71,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/image-api.ts#L9847)
+[generated-client/api/image-api.ts:9847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/image-api.ts#L9847)

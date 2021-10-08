@@ -5,6 +5,7 @@
 <p align="center">
 <a href="https://github.com/thornbill/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/thornbill/jellyfin-sdk-typescript"></a>
 <a href="https://github.com/thornbill/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/thornbill/jellyfin-sdk-typescript.svg"/></a>
+<a href="https://www.npmjs.com/package/@thornbill/jellyfin-sdk"><img alt="npm" src="https://img.shields.io/npm/v/@thornbill/jellyfin-sdk"></a>
 <a href="https://codecov.io/gh/thornbill/jellyfin-sdk-typescript">
 <img alt="Codecov" src="https://img.shields.io/codecov/c/github/thornbill/jellyfin-sdk-typescript?token=Wk8RS9tDnb">
 </a>
@@ -12,7 +13,7 @@
 
 A TypeScript SDK for Jellyfin.
 
-> Warning: This project is under active development and is not ready for production use. API changes _will_ occur.
+> Warning: This project is under active development API changes may occur.
 
 ## Install
 
@@ -40,7 +41,16 @@ const jellyfin = new Jellyfin({
         id: 'unique-device-id'
     }
 });
-const api = jellyfin.createApi('https://demo.jellyfin.org/stable');
+
+// Find a valid server by trying to connect using common protocols and ports.
+// Each server receives a score based on security, speed, and other criteria.
+const servers = await jellyfin.discovery.getRecommendedServerCandidates('demo.jellyfin.org/stable');
+// A utility function for finding the best result is available.
+// If there is no "best" server, an error message should be displayed.
+const best = jellyfin.discovery.findBestServer(servers);
+
+// Create an API instance
+const api = jellyfin.createApi(best.address);
 
 // Each API endpoint is exposed via a getter on the SDK instance using
 // a shared Configuration and Axios instance. For example the /System APIs

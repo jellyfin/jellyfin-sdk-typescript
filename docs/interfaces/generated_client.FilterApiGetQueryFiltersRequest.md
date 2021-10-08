@@ -37,7 +37,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L283)
+[generated-client/api/filter-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L283)
 
 ___
 
@@ -51,7 +51,7 @@ Optional. Is item airing.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L290)
+[generated-client/api/filter-api.ts:290](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L290)
 
 ___
 
@@ -65,7 +65,7 @@ Optional. Is item kids.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L311)
+[generated-client/api/filter-api.ts:311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L311)
 
 ___
 
@@ -79,7 +79,7 @@ Optional. Is item movie.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L297)
+[generated-client/api/filter-api.ts:297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L297)
 
 ___
 
@@ -93,7 +93,7 @@ Optional. Is item news.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L318)
+[generated-client/api/filter-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L318)
 
 ___
 
@@ -107,7 +107,7 @@ Optional. Is item series.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L325)
+[generated-client/api/filter-api.ts:325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L325)
 
 ___
 
@@ -121,7 +121,7 @@ Optional. Is item sports.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L304)
+[generated-client/api/filter-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L304)
 
 ___
 
@@ -135,7 +135,7 @@ Optional. Specify this to localize the search to a specific item or folder. Omit
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L276)
+[generated-client/api/filter-api.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L276)
 
 ___
 
@@ -149,7 +149,7 @@ Optional. Search recursive.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L332)
+[generated-client/api/filter-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L332)
 
 ___
 
@@ -163,4 +163,4 @@ Optional. User id.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:269](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/filter-api.ts#L269)
+[generated-client/api/filter-api.ts:269](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/filter-api.ts#L269)

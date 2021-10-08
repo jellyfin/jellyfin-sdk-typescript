@@ -28,4 +28,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/item-update-api.ts#L258)
+[generated-client/api/item-update-api.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/item-update-api.ts#L258)

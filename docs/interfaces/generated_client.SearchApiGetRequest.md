@@ -45,7 +45,7 @@ If specified, results with these item types are filtered out. This allows multip
 
 #### Defined in
 
-[generated-client/api/search-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L280)
+[generated-client/api/search-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L280)
 
 ___
 
@@ -59,7 +59,7 @@ Optional filter whether to include artists.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L364)
+[generated-client/api/search-api.ts:364](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L364)
 
 ___
 
@@ -73,7 +73,7 @@ Optional filter whether to include genres.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:350](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L350)
+[generated-client/api/search-api.ts:350](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L350)
 
 ___
 
@@ -87,7 +87,7 @@ If specified, only results with the specified item types are returned. This allo
 
 #### Defined in
 
-[generated-client/api/search-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L273)
+[generated-client/api/search-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L273)
 
 ___
 
@@ -101,7 +101,7 @@ Optional filter whether to include media.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L343)
+[generated-client/api/search-api.ts:343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L343)
 
 ___
 
@@ -115,7 +115,7 @@ Optional filter whether to include people.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:336](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L336)
+[generated-client/api/search-api.ts:336](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L336)
 
 ___
 
@@ -129,7 +129,7 @@ Optional filter whether to include studios.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:357](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L357)
+[generated-client/api/search-api.ts:357](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L357)
 
 ___
 
@@ -143,7 +143,7 @@ Optional filter for kids.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L322)
+[generated-client/api/search-api.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L322)
 
 ___
 
@@ -157,7 +157,7 @@ Optional filter for movies.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L301)
+[generated-client/api/search-api.ts:301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L301)
 
 ___
 
@@ -171,7 +171,7 @@ Optional filter for news.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L315)
+[generated-client/api/search-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L315)
 
 ___
 
@@ -185,7 +185,7 @@ Optional filter for series.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L308)
+[generated-client/api/search-api.ts:308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L308)
 
 ___
 
@@ -199,7 +199,7 @@ Optional filter for sports.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L329)
+[generated-client/api/search-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L329)
 
 ___
 
@@ -213,7 +213,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L259)
+[generated-client/api/search-api.ts:259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L259)
 
 ___
 
@@ -227,7 +227,7 @@ If specified, only results with the specified media types are returned. This all
 
 #### Defined in
 
-[generated-client/api/search-api.ts:287](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L287)
+[generated-client/api/search-api.ts:287](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L287)
 
 ___
 
@@ -241,7 +241,7 @@ If specified, only children of the parent are returned.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L294)
+[generated-client/api/search-api.ts:294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L294)
 
 ___
 
@@ -255,7 +255,7 @@ The search term to filter on.
 
 #### Defined in
 
-[generated-client/api/search-api.ts:245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L245)
+[generated-client/api/search-api.ts:245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L245)
 
 ___
 
@@ -269,7 +269,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/search-api.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L252)
+[generated-client/api/search-api.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L252)
 
 ___
 
@@ -283,4 +283,4 @@ Optional. Supply a user id to search within a user\&#39;s library or omit to sea
 
 #### Defined in
 
-[generated-client/api/search-api.ts:266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/search-api.ts#L266)
+[generated-client/api/search-api.ts:266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/search-api.ts#L266)

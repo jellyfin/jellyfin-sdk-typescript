@@ -28,4 +28,4 @@ Request body.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L3900)
+[generated-client/api/live-tv-api.ts:3900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/live-tv-api.ts#L3900)

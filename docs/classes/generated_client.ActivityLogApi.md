@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,7 +84,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -111,4 +111,4 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/activity-log-api.ts#L186)
+[generated-client/api/activity-log-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/activity-log-api.ts#L186)

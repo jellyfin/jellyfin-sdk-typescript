@@ -36,7 +36,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L27)
+[jellyfin.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L32)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L23)
+[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L28)
 
 ___
 
@@ -56,17 +56,17 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L24)
+[jellyfin.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L29)
 
 ___
 
 ### discovery
 
-• **discovery**: [`Discovery`](index.Discovery.md)
+• **discovery**: [`DiscoveryService`](index.discovery.DiscoveryService.md)
 
 #### Defined in
 
-[jellyfin.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L25)
+[jellyfin.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L30)
 
 ## Methods
 
@@ -92,4 +92,4 @@ An Api instance.
 
 #### Defined in
 
-[jellyfin.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/jellyfin.ts#L40)
+[jellyfin.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/jellyfin.ts#L45)

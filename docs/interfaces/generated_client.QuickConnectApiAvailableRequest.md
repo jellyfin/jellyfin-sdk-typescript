@@ -28,4 +28,4 @@ New MediaBrowser.Model.QuickConnect.QuickConnectState.
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/quick-connect-api.ts#L463)
+[generated-client/api/quick-connect-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/quick-connect-api.ts#L463)

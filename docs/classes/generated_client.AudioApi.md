@@ -53,7 +53,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -87,7 +87,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -114,7 +114,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/audio-api.ts#L3033)
+[generated-client/api/audio-api.ts:3033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/audio-api.ts#L3033)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3045](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/audio-api.ts#L3045)
+[generated-client/api/audio-api.ts:3045](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/audio-api.ts#L3045)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/audio-api.ts#L3057)
+[generated-client/api/audio-api.ts:3057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/audio-api.ts#L3057)
 
 ___
 
@@ -195,4 +195,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/audio-api.ts#L3069)
+[generated-client/api/audio-api.ts:3069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/audio-api.ts#L3069)

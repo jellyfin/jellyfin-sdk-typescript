@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/device-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/device-options.ts#L28)
+[generated-client/models/device-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/device-options.ts#L28)

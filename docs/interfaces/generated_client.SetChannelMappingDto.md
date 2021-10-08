@@ -30,7 +30,7 @@ Gets or sets the provider channel id.
 
 #### Defined in
 
-[generated-client/models/set-channel-mapping-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/set-channel-mapping-dto.ts#L40)
+[generated-client/models/set-channel-mapping-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/set-channel-mapping-dto.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the provider id.
 
 #### Defined in
 
-[generated-client/models/set-channel-mapping-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/set-channel-mapping-dto.ts#L28)
+[generated-client/models/set-channel-mapping-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/set-channel-mapping-dto.ts#L28)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the tuner channel id.
 
 #### Defined in
 
-[generated-client/models/set-channel-mapping-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/models/set-channel-mapping-dto.ts#L34)
+[generated-client/models/set-channel-mapping-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/set-channel-mapping-dto.ts#L34)

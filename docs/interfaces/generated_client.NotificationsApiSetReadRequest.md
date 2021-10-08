@@ -26,4 +26,4 @@ Request parameters for setRead operation in NotificationsApi.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/notifications-api.ts#L511)
+[generated-client/api/notifications-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/notifications-api.ts#L511)

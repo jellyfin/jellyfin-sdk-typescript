@@ -29,7 +29,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:785](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/user-library-api.ts#L785)
+[generated-client/api/user-library-api.ts:785](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L785)
 
 ___
 
@@ -43,4 +43,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:778](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/user-library-api.ts#L778)
+[generated-client/api/user-library-api.ts:778](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L778)

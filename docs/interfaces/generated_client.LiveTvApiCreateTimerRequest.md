@@ -28,4 +28,4 @@ New timer info.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3326](https://github.com/thornbill/jellyfin-sdk-typescript/blob/029620a/src/generated-client/api/live-tv-api.ts#L3326)
+[generated-client/api/live-tv-api.ts:3326](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/live-tv-api.ts#L3326)
