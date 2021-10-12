@@ -15,11 +15,11 @@ import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 describe('Authentication', () => {
 	it('should return the correct header value without token', () => {
 		const header = getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE);
-		expect(header).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token=""');
+		expect(header).toBe('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token=""');
 	});
 
 	it('should return the correct header value with token', () => {
 		const header = getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE, 'TESTTOKEN');
-		expect(header).toEqual('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token="TESTTOKEN"');
+		expect(header).toBe('MediaBrowser Client="sdk-test-client", Device="device-name", DeviceId="device-id", Version="0.0.0", Token="TESTTOKEN"');
 	});
 });

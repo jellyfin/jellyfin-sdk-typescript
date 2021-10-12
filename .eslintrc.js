@@ -76,7 +76,7 @@ module.exports = {
 			],
 			rules: {
 				'jest/consistent-test-it': [ 'error' ],
-				'jest/lowercase-name': [ 'error', { 'ignoreTopLevelDescribe': true } ],
+				'jest/prefer-lowercase-title': [ 'error', { 'ignoreTopLevelDescribe': true } ],
 				'jest/require-top-level-describe': [ 'error' ]
 			}
 		}
