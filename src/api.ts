@@ -5,9 +5,15 @@
  */
 import globalInstance, { AxiosInstance, AxiosResponse } from 'axios';
 
-import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
+import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, ImageType, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
+import { ImageRequestParameters } from './models/image-request-parameters';
 import { getAuthorizationHeader } from './utils';
+
+// HACK: Axios does not export types for axios/lib. This is a workaround.
+type BuildFullPathFunction = (baseURL?: string, requestedURL?: string) => string;
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const buildFullPath: BuildFullPathFunction = require('axios/lib/core/buildFullPath');
 
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
@@ -43,7 +49,8 @@ export class Api {
 
 	/**
 	 * Convenience method for authenticating a user by name and updating the internal state.
-	 * @param authenticateUserByNameParam The authentication parameters object.
+	 * @param username The username.
+	 * @param password The user password if required.
 	 */
 	authenticateUserByName(username: string, password?: string): Promise<AxiosResponse<AuthenticationResult>> {
 		return this.userApi.authenticateUserByName(
@@ -66,6 +73,24 @@ export class Api {
 			this.accessToken = '';
 			return response;
 		});
+	}
+
+	/**
+	 * Get an item image URL.
+	 * @param itemId The Item ID.
+	 * @param imageType An optional Image Type (Primary by default).
+	 * @param params Additional request parameters.
+	 * @returns The image URL.
+	 */
+	getItemImageUrl(itemId: string, imageType = ImageType.Primary, params: ImageRequestParameters = {}): string | undefined {
+		// TODO: We could probably use ImageApiAxiosParamCreator to make this more robust
+		const uri = this.axiosInstance.getUri({
+			url: `/Items/${itemId}/Images/${imageType}`,
+			params
+		});
+		// NOTE: This behavior will probably be the default in axios in the future
+		// https://github.com/axios/axios/issues/2468
+		return buildFullPath(this.basePath, uri);
 	}
 
 	get authorizationHeader(): string {

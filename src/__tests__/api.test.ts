@@ -9,10 +9,13 @@ import { mocked } from 'ts-jest/utils';
 
 import { Api, AUTHORIZATION_HEADER } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
-import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from '../generated-client';
+import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, ImageType, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from '../generated-client';
 import { getAuthorizationHeader } from '../utils';
 
-jest.mock('axios');
+jest.mock('axios', () => ({
+	...jest.requireActual('axios'),
+	request: jest.fn()
+}));
 const mockAxios = mocked(axios, true);
 
 const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
@@ -68,6 +71,13 @@ describe('Api', () => {
 	it('should return the correct authorization header value', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.authorizationHeader).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
+	});
+
+	it('should return an item image url', () => {
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
+		expect(api.getItemImageUrl('TEST')).toBe('https://example.com/Items/TEST/Images/Primary');
+		expect(api.getItemImageUrl('TEST', ImageType.Backdrop, { fillWidth: 100, fillHeight: 100 }))
+			.toBe('https://example.com/Items/TEST/Images/Backdrop?fillWidth=100&fillHeight=100');
 	});
 
 	it('should return api instances', () => {
