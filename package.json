@@ -31,7 +31,6 @@
     "@tsconfig/recommended": "^1.0.1",
     "@types/jest": "^27.0.1",
     "@types/node": "^16.9.2",
-    "@types/url-parse": "^1.4.4",
     "@typescript-eslint/eslint-plugin": "^4.31.1",
     "@typescript-eslint/parser": "^4.31.1",
     "eslint": "^7.32.0",
@@ -47,6 +46,6 @@
   "dependencies": {
     "axios": "^0.22.0",
     "compare-versions": "^3.6.0",
-    "url-parse": "^1.5.3"
+    "normalize-url": "^7.0.2"
   }
 }
