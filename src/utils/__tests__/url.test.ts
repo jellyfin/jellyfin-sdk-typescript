@@ -4,8 +4,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import Url from 'url-parse';
-
 import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl } from '..';
 
 /**
@@ -16,7 +14,7 @@ import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, c
 describe('Url', () => {
 	describe('copyUrl()', () => {
 		it('should return a copy', () => {
-			const original = new Url('https://example.com');
+			const original = new URL('https://example.com');
 			const copy = copyUrl(original);
 
 			expect(copy).not.toBe(original);
@@ -43,7 +41,7 @@ describe('Url', () => {
 	describe('parseUrl()', () => {
 		it('should parse a url string', () => {
 			const url = parseUrl('https://example.com');
-			expect(url).toBeInstanceOf(Url);
+			expect(url).toBeInstanceOf(URL);
 			expect(url.toString()).toBe('https://example.com/');
 		});
 

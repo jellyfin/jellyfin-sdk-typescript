@@ -25,6 +25,12 @@ or
 yarn add @thornbill/jellyfin-sdk
 ```
 
+### React Native
+
+The generated Axios client used in this library depends on `URL` and `URLSearchParams` to be available on the global scope.
+React Native only includes incomplete implementations for these classes, so a polyfill is required.
+[React Native URL Polyfill](https://github.com/charpeni/react-native-url-polyfill) should be a good solution fo this.
+
 ## Usage
 
 ```js

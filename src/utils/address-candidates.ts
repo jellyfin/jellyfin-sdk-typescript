@@ -4,8 +4,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import Url from 'url-parse';
-
 import { HTTPS_PORT, HTTP_PORT, HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort } from './url';
 
 /** The default http port for Jellyfin servers. */
@@ -19,7 +17,7 @@ export const JF_HTTPS_PORT = 8920;
  * @param url The url to evaluate.
  * @returns The score.
  */
-function getScore(url: Url): number {
+function getScore(url: URL): number {
 	let score = 0;
 
 	// Prefer secure connections
@@ -52,36 +50,32 @@ function getScore(url: Url): number {
  * @returns A list of potential server addresses.
  */
 export function getAddressCandidates(input: string): Array<string> {
-	const candidates: Array<Url> = [];
+	const candidates: Array<URL> = [];
 
 	try {
 		const url = parseUrl(input);
 		candidates.push(url);
 
 		if (url.protocol === HTTP_PROTOCOL) {
-			candidates.push(
-				copyUrl(url)
-					.set('protocol', HTTPS_PROTOCOL)
-			);
+			const copy = copyUrl(url);
+			copy.protocol = HTTPS_PROTOCOL;
+			candidates.push(copy);
 		}
 
 		candidates
 			.filter(val => !val.port || val.port === getDefaultPort(val.protocol).toString())
 			.forEach(val => {
 				if (val.protocol === HTTP_PROTOCOL) {
-					candidates.push(
-						copyUrl(val)
-							.set('port', JF_HTTP_PORT.toString())
-					);
+					const copy = copyUrl(val);
+					copy.port = JF_HTTP_PORT.toString();
+					candidates.push(copy);
 				} else if (val.protocol === HTTPS_PROTOCOL) {
-					candidates.push(
-						copyUrl(val)
-							.set('port', JF_HTTP_PORT.toString())
-					);
-					candidates.push(
-						copyUrl(val)
-							.set('port', JF_HTTPS_PORT.toString())
-					);
+					let copy = copyUrl(val);
+					copy.port = JF_HTTP_PORT.toString();
+					candidates.push(copy);
+					copy = copyUrl(val);
+					copy.port = JF_HTTPS_PORT.toString();
+					candidates.push(copy);
 				}
 			});
 
