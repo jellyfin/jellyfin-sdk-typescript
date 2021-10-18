@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,7 +89,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L468)
+[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L468)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L479)
+[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L479)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L491)
+[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L491)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L503)
+[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L503)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L515)
+[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L515)
 
 ___
 
@@ -249,4 +249,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/configuration-api.ts#L527)
+[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L527)

@@ -25,7 +25,7 @@ Enum VideoType.
 
 #### Defined in
 
-[generated-client/models/video-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/video-type.ts#L27)
+[generated-client/models/video-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/video-type.ts#L27)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/video-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/video-type.ts#L26)
+[generated-client/models/video-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/video-type.ts#L26)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/video-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/video-type.ts#L25)
+[generated-client/models/video-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/video-type.ts#L25)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/video-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/video-type.ts#L24)
+[generated-client/models/video-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/video-type.ts#L24)

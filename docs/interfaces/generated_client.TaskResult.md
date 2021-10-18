@@ -35,7 +35,7 @@ Gets or sets the end time UTC.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L35)
+[generated-client/models/task-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L35)
 
 ___
 
@@ -49,7 +49,7 @@ Gets or sets the error message.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L65)
+[generated-client/models/task-result.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L65)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L59)
+[generated-client/models/task-result.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L59)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets the key.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L53)
+[generated-client/models/task-result.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L53)
 
 ___
 
@@ -91,7 +91,7 @@ Gets or sets the long error message.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L71)
+[generated-client/models/task-result.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L71)
 
 ___
 
@@ -105,7 +105,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L47)
+[generated-client/models/task-result.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L47)
 
 ___
 
@@ -119,7 +119,7 @@ Gets or sets the start time UTC.
 
 #### Defined in
 
-[generated-client/models/task-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L29)
+[generated-client/models/task-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L29)
 
 ___
 
@@ -131,4 +131,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/task-result.ts#L41)
+[generated-client/models/task-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-result.ts#L41)

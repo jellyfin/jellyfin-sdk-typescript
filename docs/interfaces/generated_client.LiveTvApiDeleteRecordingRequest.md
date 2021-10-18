@@ -28,4 +28,4 @@ Recording id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3354](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/live-tv-api.ts#L3354)
+[generated-client/api/live-tv-api.ts:3354](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L3354)

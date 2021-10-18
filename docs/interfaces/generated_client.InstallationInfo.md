@@ -34,7 +34,7 @@ Gets or sets the changelog for this version.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L48)
+[generated-client/models/installation-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L48)
 
 ___
 
@@ -48,7 +48,7 @@ Gets or sets a checksum for the binary.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L60)
+[generated-client/models/installation-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L60)
 
 ___
 
@@ -62,7 +62,7 @@ Gets or sets the Id.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L30)
+[generated-client/models/installation-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L30)
 
 ___
 
@@ -76,7 +76,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L36)
+[generated-client/models/installation-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L36)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L66)
+[generated-client/models/installation-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L66)
 
 ___
 
@@ -102,7 +102,7 @@ Gets or sets the source URL.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L54)
+[generated-client/models/installation-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L54)
 
 ___
 
@@ -114,4 +114,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/installation-info.ts#L42)
+[generated-client/models/installation-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/installation-info.ts#L42)

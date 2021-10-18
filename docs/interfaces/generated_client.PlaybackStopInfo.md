@@ -38,7 +38,7 @@ Gets or sets a value indicating whether this MediaBrowser.Model.Session.Playback
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L72)
+[generated-client/models/playback-stop-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L72)
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L30)
+[generated-client/models/playback-stop-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L30)
 
 ___
 
@@ -64,7 +64,7 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L36)
+[generated-client/models/playback-stop-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L36)
 
 ___
 
@@ -78,7 +78,7 @@ Gets or sets the live stream identifier.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L60)
+[generated-client/models/playback-stop-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L60)
 
 ___
 
@@ -92,7 +92,7 @@ Gets or sets the media version identifier.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L48)
+[generated-client/models/playback-stop-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L48)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L78)
+[generated-client/models/playback-stop-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L78)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L90)
+[generated-client/models/playback-stop-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L90)
 
 ___
 
@@ -130,7 +130,7 @@ Gets or sets the play session identifier.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L66)
+[generated-client/models/playback-stop-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L66)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L84)
+[generated-client/models/playback-stop-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L84)
 
 ___
 
@@ -156,7 +156,7 @@ Gets or sets the position ticks.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L54)
+[generated-client/models/playback-stop-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L54)
 
 ___
 
@@ -170,4 +170,4 @@ Gets or sets the session id.
 
 #### Defined in
 
-[generated-client/models/playback-stop-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/playback-stop-info.ts#L42)
+[generated-client/models/playback-stop-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-stop-info.ts#L42)

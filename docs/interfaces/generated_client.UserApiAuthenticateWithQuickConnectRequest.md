@@ -28,4 +28,4 @@ The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-api.ts#L1105)
+[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1105)

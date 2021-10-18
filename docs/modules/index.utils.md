@@ -38,7 +38,7 @@ The default port for the https protocol.
 
 #### Defined in
 
-[utils/url.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L19)
+[utils/url.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L19)
 
 ___
 
@@ -50,7 +50,7 @@ The https protocol string.
 
 #### Defined in
 
-[utils/url.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L13)
+[utils/url.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L13)
 
 ___
 
@@ -62,7 +62,7 @@ The default port for the http protocol.
 
 #### Defined in
 
-[utils/url.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L16)
+[utils/url.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L16)
 
 ___
 
@@ -74,7 +74,7 @@ The http protocol string.
 
 #### Defined in
 
-[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L10)
+[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L10)
 
 ___
 
@@ -86,7 +86,7 @@ The default https port for Jellyfin servers.
 
 #### Defined in
 
-[utils/address-candidates.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/address-candidates.ts#L15)
+[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/address-candidates.ts#L13)
 
 ___
 
@@ -98,31 +98,31 @@ The default http port for Jellyfin servers.
 
 #### Defined in
 
-[utils/address-candidates.ts:12](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/address-candidates.ts#L12)
+[utils/address-candidates.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/address-candidates.ts#L10)
 
 ## Functions
 
 ### copyUrl
 
-▸ **copyUrl**(`original`): `Url`
+▸ **copyUrl**(`original`): `URL`
 
-Copies a Url instance.
+Copies a URL instance.
 
 #### Parameters
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `original` | `URLParse` | The original Url. |
+| `original` | `URL` | The original URL. |
 
 #### Returns
 
-`Url`
+`URL`
 
-A copy of the original Url.
+A copy of the original URL.
 
 #### Defined in
 
-[utils/url.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L26)
+[utils/url.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L26)
 
 ___
 
@@ -147,7 +147,7 @@ A list of potential server addresses.
 
 #### Defined in
 
-[utils/address-candidates.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/address-candidates.ts#L54)
+[utils/address-candidates.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/address-candidates.ts#L52)
 
 ___
 
@@ -171,7 +171,7 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/authentication.ts#L11)
+[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/authentication.ts#L11)
 
 ___
 
@@ -198,7 +198,7 @@ A detected device profile
 
 #### Defined in
 
-[utils/browser-profiles.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/browser-profiles.ts#L56)
+[utils/browser-profiles.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/browser-profiles.ts#L56)
 
 ___
 
@@ -222,13 +222,13 @@ The default port number of the protocol.
 
 #### Defined in
 
-[utils/url.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L35)
+[utils/url.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L35)
 
 ___
 
 ### parseUrl
 
-▸ **parseUrl**(`input`): `Url`
+▸ **parseUrl**(`input`): `URL`
 
 Parses a string to a Url object.
 
@@ -240,10 +240,10 @@ Parses a string to a Url object.
 
 #### Returns
 
-`Url`
+`URL`
 
 The Url object.
 
 #### Defined in
 
-[utils/url.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/url.ts#L46)
+[utils/url.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/url.ts#L46)

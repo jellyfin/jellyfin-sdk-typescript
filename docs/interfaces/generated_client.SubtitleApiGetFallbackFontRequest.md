@@ -28,4 +28,4 @@ The name of the fallback font file to get.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/subtitle-api.ts#L889)
+[generated-client/api/subtitle-api.ts:889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L889)

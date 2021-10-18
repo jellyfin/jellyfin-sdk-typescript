@@ -30,7 +30,7 @@ Client.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/display-preferences-api.ts#L239)
+[generated-client/api/display-preferences-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/display-preferences-api.ts#L239)
 
 ___
 
@@ -44,7 +44,7 @@ Display preferences id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:225](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/display-preferences-api.ts#L225)
+[generated-client/api/display-preferences-api.ts:225](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/display-preferences-api.ts#L225)
 
 ___
 
@@ -58,4 +58,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/display-preferences-api.ts#L232)
+[generated-client/api/display-preferences-api.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/display-preferences-api.ts#L232)

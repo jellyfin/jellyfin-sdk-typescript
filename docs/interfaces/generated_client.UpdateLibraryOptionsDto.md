@@ -29,7 +29,7 @@ Gets or sets the library item id.
 
 #### Defined in
 
-[generated-client/models/update-library-options-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-library-options-dto.ts#L29)
+[generated-client/models/update-library-options-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/update-library-options-dto.ts#L29)
 
 ___
 
@@ -41,4 +41,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/update-library-options-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/update-library-options-dto.ts#L35)
+[generated-client/models/update-library-options-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/update-library-options-dto.ts#L35)

@@ -28,4 +28,4 @@ Gets or sets the quick connect token.
 
 #### Defined in
 
-[generated-client/models/quick-connect-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/quick-connect-dto.ts#L28)
+[generated-client/models/quick-connect-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/quick-connect-dto.ts#L28)

@@ -38,7 +38,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:890](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L890)
+[generated-client/api/user-library-api.ts:890](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L890)
 
 ___
 
@@ -52,7 +52,7 @@ Optional. include image information in output.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:876](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L876)
+[generated-client/api/user-library-api.ts:876](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L876)
 
 ___
 
@@ -66,7 +66,7 @@ Optional. include user data.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:897](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L897)
+[generated-client/api/user-library-api.ts:897](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L897)
 
 ___
 
@@ -80,7 +80,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L855)
+[generated-client/api/user-library-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L855)
 
 ___
 
@@ -94,7 +94,7 @@ Whether or not to group items into a parent container.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:911](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L911)
+[generated-client/api/user-library-api.ts:911](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L911)
 
 ___
 
@@ -108,7 +108,7 @@ Optional. the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L883)
+[generated-client/api/user-library-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L883)
 
 ___
 
@@ -122,7 +122,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:862](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L862)
+[generated-client/api/user-library-api.ts:862](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L862)
 
 ___
 
@@ -136,7 +136,7 @@ Filter by items that are played, or not.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:869](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L869)
+[generated-client/api/user-library-api.ts:869](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L869)
 
 ___
 
@@ -150,7 +150,7 @@ Return item limit.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:904](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L904)
+[generated-client/api/user-library-api.ts:904](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L904)
 
 ___
 
@@ -164,7 +164,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:848](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L848)
+[generated-client/api/user-library-api.ts:848](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L848)
 
 ___
 
@@ -178,4 +178,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:841](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/user-library-api.ts#L841)
+[generated-client/api/user-library-api.ts:841](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L841)

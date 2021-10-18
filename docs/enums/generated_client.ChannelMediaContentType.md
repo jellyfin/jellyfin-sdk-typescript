@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L24)
+[generated-client/models/channel-media-content-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L24)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L28)
+[generated-client/models/channel-media-content-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L28)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L27)
+[generated-client/models/channel-media-content-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L27)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L30)
+[generated-client/models/channel-media-content-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L30)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L25)
+[generated-client/models/channel-media-content-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L25)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L29)
+[generated-client/models/channel-media-content-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L29)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L26)
+[generated-client/models/channel-media-content-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L26)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/channel-media-content-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/channel-media-content-type.ts#L31)
+[generated-client/models/channel-media-content-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-media-content-type.ts#L31)

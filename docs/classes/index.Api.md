@@ -88,6 +88,7 @@ Class representing the Jellyfin API.
 ### Methods
 
 - [authenticateUserByName](index.Api.md#authenticateuserbyname)
+- [getItemImageUrl](index.Api.md#getitemimageurl)
 - [logout](index.Api.md#logout)
 
 ## Constructors
@@ -108,7 +109,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L23)
+[api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L29)
 
 ## Properties
 
@@ -118,7 +119,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:20](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L20)
+[api.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L26)
 
 ___
 
@@ -128,7 +129,7 @@ ___
 
 #### Defined in
 
-[api.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L21)
+[api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L27)
 
 ___
 
@@ -138,7 +139,7 @@ ___
 
 #### Defined in
 
-[api.ts:17](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L17)
+[api.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L23)
 
 ___
 
@@ -148,7 +149,7 @@ ___
 
 #### Defined in
 
-[api.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L18)
+[api.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L24)
 
 ___
 
@@ -158,7 +159,7 @@ ___
 
 #### Defined in
 
-[api.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L19)
+[api.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L25)
 
 ## Accessors
 
@@ -172,7 +173,7 @@ ___
 
 #### Defined in
 
-[api.ts:75](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L75)
+[api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L100)
 
 ___
 
@@ -186,7 +187,7 @@ ___
 
 #### Defined in
 
-[api.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L79)
+[api.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L104)
 
 ___
 
@@ -200,7 +201,7 @@ ___
 
 #### Defined in
 
-[api.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L83)
+[api.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L108)
 
 ___
 
@@ -214,7 +215,7 @@ ___
 
 #### Defined in
 
-[api.ts:87](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L87)
+[api.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L112)
 
 ___
 
@@ -228,7 +229,7 @@ ___
 
 #### Defined in
 
-[api.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L71)
+[api.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L96)
 
 ___
 
@@ -242,7 +243,7 @@ ___
 
 #### Defined in
 
-[api.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L91)
+[api.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L116)
 
 ___
 
@@ -256,7 +257,7 @@ ___
 
 #### Defined in
 
-[api.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L95)
+[api.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L120)
 
 ___
 
@@ -270,7 +271,7 @@ ___
 
 #### Defined in
 
-[api.ts:99](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L99)
+[api.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L124)
 
 ___
 
@@ -284,7 +285,7 @@ ___
 
 #### Defined in
 
-[api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L37)
+[api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L43)
 
 ___
 
@@ -298,7 +299,7 @@ ___
 
 #### Defined in
 
-[api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L103)
+[api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L128)
 
 ___
 
@@ -312,7 +313,7 @@ ___
 
 #### Defined in
 
-[api.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L107)
+[api.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L132)
 
 ___
 
@@ -326,7 +327,7 @@ ___
 
 #### Defined in
 
-[api.ts:111](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L111)
+[api.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L136)
 
 ___
 
@@ -340,7 +341,7 @@ ___
 
 #### Defined in
 
-[api.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L115)
+[api.ts:140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L140)
 
 ___
 
@@ -354,7 +355,7 @@ ___
 
 #### Defined in
 
-[api.ts:119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L119)
+[api.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L144)
 
 ___
 
@@ -368,7 +369,7 @@ ___
 
 #### Defined in
 
-[api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L123)
+[api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L148)
 
 ___
 
@@ -382,7 +383,7 @@ ___
 
 #### Defined in
 
-[api.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L127)
+[api.ts:152](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L152)
 
 ___
 
@@ -396,7 +397,7 @@ ___
 
 #### Defined in
 
-[api.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L131)
+[api.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L156)
 
 ___
 
@@ -410,7 +411,7 @@ ___
 
 #### Defined in
 
-[api.ts:135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L135)
+[api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L160)
 
 ___
 
@@ -424,7 +425,7 @@ ___
 
 #### Defined in
 
-[api.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L139)
+[api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L164)
 
 ___
 
@@ -438,7 +439,7 @@ ___
 
 #### Defined in
 
-[api.ts:143](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L143)
+[api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L168)
 
 ___
 
@@ -452,7 +453,7 @@ ___
 
 #### Defined in
 
-[api.ts:147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L147)
+[api.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L172)
 
 ___
 
@@ -466,7 +467,7 @@ ___
 
 #### Defined in
 
-[api.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L151)
+[api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L176)
 
 ___
 
@@ -480,7 +481,7 @@ ___
 
 #### Defined in
 
-[api.ts:155](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L155)
+[api.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L180)
 
 ___
 
@@ -494,7 +495,7 @@ ___
 
 #### Defined in
 
-[api.ts:159](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L159)
+[api.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L184)
 
 ___
 
@@ -508,7 +509,7 @@ ___
 
 #### Defined in
 
-[api.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L163)
+[api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L188)
 
 ___
 
@@ -522,7 +523,7 @@ ___
 
 #### Defined in
 
-[api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L167)
+[api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L192)
 
 ___
 
@@ -536,7 +537,7 @@ ___
 
 #### Defined in
 
-[api.ts:171](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L171)
+[api.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L196)
 
 ___
 
@@ -550,7 +551,7 @@ ___
 
 #### Defined in
 
-[api.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L175)
+[api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L200)
 
 ___
 
@@ -564,7 +565,7 @@ ___
 
 #### Defined in
 
-[api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L179)
+[api.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L204)
 
 ___
 
@@ -578,7 +579,7 @@ ___
 
 #### Defined in
 
-[api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L183)
+[api.ts:208](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L208)
 
 ___
 
@@ -592,7 +593,7 @@ ___
 
 #### Defined in
 
-[api.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L187)
+[api.ts:212](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L212)
 
 ___
 
@@ -606,7 +607,7 @@ ___
 
 #### Defined in
 
-[api.ts:191](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L191)
+[api.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L216)
 
 ___
 
@@ -620,7 +621,7 @@ ___
 
 #### Defined in
 
-[api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L195)
+[api.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L220)
 
 ___
 
@@ -634,7 +635,7 @@ ___
 
 #### Defined in
 
-[api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L199)
+[api.ts:224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L224)
 
 ___
 
@@ -648,7 +649,7 @@ ___
 
 #### Defined in
 
-[api.ts:203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L203)
+[api.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L228)
 
 ___
 
@@ -662,7 +663,7 @@ ___
 
 #### Defined in
 
-[api.ts:207](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L207)
+[api.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L232)
 
 ___
 
@@ -676,7 +677,7 @@ ___
 
 #### Defined in
 
-[api.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L211)
+[api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L236)
 
 ___
 
@@ -690,7 +691,7 @@ ___
 
 #### Defined in
 
-[api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L215)
+[api.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L240)
 
 ___
 
@@ -704,7 +705,7 @@ ___
 
 #### Defined in
 
-[api.ts:219](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L219)
+[api.ts:244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L244)
 
 ___
 
@@ -718,7 +719,7 @@ ___
 
 #### Defined in
 
-[api.ts:223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L223)
+[api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L248)
 
 ___
 
@@ -732,7 +733,7 @@ ___
 
 #### Defined in
 
-[api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L227)
+[api.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L252)
 
 ___
 
@@ -746,7 +747,7 @@ ___
 
 #### Defined in
 
-[api.ts:231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L231)
+[api.ts:256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L256)
 
 ___
 
@@ -760,7 +761,7 @@ ___
 
 #### Defined in
 
-[api.ts:235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L235)
+[api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L260)
 
 ___
 
@@ -774,7 +775,7 @@ ___
 
 #### Defined in
 
-[api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L239)
+[api.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L264)
 
 ___
 
@@ -788,7 +789,7 @@ ___
 
 #### Defined in
 
-[api.ts:243](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L243)
+[api.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L268)
 
 ___
 
@@ -802,7 +803,7 @@ ___
 
 #### Defined in
 
-[api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L247)
+[api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L272)
 
 ___
 
@@ -816,7 +817,7 @@ ___
 
 #### Defined in
 
-[api.ts:251](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L251)
+[api.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L276)
 
 ___
 
@@ -830,7 +831,7 @@ ___
 
 #### Defined in
 
-[api.ts:255](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L255)
+[api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L280)
 
 ___
 
@@ -844,7 +845,7 @@ ___
 
 #### Defined in
 
-[api.ts:259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L259)
+[api.ts:284](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L284)
 
 ___
 
@@ -858,7 +859,7 @@ ___
 
 #### Defined in
 
-[api.ts:263](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L263)
+[api.ts:288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L288)
 
 ___
 
@@ -872,7 +873,7 @@ ___
 
 #### Defined in
 
-[api.ts:267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L267)
+[api.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L292)
 
 ___
 
@@ -886,7 +887,7 @@ ___
 
 #### Defined in
 
-[api.ts:271](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L271)
+[api.ts:296](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L296)
 
 ___
 
@@ -900,7 +901,7 @@ ___
 
 #### Defined in
 
-[api.ts:275](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L275)
+[api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L300)
 
 ___
 
@@ -914,7 +915,7 @@ ___
 
 #### Defined in
 
-[api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L279)
+[api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L304)
 
 ___
 
@@ -928,7 +929,7 @@ ___
 
 #### Defined in
 
-[api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L283)
+[api.ts:308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L308)
 
 ___
 
@@ -942,7 +943,7 @@ ___
 
 #### Defined in
 
-[api.ts:287](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L287)
+[api.ts:312](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L312)
 
 ___
 
@@ -956,7 +957,7 @@ ___
 
 #### Defined in
 
-[api.ts:291](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L291)
+[api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L316)
 
 ___
 
@@ -970,7 +971,7 @@ ___
 
 #### Defined in
 
-[api.ts:295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L295)
+[api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L320)
 
 ___
 
@@ -984,7 +985,7 @@ ___
 
 #### Defined in
 
-[api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L299)
+[api.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L324)
 
 ___
 
@@ -998,7 +999,7 @@ ___
 
 #### Defined in
 
-[api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L303)
+[api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L328)
 
 ___
 
@@ -1012,7 +1013,7 @@ ___
 
 #### Defined in
 
-[api.ts:307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L307)
+[api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L332)
 
 ___
 
@@ -1026,7 +1027,7 @@ ___
 
 #### Defined in
 
-[api.ts:311](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L311)
+[api.ts:336](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L336)
 
 ## Methods
 
@@ -1038,10 +1039,10 @@ Convenience method for authenticating a user by name and updating the internal s
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `username` | `string` |
-| `password?` | `string` |
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `username` | `string` | The username. |
+| `password?` | `string` | The user password if required. |
 
 #### Returns
 
@@ -1049,7 +1050,33 @@ Convenience method for authenticating a user by name and updating the internal s
 
 #### Defined in
 
-[api.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L48)
+[api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L55)
+
+___
+
+### getItemImageUrl
+
+▸ **getItemImageUrl**(`itemId`, `imageType?`, `params?`): `undefined` \| `string`
+
+Get an item image URL.
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `itemId` | `string` | The Item ID. |
+| `imageType` | [`ImageType`](../enums/generated_client.ImageType.md) | An optional Image Type (Primary by default). |
+| `params` | `ImageRequestParameters` | Additional request parameters. |
+
+#### Returns
+
+`undefined` \| `string`
+
+The image URL.
+
+#### Defined in
+
+[api.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L85)
 
 ___
 
@@ -1065,4 +1092,4 @@ Convenience method for logging out and updating the internal state.
 
 #### Defined in
 
-[api.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/api.ts#L64)
+[api.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L71)

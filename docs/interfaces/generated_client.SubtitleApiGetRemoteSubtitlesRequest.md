@@ -28,4 +28,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/subtitle-api.ts#L903)
+[generated-client/api/subtitle-api.ts:903](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L903)

@@ -29,7 +29,7 @@ Device Options.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/devices-api.ts#L459)
+[generated-client/api/devices-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L459)
 
 ___
 
@@ -43,4 +43,4 @@ Device Id.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/devices-api.ts#L452)
+[generated-client/api/devices-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L452)

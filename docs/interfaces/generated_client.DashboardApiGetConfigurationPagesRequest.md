@@ -29,7 +29,7 @@ Whether to enable in the main menu.
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/dashboard-api.ts#L188)
+[generated-client/api/dashboard-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dashboard-api.ts#L188)
 
 ___
 
@@ -43,4 +43,4 @@ The Jellyfin.Api.Models.ConfigurationPageInfo.
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/dashboard-api.ts#L195)
+[generated-client/api/dashboard-api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dashboard-api.ts#L195)

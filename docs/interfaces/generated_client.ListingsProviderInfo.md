@@ -41,7 +41,7 @@
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L113)
+[generated-client/models/listings-provider-info.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L113)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L65)
+[generated-client/models/listings-provider-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L65)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L83)
+[generated-client/models/listings-provider-info.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L83)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L77)
+[generated-client/models/listings-provider-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L77)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L29)
+[generated-client/models/listings-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L29)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L101)
+[generated-client/models/listings-provider-info.ts:101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L101)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L53)
+[generated-client/models/listings-provider-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L53)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L107)
+[generated-client/models/listings-provider-info.ts:107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L107)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L119)
+[generated-client/models/listings-provider-info.ts:119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L119)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L89)
+[generated-client/models/listings-provider-info.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L89)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L47)
+[generated-client/models/listings-provider-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L47)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L71)
+[generated-client/models/listings-provider-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L71)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L125)
+[generated-client/models/listings-provider-info.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L125)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L95)
+[generated-client/models/listings-provider-info.ts:95](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L95)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L35)
+[generated-client/models/listings-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L35)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L131)
+[generated-client/models/listings-provider-info.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L131)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L41)
+[generated-client/models/listings-provider-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L41)
 
 ___
 
@@ -245,4 +245,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/listings-provider-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/listings-provider-info.ts#L59)
+[generated-client/models/listings-provider-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/listings-provider-info.ts#L59)

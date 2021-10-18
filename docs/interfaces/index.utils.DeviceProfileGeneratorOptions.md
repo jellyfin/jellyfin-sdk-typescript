@@ -26,4 +26,4 @@ Deliver SSA subtitles externally instead of requiring a burn in
 
 #### Defined in
 
-[utils/browser-profiles.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/utils/browser-profiles.ts#L18)
+[utils/browser-profiles.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/utils/browser-profiles.ts#L18)

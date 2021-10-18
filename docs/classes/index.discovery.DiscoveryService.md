@@ -38,7 +38,7 @@ Class used for discovering recommended servers.
 
 #### Defined in
 
-[discovery/discovery-service.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L18)
+[discovery/discovery-service.ts:18](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L18)
 
 ## Properties
 
@@ -48,7 +48,7 @@ Class used for discovering recommended servers.
 
 #### Defined in
 
-[discovery/discovery-service.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L15)
+[discovery/discovery-service.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L15)
 
 ___
 
@@ -58,7 +58,7 @@ ___
 
 #### Defined in
 
-[discovery/discovery-service.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L16)
+[discovery/discovery-service.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L16)
 
 ## Methods
 
@@ -82,7 +82,7 @@ The best scoring recommended server.
 
 #### Defined in
 
-[discovery/discovery-service.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L28)
+[discovery/discovery-service.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L28)
 
 ___
 
@@ -107,7 +107,7 @@ A list of potential server addresses.
 
 #### Defined in
 
-[discovery/discovery-service.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L49)
+[discovery/discovery-service.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L49)
 
 ___
 
@@ -133,7 +133,7 @@ A list of RecommendedServerInfo from the address candidates.
 
 #### Defined in
 
-[discovery/discovery-service.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L74)
+[discovery/discovery-service.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L74)
 
 ___
 
@@ -159,4 +159,4 @@ A list of RecommendedServerInfo from the possible server addresses.
 
 #### Defined in
 
-[discovery/discovery-service.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/discovery-service.ts#L60)
+[discovery/discovery-service.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/discovery-service.ts#L60)

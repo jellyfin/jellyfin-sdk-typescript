@@ -35,7 +35,7 @@ Class to discover and evaluate potential servers.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/recommended-server-discovery.ts#L82)
+[discovery/recommended-server-discovery.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L82)
 
 ## Properties
 
@@ -45,7 +45,7 @@ Class to discover and evaluate potential servers.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/recommended-server-discovery.ts#L80)
+[discovery/recommended-server-discovery.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L80)
 
 ## Methods
 
@@ -70,7 +70,7 @@ The RecommendedServerInfo for each address.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/recommended-server-discovery.ts#L114)
+[discovery/recommended-server-discovery.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L114)
 
 ___
 
@@ -94,4 +94,4 @@ The resulting RecommendedServerInfo.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/discovery/recommended-server-discovery.ts#L91)
+[discovery/recommended-server-discovery.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L91)

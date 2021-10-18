@@ -30,7 +30,7 @@ Gets or sets the context.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/image-by-name-info.ts#L40)
+[generated-client/models/image-by-name-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-by-name-info.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the length of the file.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/image-by-name-info.ts#L46)
+[generated-client/models/image-by-name-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-by-name-info.ts#L46)
 
 ___
 
@@ -58,7 +58,7 @@ Gets or sets the format.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/image-by-name-info.ts#L52)
+[generated-client/models/image-by-name-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-by-name-info.ts#L52)
 
 ___
 
@@ -72,7 +72,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/image-by-name-info.ts#L28)
+[generated-client/models/image-by-name-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-by-name-info.ts#L28)
 
 ___
 
@@ -86,4 +86,4 @@ Gets or sets the theme.
 
 #### Defined in
 
-[generated-client/models/image-by-name-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/image-by-name-info.ts#L34)
+[generated-client/models/image-by-name-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-by-name-info.ts#L34)

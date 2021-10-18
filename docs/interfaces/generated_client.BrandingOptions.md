@@ -27,7 +27,7 @@ Gets or sets the custom CSS.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/branding-options.ts#L34)
+[generated-client/models/branding-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/branding-options.ts#L34)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the login disclaimer.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/branding-options.ts#L28)
+[generated-client/models/branding-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/branding-options.ts#L28)

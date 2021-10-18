@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/hls-segment-api.ts#L517)
+[generated-client/api/hls-segment-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L517)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/hls-segment-api.ts#L529)
+[generated-client/api/hls-segment-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L529)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/hls-segment-api.ts#L541)
+[generated-client/api/hls-segment-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L541)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:553](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/hls-segment-api.ts#L553)
+[generated-client/api/hls-segment-api.ts:553](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L553)
 
 ___
 
@@ -223,4 +223,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/api/hls-segment-api.ts#L565)
+[generated-client/api/hls-segment-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L565)

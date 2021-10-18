@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L88)
+[generated-client/models/remote-search-result.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L88)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L94)
+[generated-client/models/remote-search-result.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L94)
 
 ___
 
@@ -59,7 +59,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L70)
+[generated-client/models/remote-search-result.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L70)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L46)
+[generated-client/models/remote-search-result.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L46)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L52)
+[generated-client/models/remote-search-result.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L52)
 
 ___
 
@@ -97,7 +97,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L28)
+[generated-client/models/remote-search-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L28)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L82)
+[generated-client/models/remote-search-result.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L82)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L58)
+[generated-client/models/remote-search-result.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L58)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L64)
+[generated-client/models/remote-search-result.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L64)
 
 ___
 
@@ -147,7 +147,7 @@ Gets or sets the year.
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L40)
+[generated-client/models/remote-search-result.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L40)
 
 ___
 
@@ -161,7 +161,7 @@ Gets or sets the provider ids.
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L34)
+[generated-client/models/remote-search-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L34)
 
 ___
 
@@ -173,4 +173,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/remote-search-result.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c65c42e/src/generated-client/models/remote-search-result.ts#L76)
+[generated-client/models/remote-search-result.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/remote-search-result.ts#L76)
