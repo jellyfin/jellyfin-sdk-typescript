@@ -83,3 +83,10 @@ console.log('Libraries =>', libraries.data);
 // SDK so the internal state is updated correctly.
 await api.logout();
 ```
+
+## Roadmap to 1.0
+
+* [ ] More complete device profile generation utilities
+* [ ] Use custom generator templates for API versions
+* [ ] Automate OpenAPI spec updates using GitHub
+  * [ ] Create branch tracking unstable Jellyfin builds
