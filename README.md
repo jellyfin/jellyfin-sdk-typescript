@@ -7,6 +7,7 @@
 <a href="https://codecov.io/gh/thornbill/jellyfin-sdk-typescript">
 <img alt="Codecov" src="https://img.shields.io/codecov/c/github/thornbill/jellyfin-sdk-typescript?token=Wk8RS9tDnb">
 </a>
+<a href="https://app.fossa.com/projects/git%2Bgithub.com%2Fthornbill%2Fjellyfin-sdk-typescript?ref=badge_shield" alt="FOSSA Status"><img src="https://app.fossa.com/api/projects/git%2Bgithub.com%2Fthornbill%2Fjellyfin-sdk-typescript.svg?type=shield"/></a>
 </p>
 
 A TypeScript SDK for Jellyfin.
@@ -90,3 +91,7 @@ await api.logout();
 * [ ] Use custom generator templates for API versions
 * [ ] Automate OpenAPI spec updates using GitHub
   * [ ] Create branch tracking unstable Jellyfin builds
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Fthornbill%2Fjellyfin-sdk-typescript.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Fthornbill%2Fjellyfin-sdk-typescript?ref=badge_large)
