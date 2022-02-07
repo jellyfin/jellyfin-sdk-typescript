@@ -4,9 +4,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * as api from './api';
+export * from '../../generated-client/models';
 
-export * from './client-info';
-export * from './device-info';
-export * from './recommended-server-info';
-export * from './recommended-server-issue';
+export * from './image-request-parameters';

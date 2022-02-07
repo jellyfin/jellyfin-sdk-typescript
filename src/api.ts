@@ -7,7 +7,7 @@ import globalInstance, { AxiosInstance, AxiosResponse } from 'axios';
 
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, AuthenticationResult, BrandingApi, ChannelsApi, CollectionApi, Configuration, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, ImageType, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from './generated-client';
 import { ClientInfo, DeviceInfo } from './models';
-import { ImageRequestParameters } from './models/image-request-parameters';
+import { ImageRequestParameters } from './models/api/image-request-parameters';
 import { getAuthorizationHeader } from './utils';
 
 // HACK: Axios does not export types for axios/lib. This is a workaround.
