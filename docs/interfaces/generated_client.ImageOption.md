@@ -28,7 +28,7 @@ Gets or sets the limit.
 
 #### Defined in
 
-[generated-client/models/image-option.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-option.ts#L35)
+[generated-client/models/image-option.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-option.ts#L35)
 
 ___
 
@@ -42,16 +42,16 @@ Gets or sets the minimum width.
 
 #### Defined in
 
-[generated-client/models/image-option.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-option.ts#L41)
+[generated-client/models/image-option.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-option.ts#L41)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`ImageType`](../enums/generated_client.ImageType.md)
+• `Optional` **Type**: [`ImageType`](../enums/index.api.ImageType.md)
 
 **`memberof`** ImageOption
 
 #### Defined in
 
-[generated-client/models/image-option.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-option.ts#L29)
+[generated-client/models/image-option.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-option.ts#L29)

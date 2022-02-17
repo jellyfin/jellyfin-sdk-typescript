@@ -46,11 +46,11 @@ PlaystateApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -58,13 +58,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -92,13 +92,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### markPlayedItem
 
-▸ **markPlayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **markPlayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Marks an item as played for user.
 
@@ -115,17 +115,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1133)
+[generated-client/api/playstate-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1133)
 
 ___
 
 ### markUnplayedItem
 
-▸ **markUnplayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **markUnplayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Marks an item as unplayed for user.
 
@@ -142,17 +142,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1145)
+[generated-client/api/playstate-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1145)
 
 ___
 
 ### onPlaybackProgress
 
-▸ **onPlaybackProgress**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **onPlaybackProgress**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports a user\'s playback progress.
 
@@ -169,17 +169,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1157)
+[generated-client/api/playstate-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1157)
 
 ___
 
 ### onPlaybackStart
 
-▸ **onPlaybackStart**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **onPlaybackStart**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that a user has begun playing an item.
 
@@ -196,17 +196,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1169)
+[generated-client/api/playstate-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1169)
 
 ___
 
 ### onPlaybackStopped
 
-▸ **onPlaybackStopped**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **onPlaybackStopped**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that a user has stopped playing an item.
 
@@ -223,17 +223,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1181)
+[generated-client/api/playstate-api.ts:1181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1181)
 
 ___
 
 ### pingPlaybackSession
 
-▸ **pingPlaybackSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **pingPlaybackSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Pings a playback session.
 
@@ -250,17 +250,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1193)
+[generated-client/api/playstate-api.ts:1193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1193)
 
 ___
 
 ### reportPlaybackProgress
 
-▸ **reportPlaybackProgress**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **reportPlaybackProgress**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports playback progress within a session.
 
@@ -277,17 +277,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1205)
+[generated-client/api/playstate-api.ts:1205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1205)
 
 ___
 
 ### reportPlaybackStart
 
-▸ **reportPlaybackStart**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **reportPlaybackStart**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports playback has started within a session.
 
@@ -304,17 +304,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1217)
+[generated-client/api/playstate-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1217)
 
 ___
 
 ### reportPlaybackStopped
 
-▸ **reportPlaybackStopped**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **reportPlaybackStopped**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports playback has stopped within a session.
 
@@ -331,8 +331,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1229)
+[generated-client/api/playstate-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1229)

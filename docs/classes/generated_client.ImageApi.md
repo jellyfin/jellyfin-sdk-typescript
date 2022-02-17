@@ -75,11 +75,11 @@ ImageApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -87,13 +87,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -103,7 +103,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -121,13 +121,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### deleteItemImage
 
-▸ **deleteItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Delete an item\'s image.
 
@@ -144,17 +144,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10019](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10019)
+[generated-client/api/image-api.ts:10019](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10019)
 
 ___
 
 ### deleteItemImageByIndex
 
-▸ **deleteItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Delete an item\'s image.
 
@@ -171,17 +171,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10031](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10031)
+[generated-client/api/image-api.ts:10031](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10031)
 
 ___
 
 ### deleteUserImage
 
-▸ **deleteUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Delete the user\'s image.
 
@@ -198,17 +198,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10043](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10043)
+[generated-client/api/image-api.ts:10043](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10043)
 
 ___
 
 ### deleteUserImageByIndex
 
-▸ **deleteUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Delete the user\'s image.
 
@@ -225,17 +225,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10055)
+[generated-client/api/image-api.ts:10055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10055)
 
 ___
 
 ### getArtistImage
 
-▸ **getArtistImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getArtistImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get artist image by name.
 
@@ -252,17 +252,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10067](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10067)
+[generated-client/api/image-api.ts:10067](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10067)
 
 ___
 
 ### getGenreImage
 
-▸ **getGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get genre image by name.
 
@@ -279,17 +279,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10079)
+[generated-client/api/image-api.ts:10079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10079)
 
 ___
 
 ### getGenreImageByIndex
 
-▸ **getGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get genre image by name.
 
@@ -306,17 +306,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10091)
+[generated-client/api/image-api.ts:10091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10091)
 
 ___
 
 ### getItemImage
 
-▸ **getItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -333,17 +333,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10103)
+[generated-client/api/image-api.ts:10103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10103)
 
 ___
 
 ### getItemImage2
 
-▸ **getItemImage2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getItemImage2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -360,17 +360,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10115)
+[generated-client/api/image-api.ts:10115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10115)
 
 ___
 
 ### getItemImageByIndex
 
-▸ **getItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -387,17 +387,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10127)
+[generated-client/api/image-api.ts:10127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10127)
 
 ___
 
 ### getItemImageInfos
 
-▸ **getItemImageInfos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageInfo`](../interfaces/generated_client.ImageInfo.md)[]\>\>
+▸ **getItemImageInfos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageInfo`](../interfaces/index.api.ImageInfo.md)[], `any`\>\>
 
 **`summary`** Get item image infos.
 
@@ -414,17 +414,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageInfo`](../interfaces/generated_client.ImageInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ImageInfo`](../interfaces/index.api.ImageInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10139)
+[generated-client/api/image-api.ts:10139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10139)
 
 ___
 
 ### getMusicGenreImage
 
-▸ **getMusicGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMusicGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get music genre image by name.
 
@@ -441,17 +441,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10151)
+[generated-client/api/image-api.ts:10151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10151)
 
 ___
 
 ### getMusicGenreImageByIndex
 
-▸ **getMusicGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMusicGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get music genre image by name.
 
@@ -468,17 +468,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10163)
+[generated-client/api/image-api.ts:10163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10163)
 
 ___
 
 ### getPersonImage
 
-▸ **getPersonImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getPersonImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get person image by name.
 
@@ -495,17 +495,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10175)
+[generated-client/api/image-api.ts:10175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10175)
 
 ___
 
 ### getPersonImageByIndex
 
-▸ **getPersonImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getPersonImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get person image by name.
 
@@ -522,17 +522,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10187)
+[generated-client/api/image-api.ts:10187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10187)
 
 ___
 
 ### getStudioImage
 
-▸ **getStudioImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getStudioImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get studio image by name.
 
@@ -549,17 +549,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10199)
+[generated-client/api/image-api.ts:10199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10199)
 
 ___
 
 ### getStudioImageByIndex
 
-▸ **getStudioImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getStudioImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get studio image by name.
 
@@ -576,17 +576,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10211)
+[generated-client/api/image-api.ts:10211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10211)
 
 ___
 
 ### getUserImage
 
-▸ **getUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get user profile image.
 
@@ -603,17 +603,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10223)
+[generated-client/api/image-api.ts:10223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10223)
 
 ___
 
 ### getUserImageByIndex
 
-▸ **getUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get user profile image.
 
@@ -630,17 +630,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10235)
+[generated-client/api/image-api.ts:10235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10235)
 
 ___
 
 ### headArtistImage
 
-▸ **headArtistImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headArtistImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get artist image by name.
 
@@ -657,17 +657,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10247)
+[generated-client/api/image-api.ts:10247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10247)
 
 ___
 
 ### headGenreImage
 
-▸ **headGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get genre image by name.
 
@@ -684,17 +684,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10259)
+[generated-client/api/image-api.ts:10259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10259)
 
 ___
 
 ### headGenreImageByIndex
 
-▸ **headGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get genre image by name.
 
@@ -711,17 +711,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10271](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10271)
+[generated-client/api/image-api.ts:10271](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10271)
 
 ___
 
 ### headItemImage
 
-▸ **headItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -738,17 +738,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10283)
+[generated-client/api/image-api.ts:10283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10283)
 
 ___
 
 ### headItemImage2
 
-▸ **headItemImage2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headItemImage2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -765,17 +765,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10295)
+[generated-client/api/image-api.ts:10295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10295)
 
 ___
 
 ### headItemImageByIndex
 
-▸ **headItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the item\'s image.
 
@@ -792,17 +792,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10307)
+[generated-client/api/image-api.ts:10307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10307)
 
 ___
 
 ### headMusicGenreImage
 
-▸ **headMusicGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headMusicGenreImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get music genre image by name.
 
@@ -819,17 +819,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10319)
+[generated-client/api/image-api.ts:10319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10319)
 
 ___
 
 ### headMusicGenreImageByIndex
 
-▸ **headMusicGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headMusicGenreImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get music genre image by name.
 
@@ -846,17 +846,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10331)
+[generated-client/api/image-api.ts:10331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10331)
 
 ___
 
 ### headPersonImage
 
-▸ **headPersonImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headPersonImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get person image by name.
 
@@ -873,17 +873,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10343)
+[generated-client/api/image-api.ts:10343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10343)
 
 ___
 
 ### headPersonImageByIndex
 
-▸ **headPersonImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headPersonImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get person image by name.
 
@@ -900,17 +900,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10355)
+[generated-client/api/image-api.ts:10355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10355)
 
 ___
 
 ### headStudioImage
 
-▸ **headStudioImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headStudioImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get studio image by name.
 
@@ -927,17 +927,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10367)
+[generated-client/api/image-api.ts:10367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10367)
 
 ___
 
 ### headStudioImageByIndex
 
-▸ **headStudioImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headStudioImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get studio image by name.
 
@@ -954,17 +954,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10379](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10379)
+[generated-client/api/image-api.ts:10379](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10379)
 
 ___
 
 ### headUserImage
 
-▸ **headUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get user profile image.
 
@@ -981,17 +981,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10391)
+[generated-client/api/image-api.ts:10391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10391)
 
 ___
 
 ### headUserImageByIndex
 
-▸ **headUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get user profile image.
 
@@ -1008,17 +1008,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10403)
+[generated-client/api/image-api.ts:10403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10403)
 
 ___
 
 ### postUserImage
 
-▸ **postUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postUserImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets the user image.
 
@@ -1035,17 +1035,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10415)
+[generated-client/api/image-api.ts:10415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10415)
 
 ___
 
 ### postUserImageByIndex
 
-▸ **postUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postUserImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets the user image.
 
@@ -1062,17 +1062,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10427](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10427)
+[generated-client/api/image-api.ts:10427](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10427)
 
 ___
 
 ### setItemImage
 
-▸ **setItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setItemImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Set item image.
 
@@ -1089,17 +1089,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10439)
+[generated-client/api/image-api.ts:10439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10439)
 
 ___
 
 ### setItemImageByIndex
 
-▸ **setItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setItemImageByIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Set item image.
 
@@ -1116,17 +1116,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10451)
+[generated-client/api/image-api.ts:10451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10451)
 
 ___
 
 ### updateItemImageIndex
 
-▸ **updateItemImageIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateItemImageIndex**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates the index for an item image.
 
@@ -1143,8 +1143,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L10463)
+[generated-client/api/image-api.ts:10463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L10463)

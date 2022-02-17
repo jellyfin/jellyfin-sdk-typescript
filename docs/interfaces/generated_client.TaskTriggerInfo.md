@@ -24,13 +24,13 @@ Class TaskTriggerInfo.
 
 ### DayOfWeek
 
-• `Optional` **DayOfWeek**: [`DayOfWeek`](../enums/generated_client.DayOfWeek.md)
+• `Optional` **DayOfWeek**: [`DayOfWeek`](../enums/index.api.DayOfWeek.md)
 
 **`memberof`** TaskTriggerInfo
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-trigger-info.ts#L47)
+[generated-client/models/task-trigger-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-trigger-info.ts#L47)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the interval.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-trigger-info.ts#L41)
+[generated-client/models/task-trigger-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-trigger-info.ts#L41)
 
 ___
 
@@ -58,7 +58,7 @@ Gets or sets the maximum runtime ticks.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-trigger-info.ts#L53)
+[generated-client/models/task-trigger-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-trigger-info.ts#L53)
 
 ___
 
@@ -72,7 +72,7 @@ Gets or sets the time of day.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-trigger-info.ts#L35)
+[generated-client/models/task-trigger-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-trigger-info.ts#L35)
 
 ___
 
@@ -86,4 +86,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/task-trigger-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/task-trigger-info.ts#L29)
+[generated-client/models/task-trigger-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-trigger-info.ts#L29)

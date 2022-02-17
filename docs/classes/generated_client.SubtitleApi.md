@@ -47,11 +47,11 @@ SubtitleApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -59,13 +59,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -75,7 +75,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -93,13 +93,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### deleteSubtitle
 
-▸ **deleteSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes an external subtitle file.
 
@@ -116,17 +116,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1194](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1194)
+[generated-client/api/subtitle-api.ts:1194](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1194)
 
 ___
 
 ### downloadRemoteSubtitles
 
-▸ **downloadRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **downloadRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Downloads a remote subtitle.
 
@@ -143,17 +143,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1206](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1206)
+[generated-client/api/subtitle-api.ts:1206](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1206)
 
 ___
 
 ### getFallbackFont
 
-▸ **getFallbackFont**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getFallbackFont**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a fallback font file.
 
@@ -170,17 +170,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1218](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1218)
+[generated-client/api/subtitle-api.ts:1218](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1218)
 
 ___
 
 ### getFallbackFontList
 
-▸ **getFallbackFontList**(`options?`): `Promise`<`AxiosResponse`<[`FontFile`](../interfaces/generated_client.FontFile.md)[]\>\>
+▸ **getFallbackFontList**(`options?`): `Promise`<`AxiosResponse`<[`FontFile`](../interfaces/index.api.FontFile.md)[], `any`\>\>
 
 **`summary`** Gets a list of available fallback font files.
 
@@ -196,17 +196,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`FontFile`](../interfaces/generated_client.FontFile.md)[]\>\>
+`Promise`<`AxiosResponse`<[`FontFile`](../interfaces/index.api.FontFile.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1229)
+[generated-client/api/subtitle-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1229)
 
 ___
 
 ### getRemoteSubtitles
 
-▸ **getRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the remote subtitles.
 
@@ -223,17 +223,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1241](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1241)
+[generated-client/api/subtitle-api.ts:1241](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1241)
 
 ___
 
 ### getSubtitle
 
-▸ **getSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets subtitles in a specified format.
 
@@ -250,17 +250,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1253)
+[generated-client/api/subtitle-api.ts:1253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1253)
 
 ___
 
 ### getSubtitlePlaylist
 
-▸ **getSubtitlePlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getSubtitlePlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an HLS subtitle playlist.
 
@@ -277,17 +277,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1265)
+[generated-client/api/subtitle-api.ts:1265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1265)
 
 ___
 
 ### getSubtitleWithTicks
 
-▸ **getSubtitleWithTicks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getSubtitleWithTicks**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets subtitles in a specified format.
 
@@ -304,17 +304,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1277](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1277)
+[generated-client/api/subtitle-api.ts:1277](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1277)
 
 ___
 
 ### searchRemoteSubtitles
 
-▸ **searchRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSubtitleInfo`](../interfaces/generated_client.RemoteSubtitleInfo.md)[]\>\>
+▸ **searchRemoteSubtitles**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSubtitleInfo`](../interfaces/index.api.RemoteSubtitleInfo.md)[], `any`\>\>
 
 **`summary`** Search remote subtitles.
 
@@ -331,17 +331,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSubtitleInfo`](../interfaces/generated_client.RemoteSubtitleInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`RemoteSubtitleInfo`](../interfaces/index.api.RemoteSubtitleInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1289)
+[generated-client/api/subtitle-api.ts:1289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1289)
 
 ___
 
 ### uploadSubtitle
 
-▸ **uploadSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **uploadSubtitle**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Upload an external subtitle file.
 
@@ -358,8 +358,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1301)
+[generated-client/api/subtitle-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1301)

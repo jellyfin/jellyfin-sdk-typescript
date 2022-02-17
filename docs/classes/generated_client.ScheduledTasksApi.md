@@ -42,11 +42,11 @@ ScheduledTasksApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getTask
 
-▸ **getTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/generated_client.TaskInfo.md)\>\>
+▸ **getTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/index.api.TaskInfo.md), `any`\>\>
 
 **`summary`** Get task by id.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/generated_client.TaskInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/index.api.TaskInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L463)
+[generated-client/api/scheduled-tasks-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L463)
 
 ___
 
 ### getTasks
 
-▸ **getTasks**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/generated_client.TaskInfo.md)[]\>\>
+▸ **getTasks**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/index.api.TaskInfo.md)[], `any`\>\>
 
 **`summary`** Get tasks.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/generated_client.TaskInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`TaskInfo`](../interfaces/index.api.TaskInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L475)
+[generated-client/api/scheduled-tasks-api.ts:475](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L475)
 
 ___
 
 ### startTask
 
-▸ **startTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **startTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Start specified task.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L487)
+[generated-client/api/scheduled-tasks-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L487)
 
 ___
 
 ### stopTask
 
-▸ **stopTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **stopTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Stop specified task.
 
@@ -192,17 +192,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L499)
+[generated-client/api/scheduled-tasks-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L499)
 
 ___
 
 ### updateTask
 
-▸ **updateTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateTask**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Update specified task triggers.
 
@@ -219,8 +219,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L511)
+[generated-client/api/scheduled-tasks-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L511)

@@ -42,11 +42,11 @@ DevicesApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### deleteDevice
 
-▸ **deleteDevice**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteDevice**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes a device.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L477)
+[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L477)
 
 ___
 
 ### getDeviceInfo
 
-▸ **getDeviceInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md)\>\>
+▸ **getDeviceInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/index.api.DeviceInfo.md), `any`\>\>
 
 **`summary`** Get info for a device.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/index.api.DeviceInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L489)
+[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L489)
 
 ___
 
 ### getDeviceOptions
 
-▸ **getDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md)\>\>
+▸ **getDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/index.api.DeviceOptions.md), `any`\>\>
 
 **`summary`** Get options for a device.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md)\>\>
+`Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/index.api.DeviceOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L501)
+[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L501)
 
 ___
 
 ### getDevices
 
-▸ **getDevices**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md)\>\>
+▸ **getDevices**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/index.api.DeviceInfoQueryResult.md), `any`\>\>
 
 **`summary`** Get Devices.
 
@@ -192,17 +192,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/index.api.DeviceInfoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L513)
+[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L513)
 
 ___
 
 ### updateDeviceOptions
 
-▸ **updateDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Update device options.
 
@@ -219,8 +219,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/devices-api.ts#L525)
+[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L525)

@@ -20,10 +20,10 @@ Class SetShuffleModeRequestDto.
 
 ### Mode
 
-• `Optional` **Mode**: [`GroupShuffleMode`](../enums/generated_client.GroupShuffleMode.md)
+• `Optional` **Mode**: [`GroupShuffleMode`](../enums/index.api.GroupShuffleMode.md)
 
 **`memberof`** SetShuffleModeRequestDto
 
 #### Defined in
 
-[generated-client/models/set-shuffle-mode-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/set-shuffle-mode-request-dto.ts#L29)
+[generated-client/models/set-shuffle-mode-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/set-shuffle-mode-request-dto.ts#L29)

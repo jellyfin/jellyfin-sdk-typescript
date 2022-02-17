@@ -20,7 +20,7 @@ Request parameters for syncPlaySeek operation in SyncPlayApi.
 
 ### seekRequestDto
 
-• `Readonly` **seekRequestDto**: [`SeekRequestDto`](generated_client.SeekRequestDto.md)
+• `Readonly` **seekRequestDto**: [`SeekRequestDto`](index.api.SeekRequestDto.md)
 
 The new playback position.
 
@@ -28,4 +28,4 @@ The new playback position.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/sync-play-api.ts#L1457)
+[generated-client/api/sync-play-api.ts:1457](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1457)

@@ -26,4 +26,4 @@ Request parameters for getNotificationsSummary operation in NotificationsApi.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L497)
+[generated-client/api/notifications-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L497)

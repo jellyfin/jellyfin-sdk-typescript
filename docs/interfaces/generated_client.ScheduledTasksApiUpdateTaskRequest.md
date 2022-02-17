@@ -29,13 +29,13 @@ Task Id.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L438)
+[generated-client/api/scheduled-tasks-api.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L438)
 
 ___
 
 ### taskTriggerInfo
 
-• `Readonly` **taskTriggerInfo**: [`TaskTriggerInfo`](generated_client.TaskTriggerInfo.md)[]
+• `Readonly` **taskTriggerInfo**: [`TaskTriggerInfo`](index.api.TaskTriggerInfo.md)[]
 
 Triggers.
 
@@ -43,4 +43,4 @@ Triggers.
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/scheduled-tasks-api.ts#L445)
+[generated-client/api/scheduled-tasks-api.ts:445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/scheduled-tasks-api.ts#L445)

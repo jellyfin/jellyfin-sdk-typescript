@@ -21,7 +21,7 @@ Request parameters for sendMessageCommand operation in SessionApi.
 
 ### messageCommand
 
-• `Readonly` **messageCommand**: [`MessageCommand`](generated_client.MessageCommand.md)
+• `Readonly` **messageCommand**: [`MessageCommand`](index.api.MessageCommand.md)
 
 The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
 
@@ -29,7 +29,7 @@ The MediaBrowser.Model.Session.MessageCommand object containing Header, Message 
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1507)
+[generated-client/api/session-api.ts:1507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1507)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1500)
+[generated-client/api/session-api.ts:1500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1500)

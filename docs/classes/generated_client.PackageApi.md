@@ -43,11 +43,11 @@ PackageApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -55,13 +55,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -71,7 +71,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### cancelPackageInstallation
 
-▸ **cancelPackageInstallation**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **cancelPackageInstallation**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Cancels a package installation.
 
@@ -112,17 +112,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:523](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L523)
+[generated-client/api/package-api.ts:523](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L523)
 
 ___
 
 ### getPackageInfo
 
-▸ **getPackageInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/generated_client.PackageInfo.md)\>\>
+▸ **getPackageInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/index.api.PackageInfo.md), `any`\>\>
 
 **`summary`** Gets a package by name or assembly GUID.
 
@@ -139,17 +139,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/generated_client.PackageInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/index.api.PackageInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L535)
+[generated-client/api/package-api.ts:535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L535)
 
 ___
 
 ### getPackages
 
-▸ **getPackages**(`options?`): `Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/generated_client.PackageInfo.md)[]\>\>
+▸ **getPackages**(`options?`): `Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/index.api.PackageInfo.md)[], `any`\>\>
 
 **`summary`** Gets available packages.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/generated_client.PackageInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`PackageInfo`](../interfaces/index.api.PackageInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:546](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L546)
+[generated-client/api/package-api.ts:546](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L546)
 
 ___
 
 ### getRepositories
 
-▸ **getRepositories**(`options?`): `Promise`<`AxiosResponse`<[`RepositoryInfo`](../interfaces/generated_client.RepositoryInfo.md)[]\>\>
+▸ **getRepositories**(`options?`): `Promise`<`AxiosResponse`<[`RepositoryInfo`](../interfaces/index.api.RepositoryInfo.md)[], `any`\>\>
 
 **`summary`** Gets all package repositories.
 
@@ -191,17 +191,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RepositoryInfo`](../interfaces/generated_client.RepositoryInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`RepositoryInfo`](../interfaces/index.api.RepositoryInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L557)
+[generated-client/api/package-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L557)
 
 ___
 
 ### installPackage
 
-▸ **installPackage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **installPackage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Installs a package.
 
@@ -218,17 +218,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L569)
+[generated-client/api/package-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L569)
 
 ___
 
 ### setRepositories
 
-▸ **setRepositories**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setRepositories**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets the enabled and existing package repositories.
 
@@ -245,8 +245,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/package-api.ts:581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/package-api.ts#L581)
+[generated-client/api/package-api.ts:581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L581)

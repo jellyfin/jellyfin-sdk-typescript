@@ -32,13 +32,13 @@ Exclude artist ids.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1973](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L1973)
+[generated-client/api/library-api.ts:1973](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L1973)
 
 ___
 
 ### fields
 
-• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/generated_client.ItemFields.md)[]
+• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/index.api.ItemFields.md)[]
 
 Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
 
@@ -46,7 +46,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1994](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L1994)
+[generated-client/api/library-api.ts:1994](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L1994)
 
 ___
 
@@ -60,7 +60,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L1966)
+[generated-client/api/library-api.ts:1966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L1966)
 
 ___
 
@@ -74,7 +74,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1987](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L1987)
+[generated-client/api/library-api.ts:1987](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L1987)
 
 ___
 
@@ -88,4 +88,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1980](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L1980)
+[generated-client/api/library-api.ts:1980](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L1980)

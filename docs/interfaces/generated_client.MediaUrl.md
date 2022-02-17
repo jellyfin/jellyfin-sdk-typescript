@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/media-url.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/media-url.ts#L34)
+[generated-client/models/media-url.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-url.ts#L34)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-url.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/media-url.ts#L28)
+[generated-client/models/media-url.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-url.ts#L28)

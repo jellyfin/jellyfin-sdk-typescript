@@ -24,7 +24,7 @@ Request parameters for post operation in ItemRefreshApi.
 
 ### imageRefreshMode
 
-• `Optional` `Readonly` **imageRefreshMode**: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md)
+• `Optional` `Readonly` **imageRefreshMode**: [`MetadataRefreshMode`](../enums/index.api.MetadataRefreshMode.md)
 
 (Optional) Specifies the image refresh mode.
 
@@ -32,7 +32,7 @@ Request parameters for post operation in ItemRefreshApi.
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-refresh-api.ts#L167)
+[generated-client/api/item-refresh-api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-refresh-api.ts#L167)
 
 ___
 
@@ -46,13 +46,13 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-refresh-api.ts#L153)
+[generated-client/api/item-refresh-api.ts:153](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-refresh-api.ts#L153)
 
 ___
 
 ### metadataRefreshMode
 
-• `Optional` `Readonly` **metadataRefreshMode**: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md)
+• `Optional` `Readonly` **metadataRefreshMode**: [`MetadataRefreshMode`](../enums/index.api.MetadataRefreshMode.md)
 
 (Optional) Specifies the metadata refresh mode.
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-refresh-api.ts#L160)
+[generated-client/api/item-refresh-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-refresh-api.ts#L160)
 
 ___
 
@@ -74,7 +74,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-refresh-api.ts#L181)
+[generated-client/api/item-refresh-api.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-refresh-api.ts#L181)
 
 ___
 
@@ -88,4 +88,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-refresh-api.ts#L174)
+[generated-client/api/item-refresh-api.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-refresh-api.ts#L174)

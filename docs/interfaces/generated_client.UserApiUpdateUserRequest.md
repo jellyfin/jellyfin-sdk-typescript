@@ -21,7 +21,7 @@ Request parameters for updateUser operation in UserApi.
 
 ### userDto
 
-• `Readonly` **userDto**: [`UserDto`](generated_client.UserDto.md)
+• `Readonly` **userDto**: [`UserDto`](index.api.UserDto.md)
 
 The updated user model.
 
@@ -29,7 +29,7 @@ The updated user model.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1217)
+[generated-client/api/user-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1217)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1210)
+[generated-client/api/user-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1210)

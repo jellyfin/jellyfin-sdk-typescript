@@ -43,11 +43,11 @@ ImageByNameApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -55,13 +55,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -71,7 +71,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getGeneralImage
 
-▸ **getGeneralImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getGeneralImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get General Image.
 
@@ -112,17 +112,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L473)
+[generated-client/api/image-by-name-api.ts:473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L473)
 
 ___
 
 ### getGeneralImages
 
-▸ **getGeneralImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+▸ **getGeneralImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 **`summary`** Get all general images.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L484)
+[generated-client/api/image-by-name-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L484)
 
 ___
 
 ### getMediaInfoImage
 
-▸ **getMediaInfoImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMediaInfoImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get media info image.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L496)
+[generated-client/api/image-by-name-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L496)
 
 ___
 
 ### getMediaInfoImages
 
-▸ **getMediaInfoImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+▸ **getMediaInfoImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 **`summary`** Get all media info images.
 
@@ -191,17 +191,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L507)
+[generated-client/api/image-by-name-api.ts:507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L507)
 
 ___
 
 ### getRatingImage
 
-▸ **getRatingImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getRatingImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get rating image.
 
@@ -218,17 +218,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:519](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L519)
+[generated-client/api/image-by-name-api.ts:519](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L519)
 
 ___
 
 ### getRatingImages
 
-▸ **getRatingImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+▸ **getRatingImages**(`options?`): `Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 **`summary`** Get all general images.
 
@@ -244,8 +244,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/generated_client.ImageByNameInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ImageByNameInfo`](../interfaces/index.api.ImageByNameInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-by-name-api.ts#L530)
+[generated-client/api/image-by-name-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-by-name-api.ts#L530)

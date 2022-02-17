@@ -36,13 +36,13 @@ Channel Id.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L499)
+[generated-client/api/channels-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L499)
 
 ___
 
 ### fields
 
-• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/generated_client.ItemFields.md)[]
+• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/index.api.ItemFields.md)[]
 
 Optional. Specify additional fields of information to return in the output.
 
@@ -50,13 +50,13 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L555)
+[generated-client/api/channels-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L555)
 
 ___
 
 ### filters
 
-• `Optional` `Readonly` **filters**: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[]
+• `Optional` `Readonly` **filters**: [`ItemFilter`](../enums/index.api.ItemFilter.md)[]
 
 Optional. Specify additional filters to apply.
 
@@ -64,7 +64,7 @@ Optional. Specify additional filters to apply.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L541)
+[generated-client/api/channels-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L541)
 
 ___
 
@@ -78,7 +78,7 @@ Optional. Folder Id.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L506)
+[generated-client/api/channels-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L506)
 
 ___
 
@@ -92,7 +92,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L527)
+[generated-client/api/channels-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L527)
 
 ___
 
@@ -106,13 +106,13 @@ Optional. Specify one or more sort orders, comma delimited. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:548](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L548)
+[generated-client/api/channels-api.ts:548](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L548)
 
 ___
 
 ### sortOrder
 
-• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)[]
+• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/index.api.SortOrder.md)[]
 
 Optional. Sort Order - Ascending,Descending.
 
@@ -120,7 +120,7 @@ Optional. Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:534](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L534)
+[generated-client/api/channels-api.ts:534](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L534)
 
 ___
 
@@ -134,7 +134,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L520)
+[generated-client/api/channels-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L520)
 
 ___
 
@@ -148,4 +148,4 @@ Optional. User Id.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/channels-api.ts#L513)
+[generated-client/api/channels-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L513)

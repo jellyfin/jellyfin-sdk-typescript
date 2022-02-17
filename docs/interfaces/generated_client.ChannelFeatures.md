@@ -37,7 +37,7 @@ Gets or sets the automatic refresh levels.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L67)
+[generated-client/models/channel-features.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L67)
 
 ___
 
@@ -51,7 +51,7 @@ Gets or sets a value indicating whether this instance can filter.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L91)
+[generated-client/models/channel-features.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L91)
 
 ___
 
@@ -65,13 +65,13 @@ Gets or sets a value indicating whether this instance can search.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L43)
+[generated-client/models/channel-features.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L43)
 
 ___
 
 ### ContentTypes
 
-• `Optional` **ContentTypes**: ``null`` \| [`ChannelMediaContentType`](../enums/generated_client.ChannelMediaContentType.md)[]
+• `Optional` **ContentTypes**: ``null`` \| [`ChannelMediaContentType`](../enums/index.api.ChannelMediaContentType.md)[]
 
 Gets or sets the content types.
 
@@ -79,13 +79,13 @@ Gets or sets the content types.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L55)
+[generated-client/models/channel-features.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L55)
 
 ___
 
 ### DefaultSortFields
 
-• `Optional` **DefaultSortFields**: ``null`` \| [`ChannelItemSortField`](../enums/generated_client.ChannelItemSortField.md)[]
+• `Optional` **DefaultSortFields**: ``null`` \| [`ChannelItemSortField`](../enums/index.api.ChannelItemSortField.md)[]
 
 Gets or sets the default sort orders.
 
@@ -93,7 +93,7 @@ Gets or sets the default sort orders.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L73)
+[generated-client/models/channel-features.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L73)
 
 ___
 
@@ -107,7 +107,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L37)
+[generated-client/models/channel-features.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L37)
 
 ___
 
@@ -121,13 +121,13 @@ Represents the maximum number of records the channel allows retrieving at a time
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L61)
+[generated-client/models/channel-features.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L61)
 
 ___
 
 ### MediaTypes
 
-• `Optional` **MediaTypes**: ``null`` \| [`ChannelMediaType`](../enums/generated_client.ChannelMediaType.md)[]
+• `Optional` **MediaTypes**: ``null`` \| [`ChannelMediaType`](../enums/index.api.ChannelMediaType.md)[]
 
 Gets or sets the media types.
 
@@ -135,7 +135,7 @@ Gets or sets the media types.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L49)
+[generated-client/models/channel-features.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L49)
 
 ___
 
@@ -149,7 +149,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L31)
+[generated-client/models/channel-features.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L31)
 
 ___
 
@@ -163,7 +163,7 @@ Gets or sets a value indicating whether [supports content downloading].
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L97)
+[generated-client/models/channel-features.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L97)
 
 ___
 
@@ -177,7 +177,7 @@ Gets or sets a value indicating whether [supports latest media].
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L85)
+[generated-client/models/channel-features.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L85)
 
 ___
 
@@ -191,4 +191,4 @@ Indicates if a sort ascending/descending toggle is supported or not.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/channel-features.ts#L79)
+[generated-client/models/channel-features.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-features.ts#L79)

@@ -43,11 +43,11 @@ ConfigurationApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -55,13 +55,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -71,7 +71,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getConfiguration
 
-▸ **getConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md)\>\>
+▸ **getConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/index.api.ServerConfiguration.md), `any`\>\>
 
 **`summary`** Gets application configuration.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md)\>\>
+`Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/index.api.ServerConfiguration.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L468)
+[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L468)
 
 ___
 
 ### getDefaultMetadataOptions
 
-▸ **getDefaultMetadataOptions**(`options?`): `Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/generated_client.MetadataOptions.md)\>\>
+▸ **getDefaultMetadataOptions**(`options?`): `Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/index.api.MetadataOptions.md), `any`\>\>
 
 **`summary`** Gets a default MetadataOptions object.
 
@@ -137,17 +137,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/generated_client.MetadataOptions.md)\>\>
+`Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/index.api.MetadataOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L479)
+[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L479)
 
 ___
 
 ### getNamedConfiguration
 
-▸ **getNamedConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getNamedConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a named configuration.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L491)
+[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L491)
 
 ___
 
 ### updateConfiguration
 
-▸ **updateConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates application configuration.
 
@@ -191,17 +191,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L503)
+[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L503)
 
 ___
 
 ### updateMediaEncoderPath
 
-▸ **updateMediaEncoderPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateMediaEncoderPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates the path to the media encoder.
 
@@ -218,17 +218,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L515)
+[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L515)
 
 ___
 
 ### updateNamedConfiguration
 
-▸ **updateNamedConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateNamedConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates named configuration.
 
@@ -245,8 +245,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L527)
+[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L527)

@@ -53,11 +53,11 @@ DlnaServerApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -65,13 +65,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -81,7 +81,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -99,13 +99,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getConnectionManager
 
-▸ **getConnectionManager**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getConnectionManager**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -122,17 +122,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1186)
+[generated-client/api/dlna-server-api.ts:1186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1186)
 
 ___
 
 ### getConnectionManager2
 
-▸ **getConnectionManager2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getConnectionManager2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -149,17 +149,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1198)
+[generated-client/api/dlna-server-api.ts:1198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1198)
 
 ___
 
 ### getConnectionManager3
 
-▸ **getConnectionManager3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getConnectionManager3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -176,17 +176,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1210)
+[generated-client/api/dlna-server-api.ts:1210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1210)
 
 ___
 
 ### getContentDirectory
 
-▸ **getContentDirectory**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getContentDirectory**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna content directory xml.
 
@@ -203,17 +203,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1222)
+[generated-client/api/dlna-server-api.ts:1222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1222)
 
 ___
 
 ### getContentDirectory2
 
-▸ **getContentDirectory2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getContentDirectory2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna content directory xml.
 
@@ -230,17 +230,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1234)
+[generated-client/api/dlna-server-api.ts:1234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1234)
 
 ___
 
 ### getContentDirectory3
 
-▸ **getContentDirectory3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getContentDirectory3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna content directory xml.
 
@@ -257,17 +257,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1246)
+[generated-client/api/dlna-server-api.ts:1246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1246)
 
 ___
 
 ### getDescriptionXml
 
-▸ **getDescriptionXml**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getDescriptionXml**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get Description Xml.
 
@@ -284,17 +284,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1258)
+[generated-client/api/dlna-server-api.ts:1258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1258)
 
 ___
 
 ### getDescriptionXml2
 
-▸ **getDescriptionXml2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getDescriptionXml2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get Description Xml.
 
@@ -311,17 +311,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1270)
+[generated-client/api/dlna-server-api.ts:1270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1270)
 
 ___
 
 ### getIcon
 
-▸ **getIcon**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getIcon**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a server icon.
 
@@ -338,17 +338,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1282)
+[generated-client/api/dlna-server-api.ts:1282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1282)
 
 ___
 
 ### getIconId
 
-▸ **getIconId**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getIconId**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a server icon.
 
@@ -365,17 +365,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1294)
+[generated-client/api/dlna-server-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1294)
 
 ___
 
 ### getMediaReceiverRegistrar
 
-▸ **getMediaReceiverRegistrar**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMediaReceiverRegistrar**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -392,17 +392,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1306)
+[generated-client/api/dlna-server-api.ts:1306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1306)
 
 ___
 
 ### getMediaReceiverRegistrar2
 
-▸ **getMediaReceiverRegistrar2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMediaReceiverRegistrar2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -419,17 +419,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1318)
+[generated-client/api/dlna-server-api.ts:1318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1318)
 
 ___
 
 ### getMediaReceiverRegistrar3
 
-▸ **getMediaReceiverRegistrar3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMediaReceiverRegistrar3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets Dlna media receiver registrar xml.
 
@@ -446,17 +446,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1330)
+[generated-client/api/dlna-server-api.ts:1330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1330)
 
 ___
 
 ### processConnectionManagerControlRequest
 
-▸ **processConnectionManagerControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **processConnectionManagerControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Process a connection manager control request.
 
@@ -473,17 +473,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1342)
+[generated-client/api/dlna-server-api.ts:1342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1342)
 
 ___
 
 ### processContentDirectoryControlRequest
 
-▸ **processContentDirectoryControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **processContentDirectoryControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Process a content directory control request.
 
@@ -500,17 +500,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1354](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1354)
+[generated-client/api/dlna-server-api.ts:1354](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1354)
 
 ___
 
 ### processMediaReceiverRegistrarControlRequest
 
-▸ **processMediaReceiverRegistrarControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **processMediaReceiverRegistrarControlRequest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Process a media receiver registrar control request.
 
@@ -527,8 +527,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-server-api.ts#L1366)
+[generated-client/api/dlna-server-api.ts:1366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1366)

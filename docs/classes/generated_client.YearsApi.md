@@ -39,11 +39,11 @@ YearsApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -51,13 +51,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getYear
 
-▸ **getYear**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getYear**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets a year.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/years-api.ts:434](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/years-api.ts#L434)
+[generated-client/api/years-api.ts:434](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/years-api.ts#L434)
 
 ___
 
 ### getYears
 
-▸ **getYears**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getYears**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Get years.
 
@@ -135,8 +135,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/years-api.ts:446](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/years-api.ts#L446)
+[generated-client/api/years-api.ts:446](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/years-api.ts#L446)

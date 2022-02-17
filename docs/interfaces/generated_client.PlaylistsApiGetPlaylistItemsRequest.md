@@ -28,7 +28,7 @@ Request parameters for getPlaylistItems operation in PlaylistsApi.
 
 ### enableImageTypes
 
-• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/generated_client.ImageType.md)[]
+• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/index.api.ImageType.md)[]
 
 Optional. The image types to include in the output.
 
@@ -36,7 +36,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:608](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L608)
+[generated-client/api/playlists-api.ts:608](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L608)
 
 ___
 
@@ -50,7 +50,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L587)
+[generated-client/api/playlists-api.ts:587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L587)
 
 ___
 
@@ -64,13 +64,13 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:594](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L594)
+[generated-client/api/playlists-api.ts:594](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L594)
 
 ___
 
 ### fields
 
-• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/generated_client.ItemFields.md)[]
+• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/index.api.ItemFields.md)[]
 
 Optional. Specify additional fields of information to return in the output.
 
@@ -78,7 +78,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L580)
+[generated-client/api/playlists-api.ts:580](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L580)
 
 ___
 
@@ -92,7 +92,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L601)
+[generated-client/api/playlists-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L601)
 
 ___
 
@@ -106,7 +106,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:573](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L573)
+[generated-client/api/playlists-api.ts:573](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L573)
 
 ___
 
@@ -120,7 +120,7 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L552)
+[generated-client/api/playlists-api.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L552)
 
 ___
 
@@ -134,7 +134,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:566](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L566)
+[generated-client/api/playlists-api.ts:566](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L566)
 
 ___
 
@@ -148,4 +148,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L559)
+[generated-client/api/playlists-api.ts:559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L559)

@@ -20,7 +20,7 @@ Request parameters for updateMediaEncoderPath operation in ConfigurationApi.
 
 ### mediaEncoderPathDto
 
-• `Readonly` **mediaEncoderPathDto**: [`MediaEncoderPathDto`](generated_client.MediaEncoderPathDto.md)
+• `Readonly` **mediaEncoderPathDto**: [`MediaEncoderPathDto`](index.api.MediaEncoderPathDto.md)
 
 Media encoder path form body.
 
@@ -28,4 +28,4 @@ Media encoder path form body.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/configuration-api.ts#L437)
+[generated-client/api/configuration-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L437)

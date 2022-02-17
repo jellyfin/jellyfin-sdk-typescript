@@ -20,7 +20,7 @@ Request parameters for reportPlaybackStart operation in PlaystateApi.
 
 ### playbackStartInfo
 
-• `Optional` `Readonly` **playbackStartInfo**: [`PlaybackStartInfo`](generated_client.PlaybackStartInfo.md)
+• `Optional` `Readonly` **playbackStartInfo**: [`PlaybackStartInfo`](index.api.PlaybackStartInfo.md)
 
 The playback start info.
 
@@ -28,4 +28,4 @@ The playback start info.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playstate-api.ts#L1101)
+[generated-client/api/playstate-api.ts:1101](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1101)

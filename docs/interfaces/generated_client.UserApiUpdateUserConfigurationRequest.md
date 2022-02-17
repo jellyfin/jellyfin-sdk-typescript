@@ -21,7 +21,7 @@ Request parameters for updateUserConfiguration operation in UserApi.
 
 ### userConfiguration
 
-• `Readonly` **userConfiguration**: [`UserConfiguration`](generated_client.UserConfiguration.md)
+• `Readonly` **userConfiguration**: [`UserConfiguration`](index.api.UserConfiguration.md)
 
 The new user configuration.
 
@@ -29,7 +29,7 @@ The new user configuration.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1238)
+[generated-client/api/user-api.ts:1238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1238)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1231)
+[generated-client/api/user-api.ts:1231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1231)

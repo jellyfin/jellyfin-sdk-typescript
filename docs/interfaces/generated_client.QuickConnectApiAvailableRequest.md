@@ -20,7 +20,7 @@ Request parameters for available operation in QuickConnectApi.
 
 ### status
 
-• `Optional` `Readonly` **status**: [`QuickConnectState`](../enums/generated_client.QuickConnectState.md)
+• `Optional` `Readonly` **status**: [`QuickConnectState`](../enums/index.api.QuickConnectState.md)
 
 New MediaBrowser.Model.QuickConnect.QuickConnectState.
 
@@ -28,4 +28,4 @@ New MediaBrowser.Model.QuickConnect.QuickConnectState.
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/quick-connect-api.ts#L463)
+[generated-client/api/quick-connect-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/quick-connect-api.ts#L463)

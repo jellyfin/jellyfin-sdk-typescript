@@ -20,10 +20,10 @@ Add virtual folder dto.
 
 ### LibraryOptions
 
-• `Optional` **LibraryOptions**: [`LibraryOptions`](generated_client.LibraryOptions.md)
+• `Optional` **LibraryOptions**: [`LibraryOptions`](index.api.LibraryOptions.md)
 
 **`memberof`** AddVirtualFolderDto
 
 #### Defined in
 
-[generated-client/models/add-virtual-folder-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/add-virtual-folder-dto.ts#L29)
+[generated-client/models/add-virtual-folder-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/add-virtual-folder-dto.ts#L29)

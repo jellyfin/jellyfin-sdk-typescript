@@ -20,7 +20,7 @@ Request parameters for syncPlayRemoveFromPlaylist operation in SyncPlayApi.
 
 ### removeFromPlaylistRequestDto
 
-• `Readonly` **removeFromPlaylistRequestDto**: [`RemoveFromPlaylistRequestDto`](generated_client.RemoveFromPlaylistRequestDto.md)
+• `Readonly` **removeFromPlaylistRequestDto**: [`RemoveFromPlaylistRequestDto`](index.api.RemoveFromPlaylistRequestDto.md)
 
 The items to remove.
 
@@ -28,4 +28,4 @@ The items to remove.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1443](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/sync-play-api.ts#L1443)
+[generated-client/api/sync-play-api.ts:1443](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1443)

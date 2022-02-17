@@ -6,6 +6,7 @@
 
 ### Namespaces
 
+- [api](index.api.md)
 - [discovery](index.discovery.md)
 - [utils](index.utils.md)
 
@@ -48,7 +49,7 @@ The current API version of the generated client.
 
 #### Defined in
 
-[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/jellyfin.ts#L21)
+[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L21)
 
 ___
 
@@ -60,7 +61,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/api.ts#L19)
+[api.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L19)
 
 ___
 
@@ -72,4 +73,4 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/jellyfin.ts#L24)
+[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L24)

@@ -44,11 +44,11 @@ StartupApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -56,13 +56,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -90,13 +90,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### completeWizard
 
-▸ **completeWizard**(`options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **completeWizard**(`options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Completes the startup wizard.
 
@@ -112,17 +112,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L500)
+[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L500)
 
 ___
 
 ### getFirstUser
 
-▸ **getFirstUser**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md)\>\>
+▸ **getFirstUser**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
 
 **`summary`** Gets the first user.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md)\>\>
+`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L511)
+[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L511)
 
 ___
 
 ### getFirstUser2
 
-▸ **getFirstUser2**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md)\>\>
+▸ **getFirstUser2**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
 
 **`summary`** Gets the first user.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md)\>\>
+`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L522)
+[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L522)
 
 ___
 
 ### getStartupConfiguration
 
-▸ **getStartupConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/generated_client.StartupConfigurationDto.md)\>\>
+▸ **getStartupConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/index.api.StartupConfigurationDto.md), `any`\>\>
 
 **`summary`** Gets the initial startup wizard configuration.
 
@@ -190,17 +190,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/generated_client.StartupConfigurationDto.md)\>\>
+`Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/index.api.StartupConfigurationDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L533)
+[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L533)
 
 ___
 
 ### setRemoteAccess
 
-▸ **setRemoteAccess**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setRemoteAccess**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets remote access and UPnP.
 
@@ -217,17 +217,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L545)
+[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L545)
 
 ___
 
 ### updateInitialConfiguration
 
-▸ **updateInitialConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateInitialConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets the initial startup wizard configuration.
 
@@ -244,17 +244,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L557)
+[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L557)
 
 ___
 
 ### updateStartupUser
 
-▸ **updateStartupUser**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateStartupUser**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets the user name and password.
 
@@ -271,8 +271,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L569)
+[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L569)

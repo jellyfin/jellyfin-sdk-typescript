@@ -45,7 +45,7 @@ Class PlaybackProgressInfo.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:110](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L110)
+[generated-client/models/playback-progress-info.ts:110](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L110)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the index of the audio stream.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:62](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L62)
+[generated-client/models/playback-progress-info.ts:62](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L62)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L104)
+[generated-client/models/playback-progress-info.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L104)
 
 ___
 
@@ -85,7 +85,7 @@ Gets or sets a value indicating whether this instance can seek.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L32)
+[generated-client/models/playback-progress-info.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L32)
 
 ___
 
@@ -99,7 +99,7 @@ Gets or sets a value indicating whether this instance is muted.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L80)
+[generated-client/models/playback-progress-info.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L80)
 
 ___
 
@@ -113,19 +113,19 @@ Gets or sets a value indicating whether this instance is paused.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L74)
+[generated-client/models/playback-progress-info.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L74)
 
 ___
 
 ### Item
 
-• `Optional` **Item**: [`BaseItemDto`](generated_client.BaseItemDto.md)
+• `Optional` **Item**: [`BaseItemDto`](index.api.BaseItemDto.md)
 
 **`memberof`** PlaybackProgressInfo
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L38)
+[generated-client/models/playback-progress-info.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L38)
 
 ___
 
@@ -139,7 +139,7 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L44)
+[generated-client/models/playback-progress-info.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L44)
 
 ___
 
@@ -153,7 +153,7 @@ Gets or sets the live stream identifier.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L122)
+[generated-client/models/playback-progress-info.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L122)
 
 ___
 
@@ -167,31 +167,31 @@ Gets or sets the media version identifier.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L56)
+[generated-client/models/playback-progress-info.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L56)
 
 ___
 
 ### NowPlayingQueue
 
-• `Optional` **NowPlayingQueue**: ``null`` \| [`QueueItem`](generated_client.QueueItem.md)[]
+• `Optional` **NowPlayingQueue**: ``null`` \| [`QueueItem`](index.api.QueueItem.md)[]
 
 **`memberof`** PlaybackProgressInfo
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L140)
+[generated-client/models/playback-progress-info.ts:140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L140)
 
 ___
 
 ### PlayMethod
 
-• `Optional` **PlayMethod**: [`PlayMethod`](../enums/generated_client.PlayMethod.md)
+• `Optional` **PlayMethod**: [`PlayMethod`](../enums/index.api.PlayMethod.md)
 
 **`memberof`** PlaybackProgressInfo
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L116)
+[generated-client/models/playback-progress-info.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L116)
 
 ___
 
@@ -205,7 +205,7 @@ Gets or sets the play session identifier.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L128)
+[generated-client/models/playback-progress-info.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L128)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:92](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L92)
+[generated-client/models/playback-progress-info.ts:92](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L92)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L146)
+[generated-client/models/playback-progress-info.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L146)
 
 ___
 
@@ -243,19 +243,19 @@ Gets or sets the position ticks.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:86](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L86)
+[generated-client/models/playback-progress-info.ts:86](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L86)
 
 ___
 
 ### RepeatMode
 
-• `Optional` **RepeatMode**: [`RepeatMode`](../enums/generated_client.RepeatMode.md)
+• `Optional` **RepeatMode**: [`RepeatMode`](../enums/index.api.RepeatMode.md)
 
 **`memberof`** PlaybackProgressInfo
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L134)
+[generated-client/models/playback-progress-info.ts:134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L134)
 
 ___
 
@@ -269,7 +269,7 @@ Gets or sets the session id.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L50)
+[generated-client/models/playback-progress-info.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L50)
 
 ___
 
@@ -283,7 +283,7 @@ Gets or sets the index of the subtitle stream.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L68)
+[generated-client/models/playback-progress-info.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L68)
 
 ___
 
@@ -297,4 +297,4 @@ Gets or sets the volume level.
 
 #### Defined in
 
-[generated-client/models/playback-progress-info.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/playback-progress-info.ts#L98)
+[generated-client/models/playback-progress-info.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playback-progress-info.ts#L98)

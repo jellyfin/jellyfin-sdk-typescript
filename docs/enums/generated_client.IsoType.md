@@ -23,7 +23,7 @@ Enum IsoType.
 
 #### Defined in
 
-[generated-client/models/iso-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/iso-type.ts#L25)
+[generated-client/models/iso-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/iso-type.ts#L25)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/iso-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/iso-type.ts#L24)
+[generated-client/models/iso-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/iso-type.ts#L24)

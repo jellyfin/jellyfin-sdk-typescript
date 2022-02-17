@@ -20,7 +20,7 @@ Request parameters for getMovieRemoteSearchResults operation in ItemLookupApi.
 
 ### movieInfoRemoteSearchQuery
 
-• `Readonly` **movieInfoRemoteSearchQuery**: [`MovieInfoRemoteSearchQuery`](generated_client.MovieInfoRemoteSearchQuery.md)
+• `Readonly` **movieInfoRemoteSearchQuery**: [`MovieInfoRemoteSearchQuery`](index.api.MovieInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:828](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-lookup-api.ts#L828)
+[generated-client/api/item-lookup-api.ts:828](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L828)

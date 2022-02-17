@@ -45,11 +45,11 @@ LibraryStructureApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -57,13 +57,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -91,13 +91,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### addMediaPath
 
-▸ **addMediaPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **addMediaPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Add a media path to a library.
 
@@ -114,17 +114,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L784)
+[generated-client/api/library-structure-api.ts:784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L784)
 
 ___
 
 ### addVirtualFolder
 
-▸ **addVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **addVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Adds a virtual folder.
 
@@ -141,17 +141,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L796)
+[generated-client/api/library-structure-api.ts:796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L796)
 
 ___
 
 ### getVirtualFolders
 
-▸ **getVirtualFolders**(`options?`): `Promise`<`AxiosResponse`<[`VirtualFolderInfo`](../interfaces/generated_client.VirtualFolderInfo.md)[]\>\>
+▸ **getVirtualFolders**(`options?`): `Promise`<`AxiosResponse`<[`VirtualFolderInfo`](../interfaces/index.api.VirtualFolderInfo.md)[], `any`\>\>
 
 **`summary`** Gets all virtual folders.
 
@@ -167,17 +167,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`VirtualFolderInfo`](../interfaces/generated_client.VirtualFolderInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`VirtualFolderInfo`](../interfaces/index.api.VirtualFolderInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L807)
+[generated-client/api/library-structure-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L807)
 
 ___
 
 ### removeMediaPath
 
-▸ **removeMediaPath**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **removeMediaPath**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Remove a media path.
 
@@ -194,17 +194,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:819](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L819)
+[generated-client/api/library-structure-api.ts:819](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L819)
 
 ___
 
 ### removeVirtualFolder
 
-▸ **removeVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **removeVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Removes a virtual folder.
 
@@ -221,17 +221,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:831](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L831)
+[generated-client/api/library-structure-api.ts:831](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L831)
 
 ___
 
 ### renameVirtualFolder
 
-▸ **renameVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **renameVirtualFolder**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Renames a virtual folder.
 
@@ -248,17 +248,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L843)
+[generated-client/api/library-structure-api.ts:843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L843)
 
 ___
 
 ### updateLibraryOptions
 
-▸ **updateLibraryOptions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateLibraryOptions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Update library options.
 
@@ -275,17 +275,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L855)
+[generated-client/api/library-structure-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L855)
 
 ___
 
 ### updateMediaPath
 
-▸ **updateMediaPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateMediaPath**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates a media path.
 
@@ -302,8 +302,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L867)
+[generated-client/api/library-structure-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L867)

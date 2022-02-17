@@ -26,7 +26,7 @@
 
 #### Defined in
 
-[generated-client/models/general-command.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/general-command.ts#L41)
+[generated-client/models/general-command.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/general-command.ts#L41)
 
 ___
 
@@ -38,16 +38,16 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/general-command.ts#L35)
+[generated-client/models/general-command.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/general-command.ts#L35)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: [`GeneralCommandType`](../enums/generated_client.GeneralCommandType.md)
+• `Optional` **Name**: [`GeneralCommandType`](../enums/index.api.GeneralCommandType.md)
 
 **`memberof`** GeneralCommand
 
 #### Defined in
 
-[generated-client/models/general-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/general-command.ts#L29)
+[generated-client/models/general-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/general-command.ts#L29)

@@ -31,7 +31,7 @@ The subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1015](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1015)
+[generated-client/api/subtitle-api.ts:1015](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1015)
 
 ___
 
@@ -45,7 +45,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1008](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1008)
+[generated-client/api/subtitle-api.ts:1008](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1008)
 
 ___
 
@@ -59,7 +59,7 @@ The media source id.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1022](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1022)
+[generated-client/api/subtitle-api.ts:1022](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1022)
 
 ___
 
@@ -73,4 +73,4 @@ The subtitle segment length.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1029](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/subtitle-api.ts#L1029)
+[generated-client/api/subtitle-api.ts:1029](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1029)

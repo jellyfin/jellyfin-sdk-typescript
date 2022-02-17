@@ -40,11 +40,11 @@ RemoteImageApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -52,13 +52,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -86,13 +86,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### downloadRemoteImage
 
-▸ **downloadRemoteImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **downloadRemoteImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Downloads a remote image for an item.
 
@@ -109,17 +109,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L391)
+[generated-client/api/remote-image-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L391)
 
 ___
 
 ### getRemoteImageProviders
 
-▸ **getRemoteImageProviders**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/generated_client.ImageProviderInfo.md)[]\>\>
+▸ **getRemoteImageProviders**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/index.api.ImageProviderInfo.md)[], `any`\>\>
 
 **`summary`** Gets available remote image providers for an item.
 
@@ -136,17 +136,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/generated_client.ImageProviderInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/index.api.ImageProviderInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L403)
+[generated-client/api/remote-image-api.ts:403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L403)
 
 ___
 
 ### getRemoteImages
 
-▸ **getRemoteImages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/generated_client.RemoteImageResult.md)\>\>
+▸ **getRemoteImages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/index.api.RemoteImageResult.md), `any`\>\>
 
 **`summary`** Gets available remote images for an item.
 
@@ -163,8 +163,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/generated_client.RemoteImageResult.md)\>\>
+`Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/index.api.RemoteImageResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L415)
+[generated-client/api/remote-image-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L415)

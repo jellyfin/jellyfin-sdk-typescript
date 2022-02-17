@@ -21,7 +21,7 @@ Request parameters for sendFullGeneralCommand operation in SessionApi.
 
 ### generalCommand
 
-• `Readonly` **generalCommand**: [`GeneralCommand`](generated_client.GeneralCommand.md)
+• `Readonly` **generalCommand**: [`GeneralCommand`](index.api.GeneralCommand.md)
 
 The MediaBrowser.Model.Session.GeneralCommand.
 
@@ -29,7 +29,7 @@ The MediaBrowser.Model.Session.GeneralCommand.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1465](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1465)
+[generated-client/api/session-api.ts:1465](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1465)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1458](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1458)
+[generated-client/api/session-api.ts:1458](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1458)

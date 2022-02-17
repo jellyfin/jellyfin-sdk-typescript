@@ -21,13 +21,13 @@
 
 ### Condition
 
-• `Optional` **Condition**: [`ProfileConditionType`](../enums/generated_client.ProfileConditionType.md)
+• `Optional` **Condition**: [`ProfileConditionType`](../enums/index.api.ProfileConditionType.md)
 
 **`memberof`** ProfileCondition
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/profile-condition.ts#L30)
+[generated-client/models/profile-condition.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/profile-condition.ts#L30)
 
 ___
 
@@ -39,19 +39,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/profile-condition.ts#L48)
+[generated-client/models/profile-condition.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/profile-condition.ts#L48)
 
 ___
 
 ### Property
 
-• `Optional` **Property**: [`ProfileConditionValue`](../enums/generated_client.ProfileConditionValue.md)
+• `Optional` **Property**: [`ProfileConditionValue`](../enums/index.api.ProfileConditionValue.md)
 
 **`memberof`** ProfileCondition
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/profile-condition.ts#L36)
+[generated-client/models/profile-condition.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/profile-condition.ts#L36)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/profile-condition.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/profile-condition.ts#L42)
+[generated-client/models/profile-condition.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/profile-condition.ts#L42)

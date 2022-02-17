@@ -37,13 +37,13 @@ Optional. Return items that are siblings of a supplied item.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:837](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L837)
+[generated-client/api/tv-shows-api.ts:837](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L837)
 
 ___
 
 ### enableImageTypes
 
-• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/generated_client.ImageType.md)[]
+• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/index.api.ImageType.md)[]
 
 Optional. The image types to include in the output.
 
@@ -51,7 +51,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:858](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L858)
+[generated-client/api/tv-shows-api.ts:858](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L858)
 
 ___
 
@@ -65,7 +65,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L844)
+[generated-client/api/tv-shows-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L844)
 
 ___
 
@@ -79,13 +79,13 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:865](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L865)
+[generated-client/api/tv-shows-api.ts:865](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L865)
 
 ___
 
 ### fields
 
-• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/generated_client.ItemFields.md)[]
+• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/index.api.ItemFields.md)[]
 
 Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
 
@@ -93,7 +93,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:816](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L816)
+[generated-client/api/tv-shows-api.ts:816](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L816)
 
 ___
 
@@ -107,7 +107,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:851](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L851)
+[generated-client/api/tv-shows-api.ts:851](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L851)
 
 ___
 
@@ -121,7 +121,7 @@ Optional. Filter by items that are missing episodes or not.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:830](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L830)
+[generated-client/api/tv-shows-api.ts:830](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L830)
 
 ___
 
@@ -135,7 +135,7 @@ Optional. Filter by special season.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:823](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L823)
+[generated-client/api/tv-shows-api.ts:823](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L823)
 
 ___
 
@@ -149,7 +149,7 @@ The series id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L802)
+[generated-client/api/tv-shows-api.ts:802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L802)
 
 ___
 
@@ -163,4 +163,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:809](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/tv-shows-api.ts#L809)
+[generated-client/api/tv-shows-api.ts:809](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/tv-shows-api.ts#L809)

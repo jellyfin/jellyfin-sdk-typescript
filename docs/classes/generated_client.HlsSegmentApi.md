@@ -42,11 +42,11 @@ HlsSegmentApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getHlsAudioSegmentLegacyAac
 
-▸ **getHlsAudioSegmentLegacyAac**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsAudioSegmentLegacyAac**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the specified audio segment for an audio item.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L517)
+[generated-client/api/hls-segment-api.ts:517](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/hls-segment-api.ts#L517)
 
 ___
 
 ### getHlsAudioSegmentLegacyMp3
 
-▸ **getHlsAudioSegmentLegacyMp3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsAudioSegmentLegacyMp3**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets the specified audio segment for an audio item.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L529)
+[generated-client/api/hls-segment-api.ts:529](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/hls-segment-api.ts#L529)
 
 ___
 
 ### getHlsPlaylistLegacy
 
-▸ **getHlsPlaylistLegacy**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsPlaylistLegacy**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a hls video playlist.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L541)
+[generated-client/api/hls-segment-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/hls-segment-api.ts#L541)
 
 ___
 
 ### getHlsVideoSegmentLegacy
 
-▸ **getHlsVideoSegmentLegacy**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsVideoSegmentLegacy**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a hls video segment.
 
@@ -192,17 +192,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:553](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L553)
+[generated-client/api/hls-segment-api.ts:553](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/hls-segment-api.ts#L553)
 
 ___
 
 ### stopEncodingProcess
 
-▸ **stopEncodingProcess**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **stopEncodingProcess**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Stops an active encoding.
 
@@ -219,8 +219,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/hls-segment-api.ts#L565)
+[generated-client/api/hls-segment-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/hls-segment-api.ts#L565)

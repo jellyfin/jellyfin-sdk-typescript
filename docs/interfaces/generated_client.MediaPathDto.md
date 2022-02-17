@@ -30,7 +30,7 @@ Gets or sets the name of the library.
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/media-path-dto.ts#L29)
+[generated-client/models/media-path-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-path-dto.ts#L29)
 
 ___
 
@@ -44,16 +44,16 @@ Gets or sets the path to add.
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/media-path-dto.ts#L35)
+[generated-client/models/media-path-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-path-dto.ts#L35)
 
 ___
 
 ### PathInfo
 
-• `Optional` **PathInfo**: [`MediaPathInfo`](generated_client.MediaPathInfo.md)
+• `Optional` **PathInfo**: [`MediaPathInfo`](index.api.MediaPathInfo.md)
 
 **`memberof`** MediaPathDto
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/media-path-dto.ts#L41)
+[generated-client/models/media-path-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-path-dto.ts#L41)

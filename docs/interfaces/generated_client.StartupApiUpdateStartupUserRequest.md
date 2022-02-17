@@ -20,7 +20,7 @@ Request parameters for updateStartupUser operation in StartupApi.
 
 ### startupUserDto
 
-• `Optional` `Readonly` **startupUserDto**: [`StartupUserDto`](generated_client.StartupUserDto.md)
+• `Optional` `Readonly` **startupUserDto**: [`StartupUserDto`](index.api.StartupUserDto.md)
 
 The DTO containing username and password.
 
@@ -28,4 +28,4 @@ The DTO containing username and password.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:483](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L483)
+[generated-client/api/startup-api.ts:483](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L483)

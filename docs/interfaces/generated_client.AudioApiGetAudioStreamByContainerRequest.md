@@ -76,7 +76,7 @@ Optional. If true, the original file will be streamed statically without any enc
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L1993)
+[generated-client/api/audio-api.ts:1993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L1993)
 
 ___
 
@@ -90,7 +90,7 @@ Whether or not to allow copying of the audio stream url.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2084](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2084)
+[generated-client/api/audio-api.ts:2084](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2084)
 
 ___
 
@@ -104,7 +104,7 @@ Whether or not to allow copying of the video stream url.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2077)
+[generated-client/api/audio-api.ts:2077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2077)
 
 ___
 
@@ -118,7 +118,7 @@ Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this wi
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2112)
+[generated-client/api/audio-api.ts:2112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2112)
 
 ___
 
@@ -132,7 +132,7 @@ Optional. Specify a specific number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2119)
+[generated-client/api/audio-api.ts:2119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2119)
 
 ___
 
@@ -146,7 +146,7 @@ Optional. Specify a audio codec to encode to, e.g. mp3. If omitted the server wi
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2063)
+[generated-client/api/audio-api.ts:2063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2063)
 
 ___
 
@@ -160,7 +160,7 @@ Optional. Specify a specific audio sample rate, e.g. 44100.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2098](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2098)
+[generated-client/api/audio-api.ts:2098](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2098)
 
 ___
 
@@ -174,7 +174,7 @@ Optional. The index of the audio stream to use. If omitted the first audio strea
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2294)
+[generated-client/api/audio-api.ts:2294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2294)
 
 ___
 
@@ -188,7 +188,7 @@ Optional. Whether to break on non key frames.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2091)
+[generated-client/api/audio-api.ts:2091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2091)
 
 ___
 
@@ -202,13 +202,13 @@ The audio container.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L1986)
+[generated-client/api/audio-api.ts:1986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L1986)
 
 ___
 
 ### context
 
-• `Optional` `Readonly` **context**: [`EncodingContext`](../enums/generated_client.EncodingContext.md)
+• `Optional` `Readonly` **context**: [`EncodingContext`](../enums/index.api.EncodingContext.md)
 
 Optional. The MediaBrowser.Model.Dlna.EncodingContext.
 
@@ -216,7 +216,7 @@ Optional. The MediaBrowser.Model.Dlna.EncodingContext.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2308)
+[generated-client/api/audio-api.ts:2308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2308)
 
 ___
 
@@ -230,7 +230,7 @@ Whether or not to copy timestamps when transcoding with an offset. Defaults to f
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2161)
+[generated-client/api/audio-api.ts:2161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2161)
 
 ___
 
@@ -244,7 +244,7 @@ Optional. The limit of how many cpu cores to use.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2252)
+[generated-client/api/audio-api.ts:2252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2252)
 
 ___
 
@@ -258,7 +258,7 @@ Optional. Whether to deinterlace the video.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2231)
+[generated-client/api/audio-api.ts:2231](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2231)
 
 ___
 
@@ -272,7 +272,7 @@ The device id of the client requesting. Used to stop encoding processes when nee
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2056](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2056)
+[generated-client/api/audio-api.ts:2056](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2056)
 
 ___
 
@@ -286,7 +286,7 @@ Optional. The dlna device profile id to utilize.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2014)
+[generated-client/api/audio-api.ts:2014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2014)
 
 ___
 
@@ -300,7 +300,7 @@ Whether or not to allow automatic stream copy if requested values match the orig
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2070)
+[generated-client/api/audio-api.ts:2070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2070)
 
 ___
 
@@ -314,7 +314,7 @@ Optional. Whether to enable the MpegtsM2Ts mode.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2266)
+[generated-client/api/audio-api.ts:2266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2266)
 
 ___
 
@@ -328,7 +328,7 @@ Optional. A specific video framerate to encode to, e.g. 23.976. Generally this s
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2147)
+[generated-client/api/audio-api.ts:2147](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2147)
 
 ___
 
@@ -342,7 +342,7 @@ Optional. The fixed vertical resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2182)
+[generated-client/api/audio-api.ts:2182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2182)
 
 ___
 
@@ -356,7 +356,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L1979)
+[generated-client/api/audio-api.ts:1979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L1979)
 
 ___
 
@@ -370,7 +370,7 @@ Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2140)
+[generated-client/api/audio-api.ts:2140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2140)
 
 ___
 
@@ -384,7 +384,7 @@ The live stream id.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2259)
+[generated-client/api/audio-api.ts:2259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2259)
 
 ___
 
@@ -398,7 +398,7 @@ Optional. The maximum audio bit depth.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2105)
+[generated-client/api/audio-api.ts:2105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2105)
 
 ___
 
@@ -412,7 +412,7 @@ Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2126)
+[generated-client/api/audio-api.ts:2126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2126)
 
 ___
 
@@ -426,7 +426,7 @@ Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generall
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2154)
+[generated-client/api/audio-api.ts:2154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2154)
 
 ___
 
@@ -440,7 +440,7 @@ Optional.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2210)
+[generated-client/api/audio-api.ts:2210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2210)
 
 ___
 
@@ -454,7 +454,7 @@ Optional. The maximum video bit depth.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2217)
+[generated-client/api/audio-api.ts:2217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2217)
 
 ___
 
@@ -468,7 +468,7 @@ The media version id, if playing an alternate version.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2049](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2049)
+[generated-client/api/audio-api.ts:2049](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2049)
 
 ___
 
@@ -482,7 +482,7 @@ The minimum number of segments.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2042](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2042)
+[generated-client/api/audio-api.ts:2042](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2042)
 
 ___
 
@@ -496,7 +496,7 @@ The streaming parameters.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2000](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2000)
+[generated-client/api/audio-api.ts:2000](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2000)
 
 ___
 
@@ -510,7 +510,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2021)
+[generated-client/api/audio-api.ts:2021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2021)
 
 ___
 
@@ -524,7 +524,7 @@ Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, 
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2133)
+[generated-client/api/audio-api.ts:2133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2133)
 
 ___
 
@@ -538,7 +538,7 @@ Optional. Whether to require avc.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2224)
+[generated-client/api/audio-api.ts:2224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2224)
 
 ___
 
@@ -552,7 +552,7 @@ Optional. Whether to require a non anamporphic stream.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2238)
+[generated-client/api/audio-api.ts:2238](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2238)
 
 ___
 
@@ -566,7 +566,7 @@ The segment container.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2028](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2028)
+[generated-client/api/audio-api.ts:2028](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2028)
 
 ___
 
@@ -580,7 +580,7 @@ The segment lenght.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2035)
+[generated-client/api/audio-api.ts:2035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2035)
 
 ___
 
@@ -594,7 +594,7 @@ Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2168)
+[generated-client/api/audio-api.ts:2168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2168)
 
 ___
 
@@ -612,7 +612,7 @@ Optional. The streaming options.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2315)
+[generated-client/api/audio-api.ts:2315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2315)
 
 ___
 
@@ -626,13 +626,13 @@ Optional. Specify a subtitle codec to encode to.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2280)
+[generated-client/api/audio-api.ts:2280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2280)
 
 ___
 
 ### subtitleMethod
 
-• `Optional` `Readonly` **subtitleMethod**: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md)
+• `Optional` `Readonly` **subtitleMethod**: [`SubtitleDeliveryMethod`](../enums/index.api.SubtitleDeliveryMethod.md)
 
 Optional. Specify the subtitle delivery method.
 
@@ -640,7 +640,7 @@ Optional. Specify the subtitle delivery method.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2203)
+[generated-client/api/audio-api.ts:2203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2203)
 
 ___
 
@@ -654,7 +654,7 @@ Optional. The index of the subtitle stream to use. If omitted no subtitles will 
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2196)
+[generated-client/api/audio-api.ts:2196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2196)
 
 ___
 
@@ -668,7 +668,7 @@ The tag.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2007](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2007)
+[generated-client/api/audio-api.ts:2007](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2007)
 
 ___
 
@@ -682,7 +682,7 @@ Optional. The transcoding reason.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2287](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2287)
+[generated-client/api/audio-api.ts:2287](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2287)
 
 ___
 
@@ -696,7 +696,7 @@ Optional. The maximum number of audio channels to transcode.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2245)
+[generated-client/api/audio-api.ts:2245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2245)
 
 ___
 
@@ -710,7 +710,7 @@ Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this wil
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2189)
+[generated-client/api/audio-api.ts:2189](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2189)
 
 ___
 
@@ -724,7 +724,7 @@ Optional. Specify a video codec to encode to, e.g. h264. If omitted the server w
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2273)
+[generated-client/api/audio-api.ts:2273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2273)
 
 ___
 
@@ -738,7 +738,7 @@ Optional. The index of the video stream to use. If omitted the first video strea
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2301)
+[generated-client/api/audio-api.ts:2301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2301)
 
 ___
 
@@ -752,4 +752,4 @@ Optional. The fixed horizontal resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:2175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L2175)
+[generated-client/api/audio-api.ts:2175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L2175)

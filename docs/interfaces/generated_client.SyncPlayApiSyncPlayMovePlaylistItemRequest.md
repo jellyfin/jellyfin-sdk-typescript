@@ -20,7 +20,7 @@ Request parameters for syncPlayMovePlaylistItem operation in SyncPlayApi.
 
 ### movePlaylistItemRequestDto
 
-• `Readonly` **movePlaylistItemRequestDto**: [`MovePlaylistItemRequestDto`](generated_client.MovePlaylistItemRequestDto.md)
+• `Readonly` **movePlaylistItemRequestDto**: [`MovePlaylistItemRequestDto`](index.api.MovePlaylistItemRequestDto.md)
 
 The new position for the item.
 
@@ -28,4 +28,4 @@ The new position for the item.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/sync-play-api.ts#L1359)
+[generated-client/api/sync-play-api.ts:1359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1359)

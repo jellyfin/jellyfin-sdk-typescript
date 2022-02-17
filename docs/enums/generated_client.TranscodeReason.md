@@ -42,7 +42,7 @@
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L35)
+[generated-client/models/transcode-reason.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L35)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L44)
+[generated-client/models/transcode-reason.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L44)
 
 ___
 
@@ -62,7 +62,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L28)
+[generated-client/models/transcode-reason.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L28)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L29)
+[generated-client/models/transcode-reason.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L29)
 
 ___
 
@@ -82,7 +82,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L26)
+[generated-client/models/transcode-reason.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L26)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L33)
+[generated-client/models/transcode-reason.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L33)
 
 ___
 
@@ -102,7 +102,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L34)
+[generated-client/models/transcode-reason.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L34)
 
 ___
 
@@ -112,7 +112,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L27)
+[generated-client/models/transcode-reason.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L27)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L24)
+[generated-client/models/transcode-reason.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L24)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L46)
+[generated-client/models/transcode-reason.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L46)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L36)
+[generated-client/models/transcode-reason.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L36)
 
 ___
 
@@ -152,7 +152,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L38)
+[generated-client/models/transcode-reason.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L38)
 
 ___
 
@@ -162,7 +162,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L37)
+[generated-client/models/transcode-reason.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L37)
 
 ___
 
@@ -172,7 +172,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L45)
+[generated-client/models/transcode-reason.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L45)
 
 ___
 
@@ -182,7 +182,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L32)
+[generated-client/models/transcode-reason.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L32)
 
 ___
 
@@ -192,7 +192,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L31)
+[generated-client/models/transcode-reason.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L31)
 
 ___
 
@@ -202,7 +202,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L39)
+[generated-client/models/transcode-reason.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L39)
 
 ___
 
@@ -212,7 +212,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L40)
+[generated-client/models/transcode-reason.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L40)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L25)
+[generated-client/models/transcode-reason.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L25)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L41)
+[generated-client/models/transcode-reason.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L41)
 
 ___
 
@@ -242,7 +242,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L42)
+[generated-client/models/transcode-reason.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L42)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L43)
+[generated-client/models/transcode-reason.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L43)
 
 ___
 
@@ -262,4 +262,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/transcode-reason.ts#L30)
+[generated-client/models/transcode-reason.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L30)

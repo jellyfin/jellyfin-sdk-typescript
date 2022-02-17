@@ -20,7 +20,7 @@ Request parameters for setRemoteAccess operation in StartupApi.
 
 ### startupRemoteAccessDto
 
-• `Readonly` **startupRemoteAccessDto**: [`StartupRemoteAccessDto`](generated_client.StartupRemoteAccessDto.md)
+• `Readonly` **startupRemoteAccessDto**: [`StartupRemoteAccessDto`](index.api.StartupRemoteAccessDto.md)
 
 The startup remote access dto.
 
@@ -28,4 +28,4 @@ The startup remote access dto.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/startup-api.ts#L455)
+[generated-client/api/startup-api.ts:455](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L455)

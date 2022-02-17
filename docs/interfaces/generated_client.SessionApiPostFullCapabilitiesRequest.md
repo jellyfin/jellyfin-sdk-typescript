@@ -21,7 +21,7 @@ Request parameters for postFullCapabilities operation in SessionApi.
 
 ### clientCapabilitiesDto
 
-• `Readonly` **clientCapabilitiesDto**: [`ClientCapabilitiesDto`](generated_client.ClientCapabilitiesDto.md)
+• `Readonly` **clientCapabilitiesDto**: [`ClientCapabilitiesDto`](index.api.ClientCapabilitiesDto.md)
 
 The MediaBrowser.Model.Session.ClientCapabilities.
 
@@ -29,7 +29,7 @@ The MediaBrowser.Model.Session.ClientCapabilities.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1395)
+[generated-client/api/session-api.ts:1395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1395)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1402)
+[generated-client/api/session-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1402)

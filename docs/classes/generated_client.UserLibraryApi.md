@@ -47,11 +47,11 @@ UserLibraryApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -59,13 +59,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -75,7 +75,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -93,13 +93,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### deleteUserItemRating
 
-▸ **deleteUserItemRating**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **deleteUserItemRating**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Deletes a user\'s saved personal rating for an item.
 
@@ -116,17 +116,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1055)
+[generated-client/api/user-library-api.ts:1055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1055)
 
 ___
 
 ### getIntros
 
-▸ **getIntros**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getIntros**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets intros to play before the main media item plays.
 
@@ -143,17 +143,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1067](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1067)
+[generated-client/api/user-library-api.ts:1067](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1067)
 
 ___
 
 ### getItem
 
-▸ **getItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets an item from a user\'s library.
 
@@ -170,17 +170,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1079)
+[generated-client/api/user-library-api.ts:1079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1079)
 
 ___
 
 ### getLatestMedia
 
-▸ **getLatestMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+▸ **getLatestMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 **`summary`** Gets latest media.
 
@@ -197,17 +197,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1091)
+[generated-client/api/user-library-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1091)
 
 ___
 
 ### getLocalTrailers
 
-▸ **getLocalTrailers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+▸ **getLocalTrailers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 **`summary`** Gets local trailers for an item.
 
@@ -224,17 +224,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1103)
+[generated-client/api/user-library-api.ts:1103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1103)
 
 ___
 
 ### getRootFolder
 
-▸ **getRootFolder**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getRootFolder**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets the root folder from a user\'s library.
 
@@ -251,17 +251,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1115)
+[generated-client/api/user-library-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1115)
 
 ___
 
 ### getSpecialFeatures
 
-▸ **getSpecialFeatures**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+▸ **getSpecialFeatures**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 **`summary`** Gets special features for an item.
 
@@ -278,17 +278,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1127)
+[generated-client/api/user-library-api.ts:1127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1127)
 
 ___
 
 ### markFavoriteItem
 
-▸ **markFavoriteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **markFavoriteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Marks an item as a favorite.
 
@@ -305,17 +305,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1139)
+[generated-client/api/user-library-api.ts:1139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1139)
 
 ___
 
 ### unmarkFavoriteItem
 
-▸ **unmarkFavoriteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **unmarkFavoriteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Unmarks item as a favorite.
 
@@ -332,17 +332,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1151)
+[generated-client/api/user-library-api.ts:1151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1151)
 
 ___
 
 ### updateUserItemRating
 
-▸ **updateUserItemRating**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+▸ **updateUserItemRating**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Updates a user\'s rating for an item.
 
@@ -359,8 +359,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-library-api.ts#L1163)
+[generated-client/api/user-library-api.ts:1163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-library-api.ts#L1163)

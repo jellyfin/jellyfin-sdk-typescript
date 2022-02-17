@@ -19,13 +19,13 @@
 
 ### Genres
 
-• `Optional` **Genres**: ``null`` \| [`NameGuidPair`](generated_client.NameGuidPair.md)[]
+• `Optional` **Genres**: ``null`` \| [`NameGuidPair`](index.api.NameGuidPair.md)[]
 
 **`memberof`** QueryFilters
 
 #### Defined in
 
-[generated-client/models/query-filters.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/query-filters.ts#L29)
+[generated-client/models/query-filters.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/query-filters.ts#L29)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/query-filters.ts#L35)
+[generated-client/models/query-filters.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/query-filters.ts#L35)

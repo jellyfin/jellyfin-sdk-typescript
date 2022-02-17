@@ -47,13 +47,13 @@ Class SessionInfo.
 
 ### AdditionalUsers
 
-• `Optional` **AdditionalUsers**: ``null`` \| [`SessionUserInfo`](generated_client.SessionUserInfo.md)[]
+• `Optional` **AdditionalUsers**: ``null`` \| [`SessionUserInfo`](index.api.SessionUserInfo.md)[]
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L42)
+[generated-client/models/session-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L42)
 
 ___
 
@@ -67,19 +67,19 @@ Gets or sets the application version.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L138)
+[generated-client/models/session-info.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L138)
 
 ___
 
 ### Capabilities
 
-• `Optional` **Capabilities**: [`ClientCapabilities`](generated_client.ClientCapabilities.md)
+• `Optional` **Capabilities**: [`ClientCapabilities`](index.api.ClientCapabilities.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L48)
+[generated-client/models/session-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L48)
 
 ___
 
@@ -93,7 +93,7 @@ Gets or sets the type of the client.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L84)
+[generated-client/models/session-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L84)
 
 ___
 
@@ -107,7 +107,7 @@ Gets or sets the device id.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L132)
+[generated-client/models/session-info.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L132)
 
 ___
 
@@ -121,7 +121,7 @@ Gets or sets the name of the device.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L102)
+[generated-client/models/session-info.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L102)
 
 ___
 
@@ -135,19 +135,19 @@ Gets or sets the type of the device.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L108)
+[generated-client/models/session-info.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L108)
 
 ___
 
 ### FullNowPlayingItem
 
-• `Optional` **FullNowPlayingItem**: [`BaseItem`](generated_client.BaseItem.md)
+• `Optional` **FullNowPlayingItem**: [`BaseItem`](index.api.BaseItem.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L120)
+[generated-client/models/session-info.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L120)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L174)
+[generated-client/models/session-info.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L174)
 
 ___
 
@@ -173,7 +173,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L66)
+[generated-client/models/session-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L66)
 
 ___
 
@@ -187,7 +187,7 @@ Gets a value indicating whether this instance is active.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L150)
+[generated-client/models/session-info.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L150)
 
 ___
 
@@ -201,7 +201,7 @@ Gets or sets the last activity date.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L90)
+[generated-client/models/session-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L90)
 
 ___
 
@@ -215,55 +215,55 @@ Gets or sets the last playback check in.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L96)
+[generated-client/models/session-info.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L96)
 
 ___
 
 ### NowPlayingItem
 
-• `Optional` **NowPlayingItem**: [`BaseItemDto`](generated_client.BaseItemDto.md)
+• `Optional` **NowPlayingItem**: [`BaseItemDto`](index.api.BaseItemDto.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L114)
+[generated-client/models/session-info.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L114)
 
 ___
 
 ### NowPlayingQueue
 
-• `Optional` **NowPlayingQueue**: ``null`` \| [`QueueItem`](generated_client.QueueItem.md)[]
+• `Optional` **NowPlayingQueue**: ``null`` \| [`QueueItem`](index.api.QueueItem.md)[]
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L168)
+[generated-client/models/session-info.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L168)
 
 ___
 
 ### NowViewingItem
 
-• `Optional` **NowViewingItem**: [`BaseItemDto`](generated_client.BaseItemDto.md)
+• `Optional` **NowViewingItem**: [`BaseItemDto`](index.api.BaseItemDto.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L126)
+[generated-client/models/session-info.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L126)
 
 ___
 
 ### PlayState
 
-• `Optional` **PlayState**: [`PlayerStateInfo`](generated_client.PlayerStateInfo.md)
+• `Optional` **PlayState**: [`PlayerStateInfo`](index.api.PlayerStateInfo.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L36)
+[generated-client/models/session-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L36)
 
 ___
 
@@ -277,7 +277,7 @@ Gets or sets the playable media types.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L60)
+[generated-client/models/session-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L60)
 
 ___
 
@@ -289,7 +289,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L180)
+[generated-client/models/session-info.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L180)
 
 ___
 
@@ -303,7 +303,7 @@ Gets or sets the remote end point.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L54)
+[generated-client/models/session-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L54)
 
 ___
 
@@ -315,13 +315,13 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L186)
+[generated-client/models/session-info.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L186)
 
 ___
 
 ### SupportedCommands
 
-• `Optional` **SupportedCommands**: ``null`` \| [`GeneralCommandType`](../enums/generated_client.GeneralCommandType.md)[]
+• `Optional` **SupportedCommands**: ``null`` \| [`GeneralCommandType`](../enums/index.api.GeneralCommandType.md)[]
 
 Gets or sets the supported commands.
 
@@ -329,7 +329,7 @@ Gets or sets the supported commands.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L198)
+[generated-client/models/session-info.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L198)
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L156)
+[generated-client/models/session-info.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L156)
 
 ___
 
@@ -353,19 +353,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L162)
+[generated-client/models/session-info.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L162)
 
 ___
 
 ### TranscodingInfo
 
-• `Optional` **TranscodingInfo**: [`TranscodingInfo`](generated_client.TranscodingInfo.md)
+• `Optional` **TranscodingInfo**: [`TranscodingInfo`](index.api.TranscodingInfo.md)
 
 **`memberof`** SessionInfo
 
 #### Defined in
 
-[generated-client/models/session-info.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L144)
+[generated-client/models/session-info.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L144)
 
 ___
 
@@ -379,7 +379,7 @@ Gets or sets the user id.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L72)
+[generated-client/models/session-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L72)
 
 ___
 
@@ -393,7 +393,7 @@ Gets or sets the username.
 
 #### Defined in
 
-[generated-client/models/session-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L78)
+[generated-client/models/session-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L78)
 
 ___
 
@@ -405,4 +405,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/session-info.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/session-info.ts#L192)
+[generated-client/models/session-info.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/session-info.ts#L192)

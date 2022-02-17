@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/recommendation-dto.ts#L42)
+[generated-client/models/recommendation-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/recommendation-dto.ts#L42)
 
 ___
 
@@ -39,28 +39,28 @@ ___
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/recommendation-dto.ts#L48)
+[generated-client/models/recommendation-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/recommendation-dto.ts#L48)
 
 ___
 
 ### Items
 
-• `Optional` **Items**: ``null`` \| [`BaseItemDto`](generated_client.BaseItemDto.md)[]
+• `Optional` **Items**: ``null`` \| [`BaseItemDto`](index.api.BaseItemDto.md)[]
 
 **`memberof`** RecommendationDto
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/recommendation-dto.ts#L30)
+[generated-client/models/recommendation-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/recommendation-dto.ts#L30)
 
 ___
 
 ### RecommendationType
 
-• `Optional` **RecommendationType**: [`RecommendationType`](../enums/generated_client.RecommendationType.md)
+• `Optional` **RecommendationType**: [`RecommendationType`](../enums/index.api.RecommendationType.md)
 
 **`memberof`** RecommendationDto
 
 #### Defined in
 
-[generated-client/models/recommendation-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/recommendation-dto.ts#L36)
+[generated-client/models/recommendation-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/recommendation-dto.ts#L36)

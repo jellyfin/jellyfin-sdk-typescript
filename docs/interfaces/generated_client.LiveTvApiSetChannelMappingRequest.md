@@ -20,7 +20,7 @@ Request parameters for setChannelMapping operation in LiveTvApi.
 
 ### setChannelMappingDto
 
-• `Readonly` **setChannelMappingDto**: [`SetChannelMappingDto`](generated_client.SetChannelMappingDto.md)
+• `Readonly` **setChannelMappingDto**: [`SetChannelMappingDto`](index.api.SetChannelMappingDto.md)
 
 The set channel mapping dto.
 
@@ -28,4 +28,4 @@ The set channel mapping dto.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4439)
+[generated-client/api/live-tv-api.ts:4439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4439)

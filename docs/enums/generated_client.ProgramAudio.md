@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L29)
+[generated-client/models/program-audio.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L29)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L26)
+[generated-client/models/program-audio.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L26)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L27)
+[generated-client/models/program-audio.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L27)
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L24)
+[generated-client/models/program-audio.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L24)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L25)
+[generated-client/models/program-audio.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L25)
 
 ___
 
@@ -75,4 +75,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/program-audio.ts#L28)
+[generated-client/models/program-audio.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/program-audio.ts#L28)

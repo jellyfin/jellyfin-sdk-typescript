@@ -20,7 +20,7 @@ Request parameters for createUserByName operation in UserApi.
 
 ### createUserByName
 
-• `Readonly` **createUserByName**: [`CreateUserByName`](generated_client.CreateUserByName.md)
+• `Readonly` **createUserByName**: [`CreateUserByName`](index.api.CreateUserByName.md)
 
 The create user by name request body.
 
@@ -28,4 +28,4 @@ The create user by name request body.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/user-api.ts#L1119)
+[generated-client/api/user-api.ts:1119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1119)

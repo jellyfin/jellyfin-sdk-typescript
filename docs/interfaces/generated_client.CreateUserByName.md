@@ -29,7 +29,7 @@ Gets or sets the username.
 
 #### Defined in
 
-[generated-client/models/create-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/create-user-by-name.ts#L28)
+[generated-client/models/create-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/create-user-by-name.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the password.
 
 #### Defined in
 
-[generated-client/models/create-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/create-user-by-name.ts#L34)
+[generated-client/models/create-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/create-user-by-name.ts#L34)

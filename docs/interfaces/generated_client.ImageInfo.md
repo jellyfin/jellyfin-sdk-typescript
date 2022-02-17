@@ -35,7 +35,7 @@ Gets or sets the blurhash.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L53)
+[generated-client/models/image-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L53)
 
 ___
 
@@ -49,7 +49,7 @@ Gets or sets the height.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L59)
+[generated-client/models/image-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L59)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets the index of the image.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L35)
+[generated-client/models/image-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L35)
 
 ___
 
@@ -77,19 +77,19 @@ Gets or sets the image tag.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L41)
+[generated-client/models/image-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L41)
 
 ___
 
 ### ImageType
 
-• `Optional` **ImageType**: [`ImageType`](../enums/generated_client.ImageType.md)
+• `Optional` **ImageType**: [`ImageType`](../enums/index.api.ImageType.md)
 
 **`memberof`** ImageInfo
 
 #### Defined in
 
-[generated-client/models/image-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L29)
+[generated-client/models/image-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L29)
 
 ___
 
@@ -103,7 +103,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L47)
+[generated-client/models/image-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L47)
 
 ___
 
@@ -117,7 +117,7 @@ Gets or sets the size.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L71)
+[generated-client/models/image-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L71)
 
 ___
 
@@ -131,4 +131,4 @@ Gets or sets the width.
 
 #### Defined in
 
-[generated-client/models/image-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/image-info.ts#L65)
+[generated-client/models/image-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-info.ts#L65)

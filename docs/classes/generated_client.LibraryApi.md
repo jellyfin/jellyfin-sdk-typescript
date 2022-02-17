@@ -62,11 +62,11 @@ LibraryApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -74,13 +74,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -90,7 +90,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -108,13 +108,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### deleteItem
 
-▸ **deleteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes an item from the library and filesystem.
 
@@ -131,17 +131,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2348](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2348)
+[generated-client/api/library-api.ts:2348](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2348)
 
 ___
 
 ### deleteItems
 
-▸ **deleteItems**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteItems**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes items from the library and filesystem.
 
@@ -158,17 +158,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2360)
+[generated-client/api/library-api.ts:2360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2360)
 
 ___
 
 ### getAncestors
 
-▸ **getAncestors**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+▸ **getAncestors**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 **`summary`** Gets all parents of an item.
 
@@ -185,17 +185,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2372)
+[generated-client/api/library-api.ts:2372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2372)
 
 ___
 
 ### getCriticReviews
 
-▸ **getCriticReviews**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getCriticReviews**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets critic review for an item.
 
@@ -214,17 +214,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2385)
+[generated-client/api/library-api.ts:2385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2385)
 
 ___
 
 ### getDownload
 
-▸ **getDownload**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getDownload**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Downloads item media.
 
@@ -241,17 +241,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2397)
+[generated-client/api/library-api.ts:2397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2397)
 
 ___
 
 ### getFile
 
-▸ **getFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Get the original file of an item.
 
@@ -268,17 +268,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2409](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2409)
+[generated-client/api/library-api.ts:2409](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2409)
 
 ___
 
 ### getItemCounts
 
-▸ **getItemCounts**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ItemCounts`](../interfaces/generated_client.ItemCounts.md)\>\>
+▸ **getItemCounts**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ItemCounts`](../interfaces/index.api.ItemCounts.md), `any`\>\>
 
 **`summary`** Get item counts.
 
@@ -295,17 +295,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ItemCounts`](../interfaces/generated_client.ItemCounts.md)\>\>
+`Promise`<`AxiosResponse`<[`ItemCounts`](../interfaces/index.api.ItemCounts.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2421](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2421)
+[generated-client/api/library-api.ts:2421](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2421)
 
 ___
 
 ### getLibraryOptionsInfo
 
-▸ **getLibraryOptionsInfo**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`LibraryOptionsResultDto`](../interfaces/generated_client.LibraryOptionsResultDto.md)\>\>
+▸ **getLibraryOptionsInfo**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`LibraryOptionsResultDto`](../interfaces/index.api.LibraryOptionsResultDto.md), `any`\>\>
 
 **`summary`** Gets the library options info.
 
@@ -322,17 +322,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`LibraryOptionsResultDto`](../interfaces/generated_client.LibraryOptionsResultDto.md)\>\>
+`Promise`<`AxiosResponse`<[`LibraryOptionsResultDto`](../interfaces/index.api.LibraryOptionsResultDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2433)
+[generated-client/api/library-api.ts:2433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2433)
 
 ___
 
 ### getMediaFolders
 
-▸ **getMediaFolders**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getMediaFolders**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets all user media folders.
 
@@ -349,17 +349,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2445)
+[generated-client/api/library-api.ts:2445](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2445)
 
 ___
 
 ### getPhysicalPaths
 
-▸ **getPhysicalPaths**(`options?`): `Promise`<`AxiosResponse`<`string`[]\>\>
+▸ **getPhysicalPaths**(`options?`): `Promise`<`AxiosResponse`<`string`[], `any`\>\>
 
 **`summary`** Gets a list of physical paths from virtual folders.
 
@@ -375,17 +375,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`string`[]\>\>
+`Promise`<`AxiosResponse`<`string`[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2456)
+[generated-client/api/library-api.ts:2456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2456)
 
 ___
 
 ### getSimilarAlbums
 
-▸ **getSimilarAlbums**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarAlbums**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -402,17 +402,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2468)
+[generated-client/api/library-api.ts:2468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2468)
 
 ___
 
 ### getSimilarArtists
 
-▸ **getSimilarArtists**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarArtists**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -429,17 +429,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2480)
+[generated-client/api/library-api.ts:2480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2480)
 
 ___
 
 ### getSimilarItems
 
-▸ **getSimilarItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -456,17 +456,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2492](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2492)
+[generated-client/api/library-api.ts:2492](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2492)
 
 ___
 
 ### getSimilarMovies
 
-▸ **getSimilarMovies**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarMovies**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -483,17 +483,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2504](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2504)
+[generated-client/api/library-api.ts:2504](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2504)
 
 ___
 
 ### getSimilarShows
 
-▸ **getSimilarShows**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarShows**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -510,17 +510,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2516](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2516)
+[generated-client/api/library-api.ts:2516](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2516)
 
 ___
 
 ### getSimilarTrailers
 
-▸ **getSimilarTrailers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getSimilarTrailers**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets similar items.
 
@@ -537,17 +537,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2528](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2528)
+[generated-client/api/library-api.ts:2528](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2528)
 
 ___
 
 ### getThemeMedia
 
-▸ **getThemeMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AllThemeMediaResult`](../interfaces/generated_client.AllThemeMediaResult.md)\>\>
+▸ **getThemeMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AllThemeMediaResult`](../interfaces/index.api.AllThemeMediaResult.md), `any`\>\>
 
 **`summary`** Get theme songs and videos for an item.
 
@@ -564,17 +564,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AllThemeMediaResult`](../interfaces/generated_client.AllThemeMediaResult.md)\>\>
+`Promise`<`AxiosResponse`<[`AllThemeMediaResult`](../interfaces/index.api.AllThemeMediaResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2540](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2540)
+[generated-client/api/library-api.ts:2540](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2540)
 
 ___
 
 ### getThemeSongs
 
-▸ **getThemeSongs**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/generated_client.ThemeMediaResult.md)\>\>
+▸ **getThemeSongs**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/index.api.ThemeMediaResult.md), `any`\>\>
 
 **`summary`** Get theme songs for an item.
 
@@ -591,17 +591,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/generated_client.ThemeMediaResult.md)\>\>
+`Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/index.api.ThemeMediaResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2552)
+[generated-client/api/library-api.ts:2552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2552)
 
 ___
 
 ### getThemeVideos
 
-▸ **getThemeVideos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/generated_client.ThemeMediaResult.md)\>\>
+▸ **getThemeVideos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/index.api.ThemeMediaResult.md), `any`\>\>
 
 **`summary`** Get theme videos for an item.
 
@@ -618,17 +618,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/generated_client.ThemeMediaResult.md)\>\>
+`Promise`<`AxiosResponse`<[`ThemeMediaResult`](../interfaces/index.api.ThemeMediaResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2564](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2564)
+[generated-client/api/library-api.ts:2564](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2564)
 
 ___
 
 ### postAddedMovies
 
-▸ **postAddedMovies**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postAddedMovies**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that new movies have been added by an external source.
 
@@ -645,17 +645,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2576)
+[generated-client/api/library-api.ts:2576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2576)
 
 ___
 
 ### postAddedSeries
 
-▸ **postAddedSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postAddedSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that new episodes of a series have been added by an external source.
 
@@ -672,17 +672,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2588](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2588)
+[generated-client/api/library-api.ts:2588](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2588)
 
 ___
 
 ### postUpdatedMedia
 
-▸ **postUpdatedMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postUpdatedMedia**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that new movies have been added by an external source.
 
@@ -699,17 +699,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2600](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2600)
+[generated-client/api/library-api.ts:2600](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2600)
 
 ___
 
 ### postUpdatedMovies
 
-▸ **postUpdatedMovies**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postUpdatedMovies**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that new movies have been added by an external source.
 
@@ -726,17 +726,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2612](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2612)
+[generated-client/api/library-api.ts:2612](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2612)
 
 ___
 
 ### postUpdatedSeries
 
-▸ **postUpdatedSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postUpdatedSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that new episodes of a series have been added by an external source.
 
@@ -753,17 +753,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2624](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2624)
+[generated-client/api/library-api.ts:2624](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2624)
 
 ___
 
 ### refreshLibrary
 
-▸ **refreshLibrary**(`options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **refreshLibrary**(`options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Starts a library scan.
 
@@ -779,8 +779,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2635](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-api.ts#L2635)
+[generated-client/api/library-api.ts:2635](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2635)

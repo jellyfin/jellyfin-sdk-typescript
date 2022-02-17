@@ -40,11 +40,11 @@ ItemUpdateApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -52,13 +52,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -86,13 +86,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getMetadataEditorInfo
 
-▸ **getMetadataEditorInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`MetadataEditorInfo`](../interfaces/generated_client.MetadataEditorInfo.md)\>\>
+▸ **getMetadataEditorInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`MetadataEditorInfo`](../interfaces/index.api.MetadataEditorInfo.md), `any`\>\>
 
 **`summary`** Gets metadata editor info for an item.
 
@@ -109,17 +109,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`MetadataEditorInfo`](../interfaces/generated_client.MetadataEditorInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`MetadataEditorInfo`](../interfaces/index.api.MetadataEditorInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-update-api.ts#L318)
+[generated-client/api/item-update-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-update-api.ts#L318)
 
 ___
 
 ### updateItem
 
-▸ **updateItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates an item.
 
@@ -136,17 +136,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-update-api.ts#L330)
+[generated-client/api/item-update-api.ts:330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-update-api.ts#L330)
 
 ___
 
 ### updateItemContentType
 
-▸ **updateItemContentType**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateItemContentType**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates an item\'s content type.
 
@@ -163,8 +163,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-update-api.ts#L342)
+[generated-client/api/item-update-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-update-api.ts#L342)

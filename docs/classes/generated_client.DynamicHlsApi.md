@@ -45,11 +45,11 @@ DynamicHlsApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -57,13 +57,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -73,7 +73,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -91,13 +91,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getHlsAudioSegment
 
-▸ **getHlsAudioSegment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsAudioSegment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a video stream using HTTP live streaming.
 
@@ -114,17 +114,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6109)
+[generated-client/api/dynamic-hls-api.ts:6109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6109)
 
 ___
 
 ### getHlsVideoSegment
 
-▸ **getHlsVideoSegment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getHlsVideoSegment**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a video stream using HTTP live streaming.
 
@@ -141,17 +141,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6121)
+[generated-client/api/dynamic-hls-api.ts:6121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6121)
 
 ___
 
 ### getMasterHlsAudioPlaylist
 
-▸ **getMasterHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMasterHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio hls playlist stream.
 
@@ -168,17 +168,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6133)
+[generated-client/api/dynamic-hls-api.ts:6133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6133)
 
 ___
 
 ### getMasterHlsVideoPlaylist
 
-▸ **getMasterHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getMasterHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a video hls playlist stream.
 
@@ -195,17 +195,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6145)
+[generated-client/api/dynamic-hls-api.ts:6145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6145)
 
 ___
 
 ### getVariantHlsAudioPlaylist
 
-▸ **getVariantHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getVariantHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio stream using HTTP live streaming.
 
@@ -222,17 +222,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6157)
+[generated-client/api/dynamic-hls-api.ts:6157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6157)
 
 ___
 
 ### getVariantHlsVideoPlaylist
 
-▸ **getVariantHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getVariantHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a video stream using HTTP live streaming.
 
@@ -249,17 +249,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6169)
+[generated-client/api/dynamic-hls-api.ts:6169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6169)
 
 ___
 
 ### headMasterHlsAudioPlaylist
 
-▸ **headMasterHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headMasterHlsAudioPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio hls playlist stream.
 
@@ -276,17 +276,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6181)
+[generated-client/api/dynamic-hls-api.ts:6181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6181)
 
 ___
 
 ### headMasterHlsVideoPlaylist
 
-▸ **headMasterHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headMasterHlsVideoPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a video hls playlist stream.
 
@@ -303,8 +303,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dynamic-hls-api.ts#L6193)
+[generated-client/api/dynamic-hls-api.ts:6193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dynamic-hls-api.ts#L6193)

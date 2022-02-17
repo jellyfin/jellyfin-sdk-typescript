@@ -42,11 +42,11 @@ MediaInfoApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### closeLiveStream
 
-▸ **closeLiveStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **closeLiveStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Closes a media source.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:820](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/media-info-api.ts#L820)
+[generated-client/api/media-info-api.ts:820](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/media-info-api.ts#L820)
 
 ___
 
 ### getBitrateTestBytes
 
-▸ **getBitrateTestBytes**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getBitrateTestBytes**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Tests the network with a request with the size of the bitrate.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/media-info-api.ts#L832)
+[generated-client/api/media-info-api.ts:832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/media-info-api.ts#L832)
 
 ___
 
 ### getPlaybackInfo
 
-▸ **getPlaybackInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/generated_client.PlaybackInfoResponse.md)\>\>
+▸ **getPlaybackInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/index.api.PlaybackInfoResponse.md), `any`\>\>
 
 **`summary`** Gets live playback media info for an item.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/generated_client.PlaybackInfoResponse.md)\>\>
+`Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/index.api.PlaybackInfoResponse.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/media-info-api.ts#L844)
+[generated-client/api/media-info-api.ts:844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/media-info-api.ts#L844)
 
 ___
 
 ### getPostedPlaybackInfo
 
-▸ **getPostedPlaybackInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/generated_client.PlaybackInfoResponse.md)\>\>
+▸ **getPostedPlaybackInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/index.api.PlaybackInfoResponse.md), `any`\>\>
 
 For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
 
@@ -194,17 +194,17 @@ For backwards compatibility parameters can be sent via Query or Body, with Query
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/generated_client.PlaybackInfoResponse.md)\>\>
+`Promise`<`AxiosResponse`<[`PlaybackInfoResponse`](../interfaces/index.api.PlaybackInfoResponse.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:856](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/media-info-api.ts#L856)
+[generated-client/api/media-info-api.ts:856](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/media-info-api.ts#L856)
 
 ___
 
 ### openLiveStream
 
-▸ **openLiveStream**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`LiveStreamResponse`](../interfaces/generated_client.LiveStreamResponse.md)\>\>
+▸ **openLiveStream**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`LiveStreamResponse`](../interfaces/index.api.LiveStreamResponse.md), `any`\>\>
 
 **`summary`** Opens a media source.
 
@@ -221,8 +221,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`LiveStreamResponse`](../interfaces/generated_client.LiveStreamResponse.md)\>\>
+`Promise`<`AxiosResponse`<[`LiveStreamResponse`](../interfaces/index.api.LiveStreamResponse.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/media-info-api.ts#L868)
+[generated-client/api/media-info-api.ts:868](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/media-info-api.ts#L868)

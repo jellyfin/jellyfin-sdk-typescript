@@ -43,11 +43,11 @@ DlnaApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -55,13 +55,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -71,7 +71,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### createProfile
 
-▸ **createProfile**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **createProfile**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Creates a profile.
 
@@ -112,17 +112,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L478)
+[generated-client/api/dlna-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L478)
 
 ___
 
 ### deleteProfile
 
-▸ **deleteProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes a profile.
 
@@ -139,17 +139,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L490)
+[generated-client/api/dlna-api.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L490)
 
 ___
 
 ### getDefaultProfile
 
-▸ **getDefaultProfile**(`options?`): `Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)\>\>
+▸ **getDefaultProfile**(`options?`): `Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/index.api.DeviceProfile.md), `any`\>\>
 
 **`summary`** Gets the default profile.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)\>\>
+`Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/index.api.DeviceProfile.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L501)
+[generated-client/api/dlna-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L501)
 
 ___
 
 ### getProfile
 
-▸ **getProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)\>\>
+▸ **getProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/index.api.DeviceProfile.md), `any`\>\>
 
 **`summary`** Gets a single profile.
 
@@ -192,17 +192,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)\>\>
+`Promise`<`AxiosResponse`<[`DeviceProfile`](../interfaces/index.api.DeviceProfile.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L513)
+[generated-client/api/dlna-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L513)
 
 ___
 
 ### getProfileInfos
 
-▸ **getProfileInfos**(`options?`): `Promise`<`AxiosResponse`<[`DeviceProfileInfo`](../interfaces/generated_client.DeviceProfileInfo.md)[]\>\>
+▸ **getProfileInfos**(`options?`): `Promise`<`AxiosResponse`<[`DeviceProfileInfo`](../interfaces/index.api.DeviceProfileInfo.md)[], `any`\>\>
 
 **`summary`** Get profile infos.
 
@@ -218,17 +218,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceProfileInfo`](../interfaces/generated_client.DeviceProfileInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`DeviceProfileInfo`](../interfaces/index.api.DeviceProfileInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L524)
+[generated-client/api/dlna-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L524)
 
 ___
 
 ### updateProfile
 
-▸ **updateProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateProfile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates a profile.
 
@@ -245,8 +245,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dlna-api.ts#L536)
+[generated-client/api/dlna-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L536)

@@ -20,7 +20,7 @@ Request parameters for getMusicVideoRemoteSearchResults operation in ItemLookupA
 
 ### musicVideoInfoRemoteSearchQuery
 
-• `Readonly` **musicVideoInfoRemoteSearchQuery**: [`MusicVideoInfoRemoteSearchQuery`](generated_client.MusicVideoInfoRemoteSearchQuery.md)
+• `Readonly` **musicVideoInfoRemoteSearchQuery**: [`MusicVideoInfoRemoteSearchQuery`](index.api.MusicVideoInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:870](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-lookup-api.ts#L870)
+[generated-client/api/item-lookup-api.ts:870](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L870)

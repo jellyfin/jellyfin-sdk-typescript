@@ -53,11 +53,11 @@ SessionApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -65,13 +65,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -81,7 +81,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -99,13 +99,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### addUserToSession
 
-▸ **addUserToSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **addUserToSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Adds an additional user to a session.
 
@@ -122,17 +122,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1581)
+[generated-client/api/session-api.ts:1581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1581)
 
 ___
 
 ### displayContent
 
-▸ **displayContent**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **displayContent**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Instructs a session to browse to an item or view.
 
@@ -149,17 +149,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1593)
+[generated-client/api/session-api.ts:1593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1593)
 
 ___
 
 ### getAuthProviders
 
-▸ **getAuthProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+▸ **getAuthProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Get all auth providers.
 
@@ -175,17 +175,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1604)
+[generated-client/api/session-api.ts:1604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1604)
 
 ___
 
 ### getPasswordResetProviders
 
-▸ **getPasswordResetProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+▸ **getPasswordResetProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Get all password reset providers.
 
@@ -201,17 +201,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1615)
+[generated-client/api/session-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1615)
 
 ___
 
 ### getSessions
 
-▸ **getSessions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[]\>\>
+▸ **getSessions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/index.api.SessionInfo.md)[], `any`\>\>
 
 **`summary`** Gets a list of sessions.
 
@@ -228,17 +228,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/index.api.SessionInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1627)
+[generated-client/api/session-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1627)
 
 ___
 
 ### play
 
-▸ **play**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **play**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Instructs a session to play an item.
 
@@ -255,17 +255,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1639)
+[generated-client/api/session-api.ts:1639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1639)
 
 ___
 
 ### postCapabilities
 
-▸ **postCapabilities**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postCapabilities**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates capabilities for a device.
 
@@ -282,17 +282,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1651](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1651)
+[generated-client/api/session-api.ts:1651](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1651)
 
 ___
 
 ### postFullCapabilities
 
-▸ **postFullCapabilities**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **postFullCapabilities**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates capabilities for a device.
 
@@ -309,17 +309,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1663](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1663)
+[generated-client/api/session-api.ts:1663](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1663)
 
 ___
 
 ### removeUserFromSession
 
-▸ **removeUserFromSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **removeUserFromSession**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Removes an additional user from a session.
 
@@ -336,17 +336,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1675)
+[generated-client/api/session-api.ts:1675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1675)
 
 ___
 
 ### reportSessionEnded
 
-▸ **reportSessionEnded**(`options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **reportSessionEnded**(`options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that a session has ended.
 
@@ -362,17 +362,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1686)
+[generated-client/api/session-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1686)
 
 ___
 
 ### reportViewing
 
-▸ **reportViewing**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **reportViewing**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Reports that a session is viewing an item.
 
@@ -389,17 +389,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1698)
+[generated-client/api/session-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1698)
 
 ___
 
 ### sendFullGeneralCommand
 
-▸ **sendFullGeneralCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **sendFullGeneralCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Issues a full general command to a client.
 
@@ -416,17 +416,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1710)
+[generated-client/api/session-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1710)
 
 ___
 
 ### sendGeneralCommand
 
-▸ **sendGeneralCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **sendGeneralCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Issues a general command to a client.
 
@@ -443,17 +443,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1722)
+[generated-client/api/session-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1722)
 
 ___
 
 ### sendMessageCommand
 
-▸ **sendMessageCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **sendMessageCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Issues a command to a client to display a message to the user.
 
@@ -470,17 +470,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1734)
+[generated-client/api/session-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1734)
 
 ___
 
 ### sendPlaystateCommand
 
-▸ **sendPlaystateCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **sendPlaystateCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Issues a playstate command to a client.
 
@@ -497,17 +497,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1746)
+[generated-client/api/session-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1746)
 
 ___
 
 ### sendSystemCommand
 
-▸ **sendSystemCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **sendSystemCommand**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Issues a system command to a client.
 
@@ -524,8 +524,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1758)
+[generated-client/api/session-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1758)

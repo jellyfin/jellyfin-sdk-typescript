@@ -33,7 +33,7 @@ Optional. Include all languages.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:373](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L373)
+[generated-client/api/remote-image-api.ts:373](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L373)
 
 ___
 
@@ -47,7 +47,7 @@ Item Id.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:338](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L338)
+[generated-client/api/remote-image-api.ts:338](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L338)
 
 ___
 
@@ -61,7 +61,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L359)
+[generated-client/api/remote-image-api.ts:359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L359)
 
 ___
 
@@ -75,7 +75,7 @@ Optional. The image provider to use.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L366)
+[generated-client/api/remote-image-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L366)
 
 ___
 
@@ -89,13 +89,13 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:352](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L352)
+[generated-client/api/remote-image-api.ts:352](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L352)
 
 ___
 
 ### type
 
-• `Optional` `Readonly` **type**: [`ImageType`](../enums/generated_client.ImageType.md)
+• `Optional` `Readonly` **type**: [`ImageType`](../enums/index.api.ImageType.md)
 
 The image type.
 
@@ -103,4 +103,4 @@ The image type.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L345)
+[generated-client/api/remote-image-api.ts:345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L345)

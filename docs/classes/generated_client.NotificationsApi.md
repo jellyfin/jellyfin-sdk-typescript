@@ -44,11 +44,11 @@ NotificationsApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -56,13 +56,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -72,7 +72,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -90,13 +90,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### createAdminNotification
 
-▸ **createAdminNotification**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **createAdminNotification**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sends a notification to all admins.
 
@@ -113,17 +113,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:543](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L543)
+[generated-client/api/notifications-api.ts:543](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L543)
 
 ___
 
 ### getNotificationServices
 
-▸ **getNotificationServices**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+▸ **getNotificationServices**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Gets notification services.
 
@@ -139,17 +139,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:554](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L554)
+[generated-client/api/notifications-api.ts:554](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L554)
 
 ___
 
 ### getNotificationTypes
 
-▸ **getNotificationTypes**(`options?`): `Promise`<`AxiosResponse`<[`NotificationTypeInfo`](../interfaces/generated_client.NotificationTypeInfo.md)[]\>\>
+▸ **getNotificationTypes**(`options?`): `Promise`<`AxiosResponse`<[`NotificationTypeInfo`](../interfaces/index.api.NotificationTypeInfo.md)[], `any`\>\>
 
 **`summary`** Gets notification types.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NotificationTypeInfo`](../interfaces/generated_client.NotificationTypeInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NotificationTypeInfo`](../interfaces/index.api.NotificationTypeInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L565)
+[generated-client/api/notifications-api.ts:565](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L565)
 
 ___
 
 ### getNotifications
 
-▸ **getNotifications**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationResultDto`](../interfaces/generated_client.NotificationResultDto.md)\>\>
+▸ **getNotifications**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationResultDto`](../interfaces/index.api.NotificationResultDto.md), `any`\>\>
 
 **`summary`** Gets a user\'s notifications.
 
@@ -192,17 +192,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NotificationResultDto`](../interfaces/generated_client.NotificationResultDto.md)\>\>
+`Promise`<`AxiosResponse`<[`NotificationResultDto`](../interfaces/index.api.NotificationResultDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:577](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L577)
+[generated-client/api/notifications-api.ts:577](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L577)
 
 ___
 
 ### getNotificationsSummary
 
-▸ **getNotificationsSummary**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationsSummaryDto`](../interfaces/generated_client.NotificationsSummaryDto.md)\>\>
+▸ **getNotificationsSummary**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`NotificationsSummaryDto`](../interfaces/index.api.NotificationsSummaryDto.md), `any`\>\>
 
 **`summary`** Gets a user\'s notification summary.
 
@@ -219,17 +219,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NotificationsSummaryDto`](../interfaces/generated_client.NotificationsSummaryDto.md)\>\>
+`Promise`<`AxiosResponse`<[`NotificationsSummaryDto`](../interfaces/index.api.NotificationsSummaryDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:589](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L589)
+[generated-client/api/notifications-api.ts:589](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L589)
 
 ___
 
 ### setRead
 
-▸ **setRead**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setRead**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets notifications as read.
 
@@ -246,17 +246,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L601)
+[generated-client/api/notifications-api.ts:601](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L601)
 
 ___
 
 ### setUnread
 
-▸ **setUnread**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **setUnread**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Sets notifications as unread.
 
@@ -273,8 +273,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:613](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L613)
+[generated-client/api/notifications-api.ts:613](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L613)

@@ -38,7 +38,7 @@ Gets or sets a value indicating whether this instance is favorite.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L58)
+[generated-client/models/user-item-data-dto.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L58)
 
 ___
 
@@ -52,7 +52,7 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L88)
+[generated-client/models/user-item-data-dto.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L88)
 
 ___
 
@@ -66,7 +66,7 @@ Gets or sets the key.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L82)
+[generated-client/models/user-item-data-dto.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L82)
 
 ___
 
@@ -80,7 +80,7 @@ Gets or sets the last played date.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L70)
+[generated-client/models/user-item-data-dto.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L70)
 
 ___
 
@@ -94,7 +94,7 @@ Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemData
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L64)
+[generated-client/models/user-item-data-dto.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L64)
 
 ___
 
@@ -108,7 +108,7 @@ Gets or sets the play count.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L52)
+[generated-client/models/user-item-data-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L52)
 
 ___
 
@@ -122,7 +122,7 @@ Gets or sets the playback position ticks.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L46)
+[generated-client/models/user-item-data-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L46)
 
 ___
 
@@ -136,7 +136,7 @@ Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemData
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L76)
+[generated-client/models/user-item-data-dto.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L76)
 
 ___
 
@@ -150,7 +150,7 @@ Gets or sets the played percentage.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L34)
+[generated-client/models/user-item-data-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L34)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets the rating.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L28)
+[generated-client/models/user-item-data-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L28)
 
 ___
 
@@ -178,4 +178,4 @@ Gets or sets the unplayed item count.
 
 #### Defined in
 
-[generated-client/models/user-item-data-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/user-item-data-dto.ts#L40)
+[generated-client/models/user-item-data-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/user-item-data-dto.ts#L40)

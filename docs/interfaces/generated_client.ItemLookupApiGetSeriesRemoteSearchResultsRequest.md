@@ -20,7 +20,7 @@ Request parameters for getSeriesRemoteSearchResults operation in ItemLookupApi.
 
 ### seriesInfoRemoteSearchQuery
 
-• `Readonly` **seriesInfoRemoteSearchQuery**: [`SeriesInfoRemoteSearchQuery`](generated_client.SeriesInfoRemoteSearchQuery.md)
+• `Readonly` **seriesInfoRemoteSearchQuery**: [`SeriesInfoRemoteSearchQuery`](index.api.SeriesInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:898](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-lookup-api.ts#L898)
+[generated-client/api/item-lookup-api.ts:898](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L898)

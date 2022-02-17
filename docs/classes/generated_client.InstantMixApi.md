@@ -46,11 +46,11 @@ InstantMixApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -58,13 +58,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -74,7 +74,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -92,13 +92,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getInstantMixFromAlbum
 
-▸ **getInstantMixFromAlbum**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromAlbum**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given album.
 
@@ -115,17 +115,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1615)
+[generated-client/api/instant-mix-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1615)
 
 ___
 
 ### getInstantMixFromArtists
 
-▸ **getInstantMixFromArtists**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromArtists**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given artist.
 
@@ -142,17 +142,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1627)
+[generated-client/api/instant-mix-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1627)
 
 ___
 
 ### getInstantMixFromArtists2
 
-▸ **getInstantMixFromArtists2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromArtists2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given artist.
 
@@ -171,17 +171,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1640)
+[generated-client/api/instant-mix-api.ts:1640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1640)
 
 ___
 
 ### getInstantMixFromItem
 
-▸ **getInstantMixFromItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given item.
 
@@ -198,17 +198,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1652](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1652)
+[generated-client/api/instant-mix-api.ts:1652](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1652)
 
 ___
 
 ### getInstantMixFromMusicGenreById
 
-▸ **getInstantMixFromMusicGenreById**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromMusicGenreById**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given genre.
 
@@ -225,17 +225,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1664)
+[generated-client/api/instant-mix-api.ts:1664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1664)
 
 ___
 
 ### getInstantMixFromMusicGenreById2
 
-▸ **getInstantMixFromMusicGenreById2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromMusicGenreById2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given genre.
 
@@ -254,17 +254,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1677)
+[generated-client/api/instant-mix-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1677)
 
 ___
 
 ### getInstantMixFromMusicGenreByName
 
-▸ **getInstantMixFromMusicGenreByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromMusicGenreByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given genre.
 
@@ -281,17 +281,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1689)
+[generated-client/api/instant-mix-api.ts:1689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1689)
 
 ___
 
 ### getInstantMixFromPlaylist
 
-▸ **getInstantMixFromPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given playlist.
 
@@ -308,17 +308,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1701)
+[generated-client/api/instant-mix-api.ts:1701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1701)
 
 ___
 
 ### getInstantMixFromSong
 
-▸ **getInstantMixFromSong**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getInstantMixFromSong**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Creates an instant playlist based on a given song.
 
@@ -335,8 +335,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/instant-mix-api.ts#L1713)
+[generated-client/api/instant-mix-api.ts:1713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/instant-mix-api.ts#L1713)

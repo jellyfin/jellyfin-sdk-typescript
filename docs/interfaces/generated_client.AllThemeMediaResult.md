@@ -20,34 +20,34 @@
 
 ### SoundtrackSongsResult
 
-• `Optional` **SoundtrackSongsResult**: [`ThemeMediaResult`](generated_client.ThemeMediaResult.md)
+• `Optional` **SoundtrackSongsResult**: [`ThemeMediaResult`](index.api.ThemeMediaResult.md)
 
 **`memberof`** AllThemeMediaResult
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/all-theme-media-result.ts#L41)
+[generated-client/models/all-theme-media-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/all-theme-media-result.ts#L41)
 
 ___
 
 ### ThemeSongsResult
 
-• `Optional` **ThemeSongsResult**: [`ThemeMediaResult`](generated_client.ThemeMediaResult.md)
+• `Optional` **ThemeSongsResult**: [`ThemeMediaResult`](index.api.ThemeMediaResult.md)
 
 **`memberof`** AllThemeMediaResult
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/all-theme-media-result.ts#L35)
+[generated-client/models/all-theme-media-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/all-theme-media-result.ts#L35)
 
 ___
 
 ### ThemeVideosResult
 
-• `Optional` **ThemeVideosResult**: [`ThemeMediaResult`](generated_client.ThemeMediaResult.md)
+• `Optional` **ThemeVideosResult**: [`ThemeMediaResult`](index.api.ThemeMediaResult.md)
 
 **`memberof`** AllThemeMediaResult
 
 #### Defined in
 
-[generated-client/models/all-theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/all-theme-media-result.ts#L29)
+[generated-client/models/all-theme-media-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/all-theme-media-result.ts#L29)

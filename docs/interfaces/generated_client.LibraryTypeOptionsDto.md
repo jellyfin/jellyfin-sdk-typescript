@@ -24,7 +24,7 @@ Library type options dto.
 
 ### DefaultImageOptions
 
-• `Optional` **DefaultImageOptions**: ``null`` \| [`ImageOption`](generated_client.ImageOption.md)[]
+• `Optional` **DefaultImageOptions**: ``null`` \| [`ImageOption`](index.api.ImageOption.md)[]
 
 Gets or sets the default image options.
 
@@ -32,13 +32,13 @@ Gets or sets the default image options.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/library-type-options-dto.ts#L55)
+[generated-client/models/library-type-options-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/library-type-options-dto.ts#L55)
 
 ___
 
 ### ImageFetchers
 
-• `Optional` **ImageFetchers**: ``null`` \| [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
+• `Optional` **ImageFetchers**: ``null`` \| [`LibraryOptionInfoDto`](index.api.LibraryOptionInfoDto.md)[]
 
 Gets or sets the image fetchers.
 
@@ -46,13 +46,13 @@ Gets or sets the image fetchers.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/library-type-options-dto.ts#L43)
+[generated-client/models/library-type-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/library-type-options-dto.ts#L43)
 
 ___
 
 ### MetadataFetchers
 
-• `Optional` **MetadataFetchers**: ``null`` \| [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
+• `Optional` **MetadataFetchers**: ``null`` \| [`LibraryOptionInfoDto`](index.api.LibraryOptionInfoDto.md)[]
 
 Gets or sets the metadata fetchers.
 
@@ -60,13 +60,13 @@ Gets or sets the metadata fetchers.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/library-type-options-dto.ts#L37)
+[generated-client/models/library-type-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/library-type-options-dto.ts#L37)
 
 ___
 
 ### SupportedImageTypes
 
-• `Optional` **SupportedImageTypes**: ``null`` \| [`ImageType`](../enums/generated_client.ImageType.md)[]
+• `Optional` **SupportedImageTypes**: ``null`` \| [`ImageType`](../enums/index.api.ImageType.md)[]
 
 Gets or sets the supported image types.
 
@@ -74,7 +74,7 @@ Gets or sets the supported image types.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/library-type-options-dto.ts#L49)
+[generated-client/models/library-type-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/library-type-options-dto.ts#L49)
 
 ___
 
@@ -88,4 +88,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/library-type-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/library-type-options-dto.ts#L31)
+[generated-client/models/library-type-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/library-type-options-dto.ts#L31)

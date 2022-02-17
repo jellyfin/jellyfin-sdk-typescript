@@ -21,7 +21,7 @@ Request parameters for sendSystemCommand operation in SessionApi.
 
 ### command
 
-• `Readonly` **command**: [`GeneralCommandType`](../enums/generated_client.GeneralCommandType.md)
+• `Readonly` **command**: [`GeneralCommandType`](../enums/index.api.GeneralCommandType.md)
 
 The command to send.
 
@@ -29,7 +29,7 @@ The command to send.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1563)
+[generated-client/api/session-api.ts:1563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1563)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/session-api.ts#L1556)
+[generated-client/api/session-api.ts:1556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1556)

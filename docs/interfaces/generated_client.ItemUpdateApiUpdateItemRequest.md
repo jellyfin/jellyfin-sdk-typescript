@@ -21,7 +21,7 @@ Request parameters for updateItem operation in ItemUpdateApi.
 
 ### baseItemDto
 
-• `Readonly` **baseItemDto**: [`BaseItemDto`](generated_client.BaseItemDto.md)
+• `Readonly` **baseItemDto**: [`BaseItemDto`](index.api.BaseItemDto.md)
 
 The new item properties.
 
@@ -29,7 +29,7 @@ The new item properties.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-update-api.ts#L279)
+[generated-client/api/item-update-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-update-api.ts#L279)
 
 ___
 
@@ -43,4 +43,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-update-api.ts#L272)
+[generated-client/api/item-update-api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-update-api.ts#L272)

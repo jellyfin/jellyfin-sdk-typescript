@@ -20,7 +20,7 @@ Request parameters for updateMediaPath operation in LibraryStructureApi.
 
 ### updateMediaPathRequestDto
 
-• `Readonly` **updateMediaPathRequestDto**: [`UpdateMediaPathRequestDto`](generated_client.UpdateMediaPathRequestDto.md)
+• `Readonly` **updateMediaPathRequestDto**: [`UpdateMediaPathRequestDto`](index.api.UpdateMediaPathRequestDto.md)
 
 The name of the library and path infos.
 
@@ -28,4 +28,4 @@ The name of the library and path infos.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/library-structure-api.ts#L766)
+[generated-client/api/library-structure-api.ts:766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L766)

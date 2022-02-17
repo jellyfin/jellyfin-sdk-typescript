@@ -20,13 +20,13 @@
 
 ### Conditions
 
-• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](generated_client.ProfileCondition.md)[]
+• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](index.api.ProfileCondition.md)[]
 
 **`memberof`** ContainerProfile
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/container-profile.ts#L36)
+[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/container-profile.ts#L36)
 
 ___
 
@@ -38,16 +38,16 @@ ___
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/container-profile.ts#L42)
+[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/container-profile.ts#L42)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`DlnaProfileType`](../enums/generated_client.DlnaProfileType.md)
+• `Optional` **Type**: [`DlnaProfileType`](../enums/index.api.DlnaProfileType.md)
 
 **`memberof`** ContainerProfile
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/container-profile.ts#L30)
+[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/container-profile.ts#L30)

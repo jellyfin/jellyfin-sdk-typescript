@@ -30,7 +30,7 @@ The image url.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L310)
+[generated-client/api/remote-image-api.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L310)
 
 ___
 
@@ -44,13 +44,13 @@ Item Id.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:296](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L296)
+[generated-client/api/remote-image-api.ts:296](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L296)
 
 ___
 
 ### type
 
-• `Readonly` **type**: [`ImageType`](../enums/generated_client.ImageType.md)
+• `Readonly` **type**: [`ImageType`](../enums/index.api.ImageType.md)
 
 The image type.
 
@@ -58,4 +58,4 @@ The image type.
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/remote-image-api.ts#L303)
+[generated-client/api/remote-image-api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L303)

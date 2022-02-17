@@ -41,11 +41,11 @@ LocalizationApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -53,13 +53,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -69,7 +69,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -87,13 +87,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getCountries
 
-▸ **getCountries**(`options?`): `Promise`<`AxiosResponse`<[`CountryInfo`](../interfaces/generated_client.CountryInfo.md)[]\>\>
+▸ **getCountries**(`options?`): `Promise`<`AxiosResponse`<[`CountryInfo`](../interfaces/index.api.CountryInfo.md)[], `any`\>\>
 
 **`summary`** Gets known countries.
 
@@ -109,17 +109,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`CountryInfo`](../interfaces/generated_client.CountryInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`CountryInfo`](../interfaces/index.api.CountryInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/localization-api.ts#L282)
+[generated-client/api/localization-api.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/localization-api.ts#L282)
 
 ___
 
 ### getCultures
 
-▸ **getCultures**(`options?`): `Promise`<`AxiosResponse`<[`CultureDto`](../interfaces/generated_client.CultureDto.md)[]\>\>
+▸ **getCultures**(`options?`): `Promise`<`AxiosResponse`<[`CultureDto`](../interfaces/index.api.CultureDto.md)[], `any`\>\>
 
 **`summary`** Gets known cultures.
 
@@ -135,17 +135,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`CultureDto`](../interfaces/generated_client.CultureDto.md)[]\>\>
+`Promise`<`AxiosResponse`<[`CultureDto`](../interfaces/index.api.CultureDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/localization-api.ts#L293)
+[generated-client/api/localization-api.ts:293](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/localization-api.ts#L293)
 
 ___
 
 ### getLocalizationOptions
 
-▸ **getLocalizationOptions**(`options?`): `Promise`<`AxiosResponse`<[`LocalizationOption`](../interfaces/generated_client.LocalizationOption.md)[]\>\>
+▸ **getLocalizationOptions**(`options?`): `Promise`<`AxiosResponse`<[`LocalizationOption`](../interfaces/index.api.LocalizationOption.md)[], `any`\>\>
 
 **`summary`** Gets localization options.
 
@@ -161,17 +161,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`LocalizationOption`](../interfaces/generated_client.LocalizationOption.md)[]\>\>
+`Promise`<`AxiosResponse`<[`LocalizationOption`](../interfaces/index.api.LocalizationOption.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/localization-api.ts#L304)
+[generated-client/api/localization-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/localization-api.ts#L304)
 
 ___
 
 ### getParentalRatings
 
-▸ **getParentalRatings**(`options?`): `Promise`<`AxiosResponse`<[`ParentalRating`](../interfaces/generated_client.ParentalRating.md)[]\>\>
+▸ **getParentalRatings**(`options?`): `Promise`<`AxiosResponse`<[`ParentalRating`](../interfaces/index.api.ParentalRating.md)[], `any`\>\>
 
 **`summary`** Gets known parental ratings.
 
@@ -187,8 +187,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ParentalRating`](../interfaces/generated_client.ParentalRating.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ParentalRating`](../interfaces/index.api.ParentalRating.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/localization-api.ts#L315)
+[generated-client/api/localization-api.ts:315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/localization-api.ts#L315)

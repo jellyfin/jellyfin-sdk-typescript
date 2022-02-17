@@ -20,7 +20,7 @@ Request parameters for createAdminNotification operation in NotificationsApi.
 
 ### adminNotificationDto
 
-• `Readonly` **adminNotificationDto**: [`AdminNotificationDto`](generated_client.AdminNotificationDto.md)
+• `Readonly` **adminNotificationDto**: [`AdminNotificationDto`](index.api.AdminNotificationDto.md)
 
 The notification request.
 
@@ -28,4 +28,4 @@ The notification request.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/notifications-api.ts#L469)
+[generated-client/api/notifications-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/notifications-api.ts#L469)

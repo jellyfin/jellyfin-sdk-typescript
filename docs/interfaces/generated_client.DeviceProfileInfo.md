@@ -28,7 +28,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/device-profile-info.ts#L29)
+[generated-client/models/device-profile-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/device-profile-info.ts#L29)
 
 ___
 
@@ -42,16 +42,16 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/device-profile-info.ts#L35)
+[generated-client/models/device-profile-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/device-profile-info.ts#L35)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`DeviceProfileType`](../enums/generated_client.DeviceProfileType.md)
+• `Optional` **Type**: [`DeviceProfileType`](../enums/index.api.DeviceProfileType.md)
 
 **`memberof`** DeviceProfileInfo
 
 #### Defined in
 
-[generated-client/models/device-profile-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/device-profile-info.ts#L41)
+[generated-client/models/device-profile-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/device-profile-info.ts#L41)

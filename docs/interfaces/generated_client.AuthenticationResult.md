@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/authentication-result.ts#L42)
+[generated-client/models/authentication-result.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/authentication-result.ts#L42)
 
 ___
 
@@ -39,28 +39,28 @@ ___
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/authentication-result.ts#L48)
+[generated-client/models/authentication-result.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/authentication-result.ts#L48)
 
 ___
 
 ### SessionInfo
 
-• `Optional` **SessionInfo**: [`SessionInfo`](generated_client.SessionInfo.md)
+• `Optional` **SessionInfo**: [`SessionInfo`](index.api.SessionInfo.md)
 
 **`memberof`** AuthenticationResult
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/authentication-result.ts#L36)
+[generated-client/models/authentication-result.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/authentication-result.ts#L36)
 
 ___
 
 ### User
 
-• `Optional` **User**: [`UserDto`](generated_client.UserDto.md)
+• `Optional` **User**: [`UserDto`](index.api.UserDto.md)
 
 **`memberof`** AuthenticationResult
 
 #### Defined in
 
-[generated-client/models/authentication-result.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/authentication-result.ts#L30)
+[generated-client/models/authentication-result.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/authentication-result.ts#L30)

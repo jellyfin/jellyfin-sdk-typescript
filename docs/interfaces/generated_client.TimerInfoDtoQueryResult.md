@@ -20,7 +20,7 @@
 
 ### Items
 
-• `Optional` **Items**: ``null`` \| [`TimerInfoDto`](generated_client.TimerInfoDto.md)[]
+• `Optional` **Items**: ``null`` \| [`TimerInfoDto`](index.api.TimerInfoDto.md)[]
 
 Gets or sets the items.
 
@@ -28,7 +28,7 @@ Gets or sets the items.
 
 #### Defined in
 
-[generated-client/models/timer-info-dto-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/timer-info-dto-query-result.ts#L29)
+[generated-client/models/timer-info-dto-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/timer-info-dto-query-result.ts#L29)
 
 ___
 
@@ -42,7 +42,7 @@ The index of the first record in Items.
 
 #### Defined in
 
-[generated-client/models/timer-info-dto-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/timer-info-dto-query-result.ts#L41)
+[generated-client/models/timer-info-dto-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/timer-info-dto-query-result.ts#L41)
 
 ___
 
@@ -56,4 +56,4 @@ The total number of records available.
 
 #### Defined in
 
-[generated-client/models/timer-info-dto-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/timer-info-dto-query-result.ts#L35)
+[generated-client/models/timer-info-dto-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/timer-info-dto-query-result.ts#L35)

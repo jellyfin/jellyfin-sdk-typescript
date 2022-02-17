@@ -20,13 +20,13 @@
 
 ### Action
 
-• `Optional` **Action**: [`ForgotPasswordAction`](../enums/generated_client.ForgotPasswordAction.md)
+• `Optional` **Action**: [`ForgotPasswordAction`](../enums/index.api.ForgotPasswordAction.md)
 
 **`memberof`** ForgotPasswordResult
 
 #### Defined in
 
-[generated-client/models/forgot-password-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/forgot-password-result.ts#L29)
+[generated-client/models/forgot-password-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/forgot-password-result.ts#L29)
 
 ___
 
@@ -40,7 +40,7 @@ Gets or sets the pin expiration date.
 
 #### Defined in
 
-[generated-client/models/forgot-password-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/forgot-password-result.ts#L41)
+[generated-client/models/forgot-password-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/forgot-password-result.ts#L41)
 
 ___
 
@@ -54,4 +54,4 @@ Gets or sets the pin file.
 
 #### Defined in
 
-[generated-client/models/forgot-password-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/forgot-password-result.ts#L35)
+[generated-client/models/forgot-password-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/forgot-password-result.ts#L35)

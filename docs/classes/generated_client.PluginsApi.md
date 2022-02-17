@@ -47,11 +47,11 @@ PluginsApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -59,13 +59,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -75,7 +75,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -93,13 +93,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### disablePlugin
 
-▸ **disablePlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **disablePlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Disable a plugin.
 
@@ -116,17 +116,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L835)
+[generated-client/api/plugins-api.ts:835](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L835)
 
 ___
 
 ### enablePlugin
 
-▸ **enablePlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **enablePlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Enables a disabled plugin.
 
@@ -143,17 +143,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L847)
+[generated-client/api/plugins-api.ts:847](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L847)
 
 ___
 
 ### getPluginConfiguration
 
-▸ **getPluginConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`object`\>\>
+▸ **getPluginConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`object`, `any`\>\>
 
 **`summary`** Gets plugin configuration.
 
@@ -170,17 +170,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`object`\>\>
+`Promise`<`AxiosResponse`<`object`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L859)
+[generated-client/api/plugins-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L859)
 
 ___
 
 ### getPluginImage
 
-▸ **getPluginImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getPluginImage**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a plugin\'s image.
 
@@ -197,17 +197,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:871](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L871)
+[generated-client/api/plugins-api.ts:871](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L871)
 
 ___
 
 ### getPluginManifest
 
-▸ **getPluginManifest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **getPluginManifest**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Gets a plugin\'s manifest.
 
@@ -224,17 +224,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L883)
+[generated-client/api/plugins-api.ts:883](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L883)
 
 ___
 
 ### getPlugins
 
-▸ **getPlugins**(`options?`): `Promise`<`AxiosResponse`<[`PluginInfo`](../interfaces/generated_client.PluginInfo.md)[]\>\>
+▸ **getPlugins**(`options?`): `Promise`<`AxiosResponse`<[`PluginInfo`](../interfaces/index.api.PluginInfo.md)[], `any`\>\>
 
 **`summary`** Gets a list of currently installed plugins.
 
@@ -250,17 +250,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PluginInfo`](../interfaces/generated_client.PluginInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`PluginInfo`](../interfaces/index.api.PluginInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L894)
+[generated-client/api/plugins-api.ts:894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L894)
 
 ___
 
 ### uninstallPlugin
 
-▸ **uninstallPlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **uninstallPlugin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Uninstalls a plugin.
 
@@ -279,17 +279,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L907)
+[generated-client/api/plugins-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L907)
 
 ___
 
 ### uninstallPluginByVersion
 
-▸ **uninstallPluginByVersion**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **uninstallPluginByVersion**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Uninstalls a plugin by version.
 
@@ -306,17 +306,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:919](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L919)
+[generated-client/api/plugins-api.ts:919](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L919)
 
 ___
 
 ### updatePluginConfiguration
 
-▸ **updatePluginConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updatePluginConfiguration**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 Accepts plugin configuration as JSON body.
 
@@ -335,17 +335,17 @@ Accepts plugin configuration as JSON body.
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L931)
+[generated-client/api/plugins-api.ts:931](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L931)
 
 ___
 
 ### updatePluginSecurityInfo
 
-▸ **updatePluginSecurityInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updatePluginSecurityInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates plugin security info.
 
@@ -364,8 +364,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/plugins-api.ts#L944)
+[generated-client/api/plugins-api.ts:944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L944)

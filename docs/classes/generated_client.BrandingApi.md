@@ -40,11 +40,11 @@ BrandingApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -52,13 +52,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -68,7 +68,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -86,13 +86,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getBrandingCss
 
-▸ **getBrandingCss**(`options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **getBrandingCss**(`options?`): `Promise`<`AxiosResponse`<`string`, `any`\>\>
 
 **`summary`** Gets branding css.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`string`\>\>
+`Promise`<`AxiosResponse`<`string`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/branding-api.ts#L215)
+[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L215)
 
 ___
 
 ### getBrandingCss2
 
-▸ **getBrandingCss2**(`options?`): `Promise`<`AxiosResponse`<`string`\>\>
+▸ **getBrandingCss2**(`options?`): `Promise`<`AxiosResponse`<`string`, `any`\>\>
 
 **`summary`** Gets branding css.
 
@@ -134,17 +134,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`string`\>\>
+`Promise`<`AxiosResponse`<`string`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/branding-api.ts#L226)
+[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L226)
 
 ___
 
 ### getBrandingOptions
 
-▸ **getBrandingOptions**(`options?`): `Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/generated_client.BrandingOptions.md)\>\>
+▸ **getBrandingOptions**(`options?`): `Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/index.api.BrandingOptions.md), `any`\>\>
 
 **`summary`** Gets branding configuration.
 
@@ -160,8 +160,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/generated_client.BrandingOptions.md)\>\>
+`Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/index.api.BrandingOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/branding-api.ts#L237)
+[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L237)

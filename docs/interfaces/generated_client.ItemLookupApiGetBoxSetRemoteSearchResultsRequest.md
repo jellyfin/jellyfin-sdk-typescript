@@ -20,7 +20,7 @@ Request parameters for getBoxSetRemoteSearchResults operation in ItemLookupApi.
 
 ### boxSetInfoRemoteSearchQuery
 
-• `Readonly` **boxSetInfoRemoteSearchQuery**: [`BoxSetInfoRemoteSearchQuery`](generated_client.BoxSetInfoRemoteSearchQuery.md)
+• `Readonly` **boxSetInfoRemoteSearchQuery**: [`BoxSetInfoRemoteSearchQuery`](index.api.BoxSetInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/item-lookup-api.ts#L800)
+[generated-client/api/item-lookup-api.ts:800](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L800)

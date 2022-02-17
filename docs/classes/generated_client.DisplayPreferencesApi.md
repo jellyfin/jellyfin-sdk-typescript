@@ -39,11 +39,11 @@ DisplayPreferencesApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -51,13 +51,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getDisplayPreferences
 
-▸ **getDisplayPreferences**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DisplayPreferencesDto`](../interfaces/generated_client.DisplayPreferencesDto.md)\>\>
+▸ **getDisplayPreferences**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DisplayPreferencesDto`](../interfaces/index.api.DisplayPreferencesDto.md), `any`\>\>
 
 **`summary`** Get Display Preferences.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DisplayPreferencesDto`](../interfaces/generated_client.DisplayPreferencesDto.md)\>\>
+`Promise`<`AxiosResponse`<[`DisplayPreferencesDto`](../interfaces/index.api.DisplayPreferencesDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/display-preferences-api.ts#L292)
+[generated-client/api/display-preferences-api.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L292)
 
 ___
 
 ### updateDisplayPreferences
 
-▸ **updateDisplayPreferences**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateDisplayPreferences**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Update Display Preferences.
 
@@ -135,8 +135,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/display-preferences-api.ts#L304)
+[generated-client/api/display-preferences-api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L304)

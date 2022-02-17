@@ -78,11 +78,11 @@ LiveTvApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -90,13 +90,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -106,7 +106,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -124,13 +124,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### addListingProvider
 
-▸ **addListingProvider**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/generated_client.ListingsProviderInfo.md)\>\>
+▸ **addListingProvider**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/index.api.ListingsProviderInfo.md), `any`\>\>
 
 **`summary`** Adds a listings provider.
 
@@ -147,17 +147,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/generated_client.ListingsProviderInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/index.api.ListingsProviderInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4499)
+[generated-client/api/live-tv-api.ts:4499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4499)
 
 ___
 
 ### addTunerHost
 
-▸ **addTunerHost**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)\>\>
+▸ **addTunerHost**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md), `any`\>\>
 
 **`summary`** Adds a tuner host.
 
@@ -174,17 +174,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4511)
+[generated-client/api/live-tv-api.ts:4511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4511)
 
 ___
 
 ### cancelSeriesTimer
 
-▸ **cancelSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **cancelSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Cancels a live tv series timer.
 
@@ -201,17 +201,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4523](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4523)
+[generated-client/api/live-tv-api.ts:4523](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4523)
 
 ___
 
 ### cancelTimer
 
-▸ **cancelTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **cancelTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Cancels a live tv timer.
 
@@ -228,17 +228,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4535)
+[generated-client/api/live-tv-api.ts:4535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4535)
 
 ___
 
 ### createSeriesTimer
 
-▸ **createSeriesTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **createSeriesTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Creates a live tv series timer.
 
@@ -255,17 +255,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4547](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4547)
+[generated-client/api/live-tv-api.ts:4547](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4547)
 
 ___
 
 ### createTimer
 
-▸ **createTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **createTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Creates a live tv timer.
 
@@ -282,17 +282,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4559)
+[generated-client/api/live-tv-api.ts:4559](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4559)
 
 ___
 
 ### deleteListingProvider
 
-▸ **deleteListingProvider**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteListingProvider**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Delete listing provider.
 
@@ -309,17 +309,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4571](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4571)
+[generated-client/api/live-tv-api.ts:4571](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4571)
 
 ___
 
 ### deleteRecording
 
-▸ **deleteRecording**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteRecording**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes a live tv recording.
 
@@ -336,17 +336,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4583)
+[generated-client/api/live-tv-api.ts:4583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4583)
 
 ___
 
 ### deleteTunerHost
 
-▸ **deleteTunerHost**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **deleteTunerHost**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Deletes a tuner host.
 
@@ -363,17 +363,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4595](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4595)
+[generated-client/api/live-tv-api.ts:4595](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4595)
 
 ___
 
 ### discoverTuners
 
-▸ **discoverTuners**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)[]\>\>
+▸ **discoverTuners**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md)[], `any`\>\>
 
 **`summary`** Discover tuners.
 
@@ -390,17 +390,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4607](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4607)
+[generated-client/api/live-tv-api.ts:4607](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4607)
 
 ___
 
 ### discvoverTuners
 
-▸ **discvoverTuners**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)[]\>\>
+▸ **discvoverTuners**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md)[], `any`\>\>
 
 **`summary`** Discover tuners.
 
@@ -417,17 +417,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/generated_client.TunerHostInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`TunerHostInfo`](../interfaces/index.api.TunerHostInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4619)
+[generated-client/api/live-tv-api.ts:4619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4619)
 
 ___
 
 ### getChannel
 
-▸ **getChannel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getChannel**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets a live tv channel.
 
@@ -444,17 +444,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4631](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4631)
+[generated-client/api/live-tv-api.ts:4631](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4631)
 
 ___
 
 ### getChannelMappingOptions
 
-▸ **getChannelMappingOptions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ChannelMappingOptionsDto`](../interfaces/generated_client.ChannelMappingOptionsDto.md)\>\>
+▸ **getChannelMappingOptions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ChannelMappingOptionsDto`](../interfaces/index.api.ChannelMappingOptionsDto.md), `any`\>\>
 
 **`summary`** Get channel mapping options.
 
@@ -471,17 +471,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ChannelMappingOptionsDto`](../interfaces/generated_client.ChannelMappingOptionsDto.md)\>\>
+`Promise`<`AxiosResponse`<[`ChannelMappingOptionsDto`](../interfaces/index.api.ChannelMappingOptionsDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4643](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4643)
+[generated-client/api/live-tv-api.ts:4643](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4643)
 
 ___
 
 ### getDefaultListingProvider
 
-▸ **getDefaultListingProvider**(`options?`): `Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/generated_client.ListingsProviderInfo.md)\>\>
+▸ **getDefaultListingProvider**(`options?`): `Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/index.api.ListingsProviderInfo.md), `any`\>\>
 
 **`summary`** Gets default listings provider info.
 
@@ -497,17 +497,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/generated_client.ListingsProviderInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`ListingsProviderInfo`](../interfaces/index.api.ListingsProviderInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4654](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4654)
+[generated-client/api/live-tv-api.ts:4654](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4654)
 
 ___
 
 ### getDefaultTimer
 
-▸ **getDefaultTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/generated_client.SeriesTimerInfoDto.md)\>\>
+▸ **getDefaultTimer**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/index.api.SeriesTimerInfoDto.md), `any`\>\>
 
 **`summary`** Gets the default values for a new timer.
 
@@ -524,17 +524,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/generated_client.SeriesTimerInfoDto.md)\>\>
+`Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/index.api.SeriesTimerInfoDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4666)
+[generated-client/api/live-tv-api.ts:4666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4666)
 
 ___
 
 ### getGuideInfo
 
-▸ **getGuideInfo**(`options?`): `Promise`<`AxiosResponse`<[`GuideInfo`](../interfaces/generated_client.GuideInfo.md)\>\>
+▸ **getGuideInfo**(`options?`): `Promise`<`AxiosResponse`<[`GuideInfo`](../interfaces/index.api.GuideInfo.md), `any`\>\>
 
 **`summary`** Get guid info.
 
@@ -550,17 +550,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`GuideInfo`](../interfaces/generated_client.GuideInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`GuideInfo`](../interfaces/index.api.GuideInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4677)
+[generated-client/api/live-tv-api.ts:4677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4677)
 
 ___
 
 ### getLineups
 
-▸ **getLineups**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+▸ **getLineups**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Gets available lineups.
 
@@ -577,17 +577,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4689)
+[generated-client/api/live-tv-api.ts:4689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4689)
 
 ___
 
 ### getLiveRecordingFile
 
-▸ **getLiveRecordingFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getLiveRecordingFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a live tv recording stream.
 
@@ -604,17 +604,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4701)
+[generated-client/api/live-tv-api.ts:4701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4701)
 
 ___
 
 ### getLiveStreamFile
 
-▸ **getLiveStreamFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getLiveStreamFile**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a live tv channel stream.
 
@@ -631,17 +631,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4713)
+[generated-client/api/live-tv-api.ts:4713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4713)
 
 ___
 
 ### getLiveTvChannels
 
-▸ **getLiveTvChannels**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getLiveTvChannels**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets available live tv channels.
 
@@ -658,17 +658,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4725)
+[generated-client/api/live-tv-api.ts:4725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4725)
 
 ___
 
 ### getLiveTvInfo
 
-▸ **getLiveTvInfo**(`options?`): `Promise`<`AxiosResponse`<[`LiveTvInfo`](../interfaces/generated_client.LiveTvInfo.md)\>\>
+▸ **getLiveTvInfo**(`options?`): `Promise`<`AxiosResponse`<[`LiveTvInfo`](../interfaces/index.api.LiveTvInfo.md), `any`\>\>
 
 **`summary`** Gets available live tv services.
 
@@ -684,17 +684,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`LiveTvInfo`](../interfaces/generated_client.LiveTvInfo.md)\>\>
+`Promise`<`AxiosResponse`<[`LiveTvInfo`](../interfaces/index.api.LiveTvInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4736](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4736)
+[generated-client/api/live-tv-api.ts:4736](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4736)
 
 ___
 
 ### getLiveTvPrograms
 
-▸ **getLiveTvPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getLiveTvPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets available live tv epgs.
 
@@ -711,17 +711,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4748](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4748)
+[generated-client/api/live-tv-api.ts:4748](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4748)
 
 ___
 
 ### getProgram
 
-▸ **getProgram**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getProgram**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets a live tv program.
 
@@ -738,17 +738,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4760)
+[generated-client/api/live-tv-api.ts:4760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4760)
 
 ___
 
 ### getPrograms
 
-▸ **getPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets available live tv epgs.
 
@@ -765,17 +765,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4772](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4772)
+[generated-client/api/live-tv-api.ts:4772](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4772)
 
 ___
 
 ### getRecommendedPrograms
 
-▸ **getRecommendedPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getRecommendedPrograms**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets recommended live tv epgs.
 
@@ -792,17 +792,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4784)
+[generated-client/api/live-tv-api.ts:4784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4784)
 
 ___
 
 ### getRecording
 
-▸ **getRecording**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+▸ **getRecording**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 **`summary`** Gets a live tv recording.
 
@@ -819,17 +819,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDto`](../interfaces/index.api.BaseItemDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4796)
+[generated-client/api/live-tv-api.ts:4796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4796)
 
 ___
 
 ### getRecordingFolders
 
-▸ **getRecordingFolders**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getRecordingFolders**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets recording folders.
 
@@ -846,17 +846,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4808](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4808)
+[generated-client/api/live-tv-api.ts:4808](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4808)
 
 ___
 
 ### getRecordingGroup
 
-▸ **getRecordingGroup**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **getRecordingGroup**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Get recording group.
 
@@ -875,17 +875,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4821](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4821)
+[generated-client/api/live-tv-api.ts:4821](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4821)
 
 ___
 
 ### getRecordingGroups
 
-▸ **getRecordingGroups**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getRecordingGroups**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets live tv recording groups.
 
@@ -904,17 +904,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4834](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4834)
+[generated-client/api/live-tv-api.ts:4834](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4834)
 
 ___
 
 ### getRecordings
 
-▸ **getRecordings**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getRecordings**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets live tv recordings.
 
@@ -931,17 +931,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4846)
+[generated-client/api/live-tv-api.ts:4846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4846)
 
 ___
 
 ### getRecordingsSeries
 
-▸ **getRecordingsSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getRecordingsSeries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets live tv recording series.
 
@@ -960,17 +960,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4859)
+[generated-client/api/live-tv-api.ts:4859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4859)
 
 ___
 
 ### getSchedulesDirectCountries
 
-▸ **getSchedulesDirectCountries**(`options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getSchedulesDirectCountries**(`options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets available countries.
 
@@ -986,17 +986,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4870](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4870)
+[generated-client/api/live-tv-api.ts:4870](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4870)
 
 ___
 
 ### getSeriesTimer
 
-▸ **getSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/generated_client.SeriesTimerInfoDto.md)\>\>
+▸ **getSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/index.api.SeriesTimerInfoDto.md), `any`\>\>
 
 **`summary`** Gets a live tv series timer.
 
@@ -1013,17 +1013,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/generated_client.SeriesTimerInfoDto.md)\>\>
+`Promise`<`AxiosResponse`<[`SeriesTimerInfoDto`](../interfaces/index.api.SeriesTimerInfoDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4882](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4882)
+[generated-client/api/live-tv-api.ts:4882](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4882)
 
 ___
 
 ### getSeriesTimers
 
-▸ **getSeriesTimers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDtoQueryResult`](../interfaces/generated_client.SeriesTimerInfoDtoQueryResult.md)\>\>
+▸ **getSeriesTimers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SeriesTimerInfoDtoQueryResult`](../interfaces/index.api.SeriesTimerInfoDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets live tv series timers.
 
@@ -1040,17 +1040,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SeriesTimerInfoDtoQueryResult`](../interfaces/generated_client.SeriesTimerInfoDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`SeriesTimerInfoDtoQueryResult`](../interfaces/index.api.SeriesTimerInfoDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4894)
+[generated-client/api/live-tv-api.ts:4894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4894)
 
 ___
 
 ### getTimer
 
-▸ **getTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TimerInfoDto`](../interfaces/generated_client.TimerInfoDto.md)\>\>
+▸ **getTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TimerInfoDto`](../interfaces/index.api.TimerInfoDto.md), `any`\>\>
 
 **`summary`** Gets a timer.
 
@@ -1067,17 +1067,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TimerInfoDto`](../interfaces/generated_client.TimerInfoDto.md)\>\>
+`Promise`<`AxiosResponse`<[`TimerInfoDto`](../interfaces/index.api.TimerInfoDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4906](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4906)
+[generated-client/api/live-tv-api.ts:4906](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4906)
 
 ___
 
 ### getTimers
 
-▸ **getTimers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TimerInfoDtoQueryResult`](../interfaces/generated_client.TimerInfoDtoQueryResult.md)\>\>
+▸ **getTimers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`TimerInfoDtoQueryResult`](../interfaces/index.api.TimerInfoDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets the live tv timers.
 
@@ -1094,17 +1094,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TimerInfoDtoQueryResult`](../interfaces/generated_client.TimerInfoDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`TimerInfoDtoQueryResult`](../interfaces/index.api.TimerInfoDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4918](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4918)
+[generated-client/api/live-tv-api.ts:4918](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4918)
 
 ___
 
 ### getTunerHostTypes
 
-▸ **getTunerHostTypes**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+▸ **getTunerHostTypes**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Get tuner host types.
 
@@ -1120,17 +1120,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4929](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4929)
+[generated-client/api/live-tv-api.ts:4929](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4929)
 
 ___
 
 ### resetTuner
 
-▸ **resetTuner**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **resetTuner**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Resets a tv tuner.
 
@@ -1147,17 +1147,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4941](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4941)
+[generated-client/api/live-tv-api.ts:4941](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4941)
 
 ___
 
 ### setChannelMapping
 
-▸ **setChannelMapping**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TunerChannelMapping`](../interfaces/generated_client.TunerChannelMapping.md)\>\>
+▸ **setChannelMapping**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`TunerChannelMapping`](../interfaces/index.api.TunerChannelMapping.md), `any`\>\>
 
 **`summary`** Set channel mappings.
 
@@ -1174,17 +1174,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`TunerChannelMapping`](../interfaces/generated_client.TunerChannelMapping.md)\>\>
+`Promise`<`AxiosResponse`<[`TunerChannelMapping`](../interfaces/index.api.TunerChannelMapping.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4953](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4953)
+[generated-client/api/live-tv-api.ts:4953](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4953)
 
 ___
 
 ### updateSeriesTimer
 
-▸ **updateSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateSeriesTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates a live tv series timer.
 
@@ -1201,17 +1201,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4965)
+[generated-client/api/live-tv-api.ts:4965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4965)
 
 ___
 
 ### updateTimer
 
-▸ **updateTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **updateTimer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Updates a live tv timer.
 
@@ -1228,8 +1228,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4977](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L4977)
+[generated-client/api/live-tv-api.ts:4977](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4977)

@@ -41,11 +41,11 @@ AudioApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -53,13 +53,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -69,7 +69,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -87,13 +87,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getAudioStream
 
-▸ **getAudioStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getAudioStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio stream.
 
@@ -110,17 +110,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L3033)
+[generated-client/api/audio-api.ts:3033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L3033)
 
 ___
 
 ### getAudioStreamByContainer
 
-▸ **getAudioStreamByContainer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getAudioStreamByContainer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio stream.
 
@@ -137,17 +137,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3045](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L3045)
+[generated-client/api/audio-api.ts:3045](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L3045)
 
 ___
 
 ### headAudioStream
 
-▸ **headAudioStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headAudioStream**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio stream.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L3057)
+[generated-client/api/audio-api.ts:3057](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L3057)
 
 ___
 
 ### headAudioStreamByContainer
 
-▸ **headAudioStreamByContainer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **headAudioStreamByContainer**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets an audio stream.
 
@@ -191,8 +191,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:3069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/audio-api.ts#L3069)
+[generated-client/api/audio-api.ts:3069](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/audio-api.ts#L3069)

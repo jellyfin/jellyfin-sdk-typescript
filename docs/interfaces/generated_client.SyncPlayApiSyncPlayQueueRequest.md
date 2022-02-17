@@ -20,7 +20,7 @@ Request parameters for syncPlayQueue operation in SyncPlayApi.
 
 ### queueRequestDto
 
-• `Readonly` **queueRequestDto**: [`QueueRequestDto`](generated_client.QueueRequestDto.md)
+• `Readonly` **queueRequestDto**: [`QueueRequestDto`](index.api.QueueRequestDto.md)
 
 The items to add.
 
@@ -28,4 +28,4 @@ The items to add.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/sync-play-api.ts#L1415)
+[generated-client/api/sync-play-api.ts:1415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1415)

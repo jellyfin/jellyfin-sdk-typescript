@@ -21,7 +21,7 @@ Parameters to create a Jellyfin SDK instance.
 
 #### Defined in
 
-[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/jellyfin.ts#L15)
+[jellyfin.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L15)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/jellyfin.ts#L16)
+[jellyfin.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L16)

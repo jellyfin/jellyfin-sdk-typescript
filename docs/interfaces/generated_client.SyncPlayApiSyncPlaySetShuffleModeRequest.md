@@ -20,7 +20,7 @@ Request parameters for syncPlaySetShuffleMode operation in SyncPlayApi.
 
 ### setShuffleModeRequestDto
 
-• `Readonly` **setShuffleModeRequestDto**: [`SetShuffleModeRequestDto`](generated_client.SetShuffleModeRequestDto.md)
+• `Readonly` **setShuffleModeRequestDto**: [`SetShuffleModeRequestDto`](index.api.SetShuffleModeRequestDto.md)
 
 The new shuffle mode.
 
@@ -28,4 +28,4 @@ The new shuffle mode.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/sync-play-api.ts#L1527)
+[generated-client/api/sync-play-api.ts:1527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1527)

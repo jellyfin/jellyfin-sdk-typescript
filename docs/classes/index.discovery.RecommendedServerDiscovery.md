@@ -35,7 +35,7 @@ Class to discover and evaluate potential servers.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L82)
+[discovery/recommended-server-discovery.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/discovery/recommended-server-discovery.ts#L82)
 
 ## Properties
 
@@ -45,7 +45,7 @@ Class to discover and evaluate potential servers.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L80)
+[discovery/recommended-server-discovery.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/discovery/recommended-server-discovery.ts#L80)
 
 ## Methods
 
@@ -57,10 +57,10 @@ Fetches the RecommendedServerInfo for multiple server addresses.
 
 #### Parameters
 
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `servers` | `string`[] | An array of server addresses. |
-| `minimumScore` | [`RecommendedServerInfoScore`](../enums/index.RecommendedServerInfoScore.md) | - |
+| Name | Type | Default value | Description |
+| :------ | :------ | :------ | :------ |
+| `servers` | `string`[] | `undefined` | An array of server addresses. |
+| `minimumScore` | [`RecommendedServerInfoScore`](../enums/index.RecommendedServerInfoScore.md) | `RecommendedServerInfoScore.BAD` | - |
 
 #### Returns
 
@@ -70,7 +70,7 @@ The RecommendedServerInfo for each address.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L114)
+[discovery/recommended-server-discovery.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/discovery/recommended-server-discovery.ts#L114)
 
 ___
 
@@ -94,4 +94,4 @@ The resulting RecommendedServerInfo.
 
 #### Defined in
 
-[discovery/recommended-server-discovery.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/discovery/recommended-server-discovery.ts#L91)
+[discovery/recommended-server-discovery.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/discovery/recommended-server-discovery.ts#L91)

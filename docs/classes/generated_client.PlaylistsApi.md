@@ -42,11 +42,11 @@ PlaylistsApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -54,13 +54,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -70,7 +70,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### addToPlaylist
 
-▸ **addToPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **addToPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Adds items to a playlist.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L675)
+[generated-client/api/playlists-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L675)
 
 ___
 
 ### createPlaylist
 
-▸ **createPlaylist**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`PlaylistCreationResult`](../interfaces/generated_client.PlaylistCreationResult.md)\>\>
+▸ **createPlaylist**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`PlaylistCreationResult`](../interfaces/index.api.PlaylistCreationResult.md), `any`\>\>
 
 For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
 
@@ -140,17 +140,17 @@ For backwards compatibility parameters can be sent via Query or Body, with Query
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PlaylistCreationResult`](../interfaces/generated_client.PlaylistCreationResult.md)\>\>
+`Promise`<`AxiosResponse`<[`PlaylistCreationResult`](../interfaces/index.api.PlaylistCreationResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L687)
+[generated-client/api/playlists-api.ts:687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L687)
 
 ___
 
 ### getPlaylistItems
 
-▸ **getPlaylistItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+▸ **getPlaylistItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets the original items of a playlist.
 
@@ -167,17 +167,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L699)
+[generated-client/api/playlists-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L699)
 
 ___
 
 ### moveItem
 
-▸ **moveItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **moveItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Moves a playlist item.
 
@@ -194,17 +194,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L711)
+[generated-client/api/playlists-api.ts:711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L711)
 
 ___
 
 ### removeFromPlaylist
 
-▸ **removeFromPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`\>\>
+▸ **removeFromPlaylist**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Removes items from a playlist.
 
@@ -221,8 +221,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`void`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:723](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/playlists-api.ts#L723)
+[generated-client/api/playlists-api.ts:723](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playlists-api.ts#L723)

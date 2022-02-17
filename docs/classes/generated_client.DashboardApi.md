@@ -39,11 +39,11 @@ DashboardApi - object-oriented interface
 
 #### Parameters
 
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](generated_client.Configuration.md) |
-| `basePath` | `string` |
-| `axios` | `AxiosInstance` |
+| Name | Type | Default value |
+| :------ | :------ | :------ |
+| `configuration?` | [`Configuration`](generated_client.Configuration.md) | `undefined` |
+| `basePath` | `string` | `BASE_PATH` |
+| `axios` | `AxiosInstance` | `globalAxios` |
 
 #### Inherited from
 
@@ -51,13 +51,13 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
 
 ## Properties
 
 ### axios
 
-• `Protected` **axios**: `AxiosInstance`
+• `Protected` **axios**: `AxiosInstance` = `globalAxios`
 
 #### Inherited from
 
@@ -67,7 +67,7 @@ ___
 
 ### basePath
 
-• `Protected` **basePath**: `string`
+• `Protected` **basePath**: `string` = `BASE_PATH`
 
 #### Inherited from
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getConfigurationPages
 
-▸ **getConfigurationPages**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\>\>
+▸ **getConfigurationPages**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/index.api.ConfigurationPageInfo.md)[], `any`\>\>
 
 **`summary`** Gets the configuration pages.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\>\>
+`Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/index.api.ConfigurationPageInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dashboard-api.ts#L227)
+[generated-client/api/dashboard-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L227)
 
 ___
 
 ### getDashboardConfigurationPage
 
-▸ **getDashboardConfigurationPage**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`any`\>\>
+▸ **getDashboardConfigurationPage**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 **`summary`** Gets a dashboard configuration page.
 
@@ -135,8 +135,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`any`\>\>
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/dashboard-api.ts#L239)
+[generated-client/api/dashboard-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L239)

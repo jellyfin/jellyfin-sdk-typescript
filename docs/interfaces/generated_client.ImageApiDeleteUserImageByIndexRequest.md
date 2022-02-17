@@ -22,7 +22,7 @@ Request parameters for deleteUserImageByIndex operation in ImageApi.
 
 ### imageType
 
-• `Readonly` **imageType**: [`ImageType`](../enums/generated_client.ImageType.md)
+• `Readonly` **imageType**: [`ImageType`](../enums/index.api.ImageType.md)
 
 (Unused) Image type.
 
@@ -30,7 +30,7 @@ Request parameters for deleteUserImageByIndex operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5892](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L5892)
+[generated-client/api/image-api.ts:5892](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5892)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5899](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L5899)
+[generated-client/api/image-api.ts:5899](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5899)
 
 ___
 
@@ -58,4 +58,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5885](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/image-api.ts#L5885)
+[generated-client/api/image-api.ts:5885](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5885)

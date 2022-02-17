@@ -20,7 +20,7 @@ Request parameters for createSeriesTimer operation in LiveTvApi.
 
 ### seriesTimerInfoDto
 
-• `Optional` `Readonly` **seriesTimerInfoDto**: [`SeriesTimerInfoDto`](generated_client.SeriesTimerInfoDto.md)
+• `Optional` `Readonly` **seriesTimerInfoDto**: [`SeriesTimerInfoDto`](index.api.SeriesTimerInfoDto.md)
 
 New series timer info.
 
@@ -28,4 +28,4 @@ New series timer info.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3312](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/api/live-tv-api.ts#L3312)
+[generated-client/api/live-tv-api.ts:3312](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3312)

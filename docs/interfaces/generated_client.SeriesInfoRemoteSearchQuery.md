@@ -29,7 +29,7 @@ Gets or sets a value indicating whether disabled providers should be included.
 
 #### Defined in
 
-[generated-client/models/series-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/series-info-remote-search-query.ts#L47)
+[generated-client/models/series-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/series-info-remote-search-query.ts#L47)
 
 ___
 
@@ -41,19 +41,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/series-info-remote-search-query.ts#L35)
+[generated-client/models/series-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/series-info-remote-search-query.ts#L35)
 
 ___
 
 ### SearchInfo
 
-• `Optional` **SearchInfo**: [`SeriesInfo`](generated_client.SeriesInfo.md)
+• `Optional` **SearchInfo**: [`SeriesInfo`](index.api.SeriesInfo.md)
 
 **`memberof`** SeriesInfoRemoteSearchQuery
 
 #### Defined in
 
-[generated-client/models/series-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/series-info-remote-search-query.ts#L29)
+[generated-client/models/series-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/series-info-remote-search-query.ts#L29)
 
 ___
 
@@ -67,4 +67,4 @@ Will only search within the given provider when set.
 
 #### Defined in
 
-[generated-client/models/series-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/c68c853/src/generated-client/models/series-info-remote-search-query.ts#L41)
+[generated-client/models/series-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/series-info-remote-search-query.ts#L41)
