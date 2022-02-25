@@ -11,7 +11,7 @@
 
 A TypeScript SDK for Jellyfin.
 
-> Warning: This project is under active development API changes may occur.
+> Warning: This project is under active development, so API changes may occur.
 
 ## Install
 
