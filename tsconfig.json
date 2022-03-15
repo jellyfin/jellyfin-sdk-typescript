@@ -4,7 +4,7 @@
     "target": "ES5",
     "declaration": true,
     "noImplicitAny": true,
-    "outDir": "dist"
+    "outDir": "lib"
   },
   "typedocOptions": {
     "entryPoints": [
