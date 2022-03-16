@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { PublicSystemInfo } from '../generated-client';
+import { PublicSystemInfo } from '../generated-client/models/public-system-info';
 
 import { RecommendedServerIssue } from './recommended-server-issue';
 

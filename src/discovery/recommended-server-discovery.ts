@@ -8,7 +8,8 @@ import { AxiosError, AxiosResponse } from 'axios';
 import { compare } from 'compare-versions';
 
 import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfo, RecommendedServerInfoScore, RecommendedServerIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '..';
-import { PublicSystemInfo } from '../generated-client';
+import { PublicSystemInfo } from '../generated-client/models/public-system-info';
+import { getSystemApi } from '../utils/api/system-api';
 
 /** The result of a SystemInfo request. */
 interface SystemInfoResult {
@@ -92,7 +93,7 @@ export class RecommendedServerDiscovery {
 		const api = this.jellyfin.createApi(address);
 		const startTime = Date.now();
 
-		return api.systemApi.getPublicSystemInfo({ timeout: HTTP_TIMEOUT })
+		return getSystemApi(api).getPublicSystemInfo({ timeout: HTTP_TIMEOUT })
 			.then(response => ({
 				address,
 				response,

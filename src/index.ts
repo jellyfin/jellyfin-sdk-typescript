@@ -4,7 +4,6 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-// TODO: Should the generated client be exported?
 export * as discovery from './discovery';
 export * as utils from './utils';
 
