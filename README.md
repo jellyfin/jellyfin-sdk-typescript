@@ -25,6 +25,13 @@ or
 yarn add @thornbill/jellyfin-sdk
 ```
 
+### Supported Jellyfin Versions
+
+| SDK Version | Jellyfin Version |
+|:-:|:-:|
+| 0.5.0 | 10.8.x |
+| <0.5.0 | 10.7.x |
+
 ### React Native
 
 The generated Axios client used in this library depends on `URL` and `URLSearchParams` to be available on the global scope.
