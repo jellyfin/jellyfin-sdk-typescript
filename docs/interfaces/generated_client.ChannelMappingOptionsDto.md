@@ -23,7 +23,7 @@ Channel mapping options dto.
 
 ### Mappings
 
-• `Optional` **Mappings**: ``null`` \| [`NameValuePair`](generated_client.NameValuePair.md)[]
+• `Optional` **Mappings**: [`NameValuePair`](generated_client.NameValuePair.md)[]
 
 Gets or sets list of mappings.
 
@@ -31,13 +31,13 @@ Gets or sets list of mappings.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-mapping-options-dto.ts#L43)
+[generated-client/models/channel-mapping-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L43)
 
 ___
 
 ### ProviderChannels
 
-• `Optional` **ProviderChannels**: ``null`` \| [`NameIdPair`](generated_client.NameIdPair.md)[]
+• `Optional` **ProviderChannels**: [`NameIdPair`](generated_client.NameIdPair.md)[]
 
 Gets or sets list of provider channels.
 
@@ -45,7 +45,7 @@ Gets or sets list of provider channels.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-mapping-options-dto.ts#L37)
+[generated-client/models/channel-mapping-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L37)
 
 ___
 
@@ -59,13 +59,13 @@ Gets or sets provider name.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-mapping-options-dto.ts#L49)
+[generated-client/models/channel-mapping-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L49)
 
 ___
 
 ### TunerChannels
 
-• `Optional` **TunerChannels**: ``null`` \| [`TunerChannelMapping`](generated_client.TunerChannelMapping.md)[]
+• `Optional` **TunerChannels**: [`TunerChannelMapping`](generated_client.TunerChannelMapping.md)[]
 
 Gets or sets list of tuner channels.
 
@@ -73,4 +73,4 @@ Gets or sets list of tuner channels.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-mapping-options-dto.ts#L31)
+[generated-client/models/channel-mapping-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L31)

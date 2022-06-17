@@ -29,7 +29,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1437)
+[generated-client/api/session-api.ts:1439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1439)
 
 ___
 
@@ -43,4 +43,4 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1444](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1444)
+[generated-client/api/session-api.ts:1446](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1446)

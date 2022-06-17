@@ -29,7 +29,7 @@ The new item properties.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-update-api.ts#L279)
+[generated-client/api/item-update-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L279)
 
 ___
 
@@ -43,4 +43,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-update-api.ts#L272)
+[generated-client/api/item-update-api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L272)

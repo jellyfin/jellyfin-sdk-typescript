@@ -25,16 +25,16 @@
 
 #### Defined in
 
-[generated-client/models/media-path-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-path-info.ts#L34)
+[generated-client/models/media-path-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-path-info.ts#L34)
 
 ___
 
 ### Path
 
-• `Optional` **Path**: ``null`` \| `string`
+• `Optional` **Path**: `string`
 
 **`memberof`** MediaPathInfo
 
 #### Defined in
 
-[generated-client/models/media-path-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-path-info.ts#L28)
+[generated-client/models/media-path-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-path-info.ts#L28)

@@ -43,7 +43,7 @@ Whether to allow to copy the audio stream. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:704](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L704)
+[generated-client/api/media-info-api.ts:702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L702)
 
 ___
 
@@ -57,7 +57,7 @@ Whether to allow to copy the video stream. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:697](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L697)
+[generated-client/api/media-info-api.ts:695](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L695)
 
 ___
 
@@ -71,7 +71,7 @@ The audio stream index.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:634](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L634)
+[generated-client/api/media-info-api.ts:632](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L632)
 
 ___
 
@@ -85,7 +85,7 @@ Whether to auto open the livestream.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:669](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L669)
+[generated-client/api/media-info-api.ts:667](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L667)
 
 ___
 
@@ -99,7 +99,7 @@ Whether to enable direct play. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:676](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L676)
+[generated-client/api/media-info-api.ts:674](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L674)
 
 ___
 
@@ -113,7 +113,7 @@ Whether to enable direct stream. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:683](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L683)
+[generated-client/api/media-info-api.ts:681](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L681)
 
 ___
 
@@ -127,7 +127,7 @@ Whether to enable transcoding. Default: true.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:690](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L690)
+[generated-client/api/media-info-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L688)
 
 ___
 
@@ -141,7 +141,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:606](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L606)
+[generated-client/api/media-info-api.ts:604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L604)
 
 ___
 
@@ -155,7 +155,7 @@ The livestream id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:662](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L662)
+[generated-client/api/media-info-api.ts:660](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L660)
 
 ___
 
@@ -169,7 +169,7 @@ The maximum number of audio channels.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:648](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L648)
+[generated-client/api/media-info-api.ts:646](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L646)
 
 ___
 
@@ -183,7 +183,7 @@ The maximum streaming bitrate.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:620](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L620)
+[generated-client/api/media-info-api.ts:618](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L618)
 
 ___
 
@@ -197,7 +197,7 @@ The media source id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:655](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L655)
+[generated-client/api/media-info-api.ts:653](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L653)
 
 ___
 
@@ -211,7 +211,7 @@ The playback info.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L711)
+[generated-client/api/media-info-api.ts:709](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L709)
 
 ___
 
@@ -225,7 +225,7 @@ The start time in ticks.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L627)
+[generated-client/api/media-info-api.ts:625](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L625)
 
 ___
 
@@ -239,7 +239,7 @@ The subtitle stream index.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:641](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L641)
+[generated-client/api/media-info-api.ts:639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L639)
 
 ___
 
@@ -253,4 +253,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:613](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L613)
+[generated-client/api/media-info-api.ts:611](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L611)

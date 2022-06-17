@@ -14,6 +14,7 @@
 
 - [AudioCodec](generated_client.TranscodingProfile.md#audiocodec)
 - [BreakOnNonKeyFrames](generated_client.TranscodingProfile.md#breakonnonkeyframes)
+- [Conditions](generated_client.TranscodingProfile.md#conditions)
 - [Container](generated_client.TranscodingProfile.md#container)
 - [Context](generated_client.TranscodingProfile.md#context)
 - [CopyTimestamps](generated_client.TranscodingProfile.md#copytimestamps)
@@ -32,13 +33,13 @@
 
 ### AudioCodec
 
-• `Optional` **AudioCodec**: ``null`` \| `string`
+• `Optional` **AudioCodec**: `string`
 
 **`memberof`** TranscodingProfile
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L49)
+[generated-client/models/transcoding-profile.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L50)
 
 ___
 
@@ -50,19 +51,31 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L115)
+[generated-client/models/transcoding-profile.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L116)
 
 ___
 
-### Container
+### Conditions
 
-• `Optional` **Container**: ``null`` \| `string`
+• `Optional` **Conditions**: [`ProfileCondition`](generated_client.ProfileCondition.md)[]
 
 **`memberof`** TranscodingProfile
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L31)
+[generated-client/models/transcoding-profile.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L122)
+
+___
+
+### Container
+
+• `Optional` **Container**: `string`
+
+**`memberof`** TranscodingProfile
+
+#### Defined in
+
+[generated-client/models/transcoding-profile.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L32)
 
 ___
 
@@ -74,7 +87,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L85)
+[generated-client/models/transcoding-profile.ts:86](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L86)
 
 ___
 
@@ -86,7 +99,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L79)
+[generated-client/models/transcoding-profile.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L80)
 
 ___
 
@@ -98,7 +111,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L67)
+[generated-client/models/transcoding-profile.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L68)
 
 ___
 
@@ -110,7 +123,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L91)
+[generated-client/models/transcoding-profile.ts:92](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L92)
 
 ___
 
@@ -122,7 +135,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L61)
+[generated-client/models/transcoding-profile.ts:62](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L62)
 
 ___
 
@@ -134,7 +147,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L97)
+[generated-client/models/transcoding-profile.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L98)
 
 ___
 
@@ -146,19 +159,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L103)
+[generated-client/models/transcoding-profile.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L104)
 
 ___
 
 ### Protocol
 
-• `Optional` **Protocol**: ``null`` \| `string`
+• `Optional` **Protocol**: `string`
 
 **`memberof`** TranscodingProfile
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L55)
+[generated-client/models/transcoding-profile.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L56)
 
 ___
 
@@ -170,7 +183,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L109)
+[generated-client/models/transcoding-profile.ts:110](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L110)
 
 ___
 
@@ -182,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L73)
+[generated-client/models/transcoding-profile.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L74)
 
 ___
 
@@ -194,16 +207,16 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L37)
+[generated-client/models/transcoding-profile.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L38)
 
 ___
 
 ### VideoCodec
 
-• `Optional` **VideoCodec**: ``null`` \| `string`
+• `Optional` **VideoCodec**: `string`
 
 **`memberof`** TranscodingProfile
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcoding-profile.ts#L43)
+[generated-client/models/transcoding-profile.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-profile.ts#L44)

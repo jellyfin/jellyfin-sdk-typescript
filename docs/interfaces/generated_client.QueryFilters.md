@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/query-filters.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/query-filters.ts#L29)
+[generated-client/models/query-filters.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/query-filters.ts#L29)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/query-filters.ts#L35)
+[generated-client/models/query-filters.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/query-filters.ts#L35)

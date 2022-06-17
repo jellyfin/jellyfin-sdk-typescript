@@ -38,6 +38,8 @@ Request parameters for getArtists operation in ArtistsApi.
 - [personIds](generated_client.ArtistsApiGetArtistsRequest.md#personids)
 - [personTypes](generated_client.ArtistsApiGetArtistsRequest.md#persontypes)
 - [searchTerm](generated_client.ArtistsApiGetArtistsRequest.md#searchterm)
+- [sortBy](generated_client.ArtistsApiGetArtistsRequest.md#sortby)
+- [sortOrder](generated_client.ArtistsApiGetArtistsRequest.md#sortorder)
 - [startIndex](generated_client.ArtistsApiGetArtistsRequest.md#startindex)
 - [studioIds](generated_client.ArtistsApiGetArtistsRequest.md#studioids)
 - [studios](generated_client.ArtistsApiGetArtistsRequest.md#studios)
@@ -57,7 +59,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1026](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1026)
+[generated-client/api/artists-api.ts:1072](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1072)
 
 ___
 
@@ -71,7 +73,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1096](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1096)
+[generated-client/api/artists-api.ts:1156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1156)
 
 ___
 
@@ -85,7 +87,7 @@ Total record count.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1103)
+[generated-client/api/artists-api.ts:1163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1163)
 
 ___
 
@@ -99,13 +101,13 @@ Optional, include user data.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1012](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1012)
+[generated-client/api/artists-api.ts:1058](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1058)
 
 ___
 
 ### excludeItemTypes
 
-• `Optional` `Readonly` **excludeItemTypes**: `string`[]
+• `Optional` `Readonly` **excludeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
 
@@ -113,7 +115,7 @@ Optional. If specified, results will be filtered out based on item type. This al
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L942)
+[generated-client/api/artists-api.ts:988](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L988)
 
 ___
 
@@ -127,7 +129,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:935](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L935)
+[generated-client/api/artists-api.ts:981](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L981)
 
 ___
 
@@ -141,7 +143,7 @@ Optional. Specify additional filters to apply.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:956](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L956)
+[generated-client/api/artists-api.ts:1002](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1002)
 
 ___
 
@@ -155,7 +157,7 @@ Optional. If specified, results will be filtered based on genre id. This allows 
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:984](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L984)
+[generated-client/api/artists-api.ts:1030](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1030)
 
 ___
 
@@ -169,7 +171,7 @@ Optional. If specified, results will be filtered based on genre. This allows mul
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:977](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L977)
+[generated-client/api/artists-api.ts:1023](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1023)
 
 ___
 
@@ -183,13 +185,13 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1019](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1019)
+[generated-client/api/artists-api.ts:1065](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1065)
 
 ___
 
 ### includeItemTypes
 
-• `Optional` `Readonly` **includeItemTypes**: `string`[]
+• `Optional` `Readonly` **includeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
 
@@ -197,7 +199,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:949](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L949)
+[generated-client/api/artists-api.ts:995](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L995)
 
 ___
 
@@ -211,7 +213,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:963](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L963)
+[generated-client/api/artists-api.ts:1009](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1009)
 
 ___
 
@@ -225,7 +227,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:914](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L914)
+[generated-client/api/artists-api.ts:960](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L960)
 
 ___
 
@@ -239,7 +241,7 @@ Optional filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:970](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L970)
+[generated-client/api/artists-api.ts:1016](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1016)
 
 ___
 
@@ -253,7 +255,7 @@ Optional filter by minimum community rating.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L900)
+[generated-client/api/artists-api.ts:946](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L946)
 
 ___
 
@@ -267,7 +269,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1089](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1089)
+[generated-client/api/artists-api.ts:1135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1135)
 
 ___
 
@@ -281,7 +283,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1082](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1082)
+[generated-client/api/artists-api.ts:1128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1128)
 
 ___
 
@@ -295,7 +297,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1075](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1075)
+[generated-client/api/artists-api.ts:1121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1121)
 
 ___
 
@@ -309,7 +311,7 @@ Optional. If specified, results will be filtered based on OfficialRating. This a
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:991](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L991)
+[generated-client/api/artists-api.ts:1037](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1037)
 
 ___
 
@@ -323,7 +325,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:928](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L928)
+[generated-client/api/artists-api.ts:974](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L974)
 
 ___
 
@@ -337,7 +339,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1033](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1033)
+[generated-client/api/artists-api.ts:1079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1079)
 
 ___
 
@@ -351,7 +353,7 @@ Optional. If specified, results will be filtered to include only those containin
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1040](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1040)
+[generated-client/api/artists-api.ts:1086](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1086)
 
 ___
 
@@ -365,7 +367,7 @@ Optional. If specified, along with Person, results will be filtered to include o
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1047](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1047)
+[generated-client/api/artists-api.ts:1093](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1093)
 
 ___
 
@@ -379,7 +381,35 @@ Optional. Search term.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:921](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L921)
+[generated-client/api/artists-api.ts:967](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L967)
+
+___
+
+### sortBy
+
+• `Optional` `Readonly` **sortBy**: `string`[]
+
+Optional. Specify one or more sort orders, comma delimited.
+
+**`memberof`** ArtistsApiGetArtists
+
+#### Defined in
+
+[generated-client/api/artists-api.ts:1142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1142)
+
+___
+
+### sortOrder
+
+• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)[]
+
+Sort Order - Ascending,Descending.
+
+**`memberof`** ArtistsApiGetArtists
+
+#### Defined in
+
+[generated-client/api/artists-api.ts:1149](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1149)
 
 ___
 
@@ -393,7 +423,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:907](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L907)
+[generated-client/api/artists-api.ts:953](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L953)
 
 ___
 
@@ -407,7 +437,7 @@ Optional. If specified, results will be filtered based on studio id. This allows
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1061](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1061)
+[generated-client/api/artists-api.ts:1107](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1107)
 
 ___
 
@@ -421,7 +451,7 @@ Optional. If specified, results will be filtered based on studio. This allows mu
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1054](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1054)
+[generated-client/api/artists-api.ts:1100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1100)
 
 ___
 
@@ -435,7 +465,7 @@ Optional. If specified, results will be filtered based on tag. This allows multi
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:998](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L998)
+[generated-client/api/artists-api.ts:1044](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1044)
 
 ___
 
@@ -449,7 +479,7 @@ User id.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1068](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1068)
+[generated-client/api/artists-api.ts:1114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1114)
 
 ___
 
@@ -463,4 +493,4 @@ Optional. If specified, results will be filtered based on production year. This 
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:1005](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L1005)
+[generated-client/api/artists-api.ts:1051](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L1051)

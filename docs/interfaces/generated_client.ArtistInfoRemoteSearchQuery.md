@@ -29,7 +29,7 @@ Gets or sets a value indicating whether disabled providers should be included.
 
 #### Defined in
 
-[generated-client/models/artist-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/artist-info-remote-search-query.ts#L47)
+[generated-client/models/artist-info-remote-search-query.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/artist-info-remote-search-query.ts#L47)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/artist-info-remote-search-query.ts#L35)
+[generated-client/models/artist-info-remote-search-query.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/artist-info-remote-search-query.ts#L35)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/artist-info-remote-search-query.ts#L29)
+[generated-client/models/artist-info-remote-search-query.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/artist-info-remote-search-query.ts#L29)
 
 ___
 
@@ -61,10 +61,10 @@ ___
 
 • `Optional` **SearchProviderName**: ``null`` \| `string`
 
-Will only search within the given provider when set.
+Gets or sets the provider name to search within if set.
 
 **`memberof`** ArtistInfoRemoteSearchQuery
 
 #### Defined in
 
-[generated-client/models/artist-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/artist-info-remote-search-query.ts#L41)
+[generated-client/models/artist-info-remote-search-query.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/artist-info-remote-search-query.ts#L41)

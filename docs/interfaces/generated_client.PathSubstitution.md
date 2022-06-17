@@ -21,7 +21,7 @@ Defines the MediaBrowser.Model.Configuration.PathSubstitution.
 
 ### From
 
-• `Optional` **From**: ``null`` \| `string`
+• `Optional` **From**: `string`
 
 Gets or sets the value to substitute.
 
@@ -29,13 +29,13 @@ Gets or sets the value to substitute.
 
 #### Defined in
 
-[generated-client/models/path-substitution.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/path-substitution.ts#L28)
+[generated-client/models/path-substitution.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/path-substitution.ts#L28)
 
 ___
 
 ### To
 
-• `Optional` **To**: ``null`` \| `string`
+• `Optional` **To**: `string`
 
 Gets or sets the value to substitution with.
 
@@ -43,4 +43,4 @@ Gets or sets the value to substitution with.
 
 #### Defined in
 
-[generated-client/models/path-substitution.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/path-substitution.ts#L34)
+[generated-client/models/path-substitution.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/path-substitution.ts#L34)

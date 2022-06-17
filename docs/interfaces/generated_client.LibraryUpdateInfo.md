@@ -26,19 +26,19 @@ Class LibraryUpdateInfo.
 
 ### CollectionFolders
 
-• `Optional` **CollectionFolders**: ``null`` \| `string`[]
+• `Optional` **CollectionFolders**: `string`[]
 
 **`memberof`** LibraryUpdateInfo
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L58)
+[generated-client/models/library-update-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L58)
 
 ___
 
 ### FoldersAddedTo
 
-• `Optional` **FoldersAddedTo**: ``null`` \| `string`[]
+• `Optional` **FoldersAddedTo**: `string`[]
 
 Gets or sets the folders added to.
 
@@ -46,13 +46,13 @@ Gets or sets the folders added to.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L28)
+[generated-client/models/library-update-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L28)
 
 ___
 
 ### FoldersRemovedFrom
 
-• `Optional` **FoldersRemovedFrom**: ``null`` \| `string`[]
+• `Optional` **FoldersRemovedFrom**: `string`[]
 
 Gets or sets the folders removed from.
 
@@ -60,7 +60,7 @@ Gets or sets the folders removed from.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L34)
+[generated-client/models/library-update-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L34)
 
 ___
 
@@ -72,13 +72,13 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L64)
+[generated-client/models/library-update-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L64)
 
 ___
 
 ### ItemsAdded
 
-• `Optional` **ItemsAdded**: ``null`` \| `string`[]
+• `Optional` **ItemsAdded**: `string`[]
 
 Gets or sets the items added.
 
@@ -86,13 +86,13 @@ Gets or sets the items added.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L40)
+[generated-client/models/library-update-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L40)
 
 ___
 
 ### ItemsRemoved
 
-• `Optional` **ItemsRemoved**: ``null`` \| `string`[]
+• `Optional` **ItemsRemoved**: `string`[]
 
 Gets or sets the items removed.
 
@@ -100,13 +100,13 @@ Gets or sets the items removed.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L46)
+[generated-client/models/library-update-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L46)
 
 ___
 
 ### ItemsUpdated
 
-• `Optional` **ItemsUpdated**: ``null`` \| `string`[]
+• `Optional` **ItemsUpdated**: `string`[]
 
 Gets or sets the items updated.
 
@@ -114,4 +114,4 @@ Gets or sets the items updated.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-update-info.ts#L52)
+[generated-client/models/library-update-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L52)

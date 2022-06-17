@@ -32,13 +32,13 @@ Gets the group identifier.
 
 #### Defined in
 
-[generated-client/models/group-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/group-info-dto.ts#L29)
+[generated-client/models/group-info-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-info-dto.ts#L29)
 
 ___
 
 ### GroupName
 
-• `Optional` **GroupName**: ``null`` \| `string`
+• `Optional` **GroupName**: `string`
 
 Gets the group name.
 
@@ -46,7 +46,7 @@ Gets the group name.
 
 #### Defined in
 
-[generated-client/models/group-info-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/group-info-dto.ts#L35)
+[generated-client/models/group-info-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-info-dto.ts#L35)
 
 ___
 
@@ -60,13 +60,13 @@ Gets the date when this DTO has been created.
 
 #### Defined in
 
-[generated-client/models/group-info-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/group-info-dto.ts#L53)
+[generated-client/models/group-info-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-info-dto.ts#L53)
 
 ___
 
 ### Participants
 
-• `Optional` **Participants**: ``null`` \| `string`[]
+• `Optional` **Participants**: `string`[]
 
 Gets the participants.
 
@@ -74,7 +74,7 @@ Gets the participants.
 
 #### Defined in
 
-[generated-client/models/group-info-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/group-info-dto.ts#L47)
+[generated-client/models/group-info-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-info-dto.ts#L47)
 
 ___
 
@@ -86,4 +86,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/group-info-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/group-info-dto.ts#L41)
+[generated-client/models/group-info-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-info-dto.ts#L41)

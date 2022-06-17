@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:444](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L444)
+[generated-client/api/genres-api.ts:476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L476)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L456)
+[generated-client/api/genres-api.ts:488](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L488)

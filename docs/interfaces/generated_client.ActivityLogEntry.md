@@ -4,6 +4,8 @@
 
 [generated-client](../modules/generated_client.md).ActivityLogEntry
 
+An activity log entry.
+
 **`export`**
 
 **`interface`** ActivityLogEntry
@@ -35,7 +37,7 @@ Gets or sets the date.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L65)
+[generated-client/models/activity-log-entry.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L65)
 
 ___
 
@@ -49,7 +51,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L29)
+[generated-client/models/activity-log-entry.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L29)
 
 ___
 
@@ -63,13 +65,13 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L59)
+[generated-client/models/activity-log-entry.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L59)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
 Gets or sets the name.
 
@@ -77,7 +79,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L35)
+[generated-client/models/activity-log-entry.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L35)
 
 ___
 
@@ -91,7 +93,7 @@ Gets or sets the overview.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L41)
+[generated-client/models/activity-log-entry.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L41)
 
 ___
 
@@ -103,7 +105,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L84)
+[generated-client/models/activity-log-entry.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L84)
 
 ___
 
@@ -117,13 +119,13 @@ Gets or sets the short overview.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L47)
+[generated-client/models/activity-log-entry.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L47)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: ``null`` \| `string`
+• `Optional` **Type**: `string`
 
 Gets or sets the type.
 
@@ -131,7 +133,7 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L53)
+[generated-client/models/activity-log-entry.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L53)
 
 ___
 
@@ -145,7 +147,7 @@ Gets or sets the user identifier.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L71)
+[generated-client/models/activity-log-entry.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L71)
 
 ___
 
@@ -161,4 +163,4 @@ Gets or sets the user primary image tag.
 
 #### Defined in
 
-[generated-client/models/activity-log-entry.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/activity-log-entry.ts#L78)
+[generated-client/models/activity-log-entry.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/activity-log-entry.ts#L78)

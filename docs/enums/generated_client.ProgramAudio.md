@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Atmos](generated_client.ProgramAudio.md#atmos)
 - [Dolby](generated_client.ProgramAudio.md#dolby)
@@ -17,62 +17,62 @@
 - [Stereo](generated_client.ProgramAudio.md#stereo)
 - [Thx](generated_client.ProgramAudio.md#thx)
 
-## Enumeration Members
+## Enumeration members
 
 ### Atmos
 
-• **Atmos**
+• **Atmos** = `"Atmos"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L29)
+[generated-client/models/program-audio.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L29)
 
 ___
 
 ### Dolby
 
-• **Dolby**
+• **Dolby** = `"Dolby"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L26)
+[generated-client/models/program-audio.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L26)
 
 ___
 
 ### DolbyDigital
 
-• **DolbyDigital**
+• **DolbyDigital** = `"DolbyDigital"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L27)
+[generated-client/models/program-audio.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L27)
 
 ___
 
 ### Mono
 
-• **Mono**
+• **Mono** = `"Mono"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L24)
+[generated-client/models/program-audio.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L24)
 
 ___
 
 ### Stereo
 
-• **Stereo**
+• **Stereo** = `"Stereo"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L25)
+[generated-client/models/program-audio.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L25)
 
 ___
 
 ### Thx
 
-• **Thx**
+• **Thx** = `"Thx"`
 
 #### Defined in
 
-[generated-client/models/program-audio.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/program-audio.ts#L28)
+[generated-client/models/program-audio.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/program-audio.ts#L28)

@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [FullSideBySide](generated_client.Video3DFormat.md#fullsidebyside)
 - [FullTopAndBottom](generated_client.Video3DFormat.md#fulltopandbottom)
@@ -16,52 +16,52 @@
 - [HalfTopAndBottom](generated_client.Video3DFormat.md#halftopandbottom)
 - [Mvc](generated_client.Video3DFormat.md#mvc)
 
-## Enumeration Members
+## Enumeration members
 
 ### FullSideBySide
 
-• **FullSideBySide**
+• **FullSideBySide** = `"FullSideBySide"`
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/video3-dformat.ts#L25)
+[generated-client/models/video3-dformat.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video3-dformat.ts#L25)
 
 ___
 
 ### FullTopAndBottom
 
-• **FullTopAndBottom**
+• **FullTopAndBottom** = `"FullTopAndBottom"`
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/video3-dformat.ts#L26)
+[generated-client/models/video3-dformat.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video3-dformat.ts#L26)
 
 ___
 
 ### HalfSideBySide
 
-• **HalfSideBySide**
+• **HalfSideBySide** = `"HalfSideBySide"`
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/video3-dformat.ts#L24)
+[generated-client/models/video3-dformat.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video3-dformat.ts#L24)
 
 ___
 
 ### HalfTopAndBottom
 
-• **HalfTopAndBottom**
+• **HalfTopAndBottom** = `"HalfTopAndBottom"`
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/video3-dformat.ts#L27)
+[generated-client/models/video3-dformat.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video3-dformat.ts#L27)
 
 ___
 
 ### Mvc
 
-• **Mvc**
+• **Mvc** = `"MVC"`
 
 #### Defined in
 
-[generated-client/models/video3-dformat.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/video3-dformat.ts#L28)
+[generated-client/models/video3-dformat.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video3-dformat.ts#L28)

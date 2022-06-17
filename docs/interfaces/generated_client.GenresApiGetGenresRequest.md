@@ -28,6 +28,8 @@ Request parameters for getGenres operation in GenresApi.
 - [nameStartsWithOrGreater](generated_client.GenresApiGetGenresRequest.md#namestartswithorgreater)
 - [parentId](generated_client.GenresApiGetGenresRequest.md#parentid)
 - [searchTerm](generated_client.GenresApiGetGenresRequest.md#searchterm)
+- [sortBy](generated_client.GenresApiGetGenresRequest.md#sortby)
+- [sortOrder](generated_client.GenresApiGetGenresRequest.md#sortorder)
 - [startIndex](generated_client.GenresApiGetGenresRequest.md#startindex)
 - [userId](generated_client.GenresApiGetGenresRequest.md#userid)
 
@@ -43,7 +45,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L384)
+[generated-client/api/genres-api.ts:402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L402)
 
 ___
 
@@ -57,7 +59,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L419)
+[generated-client/api/genres-api.ts:451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L451)
 
 ___
 
@@ -71,13 +73,13 @@ Optional. Include total record count.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L426)
+[generated-client/api/genres-api.ts:458](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L458)
 
 ___
 
 ### excludeItemTypes
 
-• `Optional` `Readonly` **excludeItemTypes**: `string`[]
+• `Optional` `Readonly` **excludeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
 
@@ -85,7 +87,7 @@ Optional. If specified, results will be filtered out based on item type. This al
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L356)
+[generated-client/api/genres-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L374)
 
 ___
 
@@ -99,7 +101,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L349)
+[generated-client/api/genres-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L367)
 
 ___
 
@@ -113,13 +115,13 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L377)
+[generated-client/api/genres-api.ts:395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L395)
 
 ___
 
 ### includeItemTypes
 
-• `Optional` `Readonly` **includeItemTypes**: `string`[]
+• `Optional` `Readonly` **includeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
 
@@ -127,7 +129,7 @@ Optional. If specified, results will be filtered in based on item type. This all
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L363)
+[generated-client/api/genres-api.ts:381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L381)
 
 ___
 
@@ -141,7 +143,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L370)
+[generated-client/api/genres-api.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L388)
 
 ___
 
@@ -155,7 +157,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L328)
+[generated-client/api/genres-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L346)
 
 ___
 
@@ -169,7 +171,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L412)
+[generated-client/api/genres-api.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L430)
 
 ___
 
@@ -183,7 +185,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L405)
+[generated-client/api/genres-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L423)
 
 ___
 
@@ -197,7 +199,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L398)
+[generated-client/api/genres-api.ts:416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L416)
 
 ___
 
@@ -211,7 +213,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L342)
+[generated-client/api/genres-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L360)
 
 ___
 
@@ -225,7 +227,35 @@ The search term.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L335)
+[generated-client/api/genres-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L353)
+
+___
+
+### sortBy
+
+• `Optional` `Readonly` **sortBy**: `string`[]
+
+Optional. Specify one or more sort orders, comma delimited.
+
+**`memberof`** GenresApiGetGenres
+
+#### Defined in
+
+[generated-client/api/genres-api.ts:437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L437)
+
+___
+
+### sortOrder
+
+• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)[]
+
+Sort Order - Ascending,Descending.
+
+**`memberof`** GenresApiGetGenres
+
+#### Defined in
+
+[generated-client/api/genres-api.ts:444](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L444)
 
 ___
 
@@ -239,7 +269,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L321)
+[generated-client/api/genres-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L339)
 
 ___
 
@@ -253,4 +283,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L391)
+[generated-client/api/genres-api.ts:409](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L409)

@@ -20,7 +20,7 @@
 
 ### EnabledUsers
 
-• `Optional` **EnabledUsers**: ``null`` \| `string`[]
+• `Optional` **EnabledUsers**: `string`[]
 
 Gets or sets the enabled users.
 
@@ -28,7 +28,7 @@ Gets or sets the enabled users.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-tv-info.ts#L41)
+[generated-client/models/live-tv-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/live-tv-info.ts#L41)
 
 ___
 
@@ -42,13 +42,13 @@ Gets or sets a value indicating whether this instance is enabled.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-tv-info.ts#L35)
+[generated-client/models/live-tv-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/live-tv-info.ts#L35)
 
 ___
 
 ### Services
 
-• `Optional` **Services**: ``null`` \| [`LiveTvServiceInfo`](generated_client.LiveTvServiceInfo.md)[]
+• `Optional` **Services**: [`LiveTvServiceInfo`](generated_client.LiveTvServiceInfo.md)[]
 
 Gets or sets the services.
 
@@ -56,4 +56,4 @@ Gets or sets the services.
 
 #### Defined in
 
-[generated-client/models/live-tv-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-tv-info.ts#L29)
+[generated-client/models/live-tv-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/live-tv-info.ts#L29)

@@ -28,6 +28,8 @@ Request parameters for getMusicGenres operation in MusicGenresApi.
 - [nameStartsWithOrGreater](generated_client.MusicGenresApiGetMusicGenresRequest.md#namestartswithorgreater)
 - [parentId](generated_client.MusicGenresApiGetMusicGenresRequest.md#parentid)
 - [searchTerm](generated_client.MusicGenresApiGetMusicGenresRequest.md#searchterm)
+- [sortBy](generated_client.MusicGenresApiGetMusicGenresRequest.md#sortby)
+- [sortOrder](generated_client.MusicGenresApiGetMusicGenresRequest.md#sortorder)
 - [startIndex](generated_client.MusicGenresApiGetMusicGenresRequest.md#startindex)
 - [userId](generated_client.MusicGenresApiGetMusicGenresRequest.md#userid)
 
@@ -43,7 +45,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:387](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L387)
+[generated-client/api/music-genres-api.ts:405](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L405)
 
 ___
 
@@ -57,7 +59,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:422](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L422)
+[generated-client/api/music-genres-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L454)
 
 ___
 
@@ -71,13 +73,13 @@ Optional. Include total record count.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:429](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L429)
+[generated-client/api/music-genres-api.ts:461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L461)
 
 ___
 
 ### excludeItemTypes
 
-• `Optional` `Readonly` **excludeItemTypes**: `string`[]
+• `Optional` `Readonly` **excludeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
 
@@ -85,7 +87,7 @@ Optional. If specified, results will be filtered out based on item type. This al
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L359)
+[generated-client/api/music-genres-api.ts:377](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L377)
 
 ___
 
@@ -99,7 +101,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:352](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L352)
+[generated-client/api/music-genres-api.ts:370](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L370)
 
 ___
 
@@ -113,13 +115,13 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L380)
+[generated-client/api/music-genres-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L398)
 
 ___
 
 ### includeItemTypes
 
-• `Optional` `Readonly` **includeItemTypes**: `string`[]
+• `Optional` `Readonly` **includeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
 
@@ -127,7 +129,7 @@ Optional. If specified, results will be filtered in based on item type. This all
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L366)
+[generated-client/api/music-genres-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L384)
 
 ___
 
@@ -141,7 +143,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:373](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L373)
+[generated-client/api/music-genres-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L391)
 
 ___
 
@@ -155,7 +157,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L331)
+[generated-client/api/music-genres-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L349)
 
 ___
 
@@ -169,7 +171,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L415)
+[generated-client/api/music-genres-api.ts:433](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L433)
 
 ___
 
@@ -183,7 +185,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:408](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L408)
+[generated-client/api/music-genres-api.ts:426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L426)
 
 ___
 
@@ -197,7 +199,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L401)
+[generated-client/api/music-genres-api.ts:419](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L419)
 
 ___
 
@@ -211,7 +213,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L345)
+[generated-client/api/music-genres-api.ts:363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L363)
 
 ___
 
@@ -225,7 +227,35 @@ The search term.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:338](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L338)
+[generated-client/api/music-genres-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L356)
+
+___
+
+### sortBy
+
+• `Optional` `Readonly` **sortBy**: `string`[]
+
+Optional. Specify one or more sort orders, comma delimited.
+
+**`memberof`** MusicGenresApiGetMusicGenres
+
+#### Defined in
+
+[generated-client/api/music-genres-api.ts:440](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L440)
+
+___
+
+### sortOrder
+
+• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)[]
+
+Sort Order - Ascending,Descending.
+
+**`memberof`** MusicGenresApiGetMusicGenres
+
+#### Defined in
+
+[generated-client/api/music-genres-api.ts:447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L447)
 
 ___
 
@@ -239,7 +269,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L324)
+[generated-client/api/music-genres-api.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L342)
 
 ___
 
@@ -253,4 +283,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:394](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L394)
+[generated-client/api/music-genres-api.ts:412](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L412)

@@ -33,7 +33,7 @@ The session id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1346)
+[generated-client/api/session-api.ts:1348](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1348)
 
 ___
 
@@ -47,7 +47,7 @@ A list of playable media types, comma delimited. Audio, Video, Book, Photo.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1353)
+[generated-client/api/session-api.ts:1355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1355)
 
 ___
 
@@ -61,7 +61,7 @@ A list of supported remote control commands, comma delimited.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1360)
+[generated-client/api/session-api.ts:1362](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1362)
 
 ___
 
@@ -75,7 +75,7 @@ Determines whether media can be played remotely..
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1367)
+[generated-client/api/session-api.ts:1369](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1369)
 
 ___
 
@@ -89,7 +89,7 @@ Determines whether the device supports a unique identifier.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1381)
+[generated-client/api/session-api.ts:1383](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1383)
 
 ___
 
@@ -103,4 +103,4 @@ Determines whether sync is supported.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1374)
+[generated-client/api/session-api.ts:1376](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1376)

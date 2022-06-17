@@ -33,7 +33,6 @@ InstantMixApi - object-oriented interface
 - [getInstantMixFromArtists2](generated_client.InstantMixApi.md#getinstantmixfromartists2)
 - [getInstantMixFromItem](generated_client.InstantMixApi.md#getinstantmixfromitem)
 - [getInstantMixFromMusicGenreById](generated_client.InstantMixApi.md#getinstantmixfrommusicgenrebyid)
-- [getInstantMixFromMusicGenreById2](generated_client.InstantMixApi.md#getinstantmixfrommusicgenrebyid2)
 - [getInstantMixFromMusicGenreByName](generated_client.InstantMixApi.md#getinstantmixfrommusicgenrebyname)
 - [getInstantMixFromPlaylist](generated_client.InstantMixApi.md#getinstantmixfromplaylist)
 - [getInstantMixFromSong](generated_client.InstantMixApi.md#getinstantmixfromsong)
@@ -58,7 +57,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -92,7 +91,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -119,7 +118,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1615)
+[generated-client/api/instant-mix-api.ts:1442](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1442)
 
 ___
 
@@ -146,7 +145,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1627)
+[generated-client/api/instant-mix-api.ts:1454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1454)
 
 ___
 
@@ -175,7 +174,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1640)
+[generated-client/api/instant-mix-api.ts:1467](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1467)
 
 ___
 
@@ -202,7 +201,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1652](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1652)
+[generated-client/api/instant-mix-api.ts:1479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1479)
 
 ___
 
@@ -229,36 +228,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1664)
-
-___
-
-### getInstantMixFromMusicGenreById2
-
-▸ **getInstantMixFromMusicGenreById2**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
-
-**`summary`** Creates an instant playlist based on a given genre.
-
-**`deprecated`**
-
-**`throws`** {RequiredError}
-
-**`memberof`** InstantMixApi
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `requestParameters` | [`InstantMixApiGetInstantMixFromMusicGenreById2Request`](../interfaces/generated_client.InstantMixApiGetInstantMixFromMusicGenreById2Request.md) | Request parameters. |
-| `options?` | `any` | - |
-
-#### Returns
-
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
-
-#### Defined in
-
-[generated-client/api/instant-mix-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1677)
+[generated-client/api/instant-mix-api.ts:1491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1491)
 
 ___
 
@@ -285,7 +255,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1689)
+[generated-client/api/instant-mix-api.ts:1503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1503)
 
 ___
 
@@ -312,7 +282,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1701](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1701)
+[generated-client/api/instant-mix-api.ts:1515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1515)
 
 ___
 
@@ -339,4 +309,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:1713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L1713)
+[generated-client/api/instant-mix-api.ts:1527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L1527)

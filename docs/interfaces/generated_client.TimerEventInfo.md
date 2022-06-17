@@ -19,13 +19,13 @@
 
 ### Id
 
-• `Optional` **Id**: ``null`` \| `string`
+• `Optional` **Id**: `string`
 
 **`memberof`** TimerEventInfo
 
 #### Defined in
 
-[generated-client/models/timer-event-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/timer-event-info.ts#L28)
+[generated-client/models/timer-event-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/timer-event-info.ts#L28)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/timer-event-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/timer-event-info.ts#L34)
+[generated-client/models/timer-event-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/timer-event-info.ts#L34)

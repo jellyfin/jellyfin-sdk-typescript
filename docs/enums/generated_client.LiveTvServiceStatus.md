@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Ok](generated_client.LiveTvServiceStatus.md#ok)
 - [Unavailable](generated_client.LiveTvServiceStatus.md#unavailable)
 
-## Enumeration Members
+## Enumeration members
 
 ### Ok
 
-• **Ok**
+• **Ok** = `"Ok"`
 
 #### Defined in
 
-[generated-client/models/live-tv-service-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-tv-service-status.ts#L24)
+[generated-client/models/live-tv-service-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/live-tv-service-status.ts#L24)
 
 ___
 
 ### Unavailable
 
-• **Unavailable**
+• **Unavailable** = `"Unavailable"`
 
 #### Defined in
 
-[generated-client/models/live-tv-service-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-tv-service-status.ts#L25)
+[generated-client/models/live-tv-service-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/live-tv-service-status.ts#L25)

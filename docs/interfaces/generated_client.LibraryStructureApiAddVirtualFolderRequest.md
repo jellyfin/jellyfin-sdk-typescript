@@ -32,7 +32,7 @@ The library options.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:661](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L661)
+[generated-client/api/library-structure-api.ts:661](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L661)
 
 ___
 
@@ -46,7 +46,7 @@ The type of the collection.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L640)
+[generated-client/api/library-structure-api.ts:640](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L640)
 
 ___
 
@@ -60,7 +60,7 @@ The name of the virtual folder.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L633)
+[generated-client/api/library-structure-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L633)
 
 ___
 
@@ -74,7 +74,7 @@ The paths of the virtual folder.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:647](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L647)
+[generated-client/api/library-structure-api.ts:647](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L647)
 
 ___
 
@@ -88,4 +88,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:654](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L654)
+[generated-client/api/library-structure-api.ts:654](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L654)

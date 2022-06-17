@@ -14,14 +14,14 @@ Request parameters for updateDeviceOptions operation in DevicesApi.
 
 ### Properties
 
-- [deviceOptions](generated_client.DevicesApiUpdateDeviceOptionsRequest.md#deviceoptions)
+- [deviceOptionsDto](generated_client.DevicesApiUpdateDeviceOptionsRequest.md#deviceoptionsdto)
 - [id](generated_client.DevicesApiUpdateDeviceOptionsRequest.md#id)
 
 ## Properties
 
-### deviceOptions
+### deviceOptionsDto
 
-• `Readonly` **deviceOptions**: [`DeviceOptions`](generated_client.DeviceOptions.md)
+• `Readonly` **deviceOptionsDto**: [`DeviceOptionsDto`](generated_client.DeviceOptionsDto.md)
 
 Device Options.
 
@@ -29,7 +29,7 @@ Device Options.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L459)
+[generated-client/api/devices-api.ts:461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L461)
 
 ___
 
@@ -43,4 +43,4 @@ Device Id.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L452)
+[generated-client/api/devices-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L454)

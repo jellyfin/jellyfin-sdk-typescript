@@ -43,6 +43,7 @@ ImageApi - object-oriented interface
 - [getMusicGenreImageByIndex](generated_client.ImageApi.md#getmusicgenreimagebyindex)
 - [getPersonImage](generated_client.ImageApi.md#getpersonimage)
 - [getPersonImageByIndex](generated_client.ImageApi.md#getpersonimagebyindex)
+- [getSplashscreen](generated_client.ImageApi.md#getsplashscreen)
 - [getStudioImage](generated_client.ImageApi.md#getstudioimage)
 - [getStudioImageByIndex](generated_client.ImageApi.md#getstudioimagebyindex)
 - [getUserImage](generated_client.ImageApi.md#getuserimage)
@@ -66,6 +67,7 @@ ImageApi - object-oriented interface
 - [setItemImage](generated_client.ImageApi.md#setitemimage)
 - [setItemImageByIndex](generated_client.ImageApi.md#setitemimagebyindex)
 - [updateItemImageIndex](generated_client.ImageApi.md#updateitemimageindex)
+- [uploadCustomSplashscreen](generated_client.ImageApi.md#uploadcustomsplashscreen)
 
 ## Constructors
 
@@ -87,7 +89,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -121,7 +123,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -148,7 +150,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10019](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10019)
+[generated-client/api/image-api.ts:10315](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10315)
 
 ___
 
@@ -175,7 +177,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10031](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10031)
+[generated-client/api/image-api.ts:10327](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10327)
 
 ___
 
@@ -202,7 +204,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10043](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10043)
+[generated-client/api/image-api.ts:10339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10339)
 
 ___
 
@@ -229,7 +231,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10055](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10055)
+[generated-client/api/image-api.ts:10351](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10351)
 
 ___
 
@@ -256,7 +258,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10067](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10067)
+[generated-client/api/image-api.ts:10363](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10363)
 
 ___
 
@@ -283,7 +285,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10079](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10079)
+[generated-client/api/image-api.ts:10375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10375)
 
 ___
 
@@ -310,7 +312,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10091)
+[generated-client/api/image-api.ts:10387](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10387)
 
 ___
 
@@ -337,7 +339,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10103)
+[generated-client/api/image-api.ts:10399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10399)
 
 ___
 
@@ -364,7 +366,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10115)
+[generated-client/api/image-api.ts:10411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10411)
 
 ___
 
@@ -391,7 +393,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10127)
+[generated-client/api/image-api.ts:10423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10423)
 
 ___
 
@@ -418,7 +420,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10139)
+[generated-client/api/image-api.ts:10435](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10435)
 
 ___
 
@@ -445,7 +447,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10151)
+[generated-client/api/image-api.ts:10447](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10447)
 
 ___
 
@@ -472,7 +474,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10163)
+[generated-client/api/image-api.ts:10459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10459)
 
 ___
 
@@ -499,7 +501,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10175)
+[generated-client/api/image-api.ts:10471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10471)
 
 ___
 
@@ -526,7 +528,34 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10187)
+[generated-client/api/image-api.ts:10483](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10483)
+
+___
+
+### getSplashscreen
+
+▸ **getSplashscreen**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`any`, `any`\>\>
+
+**`summary`** Generates or gets the splashscreen.
+
+**`throws`** {RequiredError}
+
+**`memberof`** ImageApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`ImageApiGetSplashscreenRequest`](../interfaces/generated_client.ImageApiGetSplashscreenRequest.md) | Request parameters. |
+| `options?` | `any` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`any`, `any`\>\>
+
+#### Defined in
+
+[generated-client/api/image-api.ts:10495](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10495)
 
 ___
 
@@ -553,7 +582,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10199)
+[generated-client/api/image-api.ts:10507](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10507)
 
 ___
 
@@ -580,7 +609,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10211)
+[generated-client/api/image-api.ts:10519](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10519)
 
 ___
 
@@ -607,7 +636,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10223)
+[generated-client/api/image-api.ts:10531](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10531)
 
 ___
 
@@ -634,7 +663,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10235)
+[generated-client/api/image-api.ts:10543](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10543)
 
 ___
 
@@ -661,7 +690,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10247)
+[generated-client/api/image-api.ts:10555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10555)
 
 ___
 
@@ -688,7 +717,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10259](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10259)
+[generated-client/api/image-api.ts:10567](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10567)
 
 ___
 
@@ -715,7 +744,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10271](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10271)
+[generated-client/api/image-api.ts:10579](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10579)
 
 ___
 
@@ -742,7 +771,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10283)
+[generated-client/api/image-api.ts:10591](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10591)
 
 ___
 
@@ -769,7 +798,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10295)
+[generated-client/api/image-api.ts:10603](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10603)
 
 ___
 
@@ -796,7 +825,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10307](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10307)
+[generated-client/api/image-api.ts:10615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10615)
 
 ___
 
@@ -823,7 +852,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10319)
+[generated-client/api/image-api.ts:10627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10627)
 
 ___
 
@@ -850,7 +879,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10331)
+[generated-client/api/image-api.ts:10639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10639)
 
 ___
 
@@ -877,7 +906,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10343)
+[generated-client/api/image-api.ts:10651](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10651)
 
 ___
 
@@ -904,7 +933,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10355)
+[generated-client/api/image-api.ts:10663](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10663)
 
 ___
 
@@ -931,7 +960,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10367)
+[generated-client/api/image-api.ts:10675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10675)
 
 ___
 
@@ -958,7 +987,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10379](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10379)
+[generated-client/api/image-api.ts:10687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10687)
 
 ___
 
@@ -985,7 +1014,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10391)
+[generated-client/api/image-api.ts:10699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10699)
 
 ___
 
@@ -1012,7 +1041,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10403)
+[generated-client/api/image-api.ts:10711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10711)
 
 ___
 
@@ -1039,7 +1068,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10415)
+[generated-client/api/image-api.ts:10723](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10723)
 
 ___
 
@@ -1066,7 +1095,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10427](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10427)
+[generated-client/api/image-api.ts:10735](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10735)
 
 ___
 
@@ -1093,7 +1122,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10439](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10439)
+[generated-client/api/image-api.ts:10747](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10747)
 
 ___
 
@@ -1120,7 +1149,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10451](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10451)
+[generated-client/api/image-api.ts:10759](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10759)
 
 ___
 
@@ -1147,4 +1176,31 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10463)
+[generated-client/api/image-api.ts:10771](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10771)
+
+___
+
+### uploadCustomSplashscreen
+
+▸ **uploadCustomSplashscreen**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
+
+**`summary`** Uploads a custom splashscreen.
+
+**`throws`** {RequiredError}
+
+**`memberof`** ImageApi
+
+#### Parameters
+
+| Name | Type | Description |
+| :------ | :------ | :------ |
+| `requestParameters` | [`ImageApiUploadCustomSplashscreenRequest`](../interfaces/generated_client.ImageApiUploadCustomSplashscreenRequest.md) | Request parameters. |
+| `options?` | `any` | - |
+
+#### Returns
+
+`Promise`<`AxiosResponse`<`void`, `any`\>\>
+
+#### Defined in
+
+[generated-client/api/image-api.ts:10783](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10783)

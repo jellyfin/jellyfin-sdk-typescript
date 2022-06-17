@@ -30,7 +30,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1030](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L1030)
+[generated-client/api/user-library-api.ts:1032](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L1032)
 
 ___
 
@@ -44,7 +44,7 @@ Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRati
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1037](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L1037)
+[generated-client/api/user-library-api.ts:1039](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L1039)
 
 ___
 
@@ -58,4 +58,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:1023](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L1023)
+[generated-client/api/user-library-api.ts:1025](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L1025)

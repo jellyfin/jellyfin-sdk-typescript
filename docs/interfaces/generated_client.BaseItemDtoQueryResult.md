@@ -28,7 +28,7 @@ Gets or sets the items.
 
 #### Defined in
 
-[generated-client/models/base-item-dto-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-dto-query-result.ts#L29)
+[generated-client/models/base-item-dto-query-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto-query-result.ts#L29)
 
 ___
 
@@ -36,13 +36,13 @@ ___
 
 • `Optional` **StartIndex**: `number`
 
-The index of the first record in Items.
+Gets or sets the index of the first record in Items.
 
 **`memberof`** BaseItemDtoQueryResult
 
 #### Defined in
 
-[generated-client/models/base-item-dto-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-dto-query-result.ts#L41)
+[generated-client/models/base-item-dto-query-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto-query-result.ts#L41)
 
 ___
 
@@ -50,10 +50,10 @@ ___
 
 • `Optional` **TotalRecordCount**: `number`
 
-The total number of records available.
+Gets or sets the total number of records available.
 
 **`memberof`** BaseItemDtoQueryResult
 
 #### Defined in
 
-[generated-client/models/base-item-dto-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-dto-query-result.ts#L35)
+[generated-client/models/base-item-dto-query-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto-query-result.ts#L35)

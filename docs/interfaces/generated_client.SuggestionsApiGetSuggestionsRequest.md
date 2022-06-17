@@ -33,7 +33,7 @@ Whether to enable the total record count.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L193)
+[generated-client/api/suggestions-api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L195)
 
 ___
 
@@ -47,7 +47,7 @@ Optional. The limit.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L186)
+[generated-client/api/suggestions-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L188)
 
 ___
 
@@ -61,7 +61,7 @@ The media types.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:165](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L165)
+[generated-client/api/suggestions-api.ts:167](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L167)
 
 ___
 
@@ -75,13 +75,13 @@ Optional. The start index.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L179)
+[generated-client/api/suggestions-api.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L181)
 
 ___
 
 ### type
 
-• `Optional` `Readonly` **type**: `string`[]
+• `Optional` `Readonly` **type**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 The type.
 
@@ -89,7 +89,7 @@ The type.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L172)
+[generated-client/api/suggestions-api.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L174)
 
 ___
 
@@ -103,4 +103,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:158](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L158)
+[generated-client/api/suggestions-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L160)

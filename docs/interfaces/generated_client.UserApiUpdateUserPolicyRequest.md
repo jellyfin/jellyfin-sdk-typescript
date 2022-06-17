@@ -29,7 +29,7 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1294)
+[generated-client/api/user-api.ts:1294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L1294)
 
 ___
 
@@ -43,4 +43,4 @@ The new user policy.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1301)
+[generated-client/api/user-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L1301)

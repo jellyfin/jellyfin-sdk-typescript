@@ -40,8 +40,10 @@ Request parameters for headMasterHlsVideoPlaylist operation in DynamicHlsApi.
 - [maxAudioBitDepth](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxaudiobitdepth)
 - [maxAudioChannels](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxaudiochannels)
 - [maxFramerate](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxframerate)
+- [maxHeight](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxheight)
 - [maxRefFrames](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxrefframes)
 - [maxVideoBitDepth](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxvideobitdepth)
+- [maxWidth](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#maxwidth)
 - [mediaSourceId](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#mediasourceid)
 - [minSegments](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#minsegments)
 - [params](generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md#params)
@@ -76,7 +78,7 @@ Optional. If true, the original file will be streamed statically without any enc
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5769](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5769)
+[generated-client/api/dynamic-hls-api.ts:6717](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6717)
 
 ___
 
@@ -90,7 +92,7 @@ Whether or not to allow copying of the audio stream url.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5853](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5853)
+[generated-client/api/dynamic-hls-api.ts:6801](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6801)
 
 ___
 
@@ -104,7 +106,7 @@ Whether or not to allow copying of the video stream url.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5846)
+[generated-client/api/dynamic-hls-api.ts:6794](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6794)
 
 ___
 
@@ -118,7 +120,7 @@ Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this wi
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5881](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5881)
+[generated-client/api/dynamic-hls-api.ts:6829](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6829)
 
 ___
 
@@ -132,7 +134,7 @@ Optional. Specify a specific number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5888)
+[generated-client/api/dynamic-hls-api.ts:6836](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6836)
 
 ___
 
@@ -146,7 +148,7 @@ Optional. Specify a audio codec to encode to, e.g. mp3. If omitted the server wi
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5832](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5832)
+[generated-client/api/dynamic-hls-api.ts:6780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6780)
 
 ___
 
@@ -160,7 +162,7 @@ Optional. Specify a specific audio sample rate, e.g. 44100.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5867)
+[generated-client/api/dynamic-hls-api.ts:6815](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6815)
 
 ___
 
@@ -174,7 +176,7 @@ Optional. The index of the audio stream to use. If omitted the first audio strea
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6063)
+[generated-client/api/dynamic-hls-api.ts:7025](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7025)
 
 ___
 
@@ -188,7 +190,7 @@ Optional. Whether to break on non key frames.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5860](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5860)
+[generated-client/api/dynamic-hls-api.ts:6808](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6808)
 
 ___
 
@@ -202,7 +204,7 @@ Optional. The MediaBrowser.Model.Dlna.EncodingContext.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6077](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6077)
+[generated-client/api/dynamic-hls-api.ts:7039](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7039)
 
 ___
 
@@ -216,7 +218,7 @@ Whether or not to copy timestamps when transcoding with an offset. Defaults to f
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5930)
+[generated-client/api/dynamic-hls-api.ts:6878](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6878)
 
 ___
 
@@ -230,7 +232,7 @@ Optional. The limit of how many cpu cores to use.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6021](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6021)
+[generated-client/api/dynamic-hls-api.ts:6983](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6983)
 
 ___
 
@@ -244,7 +246,7 @@ Optional. Whether to deinterlace the video.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6000](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6000)
+[generated-client/api/dynamic-hls-api.ts:6962](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6962)
 
 ___
 
@@ -258,7 +260,7 @@ The device id of the client requesting. Used to stop encoding processes when nee
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5825](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5825)
+[generated-client/api/dynamic-hls-api.ts:6773](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6773)
 
 ___
 
@@ -272,7 +274,7 @@ Optional. The dlna device profile id to utilize.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5790](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5790)
+[generated-client/api/dynamic-hls-api.ts:6738](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6738)
 
 ___
 
@@ -286,7 +288,7 @@ Enable adaptive bitrate streaming.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6091)
+[generated-client/api/dynamic-hls-api.ts:7053](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7053)
 
 ___
 
@@ -300,7 +302,7 @@ Whether or not to allow automatic stream copy if requested values match the orig
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5839](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5839)
+[generated-client/api/dynamic-hls-api.ts:6787](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6787)
 
 ___
 
@@ -314,7 +316,7 @@ Optional. Whether to enable the MpegtsM2Ts mode.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6035)
+[generated-client/api/dynamic-hls-api.ts:6997](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6997)
 
 ___
 
@@ -328,7 +330,7 @@ Optional. A specific video framerate to encode to, e.g. 23.976. Generally this s
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5916](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5916)
+[generated-client/api/dynamic-hls-api.ts:6864](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6864)
 
 ___
 
@@ -342,7 +344,7 @@ Optional. The fixed vertical resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5951](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5951)
+[generated-client/api/dynamic-hls-api.ts:6899](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6899)
 
 ___
 
@@ -356,7 +358,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5755](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5755)
+[generated-client/api/dynamic-hls-api.ts:6703](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6703)
 
 ___
 
@@ -370,7 +372,7 @@ Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5909](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5909)
+[generated-client/api/dynamic-hls-api.ts:6857](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6857)
 
 ___
 
@@ -384,7 +386,7 @@ The live stream id.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6028](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6028)
+[generated-client/api/dynamic-hls-api.ts:6990](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6990)
 
 ___
 
@@ -398,7 +400,7 @@ Optional. The maximum audio bit depth.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5874](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5874)
+[generated-client/api/dynamic-hls-api.ts:6822](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6822)
 
 ___
 
@@ -412,7 +414,7 @@ Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5895](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5895)
+[generated-client/api/dynamic-hls-api.ts:6843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6843)
 
 ___
 
@@ -426,7 +428,21 @@ Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generall
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5923](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5923)
+[generated-client/api/dynamic-hls-api.ts:6871](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6871)
+
+___
+
+### maxHeight
+
+• `Optional` `Readonly` **maxHeight**: `number`
+
+Optional. The maximum vertical resolution of the encoded video.
+
+**`memberof`** DynamicHlsApiHeadMasterHlsVideoPlaylist
+
+#### Defined in
+
+[generated-client/api/dynamic-hls-api.ts:6913](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6913)
 
 ___
 
@@ -440,7 +456,7 @@ Optional.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5979](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5979)
+[generated-client/api/dynamic-hls-api.ts:6941](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6941)
 
 ___
 
@@ -454,7 +470,21 @@ Optional. The maximum video bit depth.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5986](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5986)
+[generated-client/api/dynamic-hls-api.ts:6948](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6948)
+
+___
+
+### maxWidth
+
+• `Optional` `Readonly` **maxWidth**: `number`
+
+Optional. The maximum horizontal resolution of the encoded video.
+
+**`memberof`** DynamicHlsApiHeadMasterHlsVideoPlaylist
+
+#### Defined in
+
+[generated-client/api/dynamic-hls-api.ts:6906](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6906)
 
 ___
 
@@ -468,7 +498,7 @@ The media version id, if playing an alternate version.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5762](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5762)
+[generated-client/api/dynamic-hls-api.ts:6710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6710)
 
 ___
 
@@ -482,7 +512,7 @@ The minimum number of segments.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5818](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5818)
+[generated-client/api/dynamic-hls-api.ts:6766](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6766)
 
 ___
 
@@ -496,7 +526,7 @@ The streaming parameters.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5776)
+[generated-client/api/dynamic-hls-api.ts:6724](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6724)
 
 ___
 
@@ -510,7 +540,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5797](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5797)
+[generated-client/api/dynamic-hls-api.ts:6745](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6745)
 
 ___
 
@@ -524,7 +554,7 @@ Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, 
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5902](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5902)
+[generated-client/api/dynamic-hls-api.ts:6850](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6850)
 
 ___
 
@@ -538,7 +568,7 @@ Optional. Whether to require avc.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5993](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5993)
+[generated-client/api/dynamic-hls-api.ts:6955](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6955)
 
 ___
 
@@ -552,7 +582,7 @@ Optional. Whether to require a non anamorphic stream.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6007](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6007)
+[generated-client/api/dynamic-hls-api.ts:6969](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6969)
 
 ___
 
@@ -566,7 +596,7 @@ The segment container.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5804](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5804)
+[generated-client/api/dynamic-hls-api.ts:6752](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6752)
 
 ___
 
@@ -580,7 +610,7 @@ The segment length.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5811](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5811)
+[generated-client/api/dynamic-hls-api.ts:6759](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6759)
 
 ___
 
@@ -594,7 +624,7 @@ Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5937](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5937)
+[generated-client/api/dynamic-hls-api.ts:6885](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6885)
 
 ___
 
@@ -612,7 +642,7 @@ Optional. The streaming options.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6084](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6084)
+[generated-client/api/dynamic-hls-api.ts:7046](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7046)
 
 ___
 
@@ -626,7 +656,7 @@ Optional. Specify a subtitle codec to encode to.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6049](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6049)
+[generated-client/api/dynamic-hls-api.ts:7011](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7011)
 
 ___
 
@@ -640,7 +670,7 @@ Optional. Specify the subtitle delivery method.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5972](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5972)
+[generated-client/api/dynamic-hls-api.ts:6934](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6934)
 
 ___
 
@@ -654,7 +684,7 @@ Optional. The index of the subtitle stream to use. If omitted no subtitles will 
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5965](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5965)
+[generated-client/api/dynamic-hls-api.ts:6927](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6927)
 
 ___
 
@@ -668,7 +698,7 @@ The tag.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5783](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5783)
+[generated-client/api/dynamic-hls-api.ts:6731](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6731)
 
 ___
 
@@ -682,7 +712,7 @@ Optional. The transcoding reason.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6056](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6056)
+[generated-client/api/dynamic-hls-api.ts:7018](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7018)
 
 ___
 
@@ -696,7 +726,7 @@ Optional. The maximum number of audio channels to transcode.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6014)
+[generated-client/api/dynamic-hls-api.ts:6976](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6976)
 
 ___
 
@@ -710,7 +740,7 @@ Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this wil
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5958](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5958)
+[generated-client/api/dynamic-hls-api.ts:6920](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6920)
 
 ___
 
@@ -718,13 +748,13 @@ ___
 
 • `Optional` `Readonly` **videoCodec**: `string`
 
-Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url\&#39;s extension. Options: h265, h264, mpeg4, theora, vpx, wmv.
+Optional. Specify a video codec to encode to, e.g. h264. If omitted the server will auto-select using the url\&#39;s extension. Options: h265, h264, mpeg4, theora, vp8, vp9, vpx (deprecated), wmv.
 
 **`memberof`** DynamicHlsApiHeadMasterHlsVideoPlaylist
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6042](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6042)
+[generated-client/api/dynamic-hls-api.ts:7004](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7004)
 
 ___
 
@@ -738,7 +768,7 @@ Optional. The index of the video stream to use. If omitted the first video strea
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:6070](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L6070)
+[generated-client/api/dynamic-hls-api.ts:7032](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L7032)
 
 ___
 
@@ -752,4 +782,4 @@ Optional. The fixed horizontal resolution of the encoded video.
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:5944](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L5944)
+[generated-client/api/dynamic-hls-api.ts:6892](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L6892)

@@ -21,15 +21,15 @@ Class SearchHintResult.
 
 ### SearchHints
 
-• `Optional` **SearchHints**: ``null`` \| [`SearchHint`](generated_client.SearchHint.md)[]
+• `Optional` **SearchHints**: [`SearchHint`](generated_client.SearchHint.md)[]
 
-Gets or sets the search hints.
+Gets the search hints.
 
 **`memberof`** SearchHintResult
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/search-hint-result.ts#L29)
+[generated-client/models/search-hint-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/search-hint-result.ts#L29)
 
 ___
 
@@ -37,10 +37,10 @@ ___
 
 • `Optional` **TotalRecordCount**: `number`
 
-Gets or sets the total record count.
+Gets the total record count.
 
 **`memberof`** SearchHintResult
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/search-hint-result.ts#L35)
+[generated-client/models/search-hint-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/search-hint-result.ts#L35)

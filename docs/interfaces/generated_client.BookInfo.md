@@ -17,6 +17,7 @@
 - [MetadataCountryCode](generated_client.BookInfo.md#metadatacountrycode)
 - [MetadataLanguage](generated_client.BookInfo.md#metadatalanguage)
 - [Name](generated_client.BookInfo.md#name)
+- [OriginalTitle](generated_client.BookInfo.md#originaltitle)
 - [ParentIndexNumber](generated_client.BookInfo.md#parentindexnumber)
 - [Path](generated_client.BookInfo.md#path)
 - [PremiereDate](generated_client.BookInfo.md#premieredate)
@@ -34,7 +35,7 @@
 
 #### Defined in
 
-[generated-client/models/book-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L64)
+[generated-client/models/book-info.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L70)
 
 ___
 
@@ -46,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/book-info.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L82)
+[generated-client/models/book-info.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L88)
 
 ___
 
@@ -60,7 +61,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L46)
+[generated-client/models/book-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L52)
 
 ___
 
@@ -74,7 +75,7 @@ Gets or sets the metadata language.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L40)
+[generated-client/models/book-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L46)
 
 ___
 
@@ -88,7 +89,21 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L28)
+[generated-client/models/book-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L28)
+
+___
+
+### OriginalTitle
+
+• `Optional` **OriginalTitle**: ``null`` \| `string`
+
+Gets or sets the original title.
+
+**`memberof`** BookInfo
+
+#### Defined in
+
+[generated-client/models/book-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L34)
 
 ___
 
@@ -100,7 +115,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/book-info.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L70)
+[generated-client/models/book-info.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L76)
 
 ___
 
@@ -114,7 +129,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L34)
+[generated-client/models/book-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L40)
 
 ___
 
@@ -126,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/book-info.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L76)
+[generated-client/models/book-info.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L82)
 
 ___
 
@@ -140,7 +155,7 @@ Gets or sets the provider ids.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L52)
+[generated-client/models/book-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L58)
 
 ___
 
@@ -152,7 +167,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/book-info.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L88)
+[generated-client/models/book-info.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L94)
 
 ___
 
@@ -166,4 +181,4 @@ Gets or sets the year.
 
 #### Defined in
 
-[generated-client/models/book-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/book-info.ts#L58)
+[generated-client/models/book-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/book-info.ts#L64)

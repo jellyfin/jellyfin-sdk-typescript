@@ -28,4 +28,4 @@ New tuner host.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3270)
+[generated-client/api/live-tv-api.ts:3270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L3270)

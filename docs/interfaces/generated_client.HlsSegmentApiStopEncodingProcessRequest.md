@@ -29,7 +29,7 @@ The device id of the client requesting. Used to stop encoding processes when nee
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:492](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/hls-segment-api.ts#L492)
+[generated-client/api/hls-segment-api.ts:492](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L492)
 
 ___
 
@@ -43,4 +43,4 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/hls-segment-api.ts#L499)
+[generated-client/api/hls-segment-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L499)

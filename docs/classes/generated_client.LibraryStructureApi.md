@@ -57,7 +57,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -91,7 +91,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -118,7 +118,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L784)
+[generated-client/api/library-structure-api.ts:784](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L784)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L796)
+[generated-client/api/library-structure-api.ts:796](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L796)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L807)
+[generated-client/api/library-structure-api.ts:807](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L807)
 
 ___
 
@@ -198,7 +198,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:819](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L819)
+[generated-client/api/library-structure-api.ts:819](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L819)
 
 ___
 
@@ -225,7 +225,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:831](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L831)
+[generated-client/api/library-structure-api.ts:831](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L831)
 
 ___
 
@@ -252,7 +252,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L843)
+[generated-client/api/library-structure-api.ts:843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L843)
 
 ___
 
@@ -279,7 +279,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L855)
+[generated-client/api/library-structure-api.ts:855](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L855)
 
 ___
 
@@ -306,4 +306,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L867)
+[generated-client/api/library-structure-api.ts:867](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L867)

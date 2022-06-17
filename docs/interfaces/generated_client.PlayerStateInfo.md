@@ -16,6 +16,7 @@
 - [CanSeek](generated_client.PlayerStateInfo.md#canseek)
 - [IsMuted](generated_client.PlayerStateInfo.md#ismuted)
 - [IsPaused](generated_client.PlayerStateInfo.md#ispaused)
+- [LiveStreamId](generated_client.PlayerStateInfo.md#livestreamid)
 - [MediaSourceId](generated_client.PlayerStateInfo.md#mediasourceid)
 - [PlayMethod](generated_client.PlayerStateInfo.md#playmethod)
 - [PositionTicks](generated_client.PlayerStateInfo.md#positionticks)
@@ -35,7 +36,7 @@ Gets or sets the index of the now playing audio stream.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L60)
+[generated-client/models/player-state-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L60)
 
 ___
 
@@ -49,7 +50,7 @@ Gets or sets a value indicating whether this instance can seek.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L36)
+[generated-client/models/player-state-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L36)
 
 ___
 
@@ -63,7 +64,7 @@ Gets or sets a value indicating whether this instance is muted.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L48)
+[generated-client/models/player-state-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L48)
 
 ___
 
@@ -77,7 +78,21 @@ Gets or sets a value indicating whether this instance is paused.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L42)
+[generated-client/models/player-state-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L42)
+
+___
+
+### LiveStreamId
+
+• `Optional` **LiveStreamId**: ``null`` \| `string`
+
+Gets or sets the now playing live stream identifier.
+
+**`memberof`** PlayerStateInfo
+
+#### Defined in
+
+[generated-client/models/player-state-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L90)
 
 ___
 
@@ -91,7 +106,7 @@ Gets or sets the now playing media version identifier.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L72)
+[generated-client/models/player-state-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L72)
 
 ___
 
@@ -103,7 +118,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L78)
+[generated-client/models/player-state-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L78)
 
 ___
 
@@ -117,7 +132,7 @@ Gets or sets the now playing position ticks.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L30)
+[generated-client/models/player-state-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L30)
 
 ___
 
@@ -129,7 +144,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L84)
+[generated-client/models/player-state-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L84)
 
 ___
 
@@ -143,7 +158,7 @@ Gets or sets the index of the now playing subtitle stream.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L66)
+[generated-client/models/player-state-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L66)
 
 ___
 
@@ -157,4 +172,4 @@ Gets or sets the volume level.
 
 #### Defined in
 
-[generated-client/models/player-state-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/player-state-info.ts#L54)
+[generated-client/models/player-state-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/player-state-info.ts#L54)

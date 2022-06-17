@@ -29,7 +29,7 @@ The genre name.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:303](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L303)
+[generated-client/api/music-genres-api.ts:321](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L321)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:310](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L310)
+[generated-client/api/music-genres-api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L328)

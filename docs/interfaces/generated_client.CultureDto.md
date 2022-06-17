@@ -24,29 +24,29 @@ Class CultureDto.
 
 ### DisplayName
 
-• `Optional` **DisplayName**: ``null`` \| `string`
+• `Optional` **DisplayName**: `string`
 
-Gets or sets the display name.
+Gets the display name.
 
 **`memberof`** CultureDto
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/culture-dto.ts#L34)
+[generated-client/models/culture-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/culture-dto.ts#L34)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
-Gets or sets the name.
+Gets the name.
 
 **`memberof`** CultureDto
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/culture-dto.ts#L28)
+[generated-client/models/culture-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/culture-dto.ts#L28)
 
 ___
 
@@ -54,36 +54,36 @@ ___
 
 • `Optional` **ThreeLetterISOLanguageName**: ``null`` \| `string`
 
-Gets or sets the name of the three letter ISO language.
+Gets the name of the three letter ISO language.
 
 **`memberof`** CultureDto
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/culture-dto.ts#L46)
+[generated-client/models/culture-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/culture-dto.ts#L46)
 
 ___
 
 ### ThreeLetterISOLanguageNames
 
-• `Optional` **ThreeLetterISOLanguageNames**: ``null`` \| `string`[]
+• `Optional` **ThreeLetterISOLanguageNames**: `string`[]
 
 **`memberof`** CultureDto
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/culture-dto.ts#L52)
+[generated-client/models/culture-dto.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/culture-dto.ts#L52)
 
 ___
 
 ### TwoLetterISOLanguageName
 
-• `Optional` **TwoLetterISOLanguageName**: ``null`` \| `string`
+• `Optional` **TwoLetterISOLanguageName**: `string`
 
-Gets or sets the name of the two letter ISO language.
+Gets the name of the two letter ISO language.
 
 **`memberof`** CultureDto
 
 #### Defined in
 
-[generated-client/models/culture-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/culture-dto.ts#L40)
+[generated-client/models/culture-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/culture-dto.ts#L40)
