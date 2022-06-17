@@ -7,13 +7,14 @@
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../../../__helpers__/common';
 
 import { Api } from '../../../api';
-import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideoHlsApi, VideosApi, YearsApi } from '../../../generated-client/api';
+import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, ClientLogApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TmdbApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideosApi, YearsApi } from '../../../generated-client/api';
 import { getActivityLogApi } from '../activity-log-api';
 import { getApiKeyApi } from '../api-key-api';
 import { getArtistsApi } from '../artists-api';
 import { getAudioApi } from '../audio-api';
 import { getBrandingApi } from '../branding-api';
 import { getChannelsApi } from '../channels-api';
+import { getClientLogApi } from '../client-log-api';
 import { getCollectionApi } from '../collection-api';
 import { getConfigurationApi } from '../configuration-api';
 import { getDashboardApi } from '../dashboard-api';
@@ -58,6 +59,7 @@ import { getSuggestionsApi } from '../suggestions-api';
 import { getSyncPlayApi } from '../sync-play-api';
 import { getSystemApi } from '../system-api';
 import { getTimeSyncApi } from '../time-sync-api';
+import { getTmdbApi } from '../tmdb-api';
 import { getTrailersApi } from '../trailers-api';
 import { getTvShowsApi } from '../tv-shows-api';
 import { getUniversalAudioApi } from '../universal-audio-api';
@@ -65,7 +67,6 @@ import { getUserApi } from '../user-api';
 import { getUserLibraryApi } from '../user-library-api';
 import { getUserViewsApi } from '../user-views-api';
 import { getVideoAttachmentsApi } from '../video-attachments-api';
-import { getVideoHlsApi } from '../video-hls-api';
 import { getVideosApi } from '../videos-api';
 import { getYearsApi } from '../years-api';
 
@@ -84,6 +85,7 @@ describe('Api Utilities', () => {
 		expect(getAudioApi(api)).toBeInstanceOf(AudioApi);
 		expect(getBrandingApi(api)).toBeInstanceOf(BrandingApi);
 		expect(getChannelsApi(api)).toBeInstanceOf(ChannelsApi);
+		expect(getClientLogApi(api)).toBeInstanceOf(ClientLogApi);
 		expect(getCollectionApi(api)).toBeInstanceOf(CollectionApi);
 		expect(getConfigurationApi(api)).toBeInstanceOf(ConfigurationApi);
 		expect(getDashboardApi(api)).toBeInstanceOf(DashboardApi);
@@ -128,6 +130,7 @@ describe('Api Utilities', () => {
 		expect(getSyncPlayApi(api)).toBeInstanceOf(SyncPlayApi);
 		expect(getSystemApi(api)).toBeInstanceOf(SystemApi);
 		expect(getTimeSyncApi(api)).toBeInstanceOf(TimeSyncApi);
+		expect(getTmdbApi(api)).toBeInstanceOf(TmdbApi);
 		expect(getTrailersApi(api)).toBeInstanceOf(TrailersApi);
 		expect(getTvShowsApi(api)).toBeInstanceOf(TvShowsApi);
 		expect(getUniversalAudioApi(api)).toBeInstanceOf(UniversalAudioApi);
@@ -135,7 +138,6 @@ describe('Api Utilities', () => {
 		expect(getUserLibraryApi(api)).toBeInstanceOf(UserLibraryApi);
 		expect(getUserViewsApi(api)).toBeInstanceOf(UserViewsApi);
 		expect(getVideoAttachmentsApi(api)).toBeInstanceOf(VideoAttachmentsApi);
-		expect(getVideoHlsApi(api)).toBeInstanceOf(VideoHlsApi);
 		expect(getVideosApi(api)).toBeInstanceOf(VideosApi);
 		expect(getYearsApi(api)).toBeInstanceOf(YearsApi);
 	});
