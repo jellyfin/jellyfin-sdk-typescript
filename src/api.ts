@@ -20,7 +20,7 @@ type BuildFullPathFunction = (baseURL?: string, requestedURL?: string) => string
 const buildFullPath: BuildFullPathFunction = require('axios/lib/core/buildFullPath');
 
 /** The authorization header field name. */
-export const AUTHORIZATION_HEADER = 'X-Emby-Authorization';
+export const AUTHORIZATION_HEADER = 'Authorization';
 
 /** Class representing the Jellyfin API. */
 export class Api {
