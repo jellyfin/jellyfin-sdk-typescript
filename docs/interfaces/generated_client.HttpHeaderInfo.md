@@ -20,13 +20,13 @@
 
 ### Match
 
-• `Optional` **Match**: [`HeaderMatchType`](../enums/index.api.HeaderMatchType.md)
+• `Optional` **Match**: [`HeaderMatchType`](../enums/generated_client.HeaderMatchType.md)
 
 **`memberof`** HttpHeaderInfo
 
 #### Defined in
 
-[generated-client/models/http-header-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/http-header-info.ts#L41)
+[generated-client/models/http-header-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/http-header-info.ts#L41)
 
 ___
 
@@ -38,7 +38,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/http-header-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/http-header-info.ts#L29)
+[generated-client/models/http-header-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/http-header-info.ts#L29)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/http-header-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/http-header-info.ts#L35)
+[generated-client/models/http-header-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/http-header-info.ts#L35)

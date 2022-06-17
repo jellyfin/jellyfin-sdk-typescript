@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,13 +115,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L477)
+[generated-client/api/devices-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L477)
 
 ___
 
 ### getDeviceInfo
 
-▸ **getDeviceInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/index.api.DeviceInfo.md), `any`\>\>
+▸ **getDeviceInfo**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md), `any`\>\>
 
 **`summary`** Get info for a device.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/index.api.DeviceInfo.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L489)
+[generated-client/api/devices-api.ts:489](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L489)
 
 ___
 
 ### getDeviceOptions
 
-▸ **getDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/index.api.DeviceOptions.md), `any`\>\>
+▸ **getDeviceOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md), `any`\>\>
 
 **`summary`** Get options for a device.
 
@@ -165,17 +165,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/index.api.DeviceOptions.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L501)
+[generated-client/api/devices-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L501)
 
 ___
 
 ### getDevices
 
-▸ **getDevices**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/index.api.DeviceInfoQueryResult.md), `any`\>\>
+▸ **getDevices**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md), `any`\>\>
 
 **`summary`** Get Devices.
 
@@ -192,11 +192,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/index.api.DeviceInfoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L513)
+[generated-client/api/devices-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L513)
 
 ___
 
@@ -223,4 +223,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L525)
+[generated-client/api/devices-api.ts:525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L525)

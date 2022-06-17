@@ -31,13 +31,13 @@ Client.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L267)
+[generated-client/api/display-preferences-api.ts:267](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L267)
 
 ___
 
 ### displayPreferencesDto
 
-• `Readonly` **displayPreferencesDto**: [`DisplayPreferencesDto`](index.api.DisplayPreferencesDto.md)
+• `Readonly` **displayPreferencesDto**: [`DisplayPreferencesDto`](generated_client.DisplayPreferencesDto.md)
 
 New Display Preferences object.
 
@@ -45,7 +45,7 @@ New Display Preferences object.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L274)
+[generated-client/api/display-preferences-api.ts:274](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L274)
 
 ___
 
@@ -59,7 +59,7 @@ Display preferences id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L253)
+[generated-client/api/display-preferences-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L253)
 
 ___
 
@@ -73,4 +73,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/display-preferences-api.ts#L260)
+[generated-client/api/display-preferences-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L260)

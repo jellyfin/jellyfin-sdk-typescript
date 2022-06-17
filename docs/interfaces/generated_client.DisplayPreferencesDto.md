@@ -41,13 +41,13 @@ Gets or sets the client.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L108)
+[generated-client/models/display-preferences-dto.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L108)
 
 ___
 
 ### CustomPrefs
 
-• `Optional` **CustomPrefs**: ``null`` \| { [key: string]: `string`;  }
+• `Optional` **CustomPrefs**: ``null`` \| { `[key: string]`: `string`;  }
 
 Gets or sets the custom prefs.
 
@@ -55,7 +55,7 @@ Gets or sets the custom prefs.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L72)
+[generated-client/models/display-preferences-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L72)
 
 ___
 
@@ -69,7 +69,7 @@ Gets or sets the user id.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L30)
+[generated-client/models/display-preferences-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L30)
 
 ___
 
@@ -83,7 +83,7 @@ Gets or sets the index by.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L48)
+[generated-client/models/display-preferences-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L48)
 
 ___
 
@@ -97,7 +97,7 @@ Gets or sets the height of the primary image.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L60)
+[generated-client/models/display-preferences-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L60)
 
 ___
 
@@ -111,7 +111,7 @@ Gets or sets the width of the primary image.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L66)
+[generated-client/models/display-preferences-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L66)
 
 ___
 
@@ -125,7 +125,7 @@ Gets or sets a value indicating whether [remember indexing].
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L54)
+[generated-client/models/display-preferences-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L54)
 
 ___
 
@@ -139,19 +139,19 @@ Gets or sets a value indicating whether [remember sorting].
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L90)
+[generated-client/models/display-preferences-dto.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L90)
 
 ___
 
 ### ScrollDirection
 
-• `Optional` **ScrollDirection**: [`ScrollDirection`](../enums/index.api.ScrollDirection.md)
+• `Optional` **ScrollDirection**: [`ScrollDirection`](../enums/generated_client.ScrollDirection.md)
 
 **`memberof`** DisplayPreferencesDto
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L78)
+[generated-client/models/display-preferences-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L78)
 
 ___
 
@@ -165,7 +165,7 @@ Gets or sets a value indicating whether to show backdrops on this item.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L84)
+[generated-client/models/display-preferences-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L84)
 
 ___
 
@@ -179,7 +179,7 @@ Gets or sets a value indicating whether [show sidebar].
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L102)
+[generated-client/models/display-preferences-dto.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L102)
 
 ___
 
@@ -193,19 +193,19 @@ Gets or sets the sort by.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L42)
+[generated-client/models/display-preferences-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L42)
 
 ___
 
 ### SortOrder
 
-• `Optional` **SortOrder**: [`SortOrder`](../enums/index.api.SortOrder.md)
+• `Optional` **SortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)
 
 **`memberof`** DisplayPreferencesDto
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L96)
+[generated-client/models/display-preferences-dto.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L96)
 
 ___
 
@@ -219,4 +219,4 @@ Gets or sets the type of the view.
 
 #### Defined in
 
-[generated-client/models/display-preferences-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/display-preferences-dto.ts#L36)
+[generated-client/models/display-preferences-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/display-preferences-dto.ts#L36)

@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,13 +84,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getMovieRecommendations
 
-▸ **getMovieRecommendations**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`RecommendationDto`](../interfaces/index.api.RecommendationDto.md)[], `any`\>\>
+▸ **getMovieRecommendations**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`RecommendationDto`](../interfaces/generated_client.RecommendationDto.md)[], `any`\>\>
 
 **`summary`** Gets movie recommendations.
 
@@ -107,8 +107,8 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RecommendationDto`](../interfaces/index.api.RecommendationDto.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RecommendationDto`](../interfaces/generated_client.RecommendationDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/movies-api.ts#L200)
+[generated-client/api/movies-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/movies-api.ts#L200)

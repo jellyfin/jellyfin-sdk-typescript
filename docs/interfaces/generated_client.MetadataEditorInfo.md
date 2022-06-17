@@ -29,64 +29,64 @@
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:57](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L57)
+[generated-client/models/metadata-editor-info.ts:57](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L57)
 
 ___
 
 ### ContentTypeOptions
 
-• `Optional` **ContentTypeOptions**: ``null`` \| [`NameValuePair`](index.api.NameValuePair.md)[]
+• `Optional` **ContentTypeOptions**: ``null`` \| [`NameValuePair`](generated_client.NameValuePair.md)[]
 
 **`memberof`** MetadataEditorInfo
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:63](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L63)
+[generated-client/models/metadata-editor-info.ts:63](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L63)
 
 ___
 
 ### Countries
 
-• `Optional` **Countries**: ``null`` \| [`CountryInfo`](index.api.CountryInfo.md)[]
+• `Optional` **Countries**: ``null`` \| [`CountryInfo`](generated_client.CountryInfo.md)[]
 
 **`memberof`** MetadataEditorInfo
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L39)
+[generated-client/models/metadata-editor-info.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L39)
 
 ___
 
 ### Cultures
 
-• `Optional` **Cultures**: ``null`` \| [`CultureDto`](index.api.CultureDto.md)[]
+• `Optional` **Cultures**: ``null`` \| [`CultureDto`](generated_client.CultureDto.md)[]
 
 **`memberof`** MetadataEditorInfo
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L45)
+[generated-client/models/metadata-editor-info.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L45)
 
 ___
 
 ### ExternalIdInfos
 
-• `Optional` **ExternalIdInfos**: ``null`` \| [`ExternalIdInfo`](index.api.ExternalIdInfo.md)[]
+• `Optional` **ExternalIdInfos**: ``null`` \| [`ExternalIdInfo`](generated_client.ExternalIdInfo.md)[]
 
 **`memberof`** MetadataEditorInfo
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L51)
+[generated-client/models/metadata-editor-info.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L51)
 
 ___
 
 ### ParentalRatingOptions
 
-• `Optional` **ParentalRatingOptions**: ``null`` \| [`ParentalRating`](index.api.ParentalRating.md)[]
+• `Optional` **ParentalRatingOptions**: ``null`` \| [`ParentalRating`](generated_client.ParentalRating.md)[]
 
 **`memberof`** MetadataEditorInfo
 
 #### Defined in
 
-[generated-client/models/metadata-editor-info.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/metadata-editor-info.ts#L33)
+[generated-client/models/metadata-editor-info.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-editor-info.ts#L33)

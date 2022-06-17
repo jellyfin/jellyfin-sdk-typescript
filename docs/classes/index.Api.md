@@ -22,68 +22,8 @@ Class representing the Jellyfin API.
 
 ### Accessors
 
-- [activityLogApi](index.Api.md#activitylogapi)
-- [apiKeyApi](index.Api.md#apikeyapi)
-- [artistsApi](index.Api.md#artistsapi)
-- [audioApi](index.Api.md#audioapi)
 - [authorizationHeader](index.Api.md#authorizationheader)
-- [brandingApi](index.Api.md#brandingapi)
-- [channelsApi](index.Api.md#channelsapi)
-- [collectionApi](index.Api.md#collectionapi)
 - [configuration](index.Api.md#configuration)
-- [configurationApi](index.Api.md#configurationapi)
-- [dashboardApi](index.Api.md#dashboardapi)
-- [devicesApi](index.Api.md#devicesapi)
-- [displayPreferencesApi](index.Api.md#displaypreferencesapi)
-- [dlnaApi](index.Api.md#dlnaapi)
-- [dlnaServerApi](index.Api.md#dlnaserverapi)
-- [dynamicHlsApi](index.Api.md#dynamichlsapi)
-- [environmentApi](index.Api.md#environmentapi)
-- [filterApi](index.Api.md#filterapi)
-- [genresApi](index.Api.md#genresapi)
-- [hlsSegmentApi](index.Api.md#hlssegmentapi)
-- [imageApi](index.Api.md#imageapi)
-- [imageByNameApi](index.Api.md#imagebynameapi)
-- [instantMixApi](index.Api.md#instantmixapi)
-- [itemLookupApi](index.Api.md#itemlookupapi)
-- [itemRefreshApi](index.Api.md#itemrefreshapi)
-- [itemUpdateApi](index.Api.md#itemupdateapi)
-- [itemsApi](index.Api.md#itemsapi)
-- [libraryApi](index.Api.md#libraryapi)
-- [libraryStructureApi](index.Api.md#librarystructureapi)
-- [liveTvApi](index.Api.md#livetvapi)
-- [localizationApi](index.Api.md#localizationapi)
-- [mediaInfoApi](index.Api.md#mediainfoapi)
-- [moviesApi](index.Api.md#moviesapi)
-- [musicGenresApi](index.Api.md#musicgenresapi)
-- [notificationsApi](index.Api.md#notificationsapi)
-- [packageApi](index.Api.md#packageapi)
-- [personsApi](index.Api.md#personsapi)
-- [playlistsApi](index.Api.md#playlistsapi)
-- [playstateApi](index.Api.md#playstateapi)
-- [pluginsApi](index.Api.md#pluginsapi)
-- [quickConnectApi](index.Api.md#quickconnectapi)
-- [remoteImageApi](index.Api.md#remoteimageapi)
-- [scheduledTasksApi](index.Api.md#scheduledtasksapi)
-- [searchApi](index.Api.md#searchapi)
-- [sessionApi](index.Api.md#sessionapi)
-- [startupApi](index.Api.md#startupapi)
-- [studiosApi](index.Api.md#studiosapi)
-- [subtitleApi](index.Api.md#subtitleapi)
-- [suggestionsApi](index.Api.md#suggestionsapi)
-- [syncPlayApi](index.Api.md#syncplayapi)
-- [systemApi](index.Api.md#systemapi)
-- [timeSyncApi](index.Api.md#timesyncapi)
-- [trailersApi](index.Api.md#trailersapi)
-- [tvShowsApi](index.Api.md#tvshowsapi)
-- [universalAudioApi](index.Api.md#universalaudioapi)
-- [userApi](index.Api.md#userapi)
-- [userLibraryApi](index.Api.md#userlibraryapi)
-- [userViewsApi](index.Api.md#userviewsapi)
-- [videoAttachmentsApi](index.Api.md#videoattachmentsapi)
-- [videoHlsApi](index.Api.md#videohlsapi)
-- [videosApi](index.Api.md#videosapi)
-- [yearsApi](index.Api.md#yearsapi)
 
 ### Methods
 
@@ -109,7 +49,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L29)
+[api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L33)
 
 ## Properties
 
@@ -119,7 +59,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L26)
+[api.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L30)
 
 ___
 
@@ -129,7 +69,7 @@ ___
 
 #### Defined in
 
-[api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L27)
+[api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L31)
 
 ___
 
@@ -139,7 +79,7 @@ ___
 
 #### Defined in
 
-[api.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L23)
+[api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L27)
 
 ___
 
@@ -149,7 +89,7 @@ ___
 
 #### Defined in
 
-[api.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L24)
+[api.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L28)
 
 ___
 
@@ -159,65 +99,9 @@ ___
 
 #### Defined in
 
-[api.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L25)
+[api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L29)
 
 ## Accessors
-
-### activityLogApi
-
-• `get` **activityLogApi**(): [`ActivityLogApi`](generated_client.ActivityLogApi.md)
-
-#### Returns
-
-[`ActivityLogApi`](generated_client.ActivityLogApi.md)
-
-#### Defined in
-
-[api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L100)
-
-___
-
-### apiKeyApi
-
-• `get` **apiKeyApi**(): [`ApiKeyApi`](generated_client.ApiKeyApi.md)
-
-#### Returns
-
-[`ApiKeyApi`](generated_client.ApiKeyApi.md)
-
-#### Defined in
-
-[api.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L104)
-
-___
-
-### artistsApi
-
-• `get` **artistsApi**(): [`ArtistsApi`](generated_client.ArtistsApi.md)
-
-#### Returns
-
-[`ArtistsApi`](generated_client.ArtistsApi.md)
-
-#### Defined in
-
-[api.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L108)
-
-___
-
-### audioApi
-
-• `get` **audioApi**(): [`AudioApi`](generated_client.AudioApi.md)
-
-#### Returns
-
-[`AudioApi`](generated_client.AudioApi.md)
-
-#### Defined in
-
-[api.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L112)
-
-___
 
 ### authorizationHeader
 
@@ -229,55 +113,13 @@ ___
 
 #### Defined in
 
-[api.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L96)
-
-___
-
-### brandingApi
-
-• `get` **brandingApi**(): [`BrandingApi`](generated_client.BrandingApi.md)
-
-#### Returns
-
-[`BrandingApi`](generated_client.BrandingApi.md)
-
-#### Defined in
-
-[api.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L116)
-
-___
-
-### channelsApi
-
-• `get` **channelsApi**(): [`ChannelsApi`](generated_client.ChannelsApi.md)
-
-#### Returns
-
-[`ChannelsApi`](generated_client.ChannelsApi.md)
-
-#### Defined in
-
-[api.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L120)
-
-___
-
-### collectionApi
-
-• `get` **collectionApi**(): [`CollectionApi`](generated_client.CollectionApi.md)
-
-#### Returns
-
-[`CollectionApi`](generated_client.CollectionApi.md)
-
-#### Defined in
-
-[api.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L124)
+[api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L100)
 
 ___
 
 ### configuration
 
-• `Private` `get` **configuration**(): [`Configuration`](generated_client.Configuration.md)
+• `get` **configuration**(): [`Configuration`](generated_client.Configuration.md)
 
 #### Returns
 
@@ -285,755 +127,13 @@ ___
 
 #### Defined in
 
-[api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L43)
-
-___
-
-### configurationApi
-
-• `get` **configurationApi**(): [`ConfigurationApi`](generated_client.ConfigurationApi.md)
-
-#### Returns
-
-[`ConfigurationApi`](generated_client.ConfigurationApi.md)
-
-#### Defined in
-
-[api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L128)
-
-___
-
-### dashboardApi
-
-• `get` **dashboardApi**(): [`DashboardApi`](generated_client.DashboardApi.md)
-
-#### Returns
-
-[`DashboardApi`](generated_client.DashboardApi.md)
-
-#### Defined in
-
-[api.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L132)
-
-___
-
-### devicesApi
-
-• `get` **devicesApi**(): [`DevicesApi`](generated_client.DevicesApi.md)
-
-#### Returns
-
-[`DevicesApi`](generated_client.DevicesApi.md)
-
-#### Defined in
-
-[api.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L136)
-
-___
-
-### displayPreferencesApi
-
-• `get` **displayPreferencesApi**(): [`DisplayPreferencesApi`](generated_client.DisplayPreferencesApi.md)
-
-#### Returns
-
-[`DisplayPreferencesApi`](generated_client.DisplayPreferencesApi.md)
-
-#### Defined in
-
-[api.ts:140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L140)
-
-___
-
-### dlnaApi
-
-• `get` **dlnaApi**(): [`DlnaApi`](generated_client.DlnaApi.md)
-
-#### Returns
-
-[`DlnaApi`](generated_client.DlnaApi.md)
-
-#### Defined in
-
-[api.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L144)
-
-___
-
-### dlnaServerApi
-
-• `get` **dlnaServerApi**(): [`DlnaServerApi`](generated_client.DlnaServerApi.md)
-
-#### Returns
-
-[`DlnaServerApi`](generated_client.DlnaServerApi.md)
-
-#### Defined in
-
-[api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L148)
-
-___
-
-### dynamicHlsApi
-
-• `get` **dynamicHlsApi**(): [`DynamicHlsApi`](generated_client.DynamicHlsApi.md)
-
-#### Returns
-
-[`DynamicHlsApi`](generated_client.DynamicHlsApi.md)
-
-#### Defined in
-
-[api.ts:152](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L152)
-
-___
-
-### environmentApi
-
-• `get` **environmentApi**(): [`EnvironmentApi`](generated_client.EnvironmentApi.md)
-
-#### Returns
-
-[`EnvironmentApi`](generated_client.EnvironmentApi.md)
-
-#### Defined in
-
-[api.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L156)
-
-___
-
-### filterApi
-
-• `get` **filterApi**(): [`FilterApi`](generated_client.FilterApi.md)
-
-#### Returns
-
-[`FilterApi`](generated_client.FilterApi.md)
-
-#### Defined in
-
-[api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L160)
-
-___
-
-### genresApi
-
-• `get` **genresApi**(): [`GenresApi`](generated_client.GenresApi.md)
-
-#### Returns
-
-[`GenresApi`](generated_client.GenresApi.md)
-
-#### Defined in
-
-[api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L164)
-
-___
-
-### hlsSegmentApi
-
-• `get` **hlsSegmentApi**(): [`HlsSegmentApi`](generated_client.HlsSegmentApi.md)
-
-#### Returns
-
-[`HlsSegmentApi`](generated_client.HlsSegmentApi.md)
-
-#### Defined in
-
-[api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L168)
-
-___
-
-### imageApi
-
-• `get` **imageApi**(): [`ImageApi`](generated_client.ImageApi.md)
-
-#### Returns
-
-[`ImageApi`](generated_client.ImageApi.md)
-
-#### Defined in
-
-[api.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L172)
-
-___
-
-### imageByNameApi
-
-• `get` **imageByNameApi**(): [`ImageByNameApi`](generated_client.ImageByNameApi.md)
-
-#### Returns
-
-[`ImageByNameApi`](generated_client.ImageByNameApi.md)
-
-#### Defined in
-
-[api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L176)
-
-___
-
-### instantMixApi
-
-• `get` **instantMixApi**(): [`InstantMixApi`](generated_client.InstantMixApi.md)
-
-#### Returns
-
-[`InstantMixApi`](generated_client.InstantMixApi.md)
-
-#### Defined in
-
-[api.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L180)
-
-___
-
-### itemLookupApi
-
-• `get` **itemLookupApi**(): [`ItemLookupApi`](generated_client.ItemLookupApi.md)
-
-#### Returns
-
-[`ItemLookupApi`](generated_client.ItemLookupApi.md)
-
-#### Defined in
-
-[api.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L184)
-
-___
-
-### itemRefreshApi
-
-• `get` **itemRefreshApi**(): [`ItemRefreshApi`](generated_client.ItemRefreshApi.md)
-
-#### Returns
-
-[`ItemRefreshApi`](generated_client.ItemRefreshApi.md)
-
-#### Defined in
-
-[api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L188)
-
-___
-
-### itemUpdateApi
-
-• `get` **itemUpdateApi**(): [`ItemUpdateApi`](generated_client.ItemUpdateApi.md)
-
-#### Returns
-
-[`ItemUpdateApi`](generated_client.ItemUpdateApi.md)
-
-#### Defined in
-
-[api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L192)
-
-___
-
-### itemsApi
-
-• `get` **itemsApi**(): [`ItemsApi`](generated_client.ItemsApi.md)
-
-#### Returns
-
-[`ItemsApi`](generated_client.ItemsApi.md)
-
-#### Defined in
-
-[api.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L196)
-
-___
-
-### libraryApi
-
-• `get` **libraryApi**(): [`LibraryApi`](generated_client.LibraryApi.md)
-
-#### Returns
-
-[`LibraryApi`](generated_client.LibraryApi.md)
-
-#### Defined in
-
-[api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L200)
-
-___
-
-### libraryStructureApi
-
-• `get` **libraryStructureApi**(): [`LibraryStructureApi`](generated_client.LibraryStructureApi.md)
-
-#### Returns
-
-[`LibraryStructureApi`](generated_client.LibraryStructureApi.md)
-
-#### Defined in
-
-[api.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L204)
-
-___
-
-### liveTvApi
-
-• `get` **liveTvApi**(): [`LiveTvApi`](generated_client.LiveTvApi.md)
-
-#### Returns
-
-[`LiveTvApi`](generated_client.LiveTvApi.md)
-
-#### Defined in
-
-[api.ts:208](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L208)
-
-___
-
-### localizationApi
-
-• `get` **localizationApi**(): [`LocalizationApi`](generated_client.LocalizationApi.md)
-
-#### Returns
-
-[`LocalizationApi`](generated_client.LocalizationApi.md)
-
-#### Defined in
-
-[api.ts:212](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L212)
-
-___
-
-### mediaInfoApi
-
-• `get` **mediaInfoApi**(): [`MediaInfoApi`](generated_client.MediaInfoApi.md)
-
-#### Returns
-
-[`MediaInfoApi`](generated_client.MediaInfoApi.md)
-
-#### Defined in
-
-[api.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L216)
-
-___
-
-### moviesApi
-
-• `get` **moviesApi**(): [`MoviesApi`](generated_client.MoviesApi.md)
-
-#### Returns
-
-[`MoviesApi`](generated_client.MoviesApi.md)
-
-#### Defined in
-
-[api.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L220)
-
-___
-
-### musicGenresApi
-
-• `get` **musicGenresApi**(): [`MusicGenresApi`](generated_client.MusicGenresApi.md)
-
-#### Returns
-
-[`MusicGenresApi`](generated_client.MusicGenresApi.md)
-
-#### Defined in
-
-[api.ts:224](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L224)
-
-___
-
-### notificationsApi
-
-• `get` **notificationsApi**(): [`NotificationsApi`](generated_client.NotificationsApi.md)
-
-#### Returns
-
-[`NotificationsApi`](generated_client.NotificationsApi.md)
-
-#### Defined in
-
-[api.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L228)
-
-___
-
-### packageApi
-
-• `get` **packageApi**(): [`PackageApi`](generated_client.PackageApi.md)
-
-#### Returns
-
-[`PackageApi`](generated_client.PackageApi.md)
-
-#### Defined in
-
-[api.ts:232](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L232)
-
-___
-
-### personsApi
-
-• `get` **personsApi**(): [`PersonsApi`](generated_client.PersonsApi.md)
-
-#### Returns
-
-[`PersonsApi`](generated_client.PersonsApi.md)
-
-#### Defined in
-
-[api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L236)
-
-___
-
-### playlistsApi
-
-• `get` **playlistsApi**(): [`PlaylistsApi`](generated_client.PlaylistsApi.md)
-
-#### Returns
-
-[`PlaylistsApi`](generated_client.PlaylistsApi.md)
-
-#### Defined in
-
-[api.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L240)
-
-___
-
-### playstateApi
-
-• `get` **playstateApi**(): [`PlaystateApi`](generated_client.PlaystateApi.md)
-
-#### Returns
-
-[`PlaystateApi`](generated_client.PlaystateApi.md)
-
-#### Defined in
-
-[api.ts:244](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L244)
-
-___
-
-### pluginsApi
-
-• `get` **pluginsApi**(): [`PluginsApi`](generated_client.PluginsApi.md)
-
-#### Returns
-
-[`PluginsApi`](generated_client.PluginsApi.md)
-
-#### Defined in
-
-[api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L248)
-
-___
-
-### quickConnectApi
-
-• `get` **quickConnectApi**(): [`QuickConnectApi`](generated_client.QuickConnectApi.md)
-
-#### Returns
-
-[`QuickConnectApi`](generated_client.QuickConnectApi.md)
-
-#### Defined in
-
-[api.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L252)
-
-___
-
-### remoteImageApi
-
-• `get` **remoteImageApi**(): [`RemoteImageApi`](generated_client.RemoteImageApi.md)
-
-#### Returns
-
-[`RemoteImageApi`](generated_client.RemoteImageApi.md)
-
-#### Defined in
-
-[api.ts:256](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L256)
-
-___
-
-### scheduledTasksApi
-
-• `get` **scheduledTasksApi**(): [`ScheduledTasksApi`](generated_client.ScheduledTasksApi.md)
-
-#### Returns
-
-[`ScheduledTasksApi`](generated_client.ScheduledTasksApi.md)
-
-#### Defined in
-
-[api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L260)
-
-___
-
-### searchApi
-
-• `get` **searchApi**(): [`SearchApi`](generated_client.SearchApi.md)
-
-#### Returns
-
-[`SearchApi`](generated_client.SearchApi.md)
-
-#### Defined in
-
-[api.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L264)
-
-___
-
-### sessionApi
-
-• `get` **sessionApi**(): [`SessionApi`](generated_client.SessionApi.md)
-
-#### Returns
-
-[`SessionApi`](generated_client.SessionApi.md)
-
-#### Defined in
-
-[api.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L268)
-
-___
-
-### startupApi
-
-• `get` **startupApi**(): [`StartupApi`](generated_client.StartupApi.md)
-
-#### Returns
-
-[`StartupApi`](generated_client.StartupApi.md)
-
-#### Defined in
-
-[api.ts:272](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L272)
-
-___
-
-### studiosApi
-
-• `get` **studiosApi**(): [`StudiosApi`](generated_client.StudiosApi.md)
-
-#### Returns
-
-[`StudiosApi`](generated_client.StudiosApi.md)
-
-#### Defined in
-
-[api.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L276)
-
-___
-
-### subtitleApi
-
-• `get` **subtitleApi**(): [`SubtitleApi`](generated_client.SubtitleApi.md)
-
-#### Returns
-
-[`SubtitleApi`](generated_client.SubtitleApi.md)
-
-#### Defined in
-
-[api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L280)
-
-___
-
-### suggestionsApi
-
-• `get` **suggestionsApi**(): [`SuggestionsApi`](generated_client.SuggestionsApi.md)
-
-#### Returns
-
-[`SuggestionsApi`](generated_client.SuggestionsApi.md)
-
-#### Defined in
-
-[api.ts:284](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L284)
-
-___
-
-### syncPlayApi
-
-• `get` **syncPlayApi**(): [`SyncPlayApi`](generated_client.SyncPlayApi.md)
-
-#### Returns
-
-[`SyncPlayApi`](generated_client.SyncPlayApi.md)
-
-#### Defined in
-
-[api.ts:288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L288)
-
-___
-
-### systemApi
-
-• `get` **systemApi**(): [`SystemApi`](generated_client.SystemApi.md)
-
-#### Returns
-
-[`SystemApi`](generated_client.SystemApi.md)
-
-#### Defined in
-
-[api.ts:292](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L292)
-
-___
-
-### timeSyncApi
-
-• `get` **timeSyncApi**(): [`TimeSyncApi`](generated_client.TimeSyncApi.md)
-
-#### Returns
-
-[`TimeSyncApi`](generated_client.TimeSyncApi.md)
-
-#### Defined in
-
-[api.ts:296](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L296)
-
-___
-
-### trailersApi
-
-• `get` **trailersApi**(): [`TrailersApi`](generated_client.TrailersApi.md)
-
-#### Returns
-
-[`TrailersApi`](generated_client.TrailersApi.md)
-
-#### Defined in
-
-[api.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L300)
-
-___
-
-### tvShowsApi
-
-• `get` **tvShowsApi**(): [`TvShowsApi`](generated_client.TvShowsApi.md)
-
-#### Returns
-
-[`TvShowsApi`](generated_client.TvShowsApi.md)
-
-#### Defined in
-
-[api.ts:304](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L304)
-
-___
-
-### universalAudioApi
-
-• `get` **universalAudioApi**(): [`UniversalAudioApi`](generated_client.UniversalAudioApi.md)
-
-#### Returns
-
-[`UniversalAudioApi`](generated_client.UniversalAudioApi.md)
-
-#### Defined in
-
-[api.ts:308](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L308)
-
-___
-
-### userApi
-
-• `get` **userApi**(): [`UserApi`](generated_client.UserApi.md)
-
-#### Returns
-
-[`UserApi`](generated_client.UserApi.md)
-
-#### Defined in
-
-[api.ts:312](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L312)
-
-___
-
-### userLibraryApi
-
-• `get` **userLibraryApi**(): [`UserLibraryApi`](generated_client.UserLibraryApi.md)
-
-#### Returns
-
-[`UserLibraryApi`](generated_client.UserLibraryApi.md)
-
-#### Defined in
-
-[api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L316)
-
-___
-
-### userViewsApi
-
-• `get` **userViewsApi**(): [`UserViewsApi`](generated_client.UserViewsApi.md)
-
-#### Returns
-
-[`UserViewsApi`](generated_client.UserViewsApi.md)
-
-#### Defined in
-
-[api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L320)
-
-___
-
-### videoAttachmentsApi
-
-• `get` **videoAttachmentsApi**(): [`VideoAttachmentsApi`](generated_client.VideoAttachmentsApi.md)
-
-#### Returns
-
-[`VideoAttachmentsApi`](generated_client.VideoAttachmentsApi.md)
-
-#### Defined in
-
-[api.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L324)
-
-___
-
-### videoHlsApi
-
-• `get` **videoHlsApi**(): [`VideoHlsApi`](generated_client.VideoHlsApi.md)
-
-#### Returns
-
-[`VideoHlsApi`](generated_client.VideoHlsApi.md)
-
-#### Defined in
-
-[api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L328)
-
-___
-
-### videosApi
-
-• `get` **videosApi**(): [`VideosApi`](generated_client.VideosApi.md)
-
-#### Returns
-
-[`VideosApi`](generated_client.VideosApi.md)
-
-#### Defined in
-
-[api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L332)
-
-___
-
-### yearsApi
-
-• `get` **yearsApi**(): [`YearsApi`](generated_client.YearsApi.md)
-
-#### Returns
-
-[`YearsApi`](generated_client.YearsApi.md)
-
-#### Defined in
-
-[api.ts:336](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L336)
+[api.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L47)
 
 ## Methods
 
 ### authenticateUserByName
 
-▸ **authenticateUserByName**(`username`, `password?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+▸ **authenticateUserByName**(`username`, `password?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 Convenience method for authenticating a user by name and updating the internal state.
 
@@ -1046,11 +146,11 @@ Convenience method for authenticating a user by name and updating the internal s
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 #### Defined in
 
-[api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L55)
+[api.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L59)
 
 ___
 
@@ -1065,8 +165,8 @@ Get an item image URL.
 | Name | Type | Default value | Description |
 | :------ | :------ | :------ | :------ |
 | `itemId` | `string` | `undefined` | The Item ID. |
-| `imageType` | [`ImageType`](../enums/index.api.ImageType.md) | `ImageType.Primary` | An optional Image Type (Primary by default). |
-| `params` | [`ImageRequestParameters`](../interfaces/index.api.ImageRequestParameters.md) | `{}` | Additional request parameters. |
+| `imageType` | [`ImageType`](../enums/generated_client.ImageType.md) | `ImageType.Primary` | An optional Image Type (Primary by default). |
+| `params` | `ImageRequestParameters` | `{}` | Additional request parameters. |
 
 #### Returns
 
@@ -1076,7 +176,7 @@ The image URL.
 
 #### Defined in
 
-[api.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L85)
+[api.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L89)
 
 ___
 
@@ -1092,4 +192,4 @@ Convenience method for logging out and updating the internal state.
 
 #### Defined in
 
-[api.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L71)
+[api.ts:75](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L75)

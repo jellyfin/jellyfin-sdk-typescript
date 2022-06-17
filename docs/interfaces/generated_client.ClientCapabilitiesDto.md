@@ -37,19 +37,19 @@ Gets or sets the app store url.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L78)
+[generated-client/models/client-capabilities-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L78)
 
 ___
 
 ### DeviceProfile
 
-• `Optional` **DeviceProfile**: [`DeviceProfile`](index.api.DeviceProfile.md)
+• `Optional` **DeviceProfile**: [`DeviceProfile`](generated_client.DeviceProfile.md)
 
 **`memberof`** ClientCapabilitiesDto
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L72)
+[generated-client/models/client-capabilities-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L72)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets the icon url.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L84)
+[generated-client/models/client-capabilities-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L84)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets the message callback url.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L54)
+[generated-client/models/client-capabilities-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L54)
 
 ___
 
@@ -91,13 +91,13 @@ Gets or sets the list of playable media types.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L30)
+[generated-client/models/client-capabilities-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L30)
 
 ___
 
 ### SupportedCommands
 
-• `Optional` **SupportedCommands**: ``null`` \| [`GeneralCommandType`](../enums/index.api.GeneralCommandType.md)[]
+• `Optional` **SupportedCommands**: ``null`` \| [`GeneralCommandType`](../enums/generated_client.GeneralCommandType.md)[]
 
 Gets or sets the list of supported commands.
 
@@ -105,7 +105,7 @@ Gets or sets the list of supported commands.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L36)
+[generated-client/models/client-capabilities-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L36)
 
 ___
 
@@ -119,7 +119,7 @@ Gets or sets a value indicating whether session supports content uploading.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L48)
+[generated-client/models/client-capabilities-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L48)
 
 ___
 
@@ -133,7 +133,7 @@ Gets or sets a value indicating whether session supports media control.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L42)
+[generated-client/models/client-capabilities-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L42)
 
 ___
 
@@ -147,7 +147,7 @@ Gets or sets a value indicating whether session supports a persistent identifier
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L60)
+[generated-client/models/client-capabilities-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L60)
 
 ___
 
@@ -161,4 +161,4 @@ Gets or sets a value indicating whether session supports sync.
 
 #### Defined in
 
-[generated-client/models/client-capabilities-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/client-capabilities-dto.ts#L66)
+[generated-client/models/client-capabilities-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/client-capabilities-dto.ts#L66)

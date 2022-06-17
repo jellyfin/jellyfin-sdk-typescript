@@ -20,7 +20,7 @@ Request parameters for forgotPasswordPin operation in UserApi.
 
 ### forgotPasswordPinDto
 
-• `Readonly` **forgotPasswordPinDto**: [`ForgotPasswordPinDto`](index.api.ForgotPasswordPinDto.md)
+• `Readonly` **forgotPasswordPinDto**: [`ForgotPasswordPinDto`](generated_client.ForgotPasswordPinDto.md)
 
 The forgot password pin request containing the entered pin.
 
@@ -28,4 +28,4 @@ The forgot password pin request containing the entered pin.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1161)
+[generated-client/api/user-api.ts:1161](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1161)

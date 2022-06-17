@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Static](generated_client.EncodingContext.md#static)
 - [Streaming](generated_client.EncodingContext.md#streaming)
 
-## Enumeration members
+## Enumeration Members
 
 ### Static
 
-• **Static** = `"Static"`
+• **Static**
 
 #### Defined in
 
-[generated-client/models/encoding-context.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/encoding-context.ts#L25)
+[generated-client/models/encoding-context.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/encoding-context.ts#L25)
 
 ___
 
 ### Streaming
 
-• **Streaming** = `"Streaming"`
+• **Streaming**
 
 #### Defined in
 
-[generated-client/models/encoding-context.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/encoding-context.ts#L24)
+[generated-client/models/encoding-context.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/encoding-context.ts#L24)

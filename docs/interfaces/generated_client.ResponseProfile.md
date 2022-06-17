@@ -30,19 +30,19 @@
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L36)
+[generated-client/models/response-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L36)
 
 ___
 
 ### Conditions
 
-• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](index.api.ProfileCondition.md)[]
+• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](generated_client.ProfileCondition.md)[]
 
 **`memberof`** ResponseProfile
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L66)
+[generated-client/models/response-profile.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L66)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L30)
+[generated-client/models/response-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L30)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L60)
+[generated-client/models/response-profile.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L60)
 
 ___
 
@@ -78,19 +78,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L54)
+[generated-client/models/response-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L54)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`DlnaProfileType`](../enums/index.api.DlnaProfileType.md)
+• `Optional` **Type**: [`DlnaProfileType`](../enums/generated_client.DlnaProfileType.md)
 
 **`memberof`** ResponseProfile
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L48)
+[generated-client/models/response-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L48)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/response-profile.ts#L42)
+[generated-client/models/response-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/response-profile.ts#L42)

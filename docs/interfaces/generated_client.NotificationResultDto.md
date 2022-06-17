@@ -21,7 +21,7 @@ A list of notifications with the total record count for pagination.
 
 ### Notifications
 
-• `Optional` **Notifications**: ``null`` \| [`NotificationDto`](index.api.NotificationDto.md)[]
+• `Optional` **Notifications**: ``null`` \| [`NotificationDto`](generated_client.NotificationDto.md)[]
 
 Gets or sets the current page of notifications.
 
@@ -29,7 +29,7 @@ Gets or sets the current page of notifications.
 
 #### Defined in
 
-[generated-client/models/notification-result-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/notification-result-dto.ts#L29)
+[generated-client/models/notification-result-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-result-dto.ts#L29)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the total number of notifications.
 
 #### Defined in
 
-[generated-client/models/notification-result-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/notification-result-dto.ts#L35)
+[generated-client/models/notification-result-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-result-dto.ts#L35)

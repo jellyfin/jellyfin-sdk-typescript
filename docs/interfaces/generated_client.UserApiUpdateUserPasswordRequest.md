@@ -21,7 +21,7 @@ Request parameters for updateUserPassword operation in UserApi.
 
 ### updateUserPassword
 
-• `Readonly` **updateUserPassword**: [`UpdateUserPassword`](index.api.UpdateUserPassword.md)
+• `Readonly` **updateUserPassword**: [`UpdateUserPassword`](generated_client.UpdateUserPassword.md)
 
 The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
 
@@ -29,7 +29,7 @@ The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jel
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1280)
+[generated-client/api/user-api.ts:1280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1280)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1273)
+[generated-client/api/user-api.ts:1273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1273)

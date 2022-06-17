@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,13 +113,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/api-key-api.ts#L268)
+[generated-client/api/api-key-api.ts:268](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L268)
 
 ___
 
 ### getKeys
 
-▸ **getKeys**(`options?`): `Promise`<`AxiosResponse`<[`AuthenticationInfoQueryResult`](../interfaces/index.api.AuthenticationInfoQueryResult.md), `any`\>\>
+▸ **getKeys**(`options?`): `Promise`<`AxiosResponse`<[`AuthenticationInfoQueryResult`](../interfaces/generated_client.AuthenticationInfoQueryResult.md), `any`\>\>
 
 **`summary`** Get all keys.
 
@@ -135,11 +135,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AuthenticationInfoQueryResult`](../interfaces/index.api.AuthenticationInfoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`AuthenticationInfoQueryResult`](../interfaces/generated_client.AuthenticationInfoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/api-key-api.ts#L279)
+[generated-client/api/api-key-api.ts:279](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L279)
 
 ___
 
@@ -166,4 +166,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:291](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/api-key-api.ts#L291)
+[generated-client/api/api-key-api.ts:291](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L291)

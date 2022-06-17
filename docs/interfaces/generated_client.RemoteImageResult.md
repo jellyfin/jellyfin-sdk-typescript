@@ -22,7 +22,7 @@ Class RemoteImageResult.
 
 ### Images
 
-• `Optional` **Images**: ``null`` \| [`RemoteImageInfo`](index.api.RemoteImageInfo.md)[]
+• `Optional` **Images**: ``null`` \| [`RemoteImageInfo`](generated_client.RemoteImageInfo.md)[]
 
 Gets or sets the images.
 
@@ -30,7 +30,7 @@ Gets or sets the images.
 
 #### Defined in
 
-[generated-client/models/remote-image-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-result.ts#L29)
+[generated-client/models/remote-image-result.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-result.ts#L29)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the providers.
 
 #### Defined in
 
-[generated-client/models/remote-image-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-result.ts#L41)
+[generated-client/models/remote-image-result.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-result.ts#L41)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the total record count.
 
 #### Defined in
 
-[generated-client/models/remote-image-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-result.ts#L35)
+[generated-client/models/remote-image-result.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-result.ts#L35)

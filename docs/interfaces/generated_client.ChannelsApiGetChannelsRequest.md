@@ -33,7 +33,7 @@ Optional. Filter by channels that are favorite.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L604)
+[generated-client/api/channels-api.ts:604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L604)
 
 ___
 
@@ -47,7 +47,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L583)
+[generated-client/api/channels-api.ts:583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L583)
 
 ___
 
@@ -61,7 +61,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L576)
+[generated-client/api/channels-api.ts:576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L576)
 
 ___
 
@@ -75,7 +75,7 @@ Optional. Filter by channels that support getting latest items.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:590](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L590)
+[generated-client/api/channels-api.ts:590](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L590)
 
 ___
 
@@ -89,7 +89,7 @@ Optional. Filter by channels that support media deletion.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:597](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L597)
+[generated-client/api/channels-api.ts:597](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L597)
 
 ___
 
@@ -103,4 +103,4 @@ User Id to filter by. Use System.Guid.Empty to not filter by user.
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L569)
+[generated-client/api/channels-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L569)

@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getQueryFilters
 
-▸ **getQueryFilters**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`QueryFilters`](../interfaces/index.api.QueryFilters.md), `any`\>\>
+▸ **getQueryFilters**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md), `any`\>\>
 
 **`summary`** Gets query filters.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`QueryFilters`](../interfaces/index.api.QueryFilters.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/filter-api.ts#L385)
+[generated-client/api/filter-api.ts:385](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/filter-api.ts#L385)
 
 ___
 
 ### getQueryFiltersLegacy
 
-▸ **getQueryFiltersLegacy**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`QueryFiltersLegacy`](../interfaces/index.api.QueryFiltersLegacy.md), `any`\>\>
+▸ **getQueryFiltersLegacy**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md), `any`\>\>
 
 **`summary`** Gets legacy query filters.
 
@@ -135,8 +135,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`QueryFiltersLegacy`](../interfaces/index.api.QueryFiltersLegacy.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/filter-api.ts#L397)
+[generated-client/api/filter-api.ts:397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/filter-api.ts#L397)

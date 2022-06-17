@@ -56,7 +56,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,7 +90,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,13 +116,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L500)
+[generated-client/api/startup-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L500)
 
 ___
 
 ### getFirstUser
 
-▸ **getFirstUser**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
+▸ **getFirstUser**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md), `any`\>\>
 
 **`summary`** Gets the first user.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L511)
+[generated-client/api/startup-api.ts:511](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L511)
 
 ___
 
 ### getFirstUser2
 
-▸ **getFirstUser2**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
+▸ **getFirstUser2**(`options?`): `Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md), `any`\>\>
 
 **`summary`** Gets the first user.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/index.api.StartupUserDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`StartupUserDto`](../interfaces/generated_client.StartupUserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L522)
+[generated-client/api/startup-api.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L522)
 
 ___
 
 ### getStartupConfiguration
 
-▸ **getStartupConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/index.api.StartupConfigurationDto.md), `any`\>\>
+▸ **getStartupConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/generated_client.StartupConfigurationDto.md), `any`\>\>
 
 **`summary`** Gets the initial startup wizard configuration.
 
@@ -190,11 +190,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/index.api.StartupConfigurationDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`StartupConfigurationDto`](../interfaces/generated_client.StartupConfigurationDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L533)
+[generated-client/api/startup-api.ts:533](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L533)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L545)
+[generated-client/api/startup-api.ts:545](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L545)
 
 ___
 
@@ -248,7 +248,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L557)
+[generated-client/api/startup-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L557)
 
 ___
 
@@ -275,4 +275,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L569)
+[generated-client/api/startup-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L569)

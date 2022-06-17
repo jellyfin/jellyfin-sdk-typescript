@@ -21,7 +21,7 @@ Request parameters for updateProfile operation in DlnaApi.
 
 ### deviceProfile
 
-• `Optional` `Readonly` **deviceProfile**: [`DeviceProfile`](index.api.DeviceProfile.md)
+• `Optional` `Readonly` **deviceProfile**: [`DeviceProfile`](generated_client.DeviceProfile.md)
 
 Device profile.
 
@@ -29,7 +29,7 @@ Device profile.
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L460)
+[generated-client/api/dlna-api.ts:460](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L460)
 
 ___
 
@@ -43,4 +43,4 @@ Profile id.
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:453](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-api.ts#L453)
+[generated-client/api/dlna-api.ts:453](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L453)

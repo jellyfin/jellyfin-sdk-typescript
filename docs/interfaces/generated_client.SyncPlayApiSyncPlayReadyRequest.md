@@ -20,7 +20,7 @@ Request parameters for syncPlayReady operation in SyncPlayApi.
 
 ### readyRequestDto
 
-• `Readonly` **readyRequestDto**: [`ReadyRequestDto`](index.api.ReadyRequestDto.md)
+• `Readonly` **readyRequestDto**: [`ReadyRequestDto`](generated_client.ReadyRequestDto.md)
 
 The player status.
 
@@ -28,4 +28,4 @@ The player status.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1429](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1429)
+[generated-client/api/sync-play-api.ts:1429](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1429)

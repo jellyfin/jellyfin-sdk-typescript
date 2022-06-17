@@ -30,7 +30,7 @@ The name of the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L675)
+[generated-client/api/library-structure-api.ts:675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L675)
 
 ___
 
@@ -44,7 +44,7 @@ The path to remove.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:682](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L682)
+[generated-client/api/library-structure-api.ts:682](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L682)
 
 ___
 
@@ -58,4 +58,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-structure-api.ts#L689)
+[generated-client/api/library-structure-api.ts:689](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L689)

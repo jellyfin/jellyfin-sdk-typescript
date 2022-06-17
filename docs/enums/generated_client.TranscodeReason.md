@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [AnamorphicVideoNotSupported](generated_client.TranscodeReason.md#anamorphicvideonotsupported)
 - [AudioBitDepthNotSupported](generated_client.TranscodeReason.md#audiobitdepthnotsupported)
@@ -34,232 +34,232 @@
 - [VideoProfileNotSupported](generated_client.TranscodeReason.md#videoprofilenotsupported)
 - [VideoResolutionNotSupported](generated_client.TranscodeReason.md#videoresolutionnotsupported)
 
-## Enumeration members
+## Enumeration Members
 
 ### AnamorphicVideoNotSupported
 
-• **AnamorphicVideoNotSupported** = `"AnamorphicVideoNotSupported"`
+• **AnamorphicVideoNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L35)
+[generated-client/models/transcode-reason.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L35)
 
 ___
 
 ### AudioBitDepthNotSupported
 
-• **AudioBitDepthNotSupported** = `"AudioBitDepthNotSupported"`
+• **AudioBitDepthNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L44)
+[generated-client/models/transcode-reason.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L44)
 
 ___
 
 ### AudioBitrateNotSupported
 
-• **AudioBitrateNotSupported** = `"AudioBitrateNotSupported"`
+• **AudioBitrateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L28)
+[generated-client/models/transcode-reason.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L28)
 
 ___
 
 ### AudioChannelsNotSupported
 
-• **AudioChannelsNotSupported** = `"AudioChannelsNotSupported"`
+• **AudioChannelsNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L29)
+[generated-client/models/transcode-reason.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L29)
 
 ___
 
 ### AudioCodecNotSupported
 
-• **AudioCodecNotSupported** = `"AudioCodecNotSupported"`
+• **AudioCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L26)
+[generated-client/models/transcode-reason.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L26)
 
 ___
 
 ### AudioProfileNotSupported
 
-• **AudioProfileNotSupported** = `"AudioProfileNotSupported"`
+• **AudioProfileNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L33)
+[generated-client/models/transcode-reason.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L33)
 
 ___
 
 ### AudioSampleRateNotSupported
 
-• **AudioSampleRateNotSupported** = `"AudioSampleRateNotSupported"`
+• **AudioSampleRateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L34)
+[generated-client/models/transcode-reason.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L34)
 
 ___
 
 ### ContainerBitrateExceedsLimit
 
-• **ContainerBitrateExceedsLimit** = `"ContainerBitrateExceedsLimit"`
+• **ContainerBitrateExceedsLimit**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L27)
+[generated-client/models/transcode-reason.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L27)
 
 ___
 
 ### ContainerNotSupported
 
-• **ContainerNotSupported** = `"ContainerNotSupported"`
+• **ContainerNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L24)
+[generated-client/models/transcode-reason.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L24)
 
 ___
 
 ### DirectPlayError
 
-• **DirectPlayError** = `"DirectPlayError"`
+• **DirectPlayError**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L46)
+[generated-client/models/transcode-reason.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L46)
 
 ___
 
 ### InterlacedVideoNotSupported
 
-• **InterlacedVideoNotSupported** = `"InterlacedVideoNotSupported"`
+• **InterlacedVideoNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L36)
+[generated-client/models/transcode-reason.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L36)
 
 ___
 
 ### RefFramesNotSupported
 
-• **RefFramesNotSupported** = `"RefFramesNotSupported"`
+• **RefFramesNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L38)
+[generated-client/models/transcode-reason.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L38)
 
 ___
 
 ### SecondaryAudioNotSupported
 
-• **SecondaryAudioNotSupported** = `"SecondaryAudioNotSupported"`
+• **SecondaryAudioNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L37)
+[generated-client/models/transcode-reason.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L37)
 
 ___
 
 ### SubtitleCodecNotSupported
 
-• **SubtitleCodecNotSupported** = `"SubtitleCodecNotSupported"`
+• **SubtitleCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L45)
+[generated-client/models/transcode-reason.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L45)
 
 ___
 
 ### UnknownAudioStreamInfo
 
-• **UnknownAudioStreamInfo** = `"UnknownAudioStreamInfo"`
+• **UnknownAudioStreamInfo**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L32)
+[generated-client/models/transcode-reason.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L32)
 
 ___
 
 ### UnknownVideoStreamInfo
 
-• **UnknownVideoStreamInfo** = `"UnknownVideoStreamInfo"`
+• **UnknownVideoStreamInfo**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L31)
+[generated-client/models/transcode-reason.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L31)
 
 ___
 
 ### VideoBitDepthNotSupported
 
-• **VideoBitDepthNotSupported** = `"VideoBitDepthNotSupported"`
+• **VideoBitDepthNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L39)
+[generated-client/models/transcode-reason.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L39)
 
 ___
 
 ### VideoBitrateNotSupported
 
-• **VideoBitrateNotSupported** = `"VideoBitrateNotSupported"`
+• **VideoBitrateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L40)
+[generated-client/models/transcode-reason.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L40)
 
 ___
 
 ### VideoCodecNotSupported
 
-• **VideoCodecNotSupported** = `"VideoCodecNotSupported"`
+• **VideoCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L25)
+[generated-client/models/transcode-reason.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L25)
 
 ___
 
 ### VideoFramerateNotSupported
 
-• **VideoFramerateNotSupported** = `"VideoFramerateNotSupported"`
+• **VideoFramerateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L41)
+[generated-client/models/transcode-reason.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L41)
 
 ___
 
 ### VideoLevelNotSupported
 
-• **VideoLevelNotSupported** = `"VideoLevelNotSupported"`
+• **VideoLevelNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L42)
+[generated-client/models/transcode-reason.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L42)
 
 ___
 
 ### VideoProfileNotSupported
 
-• **VideoProfileNotSupported** = `"VideoProfileNotSupported"`
+• **VideoProfileNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L43)
+[generated-client/models/transcode-reason.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L43)
 
 ___
 
 ### VideoResolutionNotSupported
 
-• **VideoResolutionNotSupported** = `"VideoResolutionNotSupported"`
+• **VideoResolutionNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcode-reason.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-reason.ts#L30)
+[generated-client/models/transcode-reason.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-reason.ts#L30)

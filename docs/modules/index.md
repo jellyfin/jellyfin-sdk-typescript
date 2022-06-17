@@ -6,7 +6,6 @@
 
 ### Namespaces
 
-- [api](index.api.md)
 - [discovery](index.discovery.md)
 - [utils](index.utils.md)
 
@@ -43,34 +42,34 @@
 
 ### API\_VERSION
 
-• **API\_VERSION**: ``"10.7.7"``
+• `Const` **API\_VERSION**: ``"10.7.7"``
 
 The current API version of the generated client.
 
 #### Defined in
 
-[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L21)
+[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/jellyfin.ts#L21)
 
 ___
 
 ### AUTHORIZATION\_HEADER
 
-• **AUTHORIZATION\_HEADER**: ``"X-Emby-Authorization"``
+• `Const` **AUTHORIZATION\_HEADER**: ``"X-Emby-Authorization"``
 
 The authorization header field name.
 
 #### Defined in
 
-[api.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/api.ts#L19)
+[api.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/api.ts#L23)
 
 ___
 
 ### MINIMUM\_VERSION
 
-• **MINIMUM\_VERSION**: ``"10.7.0"``
+• `Const` **MINIMUM\_VERSION**: ``"10.7.0"``
 
 The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/jellyfin.ts#L24)
+[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/jellyfin.ts#L24)

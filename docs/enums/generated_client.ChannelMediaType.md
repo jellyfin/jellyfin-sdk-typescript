@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Audio](generated_client.ChannelMediaType.md#audio)
 - [Photo](generated_client.ChannelMediaType.md#photo)
 - [Video](generated_client.ChannelMediaType.md#video)
 
-## Enumeration members
+## Enumeration Members
 
 ### Audio
 
-• **Audio** = `"Audio"`
+• **Audio**
 
 #### Defined in
 
-[generated-client/models/channel-media-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-media-type.ts#L24)
+[generated-client/models/channel-media-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-media-type.ts#L24)
 
 ___
 
 ### Photo
 
-• **Photo** = `"Photo"`
+• **Photo**
 
 #### Defined in
 
-[generated-client/models/channel-media-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-media-type.ts#L26)
+[generated-client/models/channel-media-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-media-type.ts#L26)
 
 ___
 
 ### Video
 
-• **Video** = `"Video"`
+• **Video**
 
 #### Defined in
 
-[generated-client/models/channel-media-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/channel-media-type.ts#L25)
+[generated-client/models/channel-media-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-media-type.ts#L25)

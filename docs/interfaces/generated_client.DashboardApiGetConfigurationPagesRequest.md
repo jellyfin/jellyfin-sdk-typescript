@@ -29,13 +29,13 @@ Whether to enable in the main menu.
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L188)
+[generated-client/api/dashboard-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L188)
 
 ___
 
 ### pageType
 
-• `Optional` `Readonly` **pageType**: [`ConfigurationPageType`](../enums/index.api.ConfigurationPageType.md)
+• `Optional` `Readonly` **pageType**: [`ConfigurationPageType`](../enums/generated_client.ConfigurationPageType.md)
 
 The Jellyfin.Api.Models.ConfigurationPageInfo.
 
@@ -43,4 +43,4 @@ The Jellyfin.Api.Models.ConfigurationPageInfo.
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L195)
+[generated-client/api/dashboard-api.ts:195](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L195)

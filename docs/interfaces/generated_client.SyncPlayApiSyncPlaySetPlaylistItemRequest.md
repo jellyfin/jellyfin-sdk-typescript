@@ -20,7 +20,7 @@ Request parameters for syncPlaySetPlaylistItem operation in SyncPlayApi.
 
 ### setPlaylistItemRequestDto
 
-• `Readonly` **setPlaylistItemRequestDto**: [`SetPlaylistItemRequestDto`](index.api.SetPlaylistItemRequestDto.md)
+• `Readonly` **setPlaylistItemRequestDto**: [`SetPlaylistItemRequestDto`](generated_client.SetPlaylistItemRequestDto.md)
 
 The new item to play.
 
@@ -28,4 +28,4 @@ The new item to play.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1499)
+[generated-client/api/sync-play-api.ts:1499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1499)

@@ -20,7 +20,7 @@ Request parameters for getPersonRemoteSearchResults operation in ItemLookupApi.
 
 ### personLookupInfoRemoteSearchQuery
 
-• `Readonly` **personLookupInfoRemoteSearchQuery**: [`PersonLookupInfoRemoteSearchQuery`](index.api.PersonLookupInfoRemoteSearchQuery.md)
+• `Readonly` **personLookupInfoRemoteSearchQuery**: [`PersonLookupInfoRemoteSearchQuery`](generated_client.PersonLookupInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:884](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L884)
+[generated-client/api/item-lookup-api.ts:884](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L884)

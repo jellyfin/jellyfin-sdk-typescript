@@ -41,7 +41,7 @@ Class representing the server version is unsupported.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/models/recommended-server-issue.ts#L69)
+[models/recommended-server-issue.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/models/recommended-server-issue.ts#L69)
 
 ## Properties
 
@@ -51,4 +51,4 @@ Class representing the server version is unsupported.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/models/recommended-server-issue.ts#L67)
+[models/recommended-server-issue.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/models/recommended-server-issue.ts#L67)

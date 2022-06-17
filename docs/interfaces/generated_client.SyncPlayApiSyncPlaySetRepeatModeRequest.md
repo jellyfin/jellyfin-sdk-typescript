@@ -20,7 +20,7 @@ Request parameters for syncPlaySetRepeatMode operation in SyncPlayApi.
 
 ### setRepeatModeRequestDto
 
-• `Readonly` **setRepeatModeRequestDto**: [`SetRepeatModeRequestDto`](index.api.SetRepeatModeRequestDto.md)
+• `Readonly` **setRepeatModeRequestDto**: [`SetRepeatModeRequestDto`](generated_client.SetRepeatModeRequestDto.md)
 
 The new repeat mode.
 
@@ -28,4 +28,4 @@ The new repeat mode.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1513)
+[generated-client/api/sync-play-api.ts:1513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1513)

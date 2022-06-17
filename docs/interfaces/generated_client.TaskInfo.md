@@ -37,7 +37,7 @@ Gets or sets the category.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L73)
+[generated-client/models/task-info.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L73)
 
 ___
 
@@ -51,7 +51,7 @@ Gets or sets the progress.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L43)
+[generated-client/models/task-info.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L43)
 
 ___
 
@@ -65,7 +65,7 @@ Gets or sets the description.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L67)
+[generated-client/models/task-info.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L67)
 
 ___
 
@@ -79,7 +79,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L49)
+[generated-client/models/task-info.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L49)
 
 ___
 
@@ -93,7 +93,7 @@ Gets or sets a value indicating whether this instance is hidden.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L79)
+[generated-client/models/task-info.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L79)
 
 ___
 
@@ -107,19 +107,19 @@ Gets or sets the key.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L85)
+[generated-client/models/task-info.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L85)
 
 ___
 
 ### LastExecutionResult
 
-• `Optional` **LastExecutionResult**: [`TaskResult`](index.api.TaskResult.md)
+• `Optional` **LastExecutionResult**: [`TaskResult`](generated_client.TaskResult.md)
 
 **`memberof`** TaskInfo
 
 #### Defined in
 
-[generated-client/models/task-info.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L55)
+[generated-client/models/task-info.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L55)
 
 ___
 
@@ -133,25 +133,25 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L31)
+[generated-client/models/task-info.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L31)
 
 ___
 
 ### State
 
-• `Optional` **State**: [`TaskState`](../enums/index.api.TaskState.md)
+• `Optional` **State**: [`TaskState`](../enums/generated_client.TaskState.md)
 
 **`memberof`** TaskInfo
 
 #### Defined in
 
-[generated-client/models/task-info.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L37)
+[generated-client/models/task-info.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L37)
 
 ___
 
 ### Triggers
 
-• `Optional` **Triggers**: ``null`` \| [`TaskTriggerInfo`](index.api.TaskTriggerInfo.md)[]
+• `Optional` **Triggers**: ``null`` \| [`TaskTriggerInfo`](generated_client.TaskTriggerInfo.md)[]
 
 Gets or sets the triggers.
 
@@ -159,4 +159,4 @@ Gets or sets the triggers.
 
 #### Defined in
 
-[generated-client/models/task-info.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-info.ts#L61)
+[generated-client/models/task-info.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-info.ts#L61)

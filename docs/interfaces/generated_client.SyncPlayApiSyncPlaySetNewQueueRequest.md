@@ -20,7 +20,7 @@ Request parameters for syncPlaySetNewQueue operation in SyncPlayApi.
 
 ### playRequestDto
 
-• `Readonly` **playRequestDto**: [`PlayRequestDto`](index.api.PlayRequestDto.md)
+• `Readonly` **playRequestDto**: [`PlayRequestDto`](generated_client.PlayRequestDto.md)
 
 The new playlist to play in the group.
 
@@ -28,4 +28,4 @@ The new playlist to play in the group.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1485)
+[generated-client/api/sync-play-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1485)

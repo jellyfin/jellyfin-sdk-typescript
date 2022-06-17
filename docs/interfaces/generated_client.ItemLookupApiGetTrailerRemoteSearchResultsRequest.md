@@ -20,7 +20,7 @@ Request parameters for getTrailerRemoteSearchResults operation in ItemLookupApi.
 
 ### trailerInfoRemoteSearchQuery
 
-• `Readonly` **trailerInfoRemoteSearchQuery**: [`TrailerInfoRemoteSearchQuery`](index.api.TrailerInfoRemoteSearchQuery.md)
+• `Readonly` **trailerInfoRemoteSearchQuery**: [`TrailerInfoRemoteSearchQuery`](generated_client.TrailerInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:912](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L912)
+[generated-client/api/item-lookup-api.ts:912](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L912)

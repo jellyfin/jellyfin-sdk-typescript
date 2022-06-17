@@ -29,13 +29,13 @@ The item the subtitle belongs to.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1169)
+[generated-client/api/subtitle-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/subtitle-api.ts#L1169)
 
 ___
 
 ### uploadSubtitleDto
 
-• `Readonly` **uploadSubtitleDto**: [`UploadSubtitleDto`](index.api.UploadSubtitleDto.md)
+• `Readonly` **uploadSubtitleDto**: [`UploadSubtitleDto`](generated_client.UploadSubtitleDto.md)
 
 The request body.
 
@@ -43,4 +43,4 @@ The request body.
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/subtitle-api.ts#L1176)
+[generated-client/api/subtitle-api.ts:1176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/subtitle-api.ts#L1176)

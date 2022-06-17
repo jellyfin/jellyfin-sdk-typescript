@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[generated-client/models/type-options.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L53)
+[generated-client/models/type-options.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L53)
 
 ___
 
@@ -41,19 +41,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/type-options.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L47)
+[generated-client/models/type-options.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L47)
 
 ___
 
 ### ImageOptions
 
-• `Optional` **ImageOptions**: ``null`` \| [`ImageOption`](index.api.ImageOption.md)[]
+• `Optional` **ImageOptions**: ``null`` \| [`ImageOption`](generated_client.ImageOption.md)[]
 
 **`memberof`** TypeOptions
 
 #### Defined in
 
-[generated-client/models/type-options.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L59)
+[generated-client/models/type-options.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L59)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/type-options.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L41)
+[generated-client/models/type-options.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L41)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/type-options.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L35)
+[generated-client/models/type-options.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L35)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/type-options.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/type-options.ts#L29)
+[generated-client/models/type-options.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/type-options.ts#L29)

@@ -8,49 +8,49 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [UntilDate](generated_client.KeepUntil.md#untildate)
 - [UntilDeleted](generated_client.KeepUntil.md#untildeleted)
 - [UntilSpaceNeeded](generated_client.KeepUntil.md#untilspaceneeded)
 - [UntilWatched](generated_client.KeepUntil.md#untilwatched)
 
-## Enumeration members
+## Enumeration Members
 
 ### UntilDate
 
-• **UntilDate** = `"UntilDate"`
+• **UntilDate**
 
 #### Defined in
 
-[generated-client/models/keep-until.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/keep-until.ts#L27)
+[generated-client/models/keep-until.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/keep-until.ts#L27)
 
 ___
 
 ### UntilDeleted
 
-• **UntilDeleted** = `"UntilDeleted"`
+• **UntilDeleted**
 
 #### Defined in
 
-[generated-client/models/keep-until.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/keep-until.ts#L24)
+[generated-client/models/keep-until.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/keep-until.ts#L24)
 
 ___
 
 ### UntilSpaceNeeded
 
-• **UntilSpaceNeeded** = `"UntilSpaceNeeded"`
+• **UntilSpaceNeeded**
 
 #### Defined in
 
-[generated-client/models/keep-until.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/keep-until.ts#L25)
+[generated-client/models/keep-until.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/keep-until.ts#L25)
 
 ___
 
 ### UntilWatched
 
-• **UntilWatched** = `"UntilWatched"`
+• **UntilWatched**
 
 #### Defined in
 
-[generated-client/models/keep-until.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/keep-until.ts#L26)
+[generated-client/models/keep-until.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/keep-until.ts#L26)

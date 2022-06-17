@@ -20,7 +20,7 @@ Request parameters for setRepositories operation in PackageApi.
 
 ### repositoryInfo
 
-• `Readonly` **repositoryInfo**: [`RepositoryInfo`](index.api.RepositoryInfo.md)[]
+• `Readonly` **repositoryInfo**: [`RepositoryInfo`](generated_client.RepositoryInfo.md)[]
 
 The list of package repositories.
 
@@ -28,4 +28,4 @@ The list of package repositories.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/package-api.ts#L505)
+[generated-client/api/package-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L505)

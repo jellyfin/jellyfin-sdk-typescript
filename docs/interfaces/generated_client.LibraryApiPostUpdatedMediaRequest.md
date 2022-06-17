@@ -20,7 +20,7 @@ Request parameters for postUpdatedMedia operation in LibraryApi.
 
 ### mediaUpdateInfoDto
 
-• `Readonly` **mediaUpdateInfoDto**: [`MediaUpdateInfoDto`](index.api.MediaUpdateInfoDto.md)
+• `Readonly` **mediaUpdateInfoDto**: [`MediaUpdateInfoDto`](generated_client.MediaUpdateInfoDto.md)
 
 The update paths.
 
@@ -28,4 +28,4 @@ The update paths.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/library-api.ts#L2295)
+[generated-client/api/library-api.ts:2295](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L2295)

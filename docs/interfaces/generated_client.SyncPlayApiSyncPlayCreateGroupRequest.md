@@ -20,7 +20,7 @@ Request parameters for syncPlayCreateGroup operation in SyncPlayApi.
 
 ### newGroupRequestDto
 
-• `Readonly` **newGroupRequestDto**: [`NewGroupRequestDto`](index.api.NewGroupRequestDto.md)
+• `Readonly` **newGroupRequestDto**: [`NewGroupRequestDto`](generated_client.NewGroupRequestDto.md)
 
 The settings of the new group.
 
@@ -28,4 +28,4 @@ The settings of the new group.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1331)
+[generated-client/api/sync-play-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1331)

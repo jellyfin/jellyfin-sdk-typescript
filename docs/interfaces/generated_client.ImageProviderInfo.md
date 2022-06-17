@@ -29,13 +29,13 @@ Gets the name.
 
 #### Defined in
 
-[generated-client/models/image-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-provider-info.ts#L29)
+[generated-client/models/image-provider-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-provider-info.ts#L29)
 
 ___
 
 ### SupportedImages
 
-• `Optional` **SupportedImages**: ``null`` \| [`ImageType`](../enums/index.api.ImageType.md)[]
+• `Optional` **SupportedImages**: ``null`` \| [`ImageType`](../enums/generated_client.ImageType.md)[]
 
 Gets the supported image types.
 
@@ -43,4 +43,4 @@ Gets the supported image types.
 
 #### Defined in
 
-[generated-client/models/image-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-provider-info.ts#L35)
+[generated-client/models/image-provider-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-provider-info.ts#L35)

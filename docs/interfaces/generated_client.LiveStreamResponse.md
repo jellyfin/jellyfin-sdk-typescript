@@ -18,10 +18,10 @@
 
 ### MediaSource
 
-• `Optional` **MediaSource**: [`MediaSourceInfo`](index.api.MediaSourceInfo.md)
+• `Optional` **MediaSource**: [`MediaSourceInfo`](generated_client.MediaSourceInfo.md)
 
 **`memberof`** LiveStreamResponse
 
 #### Defined in
 
-[generated-client/models/live-stream-response.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/live-stream-response.ts#L29)
+[generated-client/models/live-stream-response.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/live-stream-response.ts#L29)

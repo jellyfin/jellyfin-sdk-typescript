@@ -65,7 +65,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -99,7 +99,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -126,7 +126,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1581)
+[generated-client/api/session-api.ts:1581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1581)
 
 ___
 
@@ -153,13 +153,13 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1593)
+[generated-client/api/session-api.ts:1593](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1593)
 
 ___
 
 ### getAuthProviders
 
-▸ **getAuthProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
+▸ **getAuthProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Get all auth providers.
 
@@ -175,17 +175,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1604)
+[generated-client/api/session-api.ts:1604](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1604)
 
 ___
 
 ### getPasswordResetProviders
 
-▸ **getPasswordResetProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
+▸ **getPasswordResetProviders**(`options?`): `Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[], `any`\>\>
 
 **`summary`** Get all password reset providers.
 
@@ -201,17 +201,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/index.api.NameIdPair.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1615)
+[generated-client/api/session-api.ts:1615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1615)
 
 ___
 
 ### getSessions
 
-▸ **getSessions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/index.api.SessionInfo.md)[], `any`\>\>
+▸ **getSessions**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[], `any`\>\>
 
 **`summary`** Gets a list of sessions.
 
@@ -228,11 +228,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/index.api.SessionInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1627)
+[generated-client/api/session-api.ts:1627](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1627)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1639)
+[generated-client/api/session-api.ts:1639](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1639)
 
 ___
 
@@ -286,7 +286,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1651](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1651)
+[generated-client/api/session-api.ts:1651](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1651)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1663](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1663)
+[generated-client/api/session-api.ts:1663](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1663)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1675)
+[generated-client/api/session-api.ts:1675](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1675)
 
 ___
 
@@ -366,7 +366,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1686)
+[generated-client/api/session-api.ts:1686](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1686)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1698)
+[generated-client/api/session-api.ts:1698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1698)
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1710)
+[generated-client/api/session-api.ts:1710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1710)
 
 ___
 
@@ -447,7 +447,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1722)
+[generated-client/api/session-api.ts:1722](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1722)
 
 ___
 
@@ -474,7 +474,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1734)
+[generated-client/api/session-api.ts:1734](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1734)
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1746)
+[generated-client/api/session-api.ts:1746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1746)
 
 ___
 
@@ -528,4 +528,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/session-api.ts#L1758)
+[generated-client/api/session-api.ts:1758](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L1758)

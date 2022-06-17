@@ -20,7 +20,7 @@ Request parameters for updateConfiguration operation in ConfigurationApi.
 
 ### serverConfiguration
 
-• `Readonly` **serverConfiguration**: [`ServerConfiguration`](index.api.ServerConfiguration.md)
+• `Readonly` **serverConfiguration**: [`ServerConfiguration`](generated_client.ServerConfiguration.md)
 
 Configuration.
 
@@ -28,4 +28,4 @@ Configuration.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L423)
+[generated-client/api/configuration-api.ts:423](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L423)

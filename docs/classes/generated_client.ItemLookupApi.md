@@ -60,7 +60,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -94,7 +94,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -121,13 +121,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L930)
+[generated-client/api/item-lookup-api.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L930)
 
 ___
 
 ### getBookRemoteSearchResults
 
-▸ **getBookRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getBookRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get book remote search.
 
@@ -144,17 +144,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L942)
+[generated-client/api/item-lookup-api.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L942)
 
 ___
 
 ### getBoxSetRemoteSearchResults
 
-▸ **getBoxSetRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getBoxSetRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get box set remote search.
 
@@ -171,17 +171,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L954)
+[generated-client/api/item-lookup-api.ts:954](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L954)
 
 ___
 
 ### getExternalIdInfos
 
-▸ **getExternalIdInfos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ExternalIdInfo`](../interfaces/index.api.ExternalIdInfo.md)[], `any`\>\>
+▸ **getExternalIdInfos**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ExternalIdInfo`](../interfaces/generated_client.ExternalIdInfo.md)[], `any`\>\>
 
 **`summary`** Get the item\'s external id info.
 
@@ -198,17 +198,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ExternalIdInfo`](../interfaces/index.api.ExternalIdInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`ExternalIdInfo`](../interfaces/generated_client.ExternalIdInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L966)
+[generated-client/api/item-lookup-api.ts:966](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L966)
 
 ___
 
 ### getMovieRemoteSearchResults
 
-▸ **getMovieRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getMovieRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get movie remote search.
 
@@ -225,17 +225,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:978](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L978)
+[generated-client/api/item-lookup-api.ts:978](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L978)
 
 ___
 
 ### getMusicAlbumRemoteSearchResults
 
-▸ **getMusicAlbumRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getMusicAlbumRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get music album remote search.
 
@@ -252,17 +252,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:990](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L990)
+[generated-client/api/item-lookup-api.ts:990](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L990)
 
 ___
 
 ### getMusicArtistRemoteSearchResults
 
-▸ **getMusicArtistRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getMusicArtistRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get music artist remote search.
 
@@ -279,17 +279,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1002](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L1002)
+[generated-client/api/item-lookup-api.ts:1002](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L1002)
 
 ___
 
 ### getMusicVideoRemoteSearchResults
 
-▸ **getMusicVideoRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getMusicVideoRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get music video remote search.
 
@@ -306,17 +306,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L1014)
+[generated-client/api/item-lookup-api.ts:1014](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L1014)
 
 ___
 
 ### getPersonRemoteSearchResults
 
-▸ **getPersonRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getPersonRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get person remote search.
 
@@ -333,17 +333,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1026](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L1026)
+[generated-client/api/item-lookup-api.ts:1026](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L1026)
 
 ___
 
 ### getSeriesRemoteSearchResults
 
-▸ **getSeriesRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getSeriesRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get series remote search.
 
@@ -360,17 +360,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L1038)
+[generated-client/api/item-lookup-api.ts:1038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L1038)
 
 ___
 
 ### getTrailerRemoteSearchResults
 
-▸ **getTrailerRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+▸ **getTrailerRemoteSearchResults**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 **`summary`** Get trailer remote search.
 
@@ -387,8 +387,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/index.api.RemoteSearchResult.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteSearchResult`](../interfaces/generated_client.RemoteSearchResult.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L1050)
+[generated-client/api/item-lookup-api.ts:1050](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L1050)

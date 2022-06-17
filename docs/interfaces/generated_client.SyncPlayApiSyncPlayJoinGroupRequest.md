@@ -20,7 +20,7 @@ Request parameters for syncPlayJoinGroup operation in SyncPlayApi.
 
 ### joinGroupRequestDto
 
-• `Readonly` **joinGroupRequestDto**: [`JoinGroupRequestDto`](index.api.JoinGroupRequestDto.md)
+• `Readonly` **joinGroupRequestDto**: [`JoinGroupRequestDto`](generated_client.JoinGroupRequestDto.md)
 
 The group to join.
 
@@ -28,4 +28,4 @@ The group to join.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1345)
+[generated-client/api/sync-play-api.ts:1345](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1345)

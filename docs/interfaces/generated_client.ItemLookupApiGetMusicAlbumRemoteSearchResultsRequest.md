@@ -20,7 +20,7 @@ Request parameters for getMusicAlbumRemoteSearchResults operation in ItemLookupA
 
 ### albumInfoRemoteSearchQuery
 
-• `Readonly` **albumInfoRemoteSearchQuery**: [`AlbumInfoRemoteSearchQuery`](index.api.AlbumInfoRemoteSearchQuery.md)
+• `Readonly` **albumInfoRemoteSearchQuery**: [`AlbumInfoRemoteSearchQuery`](generated_client.AlbumInfoRemoteSearchQuery.md)
 
 Remote search query.
 
@@ -28,4 +28,4 @@ Remote search query.
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:842](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/item-lookup-api.ts#L842)
+[generated-client/api/item-lookup-api.ts:842](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L842)

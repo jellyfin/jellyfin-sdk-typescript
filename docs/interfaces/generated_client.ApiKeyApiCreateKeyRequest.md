@@ -28,4 +28,4 @@ Name of the app using the authentication key.
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/api-key-api.ts#L236)
+[generated-client/api/api-key-api.ts:236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L236)

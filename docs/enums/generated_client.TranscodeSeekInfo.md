@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Auto](generated_client.TranscodeSeekInfo.md#auto)
 - [Bytes](generated_client.TranscodeSeekInfo.md#bytes)
 
-## Enumeration members
+## Enumeration Members
 
 ### Auto
 
-• **Auto** = `"Auto"`
+• **Auto**
 
 #### Defined in
 
-[generated-client/models/transcode-seek-info.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-seek-info.ts#L24)
+[generated-client/models/transcode-seek-info.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-seek-info.ts#L24)
 
 ___
 
 ### Bytes
 
-• **Bytes** = `"Bytes"`
+• **Bytes**
 
 #### Defined in
 
-[generated-client/models/transcode-seek-info.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transcode-seek-info.ts#L25)
+[generated-client/models/transcode-seek-info.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transcode-seek-info.ts#L25)

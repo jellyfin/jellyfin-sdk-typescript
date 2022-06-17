@@ -22,13 +22,13 @@
 
 ### ApplyConditions
 
-• `Optional` **ApplyConditions**: ``null`` \| [`ProfileCondition`](index.api.ProfileCondition.md)[]
+• `Optional` **ApplyConditions**: ``null`` \| [`ProfileCondition`](generated_client.ProfileCondition.md)[]
 
 **`memberof`** CodecProfile
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/codec-profile.ts#L42)
+[generated-client/models/codec-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/codec-profile.ts#L42)
 
 ___
 
@@ -40,19 +40,19 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/codec-profile.ts#L48)
+[generated-client/models/codec-profile.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/codec-profile.ts#L48)
 
 ___
 
 ### Conditions
 
-• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](index.api.ProfileCondition.md)[]
+• `Optional` **Conditions**: ``null`` \| [`ProfileCondition`](generated_client.ProfileCondition.md)[]
 
 **`memberof`** CodecProfile
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/codec-profile.ts#L36)
+[generated-client/models/codec-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/codec-profile.ts#L36)
 
 ___
 
@@ -64,16 +64,16 @@ ___
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/codec-profile.ts#L54)
+[generated-client/models/codec-profile.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/codec-profile.ts#L54)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`CodecType`](../enums/index.api.CodecType.md)
+• `Optional` **Type**: [`CodecType`](../enums/generated_client.CodecType.md)
 
 **`memberof`** CodecProfile
 
 #### Defined in
 
-[generated-client/models/codec-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/codec-profile.ts#L30)
+[generated-client/models/codec-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/codec-profile.ts#L30)

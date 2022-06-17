@@ -20,7 +20,7 @@ Request parameters for updateInitialConfiguration operation in StartupApi.
 
 ### startupConfigurationDto
 
-• `Readonly` **startupConfigurationDto**: [`StartupConfigurationDto`](index.api.StartupConfigurationDto.md)
+• `Readonly` **startupConfigurationDto**: [`StartupConfigurationDto`](generated_client.StartupConfigurationDto.md)
 
 The updated startup configuration.
 
@@ -28,4 +28,4 @@ The updated startup configuration.
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/startup-api.ts#L469)
+[generated-client/api/startup-api.ts:469](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L469)

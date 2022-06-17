@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,13 +84,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### get
 
-▸ **get**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SearchHintResult`](../interfaces/index.api.SearchHintResult.md), `any`\>\>
+▸ **get**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md), `any`\>\>
 
 **`summary`** Gets the search hint result.
 
@@ -107,8 +107,8 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SearchHintResult`](../interfaces/index.api.SearchHintResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/search-api.ts:382](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/search-api.ts#L382)
+[generated-client/api/search-api.ts:382](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/search-api.ts#L382)

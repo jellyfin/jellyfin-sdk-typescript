@@ -30,7 +30,7 @@ Gets the update data.
 
 #### Defined in
 
-[generated-client/models/object-group-update.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/object-group-update.ts#L41)
+[generated-client/models/object-group-update.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/object-group-update.ts#L41)
 
 ___
 
@@ -44,16 +44,16 @@ Gets the group identifier.
 
 #### Defined in
 
-[generated-client/models/object-group-update.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/object-group-update.ts#L29)
+[generated-client/models/object-group-update.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/object-group-update.ts#L29)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`GroupUpdateType`](../enums/index.api.GroupUpdateType.md)
+• `Optional` **Type**: [`GroupUpdateType`](../enums/generated_client.GroupUpdateType.md)
 
 **`memberof`** ObjectGroupUpdate
 
 #### Defined in
 
-[generated-client/models/object-group-update.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/object-group-update.ts#L35)
+[generated-client/models/object-group-update.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/object-group-update.ts#L35)

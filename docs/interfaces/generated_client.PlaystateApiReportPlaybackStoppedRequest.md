@@ -20,7 +20,7 @@ Request parameters for reportPlaybackStopped operation in PlaystateApi.
 
 ### playbackStopInfo
 
-• `Optional` `Readonly` **playbackStopInfo**: [`PlaybackStopInfo`](index.api.PlaybackStopInfo.md)
+• `Optional` `Readonly` **playbackStopInfo**: [`PlaybackStopInfo`](generated_client.PlaybackStopInfo.md)
 
 The playback stop info.
 
@@ -28,4 +28,4 @@ The playback stop info.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1115)
+[generated-client/api/playstate-api.ts:1115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1115)

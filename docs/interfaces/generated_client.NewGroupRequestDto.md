@@ -28,4 +28,4 @@ Gets or sets the group name.
 
 #### Defined in
 
-[generated-client/models/new-group-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/new-group-request-dto.ts#L28)
+[generated-client/models/new-group-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/new-group-request-dto.ts#L28)

@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,13 +84,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getLogEntries
 
-▸ **getLogEntries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ActivityLogEntryQueryResult`](../interfaces/index.api.ActivityLogEntryQueryResult.md), `any`\>\>
+▸ **getLogEntries**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ActivityLogEntryQueryResult`](../interfaces/generated_client.ActivityLogEntryQueryResult.md), `any`\>\>
 
 **`summary`** Gets activity log entries.
 
@@ -107,8 +107,8 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ActivityLogEntryQueryResult`](../interfaces/index.api.ActivityLogEntryQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`ActivityLogEntryQueryResult`](../interfaces/generated_client.ActivityLogEntryQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/activity-log-api.ts#L186)
+[generated-client/api/activity-log-api.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/activity-log-api.ts#L186)

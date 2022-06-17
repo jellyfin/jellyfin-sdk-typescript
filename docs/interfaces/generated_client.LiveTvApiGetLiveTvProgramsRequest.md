@@ -54,13 +54,13 @@ The channels to return guide information for.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3683](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3683)
+[generated-client/api/live-tv-api.ts:3683](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3683)
 
 ___
 
 ### enableImageTypes
 
-• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/index.api.ImageType.md)[]
+• `Optional` `Readonly` **enableImageTypes**: [`ImageType`](../enums/generated_client.ImageType.md)[]
 
 Optional. The image types to include in the output.
 
@@ -68,7 +68,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3830](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3830)
+[generated-client/api/live-tv-api.ts:3830](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3830)
 
 ___
 
@@ -82,7 +82,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3816](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3816)
+[generated-client/api/live-tv-api.ts:3816](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3816)
 
 ___
 
@@ -96,7 +96,7 @@ Retrieve total record count.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3865](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3865)
+[generated-client/api/live-tv-api.ts:3865](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3865)
 
 ___
 
@@ -110,13 +110,13 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3837](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3837)
+[generated-client/api/live-tv-api.ts:3837](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3837)
 
 ___
 
 ### fields
 
-• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/index.api.ItemFields.md)[]
+• `Optional` `Readonly` **fields**: [`ItemFields`](../enums/generated_client.ItemFields.md)[]
 
 Optional. Specify additional fields of information to return in the output.
 
@@ -124,7 +124,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3858](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3858)
+[generated-client/api/live-tv-api.ts:3858](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3858)
 
 ___
 
@@ -138,7 +138,7 @@ The genre ids to return guide information for.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3809](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3809)
+[generated-client/api/live-tv-api.ts:3809](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3809)
 
 ___
 
@@ -152,7 +152,7 @@ The genres to return guide information for.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3802)
+[generated-client/api/live-tv-api.ts:3802](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3802)
 
 ___
 
@@ -166,7 +166,7 @@ Optional. Filter by programs that have completed airing, or not.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3704](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3704)
+[generated-client/api/live-tv-api.ts:3704](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3704)
 
 ___
 
@@ -180,7 +180,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3823](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3823)
+[generated-client/api/live-tv-api.ts:3823](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3823)
 
 ___
 
@@ -194,7 +194,7 @@ Optional. Filter by programs that are currently airing, or not.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3711)
+[generated-client/api/live-tv-api.ts:3711](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3711)
 
 ___
 
@@ -208,7 +208,7 @@ Optional. Filter for kids.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3760)
+[generated-client/api/live-tv-api.ts:3760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3760)
 
 ___
 
@@ -222,7 +222,7 @@ Optional. Filter for movies.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3739](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3739)
+[generated-client/api/live-tv-api.ts:3739](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3739)
 
 ___
 
@@ -236,7 +236,7 @@ Optional. Filter for news.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3753)
+[generated-client/api/live-tv-api.ts:3753](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3753)
 
 ___
 
@@ -250,7 +250,7 @@ Optional. Filter for series.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3746)
+[generated-client/api/live-tv-api.ts:3746](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3746)
 
 ___
 
@@ -264,7 +264,7 @@ Optional. Filter for sports.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3767](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3767)
+[generated-client/api/live-tv-api.ts:3767](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3767)
 
 ___
 
@@ -278,7 +278,7 @@ Optional. Filter by library series id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3851](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3851)
+[generated-client/api/live-tv-api.ts:3851](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3851)
 
 ___
 
@@ -292,7 +292,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3781](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3781)
+[generated-client/api/live-tv-api.ts:3781](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3781)
 
 ___
 
@@ -306,7 +306,7 @@ Optional. The maximum premiere end date.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3732](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3732)
+[generated-client/api/live-tv-api.ts:3732](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3732)
 
 ___
 
@@ -320,7 +320,7 @@ Optional. The maximum premiere start date.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3718](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3718)
+[generated-client/api/live-tv-api.ts:3718](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3718)
 
 ___
 
@@ -334,7 +334,7 @@ Optional. The minimum premiere end date.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3725)
+[generated-client/api/live-tv-api.ts:3725](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3725)
 
 ___
 
@@ -348,7 +348,7 @@ Optional. The minimum premiere start date.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3697](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3697)
+[generated-client/api/live-tv-api.ts:3697](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3697)
 
 ___
 
@@ -362,7 +362,7 @@ Optional. Filter by series timer id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3844)
+[generated-client/api/live-tv-api.ts:3844](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3844)
 
 ___
 
@@ -376,13 +376,13 @@ Optional. Specify one or more sort orders, comma delimited. Options: Name, Start
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3788)
+[generated-client/api/live-tv-api.ts:3788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3788)
 
 ___
 
 ### sortOrder
 
-• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/index.api.SortOrder.md)[]
+• `Optional` `Readonly` **sortOrder**: [`SortOrder`](../enums/generated_client.SortOrder.md)[]
 
 Sort Order - Ascending,Descending.
 
@@ -390,7 +390,7 @@ Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3795](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3795)
+[generated-client/api/live-tv-api.ts:3795](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3795)
 
 ___
 
@@ -404,7 +404,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3774](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3774)
+[generated-client/api/live-tv-api.ts:3774](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3774)
 
 ___
 
@@ -418,4 +418,4 @@ Optional. Filter by user id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3690](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3690)
+[generated-client/api/live-tv-api.ts:3690](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3690)

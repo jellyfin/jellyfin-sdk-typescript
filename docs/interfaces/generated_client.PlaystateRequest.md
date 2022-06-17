@@ -20,13 +20,13 @@
 
 ### Command
 
-• `Optional` **Command**: [`PlaystateCommand`](../enums/index.api.PlaystateCommand.md)
+• `Optional` **Command**: [`PlaystateCommand`](../enums/generated_client.PlaystateCommand.md)
 
 **`memberof`** PlaystateRequest
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playstate-request.ts#L29)
+[generated-client/models/playstate-request.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/playstate-request.ts#L29)
 
 ___
 
@@ -40,7 +40,7 @@ Gets or sets the controlling user identifier.
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playstate-request.ts#L41)
+[generated-client/models/playstate-request.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/playstate-request.ts#L41)
 
 ___
 
@@ -52,4 +52,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/playstate-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/playstate-request.ts#L35)
+[generated-client/models/playstate-request.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/playstate-request.ts#L35)

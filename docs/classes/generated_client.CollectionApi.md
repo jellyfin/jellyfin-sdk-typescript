@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,13 +113,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/collection-api.ts#L360)
+[generated-client/api/collection-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L360)
 
 ___
 
 ### createCollection
 
-▸ **createCollection**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`CollectionCreationResult`](../interfaces/index.api.CollectionCreationResult.md), `any`\>\>
+▸ **createCollection**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`CollectionCreationResult`](../interfaces/generated_client.CollectionCreationResult.md), `any`\>\>
 
 **`summary`** Creates a new collection.
 
@@ -136,11 +136,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`CollectionCreationResult`](../interfaces/index.api.CollectionCreationResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`CollectionCreationResult`](../interfaces/generated_client.CollectionCreationResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/collection-api.ts#L372)
+[generated-client/api/collection-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L372)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/collection-api.ts#L384)
+[generated-client/api/collection-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L384)

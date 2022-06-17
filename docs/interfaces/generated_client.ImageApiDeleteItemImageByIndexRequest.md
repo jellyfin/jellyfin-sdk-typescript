@@ -30,13 +30,13 @@ The image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5843)
+[generated-client/api/image-api.ts:5843](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L5843)
 
 ___
 
 ### imageType
 
-• `Readonly` **imageType**: [`ImageType`](../enums/index.api.ImageType.md)
+• `Readonly` **imageType**: [`ImageType`](../enums/generated_client.ImageType.md)
 
 Image type.
 
@@ -44,7 +44,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5836](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5836)
+[generated-client/api/image-api.ts:5836](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L5836)
 
 ___
 
@@ -58,4 +58,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5829](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/image-api.ts#L5829)
+[generated-client/api/image-api.ts:5829](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L5829)

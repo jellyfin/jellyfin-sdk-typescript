@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getGroupingOptions
 
-▸ **getGroupingOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SpecialViewOptionDto`](../interfaces/index.api.SpecialViewOptionDto.md)[], `any`\>\>
+▸ **getGroupingOptions**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`SpecialViewOptionDto`](../interfaces/generated_client.SpecialViewOptionDto.md)[], `any`\>\>
 
 **`summary`** Get user view grouping options.
 
@@ -108,17 +108,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SpecialViewOptionDto`](../interfaces/index.api.SpecialViewOptionDto.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`SpecialViewOptionDto`](../interfaces/generated_client.SpecialViewOptionDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-views-api.ts#L253)
+[generated-client/api/user-views-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-views-api.ts#L253)
 
 ___
 
 ### getUserViews
 
-▸ **getUserViews**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+▸ **getUserViews**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Get user views.
 
@@ -135,8 +135,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-views-api.ts#L265)
+[generated-client/api/user-views-api.ts:265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-views-api.ts#L265)

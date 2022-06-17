@@ -10,7 +10,7 @@ Enum ImageOutputFormat.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Bmp](generated_client.ImageFormat.md#bmp)
 - [Gif](generated_client.ImageFormat.md#gif)
@@ -18,52 +18,52 @@ Enum ImageOutputFormat.
 - [Png](generated_client.ImageFormat.md#png)
 - [Webp](generated_client.ImageFormat.md#webp)
 
-## Enumeration members
+## Enumeration Members
 
 ### Bmp
 
-• **Bmp** = `"Bmp"`
+• **Bmp**
 
 #### Defined in
 
-[generated-client/models/image-format.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-format.ts#L24)
+[generated-client/models/image-format.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-format.ts#L24)
 
 ___
 
 ### Gif
 
-• **Gif** = `"Gif"`
+• **Gif**
 
 #### Defined in
 
-[generated-client/models/image-format.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-format.ts#L25)
+[generated-client/models/image-format.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-format.ts#L25)
 
 ___
 
 ### Jpg
 
-• **Jpg** = `"Jpg"`
+• **Jpg**
 
 #### Defined in
 
-[generated-client/models/image-format.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-format.ts#L26)
+[generated-client/models/image-format.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-format.ts#L26)
 
 ___
 
 ### Png
 
-• **Png** = `"Png"`
+• **Png**
 
 #### Defined in
 
-[generated-client/models/image-format.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-format.ts#L27)
+[generated-client/models/image-format.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-format.ts#L27)
 
 ___
 
 ### Webp
 
-• **Webp** = `"Webp"`
+• **Webp**
 
 #### Defined in
 
-[generated-client/models/image-format.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-format.ts#L28)
+[generated-client/models/image-format.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-format.ts#L28)

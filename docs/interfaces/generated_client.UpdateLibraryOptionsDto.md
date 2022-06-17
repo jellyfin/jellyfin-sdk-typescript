@@ -29,16 +29,16 @@ Gets or sets the library item id.
 
 #### Defined in
 
-[generated-client/models/update-library-options-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/update-library-options-dto.ts#L29)
+[generated-client/models/update-library-options-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/update-library-options-dto.ts#L29)
 
 ___
 
 ### LibraryOptions
 
-• `Optional` **LibraryOptions**: [`LibraryOptions`](index.api.LibraryOptions.md)
+• `Optional` **LibraryOptions**: [`LibraryOptions`](generated_client.LibraryOptions.md)
 
 **`memberof`** UpdateLibraryOptionsDto
 
 #### Defined in
 
-[generated-client/models/update-library-options-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/update-library-options-dto.ts#L35)
+[generated-client/models/update-library-options-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/update-library-options-dto.ts#L35)

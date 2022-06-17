@@ -20,7 +20,7 @@ Request parameters for getPrograms operation in LiveTvApi.
 
 ### getProgramsDto
 
-• `Optional` `Readonly` **getProgramsDto**: [`GetProgramsDto`](index.api.GetProgramsDto.md)
+• `Optional` `Readonly` **getProgramsDto**: [`GetProgramsDto`](generated_client.GetProgramsDto.md)
 
 Request body.
 
@@ -28,4 +28,4 @@ Request body.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:3900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L3900)
+[generated-client/api/live-tv-api.ts:3900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L3900)

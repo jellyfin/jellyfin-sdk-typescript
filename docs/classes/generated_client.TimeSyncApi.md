@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,13 +84,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getUtcTime
 
-▸ **getUtcTime**(`options?`): `Promise`<`AxiosResponse`<[`UtcTimeResponse`](../interfaces/index.api.UtcTimeResponse.md), `any`\>\>
+▸ **getUtcTime**(`options?`): `Promise`<`AxiosResponse`<[`UtcTimeResponse`](../interfaces/generated_client.UtcTimeResponse.md), `any`\>\>
 
 **`summary`** Gets the current UTC time.
 
@@ -106,8 +106,8 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UtcTimeResponse`](../interfaces/index.api.UtcTimeResponse.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UtcTimeResponse`](../interfaces/generated_client.UtcTimeResponse.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/time-sync-api.ts#L117)
+[generated-client/api/time-sync-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/time-sync-api.ts#L117)

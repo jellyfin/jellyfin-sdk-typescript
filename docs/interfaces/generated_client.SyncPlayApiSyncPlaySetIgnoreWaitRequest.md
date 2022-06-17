@@ -20,7 +20,7 @@ Request parameters for syncPlaySetIgnoreWait operation in SyncPlayApi.
 
 ### ignoreWaitRequestDto
 
-• `Readonly` **ignoreWaitRequestDto**: [`IgnoreWaitRequestDto`](index.api.IgnoreWaitRequestDto.md)
+• `Readonly` **ignoreWaitRequestDto**: [`IgnoreWaitRequestDto`](generated_client.IgnoreWaitRequestDto.md)
 
 The settings to set.
 
@@ -28,4 +28,4 @@ The settings to set.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1471)
+[generated-client/api/sync-play-api.ts:1471](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1471)

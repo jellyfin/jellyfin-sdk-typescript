@@ -28,4 +28,4 @@ Secret previously returned from the Initiate endpoint.
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/quick-connect-api.ts#L477)
+[generated-client/api/quick-connect-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L477)

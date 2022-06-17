@@ -34,7 +34,7 @@ Gets or sets the codec.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L28)
+[generated-client/models/media-attachment.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L28)
 
 ___
 
@@ -48,7 +48,7 @@ Gets or sets the codec tag.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L34)
+[generated-client/models/media-attachment.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L34)
 
 ___
 
@@ -62,7 +62,7 @@ Gets or sets the comment.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L40)
+[generated-client/models/media-attachment.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L40)
 
 ___
 
@@ -76,7 +76,7 @@ Gets or sets the delivery URL.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L64)
+[generated-client/models/media-attachment.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L64)
 
 ___
 
@@ -90,7 +90,7 @@ Gets or sets the filename.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L52)
+[generated-client/models/media-attachment.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L52)
 
 ___
 
@@ -104,7 +104,7 @@ Gets or sets the index.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L46)
+[generated-client/models/media-attachment.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L46)
 
 ___
 
@@ -118,4 +118,4 @@ Gets or sets the MIME type.
 
 #### Defined in
 
-[generated-client/models/media-attachment.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/media-attachment.ts#L58)
+[generated-client/models/media-attachment.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-attachment.ts#L58)

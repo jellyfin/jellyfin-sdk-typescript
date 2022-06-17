@@ -29,16 +29,16 @@ Gets or sets the items to enqueue.
 
 #### Defined in
 
-[generated-client/models/queue-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/queue-request-dto.ts#L29)
+[generated-client/models/queue-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/queue-request-dto.ts#L29)
 
 ___
 
 ### Mode
 
-• `Optional` **Mode**: [`GroupQueueMode`](../enums/index.api.GroupQueueMode.md)
+• `Optional` **Mode**: [`GroupQueueMode`](../enums/generated_client.GroupQueueMode.md)
 
 **`memberof`** QueueRequestDto
 
 #### Defined in
 
-[generated-client/models/queue-request-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/queue-request-dto.ts#L35)
+[generated-client/models/queue-request-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/queue-request-dto.ts#L35)

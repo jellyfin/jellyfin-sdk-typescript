@@ -37,7 +37,7 @@ Gets or sets the community rating.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L60)
+[generated-client/models/remote-image-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L60)
 
 ___
 
@@ -51,7 +51,7 @@ Gets or sets the height.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L48)
+[generated-client/models/remote-image-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L48)
 
 ___
 
@@ -65,7 +65,7 @@ Gets or sets the language.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L72)
+[generated-client/models/remote-image-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L72)
 
 ___
 
@@ -79,19 +79,19 @@ Gets or sets the name of the provider.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L30)
+[generated-client/models/remote-image-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L30)
 
 ___
 
 ### RatingType
 
-• `Optional` **RatingType**: [`RatingType`](../enums/index.api.RatingType.md)
+• `Optional` **RatingType**: [`RatingType`](../enums/generated_client.RatingType.md)
 
 **`memberof`** RemoteImageInfo
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L84)
+[generated-client/models/remote-image-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L84)
 
 ___
 
@@ -105,19 +105,19 @@ Gets a url used for previewing a smaller version.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L42)
+[generated-client/models/remote-image-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L42)
 
 ___
 
 ### Type
 
-• `Optional` **Type**: [`ImageType`](../enums/index.api.ImageType.md)
+• `Optional` **Type**: [`ImageType`](../enums/generated_client.ImageType.md)
 
 **`memberof`** RemoteImageInfo
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L78)
+[generated-client/models/remote-image-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L78)
 
 ___
 
@@ -131,7 +131,7 @@ Gets or sets the URL.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L36)
+[generated-client/models/remote-image-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L36)
 
 ___
 
@@ -145,7 +145,7 @@ Gets or sets the vote count.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L66)
+[generated-client/models/remote-image-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L66)
 
 ___
 
@@ -159,4 +159,4 @@ Gets or sets the width.
 
 #### Defined in
 
-[generated-client/models/remote-image-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/remote-image-info.ts#L54)
+[generated-client/models/remote-image-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/remote-image-info.ts#L54)

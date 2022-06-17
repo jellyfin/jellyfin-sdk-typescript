@@ -21,13 +21,13 @@ The notification summary DTO.
 
 ### MaxUnreadNotificationLevel
 
-• `Optional` **MaxUnreadNotificationLevel**: [`NotificationLevel`](../enums/index.api.NotificationLevel.md)
+• `Optional` **MaxUnreadNotificationLevel**: [`NotificationLevel`](../enums/generated_client.NotificationLevel.md)
 
 **`memberof`** NotificationsSummaryDto
 
 #### Defined in
 
-[generated-client/models/notifications-summary-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/notifications-summary-dto.ts#L35)
+[generated-client/models/notifications-summary-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notifications-summary-dto.ts#L35)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the number of unread notifications.
 
 #### Defined in
 
-[generated-client/models/notifications-summary-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/notifications-summary-dto.ts#L29)
+[generated-client/models/notifications-summary-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notifications-summary-dto.ts#L29)

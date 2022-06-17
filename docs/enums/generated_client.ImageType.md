@@ -10,7 +10,7 @@ Enum ImageType.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Art](generated_client.ImageType.md#art)
 - [Backdrop](generated_client.ImageType.md#backdrop)
@@ -26,132 +26,132 @@ Enum ImageType.
 - [Screenshot](generated_client.ImageType.md#screenshot)
 - [Thumb](generated_client.ImageType.md#thumb)
 
-## Enumeration members
+## Enumeration Members
 
 ### Art
 
-• **Art** = `"Art"`
+• **Art**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L25)
+[generated-client/models/image-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L25)
 
 ___
 
 ### Backdrop
 
-• **Backdrop** = `"Backdrop"`
+• **Backdrop**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L26)
+[generated-client/models/image-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L26)
 
 ___
 
 ### Banner
 
-• **Banner** = `"Banner"`
+• **Banner**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L27)
+[generated-client/models/image-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L27)
 
 ___
 
 ### Box
 
-• **Box** = `"Box"`
+• **Box**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L31)
+[generated-client/models/image-type.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L31)
 
 ___
 
 ### BoxRear
 
-• **BoxRear** = `"BoxRear"`
+• **BoxRear**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L35)
+[generated-client/models/image-type.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L35)
 
 ___
 
 ### Chapter
 
-• **Chapter** = `"Chapter"`
+• **Chapter**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L34)
+[generated-client/models/image-type.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L34)
 
 ___
 
 ### Disc
 
-• **Disc** = `"Disc"`
+• **Disc**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L30)
+[generated-client/models/image-type.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L30)
 
 ___
 
 ### Logo
 
-• **Logo** = `"Logo"`
+• **Logo**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L28)
+[generated-client/models/image-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L28)
 
 ___
 
 ### Menu
 
-• **Menu** = `"Menu"`
+• **Menu**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L33)
+[generated-client/models/image-type.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L33)
 
 ___
 
 ### Primary
 
-• **Primary** = `"Primary"`
+• **Primary**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L24)
+[generated-client/models/image-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L24)
 
 ___
 
 ### Profile
 
-• **Profile** = `"Profile"`
+• **Profile**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L36)
+[generated-client/models/image-type.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L36)
 
 ___
 
 ### Screenshot
 
-• **Screenshot** = `"Screenshot"`
+• **Screenshot**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L32)
+[generated-client/models/image-type.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L32)
 
 ___
 
 ### Thumb
 
-• **Thumb** = `"Thumb"`
+• **Thumb**
 
 #### Defined in
 
-[generated-client/models/image-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/image-type.ts#L29)
+[generated-client/models/image-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/image-type.ts#L29)

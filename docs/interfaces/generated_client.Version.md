@@ -29,7 +29,7 @@
 
 #### Defined in
 
-[generated-client/models/version.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L40)
+[generated-client/models/version.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L40)
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/version.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L28)
+[generated-client/models/version.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L28)
 
 ___
 
@@ -53,7 +53,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/version.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L52)
+[generated-client/models/version.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L52)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/version.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L34)
+[generated-client/models/version.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L34)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/version.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L58)
+[generated-client/models/version.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L58)
 
 ___
 
@@ -89,4 +89,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/version.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/version.ts#L46)
+[generated-client/models/version.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version.ts#L46)

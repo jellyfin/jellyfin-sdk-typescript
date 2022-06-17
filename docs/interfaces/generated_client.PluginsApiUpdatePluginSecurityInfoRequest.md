@@ -20,7 +20,7 @@ Request parameters for updatePluginSecurityInfo operation in PluginsApi.
 
 ### pluginSecurityInfo
 
-• `Readonly` **pluginSecurityInfo**: [`PluginSecurityInfo`](index.api.PluginSecurityInfo.md)
+• `Readonly` **pluginSecurityInfo**: [`PluginSecurityInfo`](generated_client.PluginSecurityInfo.md)
 
 Plugin security info.
 
@@ -28,4 +28,4 @@ Plugin security info.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:817](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/plugins-api.ts#L817)
+[generated-client/api/plugins-api.ts:817](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L817)

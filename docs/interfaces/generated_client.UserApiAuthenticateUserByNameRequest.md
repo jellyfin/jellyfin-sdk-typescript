@@ -20,7 +20,7 @@ Request parameters for authenticateUserByName operation in UserApi.
 
 ### authenticateUserByName
 
-• `Readonly` **authenticateUserByName**: [`AuthenticateUserByName`](index.api.AuthenticateUserByName.md)
+• `Readonly` **authenticateUserByName**: [`AuthenticateUserByName`](generated_client.AuthenticateUserByName.md)
 
 The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
 
@@ -28,4 +28,4 @@ The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Ap
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1091)
+[generated-client/api/user-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1091)

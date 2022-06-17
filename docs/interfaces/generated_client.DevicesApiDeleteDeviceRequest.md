@@ -28,4 +28,4 @@ Device Id.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:389](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L389)
+[generated-client/api/devices-api.ts:389](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L389)

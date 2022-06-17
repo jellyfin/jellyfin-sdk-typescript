@@ -59,7 +59,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -93,13 +93,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getEndpointInfo
 
-▸ **getEndpointInfo**(`options?`): `Promise`<`AxiosResponse`<[`EndPointInfo`](../interfaces/index.api.EndPointInfo.md), `any`\>\>
+▸ **getEndpointInfo**(`options?`): `Promise`<`AxiosResponse`<[`EndPointInfo`](../interfaces/generated_client.EndPointInfo.md), `any`\>\>
 
 **`summary`** Gets information about the request endpoint.
 
@@ -115,11 +115,11 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`EndPointInfo`](../interfaces/index.api.EndPointInfo.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`EndPointInfo`](../interfaces/generated_client.EndPointInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/system-api.ts:610](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L610)
+[generated-client/api/system-api.ts:610](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L610)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L622)
+[generated-client/api/system-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L622)
 
 ___
 
@@ -172,13 +172,13 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L633)
+[generated-client/api/system-api.ts:633](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L633)
 
 ___
 
 ### getPublicSystemInfo
 
-▸ **getPublicSystemInfo**(`options?`): `Promise`<`AxiosResponse`<[`PublicSystemInfo`](../interfaces/index.api.PublicSystemInfo.md), `any`\>\>
+▸ **getPublicSystemInfo**(`options?`): `Promise`<`AxiosResponse`<[`PublicSystemInfo`](../interfaces/generated_client.PublicSystemInfo.md), `any`\>\>
 
 **`summary`** Gets public information about the server.
 
@@ -194,17 +194,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PublicSystemInfo`](../interfaces/index.api.PublicSystemInfo.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`PublicSystemInfo`](../interfaces/generated_client.PublicSystemInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/system-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L644)
+[generated-client/api/system-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L644)
 
 ___
 
 ### getServerLogs
 
-▸ **getServerLogs**(`options?`): `Promise`<`AxiosResponse`<[`LogFile`](../interfaces/index.api.LogFile.md)[], `any`\>\>
+▸ **getServerLogs**(`options?`): `Promise`<`AxiosResponse`<[`LogFile`](../interfaces/generated_client.LogFile.md)[], `any`\>\>
 
 **`summary`** Gets a list of available server log files.
 
@@ -220,17 +220,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`LogFile`](../interfaces/index.api.LogFile.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`LogFile`](../interfaces/generated_client.LogFile.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/system-api.ts:655](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L655)
+[generated-client/api/system-api.ts:655](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L655)
 
 ___
 
 ### getSystemInfo
 
-▸ **getSystemInfo**(`options?`): `Promise`<`AxiosResponse`<[`SystemInfo`](../interfaces/index.api.SystemInfo.md), `any`\>\>
+▸ **getSystemInfo**(`options?`): `Promise`<`AxiosResponse`<[`SystemInfo`](../interfaces/generated_client.SystemInfo.md), `any`\>\>
 
 **`summary`** Gets information about the server.
 
@@ -246,17 +246,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`SystemInfo`](../interfaces/index.api.SystemInfo.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`SystemInfo`](../interfaces/generated_client.SystemInfo.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/system-api.ts:666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L666)
+[generated-client/api/system-api.ts:666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L666)
 
 ___
 
 ### getWakeOnLanInfo
 
-▸ **getWakeOnLanInfo**(`options?`): `Promise`<`AxiosResponse`<[`WakeOnLanInfo`](../interfaces/index.api.WakeOnLanInfo.md)[], `any`\>\>
+▸ **getWakeOnLanInfo**(`options?`): `Promise`<`AxiosResponse`<[`WakeOnLanInfo`](../interfaces/generated_client.WakeOnLanInfo.md)[], `any`\>\>
 
 **`summary`** Gets wake on lan information.
 
@@ -272,11 +272,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`WakeOnLanInfo`](../interfaces/index.api.WakeOnLanInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`WakeOnLanInfo`](../interfaces/generated_client.WakeOnLanInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/system-api.ts:677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L677)
+[generated-client/api/system-api.ts:677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L677)
 
 ___
 
@@ -302,7 +302,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L688)
+[generated-client/api/system-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L688)
 
 ___
 
@@ -328,7 +328,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L699)
+[generated-client/api/system-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L699)
 
 ___
 
@@ -354,4 +354,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/system-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/system-api.ts#L710)
+[generated-client/api/system-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L710)

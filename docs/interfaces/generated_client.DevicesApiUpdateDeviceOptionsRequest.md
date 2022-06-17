@@ -21,7 +21,7 @@ Request parameters for updateDeviceOptions operation in DevicesApi.
 
 ### deviceOptions
 
-• `Readonly` **deviceOptions**: [`DeviceOptions`](index.api.DeviceOptions.md)
+• `Readonly` **deviceOptions**: [`DeviceOptions`](generated_client.DeviceOptions.md)
 
 Device Options.
 
@@ -29,7 +29,7 @@ Device Options.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L459)
+[generated-client/api/devices-api.ts:459](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L459)
 
 ___
 
@@ -43,4 +43,4 @@ Device Id.
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/devices-api.ts#L452)
+[generated-client/api/devices-api.ts:452](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L452)

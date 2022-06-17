@@ -10,38 +10,38 @@ Enum TaskState.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Cancelling](generated_client.TaskState.md#cancelling)
 - [Idle](generated_client.TaskState.md#idle)
 - [Running](generated_client.TaskState.md#running)
 
-## Enumeration members
+## Enumeration Members
 
 ### Cancelling
 
-• **Cancelling** = `"Cancelling"`
+• **Cancelling**
 
 #### Defined in
 
-[generated-client/models/task-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-state.ts#L25)
+[generated-client/models/task-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-state.ts#L25)
 
 ___
 
 ### Idle
 
-• **Idle** = `"Idle"`
+• **Idle**
 
 #### Defined in
 
-[generated-client/models/task-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-state.ts#L24)
+[generated-client/models/task-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-state.ts#L24)
 
 ___
 
 ### Running
 
-• **Running** = `"Running"`
+• **Running**
 
 #### Defined in
 
-[generated-client/models/task-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/task-state.ts#L26)
+[generated-client/models/task-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/task-state.ts#L26)

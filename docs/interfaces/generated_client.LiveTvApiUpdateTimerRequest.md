@@ -29,13 +29,13 @@ Timer id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4474](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4474)
+[generated-client/api/live-tv-api.ts:4474](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L4474)
 
 ___
 
 ### timerInfoDto
 
-• `Optional` `Readonly` **timerInfoDto**: [`TimerInfoDto`](index.api.TimerInfoDto.md)
+• `Optional` `Readonly` **timerInfoDto**: [`TimerInfoDto`](generated_client.TimerInfoDto.md)
 
 New timer info.
 
@@ -43,4 +43,4 @@ New timer info.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4481](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/live-tv-api.ts#L4481)
+[generated-client/api/live-tv-api.ts:4481](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L4481)

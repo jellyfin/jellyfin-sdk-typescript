@@ -10,7 +10,7 @@ An enum representing an unrated item.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Book](generated_client.UnratedItem.md#book)
 - [ChannelContent](generated_client.UnratedItem.md#channelcontent)
@@ -22,92 +22,92 @@ An enum representing an unrated item.
 - [Series](generated_client.UnratedItem.md#series)
 - [Trailer](generated_client.UnratedItem.md#trailer)
 
-## Enumeration members
+## Enumeration Members
 
 ### Book
 
-• **Book** = `"Book"`
+• **Book**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L28)
+[generated-client/models/unrated-item.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L28)
 
 ___
 
 ### ChannelContent
 
-• **ChannelContent** = `"ChannelContent"`
+• **ChannelContent**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L31)
+[generated-client/models/unrated-item.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L31)
 
 ___
 
 ### LiveTvChannel
 
-• **LiveTvChannel** = `"LiveTvChannel"`
+• **LiveTvChannel**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L29)
+[generated-client/models/unrated-item.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L29)
 
 ___
 
 ### LiveTvProgram
 
-• **LiveTvProgram** = `"LiveTvProgram"`
+• **LiveTvProgram**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L30)
+[generated-client/models/unrated-item.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L30)
 
 ___
 
 ### Movie
 
-• **Movie** = `"Movie"`
+• **Movie**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L24)
+[generated-client/models/unrated-item.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L24)
 
 ___
 
 ### Music
 
-• **Music** = `"Music"`
+• **Music**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L27)
+[generated-client/models/unrated-item.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L27)
 
 ___
 
 ### Other
 
-• **Other** = `"Other"`
+• **Other**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L32)
+[generated-client/models/unrated-item.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L32)
 
 ___
 
 ### Series
 
-• **Series** = `"Series"`
+• **Series**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L26)
+[generated-client/models/unrated-item.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L26)
 
 ___
 
 ### Trailer
 
-• **Trailer** = `"Trailer"`
+• **Trailer**
 
 #### Defined in
 
-[generated-client/models/unrated-item.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/unrated-item.ts#L25)
+[generated-client/models/unrated-item.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/unrated-item.ts#L25)

@@ -20,7 +20,7 @@ Request parameters for authenticateWithQuickConnect operation in UserApi.
 
 ### quickConnectDto
 
-• `Readonly` **quickConnectDto**: [`QuickConnectDto`](index.api.QuickConnectDto.md)
+• `Readonly` **quickConnectDto**: [`QuickConnectDto`](generated_client.QuickConnectDto.md)
 
 The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
 
@@ -28,4 +28,4 @@ The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1105)
+[generated-client/api/user-api.ts:1105](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1105)

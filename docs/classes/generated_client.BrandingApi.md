@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L215)
+[generated-client/api/branding-api.ts:215](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L215)
 
 ___
 
@@ -138,13 +138,13 @@ ___
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L226)
+[generated-client/api/branding-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L226)
 
 ___
 
 ### getBrandingOptions
 
-▸ **getBrandingOptions**(`options?`): `Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/index.api.BrandingOptions.md), `any`\>\>
+▸ **getBrandingOptions**(`options?`): `Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/generated_client.BrandingOptions.md), `any`\>\>
 
 **`summary`** Gets branding configuration.
 
@@ -160,8 +160,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/index.api.BrandingOptions.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`BrandingOptions`](../interfaces/generated_client.BrandingOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/branding-api.ts#L237)
+[generated-client/api/branding-api.ts:237](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L237)

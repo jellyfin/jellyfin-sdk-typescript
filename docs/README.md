@@ -13,7 +13,20 @@
 
 A TypeScript SDK for Jellyfin.
 
-> Warning: This project is under active development API changes may occur.
+> Warning: This project is under active development, so API changes may occur.
+
+## Breaking Changes
+
+### v0.5.0
+
+* Build directory is now `lib` instead of `dist`.
+  Any imports used that were previously in `dist` will need updated.
+  [#147](https://github.com/thornbill/jellyfin-sdk-typescript/pull/147)
+* Duplicated exports were removed.
+  Any imports may need updated if you referenced one of the duplicates.
+  [#148](https://github.com/thornbill/jellyfin-sdk-typescript/pull/148)
+* API classes are no longer exposed via getters.
+  Instead you need to call a function passing the `Api` instance as a parameter. For example: `getSystemApi(api)`. While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking. [#149](https://github.com/thornbill/jellyfin-sdk-typescript/pull/149)
 
 ## Install
 
@@ -63,11 +76,11 @@ const api = jellyfin.createApi(best.address);
 // are available as api.systemApi.
 
 // Fetch the public system info
-const info = await api.systemApi.getPublicSystemInfo();
+const info = await getSystemApi(api).getPublicSystemInfo();
 console.log('Info =>', info.data);
 
 // Fetch the list of public users
-const users = await api.userApi.getPublicUsers();
+const users = await getUserApi(api).getPublicUsers();
 console.log('Users =>', users.data);
 
 // A helper method for authentication has been added to the SDK because
@@ -78,7 +91,7 @@ console.log('Auth =>', auth.data);
 
 // Authentication state is stored internally in the Api class, so now
 // requests that require authentication can be made normally
-const libraries = await api.libraryApi.getMediaFolders();
+const libraries = await getLibraryApi(api).getMediaFolders();
 console.log('Libraries =>', libraries.data);
 
 // A helper method for logging out the current user has been added to the

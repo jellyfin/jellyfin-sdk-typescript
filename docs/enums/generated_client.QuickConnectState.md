@@ -10,38 +10,38 @@ Quick connect state.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Active](generated_client.QuickConnectState.md#active)
 - [Available](generated_client.QuickConnectState.md#available)
 - [Unavailable](generated_client.QuickConnectState.md#unavailable)
 
-## Enumeration members
+## Enumeration Members
 
 ### Active
 
-• **Active** = `"Active"`
+• **Active**
 
 #### Defined in
 
-[generated-client/models/quick-connect-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/quick-connect-state.ts#L26)
+[generated-client/models/quick-connect-state.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/quick-connect-state.ts#L26)
 
 ___
 
 ### Available
 
-• **Available** = `"Available"`
+• **Available**
 
 #### Defined in
 
-[generated-client/models/quick-connect-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/quick-connect-state.ts#L25)
+[generated-client/models/quick-connect-state.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/quick-connect-state.ts#L25)
 
 ___
 
 ### Unavailable
 
-• **Unavailable** = `"Unavailable"`
+• **Unavailable**
 
 #### Defined in
 
-[generated-client/models/quick-connect-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/quick-connect-state.ts#L24)
+[generated-client/models/quick-connect-state.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/quick-connect-state.ts#L24)

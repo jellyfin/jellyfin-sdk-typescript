@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,13 +85,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getConfigurationPages
 
-▸ **getConfigurationPages**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/index.api.ConfigurationPageInfo.md)[], `any`\>\>
+▸ **getConfigurationPages**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[], `any`\>\>
 
 **`summary`** Gets the configuration pages.
 
@@ -108,11 +108,11 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/index.api.ConfigurationPageInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L227)
+[generated-client/api/dashboard-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L227)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dashboard-api.ts#L239)
+[generated-client/api/dashboard-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L239)

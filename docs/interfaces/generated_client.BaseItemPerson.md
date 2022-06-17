@@ -33,19 +33,19 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L35)
+[generated-client/models/base-item-person.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L35)
 
 ___
 
 ### ImageBlurHashes
 
-• `Optional` **ImageBlurHashes**: ``null`` \| [`BaseItemPersonImageBlurHashes`](index.api.BaseItemPersonImageBlurHashes.md)
+• `Optional` **ImageBlurHashes**: ``null`` \| [`BaseItemPersonImageBlurHashes`](generated_client.BaseItemPersonImageBlurHashes.md)
 
 **`memberof`** BaseItemPerson
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L59)
+[generated-client/models/base-item-person.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L59)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L29)
+[generated-client/models/base-item-person.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L29)
 
 ___
 
@@ -73,7 +73,7 @@ Gets or sets the primary image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L53)
+[generated-client/models/base-item-person.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L53)
 
 ___
 
@@ -87,7 +87,7 @@ Gets or sets the role.
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L41)
+[generated-client/models/base-item-person.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L41)
 
 ___
 
@@ -101,4 +101,4 @@ Gets or sets the type.
 
 #### Defined in
 
-[generated-client/models/base-item-person.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/base-item-person.ts#L47)
+[generated-client/models/base-item-person.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item-person.ts#L47)

@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getDefaultDirectoryBrowser
 
-▸ **getDefaultDirectoryBrowser**(`options?`): `Promise`<`AxiosResponse`<[`DefaultDirectoryBrowserInfoDto`](../interfaces/index.api.DefaultDirectoryBrowserInfoDto.md), `any`\>\>
+▸ **getDefaultDirectoryBrowser**(`options?`): `Promise`<`AxiosResponse`<[`DefaultDirectoryBrowserInfoDto`](../interfaces/generated_client.DefaultDirectoryBrowserInfoDto.md), `any`\>\>
 
 **`summary`** Get Default directory browser.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`DefaultDirectoryBrowserInfoDto`](../interfaces/index.api.DefaultDirectoryBrowserInfoDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`DefaultDirectoryBrowserInfoDto`](../interfaces/generated_client.DefaultDirectoryBrowserInfoDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L485)
+[generated-client/api/environment-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L485)
 
 ___
 
 ### getDirectoryContents
 
-▸ **getDirectoryContents**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+▸ **getDirectoryContents**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 **`summary`** Gets the contents of a given directory in the file system.
 
@@ -138,17 +138,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L497)
+[generated-client/api/environment-api.ts:497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L497)
 
 ___
 
 ### getDrives
 
-▸ **getDrives**(`options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+▸ **getDrives**(`options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 **`summary`** Gets available drives from the server\'s file system.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L508)
+[generated-client/api/environment-api.ts:508](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L508)
 
 ___
 
 ### getNetworkShares
 
-▸ **getNetworkShares**(`options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+▸ **getNetworkShares**(`options?`): `Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 **`summary`** Gets network paths.
 
@@ -192,11 +192,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/index.api.FileSystemEntryInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`FileSystemEntryInfo`](../interfaces/generated_client.FileSystemEntryInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L520)
+[generated-client/api/environment-api.ts:520](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L520)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:532](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L532)
+[generated-client/api/environment-api.ts:532](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L532)
 
 ___
 
@@ -250,4 +250,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:544](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L544)
+[generated-client/api/environment-api.ts:544](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L544)

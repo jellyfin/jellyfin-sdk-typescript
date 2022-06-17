@@ -20,7 +20,7 @@ Request parameters for syncPlayPreviousItem operation in SyncPlayApi.
 
 ### previousItemRequestDto
 
-• `Readonly` **previousItemRequestDto**: [`PreviousItemRequestDto`](index.api.PreviousItemRequestDto.md)
+• `Readonly` **previousItemRequestDto**: [`PreviousItemRequestDto`](generated_client.PreviousItemRequestDto.md)
 
 The current item information.
 
@@ -28,4 +28,4 @@ The current item information.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1401)
+[generated-client/api/sync-play-api.ts:1401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1401)

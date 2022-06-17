@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,13 +88,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getAllChannelFeatures
 
-▸ **getAllChannelFeatures**(`options?`): `Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/index.api.ChannelFeatures.md)[], `any`\>\>
+▸ **getAllChannelFeatures**(`options?`): `Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/generated_client.ChannelFeatures.md)[], `any`\>\>
 
 **`summary`** Get all channel features.
 
@@ -110,17 +110,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/index.api.ChannelFeatures.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/generated_client.ChannelFeatures.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:670](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L670)
+[generated-client/api/channels-api.ts:670](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L670)
 
 ___
 
 ### getChannelFeatures
 
-▸ **getChannelFeatures**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/index.api.ChannelFeatures.md), `any`\>\>
+▸ **getChannelFeatures**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/generated_client.ChannelFeatures.md), `any`\>\>
 
 **`summary`** Get channel features.
 
@@ -137,17 +137,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/index.api.ChannelFeatures.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`ChannelFeatures`](../interfaces/generated_client.ChannelFeatures.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:682](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L682)
+[generated-client/api/channels-api.ts:682](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L682)
 
 ___
 
 ### getChannelItems
 
-▸ **getChannelItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+▸ **getChannelItems**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Get channel items.
 
@@ -164,17 +164,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:694](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L694)
+[generated-client/api/channels-api.ts:694](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L694)
 
 ___
 
 ### getChannels
 
-▸ **getChannels**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+▸ **getChannels**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets available channels.
 
@@ -191,17 +191,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:706](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L706)
+[generated-client/api/channels-api.ts:706](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L706)
 
 ___
 
 ### getLatestChannelItems
 
-▸ **getLatestChannelItems**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+▸ **getLatestChannelItems**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 **`summary`** Gets latest channel items.
 
@@ -218,8 +218,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/index.api.BaseItemDtoQueryResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:718](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/channels-api.ts#L718)
+[generated-client/api/channels-api.ts:718](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L718)

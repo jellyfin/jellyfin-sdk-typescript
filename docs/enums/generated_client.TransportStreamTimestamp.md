@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [None](generated_client.TransportStreamTimestamp.md#none)
 - [Valid](generated_client.TransportStreamTimestamp.md#valid)
 - [Zero](generated_client.TransportStreamTimestamp.md#zero)
 
-## Enumeration members
+## Enumeration Members
 
 ### None
 
-• **None** = `"None"`
+• **None**
 
 #### Defined in
 
-[generated-client/models/transport-stream-timestamp.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transport-stream-timestamp.ts#L24)
+[generated-client/models/transport-stream-timestamp.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transport-stream-timestamp.ts#L24)
 
 ___
 
 ### Valid
 
-• **Valid** = `"Valid"`
+• **Valid**
 
 #### Defined in
 
-[generated-client/models/transport-stream-timestamp.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transport-stream-timestamp.ts#L26)
+[generated-client/models/transport-stream-timestamp.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transport-stream-timestamp.ts#L26)
 
 ___
 
 ### Zero
 
-• **Zero** = `"Zero"`
+• **Zero**
 
 #### Defined in
 
-[generated-client/models/transport-stream-timestamp.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/transport-stream-timestamp.ts#L25)
+[generated-client/models/transport-stream-timestamp.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/transport-stream-timestamp.ts#L25)

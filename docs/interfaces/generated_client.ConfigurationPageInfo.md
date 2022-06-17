@@ -26,13 +26,13 @@ The configuration page info.
 
 ### ConfigurationPageType
 
-• `Optional` **ConfigurationPageType**: [`ConfigurationPageType`](../enums/index.api.ConfigurationPageType.md)
+• `Optional` **ConfigurationPageType**: [`ConfigurationPageType`](../enums/generated_client.ConfigurationPageType.md)
 
 **`memberof`** ConfigurationPageInfo
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L59)
+[generated-client/models/configuration-page-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L59)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the display name.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L53)
+[generated-client/models/configuration-page-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L53)
 
 ___
 
@@ -60,7 +60,7 @@ Gets or sets a value indicating whether the configurations page is enabled in th
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L35)
+[generated-client/models/configuration-page-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L35)
 
 ___
 
@@ -74,7 +74,7 @@ Gets or sets the menu icon.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L47)
+[generated-client/models/configuration-page-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L47)
 
 ___
 
@@ -88,7 +88,7 @@ Gets or sets the menu section.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L41)
+[generated-client/models/configuration-page-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L41)
 
 ___
 
@@ -102,7 +102,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L29)
+[generated-client/models/configuration-page-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L29)
 
 ___
 
@@ -116,4 +116,4 @@ Gets or sets the plugin id.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/models/configuration-page-info.ts#L65)
+[generated-client/models/configuration-page-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/configuration-page-info.ts#L65)

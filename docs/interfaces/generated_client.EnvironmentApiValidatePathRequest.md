@@ -20,7 +20,7 @@ Request parameters for validatePath operation in EnvironmentApi.
 
 ### validatePathDto
 
-• `Readonly` **validatePathDto**: [`ValidatePathDto`](index.api.ValidatePathDto.md)
+• `Readonly` **validatePathDto**: [`ValidatePathDto`](generated_client.ValidatePathDto.md)
 
 Validate request object.
 
@@ -28,4 +28,4 @@ Validate request object.
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/environment-api.ts#L468)
+[generated-client/api/environment-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L468)

@@ -32,73 +32,73 @@
 
 ### HTTPS\_PORT
 
-• **HTTPS\_PORT**: ``443``
+• `Const` **HTTPS\_PORT**: ``443``
 
 The default port for the https protocol.
 
 #### Defined in
 
-[utils/url.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L19)
+[utils/url.ts:19](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L19)
 
 ___
 
 ### HTTPS\_PROTOCOL
 
-• **HTTPS\_PROTOCOL**: ``"https:"``
+• `Const` **HTTPS\_PROTOCOL**: ``"https:"``
 
 The https protocol string.
 
 #### Defined in
 
-[utils/url.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L13)
+[utils/url.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L13)
 
 ___
 
 ### HTTP\_PORT
 
-• **HTTP\_PORT**: ``80``
+• `Const` **HTTP\_PORT**: ``80``
 
 The default port for the http protocol.
 
 #### Defined in
 
-[utils/url.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L16)
+[utils/url.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L16)
 
 ___
 
 ### HTTP\_PROTOCOL
 
-• **HTTP\_PROTOCOL**: ``"http:"``
+• `Const` **HTTP\_PROTOCOL**: ``"http:"``
 
 The http protocol string.
 
 #### Defined in
 
-[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L10)
+[utils/url.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L10)
 
 ___
 
 ### JF\_HTTPS\_PORT
 
-• **JF\_HTTPS\_PORT**: ``8920``
+• `Const` **JF\_HTTPS\_PORT**: ``8920``
 
 The default https port for Jellyfin servers.
 
 #### Defined in
 
-[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/address-candidates.ts#L13)
+[utils/address-candidates.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/address-candidates.ts#L13)
 
 ___
 
 ### JF\_HTTP\_PORT
 
-• **JF\_HTTP\_PORT**: ``8096``
+• `Const` **JF\_HTTP\_PORT**: ``8096``
 
 The default http port for Jellyfin servers.
 
 #### Defined in
 
-[utils/address-candidates.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/address-candidates.ts#L10)
+[utils/address-candidates.ts:10](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/address-candidates.ts#L10)
 
 ## Functions
 
@@ -122,7 +122,7 @@ A copy of the original URL.
 
 #### Defined in
 
-[utils/url.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L26)
+[utils/url.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L26)
 
 ___
 
@@ -147,7 +147,7 @@ A list of potential server addresses.
 
 #### Defined in
 
-[utils/address-candidates.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/address-candidates.ts#L52)
+[utils/address-candidates.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/address-candidates.ts#L52)
 
 ___
 
@@ -171,13 +171,13 @@ Returns a valid authorization header string.
 
 #### Defined in
 
-[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/authentication.ts#L11)
+[utils/authentication.ts:11](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/authentication.ts#L11)
 
 ___
 
 ### getBrowserDeviceProfile
 
-▸ `Const` **getBrowserDeviceProfile**(`options?`, `videoElement?`): [`DeviceProfile`](../interfaces/index.api.DeviceProfile.md)
+▸ **getBrowserDeviceProfile**(`options?`, `videoElement?`): [`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)
 
 Generates a device profile based on a few options and the current browser capabilites
 
@@ -192,13 +192,13 @@ Generates a device profile based on a few options and the current browser capabi
 
 #### Returns
 
-[`DeviceProfile`](../interfaces/index.api.DeviceProfile.md)
+[`DeviceProfile`](../interfaces/generated_client.DeviceProfile.md)
 
 A detected device profile
 
 #### Defined in
 
-[utils/browser-profiles.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/browser-profiles.ts#L56)
+[utils/browser-profiles.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/browser-profiles.ts#L58)
 
 ___
 
@@ -222,7 +222,7 @@ The default port number of the protocol.
 
 #### Defined in
 
-[utils/url.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L35)
+[utils/url.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L35)
 
 ___
 
@@ -246,4 +246,4 @@ The Url object.
 
 #### Defined in
 
-[utils/url.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/utils/url.ts#L46)
+[utils/url.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/utils/url.ts#L46)

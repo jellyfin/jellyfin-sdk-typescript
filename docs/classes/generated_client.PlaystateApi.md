@@ -58,7 +58,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -92,13 +92,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### markPlayedItem
 
-▸ **markPlayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
+▸ **markPlayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Marks an item as played for user.
 
@@ -115,17 +115,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1133)
+[generated-client/api/playstate-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1133)
 
 ___
 
 ### markUnplayedItem
 
-▸ **markUnplayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
+▸ **markUnplayedItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md), `any`\>\>
 
 **`summary`** Marks an item as unplayed for user.
 
@@ -142,11 +142,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/index.api.UserItemDataDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1145)
+[generated-client/api/playstate-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1145)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1157)
+[generated-client/api/playstate-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1157)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1169)
+[generated-client/api/playstate-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1169)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1181)
+[generated-client/api/playstate-api.ts:1181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1181)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1193)
+[generated-client/api/playstate-api.ts:1193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1193)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1205)
+[generated-client/api/playstate-api.ts:1205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1205)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1217)
+[generated-client/api/playstate-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1217)
 
 ___
 
@@ -335,4 +335,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/playstate-api.ts#L1229)
+[generated-client/api/playstate-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L1229)

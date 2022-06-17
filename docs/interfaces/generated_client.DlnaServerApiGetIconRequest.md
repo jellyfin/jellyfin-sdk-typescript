@@ -28,4 +28,4 @@ The icon filename.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/dlna-server-api.ts#L1063)
+[generated-client/api/dlna-server-api.ts:1063](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-server-api.ts#L1063)

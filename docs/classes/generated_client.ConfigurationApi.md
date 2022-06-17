@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,13 +89,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### getConfiguration
 
-▸ **getConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/index.api.ServerConfiguration.md), `any`\>\>
+▸ **getConfiguration**(`options?`): `Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md), `any`\>\>
 
 **`summary`** Gets application configuration.
 
@@ -111,17 +111,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/index.api.ServerConfiguration.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L468)
+[generated-client/api/configuration-api.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L468)
 
 ___
 
 ### getDefaultMetadataOptions
 
-▸ **getDefaultMetadataOptions**(`options?`): `Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/index.api.MetadataOptions.md), `any`\>\>
+▸ **getDefaultMetadataOptions**(`options?`): `Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/generated_client.MetadataOptions.md), `any`\>\>
 
 **`summary`** Gets a default MetadataOptions object.
 
@@ -137,11 +137,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/index.api.MetadataOptions.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`MetadataOptions`](../interfaces/generated_client.MetadataOptions.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L479)
+[generated-client/api/configuration-api.ts:479](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L479)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L491)
+[generated-client/api/configuration-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L491)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L503)
+[generated-client/api/configuration-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L503)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L515)
+[generated-client/api/configuration-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L515)
 
 ___
 
@@ -249,4 +249,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/configuration-api.ts#L527)
+[generated-client/api/configuration-api.ts:527](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L527)

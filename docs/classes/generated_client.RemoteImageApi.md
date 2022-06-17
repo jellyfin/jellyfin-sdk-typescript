@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,13 +113,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L391)
+[generated-client/api/remote-image-api.ts:391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L391)
 
 ___
 
 ### getRemoteImageProviders
 
-▸ **getRemoteImageProviders**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/index.api.ImageProviderInfo.md)[], `any`\>\>
+▸ **getRemoteImageProviders**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/generated_client.ImageProviderInfo.md)[], `any`\>\>
 
 **`summary`** Gets available remote image providers for an item.
 
@@ -136,17 +136,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/index.api.ImageProviderInfo.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`ImageProviderInfo`](../interfaces/generated_client.ImageProviderInfo.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L403)
+[generated-client/api/remote-image-api.ts:403](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L403)
 
 ___
 
 ### getRemoteImages
 
-▸ **getRemoteImages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/index.api.RemoteImageResult.md), `any`\>\>
+▸ **getRemoteImages**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/generated_client.RemoteImageResult.md), `any`\>\>
 
 **`summary`** Gets available remote images for an item.
 
@@ -163,8 +163,8 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/index.api.RemoteImageResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`RemoteImageResult`](../interfaces/generated_client.RemoteImageResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/remote-image-api.ts#L415)
+[generated-client/api/remote-image-api.ts:415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L415)

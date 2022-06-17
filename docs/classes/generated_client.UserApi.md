@@ -65,7 +65,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -99,13 +99,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
 
 ## Methods
 
 ### authenticateUser
 
-▸ **authenticateUser**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+▸ **authenticateUser**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 **`summary`** Authenticates a user.
 
@@ -122,17 +122,17 @@ BaseAPI.configuration
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1319)
+[generated-client/api/user-api.ts:1319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1319)
 
 ___
 
 ### authenticateUserByName
 
-▸ **authenticateUserByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+▸ **authenticateUserByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 **`summary`** Authenticates a user by name.
 
@@ -149,17 +149,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1331)
+[generated-client/api/user-api.ts:1331](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1331)
 
 ___
 
 ### authenticateWithQuickConnect
 
-▸ **authenticateWithQuickConnect**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+▸ **authenticateWithQuickConnect**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 **`summary`** Authenticates a user with quick connect.
 
@@ -176,17 +176,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/index.api.AuthenticationResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`AuthenticationResult`](../interfaces/generated_client.AuthenticationResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1343)
+[generated-client/api/user-api.ts:1343](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1343)
 
 ___
 
 ### createUserByName
 
-▸ **createUserByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+▸ **createUserByName**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 **`summary`** Creates a user.
 
@@ -203,11 +203,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1355)
+[generated-client/api/user-api.ts:1355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1355)
 
 ___
 
@@ -234,13 +234,13 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1367)
+[generated-client/api/user-api.ts:1367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1367)
 
 ___
 
 ### forgotPassword
 
-▸ **forgotPassword**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ForgotPasswordResult`](../interfaces/index.api.ForgotPasswordResult.md), `any`\>\>
+▸ **forgotPassword**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`ForgotPasswordResult`](../interfaces/generated_client.ForgotPasswordResult.md), `any`\>\>
 
 **`summary`** Initiates the forgot password process for a local user.
 
@@ -257,17 +257,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`ForgotPasswordResult`](../interfaces/index.api.ForgotPasswordResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`ForgotPasswordResult`](../interfaces/generated_client.ForgotPasswordResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1379](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1379)
+[generated-client/api/user-api.ts:1379](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1379)
 
 ___
 
 ### forgotPasswordPin
 
-▸ **forgotPasswordPin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PinRedeemResult`](../interfaces/index.api.PinRedeemResult.md), `any`\>\>
+▸ **forgotPasswordPin**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`PinRedeemResult`](../interfaces/generated_client.PinRedeemResult.md), `any`\>\>
 
 **`summary`** Redeems a forgot password pin.
 
@@ -284,17 +284,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`PinRedeemResult`](../interfaces/index.api.PinRedeemResult.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`PinRedeemResult`](../interfaces/generated_client.PinRedeemResult.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1391)
+[generated-client/api/user-api.ts:1391](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1391)
 
 ___
 
 ### getCurrentUser
 
-▸ **getCurrentUser**(`options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+▸ **getCurrentUser**(`options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 **`summary`** Gets the user based on auth token.
 
@@ -310,17 +310,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1402)
+[generated-client/api/user-api.ts:1402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1402)
 
 ___
 
 ### getPublicUsers
 
-▸ **getPublicUsers**(`options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md)[], `any`\>\>
+▸ **getPublicUsers**(`options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md)[], `any`\>\>
 
 **`summary`** Gets a list of publicly visible users for display on a login screen.
 
@@ -336,17 +336,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1413](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1413)
+[generated-client/api/user-api.ts:1413](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1413)
 
 ___
 
 ### getUserById
 
-▸ **getUserById**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+▸ **getUserById**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 **`summary`** Gets a user by Id.
 
@@ -363,17 +363,17 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md), `any`\>\>
+`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md), `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1425](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1425)
+[generated-client/api/user-api.ts:1425](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1425)
 
 ___
 
 ### getUsers
 
-▸ **getUsers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md)[], `any`\>\>
+▸ **getUsers**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md)[], `any`\>\>
 
 **`summary`** Gets a list of users.
 
@@ -390,11 +390,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/index.api.UserDto.md)[], `any`\>\>
+`Promise`<`AxiosResponse`<[`UserDto`](../interfaces/generated_client.UserDto.md)[], `any`\>\>
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1437)
+[generated-client/api/user-api.ts:1437](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1437)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1449)
+[generated-client/api/user-api.ts:1449](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1449)
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1461)
+[generated-client/api/user-api.ts:1461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1461)
 
 ___
 
@@ -475,7 +475,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1473)
+[generated-client/api/user-api.ts:1473](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1473)
 
 ___
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1485)
+[generated-client/api/user-api.ts:1485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1485)
 
 ___
 
@@ -529,4 +529,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/user-api.ts#L1497)
+[generated-client/api/user-api.ts:1497](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L1497)

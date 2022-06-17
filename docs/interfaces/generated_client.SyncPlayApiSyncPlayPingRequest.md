@@ -20,7 +20,7 @@ Request parameters for syncPlayPing operation in SyncPlayApi.
 
 ### pingRequestDto
 
-• `Readonly` **pingRequestDto**: [`PingRequestDto`](index.api.PingRequestDto.md)
+• `Readonly` **pingRequestDto**: [`PingRequestDto`](generated_client.PingRequestDto.md)
 
 The new ping.
 
@@ -28,4 +28,4 @@ The new ping.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1387](https://github.com/thornbill/jellyfin-sdk-typescript/blob/eb13db7/src/generated-client/api/sync-play-api.ts#L1387)
+[generated-client/api/sync-play-api.ts:1387](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1387)
