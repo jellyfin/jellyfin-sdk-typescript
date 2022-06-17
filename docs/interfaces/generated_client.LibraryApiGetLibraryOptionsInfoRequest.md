@@ -29,7 +29,7 @@ Whether this is a new library.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1896](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L1896)
+[generated-client/api/library-api.ts:1896](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1896)
 
 ___
 
@@ -43,4 +43,4 @@ Library content type.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L1889)
+[generated-client/api/library-api.ts:1889](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1889)

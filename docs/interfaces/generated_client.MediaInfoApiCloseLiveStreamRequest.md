@@ -28,4 +28,4 @@ The livestream id.
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L557)
+[generated-client/api/media-info-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L555)

@@ -42,7 +42,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:395](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L395)
+[generated-client/api/years-api.ts:397](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L397)
 
 ___
 
@@ -56,7 +56,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L416)
+[generated-client/api/years-api.ts:418](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L418)
 
 ___
 
@@ -70,13 +70,13 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:381](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L381)
+[generated-client/api/years-api.ts:383](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L383)
 
 ___
 
 ### excludeItemTypes
 
-• `Optional` `Readonly` **excludeItemTypes**: `string`[]
+• `Optional` `Readonly` **excludeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be excluded based on item type. This allows multiple, comma delimited.
 
@@ -84,7 +84,7 @@ Optional. If specified, results will be excluded based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/years-api.ts:353](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L353)
+[generated-client/api/years-api.ts:355](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L355)
 
 ___
 
@@ -98,7 +98,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L346)
+[generated-client/api/years-api.ts:348](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L348)
 
 ___
 
@@ -112,13 +112,13 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:388](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L388)
+[generated-client/api/years-api.ts:390](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L390)
 
 ___
 
 ### includeItemTypes
 
-• `Optional` `Readonly` **includeItemTypes**: `string`[]
+• `Optional` `Readonly` **includeItemTypes**: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[]
 
 Optional. If specified, results will be included based on item type. This allows multiple, comma delimited.
 
@@ -126,7 +126,7 @@ Optional. If specified, results will be included based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/years-api.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L360)
+[generated-client/api/years-api.ts:362](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L362)
 
 ___
 
@@ -140,7 +140,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:325](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L325)
+[generated-client/api/years-api.ts:327](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L327)
 
 ___
 
@@ -154,7 +154,7 @@ Optional. Filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:367](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L367)
+[generated-client/api/years-api.ts:369](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L369)
 
 ___
 
@@ -168,7 +168,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/years-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L339)
+[generated-client/api/years-api.ts:341](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L341)
 
 ___
 
@@ -182,7 +182,7 @@ Search recursively.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:409](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L409)
+[generated-client/api/years-api.ts:411](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L411)
 
 ___
 
@@ -196,7 +196,7 @@ Optional. Specify one or more sort orders, comma delimited. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/years-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L374)
+[generated-client/api/years-api.ts:376](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L376)
 
 ___
 
@@ -210,7 +210,7 @@ Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L332)
+[generated-client/api/years-api.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L334)
 
 ___
 
@@ -224,7 +224,7 @@ Skips over a given number of items within the results. Use for paging.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L318)
+[generated-client/api/years-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L320)
 
 ___
 
@@ -238,4 +238,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L402)
+[generated-client/api/years-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L404)

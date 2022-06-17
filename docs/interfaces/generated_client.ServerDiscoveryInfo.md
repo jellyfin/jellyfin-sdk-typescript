@@ -4,6 +4,8 @@
 
 [generated-client](../modules/generated_client.md).ServerDiscoveryInfo
 
+The server discovery info model.
+
 **`export`**
 
 **`interface`** ServerDiscoveryInfo
@@ -21,15 +23,15 @@
 
 ### Address
 
-• `Optional` **Address**: ``null`` \| `string`
+• `Optional` **Address**: `string`
 
-Gets or sets the address.
+Gets the address.
 
 **`memberof`** ServerDiscoveryInfo
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/server-discovery-info.ts#L28)
+[generated-client/models/server-discovery-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/server-discovery-info.ts#L28)
 
 ___
 
@@ -37,38 +39,38 @@ ___
 
 • `Optional` **EndpointAddress**: ``null`` \| `string`
 
-Gets or sets the endpoint address.
+Gets the endpoint address.
 
 **`memberof`** ServerDiscoveryInfo
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/server-discovery-info.ts#L46)
+[generated-client/models/server-discovery-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/server-discovery-info.ts#L46)
 
 ___
 
 ### Id
 
-• `Optional` **Id**: ``null`` \| `string`
+• `Optional` **Id**: `string`
 
-Gets or sets the server identifier.
+Gets the server identifier.
 
 **`memberof`** ServerDiscoveryInfo
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/server-discovery-info.ts#L34)
+[generated-client/models/server-discovery-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/server-discovery-info.ts#L34)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
-Gets or sets the name.
+Gets the name.
 
 **`memberof`** ServerDiscoveryInfo
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/server-discovery-info.ts#L40)
+[generated-client/models/server-discovery-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/server-discovery-info.ts#L40)

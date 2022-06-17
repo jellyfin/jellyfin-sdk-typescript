@@ -37,7 +37,7 @@ Gets or sets the automatic refresh levels.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L67)
+[generated-client/models/channel-features.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L67)
 
 ___
 
@@ -51,7 +51,7 @@ Gets or sets a value indicating whether this instance can filter.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L91)
+[generated-client/models/channel-features.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L91)
 
 ___
 
@@ -65,13 +65,13 @@ Gets or sets a value indicating whether this instance can search.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L43)
+[generated-client/models/channel-features.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L43)
 
 ___
 
 ### ContentTypes
 
-• `Optional` **ContentTypes**: ``null`` \| [`ChannelMediaContentType`](../enums/generated_client.ChannelMediaContentType.md)[]
+• `Optional` **ContentTypes**: [`ChannelMediaContentType`](../enums/generated_client.ChannelMediaContentType.md)[]
 
 Gets or sets the content types.
 
@@ -79,13 +79,13 @@ Gets or sets the content types.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L55)
+[generated-client/models/channel-features.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L55)
 
 ___
 
 ### DefaultSortFields
 
-• `Optional` **DefaultSortFields**: ``null`` \| [`ChannelItemSortField`](../enums/generated_client.ChannelItemSortField.md)[]
+• `Optional` **DefaultSortFields**: [`ChannelItemSortField`](../enums/generated_client.ChannelItemSortField.md)[]
 
 Gets or sets the default sort orders.
 
@@ -93,13 +93,13 @@ Gets or sets the default sort orders.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L73)
+[generated-client/models/channel-features.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L73)
 
 ___
 
 ### Id
 
-• `Optional` **Id**: ``null`` \| `string`
+• `Optional` **Id**: `string`
 
 Gets or sets the identifier.
 
@@ -107,7 +107,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L37)
+[generated-client/models/channel-features.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L37)
 
 ___
 
@@ -115,19 +115,19 @@ ___
 
 • `Optional` **MaxPageSize**: ``null`` \| `number`
 
-Represents the maximum number of records the channel allows retrieving at a time.
+Gets or sets the maximum number of records the channel allows retrieving at a time.
 
 **`memberof`** ChannelFeatures
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L61)
+[generated-client/models/channel-features.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L61)
 
 ___
 
 ### MediaTypes
 
-• `Optional` **MediaTypes**: ``null`` \| [`ChannelMediaType`](../enums/generated_client.ChannelMediaType.md)[]
+• `Optional` **MediaTypes**: [`ChannelMediaType`](../enums/generated_client.ChannelMediaType.md)[]
 
 Gets or sets the media types.
 
@@ -135,13 +135,13 @@ Gets or sets the media types.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L49)
+[generated-client/models/channel-features.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L49)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
 Gets or sets the name.
 
@@ -149,7 +149,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L31)
+[generated-client/models/channel-features.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L31)
 
 ___
 
@@ -163,7 +163,7 @@ Gets or sets a value indicating whether [supports content downloading].
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L97)
+[generated-client/models/channel-features.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L97)
 
 ___
 
@@ -177,7 +177,7 @@ Gets or sets a value indicating whether [supports latest media].
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L85)
+[generated-client/models/channel-features.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L85)
 
 ___
 
@@ -185,10 +185,10 @@ ___
 
 • `Optional` **SupportsSortOrderToggle**: `boolean`
 
-Indicates if a sort ascending/descending toggle is supported or not.
+Gets or sets a value indicating whether a sort ascending/descending toggle is supported.
 
 **`memberof`** ChannelFeatures
 
 #### Defined in
 
-[generated-client/models/channel-features.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/channel-features.ts#L79)
+[generated-client/models/channel-features.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-features.ts#L79)

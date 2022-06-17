@@ -23,7 +23,7 @@ Represents the external id information for serialization to the client.
 
 ### Key
 
-• `Optional` **Key**: ``null`` \| `string`
+• `Optional` **Key**: `string`
 
 Gets or sets the unique key for this id. This key should be unique across all providers.
 
@@ -31,13 +31,13 @@ Gets or sets the unique key for this id. This key should be unique across all pr
 
 #### Defined in
 
-[generated-client/models/external-id-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/external-id-info.ts#L35)
+[generated-client/models/external-id-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-id-info.ts#L35)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
 Gets or sets the display name of the external id provider (IE: IMDB, MusicBrainz, etc).
 
@@ -45,7 +45,7 @@ Gets or sets the display name of the external id provider (IE: IMDB, MusicBrainz
 
 #### Defined in
 
-[generated-client/models/external-id-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/external-id-info.ts#L29)
+[generated-client/models/external-id-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-id-info.ts#L29)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/external-id-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/external-id-info.ts#L41)
+[generated-client/models/external-id-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-id-info.ts#L41)
 
 ___
 
@@ -71,4 +71,4 @@ Gets or sets the URL format string.
 
 #### Defined in
 
-[generated-client/models/external-id-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/external-id-info.ts#L47)
+[generated-client/models/external-id-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-id-info.ts#L47)

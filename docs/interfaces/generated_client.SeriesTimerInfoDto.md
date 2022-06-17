@@ -56,13 +56,13 @@ Class SeriesTimerInfoDto.
 
 • `Optional` **ChannelId**: `string`
 
-ChannelId of the recording.
+Gets or sets the channel id of the recording.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L55)
+[generated-client/models/series-timer-info-dto.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L55)
 
 ___
 
@@ -70,13 +70,13 @@ ___
 
 • `Optional` **ChannelName**: ``null`` \| `string`
 
-ChannelName of the recording.
+Gets or sets the channel name of the recording.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L67)
+[generated-client/models/series-timer-info-dto.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L67)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L73)
+[generated-client/models/series-timer-info-dto.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L73)
 
 ___
 
@@ -100,7 +100,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L205)
+[generated-client/models/series-timer-info-dto.ts:205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L205)
 
 ___
 
@@ -114,7 +114,7 @@ Gets or sets the days.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L199)
+[generated-client/models/series-timer-info-dto.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L199)
 
 ___
 
@@ -122,13 +122,13 @@ ___
 
 • `Optional` **EndDate**: `string`
 
-The end date of the recording, in UTC.
+Gets or sets the end date of the recording, in UTC.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L109)
+[generated-client/models/series-timer-info-dto.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L109)
 
 ___
 
@@ -142,7 +142,7 @@ Gets or sets the external channel identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L61)
+[generated-client/models/series-timer-info-dto.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L61)
 
 ___
 
@@ -156,7 +156,7 @@ Gets or sets the external identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L49)
+[generated-client/models/series-timer-info-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L49)
 
 ___
 
@@ -170,7 +170,7 @@ Gets or sets the external program identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L85)
+[generated-client/models/series-timer-info-dto.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L85)
 
 ___
 
@@ -178,13 +178,13 @@ ___
 
 • `Optional` **Id**: ``null`` \| `string`
 
-Id of the recording.
+Gets or sets the Id of the recording.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L31)
+[generated-client/models/series-timer-info-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L31)
 
 ___
 
@@ -198,7 +198,7 @@ Gets or sets the image tags.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L211)
+[generated-client/models/series-timer-info-dto.ts:211](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L211)
 
 ___
 
@@ -212,7 +212,7 @@ Gets or sets a value indicating whether this instance is post padding required.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L157)
+[generated-client/models/series-timer-info-dto.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L157)
 
 ___
 
@@ -226,7 +226,7 @@ Gets or sets a value indicating whether this instance is pre padding required.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L139)
+[generated-client/models/series-timer-info-dto.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L139)
 
 ___
 
@@ -238,7 +238,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L163)
+[generated-client/models/series-timer-info-dto.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L163)
 
 ___
 
@@ -250,7 +250,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L187)
+[generated-client/models/series-timer-info-dto.ts:187](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L187)
 
 ___
 
@@ -258,13 +258,13 @@ ___
 
 • `Optional` **Name**: ``null`` \| `string`
 
-Name of the recording.
+Gets or sets the name of the recording.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L91)
+[generated-client/models/series-timer-info-dto.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L91)
 
 ___
 
@@ -272,13 +272,13 @@ ___
 
 • `Optional` **Overview**: ``null`` \| `string`
 
-Description of the recording.
+Gets or sets the description of the recording.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L97)
+[generated-client/models/series-timer-info-dto.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L97)
 
 ___
 
@@ -292,7 +292,7 @@ Gets or sets the parent backdrop image tags.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L151)
+[generated-client/models/series-timer-info-dto.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L151)
 
 ___
 
@@ -300,13 +300,13 @@ ___
 
 • `Optional` **ParentBackdropItemId**: ``null`` \| `string`
 
-If the item does not have any backdrops, this will hold the Id of the Parent that has one.
+Gets or sets the Id of the Parent that has a backdrop if the item does not have one.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L145)
+[generated-client/models/series-timer-info-dto.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L145)
 
 ___
 
@@ -320,7 +320,7 @@ Gets or sets the parent primary image item identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L229)
+[generated-client/models/series-timer-info-dto.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L229)
 
 ___
 
@@ -334,7 +334,7 @@ Gets or sets the parent primary image tag.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L235)
+[generated-client/models/series-timer-info-dto.ts:235](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L235)
 
 ___
 
@@ -348,7 +348,7 @@ Gets or sets the parent thumb image tag.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L223)
+[generated-client/models/series-timer-info-dto.ts:223](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L223)
 
 ___
 
@@ -362,7 +362,7 @@ Gets or sets the parent thumb item id.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L217)
+[generated-client/models/series-timer-info-dto.ts:217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L217)
 
 ___
 
@@ -376,7 +376,7 @@ Gets or sets the post padding seconds.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L133)
+[generated-client/models/series-timer-info-dto.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L133)
 
 ___
 
@@ -390,7 +390,7 @@ Gets or sets the pre padding seconds.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L127)
+[generated-client/models/series-timer-info-dto.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L127)
 
 ___
 
@@ -404,7 +404,7 @@ Gets or sets the priority.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L121)
+[generated-client/models/series-timer-info-dto.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L121)
 
 ___
 
@@ -418,7 +418,7 @@ Gets or sets the program identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L79)
+[generated-client/models/series-timer-info-dto.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L79)
 
 ___
 
@@ -432,7 +432,7 @@ Gets or sets a value indicating whether [record any channel].
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L181)
+[generated-client/models/series-timer-info-dto.ts:181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L181)
 
 ___
 
@@ -446,7 +446,7 @@ Gets or sets a value indicating whether [record any time].
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L169)
+[generated-client/models/series-timer-info-dto.ts:169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L169)
 
 ___
 
@@ -460,7 +460,7 @@ Gets or sets a value indicating whether [record new only].
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L193)
+[generated-client/models/series-timer-info-dto.ts:193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L193)
 
 ___
 
@@ -474,7 +474,7 @@ Gets or sets the server identifier.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L43)
+[generated-client/models/series-timer-info-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L43)
 
 ___
 
@@ -488,7 +488,7 @@ Gets or sets the name of the service.
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L115)
+[generated-client/models/series-timer-info-dto.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L115)
 
 ___
 
@@ -500,7 +500,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L175)
+[generated-client/models/series-timer-info-dto.ts:175](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L175)
 
 ___
 
@@ -508,13 +508,13 @@ ___
 
 • `Optional` **StartDate**: `string`
 
-The start date of the recording, in UTC.
+Gets or sets the start date of the recording, in UTC.
 
 **`memberof`** SeriesTimerInfoDto
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L103)
+[generated-client/models/series-timer-info-dto.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L103)
 
 ___
 
@@ -526,4 +526,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-timer-info-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/series-timer-info-dto.ts#L37)
+[generated-client/models/series-timer-info-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-timer-info-dto.ts#L37)

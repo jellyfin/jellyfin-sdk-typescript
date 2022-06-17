@@ -10,27 +10,27 @@ Enum IsoType.
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [BluRay](generated_client.IsoType.md#bluray)
 - [Dvd](generated_client.IsoType.md#dvd)
 
-## Enumeration Members
+## Enumeration members
 
 ### BluRay
 
-• **BluRay**
+• **BluRay** = `"BluRay"`
 
 #### Defined in
 
-[generated-client/models/iso-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/iso-type.ts#L25)
+[generated-client/models/iso-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/iso-type.ts#L25)
 
 ___
 
 ### Dvd
 
-• **Dvd**
+• **Dvd** = `"Dvd"`
 
 #### Defined in
 
-[generated-client/models/iso-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/iso-type.ts#L24)
+[generated-client/models/iso-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/iso-type.ts#L24)

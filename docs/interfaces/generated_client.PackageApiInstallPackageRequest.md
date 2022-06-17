@@ -31,7 +31,7 @@ GUID of the associated assembly.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L477)
+[generated-client/api/package-api.ts:477](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L477)
 
 ___
 
@@ -45,7 +45,7 @@ Package name.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:470](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L470)
+[generated-client/api/package-api.ts:470](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L470)
 
 ___
 
@@ -59,7 +59,7 @@ Optional. Specify the repository to install from.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L491)
+[generated-client/api/package-api.ts:491](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L491)
 
 ___
 
@@ -73,4 +73,4 @@ Optional version. Defaults to latest version.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L484)
+[generated-client/api/package-api.ts:484](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L484)

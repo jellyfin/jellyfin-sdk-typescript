@@ -23,7 +23,7 @@ Library options result dto.
 
 ### MetadataReaders
 
-• `Optional` **MetadataReaders**: ``null`` \| [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
+• `Optional` **MetadataReaders**: [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
 
 Gets or sets the metadata readers.
 
@@ -31,13 +31,13 @@ Gets or sets the metadata readers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-options-result-dto.ts#L36)
+[generated-client/models/library-options-result-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-options-result-dto.ts#L36)
 
 ___
 
 ### MetadataSavers
 
-• `Optional` **MetadataSavers**: ``null`` \| [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
+• `Optional` **MetadataSavers**: [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
 
 Gets or sets the metadata savers.
 
@@ -45,13 +45,13 @@ Gets or sets the metadata savers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-options-result-dto.ts#L30)
+[generated-client/models/library-options-result-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-options-result-dto.ts#L30)
 
 ___
 
 ### SubtitleFetchers
 
-• `Optional` **SubtitleFetchers**: ``null`` \| [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
+• `Optional` **SubtitleFetchers**: [`LibraryOptionInfoDto`](generated_client.LibraryOptionInfoDto.md)[]
 
 Gets or sets the subtitle fetchers.
 
@@ -59,13 +59,13 @@ Gets or sets the subtitle fetchers.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-options-result-dto.ts#L42)
+[generated-client/models/library-options-result-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-options-result-dto.ts#L42)
 
 ___
 
 ### TypeOptions
 
-• `Optional` **TypeOptions**: ``null`` \| [`LibraryTypeOptionsDto`](generated_client.LibraryTypeOptionsDto.md)[]
+• `Optional` **TypeOptions**: [`LibraryTypeOptionsDto`](generated_client.LibraryTypeOptionsDto.md)[]
 
 Gets or sets the type options.
 
@@ -73,4 +73,4 @@ Gets or sets the type options.
 
 #### Defined in
 
-[generated-client/models/library-options-result-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/library-options-result-dto.ts#L48)
+[generated-client/models/library-options-result-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-options-result-dto.ts#L48)

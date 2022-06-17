@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,7 +89,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L478)
+[generated-client/api/dlna-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L478)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L490)
+[generated-client/api/dlna-api.ts:490](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L490)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L501)
+[generated-client/api/dlna-api.ts:501](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L501)
 
 ___
 
@@ -196,7 +196,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L513)
+[generated-client/api/dlna-api.ts:513](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L513)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L524)
+[generated-client/api/dlna-api.ts:524](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L524)
 
 ___
 
@@ -249,4 +249,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L536)
+[generated-client/api/dlna-api.ts:536](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L536)

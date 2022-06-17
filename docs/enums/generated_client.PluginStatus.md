@@ -10,7 +10,7 @@ Plugin load status.
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Active](generated_client.PluginStatus.md#active)
 - [Deleted](generated_client.PluginStatus.md#deleted)
@@ -20,72 +20,72 @@ Plugin load status.
 - [Restart](generated_client.PluginStatus.md#restart)
 - [Superceded](generated_client.PluginStatus.md#superceded)
 
-## Enumeration Members
+## Enumeration members
 
 ### Active
 
-• **Active**
+• **Active** = `"Active"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L24)
+[generated-client/models/plugin-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L24)
 
 ___
 
 ### Deleted
 
-• **Deleted**
+• **Deleted** = `"Deleted"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L26)
+[generated-client/models/plugin-status.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L26)
 
 ___
 
 ### Disabled
 
-• **Disabled**
+• **Disabled** = `"Disabled"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L30)
+[generated-client/models/plugin-status.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L30)
 
 ___
 
 ### Malfunctioned
 
-• **Malfunctioned**
+• **Malfunctioned** = `"Malfunctioned"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L28)
+[generated-client/models/plugin-status.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L28)
 
 ___
 
 ### NotSupported
 
-• **NotSupported**
+• **NotSupported** = `"NotSupported"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L29)
+[generated-client/models/plugin-status.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L29)
 
 ___
 
 ### Restart
 
-• **Restart**
+• **Restart** = `"Restart"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L25)
+[generated-client/models/plugin-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L25)
 
 ___
 
 ### Superceded
 
-• **Superceded**
+• **Superceded** = `"Superceded"`
 
 #### Defined in
 
-[generated-client/models/plugin-status.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-status.ts#L27)
+[generated-client/models/plugin-status.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-status.ts#L27)

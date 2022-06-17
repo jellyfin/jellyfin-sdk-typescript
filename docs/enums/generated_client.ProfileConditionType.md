@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Equals](generated_client.ProfileConditionType.md#equals)
 - [EqualsAny](generated_client.ProfileConditionType.md#equalsany)
@@ -16,52 +16,52 @@
 - [LessThanEqual](generated_client.ProfileConditionType.md#lessthanequal)
 - [NotEquals](generated_client.ProfileConditionType.md#notequals)
 
-## Enumeration Members
+## Enumeration members
 
 ### Equals
 
-• **Equals**
+• **Equals** = `"Equals"`
 
 #### Defined in
 
-[generated-client/models/profile-condition-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/profile-condition-type.ts#L24)
+[generated-client/models/profile-condition-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/profile-condition-type.ts#L24)
 
 ___
 
 ### EqualsAny
 
-• **EqualsAny**
+• **EqualsAny** = `"EqualsAny"`
 
 #### Defined in
 
-[generated-client/models/profile-condition-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/profile-condition-type.ts#L28)
+[generated-client/models/profile-condition-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/profile-condition-type.ts#L28)
 
 ___
 
 ### GreaterThanEqual
 
-• **GreaterThanEqual**
+• **GreaterThanEqual** = `"GreaterThanEqual"`
 
 #### Defined in
 
-[generated-client/models/profile-condition-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/profile-condition-type.ts#L27)
+[generated-client/models/profile-condition-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/profile-condition-type.ts#L27)
 
 ___
 
 ### LessThanEqual
 
-• **LessThanEqual**
+• **LessThanEqual** = `"LessThanEqual"`
 
 #### Defined in
 
-[generated-client/models/profile-condition-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/profile-condition-type.ts#L26)
+[generated-client/models/profile-condition-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/profile-condition-type.ts#L26)
 
 ___
 
 ### NotEquals
 
-• **NotEquals**
+• **NotEquals** = `"NotEquals"`
 
 #### Defined in
 
-[generated-client/models/profile-condition-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/profile-condition-type.ts#L25)
+[generated-client/models/profile-condition-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/profile-condition-type.ts#L25)

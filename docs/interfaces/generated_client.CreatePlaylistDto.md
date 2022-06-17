@@ -23,7 +23,7 @@ Create new playlist dto.
 
 ### Ids
 
-• `Optional` **Ids**: ``null`` \| `string`[]
+• `Optional` **Ids**: `string`[]
 
 Gets or sets item ids to add to the playlist.
 
@@ -31,7 +31,7 @@ Gets or sets item ids to add to the playlist.
 
 #### Defined in
 
-[generated-client/models/create-playlist-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/create-playlist-dto.ts#L34)
+[generated-client/models/create-playlist-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/create-playlist-dto.ts#L34)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the media type.
 
 #### Defined in
 
-[generated-client/models/create-playlist-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/create-playlist-dto.ts#L46)
+[generated-client/models/create-playlist-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/create-playlist-dto.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the name of the new playlist.
 
 #### Defined in
 
-[generated-client/models/create-playlist-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/create-playlist-dto.ts#L28)
+[generated-client/models/create-playlist-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/create-playlist-dto.ts#L28)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets the user id.
 
 #### Defined in
 
-[generated-client/models/create-playlist-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/create-playlist-dto.ts#L40)
+[generated-client/models/create-playlist-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/create-playlist-dto.ts#L40)

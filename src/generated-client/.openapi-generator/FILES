@@ -1,5 +1,6 @@
 .gitignore
 .npmignore
+.openapi-generator-ignore
 api.ts
 api/activity-log-api.ts
 api/api-key-api.ts
@@ -7,6 +8,7 @@ api/artists-api.ts
 api/audio-api.ts
 api/branding-api.ts
 api/channels-api.ts
+api/client-log-api.ts
 api/collection-api.ts
 api/configuration-api.ts
 api/dashboard-api.ts
@@ -51,6 +53,7 @@ api/suggestions-api.ts
 api/sync-play-api.ts
 api/system-api.ts
 api/time-sync-api.ts
+api/tmdb-api.ts
 api/trailers-api.ts
 api/tv-shows-api.ts
 api/universal-audio-api.ts
@@ -58,7 +61,6 @@ api/user-api.ts
 api/user-library-api.ts
 api/user-views-api.ts
 api/video-attachments-api.ts
-api/video-hls-api.ts
 api/videos-api.ts
 api/years-api.ts
 base.ts
@@ -84,6 +86,7 @@ models/authentication-result.ts
 models/base-item-dto-image-blur-hashes.ts
 models/base-item-dto-query-result.ts
 models/base-item-dto.ts
+models/base-item-kind.ts
 models/base-item-person-image-blur-hashes.ts
 models/base-item-person.ts
 models/base-item.ts
@@ -102,12 +105,13 @@ models/channel-type.ts
 models/chapter-info.ts
 models/client-capabilities-dto.ts
 models/client-capabilities.ts
+models/client-log-document-response-dto.ts
 models/codec-profile.ts
 models/codec-type.ts
 models/collection-creation-result.ts
 models/collection-type-options.ts
+models/config-image-types.ts
 models/configuration-page-info.ts
-models/configuration-page-type.ts
 models/container-profile.ts
 models/control-response.ts
 models/country-info.ts
@@ -120,15 +124,19 @@ models/default-directory-browser-info-dto.ts
 models/device-identification.ts
 models/device-info-query-result.ts
 models/device-info.ts
+models/device-options-dto.ts
 models/device-options.ts
 models/device-profile-info.ts
 models/device-profile-type.ts
 models/device-profile.ts
 models/direct-play-profile.ts
 models/display-preferences-dto.ts
+models/dlna-options.ts
 models/dlna-profile-type.ts
 models/dynamic-day-of-week.ts
+models/embedded-subtitle-options.ts
 models/encoding-context.ts
+models/encoding-options.ts
 models/end-point-info.ts
 models/external-id-info.ts
 models/external-id-media-type.ts
@@ -151,6 +159,7 @@ models/group-shuffle-mode.ts
 models/group-state-type.ts
 models/group-update-type.ts
 models/guide-info.ts
+models/hardware-encoding-type.ts
 models/header-match-type.ts
 models/http-header-info.ts
 models/ignore-wait-request-dto.ts
@@ -179,6 +188,7 @@ models/library-update-info.ts
 models/listings-provider-info.ts
 models/live-stream-response.ts
 models/live-tv-info.ts
+models/live-tv-options.ts
 models/live-tv-service-info.ts
 models/live-tv-service-status.ts
 models/localization-option.ts
@@ -198,6 +208,7 @@ models/media-update-info-dto.ts
 models/media-update-info-path-dto.ts
 models/media-url.ts
 models/message-command.ts
+models/metadata-configuration.ts
 models/metadata-editor-info.ts
 models/metadata-field.ts
 models/metadata-options.ts
@@ -210,10 +221,13 @@ models/music-video-info.ts
 models/name-guid-pair.ts
 models/name-id-pair.ts
 models/name-value-pair.ts
+models/network-configuration.ts
 models/new-group-request-dto.ts
 models/next-item-request-dto.ts
 models/notification-dto.ts
 models/notification-level.ts
+models/notification-option.ts
+models/notification-options.ts
 models/notification-result-dto.ts
 models/notification-type-info.ts
 models/notifications-summary-dto.ts
@@ -242,7 +256,6 @@ models/playlist-creation-result.ts
 models/playstate-command.ts
 models/playstate-request.ts
 models/plugin-info.ts
-models/plugin-security-info.ts
 models/plugin-status.ts
 models/previous-item-request-dto.ts
 models/problem-details.ts
@@ -257,7 +270,6 @@ models/queue-item.ts
 models/queue-request-dto.ts
 models/quick-connect-dto.ts
 models/quick-connect-result.ts
-models/quick-connect-state.ts
 models/rating-type.ts
 models/ready-request-dto.ts
 models/recommendation-dto.ts
@@ -277,6 +289,7 @@ models/search-hint.ts
 models/seek-request-dto.ts
 models/send-command-type.ts
 models/send-command.ts
+models/send-to-user-type.ts
 models/series-info-remote-search-query.ts
 models/series-info.ts
 models/series-status.ts
@@ -298,6 +311,7 @@ models/startup-configuration-dto.ts
 models/startup-remote-access-dto.ts
 models/startup-user-dto.ts
 models/subtitle-delivery-method.ts
+models/subtitle-options.ts
 models/subtitle-playback-mode.ts
 models/subtitle-profile.ts
 models/sync-play-user-access-type.ts
@@ -313,7 +327,6 @@ models/timer-info-dto-query-result.ts
 models/timer-info-dto.ts
 models/trailer-info-remote-search-query.ts
 models/trailer-info.ts
-models/transcode-reason.ts
 models/transcode-seek-info.ts
 models/transcoding-info.ts
 models/transcoding-profile.ts
@@ -334,9 +347,9 @@ models/user-policy.ts
 models/utc-time-response.ts
 models/validate-path-dto.ts
 models/version-info.ts
-models/version.ts
 models/video-type.ts
 models/video3-dformat.ts
 models/virtual-folder-info.ts
 models/wake-on-lan-info.ts
+models/xbmc-metadata-options.ts
 models/xml-attribute.ts

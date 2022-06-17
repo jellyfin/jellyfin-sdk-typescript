@@ -26,19 +26,19 @@
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/container-profile.ts#L36)
+[generated-client/models/container-profile.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/container-profile.ts#L36)
 
 ___
 
 ### Container
 
-• `Optional` **Container**: ``null`` \| `string`
+• `Optional` **Container**: `string`
 
 **`memberof`** ContainerProfile
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/container-profile.ts#L42)
+[generated-client/models/container-profile.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/container-profile.ts#L42)
 
 ___
 
@@ -50,4 +50,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/container-profile.ts#L30)
+[generated-client/models/container-profile.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/container-profile.ts#L30)

@@ -28,13 +28,15 @@ Defines the MediaBrowser.Model.Updates.VersionInfo class.
 
 ### VersionNumber
 
-• `Optional` **VersionNumber**: [`Version`](generated_client.Version.md)
+• `Optional` **VersionNumber**: `string`
+
+Gets the version as a System.Version.
 
 **`memberof`** VersionInfo
 
 #### Defined in
 
-[generated-client/models/version-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L35)
+[generated-client/models/version-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L34)
 
 ___
 
@@ -48,7 +50,7 @@ Gets or sets the changelog for this version.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L41)
+[generated-client/models/version-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L40)
 
 ___
 
@@ -62,13 +64,13 @@ Gets or sets a checksum for the binary.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L59)
+[generated-client/models/version-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L58)
 
 ___
 
 ### repositoryName
 
-• `Optional` **repositoryName**: ``null`` \| `string`
+• `Optional` **repositoryName**: `string`
 
 Gets or sets the repository name.
 
@@ -76,13 +78,13 @@ Gets or sets the repository name.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L71)
+[generated-client/models/version-info.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L70)
 
 ___
 
 ### repositoryUrl
 
-• `Optional` **repositoryUrl**: ``null`` \| `string`
+• `Optional` **repositoryUrl**: `string`
 
 Gets or sets the repository url.
 
@@ -90,7 +92,7 @@ Gets or sets the repository url.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L77)
+[generated-client/models/version-info.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L76)
 
 ___
 
@@ -104,7 +106,7 @@ Gets or sets the source URL.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L53)
+[generated-client/models/version-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L52)
 
 ___
 
@@ -118,7 +120,7 @@ Gets or sets the ABI that this version was built against.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L47)
+[generated-client/models/version-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L46)
 
 ___
 
@@ -132,13 +134,13 @@ Gets or sets a timestamp of when the binary was built.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L65)
+[generated-client/models/version-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L64)
 
 ___
 
 ### version
 
-• `Optional` **version**: ``null`` \| `string`
+• `Optional` **version**: `string`
 
 Gets or sets the version.
 
@@ -146,4 +148,4 @@ Gets or sets the version.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/version-info.ts#L29)
+[generated-client/models/version-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L28)

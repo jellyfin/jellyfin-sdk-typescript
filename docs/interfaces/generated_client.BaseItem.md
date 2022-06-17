@@ -36,7 +36,7 @@ Class BaseItem.
 
 #### Defined in
 
-[generated-client/models/base-item.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L35)
+[generated-client/models/base-item.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L35)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L41)
+[generated-client/models/base-item.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L77)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L83)
+[generated-client/models/base-item.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L71)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L77)
+[generated-client/models/base-item.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L65)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L53)
+[generated-client/models/base-item.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L41)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L59)
+[generated-client/models/base-item.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L47)
 
 ___
 
@@ -110,7 +110,7 @@ Gets or sets the remote trailers.
 
 #### Defined in
 
-[generated-client/models/base-item.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L47)
+[generated-client/models/base-item.ts:83](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L83)
 
 ___
 
@@ -122,7 +122,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L65)
+[generated-client/models/base-item.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L53)
 
 ___
 
@@ -134,7 +134,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L29)
+[generated-client/models/base-item.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L29)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L89)
+[generated-client/models/base-item.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L89)
 
 ___
 
@@ -158,4 +158,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/base-item.ts#L71)
+[generated-client/models/base-item.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item.ts#L59)

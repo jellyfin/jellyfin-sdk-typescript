@@ -35,13 +35,13 @@ Gets or sets the notification date.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L41)
+[generated-client/models/notification-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L41)
 
 ___
 
 ### Description
 
-• `Optional` **Description**: ``null`` \| `string`
+• `Optional` **Description**: `string`
 
 Gets or sets the notification\'s description. Defaults to an empty string.
 
@@ -49,13 +49,13 @@ Gets or sets the notification\'s description. Defaults to an empty string.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L59)
+[generated-client/models/notification-dto.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L59)
 
 ___
 
 ### Id
 
-• `Optional` **Id**: ``null`` \| `string`
+• `Optional` **Id**: `string`
 
 Gets or sets the notification ID. Defaults to an empty string.
 
@@ -63,7 +63,7 @@ Gets or sets the notification ID. Defaults to an empty string.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L29)
+[generated-client/models/notification-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L29)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets a value indicating whether the notification has been read. Defaults
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L47)
+[generated-client/models/notification-dto.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L47)
 
 ___
 
@@ -89,13 +89,13 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L71)
+[generated-client/models/notification-dto.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L71)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
 Gets or sets the notification\'s name. Defaults to an empty string.
 
@@ -103,13 +103,13 @@ Gets or sets the notification\'s name. Defaults to an empty string.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L53)
+[generated-client/models/notification-dto.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L53)
 
 ___
 
 ### Url
 
-• `Optional` **Url**: ``null`` \| `string`
+• `Optional` **Url**: `string`
 
 Gets or sets the notification\'s URL. Defaults to an empty string.
 
@@ -117,13 +117,13 @@ Gets or sets the notification\'s URL. Defaults to an empty string.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L65)
+[generated-client/models/notification-dto.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L65)
 
 ___
 
 ### UserId
 
-• `Optional` **UserId**: ``null`` \| `string`
+• `Optional` **UserId**: `string`
 
 Gets or sets the notification\'s user ID. Defaults to an empty string.
 
@@ -131,4 +131,4 @@ Gets or sets the notification\'s user ID. Defaults to an empty string.
 
 #### Defined in
 
-[generated-client/models/notification-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-dto.ts#L35)
+[generated-client/models/notification-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-dto.ts#L35)

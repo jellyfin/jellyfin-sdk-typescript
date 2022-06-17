@@ -7,18 +7,19 @@
 ### Enumerations
 
 - [Architecture](../enums/generated_client.Architecture.md)
+- [BaseItemKind](../enums/generated_client.BaseItemKind.md)
 - [ChannelItemSortField](../enums/generated_client.ChannelItemSortField.md)
 - [ChannelMediaContentType](../enums/generated_client.ChannelMediaContentType.md)
 - [ChannelMediaType](../enums/generated_client.ChannelMediaType.md)
 - [ChannelType](../enums/generated_client.ChannelType.md)
 - [CodecType](../enums/generated_client.CodecType.md)
 - [CollectionTypeOptions](../enums/generated_client.CollectionTypeOptions.md)
-- [ConfigurationPageType](../enums/generated_client.ConfigurationPageType.md)
 - [DayOfWeek](../enums/generated_client.DayOfWeek.md)
 - [DayPattern](../enums/generated_client.DayPattern.md)
 - [DeviceProfileType](../enums/generated_client.DeviceProfileType.md)
 - [DlnaProfileType](../enums/generated_client.DlnaProfileType.md)
 - [DynamicDayOfWeek](../enums/generated_client.DynamicDayOfWeek.md)
+- [EmbeddedSubtitleOptions](../enums/generated_client.EmbeddedSubtitleOptions.md)
 - [EncodingContext](../enums/generated_client.EncodingContext.md)
 - [ExternalIdMediaType](../enums/generated_client.ExternalIdMediaType.md)
 - [FFmpegLocation](../enums/generated_client.FFmpegLocation.md)
@@ -30,6 +31,7 @@
 - [GroupShuffleMode](../enums/generated_client.GroupShuffleMode.md)
 - [GroupStateType](../enums/generated_client.GroupStateType.md)
 - [GroupUpdateType](../enums/generated_client.GroupUpdateType.md)
+- [HardwareEncodingType](../enums/generated_client.HardwareEncodingType.md)
 - [HeaderMatchType](../enums/generated_client.HeaderMatchType.md)
 - [ImageFormat](../enums/generated_client.ImageFormat.md)
 - [ImageOrientation](../enums/generated_client.ImageOrientation.md)
@@ -57,13 +59,13 @@
 - [ProfileConditionType](../enums/generated_client.ProfileConditionType.md)
 - [ProfileConditionValue](../enums/generated_client.ProfileConditionValue.md)
 - [ProgramAudio](../enums/generated_client.ProgramAudio.md)
-- [QuickConnectState](../enums/generated_client.QuickConnectState.md)
 - [RatingType](../enums/generated_client.RatingType.md)
 - [RecommendationType](../enums/generated_client.RecommendationType.md)
 - [RecordingStatus](../enums/generated_client.RecordingStatus.md)
 - [RepeatMode](../enums/generated_client.RepeatMode.md)
 - [ScrollDirection](../enums/generated_client.ScrollDirection.md)
 - [SendCommandType](../enums/generated_client.SendCommandType.md)
+- [SendToUserType](../enums/generated_client.SendToUserType.md)
 - [SeriesStatus](../enums/generated_client.SeriesStatus.md)
 - [SessionMessageType](../enums/generated_client.SessionMessageType.md)
 - [SortOrder](../enums/generated_client.SortOrder.md)
@@ -72,8 +74,8 @@
 - [SyncPlayUserAccessType](../enums/generated_client.SyncPlayUserAccessType.md)
 - [TaskCompletionStatus](../enums/generated_client.TaskCompletionStatus.md)
 - [TaskState](../enums/generated_client.TaskState.md)
-- [TranscodeReason](../enums/generated_client.TranscodeReason.md)
 - [TranscodeSeekInfo](../enums/generated_client.TranscodeSeekInfo.md)
+- [TranscodingInfoTranscodeReasonsEnum](../enums/generated_client.TranscodingInfoTranscodeReasonsEnum.md)
 - [TransportStreamTimestamp](../enums/generated_client.TransportStreamTimestamp.md)
 - [UnratedItem](../enums/generated_client.UnratedItem.md)
 - [Video3DFormat](../enums/generated_client.Video3DFormat.md)
@@ -87,6 +89,7 @@
 - [AudioApi](../classes/generated_client.AudioApi.md)
 - [BrandingApi](../classes/generated_client.BrandingApi.md)
 - [ChannelsApi](../classes/generated_client.ChannelsApi.md)
+- [ClientLogApi](../classes/generated_client.ClientLogApi.md)
 - [CollectionApi](../classes/generated_client.CollectionApi.md)
 - [Configuration](../classes/generated_client.Configuration.md)
 - [ConfigurationApi](../classes/generated_client.ConfigurationApi.md)
@@ -132,6 +135,7 @@
 - [SyncPlayApi](../classes/generated_client.SyncPlayApi.md)
 - [SystemApi](../classes/generated_client.SystemApi.md)
 - [TimeSyncApi](../classes/generated_client.TimeSyncApi.md)
+- [TmdbApi](../classes/generated_client.TmdbApi.md)
 - [TrailersApi](../classes/generated_client.TrailersApi.md)
 - [TvShowsApi](../classes/generated_client.TvShowsApi.md)
 - [UniversalAudioApi](../classes/generated_client.UniversalAudioApi.md)
@@ -139,7 +143,6 @@
 - [UserLibraryApi](../classes/generated_client.UserLibraryApi.md)
 - [UserViewsApi](../classes/generated_client.UserViewsApi.md)
 - [VideoAttachmentsApi](../classes/generated_client.VideoAttachmentsApi.md)
-- [VideoHlsApi](../classes/generated_client.VideoHlsApi.md)
 - [VideosApi](../classes/generated_client.VideosApi.md)
 - [YearsApi](../classes/generated_client.YearsApi.md)
 
@@ -190,11 +193,14 @@
 - [ChapterInfo](../interfaces/generated_client.ChapterInfo.md)
 - [ClientCapabilities](../interfaces/generated_client.ClientCapabilities.md)
 - [ClientCapabilitiesDto](../interfaces/generated_client.ClientCapabilitiesDto.md)
+- [ClientLogApiLogFileRequest](../interfaces/generated_client.ClientLogApiLogFileRequest.md)
+- [ClientLogDocumentResponseDto](../interfaces/generated_client.ClientLogDocumentResponseDto.md)
 - [CodecProfile](../interfaces/generated_client.CodecProfile.md)
 - [CollectionApiAddToCollectionRequest](../interfaces/generated_client.CollectionApiAddToCollectionRequest.md)
 - [CollectionApiCreateCollectionRequest](../interfaces/generated_client.CollectionApiCreateCollectionRequest.md)
 - [CollectionApiRemoveFromCollectionRequest](../interfaces/generated_client.CollectionApiRemoveFromCollectionRequest.md)
 - [CollectionCreationResult](../interfaces/generated_client.CollectionCreationResult.md)
+- [ConfigImageTypes](../interfaces/generated_client.ConfigImageTypes.md)
 - [ConfigurationApiGetNamedConfigurationRequest](../interfaces/generated_client.ConfigurationApiGetNamedConfigurationRequest.md)
 - [ConfigurationApiUpdateConfigurationRequest](../interfaces/generated_client.ConfigurationApiUpdateConfigurationRequest.md)
 - [ConfigurationApiUpdateMediaEncoderPathRequest](../interfaces/generated_client.ConfigurationApiUpdateMediaEncoderPathRequest.md)
@@ -214,6 +220,7 @@
 - [DeviceInfo](../interfaces/generated_client.DeviceInfo.md)
 - [DeviceInfoQueryResult](../interfaces/generated_client.DeviceInfoQueryResult.md)
 - [DeviceOptions](../interfaces/generated_client.DeviceOptions.md)
+- [DeviceOptionsDto](../interfaces/generated_client.DeviceOptionsDto.md)
 - [DeviceProfile](../interfaces/generated_client.DeviceProfile.md)
 - [DeviceProfileInfo](../interfaces/generated_client.DeviceProfileInfo.md)
 - [DevicesApiDeleteDeviceRequest](../interfaces/generated_client.DevicesApiDeleteDeviceRequest.md)
@@ -229,6 +236,7 @@
 - [DlnaApiDeleteProfileRequest](../interfaces/generated_client.DlnaApiDeleteProfileRequest.md)
 - [DlnaApiGetProfileRequest](../interfaces/generated_client.DlnaApiGetProfileRequest.md)
 - [DlnaApiUpdateProfileRequest](../interfaces/generated_client.DlnaApiUpdateProfileRequest.md)
+- [DlnaOptions](../interfaces/generated_client.DlnaOptions.md)
 - [DlnaServerApiGetConnectionManager2Request](../interfaces/generated_client.DlnaServerApiGetConnectionManager2Request.md)
 - [DlnaServerApiGetConnectionManager3Request](../interfaces/generated_client.DlnaServerApiGetConnectionManager3Request.md)
 - [DlnaServerApiGetConnectionManagerRequest](../interfaces/generated_client.DlnaServerApiGetConnectionManagerRequest.md)
@@ -247,12 +255,14 @@
 - [DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest](../interfaces/generated_client.DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest.md)
 - [DynamicHlsApiGetHlsAudioSegmentRequest](../interfaces/generated_client.DynamicHlsApiGetHlsAudioSegmentRequest.md)
 - [DynamicHlsApiGetHlsVideoSegmentRequest](../interfaces/generated_client.DynamicHlsApiGetHlsVideoSegmentRequest.md)
+- [DynamicHlsApiGetLiveHlsStreamRequest](../interfaces/generated_client.DynamicHlsApiGetLiveHlsStreamRequest.md)
 - [DynamicHlsApiGetMasterHlsAudioPlaylistRequest](../interfaces/generated_client.DynamicHlsApiGetMasterHlsAudioPlaylistRequest.md)
 - [DynamicHlsApiGetMasterHlsVideoPlaylistRequest](../interfaces/generated_client.DynamicHlsApiGetMasterHlsVideoPlaylistRequest.md)
 - [DynamicHlsApiGetVariantHlsAudioPlaylistRequest](../interfaces/generated_client.DynamicHlsApiGetVariantHlsAudioPlaylistRequest.md)
 - [DynamicHlsApiGetVariantHlsVideoPlaylistRequest](../interfaces/generated_client.DynamicHlsApiGetVariantHlsVideoPlaylistRequest.md)
 - [DynamicHlsApiHeadMasterHlsAudioPlaylistRequest](../interfaces/generated_client.DynamicHlsApiHeadMasterHlsAudioPlaylistRequest.md)
 - [DynamicHlsApiHeadMasterHlsVideoPlaylistRequest](../interfaces/generated_client.DynamicHlsApiHeadMasterHlsVideoPlaylistRequest.md)
+- [EncodingOptions](../interfaces/generated_client.EncodingOptions.md)
 - [EndPointInfo](../interfaces/generated_client.EndPointInfo.md)
 - [EnvironmentApiGetDirectoryContentsRequest](../interfaces/generated_client.EnvironmentApiGetDirectoryContentsRequest.md)
 - [EnvironmentApiGetParentPathRequest](../interfaces/generated_client.EnvironmentApiGetParentPathRequest.md)
@@ -295,6 +305,7 @@
 - [ImageApiGetMusicGenreImageRequest](../interfaces/generated_client.ImageApiGetMusicGenreImageRequest.md)
 - [ImageApiGetPersonImageByIndexRequest](../interfaces/generated_client.ImageApiGetPersonImageByIndexRequest.md)
 - [ImageApiGetPersonImageRequest](../interfaces/generated_client.ImageApiGetPersonImageRequest.md)
+- [ImageApiGetSplashscreenRequest](../interfaces/generated_client.ImageApiGetSplashscreenRequest.md)
 - [ImageApiGetStudioImageByIndexRequest](../interfaces/generated_client.ImageApiGetStudioImageByIndexRequest.md)
 - [ImageApiGetStudioImageRequest](../interfaces/generated_client.ImageApiGetStudioImageRequest.md)
 - [ImageApiGetUserImageByIndexRequest](../interfaces/generated_client.ImageApiGetUserImageByIndexRequest.md)
@@ -318,6 +329,7 @@
 - [ImageApiSetItemImageByIndexRequest](../interfaces/generated_client.ImageApiSetItemImageByIndexRequest.md)
 - [ImageApiSetItemImageRequest](../interfaces/generated_client.ImageApiSetItemImageRequest.md)
 - [ImageApiUpdateItemImageIndexRequest](../interfaces/generated_client.ImageApiUpdateItemImageIndexRequest.md)
+- [ImageApiUploadCustomSplashscreenRequest](../interfaces/generated_client.ImageApiUploadCustomSplashscreenRequest.md)
 - [ImageByNameApiGetGeneralImageRequest](../interfaces/generated_client.ImageByNameApiGetGeneralImageRequest.md)
 - [ImageByNameApiGetMediaInfoImageRequest](../interfaces/generated_client.ImageByNameApiGetMediaInfoImageRequest.md)
 - [ImageByNameApiGetRatingImageRequest](../interfaces/generated_client.ImageByNameApiGetRatingImageRequest.md)
@@ -330,7 +342,6 @@
 - [InstantMixApiGetInstantMixFromArtists2Request](../interfaces/generated_client.InstantMixApiGetInstantMixFromArtists2Request.md)
 - [InstantMixApiGetInstantMixFromArtistsRequest](../interfaces/generated_client.InstantMixApiGetInstantMixFromArtistsRequest.md)
 - [InstantMixApiGetInstantMixFromItemRequest](../interfaces/generated_client.InstantMixApiGetInstantMixFromItemRequest.md)
-- [InstantMixApiGetInstantMixFromMusicGenreById2Request](../interfaces/generated_client.InstantMixApiGetInstantMixFromMusicGenreById2Request.md)
 - [InstantMixApiGetInstantMixFromMusicGenreByIdRequest](../interfaces/generated_client.InstantMixApiGetInstantMixFromMusicGenreByIdRequest.md)
 - [InstantMixApiGetInstantMixFromMusicGenreByNameRequest](../interfaces/generated_client.InstantMixApiGetInstantMixFromMusicGenreByNameRequest.md)
 - [InstantMixApiGetInstantMixFromPlaylistRequest](../interfaces/generated_client.InstantMixApiGetInstantMixFromPlaylistRequest.md)
@@ -347,7 +358,7 @@
 - [ItemLookupApiGetPersonRemoteSearchResultsRequest](../interfaces/generated_client.ItemLookupApiGetPersonRemoteSearchResultsRequest.md)
 - [ItemLookupApiGetSeriesRemoteSearchResultsRequest](../interfaces/generated_client.ItemLookupApiGetSeriesRemoteSearchResultsRequest.md)
 - [ItemLookupApiGetTrailerRemoteSearchResultsRequest](../interfaces/generated_client.ItemLookupApiGetTrailerRemoteSearchResultsRequest.md)
-- [ItemRefreshApiPostRequest](../interfaces/generated_client.ItemRefreshApiPostRequest.md)
+- [ItemRefreshApiRefreshItemRequest](../interfaces/generated_client.ItemRefreshApiRefreshItemRequest.md)
 - [ItemUpdateApiGetMetadataEditorInfoRequest](../interfaces/generated_client.ItemUpdateApiGetMetadataEditorInfoRequest.md)
 - [ItemUpdateApiUpdateItemContentTypeRequest](../interfaces/generated_client.ItemUpdateApiUpdateItemContentTypeRequest.md)
 - [ItemUpdateApiUpdateItemRequest](../interfaces/generated_client.ItemUpdateApiUpdateItemRequest.md)
@@ -429,6 +440,7 @@
 - [LiveTvApiUpdateSeriesTimerRequest](../interfaces/generated_client.LiveTvApiUpdateSeriesTimerRequest.md)
 - [LiveTvApiUpdateTimerRequest](../interfaces/generated_client.LiveTvApiUpdateTimerRequest.md)
 - [LiveTvInfo](../interfaces/generated_client.LiveTvInfo.md)
+- [LiveTvOptions](../interfaces/generated_client.LiveTvOptions.md)
 - [LiveTvServiceInfo](../interfaces/generated_client.LiveTvServiceInfo.md)
 - [LocalizationOption](../interfaces/generated_client.LocalizationOption.md)
 - [LogFile](../interfaces/generated_client.LogFile.md)
@@ -447,6 +459,7 @@
 - [MediaUpdateInfoPathDto](../interfaces/generated_client.MediaUpdateInfoPathDto.md)
 - [MediaUrl](../interfaces/generated_client.MediaUrl.md)
 - [MessageCommand](../interfaces/generated_client.MessageCommand.md)
+- [MetadataConfiguration](../interfaces/generated_client.MetadataConfiguration.md)
 - [MetadataEditorInfo](../interfaces/generated_client.MetadataEditorInfo.md)
 - [MetadataOptions](../interfaces/generated_client.MetadataOptions.md)
 - [MovePlaylistItemRequestDto](../interfaces/generated_client.MovePlaylistItemRequestDto.md)
@@ -460,9 +473,12 @@
 - [NameGuidPair](../interfaces/generated_client.NameGuidPair.md)
 - [NameIdPair](../interfaces/generated_client.NameIdPair.md)
 - [NameValuePair](../interfaces/generated_client.NameValuePair.md)
+- [NetworkConfiguration](../interfaces/generated_client.NetworkConfiguration.md)
 - [NewGroupRequestDto](../interfaces/generated_client.NewGroupRequestDto.md)
 - [NextItemRequestDto](../interfaces/generated_client.NextItemRequestDto.md)
 - [NotificationDto](../interfaces/generated_client.NotificationDto.md)
+- [NotificationOption](../interfaces/generated_client.NotificationOption.md)
+- [NotificationOptions](../interfaces/generated_client.NotificationOptions.md)
 - [NotificationResultDto](../interfaces/generated_client.NotificationResultDto.md)
 - [NotificationTypeInfo](../interfaces/generated_client.NotificationTypeInfo.md)
 - [NotificationsApiCreateAdminNotificationRequest](../interfaces/generated_client.NotificationsApiCreateAdminNotificationRequest.md)
@@ -511,7 +527,6 @@
 - [PlaystateApiReportPlaybackStoppedRequest](../interfaces/generated_client.PlaystateApiReportPlaybackStoppedRequest.md)
 - [PlaystateRequest](../interfaces/generated_client.PlaystateRequest.md)
 - [PluginInfo](../interfaces/generated_client.PluginInfo.md)
-- [PluginSecurityInfo](../interfaces/generated_client.PluginSecurityInfo.md)
 - [PluginsApiDisablePluginRequest](../interfaces/generated_client.PluginsApiDisablePluginRequest.md)
 - [PluginsApiEnablePluginRequest](../interfaces/generated_client.PluginsApiEnablePluginRequest.md)
 - [PluginsApiGetPluginConfigurationRequest](../interfaces/generated_client.PluginsApiGetPluginConfigurationRequest.md)
@@ -520,7 +535,6 @@
 - [PluginsApiUninstallPluginByVersionRequest](../interfaces/generated_client.PluginsApiUninstallPluginByVersionRequest.md)
 - [PluginsApiUninstallPluginRequest](../interfaces/generated_client.PluginsApiUninstallPluginRequest.md)
 - [PluginsApiUpdatePluginConfigurationRequest](../interfaces/generated_client.PluginsApiUpdatePluginConfigurationRequest.md)
-- [PluginsApiUpdatePluginSecurityInfoRequest](../interfaces/generated_client.PluginsApiUpdatePluginSecurityInfoRequest.md)
 - [PreviousItemRequestDto](../interfaces/generated_client.PreviousItemRequestDto.md)
 - [ProblemDetails](../interfaces/generated_client.ProblemDetails.md)
 - [ProfileCondition](../interfaces/generated_client.ProfileCondition.md)
@@ -530,7 +544,6 @@
 - [QueueItem](../interfaces/generated_client.QueueItem.md)
 - [QueueRequestDto](../interfaces/generated_client.QueueRequestDto.md)
 - [QuickConnectApiAuthorizeRequest](../interfaces/generated_client.QuickConnectApiAuthorizeRequest.md)
-- [QuickConnectApiAvailableRequest](../interfaces/generated_client.QuickConnectApiAvailableRequest.md)
 - [QuickConnectApiConnectRequest](../interfaces/generated_client.QuickConnectApiConnectRequest.md)
 - [QuickConnectDto](../interfaces/generated_client.QuickConnectDto.md)
 - [QuickConnectResult](../interfaces/generated_client.QuickConnectResult.md)
@@ -600,6 +613,7 @@
 - [SubtitleApiGetSubtitleWithTicksRequest](../interfaces/generated_client.SubtitleApiGetSubtitleWithTicksRequest.md)
 - [SubtitleApiSearchRemoteSubtitlesRequest](../interfaces/generated_client.SubtitleApiSearchRemoteSubtitlesRequest.md)
 - [SubtitleApiUploadSubtitleRequest](../interfaces/generated_client.SubtitleApiUploadSubtitleRequest.md)
+- [SubtitleOptions](../interfaces/generated_client.SubtitleOptions.md)
 - [SubtitleProfile](../interfaces/generated_client.SubtitleProfile.md)
 - [SuggestionsApiGetSuggestionsRequest](../interfaces/generated_client.SuggestionsApiGetSuggestionsRequest.md)
 - [SyncPlayApiSyncPlayBufferingRequest](../interfaces/generated_client.SyncPlayApiSyncPlayBufferingRequest.md)
@@ -678,10 +692,8 @@
 - [UserViewsApiGetUserViewsRequest](../interfaces/generated_client.UserViewsApiGetUserViewsRequest.md)
 - [UtcTimeResponse](../interfaces/generated_client.UtcTimeResponse.md)
 - [ValidatePathDto](../interfaces/generated_client.ValidatePathDto.md)
-- [Version](../interfaces/generated_client.Version.md)
 - [VersionInfo](../interfaces/generated_client.VersionInfo.md)
 - [VideoAttachmentsApiGetAttachmentRequest](../interfaces/generated_client.VideoAttachmentsApiGetAttachmentRequest.md)
-- [VideoHlsApiGetLiveHlsStreamRequest](../interfaces/generated_client.VideoHlsApiGetLiveHlsStreamRequest.md)
 - [VideosApiDeleteAlternateSourcesRequest](../interfaces/generated_client.VideosApiDeleteAlternateSourcesRequest.md)
 - [VideosApiGetAdditionalPartRequest](../interfaces/generated_client.VideosApiGetAdditionalPartRequest.md)
 - [VideosApiGetVideoStreamByContainerRequest](../interfaces/generated_client.VideosApiGetVideoStreamByContainerRequest.md)
@@ -691,6 +703,7 @@
 - [VideosApiMergeVersionsRequest](../interfaces/generated_client.VideosApiMergeVersionsRequest.md)
 - [VirtualFolderInfo](../interfaces/generated_client.VirtualFolderInfo.md)
 - [WakeOnLanInfo](../interfaces/generated_client.WakeOnLanInfo.md)
+- [XbmcMetadataOptions](../interfaces/generated_client.XbmcMetadataOptions.md)
 - [XmlAttribute](../interfaces/generated_client.XmlAttribute.md)
 - [YearsApiGetYearRequest](../interfaces/generated_client.YearsApiGetYearRequest.md)
 - [YearsApiGetYearsRequest](../interfaces/generated_client.YearsApiGetYearsRequest.md)
@@ -715,6 +728,9 @@
 - [ChannelsApiAxiosParamCreator](generated_client.md#channelsapiaxiosparamcreator)
 - [ChannelsApiFactory](generated_client.md#channelsapifactory)
 - [ChannelsApiFp](generated_client.md#channelsapifp)
+- [ClientLogApiAxiosParamCreator](generated_client.md#clientlogapiaxiosparamcreator)
+- [ClientLogApiFactory](generated_client.md#clientlogapifactory)
+- [ClientLogApiFp](generated_client.md#clientlogapifp)
 - [CollectionApiAxiosParamCreator](generated_client.md#collectionapiaxiosparamcreator)
 - [CollectionApiFactory](generated_client.md#collectionapifactory)
 - [CollectionApiFp](generated_client.md#collectionapifp)
@@ -847,6 +863,9 @@
 - [TimeSyncApiAxiosParamCreator](generated_client.md#timesyncapiaxiosparamcreator)
 - [TimeSyncApiFactory](generated_client.md#timesyncapifactory)
 - [TimeSyncApiFp](generated_client.md#timesyncapifp)
+- [TmdbApiAxiosParamCreator](generated_client.md#tmdbapiaxiosparamcreator)
+- [TmdbApiFactory](generated_client.md#tmdbapifactory)
+- [TmdbApiFp](generated_client.md#tmdbapifp)
 - [TrailersApiAxiosParamCreator](generated_client.md#trailersapiaxiosparamcreator)
 - [TrailersApiFactory](generated_client.md#trailersapifactory)
 - [TrailersApiFp](generated_client.md#trailersapifp)
@@ -868,9 +887,6 @@
 - [VideoAttachmentsApiAxiosParamCreator](generated_client.md#videoattachmentsapiaxiosparamcreator)
 - [VideoAttachmentsApiFactory](generated_client.md#videoattachmentsapifactory)
 - [VideoAttachmentsApiFp](generated_client.md#videoattachmentsapifp)
-- [VideoHlsApiAxiosParamCreator](generated_client.md#videohlsapiaxiosparamcreator)
-- [VideoHlsApiFactory](generated_client.md#videohlsapifactory)
-- [VideoHlsApiFp](generated_client.md#videohlsapifp)
 - [VideosApiAxiosParamCreator](generated_client.md#videosapiaxiosparamcreator)
 - [VideosApiFactory](generated_client.md#videosapifactory)
 - [VideosApiFp](generated_client.md#videosapifp)
@@ -904,7 +920,7 @@ ActivityLogApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/activity-log-api.ts#L29)
+[generated-client/api/activity-log-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L29)
 
 ___
 
@@ -934,7 +950,7 @@ ActivityLogApi - factory interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/activity-log-api.ts#L117)
+[generated-client/api/activity-log-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L117)
 
 ___
 
@@ -962,7 +978,7 @@ ActivityLogApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:93](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/activity-log-api.ts#L93)
+[generated-client/api/activity-log-api.ts:93](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L93)
 
 ___
 
@@ -992,7 +1008,7 @@ ApiKeyApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L29)
+[generated-client/api/api-key-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L29)
 
 ___
 
@@ -1024,7 +1040,7 @@ ApiKeyApi - factory interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L190)
+[generated-client/api/api-key-api.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L190)
 
 ___
 
@@ -1054,7 +1070,7 @@ ApiKeyApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/api-key-api.ts#L148)
+[generated-client/api/api-key-api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L148)
 
 ___
 
@@ -1078,13 +1094,13 @@ ArtistsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getArtistByName` | (`name`: `string`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L37)
+[generated-client/api/artists-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L41)
 
 ___
 
@@ -1110,13 +1126,13 @@ ArtistsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getArtistByName` | (`name`: `string`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:556](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L556)
+[generated-client/api/artists-api.ts:584](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L584)
 
 ___
 
@@ -1140,13 +1156,13 @@ ArtistsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getAlbumArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getArtistByName` | (`name`: `string`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getArtists` | (`minCommunityRating?`: `number`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `genres?`: `string`[], `genreIds?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `studioIds?`: `string`[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:454](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/artists-api.ts#L454)
+[generated-client/api/artists-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L478)
 
 ___
 
@@ -1177,7 +1193,7 @@ AudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/audio-api.ts#L31)
+[generated-client/api/audio-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L31)
 
 ___
 
@@ -1210,7 +1226,7 @@ AudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/audio-api.ts#L1380)
+[generated-client/api/audio-api.ts:1380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L1380)
 
 ___
 
@@ -1241,7 +1257,7 @@ AudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/audio-api.ts#L1134)
+[generated-client/api/audio-api.ts:1134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L1134)
 
 ___
 
@@ -1271,7 +1287,7 @@ BrandingApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L29)
+[generated-client/api/branding-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L29)
 
 ___
 
@@ -1303,7 +1319,7 @@ BrandingApi - factory interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L168)
+[generated-client/api/branding-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L168)
 
 ___
 
@@ -1333,7 +1349,7 @@ BrandingApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/branding-api.ts#L128)
+[generated-client/api/branding-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L128)
 
 ___
 
@@ -1365,7 +1381,7 @@ ChannelsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L37)
+[generated-client/api/channels-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L37)
 
 ___
 
@@ -1399,7 +1415,7 @@ ChannelsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L401)
+[generated-client/api/channels-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L401)
 
 ___
 
@@ -1431,7 +1447,93 @@ ChannelsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/channels-api.ts#L319)
+[generated-client/api/channels-api.ts:319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L319)
+
+___
+
+### ClientLogApiAxiosParamCreator
+
+▸ **ClientLogApiAxiosParamCreator**(`configuration?`): `Object`
+
+ClientLogApi - axios parameter creator
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `logFile` | (`body?`: `any`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+
+#### Defined in
+
+[generated-client/api/client-log-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L31)
+
+___
+
+### ClientLogApiFactory
+
+▸ **ClientLogApiFactory**(`configuration?`, `basePath?`, `axios?`): `Object`
+
+ClientLogApi - factory interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+| `basePath?` | `string` |
+| `axios?` | `AxiosInstance` |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `logFile` | (`body?`: `any`, `options?`: `any`) => `AxiosPromise`<[`ClientLogDocumentResponseDto`](../interfaces/generated_client.ClientLogDocumentResponseDto.md)\> |
+
+#### Defined in
+
+[generated-client/api/client-log-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L98)
+
+___
+
+### ClientLogApiFp
+
+▸ **ClientLogApiFp**(`configuration?`): `Object`
+
+ClientLogApi - functional programming interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `logFile` | (`body?`: `any`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ClientLogDocumentResponseDto`](../interfaces/generated_client.ClientLogDocumentResponseDto.md)\>\> |
+
+#### Defined in
+
+[generated-client/api/client-log-api.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L77)
 
 ___
 
@@ -1461,7 +1563,7 @@ CollectionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L29)
+[generated-client/api/collection-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L29)
 
 ___
 
@@ -1493,7 +1595,7 @@ CollectionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L227)
+[generated-client/api/collection-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L227)
 
 ___
 
@@ -1523,7 +1625,7 @@ CollectionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/collection-api.ts#L179)
+[generated-client/api/collection-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L179)
 
 ___
 
@@ -1552,11 +1654,11 @@ ConfigurationApi - axios parameter creator
 | `getNamedConfiguration` | (`key`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `updateConfiguration` | (`serverConfiguration`: [`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `updateMediaEncoderPath` | (`mediaEncoderPathDto`: [`MediaEncoderPathDto`](../interfaces/generated_client.MediaEncoderPathDto.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `updateNamedConfiguration` | (`key`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `updateNamedConfiguration` | (`key`: `string`, `body`: `any`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L33)
+[generated-client/api/configuration-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L33)
 
 ___
 
@@ -1587,11 +1689,11 @@ ConfigurationApi - factory interface
 | `getNamedConfiguration` | (`key`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `updateConfiguration` | (`serverConfiguration`: [`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `updateMediaEncoderPath` | (`mediaEncoderPathDto`: [`MediaEncoderPathDto`](../interfaces/generated_client.MediaEncoderPathDto.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `updateNamedConfiguration` | (`key`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `updateNamedConfiguration` | (`key`: `string`, `body`: `any`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:334](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L334)
+[generated-client/api/configuration-api.ts:341](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L341)
 
 ___
 
@@ -1620,11 +1722,11 @@ ConfigurationApi - functional programming interface
 | `getNamedConfiguration` | (`key`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `updateConfiguration` | (`serverConfiguration`: [`ServerConfiguration`](../interfaces/generated_client.ServerConfiguration.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `updateMediaEncoderPath` | (`mediaEncoderPathDto`: [`MediaEncoderPathDto`](../interfaces/generated_client.MediaEncoderPathDto.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `updateNamedConfiguration` | (`key`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `updateNamedConfiguration` | (`key`: `string`, `body`: `any`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/configuration-api.ts#L260)
+[generated-client/api/configuration-api.ts:266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L266)
 
 ___
 
@@ -1648,12 +1750,12 @@ DashboardApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `pageType?`: [`ConfigurationPageType`](../enums/generated_client.ConfigurationPageType.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getDashboardConfigurationPage` | (`name?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L33)
+[generated-client/api/dashboard-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L31)
 
 ___
 
@@ -1679,12 +1781,12 @@ DashboardApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `pageType?`: [`ConfigurationPageType`](../enums/generated_client.ConfigurationPageType.md), `options?`: `any`) => `AxiosPromise`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\> |
+| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\> |
 | `getDashboardConfigurationPage` | (`name?`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L150)
+[generated-client/api/dashboard-api.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L145)
 
 ___
 
@@ -1708,12 +1810,12 @@ DashboardApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `pageType?`: [`ConfigurationPageType`](../enums/generated_client.ConfigurationPageType.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\>\> |
+| `getConfigurationPages` | (`enableInMainMenu?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ConfigurationPageInfo`](../interfaces/generated_client.ConfigurationPageInfo.md)[]\>\> |
 | `getDashboardConfigurationPage` | (`name?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dashboard-api.ts#L117)
+[generated-client/api/dashboard-api.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L113)
 
 ___
 
@@ -1741,11 +1843,11 @@ DevicesApi - axios parameter creator
 | `getDeviceInfo` | (`id`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getDeviceOptions` | (`id`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getDevices` | (`supportsSync?`: `boolean`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `updateDeviceOptions` | (`id`: `string`, `deviceOptions`: [`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `updateDeviceOptions` | (`id`: `string`, `deviceOptionsDto`: [`DeviceOptionsDto`](../interfaces/generated_client.DeviceOptionsDto.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L35)
+[generated-client/api/devices-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L37)
 
 ___
 
@@ -1775,11 +1877,11 @@ DevicesApi - factory interface
 | `getDeviceInfo` | (`id`: `string`, `options?`: `any`) => `AxiosPromise`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md)\> |
 | `getDeviceOptions` | (`id`: `string`, `options?`: `any`) => `AxiosPromise`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md)\> |
 | `getDevices` | (`supportsSync?`: `boolean`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md)\> |
-| `updateDeviceOptions` | (`id`: `string`, `deviceOptions`: [`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `updateDeviceOptions` | (`id`: `string`, `deviceOptionsDto`: [`DeviceOptionsDto`](../interfaces/generated_client.DeviceOptionsDto.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L320)
+[generated-client/api/devices-api.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L322)
 
 ___
 
@@ -1807,11 +1909,11 @@ DevicesApi - functional programming interface
 | `getDeviceInfo` | (`id`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeviceInfo`](../interfaces/generated_client.DeviceInfo.md)\>\> |
 | `getDeviceOptions` | (`id`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md)\>\> |
 | `getDevices` | (`supportsSync?`: `boolean`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`DeviceInfoQueryResult`](../interfaces/generated_client.DeviceInfoQueryResult.md)\>\> |
-| `updateDeviceOptions` | (`id`: `string`, `deviceOptions`: [`DeviceOptions`](../interfaces/generated_client.DeviceOptions.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `updateDeviceOptions` | (`id`: `string`, `deviceOptionsDto`: [`DeviceOptionsDto`](../interfaces/generated_client.DeviceOptionsDto.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/devices-api.ts#L253)
+[generated-client/api/devices-api.ts:255](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L255)
 
 ___
 
@@ -1840,7 +1942,7 @@ DisplayPreferencesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L29)
+[generated-client/api/display-preferences-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L29)
 
 ___
 
@@ -1871,7 +1973,7 @@ DisplayPreferencesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L183)
+[generated-client/api/display-preferences-api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L183)
 
 ___
 
@@ -1900,7 +2002,7 @@ DisplayPreferencesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/display-preferences-api.ts#L146)
+[generated-client/api/display-preferences-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L146)
 
 ___
 
@@ -1933,7 +2035,7 @@ DlnaApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L33)
+[generated-client/api/dlna-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L33)
 
 ___
 
@@ -1968,7 +2070,7 @@ DlnaApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L335)
+[generated-client/api/dlna-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L335)
 
 ___
 
@@ -2001,7 +2103,7 @@ DlnaApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-api.ts#L260)
+[generated-client/api/dlna-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L260)
 
 ___
 
@@ -2044,7 +2146,7 @@ DlnaServerApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-server-api.ts#L29)
+[generated-client/api/dlna-server-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L29)
 
 ___
 
@@ -2089,7 +2191,7 @@ DlnaServerApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:773](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-server-api.ts#L773)
+[generated-client/api/dlna-server-api.ts:821](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L821)
 
 ___
 
@@ -2132,7 +2234,7 @@ DlnaServerApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:586](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dlna-server-api.ts#L586)
+[generated-client/api/dlna-server-api.ts:634](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L634)
 
 ___
 
@@ -2156,18 +2258,19 @@ DynamicHlsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getVariantHlsAudioPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `headMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L31)
+[generated-client/api/dynamic-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L31)
 
 ___
 
@@ -2193,18 +2296,19 @@ DynamicHlsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
-| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
-| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getVariantHlsAudioPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
-| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `headMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
-| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:2776](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L2776)
+[generated-client/api/dynamic-hls-api.ts:3210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L3210)
 
 ___
 
@@ -2228,18 +2332,19 @@ DynamicHlsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
-| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getHlsAudioSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getHlsVideoSegment` | (`itemId`: `string`, `playlistId`: `string`, `segmentId`: `number`, `container`: `string`, `runtimeTicks`: `number`, `actualSegmentLengthTicks`: `number`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
-| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getVariantHlsAudioPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
-| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getVariantHlsVideoPlaylist` | (`itemId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `headMasterHlsAudioPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `maxStreamingBitrate?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
-| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `headMasterHlsVideoPlaylist` | (`itemId`: `string`, `mediaSourceId`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `enableAdaptiveBitrateStreaming?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:2288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/dynamic-hls-api.ts#L2288)
+[generated-client/api/dynamic-hls-api.ts:2648](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L2648)
 
 ___
 
@@ -2272,7 +2377,7 @@ EnvironmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L35)
+[generated-client/api/environment-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L35)
 
 ___
 
@@ -2307,7 +2412,7 @@ EnvironmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L349)
+[generated-client/api/environment-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L349)
 
 ___
 
@@ -2340,7 +2445,7 @@ EnvironmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/environment-api.ts#L273)
+[generated-client/api/environment-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L273)
 
 ___
 
@@ -2364,12 +2469,12 @@ FilterApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/filter-api.ts#L31)
+[generated-client/api/filter-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L33)
 
 ___
 
@@ -2395,12 +2500,12 @@ FilterApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md)\> |
-| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `options?`: `any`) => `AxiosPromise`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md)\> |
+| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md)\> |
+| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `options?`: `any`) => `AxiosPromise`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md)\> |
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/filter-api.ts#L220)
+[generated-client/api/filter-api.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L222)
 
 ___
 
@@ -2424,12 +2529,12 @@ FilterApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md)\>\> |
-| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md)\>\> |
+| `getQueryFilters` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isAiring?`: `boolean`, `isMovie?`: `boolean`, `isSports?`: `boolean`, `isKids?`: `boolean`, `isNews?`: `boolean`, `isSeries?`: `boolean`, `recursive?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QueryFilters`](../interfaces/generated_client.QueryFilters.md)\>\> |
+| `getQueryFiltersLegacy` | (`userId?`: `string`, `parentId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QueryFiltersLegacy`](../interfaces/generated_client.QueryFiltersLegacy.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/filter-api.ts#L176)
+[generated-client/api/filter-api.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L178)
 
 ___
 
@@ -2454,11 +2559,11 @@ GenresApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `getGenre` | (`genreName`: `string`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L35)
+[generated-client/api/genres-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L39)
 
 ___
 
@@ -2485,11 +2590,11 @@ GenresApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `getGenre` | (`genreName`: `string`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L247)
+[generated-client/api/genres-api.ts:263](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L263)
 
 ___
 
@@ -2514,11 +2619,11 @@ GenresApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `getGenre` | (`genreName`: `string`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/genres-api.ts#L199)
+[generated-client/api/genres-api.ts:213](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L213)
 
 ___
 
@@ -2550,7 +2655,7 @@ HlsSegmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/hls-segment-api.ts#L29)
+[generated-client/api/hls-segment-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L29)
 
 ___
 
@@ -2584,7 +2689,7 @@ HlsSegmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/hls-segment-api.ts#L320)
+[generated-client/api/hls-segment-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L320)
 
 ___
 
@@ -2616,7 +2721,7 @@ HlsSegmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/hls-segment-api.ts#L248)
+[generated-client/api/hls-segment-api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L248)
 
 ___
 
@@ -2655,6 +2760,7 @@ ImageApi - axios parameter creator
 | `getMusicGenreImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPersonImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPersonImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getSplashscreen` | (`tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `width?`: `number`, `height?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `quality?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getStudioImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getStudioImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
@@ -2678,10 +2784,11 @@ ImageApi - axios parameter creator
 | `setItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `body?`: `any`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `setItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `body?`: `any`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `updateItemImageIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `newIndex`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `uploadCustomSplashscreen` | (`body?`: `any`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L35)
+[generated-client/api/image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L35)
 
 ___
 
@@ -2722,6 +2829,7 @@ ImageApi - factory interface
 | `getMusicGenreImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getPersonImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getPersonImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getSplashscreen` | (`tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `width?`: `number`, `height?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `quality?`: `number`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getStudioImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getStudioImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `AxiosPromise`<`any`\> |
@@ -2745,10 +2853,11 @@ ImageApi - factory interface
 | `setItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `body?`: `any`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `setItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `body?`: `any`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `updateItemImageIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `newIndex`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `uploadCustomSplashscreen` | (`body?`: `any`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 
 #### Defined in
 
-[generated-client/api/image-api.ts:4878](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L4878)
+[generated-client/api/image-api.ts:5038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L5038)
 
 ___
 
@@ -2787,6 +2896,7 @@ ImageApi - functional programming interface
 | `getMusicGenreImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getPersonImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getPersonImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getSplashscreen` | (`tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `width?`: `number`, `height?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `quality?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getStudioImage` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getStudioImageByIndex` | (`name`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `tag?`: `string`, `format?`: [`ImageFormat`](../enums/generated_client.ImageFormat.md), `maxWidth?`: `number`, `maxHeight?`: `number`, `percentPlayed?`: `number`, `unplayedCount?`: `number`, `width?`: `number`, `height?`: `number`, `quality?`: `number`, `fillWidth?`: `number`, `fillHeight?`: `number`, `cropWhitespace?`: `boolean`, `addPlayedIndicator?`: `boolean`, `blur?`: `number`, `backgroundColor?`: `string`, `foregroundLayer?`: `string`, `imageIndex?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
@@ -2810,10 +2920,11 @@ ImageApi - functional programming interface
 | `setItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `body?`: `any`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `setItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `body?`: `any`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `updateItemImageIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `newIndex`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `uploadCustomSplashscreen` | (`body?`: `any`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 
 #### Defined in
 
-[generated-client/api/image-api.ts:3924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L3924)
+[generated-client/api/image-api.ts:4051](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L4051)
 
 ___
 
@@ -2846,7 +2957,7 @@ ImageByNameApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-by-name-api.ts#L31)
+[generated-client/api/image-by-name-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L31)
 
 ___
 
@@ -2881,7 +2992,7 @@ ImageByNameApi - factory interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-by-name-api.ts#L329)
+[generated-client/api/image-by-name-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L329)
 
 ___
 
@@ -2914,7 +3025,7 @@ ImageByNameApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-by-name-api.ts#L253)
+[generated-client/api/image-by-name-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L253)
 
 ___
 
@@ -2943,14 +3054,13 @@ InstantMixApi - axios parameter creator
 | `getInstantMixFromArtists2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getInstantMixFromItem` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getInstantMixFromMusicGenreById` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getInstantMixFromMusicGenreById2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getInstantMixFromMusicGenreByName` | (`name`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getInstantMixFromPlaylist` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getInstantMixFromSong` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L33)
+[generated-client/api/instant-mix-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L33)
 
 ___
 
@@ -2981,14 +3091,13 @@ InstantMixApi - factory interface
 | `getInstantMixFromArtists2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getInstantMixFromItem` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getInstantMixFromMusicGenreById` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
-| `getInstantMixFromMusicGenreById2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getInstantMixFromMusicGenreByName` | (`name`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getInstantMixFromPlaylist` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getInstantMixFromSong` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:872](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L872)
+[generated-client/api/instant-mix-api.ts:780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L780)
 
 ___
 
@@ -3017,14 +3126,13 @@ InstantMixApi - functional programming interface
 | `getInstantMixFromArtists2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getInstantMixFromItem` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getInstantMixFromMusicGenreById` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
-| `getInstantMixFromMusicGenreById2` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getInstantMixFromMusicGenreByName` | (`name`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getInstantMixFromPlaylist` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getInstantMixFromSong` | (`id`: `string`, `userId?`: `string`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `enableImages?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/instant-mix-api.ts#L698)
+[generated-client/api/instant-mix-api.ts:625](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L625)
 
 ___
 
@@ -3062,7 +3170,7 @@ ItemLookupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L51)
+[generated-client/api/item-lookup-api.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L51)
 
 ___
 
@@ -3102,7 +3210,7 @@ ItemLookupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L629)
+[generated-client/api/item-lookup-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L629)
 
 ___
 
@@ -3140,7 +3248,7 @@ ItemLookupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-lookup-api.ts#L496)
+[generated-client/api/item-lookup-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L496)
 
 ___
 
@@ -3164,11 +3272,11 @@ ItemRefreshApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `post` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `refreshItem` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-refresh-api.ts#L31)
+[generated-client/api/item-refresh-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L31)
 
 ___
 
@@ -3194,11 +3302,11 @@ ItemRefreshApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `post` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `refreshItem` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-refresh-api.ts#L122)
+[generated-client/api/item-refresh-api.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L122)
 
 ___
 
@@ -3222,11 +3330,11 @@ ItemRefreshApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `post` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `refreshItem` | (`itemId`: `string`, `metadataRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `imageRefreshMode?`: [`MetadataRefreshMode`](../enums/generated_client.MetadataRefreshMode.md), `replaceAllMetadata?`: `boolean`, `replaceAllImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-refresh-api.ts#L97)
+[generated-client/api/item-refresh-api.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L97)
 
 ___
 
@@ -3256,7 +3364,7 @@ ItemUpdateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-update-api.ts#L33)
+[generated-client/api/item-update-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L33)
 
 ___
 
@@ -3288,7 +3396,7 @@ ItemUpdateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-update-api.ts#L209)
+[generated-client/api/item-update-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L209)
 
 ___
 
@@ -3318,7 +3426,7 @@ ItemUpdateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-update-api.ts#L164)
+[generated-client/api/item-update-api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L164)
 
 ___
 
@@ -3342,13 +3450,13 @@ ItemsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `excludeActiveSessions?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/items-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/items-api.ts#L43)
+[generated-client/api/items-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L45)
 
 ___
 
@@ -3374,13 +3482,13 @@ ItemsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
-| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
-| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `excludeActiveSessions?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/items-api.ts#L1249)
+[generated-client/api/items-api.ts:1317](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L1317)
 
 ___
 
@@ -3404,13 +3512,13 @@ ItemsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
-| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
-| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getItems` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getItemsByUserId` | (`userId`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getResumeItems` | (`userId`: `string`, `startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `mediaTypes?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `excludeActiveSessions?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1035](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/items-api.ts#L1035)
+[generated-client/api/items-api.ts:1092](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L1092)
 
 ___
 
@@ -3462,7 +3570,7 @@ LibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L45)
+[generated-client/api/library-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L45)
 
 ___
 
@@ -3516,7 +3624,7 @@ LibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L1476)
+[generated-client/api/library-api.ts:1476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1476)
 
 ___
 
@@ -3568,7 +3676,7 @@ LibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-api.ts#L1157)
+[generated-client/api/library-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1157)
 
 ___
 
@@ -3603,7 +3711,7 @@ LibraryStructureApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L41)
+[generated-client/api/library-structure-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L41)
 
 ___
 
@@ -3640,7 +3748,7 @@ LibraryStructureApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L506)
+[generated-client/api/library-structure-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L506)
 
 ___
 
@@ -3675,7 +3783,7 @@ LibraryStructureApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/library-structure-api.ts#L399)
+[generated-client/api/library-structure-api.ts:399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L399)
 
 ___
 
@@ -3743,7 +3851,7 @@ LiveTvApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L69)
+[generated-client/api/live-tv-api.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L69)
 
 ___
 
@@ -3813,7 +3921,7 @@ LiveTvApi - factory interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L2702)
+[generated-client/api/live-tv-api.ts:2702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L2702)
 
 ___
 
@@ -3881,7 +3989,7 @@ LiveTvApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/live-tv-api.ts#L2135)
+[generated-client/api/live-tv-api.ts:2135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L2135)
 
 ___
 
@@ -3912,7 +4020,7 @@ LocalizationApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/localization-api.ts#L35)
+[generated-client/api/localization-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L35)
 
 ___
 
@@ -3945,7 +4053,7 @@ LocalizationApi - factory interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/localization-api.ts#L226)
+[generated-client/api/localization-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L226)
 
 ___
 
@@ -3976,7 +4084,7 @@ LocalizationApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/localization-api.ts#L176)
+[generated-client/api/localization-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L176)
 
 ___
 
@@ -4008,7 +4116,7 @@ MediaInfoApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L37)
+[generated-client/api/media-info-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L35)
 
 ___
 
@@ -4042,7 +4150,7 @@ MediaInfoApi - factory interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:463](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L463)
+[generated-client/api/media-info-api.ts:461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L461)
 
 ___
 
@@ -4074,7 +4182,7 @@ MediaInfoApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:371](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/media-info-api.ts#L371)
+[generated-client/api/media-info-api.ts:369](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L369)
 
 ___
 
@@ -4102,7 +4210,7 @@ MoviesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/movies-api.ts#L31)
+[generated-client/api/movies-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L31)
 
 ___
 
@@ -4132,7 +4240,7 @@ MoviesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/movies-api.ts#L123)
+[generated-client/api/movies-api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L123)
 
 ___
 
@@ -4160,7 +4268,7 @@ MoviesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/movies-api.ts#L98)
+[generated-client/api/movies-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L98)
 
 ___
 
@@ -4185,11 +4293,11 @@ MusicGenresApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `getMusicGenre` | (`genreName`: `string`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L35)
+[generated-client/api/music-genres-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L39)
 
 ___
 
@@ -4216,11 +4324,11 @@ MusicGenresApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `getMusicGenre` | (`genreName`: `string`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:249](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L249)
+[generated-client/api/music-genres-api.ts:265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L265)
 
 ___
 
@@ -4245,11 +4353,11 @@ MusicGenresApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `getMusicGenre` | (`genreName`: `string`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getMusicGenres` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `sortBy?`: `string`[], `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/music-genres-api.ts#L200)
+[generated-client/api/music-genres-api.ts:214](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L214)
 
 ___
 
@@ -4283,7 +4391,7 @@ NotificationsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/notifications-api.ts#L37)
+[generated-client/api/notifications-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L37)
 
 ___
 
@@ -4319,7 +4427,7 @@ NotificationsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/notifications-api.ts#L384)
+[generated-client/api/notifications-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L384)
 
 ___
 
@@ -4353,7 +4461,7 @@ NotificationsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/notifications-api.ts#L299)
+[generated-client/api/notifications-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L299)
 
 ___
 
@@ -4386,7 +4494,7 @@ PackageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/package-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L33)
+[generated-client/api/package-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L33)
 
 ___
 
@@ -4421,7 +4529,7 @@ PackageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L356)
+[generated-client/api/package-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L356)
 
 ___
 
@@ -4454,7 +4562,7 @@ PackageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:278](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/package-api.ts#L278)
+[generated-client/api/package-api.ts:278](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L278)
 
 ___
 
@@ -4483,7 +4591,7 @@ PersonsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/persons-api.ts#L39)
+[generated-client/api/persons-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L39)
 
 ___
 
@@ -4514,7 +4622,7 @@ PersonsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:233](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/persons-api.ts#L233)
+[generated-client/api/persons-api.ts:233](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L233)
 
 ___
 
@@ -4543,7 +4651,7 @@ PersonsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/persons-api.ts#L188)
+[generated-client/api/persons-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L188)
 
 ___
 
@@ -4575,7 +4683,7 @@ PlaylistsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playlists-api.ts#L37)
+[generated-client/api/playlists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L37)
 
 ___
 
@@ -4609,7 +4717,7 @@ PlaylistsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playlists-api.ts#L398)
+[generated-client/api/playlists-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L398)
 
 ___
 
@@ -4641,7 +4749,7 @@ PlaylistsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playlists-api.ts#L316)
+[generated-client/api/playlists-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L316)
 
 ___
 
@@ -4677,7 +4785,7 @@ PlaystateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L39)
+[generated-client/api/playstate-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L39)
 
 ___
 
@@ -4715,7 +4823,7 @@ PlaystateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L664)
+[generated-client/api/playstate-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L664)
 
 ___
 
@@ -4751,7 +4859,7 @@ PlaystateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/playstate-api.ts#L526)
+[generated-client/api/playstate-api.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L526)
 
 ___
 
@@ -4775,20 +4883,19 @@ PluginsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `disablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `enablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `disablePlugin` | (`pluginId`: `string`, `version`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `enablePlugin` | (`pluginId`: `string`, `version`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPluginConfiguration` | (`pluginId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getPluginImage` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getPluginImage` | (`pluginId`: `string`, `version`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPluginManifest` | (`pluginId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPlugins` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `uninstallPlugin` | (`pluginId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `updatePluginConfiguration` | (`pluginId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `updatePluginSecurityInfo` | (`pluginSecurityInfo`: [`PluginSecurityInfo`](../interfaces/generated_client.PluginSecurityInfo.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L35)
+[generated-client/api/plugins-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L31)
 
 ___
 
@@ -4814,20 +4921,19 @@ PluginsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `disablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `enablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `disablePlugin` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `enablePlugin` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `getPluginConfiguration` | (`pluginId`: `string`, `options?`: `any`) => `AxiosPromise`<`object`\> |
-| `getPluginImage` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `AxiosPromise`<`any`\> |
+| `getPluginImage` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<`any`\> |
 | `getPluginManifest` | (`pluginId`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `getPlugins` | (`options?`: `any`) => `AxiosPromise`<[`PluginInfo`](../interfaces/generated_client.PluginInfo.md)[]\> |
 | `uninstallPlugin` | (`pluginId`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `updatePluginConfiguration` | (`pluginId`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `updatePluginSecurityInfo` | (`pluginSecurityInfo`: [`PluginSecurityInfo`](../interfaces/generated_client.PluginSecurityInfo.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:555](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L555)
+[generated-client/api/plugins-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L499)
 
 ___
 
@@ -4851,20 +4957,19 @@ PluginsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `disablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `enablePlugin` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `disablePlugin` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `enablePlugin` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `getPluginConfiguration` | (`pluginId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`object`\>\> |
-| `getPluginImage` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
+| `getPluginImage` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
 | `getPluginManifest` | (`pluginId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `getPlugins` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`PluginInfo`](../interfaces/generated_client.PluginInfo.md)[]\>\> |
 | `uninstallPlugin` | (`pluginId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: [`Version`](../interfaces/generated_client.Version.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `uninstallPluginByVersion` | (`pluginId`: `string`, `version`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `updatePluginConfiguration` | (`pluginId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `updatePluginSecurityInfo` | (`pluginSecurityInfo`: [`PluginSecurityInfo`](../interfaces/generated_client.PluginSecurityInfo.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:430](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L430)
+[generated-client/api/plugins-api.ts:386](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L386)
 
 ___
 
@@ -4888,17 +4993,14 @@ QuickConnectApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `activate` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `authorize` | (`code`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `available` | (`status?`: [`QuickConnectState`](../enums/generated_client.QuickConnectState.md), `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `connect` | (`secret`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `deauthorize` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getStatus` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getEnabled` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `initiate` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L33)
+[generated-client/api/quick-connect-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L31)
 
 ___
 
@@ -4924,17 +5026,14 @@ QuickConnectApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `activate` | (`options?`: `any`) => `AxiosPromise`<`void`\> |
 | `authorize` | (`code`: `string`, `options?`: `any`) => `AxiosPromise`<`boolean`\> |
-| `available` | (`status?`: [`QuickConnectState`](../enums/generated_client.QuickConnectState.md), `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `connect` | (`secret`: `string`, `options?`: `any`) => `AxiosPromise`<[`QuickConnectResult`](../interfaces/generated_client.QuickConnectResult.md)\> |
-| `deauthorize` | (`options?`: `any`) => `AxiosPromise`<`number`\> |
-| `getStatus` | (`options?`: `any`) => `AxiosPromise`<[`QuickConnectState`](../enums/generated_client.QuickConnectState.md)\> |
+| `getEnabled` | (`options?`: `any`) => `AxiosPromise`<`boolean`\> |
 | `initiate` | (`options?`: `any`) => `AxiosPromise`<[`QuickConnectResult`](../interfaces/generated_client.QuickConnectResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L366)
+[generated-client/api/quick-connect-api.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L229)
 
 ___
 
@@ -4958,17 +5057,14 @@ QuickConnectApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `activate` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `authorize` | (`code`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`boolean`\>\> |
-| `available` | (`status?`: [`QuickConnectState`](../enums/generated_client.QuickConnectState.md), `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `connect` | (`secret`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QuickConnectResult`](../interfaces/generated_client.QuickConnectResult.md)\>\> |
-| `deauthorize` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`number`\>\> |
-| `getStatus` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QuickConnectState`](../enums/generated_client.QuickConnectState.md)\>\> |
+| `getEnabled` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`boolean`\>\> |
 | `initiate` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`QuickConnectResult`](../interfaces/generated_client.QuickConnectResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L283)
+[generated-client/api/quick-connect-api.ts:177](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L177)
 
 ___
 
@@ -4998,7 +5094,7 @@ RemoteImageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L35)
+[generated-client/api/remote-image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L35)
 
 ___
 
@@ -5030,7 +5126,7 @@ RemoteImageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L242)
+[generated-client/api/remote-image-api.ts:242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L242)
 
 ___
 
@@ -5060,7 +5156,7 @@ RemoteImageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/remote-image-api.ts#L192)
+[generated-client/api/remote-image-api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L192)
 
 ___
 
@@ -5092,7 +5188,7 @@ ScheduledTasksApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/scheduled-tasks-api.ts#L33)
+[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L33)
 
 ___
 
@@ -5126,7 +5222,7 @@ ScheduledTasksApi - factory interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/scheduled-tasks-api.ts#L306)
+[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L306)
 
 ___
 
@@ -5158,7 +5254,7 @@ ScheduledTasksApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/scheduled-tasks-api.ts#L239)
+[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L239)
 
 ___
 
@@ -5182,11 +5278,11 @@ SearchApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: `string`[], `excludeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/search-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/search-api.ts#L29)
+[generated-client/api/search-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L31)
 
 ___
 
@@ -5212,11 +5308,11 @@ SearchApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: `string`[], `excludeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md)\> |
+| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/search-api.ts:201](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/search-api.ts#L201)
+[generated-client/api/search-api.ts:203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L203)
 
 ___
 
@@ -5240,11 +5336,11 @@ SearchApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: `string`[], `excludeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md)\>\> |
+| `get` | (`searchTerm`: `string`, `startIndex?`: `number`, `limit?`: `number`, `userId?`: `string`, `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `parentId?`: `string`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `includePeople?`: `boolean`, `includeMedia?`: `boolean`, `includeGenres?`: `boolean`, `includeStudios?`: `boolean`, `includeArtists?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SearchHintResult`](../interfaces/generated_client.SearchHintResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/search-api.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/search-api.ts#L163)
+[generated-client/api/search-api.ts:165](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L165)
 
 ___
 
@@ -5269,7 +5365,7 @@ SessionApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `addUserToSession` | (`sessionId`: `string`, `userId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `displayContent` | (`sessionId`: `string`, `itemType`: `string`, `itemId`: `string`, `itemName`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `displayContent` | (`sessionId`: `string`, `itemType`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md), `itemId`: `string`, `itemName`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getAuthProviders` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getPasswordResetProviders` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getSessions` | (`controllableByUserId?`: `string`, `deviceId?`: `string`, `activeWithinSeconds?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
@@ -5287,7 +5383,7 @@ SessionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/session-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L43)
+[generated-client/api/session-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L45)
 
 ___
 
@@ -5314,7 +5410,7 @@ SessionApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `addUserToSession` | (`sessionId`: `string`, `userId`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
-| `displayContent` | (`sessionId`: `string`, `itemType`: `string`, `itemId`: `string`, `itemName`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
+| `displayContent` | (`sessionId`: `string`, `itemType`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md), `itemId`: `string`, `itemName`: `string`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `getAuthProviders` | (`options?`: `any`) => `AxiosPromise`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\> |
 | `getPasswordResetProviders` | (`options?`: `any`) => `AxiosPromise`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\> |
 | `getSessions` | (`controllableByUserId?`: `string`, `deviceId?`: `string`, `activeWithinSeconds?`: `number`, `options?`: `any`) => `AxiosPromise`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[]\> |
@@ -5332,7 +5428,7 @@ SessionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:997](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L997)
+[generated-client/api/session-api.ts:999](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L999)
 
 ___
 
@@ -5357,7 +5453,7 @@ SessionApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `addUserToSession` | (`sessionId`: `string`, `userId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
-| `displayContent` | (`sessionId`: `string`, `itemType`: `string`, `itemId`: `string`, `itemName`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
+| `displayContent` | (`sessionId`: `string`, `itemType`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md), `itemId`: `string`, `itemName`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `getAuthProviders` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\> |
 | `getPasswordResetProviders` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`NameIdPair`](../interfaces/generated_client.NameIdPair.md)[]\>\> |
 | `getSessions` | (`controllableByUserId?`: `string`, `deviceId?`: `string`, `activeWithinSeconds?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`SessionInfo`](../interfaces/generated_client.SessionInfo.md)[]\>\> |
@@ -5375,7 +5471,7 @@ SessionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:786](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/session-api.ts#L786)
+[generated-client/api/session-api.ts:788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L788)
 
 ___
 
@@ -5409,7 +5505,7 @@ StartupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L33)
+[generated-client/api/startup-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L33)
 
 ___
 
@@ -5445,7 +5541,7 @@ StartupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L372)
+[generated-client/api/startup-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L372)
 
 ___
 
@@ -5479,7 +5575,7 @@ StartupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/startup-api.ts#L289)
+[generated-client/api/startup-api.ts:289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L289)
 
 ___
 
@@ -5504,11 +5600,11 @@ StudiosApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `getStudio` | (`name`: `string`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/studios-api.ts#L35)
+[generated-client/api/studios-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L37)
 
 ___
 
@@ -5535,11 +5631,11 @@ StudiosApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `getStudio` | (`name`: `string`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/studios-api.ts#L253)
+[generated-client/api/studios-api.ts:255](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L255)
 
 ___
 
@@ -5564,11 +5660,11 @@ StudiosApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `getStudio` | (`name`: `string`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getStudios` | (`startIndex?`: `number`, `limit?`: `number`, `searchTerm?`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isFavorite?`: `boolean`, `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `enableImages?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/studios-api.ts#L204)
+[generated-client/api/studios-api.ts:206](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L206)
 
 ___
 
@@ -5605,7 +5701,7 @@ SubtitleApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/subtitle-api.ts#L35)
+[generated-client/api/subtitle-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L35)
 
 ___
 
@@ -5644,7 +5740,7 @@ SubtitleApi - factory interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/subtitle-api.ts#L700)
+[generated-client/api/subtitle-api.ts:700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L700)
 
 ___
 
@@ -5681,7 +5777,7 @@ SubtitleApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:550](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/subtitle-api.ts#L550)
+[generated-client/api/subtitle-api.ts:550](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L550)
 
 ___
 
@@ -5705,11 +5801,11 @@ SuggestionsApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L29)
+[generated-client/api/suggestions-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L31)
 
 ___
 
@@ -5735,11 +5831,11 @@ SuggestionsApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L126)
+[generated-client/api/suggestions-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L128)
 
 ___
 
@@ -5763,11 +5859,11 @@ SuggestionsApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getSuggestions` | (`userId`: `string`, `mediaType?`: `string`[], `type?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `startIndex?`: `number`, `limit?`: `number`, `enableTotalRecordCount?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/suggestions-api.ts#L100)
+[generated-client/api/suggestions-api.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L102)
 
 ___
 
@@ -5815,7 +5911,7 @@ SyncPlayApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L61)
+[generated-client/api/sync-play-api.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L61)
 
 ___
 
@@ -5865,7 +5961,7 @@ SyncPlayApi - factory interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1095](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1095)
+[generated-client/api/sync-play-api.ts:1095](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1095)
 
 ___
 
@@ -5913,7 +6009,7 @@ SyncPlayApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L859)
+[generated-client/api/sync-play-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L859)
 
 ___
 
@@ -5950,7 +6046,7 @@ SystemApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/system-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L37)
+[generated-client/api/system-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L37)
 
 ___
 
@@ -5989,7 +6085,7 @@ SystemApi - factory interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:485](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L485)
+[generated-client/api/system-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L487)
 
 ___
 
@@ -6026,7 +6122,7 @@ SystemApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:374](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/system-api.ts#L374)
+[generated-client/api/system-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L375)
 
 ___
 
@@ -6054,7 +6150,7 @@ TimeSyncApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/time-sync-api.ts#L29)
+[generated-client/api/time-sync-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L29)
 
 ___
 
@@ -6084,7 +6180,7 @@ TimeSyncApi - factory interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/time-sync-api.ts#L88)
+[generated-client/api/time-sync-api.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L88)
 
 ___
 
@@ -6112,7 +6208,93 @@ TimeSyncApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/time-sync-api.ts#L68)
+[generated-client/api/time-sync-api.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L68)
+
+___
+
+### TmdbApiAxiosParamCreator
+
+▸ **TmdbApiAxiosParamCreator**(`configuration?`): `Object`
+
+TmdbApi - axios parameter creator
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `tmdbClientConfiguration` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
+
+#### Defined in
+
+[generated-client/api/tmdb-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L29)
+
+___
+
+### TmdbApiFactory
+
+▸ **TmdbApiFactory**(`configuration?`, `basePath?`, `axios?`): `Object`
+
+TmdbApi - factory interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+| `basePath?` | `string` |
+| `axios?` | `AxiosInstance` |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `tmdbClientConfiguration` | (`options?`: `any`) => `AxiosPromise`<[`ConfigImageTypes`](../interfaces/generated_client.ConfigImageTypes.md)\> |
+
+#### Defined in
+
+[generated-client/api/tmdb-api.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L91)
+
+___
+
+### TmdbApiFp
+
+▸ **TmdbApiFp**(`configuration?`): `Object`
+
+TmdbApi - functional programming interface
+
+**`export`**
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
+
+#### Returns
+
+`Object`
+
+| Name | Type |
+| :------ | :------ |
+| `tmdbClientConfiguration` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`ConfigImageTypes`](../interfaces/generated_client.ConfigImageTypes.md)\>\> |
+
+#### Defined in
+
+[generated-client/api/tmdb-api.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L71)
 
 ___
 
@@ -6136,11 +6318,11 @@ TrailersApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
-| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/trailers-api.ts#L43)
+[generated-client/api/trailers-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L45)
 
 ___
 
@@ -6166,11 +6348,11 @@ TrailersApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
-| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:587](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/trailers-api.ts#L587)
+[generated-client/api/trailers-api.ts:619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L619)
 
 ___
 
@@ -6194,11 +6376,11 @@ TrailersApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
-| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getTrailers` | (`userId?`: `string`, `maxOfficialRating?`: `string`, `hasThemeSong?`: `boolean`, `hasThemeVideo?`: `boolean`, `hasSubtitles?`: `boolean`, `hasSpecialFeature?`: `boolean`, `hasTrailer?`: `boolean`, `adjacentTo?`: `string`, `parentIndexNumber?`: `number`, `hasParentalRating?`: `boolean`, `isHd?`: `boolean`, `is4K?`: `boolean`, `locationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `excludeLocationTypes?`: [`LocationType`](../enums/generated_client.LocationType.md)[], `isMissing?`: `boolean`, `isUnaired?`: `boolean`, `minCommunityRating?`: `number`, `minCriticRating?`: `number`, `minPremiereDate?`: `string`, `minDateLastSaved?`: `string`, `minDateLastSavedForUser?`: `string`, `maxPremiereDate?`: `string`, `hasOverview?`: `boolean`, `hasImdbId?`: `boolean`, `hasTmdbId?`: `boolean`, `hasTvdbId?`: `boolean`, `isMovie?`: `boolean`, `isSeries?`: `boolean`, `isNews?`: `boolean`, `isKids?`: `boolean`, `isSports?`: `boolean`, `excludeItemIds?`: `string`[], `startIndex?`: `number`, `limit?`: `number`, `recursive?`: `boolean`, `searchTerm?`: `string`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `filters?`: [`ItemFilter`](../enums/generated_client.ItemFilter.md)[], `isFavorite?`: `boolean`, `mediaTypes?`: `string`[], `imageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `sortBy?`: `string`[], `isPlayed?`: `boolean`, `genres?`: `string`[], `officialRatings?`: `string`[], `tags?`: `string`[], `years?`: `number`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `person?`: `string`, `personIds?`: `string`[], `personTypes?`: `string`[], `studios?`: `string`[], `artists?`: `string`[], `excludeArtistIds?`: `string`[], `artistIds?`: `string`[], `albumArtistIds?`: `string`[], `contributingArtistIds?`: `string`[], `albums?`: `string`[], `albumIds?`: `string`[], `ids?`: `string`[], `videoTypes?`: [`VideoType`](../enums/generated_client.VideoType.md)[], `minOfficialRating?`: `string`, `isLocked?`: `boolean`, `isPlaceHolder?`: `boolean`, `hasOfficialRating?`: `boolean`, `collapseBoxSetItems?`: `boolean`, `minWidth?`: `number`, `minHeight?`: `number`, `maxWidth?`: `number`, `maxHeight?`: `number`, `is3D?`: `boolean`, `seriesStatus?`: [`SeriesStatus`](../enums/generated_client.SeriesStatus.md)[], `nameStartsWithOrGreater?`: `string`, `nameStartsWith?`: `string`, `nameLessThan?`: `string`, `studioIds?`: `string`[], `genreIds?`: `string`[], `enableTotalRecordCount?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:488](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/trailers-api.ts#L488)
+[generated-client/api/trailers-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L515)
 
 ___
 
@@ -6223,13 +6405,13 @@ TvShowsApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `getEpisodes` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `season?`: `number`, `seasonId?`: `string`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `startItemId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `sortBy?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `nextUpDateCutoff?`: `string`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `enableRewatching?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getSeasons` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `isSpecialSeason?`: `boolean`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/tv-shows-api.ts#L35)
+[generated-client/api/tv-shows-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L35)
 
 ___
 
@@ -6256,13 +6438,13 @@ TvShowsApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `getEpisodes` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `season?`: `number`, `seasonId?`: `string`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `startItemId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `sortBy?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
-| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `nextUpDateCutoff?`: `string`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `enableRewatching?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getSeasons` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `isSpecialSeason?`: `boolean`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
-| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:500](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/tv-shows-api.ts#L500)
+[generated-client/api/tv-shows-api.ts:514](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L514)
 
 ___
 
@@ -6287,13 +6469,13 @@ TvShowsApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `getEpisodes` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `season?`: `number`, `seasonId?`: `string`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `startItemId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `sortBy?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
-| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getNextUp` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `seriesId?`: `string`, `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `nextUpDateCutoff?`: `string`, `enableTotalRecordCount?`: `boolean`, `disableFirstEpisode?`: `boolean`, `enableRewatching?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getSeasons` | (`seriesId`: `string`, `userId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `isSpecialSeason?`: `boolean`, `isMissing?`: `boolean`, `adjacentTo?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
-| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImges?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getUpcomingEpisodes` | (`userId?`: `string`, `startIndex?`: `number`, `limit?`: `number`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `parentId?`: `string`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/tv-shows-api.ts#L404)
+[generated-client/api/tv-shows-api.ts:416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L416)
 
 ___
 
@@ -6322,7 +6504,7 @@ UniversalAudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/universal-audio-api.ts#L27)
+[generated-client/api/universal-audio-api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L27)
 
 ___
 
@@ -6353,7 +6535,7 @@ UniversalAudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/universal-audio-api.ts#L346)
+[generated-client/api/universal-audio-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L346)
 
 ___
 
@@ -6382,7 +6564,7 @@ UniversalAudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/universal-audio-api.ts#L280)
+[generated-client/api/universal-audio-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L280)
 
 ___
 
@@ -6425,7 +6607,7 @@ UserApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L55)
+[generated-client/api/user-api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L55)
 
 ___
 
@@ -6470,7 +6652,7 @@ UserApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:880](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L880)
+[generated-client/api/user-api.ts:880](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L880)
 
 ___
 
@@ -6513,7 +6695,7 @@ UserApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-api.ts#L688)
+[generated-client/api/user-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L688)
 
 ___
 
@@ -6540,7 +6722,7 @@ UserLibraryApi - axios parameter creator
 | `deleteUserItemRating` | (`userId`: `string`, `itemId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getIntros` | (`userId`: `string`, `itemId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getItem` | (`userId`: `string`, `itemId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: `string`[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getLocalTrailers` | (`userId`: `string`, `itemId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getRootFolder` | (`userId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `getSpecialFeatures` | (`userId`: `string`, `itemId`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
@@ -6550,7 +6732,7 @@ UserLibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L37)
+[generated-client/api/user-library-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L39)
 
 ___
 
@@ -6579,7 +6761,7 @@ UserLibraryApi - factory interface
 | `deleteUserItemRating` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `AxiosPromise`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\> |
 | `getIntros` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 | `getItem` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: `string`[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\> |
+| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\> |
 | `getLocalTrailers` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\> |
 | `getRootFolder` | (`userId`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
 | `getSpecialFeatures` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\> |
@@ -6589,7 +6771,7 @@ UserLibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:642](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L642)
+[generated-client/api/user-library-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L644)
 
 ___
 
@@ -6616,7 +6798,7 @@ UserLibraryApi - functional programming interface
 | `deleteUserItemRating` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`UserItemDataDto`](../interfaces/generated_client.UserItemDataDto.md)\>\> |
 | `getIntros` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 | `getItem` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: `string`[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\> |
+| `getLatestMedia` | (`userId`: `string`, `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `isPlayed?`: `boolean`, `enableImages?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `enableUserData?`: `boolean`, `limit?`: `number`, `groupItems?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\> |
 | `getLocalTrailers` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\> |
 | `getRootFolder` | (`userId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
 | `getSpecialFeatures` | (`userId`: `string`, `itemId`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)[]\>\> |
@@ -6626,7 +6808,7 @@ UserLibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:503](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-library-api.ts#L503)
+[generated-client/api/user-library-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L505)
 
 ___
 
@@ -6655,7 +6837,7 @@ UserViewsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-views-api.ts#L33)
+[generated-client/api/user-views-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L33)
 
 ___
 
@@ -6686,7 +6868,7 @@ UserViewsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-views-api.ts#L160)
+[generated-client/api/user-views-api.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L166)
 
 ___
 
@@ -6715,7 +6897,7 @@ UserViewsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/user-views-api.ts#L125)
+[generated-client/api/user-views-api.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L131)
 
 ___
 
@@ -6743,7 +6925,7 @@ VideoAttachmentsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-attachments-api.ts#L29)
+[generated-client/api/video-attachments-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L29)
 
 ___
 
@@ -6773,7 +6955,7 @@ VideoAttachmentsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-attachments-api.ts#L103)
+[generated-client/api/video-attachments-api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L103)
 
 ___
 
@@ -6801,93 +6983,7 @@ VideoAttachmentsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-attachments-api.ts#L80)
-
-___
-
-### VideoHlsApiAxiosParamCreator
-
-▸ **VideoHlsApiAxiosParamCreator**(`configuration?`): `Object`
-
-VideoHlsApi - axios parameter creator
-
-**`export`**
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-
-#### Defined in
-
-[generated-client/api/video-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-hls-api.ts#L31)
-
-___
-
-### VideoHlsApiFactory
-
-▸ **VideoHlsApiFactory**(`configuration?`, `basePath?`, `axios?`): `Object`
-
-VideoHlsApi - factory interface
-
-**`export`**
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
-| `basePath?` | `string` |
-| `axios?` | `AxiosInstance` |
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options?`: `any`) => `AxiosPromise`<`any`\> |
-
-#### Defined in
-
-[generated-client/api/video-hls-api.ts:404](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-hls-api.ts#L404)
-
-___
-
-### VideoHlsApiFp
-
-▸ **VideoHlsApiFp**(`configuration?`): `Object`
-
-VideoHlsApi - functional programming interface
-
-**`export`**
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `configuration?` | [`Configuration`](../classes/generated_client.Configuration.md) |
-
-#### Returns
-
-`Object`
-
-| Name | Type |
-| :------ | :------ |
-| `getLiveHlsStream` | (`itemId`: `string`, `container?`: `string`, `_static?`: `boolean`, `params?`: `string`, `tag?`: `string`, `deviceProfileId?`: `string`, `playSessionId?`: `string`, `segmentContainer?`: `string`, `segmentLength?`: `number`, `minSegments?`: `number`, `mediaSourceId?`: `string`, `deviceId?`: `string`, `audioCodec?`: `string`, `enableAutoStreamCopy?`: `boolean`, `allowVideoStreamCopy?`: `boolean`, `allowAudioStreamCopy?`: `boolean`, `breakOnNonKeyFrames?`: `boolean`, `audioSampleRate?`: `number`, `maxAudioBitDepth?`: `number`, `audioBitRate?`: `number`, `audioChannels?`: `number`, `maxAudioChannels?`: `number`, `profile?`: `string`, `level?`: `string`, `framerate?`: `number`, `maxFramerate?`: `number`, `copyTimestamps?`: `boolean`, `startTimeTicks?`: `number`, `width?`: `number`, `height?`: `number`, `videoBitRate?`: `number`, `subtitleStreamIndex?`: `number`, `subtitleMethod?`: [`SubtitleDeliveryMethod`](../enums/generated_client.SubtitleDeliveryMethod.md), `maxRefFrames?`: `number`, `maxVideoBitDepth?`: `number`, `requireAvc?`: `boolean`, `deInterlace?`: `boolean`, `requireNonAnamorphic?`: `boolean`, `transcodingMaxAudioChannels?`: `number`, `cpuCoreLimit?`: `number`, `liveStreamId?`: `string`, `enableMpegtsM2TsMode?`: `boolean`, `videoCodec?`: `string`, `subtitleCodec?`: `string`, `transcodeReasons?`: `string`, `audioStreamIndex?`: `number`, `videoStreamIndex?`: `number`, `context?`: [`EncodingContext`](../enums/generated_client.EncodingContext.md), `streamOptions?`: { `[key: string]`: `string`;  }, `maxWidth?`: `number`, `maxHeight?`: `number`, `enableSubtitlesInManifest?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`any`\>\> |
-
-#### Defined in
-
-[generated-client/api/video-hls-api.ts:332](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/video-hls-api.ts#L332)
+[generated-client/api/video-attachments-api.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L80)
 
 ___
 
@@ -6921,7 +7017,7 @@ VideosApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/videos-api.ts#L35)
+[generated-client/api/videos-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L35)
 
 ___
 
@@ -6957,7 +7053,7 @@ VideosApi - factory interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/videos-api.ts#L1585)
+[generated-client/api/videos-api.ts:1585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L1585)
 
 ___
 
@@ -6991,7 +7087,7 @@ VideosApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/videos-api.ts#L1297)
+[generated-client/api/videos-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L1297)
 
 ___
 
@@ -7016,11 +7112,11 @@ YearsApi - axios parameter creator
 | Name | Type |
 | :------ | :------ |
 | `getYear` | (`year`: `number`, `userId?`: `string`, `options`: `any`) => `Promise`<`RequestArgs`\> |
-| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
+| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 
 #### Defined in
 
-[generated-client/api/years-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L39)
+[generated-client/api/years-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L41)
 
 ___
 
@@ -7047,11 +7143,11 @@ YearsApi - factory interface
 | Name | Type |
 | :------ | :------ |
 | `getYear` | (`year`: `number`, `userId?`: `string`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\> |
-| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
+| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\> |
 
 #### Defined in
 
-[generated-client/api/years-api.ts:245](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L245)
+[generated-client/api/years-api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L247)
 
 ___
 
@@ -7076,8 +7172,8 @@ YearsApi - functional programming interface
 | Name | Type |
 | :------ | :------ |
 | `getYear` | (`year`: `number`, `userId?`: `string`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDto`](../interfaces/generated_client.BaseItemDto.md)\>\> |
-| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: `string`[], `includeItemTypes?`: `string`[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
+| `getYears` | (`startIndex?`: `number`, `limit?`: `number`, `sortOrder?`: [`SortOrder`](../enums/generated_client.SortOrder.md)[], `parentId?`: `string`, `fields?`: [`ItemFields`](../enums/generated_client.ItemFields.md)[], `excludeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `includeItemTypes?`: [`BaseItemKind`](../enums/generated_client.BaseItemKind.md)[], `mediaTypes?`: `string`[], `sortBy?`: `string`[], `enableUserData?`: `boolean`, `imageTypeLimit?`: `number`, `enableImageTypes?`: [`ImageType`](../enums/generated_client.ImageType.md)[], `userId?`: `string`, `recursive?`: `boolean`, `enableImages?`: `boolean`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<[`BaseItemDtoQueryResult`](../interfaces/generated_client.BaseItemDtoQueryResult.md)\>\> |
 
 #### Defined in
 
-[generated-client/api/years-api.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/years-api.ts#L198)
+[generated-client/api/years-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L200)

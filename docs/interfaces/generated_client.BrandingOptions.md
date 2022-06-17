@@ -4,6 +4,8 @@
 
 [generated-client](../modules/generated_client.md).BrandingOptions
 
+The branding options.
+
 **`export`**
 
 **`interface`** BrandingOptions
@@ -27,7 +29,7 @@ Gets or sets the custom CSS.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/branding-options.ts#L34)
+[generated-client/models/branding-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/branding-options.ts#L34)
 
 ___
 
@@ -41,4 +43,4 @@ Gets or sets the login disclaimer.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/branding-options.ts#L28)
+[generated-client/models/branding-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/branding-options.ts#L28)

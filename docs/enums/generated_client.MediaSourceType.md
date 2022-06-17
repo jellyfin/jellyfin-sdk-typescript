@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Default](generated_client.MediaSourceType.md#default)
 - [Grouping](generated_client.MediaSourceType.md#grouping)
 - [Placeholder](generated_client.MediaSourceType.md#placeholder)
 
-## Enumeration Members
+## Enumeration members
 
 ### Default
 
-• **Default**
+• **Default** = `"Default"`
 
 #### Defined in
 
-[generated-client/models/media-source-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-source-type.ts#L24)
+[generated-client/models/media-source-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-type.ts#L24)
 
 ___
 
 ### Grouping
 
-• **Grouping**
+• **Grouping** = `"Grouping"`
 
 #### Defined in
 
-[generated-client/models/media-source-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-source-type.ts#L25)
+[generated-client/models/media-source-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-type.ts#L25)
 
 ___
 
 ### Placeholder
 
-• **Placeholder**
+• **Placeholder** = `"Placeholder"`
 
 #### Defined in
 
-[generated-client/models/media-source-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-source-type.ts#L26)
+[generated-client/models/media-source-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-type.ts#L26)

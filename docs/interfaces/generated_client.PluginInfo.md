@@ -35,7 +35,7 @@ Gets or sets a value indicating whether the plugin can be uninstalled.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L60)
+[generated-client/models/plugin-info.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L59)
 
 ___
 
@@ -49,13 +49,13 @@ Gets or sets the name of the configuration file.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L42)
+[generated-client/models/plugin-info.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L41)
 
 ___
 
 ### Description
 
-• `Optional` **Description**: ``null`` \| `string`
+• `Optional` **Description**: `string`
 
 Gets or sets the description.
 
@@ -63,7 +63,7 @@ Gets or sets the description.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L48)
+[generated-client/models/plugin-info.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L47)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets a value indicating whether this plugin has a valid image.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L66)
+[generated-client/models/plugin-info.ts:65](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L65)
 
 ___
 
@@ -91,13 +91,13 @@ Gets or sets the unique id.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L54)
+[generated-client/models/plugin-info.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L53)
 
 ___
 
 ### Name
 
-• `Optional` **Name**: ``null`` \| `string`
+• `Optional` **Name**: `string`
 
 Gets or sets the name.
 
@@ -105,7 +105,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L30)
+[generated-client/models/plugin-info.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L29)
 
 ___
 
@@ -117,16 +117,18 @@ ___
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L72)
+[generated-client/models/plugin-info.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L71)
 
 ___
 
 ### Version
 
-• `Optional` **Version**: [`Version`](generated_client.Version.md)
+• `Optional` **Version**: `string`
+
+Gets or sets the version.
 
 **`memberof`** PluginInfo
 
 #### Defined in
 
-[generated-client/models/plugin-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/plugin-info.ts#L36)
+[generated-client/models/plugin-info.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/plugin-info.ts#L35)

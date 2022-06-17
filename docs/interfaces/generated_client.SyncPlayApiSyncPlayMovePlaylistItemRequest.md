@@ -28,4 +28,4 @@ The new position for the item.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/sync-play-api.ts#L1359)
+[generated-client/api/sync-play-api.ts:1359](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1359)

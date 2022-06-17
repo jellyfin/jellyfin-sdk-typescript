@@ -14,18 +14,18 @@ The quick connect request body.
 
 ### Properties
 
-- [Token](generated_client.QuickConnectDto.md#token)
+- [Secret](generated_client.QuickConnectDto.md#secret)
 
 ## Properties
 
-### Token
+### Secret
 
-• **Token**: `string`
+• **Secret**: `string`
 
-Gets or sets the quick connect token.
+Gets or sets the quick connect secret.
 
 **`memberof`** QuickConnectDto
 
 #### Defined in
 
-[generated-client/models/quick-connect-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/quick-connect-dto.ts#L28)
+[generated-client/models/quick-connect-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-dto.ts#L28)

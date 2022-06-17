@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Likes](generated_client.RatingType.md#likes)
 - [Score](generated_client.RatingType.md#score)
 
-## Enumeration Members
+## Enumeration members
 
 ### Likes
 
-• **Likes**
+• **Likes** = `"Likes"`
 
 #### Defined in
 
-[generated-client/models/rating-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/rating-type.ts#L25)
+[generated-client/models/rating-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/rating-type.ts#L25)
 
 ___
 
 ### Score
 
-• **Score**
+• **Score** = `"Score"`
 
 #### Defined in
 
-[generated-client/models/rating-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/rating-type.ts#L24)
+[generated-client/models/rating-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/rating-type.ts#L24)

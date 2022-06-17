@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [HasActorFromRecentlyPlayed](generated_client.RecommendationType.md#hasactorfromrecentlyplayed)
 - [HasDirectorFromRecentlyPlayed](generated_client.RecommendationType.md#hasdirectorfromrecentlyplayed)
@@ -17,62 +17,62 @@
 - [SimilarToLikedItem](generated_client.RecommendationType.md#similartolikeditem)
 - [SimilarToRecentlyPlayed](generated_client.RecommendationType.md#similartorecentlyplayed)
 
-## Enumeration Members
+## Enumeration members
 
 ### HasActorFromRecentlyPlayed
 
-• **HasActorFromRecentlyPlayed**
+• **HasActorFromRecentlyPlayed** = `"HasActorFromRecentlyPlayed"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L27)
+[generated-client/models/recommendation-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L27)
 
 ___
 
 ### HasDirectorFromRecentlyPlayed
 
-• **HasDirectorFromRecentlyPlayed**
+• **HasDirectorFromRecentlyPlayed** = `"HasDirectorFromRecentlyPlayed"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L26)
+[generated-client/models/recommendation-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L26)
 
 ___
 
 ### HasLikedActor
 
-• **HasLikedActor**
+• **HasLikedActor** = `"HasLikedActor"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L29)
+[generated-client/models/recommendation-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L29)
 
 ___
 
 ### HasLikedDirector
 
-• **HasLikedDirector**
+• **HasLikedDirector** = `"HasLikedDirector"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L28)
+[generated-client/models/recommendation-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L28)
 
 ___
 
 ### SimilarToLikedItem
 
-• **SimilarToLikedItem**
+• **SimilarToLikedItem** = `"SimilarToLikedItem"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L25)
+[generated-client/models/recommendation-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L25)
 
 ___
 
 ### SimilarToRecentlyPlayed
 
-• **SimilarToRecentlyPlayed**
+• **SimilarToRecentlyPlayed** = `"SimilarToRecentlyPlayed"`
 
 #### Defined in
 
-[generated-client/models/recommendation-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/recommendation-type.ts#L24)
+[generated-client/models/recommendation-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recommendation-type.ts#L24)

@@ -31,7 +31,7 @@ Old image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9994](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L9994)
+[generated-client/api/image-api.ts:10276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10276)
 
 ___
 
@@ -45,7 +45,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9987](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L9987)
+[generated-client/api/image-api.ts:10269](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10269)
 
 ___
 
@@ -59,7 +59,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:9980](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L9980)
+[generated-client/api/image-api.ts:10262](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10262)
 
 ___
 
@@ -73,4 +73,4 @@ New image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10001](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/image-api.ts#L10001)
+[generated-client/api/image-api.ts:10283](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L10283)

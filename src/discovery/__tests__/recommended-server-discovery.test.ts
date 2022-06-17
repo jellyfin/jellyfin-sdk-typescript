@@ -10,6 +10,7 @@ import { mocked } from 'ts-jest/utils';
 import { RecommendedServerDiscovery } from '..';
 import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfoScore, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
+import { itIf } from '../../__helpers__/it-if';
 
 jest.mock('axios');
 const mockAxios = mocked(axios, true);
@@ -64,7 +65,9 @@ describe('RecommendedServerDiscovery', () => {
 			expect(info.systemInfo).toBe(systemInfo);
 		});
 
-		it('should return an issue for outdated versions', async () => {
+		/* eslint-disable jest/no-standalone-expect */
+		// NOTE: This test will only work if API_VERSION and MINIMUM_VERSION are not the same!
+		itIf(API_VERSION !== MINIMUM_VERSION, 'should return an issue for outdated versions', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);
 			const systemInfo = {
 				Version: MINIMUM_VERSION,
@@ -81,6 +84,7 @@ describe('RecommendedServerDiscovery', () => {
 			expect(info.score).toBe(RecommendedServerInfoScore.GOOD);
 			expect(info.systemInfo).toBe(systemInfo);
 		});
+		/* eslint-enable jest/no-standalone-expect */
 
 		it('should return an issue for slow responses', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);

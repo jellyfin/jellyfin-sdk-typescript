@@ -28,7 +28,7 @@ ItemRefreshApi - object-oriented interface
 
 ### Methods
 
-- [post](generated_client.ItemRefreshApi.md#post)
+- [refreshItem](generated_client.ItemRefreshApi.md#refreshitem)
 
 ## Constructors
 
@@ -50,7 +50,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -84,13 +84,13 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
 
-### post
+### refreshItem
 
-▸ **post**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
+▸ **refreshItem**(`requestParameters`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
 
 **`summary`** Refreshes metadata for an item.
 
@@ -102,7 +102,7 @@ BaseAPI.configuration
 
 | Name | Type | Description |
 | :------ | :------ | :------ |
-| `requestParameters` | [`ItemRefreshApiPostRequest`](../interfaces/generated_client.ItemRefreshApiPostRequest.md) | Request parameters. |
+| `requestParameters` | [`ItemRefreshApiRefreshItemRequest`](../interfaces/generated_client.ItemRefreshApiRefreshItemRequest.md) | Request parameters. |
 | `options?` | `any` | - |
 
 #### Returns
@@ -111,4 +111,4 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/item-refresh-api.ts#L199)
+[generated-client/api/item-refresh-api.ts:199](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L199)

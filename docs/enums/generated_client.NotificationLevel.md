@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Error](generated_client.NotificationLevel.md#error)
 - [Normal](generated_client.NotificationLevel.md#normal)
 - [Warning](generated_client.NotificationLevel.md#warning)
 
-## Enumeration Members
+## Enumeration members
 
 ### Error
 
-• **Error**
+• **Error** = `"Error"`
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-level.ts#L26)
+[generated-client/models/notification-level.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-level.ts#L26)
 
 ___
 
 ### Normal
 
-• **Normal**
+• **Normal** = `"Normal"`
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-level.ts#L24)
+[generated-client/models/notification-level.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-level.ts#L24)
 
 ___
 
 ### Warning
 
-• **Warning**
+• **Warning** = `"Warning"`
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/notification-level.ts#L25)
+[generated-client/models/notification-level.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-level.ts#L25)

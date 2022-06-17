@@ -20,13 +20,17 @@
 
 ### Headers
 
-• `Optional` **Headers**: ``null`` \| { `[key: string]`: `string`;  }
+• `Optional` **Headers**: `Object`
 
 **`memberof`** ControlResponse
 
+#### Index signature
+
+▪ [key: `string`]: `string`
+
 #### Defined in
 
-[generated-client/models/control-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/control-response.ts#L28)
+[generated-client/models/control-response.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/control-response.ts#L28)
 
 ___
 
@@ -38,16 +42,16 @@ ___
 
 #### Defined in
 
-[generated-client/models/control-response.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/control-response.ts#L40)
+[generated-client/models/control-response.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/control-response.ts#L40)
 
 ___
 
 ### Xml
 
-• `Optional` **Xml**: ``null`` \| `string`
+• `Optional` **Xml**: `string`
 
 **`memberof`** ControlResponse
 
 #### Defined in
 
-[generated-client/models/control-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/control-response.ts#L34)
+[generated-client/models/control-response.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/control-response.ts#L34)

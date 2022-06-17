@@ -18,10 +18,10 @@
 
 ### Id
 
-• `Optional` **Id**: ``null`` \| `string`
+• `Optional` **Id**: `string`
 
 **`memberof`** PlaylistCreationResult
 
 #### Defined in
 
-[generated-client/models/playlist-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/playlist-creation-result.ts#L28)
+[generated-client/models/playlist-creation-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playlist-creation-result.ts#L28)

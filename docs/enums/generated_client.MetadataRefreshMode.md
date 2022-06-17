@@ -8,49 +8,49 @@
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Default](generated_client.MetadataRefreshMode.md#default)
 - [FullRefresh](generated_client.MetadataRefreshMode.md#fullrefresh)
 - [None](generated_client.MetadataRefreshMode.md#none)
 - [ValidationOnly](generated_client.MetadataRefreshMode.md#validationonly)
 
-## Enumeration Members
+## Enumeration members
 
 ### Default
 
-• **Default**
+• **Default** = `"Default"`
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-refresh-mode.ts#L26)
+[generated-client/models/metadata-refresh-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-refresh-mode.ts#L26)
 
 ___
 
 ### FullRefresh
 
-• **FullRefresh**
+• **FullRefresh** = `"FullRefresh"`
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-refresh-mode.ts#L27)
+[generated-client/models/metadata-refresh-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-refresh-mode.ts#L27)
 
 ___
 
 ### None
 
-• **None**
+• **None** = `"None"`
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-refresh-mode.ts#L24)
+[generated-client/models/metadata-refresh-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-refresh-mode.ts#L24)
 
 ___
 
 ### ValidationOnly
 
-• **ValidationOnly**
+• **ValidationOnly** = `"ValidationOnly"`
 
 #### Defined in
 
-[generated-client/models/metadata-refresh-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/metadata-refresh-mode.ts#L25)
+[generated-client/models/metadata-refresh-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-refresh-mode.ts#L25)

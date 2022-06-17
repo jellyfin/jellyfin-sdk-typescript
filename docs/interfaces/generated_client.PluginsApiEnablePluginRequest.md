@@ -29,13 +29,13 @@ Plugin id.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:698](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L698)
+[generated-client/api/plugins-api.ts:631](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L631)
 
 ___
 
 ### version
 
-• `Readonly` **version**: [`Version`](generated_client.Version.md)
+• `Readonly` **version**: `string`
 
 Plugin version.
 
@@ -43,4 +43,4 @@ Plugin version.
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:705](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/plugins-api.ts#L705)
+[generated-client/api/plugins-api.ts:638](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L638)

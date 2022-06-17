@@ -28,12 +28,9 @@ QuickConnectApi - object-oriented interface
 
 ### Methods
 
-- [activate](generated_client.QuickConnectApi.md#activate)
 - [authorize](generated_client.QuickConnectApi.md#authorize)
-- [available](generated_client.QuickConnectApi.md#available)
 - [connect](generated_client.QuickConnectApi.md#connect)
-- [deauthorize](generated_client.QuickConnectApi.md#deauthorize)
-- [getStatus](generated_client.QuickConnectApi.md#getstatus)
+- [getEnabled](generated_client.QuickConnectApi.md#getenabled)
 - [initiate](generated_client.QuickConnectApi.md#initiate)
 
 ## Constructors
@@ -56,7 +53,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -90,35 +87,9 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
 
 ## Methods
-
-### activate
-
-▸ **activate**(`options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
-
-**`summary`** Temporarily activates quick connect for five minutes.
-
-**`throws`** {RequiredError}
-
-**`memberof`** QuickConnectApi
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `options?` | `any` |
-
-#### Returns
-
-`Promise`<`AxiosResponse`<`void`, `any`\>\>
-
-#### Defined in
-
-[generated-client/api/quick-connect-api.ts:494](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L494)
-
-___
 
 ### authorize
 
@@ -143,34 +114,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L506)
-
-___
-
-### available
-
-▸ **available**(`requestParameters?`, `options?`): `Promise`<`AxiosResponse`<`void`, `any`\>\>
-
-**`summary`** Enables or disables quick connect.
-
-**`throws`** {RequiredError}
-
-**`memberof`** QuickConnectApi
-
-#### Parameters
-
-| Name | Type | Description |
-| :------ | :------ | :------ |
-| `requestParameters` | [`QuickConnectApiAvailableRequest`](../interfaces/generated_client.QuickConnectApiAvailableRequest.md) | Request parameters. |
-| `options?` | `any` | - |
-
-#### Returns
-
-`Promise`<`AxiosResponse`<`void`, `any`\>\>
-
-#### Defined in
-
-[generated-client/api/quick-connect-api.ts:518](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L518)
+[generated-client/api/quick-connect-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L316)
 
 ___
 
@@ -197,39 +141,13 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:530](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L530)
+[generated-client/api/quick-connect-api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L328)
 
 ___
 
-### deauthorize
+### getEnabled
 
-▸ **deauthorize**(`options?`): `Promise`<`AxiosResponse`<`number`, `any`\>\>
-
-**`summary`** Deauthorize all quick connect devices for the current user.
-
-**`throws`** {RequiredError}
-
-**`memberof`** QuickConnectApi
-
-#### Parameters
-
-| Name | Type |
-| :------ | :------ |
-| `options?` | `any` |
-
-#### Returns
-
-`Promise`<`AxiosResponse`<`number`, `any`\>\>
-
-#### Defined in
-
-[generated-client/api/quick-connect-api.ts:541](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L541)
-
-___
-
-### getStatus
-
-▸ **getStatus**(`options?`): `Promise`<`AxiosResponse`<[`QuickConnectState`](../enums/generated_client.QuickConnectState.md), `any`\>\>
+▸ **getEnabled**(`options?`): `Promise`<`AxiosResponse`<`boolean`, `any`\>\>
 
 **`summary`** Gets the current quick connect state.
 
@@ -245,11 +163,11 @@ ___
 
 #### Returns
 
-`Promise`<`AxiosResponse`<[`QuickConnectState`](../enums/generated_client.QuickConnectState.md), `any`\>\>
+`Promise`<`AxiosResponse`<`boolean`, `any`\>\>
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L552)
+[generated-client/api/quick-connect-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L339)
 
 ___
 
@@ -275,4 +193,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:563](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/api/quick-connect-api.ts#L563)
+[generated-client/api/quick-connect-api.ts:350](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L350)

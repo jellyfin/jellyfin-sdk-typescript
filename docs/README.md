@@ -15,19 +15,6 @@ A TypeScript SDK for Jellyfin.
 
 > Warning: This project is under active development, so API changes may occur.
 
-## Breaking Changes
-
-### v0.5.0
-
-* Build directory is now `lib` instead of `dist`.
-  Any imports used that were previously in `dist` will need updated.
-  [#147](https://github.com/thornbill/jellyfin-sdk-typescript/pull/147)
-* Duplicated exports were removed.
-  Any imports may need updated if you referenced one of the duplicates.
-  [#148](https://github.com/thornbill/jellyfin-sdk-typescript/pull/148)
-* API classes are no longer exposed via getters.
-  Instead you need to call a function passing the `Api` instance as a parameter. For example: `getSystemApi(api)`. While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking. [#149](https://github.com/thornbill/jellyfin-sdk-typescript/pull/149)
-
 ## Install
 
 ```sh
@@ -98,6 +85,25 @@ console.log('Libraries =>', libraries.data);
 // SDK so the internal state is updated correctly.
 await api.logout();
 ```
+
+## Breaking Changes
+
+### v0.5.0
+
+* Build directory is now `lib` instead of `dist`.
+  Any imports used that were previously in `dist` will need updated.
+  [#147](https://github.com/thornbill/jellyfin-sdk-typescript/pull/147)
+* Duplicated exports were removed.
+  Any imports may need updated if you referenced one of the duplicates.
+  [#148](https://github.com/thornbill/jellyfin-sdk-typescript/pull/148)
+* API classes are no longer exposed via getters.
+  Instead you need to call a function passing the `Api` instance as a parameter.
+  For example: `getSystemApi(api)`.
+  While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking.
+  [#149](https://github.com/thornbill/jellyfin-sdk-typescript/pull/149)
+* `BaseItemKind` is now included in the generated client.
+  Imports will need updated.
+  [#187](https://github.com/thornbill/jellyfin-sdk-typescript/pull/187)
 
 ## Roadmap to 1.0
 

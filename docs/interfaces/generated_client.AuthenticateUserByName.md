@@ -28,9 +28,11 @@ Gets or sets the sha1-hashed password.
 
 **`memberof`** AuthenticateUserByName
 
+**`deprecated`**
+
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/authenticate-user-by-name.ts#L40)
+[generated-client/models/authenticate-user-by-name.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/authenticate-user-by-name.ts#L41)
 
 ___
 
@@ -44,7 +46,7 @@ Gets or sets the plain text password.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/authenticate-user-by-name.ts#L34)
+[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/authenticate-user-by-name.ts#L34)
 
 ___
 
@@ -58,4 +60,4 @@ Gets or sets the username.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/authenticate-user-by-name.ts#L28)
+[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/authenticate-user-by-name.ts#L28)

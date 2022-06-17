@@ -4,6 +4,5 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * from './base-item-kind';
 export * from './image-request-parameters';
 export * from './item-sort-by';

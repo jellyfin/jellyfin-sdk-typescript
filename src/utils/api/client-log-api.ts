@@ -5,8 +5,8 @@
  */
 
 import { Api } from '../../api';
-import { VideoHlsApi } from '../../generated-client/api/video-hls-api';
+import { ClientLogApi } from '../../generated-client/api/client-log-api';
 
-export function getVideoHlsApi(api: Api): VideoHlsApi {
-	return new VideoHlsApi(api.configuration, undefined, api.axiosInstance);
+export function getClientLogApi(api: Api): ClientLogApi {
+	return new ClientLogApi(api.configuration, undefined, api.axiosInstance);
 }

@@ -10,49 +10,49 @@ Enum MediaStreamType.
 
 ## Table of contents
 
-### Enumeration Members
+### Enumeration members
 
 - [Audio](generated_client.MediaStreamType.md#audio)
 - [EmbeddedImage](generated_client.MediaStreamType.md#embeddedimage)
 - [Subtitle](generated_client.MediaStreamType.md#subtitle)
 - [Video](generated_client.MediaStreamType.md#video)
 
-## Enumeration Members
+## Enumeration members
 
 ### Audio
 
-• **Audio**
+• **Audio** = `"Audio"`
 
 #### Defined in
 
-[generated-client/models/media-stream-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-stream-type.ts#L24)
+[generated-client/models/media-stream-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-stream-type.ts#L24)
 
 ___
 
 ### EmbeddedImage
 
-• **EmbeddedImage**
+• **EmbeddedImage** = `"EmbeddedImage"`
 
 #### Defined in
 
-[generated-client/models/media-stream-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-stream-type.ts#L27)
+[generated-client/models/media-stream-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-stream-type.ts#L27)
 
 ___
 
 ### Subtitle
 
-• **Subtitle**
+• **Subtitle** = `"Subtitle"`
 
 #### Defined in
 
-[generated-client/models/media-stream-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-stream-type.ts#L26)
+[generated-client/models/media-stream-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-stream-type.ts#L26)
 
 ___
 
 ### Video
 
-• **Video**
+• **Video** = `"Video"`
 
 #### Defined in
 
-[generated-client/models/media-stream-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/03092f3/src/generated-client/models/media-stream-type.ts#L25)
+[generated-client/models/media-stream-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-stream-type.ts#L25)
