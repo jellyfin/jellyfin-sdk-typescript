@@ -6,6 +6,9 @@
 
 import { Jellyfin, RecommendedServerInfoScore } from '..';
 import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
+import { getLibraryApi } from '../utils/api/library-api';
+import { getSystemApi } from '../utils/api/system-api';
+import { getUserApi } from '../utils/api/user-api';
 
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
 
@@ -36,7 +39,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		const users = await api.userApi.getPublicUsers();
+		const users = await getUserApi(api).getPublicUsers();
 		// console.log('Users =>', users.data);
 		expect(users.data).toBeTruthy();
 	});
@@ -48,7 +51,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		const info = await api.systemApi.getPublicSystemInfo();
+		const info = await getSystemApi(api).getPublicSystemInfo();
 		// console.log('Info =>', info.data);
 		expect(info.data).toBeTruthy();
 	});
@@ -76,7 +79,7 @@ describe('Test the Base SDK', () => {
 
 		await api.authenticateUserByName('demo');
 
-		const libraries = await api.libraryApi.getMediaFolders();
+		const libraries = await getLibraryApi(api).getMediaFolders();
 		// console.log('Libraries =>', libraries.data);
 		expect(libraries.data).toBeTruthy();
 
