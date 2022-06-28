@@ -10,8 +10,8 @@
 <a href="https://github.com/jellyfin/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/jellyfin/jellyfin-sdk-typescript"></a>
 <a href="https://github.com/jellyfin/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-sdk-typescript.svg"/></a>
 <a href="https://www.npmjs.com/package/@thornbill/jellyfin-sdk"><img alt="npm" src="https://img.shields.io/npm/v/@thornbill/jellyfin-sdk"></a>
-<a href="https://codecov.io/gh/thornbill/jellyfin-sdk-typescript">
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/thornbill/jellyfin-sdk-typescript?token=Wk8RS9tDnb">
+<a href="https://codecov.io/gh/jellyfin/jellyfin-sdk-typescript">
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/jellyfin/jellyfin-sdk-typescript?token=eFF0jvWiyq">
 </a>
 </p>
 
