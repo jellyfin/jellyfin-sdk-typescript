@@ -10,7 +10,7 @@
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/thornbill/jellyfin-sdk-typescript.git"
+    "url": "https://github.com/jellyfin/jellyfin-sdk-typescript.git"
   },
   "publishConfig": {
     "access": "public"
