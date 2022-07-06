@@ -2,3 +2,4 @@ dist
 generated-client
 lib
 node_modules
+src/utils/normalize-url
