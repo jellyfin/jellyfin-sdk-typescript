@@ -12,5 +12,5 @@ module.exports = {
 
 	// Coverage options
 	collectCoverageFrom: [ 'src/**' ],
-	coveragePathIgnorePatterns: [ '__helpers__', 'generated-client', 'normalize-url' ]
+	coveragePathIgnorePatterns: [ '__helpers__', 'generated-client' ]
 };

@@ -49,6 +49,6 @@ export function parseUrl(input: string): URL {
 	}
 
 	return new URL(
-		normalizeUrl(input, { stripWWW: false })
+		normalizeUrl(input)
 	);
 }

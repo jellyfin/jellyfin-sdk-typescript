@@ -38,10 +38,9 @@ describe('Address Candidates', () => {
 			expect(candidates[1]).toBe('http://example.com:8888/');
 		});
 
-		it('should return the entered url non http(s) protocols', () => {
+		it('should return an empty list for urls with non http(s) protocols', () => {
 			const candidates = getAddressCandidates('ftp://example.com');
-			expect(candidates).toHaveLength(1);
-			expect(candidates[0]).toBe('ftp://example.com/');
+			expect(candidates).toHaveLength(0);
 		});
 
 		it('should return an empty list for invalid urls', () => {
