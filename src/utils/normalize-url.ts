@@ -18,14 +18,25 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-/*
- * A fork of https://github.com/sindresorhus/normalize-url ported to typescript with all unneeded features removed
- */
-
 import { HTTP_PROTOCOL } from './url';
+
+/*
+ * A fork of https://github.com/sindresorhus/normalize-url ported to typescript with all unneeded features removed.
+ * This was necessary due to v7 only providing ES module builds that are poorly supported and v6 using poorly supported
+ * regex features.
+ */
 
 export default function normalizeUrl(urlString: string): string {
 	urlString = urlString.trim();
+
+	// Data URL
+	if (/^data:/i.test(urlString)) {
+		throw new Error('data URLs are not supported');
+	}
+
+	if (/^view-source:/i.test(urlString)) {
+		throw new Error('`view-source:` is not supported as it is a non-standard protocol');
+	}
 
 	const hasRelativeProtocol = urlString.startsWith('//');
 	const isRelativeUrl = !hasRelativeProtocol && /^\.*\//.test(urlString);
