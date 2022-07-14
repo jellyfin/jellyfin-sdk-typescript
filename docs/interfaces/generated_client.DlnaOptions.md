@@ -38,7 +38,7 @@ Gets or sets the frequency at which ssdp alive notifications are transmitted.
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L58)
+[generated-client/models/dlna-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L58)
 
 ___
 
@@ -52,7 +52,7 @@ Gets or sets a value indicating whether playTo device profiles should be created
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L76)
+[generated-client/models/dlna-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L76)
 
 ___
 
@@ -66,7 +66,7 @@ Gets or sets the frequency at which ssdp alive notifications are transmitted. MI
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L64)
+[generated-client/models/dlna-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L64)
 
 ___
 
@@ -80,7 +80,7 @@ Gets or sets a value indicating whether to blast alive messages.
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L82)
+[generated-client/models/dlna-options.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L82)
 
 ___
 
@@ -94,7 +94,7 @@ Gets or sets the ssdp client discovery interval time (in seconds).  This is the 
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L52)
+[generated-client/models/dlna-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L52)
 
 ___
 
@@ -108,7 +108,7 @@ Gets or sets the default user account that the dlna server uses.
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L70)
+[generated-client/models/dlna-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L70)
 
 ___
 
@@ -122,7 +122,7 @@ Gets or sets a value indicating whether detailed dlna server logs are sent to th
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L40)
+[generated-client/models/dlna-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L40)
 
 ___
 
@@ -136,7 +136,7 @@ Gets or sets a value indicating whether gets or sets a value to indicate the sta
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L28)
+[generated-client/models/dlna-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L28)
 
 ___
 
@@ -150,7 +150,7 @@ Gets or sets a value indicating whether whether detailed playTo debug logs are s
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L46)
+[generated-client/models/dlna-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L46)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets a value indicating whether gets or sets a value to indicate the sta
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L34)
+[generated-client/models/dlna-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L34)
 
 ___
 
@@ -178,4 +178,4 @@ gets or sets a value indicating whether to send only matched host.
 
 #### Defined in
 
-[generated-client/models/dlna-options.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dlna-options.ts#L88)
+[generated-client/models/dlna-options.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/dlna-options.ts#L88)

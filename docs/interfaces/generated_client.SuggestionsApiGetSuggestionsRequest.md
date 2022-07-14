@@ -33,7 +33,7 @@ Whether to enable the total record count.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:195](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L195)
+[generated-client/api/suggestions-api.ts:195](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L195)
 
 ___
 
@@ -47,7 +47,7 @@ Optional. The limit.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:188](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L188)
+[generated-client/api/suggestions-api.ts:188](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L188)
 
 ___
 
@@ -61,7 +61,7 @@ The media types.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:167](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L167)
+[generated-client/api/suggestions-api.ts:167](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L167)
 
 ___
 
@@ -75,7 +75,7 @@ Optional. The start index.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:181](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L181)
+[generated-client/api/suggestions-api.ts:181](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L181)
 
 ___
 
@@ -89,7 +89,7 @@ The type.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L174)
+[generated-client/api/suggestions-api.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L174)
 
 ___
 
@@ -103,4 +103,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:160](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/suggestions-api.ts#L160)
+[generated-client/api/suggestions-api.ts:160](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L160)

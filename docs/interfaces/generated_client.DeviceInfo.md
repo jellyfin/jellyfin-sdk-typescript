@@ -35,7 +35,7 @@ Gets or sets the access token.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L35)
+[generated-client/models/device-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L35)
 
 ___
 
@@ -49,7 +49,7 @@ Gets or sets the name of the application.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L53)
+[generated-client/models/device-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L53)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets the application version.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L59)
+[generated-client/models/device-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L59)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:77](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L77)
+[generated-client/models/device-info.ts:77](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L77)
 
 ___
 
@@ -89,7 +89,7 @@ Gets or sets the date last modified.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L71)
+[generated-client/models/device-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L71)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:83](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L83)
+[generated-client/models/device-info.ts:83](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L83)
 
 ___
 
@@ -115,7 +115,7 @@ Gets or sets the identifier.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L41)
+[generated-client/models/device-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L41)
 
 ___
 
@@ -129,7 +129,7 @@ Gets or sets the last user identifier.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L65)
+[generated-client/models/device-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L65)
 
 ___
 
@@ -143,7 +143,7 @@ Gets or sets the last name of the user.
 
 #### Defined in
 
-[generated-client/models/device-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L47)
+[generated-client/models/device-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L47)
 
 ___
 
@@ -155,4 +155,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/device-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-info.ts#L29)
+[generated-client/models/device-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/device-info.ts#L29)

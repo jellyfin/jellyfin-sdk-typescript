@@ -28,4 +28,4 @@ The notification request.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:469](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/notifications-api.ts#L469)
+[generated-client/api/notifications-api.ts:469](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/notifications-api.ts#L469)

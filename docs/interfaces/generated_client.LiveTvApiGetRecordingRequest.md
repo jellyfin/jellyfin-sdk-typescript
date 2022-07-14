@@ -29,7 +29,7 @@ Recording id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4033](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4033)
+[generated-client/api/live-tv-api.ts:4033](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4033)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4040](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4040)
+[generated-client/api/live-tv-api.ts:4040](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4040)

@@ -28,4 +28,4 @@ Device profile.
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:411](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/dlna-api.ts#L411)
+[generated-client/api/dlna-api.ts:411](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-api.ts#L411)

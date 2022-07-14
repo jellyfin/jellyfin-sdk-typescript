@@ -23,7 +23,7 @@ Possible score values for recommended servers.
 
 #### Defined in
 
-[models/recommended-server-info.ts:16](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L16)
+[models/recommended-server-info.ts:16](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L16)
 
 ___
 
@@ -33,7 +33,7 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:14](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L14)
+[models/recommended-server-info.ts:14](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L14)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:13](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L13)
+[models/recommended-server-info.ts:13](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L13)
 
 ___
 
@@ -53,4 +53,4 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:15](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L15)
+[models/recommended-server-info.ts:15](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L15)

@@ -32,7 +32,7 @@ Gets or sets the sha1-hashed password.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/authenticate-user-by-name.ts#L41)
+[generated-client/models/authenticate-user-by-name.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/authenticate-user-by-name.ts#L41)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the plain text password.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/authenticate-user-by-name.ts#L34)
+[generated-client/models/authenticate-user-by-name.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/authenticate-user-by-name.ts#L34)
 
 ___
 
@@ -60,4 +60,4 @@ Gets or sets the username.
 
 #### Defined in
 
-[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/authenticate-user-by-name.ts#L28)
+[generated-client/models/authenticate-user-by-name.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/authenticate-user-by-name.ts#L28)

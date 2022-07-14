@@ -29,7 +29,7 @@ The video id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:436](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/hls-segment-api.ts#L436)
+[generated-client/api/hls-segment-api.ts:436](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/hls-segment-api.ts#L436)
 
 ___
 
@@ -43,4 +43,4 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:443](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/hls-segment-api.ts#L443)
+[generated-client/api/hls-segment-api.ts:443](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/hls-segment-api.ts#L443)

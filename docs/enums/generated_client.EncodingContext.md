@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/encoding-context.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-context.ts#L25)
+[generated-client/models/encoding-context.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-context.ts#L25)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-context.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-context.ts#L24)
+[generated-client/models/encoding-context.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-context.ts#L24)

@@ -37,7 +37,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:285](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L285)
+[generated-client/api/filter-api.ts:285](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L285)
 
 ___
 
@@ -51,7 +51,7 @@ Optional. Is item airing.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:292](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L292)
+[generated-client/api/filter-api.ts:292](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L292)
 
 ___
 
@@ -65,7 +65,7 @@ Optional. Is item kids.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:313](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L313)
+[generated-client/api/filter-api.ts:313](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L313)
 
 ___
 
@@ -79,7 +79,7 @@ Optional. Is item movie.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:299](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L299)
+[generated-client/api/filter-api.ts:299](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L299)
 
 ___
 
@@ -93,7 +93,7 @@ Optional. Is item news.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:320](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L320)
+[generated-client/api/filter-api.ts:320](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L320)
 
 ___
 
@@ -107,7 +107,7 @@ Optional. Is item series.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:327](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L327)
+[generated-client/api/filter-api.ts:327](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L327)
 
 ___
 
@@ -121,7 +121,7 @@ Optional. Is item sports.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L306)
+[generated-client/api/filter-api.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L306)
 
 ___
 
@@ -135,7 +135,7 @@ Optional. Specify this to localize the search to a specific item or folder. Omit
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:278](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L278)
+[generated-client/api/filter-api.ts:278](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L278)
 
 ___
 
@@ -149,7 +149,7 @@ Optional. Search recursive.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:334](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L334)
+[generated-client/api/filter-api.ts:334](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L334)
 
 ___
 
@@ -163,4 +163,4 @@ Optional. User id.
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:271](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/filter-api.ts#L271)
+[generated-client/api/filter-api.ts:271](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L271)

@@ -61,7 +61,7 @@
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:232](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L232)
+[generated-client/models/encoding-options.ts:232](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L232)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:250](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L250)
+[generated-client/models/encoding-options.ts:250](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L250)
 
 ___
 
@@ -85,7 +85,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:178](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L178)
+[generated-client/models/encoding-options.ts:178](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L178)
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:184](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L184)
+[generated-client/models/encoding-options.ts:184](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L184)
 
 ___
 
@@ -109,7 +109,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L52)
+[generated-client/models/encoding-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L52)
 
 ___
 
@@ -121,7 +121,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:190](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L190)
+[generated-client/models/encoding-options.ts:190](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L190)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:196](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L196)
+[generated-client/models/encoding-options.ts:196](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L196)
 
 ___
 
@@ -145,7 +145,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:202](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L202)
+[generated-client/models/encoding-options.ts:202](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L202)
 
 ___
 
@@ -157,7 +157,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L46)
+[generated-client/models/encoding-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L46)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:226](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L226)
+[generated-client/models/encoding-options.ts:226](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L226)
 
 ___
 
@@ -181,7 +181,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:214](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L214)
+[generated-client/models/encoding-options.ts:214](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L214)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:220](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L220)
+[generated-client/models/encoding-options.ts:220](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L220)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:238](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L238)
+[generated-client/models/encoding-options.ts:238](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L238)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L64)
+[generated-client/models/encoding-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L64)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:100](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L100)
+[generated-client/models/encoding-options.ts:100](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L100)
 
 ___
 
@@ -241,7 +241,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:106](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L106)
+[generated-client/models/encoding-options.ts:106](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L106)
 
 ___
 
@@ -255,7 +255,7 @@ Gets or sets the FFmpeg path as set by the user via the UI.
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L82)
+[generated-client/models/encoding-options.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L82)
 
 ___
 
@@ -269,7 +269,7 @@ Gets or sets the current FFmpeg path being used by the system and displayed on t
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L88)
+[generated-client/models/encoding-options.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L88)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:172](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L172)
+[generated-client/models/encoding-options.ts:172](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L172)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L28)
+[generated-client/models/encoding-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L28)
 
 ___
 
@@ -305,7 +305,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L40)
+[generated-client/models/encoding-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L40)
 
 ___
 
@@ -317,7 +317,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:160](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L160)
+[generated-client/models/encoding-options.ts:160](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L160)
 
 ___
 
@@ -329,7 +329,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:166](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L166)
+[generated-client/models/encoding-options.ts:166](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L166)
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L76)
+[generated-client/models/encoding-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L76)
 
 ___
 
@@ -353,7 +353,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:244](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L244)
+[generated-client/models/encoding-options.ts:244](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L244)
 
 ___
 
@@ -365,7 +365,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L58)
+[generated-client/models/encoding-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L58)
 
 ___
 
@@ -377,7 +377,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:208](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L208)
+[generated-client/models/encoding-options.ts:208](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L208)
 
 ___
 
@@ -389,7 +389,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L70)
+[generated-client/models/encoding-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L70)
 
 ___
 
@@ -401,7 +401,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:112](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L112)
+[generated-client/models/encoding-options.ts:112](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L112)
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:124](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L124)
+[generated-client/models/encoding-options.ts:124](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L124)
 
 ___
 
@@ -425,7 +425,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:142](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L142)
+[generated-client/models/encoding-options.ts:142](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L142)
 
 ___
 
@@ -437,7 +437,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:136](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L136)
+[generated-client/models/encoding-options.ts:136](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L136)
 
 ___
 
@@ -449,7 +449,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:118](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L118)
+[generated-client/models/encoding-options.ts:118](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L118)
 
 ___
 
@@ -461,7 +461,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:130](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L130)
+[generated-client/models/encoding-options.ts:130](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L130)
 
 ___
 
@@ -473,7 +473,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L34)
+[generated-client/models/encoding-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L34)
 
 ___
 
@@ -485,7 +485,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:94](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L94)
+[generated-client/models/encoding-options.ts:94](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L94)
 
 ___
 
@@ -497,7 +497,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:148](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L148)
+[generated-client/models/encoding-options.ts:148](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L148)
 
 ___
 
@@ -509,4 +509,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/encoding-options.ts:154](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/encoding-options.ts#L154)
+[generated-client/models/encoding-options.ts:154](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/encoding-options.ts#L154)

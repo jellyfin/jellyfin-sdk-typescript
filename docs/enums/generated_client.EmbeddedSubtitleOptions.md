@@ -25,7 +25,7 @@ An enum representing the options to disable embedded subs.
 
 #### Defined in
 
-[generated-client/models/embedded-subtitle-options.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/embedded-subtitle-options.ts#L24)
+[generated-client/models/embedded-subtitle-options.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/embedded-subtitle-options.ts#L24)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/embedded-subtitle-options.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/embedded-subtitle-options.ts#L26)
+[generated-client/models/embedded-subtitle-options.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/embedded-subtitle-options.ts#L26)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/embedded-subtitle-options.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/embedded-subtitle-options.ts#L27)
+[generated-client/models/embedded-subtitle-options.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/embedded-subtitle-options.ts#L27)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/embedded-subtitle-options.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/embedded-subtitle-options.ts#L25)
+[generated-client/models/embedded-subtitle-options.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/embedded-subtitle-options.ts#L25)

@@ -54,7 +54,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -88,7 +88,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -115,7 +115,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:818](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/media-info-api.ts#L818)
+[generated-client/api/media-info-api.ts:818](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L818)
 
 ___
 
@@ -142,7 +142,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:830](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/media-info-api.ts#L830)
+[generated-client/api/media-info-api.ts:830](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L830)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:842](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/media-info-api.ts#L842)
+[generated-client/api/media-info-api.ts:842](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L842)
 
 ___
 
@@ -198,7 +198,7 @@ For backwards compatibility parameters can be sent via Query or Body, with Query
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:854](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/media-info-api.ts#L854)
+[generated-client/api/media-info-api.ts:854](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L854)
 
 ___
 
@@ -225,4 +225,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:866](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/media-info-api.ts#L866)
+[generated-client/api/media-info-api.ts:866](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L866)

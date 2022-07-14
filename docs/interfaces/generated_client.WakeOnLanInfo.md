@@ -29,7 +29,7 @@ Gets the MAC address of the device.
 
 #### Defined in
 
-[generated-client/models/wake-on-lan-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/wake-on-lan-info.ts#L28)
+[generated-client/models/wake-on-lan-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/wake-on-lan-info.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets the wake-on-LAN port.
 
 #### Defined in
 
-[generated-client/models/wake-on-lan-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/wake-on-lan-info.ts#L34)
+[generated-client/models/wake-on-lan-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/wake-on-lan-info.ts#L34)

@@ -30,7 +30,7 @@ Gets or sets a value indicating whether the playing item should be removed as we
 
 #### Defined in
 
-[generated-client/models/remove-from-playlist-request-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/remove-from-playlist-request-dto.ts#L40)
+[generated-client/models/remove-from-playlist-request-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/remove-from-playlist-request-dto.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets a value indicating whether the entire playlist should be cleared.
 
 #### Defined in
 
-[generated-client/models/remove-from-playlist-request-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/remove-from-playlist-request-dto.ts#L34)
+[generated-client/models/remove-from-playlist-request-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/remove-from-playlist-request-dto.ts#L34)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the playlist identifiers ot the items. Ignored when clearing the pl
 
 #### Defined in
 
-[generated-client/models/remove-from-playlist-request-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/remove-from-playlist-request-dto.ts#L28)
+[generated-client/models/remove-from-playlist-request-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/remove-from-playlist-request-dto.ts#L28)

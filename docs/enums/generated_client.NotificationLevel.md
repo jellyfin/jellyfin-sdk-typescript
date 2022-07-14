@@ -22,7 +22,7 @@
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/notification-level.ts#L26)
+[generated-client/models/notification-level.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-level.ts#L26)
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/notification-level.ts#L24)
+[generated-client/models/notification-level.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-level.ts#L24)
 
 ___
 
@@ -42,4 +42,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-level.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/notification-level.ts#L25)
+[generated-client/models/notification-level.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-level.ts#L25)

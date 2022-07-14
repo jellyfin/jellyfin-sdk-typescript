@@ -35,7 +35,7 @@
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L71)
+[generated-client/models/artist-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L71)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:89](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L89)
+[generated-client/models/artist-info.ts:89](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L89)
 
 ___
 
@@ -61,7 +61,7 @@ Gets or sets the metadata country code.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L53)
+[generated-client/models/artist-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L53)
 
 ___
 
@@ -75,7 +75,7 @@ Gets or sets the metadata language.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L47)
+[generated-client/models/artist-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L47)
 
 ___
 
@@ -89,7 +89,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L29)
+[generated-client/models/artist-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L29)
 
 ___
 
@@ -103,7 +103,7 @@ Gets or sets the original title.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L35)
+[generated-client/models/artist-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L35)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:77](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L77)
+[generated-client/models/artist-info.ts:77](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L77)
 
 ___
 
@@ -129,7 +129,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L41)
+[generated-client/models/artist-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L41)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:83](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L83)
+[generated-client/models/artist-info.ts:83](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L83)
 
 ___
 
@@ -155,7 +155,7 @@ Gets or sets the provider ids.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L59)
+[generated-client/models/artist-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L59)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:95](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L95)
+[generated-client/models/artist-info.ts:95](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L95)
 
 ___
 
@@ -181,4 +181,4 @@ Gets or sets the year.
 
 #### Defined in
 
-[generated-client/models/artist-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/artist-info.ts#L65)
+[generated-client/models/artist-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/artist-info.ts#L65)

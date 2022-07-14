@@ -28,4 +28,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:6996](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L6996)
+[generated-client/api/image-api.ts:6996](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L6996)

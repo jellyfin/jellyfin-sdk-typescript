@@ -29,7 +29,7 @@ Request parameters for setItemImageByIndex operation in ImageApi.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10300](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10300)
+[generated-client/api/image-api.ts:10300](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10300)
 
 ___
 
@@ -43,7 +43,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10293](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10293)
+[generated-client/api/image-api.ts:10293](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10293)
 
 ___
 
@@ -57,7 +57,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10286](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10286)
+[generated-client/api/image-api.ts:10286](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10286)
 
 ___
 
@@ -71,4 +71,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10279](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10279)
+[generated-client/api/image-api.ts:10279](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10279)

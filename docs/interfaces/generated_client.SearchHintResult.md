@@ -29,7 +29,7 @@ Gets the search hints.
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/search-hint-result.ts#L29)
+[generated-client/models/search-hint-result.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/search-hint-result.ts#L29)
 
 ___
 
@@ -43,4 +43,4 @@ Gets the total record count.
 
 #### Defined in
 
-[generated-client/models/search-hint-result.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/search-hint-result.ts#L35)
+[generated-client/models/search-hint-result.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/search-hint-result.ts#L35)

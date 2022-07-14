@@ -30,7 +30,7 @@ Optional. Filter by sessions that were active in the last n seconds.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1271](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1271)
+[generated-client/api/session-api.ts:1271](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L1271)
 
 ___
 
@@ -44,7 +44,7 @@ Filter by sessions that a given user is allowed to remote control.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1257](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1257)
+[generated-client/api/session-api.ts:1257](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L1257)
 
 ___
 
@@ -58,4 +58,4 @@ Filter by device Id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1264)
+[generated-client/api/session-api.ts:1264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L1264)

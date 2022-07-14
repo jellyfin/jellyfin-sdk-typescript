@@ -29,7 +29,7 @@ New series timer info.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4460](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4460)
+[generated-client/api/live-tv-api.ts:4460](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4460)
 
 ___
 
@@ -43,4 +43,4 @@ Timer id.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4453](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4453)
+[generated-client/api/live-tv-api.ts:4453](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4453)

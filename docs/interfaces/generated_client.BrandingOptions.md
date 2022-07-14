@@ -30,7 +30,7 @@ Gets or sets the custom CSS.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L34)
+[generated-client/models/branding-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/branding-options.ts#L34)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the login disclaimer.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L28)
+[generated-client/models/branding-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/branding-options.ts#L28)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets a value indicating whether to enable the splashscreen.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L40)
+[generated-client/models/branding-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/branding-options.ts#L40)

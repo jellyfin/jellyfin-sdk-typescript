@@ -25,7 +25,7 @@ Enum TaskCompletionStatus.
 
 #### Defined in
 
-[generated-client/models/task-completion-status.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/task-completion-status.ts#L27)
+[generated-client/models/task-completion-status.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/task-completion-status.ts#L27)
 
 ___
 
@@ -35,7 +35,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-completion-status.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/task-completion-status.ts#L26)
+[generated-client/models/task-completion-status.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/task-completion-status.ts#L26)
 
 ___
 
@@ -45,7 +45,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-completion-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/task-completion-status.ts#L24)
+[generated-client/models/task-completion-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/task-completion-status.ts#L24)
 
 ___
 
@@ -55,4 +55,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/task-completion-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/task-completion-status.ts#L25)
+[generated-client/models/task-completion-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/task-completion-status.ts#L25)

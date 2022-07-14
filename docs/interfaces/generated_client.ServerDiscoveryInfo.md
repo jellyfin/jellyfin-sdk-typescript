@@ -31,7 +31,7 @@ Gets the address.
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/server-discovery-info.ts#L28)
+[generated-client/models/server-discovery-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/server-discovery-info.ts#L28)
 
 ___
 
@@ -45,7 +45,7 @@ Gets the endpoint address.
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/server-discovery-info.ts#L46)
+[generated-client/models/server-discovery-info.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/server-discovery-info.ts#L46)
 
 ___
 
@@ -59,7 +59,7 @@ Gets the server identifier.
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/server-discovery-info.ts#L34)
+[generated-client/models/server-discovery-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/server-discovery-info.ts#L34)
 
 ___
 
@@ -73,4 +73,4 @@ Gets the name.
 
 #### Defined in
 
-[generated-client/models/server-discovery-info.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/server-discovery-info.ts#L40)
+[generated-client/models/server-discovery-info.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/server-discovery-info.ts#L40)

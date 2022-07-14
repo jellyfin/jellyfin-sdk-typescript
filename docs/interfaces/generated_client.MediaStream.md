@@ -85,7 +85,7 @@ Gets or sets the aspect ratio.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:300](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L300)
+[generated-client/models/media-stream.ts:300](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L300)
 
 ___
 
@@ -99,7 +99,7 @@ Gets or sets the average frame rate.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:276](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L276)
+[generated-client/models/media-stream.ts:276](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L276)
 
 ___
 
@@ -113,7 +113,7 @@ Gets or sets the bit depth.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L222)
+[generated-client/models/media-stream.ts:222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L222)
 
 ___
 
@@ -127,7 +127,7 @@ Gets or sets the bit rate.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:216](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L216)
+[generated-client/models/media-stream.ts:216](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L216)
 
 ___
 
@@ -141,7 +141,7 @@ Gets or sets the Dolby Vision bl present flag.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:108](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L108)
+[generated-client/models/media-stream.ts:108](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L108)
 
 ___
 
@@ -155,7 +155,7 @@ Gets or sets the channel layout.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L210)
+[generated-client/models/media-stream.ts:210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L210)
 
 ___
 
@@ -169,7 +169,7 @@ Gets or sets the channels.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:240](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L240)
+[generated-client/models/media-stream.ts:240](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L240)
 
 ___
 
@@ -183,7 +183,7 @@ Gets or sets the codec.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L30)
+[generated-client/models/media-stream.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L30)
 
 ___
 
@@ -197,7 +197,7 @@ Gets or sets the codec tag.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L36)
+[generated-client/models/media-stream.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L36)
 
 ___
 
@@ -211,7 +211,7 @@ Gets or sets the codec time base.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L132)
+[generated-client/models/media-stream.ts:132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L132)
 
 ___
 
@@ -225,7 +225,7 @@ Gets or sets the color primaries.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L66)
+[generated-client/models/media-stream.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L66)
 
 ___
 
@@ -239,7 +239,7 @@ Gets or sets the color range.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L48)
+[generated-client/models/media-stream.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L48)
 
 ___
 
@@ -253,7 +253,7 @@ Gets or sets the color space.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L54)
+[generated-client/models/media-stream.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L54)
 
 ___
 
@@ -267,7 +267,7 @@ Gets or sets the color transfer.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L60)
+[generated-client/models/media-stream.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L60)
 
 ___
 
@@ -281,7 +281,7 @@ Gets or sets the comment.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L120)
+[generated-client/models/media-stream.ts:120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L120)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:324](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L324)
+[generated-client/models/media-stream.ts:324](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L324)
 
 ___
 
@@ -307,7 +307,7 @@ Gets or sets the delivery URL.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:330](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L330)
+[generated-client/models/media-stream.ts:330](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L330)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:186](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L186)
+[generated-client/models/media-stream.ts:186](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L186)
 
 ___
 
@@ -333,7 +333,7 @@ Gets or sets the Dolby Vision bl signal compatibility id.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:114](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L114)
+[generated-client/models/media-stream.ts:114](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L114)
 
 ___
 
@@ -347,7 +347,7 @@ Gets or sets the Dolby Vision level.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L90)
+[generated-client/models/media-stream.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L90)
 
 ___
 
@@ -361,7 +361,7 @@ Gets or sets the Dolby Vision profile.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L84)
+[generated-client/models/media-stream.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L84)
 
 ___
 
@@ -375,7 +375,7 @@ Gets or sets the Dolby Vision version major.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L72)
+[generated-client/models/media-stream.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L72)
 
 ___
 
@@ -389,7 +389,7 @@ Gets or sets the Dolby Vision version minor.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L78)
+[generated-client/models/media-stream.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L78)
 
 ___
 
@@ -403,7 +403,7 @@ Gets or sets the Dolby Vision el present flag.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L102)
+[generated-client/models/media-stream.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L102)
 
 ___
 
@@ -417,7 +417,7 @@ Gets or sets the height.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L264)
+[generated-client/models/media-stream.ts:264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L264)
 
 ___
 
@@ -431,7 +431,7 @@ Gets or sets the index.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L306)
+[generated-client/models/media-stream.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L306)
 
 ___
 
@@ -443,7 +443,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:204](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L204)
+[generated-client/models/media-stream.ts:204](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L204)
 
 ___
 
@@ -457,7 +457,7 @@ Gets or sets whether this instance is anamorphic.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L372)
+[generated-client/models/media-stream.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L372)
 
 ___
 
@@ -471,7 +471,7 @@ Gets or sets a value indicating whether this instance is default.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:252](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L252)
+[generated-client/models/media-stream.ts:252](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L252)
 
 ___
 
@@ -485,7 +485,7 @@ Gets or sets a value indicating whether this instance is external.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:318](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L318)
+[generated-client/models/media-stream.ts:318](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L318)
 
 ___
 
@@ -499,7 +499,7 @@ Gets or sets a value indicating whether this instance is external URL.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:336](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L336)
+[generated-client/models/media-stream.ts:336](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L336)
 
 ___
 
@@ -513,7 +513,7 @@ Gets or sets a value indicating whether this instance is forced.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:258](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L258)
+[generated-client/models/media-stream.ts:258](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L258)
 
 ___
 
@@ -527,7 +527,7 @@ Gets or sets a value indicating whether this instance is interlaced.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:198](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L198)
+[generated-client/models/media-stream.ts:198](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L198)
 
 ___
 
@@ -539,7 +539,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:342](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L342)
+[generated-client/models/media-stream.ts:342](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L342)
 
 ___
 
@@ -553,7 +553,7 @@ Gets or sets the language.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L42)
+[generated-client/models/media-stream.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L42)
 
 ___
 
@@ -567,7 +567,7 @@ Gets or sets the level.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:366](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L366)
+[generated-client/models/media-stream.ts:366](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L366)
 
 ___
 
@@ -579,7 +579,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:168](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L168)
+[generated-client/models/media-stream.ts:168](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L168)
 
 ___
 
@@ -591,7 +591,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:180](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L180)
+[generated-client/models/media-stream.ts:180](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L180)
 
 ___
 
@@ -603,7 +603,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L174)
+[generated-client/models/media-stream.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L174)
 
 ___
 
@@ -615,7 +615,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:162](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L162)
+[generated-client/models/media-stream.ts:162](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L162)
 
 ___
 
@@ -627,7 +627,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:192](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L192)
+[generated-client/models/media-stream.ts:192](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L192)
 
 ___
 
@@ -641,7 +641,7 @@ Gets or sets the length of the packet.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L234)
+[generated-client/models/media-stream.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L234)
 
 ___
 
@@ -655,7 +655,7 @@ Gets or sets the filename.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:354](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L354)
+[generated-client/models/media-stream.ts:354](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L354)
 
 ___
 
@@ -669,7 +669,7 @@ Gets or sets the pixel format.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:360](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L360)
+[generated-client/models/media-stream.ts:360](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L360)
 
 ___
 
@@ -683,7 +683,7 @@ Gets or sets the profile.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:288](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L288)
+[generated-client/models/media-stream.ts:288](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L288)
 
 ___
 
@@ -697,7 +697,7 @@ Gets or sets the real frame rate.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:282](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L282)
+[generated-client/models/media-stream.ts:282](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L282)
 
 ___
 
@@ -711,7 +711,7 @@ Gets or sets the reference frames.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:228](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L228)
+[generated-client/models/media-stream.ts:228](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L228)
 
 ___
 
@@ -725,7 +725,7 @@ Gets or sets the Dolby Vision rpu present flag.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L96)
+[generated-client/models/media-stream.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L96)
 
 ___
 
@@ -739,7 +739,7 @@ Gets or sets the sample rate.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:246](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L246)
+[generated-client/models/media-stream.ts:246](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L246)
 
 ___
 
@@ -753,7 +753,7 @@ Gets or sets the score.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:312](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L312)
+[generated-client/models/media-stream.ts:312](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L312)
 
 ___
 
@@ -767,7 +767,7 @@ Gets or sets a value indicating whether [supports external stream].
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:348](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L348)
+[generated-client/models/media-stream.ts:348](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L348)
 
 ___
 
@@ -781,7 +781,7 @@ Gets or sets the time base.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:126](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L126)
+[generated-client/models/media-stream.ts:126](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L126)
 
 ___
 
@@ -795,7 +795,7 @@ Gets or sets the title.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:138](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L138)
+[generated-client/models/media-stream.ts:138](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L138)
 
 ___
 
@@ -807,7 +807,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:294](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L294)
+[generated-client/models/media-stream.ts:294](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L294)
 
 ___
 
@@ -821,7 +821,7 @@ Gets the video dovi title.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:156](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L156)
+[generated-client/models/media-stream.ts:156](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L156)
 
 ___
 
@@ -835,7 +835,7 @@ Gets the video range.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:144](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L144)
+[generated-client/models/media-stream.ts:144](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L144)
 
 ___
 
@@ -849,7 +849,7 @@ Gets the video range type.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:150](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L150)
+[generated-client/models/media-stream.ts:150](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L150)
 
 ___
 
@@ -863,4 +863,4 @@ Gets or sets the width.
 
 #### Defined in
 
-[generated-client/models/media-stream.ts:270](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-stream.ts#L270)
+[generated-client/models/media-stream.ts:270](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-stream.ts#L270)

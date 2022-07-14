@@ -28,4 +28,4 @@ Installation Id.
 
 #### Defined in
 
-[generated-client/api/package-api.ts:435](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L435)
+[generated-client/api/package-api.ts:435](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/package-api.ts#L435)

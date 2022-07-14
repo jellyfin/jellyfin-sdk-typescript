@@ -63,7 +63,7 @@ This exists simply to identify a set of known commands.
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L35)
+[generated-client/models/general-command-type.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L35)
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:55](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L55)
+[generated-client/models/general-command-type.ts:55](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L55)
 
 ___
 
@@ -83,7 +83,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L54)
+[generated-client/models/general-command-type.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L54)
 
 ___
 
@@ -93,7 +93,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L50)
+[generated-client/models/general-command-type.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L50)
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L52)
+[generated-client/models/general-command-type.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L52)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L39)
+[generated-client/models/general-command-type.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L39)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:51](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L51)
+[generated-client/models/general-command-type.ts:51](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L51)
 
 ___
 
@@ -133,7 +133,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L40)
+[generated-client/models/general-command-type.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L40)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L56)
+[generated-client/models/general-command-type.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L56)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L25)
+[generated-client/models/general-command-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L25)
 
 ___
 
@@ -163,7 +163,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L26)
+[generated-client/models/general-command-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L26)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L27)
+[generated-client/models/general-command-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L27)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L24)
+[generated-client/models/general-command-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L24)
 
 ___
 
@@ -193,7 +193,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:43](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L43)
+[generated-client/models/general-command-type.ts:43](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L43)
 
 ___
 
@@ -203,7 +203,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L31)
+[generated-client/models/general-command-type.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L31)
 
 ___
 
@@ -213,7 +213,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L29)
+[generated-client/models/general-command-type.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L29)
 
 ___
 
@@ -223,7 +223,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L28)
+[generated-client/models/general-command-type.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L28)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L64)
+[generated-client/models/general-command-type.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L64)
 
 ___
 
@@ -243,7 +243,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L58)
+[generated-client/models/general-command-type.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L58)
 
 ___
 
@@ -253,7 +253,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:62](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L62)
+[generated-client/models/general-command-type.ts:62](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L62)
 
 ___
 
@@ -263,7 +263,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:61](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L61)
+[generated-client/models/general-command-type.ts:61](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L61)
 
 ___
 
@@ -273,7 +273,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L59)
+[generated-client/models/general-command-type.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L59)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L30)
+[generated-client/models/general-command-type.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L30)
 
 ___
 
@@ -293,7 +293,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L34)
+[generated-client/models/general-command-type.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L34)
 
 ___
 
@@ -303,7 +303,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L37)
+[generated-client/models/general-command-type.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L37)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:38](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L38)
+[generated-client/models/general-command-type.ts:38](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L38)
 
 ___
 
@@ -323,7 +323,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L47)
+[generated-client/models/general-command-type.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L47)
 
 ___
 
@@ -333,7 +333,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L65)
+[generated-client/models/general-command-type.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L65)
 
 ___
 
@@ -343,7 +343,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L53)
+[generated-client/models/general-command-type.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L53)
 
 ___
 
@@ -353,7 +353,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L60)
+[generated-client/models/general-command-type.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L60)
 
 ___
 
@@ -363,7 +363,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L48)
+[generated-client/models/general-command-type.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L48)
 
 ___
 
@@ -373,7 +373,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L46)
+[generated-client/models/general-command-type.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L46)
 
 ___
 
@@ -383,7 +383,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L36)
+[generated-client/models/general-command-type.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L36)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L33)
+[generated-client/models/general-command-type.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L33)
 
 ___
 
@@ -403,7 +403,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:49](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L49)
+[generated-client/models/general-command-type.ts:49](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L49)
 
 ___
 
@@ -413,7 +413,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L45)
+[generated-client/models/general-command-type.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L45)
 
 ___
 
@@ -423,7 +423,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L32)
+[generated-client/models/general-command-type.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L32)
 
 ___
 
@@ -433,7 +433,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:63](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L63)
+[generated-client/models/general-command-type.ts:63](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L63)
 
 ___
 
@@ -443,7 +443,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:57](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L57)
+[generated-client/models/general-command-type.ts:57](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L57)
 
 ___
 
@@ -453,7 +453,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:44](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L44)
+[generated-client/models/general-command-type.ts:44](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L44)
 
 ___
 
@@ -463,7 +463,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L42)
+[generated-client/models/general-command-type.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L42)
 
 ___
 
@@ -473,4 +473,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/general-command-type.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/general-command-type.ts#L41)
+[generated-client/models/general-command-type.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/general-command-type.ts#L41)

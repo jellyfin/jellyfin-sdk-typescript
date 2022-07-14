@@ -26,4 +26,4 @@ Request parameters for setUnread operation in NotificationsApi.
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:525](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/notifications-api.ts#L525)
+[generated-client/api/notifications-api.ts:525](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/notifications-api.ts#L525)

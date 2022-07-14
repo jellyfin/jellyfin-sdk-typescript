@@ -30,7 +30,7 @@
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L36)
+[generated-client/models/response-profile.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L36)
 
 ___
 
@@ -42,7 +42,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L66)
+[generated-client/models/response-profile.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L66)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L30)
+[generated-client/models/response-profile.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L30)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L60)
+[generated-client/models/response-profile.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L60)
 
 ___
 
@@ -78,7 +78,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L54)
+[generated-client/models/response-profile.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L54)
 
 ___
 
@@ -90,7 +90,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L48)
+[generated-client/models/response-profile.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L48)
 
 ___
 
@@ -102,4 +102,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/response-profile.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/response-profile.ts#L42)
+[generated-client/models/response-profile.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/response-profile.ts#L42)

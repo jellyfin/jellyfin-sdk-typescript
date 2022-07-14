@@ -32,7 +32,7 @@ Exclude artist ids.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2099](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2099)
+[generated-client/api/library-api.ts:2099](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2099)
 
 ___
 
@@ -46,7 +46,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2120)
+[generated-client/api/library-api.ts:2120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2120)
 
 ___
 
@@ -60,7 +60,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2092](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2092)
+[generated-client/api/library-api.ts:2092](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2092)
 
 ___
 
@@ -74,7 +74,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2113](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2113)
+[generated-client/api/library-api.ts:2113](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2113)
 
 ___
 
@@ -88,4 +88,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2106](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2106)
+[generated-client/api/library-api.ts:2106](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2106)

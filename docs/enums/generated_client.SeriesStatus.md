@@ -23,7 +23,7 @@ Enum SeriesStatus.
 
 #### Defined in
 
-[generated-client/models/series-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/series-status.ts#L24)
+[generated-client/models/series-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/series-status.ts#L24)
 
 ___
 
@@ -33,4 +33,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/series-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/series-status.ts#L25)
+[generated-client/models/series-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/series-status.ts#L25)

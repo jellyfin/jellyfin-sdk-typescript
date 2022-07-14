@@ -36,7 +36,7 @@
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L60)
+[generated-client/models/live-tv-options.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L60)
 
 ___
 
@@ -48,7 +48,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L54)
+[generated-client/models/live-tv-options.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L54)
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L30)
+[generated-client/models/live-tv-options.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L30)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L72)
+[generated-client/models/live-tv-options.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L72)
 
 ___
 
@@ -84,7 +84,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L90)
+[generated-client/models/live-tv-options.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L90)
 
 ___
 
@@ -96,7 +96,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L42)
+[generated-client/models/live-tv-options.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L42)
 
 ___
 
@@ -108,7 +108,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L84)
+[generated-client/models/live-tv-options.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L84)
 
 ___
 
@@ -120,7 +120,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L78)
+[generated-client/models/live-tv-options.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L78)
 
 ___
 
@@ -132,7 +132,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L36)
+[generated-client/models/live-tv-options.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L36)
 
 ___
 
@@ -144,7 +144,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L96)
+[generated-client/models/live-tv-options.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L96)
 
 ___
 
@@ -156,7 +156,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L102)
+[generated-client/models/live-tv-options.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L102)
 
 ___
 
@@ -168,7 +168,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L48)
+[generated-client/models/live-tv-options.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L48)
 
 ___
 
@@ -180,4 +180,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-options.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-options.ts#L66)
+[generated-client/models/live-tv-options.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-options.ts#L66)

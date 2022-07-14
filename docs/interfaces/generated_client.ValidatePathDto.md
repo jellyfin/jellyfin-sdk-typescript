@@ -30,7 +30,7 @@ Gets or sets is path file.
 
 #### Defined in
 
-[generated-client/models/validate-path-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/validate-path-dto.ts#L40)
+[generated-client/models/validate-path-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/validate-path-dto.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/validate-path-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/validate-path-dto.ts#L34)
+[generated-client/models/validate-path-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/validate-path-dto.ts#L34)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets a value indicating whether validate if path is writable.
 
 #### Defined in
 
-[generated-client/models/validate-path-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/validate-path-dto.ts#L28)
+[generated-client/models/validate-path-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/validate-path-dto.ts#L28)

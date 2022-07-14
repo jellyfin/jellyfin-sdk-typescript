@@ -31,7 +31,7 @@ Whether or not to include external views such as channels or live tv.
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:227](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-views-api.ts#L227)
+[generated-client/api/user-views-api.ts:227](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L227)
 
 ___
 
@@ -45,7 +45,7 @@ Whether or not to include hidden content.
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:241](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-views-api.ts#L241)
+[generated-client/api/user-views-api.ts:241](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L241)
 
 ___
 
@@ -59,7 +59,7 @@ Preset views.
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-views-api.ts#L234)
+[generated-client/api/user-views-api.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L234)
 
 ___
 
@@ -73,4 +73,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:220](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-views-api.ts#L220)
+[generated-client/api/user-views-api.ts:220](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L220)

@@ -28,4 +28,4 @@ The new item to play.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1499](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/sync-play-api.ts#L1499)
+[generated-client/api/sync-play-api.ts:1499](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L1499)

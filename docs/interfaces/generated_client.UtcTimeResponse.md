@@ -29,7 +29,7 @@ Gets the UTC time when request has been received.
 
 #### Defined in
 
-[generated-client/models/utc-time-response.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/utc-time-response.ts#L28)
+[generated-client/models/utc-time-response.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/utc-time-response.ts#L28)
 
 ___
 
@@ -43,4 +43,4 @@ Gets the UTC time when response has been sent.
 
 #### Defined in
 
-[generated-client/models/utc-time-response.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/utc-time-response.ts#L34)
+[generated-client/models/utc-time-response.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/utc-time-response.ts#L34)

@@ -35,7 +35,7 @@ Gets or sets a value indicating whether this instance has update available.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L59)
+[generated-client/models/live-tv-service-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L59)
 
 ___
 
@@ -49,7 +49,7 @@ Gets or sets the home page URL.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L35)
+[generated-client/models/live-tv-service-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L35)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets a value indicating whether this instance is visible.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L65)
+[generated-client/models/live-tv-service-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L65)
 
 ___
 
@@ -77,7 +77,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L29)
+[generated-client/models/live-tv-service-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L29)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L41)
+[generated-client/models/live-tv-service-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L41)
 
 ___
 
@@ -103,7 +103,7 @@ Gets or sets the status message.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L47)
+[generated-client/models/live-tv-service-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L47)
 
 ___
 
@@ -115,7 +115,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L71)
+[generated-client/models/live-tv-service-info.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L71)
 
 ___
 
@@ -129,4 +129,4 @@ Gets or sets the version.
 
 #### Defined in
 
-[generated-client/models/live-tv-service-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-tv-service-info.ts#L53)
+[generated-client/models/live-tv-service-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-tv-service-info.ts#L53)

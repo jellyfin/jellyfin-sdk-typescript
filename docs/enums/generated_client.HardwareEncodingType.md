@@ -27,7 +27,7 @@ Enum HardwareEncodingType.
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L24)
+[generated-client/models/hardware-encoding-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L24)
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L26)
+[generated-client/models/hardware-encoding-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L26)
 
 ___
 
@@ -47,7 +47,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L25)
+[generated-client/models/hardware-encoding-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L25)
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L27)
+[generated-client/models/hardware-encoding-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L27)
 
 ___
 
@@ -67,7 +67,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L28)
+[generated-client/models/hardware-encoding-type.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L28)
 
 ___
 
@@ -77,4 +77,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/hardware-encoding-type.ts#L29)
+[generated-client/models/hardware-encoding-type.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L29)

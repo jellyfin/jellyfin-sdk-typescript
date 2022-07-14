@@ -29,7 +29,7 @@ Gets or sets the date created.
 
 #### Defined in
 
-[generated-client/models/log-file.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/log-file.ts#L28)
+[generated-client/models/log-file.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/log-file.ts#L28)
 
 ___
 
@@ -43,7 +43,7 @@ Gets or sets the date modified.
 
 #### Defined in
 
-[generated-client/models/log-file.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/log-file.ts#L34)
+[generated-client/models/log-file.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/log-file.ts#L34)
 
 ___
 
@@ -57,7 +57,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/log-file.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/log-file.ts#L46)
+[generated-client/models/log-file.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/log-file.ts#L46)
 
 ___
 
@@ -71,4 +71,4 @@ Gets or sets the size.
 
 #### Defined in
 
-[generated-client/models/log-file.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/log-file.ts#L40)
+[generated-client/models/log-file.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/log-file.ts#L40)

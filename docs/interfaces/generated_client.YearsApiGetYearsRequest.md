@@ -42,7 +42,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:397](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L397)
+[generated-client/api/years-api.ts:397](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L397)
 
 ___
 
@@ -56,7 +56,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:418](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L418)
+[generated-client/api/years-api.ts:418](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L418)
 
 ___
 
@@ -70,7 +70,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:383](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L383)
+[generated-client/api/years-api.ts:383](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L383)
 
 ___
 
@@ -84,7 +84,7 @@ Optional. If specified, results will be excluded based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/years-api.ts:355](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L355)
+[generated-client/api/years-api.ts:355](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L355)
 
 ___
 
@@ -98,7 +98,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:348](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L348)
+[generated-client/api/years-api.ts:348](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L348)
 
 ___
 
@@ -112,7 +112,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:390](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L390)
+[generated-client/api/years-api.ts:390](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L390)
 
 ___
 
@@ -126,7 +126,7 @@ Optional. If specified, results will be included based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/years-api.ts:362](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L362)
+[generated-client/api/years-api.ts:362](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L362)
 
 ___
 
@@ -140,7 +140,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:327](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L327)
+[generated-client/api/years-api.ts:327](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L327)
 
 ___
 
@@ -154,7 +154,7 @@ Optional. Filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:369](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L369)
+[generated-client/api/years-api.ts:369](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L369)
 
 ___
 
@@ -168,7 +168,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/years-api.ts:341](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L341)
+[generated-client/api/years-api.ts:341](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L341)
 
 ___
 
@@ -182,7 +182,7 @@ Search recursively.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:411](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L411)
+[generated-client/api/years-api.ts:411](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L411)
 
 ___
 
@@ -196,7 +196,7 @@ Optional. Specify one or more sort orders, comma delimited. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/years-api.ts:376](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L376)
+[generated-client/api/years-api.ts:376](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L376)
 
 ___
 
@@ -210,7 +210,7 @@ Sort Order - Ascending,Descending.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:334](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L334)
+[generated-client/api/years-api.ts:334](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L334)
 
 ___
 
@@ -224,7 +224,7 @@ Skips over a given number of items within the results. Use for paging.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:320](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L320)
+[generated-client/api/years-api.ts:320](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L320)
 
 ___
 
@@ -238,4 +238,4 @@ User Id.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:404](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/years-api.ts#L404)
+[generated-client/api/years-api.ts:404](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L404)

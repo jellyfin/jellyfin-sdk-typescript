@@ -26,7 +26,7 @@ Delivery method to use during playback of a specific subtitle format.
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-delivery-method.ts#L28)
+[generated-client/models/subtitle-delivery-method.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-delivery-method.ts#L28)
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-delivery-method.ts#L25)
+[generated-client/models/subtitle-delivery-method.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-delivery-method.ts#L25)
 
 ___
 
@@ -46,7 +46,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-delivery-method.ts#L24)
+[generated-client/models/subtitle-delivery-method.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-delivery-method.ts#L24)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-delivery-method.ts#L26)
+[generated-client/models/subtitle-delivery-method.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-delivery-method.ts#L26)
 
 ___
 
@@ -66,4 +66,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-delivery-method.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-delivery-method.ts#L27)
+[generated-client/models/subtitle-delivery-method.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-delivery-method.ts#L27)

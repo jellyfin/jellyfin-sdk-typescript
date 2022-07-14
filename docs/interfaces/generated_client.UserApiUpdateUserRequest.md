@@ -29,7 +29,7 @@ The updated user model.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1217](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-api.ts#L1217)
+[generated-client/api/user-api.ts:1217](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L1217)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/user-api.ts#L1210)
+[generated-client/api/user-api.ts:1210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L1210)

@@ -34,7 +34,7 @@ Gets or sets the changelog for this version.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L47)
+[generated-client/models/installation-info.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L47)
 
 ___
 
@@ -48,7 +48,7 @@ Gets or sets a checksum for the binary.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L59)
+[generated-client/models/installation-info.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L59)
 
 ___
 
@@ -62,7 +62,7 @@ Gets or sets the Id.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L29)
+[generated-client/models/installation-info.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L29)
 
 ___
 
@@ -76,7 +76,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L35)
+[generated-client/models/installation-info.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L35)
 
 ___
 
@@ -88,7 +88,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L65)
+[generated-client/models/installation-info.ts:65](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L65)
 
 ___
 
@@ -102,7 +102,7 @@ Gets or sets the source URL.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L53)
+[generated-client/models/installation-info.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L53)
 
 ___
 
@@ -116,4 +116,4 @@ Gets or sets the version.
 
 #### Defined in
 
-[generated-client/models/installation-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/installation-info.ts#L41)
+[generated-client/models/installation-info.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/installation-info.ts#L41)

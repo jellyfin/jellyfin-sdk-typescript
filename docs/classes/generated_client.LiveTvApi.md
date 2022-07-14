@@ -90,7 +90,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -124,7 +124,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -151,7 +151,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4499](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4499)
+[generated-client/api/live-tv-api.ts:4499](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4499)
 
 ___
 
@@ -178,7 +178,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4511](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4511)
+[generated-client/api/live-tv-api.ts:4511](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4511)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4523](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4523)
+[generated-client/api/live-tv-api.ts:4523](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4523)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4535](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4535)
+[generated-client/api/live-tv-api.ts:4535](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4535)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4547](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4547)
+[generated-client/api/live-tv-api.ts:4547](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4547)
 
 ___
 
@@ -286,7 +286,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4559](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4559)
+[generated-client/api/live-tv-api.ts:4559](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4559)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4571](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4571)
+[generated-client/api/live-tv-api.ts:4571](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4571)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4583](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4583)
+[generated-client/api/live-tv-api.ts:4583](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4583)
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4595](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4595)
+[generated-client/api/live-tv-api.ts:4595](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4595)
 
 ___
 
@@ -394,7 +394,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4607](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4607)
+[generated-client/api/live-tv-api.ts:4607](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4607)
 
 ___
 
@@ -421,7 +421,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4619)
+[generated-client/api/live-tv-api.ts:4619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4619)
 
 ___
 
@@ -448,7 +448,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4631](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4631)
+[generated-client/api/live-tv-api.ts:4631](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4631)
 
 ___
 
@@ -475,7 +475,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4643](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4643)
+[generated-client/api/live-tv-api.ts:4643](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4643)
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4654](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4654)
+[generated-client/api/live-tv-api.ts:4654](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4654)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4666](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4666)
+[generated-client/api/live-tv-api.ts:4666](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4666)
 
 ___
 
@@ -554,7 +554,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4677](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4677)
+[generated-client/api/live-tv-api.ts:4677](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4677)
 
 ___
 
@@ -581,7 +581,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4689](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4689)
+[generated-client/api/live-tv-api.ts:4689](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4689)
 
 ___
 
@@ -608,7 +608,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4701](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4701)
+[generated-client/api/live-tv-api.ts:4701](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4701)
 
 ___
 
@@ -635,7 +635,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4713](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4713)
+[generated-client/api/live-tv-api.ts:4713](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4713)
 
 ___
 
@@ -662,7 +662,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4725](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4725)
+[generated-client/api/live-tv-api.ts:4725](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4725)
 
 ___
 
@@ -688,7 +688,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4736](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4736)
+[generated-client/api/live-tv-api.ts:4736](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4736)
 
 ___
 
@@ -715,7 +715,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4748](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4748)
+[generated-client/api/live-tv-api.ts:4748](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4748)
 
 ___
 
@@ -742,7 +742,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4760](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4760)
+[generated-client/api/live-tv-api.ts:4760](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4760)
 
 ___
 
@@ -769,7 +769,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4772](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4772)
+[generated-client/api/live-tv-api.ts:4772](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4772)
 
 ___
 
@@ -796,7 +796,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4784](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4784)
+[generated-client/api/live-tv-api.ts:4784](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4784)
 
 ___
 
@@ -823,7 +823,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4796](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4796)
+[generated-client/api/live-tv-api.ts:4796](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4796)
 
 ___
 
@@ -850,7 +850,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4808](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4808)
+[generated-client/api/live-tv-api.ts:4808](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4808)
 
 ___
 
@@ -879,7 +879,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4821](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4821)
+[generated-client/api/live-tv-api.ts:4821](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4821)
 
 ___
 
@@ -908,7 +908,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4834)
+[generated-client/api/live-tv-api.ts:4834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4834)
 
 ___
 
@@ -935,7 +935,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4846](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4846)
+[generated-client/api/live-tv-api.ts:4846](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4846)
 
 ___
 
@@ -964,7 +964,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4859](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4859)
+[generated-client/api/live-tv-api.ts:4859](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4859)
 
 ___
 
@@ -990,7 +990,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4870](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4870)
+[generated-client/api/live-tv-api.ts:4870](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4870)
 
 ___
 
@@ -1017,7 +1017,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4882](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4882)
+[generated-client/api/live-tv-api.ts:4882](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4882)
 
 ___
 
@@ -1044,7 +1044,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4894](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4894)
+[generated-client/api/live-tv-api.ts:4894](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4894)
 
 ___
 
@@ -1071,7 +1071,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4906](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4906)
+[generated-client/api/live-tv-api.ts:4906](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4906)
 
 ___
 
@@ -1098,7 +1098,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4918](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4918)
+[generated-client/api/live-tv-api.ts:4918](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4918)
 
 ___
 
@@ -1124,7 +1124,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4929](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4929)
+[generated-client/api/live-tv-api.ts:4929](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4929)
 
 ___
 
@@ -1151,7 +1151,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4941](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4941)
+[generated-client/api/live-tv-api.ts:4941](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4941)
 
 ___
 
@@ -1178,7 +1178,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4953](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4953)
+[generated-client/api/live-tv-api.ts:4953](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4953)
 
 ___
 
@@ -1205,7 +1205,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4965](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4965)
+[generated-client/api/live-tv-api.ts:4965](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4965)
 
 ___
 
@@ -1232,4 +1232,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4977](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/live-tv-api.ts#L4977)
+[generated-client/api/live-tv-api.ts:4977](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4977)

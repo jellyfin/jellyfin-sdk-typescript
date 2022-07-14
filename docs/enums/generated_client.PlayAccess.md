@@ -21,7 +21,7 @@
 
 #### Defined in
 
-[generated-client/models/play-access.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-access.ts#L24)
+[generated-client/models/play-access.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/play-access.ts#L24)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/play-access.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-access.ts#L25)
+[generated-client/models/play-access.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/play-access.ts#L25)

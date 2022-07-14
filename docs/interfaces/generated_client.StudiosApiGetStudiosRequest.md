@@ -44,7 +44,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:400](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L400)
+[generated-client/api/studios-api.ts:400](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L400)
 
 ___
 
@@ -58,7 +58,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:435](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L435)
+[generated-client/api/studios-api.ts:435](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L435)
 
 ___
 
@@ -72,7 +72,7 @@ Total record count.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:442](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L442)
+[generated-client/api/studios-api.ts:442](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L442)
 
 ___
 
@@ -86,7 +86,7 @@ Optional, include user data.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:386](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L386)
+[generated-client/api/studios-api.ts:386](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L386)
 
 ___
 
@@ -100,7 +100,7 @@ Optional. If specified, results will be filtered out based on item type. This al
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:365](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L365)
+[generated-client/api/studios-api.ts:365](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L365)
 
 ___
 
@@ -114,7 +114,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:358](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L358)
+[generated-client/api/studios-api.ts:358](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L358)
 
 ___
 
@@ -128,7 +128,7 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:393](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L393)
+[generated-client/api/studios-api.ts:393](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L393)
 
 ___
 
@@ -142,7 +142,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L372)
+[generated-client/api/studios-api.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L372)
 
 ___
 
@@ -156,7 +156,7 @@ Optional filter by items that are marked as favorite, or not.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:379](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L379)
+[generated-client/api/studios-api.ts:379](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L379)
 
 ___
 
@@ -170,7 +170,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:337](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L337)
+[generated-client/api/studios-api.ts:337](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L337)
 
 ___
 
@@ -184,7 +184,7 @@ Optional filter by items whose name is equally or lesser than a given input stri
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:428](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L428)
+[generated-client/api/studios-api.ts:428](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L428)
 
 ___
 
@@ -198,7 +198,7 @@ Optional filter by items whose name is sorted equally than a given input string.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:421](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L421)
+[generated-client/api/studios-api.ts:421](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L421)
 
 ___
 
@@ -212,7 +212,7 @@ Optional filter by items whose name is sorted equally or greater than a given in
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:414](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L414)
+[generated-client/api/studios-api.ts:414](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L414)
 
 ___
 
@@ -226,7 +226,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:351](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L351)
+[generated-client/api/studios-api.ts:351](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L351)
 
 ___
 
@@ -240,7 +240,7 @@ Optional. Search term.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:344](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L344)
+[generated-client/api/studios-api.ts:344](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L344)
 
 ___
 
@@ -254,7 +254,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:330](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L330)
+[generated-client/api/studios-api.ts:330](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L330)
 
 ___
 
@@ -268,4 +268,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:407](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/studios-api.ts#L407)
+[generated-client/api/studios-api.ts:407](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L407)

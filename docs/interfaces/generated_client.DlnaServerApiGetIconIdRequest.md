@@ -29,7 +29,7 @@ The icon filename.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/dlna-server-api.ts#L1132)
+[generated-client/api/dlna-server-api.ts:1132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-server-api.ts#L1132)
 
 ___
 
@@ -43,4 +43,4 @@ Server UUID.
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:1125](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/dlna-server-api.ts#L1125)
+[generated-client/api/dlna-server-api.ts:1125](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-server-api.ts#L1125)

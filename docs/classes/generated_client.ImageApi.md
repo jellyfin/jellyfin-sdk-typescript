@@ -90,7 +90,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -124,7 +124,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -150,7 +150,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10366](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10366)
+[generated-client/api/image-api.ts:10366](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10366)
 
 ___
 
@@ -177,7 +177,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10378](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10378)
+[generated-client/api/image-api.ts:10378](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10378)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10390](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10390)
+[generated-client/api/image-api.ts:10390](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10390)
 
 ___
 
@@ -231,7 +231,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10402](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10402)
+[generated-client/api/image-api.ts:10402](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10402)
 
 ___
 
@@ -258,7 +258,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10414](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10414)
+[generated-client/api/image-api.ts:10414](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10414)
 
 ___
 
@@ -285,7 +285,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10426](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10426)
+[generated-client/api/image-api.ts:10426](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10426)
 
 ___
 
@@ -312,7 +312,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10438](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10438)
+[generated-client/api/image-api.ts:10438](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10438)
 
 ___
 
@@ -339,7 +339,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10450](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10450)
+[generated-client/api/image-api.ts:10450](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10450)
 
 ___
 
@@ -366,7 +366,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10462](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10462)
+[generated-client/api/image-api.ts:10462](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10462)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10474](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10474)
+[generated-client/api/image-api.ts:10474](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10474)
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10486](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10486)
+[generated-client/api/image-api.ts:10486](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10486)
 
 ___
 
@@ -447,7 +447,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10498](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10498)
+[generated-client/api/image-api.ts:10498](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10498)
 
 ___
 
@@ -474,7 +474,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10510](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10510)
+[generated-client/api/image-api.ts:10510](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10510)
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10522](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10522)
+[generated-client/api/image-api.ts:10522](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10522)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10534](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10534)
+[generated-client/api/image-api.ts:10534](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10534)
 
 ___
 
@@ -555,7 +555,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10546](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10546)
+[generated-client/api/image-api.ts:10546](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10546)
 
 ___
 
@@ -582,7 +582,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10558](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10558)
+[generated-client/api/image-api.ts:10558](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10558)
 
 ___
 
@@ -609,7 +609,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10570](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10570)
+[generated-client/api/image-api.ts:10570](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10570)
 
 ___
 
@@ -636,7 +636,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10582](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10582)
+[generated-client/api/image-api.ts:10582](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10582)
 
 ___
 
@@ -663,7 +663,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10594](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10594)
+[generated-client/api/image-api.ts:10594](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10594)
 
 ___
 
@@ -690,7 +690,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10606](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10606)
+[generated-client/api/image-api.ts:10606](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10606)
 
 ___
 
@@ -717,7 +717,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10618](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10618)
+[generated-client/api/image-api.ts:10618](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10618)
 
 ___
 
@@ -744,7 +744,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10630](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10630)
+[generated-client/api/image-api.ts:10630](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10630)
 
 ___
 
@@ -771,7 +771,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10642](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10642)
+[generated-client/api/image-api.ts:10642](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10642)
 
 ___
 
@@ -798,7 +798,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10654](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10654)
+[generated-client/api/image-api.ts:10654](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10654)
 
 ___
 
@@ -825,7 +825,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10666](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10666)
+[generated-client/api/image-api.ts:10666](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10666)
 
 ___
 
@@ -852,7 +852,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10678](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10678)
+[generated-client/api/image-api.ts:10678](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10678)
 
 ___
 
@@ -879,7 +879,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10690](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10690)
+[generated-client/api/image-api.ts:10690](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10690)
 
 ___
 
@@ -906,7 +906,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10702](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10702)
+[generated-client/api/image-api.ts:10702](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10702)
 
 ___
 
@@ -933,7 +933,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10714](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10714)
+[generated-client/api/image-api.ts:10714](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10714)
 
 ___
 
@@ -960,7 +960,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10726](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10726)
+[generated-client/api/image-api.ts:10726](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10726)
 
 ___
 
@@ -987,7 +987,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10738](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10738)
+[generated-client/api/image-api.ts:10738](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10738)
 
 ___
 
@@ -1014,7 +1014,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10750](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10750)
+[generated-client/api/image-api.ts:10750](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10750)
 
 ___
 
@@ -1041,7 +1041,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10762](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10762)
+[generated-client/api/image-api.ts:10762](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10762)
 
 ___
 
@@ -1068,7 +1068,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10774](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10774)
+[generated-client/api/image-api.ts:10774](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10774)
 
 ___
 
@@ -1095,7 +1095,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10786](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10786)
+[generated-client/api/image-api.ts:10786](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10786)
 
 ___
 
@@ -1122,7 +1122,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10798](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10798)
+[generated-client/api/image-api.ts:10798](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10798)
 
 ___
 
@@ -1149,7 +1149,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10810](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10810)
+[generated-client/api/image-api.ts:10810](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10810)
 
 ___
 
@@ -1176,7 +1176,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10822](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10822)
+[generated-client/api/image-api.ts:10822](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10822)
 
 ___
 
@@ -1203,7 +1203,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10834)
+[generated-client/api/image-api.ts:10834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10834)
 
 ___
 
@@ -1230,4 +1230,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/image-api.ts:10846](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L10846)
+[generated-client/api/image-api.ts:10846](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L10846)

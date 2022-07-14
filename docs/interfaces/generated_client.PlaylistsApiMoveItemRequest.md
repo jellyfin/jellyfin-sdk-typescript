@@ -30,7 +30,7 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:629](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/playlists-api.ts#L629)
+[generated-client/api/playlists-api.ts:629](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L629)
 
 ___
 
@@ -44,7 +44,7 @@ The new index.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:636](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/playlists-api.ts#L636)
+[generated-client/api/playlists-api.ts:636](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L636)
 
 ___
 
@@ -58,4 +58,4 @@ The playlist id.
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:622](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/playlists-api.ts#L622)
+[generated-client/api/playlists-api.ts:622](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L622)

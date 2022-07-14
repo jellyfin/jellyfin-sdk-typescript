@@ -27,7 +27,7 @@
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/query-filters-legacy.ts#L28)
+[generated-client/models/query-filters-legacy.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/query-filters-legacy.ts#L28)
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/query-filters-legacy.ts#L40)
+[generated-client/models/query-filters-legacy.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/query-filters-legacy.ts#L40)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/query-filters-legacy.ts#L34)
+[generated-client/models/query-filters-legacy.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/query-filters-legacy.ts#L34)
 
 ___
 
@@ -63,4 +63,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/query-filters-legacy.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/query-filters-legacy.ts#L46)
+[generated-client/models/query-filters-legacy.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/query-filters-legacy.ts#L46)

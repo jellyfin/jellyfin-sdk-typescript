@@ -29,7 +29,7 @@ The genre name.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:318](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/genres-api.ts#L318)
+[generated-client/api/genres-api.ts:318](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/genres-api.ts#L318)
 
 ___
 
@@ -43,4 +43,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:325](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/genres-api.ts#L325)
+[generated-client/api/genres-api.ts:325](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/genres-api.ts#L325)

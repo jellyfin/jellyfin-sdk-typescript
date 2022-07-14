@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/live-stream-response.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/live-stream-response.ts#L29)
+[generated-client/models/live-stream-response.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/live-stream-response.ts#L29)

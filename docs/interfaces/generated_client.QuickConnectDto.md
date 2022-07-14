@@ -28,4 +28,4 @@ Gets or sets the quick connect secret.
 
 #### Defined in
 
-[generated-client/models/quick-connect-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/quick-connect-dto.ts#L28)
+[generated-client/models/quick-connect-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-dto.ts#L28)

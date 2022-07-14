@@ -29,7 +29,7 @@ The media path dto.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:612](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-structure-api.ts#L612)
+[generated-client/api/library-structure-api.ts:612](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-structure-api.ts#L612)
 
 ___
 
@@ -43,4 +43,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-structure-api.ts#L619)
+[generated-client/api/library-structure-api.ts:619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-structure-api.ts#L619)

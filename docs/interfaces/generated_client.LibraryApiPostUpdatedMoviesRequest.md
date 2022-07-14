@@ -29,7 +29,7 @@ The imdbId.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2316](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2316)
+[generated-client/api/library-api.ts:2316](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2316)
 
 ___
 
@@ -43,4 +43,4 @@ The tmdbId.
 
 #### Defined in
 
-[generated-client/api/library-api.ts:2309](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-api.ts#L2309)
+[generated-client/api/library-api.ts:2309](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L2309)

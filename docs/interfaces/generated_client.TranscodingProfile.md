@@ -39,7 +39,7 @@
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L50)
+[generated-client/models/transcoding-profile.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L50)
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:116](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L116)
+[generated-client/models/transcoding-profile.ts:116](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L116)
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:122](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L122)
+[generated-client/models/transcoding-profile.ts:122](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L122)
 
 ___
 
@@ -75,7 +75,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L32)
+[generated-client/models/transcoding-profile.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L32)
 
 ___
 
@@ -87,7 +87,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:86](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L86)
+[generated-client/models/transcoding-profile.ts:86](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L86)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:80](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L80)
+[generated-client/models/transcoding-profile.ts:80](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L80)
 
 ___
 
@@ -111,7 +111,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:68](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L68)
+[generated-client/models/transcoding-profile.ts:68](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L68)
 
 ___
 
@@ -123,7 +123,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:92](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L92)
+[generated-client/models/transcoding-profile.ts:92](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L92)
 
 ___
 
@@ -135,7 +135,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:62](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L62)
+[generated-client/models/transcoding-profile.ts:62](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L62)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:98](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L98)
+[generated-client/models/transcoding-profile.ts:98](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L98)
 
 ___
 
@@ -159,7 +159,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:104](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L104)
+[generated-client/models/transcoding-profile.ts:104](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L104)
 
 ___
 
@@ -171,7 +171,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L56)
+[generated-client/models/transcoding-profile.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L56)
 
 ___
 
@@ -183,7 +183,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:110](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L110)
+[generated-client/models/transcoding-profile.ts:110](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L110)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:74](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L74)
+[generated-client/models/transcoding-profile.ts:74](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L74)
 
 ___
 
@@ -207,7 +207,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:38](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L38)
+[generated-client/models/transcoding-profile.ts:38](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L38)
 
 ___
 
@@ -219,4 +219,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/transcoding-profile.ts:44](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-profile.ts#L44)
+[generated-client/models/transcoding-profile.ts:44](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/transcoding-profile.ts#L44)

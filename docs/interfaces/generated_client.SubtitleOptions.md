@@ -32,7 +32,7 @@
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L52)
+[generated-client/models/subtitle-options.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L52)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L40)
+[generated-client/models/subtitle-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L40)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L46)
+[generated-client/models/subtitle-options.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L46)
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L70)
+[generated-client/models/subtitle-options.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L70)
 
 ___
 
@@ -80,7 +80,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L64)
+[generated-client/models/subtitle-options.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L64)
 
 ___
 
@@ -92,7 +92,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L58)
+[generated-client/models/subtitle-options.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L58)
 
 ___
 
@@ -104,7 +104,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L76)
+[generated-client/models/subtitle-options.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L76)
 
 ___
 
@@ -116,7 +116,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L34)
+[generated-client/models/subtitle-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L34)
 
 ___
 
@@ -128,4 +128,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/subtitle-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/subtitle-options.ts#L28)
+[generated-client/models/subtitle-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-options.ts#L28)

@@ -28,4 +28,4 @@ The player status.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1429](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/sync-play-api.ts#L1429)
+[generated-client/api/sync-play-api.ts:1429](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L1429)

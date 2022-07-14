@@ -29,7 +29,7 @@ Configuration.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:466](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/configuration-api.ts#L466)
+[generated-client/api/configuration-api.ts:466](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/configuration-api.ts#L466)
 
 ___
 
@@ -43,4 +43,4 @@ Configuration key.
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:459](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/configuration-api.ts#L459)
+[generated-client/api/configuration-api.ts:459](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/configuration-api.ts#L459)

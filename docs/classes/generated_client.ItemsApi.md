@@ -52,7 +52,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -86,7 +86,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -113,7 +113,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2866](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/items-api.ts#L2866)
+[generated-client/api/items-api.ts:2866](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2866)
 
 ___
 
@@ -140,7 +140,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2878](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/items-api.ts#L2878)
+[generated-client/api/items-api.ts:2878](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2878)
 
 ___
 
@@ -167,4 +167,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2890](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/items-api.ts#L2890)
+[generated-client/api/items-api.ts:2890](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2890)

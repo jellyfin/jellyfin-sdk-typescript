@@ -28,4 +28,4 @@ The item id.
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1873](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/videos-api.ts#L1873)
+[generated-client/api/videos-api.ts:1873](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/videos-api.ts#L1873)

@@ -41,7 +41,7 @@ Whether to disable sending the first episode in a series as next up.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:811](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L811)
+[generated-client/api/tv-shows-api.ts:811](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L811)
 
 ___
 
@@ -55,7 +55,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:783](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L783)
+[generated-client/api/tv-shows-api.ts:783](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L783)
 
 ___
 
@@ -69,7 +69,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:769](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L769)
+[generated-client/api/tv-shows-api.ts:769](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L769)
 
 ___
 
@@ -83,7 +83,7 @@ Whether to include watched episode in next up results.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:818](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L818)
+[generated-client/api/tv-shows-api.ts:818](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L818)
 
 ___
 
@@ -97,7 +97,7 @@ Whether to enable the total records count. Defaults to true.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:804](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L804)
+[generated-client/api/tv-shows-api.ts:804](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L804)
 
 ___
 
@@ -111,7 +111,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:790](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L790)
+[generated-client/api/tv-shows-api.ts:790](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L790)
 
 ___
 
@@ -125,7 +125,7 @@ Optional. Specify additional fields of information to return in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:748](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L748)
+[generated-client/api/tv-shows-api.ts:748](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L748)
 
 ___
 
@@ -139,7 +139,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:776](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L776)
+[generated-client/api/tv-shows-api.ts:776](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L776)
 
 ___
 
@@ -153,7 +153,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:741](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L741)
+[generated-client/api/tv-shows-api.ts:741](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L741)
 
 ___
 
@@ -167,7 +167,7 @@ Optional. Starting date of shows to show in Next Up section.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:797](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L797)
+[generated-client/api/tv-shows-api.ts:797](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L797)
 
 ___
 
@@ -181,7 +181,7 @@ Optional. Specify this to localize the search to a specific item or folder. Omit
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:762](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L762)
+[generated-client/api/tv-shows-api.ts:762](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L762)
 
 ___
 
@@ -195,7 +195,7 @@ Optional. Filter by series id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:755](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L755)
+[generated-client/api/tv-shows-api.ts:755](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L755)
 
 ___
 
@@ -209,7 +209,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:734](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L734)
+[generated-client/api/tv-shows-api.ts:734](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L734)
 
 ___
 
@@ -223,4 +223,4 @@ The user id of the user to get the next up episodes for.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:727](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/tv-shows-api.ts#L727)
+[generated-client/api/tv-shows-api.ts:727](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L727)

@@ -21,7 +21,7 @@ An interface representing a client application.
 
 #### Defined in
 
-[models/client-info.ts:11](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/client-info.ts#L11)
+[models/client-info.ts:11](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/client-info.ts#L11)
 
 ___
 
@@ -31,4 +31,4 @@ ___
 
 #### Defined in
 
-[models/client-info.ts:12](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/client-info.ts#L12)
+[models/client-info.ts:12](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/client-info.ts#L12)
