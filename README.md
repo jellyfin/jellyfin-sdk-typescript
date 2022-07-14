@@ -35,7 +35,8 @@ yarn add @thornbill/jellyfin-sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
-| 0.5.0 | 10.8.x |
+| 0.6.0 | 10.8.1 |
+| 0.5.0 | 10.8.0 |
 | <0.5.0 | 10.7.x |
 
 ### React Native
@@ -98,6 +99,11 @@ await api.logout();
 ```
 
 ## Breaking Changes
+
+### v0.6.0
+
+* Updated OpenAPI spec for Jellyfin 10.8.1.
+  [#208](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/208)
 
 ### v0.5.0
 
