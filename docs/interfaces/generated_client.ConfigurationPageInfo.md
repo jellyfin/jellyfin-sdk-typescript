@@ -33,7 +33,7 @@ Gets or sets the display name.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L52)
+[generated-client/models/configuration-page-info.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L52)
 
 ___
 
@@ -47,7 +47,7 @@ Gets or sets a value indicating whether the configurations page is enabled in th
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L34)
+[generated-client/models/configuration-page-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L34)
 
 ___
 
@@ -61,7 +61,7 @@ Gets or sets the menu icon.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L46)
+[generated-client/models/configuration-page-info.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L46)
 
 ___
 
@@ -75,7 +75,7 @@ Gets or sets the menu section.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L40)
+[generated-client/models/configuration-page-info.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L40)
 
 ___
 
@@ -89,7 +89,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L28)
+[generated-client/models/configuration-page-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L28)
 
 ___
 
@@ -103,4 +103,4 @@ Gets or sets the plugin id.
 
 #### Defined in
 
-[generated-client/models/configuration-page-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/configuration-page-info.ts#L58)
+[generated-client/models/configuration-page-info.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/configuration-page-info.ts#L58)

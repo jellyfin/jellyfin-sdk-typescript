@@ -32,7 +32,7 @@ Class LibraryUpdateInfo.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L58)
+[generated-client/models/library-update-info.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L58)
 
 ___
 
@@ -46,7 +46,7 @@ Gets or sets the folders added to.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L28)
+[generated-client/models/library-update-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L28)
 
 ___
 
@@ -60,7 +60,7 @@ Gets or sets the folders removed from.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L34)
+[generated-client/models/library-update-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L34)
 
 ___
 
@@ -72,7 +72,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L64)
+[generated-client/models/library-update-info.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L64)
 
 ___
 
@@ -86,7 +86,7 @@ Gets or sets the items added.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L40)
+[generated-client/models/library-update-info.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L40)
 
 ___
 
@@ -100,7 +100,7 @@ Gets or sets the items removed.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L46)
+[generated-client/models/library-update-info.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L46)
 
 ___
 
@@ -114,4 +114,4 @@ Gets or sets the items updated.
 
 #### Defined in
 
-[generated-client/models/library-update-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/library-update-info.ts#L52)
+[generated-client/models/library-update-info.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/library-update-info.ts#L52)

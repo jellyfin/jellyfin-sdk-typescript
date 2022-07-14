@@ -42,7 +42,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2813](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2813)
+[generated-client/api/items-api.ts:2813](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2813)
 
 ___
 
@@ -56,7 +56,7 @@ Optional. Include image information in output.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2841](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2841)
+[generated-client/api/items-api.ts:2841](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2841)
 
 ___
 
@@ -70,7 +70,7 @@ Optional. Enable the total record count.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2834](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2834)
+[generated-client/api/items-api.ts:2834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2834)
 
 ___
 
@@ -84,7 +84,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2799](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2799)
+[generated-client/api/items-api.ts:2799](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2799)
 
 ___
 
@@ -98,7 +98,7 @@ Optional. Whether to exclude the currently active sessions.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2848](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2848)
+[generated-client/api/items-api.ts:2848](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2848)
 
 ___
 
@@ -112,7 +112,7 @@ Optional. If specified, results will be filtered based on item type. This allows
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2820](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2820)
+[generated-client/api/items-api.ts:2820](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2820)
 
 ___
 
@@ -126,7 +126,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2785](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2785)
+[generated-client/api/items-api.ts:2785](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2785)
 
 ___
 
@@ -140,7 +140,7 @@ Optional. The max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2806](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2806)
+[generated-client/api/items-api.ts:2806](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2806)
 
 ___
 
@@ -154,7 +154,7 @@ Optional. If specified, results will be filtered based on the item type. This al
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2827](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2827)
+[generated-client/api/items-api.ts:2827](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2827)
 
 ___
 
@@ -168,7 +168,7 @@ The item limit.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2764](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2764)
+[generated-client/api/items-api.ts:2764](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2764)
 
 ___
 
@@ -182,7 +182,7 @@ Optional. Filter by MediaType. Allows multiple, comma delimited.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2792](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2792)
+[generated-client/api/items-api.ts:2792](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2792)
 
 ___
 
@@ -196,7 +196,7 @@ Specify this to localize the search to a specific item or folder. Omit to use th
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2778](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2778)
+[generated-client/api/items-api.ts:2778](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2778)
 
 ___
 
@@ -210,7 +210,7 @@ The search term.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2771](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2771)
+[generated-client/api/items-api.ts:2771](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2771)
 
 ___
 
@@ -224,7 +224,7 @@ The start index.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2757](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2757)
+[generated-client/api/items-api.ts:2757](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2757)
 
 ___
 
@@ -238,4 +238,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/items-api.ts:2750](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L2750)
+[generated-client/api/items-api.ts:2750](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L2750)

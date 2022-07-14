@@ -10,7 +10,7 @@ Enum HardwareEncodingType.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Amf](generated_client.HardwareEncodingType.md#amf)
 - [Nvenc](generated_client.HardwareEncodingType.md#nvenc)
@@ -19,62 +19,62 @@ Enum HardwareEncodingType.
 - [Vaapi](generated_client.HardwareEncodingType.md#vaapi)
 - [VideoToolBox](generated_client.HardwareEncodingType.md#videotoolbox)
 
-## Enumeration members
+## Enumeration Members
 
 ### Amf
 
-• **Amf** = `"AMF"`
+• **Amf**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L24)
+[generated-client/models/hardware-encoding-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L24)
 
 ___
 
 ### Nvenc
 
-• **Nvenc** = `"NVENC"`
+• **Nvenc**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L26)
+[generated-client/models/hardware-encoding-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L26)
 
 ___
 
 ### Qsv
 
-• **Qsv** = `"QSV"`
+• **Qsv**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L25)
+[generated-client/models/hardware-encoding-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L25)
 
 ___
 
 ### V4L2M2M
 
-• **V4L2M2M** = `"V4L2M2M"`
+• **V4L2M2M**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L27)
+[generated-client/models/hardware-encoding-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L27)
 
 ___
 
 ### Vaapi
 
-• **Vaapi** = `"VAAPI"`
+• **Vaapi**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L28)
+[generated-client/models/hardware-encoding-type.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L28)
 
 ___
 
 ### VideoToolBox
 
-• **VideoToolBox** = `"VideoToolBox"`
+• **VideoToolBox**
 
 #### Defined in
 
-[generated-client/models/hardware-encoding-type.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/hardware-encoding-type.ts#L29)
+[generated-client/models/hardware-encoding-type.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/hardware-encoding-type.ts#L29)

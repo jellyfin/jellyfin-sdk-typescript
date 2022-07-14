@@ -34,7 +34,7 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1024](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1024)
+[generated-client/api/playstate-api.ts:1024](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1024)
 
 ___
 
@@ -48,7 +48,7 @@ The live stream id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1052](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1052)
+[generated-client/api/playstate-api.ts:1052](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1052)
 
 ___
 
@@ -62,7 +62,7 @@ The id of the MediaSource.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1031](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1031)
+[generated-client/api/playstate-api.ts:1031](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1031)
 
 ___
 
@@ -76,7 +76,7 @@ The next media type that will play.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1038)
+[generated-client/api/playstate-api.ts:1038](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1038)
 
 ___
 
@@ -90,7 +90,7 @@ The play session id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1059](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1059)
+[generated-client/api/playstate-api.ts:1059](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1059)
 
 ___
 
@@ -104,7 +104,7 @@ Optional. The position, in ticks, where playback stopped. 1 tick &#x3D; 10000 ms
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1045](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1045)
+[generated-client/api/playstate-api.ts:1045](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1045)
 
 ___
 
@@ -118,4 +118,4 @@ User id.
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1017](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1017)
+[generated-client/api/playstate-api.ts:1017](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1017)

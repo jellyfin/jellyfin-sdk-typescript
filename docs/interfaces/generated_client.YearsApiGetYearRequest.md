@@ -29,7 +29,7 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L306)
+[generated-client/api/years-api.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L306)
 
 ___
 
@@ -43,4 +43,4 @@ The year.
 
 #### Defined in
 
-[generated-client/api/years-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L299)
+[generated-client/api/years-api.ts:299](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L299)

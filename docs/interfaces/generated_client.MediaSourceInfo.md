@@ -65,7 +65,7 @@
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L270)
+[generated-client/models/media-source-info.ts:270](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L270)
 
 ___
 
@@ -77,7 +77,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L234)
+[generated-client/models/media-source-info.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L234)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L180)
+[generated-client/models/media-source-info.ts:180](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L180)
 
 ___
 
@@ -101,7 +101,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L72)
+[generated-client/models/media-source-info.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L72)
 
 ___
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L276)
+[generated-client/models/media-source-info.ts:276](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L276)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L282)
+[generated-client/models/media-source-info.ts:282](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L282)
 
 ___
 
@@ -137,7 +137,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L96)
+[generated-client/models/media-source-info.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L96)
 
 ___
 
@@ -149,7 +149,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L54)
+[generated-client/models/media-source-info.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L54)
 
 ___
 
@@ -161,7 +161,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L60)
+[generated-client/models/media-source-info.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L60)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L228)
+[generated-client/models/media-source-info.ts:228](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L228)
 
 ___
 
@@ -185,7 +185,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L126)
+[generated-client/models/media-source-info.ts:126](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L126)
 
 ___
 
@@ -197,7 +197,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L42)
+[generated-client/models/media-source-info.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L42)
 
 ___
 
@@ -209,7 +209,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L114)
+[generated-client/models/media-source-info.ts:114](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L114)
 
 ___
 
@@ -221,7 +221,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L120)
+[generated-client/models/media-source-info.ts:120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L120)
 
 ___
 
@@ -233,7 +233,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L150)
+[generated-client/models/media-source-info.ts:150](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L150)
 
 ___
 
@@ -247,7 +247,7 @@ Gets or sets a value indicating whether the media is remote.  Differentiate inte
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L90)
+[generated-client/models/media-source-info.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L90)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L204)
+[generated-client/models/media-source-info.ts:204](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L204)
 
 ___
 
@@ -271,7 +271,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L174)
+[generated-client/models/media-source-info.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L174)
 
 ___
 
@@ -283,7 +283,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L222)
+[generated-client/models/media-source-info.ts:222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L222)
 
 ___
 
@@ -295,7 +295,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L216)
+[generated-client/models/media-source-info.ts:216](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L216)
 
 ___
 
@@ -307,7 +307,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L84)
+[generated-client/models/media-source-info.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L84)
 
 ___
 
@@ -319,7 +319,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L162)
+[generated-client/models/media-source-info.ts:162](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L162)
 
 ___
 
@@ -331,7 +331,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L48)
+[generated-client/models/media-source-info.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L48)
 
 ___
 
@@ -343,7 +343,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L36)
+[generated-client/models/media-source-info.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L36)
 
 ___
 
@@ -355,7 +355,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L108)
+[generated-client/models/media-source-info.ts:108](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L108)
 
 ___
 
@@ -367,7 +367,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L246)
+[generated-client/models/media-source-info.ts:246](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L246)
 
 ___
 
@@ -379,7 +379,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L168)
+[generated-client/models/media-source-info.ts:168](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L168)
 
 ___
 
@@ -391,7 +391,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L186)
+[generated-client/models/media-source-info.ts:186](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L186)
 
 ___
 
@@ -403,7 +403,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L156)
+[generated-client/models/media-source-info.ts:156](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L156)
 
 ___
 
@@ -415,7 +415,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L102)
+[generated-client/models/media-source-info.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L102)
 
 ___
 
@@ -427,7 +427,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L78)
+[generated-client/models/media-source-info.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L78)
 
 ___
 
@@ -439,7 +439,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L144)
+[generated-client/models/media-source-info.ts:144](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L144)
 
 ___
 
@@ -451,7 +451,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L138)
+[generated-client/models/media-source-info.ts:138](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L138)
 
 ___
 
@@ -463,7 +463,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L192)
+[generated-client/models/media-source-info.ts:192](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L192)
 
 ___
 
@@ -475,7 +475,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L132)
+[generated-client/models/media-source-info.ts:132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L132)
 
 ___
 
@@ -487,7 +487,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L240)
+[generated-client/models/media-source-info.ts:240](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L240)
 
 ___
 
@@ -499,7 +499,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L264)
+[generated-client/models/media-source-info.ts:264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L264)
 
 ___
 
@@ -511,7 +511,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L258)
+[generated-client/models/media-source-info.ts:258](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L258)
 
 ___
 
@@ -523,7 +523,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L252)
+[generated-client/models/media-source-info.ts:252](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L252)
 
 ___
 
@@ -535,7 +535,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L66)
+[generated-client/models/media-source-info.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L66)
 
 ___
 
@@ -547,7 +547,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L210)
+[generated-client/models/media-source-info.ts:210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L210)
 
 ___
 
@@ -559,4 +559,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-source-info.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-source-info.ts#L198)
+[generated-client/models/media-source-info.ts:198](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-source-info.ts#L198)

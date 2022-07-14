@@ -30,7 +30,7 @@ Gets or sets the name of the library.
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-path-dto.ts#L29)
+[generated-client/models/media-path-dto.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-path-dto.ts#L29)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the path to add.
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-path-dto.ts#L35)
+[generated-client/models/media-path-dto.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-path-dto.ts#L35)
 
 ___
 
@@ -56,4 +56,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/media-path-dto.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-path-dto.ts#L41)
+[generated-client/models/media-path-dto.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/media-path-dto.ts#L41)

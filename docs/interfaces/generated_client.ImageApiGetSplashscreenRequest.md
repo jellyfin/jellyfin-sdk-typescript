@@ -39,7 +39,7 @@ Apply a background color for transparent images.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7581)
+[generated-client/api/image-api.ts:7633](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7633)
 
 ___
 
@@ -53,7 +53,7 @@ Blur image.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7574](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7574)
+[generated-client/api/image-api.ts:7626](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7626)
 
 ___
 
@@ -67,7 +67,7 @@ Height of box to fill.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7567](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7567)
+[generated-client/api/image-api.ts:7619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7619)
 
 ___
 
@@ -81,7 +81,7 @@ Width of box to fill.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7560](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7560)
+[generated-client/api/image-api.ts:7612](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7612)
 
 ___
 
@@ -95,7 +95,7 @@ Apply a foreground layer on top of the image.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7588](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7588)
+[generated-client/api/image-api.ts:7640](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7640)
 
 ___
 
@@ -109,7 +109,7 @@ Determines the output format of the image - original,gif,jpg,png.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7525](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7525)
+[generated-client/api/image-api.ts:7577](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7577)
 
 ___
 
@@ -123,7 +123,7 @@ The fixed image height to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7553](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7553)
+[generated-client/api/image-api.ts:7605](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7605)
 
 ___
 
@@ -137,7 +137,7 @@ The maximum image height to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7539](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7539)
+[generated-client/api/image-api.ts:7591](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7591)
 
 ___
 
@@ -151,7 +151,7 @@ The maximum image width to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7532](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7532)
+[generated-client/api/image-api.ts:7584](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7584)
 
 ___
 
@@ -165,7 +165,7 @@ Quality setting, from 0-100.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7595](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7595)
+[generated-client/api/image-api.ts:7647](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7647)
 
 ___
 
@@ -179,7 +179,7 @@ Supply the cache tag from the item object to receive strong caching headers.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7518](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7518)
+[generated-client/api/image-api.ts:7570](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7570)
 
 ___
 
@@ -193,4 +193,4 @@ The fixed image width to return.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:7546](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L7546)
+[generated-client/api/image-api.ts:7598](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L7598)

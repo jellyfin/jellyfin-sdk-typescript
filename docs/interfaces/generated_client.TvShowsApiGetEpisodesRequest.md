@@ -42,7 +42,7 @@ Optional. Return items that are siblings of a supplied item.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:657](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L657)
+[generated-client/api/tv-shows-api.ts:657](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L657)
 
 ___
 
@@ -56,7 +56,7 @@ Optional. The image types to include in the output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L699)
+[generated-client/api/tv-shows-api.ts:699](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L699)
 
 ___
 
@@ -70,7 +70,7 @@ Optional, include image information in output.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:685](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L685)
+[generated-client/api/tv-shows-api.ts:685](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L685)
 
 ___
 
@@ -84,7 +84,7 @@ Optional. Include user data.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:706](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L706)
+[generated-client/api/tv-shows-api.ts:706](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L706)
 
 ___
 
@@ -98,7 +98,7 @@ Optional. Specify additional fields of information to return in the output. This
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L629)
+[generated-client/api/tv-shows-api.ts:629](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L629)
 
 ___
 
@@ -112,7 +112,7 @@ Optional, the max number of images to return, per image type.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:692](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L692)
+[generated-client/api/tv-shows-api.ts:692](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L692)
 
 ___
 
@@ -126,7 +126,7 @@ Optional. Filter by items that are missing episodes or not.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:650](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L650)
+[generated-client/api/tv-shows-api.ts:650](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L650)
 
 ___
 
@@ -140,7 +140,7 @@ Optional. The maximum number of records to return.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:678](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L678)
+[generated-client/api/tv-shows-api.ts:678](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L678)
 
 ___
 
@@ -154,7 +154,7 @@ Optional filter by season number.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:636](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L636)
+[generated-client/api/tv-shows-api.ts:636](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L636)
 
 ___
 
@@ -168,7 +168,7 @@ Optional. Filter by season id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:643](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L643)
+[generated-client/api/tv-shows-api.ts:643](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L643)
 
 ___
 
@@ -182,7 +182,7 @@ The series id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:615](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L615)
+[generated-client/api/tv-shows-api.ts:615](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L615)
 
 ___
 
@@ -196,7 +196,7 @@ Optional. Specify one or more sort orders, comma delimited. Options: Album, Albu
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:713](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L713)
+[generated-client/api/tv-shows-api.ts:713](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L713)
 
 ___
 
@@ -210,7 +210,7 @@ Optional. The record index to start at. All items with a lower index will be dro
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:671](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L671)
+[generated-client/api/tv-shows-api.ts:671](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L671)
 
 ___
 
@@ -224,7 +224,7 @@ Optional. Skip through the list until a given item is found.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L664)
+[generated-client/api/tv-shows-api.ts:664](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L664)
 
 ___
 
@@ -238,4 +238,4 @@ The user id.
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:622](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L622)
+[generated-client/api/tv-shows-api.ts:622](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L622)

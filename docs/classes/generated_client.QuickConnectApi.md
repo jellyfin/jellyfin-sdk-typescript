@@ -53,7 +53,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -87,7 +87,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -114,7 +114,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L316)
+[generated-client/api/quick-connect-api.ts:316](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L316)
 
 ___
 
@@ -141,7 +141,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:328](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L328)
+[generated-client/api/quick-connect-api.ts:328](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L328)
 
 ___
 
@@ -167,7 +167,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:339](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L339)
+[generated-client/api/quick-connect-api.ts:339](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L339)
 
 ___
 
@@ -193,4 +193,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:350](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L350)
+[generated-client/api/quick-connect-api.ts:350](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L350)

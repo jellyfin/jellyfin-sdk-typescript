@@ -10,27 +10,27 @@ Enum SeriesStatus.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Continuing](generated_client.SeriesStatus.md#continuing)
 - [Ended](generated_client.SeriesStatus.md#ended)
 
-## Enumeration members
+## Enumeration Members
 
 ### Continuing
 
-• **Continuing** = `"Continuing"`
+• **Continuing**
 
 #### Defined in
 
-[generated-client/models/series-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-status.ts#L24)
+[generated-client/models/series-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/series-status.ts#L24)
 
 ___
 
 ### Ended
 
-• **Ended** = `"Ended"`
+• **Ended**
 
 #### Defined in
 
-[generated-client/models/series-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/series-status.ts#L25)
+[generated-client/models/series-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/series-status.ts#L25)

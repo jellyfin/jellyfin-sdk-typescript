@@ -53,7 +53,7 @@ Gets or sets the cache path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L145)
+[generated-client/models/system-info.ts:145](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L145)
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/system-info.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L121)
+[generated-client/models/system-info.ts:121](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L121)
 
 ___
 
@@ -79,7 +79,7 @@ Gets or sets a value indicating whether this instance can self restart.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L115)
+[generated-client/models/system-info.ts:115](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L115)
 
 ___
 
@@ -93,7 +93,7 @@ Gets or sets the completed installations.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L109)
+[generated-client/models/system-info.ts:109](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L109)
 
 ___
 
@@ -105,7 +105,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/system-info.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L176)
+[generated-client/models/system-info.ts:176](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L176)
 
 ___
 
@@ -119,7 +119,7 @@ Gets or sets a value indicating whether this instance has pending restart.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:85](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L85)
+[generated-client/models/system-info.ts:85](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L85)
 
 ___
 
@@ -135,7 +135,7 @@ Gets or sets a value indicating whether this instance has update available.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:170](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L170)
+[generated-client/models/system-info.ts:170](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L170)
 
 ___
 
@@ -149,7 +149,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L61)
+[generated-client/models/system-info.ts:61](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L61)
 
 ___
 
@@ -163,7 +163,7 @@ Gets or sets the internal metadata path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L157)
+[generated-client/models/system-info.ts:157](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L157)
 
 ___
 
@@ -175,7 +175,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/system-info.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L91)
+[generated-client/models/system-info.ts:91](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L91)
 
 ___
 
@@ -189,7 +189,7 @@ Gets or sets the items by name path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:139](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L139)
+[generated-client/models/system-info.ts:139](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L139)
 
 ___
 
@@ -203,7 +203,7 @@ Gets or sets the local address.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L31)
+[generated-client/models/system-info.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L31)
 
 ___
 
@@ -217,7 +217,7 @@ Gets or sets the log path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:151](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L151)
+[generated-client/models/system-info.ts:151](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L151)
 
 ___
 
@@ -231,7 +231,7 @@ Gets or sets the operating system.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L55)
+[generated-client/models/system-info.ts:55](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L55)
 
 ___
 
@@ -245,7 +245,7 @@ Gets or sets the display name of the operating system.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:73](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L73)
+[generated-client/models/system-info.ts:73](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L73)
 
 ___
 
@@ -259,7 +259,7 @@ Gets or sets the package name.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:79](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L79)
+[generated-client/models/system-info.ts:79](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L79)
 
 ___
 
@@ -273,7 +273,7 @@ Gets or sets the product name. This is the AssemblyProduct name.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L49)
+[generated-client/models/system-info.ts:49](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L49)
 
 ___
 
@@ -287,7 +287,7 @@ Gets or sets the program data path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L127)
+[generated-client/models/system-info.ts:127](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L127)
 
 ___
 
@@ -301,7 +301,7 @@ Gets or sets the name of the server.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L37)
+[generated-client/models/system-info.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L37)
 
 ___
 
@@ -315,7 +315,7 @@ Gets or sets a value indicating whether the startup wizard is completed.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:67](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L67)
+[generated-client/models/system-info.ts:67](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L67)
 
 ___
 
@@ -329,7 +329,7 @@ Gets or sets a value indicating whether [supports library monitor].
 
 #### Defined in
 
-[generated-client/models/system-info.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L97)
+[generated-client/models/system-info.ts:97](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L97)
 
 ___
 
@@ -341,7 +341,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/system-info.ts:182](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L182)
+[generated-client/models/system-info.ts:182](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L182)
 
 ___
 
@@ -355,7 +355,7 @@ Gets or sets the transcode path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:163](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L163)
+[generated-client/models/system-info.ts:163](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L163)
 
 ___
 
@@ -369,7 +369,7 @@ Gets or sets the server version.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L43)
+[generated-client/models/system-info.ts:43](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L43)
 
 ___
 
@@ -383,7 +383,7 @@ Gets or sets the web UI resources path.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L133)
+[generated-client/models/system-info.ts:133](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L133)
 
 ___
 
@@ -397,4 +397,4 @@ Gets or sets the web socket port number.
 
 #### Defined in
 
-[generated-client/models/system-info.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/system-info.ts#L103)
+[generated-client/models/system-info.ts:103](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/system-info.ts#L103)

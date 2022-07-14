@@ -30,7 +30,7 @@ An entity representing a user\'s access schedule.
 
 #### Defined in
 
-[generated-client/models/access-schedule.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/access-schedule.ts#L41)
+[generated-client/models/access-schedule.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/access-schedule.ts#L41)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the end hour.
 
 #### Defined in
 
-[generated-client/models/access-schedule.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/access-schedule.ts#L53)
+[generated-client/models/access-schedule.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/access-schedule.ts#L53)
 
 ___
 
@@ -58,7 +58,7 @@ Gets the id of this instance.
 
 #### Defined in
 
-[generated-client/models/access-schedule.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/access-schedule.ts#L29)
+[generated-client/models/access-schedule.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/access-schedule.ts#L29)
 
 ___
 
@@ -72,7 +72,7 @@ Gets or sets the start hour.
 
 #### Defined in
 
-[generated-client/models/access-schedule.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/access-schedule.ts#L47)
+[generated-client/models/access-schedule.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/access-schedule.ts#L47)
 
 ___
 
@@ -86,4 +86,4 @@ Gets the id of the associated user.
 
 #### Defined in
 
-[generated-client/models/access-schedule.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/access-schedule.ts#L35)
+[generated-client/models/access-schedule.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/access-schedule.ts#L35)

@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Full](generated_client.PlayAccess.md#full)
 - [None](generated_client.PlayAccess.md#none)
 
-## Enumeration members
+## Enumeration Members
 
 ### Full
 
-• **Full** = `"Full"`
+• **Full**
 
 #### Defined in
 
-[generated-client/models/play-access.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-access.ts#L24)
+[generated-client/models/play-access.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/play-access.ts#L24)
 
 ___
 
 ### None
 
-• **None** = `"None"`
+• **None**
 
 #### Defined in
 
-[generated-client/models/play-access.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-access.ts#L25)
+[generated-client/models/play-access.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/play-access.ts#L25)

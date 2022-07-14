@@ -26,4 +26,4 @@ Class SetRepeatModeRequestDto.
 
 #### Defined in
 
-[generated-client/models/set-repeat-mode-request-dto.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/set-repeat-mode-request-dto.ts#L29)
+[generated-client/models/set-repeat-mode-request-dto.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/set-repeat-mode-request-dto.ts#L29)

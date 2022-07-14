@@ -10,49 +10,49 @@ Enum GroupState.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Idle](generated_client.GroupStateType.md#idle)
 - [Paused](generated_client.GroupStateType.md#paused)
 - [Playing](generated_client.GroupStateType.md#playing)
 - [Waiting](generated_client.GroupStateType.md#waiting)
 
-## Enumeration members
+## Enumeration Members
 
 ### Idle
 
-• **Idle** = `"Idle"`
+• **Idle**
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-state-type.ts#L24)
+[generated-client/models/group-state-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-state-type.ts#L24)
 
 ___
 
 ### Paused
 
-• **Paused** = `"Paused"`
+• **Paused**
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-state-type.ts#L26)
+[generated-client/models/group-state-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-state-type.ts#L26)
 
 ___
 
 ### Playing
 
-• **Playing** = `"Playing"`
+• **Playing**
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-state-type.ts#L27)
+[generated-client/models/group-state-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-state-type.ts#L27)
 
 ___
 
 ### Waiting
 
-• **Waiting** = `"Waiting"`
+• **Waiting**
 
 #### Defined in
 
-[generated-client/models/group-state-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-state-type.ts#L25)
+[generated-client/models/group-state-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-state-type.ts#L25)

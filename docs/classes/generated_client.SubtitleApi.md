@@ -59,7 +59,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -93,7 +93,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -120,7 +120,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1194](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1194)
+[generated-client/api/subtitle-api.ts:1194](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1194)
 
 ___
 
@@ -147,7 +147,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1206](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1206)
+[generated-client/api/subtitle-api.ts:1206](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1206)
 
 ___
 
@@ -174,7 +174,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1218](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1218)
+[generated-client/api/subtitle-api.ts:1218](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1218)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1229)
+[generated-client/api/subtitle-api.ts:1229](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1229)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1241](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1241)
+[generated-client/api/subtitle-api.ts:1241](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1241)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1253)
+[generated-client/api/subtitle-api.ts:1253](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1253)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1265)
+[generated-client/api/subtitle-api.ts:1265](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1265)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1277](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1277)
+[generated-client/api/subtitle-api.ts:1277](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1277)
 
 ___
 
@@ -335,7 +335,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1289)
+[generated-client/api/subtitle-api.ts:1289](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1289)
 
 ___
 
@@ -362,4 +362,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:1301](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L1301)
+[generated-client/api/subtitle-api.ts:1301](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L1301)

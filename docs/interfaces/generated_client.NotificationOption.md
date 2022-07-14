@@ -31,7 +31,7 @@ Gets or sets user Ids to not monitor (it\'s opt out).
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L35)
+[generated-client/models/notification-option.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L35)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the disabled services.
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L53)
+[generated-client/models/notification-option.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L53)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets a value indicating whether this MediaBrowser.Model.Notifications.No
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L47)
+[generated-client/models/notification-option.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L47)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L59)
+[generated-client/models/notification-option.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L59)
 
 ___
 
@@ -85,7 +85,7 @@ Gets or sets user Ids to send to (if SendToUserMode == Custom).
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L41)
+[generated-client/models/notification-option.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L41)
 
 ___
 
@@ -97,4 +97,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/notification-option.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/notification-option.ts#L29)
+[generated-client/models/notification-option.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/notification-option.ts#L29)

@@ -58,7 +58,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -92,7 +92,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -119,7 +119,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1133](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1133)
+[generated-client/api/playstate-api.ts:1133](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1133)
 
 ___
 
@@ -146,7 +146,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1145)
+[generated-client/api/playstate-api.ts:1145](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1145)
 
 ___
 
@@ -173,7 +173,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1157)
+[generated-client/api/playstate-api.ts:1157](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1157)
 
 ___
 
@@ -200,7 +200,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1169](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1169)
+[generated-client/api/playstate-api.ts:1169](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1169)
 
 ___
 
@@ -227,7 +227,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1181](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1181)
+[generated-client/api/playstate-api.ts:1181](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1181)
 
 ___
 
@@ -254,7 +254,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1193](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1193)
+[generated-client/api/playstate-api.ts:1193](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1193)
 
 ___
 
@@ -281,7 +281,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1205](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1205)
+[generated-client/api/playstate-api.ts:1205](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1205)
 
 ___
 
@@ -308,7 +308,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1217](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1217)
+[generated-client/api/playstate-api.ts:1217](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1217)
 
 ___
 
@@ -335,4 +335,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L1229)
+[generated-client/api/playstate-api.ts:1229](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L1229)

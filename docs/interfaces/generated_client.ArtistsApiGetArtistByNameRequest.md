@@ -29,7 +29,7 @@ Studio name.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:925](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L925)
+[generated-client/api/artists-api.ts:925](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/artists-api.ts#L925)
 
 ___
 
@@ -43,4 +43,4 @@ Optional. Filter by user id, and attach user data.
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:932](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L932)
+[generated-client/api/artists-api.ts:932](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/artists-api.ts#L932)

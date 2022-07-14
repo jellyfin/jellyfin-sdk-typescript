@@ -27,7 +27,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/external-url.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-url.ts#L28)
+[generated-client/models/external-url.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/external-url.ts#L28)
 
 ___
 
@@ -41,4 +41,4 @@ Gets or sets the type of the item.
 
 #### Defined in
 
-[generated-client/models/external-url.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/external-url.ts#L34)
+[generated-client/models/external-url.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/external-url.ts#L34)

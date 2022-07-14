@@ -24,7 +24,7 @@ Information about a recommended server.
 
 #### Defined in
 
-[models/recommended-server-info.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L21)
+[models/recommended-server-info.ts:21](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L21)
 
 ___
 
@@ -34,7 +34,7 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L24)
+[models/recommended-server-info.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L24)
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:22](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L22)
+[models/recommended-server-info.ts:22](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L22)
 
 ___
 
@@ -54,7 +54,7 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L23)
+[models/recommended-server-info.ts:23](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L23)
 
 ___
 
@@ -64,4 +64,4 @@ ___
 
 #### Defined in
 
-[models/recommended-server-info.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L25)
+[models/recommended-server-info.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-info.ts#L25)

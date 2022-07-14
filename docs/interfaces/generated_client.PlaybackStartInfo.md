@@ -45,7 +45,7 @@ Class PlaybackStartInfo.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:110](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L110)
+[generated-client/models/playback-start-info.ts:110](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L110)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets the index of the audio stream.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:62](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L62)
+[generated-client/models/playback-start-info.ts:62](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L62)
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:104](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L104)
+[generated-client/models/playback-start-info.ts:104](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L104)
 
 ___
 
@@ -85,7 +85,7 @@ Gets or sets a value indicating whether this instance can seek.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L32)
+[generated-client/models/playback-start-info.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L32)
 
 ___
 
@@ -99,7 +99,7 @@ Gets or sets a value indicating whether this instance is muted.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L80)
+[generated-client/models/playback-start-info.ts:80](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L80)
 
 ___
 
@@ -113,7 +113,7 @@ Gets or sets a value indicating whether this instance is paused.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:74](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L74)
+[generated-client/models/playback-start-info.ts:74](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L74)
 
 ___
 
@@ -125,7 +125,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:38](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L38)
+[generated-client/models/playback-start-info.ts:38](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L38)
 
 ___
 
@@ -139,7 +139,7 @@ Gets or sets the item identifier.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:44](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L44)
+[generated-client/models/playback-start-info.ts:44](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L44)
 
 ___
 
@@ -153,7 +153,7 @@ Gets or sets the live stream identifier.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L122)
+[generated-client/models/playback-start-info.ts:122](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L122)
 
 ___
 
@@ -167,7 +167,7 @@ Gets or sets the media version identifier.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L56)
+[generated-client/models/playback-start-info.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L56)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:140](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L140)
+[generated-client/models/playback-start-info.ts:140](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L140)
 
 ___
 
@@ -191,7 +191,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L116)
+[generated-client/models/playback-start-info.ts:116](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L116)
 
 ___
 
@@ -205,7 +205,7 @@ Gets or sets the play session identifier.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L128)
+[generated-client/models/playback-start-info.ts:128](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L128)
 
 ___
 
@@ -217,7 +217,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:92](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L92)
+[generated-client/models/playback-start-info.ts:92](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L92)
 
 ___
 
@@ -229,7 +229,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L146)
+[generated-client/models/playback-start-info.ts:146](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L146)
 
 ___
 
@@ -243,7 +243,7 @@ Gets or sets the position ticks.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:86](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L86)
+[generated-client/models/playback-start-info.ts:86](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L86)
 
 ___
 
@@ -255,7 +255,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L134)
+[generated-client/models/playback-start-info.ts:134](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L134)
 
 ___
 
@@ -269,7 +269,7 @@ Gets or sets the session id.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L50)
+[generated-client/models/playback-start-info.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L50)
 
 ___
 
@@ -283,7 +283,7 @@ Gets or sets the index of the subtitle stream.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L68)
+[generated-client/models/playback-start-info.ts:68](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L68)
 
 ___
 
@@ -297,4 +297,4 @@ Gets or sets the volume level.
 
 #### Defined in
 
-[generated-client/models/playback-start-info.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/playback-start-info.ts#L98)
+[generated-client/models/playback-start-info.ts:98](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/playback-start-info.ts#L98)

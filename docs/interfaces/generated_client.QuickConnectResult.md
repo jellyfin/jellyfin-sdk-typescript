@@ -35,7 +35,7 @@ Gets the requesting app name.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L58)
+[generated-client/models/quick-connect-result.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L58)
 
 ___
 
@@ -49,7 +49,7 @@ Gets the requesting app version.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L64)
+[generated-client/models/quick-connect-result.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L64)
 
 ___
 
@@ -63,7 +63,7 @@ Gets or sets a value indicating whether this request is authorized.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L28)
+[generated-client/models/quick-connect-result.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L28)
 
 ___
 
@@ -77,7 +77,7 @@ Gets the user facing code used so the user can quickly differentiate this reques
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L40)
+[generated-client/models/quick-connect-result.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L40)
 
 ___
 
@@ -91,7 +91,7 @@ Gets or sets the DateTime that this request was created.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L70)
+[generated-client/models/quick-connect-result.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L70)
 
 ___
 
@@ -105,7 +105,7 @@ Gets the requesting device id.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L46)
+[generated-client/models/quick-connect-result.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L46)
 
 ___
 
@@ -119,7 +119,7 @@ Gets the requesting device name.
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L52)
+[generated-client/models/quick-connect-result.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L52)
 
 ___
 
@@ -133,4 +133,4 @@ Gets the secret value used to uniquely identify this request. Can be used to ret
 
 #### Defined in
 
-[generated-client/models/quick-connect-result.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/quick-connect-result.ts#L34)
+[generated-client/models/quick-connect-result.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/quick-connect-result.ts#L34)

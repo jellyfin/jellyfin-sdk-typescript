@@ -10,27 +10,27 @@ Enum GroupShuffleMode.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Shuffle](generated_client.GroupShuffleMode.md#shuffle)
 - [Sorted](generated_client.GroupShuffleMode.md#sorted)
 
-## Enumeration members
+## Enumeration Members
 
 ### Shuffle
 
-• **Shuffle** = `"Shuffle"`
+• **Shuffle**
 
 #### Defined in
 
-[generated-client/models/group-shuffle-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-shuffle-mode.ts#L25)
+[generated-client/models/group-shuffle-mode.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-shuffle-mode.ts#L25)
 
 ___
 
 ### Sorted
 
-• **Sorted** = `"Sorted"`
+• **Sorted**
 
 #### Defined in
 
-[generated-client/models/group-shuffle-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/group-shuffle-mode.ts#L24)
+[generated-client/models/group-shuffle-mode.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/group-shuffle-mode.ts#L24)

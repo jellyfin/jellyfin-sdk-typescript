@@ -36,7 +36,7 @@ Gets the version as a System.Version.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L34)
+[generated-client/models/version-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L34)
 
 ___
 
@@ -50,7 +50,7 @@ Gets or sets the changelog for this version.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L40)
+[generated-client/models/version-info.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L40)
 
 ___
 
@@ -64,7 +64,7 @@ Gets or sets a checksum for the binary.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L58)
+[generated-client/models/version-info.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L58)
 
 ___
 
@@ -78,7 +78,7 @@ Gets or sets the repository name.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L70)
+[generated-client/models/version-info.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L70)
 
 ___
 
@@ -92,7 +92,7 @@ Gets or sets the repository url.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L76)
+[generated-client/models/version-info.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L76)
 
 ___
 
@@ -106,7 +106,7 @@ Gets or sets the source URL.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L52)
+[generated-client/models/version-info.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L52)
 
 ___
 
@@ -120,7 +120,7 @@ Gets or sets the ABI that this version was built against.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L46)
+[generated-client/models/version-info.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L46)
 
 ___
 
@@ -134,7 +134,7 @@ Gets or sets a timestamp of when the binary was built.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L64)
+[generated-client/models/version-info.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L64)
 
 ___
 
@@ -148,4 +148,4 @@ Gets or sets the version.
 
 #### Defined in
 
-[generated-client/models/version-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/version-info.ts#L28)
+[generated-client/models/version-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/version-info.ts#L28)

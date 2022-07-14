@@ -10,7 +10,7 @@ An enum representing a subtitle playback mode.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Always](generated_client.SubtitlePlaybackMode.md#always)
 - [Default](generated_client.SubtitlePlaybackMode.md#default)
@@ -18,52 +18,52 @@ An enum representing a subtitle playback mode.
 - [OnlyForced](generated_client.SubtitlePlaybackMode.md#onlyforced)
 - [Smart](generated_client.SubtitlePlaybackMode.md#smart)
 
-## Enumeration members
+## Enumeration Members
 
 ### Always
 
-• **Always** = `"Always"`
+• **Always**
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/subtitle-playback-mode.ts#L25)
+[generated-client/models/subtitle-playback-mode.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-playback-mode.ts#L25)
 
 ___
 
 ### Default
 
-• **Default** = `"Default"`
+• **Default**
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/subtitle-playback-mode.ts#L24)
+[generated-client/models/subtitle-playback-mode.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-playback-mode.ts#L24)
 
 ___
 
 ### None
 
-• **None** = `"None"`
+• **None**
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/subtitle-playback-mode.ts#L27)
+[generated-client/models/subtitle-playback-mode.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-playback-mode.ts#L27)
 
 ___
 
 ### OnlyForced
 
-• **OnlyForced** = `"OnlyForced"`
+• **OnlyForced**
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/subtitle-playback-mode.ts#L26)
+[generated-client/models/subtitle-playback-mode.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-playback-mode.ts#L26)
 
 ___
 
 ### Smart
 
-• **Smart** = `"Smart"`
+• **Smart**
 
 #### Defined in
 
-[generated-client/models/subtitle-playback-mode.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/subtitle-playback-mode.ts#L28)
+[generated-client/models/subtitle-playback-mode.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/subtitle-playback-mode.ts#L28)

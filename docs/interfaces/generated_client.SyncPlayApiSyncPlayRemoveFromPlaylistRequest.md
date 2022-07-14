@@ -28,4 +28,4 @@ The items to remove.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1443](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1443)
+[generated-client/api/sync-play-api.ts:1443](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L1443)

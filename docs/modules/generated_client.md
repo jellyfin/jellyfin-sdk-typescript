@@ -920,7 +920,7 @@ ActivityLogApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L29)
+[generated-client/api/activity-log-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/activity-log-api.ts#L29)
 
 ___
 
@@ -950,7 +950,7 @@ ActivityLogApi - factory interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L117)
+[generated-client/api/activity-log-api.ts:117](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/activity-log-api.ts#L117)
 
 ___
 
@@ -978,7 +978,7 @@ ActivityLogApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/activity-log-api.ts:93](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/activity-log-api.ts#L93)
+[generated-client/api/activity-log-api.ts:93](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/activity-log-api.ts#L93)
 
 ___
 
@@ -1008,7 +1008,7 @@ ApiKeyApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L29)
+[generated-client/api/api-key-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/api-key-api.ts#L29)
 
 ___
 
@@ -1040,7 +1040,7 @@ ApiKeyApi - factory interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L190)
+[generated-client/api/api-key-api.ts:190](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/api-key-api.ts#L190)
 
 ___
 
@@ -1070,7 +1070,7 @@ ApiKeyApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/api-key-api.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/api-key-api.ts#L148)
+[generated-client/api/api-key-api.ts:148](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/api-key-api.ts#L148)
 
 ___
 
@@ -1100,7 +1100,7 @@ ArtistsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L41)
+[generated-client/api/artists-api.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/artists-api.ts#L41)
 
 ___
 
@@ -1132,7 +1132,7 @@ ArtistsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:584](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L584)
+[generated-client/api/artists-api.ts:584](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/artists-api.ts#L584)
 
 ___
 
@@ -1162,7 +1162,7 @@ ArtistsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/artists-api.ts:478](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/artists-api.ts#L478)
+[generated-client/api/artists-api.ts:478](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/artists-api.ts#L478)
 
 ___
 
@@ -1193,7 +1193,7 @@ AudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L31)
+[generated-client/api/audio-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/audio-api.ts#L31)
 
 ___
 
@@ -1226,7 +1226,7 @@ AudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1380](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L1380)
+[generated-client/api/audio-api.ts:1380](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/audio-api.ts#L1380)
 
 ___
 
@@ -1257,7 +1257,7 @@ AudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/audio-api.ts:1134](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/audio-api.ts#L1134)
+[generated-client/api/audio-api.ts:1134](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/audio-api.ts#L1134)
 
 ___
 
@@ -1287,7 +1287,7 @@ BrandingApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L29)
+[generated-client/api/branding-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/branding-api.ts#L29)
 
 ___
 
@@ -1319,7 +1319,7 @@ BrandingApi - factory interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L168)
+[generated-client/api/branding-api.ts:168](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/branding-api.ts#L168)
 
 ___
 
@@ -1349,7 +1349,7 @@ BrandingApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/branding-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/branding-api.ts#L128)
+[generated-client/api/branding-api.ts:128](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/branding-api.ts#L128)
 
 ___
 
@@ -1381,7 +1381,7 @@ ChannelsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L37)
+[generated-client/api/channels-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/channels-api.ts#L37)
 
 ___
 
@@ -1415,7 +1415,7 @@ ChannelsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:401](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L401)
+[generated-client/api/channels-api.ts:401](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/channels-api.ts#L401)
 
 ___
 
@@ -1447,7 +1447,7 @@ ChannelsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/channels-api.ts:319](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/channels-api.ts#L319)
+[generated-client/api/channels-api.ts:319](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/channels-api.ts#L319)
 
 ___
 
@@ -1475,7 +1475,7 @@ ClientLogApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/client-log-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L31)
+[generated-client/api/client-log-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/client-log-api.ts#L31)
 
 ___
 
@@ -1505,7 +1505,7 @@ ClientLogApi - factory interface
 
 #### Defined in
 
-[generated-client/api/client-log-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L98)
+[generated-client/api/client-log-api.ts:98](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/client-log-api.ts#L98)
 
 ___
 
@@ -1533,7 +1533,7 @@ ClientLogApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/client-log-api.ts:77](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/client-log-api.ts#L77)
+[generated-client/api/client-log-api.ts:77](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/client-log-api.ts#L77)
 
 ___
 
@@ -1563,7 +1563,7 @@ CollectionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L29)
+[generated-client/api/collection-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/collection-api.ts#L29)
 
 ___
 
@@ -1595,7 +1595,7 @@ CollectionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:227](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L227)
+[generated-client/api/collection-api.ts:227](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/collection-api.ts#L227)
 
 ___
 
@@ -1625,7 +1625,7 @@ CollectionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/collection-api.ts:179](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/collection-api.ts#L179)
+[generated-client/api/collection-api.ts:179](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/collection-api.ts#L179)
 
 ___
 
@@ -1658,7 +1658,7 @@ ConfigurationApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L33)
+[generated-client/api/configuration-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/configuration-api.ts#L33)
 
 ___
 
@@ -1693,7 +1693,7 @@ ConfigurationApi - factory interface
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:341](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L341)
+[generated-client/api/configuration-api.ts:341](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/configuration-api.ts#L341)
 
 ___
 
@@ -1726,7 +1726,7 @@ ConfigurationApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/configuration-api.ts:266](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/configuration-api.ts#L266)
+[generated-client/api/configuration-api.ts:266](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/configuration-api.ts#L266)
 
 ___
 
@@ -1755,7 +1755,7 @@ DashboardApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L31)
+[generated-client/api/dashboard-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dashboard-api.ts#L31)
 
 ___
 
@@ -1786,7 +1786,7 @@ DashboardApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:145](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L145)
+[generated-client/api/dashboard-api.ts:145](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dashboard-api.ts#L145)
 
 ___
 
@@ -1815,7 +1815,7 @@ DashboardApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dashboard-api.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dashboard-api.ts#L113)
+[generated-client/api/dashboard-api.ts:113](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dashboard-api.ts#L113)
 
 ___
 
@@ -1847,7 +1847,7 @@ DevicesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L37)
+[generated-client/api/devices-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/devices-api.ts#L37)
 
 ___
 
@@ -1881,7 +1881,7 @@ DevicesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:322](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L322)
+[generated-client/api/devices-api.ts:322](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/devices-api.ts#L322)
 
 ___
 
@@ -1913,7 +1913,7 @@ DevicesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/devices-api.ts:255](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/devices-api.ts#L255)
+[generated-client/api/devices-api.ts:255](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/devices-api.ts#L255)
 
 ___
 
@@ -1942,7 +1942,7 @@ DisplayPreferencesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L29)
+[generated-client/api/display-preferences-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/display-preferences-api.ts#L29)
 
 ___
 
@@ -1973,7 +1973,7 @@ DisplayPreferencesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:183](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L183)
+[generated-client/api/display-preferences-api.ts:183](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/display-preferences-api.ts#L183)
 
 ___
 
@@ -2002,7 +2002,7 @@ DisplayPreferencesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/display-preferences-api.ts:146](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/display-preferences-api.ts#L146)
+[generated-client/api/display-preferences-api.ts:146](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/display-preferences-api.ts#L146)
 
 ___
 
@@ -2035,7 +2035,7 @@ DlnaApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L33)
+[generated-client/api/dlna-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-api.ts#L33)
 
 ___
 
@@ -2070,7 +2070,7 @@ DlnaApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:335](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L335)
+[generated-client/api/dlna-api.ts:335](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-api.ts#L335)
 
 ___
 
@@ -2103,7 +2103,7 @@ DlnaApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-api.ts:260](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-api.ts#L260)
+[generated-client/api/dlna-api.ts:260](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-api.ts#L260)
 
 ___
 
@@ -2146,7 +2146,7 @@ DlnaServerApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L29)
+[generated-client/api/dlna-server-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-server-api.ts#L29)
 
 ___
 
@@ -2191,7 +2191,7 @@ DlnaServerApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:821](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L821)
+[generated-client/api/dlna-server-api.ts:821](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-server-api.ts#L821)
 
 ___
 
@@ -2234,7 +2234,7 @@ DlnaServerApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dlna-server-api.ts:634](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dlna-server-api.ts#L634)
+[generated-client/api/dlna-server-api.ts:634](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dlna-server-api.ts#L634)
 
 ___
 
@@ -2270,7 +2270,7 @@ DynamicHlsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L31)
+[generated-client/api/dynamic-hls-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dynamic-hls-api.ts#L31)
 
 ___
 
@@ -2308,7 +2308,7 @@ DynamicHlsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:3210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L3210)
+[generated-client/api/dynamic-hls-api.ts:3210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dynamic-hls-api.ts#L3210)
 
 ___
 
@@ -2344,7 +2344,7 @@ DynamicHlsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/dynamic-hls-api.ts:2648](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/dynamic-hls-api.ts#L2648)
+[generated-client/api/dynamic-hls-api.ts:2648](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/dynamic-hls-api.ts#L2648)
 
 ___
 
@@ -2377,7 +2377,7 @@ EnvironmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L35)
+[generated-client/api/environment-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/environment-api.ts#L35)
 
 ___
 
@@ -2412,7 +2412,7 @@ EnvironmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:349](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L349)
+[generated-client/api/environment-api.ts:349](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/environment-api.ts#L349)
 
 ___
 
@@ -2445,7 +2445,7 @@ EnvironmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/environment-api.ts:273](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/environment-api.ts#L273)
+[generated-client/api/environment-api.ts:273](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/environment-api.ts#L273)
 
 ___
 
@@ -2474,7 +2474,7 @@ FilterApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L33)
+[generated-client/api/filter-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L33)
 
 ___
 
@@ -2505,7 +2505,7 @@ FilterApi - factory interface
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L222)
+[generated-client/api/filter-api.ts:222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L222)
 
 ___
 
@@ -2534,7 +2534,7 @@ FilterApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/filter-api.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/filter-api.ts#L178)
+[generated-client/api/filter-api.ts:178](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/filter-api.ts#L178)
 
 ___
 
@@ -2563,7 +2563,7 @@ GenresApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L39)
+[generated-client/api/genres-api.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/genres-api.ts#L39)
 
 ___
 
@@ -2594,7 +2594,7 @@ GenresApi - factory interface
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:263](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L263)
+[generated-client/api/genres-api.ts:263](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/genres-api.ts#L263)
 
 ___
 
@@ -2623,7 +2623,7 @@ GenresApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/genres-api.ts:213](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/genres-api.ts#L213)
+[generated-client/api/genres-api.ts:213](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/genres-api.ts#L213)
 
 ___
 
@@ -2655,7 +2655,7 @@ HlsSegmentApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L29)
+[generated-client/api/hls-segment-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/hls-segment-api.ts#L29)
 
 ___
 
@@ -2689,7 +2689,7 @@ HlsSegmentApi - factory interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:320](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L320)
+[generated-client/api/hls-segment-api.ts:320](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/hls-segment-api.ts#L320)
 
 ___
 
@@ -2721,7 +2721,7 @@ HlsSegmentApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/hls-segment-api.ts:248](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/hls-segment-api.ts#L248)
+[generated-client/api/hls-segment-api.ts:248](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/hls-segment-api.ts#L248)
 
 ___
 
@@ -2745,6 +2745,7 @@ ImageApi - axios parameter creator
 
 | Name | Type |
 | :------ | :------ |
+| `deleteCustomSplashscreen` | (`options`: `any`) => `Promise`<`RequestArgs`\> |
 | `deleteItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `deleteItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
 | `deleteUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `index?`: `number`, `options`: `any`) => `Promise`<`RequestArgs`\> |
@@ -2788,7 +2789,7 @@ ImageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L35)
+[generated-client/api/image-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L35)
 
 ___
 
@@ -2814,6 +2815,7 @@ ImageApi - factory interface
 
 | Name | Type |
 | :------ | :------ |
+| `deleteCustomSplashscreen` | (`options?`: `any`) => `AxiosPromise`<`void`\> |
 | `deleteItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex?`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `deleteItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
 | `deleteUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `index?`: `number`, `options?`: `any`) => `AxiosPromise`<`void`\> |
@@ -2857,7 +2859,7 @@ ImageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5038](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L5038)
+[generated-client/api/image-api.ts:5081](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L5081)
 
 ___
 
@@ -2881,6 +2883,7 @@ ImageApi - functional programming interface
 
 | Name | Type |
 | :------ | :------ |
+| `deleteCustomSplashscreen` | (`options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `deleteItemImage` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `deleteItemImageByIndex` | (`itemId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `imageIndex`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
 | `deleteUserImage` | (`userId`: `string`, `imageType`: [`ImageType`](../enums/generated_client.ImageType.md), `index?`: `number`, `options?`: `any`) => `Promise`<(`axios?`: `AxiosInstance`, `basePath?`: `string`) => `AxiosPromise`<`void`\>\> |
@@ -2924,7 +2927,7 @@ ImageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/image-api.ts:4051](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L4051)
+[generated-client/api/image-api.ts:4084](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-api.ts#L4084)
 
 ___
 
@@ -2957,7 +2960,7 @@ ImageByNameApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L31)
+[generated-client/api/image-by-name-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-by-name-api.ts#L31)
 
 ___
 
@@ -2992,7 +2995,7 @@ ImageByNameApi - factory interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:329](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L329)
+[generated-client/api/image-by-name-api.ts:329](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-by-name-api.ts#L329)
 
 ___
 
@@ -3025,7 +3028,7 @@ ImageByNameApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:253](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L253)
+[generated-client/api/image-by-name-api.ts:253](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/image-by-name-api.ts#L253)
 
 ___
 
@@ -3060,7 +3063,7 @@ InstantMixApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L33)
+[generated-client/api/instant-mix-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/instant-mix-api.ts#L33)
 
 ___
 
@@ -3097,7 +3100,7 @@ InstantMixApi - factory interface
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L780)
+[generated-client/api/instant-mix-api.ts:780](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/instant-mix-api.ts#L780)
 
 ___
 
@@ -3132,7 +3135,7 @@ InstantMixApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/instant-mix-api.ts:625](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/instant-mix-api.ts#L625)
+[generated-client/api/instant-mix-api.ts:625](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/instant-mix-api.ts#L625)
 
 ___
 
@@ -3170,7 +3173,7 @@ ItemLookupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:51](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L51)
+[generated-client/api/item-lookup-api.ts:51](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-lookup-api.ts#L51)
 
 ___
 
@@ -3210,7 +3213,7 @@ ItemLookupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L629)
+[generated-client/api/item-lookup-api.ts:629](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-lookup-api.ts#L629)
 
 ___
 
@@ -3248,7 +3251,7 @@ ItemLookupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-lookup-api.ts:496](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-lookup-api.ts#L496)
+[generated-client/api/item-lookup-api.ts:496](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-lookup-api.ts#L496)
 
 ___
 
@@ -3276,7 +3279,7 @@ ItemRefreshApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L31)
+[generated-client/api/item-refresh-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-refresh-api.ts#L31)
 
 ___
 
@@ -3306,7 +3309,7 @@ ItemRefreshApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L122)
+[generated-client/api/item-refresh-api.ts:122](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-refresh-api.ts#L122)
 
 ___
 
@@ -3334,7 +3337,7 @@ ItemRefreshApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-refresh-api.ts:97](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-refresh-api.ts#L97)
+[generated-client/api/item-refresh-api.ts:97](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-refresh-api.ts#L97)
 
 ___
 
@@ -3364,7 +3367,7 @@ ItemUpdateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L33)
+[generated-client/api/item-update-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-update-api.ts#L33)
 
 ___
 
@@ -3396,7 +3399,7 @@ ItemUpdateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:209](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L209)
+[generated-client/api/item-update-api.ts:209](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-update-api.ts#L209)
 
 ___
 
@@ -3426,7 +3429,7 @@ ItemUpdateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/item-update-api.ts:164](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/item-update-api.ts#L164)
+[generated-client/api/item-update-api.ts:164](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/item-update-api.ts#L164)
 
 ___
 
@@ -3456,7 +3459,7 @@ ItemsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/items-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L45)
+[generated-client/api/items-api.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L45)
 
 ___
 
@@ -3488,7 +3491,7 @@ ItemsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1317](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L1317)
+[generated-client/api/items-api.ts:1317](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L1317)
 
 ___
 
@@ -3518,7 +3521,7 @@ ItemsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/items-api.ts:1092](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/items-api.ts#L1092)
+[generated-client/api/items-api.ts:1092](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/items-api.ts#L1092)
 
 ___
 
@@ -3570,7 +3573,7 @@ LibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L45)
+[generated-client/api/library-api.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L45)
 
 ___
 
@@ -3624,7 +3627,7 @@ LibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1476](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1476)
+[generated-client/api/library-api.ts:1476](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L1476)
 
 ___
 
@@ -3676,7 +3679,7 @@ LibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-api.ts:1157](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-api.ts#L1157)
+[generated-client/api/library-api.ts:1157](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-api.ts#L1157)
 
 ___
 
@@ -3711,7 +3714,7 @@ LibraryStructureApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L41)
+[generated-client/api/library-structure-api.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-structure-api.ts#L41)
 
 ___
 
@@ -3748,7 +3751,7 @@ LibraryStructureApi - factory interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:506](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L506)
+[generated-client/api/library-structure-api.ts:506](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-structure-api.ts#L506)
 
 ___
 
@@ -3783,7 +3786,7 @@ LibraryStructureApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:399](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L399)
+[generated-client/api/library-structure-api.ts:399](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/library-structure-api.ts#L399)
 
 ___
 
@@ -3851,7 +3854,7 @@ LiveTvApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:69](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L69)
+[generated-client/api/live-tv-api.ts:69](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L69)
 
 ___
 
@@ -3921,7 +3924,7 @@ LiveTvApi - factory interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L2702)
+[generated-client/api/live-tv-api.ts:2702](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L2702)
 
 ___
 
@@ -3989,7 +3992,7 @@ LiveTvApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:2135](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L2135)
+[generated-client/api/live-tv-api.ts:2135](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L2135)
 
 ___
 
@@ -4020,7 +4023,7 @@ LocalizationApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L35)
+[generated-client/api/localization-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/localization-api.ts#L35)
 
 ___
 
@@ -4053,7 +4056,7 @@ LocalizationApi - factory interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L226)
+[generated-client/api/localization-api.ts:226](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/localization-api.ts#L226)
 
 ___
 
@@ -4084,7 +4087,7 @@ LocalizationApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/localization-api.ts:176](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/localization-api.ts#L176)
+[generated-client/api/localization-api.ts:176](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/localization-api.ts#L176)
 
 ___
 
@@ -4116,7 +4119,7 @@ MediaInfoApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L35)
+[generated-client/api/media-info-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L35)
 
 ___
 
@@ -4150,7 +4153,7 @@ MediaInfoApi - factory interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:461](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L461)
+[generated-client/api/media-info-api.ts:461](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L461)
 
 ___
 
@@ -4182,7 +4185,7 @@ MediaInfoApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/media-info-api.ts:369](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/media-info-api.ts#L369)
+[generated-client/api/media-info-api.ts:369](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/media-info-api.ts#L369)
 
 ___
 
@@ -4210,7 +4213,7 @@ MoviesApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L31)
+[generated-client/api/movies-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/movies-api.ts#L31)
 
 ___
 
@@ -4240,7 +4243,7 @@ MoviesApi - factory interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L123)
+[generated-client/api/movies-api.ts:123](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/movies-api.ts#L123)
 
 ___
 
@@ -4268,7 +4271,7 @@ MoviesApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/movies-api.ts:98](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/movies-api.ts#L98)
+[generated-client/api/movies-api.ts:98](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/movies-api.ts#L98)
 
 ___
 
@@ -4297,7 +4300,7 @@ MusicGenresApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L39)
+[generated-client/api/music-genres-api.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/music-genres-api.ts#L39)
 
 ___
 
@@ -4328,7 +4331,7 @@ MusicGenresApi - factory interface
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:265](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L265)
+[generated-client/api/music-genres-api.ts:265](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/music-genres-api.ts#L265)
 
 ___
 
@@ -4357,7 +4360,7 @@ MusicGenresApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/music-genres-api.ts:214](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/music-genres-api.ts#L214)
+[generated-client/api/music-genres-api.ts:214](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/music-genres-api.ts#L214)
 
 ___
 
@@ -4391,7 +4394,7 @@ NotificationsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L37)
+[generated-client/api/notifications-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/notifications-api.ts#L37)
 
 ___
 
@@ -4427,7 +4430,7 @@ NotificationsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L384)
+[generated-client/api/notifications-api.ts:384](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/notifications-api.ts#L384)
 
 ___
 
@@ -4461,7 +4464,7 @@ NotificationsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/notifications-api.ts:299](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/notifications-api.ts#L299)
+[generated-client/api/notifications-api.ts:299](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/notifications-api.ts#L299)
 
 ___
 
@@ -4494,7 +4497,7 @@ PackageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/package-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L33)
+[generated-client/api/package-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/package-api.ts#L33)
 
 ___
 
@@ -4529,7 +4532,7 @@ PackageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:356](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L356)
+[generated-client/api/package-api.ts:356](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/package-api.ts#L356)
 
 ___
 
@@ -4562,7 +4565,7 @@ PackageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/package-api.ts:278](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L278)
+[generated-client/api/package-api.ts:278](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/package-api.ts#L278)
 
 ___
 
@@ -4591,7 +4594,7 @@ PersonsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L39)
+[generated-client/api/persons-api.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/persons-api.ts#L39)
 
 ___
 
@@ -4622,7 +4625,7 @@ PersonsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:233](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L233)
+[generated-client/api/persons-api.ts:233](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/persons-api.ts#L233)
 
 ___
 
@@ -4651,7 +4654,7 @@ PersonsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/persons-api.ts:188](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/persons-api.ts#L188)
+[generated-client/api/persons-api.ts:188](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/persons-api.ts#L188)
 
 ___
 
@@ -4683,7 +4686,7 @@ PlaylistsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L37)
+[generated-client/api/playlists-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L37)
 
 ___
 
@@ -4717,7 +4720,7 @@ PlaylistsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:398](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L398)
+[generated-client/api/playlists-api.ts:398](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L398)
 
 ___
 
@@ -4749,7 +4752,7 @@ PlaylistsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playlists-api.ts:316](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playlists-api.ts#L316)
+[generated-client/api/playlists-api.ts:316](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playlists-api.ts#L316)
 
 ___
 
@@ -4785,7 +4788,7 @@ PlaystateApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L39)
+[generated-client/api/playstate-api.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L39)
 
 ___
 
@@ -4823,7 +4826,7 @@ PlaystateApi - factory interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:664](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L664)
+[generated-client/api/playstate-api.ts:664](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L664)
 
 ___
 
@@ -4859,7 +4862,7 @@ PlaystateApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/playstate-api.ts:526](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/playstate-api.ts#L526)
+[generated-client/api/playstate-api.ts:526](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/playstate-api.ts#L526)
 
 ___
 
@@ -4895,7 +4898,7 @@ PluginsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L31)
+[generated-client/api/plugins-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/plugins-api.ts#L31)
 
 ___
 
@@ -4933,7 +4936,7 @@ PluginsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:499](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L499)
+[generated-client/api/plugins-api.ts:499](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/plugins-api.ts#L499)
 
 ___
 
@@ -4969,7 +4972,7 @@ PluginsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/plugins-api.ts:386](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/plugins-api.ts#L386)
+[generated-client/api/plugins-api.ts:386](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/plugins-api.ts#L386)
 
 ___
 
@@ -5000,7 +5003,7 @@ QuickConnectApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L31)
+[generated-client/api/quick-connect-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L31)
 
 ___
 
@@ -5033,7 +5036,7 @@ QuickConnectApi - factory interface
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L229)
+[generated-client/api/quick-connect-api.ts:229](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L229)
 
 ___
 
@@ -5064,7 +5067,7 @@ QuickConnectApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/quick-connect-api.ts:177](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/quick-connect-api.ts#L177)
+[generated-client/api/quick-connect-api.ts:177](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/quick-connect-api.ts#L177)
 
 ___
 
@@ -5094,7 +5097,7 @@ RemoteImageApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L35)
+[generated-client/api/remote-image-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/remote-image-api.ts#L35)
 
 ___
 
@@ -5126,7 +5129,7 @@ RemoteImageApi - factory interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:242](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L242)
+[generated-client/api/remote-image-api.ts:242](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/remote-image-api.ts#L242)
 
 ___
 
@@ -5156,7 +5159,7 @@ RemoteImageApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/remote-image-api.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/remote-image-api.ts#L192)
+[generated-client/api/remote-image-api.ts:192](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/remote-image-api.ts#L192)
 
 ___
 
@@ -5188,7 +5191,7 @@ ScheduledTasksApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L33)
+[generated-client/api/scheduled-tasks-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/scheduled-tasks-api.ts#L33)
 
 ___
 
@@ -5222,7 +5225,7 @@ ScheduledTasksApi - factory interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L306)
+[generated-client/api/scheduled-tasks-api.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/scheduled-tasks-api.ts#L306)
 
 ___
 
@@ -5254,7 +5257,7 @@ ScheduledTasksApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/scheduled-tasks-api.ts#L239)
+[generated-client/api/scheduled-tasks-api.ts:239](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/scheduled-tasks-api.ts#L239)
 
 ___
 
@@ -5282,7 +5285,7 @@ SearchApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/search-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L31)
+[generated-client/api/search-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/search-api.ts#L31)
 
 ___
 
@@ -5312,7 +5315,7 @@ SearchApi - factory interface
 
 #### Defined in
 
-[generated-client/api/search-api.ts:203](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L203)
+[generated-client/api/search-api.ts:203](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/search-api.ts#L203)
 
 ___
 
@@ -5340,7 +5343,7 @@ SearchApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/search-api.ts:165](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/search-api.ts#L165)
+[generated-client/api/search-api.ts:165](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/search-api.ts#L165)
 
 ___
 
@@ -5383,7 +5386,7 @@ SessionApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/session-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L45)
+[generated-client/api/session-api.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L45)
 
 ___
 
@@ -5428,7 +5431,7 @@ SessionApi - factory interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:999](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L999)
+[generated-client/api/session-api.ts:999](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L999)
 
 ___
 
@@ -5471,7 +5474,7 @@ SessionApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/session-api.ts:788](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L788)
+[generated-client/api/session-api.ts:788](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/session-api.ts#L788)
 
 ___
 
@@ -5505,7 +5508,7 @@ StartupApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L33)
+[generated-client/api/startup-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/startup-api.ts#L33)
 
 ___
 
@@ -5541,7 +5544,7 @@ StartupApi - factory interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L372)
+[generated-client/api/startup-api.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/startup-api.ts#L372)
 
 ___
 
@@ -5575,7 +5578,7 @@ StartupApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/startup-api.ts:289](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/startup-api.ts#L289)
+[generated-client/api/startup-api.ts:289](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/startup-api.ts#L289)
 
 ___
 
@@ -5604,7 +5607,7 @@ StudiosApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L37)
+[generated-client/api/studios-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L37)
 
 ___
 
@@ -5635,7 +5638,7 @@ StudiosApi - factory interface
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:255](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L255)
+[generated-client/api/studios-api.ts:255](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L255)
 
 ___
 
@@ -5664,7 +5667,7 @@ StudiosApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/studios-api.ts:206](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/studios-api.ts#L206)
+[generated-client/api/studios-api.ts:206](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/studios-api.ts#L206)
 
 ___
 
@@ -5701,7 +5704,7 @@ SubtitleApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L35)
+[generated-client/api/subtitle-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L35)
 
 ___
 
@@ -5740,7 +5743,7 @@ SubtitleApi - factory interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L700)
+[generated-client/api/subtitle-api.ts:700](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L700)
 
 ___
 
@@ -5777,7 +5780,7 @@ SubtitleApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/subtitle-api.ts:550](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/subtitle-api.ts#L550)
+[generated-client/api/subtitle-api.ts:550](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/subtitle-api.ts#L550)
 
 ___
 
@@ -5805,7 +5808,7 @@ SuggestionsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L31)
+[generated-client/api/suggestions-api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L31)
 
 ___
 
@@ -5835,7 +5838,7 @@ SuggestionsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L128)
+[generated-client/api/suggestions-api.ts:128](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L128)
 
 ___
 
@@ -5863,7 +5866,7 @@ SuggestionsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/suggestions-api.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/suggestions-api.ts#L102)
+[generated-client/api/suggestions-api.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/suggestions-api.ts#L102)
 
 ___
 
@@ -5911,7 +5914,7 @@ SyncPlayApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:61](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L61)
+[generated-client/api/sync-play-api.ts:61](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L61)
 
 ___
 
@@ -5961,7 +5964,7 @@ SyncPlayApi - factory interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1095](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1095)
+[generated-client/api/sync-play-api.ts:1095](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L1095)
 
 ___
 
@@ -6009,7 +6012,7 @@ SyncPlayApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:859](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L859)
+[generated-client/api/sync-play-api.ts:859](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/sync-play-api.ts#L859)
 
 ___
 
@@ -6046,7 +6049,7 @@ SystemApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/system-api.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L37)
+[generated-client/api/system-api.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/system-api.ts#L37)
 
 ___
 
@@ -6085,7 +6088,7 @@ SystemApi - factory interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:487](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L487)
+[generated-client/api/system-api.ts:487](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/system-api.ts#L487)
 
 ___
 
@@ -6122,7 +6125,7 @@ SystemApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/system-api.ts:375](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/system-api.ts#L375)
+[generated-client/api/system-api.ts:375](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/system-api.ts#L375)
 
 ___
 
@@ -6150,7 +6153,7 @@ TimeSyncApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L29)
+[generated-client/api/time-sync-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/time-sync-api.ts#L29)
 
 ___
 
@@ -6180,7 +6183,7 @@ TimeSyncApi - factory interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L88)
+[generated-client/api/time-sync-api.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/time-sync-api.ts#L88)
 
 ___
 
@@ -6208,7 +6211,7 @@ TimeSyncApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/time-sync-api.ts:68](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/time-sync-api.ts#L68)
+[generated-client/api/time-sync-api.ts:68](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/time-sync-api.ts#L68)
 
 ___
 
@@ -6236,7 +6239,7 @@ TmdbApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/tmdb-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L29)
+[generated-client/api/tmdb-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tmdb-api.ts#L29)
 
 ___
 
@@ -6266,7 +6269,7 @@ TmdbApi - factory interface
 
 #### Defined in
 
-[generated-client/api/tmdb-api.ts:91](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L91)
+[generated-client/api/tmdb-api.ts:91](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tmdb-api.ts#L91)
 
 ___
 
@@ -6294,7 +6297,7 @@ TmdbApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/tmdb-api.ts:71](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tmdb-api.ts#L71)
+[generated-client/api/tmdb-api.ts:71](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tmdb-api.ts#L71)
 
 ___
 
@@ -6322,7 +6325,7 @@ TrailersApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L45)
+[generated-client/api/trailers-api.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/trailers-api.ts#L45)
 
 ___
 
@@ -6352,7 +6355,7 @@ TrailersApi - factory interface
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:619](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L619)
+[generated-client/api/trailers-api.ts:619](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/trailers-api.ts#L619)
 
 ___
 
@@ -6380,7 +6383,7 @@ TrailersApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/trailers-api.ts:515](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/trailers-api.ts#L515)
+[generated-client/api/trailers-api.ts:515](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/trailers-api.ts#L515)
 
 ___
 
@@ -6411,7 +6414,7 @@ TvShowsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L35)
+[generated-client/api/tv-shows-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L35)
 
 ___
 
@@ -6444,7 +6447,7 @@ TvShowsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:514](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L514)
+[generated-client/api/tv-shows-api.ts:514](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L514)
 
 ___
 
@@ -6475,7 +6478,7 @@ TvShowsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/tv-shows-api.ts:416](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/tv-shows-api.ts#L416)
+[generated-client/api/tv-shows-api.ts:416](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/tv-shows-api.ts#L416)
 
 ___
 
@@ -6504,7 +6507,7 @@ UniversalAudioApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L27)
+[generated-client/api/universal-audio-api.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/universal-audio-api.ts#L27)
 
 ___
 
@@ -6535,7 +6538,7 @@ UniversalAudioApi - factory interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:346](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L346)
+[generated-client/api/universal-audio-api.ts:346](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/universal-audio-api.ts#L346)
 
 ___
 
@@ -6564,7 +6567,7 @@ UniversalAudioApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:280](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L280)
+[generated-client/api/universal-audio-api.ts:280](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/universal-audio-api.ts#L280)
 
 ___
 
@@ -6607,7 +6610,7 @@ UserApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-api.ts:55](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L55)
+[generated-client/api/user-api.ts:55](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L55)
 
 ___
 
@@ -6652,7 +6655,7 @@ UserApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:880](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L880)
+[generated-client/api/user-api.ts:880](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L880)
 
 ___
 
@@ -6695,7 +6698,7 @@ UserApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-api.ts:688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L688)
+[generated-client/api/user-api.ts:688](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L688)
 
 ___
 
@@ -6732,7 +6735,7 @@ UserLibraryApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:39](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L39)
+[generated-client/api/user-library-api.ts:39](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-library-api.ts#L39)
 
 ___
 
@@ -6771,7 +6774,7 @@ UserLibraryApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:644](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L644)
+[generated-client/api/user-library-api.ts:644](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-library-api.ts#L644)
 
 ___
 
@@ -6808,7 +6811,7 @@ UserLibraryApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-library-api.ts:505](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-library-api.ts#L505)
+[generated-client/api/user-library-api.ts:505](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-library-api.ts#L505)
 
 ___
 
@@ -6837,7 +6840,7 @@ UserViewsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L33)
+[generated-client/api/user-views-api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L33)
 
 ___
 
@@ -6868,7 +6871,7 @@ UserViewsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L166)
+[generated-client/api/user-views-api.ts:166](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L166)
 
 ___
 
@@ -6897,7 +6900,7 @@ UserViewsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/user-views-api.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-views-api.ts#L131)
+[generated-client/api/user-views-api.ts:131](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-views-api.ts#L131)
 
 ___
 
@@ -6925,7 +6928,7 @@ VideoAttachmentsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L29)
+[generated-client/api/video-attachments-api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/video-attachments-api.ts#L29)
 
 ___
 
@@ -6955,7 +6958,7 @@ VideoAttachmentsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:103](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L103)
+[generated-client/api/video-attachments-api.ts:103](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/video-attachments-api.ts#L103)
 
 ___
 
@@ -6983,7 +6986,7 @@ VideoAttachmentsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/video-attachments-api.ts:80](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/video-attachments-api.ts#L80)
+[generated-client/api/video-attachments-api.ts:80](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/video-attachments-api.ts#L80)
 
 ___
 
@@ -7017,7 +7020,7 @@ VideosApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L35)
+[generated-client/api/videos-api.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/videos-api.ts#L35)
 
 ___
 
@@ -7053,7 +7056,7 @@ VideosApi - factory interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1585](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L1585)
+[generated-client/api/videos-api.ts:1585](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/videos-api.ts#L1585)
 
 ___
 
@@ -7087,7 +7090,7 @@ VideosApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/videos-api.ts:1297](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/videos-api.ts#L1297)
+[generated-client/api/videos-api.ts:1297](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/videos-api.ts#L1297)
 
 ___
 
@@ -7116,7 +7119,7 @@ YearsApi - axios parameter creator
 
 #### Defined in
 
-[generated-client/api/years-api.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L41)
+[generated-client/api/years-api.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L41)
 
 ___
 
@@ -7147,7 +7150,7 @@ YearsApi - factory interface
 
 #### Defined in
 
-[generated-client/api/years-api.ts:247](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L247)
+[generated-client/api/years-api.ts:247](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L247)
 
 ___
 
@@ -7176,4 +7179,4 @@ YearsApi - functional programming interface
 
 #### Defined in
 
-[generated-client/api/years-api.ts:200](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/years-api.ts#L200)
+[generated-client/api/years-api.ts:200](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/years-api.ts#L200)

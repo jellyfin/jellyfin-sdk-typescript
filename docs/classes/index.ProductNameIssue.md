@@ -40,7 +40,7 @@ Class representing an issue with the returned product name.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L15)
+[models/recommended-server-issue.ts:15](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-issue.ts#L15)
 
 ## Properties
 
@@ -52,4 +52,4 @@ The product name returned in the system information.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L13)
+[models/recommended-server-issue.ts:13](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-issue.ts#L13)

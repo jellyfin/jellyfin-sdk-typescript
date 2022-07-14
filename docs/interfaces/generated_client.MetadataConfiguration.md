@@ -24,4 +24,4 @@
 
 #### Defined in
 
-[generated-client/models/metadata-configuration.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-configuration.ts#L28)
+[generated-client/models/metadata-configuration.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/metadata-configuration.ts#L28)

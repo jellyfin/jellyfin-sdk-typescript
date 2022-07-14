@@ -28,4 +28,4 @@ Optional. Filter by user and attach user data.
 
 #### Defined in
 
-[generated-client/api/live-tv-api.ts:4082](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/live-tv-api.ts#L4082)
+[generated-client/api/live-tv-api.ts:4082](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/live-tv-api.ts#L4082)

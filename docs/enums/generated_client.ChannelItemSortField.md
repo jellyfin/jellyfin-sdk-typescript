@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [CommunityPlayCount](generated_client.ChannelItemSortField.md#communityplaycount)
 - [CommunityRating](generated_client.ChannelItemSortField.md#communityrating)
@@ -18,72 +18,72 @@
 - [PremiereDate](generated_client.ChannelItemSortField.md#premieredate)
 - [Runtime](generated_client.ChannelItemSortField.md#runtime)
 
-## Enumeration members
+## Enumeration Members
 
 ### CommunityPlayCount
 
-• **CommunityPlayCount** = `"CommunityPlayCount"`
+• **CommunityPlayCount**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L30)
+[generated-client/models/channel-item-sort-field.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L30)
 
 ___
 
 ### CommunityRating
 
-• **CommunityRating** = `"CommunityRating"`
+• **CommunityRating**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L25)
+[generated-client/models/channel-item-sort-field.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L25)
 
 ___
 
 ### DateCreated
 
-• **DateCreated** = `"DateCreated"`
+• **DateCreated**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L27)
+[generated-client/models/channel-item-sort-field.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L27)
 
 ___
 
 ### Name
 
-• **Name** = `"Name"`
+• **Name**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L24)
+[generated-client/models/channel-item-sort-field.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L24)
 
 ___
 
 ### PlayCount
 
-• **PlayCount** = `"PlayCount"`
+• **PlayCount**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L29)
+[generated-client/models/channel-item-sort-field.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L29)
 
 ___
 
 ### PremiereDate
 
-• **PremiereDate** = `"PremiereDate"`
+• **PremiereDate**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L26)
+[generated-client/models/channel-item-sort-field.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L26)
 
 ___
 
 ### Runtime
 
-• **Runtime** = `"Runtime"`
+• **Runtime**
 
 #### Defined in
 
-[generated-client/models/channel-item-sort-field.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-item-sort-field.ts#L28)
+[generated-client/models/channel-item-sort-field.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/channel-item-sort-field.ts#L28)

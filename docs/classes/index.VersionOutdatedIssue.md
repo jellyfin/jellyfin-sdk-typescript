@@ -41,7 +41,7 @@ Class representing the server version is outdated.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:56](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L56)
+[models/recommended-server-issue.ts:56](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-issue.ts#L56)
 
 ## Properties
 
@@ -51,4 +51,4 @@ Class representing the server version is outdated.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L54)
+[models/recommended-server-issue.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/models/recommended-server-issue.ts#L54)

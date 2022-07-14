@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Books](generated_client.CollectionTypeOptions.md#books)
 - [BoxSets](generated_client.CollectionTypeOptions.md#boxsets)
@@ -19,82 +19,82 @@
 - [MusicVideos](generated_client.CollectionTypeOptions.md#musicvideos)
 - [TvShows](generated_client.CollectionTypeOptions.md#tvshows)
 
-## Enumeration members
+## Enumeration Members
 
 ### Books
 
-• **Books** = `"Books"`
+• **Books**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L30)
+[generated-client/models/collection-type-options.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L30)
 
 ___
 
 ### BoxSets
 
-• **BoxSets** = `"BoxSets"`
+• **BoxSets**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L29)
+[generated-client/models/collection-type-options.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L29)
 
 ___
 
 ### HomeVideos
 
-• **HomeVideos** = `"HomeVideos"`
+• **HomeVideos**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L28)
+[generated-client/models/collection-type-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L28)
 
 ___
 
 ### Mixed
 
-• **Mixed** = `"Mixed"`
+• **Mixed**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L31)
+[generated-client/models/collection-type-options.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L31)
 
 ___
 
 ### Movies
 
-• **Movies** = `"Movies"`
+• **Movies**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L24)
+[generated-client/models/collection-type-options.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L24)
 
 ___
 
 ### Music
 
-• **Music** = `"Music"`
+• **Music**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L26)
+[generated-client/models/collection-type-options.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L26)
 
 ___
 
 ### MusicVideos
 
-• **MusicVideos** = `"MusicVideos"`
+• **MusicVideos**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L27)
+[generated-client/models/collection-type-options.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L27)
 
 ___
 
 ### TvShows
 
-• **TvShows** = `"TvShows"`
+• **TvShows**
 
 #### Defined in
 
-[generated-client/models/collection-type-options.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/collection-type-options.ts#L25)
+[generated-client/models/collection-type-options.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/collection-type-options.ts#L25)

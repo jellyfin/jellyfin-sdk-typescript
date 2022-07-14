@@ -10,27 +10,27 @@ An enum representing the sorting order.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Ascending](generated_client.SortOrder.md#ascending)
 - [Descending](generated_client.SortOrder.md#descending)
 
-## Enumeration members
+## Enumeration Members
 
 ### Ascending
 
-• **Ascending** = `"Ascending"`
+• **Ascending**
 
 #### Defined in
 
-[generated-client/models/sort-order.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/sort-order.ts#L24)
+[generated-client/models/sort-order.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/sort-order.ts#L24)
 
 ___
 
 ### Descending
 
-• **Descending** = `"Descending"`
+• **Descending**
 
 #### Defined in
 
-[generated-client/models/sort-order.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/sort-order.ts#L25)
+[generated-client/models/sort-order.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/sort-order.ts#L25)

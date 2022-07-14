@@ -10,49 +10,49 @@ Enum VideoType.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [BluRay](generated_client.VideoType.md#bluray)
 - [Dvd](generated_client.VideoType.md#dvd)
 - [Iso](generated_client.VideoType.md#iso)
 - [VideoFile](generated_client.VideoType.md#videofile)
 
-## Enumeration members
+## Enumeration Members
 
 ### BluRay
 
-• **BluRay** = `"BluRay"`
+• **BluRay**
 
 #### Defined in
 
-[generated-client/models/video-type.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video-type.ts#L27)
+[generated-client/models/video-type.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/video-type.ts#L27)
 
 ___
 
 ### Dvd
 
-• **Dvd** = `"Dvd"`
+• **Dvd**
 
 #### Defined in
 
-[generated-client/models/video-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video-type.ts#L26)
+[generated-client/models/video-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/video-type.ts#L26)
 
 ___
 
 ### Iso
 
-• **Iso** = `"Iso"`
+• **Iso**
 
 #### Defined in
 
-[generated-client/models/video-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video-type.ts#L25)
+[generated-client/models/video-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/video-type.ts#L25)
 
 ___
 
 ### VideoFile
 
-• **VideoFile** = `"VideoFile"`
+• **VideoFile**
 
 #### Defined in
 
-[generated-client/models/video-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/video-type.ts#L24)
+[generated-client/models/video-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/video-type.ts#L24)

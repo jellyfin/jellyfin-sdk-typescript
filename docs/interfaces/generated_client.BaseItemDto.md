@@ -178,7 +178,7 @@ Gets or sets the air days.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:480](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L480)
+[generated-client/models/base-item-dto.ts:480](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L480)
 
 ___
 
@@ -192,7 +192,7 @@ Gets or sets the air time.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:474](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L474)
+[generated-client/models/base-item-dto.ts:474](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L474)
 
 ___
 
@@ -204,7 +204,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L114)
+[generated-client/models/base-item-dto.ts:114](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L114)
 
 ___
 
@@ -216,7 +216,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L120)
+[generated-client/models/base-item-dto.ts:120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L120)
 
 ___
 
@@ -228,7 +228,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:108](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L108)
+[generated-client/models/base-item-dto.ts:108](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L108)
 
 ___
 
@@ -242,7 +242,7 @@ Gets or sets the album.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:510](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L510)
+[generated-client/models/base-item-dto.ts:510](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L510)
 
 ___
 
@@ -256,7 +256,7 @@ Gets or sets the album artist.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:546](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L546)
+[generated-client/models/base-item-dto.ts:546](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L546)
 
 ___
 
@@ -270,7 +270,7 @@ Gets or sets the album artists.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:552](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L552)
+[generated-client/models/base-item-dto.ts:552](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L552)
 
 ___
 
@@ -284,7 +284,7 @@ Gets or sets the album count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:738](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L738)
+[generated-client/models/base-item-dto.ts:738](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L738)
 
 ___
 
@@ -298,7 +298,7 @@ Gets or sets the album id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:528](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L528)
+[generated-client/models/base-item-dto.ts:528](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L528)
 
 ___
 
@@ -312,7 +312,7 @@ Gets or sets the album image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:534](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L534)
+[generated-client/models/base-item-dto.ts:534](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L534)
 
 ___
 
@@ -324,7 +324,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:834](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L834)
+[generated-client/models/base-item-dto.ts:834](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L834)
 
 ___
 
@@ -336,7 +336,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:810](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L810)
+[generated-client/models/base-item-dto.ts:810](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L810)
 
 ___
 
@@ -348,7 +348,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:744](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L744)
+[generated-client/models/base-item-dto.ts:744](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L744)
 
 ___
 
@@ -362,7 +362,7 @@ Gets or sets the artist items.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:504](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L504)
+[generated-client/models/base-item-dto.ts:504](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L504)
 
 ___
 
@@ -376,7 +376,7 @@ Gets or sets the artists.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:498](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L498)
+[generated-client/models/base-item-dto.ts:498](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L498)
 
 ___
 
@@ -390,7 +390,7 @@ Gets or sets the aspect ratio.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:294](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L294)
+[generated-client/models/base-item-dto.ts:294](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L294)
 
 ___
 
@@ -402,7 +402,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:894](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L894)
+[generated-client/models/base-item-dto.ts:894](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L894)
 
 ___
 
@@ -416,7 +416,7 @@ Gets or sets the backdrop image tags.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:594](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L594)
+[generated-client/models/base-item-dto.ts:594](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L594)
 
 ___
 
@@ -428,7 +428,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:774](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L774)
+[generated-client/models/base-item-dto.ts:774](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L774)
 
 ___
 
@@ -440,7 +440,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:780](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L780)
+[generated-client/models/base-item-dto.ts:780](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L780)
 
 ___
 
@@ -452,7 +452,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L126)
+[generated-client/models/base-item-dto.ts:126](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L126)
 
 ___
 
@@ -464,7 +464,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L132)
+[generated-client/models/base-item-dto.ts:132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L132)
 
 ___
 
@@ -478,7 +478,7 @@ Gets or sets the channel identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:240](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L240)
+[generated-client/models/base-item-dto.ts:240](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L240)
 
 ___
 
@@ -490,7 +490,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:246](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L246)
+[generated-client/models/base-item-dto.ts:246](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L246)
 
 ___
 
@@ -502,7 +502,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:318](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L318)
+[generated-client/models/base-item-dto.ts:318](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L318)
 
 ___
 
@@ -516,7 +516,7 @@ Gets or sets the channel primary image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:858](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L858)
+[generated-client/models/base-item-dto.ts:858](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L858)
 
 ___
 
@@ -528,7 +528,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:888](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L888)
+[generated-client/models/base-item-dto.ts:888](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L888)
 
 ___
 
@@ -542,7 +542,7 @@ Gets or sets the chapters.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:666](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L666)
+[generated-client/models/base-item-dto.ts:666](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L666)
 
 ___
 
@@ -556,7 +556,7 @@ Gets or sets the child count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:432](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L432)
+[generated-client/models/base-item-dto.ts:432](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L432)
 
 ___
 
@@ -570,7 +570,7 @@ Gets or sets the type of the collection.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:516](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L516)
+[generated-client/models/base-item-dto.ts:516](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L516)
 
 ___
 
@@ -584,7 +584,7 @@ Gets or sets the community rating.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:270](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L270)
+[generated-client/models/base-item-dto.ts:270](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L270)
 
 ___
 
@@ -598,7 +598,7 @@ Gets or sets the completion percentage.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:870](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L870)
+[generated-client/models/base-item-dto.ts:870](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L870)
 
 ___
 
@@ -610,7 +610,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:162](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L162)
+[generated-client/models/base-item-dto.ts:162](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L162)
 
 ___
 
@@ -624,7 +624,7 @@ Gets or sets the critic rating.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:204](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L204)
+[generated-client/models/base-item-dto.ts:204](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L204)
 
 ___
 
@@ -638,7 +638,7 @@ Gets or sets the cumulative run time ticks.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:276](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L276)
+[generated-client/models/base-item-dto.ts:276](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L276)
 
 ___
 
@@ -650,7 +650,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:948](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L948)
+[generated-client/models/base-item-dto.ts:948](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L948)
 
 ___
 
@@ -664,7 +664,7 @@ Gets or sets the custom rating.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:234](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L234)
+[generated-client/models/base-item-dto.ts:234](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L234)
 
 ___
 
@@ -678,7 +678,7 @@ Gets or sets the date created.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L90)
+[generated-client/models/base-item-dto.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L90)
 
 ___
 
@@ -690,7 +690,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L96)
+[generated-client/models/base-item-dto.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L96)
 
 ___
 
@@ -704,7 +704,7 @@ Gets or sets the display order.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:522](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L522)
+[generated-client/models/base-item-dto.ts:522](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L522)
 
 ___
 
@@ -718,7 +718,7 @@ Gets or sets the display preferences id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:462](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L462)
+[generated-client/models/base-item-dto.ts:462](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L462)
 
 ___
 
@@ -730,7 +730,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L222)
+[generated-client/models/base-item-dto.ts:222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L222)
 
 ___
 
@@ -744,7 +744,7 @@ Gets or sets the end date.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:690](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L690)
+[generated-client/models/base-item-dto.ts:690](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L690)
 
 ___
 
@@ -758,7 +758,7 @@ Gets or sets the episode count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:726](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L726)
+[generated-client/models/base-item-dto.ts:726](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L726)
 
 ___
 
@@ -772,7 +772,7 @@ Gets or sets the episode title.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:882](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L882)
+[generated-client/models/base-item-dto.ts:882](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L882)
 
 ___
 
@@ -786,7 +786,7 @@ Gets or sets the etag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L72)
+[generated-client/models/base-item-dto.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L72)
 
 ___
 
@@ -798,7 +798,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:792](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L792)
+[generated-client/models/base-item-dto.ts:792](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L792)
 
 ___
 
@@ -812,7 +812,7 @@ Gets or sets the external urls.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:192](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L192)
+[generated-client/models/base-item-dto.ts:192](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L192)
 
 ___
 
@@ -824,7 +824,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L102)
+[generated-client/models/base-item-dto.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L102)
 
 ___
 
@@ -836,7 +836,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:798](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L798)
+[generated-client/models/base-item-dto.ts:798](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L798)
 
 ___
 
@@ -848,7 +848,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:174](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L174)
+[generated-client/models/base-item-dto.ts:174](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L174)
 
 ___
 
@@ -860,7 +860,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:390](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L390)
+[generated-client/models/base-item-dto.ts:390](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L390)
 
 ___
 
@@ -874,7 +874,7 @@ Gets or sets the genres.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:264](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L264)
+[generated-client/models/base-item-dto.ts:264](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L264)
 
 ___
 
@@ -886,7 +886,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:138](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L138)
+[generated-client/models/base-item-dto.ts:138](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L138)
 
 ___
 
@@ -898,7 +898,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:768](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L768)
+[generated-client/models/base-item-dto.ts:768](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L768)
 
 ___
 
@@ -912,7 +912,7 @@ Gets or sets the id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L66)
+[generated-client/models/base-item-dto.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L66)
 
 ___
 
@@ -924,7 +924,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:630](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L630)
+[generated-client/models/base-item-dto.ts:630](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L630)
 
 ___
 
@@ -936,7 +936,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:804](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L804)
+[generated-client/models/base-item-dto.ts:804](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L804)
 
 ___
 
@@ -950,7 +950,7 @@ Gets or sets the image tags.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:588](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L588)
+[generated-client/models/base-item-dto.ts:588](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L588)
 
 ___
 
@@ -964,7 +964,7 @@ Gets or sets the index number.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:324](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L324)
+[generated-client/models/base-item-dto.ts:324](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L324)
 
 ___
 
@@ -978,7 +978,7 @@ Gets or sets the index number end.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:330](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L330)
+[generated-client/models/base-item-dto.ts:330](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L330)
 
 ___
 
@@ -992,7 +992,7 @@ Gets or sets a value indicating whether this instance is folder.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:360](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L360)
+[generated-client/models/base-item-dto.ts:360](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L360)
 
 ___
 
@@ -1006,7 +1006,7 @@ Gets or sets a value indicating whether this instance is HD.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:354](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L354)
+[generated-client/models/base-item-dto.ts:354](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L354)
 
 ___
 
@@ -1020,7 +1020,7 @@ Gets or sets a value indicating whether this instance is kids.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:930](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L930)
+[generated-client/models/base-item-dto.ts:930](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L930)
 
 ___
 
@@ -1034,7 +1034,7 @@ Gets or sets a value indicating whether this instance is live.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:918](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L918)
+[generated-client/models/base-item-dto.ts:918](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L918)
 
 ___
 
@@ -1048,7 +1048,7 @@ Gets or sets a value indicating whether this instance is movie.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:900](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L900)
+[generated-client/models/base-item-dto.ts:900](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L900)
 
 ___
 
@@ -1062,7 +1062,7 @@ Gets or sets a value indicating whether this instance is news.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:924](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L924)
+[generated-client/models/base-item-dto.ts:924](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L924)
 
 ___
 
@@ -1076,7 +1076,7 @@ Gets or sets a value indicating whether this instance is place holder.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:306](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L306)
+[generated-client/models/base-item-dto.ts:306](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L306)
 
 ___
 
@@ -1090,7 +1090,7 @@ Gets or sets a value indicating whether this instance is premiere.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:936](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L936)
+[generated-client/models/base-item-dto.ts:936](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L936)
 
 ___
 
@@ -1104,7 +1104,7 @@ Gets or sets a value indicating whether this instance is repeat.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:876](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L876)
+[generated-client/models/base-item-dto.ts:876](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L876)
 
 ___
 
@@ -1118,7 +1118,7 @@ Gets or sets a value indicating whether this instance is series.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:912](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L912)
+[generated-client/models/base-item-dto.ts:912](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L912)
 
 ___
 
@@ -1132,7 +1132,7 @@ Gets or sets a value indicating whether this instance is sports.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:906](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L906)
+[generated-client/models/base-item-dto.ts:906](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L906)
 
 ___
 
@@ -1144,7 +1144,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:840](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L840)
+[generated-client/models/base-item-dto.ts:840](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L840)
 
 ___
 
@@ -1156,7 +1156,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:678](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L678)
+[generated-client/models/base-item-dto.ts:678](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L678)
 
 ___
 
@@ -1168,7 +1168,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:822](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L822)
+[generated-client/models/base-item-dto.ts:822](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L822)
 
 ___
 
@@ -1182,7 +1182,7 @@ Gets or sets the local trailer count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:414](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L414)
+[generated-client/models/base-item-dto.ts:414](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L414)
 
 ___
 
@@ -1194,7 +1194,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:672](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L672)
+[generated-client/models/base-item-dto.ts:672](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L672)
 
 ___
 
@@ -1208,7 +1208,7 @@ Gets or sets a value indicating whether [enable internet providers].
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:756](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L756)
+[generated-client/models/base-item-dto.ts:756](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L756)
 
 ___
 
@@ -1222,7 +1222,7 @@ Gets or sets the locked fields.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:696](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L696)
+[generated-client/models/base-item-dto.ts:696](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L696)
 
 ___
 
@@ -1234,7 +1234,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:828](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L828)
+[generated-client/models/base-item-dto.ts:828](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L828)
 
 ___
 
@@ -1246,7 +1246,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:582](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L582)
+[generated-client/models/base-item-dto.ts:582](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L582)
 
 ___
 
@@ -1260,7 +1260,7 @@ Gets or sets the media versions.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:198](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L198)
+[generated-client/models/base-item-dto.ts:198](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L198)
 
 ___
 
@@ -1274,7 +1274,7 @@ Gets or sets the media streams.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:564](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L564)
+[generated-client/models/base-item-dto.ts:564](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L564)
 
 ___
 
@@ -1288,7 +1288,7 @@ Gets or sets the type of the media.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:684](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L684)
+[generated-client/models/base-item-dto.ts:684](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L684)
 
 ___
 
@@ -1302,7 +1302,7 @@ Gets or sets the movie count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:708](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L708)
+[generated-client/models/base-item-dto.ts:708](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L708)
 
 ___
 
@@ -1316,7 +1316,7 @@ Gets or sets the music video count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:750](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L750)
+[generated-client/models/base-item-dto.ts:750](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L750)
 
 ___
 
@@ -1330,7 +1330,7 @@ Gets or sets the name.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L48)
+[generated-client/models/base-item-dto.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L48)
 
 ___
 
@@ -1344,7 +1344,7 @@ Gets or sets the number.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:312](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L312)
+[generated-client/models/base-item-dto.ts:312](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L312)
 
 ___
 
@@ -1358,7 +1358,7 @@ Gets or sets the official rating.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:228](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L228)
+[generated-client/models/base-item-dto.ts:228](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L228)
 
 ___
 
@@ -1370,7 +1370,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L54)
+[generated-client/models/base-item-dto.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L54)
 
 ___
 
@@ -1384,7 +1384,7 @@ Gets or sets the overview.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:252](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L252)
+[generated-client/models/base-item-dto.ts:252](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L252)
 
 ___
 
@@ -1398,7 +1398,7 @@ Gets or sets the parent art image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:618](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L618)
+[generated-client/models/base-item-dto.ts:618](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L618)
 
 ___
 
@@ -1412,7 +1412,7 @@ Gets or sets wether the item has fan art, this will hold the Id of the Parent th
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:612](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L612)
+[generated-client/models/base-item-dto.ts:612](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L612)
 
 ___
 
@@ -1426,7 +1426,7 @@ Gets or sets the parent backdrop image tags.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:408](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L408)
+[generated-client/models/base-item-dto.ts:408](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L408)
 
 ___
 
@@ -1440,7 +1440,7 @@ Gets or sets wether the item has any backdrops, this will hold the Id of the Par
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:402](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L402)
+[generated-client/models/base-item-dto.ts:402](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L402)
 
 ___
 
@@ -1454,7 +1454,7 @@ Gets or sets the parent id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:366](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L366)
+[generated-client/models/base-item-dto.ts:366](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L366)
 
 ___
 
@@ -1468,7 +1468,7 @@ Gets or sets the parent index number.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:336](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L336)
+[generated-client/models/base-item-dto.ts:336](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L336)
 
 ___
 
@@ -1482,7 +1482,7 @@ Gets or sets the parent logo image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:606](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L606)
+[generated-client/models/base-item-dto.ts:606](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L606)
 
 ___
 
@@ -1496,7 +1496,7 @@ Gets or sets wether the item has a logo, this will hold the Id of the Parent tha
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:396](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L396)
+[generated-client/models/base-item-dto.ts:396](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L396)
 
 ___
 
@@ -1510,7 +1510,7 @@ Gets or sets the parent primary image item identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:654](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L654)
+[generated-client/models/base-item-dto.ts:654](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L654)
 
 ___
 
@@ -1524,7 +1524,7 @@ Gets or sets the parent primary image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:660](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L660)
+[generated-client/models/base-item-dto.ts:660](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L660)
 
 ___
 
@@ -1538,7 +1538,7 @@ Gets or sets the parent thumb image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:648](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L648)
+[generated-client/models/base-item-dto.ts:648](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L648)
 
 ___
 
@@ -1552,7 +1552,7 @@ Gets or sets the parent thumb item id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:642](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L642)
+[generated-client/models/base-item-dto.ts:642](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L642)
 
 ___
 
@@ -1566,7 +1566,7 @@ Gets or sets the part count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:576](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L576)
+[generated-client/models/base-item-dto.ts:576](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L576)
 
 ___
 
@@ -1580,7 +1580,7 @@ Gets or sets the path.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:216](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L216)
+[generated-client/models/base-item-dto.ts:216](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L216)
 
 ___
 
@@ -1594,7 +1594,7 @@ Gets or sets the people.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:378](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L378)
+[generated-client/models/base-item-dto.ts:378](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L378)
 
 ___
 
@@ -1606,7 +1606,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:288](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L288)
+[generated-client/models/base-item-dto.ts:288](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L288)
 
 ___
 
@@ -1620,7 +1620,7 @@ Gets or sets the playlist item identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L84)
+[generated-client/models/base-item-dto.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L84)
 
 ___
 
@@ -1632,7 +1632,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:150](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L150)
+[generated-client/models/base-item-dto.ts:150](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L150)
 
 ___
 
@@ -1644,7 +1644,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:144](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L144)
+[generated-client/models/base-item-dto.ts:144](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L144)
 
 ___
 
@@ -1658,7 +1658,7 @@ Gets or sets the premiere date.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:186](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L186)
+[generated-client/models/base-item-dto.ts:186](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L186)
 
 ___
 
@@ -1672,7 +1672,7 @@ Gets or sets the primary image aspect ratio, after image enhancements.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:492](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L492)
+[generated-client/models/base-item-dto.ts:492](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L492)
 
 ___
 
@@ -1684,7 +1684,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:210](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L210)
+[generated-client/models/base-item-dto.ts:210](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L210)
 
 ___
 
@@ -1698,7 +1698,7 @@ Gets or sets the production year.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:300](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L300)
+[generated-client/models/base-item-dto.ts:300](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L300)
 
 ___
 
@@ -1710,7 +1710,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:720](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L720)
+[generated-client/models/base-item-dto.ts:720](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L720)
 
 ___
 
@@ -1724,7 +1724,7 @@ Gets or sets the program identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:852](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L852)
+[generated-client/models/base-item-dto.ts:852](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L852)
 
 ___
 
@@ -1738,7 +1738,7 @@ Gets or sets the provider ids.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:348](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L348)
+[generated-client/models/base-item-dto.ts:348](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L348)
 
 ___
 
@@ -1752,7 +1752,7 @@ Gets or sets the recursive item count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:426](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L426)
+[generated-client/models/base-item-dto.ts:426](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L426)
 
 ___
 
@@ -1766,7 +1766,7 @@ Gets or sets the trailer urls.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:342](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L342)
+[generated-client/models/base-item-dto.ts:342](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L342)
 
 ___
 
@@ -1780,7 +1780,7 @@ Gets or sets the run time ticks.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:282](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L282)
+[generated-client/models/base-item-dto.ts:282](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L282)
 
 ___
 
@@ -1794,7 +1794,7 @@ Gets or sets the screenshot image tags.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:600](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L600)
+[generated-client/models/base-item-dto.ts:600](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L600)
 
 ___
 
@@ -1808,7 +1808,7 @@ Gets or sets the season identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:450](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L450)
+[generated-client/models/base-item-dto.ts:450](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L450)
 
 ___
 
@@ -1822,7 +1822,7 @@ Gets or sets the name of the season.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:558](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L558)
+[generated-client/models/base-item-dto.ts:558](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L558)
 
 ___
 
@@ -1836,7 +1836,7 @@ Gets or sets the series count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:714](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L714)
+[generated-client/models/base-item-dto.ts:714](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L714)
 
 ___
 
@@ -1850,7 +1850,7 @@ Gets or sets the series id.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:444](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L444)
+[generated-client/models/base-item-dto.ts:444](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L444)
 
 ___
 
@@ -1864,7 +1864,7 @@ Gets or sets the name of the series.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:438](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L438)
+[generated-client/models/base-item-dto.ts:438](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L438)
 
 ___
 
@@ -1878,7 +1878,7 @@ Gets or sets the series primary image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:540](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L540)
+[generated-client/models/base-item-dto.ts:540](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L540)
 
 ___
 
@@ -1892,7 +1892,7 @@ Gets or sets the series studio.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:636](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L636)
+[generated-client/models/base-item-dto.ts:636](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L636)
 
 ___
 
@@ -1906,7 +1906,7 @@ Gets or sets the series thumb image tag.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:624](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L624)
+[generated-client/models/base-item-dto.ts:624](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L624)
 
 ___
 
@@ -1920,7 +1920,7 @@ Gets or sets the series timer identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:846](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L846)
+[generated-client/models/base-item-dto.ts:846](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L846)
 
 ___
 
@@ -1934,7 +1934,7 @@ Gets or sets the server identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L60)
+[generated-client/models/base-item-dto.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L60)
 
 ___
 
@@ -1946,7 +1946,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:816](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L816)
+[generated-client/models/base-item-dto.ts:816](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L816)
 
 ___
 
@@ -1958,7 +1958,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:786](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L786)
+[generated-client/models/base-item-dto.ts:786](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L786)
 
 ___
 
@@ -1972,7 +1972,7 @@ Gets or sets the song count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:732](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L732)
+[generated-client/models/base-item-dto.ts:732](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L732)
 
 ___
 
@@ -1986,7 +1986,7 @@ Gets or sets the name of the sort.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:168](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L168)
+[generated-client/models/base-item-dto.ts:168](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L168)
 
 ___
 
@@ -2000,7 +2000,7 @@ Gets or sets the type of the source.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L78)
+[generated-client/models/base-item-dto.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L78)
 
 ___
 
@@ -2014,7 +2014,7 @@ Gets or sets the special feature count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:456](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L456)
+[generated-client/models/base-item-dto.ts:456](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L456)
 
 ___
 
@@ -2028,7 +2028,7 @@ Gets or sets the start date of the recording, in UTC.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:864](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L864)
+[generated-client/models/base-item-dto.ts:864](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L864)
 
 ___
 
@@ -2042,7 +2042,7 @@ Gets or sets the status.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:468](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L468)
+[generated-client/models/base-item-dto.ts:468](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L468)
 
 ___
 
@@ -2056,7 +2056,7 @@ Gets or sets the studios.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:384](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L384)
+[generated-client/models/base-item-dto.ts:384](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L384)
 
 ___
 
@@ -2070,7 +2070,7 @@ Gets or sets a value indicating whether [supports synchronize].
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:156](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L156)
+[generated-client/models/base-item-dto.ts:156](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L156)
 
 ___
 
@@ -2084,7 +2084,7 @@ Gets or sets the taglines.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:258](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L258)
+[generated-client/models/base-item-dto.ts:258](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L258)
 
 ___
 
@@ -2098,7 +2098,7 @@ Gets or sets the tags.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:486](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L486)
+[generated-client/models/base-item-dto.ts:486](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L486)
 
 ___
 
@@ -2112,7 +2112,7 @@ Gets or sets the timer identifier.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:942](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L942)
+[generated-client/models/base-item-dto.ts:942](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L942)
 
 ___
 
@@ -2126,7 +2126,7 @@ Gets or sets the trailer count.
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:702](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L702)
+[generated-client/models/base-item-dto.ts:702](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L702)
 
 ___
 
@@ -2138,7 +2138,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:372](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L372)
+[generated-client/models/base-item-dto.ts:372](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L372)
 
 ___
 
@@ -2150,7 +2150,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:420](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L420)
+[generated-client/models/base-item-dto.ts:420](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L420)
 
 ___
 
@@ -2162,7 +2162,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:180](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L180)
+[generated-client/models/base-item-dto.ts:180](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L180)
 
 ___
 
@@ -2174,7 +2174,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:570](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L570)
+[generated-client/models/base-item-dto.ts:570](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L570)
 
 ___
 
@@ -2186,4 +2186,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/base-item-dto.ts:762](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/base-item-dto.ts#L762)
+[generated-client/models/base-item-dto.ts:762](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/base-item-dto.ts#L762)

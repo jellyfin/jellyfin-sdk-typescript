@@ -28,4 +28,4 @@ The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Ap
 
 #### Defined in
 
-[generated-client/api/user-api.ts:1091](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/user-api.ts#L1091)
+[generated-client/api/user-api.ts:1091](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/api/user-api.ts#L1091)

@@ -49,7 +49,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L33)
+[api.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L33)
 
 ## Properties
 
@@ -59,7 +59,7 @@ Class representing the Jellyfin API.
 
 #### Defined in
 
-[api.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L30)
+[api.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L30)
 
 ___
 
@@ -69,7 +69,7 @@ ___
 
 #### Defined in
 
-[api.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L31)
+[api.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L31)
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 #### Defined in
 
-[api.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L27)
+[api.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L27)
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 #### Defined in
 
-[api.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L28)
+[api.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L28)
 
 ___
 
@@ -99,7 +99,7 @@ ___
 
 #### Defined in
 
-[api.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L29)
+[api.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L29)
 
 ## Accessors
 
@@ -113,7 +113,7 @@ ___
 
 #### Defined in
 
-[api.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L100)
+[api.ts:100](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L100)
 
 ___
 
@@ -127,7 +127,7 @@ ___
 
 #### Defined in
 
-[api.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L47)
+[api.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L47)
 
 ## Methods
 
@@ -150,7 +150,7 @@ Convenience method for authenticating a user by name and updating the internal s
 
 #### Defined in
 
-[api.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L59)
+[api.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L59)
 
 ___
 
@@ -176,20 +176,20 @@ The image URL.
 
 #### Defined in
 
-[api.ts:89](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L89)
+[api.ts:89](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L89)
 
 ___
 
 ### logout
 
-▸ **logout**(): `Promise`<`AxiosResponse`<`never`, `any`\> \| `AxiosResponse`<`void`, `any`\>\>
+▸ **logout**(): `Promise`<`AxiosResponse`<`void`, `any`\> \| `AxiosResponse`<`never`, `any`\>\>
 
 Convenience method for logging out and updating the internal state.
 
 #### Returns
 
-`Promise`<`AxiosResponse`<`never`, `any`\> \| `AxiosResponse`<`void`, `any`\>\>
+`Promise`<`AxiosResponse`<`void`, `any`\> \| `AxiosResponse`<`never`, `any`\>\>
 
 #### Defined in
 
-[api.ts:75](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L75)
+[api.ts:75](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/api.ts#L75)

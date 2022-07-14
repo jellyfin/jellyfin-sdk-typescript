@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Audio](generated_client.CodecType.md#audio)
 - [Video](generated_client.CodecType.md#video)
 - [VideoAudio](generated_client.CodecType.md#videoaudio)
 
-## Enumeration members
+## Enumeration Members
 
 ### Audio
 
-• **Audio** = `"Audio"`
+• **Audio**
 
 #### Defined in
 
-[generated-client/models/codec-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/codec-type.ts#L26)
+[generated-client/models/codec-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/codec-type.ts#L26)
 
 ___
 
 ### Video
 
-• **Video** = `"Video"`
+• **Video**
 
 #### Defined in
 
-[generated-client/models/codec-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/codec-type.ts#L24)
+[generated-client/models/codec-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/codec-type.ts#L24)
 
 ___
 
 ### VideoAudio
 
-• **VideoAudio** = `"VideoAudio"`
+• **VideoAudio**
 
 #### Defined in
 
-[generated-client/models/codec-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/codec-type.ts#L25)
+[generated-client/models/codec-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/fa599ae/src/generated-client/models/codec-type.ts#L25)
