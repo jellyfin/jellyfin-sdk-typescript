@@ -10,7 +10,7 @@ An enum that represents a day of the week, weekdays, weekends, or all days.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Everyday](generated_client.DynamicDayOfWeek.md#everyday)
 - [Friday](generated_client.DynamicDayOfWeek.md#friday)
@@ -23,102 +23,102 @@ An enum that represents a day of the week, weekdays, weekends, or all days.
 - [Weekday](generated_client.DynamicDayOfWeek.md#weekday)
 - [Weekend](generated_client.DynamicDayOfWeek.md#weekend)
 
-## Enumeration members
+## Enumeration Members
 
 ### Everyday
 
-• **Everyday** = `"Everyday"`
+• **Everyday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L31)
+[generated-client/models/dynamic-day-of-week.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L31)
 
 ___
 
 ### Friday
 
-• **Friday** = `"Friday"`
+• **Friday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L29)
+[generated-client/models/dynamic-day-of-week.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L29)
 
 ___
 
 ### Monday
 
-• **Monday** = `"Monday"`
+• **Monday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L25)
+[generated-client/models/dynamic-day-of-week.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L25)
 
 ___
 
 ### Saturday
 
-• **Saturday** = `"Saturday"`
+• **Saturday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L30)
+[generated-client/models/dynamic-day-of-week.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L30)
 
 ___
 
 ### Sunday
 
-• **Sunday** = `"Sunday"`
+• **Sunday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L24)
+[generated-client/models/dynamic-day-of-week.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L24)
 
 ___
 
 ### Thursday
 
-• **Thursday** = `"Thursday"`
+• **Thursday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L28)
+[generated-client/models/dynamic-day-of-week.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L28)
 
 ___
 
 ### Tuesday
 
-• **Tuesday** = `"Tuesday"`
+• **Tuesday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L26)
+[generated-client/models/dynamic-day-of-week.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L26)
 
 ___
 
 ### Wednesday
 
-• **Wednesday** = `"Wednesday"`
+• **Wednesday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L27)
+[generated-client/models/dynamic-day-of-week.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L27)
 
 ___
 
 ### Weekday
 
-• **Weekday** = `"Weekday"`
+• **Weekday**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L32)
+[generated-client/models/dynamic-day-of-week.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L32)
 
 ___
 
 ### Weekend
 
-• **Weekend** = `"Weekend"`
+• **Weekend**
 
 #### Defined in
 
-[generated-client/models/dynamic-day-of-week.ts:33](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/dynamic-day-of-week.ts#L33)
+[generated-client/models/dynamic-day-of-week.ts:33](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/dynamic-day-of-week.ts#L33)

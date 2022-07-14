@@ -36,7 +36,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L32)
+[jellyfin.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L32)
 
 ## Properties
 
@@ -46,7 +46,7 @@ Class representing the Jellyfin SDK.
 
 #### Defined in
 
-[jellyfin.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L28)
+[jellyfin.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L28)
 
 ___
 
@@ -56,7 +56,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L29)
+[jellyfin.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L29)
 
 ___
 
@@ -66,7 +66,7 @@ ___
 
 #### Defined in
 
-[jellyfin.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L30)
+[jellyfin.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L30)
 
 ## Methods
 
@@ -92,4 +92,4 @@ An Api instance.
 
 #### Defined in
 
-[jellyfin.ts:45](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L45)
+[jellyfin.ts:45](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L45)

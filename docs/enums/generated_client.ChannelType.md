@@ -10,27 +10,27 @@ Enum ChannelType.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Radio](generated_client.ChannelType.md#radio)
 - [Tv](generated_client.ChannelType.md#tv)
 
-## Enumeration members
+## Enumeration Members
 
 ### Radio
 
-• **Radio** = `"Radio"`
+• **Radio**
 
 #### Defined in
 
-[generated-client/models/channel-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-type.ts#L25)
+[generated-client/models/channel-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-type.ts#L25)
 
 ___
 
 ### Tv
 
-• **Tv** = `"TV"`
+• **Tv**
 
 #### Defined in
 
-[generated-client/models/channel-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-type.ts#L24)
+[generated-client/models/channel-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-type.ts#L24)

@@ -48,7 +48,7 @@ The current API version of the generated client.
 
 #### Defined in
 
-[jellyfin.ts:21](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L21)
+[jellyfin.ts:21](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L21)
 
 ___
 
@@ -60,7 +60,7 @@ The authorization header field name.
 
 #### Defined in
 
-[api.ts:23](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/api.ts#L23)
+[api.ts:23](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/api.ts#L23)
 
 ___
 
@@ -72,4 +72,4 @@ The minimum supported server version.
 
 #### Defined in
 
-[jellyfin.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/jellyfin.ts#L24)
+[jellyfin.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/jellyfin.ts#L24)

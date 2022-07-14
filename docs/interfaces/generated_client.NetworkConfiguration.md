@@ -61,7 +61,7 @@ Gets or sets a value indicating whether Autodiscovery is enabled.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:178](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L178)
+[generated-client/models/network-configuration.ts:178](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L178)
 
 ___
 
@@ -75,7 +75,7 @@ Gets or sets a value indicating whether Autodiscovery tracing is enabled.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:172](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L172)
+[generated-client/models/network-configuration.ts:172](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L172)
 
 ___
 
@@ -89,7 +89,7 @@ Gets or sets a value used to specify the URL prefix that your Jellyfin instance 
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L46)
+[generated-client/models/network-configuration.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L46)
 
 ___
 
@@ -103,7 +103,7 @@ Gets or sets the password required to access the X.509 certificate data in the f
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L40)
+[generated-client/models/network-configuration.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L40)
 
 ___
 
@@ -117,7 +117,7 @@ Gets or sets the filesystem path of an X.509 certificate to use for SSL.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L34)
+[generated-client/models/network-configuration.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L34)
 
 ___
 
@@ -131,7 +131,7 @@ Gets or sets a value indicating whether to use HTTPS.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L70)
+[generated-client/models/network-configuration.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L70)
 
 ___
 
@@ -145,7 +145,7 @@ Gets or sets a value indicating whether gets or sets IPV4 capability.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:100](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L100)
+[generated-client/models/network-configuration.ts:100](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L100)
 
 ___
 
@@ -159,7 +159,7 @@ Gets or sets a value indicating whether gets or sets IPV6 capability.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L94)
+[generated-client/models/network-configuration.ts:94](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L94)
 
 ___
 
@@ -173,7 +173,7 @@ Gets a value indicating whether multi-socket binding is available.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:148](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L148)
+[generated-client/models/network-configuration.ts:148](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L148)
 
 ___
 
@@ -187,7 +187,7 @@ Gets or sets a value indicating whether the published server uri is based on inf
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:226](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L226)
+[generated-client/models/network-configuration.ts:226](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L226)
 
 ___
 
@@ -201,7 +201,7 @@ Gets or sets a value indicating whether access outside of the LAN is permitted.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:202](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L202)
+[generated-client/models/network-configuration.ts:202](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L202)
 
 ___
 
@@ -215,7 +215,7 @@ Gets or sets a value indicating whether detailed SSDP logs are sent to the conso
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:106](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L106)
+[generated-client/models/network-configuration.ts:106](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L106)
 
 ___
 
@@ -229,7 +229,7 @@ Gets or sets a value indicating whether to enable automatic port forwarding.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:196](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L196)
+[generated-client/models/network-configuration.ts:196](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L196)
 
 ___
 
@@ -243,7 +243,7 @@ Gets or sets the time (in seconds) between the pings of SSDP gateway monitor.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:142](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L142)
+[generated-client/models/network-configuration.ts:142](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L142)
 
 ___
 
@@ -257,7 +257,7 @@ Gets or sets the ports that HDHomerun uses.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:160](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L160)
+[generated-client/models/network-configuration.ts:160](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L160)
 
 ___
 
@@ -271,7 +271,7 @@ Gets or sets the HTTP server port number.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L58)
+[generated-client/models/network-configuration.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L58)
 
 ___
 
@@ -285,7 +285,7 @@ Gets or sets the HTTPS server port number.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L64)
+[generated-client/models/network-configuration.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L64)
 
 ___
 
@@ -299,7 +299,7 @@ Gets or sets a value indicating whether address names that match Jellyfin.Networ
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L130)
+[generated-client/models/network-configuration.ts:130](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L130)
 
 ___
 
@@ -313,7 +313,7 @@ Gets or sets a value indicating whether <seealso cref=\"P:Jellyfin.Networking.Co
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:190](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L190)
+[generated-client/models/network-configuration.ts:190](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L190)
 
 ___
 
@@ -327,7 +327,7 @@ Gets or sets the known proxies. If the proxy is a network, it\'s added to the Kn
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:220](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L220)
+[generated-client/models/network-configuration.ts:220](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L220)
 
 ___
 
@@ -341,7 +341,7 @@ Gets or sets the interface addresses which Jellyfin will bind to. If empty, all 
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:214](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L214)
+[generated-client/models/network-configuration.ts:214](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L214)
 
 ___
 
@@ -355,7 +355,7 @@ Gets or sets the subnets that are deemed to make up the LAN.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:208](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L208)
+[generated-client/models/network-configuration.ts:208](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L208)
 
 ___
 
@@ -369,7 +369,7 @@ Gets or sets the public HTTPS port.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L52)
+[generated-client/models/network-configuration.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L52)
 
 ___
 
@@ -383,7 +383,7 @@ Gets or sets the public mapped port.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L76)
+[generated-client/models/network-configuration.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L76)
 
 ___
 
@@ -397,7 +397,7 @@ Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to 
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:166](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L166)
+[generated-client/models/network-configuration.ts:166](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L166)
 
 ___
 
@@ -411,7 +411,7 @@ Gets or sets the filter for remote IP connectivity. Used in conjuntion with <see
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:184](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L184)
+[generated-client/models/network-configuration.ts:184](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L184)
 
 ___
 
@@ -425,7 +425,7 @@ Gets or sets a value indicating whether the server should force connections over
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L28)
+[generated-client/models/network-configuration.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L28)
 
 ___
 
@@ -439,7 +439,7 @@ Gets or sets the SSDPTracingFilter  Gets or sets a value indicating whether an I
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L112)
+[generated-client/models/network-configuration.ts:112](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L112)
 
 ___
 
@@ -453,7 +453,7 @@ Gets or sets a value indicating whether all IPv6 interfaces should be treated as
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:154](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L154)
+[generated-client/models/network-configuration.ts:154](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L154)
 
 ___
 
@@ -467,7 +467,7 @@ Gets or sets the UDPPortRange.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L88)
+[generated-client/models/network-configuration.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L88)
 
 ___
 
@@ -481,7 +481,7 @@ Gets or sets the number of times SSDP UDP messages are sent.
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L118)
+[generated-client/models/network-configuration.ts:118](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L118)
 
 ___
 
@@ -495,7 +495,7 @@ Gets or sets the delay between each groups of SSDP messages (in ms).
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L124)
+[generated-client/models/network-configuration.ts:124](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L124)
 
 ___
 
@@ -509,7 +509,7 @@ Gets or sets a value indicating whether the http port should be mapped as part o
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L82)
+[generated-client/models/network-configuration.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L82)
 
 ___
 
@@ -523,4 +523,4 @@ Gets or sets a value indicating the interfaces that should be ignored. The list 
 
 #### Defined in
 
-[generated-client/models/network-configuration.ts:136](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/network-configuration.ts#L136)
+[generated-client/models/network-configuration.ts:136](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/network-configuration.ts#L136)

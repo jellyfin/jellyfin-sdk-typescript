@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [DirectPlay](generated_client.PlayMethod.md#directplay)
 - [DirectStream](generated_client.PlayMethod.md#directstream)
 - [Transcode](generated_client.PlayMethod.md#transcode)
 
-## Enumeration members
+## Enumeration Members
 
 ### DirectPlay
 
-• **DirectPlay** = `"DirectPlay"`
+• **DirectPlay**
 
 #### Defined in
 
-[generated-client/models/play-method.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-method.ts#L26)
+[generated-client/models/play-method.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-method.ts#L26)
 
 ___
 
 ### DirectStream
 
-• **DirectStream** = `"DirectStream"`
+• **DirectStream**
 
 #### Defined in
 
-[generated-client/models/play-method.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-method.ts#L25)
+[generated-client/models/play-method.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-method.ts#L25)
 
 ___
 
 ### Transcode
 
-• **Transcode** = `"Transcode"`
+• **Transcode**
 
 #### Defined in
 
-[generated-client/models/play-method.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-method.ts#L24)
+[generated-client/models/play-method.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-method.ts#L24)

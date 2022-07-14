@@ -30,7 +30,7 @@ The image index.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:6006](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L6006)
+[generated-client/api/image-api.ts:6058](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L6058)
 
 ___
 
@@ -44,7 +44,7 @@ Image type.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5999](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L5999)
+[generated-client/api/image-api.ts:6051](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L6051)
 
 ___
 
@@ -58,4 +58,4 @@ Item id.
 
 #### Defined in
 
-[generated-client/api/image-api.ts:5992](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-api.ts#L5992)
+[generated-client/api/image-api.ts:6044](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-api.ts#L6044)

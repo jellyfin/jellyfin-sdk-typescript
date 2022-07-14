@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [File](generated_client.MediaProtocol.md#file)
 - [Ftp](generated_client.MediaProtocol.md#ftp)
@@ -18,72 +18,72 @@
 - [Rtsp](generated_client.MediaProtocol.md#rtsp)
 - [Udp](generated_client.MediaProtocol.md#udp)
 
-## Enumeration members
+## Enumeration Members
 
 ### File
 
-• **File** = `"File"`
+• **File**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L24)
+[generated-client/models/media-protocol.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L24)
 
 ___
 
 ### Ftp
 
-• **Ftp** = `"Ftp"`
+• **Ftp**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L30)
+[generated-client/models/media-protocol.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L30)
 
 ___
 
 ### Http
 
-• **Http** = `"Http"`
+• **Http**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L25)
+[generated-client/models/media-protocol.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L25)
 
 ___
 
 ### Rtmp
 
-• **Rtmp** = `"Rtmp"`
+• **Rtmp**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L26)
+[generated-client/models/media-protocol.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L26)
 
 ___
 
 ### Rtp
 
-• **Rtp** = `"Rtp"`
+• **Rtp**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L29)
+[generated-client/models/media-protocol.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L29)
 
 ___
 
 ### Rtsp
 
-• **Rtsp** = `"Rtsp"`
+• **Rtsp**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L27)
+[generated-client/models/media-protocol.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L27)
 
 ___
 
 ### Udp
 
-• **Udp** = `"Udp"`
+• **Udp**
 
 #### Defined in
 
-[generated-client/models/media-protocol.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/media-protocol.ts#L28)
+[generated-client/models/media-protocol.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/media-protocol.ts#L28)

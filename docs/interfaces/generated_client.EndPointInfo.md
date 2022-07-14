@@ -25,7 +25,7 @@
 
 #### Defined in
 
-[generated-client/models/end-point-info.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/end-point-info.ts#L34)
+[generated-client/models/end-point-info.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/end-point-info.ts#L34)
 
 ___
 
@@ -37,4 +37,4 @@ ___
 
 #### Defined in
 
-[generated-client/models/end-point-info.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/end-point-info.ts#L28)
+[generated-client/models/end-point-info.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/end-point-info.ts#L28)

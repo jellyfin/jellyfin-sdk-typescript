@@ -29,7 +29,7 @@ Gets or sets a value indicating whether enable automatic port mapping.
 
 #### Defined in
 
-[generated-client/models/startup-remote-access-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/startup-remote-access-dto.ts#L34)
+[generated-client/models/startup-remote-access-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/startup-remote-access-dto.ts#L34)
 
 ___
 
@@ -43,4 +43,4 @@ Gets or sets a value indicating whether enable remote access.
 
 #### Defined in
 
-[generated-client/models/startup-remote-access-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/startup-remote-access-dto.ts#L28)
+[generated-client/models/startup-remote-access-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/startup-remote-access-dto.ts#L28)

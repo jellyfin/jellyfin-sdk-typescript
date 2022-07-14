@@ -16,6 +16,7 @@ The branding options.
 
 - [CustomCss](generated_client.BrandingOptions.md#customcss)
 - [LoginDisclaimer](generated_client.BrandingOptions.md#logindisclaimer)
+- [SplashscreenEnabled](generated_client.BrandingOptions.md#splashscreenenabled)
 
 ## Properties
 
@@ -29,7 +30,7 @@ Gets or sets the custom CSS.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/branding-options.ts#L34)
+[generated-client/models/branding-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L34)
 
 ___
 
@@ -43,4 +44,18 @@ Gets or sets the login disclaimer.
 
 #### Defined in
 
-[generated-client/models/branding-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/branding-options.ts#L28)
+[generated-client/models/branding-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L28)
+
+___
+
+### SplashscreenEnabled
+
+• `Optional` **SplashscreenEnabled**: `boolean`
+
+Gets or sets a value indicating whether to enable the splashscreen.
+
+**`memberof`** BrandingOptions
+
+#### Defined in
+
+[generated-client/models/branding-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/branding-options.ts#L40)

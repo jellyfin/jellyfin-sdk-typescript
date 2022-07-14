@@ -8,49 +8,49 @@ Possible score values for recommended servers.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [BAD](index.RecommendedServerInfoScore.md#bad)
 - [GOOD](index.RecommendedServerInfoScore.md#good)
 - [GREAT](index.RecommendedServerInfoScore.md#great)
 - [OK](index.RecommendedServerInfoScore.md#ok)
 
-## Enumeration members
+## Enumeration Members
 
 ### BAD
 
-• **BAD** = `-1`
+• **BAD**
 
 #### Defined in
 
-[models/recommended-server-info.ts:16](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L16)
+[models/recommended-server-info.ts:16](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L16)
 
 ___
 
 ### GOOD
 
-• **GOOD** = `1`
+• **GOOD**
 
 #### Defined in
 
-[models/recommended-server-info.ts:14](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L14)
+[models/recommended-server-info.ts:14](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L14)
 
 ___
 
 ### GREAT
 
-• **GREAT** = `2`
+• **GREAT**
 
 #### Defined in
 
-[models/recommended-server-info.ts:13](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L13)
+[models/recommended-server-info.ts:13](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L13)
 
 ___
 
 ### OK
 
-• **OK** = `0`
+• **OK**
 
 #### Defined in
 
-[models/recommended-server-info.ts:15](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-info.ts#L15)
+[models/recommended-server-info.ts:15](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-info.ts#L15)

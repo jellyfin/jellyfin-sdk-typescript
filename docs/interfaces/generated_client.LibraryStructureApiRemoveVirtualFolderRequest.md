@@ -29,7 +29,7 @@ The name of the folder.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:703](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L703)
+[generated-client/api/library-structure-api.ts:703](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-structure-api.ts#L703)
 
 ___
 
@@ -43,4 +43,4 @@ Whether to refresh the library.
 
 #### Defined in
 
-[generated-client/api/library-structure-api.ts:710](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/library-structure-api.ts#L710)
+[generated-client/api/library-structure-api.ts:710](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/library-structure-api.ts#L710)

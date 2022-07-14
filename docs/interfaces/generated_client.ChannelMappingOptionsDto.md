@@ -31,7 +31,7 @@ Gets or sets list of mappings.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:43](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L43)
+[generated-client/models/channel-mapping-options-dto.ts:43](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-mapping-options-dto.ts#L43)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets list of provider channels.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:37](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L37)
+[generated-client/models/channel-mapping-options-dto.ts:37](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-mapping-options-dto.ts#L37)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets provider name.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:49](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L49)
+[generated-client/models/channel-mapping-options-dto.ts:49](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-mapping-options-dto.ts#L49)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets list of tuner channels.
 
 #### Defined in
 
-[generated-client/models/channel-mapping-options-dto.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/channel-mapping-options-dto.ts#L31)
+[generated-client/models/channel-mapping-options-dto.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/channel-mapping-options-dto.ts#L31)

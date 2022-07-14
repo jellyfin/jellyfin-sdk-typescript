@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [System](generated_client.DeviceProfileType.md#system)
 - [User](generated_client.DeviceProfileType.md#user)
 
-## Enumeration members
+## Enumeration Members
 
 ### System
 
-• **System** = `"System"`
+• **System**
 
 #### Defined in
 
-[generated-client/models/device-profile-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/device-profile-type.ts#L24)
+[generated-client/models/device-profile-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-profile-type.ts#L24)
 
 ___
 
 ### User
 
-• **User** = `"User"`
+• **User**
 
 #### Defined in
 
-[generated-client/models/device-profile-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/device-profile-type.ts#L25)
+[generated-client/models/device-profile-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-profile-type.ts#L25)

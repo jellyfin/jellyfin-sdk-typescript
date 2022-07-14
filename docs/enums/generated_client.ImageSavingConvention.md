@@ -8,27 +8,27 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Compatible](generated_client.ImageSavingConvention.md#compatible)
 - [Legacy](generated_client.ImageSavingConvention.md#legacy)
 
-## Enumeration members
+## Enumeration Members
 
 ### Compatible
 
-• **Compatible** = `"Compatible"`
+• **Compatible**
 
 #### Defined in
 
-[generated-client/models/image-saving-convention.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/image-saving-convention.ts#L25)
+[generated-client/models/image-saving-convention.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/image-saving-convention.ts#L25)
 
 ___
 
 ### Legacy
 
-• **Legacy** = `"Legacy"`
+• **Legacy**
 
 #### Defined in
 
-[generated-client/models/image-saving-convention.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/image-saving-convention.ts#L24)
+[generated-client/models/image-saving-convention.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/image-saving-convention.ts#L24)

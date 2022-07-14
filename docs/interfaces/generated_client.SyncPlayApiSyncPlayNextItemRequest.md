@@ -28,4 +28,4 @@ The current item information.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1373](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1373)
+[generated-client/api/sync-play-api.ts:1373](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/sync-play-api.ts#L1373)

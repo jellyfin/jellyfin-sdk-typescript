@@ -31,7 +31,7 @@ Class SendCommand.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:53](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L53)
+[generated-client/models/send-command.ts:53](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L53)
 
 ___
 
@@ -45,7 +45,7 @@ Gets the UTC time when this command has been emitted.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:59](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L59)
+[generated-client/models/send-command.ts:59](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L59)
 
 ___
 
@@ -59,7 +59,7 @@ Gets the group identifier.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L29)
+[generated-client/models/send-command.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L29)
 
 ___
 
@@ -73,7 +73,7 @@ Gets the playlist identifier of the playing item.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:35](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L35)
+[generated-client/models/send-command.ts:35](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L35)
 
 ___
 
@@ -87,7 +87,7 @@ Gets the position ticks.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:47](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L47)
+[generated-client/models/send-command.ts:47](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L47)
 
 ___
 
@@ -101,4 +101,4 @@ Gets or sets the UTC time when to execute the command.
 
 #### Defined in
 
-[generated-client/models/send-command.ts:41](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/send-command.ts#L41)
+[generated-client/models/send-command.ts:41](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/send-command.ts#L41)

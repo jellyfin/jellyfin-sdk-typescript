@@ -31,7 +31,7 @@ The Id of the item.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1236](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1236)
+[generated-client/api/session-api.ts:1236](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1236)
 
 ___
 
@@ -45,7 +45,7 @@ The name of the item.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1243](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1243)
+[generated-client/api/session-api.ts:1243](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1243)
 
 ___
 
@@ -59,7 +59,7 @@ The type of item to browse to.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1229](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1229)
+[generated-client/api/session-api.ts:1229](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1229)
 
 ___
 
@@ -73,4 +73,4 @@ The session Id.
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1222](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1222)
+[generated-client/api/session-api.ts:1222](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1222)

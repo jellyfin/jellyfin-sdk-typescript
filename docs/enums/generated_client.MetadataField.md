@@ -10,7 +10,7 @@ Enum MetadataFields.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Cast](generated_client.MetadataField.md#cast)
 - [Genres](generated_client.MetadataField.md#genres)
@@ -22,92 +22,92 @@ Enum MetadataFields.
 - [Studios](generated_client.MetadataField.md#studios)
 - [Tags](generated_client.MetadataField.md#tags)
 
-## Enumeration members
+## Enumeration Members
 
 ### Cast
 
-• **Cast** = `"Cast"`
+• **Cast**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L24)
+[generated-client/models/metadata-field.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L24)
 
 ___
 
 ### Genres
 
-• **Genres** = `"Genres"`
+• **Genres**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L25)
+[generated-client/models/metadata-field.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L25)
 
 ___
 
 ### Name
 
-• **Name** = `"Name"`
+• **Name**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L29)
+[generated-client/models/metadata-field.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L29)
 
 ___
 
 ### OfficialRating
 
-• **OfficialRating** = `"OfficialRating"`
+• **OfficialRating**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L32)
+[generated-client/models/metadata-field.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L32)
 
 ___
 
 ### Overview
 
-• **Overview** = `"Overview"`
+• **Overview**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L30)
+[generated-client/models/metadata-field.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L30)
 
 ___
 
 ### ProductionLocations
 
-• **ProductionLocations** = `"ProductionLocations"`
+• **ProductionLocations**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L26)
+[generated-client/models/metadata-field.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L26)
 
 ___
 
 ### Runtime
 
-• **Runtime** = `"Runtime"`
+• **Runtime**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L31)
+[generated-client/models/metadata-field.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L31)
 
 ___
 
 ### Studios
 
-• **Studios** = `"Studios"`
+• **Studios**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L27)
+[generated-client/models/metadata-field.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L27)
 
 ___
 
 ### Tags
 
-• **Tags** = `"Tags"`
+• **Tags**
 
 #### Defined in
 
-[generated-client/models/metadata-field.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/metadata-field.ts#L28)
+[generated-client/models/metadata-field.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/metadata-field.ts#L28)

@@ -28,4 +28,4 @@ The items to add.
 
 #### Defined in
 
-[generated-client/api/sync-play-api.ts:1415](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/sync-play-api.ts#L1415)
+[generated-client/api/sync-play-api.ts:1415](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/sync-play-api.ts#L1415)

@@ -65,7 +65,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -99,7 +99,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -126,7 +126,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1583](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1583)
+[generated-client/api/session-api.ts:1583](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1583)
 
 ___
 
@@ -153,7 +153,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1595](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1595)
+[generated-client/api/session-api.ts:1595](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1595)
 
 ___
 
@@ -179,7 +179,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1606](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1606)
+[generated-client/api/session-api.ts:1606](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1606)
 
 ___
 
@@ -205,7 +205,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1617](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1617)
+[generated-client/api/session-api.ts:1617](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1617)
 
 ___
 
@@ -232,7 +232,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1629](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1629)
+[generated-client/api/session-api.ts:1629](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1629)
 
 ___
 
@@ -259,7 +259,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1641](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1641)
+[generated-client/api/session-api.ts:1641](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1641)
 
 ___
 
@@ -286,7 +286,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1653](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1653)
+[generated-client/api/session-api.ts:1653](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1653)
 
 ___
 
@@ -313,7 +313,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1665](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1665)
+[generated-client/api/session-api.ts:1665](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1665)
 
 ___
 
@@ -340,7 +340,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1677](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1677)
+[generated-client/api/session-api.ts:1677](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1677)
 
 ___
 
@@ -366,7 +366,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1688](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1688)
+[generated-client/api/session-api.ts:1688](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1688)
 
 ___
 
@@ -393,7 +393,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1700](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1700)
+[generated-client/api/session-api.ts:1700](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1700)
 
 ___
 
@@ -420,7 +420,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1712](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1712)
+[generated-client/api/session-api.ts:1712](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1712)
 
 ___
 
@@ -447,7 +447,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1724](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1724)
+[generated-client/api/session-api.ts:1724](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1724)
 
 ___
 
@@ -474,7 +474,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1736](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1736)
+[generated-client/api/session-api.ts:1736](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1736)
 
 ___
 
@@ -501,7 +501,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1748](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1748)
+[generated-client/api/session-api.ts:1748](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1748)
 
 ___
 
@@ -528,4 +528,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/session-api.ts:1760](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/session-api.ts#L1760)
+[generated-client/api/session-api.ts:1760](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/session-api.ts#L1760)

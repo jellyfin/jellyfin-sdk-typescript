@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [RepeatAll](generated_client.RepeatMode.md#repeatall)
 - [RepeatNone](generated_client.RepeatMode.md#repeatnone)
 - [RepeatOne](generated_client.RepeatMode.md#repeatone)
 
-## Enumeration members
+## Enumeration Members
 
 ### RepeatAll
 
-• **RepeatAll** = `"RepeatAll"`
+• **RepeatAll**
 
 #### Defined in
 
-[generated-client/models/repeat-mode.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/repeat-mode.ts#L25)
+[generated-client/models/repeat-mode.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/repeat-mode.ts#L25)
 
 ___
 
 ### RepeatNone
 
-• **RepeatNone** = `"RepeatNone"`
+• **RepeatNone**
 
 #### Defined in
 
-[generated-client/models/repeat-mode.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/repeat-mode.ts#L24)
+[generated-client/models/repeat-mode.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/repeat-mode.ts#L24)
 
 ___
 
 ### RepeatOne
 
-• **RepeatOne** = `"RepeatOne"`
+• **RepeatOne**
 
 #### Defined in
 
-[generated-client/models/repeat-mode.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/repeat-mode.ts#L26)
+[generated-client/models/repeat-mode.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/repeat-mode.ts#L26)

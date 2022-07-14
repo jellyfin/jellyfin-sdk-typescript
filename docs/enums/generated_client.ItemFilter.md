@@ -10,7 +10,7 @@ Enum ItemFilter.
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Dislikes](generated_client.ItemFilter.md#dislikes)
 - [IsFavorite](generated_client.ItemFilter.md#isfavorite)
@@ -22,92 +22,92 @@ Enum ItemFilter.
 - [IsUnplayed](generated_client.ItemFilter.md#isunplayed)
 - [Likes](generated_client.ItemFilter.md#likes)
 
-## Enumeration members
+## Enumeration Members
 
 ### Dislikes
 
-• **Dislikes** = `"Dislikes"`
+• **Dislikes**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:31](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L31)
+[generated-client/models/item-filter.ts:31](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L31)
 
 ___
 
 ### IsFavorite
 
-• **IsFavorite** = `"IsFavorite"`
+• **IsFavorite**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L28)
+[generated-client/models/item-filter.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L28)
 
 ___
 
 ### IsFavoriteOrLikes
 
-• **IsFavoriteOrLikes** = `"IsFavoriteOrLikes"`
+• **IsFavoriteOrLikes**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:32](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L32)
+[generated-client/models/item-filter.ts:32](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L32)
 
 ___
 
 ### IsFolder
 
-• **IsFolder** = `"IsFolder"`
+• **IsFolder**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L24)
+[generated-client/models/item-filter.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L24)
 
 ___
 
 ### IsNotFolder
 
-• **IsNotFolder** = `"IsNotFolder"`
+• **IsNotFolder**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L25)
+[generated-client/models/item-filter.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L25)
 
 ___
 
 ### IsPlayed
 
-• **IsPlayed** = `"IsPlayed"`
+• **IsPlayed**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L27)
+[generated-client/models/item-filter.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L27)
 
 ___
 
 ### IsResumable
 
-• **IsResumable** = `"IsResumable"`
+• **IsResumable**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L29)
+[generated-client/models/item-filter.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L29)
 
 ___
 
 ### IsUnplayed
 
-• **IsUnplayed** = `"IsUnplayed"`
+• **IsUnplayed**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L26)
+[generated-client/models/item-filter.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L26)
 
 ___
 
 ### Likes
 
-• **Likes** = `"Likes"`
+• **Likes**
 
 #### Defined in
 
-[generated-client/models/item-filter.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-filter.ts#L30)
+[generated-client/models/item-filter.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-filter.ts#L30)

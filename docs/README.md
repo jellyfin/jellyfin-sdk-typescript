@@ -1,13 +1,19 @@
 @thornbill/jellyfin-sdk / [Modules](modules.md)
 
 <h1 align="center">jellyfin-sdk-typescript</h1>
+<h3 align="center">Part of the <a href="https://jellyfin.org">Jellyfin Project</a></h3>
+
+---
 
 <p align="center">
-<a href="https://github.com/thornbill/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/thornbill/jellyfin-sdk-typescript"></a>
-<a href="https://github.com/thornbill/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/thornbill/jellyfin-sdk-typescript.svg"/></a>
+<img alt="Logo Banner" src="https://raw.githubusercontent.com/jellyfin/jellyfin-ux/master/branding/SVG/banner-logo-solid.svg?sanitize=true"/>
+<br/>
+<br/>
+<a href="https://github.com/jellyfin/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/jellyfin/jellyfin-sdk-typescript"></a>
+<a href="https://github.com/jellyfin/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-sdk-typescript.svg"/></a>
 <a href="https://www.npmjs.com/package/@thornbill/jellyfin-sdk"><img alt="npm" src="https://img.shields.io/npm/v/@thornbill/jellyfin-sdk"></a>
-<a href="https://codecov.io/gh/thornbill/jellyfin-sdk-typescript">
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/thornbill/jellyfin-sdk-typescript?token=Wk8RS9tDnb">
+<a href="https://codecov.io/gh/jellyfin/jellyfin-sdk-typescript">
+<img alt="Codecov" src="https://img.shields.io/codecov/c/github/jellyfin/jellyfin-sdk-typescript?token=eFF0jvWiyq">
 </a>
 </p>
 
@@ -26,6 +32,13 @@ or
 ```sh
 yarn add @thornbill/jellyfin-sdk
 ```
+
+### Supported Jellyfin Versions
+
+| SDK Version | Jellyfin Version |
+|:-:|:-:|
+| 0.5.0 | 10.8.x |
+| <0.5.0 | 10.7.x |
 
 ### React Native
 
@@ -92,18 +105,18 @@ await api.logout();
 
 * Build directory is now `lib` instead of `dist`.
   Any imports used that were previously in `dist` will need updated.
-  [#147](https://github.com/thornbill/jellyfin-sdk-typescript/pull/147)
+  [#147](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/147)
 * Duplicated exports were removed.
   Any imports may need updated if you referenced one of the duplicates.
-  [#148](https://github.com/thornbill/jellyfin-sdk-typescript/pull/148)
+  [#148](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/148)
 * API classes are no longer exposed via getters.
   Instead you need to call a function passing the `Api` instance as a parameter.
   For example: `getSystemApi(api)`.
   While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking.
-  [#149](https://github.com/thornbill/jellyfin-sdk-typescript/pull/149)
+  [#149](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/149)
 * `BaseItemKind` is now included in the generated client.
   Imports will need updated.
-  [#187](https://github.com/thornbill/jellyfin-sdk-typescript/pull/187)
+  [#187](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/187)
 
 ## Roadmap to 1.0
 

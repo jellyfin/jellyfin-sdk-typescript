@@ -40,7 +40,7 @@ Gets or sets the audio stream index.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:60](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L60)
+[generated-client/models/open-live-stream-dto.ts:60](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L60)
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:96](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L96)
+[generated-client/models/open-live-stream-dto.ts:96](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L96)
 
 ___
 
@@ -66,7 +66,7 @@ Gets or sets the device play protocols.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:102](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L102)
+[generated-client/models/open-live-stream-dto.ts:102](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L102)
 
 ___
 
@@ -80,7 +80,7 @@ Gets or sets a value indicating whether to enable direct play.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:84](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L84)
+[generated-client/models/open-live-stream-dto.ts:84](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L84)
 
 ___
 
@@ -94,7 +94,7 @@ Gets or sets a value indicating whether to enale direct stream.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:90](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L90)
+[generated-client/models/open-live-stream-dto.ts:90](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L90)
 
 ___
 
@@ -108,7 +108,7 @@ Gets or sets the item id.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:78](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L78)
+[generated-client/models/open-live-stream-dto.ts:78](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L78)
 
 ___
 
@@ -122,7 +122,7 @@ Gets or sets the max audio channels.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:72](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L72)
+[generated-client/models/open-live-stream-dto.ts:72](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L72)
 
 ___
 
@@ -136,7 +136,7 @@ Gets or sets the max streaming bitrate.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:48](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L48)
+[generated-client/models/open-live-stream-dto.ts:48](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L48)
 
 ___
 
@@ -150,7 +150,7 @@ Gets or sets the open token.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L30)
+[generated-client/models/open-live-stream-dto.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L30)
 
 ___
 
@@ -164,7 +164,7 @@ Gets or sets the play session id.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:42](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L42)
+[generated-client/models/open-live-stream-dto.ts:42](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L42)
 
 ___
 
@@ -178,7 +178,7 @@ Gets or sets the start time in ticks.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:54](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L54)
+[generated-client/models/open-live-stream-dto.ts:54](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L54)
 
 ___
 
@@ -192,7 +192,7 @@ Gets or sets the subtitle stream index.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:66](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L66)
+[generated-client/models/open-live-stream-dto.ts:66](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L66)
 
 ___
 
@@ -206,4 +206,4 @@ Gets or sets the user id.
 
 #### Defined in
 
-[generated-client/models/open-live-stream-dto.ts:36](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/open-live-stream-dto.ts#L36)
+[generated-client/models/open-live-stream-dto.ts:36](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/open-live-stream-dto.ts#L36)

@@ -40,7 +40,7 @@ Class representing a slow response from a server.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L26)
+[models/recommended-server-issue.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-issue.ts#L26)
 
 ## Properties
 
@@ -52,4 +52,4 @@ The response time from the server.
 
 #### Defined in
 
-[models/recommended-server-issue.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/models/recommended-server-issue.ts#L24)
+[models/recommended-server-issue.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/models/recommended-server-issue.ts#L24)

@@ -29,7 +29,7 @@ The name of the image.
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:434](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L434)
+[generated-client/api/image-by-name-api.ts:434](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-by-name-api.ts#L434)
 
 ___
 
@@ -43,4 +43,4 @@ The theme to get the image from.
 
 #### Defined in
 
-[generated-client/api/image-by-name-api.ts:427](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/image-by-name-api.ts#L427)
+[generated-client/api/image-by-name-api.ts:427](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/image-by-name-api.ts#L427)

@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [AnamorphicVideoNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#anamorphicvideonotsupported)
 - [AudioBitDepthNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#audiobitdepthnotsupported)
@@ -33,244 +33,255 @@
 - [VideoFramerateNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#videoframeratenotsupported)
 - [VideoLevelNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#videolevelnotsupported)
 - [VideoProfileNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#videoprofilenotsupported)
+- [VideoRangeTypeNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#videorangetypenotsupported)
 - [VideoResolutionNotSupported](generated_client.TranscodingInfoTranscodeReasonsEnum.md#videoresolutionnotsupported)
 
-## Enumeration members
+## Enumeration Members
 
 ### AnamorphicVideoNotSupported
 
-• **AnamorphicVideoNotSupported** = `"AnamorphicVideoNotSupported"`
+• **AnamorphicVideoNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:121](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L121)
+[generated-client/models/transcoding-info.ts:121](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L121)
 
 ___
 
 ### AudioBitDepthNotSupported
 
-• **AudioBitDepthNotSupported** = `"AudioBitDepthNotSupported"`
+• **AudioBitDepthNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:126](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L126)
+[generated-client/models/transcoding-info.ts:126](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L126)
 
 ___
 
 ### AudioBitrateNotSupported
 
-• **AudioBitrateNotSupported** = `"AudioBitrateNotSupported"`
+• **AudioBitrateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:129](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L129)
+[generated-client/models/transcoding-info.ts:129](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L129)
 
 ___
 
 ### AudioChannelsNotSupported
 
-• **AudioChannelsNotSupported** = `"AudioChannelsNotSupported"`
+• **AudioChannelsNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:123](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L123)
+[generated-client/models/transcoding-info.ts:123](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L123)
 
 ___
 
 ### AudioCodecNotSupported
 
-• **AudioCodecNotSupported** = `"AudioCodecNotSupported"`
+• **AudioCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:111](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L111)
+[generated-client/models/transcoding-info.ts:111](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L111)
 
 ___
 
 ### AudioIsExternal
 
-• **AudioIsExternal** = `"AudioIsExternal"`
+• **AudioIsExternal**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:113](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L113)
+[generated-client/models/transcoding-info.ts:113](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L113)
 
 ___
 
 ### AudioProfileNotSupported
 
-• **AudioProfileNotSupported** = `"AudioProfileNotSupported"`
+• **AudioProfileNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:124](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L124)
+[generated-client/models/transcoding-info.ts:124](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L124)
 
 ___
 
 ### AudioSampleRateNotSupported
 
-• **AudioSampleRateNotSupported** = `"AudioSampleRateNotSupported"`
+• **AudioSampleRateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:125](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L125)
+[generated-client/models/transcoding-info.ts:125](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L125)
 
 ___
 
 ### ContainerBitrateExceedsLimit
 
-• **ContainerBitrateExceedsLimit** = `"ContainerBitrateExceedsLimit"`
+• **ContainerBitrateExceedsLimit**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:127](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L127)
+[generated-client/models/transcoding-info.ts:127](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L127)
 
 ___
 
 ### ContainerNotSupported
 
-• **ContainerNotSupported** = `"ContainerNotSupported"`
+• **ContainerNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:109](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L109)
+[generated-client/models/transcoding-info.ts:109](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L109)
 
 ___
 
 ### DirectPlayError
 
-• **DirectPlayError** = `"DirectPlayError"`
+• **DirectPlayError**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:132](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L132)
+[generated-client/models/transcoding-info.ts:132](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L132)
 
 ___
 
 ### InterlacedVideoNotSupported
 
-• **InterlacedVideoNotSupported** = `"InterlacedVideoNotSupported"`
+• **InterlacedVideoNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:122](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L122)
+[generated-client/models/transcoding-info.ts:122](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L122)
 
 ___
 
 ### RefFramesNotSupported
 
-• **RefFramesNotSupported** = `"RefFramesNotSupported"`
+• **RefFramesNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:120](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L120)
+[generated-client/models/transcoding-info.ts:120](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L120)
 
 ___
 
 ### SecondaryAudioNotSupported
 
-• **SecondaryAudioNotSupported** = `"SecondaryAudioNotSupported"`
+• **SecondaryAudioNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:114](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L114)
+[generated-client/models/transcoding-info.ts:114](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L114)
 
 ___
 
 ### SubtitleCodecNotSupported
 
-• **SubtitleCodecNotSupported** = `"SubtitleCodecNotSupported"`
+• **SubtitleCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:112](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L112)
+[generated-client/models/transcoding-info.ts:112](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L112)
 
 ___
 
 ### UnknownAudioStreamInfo
 
-• **UnknownAudioStreamInfo** = `"UnknownAudioStreamInfo"`
+• **UnknownAudioStreamInfo**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:131](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L131)
+[generated-client/models/transcoding-info.ts:131](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L131)
 
 ___
 
 ### UnknownVideoStreamInfo
 
-• **UnknownVideoStreamInfo** = `"UnknownVideoStreamInfo"`
+• **UnknownVideoStreamInfo**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:130](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L130)
+[generated-client/models/transcoding-info.ts:130](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L130)
 
 ___
 
 ### VideoBitDepthNotSupported
 
-• **VideoBitDepthNotSupported** = `"VideoBitDepthNotSupported"`
+• **VideoBitDepthNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:118](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L118)
+[generated-client/models/transcoding-info.ts:118](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L118)
 
 ___
 
 ### VideoBitrateNotSupported
 
-• **VideoBitrateNotSupported** = `"VideoBitrateNotSupported"`
+• **VideoBitrateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:128](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L128)
+[generated-client/models/transcoding-info.ts:128](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L128)
 
 ___
 
 ### VideoCodecNotSupported
 
-• **VideoCodecNotSupported** = `"VideoCodecNotSupported"`
+• **VideoCodecNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:110](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L110)
+[generated-client/models/transcoding-info.ts:110](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L110)
 
 ___
 
 ### VideoFramerateNotSupported
 
-• **VideoFramerateNotSupported** = `"VideoFramerateNotSupported"`
+• **VideoFramerateNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:119](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L119)
+[generated-client/models/transcoding-info.ts:119](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L119)
 
 ___
 
 ### VideoLevelNotSupported
 
-• **VideoLevelNotSupported** = `"VideoLevelNotSupported"`
+• **VideoLevelNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:116](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L116)
+[generated-client/models/transcoding-info.ts:116](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L116)
 
 ___
 
 ### VideoProfileNotSupported
 
-• **VideoProfileNotSupported** = `"VideoProfileNotSupported"`
+• **VideoProfileNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:115](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L115)
+[generated-client/models/transcoding-info.ts:115](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L115)
+
+___
+
+### VideoRangeTypeNotSupported
+
+• **VideoRangeTypeNotSupported**
+
+#### Defined in
+
+[generated-client/models/transcoding-info.ts:133](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L133)
 
 ___
 
 ### VideoResolutionNotSupported
 
-• **VideoResolutionNotSupported** = `"VideoResolutionNotSupported"`
+• **VideoResolutionNotSupported**
 
 #### Defined in
 
-[generated-client/models/transcoding-info.ts:117](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/transcoding-info.ts#L117)
+[generated-client/models/transcoding-info.ts:117](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/transcoding-info.ts#L117)

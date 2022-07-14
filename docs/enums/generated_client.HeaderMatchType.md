@@ -8,38 +8,38 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Equals](generated_client.HeaderMatchType.md#equals)
 - [Regex](generated_client.HeaderMatchType.md#regex)
 - [Substring](generated_client.HeaderMatchType.md#substring)
 
-## Enumeration members
+## Enumeration Members
 
 ### Equals
 
-• **Equals** = `"Equals"`
+• **Equals**
 
 #### Defined in
 
-[generated-client/models/header-match-type.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/header-match-type.ts#L24)
+[generated-client/models/header-match-type.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/header-match-type.ts#L24)
 
 ___
 
 ### Regex
 
-• **Regex** = `"Regex"`
+• **Regex**
 
 #### Defined in
 
-[generated-client/models/header-match-type.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/header-match-type.ts#L25)
+[generated-client/models/header-match-type.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/header-match-type.ts#L25)
 
 ___
 
 ### Substring
 
-• **Substring** = `"Substring"`
+• **Substring**
 
 #### Defined in
 
-[generated-client/models/header-match-type.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/header-match-type.ts#L26)
+[generated-client/models/header-match-type.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/header-match-type.ts#L26)

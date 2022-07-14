@@ -31,7 +31,7 @@ Gets or sets the subtitle data.
 
 #### Defined in
 
-[generated-client/models/upload-subtitle-dto.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/upload-subtitle-dto.ts#L46)
+[generated-client/models/upload-subtitle-dto.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/upload-subtitle-dto.ts#L46)
 
 ___
 
@@ -45,7 +45,7 @@ Gets or sets the subtitle format.
 
 #### Defined in
 
-[generated-client/models/upload-subtitle-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/upload-subtitle-dto.ts#L34)
+[generated-client/models/upload-subtitle-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/upload-subtitle-dto.ts#L34)
 
 ___
 
@@ -59,7 +59,7 @@ Gets or sets a value indicating whether the subtitle is forced.
 
 #### Defined in
 
-[generated-client/models/upload-subtitle-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/upload-subtitle-dto.ts#L40)
+[generated-client/models/upload-subtitle-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/upload-subtitle-dto.ts#L40)
 
 ___
 
@@ -73,4 +73,4 @@ Gets or sets the subtitle language.
 
 #### Defined in
 
-[generated-client/models/upload-subtitle-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/upload-subtitle-dto.ts#L28)
+[generated-client/models/upload-subtitle-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/upload-subtitle-dto.ts#L28)

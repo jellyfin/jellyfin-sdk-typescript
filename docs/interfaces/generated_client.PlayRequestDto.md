@@ -30,7 +30,7 @@ Gets or sets the position of the playing item in the queue.
 
 #### Defined in
 
-[generated-client/models/play-request-dto.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-request-dto.ts#L34)
+[generated-client/models/play-request-dto.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-request-dto.ts#L34)
 
 ___
 
@@ -44,7 +44,7 @@ Gets or sets the playing queue.
 
 #### Defined in
 
-[generated-client/models/play-request-dto.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-request-dto.ts#L28)
+[generated-client/models/play-request-dto.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-request-dto.ts#L28)
 
 ___
 
@@ -58,4 +58,4 @@ Gets or sets the start position ticks.
 
 #### Defined in
 
-[generated-client/models/play-request-dto.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/play-request-dto.ts#L40)
+[generated-client/models/play-request-dto.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/play-request-dto.ts#L40)

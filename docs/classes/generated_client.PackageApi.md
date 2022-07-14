@@ -55,7 +55,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -89,7 +89,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -116,7 +116,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/package-api.ts:523](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L523)
+[generated-client/api/package-api.ts:523](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L523)
 
 ___
 
@@ -143,7 +143,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/package-api.ts:535](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L535)
+[generated-client/api/package-api.ts:535](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L535)
 
 ___
 
@@ -169,7 +169,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/package-api.ts:546](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L546)
+[generated-client/api/package-api.ts:546](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L546)
 
 ___
 
@@ -195,7 +195,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/package-api.ts:557](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L557)
+[generated-client/api/package-api.ts:557](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L557)
 
 ___
 
@@ -222,7 +222,7 @@ ___
 
 #### Defined in
 
-[generated-client/api/package-api.ts:569](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L569)
+[generated-client/api/package-api.ts:569](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L569)
 
 ___
 
@@ -249,4 +249,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/package-api.ts:581](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/package-api.ts#L581)
+[generated-client/api/package-api.ts:581](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/package-api.ts#L581)

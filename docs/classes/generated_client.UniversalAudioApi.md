@@ -51,7 +51,7 @@ BaseAPI.constructor
 
 #### Defined in
 
-[generated-client/base.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L52)
+[generated-client/base.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L52)
 
 ## Properties
 
@@ -85,7 +85,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/base.ts:50](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/base.ts#L50)
+[generated-client/base.ts:50](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/base.ts#L50)
 
 ## Methods
 
@@ -112,7 +112,7 @@ BaseAPI.configuration
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:687](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L687)
+[generated-client/api/universal-audio-api.ts:687](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/universal-audio-api.ts#L687)
 
 ___
 
@@ -139,4 +139,4 @@ ___
 
 #### Defined in
 
-[generated-client/api/universal-audio-api.ts:699](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/api/universal-audio-api.ts#L699)
+[generated-client/api/universal-audio-api.ts:699](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/api/universal-audio-api.ts#L699)

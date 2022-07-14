@@ -39,7 +39,7 @@ Gets or sets the album count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:70](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L70)
+[generated-client/models/item-counts.ts:70](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L70)
 
 ___
 
@@ -53,7 +53,7 @@ Gets or sets the artist count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:46](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L46)
+[generated-client/models/item-counts.ts:46](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L46)
 
 ___
 
@@ -67,7 +67,7 @@ Gets or sets the book count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:88](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L88)
+[generated-client/models/item-counts.ts:88](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L88)
 
 ___
 
@@ -81,7 +81,7 @@ Gets or sets the box set count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:82](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L82)
+[generated-client/models/item-counts.ts:82](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L82)
 
 ___
 
@@ -95,7 +95,7 @@ Gets or sets the episode count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L40)
+[generated-client/models/item-counts.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L40)
 
 ___
 
@@ -109,7 +109,7 @@ Gets or sets the item count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:94](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L94)
+[generated-client/models/item-counts.ts:94](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L94)
 
 ___
 
@@ -123,7 +123,7 @@ Gets or sets the movie count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L28)
+[generated-client/models/item-counts.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L28)
 
 ___
 
@@ -137,7 +137,7 @@ Gets or sets the music video count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:76](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L76)
+[generated-client/models/item-counts.ts:76](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L76)
 
 ___
 
@@ -151,7 +151,7 @@ Gets or sets the program count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:52](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L52)
+[generated-client/models/item-counts.ts:52](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L52)
 
 ___
 
@@ -165,7 +165,7 @@ Gets or sets the series count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L34)
+[generated-client/models/item-counts.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L34)
 
 ___
 
@@ -179,7 +179,7 @@ Gets or sets the song count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:64](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L64)
+[generated-client/models/item-counts.ts:64](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L64)
 
 ___
 
@@ -193,4 +193,4 @@ Gets or sets the trailer count.
 
 #### Defined in
 
-[generated-client/models/item-counts.ts:58](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/item-counts.ts#L58)
+[generated-client/models/item-counts.ts:58](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/item-counts.ts#L58)

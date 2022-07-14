@@ -30,7 +30,7 @@ Gets or sets the custom name.
 
 #### Defined in
 
-[generated-client/models/device-options.ts:40](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/device-options.ts#L40)
+[generated-client/models/device-options.ts:40](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-options.ts#L40)
 
 ___
 
@@ -44,7 +44,7 @@ Gets the device id.
 
 #### Defined in
 
-[generated-client/models/device-options.ts:34](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/device-options.ts#L34)
+[generated-client/models/device-options.ts:34](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-options.ts#L34)
 
 ___
 
@@ -58,4 +58,4 @@ Gets the id.
 
 #### Defined in
 
-[generated-client/models/device-options.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/device-options.ts#L28)
+[generated-client/models/device-options.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/device-options.ts#L28)

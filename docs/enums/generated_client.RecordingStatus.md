@@ -8,7 +8,7 @@
 
 ## Table of contents
 
-### Enumeration members
+### Enumeration Members
 
 - [Cancelled](generated_client.RecordingStatus.md#cancelled)
 - [Completed](generated_client.RecordingStatus.md#completed)
@@ -18,72 +18,72 @@
 - [InProgress](generated_client.RecordingStatus.md#inprogress)
 - [New](generated_client.RecordingStatus.md#new)
 
-## Enumeration members
+## Enumeration Members
 
 ### Cancelled
 
-• **Cancelled** = `"Cancelled"`
+• **Cancelled**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:27](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L27)
+[generated-client/models/recording-status.ts:27](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L27)
 
 ___
 
 ### Completed
 
-• **Completed** = `"Completed"`
+• **Completed**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:26](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L26)
+[generated-client/models/recording-status.ts:26](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L26)
 
 ___
 
 ### ConflictedNotOk
 
-• **ConflictedNotOk** = `"ConflictedNotOk"`
+• **ConflictedNotOk**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:29](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L29)
+[generated-client/models/recording-status.ts:29](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L29)
 
 ___
 
 ### ConflictedOk
 
-• **ConflictedOk** = `"ConflictedOk"`
+• **ConflictedOk**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:28](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L28)
+[generated-client/models/recording-status.ts:28](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L28)
 
 ___
 
 ### Error
 
-• **Error** = `"Error"`
+• **Error**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:30](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L30)
+[generated-client/models/recording-status.ts:30](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L30)
 
 ___
 
 ### InProgress
 
-• **InProgress** = `"InProgress"`
+• **InProgress**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:25](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L25)
+[generated-client/models/recording-status.ts:25](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L25)
 
 ___
 
 ### New
 
-• **New** = `"New"`
+• **New**
 
 #### Defined in
 
-[generated-client/models/recording-status.ts:24](https://github.com/thornbill/jellyfin-sdk-typescript/blob/3ae780a/src/generated-client/models/recording-status.ts#L24)
+[generated-client/models/recording-status.ts:24](https://github.com/jellyfin/jellyfin-sdk-typescript/blob/7402732/src/generated-client/models/recording-status.ts#L24)
