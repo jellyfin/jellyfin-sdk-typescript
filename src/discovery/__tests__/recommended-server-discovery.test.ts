@@ -67,7 +67,7 @@ describe('RecommendedServerDiscovery', () => {
 
 		/* eslint-disable jest/no-standalone-expect */
 		// NOTE: This test will only work if API_VERSION and MINIMUM_VERSION are not the same!
-		itIf(API_VERSION !== MINIMUM_VERSION, 'should return an issue for outdated versions', async () => {
+		itIf(API_VERSION.toString() !== MINIMUM_VERSION.toString(), 'should return an issue for outdated versions', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);
 			const systemInfo = {
 				Version: MINIMUM_VERSION,
