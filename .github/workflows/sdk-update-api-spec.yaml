@@ -20,17 +20,16 @@ jobs:
           check-latest: true
           cache: npm
 
-      - name: Set STABLE_API_VERSION
-        run: |
-          VERSION=$(curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json | jq -r .info.version)
-          echo "STABLE_API_VERSION=${VERSION}" >> $GITHUB_ENV
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
 
       - name: Update generated sources and create pull request
         uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
         with:
           EXECUTE_COMMANDS: |
-            npm ci --no-audit
             curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
+            VERSION=$(jq -r .info.version openapi.json)
+            echo "STABLE_API_VERSION=${VERSION}" >> $GITHUB_ENV
             npm run fix-schema
             npm run build:generated-client
           COMMIT_MESSAGE: 'Update generated sources to ${{ env.STABLE_API_VERSION }}'
