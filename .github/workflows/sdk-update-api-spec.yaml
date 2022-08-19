@@ -1,0 +1,49 @@
+name: SDK Update API from Spec
+
+on:
+  schedule:
+    - cron: '0 4 * * *'
+  workflow_dispatch:
+
+jobs:
+  api-spec-update:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 14
+          check-latest: true
+          cache: npm
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
+
+      - name: Update generated sources and create pull request
+        uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
+        with:
+          EXECUTE_COMMANDS: |
+            curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
+            STABLE_API_VERSION=$(jq -r .info.version openapi.json)
+            npm run fix-schema
+            npm run build:generated-client
+          COMMIT_MESSAGE: 'Update generated sources to ${{ STABLE_API_VERSION }}'
+          COMMIT_NAME: 'jellyfin-bot'
+          COMMIT_EMAIL: 'team@jellyfin.org'
+          PR_BRANCH_PREFIX: 'openapi-update-'
+          PR_BRANCH_NAME: '${PR_ID}'
+          PR_TITLE: 'Update OpenAPI to ${{ STABLE_API_VERSION }}'
+          PR_BODY: |
+            ## Changed files
+
+            <details>
+              <summary>${FILES_SUMMARY}</summary>
+
+              ${FILES}
+
+            </details>
+          GITHUB_TOKEN: ${{ secrets.JF_BOT_TOKEN }}
