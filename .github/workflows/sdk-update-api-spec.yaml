@@ -31,12 +31,12 @@ jobs:
             STABLE_API_VERSION=$(jq -r .info.version openapi.json)
             npm run fix-schema
             npm run build:generated-client
-          COMMIT_MESSAGE: 'Update generated sources to ${{ STABLE_API_VERSION }}'
+          COMMIT_MESSAGE: 'Update generated sources to ${STABLE_API_VERSION}'
           COMMIT_NAME: 'jellyfin-bot'
           COMMIT_EMAIL: 'team@jellyfin.org'
           PR_BRANCH_PREFIX: 'openapi-update-'
           PR_BRANCH_NAME: '${PR_ID}'
-          PR_TITLE: 'Update OpenAPI to ${{ STABLE_API_VERSION }}'
+          PR_TITLE: 'Update OpenAPI to ${STABLE_API_VERSION}'
           PR_BODY: |
             ## Changed files
 
