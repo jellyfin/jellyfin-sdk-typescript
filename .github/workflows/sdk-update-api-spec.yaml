@@ -34,7 +34,7 @@ jobs:
         run: npm ci --no-audit
 
       - name: Update generated sources and create pull request
-        uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
+        uses: technote-space/create-pr-action@50d404fece196bf472c09b0cd6fddfec08ffa426 # tag=v2
         with:
           EXECUTE_COMMANDS: |
             npm run build:generated-client
