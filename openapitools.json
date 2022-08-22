@@ -16,7 +16,8 @@
           "apiPackage": "api",
           "modelDocs": true,
           "modelPackage": "models"
-        }
+        },
+        "templateDir": "openapi-templates"
       }
     }
   }
