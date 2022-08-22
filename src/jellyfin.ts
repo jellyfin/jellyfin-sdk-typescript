@@ -16,7 +16,6 @@ export interface JellyfinParameters {
 	deviceInfo: DeviceInfo
 }
 
-// NOTE: This must be updated manually on updates.
 /** The current API version of the generated client. */
 export const API_VERSION = '10.8.1';
 
