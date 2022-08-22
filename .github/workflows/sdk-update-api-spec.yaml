@@ -24,6 +24,7 @@ jobs:
         run: |
           curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
           npm run fix-schema
+          cp openapi.json $HOME
 
       - name: Set STABLE_API_VERSION
         run: |
@@ -37,6 +38,7 @@ jobs:
         uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
         with:
           EXECUTE_COMMANDS: |
+            cp $HOME/openapi.json .
             npm run build:generated-client
             sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.STABLE_API_VERSION }}'/" src/jellyfin.ts
           COMMIT_MESSAGE: 'Update generated sources to ${{ env.STABLE_API_VERSION }}'
