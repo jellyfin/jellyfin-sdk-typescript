@@ -20,23 +20,29 @@ jobs:
           check-latest: true
           cache: npm
 
+      - name: Download stable OpenAPI schema
+        run: |
+          curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
+          npm run fix-schema
+
+      - name: Set STABLE_API_VERSION
+        run: |
+          VERSION=$(jq -r .info.version openapi.json)
+          echo "STABLE_API_VERSION=${VERSION}" >> $GITHUB_ENV
+
       - name: Install Node.js dependencies
         run: npm ci --no-audit
 
       - name: Update generated sources and create pull request
         uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
         with:
-          EXECUTE_COMMANDS: |
-            curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
-            STABLE_API_VERSION=$(jq -r .info.version openapi.json)
-            npm run fix-schema
-            npm run build:generated-client
-          COMMIT_MESSAGE: 'Update generated sources to ${STABLE_API_VERSION}'
+          EXECUTE_COMMANDS: npm run build:generated-client
+          COMMIT_MESSAGE: 'Update generated sources to ${{ env.STABLE_API_VERSION }}'
           COMMIT_NAME: 'jellyfin-bot'
           COMMIT_EMAIL: 'team@jellyfin.org'
           PR_BRANCH_PREFIX: 'openapi-update-'
           PR_BRANCH_NAME: '${PR_ID}'
-          PR_TITLE: 'Update OpenAPI to ${STABLE_API_VERSION}'
+          PR_TITLE: 'Update OpenAPI to ${{ env.STABLE_API_VERSION }}'
           PR_BODY: |
             ## Changed files
 
