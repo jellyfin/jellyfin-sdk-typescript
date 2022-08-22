@@ -36,7 +36,9 @@ jobs:
       - name: Update generated sources and create pull request
         uses: technote-space/create-pr-action@95c1e76dc9b65848afe397ea156666021f2e8243 # tag=v2
         with:
-          EXECUTE_COMMANDS: npm run build:generated-client
+          EXECUTE_COMMANDS: |
+            npm run build:generated-client
+            sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.STABLE_API_VERSION }}'/" src/jellyfin.ts
           COMMIT_MESSAGE: 'Update generated sources to ${{ env.STABLE_API_VERSION }}'
           COMMIT_NAME: 'jellyfin-bot'
           COMMIT_EMAIL: 'team@jellyfin.org'
