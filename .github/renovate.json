@@ -1,25 +1,7 @@
 {
-  "packageRules": [
-    {
-      "matchDepTypes": ["devDependencies"],
-      "groupName": "development dependencies",
-      "groupSlug": "dev-deps"
-    },
-    {
-      "matchDepTypes": ["dependencies"],
-      "groupName": "dependencies",
-      "groupSlug": "deps"
-    },
-    {
-      "matchDepTypes": ["action"],
-      "groupName": "CI dependencies",
-      "groupSlug": "ci-deps"
-    }
-  ],
-  "dependencyDashboard": false,
-  "ignoreDeps": ["npm", "node"],
-  "enabledManagers": ["npm", "github-actions"],
-  "labels": ["dependencies"],
-  "rebaseWhen": "behind-base-branch",
-  "rangeStrategy": "pin"
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "github>jellyfin/.github//renovate-presets/nodejs",
+    ":semanticCommitsDisabled"
+  ]
 }
