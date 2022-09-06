@@ -34,7 +34,7 @@
     "@typescript-eslint/eslint-plugin": "5.36.2",
     "@typescript-eslint/parser": "5.36.2",
     "eslint": "7.32.0",
-    "eslint-plugin-import": "2.24.2",
+    "eslint-plugin-import": "2.26.0",
     "eslint-plugin-jest": "27.0.1",
     "jest": "27.5.1",
     "jest-runner-groups": "2.2.0",
