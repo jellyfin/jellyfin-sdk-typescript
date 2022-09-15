@@ -12,9 +12,6 @@
     "type": "git",
     "url": "https://github.com/jellyfin/jellyfin-sdk-typescript.git"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "scripts": {
     "build": "npm run build:generated-client && npm run build:sdk",
     "build:generated-client": "openapi-generator-cli generate",
