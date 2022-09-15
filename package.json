@@ -32,7 +32,7 @@
     "@typescript-eslint/parser": "5.36.2",
     "eslint": "8.23.0",
     "eslint-plugin-import": "2.26.0",
-    "eslint-plugin-jest": "27.0.1",
+    "eslint-plugin-jest": "27.0.2",
     "jest": "27.5.1",
     "jest-runner-groups": "2.2.0",
     "ts-jest": "27.1.5",
