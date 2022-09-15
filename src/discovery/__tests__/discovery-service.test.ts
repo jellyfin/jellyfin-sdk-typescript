@@ -4,18 +4,16 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { mocked } from 'ts-jest/utils';
-
 import { DiscoveryService, RecommendedServerDiscovery } from '..';
 import { Jellyfin, RecommendedServerInfoScore } from '../..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { getAddressCandidates } from '../../utils';
 
 jest.mock('../../utils');
-const mockGetAddressCandidates = mocked(getAddressCandidates);
+const mockGetAddressCandidates = jest.mocked(getAddressCandidates);
 
 jest.mock('../recommended-server-discovery');
-const mockRecommendedServerDiscovery = mocked(RecommendedServerDiscovery);
+const mockRecommendedServerDiscovery = jest.mocked(RecommendedServerDiscovery);
 
 const TEST_URLS = [
 	'https://example.com',

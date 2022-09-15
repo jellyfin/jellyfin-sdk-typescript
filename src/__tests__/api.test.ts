@@ -5,7 +5,6 @@
  */
 
 import axios from 'axios';
-import { mocked } from 'ts-jest/utils';
 
 import { Api, AUTHORIZATION_HEADER } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
@@ -16,7 +15,7 @@ jest.mock('axios', () => ({
 	...jest.requireActual('axios'),
 	request: jest.fn()
 }));
-const mockAxios = mocked(axios, true);
+const mockAxios = jest.mocked(axios, true);
 
 const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
 
