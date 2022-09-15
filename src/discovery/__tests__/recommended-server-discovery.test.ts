@@ -5,7 +5,6 @@
  */
 
 import axios from 'axios';
-import { mocked } from 'ts-jest/utils';
 
 import { RecommendedServerDiscovery } from '..';
 import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfoScore, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../..';
@@ -13,7 +12,7 @@ import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { itIf } from '../../__helpers__/it-if';
 
 jest.mock('axios');
-const mockAxios = mocked(axios, true);
+const mockAxios = jest.mocked(axios, true);
 
 const ADDRESS = 'https://example.com';
 const PRODUCT_NAME = 'Jellyfin Server';
