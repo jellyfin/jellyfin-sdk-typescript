@@ -9,7 +9,8 @@
   "typedocOptions": {
     "entryPoints": [
       "./src/index.ts",
-      "./src/generated-client/index.ts"
+      "./src/generated-client/index.ts",
+      "./src/models/api/index.ts"
     ],
     "out": "docs"
   },
