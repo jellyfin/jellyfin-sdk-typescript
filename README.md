@@ -35,9 +35,12 @@ yarn add @thornbill/jellyfin-sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
+| 0.7.0 | 10.8.1+ |
 | 0.6.0 | 10.8.1 |
 | 0.5.0 | 10.8.0 |
 | <0.5.0 | 10.7.x |
+
+> Note: Versions prior to 0.7.0 were published as `@thornbill/jellyfin-sdk`.
 
 ### React Native
 
@@ -100,6 +103,11 @@ await api.logout();
 
 ## Breaking Changes
 
+### v0.7.0
+
+* Renamed package to @jellyfin/sdk.
+  [#262](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/262)
+
 ### v0.6.0
 
 * Updated OpenAPI spec for Jellyfin 10.8.1.
@@ -125,6 +133,9 @@ await api.logout();
 ## Roadmap to 1.0
 
 * [ ] More complete device profile generation utilities
-* [ ] Use custom generator templates for API versions
-* [ ] Automate OpenAPI spec updates using GitHub
-  * [ ] Create branch tracking unstable Jellyfin builds
+* [x] Use custom generator templates for API versions [#231](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/231) (Currently uses sed to update the value could be improved.)
+* [x] Automate OpenAPI spec updates using GitHub
+* [ ] Create branch tracking unstable Jellyfin builds with automated builds
+* [ ] Fix authentication header escaping
+* [ ] Add exmple projects for different ecosystems [#186](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/186)
+* [ ] Add utility function for `getFile` [#164](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/164)
