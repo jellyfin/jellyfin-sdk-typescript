@@ -1,5 +1,5 @@
 {
-  "name": "@thornbill/jellyfin-sdk",
+  "name": "@jellyfin/sdk",
   "version": "0.6.0",
   "description": "A TypeScript SDK for Jellyfin.",
   "keywords": [
