@@ -18,6 +18,7 @@ jobs:
           node-version: 16
           check-latest: true
           cache: npm
+          registry-url: https://registry.npmjs.org
 
       - name: Install Node.js dependencies
         run: npm ci --no-audit
