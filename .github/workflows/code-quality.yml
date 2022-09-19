@@ -71,4 +71,4 @@ jobs:
         run: npx jest --coverage --group=unit
 
       - name: Upload coverage
-        uses: codecov/codecov-action@81cd2dc8148241f03f5839d295e000b8f761e378 # tag=v3.1.0
+        uses: codecov/codecov-action@d9f34f8cd5cb3b3eb79b3e4b5dae3a16df499a70 # tag=v3.1.1
