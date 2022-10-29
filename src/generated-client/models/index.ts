@@ -256,6 +256,7 @@ export * from './timer-info-dto';
 export * from './timer-info-dto-query-result';
 export * from './trailer-info';
 export * from './trailer-info-remote-search-query';
+export * from './transcode-reason';
 export * from './transcode-seek-info';
 export * from './transcoding-info';
 export * from './transcoding-profile';

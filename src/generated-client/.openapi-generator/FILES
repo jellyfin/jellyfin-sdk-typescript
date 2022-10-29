@@ -326,6 +326,7 @@ models/timer-info-dto-query-result.ts
 models/timer-info-dto.ts
 models/trailer-info-remote-search-query.ts
 models/trailer-info.ts
+models/transcode-reason.ts
 models/transcode-seek-info.ts
 models/transcoding-info.ts
 models/transcoding-profile.ts
