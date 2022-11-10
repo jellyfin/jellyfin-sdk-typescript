@@ -72,6 +72,11 @@ describe('Api', () => {
 		expect(api.authorizationHeader).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
 	});
 
+	it('should return the correct basePath value', () => {
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
+		expect(api.basePath).toBe(SERVER_URL);
+	});
+
 	it('should return an item image url', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.getItemImageUrl('TEST')).toBe('https://example.com/Items/TEST/Images/Primary');
