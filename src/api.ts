@@ -14,11 +14,6 @@ import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 
-// HACK: Axios does not export types for axios/lib. This is a workaround.
-type BuildFullPathFunction = (baseURL?: string, requestedURL?: string) => string;
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const buildFullPath: BuildFullPathFunction = require('axios/lib/core/buildFullPath');
-
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'Authorization';
 
@@ -88,13 +83,9 @@ export class Api {
 	 */
 	getItemImageUrl(itemId: string, imageType = ImageType.Primary, params: ImageRequestParameters = {}): string | undefined {
 		// TODO: We could probably use ImageApiAxiosParamCreator to make this more robust
-		const uri = this.axiosInstance.getUri({
-			url: `/Items/${itemId}/Images/${imageType}`,
-			params
-		});
-		// NOTE: This behavior will probably be the default in axios in the future
-		// https://github.com/axios/axios/issues/2468
-		return buildFullPath(this.basePath, uri);
+		return globalInstance.create({
+			baseURL: this.basePath
+		}).getUri({ url: `/Items/${itemId}/Images/${imageType}`, params });
 	}
 
 	get authorizationHeader(): string {
