@@ -12,7 +12,7 @@ import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { itIf } from '../../__helpers__/it-if';
 
 jest.mock('axios');
-const mockAxios = jest.mocked(axios, true);
+const mockAxios = jest.mocked(axios, { shallow: false });
 
 const ADDRESS = 'https://example.com';
 const PRODUCT_NAME = 'Jellyfin Server';

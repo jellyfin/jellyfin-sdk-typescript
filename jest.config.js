@@ -4,10 +4,8 @@ module.exports = {
 	runner: 'groups',
 
 	preset: 'ts-jest/presets/js-with-ts',
-	globals: {
-		'ts-jest': {
-			tsconfig: { allowJs: true }
-		}
+	transform: {
+		'<transform_regex>': ['ts-jest', { allowJs: true }]
 	},
 
 	// Coverage options

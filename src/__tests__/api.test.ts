@@ -15,7 +15,7 @@ jest.mock('axios', () => ({
 	...jest.requireActual('axios'),
 	request: jest.fn()
 }));
-const mockAxios = jest.mocked(axios, true);
+const mockAxios = jest.mocked(axios, { shallow: false });
 
 const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
 
