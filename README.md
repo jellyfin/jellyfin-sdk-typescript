@@ -103,6 +103,13 @@ await api.logout();
 
 ## Breaking Changes
 
+### v0.8.0
+
+* The library is now fully targeted to ES6/ES2015.
+  [#341](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/341)
+* Axios received a major version upgrade.
+  [#300](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/300)
+
 ### v0.7.0
 
 * Renamed package to @jellyfin/sdk.
