@@ -35,7 +35,7 @@ jobs:
         run: npm ci --no-audit
 
       - name: Update generated sources and create pull request
-        uses: technote-space/create-pr-action@a4ae5ba7878ecb8495476c103437cbf429e7ad16 # tag=v2
+        uses: technote-space/create-pr-action@91114507cf92349bec0a9a501c2edf1635427bc5 # v2
         with:
           EXECUTE_COMMANDS: |
             cp $HOME/openapi.json .
