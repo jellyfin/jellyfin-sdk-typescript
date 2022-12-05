@@ -1,7 +1,9 @@
 {
   "extends": "@tsconfig/recommended/tsconfig.json",
   "compilerOptions": {
-    "target": "ES5",
+    "target": "ES2015",
+    "module": "ES2015",
+    "moduleResolution": "Node",
     "declaration": true,
     "noImplicitAny": true,
     "outDir": "lib"
