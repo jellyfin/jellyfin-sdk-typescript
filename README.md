@@ -35,8 +35,9 @@ yarn add @jellyfin/sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
-| 0.7.0 | 10.8.1+ |
-| 0.6.0 | 10.8.1 |
+| 0.8.0 | 10.8.1 - 10.8.8 |
+| 0.7.0 | 10.8.1 - 10.8.8 |
+| 0.6.0 | 10.8.1 - 10.8.8 |
 | 0.5.0 | 10.8.0 |
 | <0.5.0 | 10.7.x |
 
@@ -73,9 +74,13 @@ const best = jellyfin.discovery.findBestServer(servers);
 // Create an API instance
 const api = jellyfin.createApi(best.address);
 
-// Each API endpoint is exposed via a getter on the SDK instance using
-// a shared Configuration and Axios instance. For example the /System APIs
-// are available as api.systemApi.
+// Each API endpoint is represented by a class in the generated client.
+// Helper utility functions are provided under `/lib/utils/api/` to create an
+// instance of a specific Jellyfin API using the shared Configuration and Axios
+// instance from the `api` object created above.
+
+// For example, the SystemApi can be generated using the `getSystemApi`
+// function in `/lib/utils/api/system-api`.
 
 // Fetch the public system info
 const info = await getSystemApi(api).getPublicSystemInfo();
