@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum MetadataRefreshMode {
-    None = 'None',
-    ValidationOnly = 'ValidationOnly',
-    Default = 'Default',
-    FullRefresh = 'FullRefresh'
-}
+export const MetadataRefreshMode = {
+    None: 'None',
+    ValidationOnly: 'ValidationOnly',
+    Default: 'Default',
+    FullRefresh: 'FullRefresh'
+} as const;
+
+export type MetadataRefreshMode = typeof MetadataRefreshMode[keyof typeof MetadataRefreshMode];
 
 
 

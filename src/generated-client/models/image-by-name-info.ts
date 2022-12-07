@@ -24,31 +24,30 @@ export interface ImageByNameInfo {
      * @type {string}
      * @memberof ImageByNameInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the theme.
      * @type {string}
      * @memberof ImageByNameInfo
      */
-    Theme?: string | null;
+    'Theme'?: string | null;
     /**
      * Gets or sets the context.
      * @type {string}
      * @memberof ImageByNameInfo
      */
-    Context?: string | null;
+    'Context'?: string | null;
     /**
      * Gets or sets the length of the file.
      * @type {number}
      * @memberof ImageByNameInfo
      */
-    FileLength?: number;
+    'FileLength'?: number;
     /**
      * Gets or sets the format.
      * @type {string}
      * @memberof ImageByNameInfo
      */
-    Format?: string | null;
+    'Format'?: string | null;
 }
-
 

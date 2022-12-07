@@ -24,73 +24,72 @@ export interface RemoteSearchResult {
      * @type {string}
      * @memberof RemoteSearchResult
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof RemoteSearchResult
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof RemoteSearchResult
      */
-    ProductionYear?: number | null;
+    'ProductionYear'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof RemoteSearchResult
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof RemoteSearchResult
      */
-    IndexNumberEnd?: number | null;
+    'IndexNumberEnd'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof RemoteSearchResult
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSearchResult
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSearchResult
      */
-    ImageUrl?: string | null;
+    'ImageUrl'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSearchResult
      */
-    SearchProviderName?: string | null;
+    'SearchProviderName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSearchResult
      */
-    Overview?: string | null;
+    'Overview'?: string | null;
     /**
      * 
      * @type {RemoteSearchResult}
      * @memberof RemoteSearchResult
      */
-    AlbumArtist?: RemoteSearchResult;
+    'AlbumArtist'?: RemoteSearchResult;
     /**
      * 
      * @type {Array<RemoteSearchResult>}
      * @memberof RemoteSearchResult
      */
-    Artists?: Array<RemoteSearchResult> | null;
+    'Artists'?: Array<RemoteSearchResult> | null;
 }
-
 

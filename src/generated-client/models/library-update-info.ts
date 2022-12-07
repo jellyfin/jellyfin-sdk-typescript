@@ -24,43 +24,42 @@ export interface LibraryUpdateInfo {
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    FoldersAddedTo?: Array<string>;
+    'FoldersAddedTo'?: Array<string>;
     /**
      * Gets or sets the folders removed from.
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    FoldersRemovedFrom?: Array<string>;
+    'FoldersRemovedFrom'?: Array<string>;
     /**
      * Gets or sets the items added.
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    ItemsAdded?: Array<string>;
+    'ItemsAdded'?: Array<string>;
     /**
      * Gets or sets the items removed.
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    ItemsRemoved?: Array<string>;
+    'ItemsRemoved'?: Array<string>;
     /**
      * Gets or sets the items updated.
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    ItemsUpdated?: Array<string>;
+    'ItemsUpdated'?: Array<string>;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryUpdateInfo
      */
-    CollectionFolders?: Array<string>;
+    'CollectionFolders'?: Array<string>;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryUpdateInfo
      */
-    IsEmpty?: boolean;
+    'IsEmpty'?: boolean;
 }
-
 

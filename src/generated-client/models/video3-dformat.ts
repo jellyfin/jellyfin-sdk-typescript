@@ -19,13 +19,15 @@
  * @enum {string}
  */
 
-export enum Video3DFormat {
-    HalfSideBySide = 'HalfSideBySide',
-    FullSideBySide = 'FullSideBySide',
-    FullTopAndBottom = 'FullTopAndBottom',
-    HalfTopAndBottom = 'HalfTopAndBottom',
-    Mvc = 'MVC'
-}
+export const Video3DFormat = {
+    HalfSideBySide: 'HalfSideBySide',
+    FullSideBySide: 'FullSideBySide',
+    FullTopAndBottom: 'FullTopAndBottom',
+    HalfTopAndBottom: 'HalfTopAndBottom',
+    Mvc: 'MVC'
+} as const;
+
+export type Video3DFormat = typeof Video3DFormat[keyof typeof Video3DFormat];
 
 
 

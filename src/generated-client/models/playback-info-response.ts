@@ -26,19 +26,18 @@ export interface PlaybackInfoResponse {
      * @type {Array<MediaSourceInfo>}
      * @memberof PlaybackInfoResponse
      */
-    MediaSources?: Array<MediaSourceInfo>;
+    'MediaSources'?: Array<MediaSourceInfo>;
     /**
      * Gets or sets the play session identifier.
      * @type {string}
      * @memberof PlaybackInfoResponse
      */
-    PlaySessionId?: string | null;
+    'PlaySessionId'?: string | null;
     /**
      * 
      * @type {PlaybackErrorCode}
      * @memberof PlaybackInfoResponse
      */
-    ErrorCode?: PlaybackErrorCode;
+    'ErrorCode'?: PlaybackErrorCode;
 }
-
 

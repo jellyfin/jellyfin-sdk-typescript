@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -33,7 +33,7 @@ export const TimeSyncApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUtcTime: async (options: any = {}): Promise<RequestArgs> => {
+        getUtcTime: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/GetUtcTime`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -48,7 +48,7 @@ export const TimeSyncApiAxiosParamCreator = function (configuration?: Configurat
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -73,7 +73,7 @@ export const TimeSyncApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUtcTime(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UtcTimeResponse>> {
+        async getUtcTime(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UtcTimeResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUtcTime(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -113,7 +113,7 @@ export class TimeSyncApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof TimeSyncApi
      */
-    public getUtcTime(options?: any) {
+    public getUtcTime(options?: AxiosRequestConfig) {
         return TimeSyncApiFp(this.configuration).getUtcTime(options).then((request) => request(this.axios, this.basePath));
     }
 }

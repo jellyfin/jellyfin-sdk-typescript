@@ -25,37 +25,36 @@ export interface TypeOptions {
      * @type {string}
      * @memberof TypeOptions
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof TypeOptions
      */
-    MetadataFetchers?: Array<string> | null;
+    'MetadataFetchers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof TypeOptions
      */
-    MetadataFetcherOrder?: Array<string> | null;
+    'MetadataFetcherOrder'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof TypeOptions
      */
-    ImageFetchers?: Array<string> | null;
+    'ImageFetchers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof TypeOptions
      */
-    ImageFetcherOrder?: Array<string> | null;
+    'ImageFetcherOrder'?: Array<string> | null;
     /**
      * 
      * @type {Array<ImageOption>}
      * @memberof TypeOptions
      */
-    ImageOptions?: Array<ImageOption> | null;
+    'ImageOptions'?: Array<ImageOption> | null;
 }
-
 

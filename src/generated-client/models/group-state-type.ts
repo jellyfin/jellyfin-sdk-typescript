@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum GroupStateType {
-    Idle = 'Idle',
-    Waiting = 'Waiting',
-    Paused = 'Paused',
-    Playing = 'Playing'
-}
+export const GroupStateType = {
+    Idle: 'Idle',
+    Waiting: 'Waiting',
+    Paused: 'Paused',
+    Playing: 'Playing'
+} as const;
+
+export type GroupStateType = typeof GroupStateType[keyof typeof GroupStateType];
 
 
 

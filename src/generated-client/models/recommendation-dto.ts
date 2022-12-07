@@ -26,25 +26,24 @@ export interface RecommendationDto {
      * @type {Array<BaseItemDto>}
      * @memberof RecommendationDto
      */
-    Items?: Array<BaseItemDto> | null;
+    'Items'?: Array<BaseItemDto> | null;
     /**
      * 
      * @type {RecommendationType}
      * @memberof RecommendationDto
      */
-    RecommendationType?: RecommendationType;
+    'RecommendationType'?: RecommendationType;
     /**
      * 
      * @type {string}
      * @memberof RecommendationDto
      */
-    BaselineItemName?: string | null;
+    'BaselineItemName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RecommendationDto
      */
-    CategoryId?: string;
+    'CategoryId'?: string;
 }
-
 

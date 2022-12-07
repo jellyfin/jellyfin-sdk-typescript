@@ -25,67 +25,66 @@ export interface BaseItem {
      * @type {number}
      * @memberof BaseItem
      */
-    Size?: number | null;
+    'Size'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof BaseItem
      */
-    Container?: string | null;
+    'Container'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof BaseItem
      */
-    IsHD?: boolean;
+    'IsHD'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof BaseItem
      */
-    IsShortcut?: boolean;
+    'IsShortcut'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof BaseItem
      */
-    ShortcutPath?: string | null;
+    'ShortcutPath'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof BaseItem
      */
-    Width?: number;
+    'Width'?: number;
     /**
      * 
      * @type {number}
      * @memberof BaseItem
      */
-    Height?: number;
+    'Height'?: number;
     /**
      * 
      * @type {Array<string>}
      * @memberof BaseItem
      */
-    ExtraIds?: Array<string> | null;
+    'ExtraIds'?: Array<string> | null;
     /**
      * 
      * @type {string}
      * @memberof BaseItem
      */
-    DateLastSaved?: string;
+    'DateLastSaved'?: string;
     /**
      * Gets or sets the remote trailers.
      * @type {Array<MediaUrl>}
      * @memberof BaseItem
      */
-    RemoteTrailers?: Array<MediaUrl> | null;
+    'RemoteTrailers'?: Array<MediaUrl> | null;
     /**
      * 
      * @type {boolean}
      * @memberof BaseItem
      */
-    SupportsExternalTransfer?: boolean;
+    'SupportsExternalTransfer'?: boolean;
 }
-
 

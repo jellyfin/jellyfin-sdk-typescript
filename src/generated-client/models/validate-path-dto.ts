@@ -24,19 +24,18 @@ export interface ValidatePathDto {
      * @type {boolean}
      * @memberof ValidatePathDto
      */
-    ValidateWritable?: boolean;
+    'ValidateWritable'?: boolean;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof ValidatePathDto
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets is path file.
      * @type {boolean}
      * @memberof ValidatePathDto
      */
-    IsFile?: boolean | null;
+    'IsFile'?: boolean | null;
 }
-
 

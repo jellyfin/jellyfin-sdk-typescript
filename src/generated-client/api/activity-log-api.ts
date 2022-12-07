@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -37,7 +37,7 @@ export const ActivityLogApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLogEntries: async (startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options: any = {}): Promise<RequestArgs> => {
+        getLogEntries: async (startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/ActivityLog/Entries`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -73,7 +73,7 @@ export const ActivityLogApiAxiosParamCreator = function (configuration?: Configu
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -102,7 +102,7 @@ export const ActivityLogApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLogEntries(startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ActivityLogEntryQueryResult>> {
+        async getLogEntries(startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ActivityLogEntryQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLogEntries(startIndex, limit, minDate, hasUserId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -182,7 +182,7 @@ export class ActivityLogApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ActivityLogApi
      */
-    public getLogEntries(requestParameters: ActivityLogApiGetLogEntriesRequest = {}, options?: any) {
+    public getLogEntries(requestParameters: ActivityLogApiGetLogEntriesRequest = {}, options?: AxiosRequestConfig) {
         return ActivityLogApiFp(this.configuration).getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.hasUserId, options).then((request) => request(this.axios, this.basePath));
     }
 }

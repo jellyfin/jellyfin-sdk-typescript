@@ -25,19 +25,18 @@ export interface ForgotPasswordResult {
      * @type {ForgotPasswordAction}
      * @memberof ForgotPasswordResult
      */
-    Action?: ForgotPasswordAction;
+    'Action'?: ForgotPasswordAction;
     /**
      * Gets or sets the pin file.
      * @type {string}
      * @memberof ForgotPasswordResult
      */
-    PinFile?: string | null;
+    'PinFile'?: string | null;
     /**
      * Gets or sets the pin expiration date.
      * @type {string}
      * @memberof ForgotPasswordResult
      */
-    PinExpirationDate?: string | null;
+    'PinExpirationDate'?: string | null;
 }
-
 

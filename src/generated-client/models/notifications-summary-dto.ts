@@ -25,13 +25,12 @@ export interface NotificationsSummaryDto {
      * @type {number}
      * @memberof NotificationsSummaryDto
      */
-    UnreadCount?: number;
+    'UnreadCount'?: number;
     /**
      * 
      * @type {NotificationLevel}
      * @memberof NotificationsSummaryDto
      */
-    MaxUnreadNotificationLevel?: NotificationLevel;
+    'MaxUnreadNotificationLevel'?: NotificationLevel;
 }
-
 

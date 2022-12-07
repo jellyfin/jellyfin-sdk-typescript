@@ -24,25 +24,24 @@ export interface UpdateUserPassword {
      * @type {string}
      * @memberof UpdateUserPassword
      */
-    CurrentPassword?: string | null;
+    'CurrentPassword'?: string | null;
     /**
      * Gets or sets the current plain text password.
      * @type {string}
      * @memberof UpdateUserPassword
      */
-    CurrentPw?: string | null;
+    'CurrentPw'?: string | null;
     /**
      * Gets or sets the new plain text password.
      * @type {string}
      * @memberof UpdateUserPassword
      */
-    NewPw?: string | null;
+    'NewPw'?: string | null;
     /**
      * Gets or sets a value indicating whether to reset the password.
      * @type {boolean}
      * @memberof UpdateUserPassword
      */
-    ResetPassword?: boolean;
+    'ResetPassword'?: boolean;
 }
-
 

@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum PlayMethod {
-    Transcode = 'Transcode',
-    DirectStream = 'DirectStream',
-    DirectPlay = 'DirectPlay'
-}
+export const PlayMethod = {
+    Transcode: 'Transcode',
+    DirectStream: 'DirectStream',
+    DirectPlay: 'DirectPlay'
+} as const;
+
+export type PlayMethod = typeof PlayMethod[keyof typeof PlayMethod];
 
 
 

@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum TaskCompletionStatus {
-    Completed = 'Completed',
-    Failed = 'Failed',
-    Cancelled = 'Cancelled',
-    Aborted = 'Aborted'
-}
+export const TaskCompletionStatus = {
+    Completed: 'Completed',
+    Failed: 'Failed',
+    Cancelled: 'Cancelled',
+    Aborted: 'Aborted'
+} as const;
+
+export type TaskCompletionStatus = typeof TaskCompletionStatus[keyof typeof TaskCompletionStatus];
 
 
 

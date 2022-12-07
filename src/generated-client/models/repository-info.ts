@@ -24,19 +24,18 @@ export interface RepositoryInfo {
      * @type {string}
      * @memberof RepositoryInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the URL.
      * @type {string}
      * @memberof RepositoryInfo
      */
-    Url?: string | null;
+    'Url'?: string | null;
     /**
      * Gets or sets a value indicating whether the repository is enabled.
      * @type {boolean}
      * @memberof RepositoryInfo
      */
-    Enabled?: boolean;
+    'Enabled'?: boolean;
 }
-
 

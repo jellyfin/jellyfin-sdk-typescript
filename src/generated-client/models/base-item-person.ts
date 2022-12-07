@@ -25,37 +25,36 @@ export interface BaseItemPerson {
      * @type {string}
      * @memberof BaseItemPerson
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the identifier.
      * @type {string}
      * @memberof BaseItemPerson
      */
-    Id?: string;
+    'Id'?: string;
     /**
      * Gets or sets the role.
      * @type {string}
      * @memberof BaseItemPerson
      */
-    Role?: string | null;
+    'Role'?: string | null;
     /**
      * Gets or sets the type.
      * @type {string}
      * @memberof BaseItemPerson
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets the primary image tag.
      * @type {string}
      * @memberof BaseItemPerson
      */
-    PrimaryImageTag?: string | null;
+    'PrimaryImageTag'?: string | null;
     /**
      * 
      * @type {BaseItemPersonImageBlurHashes}
      * @memberof BaseItemPerson
      */
-    ImageBlurHashes?: BaseItemPersonImageBlurHashes | null;
+    'ImageBlurHashes'?: BaseItemPersonImageBlurHashes | null;
 }
-
 

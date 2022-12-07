@@ -26,85 +26,84 @@ export interface DisplayPreferencesDto {
      * @type {string}
      * @memberof DisplayPreferencesDto
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * Gets or sets the type of the view.
      * @type {string}
      * @memberof DisplayPreferencesDto
      */
-    ViewType?: string | null;
+    'ViewType'?: string | null;
     /**
      * Gets or sets the sort by.
      * @type {string}
      * @memberof DisplayPreferencesDto
      */
-    SortBy?: string | null;
+    'SortBy'?: string | null;
     /**
      * Gets or sets the index by.
      * @type {string}
      * @memberof DisplayPreferencesDto
      */
-    IndexBy?: string | null;
+    'IndexBy'?: string | null;
     /**
      * Gets or sets a value indicating whether [remember indexing].
      * @type {boolean}
      * @memberof DisplayPreferencesDto
      */
-    RememberIndexing?: boolean;
+    'RememberIndexing'?: boolean;
     /**
      * Gets or sets the height of the primary image.
      * @type {number}
      * @memberof DisplayPreferencesDto
      */
-    PrimaryImageHeight?: number;
+    'PrimaryImageHeight'?: number;
     /**
      * Gets or sets the width of the primary image.
      * @type {number}
      * @memberof DisplayPreferencesDto
      */
-    PrimaryImageWidth?: number;
+    'PrimaryImageWidth'?: number;
     /**
      * Gets or sets the custom prefs.
      * @type {{ [key: string]: string; }}
      * @memberof DisplayPreferencesDto
      */
-    CustomPrefs?: { [key: string]: string; };
+    'CustomPrefs'?: { [key: string]: string; };
     /**
      * 
      * @type {ScrollDirection}
      * @memberof DisplayPreferencesDto
      */
-    ScrollDirection?: ScrollDirection;
+    'ScrollDirection'?: ScrollDirection;
     /**
      * Gets or sets a value indicating whether to show backdrops on this item.
      * @type {boolean}
      * @memberof DisplayPreferencesDto
      */
-    ShowBackdrop?: boolean;
+    'ShowBackdrop'?: boolean;
     /**
      * Gets or sets a value indicating whether [remember sorting].
      * @type {boolean}
      * @memberof DisplayPreferencesDto
      */
-    RememberSorting?: boolean;
+    'RememberSorting'?: boolean;
     /**
      * 
      * @type {SortOrder}
      * @memberof DisplayPreferencesDto
      */
-    SortOrder?: SortOrder;
+    'SortOrder'?: SortOrder;
     /**
      * Gets or sets a value indicating whether [show sidebar].
      * @type {boolean}
      * @memberof DisplayPreferencesDto
      */
-    ShowSidebar?: boolean;
+    'ShowSidebar'?: boolean;
     /**
      * Gets or sets the client.
      * @type {string}
      * @memberof DisplayPreferencesDto
      */
-    Client?: string | null;
+    'Client'?: string | null;
 }
-
 

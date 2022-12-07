@@ -24,13 +24,12 @@ export interface ParentalRating {
      * @type {string}
      * @memberof ParentalRating
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the value.
      * @type {number}
      * @memberof ParentalRating
      */
-    Value?: number;
+    'Value'?: number;
 }
-
 

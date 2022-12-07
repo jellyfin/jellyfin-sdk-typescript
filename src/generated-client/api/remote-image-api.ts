@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -42,7 +42,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteImage: async (itemId: string, type: ImageType, imageUrl?: string, options: any = {}): Promise<RequestArgs> => {
+        downloadRemoteImage: async (itemId: string, type: ImageType, imageUrl?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('downloadRemoteImage', 'itemId', itemId)
             // verify required parameter 'type' is not null or undefined
@@ -73,7 +73,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -89,7 +89,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteImageProviders: async (itemId: string, options: any = {}): Promise<RequestArgs> => {
+        getRemoteImageProviders: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getRemoteImageProviders', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/RemoteImages/Providers`
@@ -110,7 +110,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -131,7 +131,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteImages: async (itemId: string, type?: ImageType, startIndex?: number, limit?: number, providerName?: string, includeAllLanguages?: boolean, options: any = {}): Promise<RequestArgs> => {
+        getRemoteImages: async (itemId: string, type?: ImageType, startIndex?: number, limit?: number, providerName?: string, includeAllLanguages?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getRemoteImages', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/RemoteImages`
@@ -172,7 +172,7 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -200,7 +200,7 @@ export const RemoteImageApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async downloadRemoteImage(itemId: string, type: ImageType, imageUrl?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async downloadRemoteImage(itemId: string, type: ImageType, imageUrl?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.downloadRemoteImage(itemId, type, imageUrl, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -211,7 +211,7 @@ export const RemoteImageApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRemoteImageProviders(itemId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ImageProviderInfo>>> {
+        async getRemoteImageProviders(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ImageProviderInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteImageProviders(itemId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -227,7 +227,7 @@ export const RemoteImageApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRemoteImages(itemId: string, type?: ImageType, startIndex?: number, limit?: number, providerName?: string, includeAllLanguages?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<RemoteImageResult>> {
+        async getRemoteImages(itemId: string, type?: ImageType, startIndex?: number, limit?: number, providerName?: string, includeAllLanguages?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<RemoteImageResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteImages(itemId, type, startIndex, limit, providerName, includeAllLanguages, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -387,7 +387,7 @@ export class RemoteImageApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof RemoteImageApi
      */
-    public downloadRemoteImage(requestParameters: RemoteImageApiDownloadRemoteImageRequest, options?: any) {
+    public downloadRemoteImage(requestParameters: RemoteImageApiDownloadRemoteImageRequest, options?: AxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).downloadRemoteImage(requestParameters.itemId, requestParameters.type, requestParameters.imageUrl, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -399,7 +399,7 @@ export class RemoteImageApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof RemoteImageApi
      */
-    public getRemoteImageProviders(requestParameters: RemoteImageApiGetRemoteImageProvidersRequest, options?: any) {
+    public getRemoteImageProviders(requestParameters: RemoteImageApiGetRemoteImageProvidersRequest, options?: AxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).getRemoteImageProviders(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -411,7 +411,7 @@ export class RemoteImageApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof RemoteImageApi
      */
-    public getRemoteImages(requestParameters: RemoteImageApiGetRemoteImagesRequest, options?: any) {
+    public getRemoteImages(requestParameters: RemoteImageApiGetRemoteImagesRequest, options?: AxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).getRemoteImages(requestParameters.itemId, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.providerName, requestParameters.includeAllLanguages, options).then((request) => request(this.axios, this.basePath));
     }
 }

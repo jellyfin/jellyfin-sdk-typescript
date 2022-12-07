@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -34,7 +34,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createKey: async (app: string, options: any = {}): Promise<RequestArgs> => {
+        createKey: async (app: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'app' is not null or undefined
             assertParamExists('createKey', 'app', app)
             const localVarPath = `/Auth/Keys`;
@@ -58,7 +58,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -73,7 +73,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getKeys: async (options: any = {}): Promise<RequestArgs> => {
+        getKeys: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Auth/Keys`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -91,7 +91,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -107,7 +107,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        revokeKey: async (key: string, options: any = {}): Promise<RequestArgs> => {
+        revokeKey: async (key: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'key' is not null or undefined
             assertParamExists('revokeKey', 'key', key)
             const localVarPath = `/Auth/Keys/{key}`
@@ -128,7 +128,7 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -154,7 +154,7 @@ export const ApiKeyApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createKey(app: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async createKey(app: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createKey(app, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -164,7 +164,7 @@ export const ApiKeyApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getKeys(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationInfoQueryResult>> {
+        async getKeys(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationInfoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getKeys(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -175,7 +175,7 @@ export const ApiKeyApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async revokeKey(key: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async revokeKey(key: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.revokeKey(key, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -264,7 +264,7 @@ export class ApiKeyApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ApiKeyApi
      */
-    public createKey(requestParameters: ApiKeyApiCreateKeyRequest, options?: any) {
+    public createKey(requestParameters: ApiKeyApiCreateKeyRequest, options?: AxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).createKey(requestParameters.app, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -275,7 +275,7 @@ export class ApiKeyApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ApiKeyApi
      */
-    public getKeys(options?: any) {
+    public getKeys(options?: AxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).getKeys(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -287,7 +287,7 @@ export class ApiKeyApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ApiKeyApi
      */
-    public revokeKey(requestParameters: ApiKeyApiRevokeKeyRequest, options?: any) {
+    public revokeKey(requestParameters: ApiKeyApiRevokeKeyRequest, options?: AxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).revokeKey(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
     }
 }

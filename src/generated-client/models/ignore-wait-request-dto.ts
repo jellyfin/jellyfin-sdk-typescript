@@ -24,7 +24,6 @@ export interface IgnoreWaitRequestDto {
      * @type {boolean}
      * @memberof IgnoreWaitRequestDto
      */
-    IgnoreWait?: boolean;
+    'IgnoreWait'?: boolean;
 }
-
 

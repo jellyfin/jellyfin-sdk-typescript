@@ -25,55 +25,54 @@ export interface DeviceIdentification {
      * @type {string}
      * @memberof DeviceIdentification
      */
-    FriendlyName?: string;
+    'FriendlyName'?: string;
     /**
      * Gets or sets the model number.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    ModelNumber?: string;
+    'ModelNumber'?: string;
     /**
      * Gets or sets the serial number.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    SerialNumber?: string;
+    'SerialNumber'?: string;
     /**
      * Gets or sets the name of the model.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    ModelName?: string;
+    'ModelName'?: string;
     /**
      * Gets or sets the model description.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    ModelDescription?: string;
+    'ModelDescription'?: string;
     /**
      * Gets or sets the model URL.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    ModelUrl?: string;
+    'ModelUrl'?: string;
     /**
      * Gets or sets the manufacturer.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    Manufacturer?: string;
+    'Manufacturer'?: string;
     /**
      * Gets or sets the manufacturer URL.
      * @type {string}
      * @memberof DeviceIdentification
      */
-    ManufacturerUrl?: string;
+    'ManufacturerUrl'?: string;
     /**
      * Gets or sets the headers.
      * @type {Array<HttpHeaderInfo>}
      * @memberof DeviceIdentification
      */
-    Headers?: Array<HttpHeaderInfo>;
+    'Headers'?: Array<HttpHeaderInfo>;
 }
-
 

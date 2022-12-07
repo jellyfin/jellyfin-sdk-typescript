@@ -25,25 +25,24 @@ export interface ThemeMediaResult {
      * @type {Array<BaseItemDto>}
      * @memberof ThemeMediaResult
      */
-    Items?: Array<BaseItemDto> | null;
+    'Items'?: Array<BaseItemDto> | null;
     /**
      * Gets or sets the total number of records available.
      * @type {number}
      * @memberof ThemeMediaResult
      */
-    TotalRecordCount?: number;
+    'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
      * @type {number}
      * @memberof ThemeMediaResult
      */
-    StartIndex?: number;
+    'StartIndex'?: number;
     /**
      * Gets or sets the owner id.
      * @type {string}
      * @memberof ThemeMediaResult
      */
-    OwnerId?: string;
+    'OwnerId'?: string;
 }
-
 

@@ -24,13 +24,12 @@ export interface MediaUrl {
      * @type {string}
      * @memberof MediaUrl
      */
-    Url?: string | null;
+    'Url'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MediaUrl
      */
-    Name?: string | null;
+    'Name'?: string | null;
 }
-
 

@@ -19,18 +19,20 @@
  * @enum {string}
  */
 
-export enum DynamicDayOfWeek {
-    Sunday = 'Sunday',
-    Monday = 'Monday',
-    Tuesday = 'Tuesday',
-    Wednesday = 'Wednesday',
-    Thursday = 'Thursday',
-    Friday = 'Friday',
-    Saturday = 'Saturday',
-    Everyday = 'Everyday',
-    Weekday = 'Weekday',
-    Weekend = 'Weekend'
-}
+export const DynamicDayOfWeek = {
+    Sunday: 'Sunday',
+    Monday: 'Monday',
+    Tuesday: 'Tuesday',
+    Wednesday: 'Wednesday',
+    Thursday: 'Thursday',
+    Friday: 'Friday',
+    Saturday: 'Saturday',
+    Everyday: 'Everyday',
+    Weekday: 'Weekday',
+    Weekend: 'Weekend'
+} as const;
+
+export type DynamicDayOfWeek = typeof DynamicDayOfWeek[keyof typeof DynamicDayOfWeek];
 
 
 

@@ -24,19 +24,18 @@ export interface DeviceOptionsDto {
      * @type {number}
      * @memberof DeviceOptionsDto
      */
-    Id?: number;
+    'Id'?: number;
     /**
      * Gets or sets the device id.
      * @type {string}
      * @memberof DeviceOptionsDto
      */
-    DeviceId?: string | null;
+    'DeviceId'?: string | null;
     /**
      * Gets or sets the custom name.
      * @type {string}
      * @memberof DeviceOptionsDto
      */
-    CustomName?: string | null;
+    'CustomName'?: string | null;
 }
-
 

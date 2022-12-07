@@ -25,49 +25,48 @@ export interface ImageInfo {
      * @type {ImageType}
      * @memberof ImageInfo
      */
-    ImageType?: ImageType;
+    'ImageType'?: ImageType;
     /**
      * Gets or sets the index of the image.
      * @type {number}
      * @memberof ImageInfo
      */
-    ImageIndex?: number | null;
+    'ImageIndex'?: number | null;
     /**
      * Gets or sets the image tag.
      * @type {string}
      * @memberof ImageInfo
      */
-    ImageTag?: string | null;
+    'ImageTag'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof ImageInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the blurhash.
      * @type {string}
      * @memberof ImageInfo
      */
-    BlurHash?: string | null;
+    'BlurHash'?: string | null;
     /**
      * Gets or sets the height.
      * @type {number}
      * @memberof ImageInfo
      */
-    Height?: number | null;
+    'Height'?: number | null;
     /**
      * Gets or sets the width.
      * @type {number}
      * @memberof ImageInfo
      */
-    Width?: number | null;
+    'Width'?: number | null;
     /**
      * Gets or sets the size.
      * @type {number}
      * @memberof ImageInfo
      */
-    Size?: number;
+    'Size'?: number;
 }
-
 

@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum TaskState {
-    Idle = 'Idle',
-    Cancelling = 'Cancelling',
-    Running = 'Running'
-}
+export const TaskState = {
+    Idle: 'Idle',
+    Cancelling: 'Cancelling',
+    Running: 'Running'
+} as const;
+
+export type TaskState = typeof TaskState[keyof typeof TaskState];
 
 
 

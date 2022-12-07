@@ -26,49 +26,48 @@ export interface VirtualFolderInfo {
      * @type {string}
      * @memberof VirtualFolderInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the locations.
      * @type {Array<string>}
      * @memberof VirtualFolderInfo
      */
-    Locations?: Array<string> | null;
+    'Locations'?: Array<string> | null;
     /**
      * 
      * @type {CollectionTypeOptions}
      * @memberof VirtualFolderInfo
      */
-    CollectionType?: CollectionTypeOptions;
+    'CollectionType'?: CollectionTypeOptions;
     /**
      * 
      * @type {LibraryOptions}
      * @memberof VirtualFolderInfo
      */
-    LibraryOptions?: LibraryOptions;
+    'LibraryOptions'?: LibraryOptions;
     /**
      * Gets or sets the item identifier.
      * @type {string}
      * @memberof VirtualFolderInfo
      */
-    ItemId?: string | null;
+    'ItemId'?: string | null;
     /**
      * Gets or sets the primary image item identifier.
      * @type {string}
      * @memberof VirtualFolderInfo
      */
-    PrimaryImageItemId?: string | null;
+    'PrimaryImageItemId'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof VirtualFolderInfo
      */
-    RefreshProgress?: number | null;
+    'RefreshProgress'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof VirtualFolderInfo
      */
-    RefreshStatus?: string | null;
+    'RefreshStatus'?: string | null;
 }
-
 

@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum EmbeddedSubtitleOptions {
-    AllowAll = 'AllowAll',
-    AllowText = 'AllowText',
-    AllowImage = 'AllowImage',
-    AllowNone = 'AllowNone'
-}
+export const EmbeddedSubtitleOptions = {
+    AllowAll: 'AllowAll',
+    AllowText: 'AllowText',
+    AllowImage: 'AllowImage',
+    AllowNone: 'AllowNone'
+} as const;
+
+export type EmbeddedSubtitleOptions = typeof EmbeddedSubtitleOptions[keyof typeof EmbeddedSubtitleOptions];
 
 
 

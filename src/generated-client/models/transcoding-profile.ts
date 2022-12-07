@@ -28,97 +28,96 @@ export interface TranscodingProfile {
      * @type {string}
      * @memberof TranscodingProfile
      */
-    Container?: string;
+    'Container'?: string;
     /**
      * 
      * @type {DlnaProfileType}
      * @memberof TranscodingProfile
      */
-    Type?: DlnaProfileType;
+    'Type'?: DlnaProfileType;
     /**
      * 
      * @type {string}
      * @memberof TranscodingProfile
      */
-    VideoCodec?: string;
+    'VideoCodec'?: string;
     /**
      * 
      * @type {string}
      * @memberof TranscodingProfile
      */
-    AudioCodec?: string;
+    'AudioCodec'?: string;
     /**
      * 
      * @type {string}
      * @memberof TranscodingProfile
      */
-    Protocol?: string;
+    'Protocol'?: string;
     /**
      * 
      * @type {boolean}
      * @memberof TranscodingProfile
      */
-    EstimateContentLength?: boolean;
+    'EstimateContentLength'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof TranscodingProfile
      */
-    EnableMpegtsM2TsMode?: boolean;
+    'EnableMpegtsM2TsMode'?: boolean;
     /**
      * 
      * @type {TranscodeSeekInfo}
      * @memberof TranscodingProfile
      */
-    TranscodeSeekInfo?: TranscodeSeekInfo;
+    'TranscodeSeekInfo'?: TranscodeSeekInfo;
     /**
      * 
      * @type {boolean}
      * @memberof TranscodingProfile
      */
-    CopyTimestamps?: boolean;
+    'CopyTimestamps'?: boolean;
     /**
      * 
      * @type {EncodingContext}
      * @memberof TranscodingProfile
      */
-    Context?: EncodingContext;
+    'Context'?: EncodingContext;
     /**
      * 
      * @type {boolean}
      * @memberof TranscodingProfile
      */
-    EnableSubtitlesInManifest?: boolean;
+    'EnableSubtitlesInManifest'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof TranscodingProfile
      */
-    MaxAudioChannels?: string | null;
+    'MaxAudioChannels'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof TranscodingProfile
      */
-    MinSegments?: number;
+    'MinSegments'?: number;
     /**
      * 
      * @type {number}
      * @memberof TranscodingProfile
      */
-    SegmentLength?: number;
+    'SegmentLength'?: number;
     /**
      * 
      * @type {boolean}
      * @memberof TranscodingProfile
      */
-    BreakOnNonKeyFrames?: boolean;
+    'BreakOnNonKeyFrames'?: boolean;
     /**
      * 
      * @type {Array<ProfileCondition>}
      * @memberof TranscodingProfile
      */
-    Conditions?: Array<ProfileCondition>;
+    'Conditions'?: Array<ProfileCondition>;
 }
-
 

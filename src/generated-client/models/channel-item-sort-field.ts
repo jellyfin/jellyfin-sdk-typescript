@@ -19,15 +19,17 @@
  * @enum {string}
  */
 
-export enum ChannelItemSortField {
-    Name = 'Name',
-    CommunityRating = 'CommunityRating',
-    PremiereDate = 'PremiereDate',
-    DateCreated = 'DateCreated',
-    Runtime = 'Runtime',
-    PlayCount = 'PlayCount',
-    CommunityPlayCount = 'CommunityPlayCount'
-}
+export const ChannelItemSortField = {
+    Name: 'Name',
+    CommunityRating: 'CommunityRating',
+    PremiereDate: 'PremiereDate',
+    DateCreated: 'DateCreated',
+    Runtime: 'Runtime',
+    PlayCount: 'PlayCount',
+    CommunityPlayCount: 'CommunityPlayCount'
+} as const;
+
+export type ChannelItemSortField = typeof ChannelItemSortField[keyof typeof ChannelItemSortField];
 
 
 

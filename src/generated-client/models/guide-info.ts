@@ -24,13 +24,12 @@ export interface GuideInfo {
      * @type {string}
      * @memberof GuideInfo
      */
-    StartDate?: string;
+    'StartDate'?: string;
     /**
      * Gets or sets the end date.
      * @type {string}
      * @memberof GuideInfo
      */
-    EndDate?: string;
+    'EndDate'?: string;
 }
-
 

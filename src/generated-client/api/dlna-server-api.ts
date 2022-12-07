@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -34,7 +34,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getConnectionManager: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getConnectionManager', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ConnectionManager`
@@ -55,7 +55,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -71,7 +71,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager2: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getConnectionManager2: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getConnectionManager2', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ConnectionManager/ConnectionManager`
@@ -92,7 +92,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -108,7 +108,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager3: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getConnectionManager3: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getConnectionManager3', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ConnectionManager/ConnectionManager.xml`
@@ -129,7 +129,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -145,7 +145,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getContentDirectory: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getContentDirectory', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ContentDirectory`
@@ -166,7 +166,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -182,7 +182,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory2: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getContentDirectory2: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getContentDirectory2', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ContentDirectory/ContentDirectory`
@@ -203,7 +203,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -219,7 +219,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory3: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getContentDirectory3: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getContentDirectory3', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ContentDirectory/ContentDirectory.xml`
@@ -240,7 +240,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -256,7 +256,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDescriptionXml: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getDescriptionXml: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getDescriptionXml', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/description`
@@ -277,7 +277,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -293,7 +293,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDescriptionXml2: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getDescriptionXml2: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getDescriptionXml2', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/description.xml`
@@ -314,7 +314,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -330,7 +330,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIcon: async (fileName: string, options: any = {}): Promise<RequestArgs> => {
+        getIcon: async (fileName: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'fileName' is not null or undefined
             assertParamExists('getIcon', 'fileName', fileName)
             const localVarPath = `/Dlna/icons/{fileName}`
@@ -351,7 +351,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -368,7 +368,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIconId: async (serverId: string, fileName: string, options: any = {}): Promise<RequestArgs> => {
+        getIconId: async (serverId: string, fileName: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getIconId', 'serverId', serverId)
             // verify required parameter 'fileName' is not null or undefined
@@ -392,7 +392,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -408,7 +408,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getMediaReceiverRegistrar: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getMediaReceiverRegistrar', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/MediaReceiverRegistrar`
@@ -429,7 +429,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -445,7 +445,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar2: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getMediaReceiverRegistrar2: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getMediaReceiverRegistrar2', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/MediaReceiverRegistrar/MediaReceiverRegistrar`
@@ -466,7 +466,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -482,7 +482,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar3: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        getMediaReceiverRegistrar3: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('getMediaReceiverRegistrar3', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/MediaReceiverRegistrar/MediaReceiverRegistrar.xml`
@@ -503,7 +503,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -519,7 +519,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processConnectionManagerControlRequest: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        processConnectionManagerControlRequest: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('processConnectionManagerControlRequest', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ConnectionManager/Control`
@@ -540,7 +540,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -556,7 +556,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processContentDirectoryControlRequest: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        processContentDirectoryControlRequest: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('processContentDirectoryControlRequest', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/ContentDirectory/Control`
@@ -577,7 +577,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -593,7 +593,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processMediaReceiverRegistrarControlRequest: async (serverId: string, options: any = {}): Promise<RequestArgs> => {
+        processMediaReceiverRegistrarControlRequest: async (serverId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverId' is not null or undefined
             assertParamExists('processMediaReceiverRegistrarControlRequest', 'serverId', serverId)
             const localVarPath = `/Dlna/{serverId}/MediaReceiverRegistrar/Control`
@@ -614,7 +614,7 @@ export const DlnaServerApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -640,7 +640,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConnectionManager(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getConnectionManager(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConnectionManager(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -651,7 +651,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConnectionManager2(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getConnectionManager2(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConnectionManager2(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -662,7 +662,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConnectionManager3(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getConnectionManager3(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConnectionManager3(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -673,7 +673,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getContentDirectory(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getContentDirectory(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getContentDirectory(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -684,7 +684,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getContentDirectory2(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getContentDirectory2(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getContentDirectory2(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -695,7 +695,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getContentDirectory3(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getContentDirectory3(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getContentDirectory3(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -706,7 +706,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDescriptionXml(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getDescriptionXml(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDescriptionXml(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -717,7 +717,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDescriptionXml2(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getDescriptionXml2(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDescriptionXml2(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -728,7 +728,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getIcon(fileName: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getIcon(fileName: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getIcon(fileName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -740,7 +740,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getIconId(serverId: string, fileName: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getIconId(serverId: string, fileName: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getIconId(serverId, fileName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -751,7 +751,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMediaReceiverRegistrar(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getMediaReceiverRegistrar(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMediaReceiverRegistrar(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -762,7 +762,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMediaReceiverRegistrar2(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getMediaReceiverRegistrar2(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMediaReceiverRegistrar2(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -773,7 +773,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMediaReceiverRegistrar3(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getMediaReceiverRegistrar3(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMediaReceiverRegistrar3(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -784,7 +784,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async processConnectionManagerControlRequest(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async processConnectionManagerControlRequest(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.processConnectionManagerControlRequest(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -795,7 +795,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async processContentDirectoryControlRequest(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async processContentDirectoryControlRequest(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.processContentDirectoryControlRequest(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -806,7 +806,7 @@ export const DlnaServerApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async processMediaReceiverRegistrarControlRequest(serverId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async processMediaReceiverRegistrarControlRequest(serverId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.processMediaReceiverRegistrarControlRequest(serverId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1230,7 +1230,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getConnectionManager(requestParameters: DlnaServerApiGetConnectionManagerRequest, options?: any) {
+    public getConnectionManager(requestParameters: DlnaServerApiGetConnectionManagerRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getConnectionManager(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1242,7 +1242,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getConnectionManager2(requestParameters: DlnaServerApiGetConnectionManager2Request, options?: any) {
+    public getConnectionManager2(requestParameters: DlnaServerApiGetConnectionManager2Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getConnectionManager2(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1254,7 +1254,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getConnectionManager3(requestParameters: DlnaServerApiGetConnectionManager3Request, options?: any) {
+    public getConnectionManager3(requestParameters: DlnaServerApiGetConnectionManager3Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getConnectionManager3(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1266,7 +1266,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getContentDirectory(requestParameters: DlnaServerApiGetContentDirectoryRequest, options?: any) {
+    public getContentDirectory(requestParameters: DlnaServerApiGetContentDirectoryRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getContentDirectory(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1278,7 +1278,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getContentDirectory2(requestParameters: DlnaServerApiGetContentDirectory2Request, options?: any) {
+    public getContentDirectory2(requestParameters: DlnaServerApiGetContentDirectory2Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getContentDirectory2(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1290,7 +1290,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getContentDirectory3(requestParameters: DlnaServerApiGetContentDirectory3Request, options?: any) {
+    public getContentDirectory3(requestParameters: DlnaServerApiGetContentDirectory3Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getContentDirectory3(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1302,7 +1302,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getDescriptionXml(requestParameters: DlnaServerApiGetDescriptionXmlRequest, options?: any) {
+    public getDescriptionXml(requestParameters: DlnaServerApiGetDescriptionXmlRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getDescriptionXml(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1314,7 +1314,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getDescriptionXml2(requestParameters: DlnaServerApiGetDescriptionXml2Request, options?: any) {
+    public getDescriptionXml2(requestParameters: DlnaServerApiGetDescriptionXml2Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getDescriptionXml2(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1326,7 +1326,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getIcon(requestParameters: DlnaServerApiGetIconRequest, options?: any) {
+    public getIcon(requestParameters: DlnaServerApiGetIconRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getIcon(requestParameters.fileName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1338,7 +1338,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getIconId(requestParameters: DlnaServerApiGetIconIdRequest, options?: any) {
+    public getIconId(requestParameters: DlnaServerApiGetIconIdRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getIconId(requestParameters.serverId, requestParameters.fileName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1350,7 +1350,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getMediaReceiverRegistrar(requestParameters: DlnaServerApiGetMediaReceiverRegistrarRequest, options?: any) {
+    public getMediaReceiverRegistrar(requestParameters: DlnaServerApiGetMediaReceiverRegistrarRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getMediaReceiverRegistrar(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1362,7 +1362,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getMediaReceiverRegistrar2(requestParameters: DlnaServerApiGetMediaReceiverRegistrar2Request, options?: any) {
+    public getMediaReceiverRegistrar2(requestParameters: DlnaServerApiGetMediaReceiverRegistrar2Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getMediaReceiverRegistrar2(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1374,7 +1374,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public getMediaReceiverRegistrar3(requestParameters: DlnaServerApiGetMediaReceiverRegistrar3Request, options?: any) {
+    public getMediaReceiverRegistrar3(requestParameters: DlnaServerApiGetMediaReceiverRegistrar3Request, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).getMediaReceiverRegistrar3(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1386,7 +1386,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public processConnectionManagerControlRequest(requestParameters: DlnaServerApiProcessConnectionManagerControlRequestRequest, options?: any) {
+    public processConnectionManagerControlRequest(requestParameters: DlnaServerApiProcessConnectionManagerControlRequestRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).processConnectionManagerControlRequest(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1398,7 +1398,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public processContentDirectoryControlRequest(requestParameters: DlnaServerApiProcessContentDirectoryControlRequestRequest, options?: any) {
+    public processContentDirectoryControlRequest(requestParameters: DlnaServerApiProcessContentDirectoryControlRequestRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).processContentDirectoryControlRequest(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1410,7 +1410,7 @@ export class DlnaServerApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DlnaServerApi
      */
-    public processMediaReceiverRegistrarControlRequest(requestParameters: DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest, options?: any) {
+    public processMediaReceiverRegistrarControlRequest(requestParameters: DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest, options?: AxiosRequestConfig) {
         return DlnaServerApiFp(this.configuration).processMediaReceiverRegistrarControlRequest(requestParameters.serverId, options).then((request) => request(this.axios, this.basePath));
     }
 }

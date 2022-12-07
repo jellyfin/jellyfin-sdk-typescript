@@ -25,49 +25,48 @@ export interface PlayRequest {
      * @type {Array<string>}
      * @memberof PlayRequest
      */
-    ItemIds?: Array<string> | null;
+    'ItemIds'?: Array<string> | null;
     /**
      * Gets or sets the start position ticks that the first item should be played at.
      * @type {number}
      * @memberof PlayRequest
      */
-    StartPositionTicks?: number | null;
+    'StartPositionTicks'?: number | null;
     /**
      * 
      * @type {PlayCommand}
      * @memberof PlayRequest
      */
-    PlayCommand?: PlayCommand;
+    'PlayCommand'?: PlayCommand;
     /**
      * Gets or sets the controlling user identifier.
      * @type {string}
      * @memberof PlayRequest
      */
-    ControllingUserId?: string;
+    'ControllingUserId'?: string;
     /**
      * 
      * @type {number}
      * @memberof PlayRequest
      */
-    SubtitleStreamIndex?: number | null;
+    'SubtitleStreamIndex'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof PlayRequest
      */
-    AudioStreamIndex?: number | null;
+    'AudioStreamIndex'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof PlayRequest
      */
-    MediaSourceId?: string | null;
+    'MediaSourceId'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof PlayRequest
      */
-    StartIndex?: number | null;
+    'StartIndex'?: number | null;
 }
-
 

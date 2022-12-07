@@ -25,19 +25,18 @@ export interface PlaystateRequest {
      * @type {PlaystateCommand}
      * @memberof PlaystateRequest
      */
-    Command?: PlaystateCommand;
+    'Command'?: PlaystateCommand;
     /**
      * 
      * @type {number}
      * @memberof PlaystateRequest
      */
-    SeekPositionTicks?: number | null;
+    'SeekPositionTicks'?: number | null;
     /**
      * Gets or sets the controlling user identifier.
      * @type {string}
      * @memberof PlaystateRequest
      */
-    ControllingUserId?: string | null;
+    'ControllingUserId'?: string | null;
 }
-
 

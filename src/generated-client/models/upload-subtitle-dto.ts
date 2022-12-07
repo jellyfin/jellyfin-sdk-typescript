@@ -24,25 +24,24 @@ export interface UploadSubtitleDto {
      * @type {string}
      * @memberof UploadSubtitleDto
      */
-    Language: string;
+    'Language': string;
     /**
      * Gets or sets the subtitle format.
      * @type {string}
      * @memberof UploadSubtitleDto
      */
-    Format: string;
+    'Format': string;
     /**
      * Gets or sets a value indicating whether the subtitle is forced.
      * @type {boolean}
      * @memberof UploadSubtitleDto
      */
-    IsForced: boolean;
+    'IsForced': boolean;
     /**
      * Gets or sets the subtitle data.
      * @type {string}
      * @memberof UploadSubtitleDto
      */
-    Data: string;
+    'Data': string;
 }
-
 

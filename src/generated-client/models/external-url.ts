@@ -24,13 +24,12 @@ export interface ExternalUrl {
      * @type {string}
      * @memberof ExternalUrl
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the type of the item.
      * @type {string}
      * @memberof ExternalUrl
      */
-    Url?: string | null;
+    'Url'?: string | null;
 }
-
 

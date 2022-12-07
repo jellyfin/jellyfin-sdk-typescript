@@ -24,7 +24,6 @@ export interface SetPlaylistItemRequestDto {
      * @type {string}
      * @memberof SetPlaylistItemRequestDto
      */
-    PlaylistItemId?: string;
+    'PlaylistItemId'?: string;
 }
-
 

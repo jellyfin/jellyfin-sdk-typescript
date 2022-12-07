@@ -19,14 +19,16 @@
  * @enum {string}
  */
 
-export enum RecommendationType {
-    SimilarToRecentlyPlayed = 'SimilarToRecentlyPlayed',
-    SimilarToLikedItem = 'SimilarToLikedItem',
-    HasDirectorFromRecentlyPlayed = 'HasDirectorFromRecentlyPlayed',
-    HasActorFromRecentlyPlayed = 'HasActorFromRecentlyPlayed',
-    HasLikedDirector = 'HasLikedDirector',
-    HasLikedActor = 'HasLikedActor'
-}
+export const RecommendationType = {
+    SimilarToRecentlyPlayed: 'SimilarToRecentlyPlayed',
+    SimilarToLikedItem: 'SimilarToLikedItem',
+    HasDirectorFromRecentlyPlayed: 'HasDirectorFromRecentlyPlayed',
+    HasActorFromRecentlyPlayed: 'HasActorFromRecentlyPlayed',
+    HasLikedDirector: 'HasLikedDirector',
+    HasLikedActor: 'HasLikedActor'
+} as const;
+
+export type RecommendationType = typeof RecommendationType[keyof typeof RecommendationType];
 
 
 

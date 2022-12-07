@@ -24,13 +24,12 @@ export interface UtcTimeResponse {
      * @type {string}
      * @memberof UtcTimeResponse
      */
-    RequestReceptionTime?: string;
+    'RequestReceptionTime'?: string;
     /**
      * Gets the UTC time when response has been sent.
      * @type {string}
      * @memberof UtcTimeResponse
      */
-    ResponseTransmissionTime?: string;
+    'ResponseTransmissionTime'?: string;
 }
-
 

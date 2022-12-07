@@ -19,15 +19,17 @@
  * @enum {string}
  */
 
-export enum PluginStatus {
-    Active = 'Active',
-    Restart = 'Restart',
-    Deleted = 'Deleted',
-    Superceded = 'Superceded',
-    Malfunctioned = 'Malfunctioned',
-    NotSupported = 'NotSupported',
-    Disabled = 'Disabled'
-}
+export const PluginStatus = {
+    Active: 'Active',
+    Restart: 'Restart',
+    Deleted: 'Deleted',
+    Superceded: 'Superceded',
+    Malfunctioned: 'Malfunctioned',
+    NotSupported: 'NotSupported',
+    Disabled: 'Disabled'
+} as const;
+
+export type PluginStatus = typeof PluginStatus[keyof typeof PluginStatus];
 
 
 

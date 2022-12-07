@@ -25,31 +25,30 @@ export interface AccessSchedule {
      * @type {number}
      * @memberof AccessSchedule
      */
-    Id?: number;
+    'Id'?: number;
     /**
      * Gets the id of the associated user.
      * @type {string}
      * @memberof AccessSchedule
      */
-    UserId?: string;
+    'UserId'?: string;
     /**
      * 
      * @type {DynamicDayOfWeek}
      * @memberof AccessSchedule
      */
-    DayOfWeek?: DynamicDayOfWeek;
+    'DayOfWeek'?: DynamicDayOfWeek;
     /**
      * Gets or sets the start hour.
      * @type {number}
      * @memberof AccessSchedule
      */
-    StartHour?: number;
+    'StartHour'?: number;
     /**
      * Gets or sets the end hour.
      * @type {number}
      * @memberof AccessSchedule
      */
-    EndHour?: number;
+    'EndHour'?: number;
 }
-
 

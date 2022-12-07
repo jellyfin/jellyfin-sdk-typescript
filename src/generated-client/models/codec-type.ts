@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum CodecType {
-    Video = 'Video',
-    VideoAudio = 'VideoAudio',
-    Audio = 'Audio'
-}
+export const CodecType = {
+    Video: 'Video',
+    VideoAudio: 'VideoAudio',
+    Audio: 'Audio'
+} as const;
+
+export type CodecType = typeof CodecType[keyof typeof CodecType];
 
 
 

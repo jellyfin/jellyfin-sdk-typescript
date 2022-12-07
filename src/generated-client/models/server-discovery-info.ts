@@ -24,25 +24,24 @@ export interface ServerDiscoveryInfo {
      * @type {string}
      * @memberof ServerDiscoveryInfo
      */
-    Address?: string;
+    'Address'?: string;
     /**
      * Gets the server identifier.
      * @type {string}
      * @memberof ServerDiscoveryInfo
      */
-    Id?: string;
+    'Id'?: string;
     /**
      * Gets the name.
      * @type {string}
      * @memberof ServerDiscoveryInfo
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets the endpoint address.
      * @type {string}
      * @memberof ServerDiscoveryInfo
      */
-    EndpointAddress?: string | null;
+    'EndpointAddress'?: string | null;
 }
-
 

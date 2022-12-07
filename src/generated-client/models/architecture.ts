@@ -19,14 +19,16 @@
  * @enum {string}
  */
 
-export enum Architecture {
-    X86 = 'X86',
-    X64 = 'X64',
-    Arm = 'Arm',
-    Arm64 = 'Arm64',
-    Wasm = 'Wasm',
-    S390x = 'S390x'
-}
+export const Architecture = {
+    X86: 'X86',
+    X64: 'X64',
+    Arm: 'Arm',
+    Arm64: 'Arm64',
+    Wasm: 'Wasm',
+    S390x: 'S390x'
+} as const;
+
+export type Architecture = typeof Architecture[keyof typeof Architecture];
 
 
 

@@ -24,43 +24,42 @@ export interface ConfigImageTypes {
      * @type {Array<string>}
      * @memberof ConfigImageTypes
      */
-    BackdropSizes?: Array<string> | null;
+    'BackdropSizes'?: Array<string> | null;
     /**
      * 
      * @type {string}
      * @memberof ConfigImageTypes
      */
-    BaseUrl?: string | null;
+    'BaseUrl'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ConfigImageTypes
      */
-    LogoSizes?: Array<string> | null;
+    'LogoSizes'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ConfigImageTypes
      */
-    PosterSizes?: Array<string> | null;
+    'PosterSizes'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ConfigImageTypes
      */
-    ProfileSizes?: Array<string> | null;
+    'ProfileSizes'?: Array<string> | null;
     /**
      * 
      * @type {string}
      * @memberof ConfigImageTypes
      */
-    SecureBaseUrl?: string | null;
+    'SecureBaseUrl'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ConfigImageTypes
      */
-    StillSizes?: Array<string> | null;
+    'StillSizes'?: Array<string> | null;
 }
-
 

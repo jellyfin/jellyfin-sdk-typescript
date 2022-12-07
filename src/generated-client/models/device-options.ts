@@ -24,19 +24,18 @@ export interface DeviceOptions {
      * @type {number}
      * @memberof DeviceOptions
      */
-    Id?: number;
+    'Id'?: number;
     /**
      * Gets the device id.
      * @type {string}
      * @memberof DeviceOptions
      */
-    DeviceId?: string;
+    'DeviceId'?: string;
     /**
      * Gets or sets the custom name.
      * @type {string}
      * @memberof DeviceOptions
      */
-    CustomName?: string | null;
+    'CustomName'?: string | null;
 }
-
 

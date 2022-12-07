@@ -25,49 +25,48 @@ export interface LiveTvServiceInfo {
      * @type {string}
      * @memberof LiveTvServiceInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the home page URL.
      * @type {string}
      * @memberof LiveTvServiceInfo
      */
-    HomePageUrl?: string | null;
+    'HomePageUrl'?: string | null;
     /**
      * 
      * @type {LiveTvServiceStatus}
      * @memberof LiveTvServiceInfo
      */
-    Status?: LiveTvServiceStatus;
+    'Status'?: LiveTvServiceStatus;
     /**
      * Gets or sets the status message.
      * @type {string}
      * @memberof LiveTvServiceInfo
      */
-    StatusMessage?: string | null;
+    'StatusMessage'?: string | null;
     /**
      * Gets or sets the version.
      * @type {string}
      * @memberof LiveTvServiceInfo
      */
-    Version?: string | null;
+    'Version'?: string | null;
     /**
      * Gets or sets a value indicating whether this instance has update available.
      * @type {boolean}
      * @memberof LiveTvServiceInfo
      */
-    HasUpdateAvailable?: boolean;
+    'HasUpdateAvailable'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance is visible.
      * @type {boolean}
      * @memberof LiveTvServiceInfo
      */
-    IsVisible?: boolean;
+    'IsVisible'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof LiveTvServiceInfo
      */
-    Tuners?: Array<string> | null;
+    'Tuners'?: Array<string> | null;
 }
-
 

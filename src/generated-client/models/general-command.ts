@@ -25,19 +25,18 @@ export interface GeneralCommand {
      * @type {GeneralCommandType}
      * @memberof GeneralCommand
      */
-    Name?: GeneralCommandType;
+    'Name'?: GeneralCommandType;
     /**
      * 
      * @type {string}
      * @memberof GeneralCommand
      */
-    ControllingUserId?: string;
+    'ControllingUserId'?: string;
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof GeneralCommand
      */
-    Arguments?: { [key: string]: string; };
+    'Arguments'?: { [key: string]: string; };
 }
-
 

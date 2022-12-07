@@ -27,169 +27,168 @@ export interface TimerInfoDto {
      * @type {string}
      * @memberof TimerInfoDto
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TimerInfoDto
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets the server identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ServerId?: string | null;
+    'ServerId'?: string | null;
     /**
      * Gets or sets the external identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ExternalId?: string | null;
+    'ExternalId'?: string | null;
     /**
      * Gets or sets the channel id of the recording.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ChannelId?: string;
+    'ChannelId'?: string;
     /**
      * Gets or sets the external channel identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ExternalChannelId?: string | null;
+    'ExternalChannelId'?: string | null;
     /**
      * Gets or sets the channel name of the recording.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ChannelName?: string | null;
+    'ChannelName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ChannelPrimaryImageTag?: string | null;
+    'ChannelPrimaryImageTag'?: string | null;
     /**
      * Gets or sets the program identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ProgramId?: string | null;
+    'ProgramId'?: string | null;
     /**
      * Gets or sets the external program identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ExternalProgramId?: string | null;
+    'ExternalProgramId'?: string | null;
     /**
      * Gets or sets the name of the recording.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the description of the recording.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    Overview?: string | null;
+    'Overview'?: string | null;
     /**
      * Gets or sets the start date of the recording, in UTC.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    StartDate?: string;
+    'StartDate'?: string;
     /**
      * Gets or sets the end date of the recording, in UTC.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    EndDate?: string;
+    'EndDate'?: string;
     /**
      * Gets or sets the name of the service.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ServiceName?: string | null;
+    'ServiceName'?: string | null;
     /**
      * Gets or sets the priority.
      * @type {number}
      * @memberof TimerInfoDto
      */
-    Priority?: number;
+    'Priority'?: number;
     /**
      * Gets or sets the pre padding seconds.
      * @type {number}
      * @memberof TimerInfoDto
      */
-    PrePaddingSeconds?: number;
+    'PrePaddingSeconds'?: number;
     /**
      * Gets or sets the post padding seconds.
      * @type {number}
      * @memberof TimerInfoDto
      */
-    PostPaddingSeconds?: number;
+    'PostPaddingSeconds'?: number;
     /**
      * Gets or sets a value indicating whether this instance is pre padding required.
      * @type {boolean}
      * @memberof TimerInfoDto
      */
-    IsPrePaddingRequired?: boolean;
+    'IsPrePaddingRequired'?: boolean;
     /**
      * Gets or sets the Id of the Parent that has a backdrop if the item does not have one.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ParentBackdropItemId?: string | null;
+    'ParentBackdropItemId'?: string | null;
     /**
      * Gets or sets the parent backdrop image tags.
      * @type {Array<string>}
      * @memberof TimerInfoDto
      */
-    ParentBackdropImageTags?: Array<string> | null;
+    'ParentBackdropImageTags'?: Array<string> | null;
     /**
      * Gets or sets a value indicating whether this instance is post padding required.
      * @type {boolean}
      * @memberof TimerInfoDto
      */
-    IsPostPaddingRequired?: boolean;
+    'IsPostPaddingRequired'?: boolean;
     /**
      * 
      * @type {KeepUntil}
      * @memberof TimerInfoDto
      */
-    KeepUntil?: KeepUntil;
+    'KeepUntil'?: KeepUntil;
     /**
      * 
      * @type {RecordingStatus}
      * @memberof TimerInfoDto
      */
-    Status?: RecordingStatus;
+    'Status'?: RecordingStatus;
     /**
      * Gets or sets the series timer identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    SeriesTimerId?: string | null;
+    'SeriesTimerId'?: string | null;
     /**
      * Gets or sets the external series timer identifier.
      * @type {string}
      * @memberof TimerInfoDto
      */
-    ExternalSeriesTimerId?: string | null;
+    'ExternalSeriesTimerId'?: string | null;
     /**
      * Gets or sets the run time ticks.
      * @type {number}
      * @memberof TimerInfoDto
      */
-    RunTimeTicks?: number | null;
+    'RunTimeTicks'?: number | null;
     /**
      * 
      * @type {BaseItemDto}
      * @memberof TimerInfoDto
      */
-    ProgramInfo?: BaseItemDto;
+    'ProgramInfo'?: BaseItemDto;
 }
-
 

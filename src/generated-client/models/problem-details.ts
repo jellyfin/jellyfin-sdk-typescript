@@ -26,31 +26,30 @@ export interface ProblemDetails {
      * @type {string}
      * @memberof ProblemDetails
      */
-    type?: string | null;
+    'type'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ProblemDetails
      */
-    title?: string | null;
+    'title'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof ProblemDetails
      */
-    status?: number | null;
+    'status'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof ProblemDetails
      */
-    detail?: string | null;
+    'detail'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ProblemDetails
      */
-    instance?: string | null;
+    'instance'?: string | null;
 }
-
 

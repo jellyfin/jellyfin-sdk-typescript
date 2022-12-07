@@ -24,13 +24,12 @@ export interface SessionUserInfo {
      * @type {string}
      * @memberof SessionUserInfo
      */
-    UserId?: string;
+    'UserId'?: string;
     /**
      * Gets or sets the name of the user.
      * @type {string}
      * @memberof SessionUserInfo
      */
-    UserName?: string | null;
+    'UserName'?: string | null;
 }
-
 

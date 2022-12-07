@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum SortOrder {
-    Ascending = 'Ascending',
-    Descending = 'Descending'
-}
+export const SortOrder = {
+    Ascending: 'Ascending',
+    Descending: 'Descending'
+} as const;
+
+export type SortOrder = typeof SortOrder[keyof typeof SortOrder];
 
 
 

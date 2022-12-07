@@ -26,25 +26,24 @@ export interface ProfileCondition {
      * @type {ProfileConditionType}
      * @memberof ProfileCondition
      */
-    Condition?: ProfileConditionType;
+    'Condition'?: ProfileConditionType;
     /**
      * 
      * @type {ProfileConditionValue}
      * @memberof ProfileCondition
      */
-    Property?: ProfileConditionValue;
+    'Property'?: ProfileConditionValue;
     /**
      * 
      * @type {string}
      * @memberof ProfileCondition
      */
-    Value?: string | null;
+    'Value'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof ProfileCondition
      */
-    IsRequired?: boolean;
+    'IsRequired'?: boolean;
 }
-
 

@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum LiveTvServiceStatus {
-    Ok = 'Ok',
-    Unavailable = 'Unavailable'
-}
+export const LiveTvServiceStatus = {
+    Ok: 'Ok',
+    Unavailable: 'Unavailable'
+} as const;
+
+export type LiveTvServiceStatus = typeof LiveTvServiceStatus[keyof typeof LiveTvServiceStatus];
 
 
 

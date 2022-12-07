@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum GroupShuffleMode {
-    Sorted = 'Sorted',
-    Shuffle = 'Shuffle'
-}
+export const GroupShuffleMode = {
+    Sorted: 'Sorted',
+    Shuffle: 'Shuffle'
+} as const;
+
+export type GroupShuffleMode = typeof GroupShuffleMode[keyof typeof GroupShuffleMode];
 
 
 

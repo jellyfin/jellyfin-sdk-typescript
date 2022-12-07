@@ -19,19 +19,21 @@
  * @enum {string}
  */
 
-export enum GroupUpdateType {
-    UserJoined = 'UserJoined',
-    UserLeft = 'UserLeft',
-    GroupJoined = 'GroupJoined',
-    GroupLeft = 'GroupLeft',
-    StateUpdate = 'StateUpdate',
-    PlayQueue = 'PlayQueue',
-    NotInGroup = 'NotInGroup',
-    GroupDoesNotExist = 'GroupDoesNotExist',
-    CreateGroupDenied = 'CreateGroupDenied',
-    JoinGroupDenied = 'JoinGroupDenied',
-    LibraryAccessDenied = 'LibraryAccessDenied'
-}
+export const GroupUpdateType = {
+    UserJoined: 'UserJoined',
+    UserLeft: 'UserLeft',
+    GroupJoined: 'GroupJoined',
+    GroupLeft: 'GroupLeft',
+    StateUpdate: 'StateUpdate',
+    PlayQueue: 'PlayQueue',
+    NotInGroup: 'NotInGroup',
+    GroupDoesNotExist: 'GroupDoesNotExist',
+    CreateGroupDenied: 'CreateGroupDenied',
+    JoinGroupDenied: 'JoinGroupDenied',
+    LibraryAccessDenied: 'LibraryAccessDenied'
+} as const;
+
+export type GroupUpdateType = typeof GroupUpdateType[keyof typeof GroupUpdateType];
 
 
 

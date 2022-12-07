@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum GroupQueueMode {
-    Queue = 'Queue',
-    QueueNext = 'QueueNext'
-}
+export const GroupQueueMode = {
+    Queue: 'Queue',
+    QueueNext: 'QueueNext'
+} as const;
+
+export type GroupQueueMode = typeof GroupQueueMode[keyof typeof GroupQueueMode];
 
 
 

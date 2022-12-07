@@ -19,13 +19,15 @@
  * @enum {string}
  */
 
-export enum ImageFormat {
-    Bmp = 'Bmp',
-    Gif = 'Gif',
-    Jpg = 'Jpg',
-    Png = 'Png',
-    Webp = 'Webp'
-}
+export const ImageFormat = {
+    Bmp: 'Bmp',
+    Gif: 'Gif',
+    Jpg: 'Jpg',
+    Png: 'Png',
+    Webp: 'Webp'
+} as const;
+
+export type ImageFormat = typeof ImageFormat[keyof typeof ImageFormat];
 
 
 

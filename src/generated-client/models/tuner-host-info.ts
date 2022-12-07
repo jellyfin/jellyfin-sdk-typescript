@@ -24,67 +24,66 @@ export interface TunerHostInfo {
      * @type {string}
      * @memberof TunerHostInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    Url?: string | null;
+    'Url'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    DeviceId?: string | null;
+    'DeviceId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    FriendlyName?: string | null;
+    'FriendlyName'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof TunerHostInfo
      */
-    ImportFavoritesOnly?: boolean;
+    'ImportFavoritesOnly'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof TunerHostInfo
      */
-    AllowHWTranscoding?: boolean;
+    'AllowHWTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof TunerHostInfo
      */
-    EnableStreamLooping?: boolean;
+    'EnableStreamLooping'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    Source?: string | null;
+    'Source'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof TunerHostInfo
      */
-    TunerCount?: number;
+    'TunerCount'?: number;
     /**
      * 
      * @type {string}
      * @memberof TunerHostInfo
      */
-    UserAgent?: string | null;
+    'UserAgent'?: string | null;
 }
-
 

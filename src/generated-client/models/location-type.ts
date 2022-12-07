@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum LocationType {
-    FileSystem = 'FileSystem',
-    Remote = 'Remote',
-    Virtual = 'Virtual',
-    Offline = 'Offline'
-}
+export const LocationType = {
+    FileSystem: 'FileSystem',
+    Remote: 'Remote',
+    Virtual: 'Virtual',
+    Offline: 'Offline'
+} as const;
+
+export type LocationType = typeof LocationType[keyof typeof LocationType];
 
 
 

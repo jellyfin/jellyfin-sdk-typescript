@@ -24,67 +24,66 @@ export interface BoxSetInfo {
      * @type {string}
      * @memberof BoxSetInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the original title.
      * @type {string}
      * @memberof BoxSetInfo
      */
-    OriginalTitle?: string | null;
+    'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof BoxSetInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
      * @type {string}
      * @memberof BoxSetInfo
      */
-    MetadataLanguage?: string | null;
+    'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof BoxSetInfo
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof BoxSetInfo
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof BoxSetInfo
      */
-    Year?: number | null;
+    'Year'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof BoxSetInfo
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof BoxSetInfo
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof BoxSetInfo
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof BoxSetInfo
      */
-    IsAutomated?: boolean;
+    'IsAutomated'?: boolean;
 }
-
 

@@ -24,67 +24,66 @@ export interface MovieInfo {
      * @type {string}
      * @memberof MovieInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the original title.
      * @type {string}
      * @memberof MovieInfo
      */
-    OriginalTitle?: string | null;
+    'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof MovieInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
      * @type {string}
      * @memberof MovieInfo
      */
-    MetadataLanguage?: string | null;
+    'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof MovieInfo
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof MovieInfo
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof MovieInfo
      */
-    Year?: number | null;
+    'Year'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof MovieInfo
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof MovieInfo
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof MovieInfo
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof MovieInfo
      */
-    IsAutomated?: boolean;
+    'IsAutomated'?: boolean;
 }
-
 

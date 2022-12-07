@@ -24,55 +24,54 @@ export interface SubtitleOptions {
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    SkipIfEmbeddedSubtitlesPresent?: boolean;
+    'SkipIfEmbeddedSubtitlesPresent'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    SkipIfAudioTrackMatches?: boolean;
+    'SkipIfAudioTrackMatches'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof SubtitleOptions
      */
-    DownloadLanguages?: Array<string> | null;
+    'DownloadLanguages'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    DownloadMovieSubtitles?: boolean;
+    'DownloadMovieSubtitles'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    DownloadEpisodeSubtitles?: boolean;
+    'DownloadEpisodeSubtitles'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof SubtitleOptions
      */
-    OpenSubtitlesUsername?: string | null;
+    'OpenSubtitlesUsername'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SubtitleOptions
      */
-    OpenSubtitlesPasswordHash?: string | null;
+    'OpenSubtitlesPasswordHash'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    IsOpenSubtitleVipAccount?: boolean;
+    'IsOpenSubtitleVipAccount'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SubtitleOptions
      */
-    RequirePerfectMatch?: boolean;
+    'RequirePerfectMatch'?: boolean;
 }
-
 

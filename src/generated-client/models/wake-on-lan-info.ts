@@ -24,13 +24,12 @@ export interface WakeOnLanInfo {
      * @type {string}
      * @memberof WakeOnLanInfo
      */
-    MacAddress?: string | null;
+    'MacAddress'?: string | null;
     /**
      * Gets or sets the wake-on-LAN port.
      * @type {number}
      * @memberof WakeOnLanInfo
      */
-    Port?: number;
+    'Port'?: number;
 }
-
 

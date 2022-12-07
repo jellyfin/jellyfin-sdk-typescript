@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum ImageSavingConvention {
-    Legacy = 'Legacy',
-    Compatible = 'Compatible'
-}
+export const ImageSavingConvention = {
+    Legacy: 'Legacy',
+    Compatible: 'Compatible'
+} as const;
+
+export type ImageSavingConvention = typeof ImageSavingConvention[keyof typeof ImageSavingConvention];
 
 
 

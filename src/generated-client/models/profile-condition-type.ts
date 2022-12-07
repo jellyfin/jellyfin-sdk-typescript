@@ -19,13 +19,15 @@
  * @enum {string}
  */
 
-export enum ProfileConditionType {
-    Equals = 'Equals',
-    NotEquals = 'NotEquals',
-    LessThanEqual = 'LessThanEqual',
-    GreaterThanEqual = 'GreaterThanEqual',
-    EqualsAny = 'EqualsAny'
-}
+export const ProfileConditionType = {
+    Equals: 'Equals',
+    NotEquals: 'NotEquals',
+    LessThanEqual: 'LessThanEqual',
+    GreaterThanEqual: 'GreaterThanEqual',
+    EqualsAny: 'EqualsAny'
+} as const;
+
+export type ProfileConditionType = typeof ProfileConditionType[keyof typeof ProfileConditionType];
 
 
 

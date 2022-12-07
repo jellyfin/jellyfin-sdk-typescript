@@ -19,17 +19,19 @@
  * @enum {string}
  */
 
-export enum PlaystateCommand {
-    Stop = 'Stop',
-    Pause = 'Pause',
-    Unpause = 'Unpause',
-    NextTrack = 'NextTrack',
-    PreviousTrack = 'PreviousTrack',
-    Seek = 'Seek',
-    Rewind = 'Rewind',
-    FastForward = 'FastForward',
-    PlayPause = 'PlayPause'
-}
+export const PlaystateCommand = {
+    Stop: 'Stop',
+    Pause: 'Pause',
+    Unpause: 'Unpause',
+    NextTrack: 'NextTrack',
+    PreviousTrack: 'PreviousTrack',
+    Seek: 'Seek',
+    Rewind: 'Rewind',
+    FastForward: 'FastForward',
+    PlayPause: 'PlayPause'
+} as const;
+
+export type PlaystateCommand = typeof PlaystateCommand[keyof typeof PlaystateCommand];
 
 
 

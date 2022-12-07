@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum EncodingContext {
-    Streaming = 'Streaming',
-    Static = 'Static'
-}
+export const EncodingContext = {
+    Streaming: 'Streaming',
+    Static: 'Static'
+} as const;
+
+export type EncodingContext = typeof EncodingContext[keyof typeof EncodingContext];
 
 
 

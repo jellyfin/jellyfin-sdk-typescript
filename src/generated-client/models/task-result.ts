@@ -25,49 +25,48 @@ export interface TaskResult {
      * @type {string}
      * @memberof TaskResult
      */
-    StartTimeUtc?: string;
+    'StartTimeUtc'?: string;
     /**
      * Gets or sets the end time UTC.
      * @type {string}
      * @memberof TaskResult
      */
-    EndTimeUtc?: string;
+    'EndTimeUtc'?: string;
     /**
      * 
      * @type {TaskCompletionStatus}
      * @memberof TaskResult
      */
-    Status?: TaskCompletionStatus;
+    'Status'?: TaskCompletionStatus;
     /**
      * Gets or sets the name.
      * @type {string}
      * @memberof TaskResult
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the key.
      * @type {string}
      * @memberof TaskResult
      */
-    Key?: string | null;
+    'Key'?: string | null;
     /**
      * Gets or sets the id.
      * @type {string}
      * @memberof TaskResult
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * Gets or sets the error message.
      * @type {string}
      * @memberof TaskResult
      */
-    ErrorMessage?: string | null;
+    'ErrorMessage'?: string | null;
     /**
      * Gets or sets the long error message.
      * @type {string}
      * @memberof TaskResult
      */
-    LongErrorMessage?: string | null;
+    'LongErrorMessage'?: string | null;
 }
-
 

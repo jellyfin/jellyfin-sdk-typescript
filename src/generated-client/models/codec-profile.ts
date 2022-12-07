@@ -26,31 +26,30 @@ export interface CodecProfile {
      * @type {CodecType}
      * @memberof CodecProfile
      */
-    Type?: CodecType;
+    'Type'?: CodecType;
     /**
      * 
      * @type {Array<ProfileCondition>}
      * @memberof CodecProfile
      */
-    Conditions?: Array<ProfileCondition> | null;
+    'Conditions'?: Array<ProfileCondition> | null;
     /**
      * 
      * @type {Array<ProfileCondition>}
      * @memberof CodecProfile
      */
-    ApplyConditions?: Array<ProfileCondition> | null;
+    'ApplyConditions'?: Array<ProfileCondition> | null;
     /**
      * 
      * @type {string}
      * @memberof CodecProfile
      */
-    Codec?: string | null;
+    'Codec'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof CodecProfile
      */
-    Container?: string | null;
+    'Container'?: string | null;
 }
-
 

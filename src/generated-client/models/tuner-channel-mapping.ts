@@ -24,25 +24,24 @@ export interface TunerChannelMapping {
      * @type {string}
      * @memberof TunerChannelMapping
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerChannelMapping
      */
-    ProviderChannelName?: string | null;
+    'ProviderChannelName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerChannelMapping
      */
-    ProviderChannelId?: string | null;
+    'ProviderChannelId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof TunerChannelMapping
      */
-    Id?: string | null;
+    'Id'?: string | null;
 }
-
 

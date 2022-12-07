@@ -19,14 +19,16 @@
  * @enum {string}
  */
 
-export enum ProgramAudio {
-    Mono = 'Mono',
-    Stereo = 'Stereo',
-    Dolby = 'Dolby',
-    DolbyDigital = 'DolbyDigital',
-    Thx = 'Thx',
-    Atmos = 'Atmos'
-}
+export const ProgramAudio = {
+    Mono: 'Mono',
+    Stereo: 'Stereo',
+    Dolby: 'Dolby',
+    DolbyDigital: 'DolbyDigital',
+    Thx: 'Thx',
+    Atmos: 'Atmos'
+} as const;
+
+export type ProgramAudio = typeof ProgramAudio[keyof typeof ProgramAudio];
 
 
 

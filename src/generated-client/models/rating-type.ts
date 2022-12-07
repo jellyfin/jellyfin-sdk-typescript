@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum RatingType {
-    Score = 'Score',
-    Likes = 'Likes'
-}
+export const RatingType = {
+    Score: 'Score',
+    Likes: 'Likes'
+} as const;
+
+export type RatingType = typeof RatingType[keyof typeof RatingType];
 
 
 

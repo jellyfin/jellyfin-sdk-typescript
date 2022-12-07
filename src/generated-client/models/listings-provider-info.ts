@@ -25,109 +25,108 @@ export interface ListingsProviderInfo {
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Username?: string | null;
+    'Username'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Password?: string | null;
+    'Password'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    ListingsId?: string | null;
+    'ListingsId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    ZipCode?: string | null;
+    'ZipCode'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Country?: string | null;
+    'Country'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ListingsProviderInfo
      */
-    EnabledTuners?: Array<string> | null;
+    'EnabledTuners'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof ListingsProviderInfo
      */
-    EnableAllTuners?: boolean;
+    'EnableAllTuners'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof ListingsProviderInfo
      */
-    NewsCategories?: Array<string> | null;
+    'NewsCategories'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ListingsProviderInfo
      */
-    SportsCategories?: Array<string> | null;
+    'SportsCategories'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ListingsProviderInfo
      */
-    KidsCategories?: Array<string> | null;
+    'KidsCategories'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof ListingsProviderInfo
      */
-    MovieCategories?: Array<string> | null;
+    'MovieCategories'?: Array<string> | null;
     /**
      * 
      * @type {Array<NameValuePair>}
      * @memberof ListingsProviderInfo
      */
-    ChannelMappings?: Array<NameValuePair> | null;
+    'ChannelMappings'?: Array<NameValuePair> | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    MoviePrefix?: string | null;
+    'MoviePrefix'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    PreferredLanguage?: string | null;
+    'PreferredLanguage'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ListingsProviderInfo
      */
-    UserAgent?: string | null;
+    'UserAgent'?: string | null;
 }
-
 

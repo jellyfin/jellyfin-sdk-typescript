@@ -24,73 +24,72 @@ export interface BookInfo {
      * @type {string}
      * @memberof BookInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the original title.
      * @type {string}
      * @memberof BookInfo
      */
-    OriginalTitle?: string | null;
+    'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof BookInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
      * @type {string}
      * @memberof BookInfo
      */
-    MetadataLanguage?: string | null;
+    'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof BookInfo
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof BookInfo
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof BookInfo
      */
-    Year?: number | null;
+    'Year'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof BookInfo
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof BookInfo
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof BookInfo
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof BookInfo
      */
-    IsAutomated?: boolean;
+    'IsAutomated'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof BookInfo
      */
-    SeriesName?: string | null;
+    'SeriesName'?: string | null;
 }
-
 

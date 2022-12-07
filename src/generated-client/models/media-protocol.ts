@@ -19,15 +19,17 @@
  * @enum {string}
  */
 
-export enum MediaProtocol {
-    File = 'File',
-    Http = 'Http',
-    Rtmp = 'Rtmp',
-    Rtsp = 'Rtsp',
-    Udp = 'Udp',
-    Rtp = 'Rtp',
-    Ftp = 'Ftp'
-}
+export const MediaProtocol = {
+    File: 'File',
+    Http: 'Http',
+    Rtmp: 'Rtmp',
+    Rtsp: 'Rtsp',
+    Udp: 'Udp',
+    Rtp: 'Rtp',
+    Ftp: 'Ftp'
+} as const;
+
+export type MediaProtocol = typeof MediaProtocol[keyof typeof MediaProtocol];
 
 
 

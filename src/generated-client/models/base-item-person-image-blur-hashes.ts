@@ -24,79 +24,78 @@ export interface BaseItemPersonImageBlurHashes {
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Primary?: { [key: string]: string; };
+    'Primary'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Art?: { [key: string]: string; };
+    'Art'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Backdrop?: { [key: string]: string; };
+    'Backdrop'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Banner?: { [key: string]: string; };
+    'Banner'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Logo?: { [key: string]: string; };
+    'Logo'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Thumb?: { [key: string]: string; };
+    'Thumb'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Disc?: { [key: string]: string; };
+    'Disc'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Box?: { [key: string]: string; };
+    'Box'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Screenshot?: { [key: string]: string; };
+    'Screenshot'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Menu?: { [key: string]: string; };
+    'Menu'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Chapter?: { [key: string]: string; };
+    'Chapter'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    BoxRear?: { [key: string]: string; };
+    'BoxRear'?: { [key: string]: string; };
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    Profile?: { [key: string]: string; };
+    'Profile'?: { [key: string]: string; };
 }
-
 

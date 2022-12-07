@@ -25,19 +25,18 @@ export interface RemoteImageResult {
      * @type {Array<RemoteImageInfo>}
      * @memberof RemoteImageResult
      */
-    Images?: Array<RemoteImageInfo> | null;
+    'Images'?: Array<RemoteImageInfo> | null;
     /**
      * Gets or sets the total record count.
      * @type {number}
      * @memberof RemoteImageResult
      */
-    TotalRecordCount?: number;
+    'TotalRecordCount'?: number;
     /**
      * Gets or sets the providers.
      * @type {Array<string>}
      * @memberof RemoteImageResult
      */
-    Providers?: Array<string> | null;
+    'Providers'?: Array<string> | null;
 }
-
 

@@ -24,67 +24,66 @@ export interface UserItemDataDto {
      * @type {number}
      * @memberof UserItemDataDto
      */
-    Rating?: number | null;
+    'Rating'?: number | null;
     /**
      * Gets or sets the played percentage.
      * @type {number}
      * @memberof UserItemDataDto
      */
-    PlayedPercentage?: number | null;
+    'PlayedPercentage'?: number | null;
     /**
      * Gets or sets the unplayed item count.
      * @type {number}
      * @memberof UserItemDataDto
      */
-    UnplayedItemCount?: number | null;
+    'UnplayedItemCount'?: number | null;
     /**
      * Gets or sets the playback position ticks.
      * @type {number}
      * @memberof UserItemDataDto
      */
-    PlaybackPositionTicks?: number;
+    'PlaybackPositionTicks'?: number;
     /**
      * Gets or sets the play count.
      * @type {number}
      * @memberof UserItemDataDto
      */
-    PlayCount?: number;
+    'PlayCount'?: number;
     /**
      * Gets or sets a value indicating whether this instance is favorite.
      * @type {boolean}
      * @memberof UserItemDataDto
      */
-    IsFavorite?: boolean;
+    'IsFavorite'?: boolean;
     /**
      * Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemDataDto is likes.
      * @type {boolean}
      * @memberof UserItemDataDto
      */
-    Likes?: boolean | null;
+    'Likes'?: boolean | null;
     /**
      * Gets or sets the last played date.
      * @type {string}
      * @memberof UserItemDataDto
      */
-    LastPlayedDate?: string | null;
+    'LastPlayedDate'?: string | null;
     /**
      * Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemDataDto is played.
      * @type {boolean}
      * @memberof UserItemDataDto
      */
-    Played?: boolean;
+    'Played'?: boolean;
     /**
      * Gets or sets the key.
      * @type {string}
      * @memberof UserItemDataDto
      */
-    Key?: string | null;
+    'Key'?: string | null;
     /**
      * Gets or sets the item identifier.
      * @type {string}
      * @memberof UserItemDataDto
      */
-    ItemId?: string | null;
+    'ItemId'?: string | null;
 }
-
 

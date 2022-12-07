@@ -24,19 +24,18 @@ export interface RemoveFromPlaylistRequestDto {
      * @type {Array<string>}
      * @memberof RemoveFromPlaylistRequestDto
      */
-    PlaylistItemIds?: Array<string>;
+    'PlaylistItemIds'?: Array<string>;
     /**
      * Gets or sets a value indicating whether the entire playlist should be cleared.
      * @type {boolean}
      * @memberof RemoveFromPlaylistRequestDto
      */
-    ClearPlaylist?: boolean;
+    'ClearPlaylist'?: boolean;
     /**
      * Gets or sets a value indicating whether the playing item should be removed as well. Used only when clearing the playlist.
      * @type {boolean}
      * @memberof RemoveFromPlaylistRequestDto
      */
-    ClearPlayingItem?: boolean;
+    'ClearPlayingItem'?: boolean;
 }
-
 

@@ -24,13 +24,12 @@ export interface MediaEncoderPathDto {
      * @type {string}
      * @memberof MediaEncoderPathDto
      */
-    Path?: string;
+    'Path'?: string;
     /**
      * Gets or sets media encoder path type.
      * @type {string}
      * @memberof MediaEncoderPathDto
      */
-    PathType?: string;
+    'PathType'?: string;
 }
-
 

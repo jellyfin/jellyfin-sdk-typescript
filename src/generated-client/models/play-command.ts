@@ -19,13 +19,15 @@
  * @enum {string}
  */
 
-export enum PlayCommand {
-    PlayNow = 'PlayNow',
-    PlayNext = 'PlayNext',
-    PlayLast = 'PlayLast',
-    PlayInstantMix = 'PlayInstantMix',
-    PlayShuffle = 'PlayShuffle'
-}
+export const PlayCommand = {
+    PlayNow: 'PlayNow',
+    PlayNext: 'PlayNext',
+    PlayLast: 'PlayLast',
+    PlayInstantMix: 'PlayInstantMix',
+    PlayShuffle: 'PlayShuffle'
+} as const;
+
+export type PlayCommand = typeof PlayCommand[keyof typeof PlayCommand];
 
 
 

@@ -25,7 +25,6 @@ export interface NotificationOptions {
      * @type {Array<NotificationOption>}
      * @memberof NotificationOptions
      */
-    Options?: Array<NotificationOption> | null;
+    'Options'?: Array<NotificationOption> | null;
 }
-
 

@@ -25,13 +25,12 @@ export interface SearchHintResult {
      * @type {Array<SearchHint>}
      * @memberof SearchHintResult
      */
-    SearchHints?: Array<SearchHint>;
+    'SearchHints'?: Array<SearchHint>;
     /**
      * Gets the total record count.
      * @type {number}
      * @memberof SearchHintResult
      */
-    TotalRecordCount?: number;
+    'TotalRecordCount'?: number;
 }
-
 

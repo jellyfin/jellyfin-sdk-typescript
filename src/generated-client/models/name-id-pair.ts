@@ -24,13 +24,12 @@ export interface NameIdPair {
      * @type {string}
      * @memberof NameIdPair
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the identifier.
      * @type {string}
      * @memberof NameIdPair
      */
-    Id?: string | null;
+    'Id'?: string | null;
 }
-
 

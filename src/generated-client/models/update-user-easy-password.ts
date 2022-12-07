@@ -24,19 +24,18 @@ export interface UpdateUserEasyPassword {
      * @type {string}
      * @memberof UpdateUserEasyPassword
      */
-    NewPassword?: string | null;
+    'NewPassword'?: string | null;
     /**
      * Gets or sets the new password.
      * @type {string}
      * @memberof UpdateUserEasyPassword
      */
-    NewPw?: string | null;
+    'NewPw'?: string | null;
     /**
      * Gets or sets a value indicating whether to reset the password.
      * @type {boolean}
      * @memberof UpdateUserEasyPassword
      */
-    ResetPassword?: boolean;
+    'ResetPassword'?: boolean;
 }
-
 

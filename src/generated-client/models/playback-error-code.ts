@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum PlaybackErrorCode {
-    NotAllowed = 'NotAllowed',
-    NoCompatibleStream = 'NoCompatibleStream',
-    RateLimitExceeded = 'RateLimitExceeded'
-}
+export const PlaybackErrorCode = {
+    NotAllowed: 'NotAllowed',
+    NoCompatibleStream: 'NoCompatibleStream',
+    RateLimitExceeded: 'RateLimitExceeded'
+} as const;
+
+export type PlaybackErrorCode = typeof PlaybackErrorCode[keyof typeof PlaybackErrorCode];
 
 
 
