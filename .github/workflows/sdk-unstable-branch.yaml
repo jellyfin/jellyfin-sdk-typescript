@@ -1,0 +1,59 @@
+name: SDK / Unstable branch
+
+on:
+  schedule:
+    - cron: '0 5 * * *'
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+concurrency:
+  group: unstable-branch
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
+        with:
+          ref: master
+          token: ${{ secrets.JF_BOT_TOKEN }}
+
+      - name: Set up Node.js
+        uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # tag=v3
+        with:
+          node-version: 16
+          check-latest: true
+          cache: npm
+
+      - name: Download unstable OpenAPI schema
+        run: |
+          curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-unstable.json -o openapi.json
+          npm run fix-schema
+          cp openapi.json $HOME
+
+      - name: Set UNSTABLE_API_VERSION
+        run: |
+          VERSION=$(jq -r .info.version openapi.json)
+          echo "UNSTABLE_API_VERSION=${VERSION}" >> $GITHUB_ENV
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
+
+      - name: Update generated sources
+        run: |
+          cp $HOME/openapi.json .
+          npm run build:generated-client
+          sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.UNSTABLE_API_VERSION }}'/" src/jellyfin.ts
+
+      - name: Commit changes
+        run: |
+          git config user.name jellyfin-bot
+          git config user.email team@jellyfin.org
+          git checkout -B openapi-unstable
+          git add .
+          git commit --allow-empty -m "Update OpenAPI to unstable"
+          git push --force origin openapi-unstable
