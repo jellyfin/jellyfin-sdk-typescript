@@ -81,7 +81,11 @@ export class Api {
 	 * @param params Additional request parameters.
 	 * @returns The image URL.
 	 */
-	getItemImageUrl(itemId: string, imageType = ImageType.Primary, params: ImageRequestParameters = {}): string | undefined {
+	getItemImageUrl(
+		itemId: string,
+		imageType: ImageType = ImageType.Primary,
+		params: ImageRequestParameters = {}
+	): string | undefined {
 		// TODO: We could probably use ImageApiAxiosParamCreator to make this more robust
 		return globalInstance.create({
 			baseURL: this.basePath
