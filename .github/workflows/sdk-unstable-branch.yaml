@@ -1,4 +1,4 @@
-name: SDK / Unstable branch
+name: SDK Unstable Branch
 
 on:
   schedule:
