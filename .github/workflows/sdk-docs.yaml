@@ -25,7 +25,7 @@ jobs:
           npm ci --no-audit
           npm run docs
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@4506126207ed04f7c31e67d0b20154fc373f2505 # v1
+        uses: actions/upload-pages-artifact@c8641e80048cf33d329c39df3bcc53196178335a # v1
         with:
           path: ./docs
 
