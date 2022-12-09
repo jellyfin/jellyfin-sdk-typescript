@@ -32,253 +32,252 @@ export interface MediaSourceInfo {
      * @type {MediaProtocol}
      * @memberof MediaSourceInfo
      */
-    Protocol?: MediaProtocol;
+    'Protocol'?: MediaProtocol;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    EncoderPath?: string | null;
+    'EncoderPath'?: string | null;
     /**
      * 
      * @type {MediaProtocol}
      * @memberof MediaSourceInfo
      */
-    EncoderProtocol?: MediaProtocol;
+    'EncoderProtocol'?: MediaProtocol;
     /**
      * 
      * @type {MediaSourceType}
      * @memberof MediaSourceInfo
      */
-    Type?: MediaSourceType;
+    'Type'?: MediaSourceType;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    Container?: string | null;
+    'Container'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    Size?: number | null;
+    'Size'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets a value indicating whether the media is remote.  Differentiate internet url vs local network.
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    IsRemote?: boolean;
+    'IsRemote'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    ETag?: string | null;
+    'ETag'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    RunTimeTicks?: number | null;
+    'RunTimeTicks'?: number | null;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    ReadAtNativeFramerate?: boolean;
+    'ReadAtNativeFramerate'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    IgnoreDts?: boolean;
+    'IgnoreDts'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    IgnoreIndex?: boolean;
+    'IgnoreIndex'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    GenPtsInput?: boolean;
+    'GenPtsInput'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    SupportsTranscoding?: boolean;
+    'SupportsTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    SupportsDirectStream?: boolean;
+    'SupportsDirectStream'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    SupportsDirectPlay?: boolean;
+    'SupportsDirectPlay'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    IsInfiniteStream?: boolean;
+    'IsInfiniteStream'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    RequiresOpening?: boolean;
+    'RequiresOpening'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    OpenToken?: string | null;
+    'OpenToken'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    RequiresClosing?: boolean;
+    'RequiresClosing'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    LiveStreamId?: string | null;
+    'LiveStreamId'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    BufferMs?: number | null;
+    'BufferMs'?: number | null;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    RequiresLooping?: boolean;
+    'RequiresLooping'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
-    SupportsProbing?: boolean;
+    'SupportsProbing'?: boolean;
     /**
      * 
      * @type {VideoType}
      * @memberof MediaSourceInfo
      */
-    VideoType?: VideoType;
+    'VideoType'?: VideoType;
     /**
      * 
      * @type {IsoType}
      * @memberof MediaSourceInfo
      */
-    IsoType?: IsoType;
+    'IsoType'?: IsoType;
     /**
      * 
      * @type {Video3DFormat}
      * @memberof MediaSourceInfo
      */
-    Video3DFormat?: Video3DFormat;
+    'Video3DFormat'?: Video3DFormat;
     /**
      * 
      * @type {Array<MediaStream>}
      * @memberof MediaSourceInfo
      */
-    MediaStreams?: Array<MediaStream> | null;
+    'MediaStreams'?: Array<MediaStream> | null;
     /**
      * 
      * @type {Array<MediaAttachment>}
      * @memberof MediaSourceInfo
      */
-    MediaAttachments?: Array<MediaAttachment> | null;
+    'MediaAttachments'?: Array<MediaAttachment> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MediaSourceInfo
      */
-    Formats?: Array<string> | null;
+    'Formats'?: Array<string> | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    Bitrate?: number | null;
+    'Bitrate'?: number | null;
     /**
      * 
      * @type {TransportStreamTimestamp}
      * @memberof MediaSourceInfo
      */
-    Timestamp?: TransportStreamTimestamp;
+    'Timestamp'?: TransportStreamTimestamp;
     /**
      * 
      * @type {{ [key: string]: string; }}
      * @memberof MediaSourceInfo
      */
-    RequiredHttpHeaders?: { [key: string]: string; } | null;
+    'RequiredHttpHeaders'?: { [key: string]: string; } | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    TranscodingUrl?: string | null;
+    'TranscodingUrl'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    TranscodingSubProtocol?: string | null;
+    'TranscodingSubProtocol'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MediaSourceInfo
      */
-    TranscodingContainer?: string | null;
+    'TranscodingContainer'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    AnalyzeDurationMs?: number | null;
+    'AnalyzeDurationMs'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    DefaultAudioStreamIndex?: number | null;
+    'DefaultAudioStreamIndex'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof MediaSourceInfo
      */
-    DefaultSubtitleStreamIndex?: number | null;
+    'DefaultSubtitleStreamIndex'?: number | null;
 }
-
 

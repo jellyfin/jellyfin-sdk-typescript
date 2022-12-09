@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum FileSystemEntryType {
-    File = 'File',
-    Directory = 'Directory',
-    NetworkComputer = 'NetworkComputer',
-    NetworkShare = 'NetworkShare'
-}
+export const FileSystemEntryType = {
+    File: 'File',
+    Directory: 'Directory',
+    NetworkComputer: 'NetworkComputer',
+    NetworkShare: 'NetworkShare'
+} as const;
+
+export type FileSystemEntryType = typeof FileSystemEntryType[keyof typeof FileSystemEntryType];
 
 
 

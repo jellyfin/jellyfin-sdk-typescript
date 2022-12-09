@@ -24,13 +24,12 @@ export interface LibraryOptionInfoDto {
      * @type {string}
      * @memberof LibraryOptionInfoDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets a value indicating whether default enabled.
      * @type {boolean}
      * @memberof LibraryOptionInfoDto
      */
-    DefaultEnabled?: boolean;
+    'DefaultEnabled'?: boolean;
 }
-
 

@@ -24,19 +24,18 @@ export interface MessageCommand {
      * @type {string}
      * @memberof MessageCommand
      */
-    Header?: string | null;
+    'Header'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof MessageCommand
      */
-    Text: string;
+    'Text': string;
     /**
      * 
      * @type {number}
      * @memberof MessageCommand
      */
-    TimeoutMs?: number | null;
+    'TimeoutMs'?: number | null;
 }
-
 

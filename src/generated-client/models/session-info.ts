@@ -32,175 +32,174 @@ export interface SessionInfo {
      * @type {PlayerStateInfo}
      * @memberof SessionInfo
      */
-    PlayState?: PlayerStateInfo;
+    'PlayState'?: PlayerStateInfo;
     /**
      * 
      * @type {Array<SessionUserInfo>}
      * @memberof SessionInfo
      */
-    AdditionalUsers?: Array<SessionUserInfo> | null;
+    'AdditionalUsers'?: Array<SessionUserInfo> | null;
     /**
      * 
      * @type {ClientCapabilities}
      * @memberof SessionInfo
      */
-    Capabilities?: ClientCapabilities;
+    'Capabilities'?: ClientCapabilities;
     /**
      * Gets or sets the remote end point.
      * @type {string}
      * @memberof SessionInfo
      */
-    RemoteEndPoint?: string | null;
+    'RemoteEndPoint'?: string | null;
     /**
      * Gets the playable media types.
      * @type {Array<string>}
      * @memberof SessionInfo
      */
-    PlayableMediaTypes?: Array<string> | null;
+    'PlayableMediaTypes'?: Array<string> | null;
     /**
      * Gets or sets the id.
      * @type {string}
      * @memberof SessionInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * Gets or sets the user id.
      * @type {string}
      * @memberof SessionInfo
      */
-    UserId?: string;
+    'UserId'?: string;
     /**
      * Gets or sets the username.
      * @type {string}
      * @memberof SessionInfo
      */
-    UserName?: string | null;
+    'UserName'?: string | null;
     /**
      * Gets or sets the type of the client.
      * @type {string}
      * @memberof SessionInfo
      */
-    Client?: string | null;
+    'Client'?: string | null;
     /**
      * Gets or sets the last activity date.
      * @type {string}
      * @memberof SessionInfo
      */
-    LastActivityDate?: string;
+    'LastActivityDate'?: string;
     /**
      * Gets or sets the last playback check in.
      * @type {string}
      * @memberof SessionInfo
      */
-    LastPlaybackCheckIn?: string;
+    'LastPlaybackCheckIn'?: string;
     /**
      * Gets or sets the name of the device.
      * @type {string}
      * @memberof SessionInfo
      */
-    DeviceName?: string | null;
+    'DeviceName'?: string | null;
     /**
      * Gets or sets the type of the device.
      * @type {string}
      * @memberof SessionInfo
      */
-    DeviceType?: string | null;
+    'DeviceType'?: string | null;
     /**
      * 
      * @type {BaseItemDto}
      * @memberof SessionInfo
      */
-    NowPlayingItem?: BaseItemDto;
+    'NowPlayingItem'?: BaseItemDto;
     /**
      * 
      * @type {BaseItem}
      * @memberof SessionInfo
      */
-    FullNowPlayingItem?: BaseItem;
+    'FullNowPlayingItem'?: BaseItem;
     /**
      * 
      * @type {BaseItemDto}
      * @memberof SessionInfo
      */
-    NowViewingItem?: BaseItemDto;
+    'NowViewingItem'?: BaseItemDto;
     /**
      * Gets or sets the device id.
      * @type {string}
      * @memberof SessionInfo
      */
-    DeviceId?: string | null;
+    'DeviceId'?: string | null;
     /**
      * Gets or sets the application version.
      * @type {string}
      * @memberof SessionInfo
      */
-    ApplicationVersion?: string | null;
+    'ApplicationVersion'?: string | null;
     /**
      * 
      * @type {TranscodingInfo}
      * @memberof SessionInfo
      */
-    TranscodingInfo?: TranscodingInfo;
+    'TranscodingInfo'?: TranscodingInfo;
     /**
      * Gets a value indicating whether this instance is active.
      * @type {boolean}
      * @memberof SessionInfo
      */
-    IsActive?: boolean;
+    'IsActive'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SessionInfo
      */
-    SupportsMediaControl?: boolean;
+    'SupportsMediaControl'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SessionInfo
      */
-    SupportsRemoteControl?: boolean;
+    'SupportsRemoteControl'?: boolean;
     /**
      * 
      * @type {Array<QueueItem>}
      * @memberof SessionInfo
      */
-    NowPlayingQueue?: Array<QueueItem> | null;
+    'NowPlayingQueue'?: Array<QueueItem> | null;
     /**
      * 
      * @type {Array<BaseItemDto>}
      * @memberof SessionInfo
      */
-    NowPlayingQueueFullItems?: Array<BaseItemDto> | null;
+    'NowPlayingQueueFullItems'?: Array<BaseItemDto> | null;
     /**
      * 
      * @type {boolean}
      * @memberof SessionInfo
      */
-    HasCustomDeviceName?: boolean;
+    'HasCustomDeviceName'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof SessionInfo
      */
-    PlaylistItemId?: string | null;
+    'PlaylistItemId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SessionInfo
      */
-    ServerId?: string | null;
+    'ServerId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SessionInfo
      */
-    UserPrimaryImageTag?: string | null;
+    'UserPrimaryImageTag'?: string | null;
     /**
      * Gets the supported commands.
      * @type {Array<GeneralCommandType>}
      * @memberof SessionInfo
      */
-    SupportedCommands?: Array<GeneralCommandType> | null;
+    'SupportedCommands'?: Array<GeneralCommandType> | null;
 }
-
 

@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum PlayAccess {
-    Full = 'Full',
-    None = 'None'
-}
+export const PlayAccess = {
+    Full: 'Full',
+    None: 'None'
+} as const;
+
+export type PlayAccess = typeof PlayAccess[keyof typeof PlayAccess];
 
 
 

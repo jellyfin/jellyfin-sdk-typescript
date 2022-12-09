@@ -19,21 +19,23 @@
  * @enum {string}
  */
 
-export enum ImageType {
-    Primary = 'Primary',
-    Art = 'Art',
-    Backdrop = 'Backdrop',
-    Banner = 'Banner',
-    Logo = 'Logo',
-    Thumb = 'Thumb',
-    Disc = 'Disc',
-    Box = 'Box',
-    Screenshot = 'Screenshot',
-    Menu = 'Menu',
-    Chapter = 'Chapter',
-    BoxRear = 'BoxRear',
-    Profile = 'Profile'
-}
+export const ImageType = {
+    Primary: 'Primary',
+    Art: 'Art',
+    Backdrop: 'Backdrop',
+    Banner: 'Banner',
+    Logo: 'Logo',
+    Thumb: 'Thumb',
+    Disc: 'Disc',
+    Box: 'Box',
+    Screenshot: 'Screenshot',
+    Menu: 'Menu',
+    Chapter: 'Chapter',
+    BoxRear: 'BoxRear',
+    Profile: 'Profile'
+} as const;
+
+export type ImageType = typeof ImageType[keyof typeof ImageType];
 
 
 

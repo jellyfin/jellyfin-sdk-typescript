@@ -24,7 +24,6 @@ export interface QuickConnectDto {
      * @type {string}
      * @memberof QuickConnectDto
      */
-    Secret: string;
+    'Secret': string;
 }
-
 

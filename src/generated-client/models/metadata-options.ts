@@ -24,43 +24,42 @@ export interface MetadataOptions {
      * @type {string}
      * @memberof MetadataOptions
      */
-    ItemType?: string | null;
+    'ItemType'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    DisabledMetadataSavers?: Array<string> | null;
+    'DisabledMetadataSavers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    LocalMetadataReaderOrder?: Array<string> | null;
+    'LocalMetadataReaderOrder'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    DisabledMetadataFetchers?: Array<string> | null;
+    'DisabledMetadataFetchers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    MetadataFetcherOrder?: Array<string> | null;
+    'MetadataFetcherOrder'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    DisabledImageFetchers?: Array<string> | null;
+    'DisabledImageFetchers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof MetadataOptions
      */
-    ImageFetcherOrder?: Array<string> | null;
+    'ImageFetcherOrder'?: Array<string> | null;
 }
-
 

@@ -24,25 +24,24 @@ export interface CreatePlaylistDto {
      * @type {string}
      * @memberof CreatePlaylistDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets item ids to add to the playlist.
      * @type {Array<string>}
      * @memberof CreatePlaylistDto
      */
-    Ids?: Array<string>;
+    'Ids'?: Array<string>;
     /**
      * Gets or sets the user id.
      * @type {string}
      * @memberof CreatePlaylistDto
      */
-    UserId?: string | null;
+    'UserId'?: string | null;
     /**
      * Gets or sets the media type.
      * @type {string}
      * @memberof CreatePlaylistDto
      */
-    MediaType?: string | null;
+    'MediaType'?: string | null;
 }
-
 

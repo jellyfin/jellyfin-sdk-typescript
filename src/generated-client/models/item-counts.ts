@@ -24,73 +24,72 @@ export interface ItemCounts {
      * @type {number}
      * @memberof ItemCounts
      */
-    MovieCount?: number;
+    'MovieCount'?: number;
     /**
      * Gets or sets the series count.
      * @type {number}
      * @memberof ItemCounts
      */
-    SeriesCount?: number;
+    'SeriesCount'?: number;
     /**
      * Gets or sets the episode count.
      * @type {number}
      * @memberof ItemCounts
      */
-    EpisodeCount?: number;
+    'EpisodeCount'?: number;
     /**
      * Gets or sets the artist count.
      * @type {number}
      * @memberof ItemCounts
      */
-    ArtistCount?: number;
+    'ArtistCount'?: number;
     /**
      * Gets or sets the program count.
      * @type {number}
      * @memberof ItemCounts
      */
-    ProgramCount?: number;
+    'ProgramCount'?: number;
     /**
      * Gets or sets the trailer count.
      * @type {number}
      * @memberof ItemCounts
      */
-    TrailerCount?: number;
+    'TrailerCount'?: number;
     /**
      * Gets or sets the song count.
      * @type {number}
      * @memberof ItemCounts
      */
-    SongCount?: number;
+    'SongCount'?: number;
     /**
      * Gets or sets the album count.
      * @type {number}
      * @memberof ItemCounts
      */
-    AlbumCount?: number;
+    'AlbumCount'?: number;
     /**
      * Gets or sets the music video count.
      * @type {number}
      * @memberof ItemCounts
      */
-    MusicVideoCount?: number;
+    'MusicVideoCount'?: number;
     /**
      * Gets or sets the box set count.
      * @type {number}
      * @memberof ItemCounts
      */
-    BoxSetCount?: number;
+    'BoxSetCount'?: number;
     /**
      * Gets or sets the book count.
      * @type {number}
      * @memberof ItemCounts
      */
-    BookCount?: number;
+    'BookCount'?: number;
     /**
      * Gets or sets the item count.
      * @type {number}
      * @memberof ItemCounts
      */
-    ItemCount?: number;
+    'ItemCount'?: number;
 }
-
 

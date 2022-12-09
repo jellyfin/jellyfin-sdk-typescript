@@ -24,229 +24,228 @@ export interface EncodingOptions {
      * @type {number}
      * @memberof EncodingOptions
      */
-    EncodingThreadCount?: number;
+    'EncodingThreadCount'?: number;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    TranscodingTempPath?: string | null;
+    'TranscodingTempPath'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    FallbackFontPath?: string | null;
+    'FallbackFontPath'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableFallbackFont?: boolean;
+    'EnableFallbackFont'?: boolean;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    DownMixAudioBoost?: number;
+    'DownMixAudioBoost'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    MaxMuxingQueueSize?: number;
+    'MaxMuxingQueueSize'?: number;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableThrottling?: boolean;
+    'EnableThrottling'?: boolean;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    ThrottleDelaySeconds?: number;
+    'ThrottleDelaySeconds'?: number;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    HardwareAccelerationType?: string | null;
+    'HardwareAccelerationType'?: string | null;
     /**
      * Gets or sets the FFmpeg path as set by the user via the UI.
      * @type {string}
      * @memberof EncodingOptions
      */
-    EncoderAppPath?: string | null;
+    'EncoderAppPath'?: string | null;
     /**
      * Gets or sets the current FFmpeg path being used by the system and displayed on the transcode page.
      * @type {string}
      * @memberof EncodingOptions
      */
-    EncoderAppPathDisplay?: string | null;
+    'EncoderAppPathDisplay'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    VaapiDevice?: string | null;
+    'VaapiDevice'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableTonemapping?: boolean;
+    'EnableTonemapping'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableVppTonemapping?: boolean;
+    'EnableVppTonemapping'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    TonemappingAlgorithm?: string | null;
+    'TonemappingAlgorithm'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    TonemappingRange?: string | null;
+    'TonemappingRange'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    TonemappingDesat?: number;
+    'TonemappingDesat'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    TonemappingThreshold?: number;
+    'TonemappingThreshold'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    TonemappingPeak?: number;
+    'TonemappingPeak'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    TonemappingParam?: number;
+    'TonemappingParam'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    VppTonemappingBrightness?: number;
+    'VppTonemappingBrightness'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    VppTonemappingContrast?: number;
+    'VppTonemappingContrast'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    H264Crf?: number;
+    'H264Crf'?: number;
     /**
      * 
      * @type {number}
      * @memberof EncodingOptions
      */
-    H265Crf?: number;
+    'H265Crf'?: number;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    EncoderPreset?: string | null;
+    'EncoderPreset'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    DeinterlaceDoubleRate?: boolean;
+    'DeinterlaceDoubleRate'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof EncodingOptions
      */
-    DeinterlaceMethod?: string | null;
+    'DeinterlaceMethod'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableDecodingColorDepth10Hevc?: boolean;
+    'EnableDecodingColorDepth10Hevc'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableDecodingColorDepth10Vp9?: boolean;
+    'EnableDecodingColorDepth10Vp9'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableEnhancedNvdecDecoder?: boolean;
+    'EnableEnhancedNvdecDecoder'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    PreferSystemNativeHwDecoder?: boolean;
+    'PreferSystemNativeHwDecoder'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableIntelLowPowerH264HwEncoder?: boolean;
+    'EnableIntelLowPowerH264HwEncoder'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableIntelLowPowerHevcHwEncoder?: boolean;
+    'EnableIntelLowPowerHevcHwEncoder'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableHardwareEncoding?: boolean;
+    'EnableHardwareEncoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    AllowHevcEncoding?: boolean;
+    'AllowHevcEncoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof EncodingOptions
      */
-    EnableSubtitleExtraction?: boolean;
+    'EnableSubtitleExtraction'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof EncodingOptions
      */
-    HardwareDecodingCodecs?: Array<string> | null;
+    'HardwareDecodingCodecs'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof EncodingOptions
      */
-    AllowOnDemandMetadataBasedKeyframeExtractionForExtensions?: Array<string> | null;
+    'AllowOnDemandMetadataBasedKeyframeExtractionForExtensions'?: Array<string> | null;
 }
-
 

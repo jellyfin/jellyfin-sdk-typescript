@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum SendCommandType {
-    Unpause = 'Unpause',
-    Pause = 'Pause',
-    Stop = 'Stop',
-    Seek = 'Seek'
-}
+export const SendCommandType = {
+    Unpause: 'Unpause',
+    Pause: 'Pause',
+    Stop: 'Stop',
+    Seek: 'Seek'
+} as const;
+
+export type SendCommandType = typeof SendCommandType[keyof typeof SendCommandType];
 
 
 

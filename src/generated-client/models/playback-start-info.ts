@@ -28,121 +28,120 @@ export interface PlaybackStartInfo {
      * @type {boolean}
      * @memberof PlaybackStartInfo
      */
-    CanSeek?: boolean;
+    'CanSeek'?: boolean;
     /**
      * 
      * @type {BaseItemDto}
      * @memberof PlaybackStartInfo
      */
-    Item?: BaseItemDto;
+    'Item'?: BaseItemDto;
     /**
      * Gets or sets the item identifier.
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    ItemId?: string;
+    'ItemId'?: string;
     /**
      * Gets or sets the session id.
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    SessionId?: string | null;
+    'SessionId'?: string | null;
     /**
      * Gets or sets the media version identifier.
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    MediaSourceId?: string | null;
+    'MediaSourceId'?: string | null;
     /**
      * Gets or sets the index of the audio stream.
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    AudioStreamIndex?: number | null;
+    'AudioStreamIndex'?: number | null;
     /**
      * Gets or sets the index of the subtitle stream.
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    SubtitleStreamIndex?: number | null;
+    'SubtitleStreamIndex'?: number | null;
     /**
      * Gets or sets a value indicating whether this instance is paused.
      * @type {boolean}
      * @memberof PlaybackStartInfo
      */
-    IsPaused?: boolean;
+    'IsPaused'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance is muted.
      * @type {boolean}
      * @memberof PlaybackStartInfo
      */
-    IsMuted?: boolean;
+    'IsMuted'?: boolean;
     /**
      * Gets or sets the position ticks.
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    PositionTicks?: number | null;
+    'PositionTicks'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    PlaybackStartTimeTicks?: number | null;
+    'PlaybackStartTimeTicks'?: number | null;
     /**
      * Gets or sets the volume level.
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    VolumeLevel?: number | null;
+    'VolumeLevel'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof PlaybackStartInfo
      */
-    Brightness?: number | null;
+    'Brightness'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    AspectRatio?: string | null;
+    'AspectRatio'?: string | null;
     /**
      * 
      * @type {PlayMethod}
      * @memberof PlaybackStartInfo
      */
-    PlayMethod?: PlayMethod;
+    'PlayMethod'?: PlayMethod;
     /**
      * Gets or sets the live stream identifier.
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    LiveStreamId?: string | null;
+    'LiveStreamId'?: string | null;
     /**
      * Gets or sets the play session identifier.
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    PlaySessionId?: string | null;
+    'PlaySessionId'?: string | null;
     /**
      * 
      * @type {RepeatMode}
      * @memberof PlaybackStartInfo
      */
-    RepeatMode?: RepeatMode;
+    'RepeatMode'?: RepeatMode;
     /**
      * 
      * @type {Array<QueueItem>}
      * @memberof PlaybackStartInfo
      */
-    NowPlayingQueue?: Array<QueueItem> | null;
+    'NowPlayingQueue'?: Array<QueueItem> | null;
     /**
      * 
      * @type {string}
      * @memberof PlaybackStartInfo
      */
-    PlaylistItemId?: string | null;
+    'PlaylistItemId'?: string | null;
 }
-
 

@@ -24,31 +24,30 @@ export interface ChapterInfo {
      * @type {number}
      * @memberof ChapterInfo
      */
-    StartPositionTicks?: number;
+    'StartPositionTicks'?: number;
     /**
      * Gets or sets the name.
      * @type {string}
      * @memberof ChapterInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the image path.
      * @type {string}
      * @memberof ChapterInfo
      */
-    ImagePath?: string | null;
+    'ImagePath'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ChapterInfo
      */
-    ImageDateModified?: string;
+    'ImageDateModified'?: string;
     /**
      * 
      * @type {string}
      * @memberof ChapterInfo
      */
-    ImageTag?: string | null;
+    'ImageTag'?: string | null;
 }
-
 

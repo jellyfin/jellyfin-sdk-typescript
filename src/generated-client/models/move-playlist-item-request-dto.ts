@@ -24,13 +24,12 @@ export interface MovePlaylistItemRequestDto {
      * @type {string}
      * @memberof MovePlaylistItemRequestDto
      */
-    PlaylistItemId?: string;
+    'PlaylistItemId'?: string;
     /**
      * Gets or sets the new position.
      * @type {number}
      * @memberof MovePlaylistItemRequestDto
      */
-    NewIndex?: number;
+    'NewIndex'?: number;
 }
-
 

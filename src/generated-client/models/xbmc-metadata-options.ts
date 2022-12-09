@@ -24,31 +24,30 @@ export interface XbmcMetadataOptions {
      * @type {string}
      * @memberof XbmcMetadataOptions
      */
-    UserId?: string | null;
+    'UserId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof XbmcMetadataOptions
      */
-    ReleaseDateFormat?: string;
+    'ReleaseDateFormat'?: string;
     /**
      * 
      * @type {boolean}
      * @memberof XbmcMetadataOptions
      */
-    SaveImagePathsInNfo?: boolean;
+    'SaveImagePathsInNfo'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof XbmcMetadataOptions
      */
-    EnablePathSubstitution?: boolean;
+    'EnablePathSubstitution'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof XbmcMetadataOptions
      */
-    EnableExtraThumbsDuplication?: boolean;
+    'EnableExtraThumbsDuplication'?: boolean;
 }
-
 

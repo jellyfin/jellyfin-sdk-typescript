@@ -24,25 +24,24 @@ export interface FontFile {
      * @type {string}
      * @memberof FontFile
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the size.
      * @type {number}
      * @memberof FontFile
      */
-    Size?: number;
+    'Size'?: number;
     /**
      * Gets or sets the date created.
      * @type {string}
      * @memberof FontFile
      */
-    DateCreated?: string;
+    'DateCreated'?: string;
     /**
      * Gets or sets the date modified.
      * @type {string}
      * @memberof FontFile
      */
-    DateModified?: string;
+    'DateModified'?: string;
 }
-
 

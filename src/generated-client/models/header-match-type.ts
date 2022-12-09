@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum HeaderMatchType {
-    Equals = 'Equals',
-    Regex = 'Regex',
-    Substring = 'Substring'
-}
+export const HeaderMatchType = {
+    Equals: 'Equals',
+    Regex: 'Regex',
+    Substring: 'Substring'
+} as const;
+
+export type HeaderMatchType = typeof HeaderMatchType[keyof typeof HeaderMatchType];
 
 
 

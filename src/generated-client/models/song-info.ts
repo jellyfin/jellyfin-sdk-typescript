@@ -24,85 +24,84 @@ export interface SongInfo {
      * @type {string}
      * @memberof SongInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the original title.
      * @type {string}
      * @memberof SongInfo
      */
-    OriginalTitle?: string | null;
+    'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof SongInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
      * @type {string}
      * @memberof SongInfo
      */
-    MetadataLanguage?: string | null;
+    'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof SongInfo
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof SongInfo
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof SongInfo
      */
-    Year?: number | null;
+    'Year'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof SongInfo
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof SongInfo
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof SongInfo
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof SongInfo
      */
-    IsAutomated?: boolean;
+    'IsAutomated'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof SongInfo
      */
-    AlbumArtists?: Array<string> | null;
+    'AlbumArtists'?: Array<string> | null;
     /**
      * 
      * @type {string}
      * @memberof SongInfo
      */
-    Album?: string | null;
+    'Album'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof SongInfo
      */
-    Artists?: Array<string> | null;
+    'Artists'?: Array<string> | null;
 }
-
 

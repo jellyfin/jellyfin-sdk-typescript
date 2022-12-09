@@ -25,25 +25,24 @@ export interface AdminNotificationDto {
      * @type {string}
      * @memberof AdminNotificationDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the notification description.
      * @type {string}
      * @memberof AdminNotificationDto
      */
-    Description?: string | null;
+    'Description'?: string | null;
     /**
      * 
      * @type {NotificationLevel}
      * @memberof AdminNotificationDto
      */
-    NotificationLevel?: NotificationLevel;
+    'NotificationLevel'?: NotificationLevel;
     /**
      * Gets or sets the notification url.
      * @type {string}
      * @memberof AdminNotificationDto
      */
-    Url?: string | null;
+    'Url'?: string | null;
 }
-
 

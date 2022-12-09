@@ -25,19 +25,18 @@ export interface MediaPathDto {
      * @type {string}
      * @memberof MediaPathDto
      */
-    Name: string;
+    'Name': string;
     /**
      * Gets or sets the path to add.
      * @type {string}
      * @memberof MediaPathDto
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * 
      * @type {MediaPathInfo}
      * @memberof MediaPathDto
      */
-    PathInfo?: MediaPathInfo;
+    'PathInfo'?: MediaPathInfo;
 }
-
 

@@ -19,17 +19,19 @@
  * @enum {string}
  */
 
-export enum MetadataField {
-    Cast = 'Cast',
-    Genres = 'Genres',
-    ProductionLocations = 'ProductionLocations',
-    Studios = 'Studios',
-    Tags = 'Tags',
-    Name = 'Name',
-    Overview = 'Overview',
-    Runtime = 'Runtime',
-    OfficialRating = 'OfficialRating'
-}
+export const MetadataField = {
+    Cast: 'Cast',
+    Genres: 'Genres',
+    ProductionLocations: 'ProductionLocations',
+    Studios: 'Studios',
+    Tags: 'Tags',
+    Name: 'Name',
+    Overview: 'Overview',
+    Runtime: 'Runtime',
+    OfficialRating: 'OfficialRating'
+} as const;
+
+export type MetadataField = typeof MetadataField[keyof typeof MetadataField];
 
 
 

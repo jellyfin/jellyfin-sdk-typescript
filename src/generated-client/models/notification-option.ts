@@ -25,37 +25,36 @@ export interface NotificationOption {
      * @type {string}
      * @memberof NotificationOption
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets user Ids to not monitor (it\'s opt out).
      * @type {Array<string>}
      * @memberof NotificationOption
      */
-    DisabledMonitorUsers?: Array<string>;
+    'DisabledMonitorUsers'?: Array<string>;
     /**
      * Gets or sets user Ids to send to (if SendToUserMode == Custom).
      * @type {Array<string>}
      * @memberof NotificationOption
      */
-    SendToUsers?: Array<string>;
+    'SendToUsers'?: Array<string>;
     /**
      * Gets or sets a value indicating whether this MediaBrowser.Model.Notifications.NotificationOption is enabled.
      * @type {boolean}
      * @memberof NotificationOption
      */
-    Enabled?: boolean;
+    'Enabled'?: boolean;
     /**
      * Gets or sets the disabled services.
      * @type {Array<string>}
      * @memberof NotificationOption
      */
-    DisabledServices?: Array<string>;
+    'DisabledServices'?: Array<string>;
     /**
      * 
      * @type {SendToUserType}
      * @memberof NotificationOption
      */
-    SendToUserMode?: SendToUserType;
+    'SendToUserMode'?: SendToUserType;
 }
-
 

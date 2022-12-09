@@ -25,37 +25,36 @@ export interface SendCommand {
      * @type {string}
      * @memberof SendCommand
      */
-    GroupId?: string;
+    'GroupId'?: string;
     /**
      * Gets the playlist identifier of the playing item.
      * @type {string}
      * @memberof SendCommand
      */
-    PlaylistItemId?: string;
+    'PlaylistItemId'?: string;
     /**
      * Gets or sets the UTC time when to execute the command.
      * @type {string}
      * @memberof SendCommand
      */
-    When?: string;
+    'When'?: string;
     /**
      * Gets the position ticks.
      * @type {number}
      * @memberof SendCommand
      */
-    PositionTicks?: number | null;
+    'PositionTicks'?: number | null;
     /**
      * 
      * @type {SendCommandType}
      * @memberof SendCommand
      */
-    Command?: SendCommandType;
+    'Command'?: SendCommandType;
     /**
      * Gets the UTC time when this command has been emitted.
      * @type {string}
      * @memberof SendCommand
      */
-    EmittedAt?: string;
+    'EmittedAt'?: string;
 }
-
 

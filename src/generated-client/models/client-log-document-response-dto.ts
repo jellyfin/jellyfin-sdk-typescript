@@ -24,7 +24,6 @@ export interface ClientLogDocumentResponseDto {
      * @type {string}
      * @memberof ClientLogDocumentResponseDto
      */
-    FileName?: string;
+    'FileName'?: string;
 }
-
 

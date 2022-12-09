@@ -25,73 +25,72 @@ export interface ArtistInfo {
      * @type {string}
      * @memberof ArtistInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the original title.
      * @type {string}
      * @memberof ArtistInfo
      */
-    OriginalTitle?: string | null;
+    'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
      * @type {string}
      * @memberof ArtistInfo
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
      * @type {string}
      * @memberof ArtistInfo
      */
-    MetadataLanguage?: string | null;
+    'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof ArtistInfo
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
      * @type {{ [key: string]: string; }}
      * @memberof ArtistInfo
      */
-    ProviderIds?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the year.
      * @type {number}
      * @memberof ArtistInfo
      */
-    Year?: number | null;
+    'Year'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof ArtistInfo
      */
-    IndexNumber?: number | null;
+    'IndexNumber'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof ArtistInfo
      */
-    ParentIndexNumber?: number | null;
+    'ParentIndexNumber'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof ArtistInfo
      */
-    PremiereDate?: string | null;
+    'PremiereDate'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof ArtistInfo
      */
-    IsAutomated?: boolean;
+    'IsAutomated'?: boolean;
     /**
      * 
      * @type {Array<SongInfo>}
      * @memberof ArtistInfo
      */
-    SongInfos?: Array<SongInfo>;
+    'SongInfos'?: Array<SongInfo>;
 }
-
 

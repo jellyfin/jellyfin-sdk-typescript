@@ -25,25 +25,24 @@ export interface DirectPlayProfile {
      * @type {string}
      * @memberof DirectPlayProfile
      */
-    Container?: string | null;
+    'Container'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof DirectPlayProfile
      */
-    AudioCodec?: string | null;
+    'AudioCodec'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof DirectPlayProfile
      */
-    VideoCodec?: string | null;
+    'VideoCodec'?: string | null;
     /**
      * 
      * @type {DlnaProfileType}
      * @memberof DirectPlayProfile
      */
-    Type?: DlnaProfileType;
+    'Type'?: DlnaProfileType;
 }
-
 

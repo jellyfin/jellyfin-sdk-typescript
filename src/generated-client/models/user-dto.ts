@@ -26,85 +26,84 @@ export interface UserDto {
      * @type {string}
      * @memberof UserDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the server identifier.
      * @type {string}
      * @memberof UserDto
      */
-    ServerId?: string | null;
+    'ServerId'?: string | null;
     /**
      * Gets or sets the name of the server.  This is not used by the server and is for client-side usage only.
      * @type {string}
      * @memberof UserDto
      */
-    ServerName?: string | null;
+    'ServerName'?: string | null;
     /**
      * Gets or sets the id.
      * @type {string}
      * @memberof UserDto
      */
-    Id?: string;
+    'Id'?: string;
     /**
      * Gets or sets the primary image tag.
      * @type {string}
      * @memberof UserDto
      */
-    PrimaryImageTag?: string | null;
+    'PrimaryImageTag'?: string | null;
     /**
      * Gets or sets a value indicating whether this instance has password.
      * @type {boolean}
      * @memberof UserDto
      */
-    HasPassword?: boolean;
+    'HasPassword'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance has configured password.
      * @type {boolean}
      * @memberof UserDto
      */
-    HasConfiguredPassword?: boolean;
+    'HasConfiguredPassword'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance has configured easy password.
      * @type {boolean}
      * @memberof UserDto
      */
-    HasConfiguredEasyPassword?: boolean;
+    'HasConfiguredEasyPassword'?: boolean;
     /**
      * Gets or sets whether async login is enabled or not.
      * @type {boolean}
      * @memberof UserDto
      */
-    EnableAutoLogin?: boolean | null;
+    'EnableAutoLogin'?: boolean | null;
     /**
      * Gets or sets the last login date.
      * @type {string}
      * @memberof UserDto
      */
-    LastLoginDate?: string | null;
+    'LastLoginDate'?: string | null;
     /**
      * Gets or sets the last activity date.
      * @type {string}
      * @memberof UserDto
      */
-    LastActivityDate?: string | null;
+    'LastActivityDate'?: string | null;
     /**
      * 
      * @type {UserConfiguration}
      * @memberof UserDto
      */
-    Configuration?: UserConfiguration;
+    'Configuration'?: UserConfiguration;
     /**
      * 
      * @type {UserPolicy}
      * @memberof UserDto
      */
-    Policy?: UserPolicy;
+    'Policy'?: UserPolicy;
     /**
      * Gets or sets the primary image aspect ratio.
      * @type {number}
      * @memberof UserDto
      */
-    PrimaryImageAspectRatio?: number | null;
+    'PrimaryImageAspectRatio'?: number | null;
 }
-
 

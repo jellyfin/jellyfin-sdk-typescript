@@ -25,49 +25,48 @@ export interface PluginInfo {
      * @type {string}
      * @memberof PluginInfo
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets or sets the version.
      * @type {string}
      * @memberof PluginInfo
      */
-    Version?: string;
+    'Version'?: string;
     /**
      * Gets or sets the name of the configuration file.
      * @type {string}
      * @memberof PluginInfo
      */
-    ConfigurationFileName?: string | null;
+    'ConfigurationFileName'?: string | null;
     /**
      * Gets or sets the description.
      * @type {string}
      * @memberof PluginInfo
      */
-    Description?: string;
+    'Description'?: string;
     /**
      * Gets or sets the unique id.
      * @type {string}
      * @memberof PluginInfo
      */
-    Id?: string;
+    'Id'?: string;
     /**
      * Gets or sets a value indicating whether the plugin can be uninstalled.
      * @type {boolean}
      * @memberof PluginInfo
      */
-    CanUninstall?: boolean;
+    'CanUninstall'?: boolean;
     /**
      * Gets or sets a value indicating whether this plugin has a valid image.
      * @type {boolean}
      * @memberof PluginInfo
      */
-    HasImage?: boolean;
+    'HasImage'?: boolean;
     /**
      * 
      * @type {PluginStatus}
      * @memberof PluginInfo
      */
-    Status?: PluginStatus;
+    'Status'?: PluginStatus;
 }
-
 

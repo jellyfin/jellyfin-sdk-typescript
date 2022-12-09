@@ -25,19 +25,18 @@ export interface AllThemeMediaResult {
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    ThemeVideosResult?: ThemeMediaResult;
+    'ThemeVideosResult'?: ThemeMediaResult;
     /**
      * 
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    ThemeSongsResult?: ThemeMediaResult;
+    'ThemeSongsResult'?: ThemeMediaResult;
     /**
      * 
      * @type {ThemeMediaResult}
      * @memberof AllThemeMediaResult
      */
-    SoundtrackSongsResult?: ThemeMediaResult;
+    'SoundtrackSongsResult'?: ThemeMediaResult;
 }
-
 

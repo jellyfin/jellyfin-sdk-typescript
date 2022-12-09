@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum GroupRepeatMode {
-    RepeatOne = 'RepeatOne',
-    RepeatAll = 'RepeatAll',
-    RepeatNone = 'RepeatNone'
-}
+export const GroupRepeatMode = {
+    RepeatOne: 'RepeatOne',
+    RepeatAll: 'RepeatAll',
+    RepeatNone: 'RepeatNone'
+} as const;
+
+export type GroupRepeatMode = typeof GroupRepeatMode[keyof typeof GroupRepeatMode];
 
 
 

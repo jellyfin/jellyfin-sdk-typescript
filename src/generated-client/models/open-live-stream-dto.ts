@@ -26,79 +26,78 @@ export interface OpenLiveStreamDto {
      * @type {string}
      * @memberof OpenLiveStreamDto
      */
-    OpenToken?: string | null;
+    'OpenToken'?: string | null;
     /**
      * Gets or sets the user id.
      * @type {string}
      * @memberof OpenLiveStreamDto
      */
-    UserId?: string | null;
+    'UserId'?: string | null;
     /**
      * Gets or sets the play session id.
      * @type {string}
      * @memberof OpenLiveStreamDto
      */
-    PlaySessionId?: string | null;
+    'PlaySessionId'?: string | null;
     /**
      * Gets or sets the max streaming bitrate.
      * @type {number}
      * @memberof OpenLiveStreamDto
      */
-    MaxStreamingBitrate?: number | null;
+    'MaxStreamingBitrate'?: number | null;
     /**
      * Gets or sets the start time in ticks.
      * @type {number}
      * @memberof OpenLiveStreamDto
      */
-    StartTimeTicks?: number | null;
+    'StartTimeTicks'?: number | null;
     /**
      * Gets or sets the audio stream index.
      * @type {number}
      * @memberof OpenLiveStreamDto
      */
-    AudioStreamIndex?: number | null;
+    'AudioStreamIndex'?: number | null;
     /**
      * Gets or sets the subtitle stream index.
      * @type {number}
      * @memberof OpenLiveStreamDto
      */
-    SubtitleStreamIndex?: number | null;
+    'SubtitleStreamIndex'?: number | null;
     /**
      * Gets or sets the max audio channels.
      * @type {number}
      * @memberof OpenLiveStreamDto
      */
-    MaxAudioChannels?: number | null;
+    'MaxAudioChannels'?: number | null;
     /**
      * Gets or sets the item id.
      * @type {string}
      * @memberof OpenLiveStreamDto
      */
-    ItemId?: string | null;
+    'ItemId'?: string | null;
     /**
      * Gets or sets a value indicating whether to enable direct play.
      * @type {boolean}
      * @memberof OpenLiveStreamDto
      */
-    EnableDirectPlay?: boolean | null;
+    'EnableDirectPlay'?: boolean | null;
     /**
      * Gets or sets a value indicating whether to enale direct stream.
      * @type {boolean}
      * @memberof OpenLiveStreamDto
      */
-    EnableDirectStream?: boolean | null;
+    'EnableDirectStream'?: boolean | null;
     /**
      * 
      * @type {DeviceProfile}
      * @memberof OpenLiveStreamDto
      */
-    DeviceProfile?: DeviceProfile;
+    'DeviceProfile'?: DeviceProfile;
     /**
      * Gets or sets the device play protocols.
      * @type {Array<MediaProtocol>}
      * @memberof OpenLiveStreamDto
      */
-    DirectPlayProtocols?: Array<MediaProtocol>;
+    'DirectPlayProtocols'?: Array<MediaProtocol>;
 }
-
 

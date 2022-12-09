@@ -24,7 +24,6 @@ export interface CollectionCreationResult {
      * @type {string}
      * @memberof CollectionCreationResult
      */
-    Id?: string;
+    'Id'?: string;
 }
-
 

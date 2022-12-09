@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum DlnaProfileType {
-    Audio = 'Audio',
-    Video = 'Video',
-    Photo = 'Photo',
-    Subtitle = 'Subtitle'
-}
+export const DlnaProfileType = {
+    Audio: 'Audio',
+    Video: 'Video',
+    Photo: 'Photo',
+    Subtitle: 'Subtitle'
+} as const;
+
+export type DlnaProfileType = typeof DlnaProfileType[keyof typeof DlnaProfileType];
 
 
 

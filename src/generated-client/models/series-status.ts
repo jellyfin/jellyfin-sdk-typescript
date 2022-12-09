@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum SeriesStatus {
-    Continuing = 'Continuing',
-    Ended = 'Ended'
-}
+export const SeriesStatus = {
+    Continuing: 'Continuing',
+    Ended: 'Ended'
+} as const;
+
+export type SeriesStatus = typeof SeriesStatus[keyof typeof SeriesStatus];
 
 
 

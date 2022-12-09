@@ -13,8 +13,8 @@
 
 
 import { Configuration } from "./configuration";
-import { RequiredError,　RequestArgs } from "./base";
-import { AxiosInstance } from 'axios';
+import { RequiredError, RequestArgs } from "./base";
+import { AxiosInstance, AxiosResponse } from 'axios';
 
 /**
  *
@@ -130,8 +130,8 @@ export const toPathString = function (url: URL) {
  * @export
  */
 export const createRequestFunction = function (axiosArgs: RequestArgs, globalAxios: AxiosInstance, BASE_PATH: string, configuration?: Configuration) {
-    return (axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
+    return <T = unknown, R = AxiosResponse<T>>(axios: AxiosInstance = globalAxios, basePath: string = BASE_PATH) => {
         const axiosRequestArgs = {...axiosArgs.options, url: (configuration?.basePath || basePath) + axiosArgs.url};
-        return axios.request(axiosRequestArgs);
+        return axios.request<T, R>(axiosRequestArgs);
     };
 }

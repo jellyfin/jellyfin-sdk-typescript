@@ -27,164 +27,163 @@ export interface LibraryOptions {
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnablePhotos?: boolean;
+    'EnablePhotos'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnableRealtimeMonitor?: boolean;
+    'EnableRealtimeMonitor'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnableChapterImageExtraction?: boolean;
+    'EnableChapterImageExtraction'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    ExtractChapterImagesDuringLibraryScan?: boolean;
+    'ExtractChapterImagesDuringLibraryScan'?: boolean;
     /**
      * 
      * @type {Array<MediaPathInfo>}
      * @memberof LibraryOptions
      */
-    PathInfos?: Array<MediaPathInfo>;
+    'PathInfos'?: Array<MediaPathInfo>;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    SaveLocalMetadata?: boolean;
+    'SaveLocalMetadata'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      * @deprecated
      */
-    EnableInternetProviders?: boolean;
+    'EnableInternetProviders'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnableAutomaticSeriesGrouping?: boolean;
+    'EnableAutomaticSeriesGrouping'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnableEmbeddedTitles?: boolean;
+    'EnableEmbeddedTitles'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    EnableEmbeddedEpisodeInfos?: boolean;
+    'EnableEmbeddedEpisodeInfos'?: boolean;
     /**
      * 
      * @type {number}
      * @memberof LibraryOptions
      */
-    AutomaticRefreshIntervalDays?: number;
+    'AutomaticRefreshIntervalDays'?: number;
     /**
      * Gets or sets the preferred metadata language.
      * @type {string}
      * @memberof LibraryOptions
      */
-    PreferredMetadataLanguage?: string | null;
+    'PreferredMetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof LibraryOptions
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof LibraryOptions
      */
-    SeasonZeroDisplayName?: string;
+    'SeasonZeroDisplayName'?: string;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    MetadataSavers?: Array<string> | null;
+    'MetadataSavers'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    DisabledLocalMetadataReaders?: Array<string>;
+    'DisabledLocalMetadataReaders'?: Array<string>;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    LocalMetadataReaderOrder?: Array<string> | null;
+    'LocalMetadataReaderOrder'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    DisabledSubtitleFetchers?: Array<string>;
+    'DisabledSubtitleFetchers'?: Array<string>;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    SubtitleFetcherOrder?: Array<string>;
+    'SubtitleFetcherOrder'?: Array<string>;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    SkipSubtitlesIfEmbeddedSubtitlesPresent?: boolean;
+    'SkipSubtitlesIfEmbeddedSubtitlesPresent'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    SkipSubtitlesIfAudioTrackMatches?: boolean;
+    'SkipSubtitlesIfAudioTrackMatches'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    SubtitleDownloadLanguages?: Array<string> | null;
+    'SubtitleDownloadLanguages'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    RequirePerfectSubtitleMatch?: boolean;
+    'RequirePerfectSubtitleMatch'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    SaveSubtitlesWithMedia?: boolean;
+    'SaveSubtitlesWithMedia'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
-    AutomaticallyAddToCollection?: boolean;
+    'AutomaticallyAddToCollection'?: boolean;
     /**
      * 
      * @type {EmbeddedSubtitleOptions}
      * @memberof LibraryOptions
      */
-    AllowEmbeddedSubtitles?: EmbeddedSubtitleOptions;
+    'AllowEmbeddedSubtitles'?: EmbeddedSubtitleOptions;
     /**
      * 
      * @type {Array<TypeOptions>}
      * @memberof LibraryOptions
      */
-    TypeOptions?: Array<TypeOptions>;
+    'TypeOptions'?: Array<TypeOptions>;
 }
-
 

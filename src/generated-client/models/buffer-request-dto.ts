@@ -24,25 +24,24 @@ export interface BufferRequestDto {
      * @type {string}
      * @memberof BufferRequestDto
      */
-    When?: string;
+    'When'?: string;
     /**
      * Gets or sets the position ticks.
      * @type {number}
      * @memberof BufferRequestDto
      */
-    PositionTicks?: number;
+    'PositionTicks'?: number;
     /**
      * Gets or sets a value indicating whether the client playback is unpaused.
      * @type {boolean}
      * @memberof BufferRequestDto
      */
-    IsPlaying?: boolean;
+    'IsPlaying'?: boolean;
     /**
      * Gets or sets the playlist item identifier of the playing item.
      * @type {string}
      * @memberof BufferRequestDto
      */
-    PlaylistItemId?: string;
+    'PlaylistItemId'?: string;
 }
-
 

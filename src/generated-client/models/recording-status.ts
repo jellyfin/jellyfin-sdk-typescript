@@ -19,15 +19,17 @@
  * @enum {string}
  */
 
-export enum RecordingStatus {
-    New = 'New',
-    InProgress = 'InProgress',
-    Completed = 'Completed',
-    Cancelled = 'Cancelled',
-    ConflictedOk = 'ConflictedOk',
-    ConflictedNotOk = 'ConflictedNotOk',
-    Error = 'Error'
-}
+export const RecordingStatus = {
+    New: 'New',
+    InProgress: 'InProgress',
+    Completed: 'Completed',
+    Cancelled: 'Cancelled',
+    ConflictedOk: 'ConflictedOk',
+    ConflictedNotOk: 'ConflictedNotOk',
+    Error: 'Error'
+} as const;
+
+export type RecordingStatus = typeof RecordingStatus[keyof typeof RecordingStatus];
 
 
 

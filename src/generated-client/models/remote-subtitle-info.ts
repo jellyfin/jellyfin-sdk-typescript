@@ -24,67 +24,66 @@ export interface RemoteSubtitleInfo {
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    ThreeLetterISOLanguageName?: string | null;
+    'ThreeLetterISOLanguageName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    ProviderName?: string | null;
+    'ProviderName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    Format?: string | null;
+    'Format'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    Author?: string | null;
+    'Author'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    Comment?: string | null;
+    'Comment'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof RemoteSubtitleInfo
      */
-    DateCreated?: string | null;
+    'DateCreated'?: string | null;
     /**
      * 
      * @type {number}
      * @memberof RemoteSubtitleInfo
      */
-    CommunityRating?: number | null;
+    'CommunityRating'?: number | null;
     /**
      * 
      * @type {number}
      * @memberof RemoteSubtitleInfo
      */
-    DownloadCount?: number | null;
+    'DownloadCount'?: number | null;
     /**
      * 
      * @type {boolean}
      * @memberof RemoteSubtitleInfo
      */
-    IsHashMatch?: boolean | null;
+    'IsHashMatch'?: boolean | null;
 }
-
 

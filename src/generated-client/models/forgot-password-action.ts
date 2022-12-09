@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum ForgotPasswordAction {
-    ContactAdmin = 'ContactAdmin',
-    PinCode = 'PinCode',
-    InNetworkRequired = 'InNetworkRequired'
-}
+export const ForgotPasswordAction = {
+    ContactAdmin: 'ContactAdmin',
+    PinCode: 'PinCode',
+    InNetworkRequired: 'InNetworkRequired'
+} as const;
+
+export type ForgotPasswordAction = typeof ForgotPasswordAction[keyof typeof ForgotPasswordAction];
 
 
 

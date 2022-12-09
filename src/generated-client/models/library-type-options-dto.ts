@@ -27,31 +27,30 @@ export interface LibraryTypeOptionsDto {
      * @type {string}
      * @memberof LibraryTypeOptionsDto
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets the metadata fetchers.
      * @type {Array<LibraryOptionInfoDto>}
      * @memberof LibraryTypeOptionsDto
      */
-    MetadataFetchers?: Array<LibraryOptionInfoDto>;
+    'MetadataFetchers'?: Array<LibraryOptionInfoDto>;
     /**
      * Gets or sets the image fetchers.
      * @type {Array<LibraryOptionInfoDto>}
      * @memberof LibraryTypeOptionsDto
      */
-    ImageFetchers?: Array<LibraryOptionInfoDto>;
+    'ImageFetchers'?: Array<LibraryOptionInfoDto>;
     /**
      * Gets or sets the supported image types.
      * @type {Array<ImageType>}
      * @memberof LibraryTypeOptionsDto
      */
-    SupportedImageTypes?: Array<ImageType>;
+    'SupportedImageTypes'?: Array<ImageType>;
     /**
      * Gets or sets the default image options.
      * @type {Array<ImageOption>}
      * @memberof LibraryTypeOptionsDto
      */
-    DefaultImageOptions?: Array<ImageOption>;
+    'DefaultImageOptions'?: Array<ImageOption>;
 }
-
 

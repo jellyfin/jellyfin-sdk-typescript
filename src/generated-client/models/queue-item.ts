@@ -24,13 +24,12 @@ export interface QueueItem {
      * @type {string}
      * @memberof QueueItem
      */
-    Id?: string;
+    'Id'?: string;
     /**
      * 
      * @type {string}
      * @memberof QueueItem
      */
-    PlaylistItemId?: string | null;
+    'PlaylistItemId'?: string | null;
 }
-
 

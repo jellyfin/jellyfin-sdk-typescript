@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum ChannelMediaType {
-    Audio = 'Audio',
-    Video = 'Video',
-    Photo = 'Photo'
-}
+export const ChannelMediaType = {
+    Audio: 'Audio',
+    Video: 'Video',
+    Photo: 'Photo'
+} as const;
+
+export type ChannelMediaType = typeof ChannelMediaType[keyof typeof ChannelMediaType];
 
 
 

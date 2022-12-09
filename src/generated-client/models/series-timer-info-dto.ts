@@ -27,211 +27,210 @@ export interface SeriesTimerInfoDto {
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets the server identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ServerId?: string | null;
+    'ServerId'?: string | null;
     /**
      * Gets or sets the external identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ExternalId?: string | null;
+    'ExternalId'?: string | null;
     /**
      * Gets or sets the channel id of the recording.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ChannelId?: string;
+    'ChannelId'?: string;
     /**
      * Gets or sets the external channel identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ExternalChannelId?: string | null;
+    'ExternalChannelId'?: string | null;
     /**
      * Gets or sets the channel name of the recording.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ChannelName?: string | null;
+    'ChannelName'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ChannelPrimaryImageTag?: string | null;
+    'ChannelPrimaryImageTag'?: string | null;
     /**
      * Gets or sets the program identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ProgramId?: string | null;
+    'ProgramId'?: string | null;
     /**
      * Gets or sets the external program identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ExternalProgramId?: string | null;
+    'ExternalProgramId'?: string | null;
     /**
      * Gets or sets the name of the recording.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the description of the recording.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    Overview?: string | null;
+    'Overview'?: string | null;
     /**
      * Gets or sets the start date of the recording, in UTC.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    StartDate?: string;
+    'StartDate'?: string;
     /**
      * Gets or sets the end date of the recording, in UTC.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    EndDate?: string;
+    'EndDate'?: string;
     /**
      * Gets or sets the name of the service.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ServiceName?: string | null;
+    'ServiceName'?: string | null;
     /**
      * Gets or sets the priority.
      * @type {number}
      * @memberof SeriesTimerInfoDto
      */
-    Priority?: number;
+    'Priority'?: number;
     /**
      * Gets or sets the pre padding seconds.
      * @type {number}
      * @memberof SeriesTimerInfoDto
      */
-    PrePaddingSeconds?: number;
+    'PrePaddingSeconds'?: number;
     /**
      * Gets or sets the post padding seconds.
      * @type {number}
      * @memberof SeriesTimerInfoDto
      */
-    PostPaddingSeconds?: number;
+    'PostPaddingSeconds'?: number;
     /**
      * Gets or sets a value indicating whether this instance is pre padding required.
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    IsPrePaddingRequired?: boolean;
+    'IsPrePaddingRequired'?: boolean;
     /**
      * Gets or sets the Id of the Parent that has a backdrop if the item does not have one.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ParentBackdropItemId?: string | null;
+    'ParentBackdropItemId'?: string | null;
     /**
      * Gets or sets the parent backdrop image tags.
      * @type {Array<string>}
      * @memberof SeriesTimerInfoDto
      */
-    ParentBackdropImageTags?: Array<string> | null;
+    'ParentBackdropImageTags'?: Array<string> | null;
     /**
      * Gets or sets a value indicating whether this instance is post padding required.
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    IsPostPaddingRequired?: boolean;
+    'IsPostPaddingRequired'?: boolean;
     /**
      * 
      * @type {KeepUntil}
      * @memberof SeriesTimerInfoDto
      */
-    KeepUntil?: KeepUntil;
+    'KeepUntil'?: KeepUntil;
     /**
      * Gets or sets a value indicating whether [record any time].
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    RecordAnyTime?: boolean;
+    'RecordAnyTime'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    SkipEpisodesInLibrary?: boolean;
+    'SkipEpisodesInLibrary'?: boolean;
     /**
      * Gets or sets a value indicating whether [record any channel].
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    RecordAnyChannel?: boolean;
+    'RecordAnyChannel'?: boolean;
     /**
      * 
      * @type {number}
      * @memberof SeriesTimerInfoDto
      */
-    KeepUpTo?: number;
+    'KeepUpTo'?: number;
     /**
      * Gets or sets a value indicating whether [record new only].
      * @type {boolean}
      * @memberof SeriesTimerInfoDto
      */
-    RecordNewOnly?: boolean;
+    'RecordNewOnly'?: boolean;
     /**
      * Gets or sets the days.
      * @type {Array<DayOfWeek>}
      * @memberof SeriesTimerInfoDto
      */
-    Days?: Array<DayOfWeek> | null;
+    'Days'?: Array<DayOfWeek> | null;
     /**
      * 
      * @type {DayPattern}
      * @memberof SeriesTimerInfoDto
      */
-    DayPattern?: DayPattern;
+    'DayPattern'?: DayPattern;
     /**
      * Gets or sets the image tags.
      * @type {{ [key: string]: string; }}
      * @memberof SeriesTimerInfoDto
      */
-    ImageTags?: { [key: string]: string; } | null;
+    'ImageTags'?: { [key: string]: string; } | null;
     /**
      * Gets or sets the parent thumb item id.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ParentThumbItemId?: string | null;
+    'ParentThumbItemId'?: string | null;
     /**
      * Gets or sets the parent thumb image tag.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ParentThumbImageTag?: string | null;
+    'ParentThumbImageTag'?: string | null;
     /**
      * Gets or sets the parent primary image item identifier.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ParentPrimaryImageItemId?: string | null;
+    'ParentPrimaryImageItemId'?: string | null;
     /**
      * Gets or sets the parent primary image tag.
      * @type {string}
      * @memberof SeriesTimerInfoDto
      */
-    ParentPrimaryImageTag?: string | null;
+    'ParentPrimaryImageTag'?: string | null;
 }
-
 

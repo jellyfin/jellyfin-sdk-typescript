@@ -25,19 +25,18 @@ export interface SeriesTimerInfoDtoQueryResult {
      * @type {Array<SeriesTimerInfoDto>}
      * @memberof SeriesTimerInfoDtoQueryResult
      */
-    Items?: Array<SeriesTimerInfoDto> | null;
+    'Items'?: Array<SeriesTimerInfoDto> | null;
     /**
      * Gets or sets the total number of records available.
      * @type {number}
      * @memberof SeriesTimerInfoDtoQueryResult
      */
-    TotalRecordCount?: number;
+    'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
      * @type {number}
      * @memberof SeriesTimerInfoDtoQueryResult
      */
-    StartIndex?: number;
+    'StartIndex'?: number;
 }
-
 

@@ -25,19 +25,18 @@ export interface FileSystemEntryInfo {
      * @type {string}
      * @memberof FileSystemEntryInfo
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets the path.
      * @type {string}
      * @memberof FileSystemEntryInfo
      */
-    Path?: string;
+    'Path'?: string;
     /**
      * 
      * @type {FileSystemEntryType}
      * @memberof FileSystemEntryInfo
      */
-    Type?: FileSystemEntryType;
+    'Type'?: FileSystemEntryType;
 }
-
 

@@ -27,235 +27,234 @@ export interface UserPolicy {
      * @type {boolean}
      * @memberof UserPolicy
      */
-    IsAdministrator?: boolean;
+    'IsAdministrator'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance is hidden.
      * @type {boolean}
      * @memberof UserPolicy
      */
-    IsHidden?: boolean;
+    'IsHidden'?: boolean;
     /**
      * Gets or sets a value indicating whether this instance is disabled.
      * @type {boolean}
      * @memberof UserPolicy
      */
-    IsDisabled?: boolean;
+    'IsDisabled'?: boolean;
     /**
      * Gets or sets the max parental rating.
      * @type {number}
      * @memberof UserPolicy
      */
-    MaxParentalRating?: number | null;
+    'MaxParentalRating'?: number | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    BlockedTags?: Array<string> | null;
+    'BlockedTags'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableUserPreferenceAccess?: boolean;
+    'EnableUserPreferenceAccess'?: boolean;
     /**
      * 
      * @type {Array<AccessSchedule>}
      * @memberof UserPolicy
      */
-    AccessSchedules?: Array<AccessSchedule> | null;
+    'AccessSchedules'?: Array<AccessSchedule> | null;
     /**
      * 
      * @type {Array<UnratedItem>}
      * @memberof UserPolicy
      */
-    BlockUnratedItems?: Array<UnratedItem> | null;
+    'BlockUnratedItems'?: Array<UnratedItem> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableRemoteControlOfOtherUsers?: boolean;
+    'EnableRemoteControlOfOtherUsers'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableSharedDeviceControl?: boolean;
+    'EnableSharedDeviceControl'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableRemoteAccess?: boolean;
+    'EnableRemoteAccess'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableLiveTvManagement?: boolean;
+    'EnableLiveTvManagement'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableLiveTvAccess?: boolean;
+    'EnableLiveTvAccess'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableMediaPlayback?: boolean;
+    'EnableMediaPlayback'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableAudioPlaybackTranscoding?: boolean;
+    'EnableAudioPlaybackTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableVideoPlaybackTranscoding?: boolean;
+    'EnableVideoPlaybackTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnablePlaybackRemuxing?: boolean;
+    'EnablePlaybackRemuxing'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    ForceRemoteSourceTranscoding?: boolean;
+    'ForceRemoteSourceTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableContentDeletion?: boolean;
+    'EnableContentDeletion'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    EnableContentDeletionFromFolders?: Array<string> | null;
+    'EnableContentDeletionFromFolders'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableContentDownloading?: boolean;
+    'EnableContentDownloading'?: boolean;
     /**
      * Gets or sets a value indicating whether [enable synchronize].
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableSyncTranscoding?: boolean;
+    'EnableSyncTranscoding'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableMediaConversion?: boolean;
+    'EnableMediaConversion'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    EnabledDevices?: Array<string> | null;
+    'EnabledDevices'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableAllDevices?: boolean;
+    'EnableAllDevices'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    EnabledChannels?: Array<string> | null;
+    'EnabledChannels'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableAllChannels?: boolean;
+    'EnableAllChannels'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    EnabledFolders?: Array<string> | null;
+    'EnabledFolders'?: Array<string> | null;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnableAllFolders?: boolean;
+    'EnableAllFolders'?: boolean;
     /**
      * 
      * @type {number}
      * @memberof UserPolicy
      */
-    InvalidLoginAttemptCount?: number;
+    'InvalidLoginAttemptCount'?: number;
     /**
      * 
      * @type {number}
      * @memberof UserPolicy
      */
-    LoginAttemptsBeforeLockout?: number;
+    'LoginAttemptsBeforeLockout'?: number;
     /**
      * 
      * @type {number}
      * @memberof UserPolicy
      */
-    MaxActiveSessions?: number;
+    'MaxActiveSessions'?: number;
     /**
      * 
      * @type {boolean}
      * @memberof UserPolicy
      */
-    EnablePublicSharing?: boolean;
+    'EnablePublicSharing'?: boolean;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    BlockedMediaFolders?: Array<string> | null;
+    'BlockedMediaFolders'?: Array<string> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */
-    BlockedChannels?: Array<string> | null;
+    'BlockedChannels'?: Array<string> | null;
     /**
      * 
      * @type {number}
      * @memberof UserPolicy
      */
-    RemoteClientBitrateLimit?: number;
+    'RemoteClientBitrateLimit'?: number;
     /**
      * 
      * @type {string}
      * @memberof UserPolicy
      */
-    AuthenticationProviderId?: string | null;
+    'AuthenticationProviderId'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof UserPolicy
      */
-    PasswordResetProviderId?: string | null;
+    'PasswordResetProviderId'?: string | null;
     /**
      * 
      * @type {SyncPlayUserAccessType}
      * @memberof UserPolicy
      */
-    SyncPlayAccess?: SyncPlayUserAccessType;
+    'SyncPlayAccess'?: SyncPlayUserAccessType;
 }
-
 

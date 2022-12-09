@@ -25,25 +25,24 @@ export interface ExternalIdInfo {
      * @type {string}
      * @memberof ExternalIdInfo
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets or sets the unique key for this id. This key should be unique across all providers.
      * @type {string}
      * @memberof ExternalIdInfo
      */
-    Key?: string;
+    'Key'?: string;
     /**
      * 
      * @type {ExternalIdMediaType}
      * @memberof ExternalIdInfo
      */
-    Type?: ExternalIdMediaType;
+    'Type'?: ExternalIdMediaType;
     /**
      * Gets or sets the URL format string.
      * @type {string}
      * @memberof ExternalIdInfo
      */
-    UrlFormatString?: string | null;
+    'UrlFormatString'?: string | null;
 }
-
 

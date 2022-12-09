@@ -25,13 +25,12 @@ export interface NotificationResultDto {
      * @type {Array<NotificationDto>}
      * @memberof NotificationResultDto
      */
-    Notifications?: Array<NotificationDto>;
+    'Notifications'?: Array<NotificationDto>;
     /**
      * Gets or sets the total number of notifications.
      * @type {number}
      * @memberof NotificationResultDto
      */
-    TotalRecordCount?: number;
+    'TotalRecordCount'?: number;
 }
-
 

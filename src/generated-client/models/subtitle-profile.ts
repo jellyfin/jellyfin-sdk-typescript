@@ -25,31 +25,30 @@ export interface SubtitleProfile {
      * @type {string}
      * @memberof SubtitleProfile
      */
-    Format?: string | null;
+    'Format'?: string | null;
     /**
      * 
      * @type {SubtitleDeliveryMethod}
      * @memberof SubtitleProfile
      */
-    Method?: SubtitleDeliveryMethod;
+    'Method'?: SubtitleDeliveryMethod;
     /**
      * 
      * @type {string}
      * @memberof SubtitleProfile
      */
-    DidlMode?: string | null;
+    'DidlMode'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SubtitleProfile
      */
-    Language?: string | null;
+    'Language'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof SubtitleProfile
      */
-    Container?: string | null;
+    'Container'?: string | null;
 }
-
 

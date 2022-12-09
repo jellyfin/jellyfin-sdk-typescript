@@ -24,13 +24,12 @@ export interface XmlAttribute {
      * @type {string}
      * @memberof XmlAttribute
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the value of the attribute.
      * @type {string}
      * @memberof XmlAttribute
      */
-    Value?: string | null;
+    'Value'?: string | null;
 }
-
 

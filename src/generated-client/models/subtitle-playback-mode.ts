@@ -19,13 +19,15 @@
  * @enum {string}
  */
 
-export enum SubtitlePlaybackMode {
-    Default = 'Default',
-    Always = 'Always',
-    OnlyForced = 'OnlyForced',
-    None = 'None',
-    Smart = 'Smart'
-}
+export const SubtitlePlaybackMode = {
+    Default: 'Default',
+    Always: 'Always',
+    OnlyForced: 'OnlyForced',
+    None: 'None',
+    Smart: 'Smart'
+} as const;
+
+export type SubtitlePlaybackMode = typeof SubtitlePlaybackMode[keyof typeof SubtitlePlaybackMode];
 
 
 

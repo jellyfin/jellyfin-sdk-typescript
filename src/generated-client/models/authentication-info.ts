@@ -24,73 +24,72 @@ export interface AuthenticationInfo {
      * @type {number}
      * @memberof AuthenticationInfo
      */
-    Id?: number;
+    'Id'?: number;
     /**
      * Gets or sets the access token.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    AccessToken?: string | null;
+    'AccessToken'?: string | null;
     /**
      * Gets or sets the device identifier.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    DeviceId?: string | null;
+    'DeviceId'?: string | null;
     /**
      * Gets or sets the name of the application.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    AppName?: string | null;
+    'AppName'?: string | null;
     /**
      * Gets or sets the application version.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    AppVersion?: string | null;
+    'AppVersion'?: string | null;
     /**
      * Gets or sets the name of the device.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    DeviceName?: string | null;
+    'DeviceName'?: string | null;
     /**
      * Gets or sets the user identifier.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    UserId?: string;
+    'UserId'?: string;
     /**
      * Gets or sets a value indicating whether this instance is active.
      * @type {boolean}
      * @memberof AuthenticationInfo
      */
-    IsActive?: boolean;
+    'IsActive'?: boolean;
     /**
      * Gets or sets the date created.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    DateCreated?: string;
+    'DateCreated'?: string;
     /**
      * Gets or sets the date revoked.
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    DateRevoked?: string | null;
+    'DateRevoked'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    DateLastActivity?: string;
+    'DateLastActivity'?: string;
     /**
      * 
      * @type {string}
      * @memberof AuthenticationInfo
      */
-    UserName?: string | null;
+    'UserName'?: string | null;
 }
-
 

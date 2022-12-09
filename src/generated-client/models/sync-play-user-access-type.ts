@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum SyncPlayUserAccessType {
-    CreateAndJoinGroups = 'CreateAndJoinGroups',
-    JoinGroups = 'JoinGroups',
-    None = 'None'
-}
+export const SyncPlayUserAccessType = {
+    CreateAndJoinGroups: 'CreateAndJoinGroups',
+    JoinGroups: 'JoinGroups',
+    None: 'None'
+} as const;
+
+export type SyncPlayUserAccessType = typeof SyncPlayUserAccessType[keyof typeof SyncPlayUserAccessType];
 
 
 

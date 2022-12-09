@@ -19,12 +19,14 @@
  * @enum {string}
  */
 
-export enum FFmpegLocation {
-    NotFound = 'NotFound',
-    SetByArgument = 'SetByArgument',
-    Custom = 'Custom',
-    System = 'System'
-}
+export const FFmpegLocation = {
+    NotFound: 'NotFound',
+    SetByArgument: 'SetByArgument',
+    Custom: 'Custom',
+    System: 'System'
+} as const;
+
+export type FFmpegLocation = typeof FFmpegLocation[keyof typeof FFmpegLocation];
 
 
 

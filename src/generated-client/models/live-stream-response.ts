@@ -25,7 +25,6 @@ export interface LiveStreamResponse {
      * @type {MediaSourceInfo}
      * @memberof LiveStreamResponse
      */
-    MediaSource?: MediaSourceInfo;
+    'MediaSource'?: MediaSourceInfo;
 }
-
 

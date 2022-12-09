@@ -25,13 +25,12 @@ export interface QueryFilters {
      * @type {Array<NameGuidPair>}
      * @memberof QueryFilters
      */
-    Genres?: Array<NameGuidPair> | null;
+    'Genres'?: Array<NameGuidPair> | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof QueryFilters
      */
-    Tags?: Array<string> | null;
+    'Tags'?: Array<string> | null;
 }
-
 

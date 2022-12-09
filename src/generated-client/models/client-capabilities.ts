@@ -26,61 +26,60 @@ export interface ClientCapabilities {
      * @type {Array<string>}
      * @memberof ClientCapabilities
      */
-    PlayableMediaTypes?: Array<string> | null;
+    'PlayableMediaTypes'?: Array<string> | null;
     /**
      * 
      * @type {Array<GeneralCommandType>}
      * @memberof ClientCapabilities
      */
-    SupportedCommands?: Array<GeneralCommandType> | null;
+    'SupportedCommands'?: Array<GeneralCommandType> | null;
     /**
      * 
      * @type {boolean}
      * @memberof ClientCapabilities
      */
-    SupportsMediaControl?: boolean;
+    'SupportsMediaControl'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof ClientCapabilities
      */
-    SupportsContentUploading?: boolean;
+    'SupportsContentUploading'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof ClientCapabilities
      */
-    MessageCallbackUrl?: string | null;
+    'MessageCallbackUrl'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof ClientCapabilities
      */
-    SupportsPersistentIdentifier?: boolean;
+    'SupportsPersistentIdentifier'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof ClientCapabilities
      */
-    SupportsSync?: boolean;
+    'SupportsSync'?: boolean;
     /**
      * 
      * @type {DeviceProfile}
      * @memberof ClientCapabilities
      */
-    DeviceProfile?: DeviceProfile;
+    'DeviceProfile'?: DeviceProfile;
     /**
      * 
      * @type {string}
      * @memberof ClientCapabilities
      */
-    AppStoreUrl?: string | null;
+    'AppStoreUrl'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ClientCapabilities
      */
-    IconUrl?: string | null;
+    'IconUrl'?: string | null;
 }
-
 

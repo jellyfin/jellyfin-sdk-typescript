@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum DayPattern {
-    Daily = 'Daily',
-    Weekdays = 'Weekdays',
-    Weekends = 'Weekends'
-}
+export const DayPattern = {
+    Daily: 'Daily',
+    Weekdays: 'Weekdays',
+    Weekends: 'Weekends'
+} as const;
+
+export type DayPattern = typeof DayPattern[keyof typeof DayPattern];
 
 
 

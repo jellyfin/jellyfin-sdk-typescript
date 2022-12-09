@@ -24,19 +24,18 @@ export interface SetChannelMappingDto {
      * @type {string}
      * @memberof SetChannelMappingDto
      */
-    ProviderId: string;
+    'ProviderId': string;
     /**
      * Gets or sets the tuner channel id.
      * @type {string}
      * @memberof SetChannelMappingDto
      */
-    TunerChannelId: string;
+    'TunerChannelId': string;
     /**
      * Gets or sets the provider channel id.
      * @type {string}
      * @memberof SetChannelMappingDto
      */
-    ProviderChannelId: string;
+    'ProviderChannelId': string;
 }
-
 

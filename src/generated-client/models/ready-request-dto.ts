@@ -24,25 +24,24 @@ export interface ReadyRequestDto {
      * @type {string}
      * @memberof ReadyRequestDto
      */
-    When?: string;
+    'When'?: string;
     /**
      * Gets or sets the position ticks.
      * @type {number}
      * @memberof ReadyRequestDto
      */
-    PositionTicks?: number;
+    'PositionTicks'?: number;
     /**
      * Gets or sets a value indicating whether the client playback is unpaused.
      * @type {boolean}
      * @memberof ReadyRequestDto
      */
-    IsPlaying?: boolean;
+    'IsPlaying'?: boolean;
     /**
      * Gets or sets the playlist item identifier of the playing item.
      * @type {string}
      * @memberof ReadyRequestDto
      */
-    PlaylistItemId?: string;
+    'PlaylistItemId'?: string;
 }
-
 

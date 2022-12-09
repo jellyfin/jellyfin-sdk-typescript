@@ -25,19 +25,18 @@ export interface ObjectGroupUpdate {
      * @type {string}
      * @memberof ObjectGroupUpdate
      */
-    GroupId?: string;
+    'GroupId'?: string;
     /**
      * 
      * @type {GroupUpdateType}
      * @memberof ObjectGroupUpdate
      */
-    Type?: GroupUpdateType;
+    'Type'?: GroupUpdateType;
     /**
      * Gets the update data.
      * @type {any}
      * @memberof ObjectGroupUpdate
      */
-    Data?: any | null;
+    'Data'?: any;
 }
-
 

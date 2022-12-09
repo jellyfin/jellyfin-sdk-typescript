@@ -24,7 +24,6 @@ export interface SeekRequestDto {
      * @type {number}
      * @memberof SeekRequestDto
      */
-    PositionTicks?: number;
+    'PositionTicks'?: number;
 }
-
 

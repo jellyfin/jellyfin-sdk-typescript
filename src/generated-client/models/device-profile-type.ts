@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum DeviceProfileType {
-    System = 'System',
-    User = 'User'
-}
+export const DeviceProfileType = {
+    System: 'System',
+    User: 'User'
+} as const;
+
+export type DeviceProfileType = typeof DeviceProfileType[keyof typeof DeviceProfileType];
 
 
 

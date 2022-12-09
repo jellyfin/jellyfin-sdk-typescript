@@ -24,13 +24,12 @@ export interface NameValuePair {
      * @type {string}
      * @memberof NameValuePair
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * Gets or sets the value.
      * @type {string}
      * @memberof NameValuePair
      */
-    Value?: string | null;
+    'Value'?: string | null;
 }
-
 

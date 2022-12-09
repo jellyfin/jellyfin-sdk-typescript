@@ -25,7 +25,6 @@ export interface SetShuffleModeRequestDto {
      * @type {GroupShuffleMode}
      * @memberof SetShuffleModeRequestDto
      */
-    Mode?: GroupShuffleMode;
+    'Mode'?: GroupShuffleMode;
 }
-
 

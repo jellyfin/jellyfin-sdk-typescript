@@ -25,62 +25,61 @@ export interface ActivityLogEntry {
      * @type {number}
      * @memberof ActivityLogEntry
      */
-    Id?: number;
+    'Id'?: number;
     /**
      * Gets or sets the name.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets or sets the overview.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    Overview?: string | null;
+    'Overview'?: string | null;
     /**
      * Gets or sets the short overview.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    ShortOverview?: string | null;
+    'ShortOverview'?: string | null;
     /**
      * Gets or sets the type.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    Type?: string;
+    'Type'?: string;
     /**
      * Gets or sets the item identifier.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    ItemId?: string | null;
+    'ItemId'?: string | null;
     /**
      * Gets or sets the date.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    Date?: string;
+    'Date'?: string;
     /**
      * Gets or sets the user identifier.
      * @type {string}
      * @memberof ActivityLogEntry
      */
-    UserId?: string;
+    'UserId'?: string;
     /**
      * Gets or sets the user primary image tag.
      * @type {string}
      * @memberof ActivityLogEntry
      * @deprecated
      */
-    UserPrimaryImageTag?: string | null;
+    'UserPrimaryImageTag'?: string | null;
     /**
      * 
      * @type {LogLevel}
      * @memberof ActivityLogEntry
      */
-    Severity?: LogLevel;
+    'Severity'?: LogLevel;
 }
-
 

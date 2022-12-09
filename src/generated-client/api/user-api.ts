@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -62,7 +62,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUser: async (userId: string, pw: string, password?: string, options: any = {}): Promise<RequestArgs> => {
+        authenticateUser: async (userId: string, pw: string, password?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('authenticateUser', 'userId', userId)
             // verify required parameter 'pw' is not null or undefined
@@ -90,7 +90,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -106,7 +106,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName: async (authenticateUserByName: AuthenticateUserByName, options: any = {}): Promise<RequestArgs> => {
+        authenticateUserByName: async (authenticateUserByName: AuthenticateUserByName, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'authenticateUserByName' is not null or undefined
             assertParamExists('authenticateUserByName', 'authenticateUserByName', authenticateUserByName)
             const localVarPath = `/Users/AuthenticateByName`;
@@ -125,7 +125,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(authenticateUserByName, localVarRequestOptions, configuration)
@@ -142,7 +142,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect: async (quickConnectDto: QuickConnectDto, options: any = {}): Promise<RequestArgs> => {
+        authenticateWithQuickConnect: async (quickConnectDto: QuickConnectDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'quickConnectDto' is not null or undefined
             assertParamExists('authenticateWithQuickConnect', 'quickConnectDto', quickConnectDto)
             const localVarPath = `/Users/AuthenticateWithQuickConnect`;
@@ -161,7 +161,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(quickConnectDto, localVarRequestOptions, configuration)
@@ -178,7 +178,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName: async (createUserByName: CreateUserByName, options: any = {}): Promise<RequestArgs> => {
+        createUserByName: async (createUserByName: CreateUserByName, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'createUserByName' is not null or undefined
             assertParamExists('createUserByName', 'createUserByName', createUserByName)
             const localVarPath = `/Users/New`;
@@ -200,7 +200,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(createUserByName, localVarRequestOptions, configuration)
@@ -217,7 +217,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUser: async (userId: string, options: any = {}): Promise<RequestArgs> => {
+        deleteUser: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('deleteUser', 'userId', userId)
             const localVarPath = `/Users/{userId}`
@@ -238,7 +238,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -254,7 +254,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword: async (forgotPasswordDto: ForgotPasswordDto, options: any = {}): Promise<RequestArgs> => {
+        forgotPassword: async (forgotPasswordDto: ForgotPasswordDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'forgotPasswordDto' is not null or undefined
             assertParamExists('forgotPassword', 'forgotPasswordDto', forgotPasswordDto)
             const localVarPath = `/Users/ForgotPassword`;
@@ -273,7 +273,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(forgotPasswordDto, localVarRequestOptions, configuration)
@@ -290,7 +290,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin: async (forgotPasswordPinDto: ForgotPasswordPinDto, options: any = {}): Promise<RequestArgs> => {
+        forgotPasswordPin: async (forgotPasswordPinDto: ForgotPasswordPinDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'forgotPasswordPinDto' is not null or undefined
             assertParamExists('forgotPasswordPin', 'forgotPasswordPinDto', forgotPasswordPinDto)
             const localVarPath = `/Users/ForgotPassword/Pin`;
@@ -309,7 +309,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(forgotPasswordPinDto, localVarRequestOptions, configuration)
@@ -325,7 +325,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCurrentUser: async (options: any = {}): Promise<RequestArgs> => {
+        getCurrentUser: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users/Me`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -343,7 +343,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -358,7 +358,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicUsers: async (options: any = {}): Promise<RequestArgs> => {
+        getPublicUsers: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users/Public`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -373,7 +373,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -389,7 +389,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserById: async (userId: string, options: any = {}): Promise<RequestArgs> => {
+        getUserById: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('getUserById', 'userId', userId)
             const localVarPath = `/Users/{userId}`
@@ -410,7 +410,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -427,7 +427,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUsers: async (isHidden?: boolean, isDisabled?: boolean, options: any = {}): Promise<RequestArgs> => {
+        getUsers: async (isHidden?: boolean, isDisabled?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -453,7 +453,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -470,7 +470,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser: async (userId: string, userDto: UserDto, options: any = {}): Promise<RequestArgs> => {
+        updateUser: async (userId: string, userDto: UserDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUser', 'userId', userId)
             // verify required parameter 'userDto' is not null or undefined
@@ -495,7 +495,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(userDto, localVarRequestOptions, configuration)
@@ -513,7 +513,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration: async (userId: string, userConfiguration: UserConfiguration, options: any = {}): Promise<RequestArgs> => {
+        updateUserConfiguration: async (userId: string, userConfiguration: UserConfiguration, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserConfiguration', 'userId', userId)
             // verify required parameter 'userConfiguration' is not null or undefined
@@ -538,7 +538,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(userConfiguration, localVarRequestOptions, configuration)
@@ -556,7 +556,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserEasyPassword: async (userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options: any = {}): Promise<RequestArgs> => {
+        updateUserEasyPassword: async (userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserEasyPassword', 'userId', userId)
             // verify required parameter 'updateUserEasyPassword' is not null or undefined
@@ -581,7 +581,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(updateUserEasyPassword, localVarRequestOptions, configuration)
@@ -599,7 +599,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword: async (userId: string, updateUserPassword: UpdateUserPassword, options: any = {}): Promise<RequestArgs> => {
+        updateUserPassword: async (userId: string, updateUserPassword: UpdateUserPassword, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserPassword', 'userId', userId)
             // verify required parameter 'updateUserPassword' is not null or undefined
@@ -624,7 +624,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(updateUserPassword, localVarRequestOptions, configuration)
@@ -642,7 +642,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy: async (userId: string, userPolicy: UserPolicy, options: any = {}): Promise<RequestArgs> => {
+        updateUserPolicy: async (userId: string, userPolicy: UserPolicy, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserPolicy', 'userId', userId)
             // verify required parameter 'userPolicy' is not null or undefined
@@ -667,7 +667,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(userPolicy, localVarRequestOptions, configuration)
@@ -696,7 +696,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateUser(userId: string, pw: string, password?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+        async authenticateUser(userId: string, pw: string, password?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUser(userId, pw, password, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -707,7 +707,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+        async authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUserByName(authenticateUserByName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -718,7 +718,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+        async authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateWithQuickConnect(quickConnectDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -729,7 +729,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createUserByName(createUserByName: CreateUserByName, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async createUserByName(createUserByName: CreateUserByName, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createUserByName(createUserByName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -740,7 +740,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteUser(userId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteUser(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteUser(userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -751,7 +751,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
+        async forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPassword(forgotPasswordDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -762,7 +762,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
+        async forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPasswordPin(forgotPasswordPinDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -772,7 +772,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCurrentUser(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async getCurrentUser(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCurrentUser(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -782,7 +782,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPublicUsers(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
+        async getPublicUsers(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPublicUsers(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -793,7 +793,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUserById(userId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async getUserById(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUserById(userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -805,7 +805,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUsers(isHidden?: boolean, isDisabled?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
+        async getUsers(isHidden?: boolean, isDisabled?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUsers(isHidden, isDisabled, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -817,7 +817,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUser(userId: string, userDto: UserDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUser(userId: string, userDto: UserDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userId, userDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -829,7 +829,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userId, userConfiguration, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -841,7 +841,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserEasyPassword(userId, updateUserEasyPassword, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -853,7 +853,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(userId, updateUserPassword, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -865,7 +865,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPolicy(userId, userPolicy, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1315,7 +1315,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public authenticateUser(requestParameters: UserApiAuthenticateUserRequest, options?: any) {
+    public authenticateUser(requestParameters: UserApiAuthenticateUserRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).authenticateUser(requestParameters.userId, requestParameters.pw, requestParameters.password, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1327,7 +1327,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: any) {
+    public authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).authenticateUserByName(requestParameters.authenticateUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1339,7 +1339,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: any) {
+    public authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).authenticateWithQuickConnect(requestParameters.quickConnectDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1351,7 +1351,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: any) {
+    public createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).createUserByName(requestParameters.createUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1363,7 +1363,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public deleteUser(requestParameters: UserApiDeleteUserRequest, options?: any) {
+    public deleteUser(requestParameters: UserApiDeleteUserRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).deleteUser(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1375,7 +1375,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: any) {
+    public forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).forgotPassword(requestParameters.forgotPasswordDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1387,7 +1387,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: any) {
+    public forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).forgotPasswordPin(requestParameters.forgotPasswordPinDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1398,7 +1398,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getCurrentUser(options?: any) {
+    public getCurrentUser(options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).getCurrentUser(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1409,7 +1409,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getPublicUsers(options?: any) {
+    public getPublicUsers(options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).getPublicUsers(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1421,7 +1421,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getUserById(requestParameters: UserApiGetUserByIdRequest, options?: any) {
+    public getUserById(requestParameters: UserApiGetUserByIdRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).getUserById(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1433,7 +1433,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: any) {
+    public getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).getUsers(requestParameters.isHidden, requestParameters.isDisabled, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1445,7 +1445,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUser(requestParameters: UserApiUpdateUserRequest, options?: any) {
+    public updateUser(requestParameters: UserApiUpdateUserRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUser(requestParameters.userId, requestParameters.userDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1457,7 +1457,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: any) {
+    public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userId, requestParameters.userConfiguration, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1469,7 +1469,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserEasyPassword(requestParameters: UserApiUpdateUserEasyPasswordRequest, options?: any) {
+    public updateUserEasyPassword(requestParameters: UserApiUpdateUserEasyPasswordRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserEasyPassword(requestParameters.userId, requestParameters.updateUserEasyPassword, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1481,7 +1481,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: any) {
+    public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserPassword(requestParameters.userId, requestParameters.updateUserPassword, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1493,7 +1493,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: any) {
+    public updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: AxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserPolicy(requestParameters.userId, requestParameters.userPolicy, options).then((request) => request(this.axios, this.basePath));
     }
 }

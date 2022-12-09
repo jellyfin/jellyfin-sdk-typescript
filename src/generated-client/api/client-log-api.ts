@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -36,7 +36,7 @@ export const ClientLogApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logFile: async (body?: any, options: any = {}): Promise<RequestArgs> => {
+        logFile: async (body?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/ClientLog/Document`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -56,7 +56,7 @@ export const ClientLogApiAxiosParamCreator = function (configuration?: Configura
     
             localVarHeaderParameter['Content-Type'] = 'text/plain';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(body, localVarRequestOptions, configuration)
@@ -83,7 +83,7 @@ export const ClientLogApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logFile(body?: any, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClientLogDocumentResponseDto>> {
+        async logFile(body?: any, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClientLogDocumentResponseDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.logFile(body, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -139,7 +139,7 @@ export class ClientLogApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ClientLogApi
      */
-    public logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: any) {
+    public logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: AxiosRequestConfig) {
         return ClientLogApiFp(this.configuration).logFile(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }

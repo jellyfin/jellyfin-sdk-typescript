@@ -25,31 +25,30 @@ export interface TaskTriggerInfo {
      * @type {string}
      * @memberof TaskTriggerInfo
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * Gets or sets the time of day.
      * @type {number}
      * @memberof TaskTriggerInfo
      */
-    TimeOfDayTicks?: number | null;
+    'TimeOfDayTicks'?: number | null;
     /**
      * Gets or sets the interval.
      * @type {number}
      * @memberof TaskTriggerInfo
      */
-    IntervalTicks?: number | null;
+    'IntervalTicks'?: number | null;
     /**
      * 
      * @type {DayOfWeek}
      * @memberof TaskTriggerInfo
      */
-    DayOfWeek?: DayOfWeek;
+    'DayOfWeek'?: DayOfWeek;
     /**
      * Gets or sets the maximum runtime ticks.
      * @type {number}
      * @memberof TaskTriggerInfo
      */
-    MaxRuntimeTicks?: number | null;
+    'MaxRuntimeTicks'?: number | null;
 }
-
 

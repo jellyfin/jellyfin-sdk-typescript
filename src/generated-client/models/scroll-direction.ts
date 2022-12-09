@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum ScrollDirection {
-    Horizontal = 'Horizontal',
-    Vertical = 'Vertical'
-}
+export const ScrollDirection = {
+    Horizontal: 'Horizontal',
+    Vertical: 'Vertical'
+} as const;
+
+export type ScrollDirection = typeof ScrollDirection[keyof typeof ScrollDirection];
 
 
 

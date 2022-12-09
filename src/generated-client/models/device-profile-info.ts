@@ -25,19 +25,18 @@ export interface DeviceProfileInfo {
      * @type {string}
      * @memberof DeviceProfileInfo
      */
-    Id?: string | null;
+    'Id'?: string | null;
     /**
      * Gets or sets the name.
      * @type {string}
      * @memberof DeviceProfileInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * 
      * @type {DeviceProfileType}
      * @memberof DeviceProfileInfo
      */
-    Type?: DeviceProfileType;
+    'Type'?: DeviceProfileType;
 }
-
 

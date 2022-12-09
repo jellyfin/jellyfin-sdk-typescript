@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -35,7 +35,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addToCollection: async (collectionId: string, ids: Array<string>, options: any = {}): Promise<RequestArgs> => {
+        addToCollection: async (collectionId: string, ids: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'collectionId' is not null or undefined
             assertParamExists('addToCollection', 'collectionId', collectionId)
             // verify required parameter 'ids' is not null or undefined
@@ -62,7 +62,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -81,7 +81,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createCollection: async (name?: string, ids?: Array<string>, parentId?: string, isLocked?: boolean, options: any = {}): Promise<RequestArgs> => {
+        createCollection: async (name?: string, ids?: Array<string>, parentId?: string, isLocked?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Collections`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -115,7 +115,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -132,7 +132,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeFromCollection: async (collectionId: string, ids: Array<string>, options: any = {}): Promise<RequestArgs> => {
+        removeFromCollection: async (collectionId: string, ids: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'collectionId' is not null or undefined
             assertParamExists('removeFromCollection', 'collectionId', collectionId)
             // verify required parameter 'ids' is not null or undefined
@@ -159,7 +159,7 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -186,7 +186,7 @@ export const CollectionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addToCollection(collectionId: string, ids: Array<string>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async addToCollection(collectionId: string, ids: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.addToCollection(collectionId, ids, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -200,7 +200,7 @@ export const CollectionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createCollection(name?: string, ids?: Array<string>, parentId?: string, isLocked?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionCreationResult>> {
+        async createCollection(name?: string, ids?: Array<string>, parentId?: string, isLocked?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<CollectionCreationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createCollection(name, ids, parentId, isLocked, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -212,7 +212,7 @@ export const CollectionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async removeFromCollection(collectionId: string, ids: Array<string>, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async removeFromCollection(collectionId: string, ids: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeFromCollection(collectionId, ids, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -356,7 +356,7 @@ export class CollectionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof CollectionApi
      */
-    public addToCollection(requestParameters: CollectionApiAddToCollectionRequest, options?: any) {
+    public addToCollection(requestParameters: CollectionApiAddToCollectionRequest, options?: AxiosRequestConfig) {
         return CollectionApiFp(this.configuration).addToCollection(requestParameters.collectionId, requestParameters.ids, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -368,7 +368,7 @@ export class CollectionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof CollectionApi
      */
-    public createCollection(requestParameters: CollectionApiCreateCollectionRequest = {}, options?: any) {
+    public createCollection(requestParameters: CollectionApiCreateCollectionRequest = {}, options?: AxiosRequestConfig) {
         return CollectionApiFp(this.configuration).createCollection(requestParameters.name, requestParameters.ids, requestParameters.parentId, requestParameters.isLocked, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -380,7 +380,7 @@ export class CollectionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof CollectionApi
      */
-    public removeFromCollection(requestParameters: CollectionApiRemoveFromCollectionRequest, options?: any) {
+    public removeFromCollection(requestParameters: CollectionApiRemoveFromCollectionRequest, options?: AxiosRequestConfig) {
         return CollectionApiFp(this.configuration).removeFromCollection(requestParameters.collectionId, requestParameters.ids, options).then((request) => request(this.axios, this.basePath));
     }
 }

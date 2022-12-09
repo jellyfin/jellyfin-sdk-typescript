@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -51,7 +51,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addUserToSession: async (sessionId: string, userId: string, options: any = {}): Promise<RequestArgs> => {
+        addUserToSession: async (sessionId: string, userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('addUserToSession', 'sessionId', sessionId)
             // verify required parameter 'userId' is not null or undefined
@@ -75,7 +75,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -94,7 +94,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        displayContent: async (sessionId: string, itemType: BaseItemKind, itemId: string, itemName: string, options: any = {}): Promise<RequestArgs> => {
+        displayContent: async (sessionId: string, itemType: BaseItemKind, itemId: string, itemName: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('displayContent', 'sessionId', sessionId)
             // verify required parameter 'itemType' is not null or undefined
@@ -133,7 +133,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -148,7 +148,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAuthProviders: async (options: any = {}): Promise<RequestArgs> => {
+        getAuthProviders: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Auth/Providers`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -166,7 +166,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -181,7 +181,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPasswordResetProviders: async (options: any = {}): Promise<RequestArgs> => {
+        getPasswordResetProviders: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Auth/PasswordResetProviders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -199,7 +199,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -217,7 +217,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSessions: async (controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options: any = {}): Promise<RequestArgs> => {
+        getSessions: async (controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -247,7 +247,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -270,7 +270,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        play: async (sessionId: string, playCommand: PlayCommand, itemIds: Array<string>, startPositionTicks?: number, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, startIndex?: number, options: any = {}): Promise<RequestArgs> => {
+        play: async (sessionId: string, playCommand: PlayCommand, itemIds: Array<string>, startPositionTicks?: number, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, startIndex?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('play', 'sessionId', sessionId)
             // verify required parameter 'playCommand' is not null or undefined
@@ -323,7 +323,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -344,7 +344,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCapabilities: async (id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options: any = {}): Promise<RequestArgs> => {
+        postCapabilities: async (id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Capabilities`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -386,7 +386,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -403,7 +403,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postFullCapabilities: async (clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options: any = {}): Promise<RequestArgs> => {
+        postFullCapabilities: async (clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'clientCapabilitiesDto' is not null or undefined
             assertParamExists('postFullCapabilities', 'clientCapabilitiesDto', clientCapabilitiesDto)
             const localVarPath = `/Sessions/Capabilities/Full`;
@@ -429,7 +429,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(clientCapabilitiesDto, localVarRequestOptions, configuration)
@@ -447,7 +447,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeUserFromSession: async (sessionId: string, userId: string, options: any = {}): Promise<RequestArgs> => {
+        removeUserFromSession: async (sessionId: string, userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('removeUserFromSession', 'sessionId', sessionId)
             // verify required parameter 'userId' is not null or undefined
@@ -471,7 +471,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -486,7 +486,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportSessionEnded: async (options: any = {}): Promise<RequestArgs> => {
+        reportSessionEnded: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Logout`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -504,7 +504,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -521,7 +521,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportViewing: async (itemId: string, sessionId?: string, options: any = {}): Promise<RequestArgs> => {
+        reportViewing: async (itemId: string, sessionId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('reportViewing', 'itemId', itemId)
             const localVarPath = `/Sessions/Viewing`;
@@ -549,7 +549,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -566,7 +566,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendFullGeneralCommand: async (sessionId: string, generalCommand: GeneralCommand, options: any = {}): Promise<RequestArgs> => {
+        sendFullGeneralCommand: async (sessionId: string, generalCommand: GeneralCommand, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendFullGeneralCommand', 'sessionId', sessionId)
             // verify required parameter 'generalCommand' is not null or undefined
@@ -591,7 +591,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(generalCommand, localVarRequestOptions, configuration)
@@ -609,7 +609,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendGeneralCommand: async (sessionId: string, command: GeneralCommandType, options: any = {}): Promise<RequestArgs> => {
+        sendGeneralCommand: async (sessionId: string, command: GeneralCommandType, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendGeneralCommand', 'sessionId', sessionId)
             // verify required parameter 'command' is not null or undefined
@@ -633,7 +633,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -650,7 +650,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendMessageCommand: async (sessionId: string, messageCommand: MessageCommand, options: any = {}): Promise<RequestArgs> => {
+        sendMessageCommand: async (sessionId: string, messageCommand: MessageCommand, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendMessageCommand', 'sessionId', sessionId)
             // verify required parameter 'messageCommand' is not null or undefined
@@ -675,7 +675,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(messageCommand, localVarRequestOptions, configuration)
@@ -695,7 +695,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendPlaystateCommand: async (sessionId: string, command: PlaystateCommand, seekPositionTicks?: number, controllingUserId?: string, options: any = {}): Promise<RequestArgs> => {
+        sendPlaystateCommand: async (sessionId: string, command: PlaystateCommand, seekPositionTicks?: number, controllingUserId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendPlaystateCommand', 'sessionId', sessionId)
             // verify required parameter 'command' is not null or undefined
@@ -727,7 +727,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -744,7 +744,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendSystemCommand: async (sessionId: string, command: GeneralCommandType, options: any = {}): Promise<RequestArgs> => {
+        sendSystemCommand: async (sessionId: string, command: GeneralCommandType, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'sessionId' is not null or undefined
             assertParamExists('sendSystemCommand', 'sessionId', sessionId)
             // verify required parameter 'command' is not null or undefined
@@ -768,7 +768,7 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -795,7 +795,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addUserToSession(sessionId: string, userId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async addUserToSession(sessionId: string, userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.addUserToSession(sessionId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -809,7 +809,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async displayContent(sessionId: string, itemType: BaseItemKind, itemId: string, itemName: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async displayContent(sessionId: string, itemType: BaseItemKind, itemId: string, itemName: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.displayContent(sessionId, itemType, itemId, itemName, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -819,7 +819,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getAuthProviders(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
+        async getAuthProviders(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAuthProviders(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -829,7 +829,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPasswordResetProviders(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
+        async getPasswordResetProviders(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPasswordResetProviders(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -842,7 +842,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSessions(controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SessionInfo>>> {
+        async getSessions(controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SessionInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSessions(controllableByUserId, deviceId, activeWithinSeconds, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -860,7 +860,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async play(sessionId: string, playCommand: PlayCommand, itemIds: Array<string>, startPositionTicks?: number, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, startIndex?: number, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async play(sessionId: string, playCommand: PlayCommand, itemIds: Array<string>, startPositionTicks?: number, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, startIndex?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.play(sessionId, playCommand, itemIds, startPositionTicks, mediaSourceId, audioStreamIndex, subtitleStreamIndex, startIndex, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -876,7 +876,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postCapabilities(id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postCapabilities(id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsSync, supportsPersistentIdentifier, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -888,7 +888,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postFullCapabilities(clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postFullCapabilities(clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postFullCapabilities(clientCapabilitiesDto, id, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -900,7 +900,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async removeUserFromSession(sessionId: string, userId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async removeUserFromSession(sessionId: string, userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeUserFromSession(sessionId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -910,7 +910,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportSessionEnded(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async reportSessionEnded(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.reportSessionEnded(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -922,7 +922,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportViewing(itemId: string, sessionId?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async reportViewing(itemId: string, sessionId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.reportViewing(itemId, sessionId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -934,7 +934,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendFullGeneralCommand(sessionId: string, generalCommand: GeneralCommand, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async sendFullGeneralCommand(sessionId: string, generalCommand: GeneralCommand, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.sendFullGeneralCommand(sessionId, generalCommand, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -946,7 +946,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendGeneralCommand(sessionId: string, command: GeneralCommandType, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async sendGeneralCommand(sessionId: string, command: GeneralCommandType, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.sendGeneralCommand(sessionId, command, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -958,7 +958,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendMessageCommand(sessionId: string, messageCommand: MessageCommand, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async sendMessageCommand(sessionId: string, messageCommand: MessageCommand, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.sendMessageCommand(sessionId, messageCommand, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -972,7 +972,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendPlaystateCommand(sessionId: string, command: PlaystateCommand, seekPositionTicks?: number, controllingUserId?: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async sendPlaystateCommand(sessionId: string, command: PlaystateCommand, seekPositionTicks?: number, controllingUserId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.sendPlaystateCommand(sessionId, command, seekPositionTicks, controllingUserId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -984,7 +984,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async sendSystemCommand(sessionId: string, command: GeneralCommandType, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async sendSystemCommand(sessionId: string, command: GeneralCommandType, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.sendSystemCommand(sessionId, command, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1579,7 +1579,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public addUserToSession(requestParameters: SessionApiAddUserToSessionRequest, options?: any) {
+    public addUserToSession(requestParameters: SessionApiAddUserToSessionRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).addUserToSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1591,7 +1591,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public displayContent(requestParameters: SessionApiDisplayContentRequest, options?: any) {
+    public displayContent(requestParameters: SessionApiDisplayContentRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).displayContent(requestParameters.sessionId, requestParameters.itemType, requestParameters.itemId, requestParameters.itemName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1602,7 +1602,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public getAuthProviders(options?: any) {
+    public getAuthProviders(options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).getAuthProviders(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1613,7 +1613,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public getPasswordResetProviders(options?: any) {
+    public getPasswordResetProviders(options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).getPasswordResetProviders(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1625,7 +1625,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: any) {
+    public getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1637,7 +1637,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public play(requestParameters: SessionApiPlayRequest, options?: any) {
+    public play(requestParameters: SessionApiPlayRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).play(requestParameters.sessionId, requestParameters.playCommand, requestParameters.itemIds, requestParameters.startPositionTicks, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.startIndex, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1649,7 +1649,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public postCapabilities(requestParameters: SessionApiPostCapabilitiesRequest = {}, options?: any) {
+    public postCapabilities(requestParameters: SessionApiPostCapabilitiesRequest = {}, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).postCapabilities(requestParameters.id, requestParameters.playableMediaTypes, requestParameters.supportedCommands, requestParameters.supportsMediaControl, requestParameters.supportsSync, requestParameters.supportsPersistentIdentifier, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1661,7 +1661,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public postFullCapabilities(requestParameters: SessionApiPostFullCapabilitiesRequest, options?: any) {
+    public postFullCapabilities(requestParameters: SessionApiPostFullCapabilitiesRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).postFullCapabilities(requestParameters.clientCapabilitiesDto, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1673,7 +1673,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: any) {
+    public removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1684,7 +1684,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public reportSessionEnded(options?: any) {
+    public reportSessionEnded(options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).reportSessionEnded(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1696,7 +1696,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public reportViewing(requestParameters: SessionApiReportViewingRequest, options?: any) {
+    public reportViewing(requestParameters: SessionApiReportViewingRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).reportViewing(requestParameters.itemId, requestParameters.sessionId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1708,7 +1708,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public sendFullGeneralCommand(requestParameters: SessionApiSendFullGeneralCommandRequest, options?: any) {
+    public sendFullGeneralCommand(requestParameters: SessionApiSendFullGeneralCommandRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendFullGeneralCommand(requestParameters.sessionId, requestParameters.generalCommand, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1720,7 +1720,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public sendGeneralCommand(requestParameters: SessionApiSendGeneralCommandRequest, options?: any) {
+    public sendGeneralCommand(requestParameters: SessionApiSendGeneralCommandRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendGeneralCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1732,7 +1732,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public sendMessageCommand(requestParameters: SessionApiSendMessageCommandRequest, options?: any) {
+    public sendMessageCommand(requestParameters: SessionApiSendMessageCommandRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendMessageCommand(requestParameters.sessionId, requestParameters.messageCommand, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1744,7 +1744,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public sendPlaystateCommand(requestParameters: SessionApiSendPlaystateCommandRequest, options?: any) {
+    public sendPlaystateCommand(requestParameters: SessionApiSendPlaystateCommandRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendPlaystateCommand(requestParameters.sessionId, requestParameters.command, requestParameters.seekPositionTicks, requestParameters.controllingUserId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1756,7 +1756,7 @@ export class SessionApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SessionApi
      */
-    public sendSystemCommand(requestParameters: SessionApiSendSystemCommandRequest, options?: any) {
+    public sendSystemCommand(requestParameters: SessionApiSendSystemCommandRequest, options?: AxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendSystemCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(this.axios, this.basePath));
     }
 }

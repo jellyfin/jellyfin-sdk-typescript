@@ -19,20 +19,22 @@
  * @enum {string}
  */
 
-export enum ExternalIdMediaType {
-    Album = 'Album',
-    AlbumArtist = 'AlbumArtist',
-    Artist = 'Artist',
-    BoxSet = 'BoxSet',
-    Episode = 'Episode',
-    Movie = 'Movie',
-    OtherArtist = 'OtherArtist',
-    Person = 'Person',
-    ReleaseGroup = 'ReleaseGroup',
-    Season = 'Season',
-    Series = 'Series',
-    Track = 'Track'
-}
+export const ExternalIdMediaType = {
+    Album: 'Album',
+    AlbumArtist: 'AlbumArtist',
+    Artist: 'Artist',
+    BoxSet: 'BoxSet',
+    Episode: 'Episode',
+    Movie: 'Movie',
+    OtherArtist: 'OtherArtist',
+    Person: 'Person',
+    ReleaseGroup: 'ReleaseGroup',
+    Season: 'Season',
+    Series: 'Series',
+    Track: 'Track'
+} as const;
+
+export type ExternalIdMediaType = typeof ExternalIdMediaType[keyof typeof ExternalIdMediaType];
 
 
 

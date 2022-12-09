@@ -26,25 +26,24 @@ export interface AuthenticationResult {
      * @type {UserDto}
      * @memberof AuthenticationResult
      */
-    User?: UserDto;
+    'User'?: UserDto;
     /**
      * 
      * @type {SessionInfo}
      * @memberof AuthenticationResult
      */
-    SessionInfo?: SessionInfo;
+    'SessionInfo'?: SessionInfo;
     /**
      * 
      * @type {string}
      * @memberof AuthenticationResult
      */
-    AccessToken?: string | null;
+    'AccessToken'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof AuthenticationResult
      */
-    ServerId?: string | null;
+    'ServerId'?: string | null;
 }
-
 

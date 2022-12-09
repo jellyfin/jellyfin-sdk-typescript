@@ -24,31 +24,30 @@ export interface NotificationTypeInfo {
      * @type {string}
      * @memberof NotificationTypeInfo
      */
-    Type?: string | null;
+    'Type'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof NotificationTypeInfo
      */
-    Name?: string | null;
+    'Name'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof NotificationTypeInfo
      */
-    Enabled?: boolean;
+    'Enabled'?: boolean;
     /**
      * 
      * @type {string}
      * @memberof NotificationTypeInfo
      */
-    Category?: string | null;
+    'Category'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof NotificationTypeInfo
      */
-    IsBasedOnUserEvent?: boolean;
+    'IsBasedOnUserEvent'?: boolean;
 }
-
 

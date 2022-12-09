@@ -19,10 +19,12 @@
  * @enum {string}
  */
 
-export enum TranscodeSeekInfo {
-    Auto = 'Auto',
-    Bytes = 'Bytes'
-}
+export const TranscodeSeekInfo = {
+    Auto: 'Auto',
+    Bytes: 'Bytes'
+} as const;
+
+export type TranscodeSeekInfo = typeof TranscodeSeekInfo[keyof typeof TranscodeSeekInfo];
 
 
 

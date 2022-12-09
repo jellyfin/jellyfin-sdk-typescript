@@ -24,43 +24,42 @@ export interface MediaAttachment {
      * @type {string}
      * @memberof MediaAttachment
      */
-    Codec?: string | null;
+    'Codec'?: string | null;
     /**
      * Gets or sets the codec tag.
      * @type {string}
      * @memberof MediaAttachment
      */
-    CodecTag?: string | null;
+    'CodecTag'?: string | null;
     /**
      * Gets or sets the comment.
      * @type {string}
      * @memberof MediaAttachment
      */
-    Comment?: string | null;
+    'Comment'?: string | null;
     /**
      * Gets or sets the index.
      * @type {number}
      * @memberof MediaAttachment
      */
-    Index?: number;
+    'Index'?: number;
     /**
      * Gets or sets the filename.
      * @type {string}
      * @memberof MediaAttachment
      */
-    FileName?: string | null;
+    'FileName'?: string | null;
     /**
      * Gets or sets the MIME type.
      * @type {string}
      * @memberof MediaAttachment
      */
-    MimeType?: string | null;
+    'MimeType'?: string | null;
     /**
      * Gets or sets the delivery URL.
      * @type {string}
      * @memberof MediaAttachment
      */
-    DeliveryUrl?: string | null;
+    'DeliveryUrl'?: string | null;
 }
-
 

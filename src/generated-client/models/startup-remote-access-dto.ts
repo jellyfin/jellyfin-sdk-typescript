@@ -24,13 +24,12 @@ export interface StartupRemoteAccessDto {
      * @type {boolean}
      * @memberof StartupRemoteAccessDto
      */
-    EnableRemoteAccess: boolean;
+    'EnableRemoteAccess': boolean;
     /**
      * Gets or sets a value indicating whether enable automatic port mapping.
      * @type {boolean}
      * @memberof StartupRemoteAccessDto
      */
-    EnableAutomaticPortMapping: boolean;
+    'EnableAutomaticPortMapping': boolean;
 }
-
 

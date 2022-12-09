@@ -25,25 +25,24 @@ export interface PersonLookupInfoRemoteSearchQuery {
      * @type {PersonLookupInfo}
      * @memberof PersonLookupInfoRemoteSearchQuery
      */
-    SearchInfo?: PersonLookupInfo;
+    'SearchInfo'?: PersonLookupInfo;
     /**
      * 
      * @type {string}
      * @memberof PersonLookupInfoRemoteSearchQuery
      */
-    ItemId?: string;
+    'ItemId'?: string;
     /**
      * Gets or sets the provider name to search within if set.
      * @type {string}
      * @memberof PersonLookupInfoRemoteSearchQuery
      */
-    SearchProviderName?: string | null;
+    'SearchProviderName'?: string | null;
     /**
      * Gets or sets a value indicating whether disabled providers should be included.
      * @type {boolean}
      * @memberof PersonLookupInfoRemoteSearchQuery
      */
-    IncludeDisabledProviders?: boolean;
+    'IncludeDisabledProviders'?: boolean;
 }
-
 

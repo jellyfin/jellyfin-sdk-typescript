@@ -25,13 +25,12 @@ export interface ImageProviderInfo {
      * @type {string}
      * @memberof ImageProviderInfo
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets the supported image types.
      * @type {Array<ImageType>}
      * @memberof ImageProviderInfo
      */
-    SupportedImages?: Array<ImageType>;
+    'SupportedImages'?: Array<ImageType>;
 }
-
 

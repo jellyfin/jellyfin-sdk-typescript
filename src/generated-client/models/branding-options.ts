@@ -24,19 +24,18 @@ export interface BrandingOptions {
      * @type {string}
      * @memberof BrandingOptions
      */
-    LoginDisclaimer?: string | null;
+    'LoginDisclaimer'?: string | null;
     /**
      * Gets or sets the custom CSS.
      * @type {string}
      * @memberof BrandingOptions
      */
-    CustomCss?: string | null;
+    'CustomCss'?: string | null;
     /**
      * Gets or sets a value indicating whether to enable the splashscreen.
      * @type {boolean}
      * @memberof BrandingOptions
      */
-    SplashscreenEnabled?: boolean;
+    'SplashscreenEnabled'?: boolean;
 }
-
 

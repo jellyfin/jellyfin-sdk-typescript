@@ -24,13 +24,12 @@ export interface MediaUpdateInfoPathDto {
      * @type {string}
      * @memberof MediaUpdateInfoPathDto
      */
-    Path?: string | null;
+    'Path'?: string | null;
     /**
      * Gets or sets media update type.  Created, Modified, Deleted.
      * @type {string}
      * @memberof MediaUpdateInfoPathDto
      */
-    UpdateType?: string | null;
+    'UpdateType'?: string | null;
 }
-
 

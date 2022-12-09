@@ -24,19 +24,18 @@ export interface ControlResponse {
      * @type {{ [key: string]: string; }}
      * @memberof ControlResponse
      */
-    Headers?: { [key: string]: string; };
+    'Headers'?: { [key: string]: string; };
     /**
      * 
      * @type {string}
      * @memberof ControlResponse
      */
-    Xml?: string;
+    'Xml'?: string;
     /**
      * 
      * @type {boolean}
      * @memberof ControlResponse
      */
-    IsSuccessful?: boolean;
+    'IsSuccessful'?: boolean;
 }
-
 

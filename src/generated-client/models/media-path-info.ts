@@ -24,13 +24,12 @@ export interface MediaPathInfo {
      * @type {string}
      * @memberof MediaPathInfo
      */
-    Path?: string;
+    'Path'?: string;
     /**
      * 
      * @type {string}
      * @memberof MediaPathInfo
      */
-    NetworkPath?: string | null;
+    'NetworkPath'?: string | null;
 }
-
 

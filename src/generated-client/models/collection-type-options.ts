@@ -19,16 +19,18 @@
  * @enum {string}
  */
 
-export enum CollectionTypeOptions {
-    Movies = 'Movies',
-    TvShows = 'TvShows',
-    Music = 'Music',
-    MusicVideos = 'MusicVideos',
-    HomeVideos = 'HomeVideos',
-    BoxSets = 'BoxSets',
-    Books = 'Books',
-    Mixed = 'Mixed'
-}
+export const CollectionTypeOptions = {
+    Movies: 'Movies',
+    TvShows: 'TvShows',
+    Music: 'Music',
+    MusicVideos: 'MusicVideos',
+    HomeVideos: 'HomeVideos',
+    BoxSets: 'BoxSets',
+    Books: 'Books',
+    Mixed: 'Mixed'
+} as const;
+
+export type CollectionTypeOptions = typeof CollectionTypeOptions[keyof typeof CollectionTypeOptions];
 
 
 

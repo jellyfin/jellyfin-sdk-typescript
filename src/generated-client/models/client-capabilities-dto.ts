@@ -26,61 +26,60 @@ export interface ClientCapabilitiesDto {
      * @type {Array<string>}
      * @memberof ClientCapabilitiesDto
      */
-    PlayableMediaTypes?: Array<string>;
+    'PlayableMediaTypes'?: Array<string>;
     /**
      * Gets or sets the list of supported commands.
      * @type {Array<GeneralCommandType>}
      * @memberof ClientCapabilitiesDto
      */
-    SupportedCommands?: Array<GeneralCommandType>;
+    'SupportedCommands'?: Array<GeneralCommandType>;
     /**
      * Gets or sets a value indicating whether session supports media control.
      * @type {boolean}
      * @memberof ClientCapabilitiesDto
      */
-    SupportsMediaControl?: boolean;
+    'SupportsMediaControl'?: boolean;
     /**
      * Gets or sets a value indicating whether session supports content uploading.
      * @type {boolean}
      * @memberof ClientCapabilitiesDto
      */
-    SupportsContentUploading?: boolean;
+    'SupportsContentUploading'?: boolean;
     /**
      * Gets or sets the message callback url.
      * @type {string}
      * @memberof ClientCapabilitiesDto
      */
-    MessageCallbackUrl?: string | null;
+    'MessageCallbackUrl'?: string | null;
     /**
      * Gets or sets a value indicating whether session supports a persistent identifier.
      * @type {boolean}
      * @memberof ClientCapabilitiesDto
      */
-    SupportsPersistentIdentifier?: boolean;
+    'SupportsPersistentIdentifier'?: boolean;
     /**
      * Gets or sets a value indicating whether session supports sync.
      * @type {boolean}
      * @memberof ClientCapabilitiesDto
      */
-    SupportsSync?: boolean;
+    'SupportsSync'?: boolean;
     /**
      * 
      * @type {DeviceProfile}
      * @memberof ClientCapabilitiesDto
      */
-    DeviceProfile?: DeviceProfile;
+    'DeviceProfile'?: DeviceProfile;
     /**
      * Gets or sets the app store url.
      * @type {string}
      * @memberof ClientCapabilitiesDto
      */
-    AppStoreUrl?: string | null;
+    'AppStoreUrl'?: string | null;
     /**
      * Gets or sets the icon url.
      * @type {string}
      * @memberof ClientCapabilitiesDto
      */
-    IconUrl?: string | null;
+    'IconUrl'?: string | null;
 }
-
 

@@ -26,43 +26,42 @@ export interface ResponseProfile {
      * @type {string}
      * @memberof ResponseProfile
      */
-    Container?: string | null;
+    'Container'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ResponseProfile
      */
-    AudioCodec?: string | null;
+    'AudioCodec'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ResponseProfile
      */
-    VideoCodec?: string | null;
+    'VideoCodec'?: string | null;
     /**
      * 
      * @type {DlnaProfileType}
      * @memberof ResponseProfile
      */
-    Type?: DlnaProfileType;
+    'Type'?: DlnaProfileType;
     /**
      * 
      * @type {string}
      * @memberof ResponseProfile
      */
-    OrgPn?: string | null;
+    'OrgPn'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof ResponseProfile
      */
-    MimeType?: string | null;
+    'MimeType'?: string | null;
     /**
      * 
      * @type {Array<ProfileCondition>}
      * @memberof ResponseProfile
      */
-    Conditions?: Array<ProfileCondition> | null;
+    'Conditions'?: Array<ProfileCondition> | null;
 }
-
 

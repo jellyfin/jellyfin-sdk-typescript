@@ -24,19 +24,18 @@ export interface StartupConfigurationDto {
      * @type {string}
      * @memberof StartupConfigurationDto
      */
-    UICulture?: string | null;
+    'UICulture'?: string | null;
     /**
      * Gets or sets the metadata country code.
      * @type {string}
      * @memberof StartupConfigurationDto
      */
-    MetadataCountryCode?: string | null;
+    'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the preferred language for the metadata.
      * @type {string}
      * @memberof StartupConfigurationDto
      */
-    PreferredMetadataLanguage?: string | null;
+    'PreferredMetadataLanguage'?: string | null;
 }
-
 

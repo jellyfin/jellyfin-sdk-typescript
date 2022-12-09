@@ -26,79 +26,78 @@ export interface LiveTvOptions {
      * @type {number}
      * @memberof LiveTvOptions
      */
-    GuideDays?: number | null;
+    'GuideDays'?: number | null;
     /**
      * 
      * @type {string}
      * @memberof LiveTvOptions
      */
-    RecordingPath?: string | null;
+    'RecordingPath'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof LiveTvOptions
      */
-    MovieRecordingPath?: string | null;
+    'MovieRecordingPath'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof LiveTvOptions
      */
-    SeriesRecordingPath?: string | null;
+    'SeriesRecordingPath'?: string | null;
     /**
      * 
      * @type {boolean}
      * @memberof LiveTvOptions
      */
-    EnableRecordingSubfolders?: boolean;
+    'EnableRecordingSubfolders'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof LiveTvOptions
      */
-    EnableOriginalAudioWithEncodedRecordings?: boolean;
+    'EnableOriginalAudioWithEncodedRecordings'?: boolean;
     /**
      * 
      * @type {Array<TunerHostInfo>}
      * @memberof LiveTvOptions
      */
-    TunerHosts?: Array<TunerHostInfo> | null;
+    'TunerHosts'?: Array<TunerHostInfo> | null;
     /**
      * 
      * @type {Array<ListingsProviderInfo>}
      * @memberof LiveTvOptions
      */
-    ListingProviders?: Array<ListingsProviderInfo> | null;
+    'ListingProviders'?: Array<ListingsProviderInfo> | null;
     /**
      * 
      * @type {number}
      * @memberof LiveTvOptions
      */
-    PrePaddingSeconds?: number;
+    'PrePaddingSeconds'?: number;
     /**
      * 
      * @type {number}
      * @memberof LiveTvOptions
      */
-    PostPaddingSeconds?: number;
+    'PostPaddingSeconds'?: number;
     /**
      * 
      * @type {Array<string>}
      * @memberof LiveTvOptions
      */
-    MediaLocationsCreated?: Array<string> | null;
+    'MediaLocationsCreated'?: Array<string> | null;
     /**
      * 
      * @type {string}
      * @memberof LiveTvOptions
      */
-    RecordingPostProcessor?: string | null;
+    'RecordingPostProcessor'?: string | null;
     /**
      * 
      * @type {string}
      * @memberof LiveTvOptions
      */
-    RecordingPostProcessorArguments?: string | null;
+    'RecordingPostProcessorArguments'?: string | null;
 }
-
 

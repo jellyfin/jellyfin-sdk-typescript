@@ -25,19 +25,18 @@ export interface LiveTvInfo {
      * @type {Array<LiveTvServiceInfo>}
      * @memberof LiveTvInfo
      */
-    Services?: Array<LiveTvServiceInfo>;
+    'Services'?: Array<LiveTvServiceInfo>;
     /**
      * Gets or sets a value indicating whether this instance is enabled.
      * @type {boolean}
      * @memberof LiveTvInfo
      */
-    IsEnabled?: boolean;
+    'IsEnabled'?: boolean;
     /**
      * Gets or sets the enabled users.
      * @type {Array<string>}
      * @memberof LiveTvInfo
      */
-    EnabledUsers?: Array<string>;
+    'EnabledUsers'?: Array<string>;
 }
-
 

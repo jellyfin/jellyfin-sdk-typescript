@@ -19,16 +19,18 @@
  * @enum {string}
  */
 
-export enum ChannelMediaContentType {
-    Clip = 'Clip',
-    Podcast = 'Podcast',
-    Trailer = 'Trailer',
-    Movie = 'Movie',
-    Episode = 'Episode',
-    Song = 'Song',
-    MovieExtra = 'MovieExtra',
-    TvExtra = 'TvExtra'
-}
+export const ChannelMediaContentType = {
+    Clip: 'Clip',
+    Podcast: 'Podcast',
+    Trailer: 'Trailer',
+    Movie: 'Movie',
+    Episode: 'Episode',
+    Song: 'Song',
+    MovieExtra: 'MovieExtra',
+    TvExtra: 'TvExtra'
+} as const;
+
+export type ChannelMediaContentType = typeof ChannelMediaContentType[keyof typeof ChannelMediaContentType];
 
 
 

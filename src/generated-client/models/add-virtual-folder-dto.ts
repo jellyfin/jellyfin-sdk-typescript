@@ -25,7 +25,6 @@ export interface AddVirtualFolderDto {
      * @type {LibraryOptions}
      * @memberof AddVirtualFolderDto
      */
-    LibraryOptions?: LibraryOptions;
+    'LibraryOptions'?: LibraryOptions;
 }
-
 

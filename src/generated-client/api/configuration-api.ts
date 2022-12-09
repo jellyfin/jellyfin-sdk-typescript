@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -37,7 +37,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfiguration: async (options: any = {}): Promise<RequestArgs> => {
+        getConfiguration: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -55,7 +55,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -70,7 +70,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultMetadataOptions: async (options: any = {}): Promise<RequestArgs> => {
+        getDefaultMetadataOptions: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Configuration/MetadataOptions/Default`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -88,7 +88,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -104,7 +104,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration: async (key: string, options: any = {}): Promise<RequestArgs> => {
+        getNamedConfiguration: async (key: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'key' is not null or undefined
             assertParamExists('getNamedConfiguration', 'key', key)
             const localVarPath = `/System/Configuration/{key}`
@@ -125,7 +125,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -141,7 +141,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: any = {}): Promise<RequestArgs> => {
+        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverConfiguration' is not null or undefined
             assertParamExists('updateConfiguration', 'serverConfiguration', serverConfiguration)
             const localVarPath = `/System/Configuration`;
@@ -163,7 +163,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(serverConfiguration, localVarRequestOptions, configuration)
@@ -180,7 +180,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaEncoderPath: async (mediaEncoderPathDto: MediaEncoderPathDto, options: any = {}): Promise<RequestArgs> => {
+        updateMediaEncoderPath: async (mediaEncoderPathDto: MediaEncoderPathDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'mediaEncoderPathDto' is not null or undefined
             assertParamExists('updateMediaEncoderPath', 'mediaEncoderPathDto', mediaEncoderPathDto)
             const localVarPath = `/System/MediaEncoder/Path`;
@@ -202,7 +202,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(mediaEncoderPathDto, localVarRequestOptions, configuration)
@@ -220,7 +220,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration: async (key: string, body: any, options: any = {}): Promise<RequestArgs> => {
+        updateNamedConfiguration: async (key: string, body: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'key' is not null or undefined
             assertParamExists('updateNamedConfiguration', 'key', key)
             // verify required parameter 'body' is not null or undefined
@@ -245,7 +245,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
     
             localVarHeaderParameter['Content-Type'] = 'application/json';
 
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(body, localVarRequestOptions, configuration)
@@ -271,7 +271,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConfiguration(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
+        async getConfiguration(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConfiguration(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -281,7 +281,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDefaultMetadataOptions(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataOptions>> {
+        async getDefaultMetadataOptions(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataOptions>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDefaultMetadataOptions(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -292,7 +292,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getNamedConfiguration(key: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getNamedConfiguration(key: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getNamedConfiguration(key, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -303,7 +303,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfiguration, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -314,7 +314,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateMediaEncoderPath(mediaEncoderPathDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -326,7 +326,7 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateNamedConfiguration(key: string, body: any, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateNamedConfiguration(key: string, body: any, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateNamedConfiguration(key, body, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -479,7 +479,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getConfiguration(options?: any) {
+    public getConfiguration(options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -490,7 +490,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getDefaultMetadataOptions(options?: any) {
+    public getDefaultMetadataOptions(options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getDefaultMetadataOptions(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -502,7 +502,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: any) {
+    public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -514,7 +514,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: any) {
+    public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -526,7 +526,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public updateMediaEncoderPath(requestParameters: ConfigurationApiUpdateMediaEncoderPathRequest, options?: any) {
+    public updateMediaEncoderPath(requestParameters: ConfigurationApiUpdateMediaEncoderPathRequest, options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateMediaEncoderPath(requestParameters.mediaEncoderPathDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -538,7 +538,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: any) {
+    public updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: AxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }

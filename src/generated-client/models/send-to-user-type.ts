@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum SendToUserType {
-    All = 'All',
-    Admins = 'Admins',
-    Custom = 'Custom'
-}
+export const SendToUserType = {
+    All: 'All',
+    Admins: 'Admins',
+    Custom: 'Custom'
+} as const;
+
+export type SendToUserType = typeof SendToUserType[keyof typeof SendToUserType];
 
 
 

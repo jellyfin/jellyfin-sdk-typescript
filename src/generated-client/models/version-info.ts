@@ -24,55 +24,54 @@ export interface VersionInfo {
      * @type {string}
      * @memberof VersionInfo
      */
-    version?: string;
+    'version'?: string;
     /**
      * Gets the version as a System.Version.
      * @type {string}
      * @memberof VersionInfo
      */
-    VersionNumber?: string;
+    'VersionNumber'?: string;
     /**
      * Gets or sets the changelog for this version.
      * @type {string}
      * @memberof VersionInfo
      */
-    changelog?: string | null;
+    'changelog'?: string | null;
     /**
      * Gets or sets the ABI that this version was built against.
      * @type {string}
      * @memberof VersionInfo
      */
-    targetAbi?: string | null;
+    'targetAbi'?: string | null;
     /**
      * Gets or sets the source URL.
      * @type {string}
      * @memberof VersionInfo
      */
-    sourceUrl?: string | null;
+    'sourceUrl'?: string | null;
     /**
      * Gets or sets a checksum for the binary.
      * @type {string}
      * @memberof VersionInfo
      */
-    checksum?: string | null;
+    'checksum'?: string | null;
     /**
      * Gets or sets a timestamp of when the binary was built.
      * @type {string}
      * @memberof VersionInfo
      */
-    timestamp?: string | null;
+    'timestamp'?: string | null;
     /**
      * Gets or sets the repository name.
      * @type {string}
      * @memberof VersionInfo
      */
-    repositoryName?: string;
+    'repositoryName'?: string;
     /**
      * Gets or sets the repository url.
      * @type {string}
      * @memberof VersionInfo
      */
-    repositoryUrl?: string;
+    'repositoryUrl'?: string;
 }
-
 

@@ -19,11 +19,13 @@
  * @enum {string}
  */
 
-export enum NotificationLevel {
-    Normal = 'Normal',
-    Warning = 'Warning',
-    Error = 'Error'
-}
+export const NotificationLevel = {
+    Normal: 'Normal',
+    Warning: 'Warning',
+    Error: 'Error'
+} as const;
+
+export type NotificationLevel = typeof NotificationLevel[keyof typeof NotificationLevel];
 
 
 

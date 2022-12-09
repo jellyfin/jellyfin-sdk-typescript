@@ -12,7 +12,7 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance } from 'axios';
+import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
 import { Configuration } from '../configuration';
 // Some imports not used depending on template conditions
 // @ts-ignore
@@ -37,7 +37,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        disablePlugin: async (pluginId: string, version: string, options: any = {}): Promise<RequestArgs> => {
+        disablePlugin: async (pluginId: string, version: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('disablePlugin', 'pluginId', pluginId)
             // verify required parameter 'version' is not null or undefined
@@ -61,7 +61,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -78,7 +78,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        enablePlugin: async (pluginId: string, version: string, options: any = {}): Promise<RequestArgs> => {
+        enablePlugin: async (pluginId: string, version: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('enablePlugin', 'pluginId', pluginId)
             // verify required parameter 'version' is not null or undefined
@@ -102,7 +102,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -118,7 +118,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginConfiguration: async (pluginId: string, options: any = {}): Promise<RequestArgs> => {
+        getPluginConfiguration: async (pluginId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('getPluginConfiguration', 'pluginId', pluginId)
             const localVarPath = `/Plugins/{pluginId}/Configuration`
@@ -139,7 +139,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -156,7 +156,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginImage: async (pluginId: string, version: string, options: any = {}): Promise<RequestArgs> => {
+        getPluginImage: async (pluginId: string, version: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('getPluginImage', 'pluginId', pluginId)
             // verify required parameter 'version' is not null or undefined
@@ -180,7 +180,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -196,7 +196,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginManifest: async (pluginId: string, options: any = {}): Promise<RequestArgs> => {
+        getPluginManifest: async (pluginId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('getPluginManifest', 'pluginId', pluginId)
             const localVarPath = `/Plugins/{pluginId}/Manifest`
@@ -217,7 +217,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -232,7 +232,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlugins: async (options: any = {}): Promise<RequestArgs> => {
+        getPlugins: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Plugins`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -250,7 +250,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -267,7 +267,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @deprecated
          * @throws {RequiredError}
          */
-        uninstallPlugin: async (pluginId: string, options: any = {}): Promise<RequestArgs> => {
+        uninstallPlugin: async (pluginId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('uninstallPlugin', 'pluginId', pluginId)
             const localVarPath = `/Plugins/{pluginId}`
@@ -288,7 +288,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -305,7 +305,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uninstallPluginByVersion: async (pluginId: string, version: string, options: any = {}): Promise<RequestArgs> => {
+        uninstallPluginByVersion: async (pluginId: string, version: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('uninstallPluginByVersion', 'pluginId', pluginId)
             // verify required parameter 'version' is not null or undefined
@@ -329,7 +329,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -345,7 +345,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updatePluginConfiguration: async (pluginId: string, options: any = {}): Promise<RequestArgs> => {
+        updatePluginConfiguration: async (pluginId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'pluginId' is not null or undefined
             assertParamExists('updatePluginConfiguration', 'pluginId', pluginId)
             const localVarPath = `/Plugins/{pluginId}/Configuration`
@@ -366,7 +366,7 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 
     
-            setSearchParams(localVarUrlObj, localVarQueryParameter, options.query);
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
@@ -393,7 +393,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async disablePlugin(pluginId: string, version: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async disablePlugin(pluginId: string, version: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.disablePlugin(pluginId, version, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -405,7 +405,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async enablePlugin(pluginId: string, version: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async enablePlugin(pluginId: string, version: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.enablePlugin(pluginId, version, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -416,7 +416,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPluginConfiguration(pluginId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<object>> {
+        async getPluginConfiguration(pluginId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<object>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPluginConfiguration(pluginId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -428,7 +428,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPluginImage(pluginId: string, version: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getPluginImage(pluginId: string, version: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPluginImage(pluginId, version, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -439,7 +439,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPluginManifest(pluginId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async getPluginManifest(pluginId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPluginManifest(pluginId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -449,7 +449,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPlugins(options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<PluginInfo>>> {
+        async getPlugins(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<PluginInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPlugins(options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -461,7 +461,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @deprecated
          * @throws {RequiredError}
          */
-        async uninstallPlugin(pluginId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async uninstallPlugin(pluginId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.uninstallPlugin(pluginId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -473,7 +473,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async uninstallPluginByVersion(pluginId: string, version: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async uninstallPluginByVersion(pluginId: string, version: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.uninstallPluginByVersion(pluginId, version, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -484,7 +484,7 @@ export const PluginsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updatePluginConfiguration(pluginId: string, options?: any): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updatePluginConfiguration(pluginId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updatePluginConfiguration(pluginId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -750,7 +750,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public disablePlugin(requestParameters: PluginsApiDisablePluginRequest, options?: any) {
+    public disablePlugin(requestParameters: PluginsApiDisablePluginRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).disablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -762,7 +762,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public enablePlugin(requestParameters: PluginsApiEnablePluginRequest, options?: any) {
+    public enablePlugin(requestParameters: PluginsApiEnablePluginRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).enablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -774,7 +774,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public getPluginConfiguration(requestParameters: PluginsApiGetPluginConfigurationRequest, options?: any) {
+    public getPluginConfiguration(requestParameters: PluginsApiGetPluginConfigurationRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginConfiguration(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -786,7 +786,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public getPluginImage(requestParameters: PluginsApiGetPluginImageRequest, options?: any) {
+    public getPluginImage(requestParameters: PluginsApiGetPluginImageRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginImage(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -798,7 +798,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public getPluginManifest(requestParameters: PluginsApiGetPluginManifestRequest, options?: any) {
+    public getPluginManifest(requestParameters: PluginsApiGetPluginManifestRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginManifest(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -809,7 +809,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public getPlugins(options?: any) {
+    public getPlugins(options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPlugins(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -822,7 +822,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public uninstallPlugin(requestParameters: PluginsApiUninstallPluginRequest, options?: any) {
+    public uninstallPlugin(requestParameters: PluginsApiUninstallPluginRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).uninstallPlugin(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -834,7 +834,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public uninstallPluginByVersion(requestParameters: PluginsApiUninstallPluginByVersionRequest, options?: any) {
+    public uninstallPluginByVersion(requestParameters: PluginsApiUninstallPluginByVersionRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).uninstallPluginByVersion(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -846,7 +846,7 @@ export class PluginsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PluginsApi
      */
-    public updatePluginConfiguration(requestParameters: PluginsApiUpdatePluginConfigurationRequest, options?: any) {
+    public updatePluginConfiguration(requestParameters: PluginsApiUpdatePluginConfigurationRequest, options?: AxiosRequestConfig) {
         return PluginsApiFp(this.configuration).updatePluginConfiguration(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
     }
 }

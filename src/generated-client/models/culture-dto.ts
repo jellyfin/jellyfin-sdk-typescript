@@ -24,31 +24,30 @@ export interface CultureDto {
      * @type {string}
      * @memberof CultureDto
      */
-    Name?: string;
+    'Name'?: string;
     /**
      * Gets the display name.
      * @type {string}
      * @memberof CultureDto
      */
-    DisplayName?: string;
+    'DisplayName'?: string;
     /**
      * Gets the name of the two letter ISO language.
      * @type {string}
      * @memberof CultureDto
      */
-    TwoLetterISOLanguageName?: string;
+    'TwoLetterISOLanguageName'?: string;
     /**
      * Gets the name of the three letter ISO language.
      * @type {string}
      * @memberof CultureDto
      */
-    ThreeLetterISOLanguageName?: string | null;
+    'ThreeLetterISOLanguageName'?: string | null;
     /**
      * 
      * @type {Array<string>}
      * @memberof CultureDto
      */
-    ThreeLetterISOLanguageNames?: Array<string>;
+    'ThreeLetterISOLanguageNames'?: Array<string>;
 }
-
 
