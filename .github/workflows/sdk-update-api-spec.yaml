@@ -11,7 +11,7 @@ jobs:
     if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@2541b1294d2704b0964813337f33b291d3f8596b # tag=v3
+        uses: actions/checkout@7dd9e2a3dc350cf687eb1b2a4fadfee8c8e49675 # v3
 
       - name: Set up Node.js
         uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # tag=v3
