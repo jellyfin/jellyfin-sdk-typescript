@@ -32,7 +32,8 @@ export class Api {
 		accessToken = '',
 		axiosInstance: AxiosInstance = globalInstance
 	) {
-		this.basePath = basePath;
+		// Remove trailing slash if present
+		this.basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
 		this.clientInfo = clientInfo;
 		this.deviceInfo = deviceInfo;
 		this.accessToken = accessToken;
