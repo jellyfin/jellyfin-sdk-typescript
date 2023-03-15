@@ -4,6 +4,7 @@ module.exports = {
 	runner: 'groups',
 
 	preset: 'ts-jest/presets/js-with-ts',
+	resolver: 'ts-jest-resolver',
 	transform: {
 		'<transform_regex>': ['ts-jest', { allowJs: true }]
 	},
