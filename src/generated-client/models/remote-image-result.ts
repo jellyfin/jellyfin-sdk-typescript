@@ -12,7 +12,9 @@
  */
 
 
-import { RemoteImageInfo } from './remote-image-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RemoteImageInfo } from './remote-image-info.js';
 
 /**
  * Class RemoteImageResult.

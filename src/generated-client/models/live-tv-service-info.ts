@@ -12,7 +12,9 @@
  */
 
 
-import { LiveTvServiceStatus } from './live-tv-service-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LiveTvServiceStatus } from './live-tv-service-status.js';
 
 /**
  * Class ServiceInfo.

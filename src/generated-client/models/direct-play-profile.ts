@@ -12,7 +12,9 @@
  */
 
 
-import { DlnaProfileType } from './dlna-profile-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DlnaProfileType } from './dlna-profile-type.js';
 
 /**
  * 

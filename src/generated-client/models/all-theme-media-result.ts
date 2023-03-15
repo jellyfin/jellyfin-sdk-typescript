@@ -12,7 +12,9 @@
  */
 
 
-import { ThemeMediaResult } from './theme-media-result';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ThemeMediaResult } from './theme-media-result.js';
 
 /**
  * 

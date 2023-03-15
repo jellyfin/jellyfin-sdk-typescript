@@ -12,7 +12,9 @@
  */
 
 
-import { SongInfo } from './song-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SongInfo } from './song-info.js';
 
 /**
  * 

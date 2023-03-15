@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { PluginInfo } from '../models';
+import { PluginInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * PluginsApi - axios parameter creator
  * @export
@@ -501,55 +502,52 @@ export const PluginsApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Disable a plugin.
-         * @param {string} pluginId Plugin id.
-         * @param {string} version Plugin version.
+         * @param {PluginsApiDisablePluginRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        disablePlugin(pluginId: string, version: string, options?: any): AxiosPromise<void> {
-            return localVarFp.disablePlugin(pluginId, version, options).then((request) => request(axios, basePath));
+        disablePlugin(requestParameters: PluginsApiDisablePluginRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.disablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Enables a disabled plugin.
-         * @param {string} pluginId Plugin id.
-         * @param {string} version Plugin version.
+         * @param {PluginsApiEnablePluginRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        enablePlugin(pluginId: string, version: string, options?: any): AxiosPromise<void> {
-            return localVarFp.enablePlugin(pluginId, version, options).then((request) => request(axios, basePath));
+        enablePlugin(requestParameters: PluginsApiEnablePluginRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.enablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets plugin configuration.
-         * @param {string} pluginId Plugin id.
+         * @param {PluginsApiGetPluginConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginConfiguration(pluginId: string, options?: any): AxiosPromise<object> {
-            return localVarFp.getPluginConfiguration(pluginId, options).then((request) => request(axios, basePath));
+        getPluginConfiguration(requestParameters: PluginsApiGetPluginConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<object> {
+            return localVarFp.getPluginConfiguration(requestParameters.pluginId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a plugin\'s image.
-         * @param {string} pluginId Plugin id.
-         * @param {string} version Plugin version.
+         * @param {PluginsApiGetPluginImageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginImage(pluginId: string, version: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getPluginImage(pluginId, version, options).then((request) => request(axios, basePath));
+        getPluginImage(requestParameters: PluginsApiGetPluginImageRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getPluginImage(requestParameters.pluginId, requestParameters.version, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a plugin\'s manifest.
-         * @param {string} pluginId Plugin id.
+         * @param {PluginsApiGetPluginManifestRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPluginManifest(pluginId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.getPluginManifest(pluginId, options).then((request) => request(axios, basePath));
+        getPluginManifest(requestParameters: PluginsApiGetPluginManifestRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.getPluginManifest(requestParameters.pluginId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -557,40 +555,39 @@ export const PluginsApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlugins(options?: any): AxiosPromise<Array<PluginInfo>> {
+        getPlugins(options?: AxiosRequestConfig): AxiosPromise<Array<PluginInfo>> {
             return localVarFp.getPlugins(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Uninstalls a plugin.
-         * @param {string} pluginId Plugin id.
+         * @param {PluginsApiUninstallPluginRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        uninstallPlugin(pluginId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.uninstallPlugin(pluginId, options).then((request) => request(axios, basePath));
+        uninstallPlugin(requestParameters: PluginsApiUninstallPluginRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.uninstallPlugin(requestParameters.pluginId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Uninstalls a plugin by version.
-         * @param {string} pluginId Plugin id.
-         * @param {string} version Plugin version.
+         * @param {PluginsApiUninstallPluginByVersionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uninstallPluginByVersion(pluginId: string, version: string, options?: any): AxiosPromise<void> {
-            return localVarFp.uninstallPluginByVersion(pluginId, version, options).then((request) => request(axios, basePath));
+        uninstallPluginByVersion(requestParameters: PluginsApiUninstallPluginByVersionRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.uninstallPluginByVersion(requestParameters.pluginId, requestParameters.version, options).then((request) => request(axios, basePath));
         },
         /**
          * Accepts plugin configuration as JSON body.
          * @summary Updates plugin configuration.
-         * @param {string} pluginId Plugin id.
+         * @param {PluginsApiUpdatePluginConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updatePluginConfiguration(pluginId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updatePluginConfiguration(pluginId, options).then((request) => request(axios, basePath));
+        updatePluginConfiguration(requestParameters: PluginsApiUpdatePluginConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updatePluginConfiguration(requestParameters.pluginId, options).then((request) => request(axios, basePath));
         },
     };
 };

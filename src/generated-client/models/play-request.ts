@@ -12,7 +12,9 @@
  */
 
 
-import { PlayCommand } from './play-command';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlayCommand } from './play-command.js';
 
 /**
  * Class PlayRequest.

@@ -12,14 +12,30 @@
  */
 
 
-import { BaseItem } from './base-item';
-import { BaseItemDto } from './base-item-dto';
-import { ClientCapabilities } from './client-capabilities';
-import { GeneralCommandType } from './general-command-type';
-import { PlayerStateInfo } from './player-state-info';
-import { QueueItem } from './queue-item';
-import { SessionUserInfo } from './session-user-info';
-import { TranscodingInfo } from './transcoding-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItem } from './base-item.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemDto } from './base-item-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ClientCapabilities } from './client-capabilities.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GeneralCommandType } from './general-command-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlayerStateInfo } from './player-state-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { QueueItem } from './queue-item.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SessionUserInfo } from './session-user-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TranscodingInfo } from './transcoding-info.js';
 
 /**
  * Class SessionInfo.

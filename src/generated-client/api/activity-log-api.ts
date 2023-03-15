@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ActivityLogEntryQueryResult } from '../models';
+import { ActivityLogEntryQueryResult } from '../models.js';
 /**
  * ActivityLogApi - axios parameter creator
  * @export
@@ -119,15 +120,12 @@ export const ActivityLogApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Gets activity log entries.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {string} [minDate] Optional. The minimum date. Format &#x3D; ISO.
-         * @param {boolean} [hasUserId] Optional. Filter log entries if it has user id, or not.
+         * @param {ActivityLogApiGetLogEntriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLogEntries(startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options?: any): AxiosPromise<ActivityLogEntryQueryResult> {
-            return localVarFp.getLogEntries(startIndex, limit, minDate, hasUserId, options).then((request) => request(axios, basePath));
+        getLogEntries(requestParameters: ActivityLogApiGetLogEntriesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<ActivityLogEntryQueryResult> {
+            return localVarFp.getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.hasUserId, options).then((request) => request(axios, basePath));
         },
     };
 };

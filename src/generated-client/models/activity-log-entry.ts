@@ -12,7 +12,9 @@
  */
 
 
-import { LogLevel } from './log-level';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LogLevel } from './log-level.js';
 
 /**
  * An activity log entry.

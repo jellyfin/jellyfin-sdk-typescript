@@ -12,7 +12,9 @@
  */
 
 
-import { BookInfo } from './book-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BookInfo } from './book-info.js';
 
 /**
  * 

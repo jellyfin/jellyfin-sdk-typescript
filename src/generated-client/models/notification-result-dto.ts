@@ -12,7 +12,9 @@
  */
 
 
-import { NotificationDto } from './notification-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NotificationDto } from './notification-dto.js';
 
 /**
  * A list of notifications with the total record count for pagination.

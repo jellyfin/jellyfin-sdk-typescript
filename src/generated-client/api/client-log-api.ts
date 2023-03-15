@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ClientLogDocumentResponseDto } from '../models';
+import { ClientLogDocumentResponseDto } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * ClientLogApi - axios parameter creator
  * @export
@@ -100,12 +101,12 @@ export const ClientLogApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Upload a document.
-         * @param {any} [body] 
+         * @param {ClientLogApiLogFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logFile(body?: any, options?: any): AxiosPromise<ClientLogDocumentResponseDto> {
-            return localVarFp.logFile(body, options).then((request) => request(axios, basePath));
+        logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: AxiosRequestConfig): AxiosPromise<ClientLogDocumentResponseDto> {
+            return localVarFp.logFile(requestParameters.body, options).then((request) => request(axios, basePath));
         },
     };
 };

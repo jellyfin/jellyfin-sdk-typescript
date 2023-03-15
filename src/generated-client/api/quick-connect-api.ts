@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { QuickConnectResult } from '../models';
+import { QuickConnectResult } from '../models.js';
 /**
  * QuickConnectApi - axios parameter creator
  * @export
@@ -231,22 +232,22 @@ export const QuickConnectApiFactory = function (configuration?: Configuration, b
         /**
          * 
          * @summary Authorizes a pending quick connect request.
-         * @param {string} code Quick connect code to authorize.
+         * @param {QuickConnectApiAuthorizeRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authorize(code: string, options?: any): AxiosPromise<boolean> {
-            return localVarFp.authorize(code, options).then((request) => request(axios, basePath));
+        authorize(requestParameters: QuickConnectApiAuthorizeRequest, options?: AxiosRequestConfig): AxiosPromise<boolean> {
+            return localVarFp.authorize(requestParameters.code, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Attempts to retrieve authentication information.
-         * @param {string} secret Secret previously returned from the Initiate endpoint.
+         * @param {QuickConnectApiConnectRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        connect(secret: string, options?: any): AxiosPromise<QuickConnectResult> {
-            return localVarFp.connect(secret, options).then((request) => request(axios, basePath));
+        connect(requestParameters: QuickConnectApiConnectRequest, options?: AxiosRequestConfig): AxiosPromise<QuickConnectResult> {
+            return localVarFp.connect(requestParameters.secret, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -254,7 +255,7 @@ export const QuickConnectApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getEnabled(options?: any): AxiosPromise<boolean> {
+        getEnabled(options?: AxiosRequestConfig): AxiosPromise<boolean> {
             return localVarFp.getEnabled(options).then((request) => request(axios, basePath));
         },
         /**
@@ -263,7 +264,7 @@ export const QuickConnectApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        initiate(options?: any): AxiosPromise<QuickConnectResult> {
+        initiate(options?: AxiosRequestConfig): AxiosPromise<QuickConnectResult> {
             return localVarFp.initiate(options).then((request) => request(axios, basePath));
         },
     };

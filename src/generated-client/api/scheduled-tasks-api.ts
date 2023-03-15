@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { TaskInfo } from '../models';
+import { TaskInfo } from '../models.js';
 // @ts-ignore
-import { TaskTriggerInfo } from '../models';
+import { TaskTriggerInfo } from '../models.js';
 /**
  * ScheduledTasksApi - axios parameter creator
  * @export
@@ -308,54 +309,52 @@ export const ScheduledTasksApiFactory = function (configuration?: Configuration,
         /**
          * 
          * @summary Get task by id.
-         * @param {string} taskId Task Id.
+         * @param {ScheduledTasksApiGetTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTask(taskId: string, options?: any): AxiosPromise<TaskInfo> {
-            return localVarFp.getTask(taskId, options).then((request) => request(axios, basePath));
+        getTask(requestParameters: ScheduledTasksApiGetTaskRequest, options?: AxiosRequestConfig): AxiosPromise<TaskInfo> {
+            return localVarFp.getTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get tasks.
-         * @param {boolean} [isHidden] Optional filter tasks that are hidden, or not.
-         * @param {boolean} [isEnabled] Optional filter tasks that are enabled, or not.
+         * @param {ScheduledTasksApiGetTasksRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTasks(isHidden?: boolean, isEnabled?: boolean, options?: any): AxiosPromise<Array<TaskInfo>> {
-            return localVarFp.getTasks(isHidden, isEnabled, options).then((request) => request(axios, basePath));
+        getTasks(requestParameters: ScheduledTasksApiGetTasksRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<TaskInfo>> {
+            return localVarFp.getTasks(requestParameters.isHidden, requestParameters.isEnabled, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Start specified task.
-         * @param {string} taskId Task Id.
+         * @param {ScheduledTasksApiStartTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        startTask(taskId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.startTask(taskId, options).then((request) => request(axios, basePath));
+        startTask(requestParameters: ScheduledTasksApiStartTaskRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.startTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Stop specified task.
-         * @param {string} taskId Task Id.
+         * @param {ScheduledTasksApiStopTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        stopTask(taskId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.stopTask(taskId, options).then((request) => request(axios, basePath));
+        stopTask(requestParameters: ScheduledTasksApiStopTaskRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.stopTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update specified task triggers.
-         * @param {string} taskId Task Id.
-         * @param {Array<TaskTriggerInfo>} taskTriggerInfo Triggers.
+         * @param {ScheduledTasksApiUpdateTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateTask(taskId: string, taskTriggerInfo: Array<TaskTriggerInfo>, options?: any): AxiosPromise<void> {
-            return localVarFp.updateTask(taskId, taskTriggerInfo, options).then((request) => request(axios, basePath));
+        updateTask(requestParameters: ScheduledTasksApiUpdateTaskRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateTask(requestParameters.taskId, requestParameters.taskTriggerInfo, options).then((request) => request(axios, basePath));
         },
     };
 };

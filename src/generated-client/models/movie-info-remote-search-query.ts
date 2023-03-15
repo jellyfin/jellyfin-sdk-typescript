@@ -12,7 +12,9 @@
  */
 
 
-import { MovieInfo } from './movie-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MovieInfo } from './movie-info.js';
 
 /**
  * 

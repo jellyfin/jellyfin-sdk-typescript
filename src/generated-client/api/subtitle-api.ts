@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { FontFile } from '../models';
+import { FontFile } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { RemoteSubtitleInfo } from '../models';
+import { RemoteSubtitleInfo } from '../models.js';
 // @ts-ignore
-import { UploadSubtitleDto } from '../models';
+import { UploadSubtitleDto } from '../models.js';
 /**
  * SubtitleApi - axios parameter creator
  * @export
@@ -702,34 +703,32 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Deletes an external subtitle file.
-         * @param {string} itemId The item id.
-         * @param {number} index The index of the subtitle file.
+         * @param {SubtitleApiDeleteSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteSubtitle(itemId: string, index: number, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteSubtitle(itemId, index, options).then((request) => request(axios, basePath));
+        deleteSubtitle(requestParameters: SubtitleApiDeleteSubtitleRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteSubtitle(requestParameters.itemId, requestParameters.index, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Downloads a remote subtitle.
-         * @param {string} itemId The item id.
-         * @param {string} subtitleId The subtitle id.
+         * @param {SubtitleApiDownloadRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteSubtitles(itemId: string, subtitleId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.downloadRemoteSubtitles(itemId, subtitleId, options).then((request) => request(axios, basePath));
+        downloadRemoteSubtitles(requestParameters: SubtitleApiDownloadRemoteSubtitlesRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.downloadRemoteSubtitles(requestParameters.itemId, requestParameters.subtitleId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a fallback font file.
-         * @param {string} name The name of the fallback font file to get.
+         * @param {SubtitleApiGetFallbackFontRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFont(name: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getFallbackFont(name, options).then((request) => request(axios, basePath));
+        getFallbackFont(requestParameters: SubtitleApiGetFallbackFontRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getFallbackFont(requestParameters.name, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -737,97 +736,68 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFontList(options?: any): AxiosPromise<Array<FontFile>> {
+        getFallbackFontList(options?: AxiosRequestConfig): AxiosPromise<Array<FontFile>> {
             return localVarFp.getFallbackFontList(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the remote subtitles.
-         * @param {string} id The item id.
+         * @param {SubtitleApiGetRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteSubtitles(id: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getRemoteSubtitles(id, options).then((request) => request(axios, basePath));
+        getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getRemoteSubtitles(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets subtitles in a specified format.
-         * @param {string} routeItemId The (route) item id.
-         * @param {string} routeMediaSourceId The (route) media source id.
-         * @param {number} routeIndex The (route) subtitle stream index.
-         * @param {string} routeFormat The (route) format of the returned subtitle.
-         * @param {string} [itemId] The item id.
-         * @param {string} [mediaSourceId] The media source id.
-         * @param {number} [index] The subtitle stream index.
-         * @param {string} [format] The format of the returned subtitle.
-         * @param {number} [endPositionTicks] Optional. The end position of the subtitle in ticks.
-         * @param {boolean} [copyTimestamps] Optional. Whether to copy the timestamps.
-         * @param {boolean} [addVttTimeMap] Optional. Whether to add a VTT time map.
-         * @param {number} [startPositionTicks] The start position of the subtitle in ticks.
+         * @param {SubtitleApiGetSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitle(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitle(routeItemId, routeMediaSourceId, routeIndex, routeFormat, itemId, mediaSourceId, index, format, endPositionTicks, copyTimestamps, addVttTimeMap, startPositionTicks, options).then((request) => request(axios, basePath));
+        getSubtitle(requestParameters: SubtitleApiGetSubtitleRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getSubtitle(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, requestParameters.startPositionTicks, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an HLS subtitle playlist.
-         * @param {string} itemId The item id.
-         * @param {number} index The subtitle stream index.
-         * @param {string} mediaSourceId The media source id.
-         * @param {number} segmentLength The subtitle segment length.
+         * @param {SubtitleApiGetSubtitlePlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitlePlaylist(itemId: string, index: number, mediaSourceId: string, segmentLength: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitlePlaylist(itemId, index, mediaSourceId, segmentLength, options).then((request) => request(axios, basePath));
+        getSubtitlePlaylist(requestParameters: SubtitleApiGetSubtitlePlaylistRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getSubtitlePlaylist(requestParameters.itemId, requestParameters.index, requestParameters.mediaSourceId, requestParameters.segmentLength, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets subtitles in a specified format.
-         * @param {string} routeItemId The (route) item id.
-         * @param {string} routeMediaSourceId The (route) media source id.
-         * @param {number} routeIndex The (route) subtitle stream index.
-         * @param {number} routeStartPositionTicks The (route) start position of the subtitle in ticks.
-         * @param {string} routeFormat The (route) format of the returned subtitle.
-         * @param {string} [itemId] The item id.
-         * @param {string} [mediaSourceId] The media source id.
-         * @param {number} [index] The subtitle stream index.
-         * @param {number} [startPositionTicks] The start position of the subtitle in ticks.
-         * @param {string} [format] The format of the returned subtitle.
-         * @param {number} [endPositionTicks] Optional. The end position of the subtitle in ticks.
-         * @param {boolean} [copyTimestamps] Optional. Whether to copy the timestamps.
-         * @param {boolean} [addVttTimeMap] Optional. Whether to add a VTT time map.
+         * @param {SubtitleApiGetSubtitleWithTicksRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitleWithTicks(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitleWithTicks(routeItemId, routeMediaSourceId, routeIndex, routeStartPositionTicks, routeFormat, itemId, mediaSourceId, index, startPositionTicks, format, endPositionTicks, copyTimestamps, addVttTimeMap, options).then((request) => request(axios, basePath));
+        getSubtitleWithTicks(requestParameters: SubtitleApiGetSubtitleWithTicksRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getSubtitleWithTicks(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeStartPositionTicks, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.startPositionTicks, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Search remote subtitles.
-         * @param {string} itemId The item id.
-         * @param {string} language The language of the subtitles.
-         * @param {boolean} [isPerfectMatch] Optional. Only show subtitles which are a perfect match.
+         * @param {SubtitleApiSearchRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        searchRemoteSubtitles(itemId: string, language: string, isPerfectMatch?: boolean, options?: any): AxiosPromise<Array<RemoteSubtitleInfo>> {
-            return localVarFp.searchRemoteSubtitles(itemId, language, isPerfectMatch, options).then((request) => request(axios, basePath));
+        searchRemoteSubtitles(requestParameters: SubtitleApiSearchRemoteSubtitlesRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSubtitleInfo>> {
+            return localVarFp.searchRemoteSubtitles(requestParameters.itemId, requestParameters.language, requestParameters.isPerfectMatch, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Upload an external subtitle file.
-         * @param {string} itemId The item the subtitle belongs to.
-         * @param {UploadSubtitleDto} uploadSubtitleDto The request body.
+         * @param {SubtitleApiUploadSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: any): AxiosPromise<void> {
-            return localVarFp.uploadSubtitle(itemId, uploadSubtitleDto, options).then((request) => request(axios, basePath));
+        uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.uploadSubtitle(requestParameters.itemId, requestParameters.uploadSubtitleDto, options).then((request) => request(axios, basePath));
         },
     };
 };

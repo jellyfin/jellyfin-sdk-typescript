@@ -12,7 +12,9 @@
  */
 
 
-import { NotificationLevel } from './notification-level';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NotificationLevel } from './notification-level.js';
 
 /**
  * The notification DTO.

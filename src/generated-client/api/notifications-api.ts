@@ -12,23 +12,24 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { AdminNotificationDto } from '../models';
+import { AdminNotificationDto } from '../models.js';
 // @ts-ignore
-import { NameIdPair } from '../models';
+import { NameIdPair } from '../models.js';
 // @ts-ignore
-import { NotificationResultDto } from '../models';
+import { NotificationResultDto } from '../models.js';
 // @ts-ignore
-import { NotificationTypeInfo } from '../models';
+import { NotificationTypeInfo } from '../models.js';
 // @ts-ignore
-import { NotificationsSummaryDto } from '../models';
+import { NotificationsSummaryDto } from '../models.js';
 /**
  * NotificationsApi - axios parameter creator
  * @export
@@ -386,12 +387,12 @@ export const NotificationsApiFactory = function (configuration?: Configuration, 
         /**
          * 
          * @summary Sends a notification to all admins.
-         * @param {AdminNotificationDto} adminNotificationDto The notification request.
+         * @param {NotificationsApiCreateAdminNotificationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createAdminNotification(adminNotificationDto: AdminNotificationDto, options?: any): AxiosPromise<void> {
-            return localVarFp.createAdminNotification(adminNotificationDto, options).then((request) => request(axios, basePath));
+        createAdminNotification(requestParameters: NotificationsApiCreateAdminNotificationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.createAdminNotification(requestParameters.adminNotificationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -399,7 +400,7 @@ export const NotificationsApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNotificationServices(options?: any): AxiosPromise<Array<NameIdPair>> {
+        getNotificationServices(options?: AxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
             return localVarFp.getNotificationServices(options).then((request) => request(axios, basePath));
         },
         /**
@@ -408,48 +409,48 @@ export const NotificationsApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNotificationTypes(options?: any): AxiosPromise<Array<NotificationTypeInfo>> {
+        getNotificationTypes(options?: AxiosRequestConfig): AxiosPromise<Array<NotificationTypeInfo>> {
             return localVarFp.getNotificationTypes(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a user\'s notifications.
-         * @param {string} userId 
+         * @param {NotificationsApiGetNotificationsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNotifications(userId: string, options?: any): AxiosPromise<NotificationResultDto> {
-            return localVarFp.getNotifications(userId, options).then((request) => request(axios, basePath));
+        getNotifications(requestParameters: NotificationsApiGetNotificationsRequest, options?: AxiosRequestConfig): AxiosPromise<NotificationResultDto> {
+            return localVarFp.getNotifications(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a user\'s notification summary.
-         * @param {string} userId 
+         * @param {NotificationsApiGetNotificationsSummaryRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNotificationsSummary(userId: string, options?: any): AxiosPromise<NotificationsSummaryDto> {
-            return localVarFp.getNotificationsSummary(userId, options).then((request) => request(axios, basePath));
+        getNotificationsSummary(requestParameters: NotificationsApiGetNotificationsSummaryRequest, options?: AxiosRequestConfig): AxiosPromise<NotificationsSummaryDto> {
+            return localVarFp.getNotificationsSummary(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets notifications as read.
-         * @param {string} userId 
+         * @param {NotificationsApiSetReadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRead(userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.setRead(userId, options).then((request) => request(axios, basePath));
+        setRead(requestParameters: NotificationsApiSetReadRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.setRead(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets notifications as unread.
-         * @param {string} userId 
+         * @param {NotificationsApiSetUnreadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setUnread(userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.setUnread(userId, options).then((request) => request(axios, basePath));
+        setUnread(requestParameters: NotificationsApiSetUnreadRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.setUnread(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
     };
 };

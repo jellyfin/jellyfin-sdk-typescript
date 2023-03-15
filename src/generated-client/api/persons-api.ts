@@ -12,25 +12,26 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import { BaseItemDto } from '../models.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { ImageType } from '../models';
+import { ImageType } from '../models.js';
 // @ts-ignore
-import { ItemFields } from '../models';
+import { ItemFields } from '../models.js';
 // @ts-ignore
-import { ItemFilter } from '../models';
+import { ItemFilter } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * PersonsApi - axios parameter creator
  * @export
@@ -235,35 +236,22 @@ export const PersonsApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Get person by name.
-         * @param {string} name Person name.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {PersonsApiGetPersonRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPerson(name: string, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getPerson(name, userId, options).then((request) => request(axios, basePath));
+        getPerson(requestParameters: PersonsApiGetPersonRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getPerson(requestParameters.name, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all persons.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {string} [searchTerm] The search term.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not. userId is required.
-         * @param {boolean} [enableUserData] Optional, include user data.
-         * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<string>} [excludePersonTypes] Optional. If specified results will be filtered to exclude those containing the specified PersonType. Allows multiple, comma-delimited.
-         * @param {Array<string>} [personTypes] Optional. If specified results will be filtered to include only those containing the specified PersonType. Allows multiple, comma-delimited.
-         * @param {string} [appearsInItemId] Optional. If specified, person results will be filtered on items related to said persons.
-         * @param {string} [userId] User id.
-         * @param {boolean} [enableImages] Optional, include image information in output.
+         * @param {PersonsApiGetPersonsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersons(limit?: number, searchTerm?: string, fields?: Array<ItemFields>, filters?: Array<ItemFilter>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludePersonTypes?: Array<string>, personTypes?: Array<string>, appearsInItemId?: string, userId?: string, enableImages?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getPersons(limit, searchTerm, fields, filters, isFavorite, enableUserData, imageTypeLimit, enableImageTypes, excludePersonTypes, personTypes, appearsInItemId, userId, enableImages, options).then((request) => request(axios, basePath));
+        getPersons(requestParameters: PersonsApiGetPersonsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getPersons(requestParameters.limit, requestParameters.searchTerm, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(axios, basePath));
         },
     };
 };

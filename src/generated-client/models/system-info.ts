@@ -12,9 +12,15 @@
  */
 
 
-import { Architecture } from './architecture';
-import { FFmpegLocation } from './ffmpeg-location';
-import { InstallationInfo } from './installation-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { Architecture } from './architecture.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { FFmpegLocation } from './ffmpeg-location.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { InstallationInfo } from './installation-info.js';
 
 /**
  * Class SystemInfo.

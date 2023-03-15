@@ -12,37 +12,38 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { AlbumInfoRemoteSearchQuery } from '../models';
+import { AlbumInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { ArtistInfoRemoteSearchQuery } from '../models';
+import { ArtistInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { BookInfoRemoteSearchQuery } from '../models';
+import { BookInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { BoxSetInfoRemoteSearchQuery } from '../models';
+import { BoxSetInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { ExternalIdInfo } from '../models';
+import { ExternalIdInfo } from '../models.js';
 // @ts-ignore
-import { MovieInfoRemoteSearchQuery } from '../models';
+import { MovieInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { MusicVideoInfoRemoteSearchQuery } from '../models';
+import { MusicVideoInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { PersonLookupInfoRemoteSearchQuery } from '../models';
+import { PersonLookupInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { RemoteSearchResult } from '../models';
+import { RemoteSearchResult } from '../models.js';
 // @ts-ignore
-import { SeriesInfoRemoteSearchQuery } from '../models';
+import { SeriesInfoRemoteSearchQuery } from '../models.js';
 // @ts-ignore
-import { TrailerInfoRemoteSearchQuery } from '../models';
+import { TrailerInfoRemoteSearchQuery } from '../models.js';
 /**
  * ItemLookupApi - axios parameter creator
  * @export
@@ -631,114 +632,112 @@ export const ItemLookupApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Applies search criteria to an item and refreshes metadata.
-         * @param {string} itemId Item id.
-         * @param {RemoteSearchResult} remoteSearchResult The remote search result.
-         * @param {boolean} [replaceAllImages] Optional. Whether or not to replace all images. Default: True.
+         * @param {ItemLookupApiApplySearchCriteriaRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        applySearchCriteria(itemId: string, remoteSearchResult: RemoteSearchResult, replaceAllImages?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.applySearchCriteria(itemId, remoteSearchResult, replaceAllImages, options).then((request) => request(axios, basePath));
+        applySearchCriteria(requestParameters: ItemLookupApiApplySearchCriteriaRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.applySearchCriteria(requestParameters.itemId, requestParameters.remoteSearchResult, requestParameters.replaceAllImages, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get book remote search.
-         * @param {BookInfoRemoteSearchQuery} bookInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetBookRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBookRemoteSearchResults(bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getBookRemoteSearchResults(bookInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getBookRemoteSearchResults(requestParameters: ItemLookupApiGetBookRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getBookRemoteSearchResults(requestParameters.bookInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get box set remote search.
-         * @param {BoxSetInfoRemoteSearchQuery} boxSetInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetBoxSetRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getBoxSetRemoteSearchResults(boxSetInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getBoxSetRemoteSearchResults(requestParameters: ItemLookupApiGetBoxSetRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getBoxSetRemoteSearchResults(requestParameters.boxSetInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get the item\'s external id info.
-         * @param {string} itemId Item id.
+         * @param {ItemLookupApiGetExternalIdInfosRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getExternalIdInfos(itemId: string, options?: any): AxiosPromise<Array<ExternalIdInfo>> {
-            return localVarFp.getExternalIdInfos(itemId, options).then((request) => request(axios, basePath));
+        getExternalIdInfos(requestParameters: ItemLookupApiGetExternalIdInfosRequest, options?: AxiosRequestConfig): AxiosPromise<Array<ExternalIdInfo>> {
+            return localVarFp.getExternalIdInfos(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get movie remote search.
-         * @param {MovieInfoRemoteSearchQuery} movieInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetMovieRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRemoteSearchResults(movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMovieRemoteSearchResults(movieInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getMovieRemoteSearchResults(requestParameters: ItemLookupApiGetMovieRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMovieRemoteSearchResults(requestParameters.movieInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music album remote search.
-         * @param {AlbumInfoRemoteSearchQuery} albumInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicAlbumRemoteSearchResults(albumInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getMusicAlbumRemoteSearchResults(requestParameters: ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicAlbumRemoteSearchResults(requestParameters.albumInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music artist remote search.
-         * @param {ArtistInfoRemoteSearchQuery} artistInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetMusicArtistRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicArtistRemoteSearchResults(artistInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getMusicArtistRemoteSearchResults(requestParameters: ItemLookupApiGetMusicArtistRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicArtistRemoteSearchResults(requestParameters.artistInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get music video remote search.
-         * @param {MusicVideoInfoRemoteSearchQuery} musicVideoInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetMusicVideoRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getMusicVideoRemoteSearchResults(musicVideoInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getMusicVideoRemoteSearchResults(requestParameters: ItemLookupApiGetMusicVideoRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getMusicVideoRemoteSearchResults(requestParameters.musicVideoInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get person remote search.
-         * @param {PersonLookupInfoRemoteSearchQuery} personLookupInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetPersonRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getPersonRemoteSearchResults(personLookupInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getPersonRemoteSearchResults(requestParameters: ItemLookupApiGetPersonRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getPersonRemoteSearchResults(requestParameters.personLookupInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get series remote search.
-         * @param {SeriesInfoRemoteSearchQuery} seriesInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetSeriesRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getSeriesRemoteSearchResults(seriesInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getSeriesRemoteSearchResults(requestParameters: ItemLookupApiGetSeriesRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getSeriesRemoteSearchResults(requestParameters.seriesInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get trailer remote search.
-         * @param {TrailerInfoRemoteSearchQuery} trailerInfoRemoteSearchQuery Remote search query.
+         * @param {ItemLookupApiGetTrailerRemoteSearchResultsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery, options?: any): AxiosPromise<Array<RemoteSearchResult>> {
-            return localVarFp.getTrailerRemoteSearchResults(trailerInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
+        getTrailerRemoteSearchResults(requestParameters: ItemLookupApiGetTrailerRemoteSearchResultsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<RemoteSearchResult>> {
+            return localVarFp.getTrailerRemoteSearchResults(requestParameters.trailerInfoRemoteSearchQuery, options).then((request) => request(axios, basePath));
         },
     };
 };

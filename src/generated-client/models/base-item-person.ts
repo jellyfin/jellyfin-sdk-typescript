@@ -12,7 +12,9 @@
  */
 
 
-import { BaseItemPersonImageBlurHashes } from './base-item-person-image-blur-hashes';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemPersonImageBlurHashes } from './base-item-person-image-blur-hashes.js';
 
 /**
  * This is used by the api to get information about a Person within a BaseItem.

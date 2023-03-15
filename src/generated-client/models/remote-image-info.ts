@@ -12,8 +12,12 @@
  */
 
 
-import { ImageType } from './image-type';
-import { RatingType } from './rating-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ImageType } from './image-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RatingType } from './rating-type.js';
 
 /**
  * Class RemoteImageInfo.

@@ -12,11 +12,21 @@
  */
 
 
-import { CountryInfo } from './country-info';
-import { CultureDto } from './culture-dto';
-import { ExternalIdInfo } from './external-id-info';
-import { NameValuePair } from './name-value-pair';
-import { ParentalRating } from './parental-rating';
+// May contain unused imports in some cases
+// @ts-ignore
+import { CountryInfo } from './country-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { CultureDto } from './culture-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ExternalIdInfo } from './external-id-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NameValuePair } from './name-value-pair.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ParentalRating } from './parental-rating.js';
 
 /**
  * 

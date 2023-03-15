@@ -12,7 +12,9 @@
  */
 
 
-import { SendToUserType } from './send-to-user-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SendToUserType } from './send-to-user-type.js';
 
 /**
  * 

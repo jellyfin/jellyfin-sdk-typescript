@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { CountryInfo } from '../models';
+import { CountryInfo } from '../models.js';
 // @ts-ignore
-import { CultureDto } from '../models';
+import { CultureDto } from '../models.js';
 // @ts-ignore
-import { LocalizationOption } from '../models';
+import { LocalizationOption } from '../models.js';
 // @ts-ignore
-import { ParentalRating } from '../models';
+import { ParentalRating } from '../models.js';
 /**
  * LocalizationApi - axios parameter creator
  * @export
@@ -231,7 +232,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCountries(options?: any): AxiosPromise<Array<CountryInfo>> {
+        getCountries(options?: AxiosRequestConfig): AxiosPromise<Array<CountryInfo>> {
             return localVarFp.getCountries(options).then((request) => request(axios, basePath));
         },
         /**
@@ -240,7 +241,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCultures(options?: any): AxiosPromise<Array<CultureDto>> {
+        getCultures(options?: AxiosRequestConfig): AxiosPromise<Array<CultureDto>> {
             return localVarFp.getCultures(options).then((request) => request(axios, basePath));
         },
         /**
@@ -249,7 +250,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLocalizationOptions(options?: any): AxiosPromise<Array<LocalizationOption>> {
+        getLocalizationOptions(options?: AxiosRequestConfig): AxiosPromise<Array<LocalizationOption>> {
             return localVarFp.getLocalizationOptions(options).then((request) => request(axios, basePath));
         },
         /**
@@ -258,7 +259,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParentalRatings(options?: any): AxiosPromise<Array<ParentalRating>> {
+        getParentalRatings(options?: AxiosRequestConfig): AxiosPromise<Array<ParentalRating>> {
             return localVarFp.getParentalRatings(options).then((request) => request(axios, basePath));
         },
     };

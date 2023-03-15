@@ -12,8 +12,12 @@
  */
 
 
-import { MediaSourceInfo } from './media-source-info';
-import { PlaybackErrorCode } from './playback-error-code';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaSourceInfo } from './media-source-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlaybackErrorCode } from './playback-error-code.js';
 
 /**
  * Class PlaybackInfoResponse.

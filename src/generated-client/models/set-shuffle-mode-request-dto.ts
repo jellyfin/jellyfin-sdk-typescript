@@ -12,7 +12,9 @@
  */
 
 
-import { GroupShuffleMode } from './group-shuffle-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GroupShuffleMode } from './group-shuffle-mode.js';
 
 /**
  * Class SetShuffleModeRequestDto.

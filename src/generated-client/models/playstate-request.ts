@@ -12,7 +12,9 @@
  */
 
 
-import { PlaystateCommand } from './playstate-command';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlaystateCommand } from './playstate-command.js';
 
 /**
  * 

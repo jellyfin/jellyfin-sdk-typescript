@@ -12,7 +12,9 @@
  */
 
 
-import { HttpHeaderInfo } from './http-header-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { HttpHeaderInfo } from './http-header-info.js';
 
 /**
  * 

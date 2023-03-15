@@ -12,10 +12,18 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { PlayMethod } from './play-method';
-import { QueueItem } from './queue-item';
-import { RepeatMode } from './repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemDto } from './base-item-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlayMethod } from './play-method.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { QueueItem } from './queue-item.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RepeatMode } from './repeat-mode.js';
 
 /**
  * Class PlaybackStartInfo.

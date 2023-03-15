@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * HlsSegmentApi - axios parameter creator
  * @export
@@ -322,59 +323,52 @@ export const HlsSegmentApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Gets the specified audio segment for an audio item.
-         * @param {string} itemId The item id.
-         * @param {string} segmentId The segment id.
+         * @param {HlsSegmentApiGetHlsAudioSegmentLegacyAacRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getHlsAudioSegmentLegacyAac(itemId: string, segmentId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getHlsAudioSegmentLegacyAac(itemId, segmentId, options).then((request) => request(axios, basePath));
+        getHlsAudioSegmentLegacyAac(requestParameters: HlsSegmentApiGetHlsAudioSegmentLegacyAacRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getHlsAudioSegmentLegacyAac(requestParameters.itemId, requestParameters.segmentId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the specified audio segment for an audio item.
-         * @param {string} itemId The item id.
-         * @param {string} segmentId The segment id.
+         * @param {HlsSegmentApiGetHlsAudioSegmentLegacyMp3Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getHlsAudioSegmentLegacyMp3(itemId: string, segmentId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getHlsAudioSegmentLegacyMp3(itemId, segmentId, options).then((request) => request(axios, basePath));
+        getHlsAudioSegmentLegacyMp3(requestParameters: HlsSegmentApiGetHlsAudioSegmentLegacyMp3Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getHlsAudioSegmentLegacyMp3(requestParameters.itemId, requestParameters.segmentId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a hls video playlist.
-         * @param {string} itemId The video id.
-         * @param {string} playlistId The playlist id.
+         * @param {HlsSegmentApiGetHlsPlaylistLegacyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getHlsPlaylistLegacy(itemId: string, playlistId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getHlsPlaylistLegacy(itemId, playlistId, options).then((request) => request(axios, basePath));
+        getHlsPlaylistLegacy(requestParameters: HlsSegmentApiGetHlsPlaylistLegacyRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getHlsPlaylistLegacy(requestParameters.itemId, requestParameters.playlistId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a hls video segment.
-         * @param {string} itemId The item id.
-         * @param {string} playlistId The playlist id.
-         * @param {string} segmentId The segment id.
-         * @param {string} segmentContainer The segment container.
+         * @param {HlsSegmentApiGetHlsVideoSegmentLegacyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getHlsVideoSegmentLegacy(itemId: string, playlistId: string, segmentId: string, segmentContainer: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getHlsVideoSegmentLegacy(itemId, playlistId, segmentId, segmentContainer, options).then((request) => request(axios, basePath));
+        getHlsVideoSegmentLegacy(requestParameters: HlsSegmentApiGetHlsVideoSegmentLegacyRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getHlsVideoSegmentLegacy(requestParameters.itemId, requestParameters.playlistId, requestParameters.segmentId, requestParameters.segmentContainer, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Stops an active encoding.
-         * @param {string} deviceId The device id of the client requesting. Used to stop encoding processes when needed.
-         * @param {string} playSessionId The play session id.
+         * @param {HlsSegmentApiStopEncodingProcessRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        stopEncodingProcess(deviceId: string, playSessionId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.stopEncodingProcess(deviceId, playSessionId, options).then((request) => request(axios, basePath));
+        stopEncodingProcess(requestParameters: HlsSegmentApiStopEncodingProcessRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.stopEncodingProcess(requestParameters.deviceId, requestParameters.playSessionId, options).then((request) => request(axios, basePath));
         },
     };
 };

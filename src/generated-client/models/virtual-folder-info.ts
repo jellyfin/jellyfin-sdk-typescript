@@ -12,8 +12,12 @@
  */
 
 
-import { CollectionTypeOptions } from './collection-type-options';
-import { LibraryOptions } from './library-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import { CollectionTypeOptions } from './collection-type-options.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LibraryOptions } from './library-options.js';
 
 /**
  * Used to hold information about a user\'s list of configured virtual folders.

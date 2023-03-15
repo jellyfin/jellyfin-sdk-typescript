@@ -12,31 +12,32 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import { BaseItemKind } from '../models.js';
 // @ts-ignore
-import { ClientCapabilitiesDto } from '../models';
+import { ClientCapabilitiesDto } from '../models.js';
 // @ts-ignore
-import { GeneralCommand } from '../models';
+import { GeneralCommand } from '../models.js';
 // @ts-ignore
-import { GeneralCommandType } from '../models';
+import { GeneralCommandType } from '../models.js';
 // @ts-ignore
-import { MessageCommand } from '../models';
+import { MessageCommand } from '../models.js';
 // @ts-ignore
-import { NameIdPair } from '../models';
+import { NameIdPair } from '../models.js';
 // @ts-ignore
-import { PlayCommand } from '../models';
+import { PlayCommand } from '../models.js';
 // @ts-ignore
-import { PlaystateCommand } from '../models';
+import { PlaystateCommand } from '../models.js';
 // @ts-ignore
-import { SessionInfo } from '../models';
+import { SessionInfo } from '../models.js';
 /**
  * SessionApi - axios parameter creator
  * @export
@@ -1001,26 +1002,22 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Adds an additional user to a session.
-         * @param {string} sessionId The session id.
-         * @param {string} userId The user id.
+         * @param {SessionApiAddUserToSessionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addUserToSession(sessionId: string, userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.addUserToSession(sessionId, userId, options).then((request) => request(axios, basePath));
+        addUserToSession(requestParameters: SessionApiAddUserToSessionRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.addUserToSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Instructs a session to browse to an item or view.
-         * @param {string} sessionId The session Id.
-         * @param {BaseItemKind} itemType The type of item to browse to.
-         * @param {string} itemId The Id of the item.
-         * @param {string} itemName The name of the item.
+         * @param {SessionApiDisplayContentRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        displayContent(sessionId: string, itemType: BaseItemKind, itemId: string, itemName: string, options?: any): AxiosPromise<void> {
-            return localVarFp.displayContent(sessionId, itemType, itemId, itemName, options).then((request) => request(axios, basePath));
+        displayContent(requestParameters: SessionApiDisplayContentRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.displayContent(requestParameters.sessionId, requestParameters.itemType, requestParameters.itemId, requestParameters.itemName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1028,7 +1025,7 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAuthProviders(options?: any): AxiosPromise<Array<NameIdPair>> {
+        getAuthProviders(options?: AxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
             return localVarFp.getAuthProviders(options).then((request) => request(axios, basePath));
         },
         /**
@@ -1037,74 +1034,58 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPasswordResetProviders(options?: any): AxiosPromise<Array<NameIdPair>> {
+        getPasswordResetProviders(options?: AxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
             return localVarFp.getPasswordResetProviders(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a list of sessions.
-         * @param {string} [controllableByUserId] Filter by sessions that a given user is allowed to remote control.
-         * @param {string} [deviceId] Filter by device Id.
-         * @param {number} [activeWithinSeconds] Optional. Filter by sessions that were active in the last n seconds.
+         * @param {SessionApiGetSessionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSessions(controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options?: any): AxiosPromise<Array<SessionInfo>> {
-            return localVarFp.getSessions(controllableByUserId, deviceId, activeWithinSeconds, options).then((request) => request(axios, basePath));
+        getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<SessionInfo>> {
+            return localVarFp.getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Instructs a session to play an item.
-         * @param {string} sessionId The session id.
-         * @param {PlayCommand} playCommand The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who have not yet implemented play next and play last may play now.
-         * @param {Array<string>} itemIds The ids of the items to play, comma delimited.
-         * @param {number} [startPositionTicks] The starting position of the first item.
-         * @param {string} [mediaSourceId] Optional. The media source id.
-         * @param {number} [audioStreamIndex] Optional. The index of the audio stream to play.
-         * @param {number} [subtitleStreamIndex] Optional. The index of the subtitle stream to play.
-         * @param {number} [startIndex] Optional. The start index.
+         * @param {SessionApiPlayRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        play(sessionId: string, playCommand: PlayCommand, itemIds: Array<string>, startPositionTicks?: number, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, startIndex?: number, options?: any): AxiosPromise<void> {
-            return localVarFp.play(sessionId, playCommand, itemIds, startPositionTicks, mediaSourceId, audioStreamIndex, subtitleStreamIndex, startIndex, options).then((request) => request(axios, basePath));
+        play(requestParameters: SessionApiPlayRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.play(requestParameters.sessionId, requestParameters.playCommand, requestParameters.itemIds, requestParameters.startPositionTicks, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.startIndex, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates capabilities for a device.
-         * @param {string} [id] The session id.
-         * @param {Array<string>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
-         * @param {Array<GeneralCommandType>} [supportedCommands] A list of supported remote control commands, comma delimited.
-         * @param {boolean} [supportsMediaControl] Determines whether media can be played remotely..
-         * @param {boolean} [supportsSync] Determines whether sync is supported.
-         * @param {boolean} [supportsPersistentIdentifier] Determines whether the device supports a unique identifier.
+         * @param {SessionApiPostCapabilitiesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCapabilities(id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsSync, supportsPersistentIdentifier, options).then((request) => request(axios, basePath));
+        postCapabilities(requestParameters: SessionApiPostCapabilitiesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postCapabilities(requestParameters.id, requestParameters.playableMediaTypes, requestParameters.supportedCommands, requestParameters.supportsMediaControl, requestParameters.supportsSync, requestParameters.supportsPersistentIdentifier, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates capabilities for a device.
-         * @param {ClientCapabilitiesDto} clientCapabilitiesDto The MediaBrowser.Model.Session.ClientCapabilities.
-         * @param {string} [id] The session id.
+         * @param {SessionApiPostFullCapabilitiesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postFullCapabilities(clientCapabilitiesDto: ClientCapabilitiesDto, id?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postFullCapabilities(clientCapabilitiesDto, id, options).then((request) => request(axios, basePath));
+        postFullCapabilities(requestParameters: SessionApiPostFullCapabilitiesRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postFullCapabilities(requestParameters.clientCapabilitiesDto, requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Removes an additional user from a session.
-         * @param {string} sessionId The session id.
-         * @param {string} userId The user id.
+         * @param {SessionApiRemoveUserFromSessionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeUserFromSession(sessionId: string, userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.removeUserFromSession(sessionId, userId, options).then((request) => request(axios, basePath));
+        removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1112,76 +1093,68 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportSessionEnded(options?: any): AxiosPromise<void> {
+        reportSessionEnded(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.reportSessionEnded(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that a session is viewing an item.
-         * @param {string} itemId The item id.
-         * @param {string} [sessionId] The session id.
+         * @param {SessionApiReportViewingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportViewing(itemId: string, sessionId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.reportViewing(itemId, sessionId, options).then((request) => request(axios, basePath));
+        reportViewing(requestParameters: SessionApiReportViewingRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportViewing(requestParameters.itemId, requestParameters.sessionId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Issues a full general command to a client.
-         * @param {string} sessionId The session id.
-         * @param {GeneralCommand} generalCommand The MediaBrowser.Model.Session.GeneralCommand.
+         * @param {SessionApiSendFullGeneralCommandRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendFullGeneralCommand(sessionId: string, generalCommand: GeneralCommand, options?: any): AxiosPromise<void> {
-            return localVarFp.sendFullGeneralCommand(sessionId, generalCommand, options).then((request) => request(axios, basePath));
+        sendFullGeneralCommand(requestParameters: SessionApiSendFullGeneralCommandRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.sendFullGeneralCommand(requestParameters.sessionId, requestParameters.generalCommand, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Issues a general command to a client.
-         * @param {string} sessionId The session id.
-         * @param {GeneralCommandType} command The command to send.
+         * @param {SessionApiSendGeneralCommandRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendGeneralCommand(sessionId: string, command: GeneralCommandType, options?: any): AxiosPromise<void> {
-            return localVarFp.sendGeneralCommand(sessionId, command, options).then((request) => request(axios, basePath));
+        sendGeneralCommand(requestParameters: SessionApiSendGeneralCommandRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.sendGeneralCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Issues a command to a client to display a message to the user.
-         * @param {string} sessionId The session id.
-         * @param {MessageCommand} messageCommand The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
+         * @param {SessionApiSendMessageCommandRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendMessageCommand(sessionId: string, messageCommand: MessageCommand, options?: any): AxiosPromise<void> {
-            return localVarFp.sendMessageCommand(sessionId, messageCommand, options).then((request) => request(axios, basePath));
+        sendMessageCommand(requestParameters: SessionApiSendMessageCommandRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.sendMessageCommand(requestParameters.sessionId, requestParameters.messageCommand, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Issues a playstate command to a client.
-         * @param {string} sessionId The session id.
-         * @param {PlaystateCommand} command The MediaBrowser.Model.Session.PlaystateCommand.
-         * @param {number} [seekPositionTicks] The optional position ticks.
-         * @param {string} [controllingUserId] The optional controlling user id.
+         * @param {SessionApiSendPlaystateCommandRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendPlaystateCommand(sessionId: string, command: PlaystateCommand, seekPositionTicks?: number, controllingUserId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.sendPlaystateCommand(sessionId, command, seekPositionTicks, controllingUserId, options).then((request) => request(axios, basePath));
+        sendPlaystateCommand(requestParameters: SessionApiSendPlaystateCommandRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.sendPlaystateCommand(requestParameters.sessionId, requestParameters.command, requestParameters.seekPositionTicks, requestParameters.controllingUserId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Issues a system command to a client.
-         * @param {string} sessionId The session id.
-         * @param {GeneralCommandType} command The command to send.
+         * @param {SessionApiSendSystemCommandRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        sendSystemCommand(sessionId: string, command: GeneralCommandType, options?: any): AxiosPromise<void> {
-            return localVarFp.sendSystemCommand(sessionId, command, options).then((request) => request(axios, basePath));
+        sendSystemCommand(requestParameters: SessionApiSendSystemCommandRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.sendSystemCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(axios, basePath));
         },
     };
 };

@@ -12,7 +12,9 @@
  */
 
 
-import { ForgotPasswordAction } from './forgot-password-action';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ForgotPasswordAction } from './forgot-password-action.js';
 
 /**
  * 

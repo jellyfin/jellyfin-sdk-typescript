@@ -12,7 +12,9 @@
  */
 
 
-import { ClientCapabilities } from './client-capabilities';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ClientCapabilities } from './client-capabilities.js';
 
 /**
  * 

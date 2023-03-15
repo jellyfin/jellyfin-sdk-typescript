@@ -12,8 +12,12 @@
  */
 
 
-import { ScrollDirection } from './scroll-direction';
-import { SortOrder } from './sort-order';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ScrollDirection } from './scroll-direction.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SortOrder } from './sort-order.js';
 
 /**
  * Defines the display preferences for any item that supports them (usually Folders).

@@ -12,8 +12,12 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { RecommendationType } from './recommendation-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemDto } from './base-item-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RecommendationType } from './recommendation-type.js';
 
 /**
  * 

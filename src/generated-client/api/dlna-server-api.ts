@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * DlnaServerApi - axios parameter creator
  * @export
@@ -823,163 +824,162 @@ export const DlnaServerApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetConnectionManagerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getConnectionManager(serverId, options).then((request) => request(axios, basePath));
+        getConnectionManager(requestParameters: DlnaServerApiGetConnectionManagerRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getConnectionManager(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetConnectionManager2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager2(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getConnectionManager2(serverId, options).then((request) => request(axios, basePath));
+        getConnectionManager2(requestParameters: DlnaServerApiGetConnectionManager2Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getConnectionManager2(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetConnectionManager3Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConnectionManager3(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getConnectionManager3(serverId, options).then((request) => request(axios, basePath));
+        getConnectionManager3(requestParameters: DlnaServerApiGetConnectionManager3Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getConnectionManager3(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna content directory xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetContentDirectoryRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getContentDirectory(serverId, options).then((request) => request(axios, basePath));
+        getContentDirectory(requestParameters: DlnaServerApiGetContentDirectoryRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getContentDirectory(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna content directory xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetContentDirectory2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory2(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getContentDirectory2(serverId, options).then((request) => request(axios, basePath));
+        getContentDirectory2(requestParameters: DlnaServerApiGetContentDirectory2Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getContentDirectory2(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna content directory xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetContentDirectory3Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getContentDirectory3(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getContentDirectory3(serverId, options).then((request) => request(axios, basePath));
+        getContentDirectory3(requestParameters: DlnaServerApiGetContentDirectory3Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getContentDirectory3(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get Description Xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetDescriptionXmlRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDescriptionXml(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDescriptionXml(serverId, options).then((request) => request(axios, basePath));
+        getDescriptionXml(requestParameters: DlnaServerApiGetDescriptionXmlRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getDescriptionXml(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get Description Xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetDescriptionXml2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDescriptionXml2(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDescriptionXml2(serverId, options).then((request) => request(axios, basePath));
+        getDescriptionXml2(requestParameters: DlnaServerApiGetDescriptionXml2Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getDescriptionXml2(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a server icon.
-         * @param {string} fileName The icon filename.
+         * @param {DlnaServerApiGetIconRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIcon(fileName: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getIcon(fileName, options).then((request) => request(axios, basePath));
+        getIcon(requestParameters: DlnaServerApiGetIconRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getIcon(requestParameters.fileName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a server icon.
-         * @param {string} serverId Server UUID.
-         * @param {string} fileName The icon filename.
+         * @param {DlnaServerApiGetIconIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIconId(serverId: string, fileName: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getIconId(serverId, fileName, options).then((request) => request(axios, basePath));
+        getIconId(requestParameters: DlnaServerApiGetIconIdRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getIconId(requestParameters.serverId, requestParameters.fileName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetMediaReceiverRegistrarRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getMediaReceiverRegistrar(serverId, options).then((request) => request(axios, basePath));
+        getMediaReceiverRegistrar(requestParameters: DlnaServerApiGetMediaReceiverRegistrarRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getMediaReceiverRegistrar(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetMediaReceiverRegistrar2Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar2(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getMediaReceiverRegistrar2(serverId, options).then((request) => request(axios, basePath));
+        getMediaReceiverRegistrar2(requestParameters: DlnaServerApiGetMediaReceiverRegistrar2Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getMediaReceiverRegistrar2(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets Dlna media receiver registrar xml.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiGetMediaReceiverRegistrar3Request} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaReceiverRegistrar3(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getMediaReceiverRegistrar3(serverId, options).then((request) => request(axios, basePath));
+        getMediaReceiverRegistrar3(requestParameters: DlnaServerApiGetMediaReceiverRegistrar3Request, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getMediaReceiverRegistrar3(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Process a connection manager control request.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiProcessConnectionManagerControlRequestRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processConnectionManagerControlRequest(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.processConnectionManagerControlRequest(serverId, options).then((request) => request(axios, basePath));
+        processConnectionManagerControlRequest(requestParameters: DlnaServerApiProcessConnectionManagerControlRequestRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.processConnectionManagerControlRequest(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Process a content directory control request.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiProcessContentDirectoryControlRequestRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processContentDirectoryControlRequest(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.processContentDirectoryControlRequest(serverId, options).then((request) => request(axios, basePath));
+        processContentDirectoryControlRequest(requestParameters: DlnaServerApiProcessContentDirectoryControlRequestRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.processContentDirectoryControlRequest(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Process a media receiver registrar control request.
-         * @param {string} serverId Server UUID.
+         * @param {DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        processMediaReceiverRegistrarControlRequest(serverId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.processMediaReceiverRegistrarControlRequest(serverId, options).then((request) => request(axios, basePath));
+        processMediaReceiverRegistrarControlRequest(requestParameters: DlnaServerApiProcessMediaReceiverRegistrarControlRequestRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.processMediaReceiverRegistrarControlRequest(requestParameters.serverId, options).then((request) => request(axios, basePath));
         },
     };
 };

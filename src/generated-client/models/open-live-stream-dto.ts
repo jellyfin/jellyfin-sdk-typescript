@@ -12,8 +12,12 @@
  */
 
 
-import { DeviceProfile } from './device-profile';
-import { MediaProtocol } from './media-protocol';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DeviceProfile } from './device-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaProtocol } from './media-protocol.js';
 
 /**
  * Open live stream dto.

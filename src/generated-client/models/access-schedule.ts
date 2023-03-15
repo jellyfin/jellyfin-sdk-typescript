@@ -12,7 +12,9 @@
  */
 
 
-import { DynamicDayOfWeek } from './dynamic-day-of-week';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DynamicDayOfWeek } from './dynamic-day-of-week.js';
 
 /**
  * An entity representing a user\'s access schedule.

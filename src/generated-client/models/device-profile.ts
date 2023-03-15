@@ -12,14 +12,30 @@
  */
 
 
-import { CodecProfile } from './codec-profile';
-import { ContainerProfile } from './container-profile';
-import { DeviceIdentification } from './device-identification';
-import { DirectPlayProfile } from './direct-play-profile';
-import { ResponseProfile } from './response-profile';
-import { SubtitleProfile } from './subtitle-profile';
-import { TranscodingProfile } from './transcoding-profile';
-import { XmlAttribute } from './xml-attribute';
+// May contain unused imports in some cases
+// @ts-ignore
+import { CodecProfile } from './codec-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ContainerProfile } from './container-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DeviceIdentification } from './device-identification.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DirectPlayProfile } from './direct-play-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ResponseProfile } from './response-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SubtitleProfile } from './subtitle-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TranscodingProfile } from './transcoding-profile.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { XmlAttribute } from './xml-attribute.js';
 
 /**
  * A MediaBrowser.Model.Dlna.DeviceProfile represents a set of metadata which determines which content a certain device is able to play.  <br />  Specifically, it defines the supported <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.ContainerProfiles\">containers</see> and  <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.CodecProfiles\">codecs</see> (video and/or audio, including codec profiles and levels)  the device is able to direct play (without transcoding or remuxing),  as well as which <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.TranscodingProfiles\">containers/codecs to transcode to</see> in case it isn\'t.

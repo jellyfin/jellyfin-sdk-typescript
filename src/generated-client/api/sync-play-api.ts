@@ -12,47 +12,48 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BufferRequestDto } from '../models';
+import { BufferRequestDto } from '../models.js';
 // @ts-ignore
-import { GroupInfoDto } from '../models';
+import { GroupInfoDto } from '../models.js';
 // @ts-ignore
-import { IgnoreWaitRequestDto } from '../models';
+import { IgnoreWaitRequestDto } from '../models.js';
 // @ts-ignore
-import { JoinGroupRequestDto } from '../models';
+import { JoinGroupRequestDto } from '../models.js';
 // @ts-ignore
-import { MovePlaylistItemRequestDto } from '../models';
+import { MovePlaylistItemRequestDto } from '../models.js';
 // @ts-ignore
-import { NewGroupRequestDto } from '../models';
+import { NewGroupRequestDto } from '../models.js';
 // @ts-ignore
-import { NextItemRequestDto } from '../models';
+import { NextItemRequestDto } from '../models.js';
 // @ts-ignore
-import { PingRequestDto } from '../models';
+import { PingRequestDto } from '../models.js';
 // @ts-ignore
-import { PlayRequestDto } from '../models';
+import { PlayRequestDto } from '../models.js';
 // @ts-ignore
-import { PreviousItemRequestDto } from '../models';
+import { PreviousItemRequestDto } from '../models.js';
 // @ts-ignore
-import { QueueRequestDto } from '../models';
+import { QueueRequestDto } from '../models.js';
 // @ts-ignore
-import { ReadyRequestDto } from '../models';
+import { ReadyRequestDto } from '../models.js';
 // @ts-ignore
-import { RemoveFromPlaylistRequestDto } from '../models';
+import { RemoveFromPlaylistRequestDto } from '../models.js';
 // @ts-ignore
-import { SeekRequestDto } from '../models';
+import { SeekRequestDto } from '../models.js';
 // @ts-ignore
-import { SetPlaylistItemRequestDto } from '../models';
+import { SetPlaylistItemRequestDto } from '../models.js';
 // @ts-ignore
-import { SetRepeatModeRequestDto } from '../models';
+import { SetRepeatModeRequestDto } from '../models.js';
 // @ts-ignore
-import { SetShuffleModeRequestDto } from '../models';
+import { SetShuffleModeRequestDto } from '../models.js';
 /**
  * SyncPlayApi - axios parameter creator
  * @export
@@ -1097,22 +1098,22 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Notify SyncPlay group that member is buffering.
-         * @param {BufferRequestDto} bufferRequestDto The player status.
+         * @param {SyncPlayApiSyncPlayBufferingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayBuffering(bufferRequestDto: BufferRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayBuffering(bufferRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayBuffering(requestParameters: SyncPlayApiSyncPlayBufferingRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayBuffering(requestParameters.bufferRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Create a new SyncPlay group.
-         * @param {NewGroupRequestDto} newGroupRequestDto The settings of the new group.
+         * @param {SyncPlayApiSyncPlayCreateGroupRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayCreateGroup(newGroupRequestDto: NewGroupRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayCreateGroup(newGroupRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayCreateGroup(requestParameters: SyncPlayApiSyncPlayCreateGroupRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayCreateGroup(requestParameters.newGroupRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1120,18 +1121,18 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayGetGroups(options?: any): AxiosPromise<Array<GroupInfoDto>> {
+        syncPlayGetGroups(options?: AxiosRequestConfig): AxiosPromise<Array<GroupInfoDto>> {
             return localVarFp.syncPlayGetGroups(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Join an existing SyncPlay group.
-         * @param {JoinGroupRequestDto} joinGroupRequestDto The group to join.
+         * @param {SyncPlayApiSyncPlayJoinGroupRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayJoinGroup(joinGroupRequestDto: JoinGroupRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayJoinGroup(joinGroupRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayJoinGroup(requestParameters: SyncPlayApiSyncPlayJoinGroupRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayJoinGroup(requestParameters.joinGroupRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1139,28 +1140,28 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayLeaveGroup(options?: any): AxiosPromise<void> {
+        syncPlayLeaveGroup(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.syncPlayLeaveGroup(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to move an item in the playlist in SyncPlay group.
-         * @param {MovePlaylistItemRequestDto} movePlaylistItemRequestDto The new position for the item.
+         * @param {SyncPlayApiSyncPlayMovePlaylistItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayMovePlaylistItem(movePlaylistItemRequestDto: MovePlaylistItemRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayMovePlaylistItem(movePlaylistItemRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayMovePlaylistItem(requestParameters: SyncPlayApiSyncPlayMovePlaylistItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayMovePlaylistItem(requestParameters.movePlaylistItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request next item in SyncPlay group.
-         * @param {NextItemRequestDto} nextItemRequestDto The current item information.
+         * @param {SyncPlayApiSyncPlayNextItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayNextItem(nextItemRequestDto: NextItemRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayNextItem(nextItemRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayNextItem(requestParameters: SyncPlayApiSyncPlayNextItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayNextItem(requestParameters.nextItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1168,118 +1169,118 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPause(options?: any): AxiosPromise<void> {
+        syncPlayPause(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.syncPlayPause(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update session ping.
-         * @param {PingRequestDto} pingRequestDto The new ping.
+         * @param {SyncPlayApiSyncPlayPingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPing(pingRequestDto: PingRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayPing(pingRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayPing(requestParameters: SyncPlayApiSyncPlayPingRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayPing(requestParameters.pingRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request previous item in SyncPlay group.
-         * @param {PreviousItemRequestDto} previousItemRequestDto The current item information.
+         * @param {SyncPlayApiSyncPlayPreviousItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayPreviousItem(previousItemRequestDto: PreviousItemRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayPreviousItem(previousItemRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayPreviousItem(requestParameters: SyncPlayApiSyncPlayPreviousItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayPreviousItem(requestParameters.previousItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to queue items to the playlist of a SyncPlay group.
-         * @param {QueueRequestDto} queueRequestDto The items to add.
+         * @param {SyncPlayApiSyncPlayQueueRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayQueue(queueRequestDto: QueueRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayQueue(queueRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayQueue(requestParameters: SyncPlayApiSyncPlayQueueRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayQueue(requestParameters.queueRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Notify SyncPlay group that member is ready for playback.
-         * @param {ReadyRequestDto} readyRequestDto The player status.
+         * @param {SyncPlayApiSyncPlayReadyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayReady(readyRequestDto: ReadyRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayReady(readyRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayReady(requestParameters: SyncPlayApiSyncPlayReadyRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayReady(requestParameters.readyRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to remove items from the playlist in SyncPlay group.
-         * @param {RemoveFromPlaylistRequestDto} removeFromPlaylistRequestDto The items to remove.
+         * @param {SyncPlayApiSyncPlayRemoveFromPlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlayRemoveFromPlaylist(removeFromPlaylistRequestDto, options).then((request) => request(axios, basePath));
+        syncPlayRemoveFromPlaylist(requestParameters: SyncPlayApiSyncPlayRemoveFromPlaylistRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlayRemoveFromPlaylist(requestParameters.removeFromPlaylistRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request seek in SyncPlay group.
-         * @param {SeekRequestDto} seekRequestDto The new playback position.
+         * @param {SyncPlayApiSyncPlaySeekRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySeek(seekRequestDto: SeekRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySeek(seekRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySeek(requestParameters: SyncPlayApiSyncPlaySeekRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySeek(requestParameters.seekRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request SyncPlay group to ignore member during group-wait.
-         * @param {IgnoreWaitRequestDto} ignoreWaitRequestDto The settings to set.
+         * @param {SyncPlayApiSyncPlaySetIgnoreWaitRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetIgnoreWait(ignoreWaitRequestDto: IgnoreWaitRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetIgnoreWait(ignoreWaitRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySetIgnoreWait(requestParameters: SyncPlayApiSyncPlaySetIgnoreWaitRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySetIgnoreWait(requestParameters.ignoreWaitRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set new playlist in SyncPlay group.
-         * @param {PlayRequestDto} playRequestDto The new playlist to play in the group.
+         * @param {SyncPlayApiSyncPlaySetNewQueueRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetNewQueue(playRequestDto: PlayRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetNewQueue(playRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySetNewQueue(requestParameters: SyncPlayApiSyncPlaySetNewQueueRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySetNewQueue(requestParameters.playRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to change playlist item in SyncPlay group.
-         * @param {SetPlaylistItemRequestDto} setPlaylistItemRequestDto The new item to play.
+         * @param {SyncPlayApiSyncPlaySetPlaylistItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetPlaylistItem(setPlaylistItemRequestDto: SetPlaylistItemRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetPlaylistItem(setPlaylistItemRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySetPlaylistItem(requestParameters: SyncPlayApiSyncPlaySetPlaylistItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySetPlaylistItem(requestParameters.setPlaylistItemRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set repeat mode in SyncPlay group.
-         * @param {SetRepeatModeRequestDto} setRepeatModeRequestDto The new repeat mode.
+         * @param {SyncPlayApiSyncPlaySetRepeatModeRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetRepeatMode(setRepeatModeRequestDto: SetRepeatModeRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetRepeatMode(setRepeatModeRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySetRepeatMode(requestParameters: SyncPlayApiSyncPlaySetRepeatModeRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySetRepeatMode(requestParameters.setRepeatModeRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Request to set shuffle mode in SyncPlay group.
-         * @param {SetShuffleModeRequestDto} setShuffleModeRequestDto The new shuffle mode.
+         * @param {SyncPlayApiSyncPlaySetShuffleModeRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlaySetShuffleMode(setShuffleModeRequestDto: SetShuffleModeRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.syncPlaySetShuffleMode(setShuffleModeRequestDto, options).then((request) => request(axios, basePath));
+        syncPlaySetShuffleMode(requestParameters: SyncPlayApiSyncPlaySetShuffleModeRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.syncPlaySetShuffleMode(requestParameters.setShuffleModeRequestDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1287,7 +1288,7 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayStop(options?: any): AxiosPromise<void> {
+        syncPlayStop(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.syncPlayStop(options).then((request) => request(axios, basePath));
         },
         /**
@@ -1296,7 +1297,7 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        syncPlayUnpause(options?: any): AxiosPromise<void> {
+        syncPlayUnpause(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.syncPlayUnpause(options).then((request) => request(axios, basePath));
         },
     };

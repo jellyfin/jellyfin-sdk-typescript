@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import { BaseItemKind } from '../models.js';
 /**
  * SuggestionsApi - axios parameter creator
  * @export
@@ -130,17 +131,12 @@ export const SuggestionsApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Gets suggestions.
-         * @param {string} userId The user id.
-         * @param {Array<string>} [mediaType] The media types.
-         * @param {Array<BaseItemKind>} [type] The type.
-         * @param {number} [startIndex] Optional. The start index.
-         * @param {number} [limit] Optional. The limit.
-         * @param {boolean} [enableTotalRecordCount] Whether to enable the total record count.
+         * @param {SuggestionsApiGetSuggestionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSuggestions(userId: string, mediaType?: Array<string>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSuggestions(userId, mediaType, type, startIndex, limit, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
 };

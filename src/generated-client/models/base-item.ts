@@ -12,7 +12,9 @@
  */
 
 
-import { MediaUrl } from './media-url';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaUrl } from './media-url.js';
 
 /**
  * Class BaseItem.

@@ -12,7 +12,9 @@
  */
 
 
-import { GroupQueueMode } from './group-queue-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GroupQueueMode } from './group-queue-mode.js';
 
 /**
  * Class QueueRequestDto.

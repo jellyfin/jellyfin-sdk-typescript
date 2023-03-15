@@ -12,7 +12,9 @@
  */
 
 
-import { SendCommandType } from './send-command-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SendCommandType } from './send-command-type.js';
 
 /**
  * Class SendCommand.

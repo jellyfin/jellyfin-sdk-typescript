@@ -12,9 +12,15 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { KeepUntil } from './keep-until';
-import { RecordingStatus } from './recording-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemDto } from './base-item-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { KeepUntil } from './keep-until.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RecordingStatus } from './recording-status.js';
 
 /**
  * 

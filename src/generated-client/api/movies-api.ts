@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ItemFields } from '../models';
+import { ItemFields } from '../models.js';
 // @ts-ignore
-import { RecommendationDto } from '../models';
+import { RecommendationDto } from '../models.js';
 /**
  * MoviesApi - axios parameter creator
  * @export
@@ -125,16 +126,12 @@ export const MoviesApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets movie recommendations.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {Array<ItemFields>} [fields] Optional. The fields to return.
-         * @param {number} [categoryLimit] The max number of categories to return.
-         * @param {number} [itemLimit] The max number of items to return per category.
+         * @param {MoviesApiGetMovieRecommendationsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRecommendations(userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options?: any): AxiosPromise<Array<RecommendationDto>> {
-            return localVarFp.getMovieRecommendations(userId, parentId, fields, categoryLimit, itemLimit, options).then((request) => request(axios, basePath));
+        getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<RecommendationDto>> {
+            return localVarFp.getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(axios, basePath));
         },
     };
 };

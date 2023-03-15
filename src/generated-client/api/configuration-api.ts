@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { MediaEncoderPathDto } from '../models';
+import { MediaEncoderPathDto } from '../models.js';
 // @ts-ignore
-import { MetadataOptions } from '../models';
+import { MetadataOptions } from '../models.js';
 // @ts-ignore
-import { ServerConfiguration } from '../models';
+import { ServerConfiguration } from '../models.js';
 /**
  * ConfigurationApi - axios parameter creator
  * @export
@@ -346,7 +347,7 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfiguration(options?: any): AxiosPromise<ServerConfiguration> {
+        getConfiguration(options?: AxiosRequestConfig): AxiosPromise<ServerConfiguration> {
             return localVarFp.getConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
@@ -355,49 +356,48 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultMetadataOptions(options?: any): AxiosPromise<MetadataOptions> {
+        getDefaultMetadataOptions(options?: AxiosRequestConfig): AxiosPromise<MetadataOptions> {
             return localVarFp.getDefaultMetadataOptions(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a named configuration.
-         * @param {string} key Configuration key.
+         * @param {ConfigurationApiGetNamedConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration(key: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getNamedConfiguration(key, options).then((request) => request(axios, basePath));
+        getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getNamedConfiguration(requestParameters.key, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates application configuration.
-         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {ConfigurationApiUpdateConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration(serverConfiguration: ServerConfiguration, options?: any): AxiosPromise<void> {
-            return localVarFp.updateConfiguration(serverConfiguration, options).then((request) => request(axios, basePath));
+        updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates the path to the media encoder.
-         * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
+         * @param {ConfigurationApiUpdateMediaEncoderPathRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateMediaEncoderPath(mediaEncoderPathDto, options).then((request) => request(axios, basePath));
+        updateMediaEncoderPath(requestParameters: ConfigurationApiUpdateMediaEncoderPathRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateMediaEncoderPath(requestParameters.mediaEncoderPathDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates named configuration.
-         * @param {string} key Configuration key.
-         * @param {any} body Configuration.
+         * @param {ConfigurationApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration(key: string, body: any, options?: any): AxiosPromise<void> {
-            return localVarFp.updateNamedConfiguration(key, body, options).then((request) => request(axios, basePath));
+        updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(axios, basePath));
         },
     };
 };

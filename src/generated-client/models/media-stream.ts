@@ -12,8 +12,12 @@
  */
 
 
-import { MediaStreamType } from './media-stream-type';
-import { SubtitleDeliveryMethod } from './subtitle-delivery-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaStreamType } from './media-stream-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SubtitleDeliveryMethod } from './subtitle-delivery-method.js';
 
 /**
  * Class MediaStream.

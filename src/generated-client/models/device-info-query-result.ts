@@ -12,7 +12,9 @@
  */
 
 
-import { DeviceInfo } from './device-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DeviceInfo } from './device-info.js';
 
 /**
  * 

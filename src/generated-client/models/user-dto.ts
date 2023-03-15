@@ -12,8 +12,12 @@
  */
 
 
-import { UserConfiguration } from './user-configuration';
-import { UserPolicy } from './user-policy';
+// May contain unused imports in some cases
+// @ts-ignore
+import { UserConfiguration } from './user-configuration.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { UserPolicy } from './user-policy.js';
 
 /**
  * Class UserDto.

@@ -12,8 +12,12 @@
  */
 
 
-import { ProfileConditionType } from './profile-condition-type';
-import { ProfileConditionValue } from './profile-condition-value';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ProfileConditionType } from './profile-condition-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ProfileConditionValue } from './profile-condition-value.js';
 
 /**
  * 

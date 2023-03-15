@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { PackageInfo } from '../models';
+import { PackageInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { RepositoryInfo } from '../models';
+import { RepositoryInfo } from '../models.js';
 /**
  * PackageApi - axios parameter creator
  * @export
@@ -358,23 +359,22 @@ export const PackageApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Cancels a package installation.
-         * @param {string} packageId Installation Id.
+         * @param {PackageApiCancelPackageInstallationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        cancelPackageInstallation(packageId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.cancelPackageInstallation(packageId, options).then((request) => request(axios, basePath));
+        cancelPackageInstallation(requestParameters: PackageApiCancelPackageInstallationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.cancelPackageInstallation(requestParameters.packageId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a package by name or assembly GUID.
-         * @param {string} name The name of the package.
-         * @param {string} [assemblyGuid] The GUID of the associated assembly.
+         * @param {PackageApiGetPackageInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPackageInfo(name: string, assemblyGuid?: string, options?: any): AxiosPromise<PackageInfo> {
-            return localVarFp.getPackageInfo(name, assemblyGuid, options).then((request) => request(axios, basePath));
+        getPackageInfo(requestParameters: PackageApiGetPackageInfoRequest, options?: AxiosRequestConfig): AxiosPromise<PackageInfo> {
+            return localVarFp.getPackageInfo(requestParameters.name, requestParameters.assemblyGuid, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -382,7 +382,7 @@ export const PackageApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPackages(options?: any): AxiosPromise<Array<PackageInfo>> {
+        getPackages(options?: AxiosRequestConfig): AxiosPromise<Array<PackageInfo>> {
             return localVarFp.getPackages(options).then((request) => request(axios, basePath));
         },
         /**
@@ -391,31 +391,28 @@ export const PackageApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRepositories(options?: any): AxiosPromise<Array<RepositoryInfo>> {
+        getRepositories(options?: AxiosRequestConfig): AxiosPromise<Array<RepositoryInfo>> {
             return localVarFp.getRepositories(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Installs a package.
-         * @param {string} name Package name.
-         * @param {string} [assemblyGuid] GUID of the associated assembly.
-         * @param {string} [version] Optional version. Defaults to latest version.
-         * @param {string} [repositoryUrl] Optional. Specify the repository to install from.
+         * @param {PackageApiInstallPackageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        installPackage(name: string, assemblyGuid?: string, version?: string, repositoryUrl?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.installPackage(name, assemblyGuid, version, repositoryUrl, options).then((request) => request(axios, basePath));
+        installPackage(requestParameters: PackageApiInstallPackageRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.installPackage(requestParameters.name, requestParameters.assemblyGuid, requestParameters.version, requestParameters.repositoryUrl, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the enabled and existing package repositories.
-         * @param {Array<RepositoryInfo>} repositoryInfo The list of package repositories.
+         * @param {PackageApiSetRepositoriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRepositories(repositoryInfo: Array<RepositoryInfo>, options?: any): AxiosPromise<void> {
-            return localVarFp.setRepositories(repositoryInfo, options).then((request) => request(axios, basePath));
+        setRepositories(requestParameters: PackageApiSetRepositoriesRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.setRepositories(requestParameters.repositoryInfo, options).then((request) => request(axios, basePath));
         },
     };
 };

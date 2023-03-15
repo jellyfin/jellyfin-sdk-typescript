@@ -12,7 +12,9 @@
  */
 
 
-import { PersonLookupInfo } from './person-lookup-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PersonLookupInfo } from './person-lookup-info.js';
 
 /**
  * 

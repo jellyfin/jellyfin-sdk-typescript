@@ -12,7 +12,9 @@
  */
 
 
-import { HeaderMatchType } from './header-match-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { HeaderMatchType } from './header-match-type.js';
 
 /**
  * 

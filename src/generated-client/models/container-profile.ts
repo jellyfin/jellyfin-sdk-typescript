@@ -12,8 +12,12 @@
  */
 
 
-import { DlnaProfileType } from './dlna-profile-type';
-import { ProfileCondition } from './profile-condition';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DlnaProfileType } from './dlna-profile-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ProfileCondition } from './profile-condition.js';
 
 /**
  * 

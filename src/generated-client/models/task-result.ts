@@ -12,7 +12,9 @@
  */
 
 
-import { TaskCompletionStatus } from './task-completion-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TaskCompletionStatus } from './task-completion-status.js';
 
 /**
  * Class TaskExecutionInfo.

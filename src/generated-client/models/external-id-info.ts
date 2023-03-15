@@ -12,7 +12,9 @@
  */
 
 
-import { ExternalIdMediaType } from './external-id-media-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ExternalIdMediaType } from './external-id-media-type.js';
 
 /**
  * Represents the external id information for serialization to the client.

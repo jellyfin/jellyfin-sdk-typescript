@@ -12,7 +12,9 @@
  */
 
 
-import { GroupRepeatMode } from './group-repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GroupRepeatMode } from './group-repeat-mode.js';
 
 /**
  * Class SetRepeatModeRequestDto.

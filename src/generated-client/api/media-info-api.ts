@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { LiveStreamResponse } from '../models';
+import { LiveStreamResponse } from '../models.js';
 // @ts-ignore
-import { OpenLiveStreamDto } from '../models';
+import { OpenLiveStreamDto } from '../models.js';
 // @ts-ignore
-import { PlaybackInfoDto } from '../models';
+import { PlaybackInfoDto } from '../models.js';
 // @ts-ignore
-import { PlaybackInfoResponse } from '../models';
+import { PlaybackInfoResponse } from '../models.js';
 /**
  * MediaInfoApi - axios parameter creator
  * @export
@@ -463,79 +464,52 @@ export const MediaInfoApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Closes a media source.
-         * @param {string} liveStreamId The livestream id.
+         * @param {MediaInfoApiCloseLiveStreamRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        closeLiveStream(liveStreamId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.closeLiveStream(liveStreamId, options).then((request) => request(axios, basePath));
+        closeLiveStream(requestParameters: MediaInfoApiCloseLiveStreamRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.closeLiveStream(requestParameters.liveStreamId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Tests the network with a request with the size of the bitrate.
-         * @param {number} [size] The bitrate. Defaults to 102400.
+         * @param {MediaInfoApiGetBitrateTestBytesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBitrateTestBytes(size?: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getBitrateTestBytes(size, options).then((request) => request(axios, basePath));
+        getBitrateTestBytes(requestParameters: MediaInfoApiGetBitrateTestBytesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getBitrateTestBytes(requestParameters.size, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets live playback media info for an item.
-         * @param {string} itemId The item id.
-         * @param {string} userId The user id.
+         * @param {MediaInfoApiGetPlaybackInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaybackInfo(itemId: string, userId: string, options?: any): AxiosPromise<PlaybackInfoResponse> {
-            return localVarFp.getPlaybackInfo(itemId, userId, options).then((request) => request(axios, basePath));
+        getPlaybackInfo(requestParameters: MediaInfoApiGetPlaybackInfoRequest, options?: AxiosRequestConfig): AxiosPromise<PlaybackInfoResponse> {
+            return localVarFp.getPlaybackInfo(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
          * @summary Gets live playback media info for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] The user id.
-         * @param {number} [maxStreamingBitrate] The maximum streaming bitrate.
-         * @param {number} [startTimeTicks] The start time in ticks.
-         * @param {number} [audioStreamIndex] The audio stream index.
-         * @param {number} [subtitleStreamIndex] The subtitle stream index.
-         * @param {number} [maxAudioChannels] The maximum number of audio channels.
-         * @param {string} [mediaSourceId] The media source id.
-         * @param {string} [liveStreamId] The livestream id.
-         * @param {boolean} [autoOpenLiveStream] Whether to auto open the livestream.
-         * @param {boolean} [enableDirectPlay] Whether to enable direct play. Default: true.
-         * @param {boolean} [enableDirectStream] Whether to enable direct stream. Default: true.
-         * @param {boolean} [enableTranscoding] Whether to enable transcoding. Default: true.
-         * @param {boolean} [allowVideoStreamCopy] Whether to allow to copy the video stream. Default: true.
-         * @param {boolean} [allowAudioStreamCopy] Whether to allow to copy the audio stream. Default: true.
-         * @param {PlaybackInfoDto} [playbackInfoDto] The playback info.
+         * @param {MediaInfoApiGetPostedPlaybackInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPostedPlaybackInfo(itemId: string, userId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, mediaSourceId?: string, liveStreamId?: string, autoOpenLiveStream?: boolean, enableDirectPlay?: boolean, enableDirectStream?: boolean, enableTranscoding?: boolean, allowVideoStreamCopy?: boolean, allowAudioStreamCopy?: boolean, playbackInfoDto?: PlaybackInfoDto, options?: any): AxiosPromise<PlaybackInfoResponse> {
-            return localVarFp.getPostedPlaybackInfo(itemId, userId, maxStreamingBitrate, startTimeTicks, audioStreamIndex, subtitleStreamIndex, maxAudioChannels, mediaSourceId, liveStreamId, autoOpenLiveStream, enableDirectPlay, enableDirectStream, enableTranscoding, allowVideoStreamCopy, allowAudioStreamCopy, playbackInfoDto, options).then((request) => request(axios, basePath));
+        getPostedPlaybackInfo(requestParameters: MediaInfoApiGetPostedPlaybackInfoRequest, options?: AxiosRequestConfig): AxiosPromise<PlaybackInfoResponse> {
+            return localVarFp.getPostedPlaybackInfo(requestParameters.itemId, requestParameters.userId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.mediaSourceId, requestParameters.liveStreamId, requestParameters.autoOpenLiveStream, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.enableTranscoding, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.playbackInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Opens a media source.
-         * @param {string} [openToken] The open token.
-         * @param {string} [userId] The user id.
-         * @param {string} [playSessionId] The play session id.
-         * @param {number} [maxStreamingBitrate] The maximum streaming bitrate.
-         * @param {number} [startTimeTicks] The start time in ticks.
-         * @param {number} [audioStreamIndex] The audio stream index.
-         * @param {number} [subtitleStreamIndex] The subtitle stream index.
-         * @param {number} [maxAudioChannels] The maximum number of audio channels.
-         * @param {string} [itemId] The item id.
-         * @param {boolean} [enableDirectPlay] Whether to enable direct play. Default: true.
-         * @param {boolean} [enableDirectStream] Whether to enable direct stream. Default: true.
-         * @param {OpenLiveStreamDto} [openLiveStreamDto] The open live stream dto.
+         * @param {MediaInfoApiOpenLiveStreamRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        openLiveStream(openToken?: string, userId?: string, playSessionId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, itemId?: string, enableDirectPlay?: boolean, enableDirectStream?: boolean, openLiveStreamDto?: OpenLiveStreamDto, options?: any): AxiosPromise<LiveStreamResponse> {
-            return localVarFp.openLiveStream(openToken, userId, playSessionId, maxStreamingBitrate, startTimeTicks, audioStreamIndex, subtitleStreamIndex, maxAudioChannels, itemId, enableDirectPlay, enableDirectStream, openLiveStreamDto, options).then((request) => request(axios, basePath));
+        openLiveStream(requestParameters: MediaInfoApiOpenLiveStreamRequest = {}, options?: AxiosRequestConfig): AxiosPromise<LiveStreamResponse> {
+            return localVarFp.openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.openLiveStreamDto, options).then((request) => request(axios, basePath));
         },
     };
 };

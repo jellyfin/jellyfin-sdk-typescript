@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import { BaseItemDto } from '../models.js';
 // @ts-ignore
-import { MetadataEditorInfo } from '../models';
+import { MetadataEditorInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * ItemUpdateApi - axios parameter creator
  * @export
@@ -211,34 +212,32 @@ export const ItemUpdateApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Gets metadata editor info for an item.
-         * @param {string} itemId The item id.
+         * @param {ItemUpdateApiGetMetadataEditorInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMetadataEditorInfo(itemId: string, options?: any): AxiosPromise<MetadataEditorInfo> {
-            return localVarFp.getMetadataEditorInfo(itemId, options).then((request) => request(axios, basePath));
+        getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: AxiosRequestConfig): AxiosPromise<MetadataEditorInfo> {
+            return localVarFp.getMetadataEditorInfo(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates an item.
-         * @param {string} itemId The item id.
-         * @param {BaseItemDto} baseItemDto The new item properties.
+         * @param {ItemUpdateApiUpdateItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItem(itemId: string, baseItemDto: BaseItemDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateItem(itemId, baseItemDto, options).then((request) => request(axios, basePath));
+        updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates an item\'s content type.
-         * @param {string} itemId The item id.
-         * @param {string} [contentType] The content type of the item.
+         * @param {ItemUpdateApiUpdateItemContentTypeRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItemContentType(itemId: string, contentType?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updateItemContentType(itemId, contentType, options).then((request) => request(axios, basePath));
+        updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateItemContentType(requestParameters.itemId, requestParameters.contentType, options).then((request) => request(axios, basePath));
         },
     };
 };

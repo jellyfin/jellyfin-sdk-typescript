@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { SpecialViewOptionDto } from '../models';
+import { SpecialViewOptionDto } from '../models.js';
 /**
  * UserViewsApi - axios parameter creator
  * @export
@@ -168,25 +169,22 @@ export const UserViewsApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Get user view grouping options.
-         * @param {string} userId User id.
+         * @param {UserViewsApiGetGroupingOptionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGroupingOptions(userId: string, options?: any): AxiosPromise<Array<SpecialViewOptionDto>> {
-            return localVarFp.getGroupingOptions(userId, options).then((request) => request(axios, basePath));
+        getGroupingOptions(requestParameters: UserViewsApiGetGroupingOptionsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<SpecialViewOptionDto>> {
+            return localVarFp.getGroupingOptions(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get user views.
-         * @param {string} userId User id.
-         * @param {boolean} [includeExternalContent] Whether or not to include external views such as channels or live tv.
-         * @param {Array<string>} [presetViews] Preset views.
-         * @param {boolean} [includeHidden] Whether or not to include hidden content.
+         * @param {UserViewsApiGetUserViewsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserViews(userId: string, includeExternalContent?: boolean, presetViews?: Array<string>, includeHidden?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getUserViews(userId, includeExternalContent, presetViews, includeHidden, options).then((request) => request(axios, basePath));
+        getUserViews(requestParameters: UserViewsApiGetUserViewsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getUserViews(requestParameters.userId, requestParameters.includeExternalContent, requestParameters.presetViews, requestParameters.includeHidden, options).then((request) => request(axios, basePath));
         },
     };
 };

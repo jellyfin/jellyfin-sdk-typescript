@@ -12,7 +12,9 @@
  */
 
 
-import { NameGuidPair } from './name-guid-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NameGuidPair } from './name-guid-pair.js';
 
 /**
  * 

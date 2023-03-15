@@ -12,26 +12,66 @@
  */
 
 
-import { BaseItemDtoImageBlurHashes } from './base-item-dto-image-blur-hashes';
-import { BaseItemKind } from './base-item-kind';
-import { BaseItemPerson } from './base-item-person';
-import { ChannelType } from './channel-type';
-import { ChapterInfo } from './chapter-info';
-import { DayOfWeek } from './day-of-week';
-import { ExternalUrl } from './external-url';
-import { ImageOrientation } from './image-orientation';
-import { IsoType } from './iso-type';
-import { LocationType } from './location-type';
-import { MediaSourceInfo } from './media-source-info';
-import { MediaStream } from './media-stream';
-import { MediaUrl } from './media-url';
-import { MetadataField } from './metadata-field';
-import { NameGuidPair } from './name-guid-pair';
-import { PlayAccess } from './play-access';
-import { ProgramAudio } from './program-audio';
-import { UserItemDataDto } from './user-item-data-dto';
-import { Video3DFormat } from './video3-dformat';
-import { VideoType } from './video-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemDtoImageBlurHashes } from './base-item-dto-image-blur-hashes.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemKind } from './base-item-kind.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { BaseItemPerson } from './base-item-person.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ChannelType } from './channel-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ChapterInfo } from './chapter-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DayOfWeek } from './day-of-week.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ExternalUrl } from './external-url.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ImageOrientation } from './image-orientation.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { IsoType } from './iso-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LocationType } from './location-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaSourceInfo } from './media-source-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaStream } from './media-stream.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaUrl } from './media-url.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MetadataField } from './metadata-field.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NameGuidPair } from './name-guid-pair.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlayAccess } from './play-access.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ProgramAudio } from './program-audio.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { UserItemDataDto } from './user-item-data-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { Video3DFormat } from './video3-dformat.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { VideoType } from './video-type.js';
 
 /**
  * This is strictly used as a data transfer object from the api layer.  This holds information about a BaseItem in a format that is convenient for the client.

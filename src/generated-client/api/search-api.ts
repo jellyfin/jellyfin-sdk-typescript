@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import { BaseItemKind } from '../models.js';
 // @ts-ignore
-import { SearchHintResult } from '../models';
+import { SearchHintResult } from '../models.js';
 /**
  * SearchApi - axios parameter creator
  * @export
@@ -205,29 +206,12 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets the search hint result.
-         * @param {string} searchTerm The search term to filter on.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {string} [userId] Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
-         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimeted.
-         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimeted.
-         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimeted.
-         * @param {string} [parentId] If specified, only children of the parent are returned.
-         * @param {boolean} [isMovie] Optional filter for movies.
-         * @param {boolean} [isSeries] Optional filter for series.
-         * @param {boolean} [isNews] Optional filter for news.
-         * @param {boolean} [isKids] Optional filter for kids.
-         * @param {boolean} [isSports] Optional filter for sports.
-         * @param {boolean} [includePeople] Optional filter whether to include people.
-         * @param {boolean} [includeMedia] Optional filter whether to include media.
-         * @param {boolean} [includeGenres] Optional filter whether to include genres.
-         * @param {boolean} [includeStudios] Optional filter whether to include studios.
-         * @param {boolean} [includeArtists] Optional filter whether to include artists.
+         * @param {SearchApiGetRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        get(searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options?: any): AxiosPromise<SearchHintResult> {
-            return localVarFp.get(searchTerm, startIndex, limit, userId, includeItemTypes, excludeItemTypes, mediaTypes, parentId, isMovie, isSeries, isNews, isKids, isSports, includePeople, includeMedia, includeGenres, includeStudios, includeArtists, options).then((request) => request(axios, basePath));
+        get(requestParameters: SearchApiGetRequest, options?: AxiosRequestConfig): AxiosPromise<SearchHintResult> {
+            return localVarFp.get(requestParameters.searchTerm, requestParameters.startIndex, requestParameters.limit, requestParameters.userId, requestParameters.includeItemTypes, requestParameters.excludeItemTypes, requestParameters.mediaTypes, requestParameters.parentId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.includePeople, requestParameters.includeMedia, requestParameters.includeGenres, requestParameters.includeStudios, requestParameters.includeArtists, options).then((request) => request(axios, basePath));
         },
     };
 };

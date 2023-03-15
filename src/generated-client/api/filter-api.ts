@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import { BaseItemKind } from '../models.js';
 // @ts-ignore
-import { QueryFilters } from '../models';
+import { QueryFilters } from '../models.js';
 // @ts-ignore
-import { QueryFiltersLegacy } from '../models';
+import { QueryFiltersLegacy } from '../models.js';
 /**
  * FilterApi - axios parameter creator
  * @export
@@ -224,34 +225,22 @@ export const FilterApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets query filters.
-         * @param {string} [userId] Optional. User id.
-         * @param {string} [parentId] Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {boolean} [isAiring] Optional. Is item airing.
-         * @param {boolean} [isMovie] Optional. Is item movie.
-         * @param {boolean} [isSports] Optional. Is item sports.
-         * @param {boolean} [isKids] Optional. Is item kids.
-         * @param {boolean} [isNews] Optional. Is item news.
-         * @param {boolean} [isSeries] Optional. Is item series.
-         * @param {boolean} [recursive] Optional. Search recursive.
+         * @param {FilterApiGetQueryFiltersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFilters(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options?: any): AxiosPromise<QueryFilters> {
-            return localVarFp.getQueryFilters(userId, parentId, includeItemTypes, isAiring, isMovie, isSports, isKids, isNews, isSeries, recursive, options).then((request) => request(axios, basePath));
+        getQueryFilters(requestParameters: FilterApiGetQueryFiltersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<QueryFilters> {
+            return localVarFp.getQueryFilters(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.isAiring, requestParameters.isMovie, requestParameters.isSports, requestParameters.isKids, requestParameters.isNews, requestParameters.isSeries, requestParameters.recursive, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets legacy query filters.
-         * @param {string} [userId] Optional. User id.
-         * @param {string} [parentId] Optional. Parent id.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {Array<string>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {FilterApiGetQueryFiltersLegacyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, options?: any): AxiosPromise<QueryFiltersLegacy> {
-            return localVarFp.getQueryFiltersLegacy(userId, parentId, includeItemTypes, mediaTypes, options).then((request) => request(axios, basePath));
+        getQueryFiltersLegacy(requestParameters: FilterApiGetQueryFiltersLegacyRequest = {}, options?: AxiosRequestConfig): AxiosPromise<QueryFiltersLegacy> {
+            return localVarFp.getQueryFiltersLegacy(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.mediaTypes, options).then((request) => request(axios, basePath));
         },
     };
 };

@@ -12,9 +12,15 @@
  */
 
 
-import { TaskResult } from './task-result';
-import { TaskState } from './task-state';
-import { TaskTriggerInfo } from './task-trigger-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TaskResult } from './task-result.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TaskState } from './task-state.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TaskTriggerInfo } from './task-trigger-info.js';
 
 /**
  * Class TaskInfo.

@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ImageByNameInfo } from '../models';
+import { ImageByNameInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * ImageByNameApi - axios parameter creator
  * @export
@@ -331,13 +332,12 @@ export const ImageByNameApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Get General Image.
-         * @param {string} name The name of the image.
-         * @param {string} type Image Type (primary, backdrop, logo, etc).
+         * @param {ImageByNameApiGetGeneralImageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGeneralImage(name: string, type: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getGeneralImage(name, type, options).then((request) => request(axios, basePath));
+        getGeneralImage(requestParameters: ImageByNameApiGetGeneralImageRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getGeneralImage(requestParameters.name, requestParameters.type, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -345,19 +345,18 @@ export const ImageByNameApiFactory = function (configuration?: Configuration, ba
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGeneralImages(options?: any): AxiosPromise<Array<ImageByNameInfo>> {
+        getGeneralImages(options?: AxiosRequestConfig): AxiosPromise<Array<ImageByNameInfo>> {
             return localVarFp.getGeneralImages(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get media info image.
-         * @param {string} theme The theme to get the image from.
-         * @param {string} name The name of the image.
+         * @param {ImageByNameApiGetMediaInfoImageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaInfoImage(theme: string, name: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getMediaInfoImage(theme, name, options).then((request) => request(axios, basePath));
+        getMediaInfoImage(requestParameters: ImageByNameApiGetMediaInfoImageRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getMediaInfoImage(requestParameters.theme, requestParameters.name, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -365,19 +364,18 @@ export const ImageByNameApiFactory = function (configuration?: Configuration, ba
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaInfoImages(options?: any): AxiosPromise<Array<ImageByNameInfo>> {
+        getMediaInfoImages(options?: AxiosRequestConfig): AxiosPromise<Array<ImageByNameInfo>> {
             return localVarFp.getMediaInfoImages(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get rating image.
-         * @param {string} theme The theme to get the image from.
-         * @param {string} name The name of the image.
+         * @param {ImageByNameApiGetRatingImageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRatingImage(theme: string, name: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getRatingImage(theme, name, options).then((request) => request(axios, basePath));
+        getRatingImage(requestParameters: ImageByNameApiGetRatingImageRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getRatingImage(requestParameters.theme, requestParameters.name, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -385,7 +383,7 @@ export const ImageByNameApiFactory = function (configuration?: Configuration, ba
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRatingImages(options?: any): AxiosPromise<Array<ImageByNameInfo>> {
+        getRatingImages(options?: AxiosRequestConfig): AxiosPromise<Array<ImageByNameInfo>> {
             return localVarFp.getRatingImages(options).then((request) => request(axios, basePath));
         },
     };

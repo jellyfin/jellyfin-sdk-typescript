@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ConfigurationPageInfo } from '../models';
+import { ConfigurationPageInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * DashboardApi - axios parameter creator
  * @export
@@ -147,22 +148,22 @@ export const DashboardApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Gets the configuration pages.
-         * @param {boolean} [enableInMainMenu] Whether to enable in the main menu.
+         * @param {DashboardApiGetConfigurationPagesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfigurationPages(enableInMainMenu?: boolean, options?: any): AxiosPromise<Array<ConfigurationPageInfo>> {
-            return localVarFp.getConfigurationPages(enableInMainMenu, options).then((request) => request(axios, basePath));
+        getConfigurationPages(requestParameters: DashboardApiGetConfigurationPagesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<ConfigurationPageInfo>> {
+            return localVarFp.getConfigurationPages(requestParameters.enableInMainMenu, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a dashboard configuration page.
-         * @param {string} [name] The name of the page.
+         * @param {DashboardApiGetDashboardConfigurationPageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDashboardConfigurationPage(name?: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDashboardConfigurationPage(name, options).then((request) => request(axios, basePath));
+        getDashboardConfigurationPage(requestParameters: DashboardApiGetDashboardConfigurationPageRequest = {}, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getDashboardConfigurationPage(requestParameters.name, options).then((request) => request(axios, basePath));
         },
     };
 };

@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { DeviceProfile } from '../models';
+import { DeviceProfile } from '../models.js';
 // @ts-ignore
-import { DeviceProfileInfo } from '../models';
+import { DeviceProfileInfo } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * DlnaApi - axios parameter creator
  * @export
@@ -337,22 +338,22 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Creates a profile.
-         * @param {DeviceProfile} [deviceProfile] Device profile.
+         * @param {DlnaApiCreateProfileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createProfile(deviceProfile?: DeviceProfile, options?: any): AxiosPromise<void> {
-            return localVarFp.createProfile(deviceProfile, options).then((request) => request(axios, basePath));
+        createProfile(requestParameters: DlnaApiCreateProfileRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.createProfile(requestParameters.deviceProfile, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes a profile.
-         * @param {string} profileId Profile id.
+         * @param {DlnaApiDeleteProfileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteProfile(profileId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteProfile(profileId, options).then((request) => request(axios, basePath));
+        deleteProfile(requestParameters: DlnaApiDeleteProfileRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteProfile(requestParameters.profileId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -360,18 +361,18 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultProfile(options?: any): AxiosPromise<DeviceProfile> {
+        getDefaultProfile(options?: AxiosRequestConfig): AxiosPromise<DeviceProfile> {
             return localVarFp.getDefaultProfile(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a single profile.
-         * @param {string} profileId Profile Id.
+         * @param {DlnaApiGetProfileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getProfile(profileId: string, options?: any): AxiosPromise<DeviceProfile> {
-            return localVarFp.getProfile(profileId, options).then((request) => request(axios, basePath));
+        getProfile(requestParameters: DlnaApiGetProfileRequest, options?: AxiosRequestConfig): AxiosPromise<DeviceProfile> {
+            return localVarFp.getProfile(requestParameters.profileId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -379,19 +380,18 @@ export const DlnaApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getProfileInfos(options?: any): AxiosPromise<Array<DeviceProfileInfo>> {
+        getProfileInfos(options?: AxiosRequestConfig): AxiosPromise<Array<DeviceProfileInfo>> {
             return localVarFp.getProfileInfos(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a profile.
-         * @param {string} profileId Profile id.
-         * @param {DeviceProfile} [deviceProfile] Device profile.
+         * @param {DlnaApiUpdateProfileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateProfile(profileId: string, deviceProfile?: DeviceProfile, options?: any): AxiosPromise<void> {
-            return localVarFp.updateProfile(profileId, deviceProfile, options).then((request) => request(axios, basePath));
+        updateProfile(requestParameters: DlnaApiUpdateProfileRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateProfile(requestParameters.profileId, requestParameters.deviceProfile, options).then((request) => request(axios, basePath));
         },
     };
 };

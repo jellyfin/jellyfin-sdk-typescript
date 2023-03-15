@@ -12,9 +12,15 @@
  */
 
 
-import { ChannelItemSortField } from './channel-item-sort-field';
-import { ChannelMediaContentType } from './channel-media-content-type';
-import { ChannelMediaType } from './channel-media-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ChannelItemSortField } from './channel-item-sort-field.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ChannelMediaContentType } from './channel-media-content-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ChannelMediaType } from './channel-media-type.js';
 
 /**
  * 

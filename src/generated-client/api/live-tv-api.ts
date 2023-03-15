@@ -12,55 +12,56 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import { BaseItemDto } from '../models.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { ChannelMappingOptionsDto } from '../models';
+import { ChannelMappingOptionsDto } from '../models.js';
 // @ts-ignore
-import { ChannelType } from '../models';
+import { ChannelType } from '../models.js';
 // @ts-ignore
-import { GetProgramsDto } from '../models';
+import { GetProgramsDto } from '../models.js';
 // @ts-ignore
-import { GuideInfo } from '../models';
+import { GuideInfo } from '../models.js';
 // @ts-ignore
-import { ImageType } from '../models';
+import { ImageType } from '../models.js';
 // @ts-ignore
-import { ItemFields } from '../models';
+import { ItemFields } from '../models.js';
 // @ts-ignore
-import { ListingsProviderInfo } from '../models';
+import { ListingsProviderInfo } from '../models.js';
 // @ts-ignore
-import { LiveTvInfo } from '../models';
+import { LiveTvInfo } from '../models.js';
 // @ts-ignore
-import { NameIdPair } from '../models';
+import { NameIdPair } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { RecordingStatus } from '../models';
+import { RecordingStatus } from '../models.js';
 // @ts-ignore
-import { SeriesTimerInfoDto } from '../models';
+import { SeriesTimerInfoDto } from '../models.js';
 // @ts-ignore
-import { SeriesTimerInfoDtoQueryResult } from '../models';
+import { SeriesTimerInfoDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { SetChannelMappingDto } from '../models';
+import { SetChannelMappingDto } from '../models.js';
 // @ts-ignore
-import { SortOrder } from '../models';
+import { SortOrder } from '../models.js';
 // @ts-ignore
-import { TimerInfoDto } from '../models';
+import { TimerInfoDto } from '../models.js';
 // @ts-ignore
-import { TimerInfoDtoQueryResult } from '../models';
+import { TimerInfoDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { TunerChannelMapping } from '../models';
+import { TunerChannelMapping } from '../models.js';
 // @ts-ignore
-import { TunerHostInfo } from '../models';
+import { TunerHostInfo } from '../models.js';
 /**
  * LiveTvApi - axios parameter creator
  * @export
@@ -2704,136 +2705,132 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Adds a listings provider.
-         * @param {string} [pw] Password.
-         * @param {boolean} [validateListings] Validate listings.
-         * @param {boolean} [validateLogin] Validate login.
-         * @param {ListingsProviderInfo} [listingsProviderInfo] New listings info.
+         * @param {LiveTvApiAddListingProviderRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addListingProvider(pw?: string, validateListings?: boolean, validateLogin?: boolean, listingsProviderInfo?: ListingsProviderInfo, options?: any): AxiosPromise<ListingsProviderInfo> {
-            return localVarFp.addListingProvider(pw, validateListings, validateLogin, listingsProviderInfo, options).then((request) => request(axios, basePath));
+        addListingProvider(requestParameters: LiveTvApiAddListingProviderRequest = {}, options?: AxiosRequestConfig): AxiosPromise<ListingsProviderInfo> {
+            return localVarFp.addListingProvider(requestParameters.pw, requestParameters.validateListings, requestParameters.validateLogin, requestParameters.listingsProviderInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Adds a tuner host.
-         * @param {TunerHostInfo} [tunerHostInfo] New tuner host.
+         * @param {LiveTvApiAddTunerHostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addTunerHost(tunerHostInfo?: TunerHostInfo, options?: any): AxiosPromise<TunerHostInfo> {
-            return localVarFp.addTunerHost(tunerHostInfo, options).then((request) => request(axios, basePath));
+        addTunerHost(requestParameters: LiveTvApiAddTunerHostRequest = {}, options?: AxiosRequestConfig): AxiosPromise<TunerHostInfo> {
+            return localVarFp.addTunerHost(requestParameters.tunerHostInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Cancels a live tv series timer.
-         * @param {string} timerId Timer id.
+         * @param {LiveTvApiCancelSeriesTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        cancelSeriesTimer(timerId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.cancelSeriesTimer(timerId, options).then((request) => request(axios, basePath));
+        cancelSeriesTimer(requestParameters: LiveTvApiCancelSeriesTimerRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.cancelSeriesTimer(requestParameters.timerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Cancels a live tv timer.
-         * @param {string} timerId Timer id.
+         * @param {LiveTvApiCancelTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        cancelTimer(timerId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.cancelTimer(timerId, options).then((request) => request(axios, basePath));
+        cancelTimer(requestParameters: LiveTvApiCancelTimerRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.cancelTimer(requestParameters.timerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a live tv series timer.
-         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
+         * @param {LiveTvApiCreateSeriesTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createSeriesTimer(seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.createSeriesTimer(seriesTimerInfoDto, options).then((request) => request(axios, basePath));
+        createSeriesTimer(requestParameters: LiveTvApiCreateSeriesTimerRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.createSeriesTimer(requestParameters.seriesTimerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a live tv timer.
-         * @param {TimerInfoDto} [timerInfoDto] New timer info.
+         * @param {LiveTvApiCreateTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createTimer(timerInfoDto?: TimerInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.createTimer(timerInfoDto, options).then((request) => request(axios, basePath));
+        createTimer(requestParameters: LiveTvApiCreateTimerRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.createTimer(requestParameters.timerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Delete listing provider.
-         * @param {string} [id] Listing provider id.
+         * @param {LiveTvApiDeleteListingProviderRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteListingProvider(id?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteListingProvider(id, options).then((request) => request(axios, basePath));
+        deleteListingProvider(requestParameters: LiveTvApiDeleteListingProviderRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteListingProvider(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes a live tv recording.
-         * @param {string} recordingId Recording id.
+         * @param {LiveTvApiDeleteRecordingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteRecording(recordingId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteRecording(recordingId, options).then((request) => request(axios, basePath));
+        deleteRecording(requestParameters: LiveTvApiDeleteRecordingRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteRecording(requestParameters.recordingId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes a tuner host.
-         * @param {string} [id] Tuner host id.
+         * @param {LiveTvApiDeleteTunerHostRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteTunerHost(id?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteTunerHost(id, options).then((request) => request(axios, basePath));
+        deleteTunerHost(requestParameters: LiveTvApiDeleteTunerHostRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteTunerHost(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Discover tuners.
-         * @param {boolean} [newDevicesOnly] Only discover new tuners.
+         * @param {LiveTvApiDiscoverTunersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        discoverTuners(newDevicesOnly?: boolean, options?: any): AxiosPromise<Array<TunerHostInfo>> {
-            return localVarFp.discoverTuners(newDevicesOnly, options).then((request) => request(axios, basePath));
+        discoverTuners(requestParameters: LiveTvApiDiscoverTunersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<TunerHostInfo>> {
+            return localVarFp.discoverTuners(requestParameters.newDevicesOnly, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Discover tuners.
-         * @param {boolean} [newDevicesOnly] Only discover new tuners.
+         * @param {LiveTvApiDiscvoverTunersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        discvoverTuners(newDevicesOnly?: boolean, options?: any): AxiosPromise<Array<TunerHostInfo>> {
-            return localVarFp.discvoverTuners(newDevicesOnly, options).then((request) => request(axios, basePath));
+        discvoverTuners(requestParameters: LiveTvApiDiscvoverTunersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<TunerHostInfo>> {
+            return localVarFp.discvoverTuners(requestParameters.newDevicesOnly, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv channel.
-         * @param {string} channelId Channel id.
-         * @param {string} [userId] Optional. Attach user data.
+         * @param {LiveTvApiGetChannelRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannel(channelId: string, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getChannel(channelId, userId, options).then((request) => request(axios, basePath));
+        getChannel(requestParameters: LiveTvApiGetChannelRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getChannel(requestParameters.channelId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get channel mapping options.
-         * @param {string} [providerId] Provider id.
+         * @param {LiveTvApiGetChannelMappingOptionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelMappingOptions(providerId?: string, options?: any): AxiosPromise<ChannelMappingOptionsDto> {
-            return localVarFp.getChannelMappingOptions(providerId, options).then((request) => request(axios, basePath));
+        getChannelMappingOptions(requestParameters: LiveTvApiGetChannelMappingOptionsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<ChannelMappingOptionsDto> {
+            return localVarFp.getChannelMappingOptions(requestParameters.providerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2841,18 +2838,18 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultListingProvider(options?: any): AxiosPromise<ListingsProviderInfo> {
+        getDefaultListingProvider(options?: AxiosRequestConfig): AxiosPromise<ListingsProviderInfo> {
             return localVarFp.getDefaultListingProvider(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the default values for a new timer.
-         * @param {string} [programId] Optional. To attach default values based on a program.
+         * @param {LiveTvApiGetDefaultTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultTimer(programId?: string, options?: any): AxiosPromise<SeriesTimerInfoDto> {
-            return localVarFp.getDefaultTimer(programId, options).then((request) => request(axios, basePath));
+        getDefaultTimer(requestParameters: LiveTvApiGetDefaultTimerRequest = {}, options?: AxiosRequestConfig): AxiosPromise<SeriesTimerInfoDto> {
+            return localVarFp.getDefaultTimer(requestParameters.programId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2860,72 +2857,48 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGuideInfo(options?: any): AxiosPromise<GuideInfo> {
+        getGuideInfo(options?: AxiosRequestConfig): AxiosPromise<GuideInfo> {
             return localVarFp.getGuideInfo(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets available lineups.
-         * @param {string} [id] Provider id.
-         * @param {string} [type] Provider type.
-         * @param {string} [location] Location.
-         * @param {string} [country] Country.
+         * @param {LiveTvApiGetLineupsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLineups(id?: string, type?: string, location?: string, country?: string, options?: any): AxiosPromise<Array<NameIdPair>> {
-            return localVarFp.getLineups(id, type, location, country, options).then((request) => request(axios, basePath));
+        getLineups(requestParameters: LiveTvApiGetLineupsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
+            return localVarFp.getLineups(requestParameters.id, requestParameters.type, requestParameters.location, requestParameters.country, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv recording stream.
-         * @param {string} recordingId Recording id.
+         * @param {LiveTvApiGetLiveRecordingFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveRecordingFile(recordingId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getLiveRecordingFile(recordingId, options).then((request) => request(axios, basePath));
+        getLiveRecordingFile(requestParameters: LiveTvApiGetLiveRecordingFileRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getLiveRecordingFile(requestParameters.recordingId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv channel stream.
-         * @param {string} streamId Stream id.
-         * @param {string} container Container type.
+         * @param {LiveTvApiGetLiveStreamFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveStreamFile(streamId: string, container: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getLiveStreamFile(streamId, container, options).then((request) => request(axios, basePath));
+        getLiveStreamFile(requestParameters: LiveTvApiGetLiveStreamFileRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getLiveStreamFile(requestParameters.streamId, requestParameters.container, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets available live tv channels.
-         * @param {ChannelType} [type] Optional. Filter by channel type.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {boolean} [isMovie] Optional. Filter for movies.
-         * @param {boolean} [isSeries] Optional. Filter for series.
-         * @param {boolean} [isNews] Optional. Filter for news.
-         * @param {boolean} [isKids] Optional. Filter for kids.
-         * @param {boolean} [isSports] Optional. Filter for sports.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {boolean} [isFavorite] Optional. Filter by channels that are favorites, or not.
-         * @param {boolean} [isLiked] Optional. Filter by channels that are liked, or not.
-         * @param {boolean} [isDisliked] Optional. Filter by channels that are disliked, or not.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] \&quot;Optional. The image types to include in the output.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {Array<string>} [sortBy] Optional. Key to sort by.
-         * @param {SortOrder} [sortOrder] Optional. Sort order.
-         * @param {boolean} [enableFavoriteSorting] Optional. Incorporate favorite and like status into channel sorting.
-         * @param {boolean} [addCurrentProgram] Optional. Adds current program info to each channel.
+         * @param {LiveTvApiGetLiveTvChannelsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvChannels(type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<string>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getLiveTvChannels(type, userId, startIndex, isMovie, isSeries, isNews, isKids, isSports, limit, isFavorite, isLiked, isDisliked, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, sortBy, sortOrder, enableFavoriteSorting, addCurrentProgram, options).then((request) => request(axios, basePath));
+        getLiveTvChannels(requestParameters: LiveTvApiGetLiveTvChannelsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getLiveTvChannels(requestParameters.type, requestParameters.userId, requestParameters.startIndex, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.limit, requestParameters.isFavorite, requestParameters.isLiked, requestParameters.isDisliked, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableFavoriteSorting, requestParameters.addCurrentProgram, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -2933,185 +2906,111 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvInfo(options?: any): AxiosPromise<LiveTvInfo> {
+        getLiveTvInfo(options?: AxiosRequestConfig): AxiosPromise<LiveTvInfo> {
             return localVarFp.getLiveTvInfo(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets available live tv epgs.
-         * @param {Array<string>} [channelIds] The channels to return guide information for.
-         * @param {string} [userId] Optional. Filter by user id.
-         * @param {string} [minStartDate] Optional. The minimum premiere start date.
-         * @param {boolean} [hasAired] Optional. Filter by programs that have completed airing, or not.
-         * @param {boolean} [isAiring] Optional. Filter by programs that are currently airing, or not.
-         * @param {string} [maxStartDate] Optional. The maximum premiere start date.
-         * @param {string} [minEndDate] Optional. The minimum premiere end date.
-         * @param {string} [maxEndDate] Optional. The maximum premiere end date.
-         * @param {boolean} [isMovie] Optional. Filter for movies.
-         * @param {boolean} [isSeries] Optional. Filter for series.
-         * @param {boolean} [isNews] Optional. Filter for news.
-         * @param {boolean} [isKids] Optional. Filter for kids.
-         * @param {boolean} [isSports] Optional. Filter for sports.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
-         * @param {Array<string>} [genres] The genres to return guide information for.
-         * @param {Array<string>} [genreIds] The genre ids to return guide information for.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {string} [seriesTimerId] Optional. Filter by series timer id.
-         * @param {string} [librarySeriesId] Optional. Filter by library series id.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableTotalRecordCount] Retrieve total record count.
+         * @param {LiveTvApiGetLiveTvProgramsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvPrograms(channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getLiveTvPrograms(channelIds, userId, minStartDate, hasAired, isAiring, maxStartDate, minEndDate, maxEndDate, isMovie, isSeries, isNews, isKids, isSports, startIndex, limit, sortBy, sortOrder, genres, genreIds, enableImages, imageTypeLimit, enableImageTypes, enableUserData, seriesTimerId, librarySeriesId, fields, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getLiveTvPrograms(requestParameters: LiveTvApiGetLiveTvProgramsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getLiveTvPrograms(requestParameters.channelIds, requestParameters.userId, requestParameters.minStartDate, requestParameters.hasAired, requestParameters.isAiring, requestParameters.maxStartDate, requestParameters.minEndDate, requestParameters.maxEndDate, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.startIndex, requestParameters.limit, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.genres, requestParameters.genreIds, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.seriesTimerId, requestParameters.librarySeriesId, requestParameters.fields, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv program.
-         * @param {string} programId Program id.
-         * @param {string} [userId] Optional. Attach user data.
+         * @param {LiveTvApiGetProgramRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getProgram(programId: string, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getProgram(programId, userId, options).then((request) => request(axios, basePath));
+        getProgram(requestParameters: LiveTvApiGetProgramRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getProgram(requestParameters.programId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets available live tv epgs.
-         * @param {GetProgramsDto} [getProgramsDto] Request body.
+         * @param {LiveTvApiGetProgramsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPrograms(getProgramsDto?: GetProgramsDto, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getPrograms(getProgramsDto, options).then((request) => request(axios, basePath));
+        getPrograms(requestParameters: LiveTvApiGetProgramsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getPrograms(requestParameters.getProgramsDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets recommended live tv epgs.
-         * @param {string} [userId] Optional. filter by user id.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {boolean} [isAiring] Optional. Filter by programs that are currently airing, or not.
-         * @param {boolean} [hasAired] Optional. Filter by programs that have completed airing, or not.
-         * @param {boolean} [isSeries] Optional. Filter for series.
-         * @param {boolean} [isMovie] Optional. Filter for movies.
-         * @param {boolean} [isNews] Optional. Filter for news.
-         * @param {boolean} [isKids] Optional. Filter for kids.
-         * @param {boolean} [isSports] Optional. Filter for sports.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<string>} [genreIds] The genres to return guide information for.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. include user data.
-         * @param {boolean} [enableTotalRecordCount] Retrieve total record count.
+         * @param {LiveTvApiGetRecommendedProgramsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRecommendedPrograms(userId?: string, limit?: number, isAiring?: boolean, hasAired?: boolean, isSeries?: boolean, isMovie?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, genreIds?: Array<string>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecommendedPrograms(userId, limit, isAiring, hasAired, isSeries, isMovie, isNews, isKids, isSports, enableImages, imageTypeLimit, enableImageTypes, genreIds, fields, enableUserData, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getRecommendedPrograms(requestParameters: LiveTvApiGetRecommendedProgramsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getRecommendedPrograms(requestParameters.userId, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv recording.
-         * @param {string} recordingId Recording id.
-         * @param {string} [userId] Optional. Attach user data.
+         * @param {LiveTvApiGetRecordingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRecording(recordingId: string, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getRecording(recordingId, userId, options).then((request) => request(axios, basePath));
+        getRecording(requestParameters: LiveTvApiGetRecordingRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getRecording(requestParameters.recordingId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets recording folders.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
+         * @param {LiveTvApiGetRecordingFoldersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRecordingFolders(userId?: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordingFolders(userId, options).then((request) => request(axios, basePath));
+        getRecordingFolders(requestParameters: LiveTvApiGetRecordingFoldersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getRecordingFolders(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get recording group.
-         * @param {string} groupId Group id.
+         * @param {LiveTvApiGetRecordingGroupRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        getRecordingGroup(groupId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.getRecordingGroup(groupId, options).then((request) => request(axios, basePath));
+        getRecordingGroup(requestParameters: LiveTvApiGetRecordingGroupRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.getRecordingGroup(requestParameters.groupId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets live tv recording groups.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
+         * @param {LiveTvApiGetRecordingGroupsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        getRecordingGroups(userId?: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordingGroups(userId, options).then((request) => request(axios, basePath));
+        getRecordingGroups(requestParameters: LiveTvApiGetRecordingGroupsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getRecordingGroups(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets live tv recordings.
-         * @param {string} [channelId] Optional. Filter by channel id.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {RecordingStatus} [status] Optional. Filter by recording status.
-         * @param {boolean} [isInProgress] Optional. Filter by recordings that are in progress, or not.
-         * @param {string} [seriesTimerId] Optional. Filter by recordings belonging to a series timer.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {boolean} [isMovie] Optional. Filter for movies.
-         * @param {boolean} [isSeries] Optional. Filter for series.
-         * @param {boolean} [isKids] Optional. Filter for kids.
-         * @param {boolean} [isSports] Optional. Filter for sports.
-         * @param {boolean} [isNews] Optional. Filter for news.
-         * @param {boolean} [isLibraryItem] Optional. Filter for is library item.
-         * @param {boolean} [enableTotalRecordCount] Optional. Return total record count.
+         * @param {LiveTvApiGetRecordingsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRecordings(channelId?: string, userId?: string, startIndex?: number, limit?: number, status?: RecordingStatus, isInProgress?: boolean, seriesTimerId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, isMovie?: boolean, isSeries?: boolean, isKids?: boolean, isSports?: boolean, isNews?: boolean, isLibraryItem?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordings(channelId, userId, startIndex, limit, status, isInProgress, seriesTimerId, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, isMovie, isSeries, isKids, isSports, isNews, isLibraryItem, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getRecordings(requestParameters: LiveTvApiGetRecordingsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getRecordings(requestParameters.channelId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isKids, requestParameters.isSports, requestParameters.isNews, requestParameters.isLibraryItem, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets live tv recording series.
-         * @param {string} [channelId] Optional. Filter by channel id.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {string} [groupId] Optional. Filter by recording group.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {RecordingStatus} [status] Optional. Filter by recording status.
-         * @param {boolean} [isInProgress] Optional. Filter by recordings that are in progress, or not.
-         * @param {string} [seriesTimerId] Optional. Filter by recordings belonging to a series timer.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {boolean} [enableTotalRecordCount] Optional. Return total record count.
+         * @param {LiveTvApiGetRecordingsSeriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        getRecordingsSeries(channelId?: string, userId?: string, groupId?: string, startIndex?: number, limit?: number, status?: RecordingStatus, isInProgress?: boolean, seriesTimerId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordingsSeries(channelId, userId, groupId, startIndex, limit, status, isInProgress, seriesTimerId, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getRecordingsSeries(requestParameters: LiveTvApiGetRecordingsSeriesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getRecordingsSeries(requestParameters.channelId, requestParameters.userId, requestParameters.groupId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3119,52 +3018,48 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSchedulesDirectCountries(options?: any): AxiosPromise<any> {
+        getSchedulesDirectCountries(options?: AxiosRequestConfig): AxiosPromise<any> {
             return localVarFp.getSchedulesDirectCountries(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a live tv series timer.
-         * @param {string} timerId Timer id.
+         * @param {LiveTvApiGetSeriesTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeriesTimer(timerId: string, options?: any): AxiosPromise<SeriesTimerInfoDto> {
-            return localVarFp.getSeriesTimer(timerId, options).then((request) => request(axios, basePath));
+        getSeriesTimer(requestParameters: LiveTvApiGetSeriesTimerRequest, options?: AxiosRequestConfig): AxiosPromise<SeriesTimerInfoDto> {
+            return localVarFp.getSeriesTimer(requestParameters.timerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets live tv series timers.
-         * @param {string} [sortBy] Optional. Sort by SortName or Priority.
-         * @param {SortOrder} [sortOrder] Optional. Sort in Ascending or Descending order.
+         * @param {LiveTvApiGetSeriesTimersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeriesTimers(sortBy?: string, sortOrder?: SortOrder, options?: any): AxiosPromise<SeriesTimerInfoDtoQueryResult> {
-            return localVarFp.getSeriesTimers(sortBy, sortOrder, options).then((request) => request(axios, basePath));
+        getSeriesTimers(requestParameters: LiveTvApiGetSeriesTimersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<SeriesTimerInfoDtoQueryResult> {
+            return localVarFp.getSeriesTimers(requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a timer.
-         * @param {string} timerId Timer id.
+         * @param {LiveTvApiGetTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTimer(timerId: string, options?: any): AxiosPromise<TimerInfoDto> {
-            return localVarFp.getTimer(timerId, options).then((request) => request(axios, basePath));
+        getTimer(requestParameters: LiveTvApiGetTimerRequest, options?: AxiosRequestConfig): AxiosPromise<TimerInfoDto> {
+            return localVarFp.getTimer(requestParameters.timerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the live tv timers.
-         * @param {string} [channelId] Optional. Filter by channel id.
-         * @param {string} [seriesTimerId] Optional. Filter by timers belonging to a series timer.
-         * @param {boolean} [isActive] Optional. Filter by timers that are active.
-         * @param {boolean} [isScheduled] Optional. Filter by timers that are scheduled.
+         * @param {LiveTvApiGetTimersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTimers(channelId?: string, seriesTimerId?: string, isActive?: boolean, isScheduled?: boolean, options?: any): AxiosPromise<TimerInfoDtoQueryResult> {
-            return localVarFp.getTimers(channelId, seriesTimerId, isActive, isScheduled, options).then((request) => request(axios, basePath));
+        getTimers(requestParameters: LiveTvApiGetTimersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<TimerInfoDtoQueryResult> {
+            return localVarFp.getTimers(requestParameters.channelId, requestParameters.seriesTimerId, requestParameters.isActive, requestParameters.isScheduled, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3172,50 +3067,48 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTunerHostTypes(options?: any): AxiosPromise<Array<NameIdPair>> {
+        getTunerHostTypes(options?: AxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
             return localVarFp.getTunerHostTypes(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Resets a tv tuner.
-         * @param {string} tunerId Tuner id.
+         * @param {LiveTvApiResetTunerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        resetTuner(tunerId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.resetTuner(tunerId, options).then((request) => request(axios, basePath));
+        resetTuner(requestParameters: LiveTvApiResetTunerRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.resetTuner(requestParameters.tunerId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Set channel mappings.
-         * @param {SetChannelMappingDto} setChannelMappingDto The set channel mapping dto.
+         * @param {LiveTvApiSetChannelMappingRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setChannelMapping(setChannelMappingDto: SetChannelMappingDto, options?: any): AxiosPromise<TunerChannelMapping> {
-            return localVarFp.setChannelMapping(setChannelMappingDto, options).then((request) => request(axios, basePath));
+        setChannelMapping(requestParameters: LiveTvApiSetChannelMappingRequest, options?: AxiosRequestConfig): AxiosPromise<TunerChannelMapping> {
+            return localVarFp.setChannelMapping(requestParameters.setChannelMappingDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a live tv series timer.
-         * @param {string} timerId Timer id.
-         * @param {SeriesTimerInfoDto} [seriesTimerInfoDto] New series timer info.
+         * @param {LiveTvApiUpdateSeriesTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateSeriesTimer(timerId: string, seriesTimerInfoDto?: SeriesTimerInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateSeriesTimer(timerId, seriesTimerInfoDto, options).then((request) => request(axios, basePath));
+        updateSeriesTimer(requestParameters: LiveTvApiUpdateSeriesTimerRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateSeriesTimer(requestParameters.timerId, requestParameters.seriesTimerInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a live tv timer.
-         * @param {string} timerId Timer id.
-         * @param {TimerInfoDto} [timerInfoDto] New timer info.
+         * @param {LiveTvApiUpdateTimerRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateTimer(timerId: string, timerInfoDto?: TimerInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateTimer(timerId, timerInfoDto, options).then((request) => request(axios, basePath));
+        updateTimer(requestParameters: LiveTvApiUpdateTimerRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateTimer(requestParameters.timerId, requestParameters.timerInfoDto, options).then((request) => request(axios, basePath));
         },
     };
 };

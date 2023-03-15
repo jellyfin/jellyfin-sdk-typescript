@@ -12,14 +12,30 @@
  */
 
 
-import { IsoType } from './iso-type';
-import { MediaAttachment } from './media-attachment';
-import { MediaProtocol } from './media-protocol';
-import { MediaSourceType } from './media-source-type';
-import { MediaStream } from './media-stream';
-import { TransportStreamTimestamp } from './transport-stream-timestamp';
-import { Video3DFormat } from './video3-dformat';
-import { VideoType } from './video-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { IsoType } from './iso-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaAttachment } from './media-attachment.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaProtocol } from './media-protocol.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaSourceType } from './media-source-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MediaStream } from './media-stream.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TransportStreamTimestamp } from './transport-stream-timestamp.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { Video3DFormat } from './video3-dformat.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { VideoType } from './video-type.js';
 
 /**
  * 

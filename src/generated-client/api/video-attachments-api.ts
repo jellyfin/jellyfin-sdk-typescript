@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * VideoAttachmentsApi - axios parameter creator
  * @export
@@ -105,14 +106,12 @@ export const VideoAttachmentsApiFactory = function (configuration?: Configuratio
         /**
          * 
          * @summary Get video attachment.
-         * @param {string} videoId Video ID.
-         * @param {string} mediaSourceId Media Source ID.
-         * @param {number} index Attachment Index.
+         * @param {VideoAttachmentsApiGetAttachmentRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAttachment(videoId: string, mediaSourceId: string, index: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getAttachment(videoId, mediaSourceId, index, options).then((request) => request(axios, basePath));
+        getAttachment(requestParameters: VideoAttachmentsApiGetAttachmentRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getAttachment(requestParameters.videoId, requestParameters.mediaSourceId, requestParameters.index, options).then((request) => request(axios, basePath));
         },
     };
 };

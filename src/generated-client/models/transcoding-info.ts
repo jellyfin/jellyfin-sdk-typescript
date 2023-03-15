@@ -12,8 +12,12 @@
  */
 
 
-import { HardwareEncodingType } from './hardware-encoding-type';
-import { TranscodeReason } from './transcode-reason';
+// May contain unused imports in some cases
+// @ts-ignore
+import { HardwareEncodingType } from './hardware-encoding-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TranscodeReason } from './transcode-reason.js';
 
 /**
  * 

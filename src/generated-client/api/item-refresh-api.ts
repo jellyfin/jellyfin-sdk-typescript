@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { MetadataRefreshMode } from '../models';
+import { MetadataRefreshMode } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * ItemRefreshApi - axios parameter creator
  * @export
@@ -124,16 +125,12 @@ export const ItemRefreshApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Refreshes metadata for an item.
-         * @param {string} itemId Item id.
-         * @param {MetadataRefreshMode} [metadataRefreshMode] (Optional) Specifies the metadata refresh mode.
-         * @param {MetadataRefreshMode} [imageRefreshMode] (Optional) Specifies the image refresh mode.
-         * @param {boolean} [replaceAllMetadata] (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
-         * @param {boolean} [replaceAllImages] (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {ItemRefreshApiRefreshItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        refreshItem(itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.refreshItem(itemId, metadataRefreshMode, imageRefreshMode, replaceAllMetadata, replaceAllImages, options).then((request) => request(axios, basePath));
+        refreshItem(requestParameters: ItemRefreshApiRefreshItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, options).then((request) => request(axios, basePath));
         },
     };
 };

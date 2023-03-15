@@ -12,8 +12,12 @@
  */
 
 
-import { LibraryOptionInfoDto } from './library-option-info-dto';
-import { LibraryTypeOptionsDto } from './library-type-options-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LibraryOptionInfoDto } from './library-option-info-dto.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { LibraryTypeOptionsDto } from './library-type-options-dto.js';
 
 /**
  * Library options result dto.

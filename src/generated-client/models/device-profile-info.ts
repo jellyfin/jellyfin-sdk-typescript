@@ -12,7 +12,9 @@
  */
 
 
-import { DeviceProfileType } from './device-profile-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DeviceProfileType } from './device-profile-type.js';
 
 /**
  * 

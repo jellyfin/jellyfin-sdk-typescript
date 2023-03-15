@@ -12,10 +12,18 @@
  */
 
 
-import { DlnaProfileType } from './dlna-profile-type';
-import { EncodingContext } from './encoding-context';
-import { ProfileCondition } from './profile-condition';
-import { TranscodeSeekInfo } from './transcode-seek-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DlnaProfileType } from './dlna-profile-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { EncodingContext } from './encoding-context.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ProfileCondition } from './profile-condition.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TranscodeSeekInfo } from './transcode-seek-info.js';
 
 /**
  * 

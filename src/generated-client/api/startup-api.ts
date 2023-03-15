@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { StartupConfigurationDto } from '../models';
+import { StartupConfigurationDto } from '../models.js';
 // @ts-ignore
-import { StartupRemoteAccessDto } from '../models';
+import { StartupRemoteAccessDto } from '../models.js';
 // @ts-ignore
-import { StartupUserDto } from '../models';
+import { StartupUserDto } from '../models.js';
 /**
  * StartupApi - axios parameter creator
  * @export
@@ -377,7 +378,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        completeWizard(options?: any): AxiosPromise<void> {
+        completeWizard(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.completeWizard(options).then((request) => request(axios, basePath));
         },
         /**
@@ -386,7 +387,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser(options?: any): AxiosPromise<StartupUserDto> {
+        getFirstUser(options?: AxiosRequestConfig): AxiosPromise<StartupUserDto> {
             return localVarFp.getFirstUser(options).then((request) => request(axios, basePath));
         },
         /**
@@ -395,7 +396,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser2(options?: any): AxiosPromise<StartupUserDto> {
+        getFirstUser2(options?: AxiosRequestConfig): AxiosPromise<StartupUserDto> {
             return localVarFp.getFirstUser2(options).then((request) => request(axios, basePath));
         },
         /**
@@ -404,38 +405,38 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getStartupConfiguration(options?: any): AxiosPromise<StartupConfigurationDto> {
+        getStartupConfiguration(options?: AxiosRequestConfig): AxiosPromise<StartupConfigurationDto> {
             return localVarFp.getStartupConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets remote access and UPnP.
-         * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
+         * @param {StartupApiSetRemoteAccessRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: any): AxiosPromise<void> {
-            return localVarFp.setRemoteAccess(startupRemoteAccessDto, options).then((request) => request(axios, basePath));
+        setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.setRemoteAccess(requestParameters.startupRemoteAccessDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the initial startup wizard configuration.
-         * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
+         * @param {StartupApiUpdateInitialConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateInitialConfiguration(startupConfigurationDto, options).then((request) => request(axios, basePath));
+        updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateInitialConfiguration(requestParameters.startupConfigurationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the user name and password.
-         * @param {StartupUserDto} [startupUserDto] The DTO containing username and password.
+         * @param {StartupApiUpdateStartupUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateStartupUser(startupUserDto?: StartupUserDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateStartupUser(startupUserDto, options).then((request) => request(axios, basePath));
+        updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateStartupUser(requestParameters.startupUserDto, options).then((request) => request(axios, basePath));
         },
     };
 };

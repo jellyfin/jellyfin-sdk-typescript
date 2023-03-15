@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { ImageType } from '../models';
+import { ImageType } from '../models.js';
 // @ts-ignore
-import { ItemFields } from '../models';
+import { ItemFields } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 /**
  * TvShowsApi - axios parameter creator
  * @export
@@ -516,86 +517,42 @@ export const TvShowsApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Gets episodes for a tv season.
-         * @param {string} seriesId The series id.
-         * @param {string} [userId] The user id.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
-         * @param {number} [season] Optional filter by season number.
-         * @param {string} [seasonId] Optional. Filter by season id.
-         * @param {boolean} [isMissing] Optional. Filter by items that are missing episodes or not.
-         * @param {string} [adjacentTo] Optional. Return items that are siblings of a supplied item.
-         * @param {string} [startItemId] Optional. Skip through the list until a given item is found.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {boolean} [enableImages] Optional, include image information in output.
-         * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {string} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {TvShowsApiGetEpisodesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getEpisodes(seriesId: string, userId?: string, fields?: Array<ItemFields>, season?: number, seasonId?: string, isMissing?: boolean, adjacentTo?: string, startItemId?: string, startIndex?: number, limit?: number, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, sortBy?: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getEpisodes(seriesId, userId, fields, season, seasonId, isMissing, adjacentTo, startItemId, startIndex, limit, enableImages, imageTypeLimit, enableImageTypes, enableUserData, sortBy, options).then((request) => request(axios, basePath));
+        getEpisodes(requestParameters: TvShowsApiGetEpisodesRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getEpisodes(requestParameters.seriesId, requestParameters.userId, requestParameters.fields, requestParameters.season, requestParameters.seasonId, requestParameters.isMissing, requestParameters.adjacentTo, requestParameters.startItemId, requestParameters.startIndex, requestParameters.limit, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.sortBy, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a list of next up episodes.
-         * @param {string} [userId] The user id of the user to get the next up episodes for.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {string} [seriesId] Optional. Filter by series id.
-         * @param {string} [parentId] Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {string} [nextUpDateCutoff] Optional. Starting date of shows to show in Next Up section.
-         * @param {boolean} [enableTotalRecordCount] Whether to enable the total records count. Defaults to true.
-         * @param {boolean} [disableFirstEpisode] Whether to disable sending the first episode in a series as next up.
-         * @param {boolean} [enableRewatching] Whether to include watched episode in next up results.
+         * @param {TvShowsApiGetNextUpRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNextUp(userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, seriesId?: string, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, nextUpDateCutoff?: string, enableTotalRecordCount?: boolean, disableFirstEpisode?: boolean, enableRewatching?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getNextUp(userId, startIndex, limit, fields, seriesId, parentId, enableImages, imageTypeLimit, enableImageTypes, enableUserData, nextUpDateCutoff, enableTotalRecordCount, disableFirstEpisode, enableRewatching, options).then((request) => request(axios, basePath));
+        getNextUp(requestParameters: TvShowsApiGetNextUpRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getNextUp(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.seriesId, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.nextUpDateCutoff, requestParameters.enableTotalRecordCount, requestParameters.disableFirstEpisode, requestParameters.enableRewatching, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets seasons for a tv series.
-         * @param {string} seriesId The series id.
-         * @param {string} [userId] The user id.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
-         * @param {boolean} [isSpecialSeason] Optional. Filter by special season.
-         * @param {boolean} [isMissing] Optional. Filter by items that are missing episodes or not.
-         * @param {string} [adjacentTo] Optional. Return items that are siblings of a supplied item.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
+         * @param {TvShowsApiGetSeasonsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSeasons(seriesId: string, userId?: string, fields?: Array<ItemFields>, isSpecialSeason?: boolean, isMissing?: boolean, adjacentTo?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSeasons(seriesId, userId, fields, isSpecialSeason, isMissing, adjacentTo, enableImages, imageTypeLimit, enableImageTypes, enableUserData, options).then((request) => request(axios, basePath));
+        getSeasons(requestParameters: TvShowsApiGetSeasonsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSeasons(requestParameters.seriesId, requestParameters.userId, requestParameters.fields, requestParameters.isSpecialSeason, requestParameters.isMissing, requestParameters.adjacentTo, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a list of upcoming episodes.
-         * @param {string} [userId] The user id of the user to get the upcoming episodes for.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {string} [parentId] Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
+         * @param {TvShowsApiGetUpcomingEpisodesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUpcomingEpisodes(userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getUpcomingEpisodes(userId, startIndex, limit, fields, parentId, enableImages, imageTypeLimit, enableImageTypes, enableUserData, options).then((request) => request(axios, basePath));
+        getUpcomingEpisodes(requestParameters: TvShowsApiGetUpcomingEpisodesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getUpcomingEpisodes(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, options).then((request) => request(axios, basePath));
         },
     };
 };

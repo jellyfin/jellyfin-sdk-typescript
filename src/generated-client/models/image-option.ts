@@ -12,7 +12,9 @@
  */
 
 
-import { ImageType } from './image-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ImageType } from './image-type.js';
 
 /**
  * 

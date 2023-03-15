@@ -12,7 +12,9 @@
  */
 
 
-import { GroupUpdateType } from './group-update-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GroupUpdateType } from './group-update-type.js';
 
 /**
  * Class GroupUpdate.

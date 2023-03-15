@@ -12,9 +12,15 @@
  */
 
 
-import { DayOfWeek } from './day-of-week';
-import { DayPattern } from './day-pattern';
-import { KeepUntil } from './keep-until';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DayOfWeek } from './day-of-week.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { DayPattern } from './day-pattern.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { KeepUntil } from './keep-until.js';
 
 /**
  * Class SeriesTimerInfoDto.

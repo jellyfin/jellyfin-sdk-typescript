@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { AuthenticationInfoQueryResult } from '../models';
+import { AuthenticationInfoQueryResult } from '../models.js';
 /**
  * ApiKeyApi - axios parameter creator
  * @export
@@ -192,12 +193,12 @@ export const ApiKeyApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Create a new api key.
-         * @param {string} app Name of the app using the authentication key.
+         * @param {ApiKeyApiCreateKeyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createKey(app: string, options?: any): AxiosPromise<void> {
-            return localVarFp.createKey(app, options).then((request) => request(axios, basePath));
+        createKey(requestParameters: ApiKeyApiCreateKeyRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.createKey(requestParameters.app, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -205,18 +206,18 @@ export const ApiKeyApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getKeys(options?: any): AxiosPromise<AuthenticationInfoQueryResult> {
+        getKeys(options?: AxiosRequestConfig): AxiosPromise<AuthenticationInfoQueryResult> {
             return localVarFp.getKeys(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Remove an api key.
-         * @param {string} key The access token to delete.
+         * @param {ApiKeyApiRevokeKeyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        revokeKey(key: string, options?: any): AxiosPromise<void> {
-            return localVarFp.revokeKey(key, options).then((request) => request(axios, basePath));
+        revokeKey(requestParameters: ApiKeyApiRevokeKeyRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.revokeKey(requestParameters.key, options).then((request) => request(axios, basePath));
         },
     };
 };

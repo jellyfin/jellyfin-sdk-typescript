@@ -12,8 +12,12 @@
  */
 
 
-import { PlayMethod } from './play-method';
-import { RepeatMode } from './repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PlayMethod } from './play-method.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RepeatMode } from './repeat-mode.js';
 
 /**
  * 

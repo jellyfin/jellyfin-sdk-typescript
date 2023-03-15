@@ -12,7 +12,9 @@
  */
 
 
-import { GroupStateType } from './group-state-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { GroupStateType } from './group-state-type.js';
 
 /**
  * Class GroupInfoDto.

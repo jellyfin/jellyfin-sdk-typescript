@@ -12,9 +12,15 @@
  */
 
 
-import { AccessSchedule } from './access-schedule';
-import { SyncPlayUserAccessType } from './sync-play-user-access-type';
-import { UnratedItem } from './unrated-item';
+// May contain unused imports in some cases
+// @ts-ignore
+import { AccessSchedule } from './access-schedule.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SyncPlayUserAccessType } from './sync-play-user-access-type.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { UnratedItem } from './unrated-item.js';
 
 /**
  * 

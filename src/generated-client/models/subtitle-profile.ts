@@ -12,7 +12,9 @@
  */
 
 
-import { SubtitleDeliveryMethod } from './subtitle-delivery-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SubtitleDeliveryMethod } from './subtitle-delivery-method.js';
 
 /**
  * 

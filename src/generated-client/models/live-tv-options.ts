@@ -12,8 +12,12 @@
  */
 
 
-import { ListingsProviderInfo } from './listings-provider-info';
-import { TunerHostInfo } from './tuner-host-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ListingsProviderInfo } from './listings-provider-info.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { TunerHostInfo } from './tuner-host-info.js';
 
 /**
  * 

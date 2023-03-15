@@ -12,31 +12,32 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { AllThemeMediaResult } from '../models';
+import { AllThemeMediaResult } from '../models.js';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import { BaseItemDto } from '../models.js';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import { BaseItemDtoQueryResult } from '../models.js';
 // @ts-ignore
-import { ItemCounts } from '../models';
+import { ItemCounts } from '../models.js';
 // @ts-ignore
-import { ItemFields } from '../models';
+import { ItemFields } from '../models.js';
 // @ts-ignore
-import { LibraryOptionsResultDto } from '../models';
+import { LibraryOptionsResultDto } from '../models.js';
 // @ts-ignore
-import { MediaUpdateInfoDto } from '../models';
+import { MediaUpdateInfoDto } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { ThemeMediaResult } from '../models';
+import { ThemeMediaResult } from '../models.js';
 /**
  * LibraryApi - axios parameter creator
  * @export
@@ -1478,96 +1479,93 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Deletes an item from the library and filesystem.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiDeleteItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItem(itemId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteItem(itemId, options).then((request) => request(axios, basePath));
+        deleteItem(requestParameters: LibraryApiDeleteItemRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteItem(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes items from the library and filesystem.
-         * @param {Array<string>} [ids] The item ids.
+         * @param {LibraryApiDeleteItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItems(ids?: Array<string>, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteItems(ids, options).then((request) => request(axios, basePath));
+        deleteItems(requestParameters: LibraryApiDeleteItemsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteItems(requestParameters.ids, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all parents of an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {LibraryApiGetAncestorsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAncestors(itemId: string, userId?: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
-            return localVarFp.getAncestors(itemId, userId, options).then((request) => request(axios, basePath));
+        getAncestors(requestParameters: LibraryApiGetAncestorsRequest, options?: AxiosRequestConfig): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getAncestors(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets critic review for an item.
-         * @param {string} itemId 
+         * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        getCriticReviews(itemId: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getCriticReviews(itemId, options).then((request) => request(axios, basePath));
+        getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getCriticReviews(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Downloads item media.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiGetDownloadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDownload(itemId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDownload(itemId, options).then((request) => request(axios, basePath));
+        getDownload(requestParameters: LibraryApiGetDownloadRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getDownload(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get the original file of an item.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiGetFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFile(itemId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getFile(itemId, options).then((request) => request(axios, basePath));
+        getFile(requestParameters: LibraryApiGetFileRequest, options?: AxiosRequestConfig): AxiosPromise<any> {
+            return localVarFp.getFile(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get item counts.
-         * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
-         * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
+         * @param {LibraryApiGetItemCountsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItemCounts(userId?: string, isFavorite?: boolean, options?: any): AxiosPromise<ItemCounts> {
-            return localVarFp.getItemCounts(userId, isFavorite, options).then((request) => request(axios, basePath));
+        getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: AxiosRequestConfig): AxiosPromise<ItemCounts> {
+            return localVarFp.getItemCounts(requestParameters.userId, requestParameters.isFavorite, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the library options info.
-         * @param {string} [libraryContentType] Library content type.
-         * @param {boolean} [isNewLibrary] Whether this is a new library.
+         * @param {LibraryApiGetLibraryOptionsInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLibraryOptionsInfo(libraryContentType?: string, isNewLibrary?: boolean, options?: any): AxiosPromise<LibraryOptionsResultDto> {
-            return localVarFp.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options).then((request) => request(axios, basePath));
+        getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: AxiosRequestConfig): AxiosPromise<LibraryOptionsResultDto> {
+            return localVarFp.getLibraryOptionsInfo(requestParameters.libraryContentType, requestParameters.isNewLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all user media folders.
-         * @param {boolean} [isHidden] Optional. Filter by folders that are marked hidden, or not.
+         * @param {LibraryApiGetMediaFoldersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaFolders(isHidden?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getMediaFolders(isHidden, options).then((request) => request(axios, basePath));
+        getMediaFolders(requestParameters: LibraryApiGetMediaFoldersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getMediaFolders(requestParameters.isHidden, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1575,180 +1573,148 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPhysicalPaths(options?: any): AxiosPromise<Array<string>> {
+        getPhysicalPaths(options?: AxiosRequestConfig): AxiosPromise<Array<string>> {
             return localVarFp.getPhysicalPaths(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarAlbumsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarAlbums(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarAlbums(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarAlbums(requestParameters: LibraryApiGetSimilarAlbumsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarAlbums(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarArtistsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarArtists(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarArtists(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarArtists(requestParameters: LibraryApiGetSimilarArtistsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarArtists(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarItems(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarItems(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarItems(requestParameters: LibraryApiGetSimilarItemsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarItems(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarMovies(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarMovies(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarMovies(requestParameters: LibraryApiGetSimilarMoviesRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarMovies(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarShowsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarShows(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarShows(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarShows(requestParameters: LibraryApiGetSimilarShowsRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarShows(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarTrailersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarTrailers(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarTrailers(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: AxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarTrailers(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme songs and videos for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeMediaRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeMedia(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<AllThemeMediaResult> {
-            return localVarFp.getThemeMedia(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeMedia(requestParameters: LibraryApiGetThemeMediaRequest, options?: AxiosRequestConfig): AxiosPromise<AllThemeMediaResult> {
+            return localVarFp.getThemeMedia(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme songs for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeSongsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeSongs(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<ThemeMediaResult> {
-            return localVarFp.getThemeSongs(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeSongs(requestParameters: LibraryApiGetThemeSongsRequest, options?: AxiosRequestConfig): AxiosPromise<ThemeMediaResult> {
+            return localVarFp.getThemeSongs(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme videos for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeVideosRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeVideos(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<ThemeMediaResult> {
-            return localVarFp.getThemeVideos(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeVideos(requestParameters: LibraryApiGetThemeVideosRequest, options?: AxiosRequestConfig): AxiosPromise<ThemeMediaResult> {
+            return localVarFp.getThemeVideos(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {string} [tmdbId] The tmdbId.
-         * @param {string} [imdbId] The imdbId.
+         * @param {LibraryApiPostAddedMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedMovies(tmdbId?: string, imdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postAddedMovies(tmdbId, imdbId, options).then((request) => request(axios, basePath));
+        postAddedMovies(requestParameters: LibraryApiPostAddedMoviesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postAddedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new episodes of a series have been added by an external source.
-         * @param {string} [tvdbId] The tvdbId.
+         * @param {LibraryApiPostAddedSeriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedSeries(tvdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postAddedSeries(tvdbId, options).then((request) => request(axios, basePath));
+        postAddedSeries(requestParameters: LibraryApiPostAddedSeriesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postAddedSeries(requestParameters.tvdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {MediaUpdateInfoDto} mediaUpdateInfoDto The update paths.
+         * @param {LibraryApiPostUpdatedMediaRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedMedia(mediaUpdateInfoDto, options).then((request) => request(axios, basePath));
+        postUpdatedMedia(requestParameters: LibraryApiPostUpdatedMediaRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedMedia(requestParameters.mediaUpdateInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {string} [tmdbId] The tmdbId.
-         * @param {string} [imdbId] The imdbId.
+         * @param {LibraryApiPostUpdatedMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMovies(tmdbId?: string, imdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedMovies(tmdbId, imdbId, options).then((request) => request(axios, basePath));
+        postUpdatedMovies(requestParameters: LibraryApiPostUpdatedMoviesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new episodes of a series have been added by an external source.
-         * @param {string} [tvdbId] The tvdbId.
+         * @param {LibraryApiPostUpdatedSeriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedSeries(tvdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedSeries(tvdbId, options).then((request) => request(axios, basePath));
+        postUpdatedSeries(requestParameters: LibraryApiPostUpdatedSeriesRequest = {}, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedSeries(requestParameters.tvdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1756,7 +1722,7 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        refreshLibrary(options?: any): AxiosPromise<void> {
+        refreshLibrary(options?: AxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.refreshLibrary(options).then((request) => request(axios, basePath));
         },
     };

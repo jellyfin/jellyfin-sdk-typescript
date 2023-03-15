@@ -12,41 +12,42 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration.js';
+import type { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common.js';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base.js';
 // @ts-ignore
-import { AuthenticateUserByName } from '../models';
+import { AuthenticateUserByName } from '../models.js';
 // @ts-ignore
-import { AuthenticationResult } from '../models';
+import { AuthenticationResult } from '../models.js';
 // @ts-ignore
-import { CreateUserByName } from '../models';
+import { CreateUserByName } from '../models.js';
 // @ts-ignore
-import { ForgotPasswordDto } from '../models';
+import { ForgotPasswordDto } from '../models.js';
 // @ts-ignore
-import { ForgotPasswordPinDto } from '../models';
+import { ForgotPasswordPinDto } from '../models.js';
 // @ts-ignore
-import { ForgotPasswordResult } from '../models';
+import { ForgotPasswordResult } from '../models.js';
 // @ts-ignore
-import { PinRedeemResult } from '../models';
+import { PinRedeemResult } from '../models.js';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import { ProblemDetails } from '../models.js';
 // @ts-ignore
-import { QuickConnectDto } from '../models';
+import { QuickConnectDto } from '../models.js';
 // @ts-ignore
-import { UpdateUserEasyPassword } from '../models';
+import { UpdateUserEasyPassword } from '../models.js';
 // @ts-ignore
-import { UpdateUserPassword } from '../models';
+import { UpdateUserPassword } from '../models.js';
 // @ts-ignore
-import { UserConfiguration } from '../models';
+import { UserConfiguration } from '../models.js';
 // @ts-ignore
-import { UserDto } from '../models';
+import { UserDto } from '../models.js';
 // @ts-ignore
-import { UserPolicy } from '../models';
+import { UserPolicy } from '../models.js';
 /**
  * UserApi - axios parameter creator
  * @export
@@ -882,74 +883,72 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Authenticates a user.
-         * @param {string} userId The user id.
-         * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
+         * @param {UserApiAuthenticateUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUser(userId: string, pw: string, password?: string, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUser(userId, pw, password, options).then((request) => request(axios, basePath));
+        authenticateUser(requestParameters: UserApiAuthenticateUserRequest, options?: AxiosRequestConfig): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateUser(requestParameters.userId, requestParameters.pw, requestParameters.password, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Authenticates a user by name.
-         * @param {AuthenticateUserByName} authenticateUserByName The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
+         * @param {UserApiAuthenticateUserByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUserByName(authenticateUserByName, options).then((request) => request(axios, basePath));
+        authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: AxiosRequestConfig): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateUserByName(requestParameters.authenticateUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Authenticates a user with quick connect.
-         * @param {QuickConnectDto} quickConnectDto The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
+         * @param {UserApiAuthenticateWithQuickConnectRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateWithQuickConnect(quickConnectDto, options).then((request) => request(axios, basePath));
+        authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: AxiosRequestConfig): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateWithQuickConnect(requestParameters.quickConnectDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a user.
-         * @param {CreateUserByName} createUserByName The create user by name request body.
+         * @param {UserApiCreateUserByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName(createUserByName: CreateUserByName, options?: any): AxiosPromise<UserDto> {
-            return localVarFp.createUserByName(createUserByName, options).then((request) => request(axios, basePath));
+        createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: AxiosRequestConfig): AxiosPromise<UserDto> {
+            return localVarFp.createUserByName(requestParameters.createUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes a user.
-         * @param {string} userId The user id.
+         * @param {UserApiDeleteUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUser(userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteUser(userId, options).then((request) => request(axios, basePath));
+        deleteUser(requestParameters: UserApiDeleteUserRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteUser(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Initiates the forgot password process for a local user.
-         * @param {ForgotPasswordDto} forgotPasswordDto The forgot password request containing the entered username.
+         * @param {UserApiForgotPasswordRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: any): AxiosPromise<ForgotPasswordResult> {
-            return localVarFp.forgotPassword(forgotPasswordDto, options).then((request) => request(axios, basePath));
+        forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: AxiosRequestConfig): AxiosPromise<ForgotPasswordResult> {
+            return localVarFp.forgotPassword(requestParameters.forgotPasswordDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Redeems a forgot password pin.
-         * @param {ForgotPasswordPinDto} forgotPasswordPinDto The forgot password pin request containing the entered pin.
+         * @param {UserApiForgotPasswordPinRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: any): AxiosPromise<PinRedeemResult> {
-            return localVarFp.forgotPasswordPin(forgotPasswordPinDto, options).then((request) => request(axios, basePath));
+        forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: AxiosRequestConfig): AxiosPromise<PinRedeemResult> {
+            return localVarFp.forgotPasswordPin(requestParameters.forgotPasswordPinDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -957,7 +956,7 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCurrentUser(options?: any): AxiosPromise<UserDto> {
+        getCurrentUser(options?: AxiosRequestConfig): AxiosPromise<UserDto> {
             return localVarFp.getCurrentUser(options).then((request) => request(axios, basePath));
         },
         /**
@@ -966,84 +965,78 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicUsers(options?: any): AxiosPromise<Array<UserDto>> {
+        getPublicUsers(options?: AxiosRequestConfig): AxiosPromise<Array<UserDto>> {
             return localVarFp.getPublicUsers(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a user by Id.
-         * @param {string} userId The user id.
+         * @param {UserApiGetUserByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserById(userId: string, options?: any): AxiosPromise<UserDto> {
-            return localVarFp.getUserById(userId, options).then((request) => request(axios, basePath));
+        getUserById(requestParameters: UserApiGetUserByIdRequest, options?: AxiosRequestConfig): AxiosPromise<UserDto> {
+            return localVarFp.getUserById(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a list of users.
-         * @param {boolean} [isHidden] Optional filter by IsHidden&#x3D;true or false.
-         * @param {boolean} [isDisabled] Optional filter by IsDisabled&#x3D;true or false.
+         * @param {UserApiGetUsersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUsers(isHidden?: boolean, isDisabled?: boolean, options?: any): AxiosPromise<Array<UserDto>> {
-            return localVarFp.getUsers(isHidden, isDisabled, options).then((request) => request(axios, basePath));
+        getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: AxiosRequestConfig): AxiosPromise<Array<UserDto>> {
+            return localVarFp.getUsers(requestParameters.isHidden, requestParameters.isDisabled, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user.
-         * @param {string} userId The user id.
-         * @param {UserDto} userDto The updated user model.
+         * @param {UserApiUpdateUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser(userId: string, userDto: UserDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUser(userId, userDto, options).then((request) => request(axios, basePath));
+        updateUser(requestParameters: UserApiUpdateUserRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUser(requestParameters.userId, requestParameters.userDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user configuration.
-         * @param {string} userId The user id.
-         * @param {UserConfiguration} userConfiguration The new user configuration.
+         * @param {UserApiUpdateUserConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserConfiguration(userId, userConfiguration, options).then((request) => request(axios, basePath));
+        updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserConfiguration(requestParameters.userId, requestParameters.userConfiguration, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s easy password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
+         * @param {UserApiUpdateUserEasyPasswordRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserEasyPassword(userId, updateUserEasyPassword, options).then((request) => request(axios, basePath));
+        updateUserEasyPassword(requestParameters: UserApiUpdateUserEasyPasswordRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserEasyPassword(requestParameters.userId, requestParameters.updateUserEasyPassword, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UserApiUpdateUserPasswordRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPassword(userId, updateUserPassword, options).then((request) => request(axios, basePath));
+        updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserPassword(requestParameters.userId, requestParameters.updateUserPassword, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user policy.
-         * @param {string} userId The user id.
-         * @param {UserPolicy} userPolicy The new user policy.
+         * @param {UserApiUpdateUserPolicyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPolicy(userId, userPolicy, options).then((request) => request(axios, basePath));
+        updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: AxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserPolicy(requestParameters.userId, requestParameters.userPolicy, options).then((request) => request(axios, basePath));
         },
     };
 };

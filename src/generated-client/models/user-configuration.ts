@@ -12,7 +12,9 @@
  */
 
 
-import { SubtitlePlaybackMode } from './subtitle-playback-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import { SubtitlePlaybackMode } from './subtitle-playback-mode.js';
 
 /**
  * Class UserConfiguration.

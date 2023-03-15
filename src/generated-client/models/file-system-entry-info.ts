@@ -12,7 +12,9 @@
  */
 
 
-import { FileSystemEntryType } from './file-system-entry-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import { FileSystemEntryType } from './file-system-entry-type.js';
 
 /**
  * Class FileSystemEntryInfo.

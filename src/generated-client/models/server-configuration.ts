@@ -12,11 +12,21 @@
  */
 
 
-import { ImageSavingConvention } from './image-saving-convention';
-import { MetadataOptions } from './metadata-options';
-import { NameValuePair } from './name-value-pair';
-import { PathSubstitution } from './path-substitution';
-import { RepositoryInfo } from './repository-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import { ImageSavingConvention } from './image-saving-convention.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { MetadataOptions } from './metadata-options.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { NameValuePair } from './name-value-pair.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { PathSubstitution } from './path-substitution.js';
+// May contain unused imports in some cases
+// @ts-ignore
+import { RepositoryInfo } from './repository-info.js';
 
 /**
  * Represents the server configuration.
