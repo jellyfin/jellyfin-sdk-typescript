@@ -4,11 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Jellyfin, RecommendedServerInfo, RecommendedServerInfoScore } from '..';
+import { Jellyfin } from '../jellyfin.js';
+import { RecommendedServerInfo, RecommendedServerInfoScore } from '../models/index.js';
+import { getAddressCandidates } from '../utils/address-candidates.js';
 
-import { getAddressCandidates } from '../utils';
-
-import { RecommendedServerDiscovery } from './recommended-server-discovery';
+import { RecommendedServerDiscovery } from './recommended-server-discovery.js';
 
 /** Class used for discovering recommended servers. */
 export class DiscoveryService {

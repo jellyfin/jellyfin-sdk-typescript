@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { LocalizationApi } from '../../generated-client/api/localization-api';
+import { Api } from '../../api.js';
+import { LocalizationApi } from '../../generated-client/api/localization-api.js';
 
 export function getLocalizationApi(api: Api): LocalizationApi {
 	return new LocalizationApi(api.configuration, undefined, api.axiosInstance);

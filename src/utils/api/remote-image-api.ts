@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { RemoteImageApi } from '../../generated-client/api/remote-image-api';
+import { Api } from '../../api.js';
+import { RemoteImageApi } from '../../generated-client/api/remote-image-api.js';
 
 export function getRemoteImageApi(api: Api): RemoteImageApi {
 	return new RemoteImageApi(api.configuration, undefined, api.axiosInstance);

@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { ApiKeyApi } from '../../generated-client/api/api-key-api';
+import { Api } from '../../api.js';
+import { ApiKeyApi } from '../../generated-client/api/api-key-api.js';
 
 export function getApiKeyApi(api: Api): ApiKeyApi {
 	return new ApiKeyApi(api.configuration, undefined, api.axiosInstance);

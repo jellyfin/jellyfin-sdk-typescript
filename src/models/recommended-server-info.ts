@@ -4,9 +4,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { PublicSystemInfo } from '../generated-client/models/public-system-info';
+import { PublicSystemInfo } from '../generated-client/models/public-system-info.js';
 
-import { RecommendedServerIssue } from './recommended-server-issue';
+import { RecommendedServerIssue } from './recommended-server-issue.js';
 
 /** Possible score values for recommended servers. */
 export enum RecommendedServerInfoScore {

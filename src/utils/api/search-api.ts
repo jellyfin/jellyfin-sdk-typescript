@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SearchApi } from '../../generated-client/api/search-api';
+import { Api } from '../../api.js';
+import { SearchApi } from '../../generated-client/api/search-api.js';
 
 export function getSearchApi(api: Api): SearchApi {
 	return new SearchApi(api.configuration, undefined, api.axiosInstance);

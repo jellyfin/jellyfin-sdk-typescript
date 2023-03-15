@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { DlnaApi } from '../../generated-client/api/dlna-api';
+import { Api } from '../../api.js';
+import { DlnaApi } from '../../generated-client/api/dlna-api.js';
 
 export function getDlnaApi(api: Api): DlnaApi {
 	return new DlnaApi(api.configuration, undefined, api.axiosInstance);

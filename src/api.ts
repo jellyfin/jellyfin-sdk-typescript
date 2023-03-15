@@ -5,14 +5,14 @@
  */
 import globalInstance, { AxiosInstance, AxiosResponse } from 'axios';
 
-import { Configuration } from './generated-client/configuration';
-import { AuthenticationResult } from './generated-client/models/authentication-result';
-import { ImageType } from './generated-client/models/image-type';
-import { ClientInfo, DeviceInfo } from './models';
-import { ImageRequestParameters } from './models/api/image-request-parameters';
-import { getAuthorizationHeader } from './utils';
-import { getSessionApi } from './utils/api/session-api';
-import { getUserApi } from './utils/api/user-api';
+import { Configuration } from './generated-client/configuration.js';
+import { AuthenticationResult } from './generated-client/models/authentication-result.js';
+import { ImageType } from './generated-client/models/image-type.js';
+import { ImageRequestParameters } from './models/api/image-request-parameters.js';
+import { ClientInfo, DeviceInfo } from './models/index.js';
+import { getSessionApi } from './utils/api/session-api.js';
+import { getUserApi } from './utils/api/user-api.js';
+import { getAuthorizationHeader } from './utils/index.js';
 
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'Authorization';

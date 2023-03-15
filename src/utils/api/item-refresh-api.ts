@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { ItemRefreshApi } from '../../generated-client/api/item-refresh-api';
+import { Api } from '../../api.js';
+import { ItemRefreshApi } from '../../generated-client/api/item-refresh-api.js';
 
 export function getItemRefreshApi(api: Api): ItemRefreshApi {
 	return new ItemRefreshApi(api.configuration, undefined, api.axiosInstance);

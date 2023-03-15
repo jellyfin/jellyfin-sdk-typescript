@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { UserApi } from '../../generated-client/api/user-api';
+import { Api } from '../../api.js';
+import { UserApi } from '../../generated-client/api/user-api.js';
 
 export function getUserApi(api: Api): UserApi {
 	return new UserApi(api.configuration, undefined, api.axiosInstance);

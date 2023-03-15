@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SyncPlayApi } from '../../generated-client/api/sync-play-api';
+import { Api } from '../../api.js';
+import { SyncPlayApi } from '../../generated-client/api/sync-play-api.js';
 
 export function getSyncPlayApi(api: Api): SyncPlayApi {
 	return new SyncPlayApi(api.configuration, undefined, api.axiosInstance);

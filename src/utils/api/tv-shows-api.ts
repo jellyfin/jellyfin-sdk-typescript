@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { TvShowsApi } from '../../generated-client/api/tv-shows-api';
+import { Api } from '../../api.js';
+import { TvShowsApi } from '../../generated-client/api/tv-shows-api.js';
 
 export function getTvShowsApi(api: Api): TvShowsApi {
 	return new TvShowsApi(api.configuration, undefined, api.axiosInstance);

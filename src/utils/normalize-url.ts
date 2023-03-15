@@ -18,7 +18,7 @@
  * OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import { HTTP_PROTOCOL } from './url';
+import { HTTP_PROTOCOL } from './url.js';
 
 /*
  * A fork of https://github.com/sindresorhus/normalize-url ported to typescript with all unneeded features removed.

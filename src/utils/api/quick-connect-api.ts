@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { QuickConnectApi } from '../../generated-client/api/quick-connect-api';
+import { Api } from '../../api.js';
+import { QuickConnectApi } from '../../generated-client/api/quick-connect-api.js';
 
 export function getQuickConnectApi(api: Api): QuickConnectApi {
 	return new QuickConnectApi(api.configuration, undefined, api.axiosInstance);

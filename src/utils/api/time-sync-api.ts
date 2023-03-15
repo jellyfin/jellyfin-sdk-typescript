@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { TimeSyncApi } from '../../generated-client/api/time-sync-api';
+import { Api } from '../../api.js';
+import { TimeSyncApi } from '../../generated-client/api/time-sync-api.js';
 
 export function getTimeSyncApi(api: Api): TimeSyncApi {
 	return new TimeSyncApi(api.configuration, undefined, api.axiosInstance);

@@ -7,9 +7,10 @@
 import { AxiosError, AxiosResponse } from 'axios';
 import { compare } from 'compare-versions';
 
-import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfo, RecommendedServerInfoScore, RecommendedServerIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '..';
-import { PublicSystemInfo } from '../generated-client/models/public-system-info';
-import { getSystemApi } from '../utils/api/system-api';
+import { PublicSystemInfo } from '../generated-client/models/public-system-info.js';
+import { API_VERSION, Jellyfin, MINIMUM_VERSION } from '../jellyfin.js';
+import { ProductNameIssue, RecommendedServerInfo, RecommendedServerInfoScore, RecommendedServerIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../models/index.js';
+import { getSystemApi } from '../utils/api/system-api.js';
 
 /** The result of a SystemInfo request. */
 interface SystemInfoResult {

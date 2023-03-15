@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { DisplayPreferencesApi } from '../../generated-client/api/display-preferences-api';
+import { Api } from '../../api.js';
+import { DisplayPreferencesApi } from '../../generated-client/api/display-preferences-api.js';
 
 export function getDisplayPreferencesApi(api: Api): DisplayPreferencesApi {
 	return new DisplayPreferencesApi(api.configuration, undefined, api.axiosInstance);

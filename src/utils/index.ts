@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * from './address-candidates';
-export * from './authentication';
-export * from './url';
-export * from './browser-profiles';
+export * from './address-candidates.js';
+export * from './authentication.js';
+export * from './url.js';
+export * from './browser-profiles.js';

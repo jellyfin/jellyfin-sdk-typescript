@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SuggestionsApi } from '../../generated-client/api/suggestions-api';
+import { Api } from '../../api.js';
+import { SuggestionsApi } from '../../generated-client/api/suggestions-api.js';
 
 export function getSuggestionsApi(api: Api): SuggestionsApi {
 	return new SuggestionsApi(api.configuration, undefined, api.axiosInstance);

@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { DynamicHlsApi } from '../../generated-client/api/dynamic-hls-api';
+import { Api } from '../../api.js';
+import { DynamicHlsApi } from '../../generated-client/api/dynamic-hls-api.js';
 
 export function getDynamicHlsApi(api: Api): DynamicHlsApi {
 	return new DynamicHlsApi(api.configuration, undefined, api.axiosInstance);

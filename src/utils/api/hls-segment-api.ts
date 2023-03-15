@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { HlsSegmentApi } from '../../generated-client/api/hls-segment-api';
+import { Api } from '../../api.js';
+import { HlsSegmentApi } from '../../generated-client/api/hls-segment-api.js';
 
 export function getHlsSegmentApi(api: Api): HlsSegmentApi {
 	return new HlsSegmentApi(api.configuration, undefined, api.axiosInstance);

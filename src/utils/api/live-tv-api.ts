@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { LiveTvApi } from '../../generated-client/api/live-tv-api';
+import { Api } from '../../api.js';
+import { LiveTvApi } from '../../generated-client/api/live-tv-api.js';
 
 export function getLiveTvApi(api: Api): LiveTvApi {
 	return new LiveTvApi(api.configuration, undefined, api.axiosInstance);

@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { TrailersApi } from '../../generated-client/api/trailers-api';
+import { Api } from '../../api.js';
+import { TrailersApi } from '../../generated-client/api/trailers-api.js';
 
 export function getTrailersApi(api: Api): TrailersApi {
 	return new TrailersApi(api.configuration, undefined, api.axiosInstance);

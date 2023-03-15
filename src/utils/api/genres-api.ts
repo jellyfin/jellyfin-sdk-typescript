@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { GenresApi } from '../../generated-client/api/genres-api';
+import { Api } from '../../api.js';
+import { GenresApi } from '../../generated-client/api/genres-api.js';
 
 export function getGenresApi(api: Api): GenresApi {
 	return new GenresApi(api.configuration, undefined, api.axiosInstance);

@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { UniversalAudioApi } from '../../generated-client/api/universal-audio-api';
+import { Api } from '../../api.js';
+import { UniversalAudioApi } from '../../generated-client/api/universal-audio-api.js';
 
 export function getUniversalAudioApi(api: Api): UniversalAudioApi {
 	return new UniversalAudioApi(api.configuration, undefined, api.axiosInstance);

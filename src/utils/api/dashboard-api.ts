@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { DashboardApi } from '../../generated-client/api/dashboard-api';
+import { Api } from '../../api.js';
+import { DashboardApi } from '../../generated-client/api/dashboard-api.js';
 
 export function getDashboardApi(api: Api): DashboardApi {
 	return new DashboardApi(api.configuration, undefined, api.axiosInstance);

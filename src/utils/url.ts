@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import normalizeUrl from './normalize-url';
+import normalizeUrl from './normalize-url.js';
 
 /** The http protocol string. */
 export const HTTP_PROTOCOL = 'http:';

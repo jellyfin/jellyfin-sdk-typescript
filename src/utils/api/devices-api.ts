@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { DevicesApi } from '../../generated-client/api/devices-api';
+import { Api } from '../../api.js';
+import { DevicesApi } from '../../generated-client/api/devices-api.js';
 
 export function getDevicesApi(api: Api): DevicesApi {
 	return new DevicesApi(api.configuration, undefined, api.axiosInstance);

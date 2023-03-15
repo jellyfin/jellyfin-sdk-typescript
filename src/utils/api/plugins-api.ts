@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { PluginsApi } from '../../generated-client/api/plugins-api';
+import { Api } from '../../api.js';
+import { PluginsApi } from '../../generated-client/api/plugins-api.js';
 
 export function getPluginsApi(api: Api): PluginsApi {
 	return new PluginsApi(api.configuration, undefined, api.axiosInstance);

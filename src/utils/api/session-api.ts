@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SessionApi } from '../../generated-client/api/session-api';
+import { Api } from '../../api.js';
+import { SessionApi } from '../../generated-client/api/session-api.js';
 
 export function getSessionApi(api: Api): SessionApi {
 	return new SessionApi(api.configuration, undefined, api.axiosInstance);

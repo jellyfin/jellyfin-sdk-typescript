@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { StartupApi } from '../../generated-client/api/startup-api';
+import { Api } from '../../api.js';
+import { StartupApi } from '../../generated-client/api/startup-api.js';
 
 export function getStartupApi(api: Api): StartupApi {
 	return new StartupApi(api.configuration, undefined, api.axiosInstance);

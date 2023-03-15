@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { VideoAttachmentsApi } from '../../generated-client/api/video-attachments-api';
+import { Api } from '../../api.js';
+import { VideoAttachmentsApi } from '../../generated-client/api/video-attachments-api.js';
 
 export function getVideoAttachmentsApi(api: Api): VideoAttachmentsApi {
 	return new VideoAttachmentsApi(api.configuration, undefined, api.axiosInstance);

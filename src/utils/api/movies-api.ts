@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { MoviesApi } from '../../generated-client/api/movies-api';
+import { Api } from '../../api.js';
+import { MoviesApi } from '../../generated-client/api/movies-api.js';
 
 export function getMoviesApi(api: Api): MoviesApi {
 	return new MoviesApi(api.configuration, undefined, api.axiosInstance);

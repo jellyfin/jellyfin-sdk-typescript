@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * from './client-info';
-export * from './device-info';
-export * from './recommended-server-info';
-export * from './recommended-server-issue';
+export * from './client-info.js';
+export * from './device-info.js';
+export * from './recommended-server-info.js';
+export * from './recommended-server-issue.js';

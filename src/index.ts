@@ -4,9 +4,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * as discovery from './discovery';
-export * as utils from './utils';
+export * as discovery from './discovery/index.js';
+export * as utils from './utils/index.js';
 
-export * from './api';
-export * from './jellyfin';
-export * from './models';
+export * from './api.js';
+export * from './jellyfin.js';
+export * from './models/index.js';

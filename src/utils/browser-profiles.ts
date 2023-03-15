@@ -4,9 +4,9 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { DeviceProfile } from '../generated-client/models/device-profile';
-import { SubtitleDeliveryMethod } from '../generated-client/models/subtitle-delivery-method';
-import { SubtitleProfile } from '../generated-client/models/subtitle-profile';
+import { DeviceProfile } from '../generated-client/models/device-profile.js';
+import { SubtitleDeliveryMethod } from '../generated-client/models/subtitle-delivery-method.js';
+import { SubtitleProfile } from '../generated-client/models/subtitle-profile.js';
 
 /**
  * Options parameters to build profiles

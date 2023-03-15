@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { EnvironmentApi } from '../../generated-client/api/environment-api';
+import { Api } from '../../api.js';
+import { EnvironmentApi } from '../../generated-client/api/environment-api.js';
 
 export function getEnvironmentApi(api: Api): EnvironmentApi {
 	return new EnvironmentApi(api.configuration, undefined, api.axiosInstance);

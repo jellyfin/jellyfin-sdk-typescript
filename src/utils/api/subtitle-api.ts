@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SubtitleApi } from '../../generated-client/api/subtitle-api';
+import { Api } from '../../api.js';
+import { SubtitleApi } from '../../generated-client/api/subtitle-api.js';
 
 export function getSubtitleApi(api: Api): SubtitleApi {
 	return new SubtitleApi(api.configuration, undefined, api.axiosInstance);

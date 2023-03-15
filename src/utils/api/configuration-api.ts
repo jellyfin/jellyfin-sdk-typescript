@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { ConfigurationApi } from '../../generated-client/api/configuration-api';
+import { Api } from '../../api.js';
+import { ConfigurationApi } from '../../generated-client/api/configuration-api.js';
 
 export function getConfigurationApi(api: Api): ConfigurationApi {
 	return new ConfigurationApi(api.configuration, undefined, api.axiosInstance);

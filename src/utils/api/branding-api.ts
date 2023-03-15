@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { BrandingApi } from '../../generated-client/api/branding-api';
+import { Api } from '../../api.js';
+import { BrandingApi } from '../../generated-client/api/branding-api.js';
 
 export function getBrandingApi(api: Api): BrandingApi {
 	return new BrandingApi(api.configuration, undefined, api.axiosInstance);

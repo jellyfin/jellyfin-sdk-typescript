@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { ActivityLogApi } from '../../generated-client/api/activity-log-api';
+import { Api } from '../../api.js';
+import { ActivityLogApi } from '../../generated-client/api/activity-log-api.js';
 
 export function getActivityLogApi(api: Api): ActivityLogApi {
 	return new ActivityLogApi(api.configuration, undefined, api.axiosInstance);

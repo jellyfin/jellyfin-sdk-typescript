@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { LibraryApi } from '../../generated-client/api/library-api';
+import { Api } from '../../api.js';
+import { LibraryApi } from '../../generated-client/api/library-api.js';
 
 export function getLibraryApi(api: Api): LibraryApi {
 	return new LibraryApi(api.configuration, undefined, api.axiosInstance);

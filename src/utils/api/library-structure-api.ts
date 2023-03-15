@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { LibraryStructureApi } from '../../generated-client/api/library-structure-api';
+import { Api } from '../../api.js';
+import { LibraryStructureApi } from '../../generated-client/api/library-structure-api.js';
 
 export function getLibraryStructureApi(api: Api): LibraryStructureApi {
 	return new LibraryStructureApi(api.configuration, undefined, api.axiosInstance);

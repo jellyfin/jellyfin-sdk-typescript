@@ -4,5 +4,5 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-export * from './discovery-service';
-export * from './recommended-server-discovery';
+export * from './discovery-service.js';
+export * from './recommended-server-discovery.js';

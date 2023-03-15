@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { SystemApi } from '../../generated-client/api/system-api';
+import { Api } from '../../api.js';
+import { SystemApi } from '../../generated-client/api/system-api.js';
 
 export function getSystemApi(api: Api): SystemApi {
 	return new SystemApi(api.configuration, undefined, api.axiosInstance);

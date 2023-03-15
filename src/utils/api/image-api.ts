@@ -4,8 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
-import { ImageApi } from '../../generated-client/api/image-api';
+import { Api } from '../../api.js';
+import { ImageApi } from '../../generated-client/api/image-api.js';
 
 export function getImageApi(api: Api): ImageApi {
 	return new ImageApi(api.configuration, undefined, api.axiosInstance);

@@ -6,9 +6,9 @@
 
 import { AxiosInstance } from 'axios';
 
-import { Api } from './api';
-import { DiscoveryService } from './discovery';
-import { ClientInfo, DeviceInfo } from './models';
+import { Api } from './api.js';
+import { DiscoveryService } from './discovery/index.js';
+import { ClientInfo, DeviceInfo } from './models/index.js';
 
 /** Parameters to create a Jellyfin SDK instance. */
 export interface JellyfinParameters {
