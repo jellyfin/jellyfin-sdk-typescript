@@ -9,7 +9,7 @@ import { Jellyfin, RecommendedServerInfoScore } from '../..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { getAddressCandidates } from '../../utils';
 
-jest.mock('../../utils');
+jest.mock('../../utils/address-candidates');
 const mockGetAddressCandidates = jest.mocked(getAddressCandidates);
 
 jest.mock('../recommended-server-discovery');
