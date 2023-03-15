@@ -20,6 +20,7 @@ module.exports = {
 			'alphabetize': { 'order': 'asc', 'caseInsensitive': true },
 			'newlines-between': 'always-and-inside-groups'
 		}],
+		'import/no-unresolved': ['off'],
 
 		'array-callback-return': ['error'],
 		'arrow-spacing': ['error'],
