@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { SessionApi } from '../../generated-client/api/session-api';
 
 export function getSessionApi(api: Api): SessionApi {

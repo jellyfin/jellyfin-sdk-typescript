@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { TimeSyncApi } from '../../generated-client/api/time-sync-api';
 
 export function getTimeSyncApi(api: Api): TimeSyncApi {

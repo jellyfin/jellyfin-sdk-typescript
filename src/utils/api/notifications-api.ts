@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { NotificationsApi } from '../../generated-client/api/notifications-api';
 
 export function getNotificationsApi(api: Api): NotificationsApi {

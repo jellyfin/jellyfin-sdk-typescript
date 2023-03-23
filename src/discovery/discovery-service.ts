@@ -4,7 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Jellyfin, RecommendedServerInfo, RecommendedServerInfoScore } from '..';
+import type { Jellyfin, RecommendedServerInfo } from '..';
+import { RecommendedServerInfoScore } from '..';
 
 import { getAddressCandidates } from '../utils';
 

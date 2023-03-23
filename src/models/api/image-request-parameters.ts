@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { ImageFormat } from '../../generated-client/models/image-format';
+import type { ImageFormat } from '../../generated-client/models/image-format';
 
 /**
  * Interface representing supported request parameters for the getItemImage API.

@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { ActivityLogApi } from '../../generated-client/api/activity-log-api';
 
 export function getActivityLogApi(api: Api): ActivityLogApi {
