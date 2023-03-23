@@ -21,6 +21,9 @@ module.exports = {
 			'newlines-between': 'always-and-inside-groups'
 		}],
 
+		'@typescript-eslint/consistent-type-imports': ['error'],
+		'@typescript-eslint/type-annotation-spacing': ['error'],
+
 		'array-callback-return': ['error'],
 		'arrow-spacing': ['error'],
 		'block-spacing': ['error'],
@@ -51,7 +54,6 @@ module.exports = {
 		'space-before-blocks': ['error'],
 		'space-before-function-paren': ['error', { 'anonymous': 'never', 'named': 'never', 'asyncArrow': 'always' }],
 		'space-infix-ops': 'error',
-		'@typescript-eslint/type-annotation-spacing': ['error'],
 		'yoda': 'error'
 	},
 	overrides: [
