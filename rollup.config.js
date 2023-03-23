@@ -4,10 +4,12 @@ import { fileURLToPath } from 'node:url';
 import typescript from '@rollup/plugin-typescript';
 import { glob } from 'glob';
 
+/** @type {import('rollup').RollupOptions} */
 export default {
 	// This is adapted from the sample config: https://www.rollupjs.org/configuration-options/#input
 	input: Object.fromEntries(
-		glob.sync('src/**/*.ts', { ignore: 'src/**/__{helpers,tests}__/*' }).map(file => [
+		// Only looking for index files since they should be the only entry points
+		glob.sync('src/**/index.ts', { ignore: 'src/**/__{helpers,tests}__/*' }).map(file => [
 			// This remove `src/` as well as the file extension from each
 			// file, so e.g. src/nested/foo.js becomes nested/foo
 			path.relative(
@@ -21,7 +23,9 @@ export default {
 	),
 	output: {
 		dir: 'lib',
-		format: 'es'
+		format: 'es',
+		preserveModules: true,
+		preserveModulesRoot: 'src'
 	},
 	external: [
 		'axios',
