@@ -6,10 +6,14 @@
 
 import axios from 'axios';
 
-import { RecommendedServerDiscovery } from '..';
-import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfoScore, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { itIf } from '../../__helpers__/it-if';
+
+import { Jellyfin } from '../../jellyfin';
+import { RecommendedServerInfoScore } from '../../models/recommended-server-info';
+import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../../models/recommended-server-issue';
+import { API_VERSION, MINIMUM_VERSION } from '../../versions';
+import { RecommendedServerDiscovery } from '../recommended-server-discovery';
 
 jest.mock('axios');
 const mockAxios = jest.mocked(axios, { shallow: false });

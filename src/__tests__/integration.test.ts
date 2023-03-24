@@ -4,8 +4,10 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Jellyfin, RecommendedServerInfoScore } from '..';
 import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
+
+import { Jellyfin } from '../jellyfin';
+import { RecommendedServerInfoScore } from '../models/recommended-server-info';
 import { getLibraryApi } from '../utils/api/library-api';
 import { getSystemApi } from '../utils/api/system-api';
 import { getUserApi } from '../utils/api/user-api';

@@ -4,10 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import type { Jellyfin, RecommendedServerInfo } from '..';
-import { RecommendedServerInfoScore } from '..';
+import type { Jellyfin } from '../jellyfin';
+import type { RecommendedServerInfo } from '../models/recommended-server-info';
 
-import { getAddressCandidates } from '../utils';
+import { RecommendedServerInfoScore } from '../models/recommended-server-info';
+import { getAddressCandidates } from '../utils/address-candidates';
 
 import { RecommendedServerDiscovery } from './recommended-server-discovery';
 

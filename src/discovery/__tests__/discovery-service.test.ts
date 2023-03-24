@@ -4,12 +4,15 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { DiscoveryService, RecommendedServerDiscovery } from '..';
-import { Jellyfin, RecommendedServerInfoScore } from '../..';
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
-import { getAddressCandidates } from '../../utils';
 
-jest.mock('../../utils');
+import { Jellyfin } from '../../jellyfin';
+import { RecommendedServerInfoScore } from '../../models/recommended-server-info';
+import { getAddressCandidates } from '../../utils/address-candidates';
+import { DiscoveryService } from '../discovery-service';
+import { RecommendedServerDiscovery } from '../recommended-server-discovery';
+
+jest.mock('../../utils/address-candidates');
 const mockGetAddressCandidates = jest.mocked(getAddressCandidates);
 
 jest.mock('../recommended-server-discovery');
