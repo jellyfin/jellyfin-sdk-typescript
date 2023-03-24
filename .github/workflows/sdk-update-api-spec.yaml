@@ -40,7 +40,7 @@ jobs:
           EXECUTE_COMMANDS: |
             cp $HOME/openapi.json .
             npm run build:generated-client
-            sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.STABLE_API_VERSION }}'/" src/jellyfin.ts
+            sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.STABLE_API_VERSION }}'/" src/versions.ts
           COMMIT_MESSAGE: 'Update generated sources to ${{ env.STABLE_API_VERSION }}'
           COMMIT_NAME: 'jellyfin-bot'
           COMMIT_EMAIL: 'team@jellyfin.org'

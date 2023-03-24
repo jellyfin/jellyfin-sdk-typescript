@@ -7,10 +7,14 @@
 import type { AxiosError, AxiosResponse } from 'axios';
 import { compare } from 'compare-versions';
 
-import type { Jellyfin, RecommendedServerInfo, RecommendedServerIssue } from '..';
-import { API_VERSION, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfoScore, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '..';
 import type { PublicSystemInfo } from '../generated-client/models/public-system-info';
+import type { Jellyfin } from '../jellyfin';
+import type { RecommendedServerInfo } from '../models/recommended-server-info';
+import { RecommendedServerInfoScore } from '../models/recommended-server-info';
+import type { RecommendedServerIssue } from '../models/recommended-server-issue';
+import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../models/recommended-server-issue';
 import { getSystemApi } from '../utils/api/system-api';
+import { API_VERSION, MINIMUM_VERSION } from '../versions';
 
 /** The result of a SystemInfo request. */
 interface SystemInfoResult {

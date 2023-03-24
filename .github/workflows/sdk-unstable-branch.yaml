@@ -47,7 +47,7 @@ jobs:
         run: |
           cp $HOME/openapi.json .
           npm run build:generated-client
-          sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.UNSTABLE_API_VERSION }}'/" src/jellyfin.ts
+          sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.UNSTABLE_API_VERSION }}'/" src/versions.ts
 
       - name: Commit changes
         run: |
