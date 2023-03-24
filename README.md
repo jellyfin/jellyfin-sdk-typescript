@@ -144,10 +144,11 @@ await api.logout();
 
 ## Roadmap to 1.0
 
-* [ ] More complete device profile generation utilities
 * [x] Use custom generator templates for API versions [#231](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/231) (Currently uses sed to update the value could be improved.)
-* [x] Automate OpenAPI spec updates using GitHub
-* [ ] Create branch tracking unstable Jellyfin builds with automated builds
+* [x] Automate OpenAPI spec updates using GitHub [#351](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/351)
+* [x] Create branch tracking unstable Jellyfin builds with automated builds [#354](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/354)
 * [ ] Fix authentication header escaping
-* [ ] Add exmple projects for different ecosystems [#186](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/186)
+* [ ] Add WebSocket API support
+* [ ] Add example projects for different ecosystems [#186](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/186)
 * [ ] Add utility function for `getFile` [#164](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/164)
+* [ ] More complete device profile generation utilities
