@@ -3,13 +3,14 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
-import globalInstance, { AxiosInstance, AxiosResponse } from 'axios';
+import type { AxiosInstance, AxiosResponse } from 'axios';
+import globalInstance from 'axios';
 
 import { Configuration } from './generated-client/configuration';
-import { AuthenticationResult } from './generated-client/models/authentication-result';
+import type { AuthenticationResult } from './generated-client/models/authentication-result';
 import { ImageType } from './generated-client/models/image-type';
-import { ClientInfo, DeviceInfo } from './models';
-import { ImageRequestParameters } from './models/api/image-request-parameters';
+import type { ClientInfo, DeviceInfo } from './models';
+import type { ImageRequestParameters } from './models/api/image-request-parameters';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';

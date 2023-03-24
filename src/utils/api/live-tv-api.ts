@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { LiveTvApi } from '../../generated-client/api/live-tv-api';
 
 export function getLiveTvApi(api: Api): LiveTvApi {

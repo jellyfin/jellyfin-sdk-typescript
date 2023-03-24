@@ -4,11 +4,11 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { AxiosInstance } from 'axios';
+import type { AxiosInstance } from 'axios';
 
 import { Api } from './api';
 import { DiscoveryService } from './discovery';
-import { ClientInfo, DeviceInfo } from './models';
+import type { ClientInfo, DeviceInfo } from './models';
 
 /** Parameters to create a Jellyfin SDK instance. */
 export interface JellyfinParameters {

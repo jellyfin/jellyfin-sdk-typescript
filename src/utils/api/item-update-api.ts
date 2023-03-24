@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { ItemUpdateApi } from '../../generated-client/api/item-update-api';
 
 export function getItemUpdateApi(api: Api): ItemUpdateApi {

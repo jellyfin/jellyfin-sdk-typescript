@@ -4,11 +4,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { AxiosError, AxiosResponse } from 'axios';
+import type { AxiosError, AxiosResponse } from 'axios';
 import { compare } from 'compare-versions';
 
-import { API_VERSION, Jellyfin, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfo, RecommendedServerInfoScore, RecommendedServerIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '..';
-import { PublicSystemInfo } from '../generated-client/models/public-system-info';
+import type { Jellyfin, RecommendedServerInfo, RecommendedServerIssue } from '..';
+import { API_VERSION, MINIMUM_VERSION, ProductNameIssue, RecommendedServerInfoScore, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '..';
+import type { PublicSystemInfo } from '../generated-client/models/public-system-info';
 import { getSystemApi } from '../utils/api/system-api';
 
 /** The result of a SystemInfo request. */

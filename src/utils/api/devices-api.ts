@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { Api } from '../../api';
+import type { Api } from '../../api';
 import { DevicesApi } from '../../generated-client/api/devices-api';
 
 export function getDevicesApi(api: Api): DevicesApi {
