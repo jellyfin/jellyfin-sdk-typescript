@@ -20,4 +20,5 @@ openapi-templates
 codecov.yml
 jest.config.cjs
 rollup.config.js
+.sonarcloud.properties
 tsconfig.json
