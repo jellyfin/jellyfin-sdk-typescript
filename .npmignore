@@ -1,3 +1,4 @@
+.gitattributes
 .github
 .vscode
 
@@ -10,9 +11,13 @@ node_modules
 scripts
 src
 
-.eslintignore
-.eslintrc.js
-codecov.yml
-jest.config.js
 openapi.json
 openapitools.json
+openapi-templates
+
+.eslintignore
+.eslintrc.cjs
+codecov.yml
+jest.config.cjs
+rollup.config.js
+tsconfig.json
