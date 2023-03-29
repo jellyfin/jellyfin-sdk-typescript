@@ -4,71 +4,12 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+import { getActivityLogApi, getApiKeyApi, getArtistsApi, getAudioApi, getBrandingApi, getChannelsApi, getClientLogApi, getCollectionApi, getConfigurationApi, getDashboardApi, getDevicesApi, getDisplayPreferencesApi, getDlnaApi, getDlnaServerApi, getDynamicHlsApi, getEnvironmentApi, getFilterApi, getGenresApi, getHlsSegmentApi, getImageApi, getImageByNameApi, getInstantMixApi, getItemLookupApi, getItemRefreshApi, getItemUpdateApi, getItemsApi, getLibraryApi, getLibraryStructureApi, getLiveTvApi, getLocalizationApi, getMediaInfoApi, getMoviesApi, getMusicGenresApi, getNotificationsApi, getPackageApi, getPersonsApi, getPlaylistsApi, getPlaystateApi, getPluginsApi, getQuickConnectApi, getRemoteImageApi, getScheduledTasksApi, getSearchApi, getSessionApi, getStartupApi, getStudiosApi, getSubtitleApi, getSuggestionsApi, getSyncPlayApi, getSystemApi, getTimeSyncApi, getTmdbApi, getTrailersApi, getTvShowsApi, getUniversalAudioApi, getUserApi, getUserLibraryApi, getUserViewsApi, getVideoAttachmentsApi, getVideosApi, getYearsApi } from '..';
+
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../../../__helpers__/common';
 
 import { Api } from '../../../api';
 import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, ClientLogApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TmdbApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideosApi, YearsApi } from '../../../generated-client/api';
-import { getActivityLogApi } from '../activity-log-api';
-import { getApiKeyApi } from '../api-key-api';
-import { getArtistsApi } from '../artists-api';
-import { getAudioApi } from '../audio-api';
-import { getBrandingApi } from '../branding-api';
-import { getChannelsApi } from '../channels-api';
-import { getClientLogApi } from '../client-log-api';
-import { getCollectionApi } from '../collection-api';
-import { getConfigurationApi } from '../configuration-api';
-import { getDashboardApi } from '../dashboard-api';
-import { getDevicesApi } from '../devices-api';
-import { getDisplayPreferencesApi } from '../display-preferences-api';
-import { getDlnaApi } from '../dlna-api';
-import { getDlnaServerApi } from '../dlna-server-api';
-import { getDynamicHlsApi } from '../dynamic-hls-api';
-import { getEnvironmentApi } from '../environment-api';
-import { getFilterApi } from '../filter-api';
-import { getGenresApi } from '../genres-api';
-import { getHlsSegmentApi } from '../hls-segment-api';
-import { getImageApi } from '../image-api';
-import { getImageByNameApi } from '../image-by-name-api';
-import { getInstantMixApi } from '../instant-mix-api';
-import { getItemLookupApi } from '../item-lookup-api';
-import { getItemRefreshApi } from '../item-refresh-api';
-import { getItemUpdateApi } from '../item-update-api';
-import { getItemsApi } from '../items-api';
-import { getLibraryApi } from '../library-api';
-import { getLibraryStructureApi } from '../library-structure-api';
-import { getLiveTvApi } from '../live-tv-api';
-import { getLocalizationApi } from '../localization-api';
-import { getMediaInfoApi } from '../media-info-api';
-import { getMoviesApi } from '../movies-api';
-import { getMusicGenresApi } from '../music-genres-api';
-import { getNotificationsApi } from '../notifications-api';
-import { getPackageApi } from '../package-api';
-import { getPersonsApi } from '../persons-api';
-import { getPlaylistsApi } from '../playlists-api';
-import { getPlaystateApi } from '../playstate-api';
-import { getPluginsApi } from '../plugins-api';
-import { getQuickConnectApi } from '../quick-connect-api';
-import { getRemoteImageApi } from '../remote-image-api';
-import { getScheduledTasksApi } from '../scheduled-tasks-api';
-import { getSearchApi } from '../search-api';
-import { getSessionApi } from '../session-api';
-import { getStartupApi } from '../startup-api';
-import { getStudiosApi } from '../studios-api';
-import { getSubtitleApi } from '../subtitle-api';
-import { getSuggestionsApi } from '../suggestions-api';
-import { getSyncPlayApi } from '../sync-play-api';
-import { getSystemApi } from '../system-api';
-import { getTimeSyncApi } from '../time-sync-api';
-import { getTmdbApi } from '../tmdb-api';
-import { getTrailersApi } from '../trailers-api';
-import { getTvShowsApi } from '../tv-shows-api';
-import { getUniversalAudioApi } from '../universal-audio-api';
-import { getUserApi } from '../user-api';
-import { getUserLibraryApi } from '../user-library-api';
-import { getUserViewsApi } from '../user-views-api';
-import { getVideoAttachmentsApi } from '../video-attachments-api';
-import { getVideosApi } from '../videos-api';
-import { getYearsApi } from '../years-api';
 
 /**
  * Api helper function tests.
