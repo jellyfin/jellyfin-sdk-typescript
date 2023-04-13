@@ -13,7 +13,7 @@ import { RecommendedServerInfoScore } from '../models/recommended-server-info';
 import type { RecommendedServerIssue } from '../models/recommended-server-issue';
 import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../models/recommended-server-issue';
 import { getSystemApi } from '../utils/api/system-api';
-import { isVersionLess } from '../utils/version-comparison';
+import { isVersionLess } from '../utils/versioning';
 import { API_VERSION, MINIMUM_VERSION } from '../versions';
 
 /** The result of a SystemInfo request. */
