@@ -5,7 +5,6 @@
  */
 
 import type { AxiosError, AxiosResponse } from 'axios';
-import { compare } from 'compare-versions';
 
 import type { PublicSystemInfo } from '../generated-client/models/public-system-info';
 import type { Jellyfin } from '../jellyfin';
@@ -14,6 +13,7 @@ import { RecommendedServerInfoScore } from '../models/recommended-server-info';
 import type { RecommendedServerIssue } from '../models/recommended-server-issue';
 import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIssue, VersionOutdatedIssue, VersionUnsupportedIssue } from '../models/recommended-server-issue';
 import { getSystemApi } from '../utils/api/system-api';
+import { isVersionLess } from '../utils/version-comparison';
 import { API_VERSION, MINIMUM_VERSION } from '../versions';
 
 /** The result of a SystemInfo request. */
@@ -56,11 +56,11 @@ function toRecommendedServerInfo(result: SystemInfoResult): RecommendedServerInf
 		// No version was returned
 		issues.push(new VersionMissingIssue());
 		scores.push(RecommendedServerInfoScore.BAD);
-	} else if (compare(version, MINIMUM_VERSION, '<')) {
+	} else if (isVersionLess(version, MINIMUM_VERSION)) {
 		// Version is less than the minimum supported
 		issues.push(new VersionUnsupportedIssue(version));
 		scores.push(RecommendedServerInfoScore.OK);
-	} else if (compare(version, API_VERSION, '<')) {
+	} else if (isVersionLess(version, API_VERSION)) {
 		// Version is less than the generated client, but above the minimum
 		issues.push(new VersionOutdatedIssue(version));
 		scores.push(RecommendedServerInfoScore.GOOD);
