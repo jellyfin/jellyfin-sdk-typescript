@@ -114,6 +114,12 @@ export interface EncodingOptions {
      * @type {string}
      * @memberof EncodingOptions
      */
+    'TonemappingMode'?: string | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof EncodingOptions
+     */
     'TonemappingRange'?: string | null;
     /**
      * 
@@ -121,12 +127,6 @@ export interface EncodingOptions {
      * @memberof EncodingOptions
      */
     'TonemappingDesat'?: number;
-    /**
-     * 
-     * @type {number}
-     * @memberof EncodingOptions
-     */
-    'TonemappingThreshold'?: number;
     /**
      * 
      * @type {number}

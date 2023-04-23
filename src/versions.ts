@@ -5,7 +5,7 @@
  */
 
 /** The current API version of the generated client. */
-export const API_VERSION = '10.8.9';
+export const API_VERSION = '10.8.10';
 
 /** The minimum supported server version. */
 export const MINIMUM_VERSION = '10.8.1';
