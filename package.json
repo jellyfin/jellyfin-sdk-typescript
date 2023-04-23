@@ -25,7 +25,7 @@
     "test": "jest --watchAll --group=unit"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "2.5.2",
+    "@openapitools/openapi-generator-cli": "2.6.0",
     "@rollup/plugin-typescript": "11.1.0",
     "@tsconfig/recommended": "1.0.2",
     "@types/jest": "29.5.0",
