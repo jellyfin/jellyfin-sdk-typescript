@@ -52,18 +52,25 @@ function toRecommendedServerInfo(result: SystemInfoResult): RecommendedServerInf
 	}
 
 	const version = result.response?.data.Version;
-	if (!version) {
-		// No version was returned
-		issues.push(new VersionMissingIssue());
-		scores.push(RecommendedServerInfoScore.BAD);
-	} else if (isVersionLess(version, MINIMUM_VERSION)) {
-		// Version is less than the minimum supported
-		issues.push(new VersionUnsupportedIssue(version));
-		scores.push(RecommendedServerInfoScore.OK);
-	} else if (isVersionLess(version, API_VERSION)) {
-		// Version is less than the generated client, but above the minimum
-		issues.push(new VersionOutdatedIssue(version));
-		scores.push(RecommendedServerInfoScore.GOOD);
+	try {
+		if (!version) {
+			// No version was returned
+			issues.push(new VersionMissingIssue());
+			scores.push(RecommendedServerInfoScore.BAD);
+		} else if (isVersionLess(version, MINIMUM_VERSION)) {
+			// Version is less than the minimum supported
+			issues.push(new VersionUnsupportedIssue(version));
+			scores.push(RecommendedServerInfoScore.OK);
+		} else if (isVersionLess(version, API_VERSION)) {
+			// Version is less than the generated client, but above the minimum
+			issues.push(new VersionOutdatedIssue(version));
+			scores.push(RecommendedServerInfoScore.GOOD);
+		}
+	} catch (error) {
+		if (error instanceof TypeError) {
+			issues.push(new VersionUnsupportedIssue(version ?? 'Unknown'));
+			scores.push(RecommendedServerInfoScore.OK);
+		}
 	}
 
 	if (result.responseTime > SLOW_RESPONSE_TIME) {
