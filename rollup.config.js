@@ -28,8 +28,7 @@ export default {
 		preserveModulesRoot: 'src'
 	},
 	external: [
-		'axios',
-		'compare-versions'
+		'axios'
 	],
 	plugins: [ typescript() ]
 };
