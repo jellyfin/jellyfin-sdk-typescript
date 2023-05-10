@@ -68,8 +68,8 @@ function toRecommendedServerInfo(result: SystemInfoResult): RecommendedServerInf
 		}
 	} catch (error) {
 		if (error instanceof TypeError) {
-			issues.push(new VersionUnsupportedIssue(version ?? 'Unknown'));
-			scores.push(RecommendedServerInfoScore.OK);
+			issues.push(new VersionMissingIssue());
+			scores.push(RecommendedServerInfoScore.BAD);
 		}
 	}
 
