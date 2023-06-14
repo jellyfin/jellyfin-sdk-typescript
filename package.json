@@ -41,7 +41,7 @@
     "rollup": "3.21.6",
     "ts-jest": "29.1.0",
     "typedoc": "0.24.8",
-    "typescript": "5.0.4"
+    "typescript": "5.1.3"
   },
   "peerDependencies": {
     "axios": "^1.3.4"
