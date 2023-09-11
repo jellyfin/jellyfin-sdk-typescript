@@ -40,7 +40,7 @@
     "rimraf": "5.0.1",
     "rollup": "3.28.1",
     "ts-jest": "29.1.1",
-    "typedoc": "0.25.0",
+    "typedoc": "0.25.1",
     "typescript": "5.2.2"
   },
   "peerDependencies": {
