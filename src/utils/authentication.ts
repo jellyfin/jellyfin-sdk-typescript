@@ -10,10 +10,10 @@ import type { ClientInfo, DeviceInfo } from '../models';
  */
 export function getAuthorizationHeader(clientInfo: ClientInfo, deviceInfo: DeviceInfo, accessToken = ''): string {
 	return [
-		`MediaBrowser Client="${encodeURI(clientInfo.name)}"`,
-		`Device="${encodeURI(deviceInfo.name)}"`,
-		`DeviceId="${encodeURI(deviceInfo.id)}"`,
-		`Version="${encodeURI(clientInfo.version)}"`,
-		`Token="${encodeURI(accessToken)}"`
+		`MediaBrowser Client="${encodeURIComponent(clientInfo.name)}"`,
+		`Device="${encodeURIComponent(deviceInfo.name)}"`,
+		`DeviceId="${encodeURIComponent(deviceInfo.id)}"`,
+		`Version="${encodeURIComponent(clientInfo.version)}"`,
+		`Token="${encodeURIComponent(accessToken)}"`
 	].join(', ');
 }
