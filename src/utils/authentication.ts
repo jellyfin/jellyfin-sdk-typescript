@@ -9,12 +9,11 @@ import type { ClientInfo, DeviceInfo } from '../models';
  * Returns a valid authorization header string.
  */
 export function getAuthorizationHeader(clientInfo: ClientInfo, deviceInfo: DeviceInfo, accessToken = ''): string {
-	// TODO: We should ensure values are properly escaped
 	return [
-		`MediaBrowser Client="${clientInfo.name}"`,
-		`Device="${deviceInfo.name}"`,
-		`DeviceId="${deviceInfo.id}"`,
-		`Version="${clientInfo.version}"`,
-		`Token="${accessToken}"`
+		`MediaBrowser Client="${encodeURIComponent(clientInfo.name)}"`,
+		`Device="${encodeURIComponent(deviceInfo.name)}"`,
+		`DeviceId="${encodeURIComponent(deviceInfo.id)}"`,
+		`Version="${encodeURIComponent(clientInfo.version)}"`,
+		`Token="${encodeURIComponent(accessToken)}"`
 	].join(', ');
 }
