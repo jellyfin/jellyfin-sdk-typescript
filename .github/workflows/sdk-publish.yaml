@@ -7,6 +7,9 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
     if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
     steps:
       - name: Check out Git repository
@@ -24,6 +27,6 @@ jobs:
         run: npm ci --no-audit
 
       - name: Publish the SDK to npm
-        run: npm publish
+        run: npm publish --provenance
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
