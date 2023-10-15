@@ -25,7 +25,10 @@ export const Architecture = {
     Arm: 'Arm',
     Arm64: 'Arm64',
     Wasm: 'Wasm',
-    S390x: 'S390x'
+    S390x: 'S390x',
+    LoongArch64: 'LoongArch64',
+    Armv6: 'Armv6',
+    Ppc64le: 'Ppc64le'
 } as const;
 
 export type Architecture = typeof Architecture[keyof typeof Architecture];

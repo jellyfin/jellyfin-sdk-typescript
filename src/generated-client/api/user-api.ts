@@ -58,11 +58,11 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @summary Authenticates a user.
          * @param {string} userId The user id.
          * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        authenticateUser: async (userId: string, pw: string, password?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        authenticateUser: async (userId: string, pw: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('authenticateUser', 'userId', userId)
             // verify required parameter 'pw' is not null or undefined
@@ -82,10 +82,6 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
             if (pw !== undefined) {
                 localVarQueryParameter['pw'] = pw;
-            }
-
-            if (password !== undefined) {
-                localVarQueryParameter['password'] = password;
             }
 
 
@@ -554,6 +550,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {string} userId The user id.
          * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         updateUserEasyPassword: async (userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -692,12 +689,12 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @summary Authenticates a user.
          * @param {string} userId The user id.
          * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        async authenticateUser(userId: string, pw: string, password?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUser(userId, pw, password, options);
+        async authenticateUser(userId: string, pw: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUser(userId, pw, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -839,6 +836,7 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {string} userId The user id.
          * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -884,12 +882,12 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @summary Authenticates a user.
          * @param {string} userId The user id.
          * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        authenticateUser(userId: string, pw: string, password?: string, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUser(userId, pw, password, options).then((request) => request(axios, basePath));
+        authenticateUser(userId: string, pw: string, options?: any): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateUser(userId, pw, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1018,6 +1016,7 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @param {string} userId The user id.
          * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): AxiosPromise<void> {
@@ -1067,13 +1066,6 @@ export interface UserApiAuthenticateUserRequest {
      * @memberof UserApiAuthenticateUser
      */
     readonly pw: string
-
-    /**
-     * The password sha1-hash.
-     * @type {string}
-     * @memberof UserApiAuthenticateUser
-     */
-    readonly password?: string
 }
 
 /**
@@ -1312,11 +1304,12 @@ export class UserApi extends BaseAPI {
      * @summary Authenticates a user.
      * @param {UserApiAuthenticateUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      * @memberof UserApi
      */
     public authenticateUser(requestParameters: UserApiAuthenticateUserRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).authenticateUser(requestParameters.userId, requestParameters.pw, requestParameters.password, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).authenticateUser(requestParameters.userId, requestParameters.pw, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1466,6 +1459,7 @@ export class UserApi extends BaseAPI {
      * @summary Updates a user\'s easy password.
      * @param {UserApiUpdateUserEasyPasswordRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      * @memberof UserApi
      */

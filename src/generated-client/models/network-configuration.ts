@@ -20,6 +20,18 @@
  */
 export interface NetworkConfiguration {
     /**
+     * Gets or sets a value used to specify the URL prefix that your Jellyfin instance can be accessed at.
+     * @type {string}
+     * @memberof NetworkConfiguration
+     */
+    'BaseUrl'?: string;
+    /**
+     * Gets or sets a value indicating whether to use HTTPS.
+     * @type {boolean}
+     * @memberof NetworkConfiguration
+     */
+    'EnableHttps'?: boolean;
+    /**
      * Gets or sets a value indicating whether the server should force connections over HTTPS.
      * @type {boolean}
      * @memberof NetworkConfiguration
@@ -38,11 +50,23 @@ export interface NetworkConfiguration {
      */
     'CertificatePassword'?: string;
     /**
-     * Gets or sets a value used to specify the URL prefix that your Jellyfin instance can be accessed at.
-     * @type {string}
+     * Gets or sets the internal HTTP server port.
+     * @type {number}
      * @memberof NetworkConfiguration
      */
-    'BaseUrl'?: string;
+    'InternalHttpPort'?: number;
+    /**
+     * Gets or sets the internal HTTPS server port.
+     * @type {number}
+     * @memberof NetworkConfiguration
+     */
+    'InternalHttpsPort'?: number;
+    /**
+     * Gets or sets the public HTTP port.
+     * @type {number}
+     * @memberof NetworkConfiguration
+     */
+    'PublicHttpPort'?: number;
     /**
      * Gets or sets the public HTTPS port.
      * @type {number}
@@ -50,143 +74,11 @@ export interface NetworkConfiguration {
      */
     'PublicHttpsPort'?: number;
     /**
-     * Gets or sets the HTTP server port number.
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'HttpServerPortNumber'?: number;
-    /**
-     * Gets or sets the HTTPS server port number.
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'HttpsPortNumber'?: number;
-    /**
-     * Gets or sets a value indicating whether to use HTTPS.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'EnableHttps'?: boolean;
-    /**
-     * Gets or sets the public mapped port.
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'PublicPort'?: number;
-    /**
-     * Gets or sets a value indicating whether the http port should be mapped as part of UPnP automatic port forwarding.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'UPnPCreateHttpPortMap'?: boolean;
-    /**
-     * Gets or sets the UDPPortRange.
-     * @type {string}
-     * @memberof NetworkConfiguration
-     */
-    'UDPPortRange'?: string;
-    /**
-     * Gets or sets a value indicating whether gets or sets IPV6 capability.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'EnableIPV6'?: boolean;
-    /**
-     * Gets or sets a value indicating whether gets or sets IPV4 capability.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'EnableIPV4'?: boolean;
-    /**
-     * Gets or sets a value indicating whether detailed SSDP logs are sent to the console/log.  \"Emby.Dlna\": \"Debug\" must be set in logging.default.json for this property to have any effect.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'EnableSSDPTracing'?: boolean;
-    /**
-     * Gets or sets the SSDPTracingFilter  Gets or sets a value indicating whether an IP address is to be used to filter the detailed ssdp logs that are being sent to the console/log.  If the setting \"Emby.Dlna\": \"Debug\" msut be set in logging.default.json for this property to work.
-     * @type {string}
-     * @memberof NetworkConfiguration
-     */
-    'SSDPTracingFilter'?: string;
-    /**
-     * Gets or sets the number of times SSDP UDP messages are sent.
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'UDPSendCount'?: number;
-    /**
-     * Gets or sets the delay between each groups of SSDP messages (in ms).
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'UDPSendDelay'?: number;
-    /**
-     * Gets or sets a value indicating whether address names that match Jellyfin.Networking.Configuration.NetworkConfiguration.VirtualInterfaceNames should be Ignore for the purposes of binding.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'IgnoreVirtualInterfaces'?: boolean;
-    /**
-     * Gets or sets a value indicating the interfaces that should be ignored. The list can be comma separated. <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.IgnoreVirtualInterfaces\" />.
-     * @type {string}
-     * @memberof NetworkConfiguration
-     */
-    'VirtualInterfaceNames'?: string;
-    /**
-     * Gets or sets the time (in seconds) between the pings of SSDP gateway monitor.
-     * @type {number}
-     * @memberof NetworkConfiguration
-     */
-    'GatewayMonitorPeriod'?: number;
-    /**
-     * Gets a value indicating whether multi-socket binding is available.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'EnableMultiSocketBinding'?: boolean;
-    /**
-     * Gets or sets a value indicating whether all IPv6 interfaces should be treated as on the internal network.  Depending on the address range implemented ULA ranges might not be used.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'TrustAllIP6Interfaces'?: boolean;
-    /**
-     * Gets or sets the ports that HDHomerun uses.
-     * @type {string}
-     * @memberof NetworkConfiguration
-     */
-    'HDHomerunPortRange'?: string;
-    /**
-     * Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to advertise for specific subnets.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
-     */
-    'PublishedServerUriBySubnet'?: Array<string>;
-    /**
-     * Gets or sets a value indicating whether Autodiscovery tracing is enabled.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'AutoDiscoveryTracing'?: boolean;
-    /**
      * Gets or sets a value indicating whether Autodiscovery is enabled.
      * @type {boolean}
      * @memberof NetworkConfiguration
      */
     'AutoDiscovery'?: boolean;
-    /**
-     * Gets or sets the filter for remote IP connectivity. Used in conjuntion with <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.IsRemoteIPFilterBlacklist\" />.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
-     */
-    'RemoteIPFilter'?: Array<string>;
-    /**
-     * Gets or sets a value indicating whether <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.RemoteIPFilter\" /> contains a blacklist or a whitelist. Default is a whitelist.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
-     */
-    'IsRemoteIPFilterBlacklist'?: boolean;
     /**
      * Gets or sets a value indicating whether to enable automatic port forwarding.
      * @type {boolean}
@@ -194,7 +86,19 @@ export interface NetworkConfiguration {
      */
     'EnableUPnP'?: boolean;
     /**
-     * Gets or sets a value indicating whether access outside of the LAN is permitted.
+     * Gets or sets a value indicating whether IPv6 is enabled.
+     * @type {boolean}
+     * @memberof NetworkConfiguration
+     */
+    'EnableIPv4'?: boolean;
+    /**
+     * Gets or sets a value indicating whether IPv6 is enabled.
+     * @type {boolean}
+     * @memberof NetworkConfiguration
+     */
+    'EnableIPv6'?: boolean;
+    /**
+     * Gets or sets a value indicating whether access from outside of the LAN is permitted.
      * @type {boolean}
      * @memberof NetworkConfiguration
      */
@@ -212,16 +116,46 @@ export interface NetworkConfiguration {
      */
     'LocalNetworkAddresses'?: Array<string>;
     /**
-     * Gets or sets the known proxies. If the proxy is a network, it\'s added to the KnownNetworks.
+     * Gets or sets the known proxies.
      * @type {Array<string>}
      * @memberof NetworkConfiguration
      */
     'KnownProxies'?: Array<string>;
+    /**
+     * Gets or sets a value indicating whether address names that match Jellyfin.Networking.Configuration.NetworkConfiguration.VirtualInterfaceNames should be ignored for the purposes of binding.
+     * @type {boolean}
+     * @memberof NetworkConfiguration
+     */
+    'IgnoreVirtualInterfaces'?: boolean;
+    /**
+     * Gets or sets a value indicating the interface name prefixes that should be ignored. The list can be comma separated and values are case-insensitive. <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.IgnoreVirtualInterfaces\" />.
+     * @type {Array<string>}
+     * @memberof NetworkConfiguration
+     */
+    'VirtualInterfaceNames'?: Array<string>;
     /**
      * Gets or sets a value indicating whether the published server uri is based on information in HTTP requests.
      * @type {boolean}
      * @memberof NetworkConfiguration
      */
     'EnablePublishedServerUriByRequest'?: boolean;
+    /**
+     * Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to advertise for specific subnets.
+     * @type {Array<string>}
+     * @memberof NetworkConfiguration
+     */
+    'PublishedServerUriBySubnet'?: Array<string>;
+    /**
+     * Gets or sets the filter for remote IP connectivity. Used in conjunction with <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.IsRemoteIPFilterBlacklist\" />.
+     * @type {Array<string>}
+     * @memberof NetworkConfiguration
+     */
+    'RemoteIPFilter'?: Array<string>;
+    /**
+     * Gets or sets a value indicating whether <seealso cref=\"P:Jellyfin.Networking.Configuration.NetworkConfiguration.RemoteIPFilter\" /> contains a blacklist or a whitelist. Default is a whitelist.
+     * @type {boolean}
+     * @memberof NetworkConfiguration
+     */
+    'IsRemoteIPFilterBlacklist'?: boolean;
 }
 

@@ -28,6 +28,8 @@ import { PlaybackStartInfo } from '../models';
 // @ts-ignore
 import { PlaybackStopInfo } from '../models';
 // @ts-ignore
+import { ProblemDetails } from '../models';
+// @ts-ignore
 import { RepeatMode } from '../models';
 // @ts-ignore
 import { UserItemDataDto } from '../models';

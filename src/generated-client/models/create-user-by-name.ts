@@ -24,7 +24,7 @@ export interface CreateUserByName {
      * @type {string}
      * @memberof CreateUserByName
      */
-    'Name'?: string | null;
+    'Name': string;
     /**
      * Gets or sets the password.
      * @type {string}

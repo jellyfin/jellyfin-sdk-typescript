@@ -36,9 +36,9 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [userId] Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
-         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimeted.
-         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimeted.
-         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimeted.
+         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimited.
+         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimited.
          * @param {string} [parentId] If specified, only children of the parent are returned.
          * @param {boolean} [isMovie] Optional filter for movies.
          * @param {boolean} [isSeries] Optional filter for series.
@@ -53,9 +53,9 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        get: async (searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSearchHints: async (searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'searchTerm' is not null or undefined
-            assertParamExists('get', 'searchTerm', searchTerm)
+            assertParamExists('getSearchHints', 'searchTerm', searchTerm)
             const localVarPath = `/Search/Hints`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -171,9 +171,9 @@ export const SearchApiFp = function(configuration?: Configuration) {
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [userId] Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
-         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimeted.
-         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimeted.
-         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimeted.
+         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimited.
+         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimited.
          * @param {string} [parentId] If specified, only children of the parent are returned.
          * @param {boolean} [isMovie] Optional filter for movies.
          * @param {boolean} [isSeries] Optional filter for series.
@@ -188,8 +188,8 @@ export const SearchApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async get(searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchHintResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.get(searchTerm, startIndex, limit, userId, includeItemTypes, excludeItemTypes, mediaTypes, parentId, isMovie, isSeries, isNews, isKids, isSports, includePeople, includeMedia, includeGenres, includeStudios, includeArtists, options);
+        async getSearchHints(searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SearchHintResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSearchHints(searchTerm, startIndex, limit, userId, includeItemTypes, excludeItemTypes, mediaTypes, parentId, isMovie, isSeries, isNews, isKids, isSports, includePeople, includeMedia, includeGenres, includeStudios, includeArtists, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -209,9 +209,9 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [userId] Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
-         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimeted.
-         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimeted.
-         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimeted.
+         * @param {Array<BaseItemKind>} [includeItemTypes] If specified, only results with the specified item types are returned. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] If specified, results with these item types are filtered out. This allows multiple, comma delimited.
+         * @param {Array<string>} [mediaTypes] If specified, only results with the specified media types are returned. This allows multiple, comma delimited.
          * @param {string} [parentId] If specified, only children of the parent are returned.
          * @param {boolean} [isMovie] Optional filter for movies.
          * @param {boolean} [isSeries] Optional filter for series.
@@ -226,141 +226,141 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        get(searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options?: any): AxiosPromise<SearchHintResult> {
-            return localVarFp.get(searchTerm, startIndex, limit, userId, includeItemTypes, excludeItemTypes, mediaTypes, parentId, isMovie, isSeries, isNews, isKids, isSports, includePeople, includeMedia, includeGenres, includeStudios, includeArtists, options).then((request) => request(axios, basePath));
+        getSearchHints(searchTerm: string, startIndex?: number, limit?: number, userId?: string, includeItemTypes?: Array<BaseItemKind>, excludeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, parentId?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, includePeople?: boolean, includeMedia?: boolean, includeGenres?: boolean, includeStudios?: boolean, includeArtists?: boolean, options?: any): AxiosPromise<SearchHintResult> {
+            return localVarFp.getSearchHints(searchTerm, startIndex, limit, userId, includeItemTypes, excludeItemTypes, mediaTypes, parentId, isMovie, isSeries, isNews, isKids, isSports, includePeople, includeMedia, includeGenres, includeStudios, includeArtists, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for get operation in SearchApi.
+ * Request parameters for getSearchHints operation in SearchApi.
  * @export
- * @interface SearchApiGetRequest
+ * @interface SearchApiGetSearchHintsRequest
  */
-export interface SearchApiGetRequest {
+export interface SearchApiGetSearchHintsRequest {
     /**
      * The search term to filter on.
      * @type {string}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly searchTerm: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
      * @type {number}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
      * @type {number}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly limit?: number
 
     /**
      * Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
      * @type {string}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly userId?: string
 
     /**
-     * If specified, only results with the specified item types are returned. This allows multiple, comma delimeted.
+     * If specified, only results with the specified item types are returned. This allows multiple, comma delimited.
      * @type {Array<BaseItemKind>}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
-     * If specified, results with these item types are filtered out. This allows multiple, comma delimeted.
+     * If specified, results with these item types are filtered out. This allows multiple, comma delimited.
      * @type {Array<BaseItemKind>}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
-     * If specified, only results with the specified media types are returned. This allows multiple, comma delimeted.
+     * If specified, only results with the specified media types are returned. This allows multiple, comma delimited.
      * @type {Array<string>}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly mediaTypes?: Array<string>
 
     /**
      * If specified, only children of the parent are returned.
      * @type {string}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly parentId?: string
 
     /**
      * Optional filter for movies.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly isMovie?: boolean
 
     /**
      * Optional filter for series.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly isSeries?: boolean
 
     /**
      * Optional filter for news.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly isNews?: boolean
 
     /**
      * Optional filter for kids.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly isKids?: boolean
 
     /**
      * Optional filter for sports.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly isSports?: boolean
 
     /**
      * Optional filter whether to include people.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includePeople?: boolean
 
     /**
      * Optional filter whether to include media.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includeMedia?: boolean
 
     /**
      * Optional filter whether to include genres.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includeGenres?: boolean
 
     /**
      * Optional filter whether to include studios.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includeStudios?: boolean
 
     /**
      * Optional filter whether to include artists.
      * @type {boolean}
-     * @memberof SearchApiGet
+     * @memberof SearchApiGetSearchHints
      */
     readonly includeArtists?: boolean
 }
@@ -375,12 +375,12 @@ export class SearchApi extends BaseAPI {
     /**
      * 
      * @summary Gets the search hint result.
-     * @param {SearchApiGetRequest} requestParameters Request parameters.
+     * @param {SearchApiGetSearchHintsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof SearchApi
      */
-    public get(requestParameters: SearchApiGetRequest, options?: AxiosRequestConfig) {
-        return SearchApiFp(this.configuration).get(requestParameters.searchTerm, requestParameters.startIndex, requestParameters.limit, requestParameters.userId, requestParameters.includeItemTypes, requestParameters.excludeItemTypes, requestParameters.mediaTypes, requestParameters.parentId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.includePeople, requestParameters.includeMedia, requestParameters.includeGenres, requestParameters.includeStudios, requestParameters.includeArtists, options).then((request) => request(this.axios, this.basePath));
+    public getSearchHints(requestParameters: SearchApiGetSearchHintsRequest, options?: AxiosRequestConfig) {
+        return SearchApiFp(this.configuration).getSearchHints(requestParameters.searchTerm, requestParameters.startIndex, requestParameters.limit, requestParameters.userId, requestParameters.includeItemTypes, requestParameters.excludeItemTypes, requestParameters.mediaTypes, requestParameters.parentId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.includePeople, requestParameters.includeMedia, requestParameters.includeGenres, requestParameters.includeStudios, requestParameters.includeArtists, options).then((request) => request(this.axios, this.basePath));
     }
 }

@@ -12,6 +12,7 @@
  */
 
 
+import { ImageResolution } from './image-resolution';
 import { ImageSavingConvention } from './image-saving-convention';
 import { MetadataOptions } from './metadata-options';
 import { NameValuePair } from './name-value-pair';
@@ -169,6 +170,12 @@ export interface ServerConfiguration {
      */
     'LibraryMonitorDelay'?: number;
     /**
+     * Gets or sets the duration in seconds that we will wait after a library updated event before executing the library changed notification.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'LibraryUpdateDuration'?: number;
+    /**
      * 
      * @type {ImageSavingConvention}
      * @memberof ServerConfiguration
@@ -312,5 +319,23 @@ export interface ServerConfiguration {
      * @memberof ServerConfiguration
      */
     'AllowClientLogUpload'?: boolean;
+    /**
+     * Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation alltogether.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'DummyChapterDuration'?: number;
+    /**
+     * 
+     * @type {ImageResolution}
+     * @memberof ServerConfiguration
+     */
+    'ChapterImageResolution'?: ImageResolution;
+    /**
+     * Gets or sets the limit for parallel image encoding.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'ParallelImageEncodingLimit'?: number;
 }
 

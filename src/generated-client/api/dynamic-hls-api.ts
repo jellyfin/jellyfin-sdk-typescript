@@ -651,7 +651,7 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
          * @param {string} [deviceProfileId] Optional. The dlna device profile id to utilize.
          * @param {string} [playSessionId] The play session id.
          * @param {string} [segmentContainer] The segment container.
-         * @param {number} [segmentLength] The segment lenght.
+         * @param {number} [segmentLength] The segment length.
          * @param {number} [minSegments] The minimum number of segments.
          * @param {string} [mediaSourceId] The media version id, if playing an alternate version.
          * @param {string} [deviceId] The device id of the client requesting. Used to stop encoding processes when needed.
@@ -2787,7 +2787,7 @@ export const DynamicHlsApiFp = function(configuration?: Configuration) {
          * @param {string} [deviceProfileId] Optional. The dlna device profile id to utilize.
          * @param {string} [playSessionId] The play session id.
          * @param {string} [segmentContainer] The segment container.
-         * @param {number} [segmentLength] The segment lenght.
+         * @param {number} [segmentLength] The segment length.
          * @param {number} [minSegments] The minimum number of segments.
          * @param {string} [mediaSourceId] The media version id, if playing an alternate version.
          * @param {string} [deviceId] The device id of the client requesting. Used to stop encoding processes when needed.
@@ -3347,7 +3347,7 @@ export const DynamicHlsApiFactory = function (configuration?: Configuration, bas
          * @param {string} [deviceProfileId] Optional. The dlna device profile id to utilize.
          * @param {string} [playSessionId] The play session id.
          * @param {string} [segmentContainer] The segment container.
-         * @param {number} [segmentLength] The segment lenght.
+         * @param {number} [segmentLength] The segment length.
          * @param {number} [minSegments] The minimum number of segments.
          * @param {string} [mediaSourceId] The media version id, if playing an alternate version.
          * @param {string} [deviceId] The device id of the client requesting. Used to stop encoding processes when needed.
@@ -4595,7 +4595,7 @@ export interface DynamicHlsApiGetLiveHlsStreamRequest {
     readonly segmentContainer?: string
 
     /**
-     * The segment lenght.
+     * The segment length.
      * @type {number}
      * @memberof DynamicHlsApiGetLiveHlsStream
      */

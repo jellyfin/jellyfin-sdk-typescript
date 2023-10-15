@@ -29,6 +29,8 @@ import { ImageType } from '../models';
 import { ItemFields } from '../models';
 // @ts-ignore
 import { PlaylistCreationResult } from '../models';
+// @ts-ignore
+import { ProblemDetails } from '../models';
 /**
  * PlaylistsApi - axios parameter creator
  * @export

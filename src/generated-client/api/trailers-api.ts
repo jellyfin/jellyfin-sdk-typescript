@@ -46,7 +46,7 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -69,9 +69,9 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -82,7 +82,7 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -517,7 +517,7 @@ export const TrailersApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -540,9 +540,9 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -553,7 +553,7 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -621,7 +621,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -644,9 +644,9 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -657,7 +657,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -721,7 +721,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
  */
 export interface TrailersApiGetTrailersRequest {
     /**
-     * The user id.
+     * The user id supplied as query parameter; this is required when not using an API key.
      * @type {string}
      * @memberof TrailersApiGetTrailers
      */
@@ -882,21 +882,21 @@ export interface TrailersApiGetTrailersRequest {
     readonly hasOverview?: boolean
 
     /**
-     * Optional filter by items that have an imdb id or not.
+     * Optional filter by items that have an IMDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
     readonly hasImdbId?: boolean
 
     /**
-     * Optional filter by items that have a tmdb id or not.
+     * Optional filter by items that have a TMDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
     readonly hasTmdbId?: boolean
 
     /**
-     * Optional filter by items that have a tvdb id or not.
+     * Optional filter by items that have a TVDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
@@ -973,7 +973,7 @@ export interface TrailersApiGetTrailersRequest {
     readonly searchTerm?: string
 
     /**
-     * Sort Order - Ascending,Descending.
+     * Sort Order - Ascending, Descending.
      * @type {Array<SortOrder>}
      * @memberof TrailersApiGetTrailers
      */

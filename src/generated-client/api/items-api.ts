@@ -46,7 +46,7 @@ export const ItemsApiAxiosParamCreator = function (configuration?: Configuration
         /**
          * 
          * @summary Gets items based on a query.
-         * @param {string} [userId] The user id supplied as query parameter.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -69,9 +69,9 @@ export const ItemsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -82,7 +82,7 @@ export const ItemsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -535,9 +535,9 @@ export const ItemsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -548,7 +548,7 @@ export const ItemsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -1094,7 +1094,7 @@ export const ItemsApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Gets items based on a query.
-         * @param {string} [userId] The user id supplied as query parameter.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -1117,9 +1117,9 @@ export const ItemsApiFp = function(configuration?: Configuration) {
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -1130,7 +1130,7 @@ export const ItemsApiFp = function(configuration?: Configuration) {
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -1212,9 +1212,9 @@ export const ItemsApiFp = function(configuration?: Configuration) {
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -1225,7 +1225,7 @@ export const ItemsApiFp = function(configuration?: Configuration) {
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -1319,7 +1319,7 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
         /**
          * 
          * @summary Gets items based on a query.
-         * @param {string} [userId] The user id supplied as query parameter.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -1342,9 +1342,9 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -1355,7 +1355,7 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -1436,9 +1436,9 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -1449,7 +1449,7 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -1538,7 +1538,7 @@ export const ItemsApiFactory = function (configuration?: Configuration, basePath
  */
 export interface ItemsApiGetItemsRequest {
     /**
-     * The user id supplied as query parameter.
+     * The user id supplied as query parameter; this is required when not using an API key.
      * @type {string}
      * @memberof ItemsApiGetItems
      */
@@ -1699,21 +1699,21 @@ export interface ItemsApiGetItemsRequest {
     readonly hasOverview?: boolean
 
     /**
-     * Optional filter by items that have an imdb id or not.
+     * Optional filter by items that have an IMDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItems
      */
     readonly hasImdbId?: boolean
 
     /**
-     * Optional filter by items that have a tmdb id or not.
+     * Optional filter by items that have a TMDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItems
      */
     readonly hasTmdbId?: boolean
 
     /**
-     * Optional filter by items that have a tvdb id or not.
+     * Optional filter by items that have a TVDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItems
      */
@@ -1790,7 +1790,7 @@ export interface ItemsApiGetItemsRequest {
     readonly searchTerm?: string
 
     /**
-     * Sort Order - Ascending,Descending.
+     * Sort Order - Ascending, Descending.
      * @type {Array<SortOrder>}
      * @memberof ItemsApiGetItems
      */
@@ -2301,21 +2301,21 @@ export interface ItemsApiGetItemsByUserIdRequest {
     readonly hasOverview?: boolean
 
     /**
-     * Optional filter by items that have an imdb id or not.
+     * Optional filter by items that have an IMDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItemsByUserId
      */
     readonly hasImdbId?: boolean
 
     /**
-     * Optional filter by items that have a tmdb id or not.
+     * Optional filter by items that have a TMDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItemsByUserId
      */
     readonly hasTmdbId?: boolean
 
     /**
-     * Optional filter by items that have a tvdb id or not.
+     * Optional filter by items that have a TVDb id or not.
      * @type {boolean}
      * @memberof ItemsApiGetItemsByUserId
      */
@@ -2392,7 +2392,7 @@ export interface ItemsApiGetItemsByUserIdRequest {
     readonly searchTerm?: string
 
     /**
-     * Sort Order - Ascending,Descending.
+     * Sort Order - Ascending, Descending.
      * @type {Array<SortOrder>}
      * @memberof ItemsApiGetItemsByUserId
      */

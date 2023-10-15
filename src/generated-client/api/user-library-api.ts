@@ -30,6 +30,8 @@ import { ImageType } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
 // @ts-ignore
+import { LyricResponse } from '../models';
+// @ts-ignore
 import { UserItemDataDto } from '../models';
 /**
  * UserLibraryApi - axios parameter creator
@@ -261,6 +263,47 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getLocalTrailers', 'itemId', itemId)
             const localVarPath = `/Users/{userId}/Items/{itemId}/LocalTrailers`
+                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets an item\'s lyrics.
+         * @param {string} userId User id.
+         * @param {string} itemId Item id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLyrics: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'userId' is not null or undefined
+            assertParamExists('getLyrics', 'userId', userId)
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getLyrics', 'itemId', itemId)
+            const localVarPath = `/Users/{userId}/Items/{itemId}/Lyrics`
                 .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -575,6 +618,18 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets an item\'s lyrics.
+         * @param {string} userId User id.
+         * @param {string} itemId Item id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getLyrics(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLyrics(userId, itemId, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
          * @summary Gets the root folder from a user\'s library.
          * @param {string} userId User id.
          * @param {*} [options] Override http request option.
@@ -706,6 +761,17 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
          */
         getLocalTrailers(userId: string, itemId: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
             return localVarFp.getLocalTrailers(userId, itemId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets an item\'s lyrics.
+         * @param {string} userId User id.
+         * @param {string} itemId Item id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLyrics(userId: string, itemId: string, options?: any): AxiosPromise<LyricResponse> {
+            return localVarFp.getLyrics(userId, itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -934,6 +1000,27 @@ export interface UserLibraryApiGetLocalTrailersRequest {
 }
 
 /**
+ * Request parameters for getLyrics operation in UserLibraryApi.
+ * @export
+ * @interface UserLibraryApiGetLyricsRequest
+ */
+export interface UserLibraryApiGetLyricsRequest {
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiGetLyrics
+     */
+    readonly userId: string
+
+    /**
+     * Item id.
+     * @type {string}
+     * @memberof UserLibraryApiGetLyrics
+     */
+    readonly itemId: string
+}
+
+/**
  * Request parameters for getRootFolder operation in UserLibraryApi.
  * @export
  * @interface UserLibraryApiGetRootFolderRequest
@@ -1103,6 +1190,18 @@ export class UserLibraryApi extends BaseAPI {
      */
     public getLocalTrailers(requestParameters: UserLibraryApiGetLocalTrailersRequest, options?: AxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getLocalTrailers(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets an item\'s lyrics.
+     * @param {UserLibraryApiGetLyricsRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof UserLibraryApi
+     */
+    public getLyrics(requestParameters: UserLibraryApiGetLyricsRequest, options?: AxiosRequestConfig) {
+        return UserLibraryApiFp(this.configuration).getLyrics(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

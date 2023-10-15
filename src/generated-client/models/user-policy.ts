@@ -35,6 +35,12 @@ export interface UserPolicy {
      */
     'IsHidden'?: boolean;
     /**
+     * Gets or sets a value indicating whether this instance can manage collections.
+     * @type {boolean}
+     * @memberof UserPolicy
+     */
+    'EnableCollectionManagement'?: boolean;
+    /**
      * Gets or sets a value indicating whether this instance is disabled.
      * @type {boolean}
      * @memberof UserPolicy
@@ -52,6 +58,12 @@ export interface UserPolicy {
      * @memberof UserPolicy
      */
     'BlockedTags'?: Array<string> | null;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof UserPolicy
+     */
+    'AllowedTags'?: Array<string> | null;
     /**
      * 
      * @type {boolean}

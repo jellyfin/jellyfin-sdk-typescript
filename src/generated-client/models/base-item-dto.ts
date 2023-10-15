@@ -134,6 +134,12 @@ export interface BaseItemDto {
      * @type {boolean}
      * @memberof BaseItemDto
      */
+    'HasLyrics'?: boolean | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof BaseItemDto
+     */
     'HasSubtitles'?: boolean | null;
     /**
      * 
@@ -388,13 +394,13 @@ export interface BaseItemDto {
      */
     'GenreItems'?: Array<NameGuidPair> | null;
     /**
-     * Gets or sets wether the item has a logo, this will hold the Id of the Parent that has one.
+     * Gets or sets whether the item has a logo, this will hold the Id of the Parent that has one.
      * @type {string}
      * @memberof BaseItemDto
      */
     'ParentLogoItemId'?: string | null;
     /**
-     * Gets or sets wether the item has any backdrops, this will hold the Id of the Parent that has one.
+     * Gets or sets whether the item has any backdrops, this will hold the Id of the Parent that has one.
      * @type {string}
      * @memberof BaseItemDto
      */
@@ -604,7 +610,7 @@ export interface BaseItemDto {
      */
     'ParentLogoImageTag'?: string | null;
     /**
-     * Gets or sets wether the item has fan art, this will hold the Id of the Parent that has one.
+     * Gets or sets whether the item has fan art, this will hold the Id of the Parent that has one.
      * @type {string}
      * @memberof BaseItemDto
      */
@@ -939,6 +945,12 @@ export interface BaseItemDto {
      * @memberof BaseItemDto
      */
     'TimerId'?: string | null;
+    /**
+     * Gets or sets the LUFS value.
+     * @type {number}
+     * @memberof BaseItemDto
+     */
+    'LUFS'?: number | null;
     /**
      * 
      * @type {BaseItemDto}
