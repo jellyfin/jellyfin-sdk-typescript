@@ -41,6 +41,12 @@ export interface UserPolicy {
      */
     'EnableCollectionManagement'?: boolean;
     /**
+     * Gets or sets a value indicating whether this instance can manage subtitles.
+     * @type {boolean}
+     * @memberof UserPolicy
+     */
+    'EnableSubtitleManagement'?: boolean;
+    /**
      * Gets or sets a value indicating whether this instance is disabled.
      * @type {boolean}
      * @memberof UserPolicy
