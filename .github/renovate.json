@@ -1,7 +1,14 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>jellyfin/.github//renovate-presets/nodejs",
-    ":semanticCommitsDisabled"
+    "github>jellyfin/.github//renovate-presets/nodejs"
+  ],
+  "packageRules": [
+    {
+      "enabled": true,
+      "matchDepTypes": [
+        "peerDependencies"
+      ]
+    }
   ]
 }
