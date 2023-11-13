@@ -12,6 +12,10 @@ import { ImageType } from './generated-client/models/image-type';
 import type { ClientInfo, DeviceInfo } from './models';
 import type { ImageRequestParameters } from './models/api/image-request-parameters';
 import { getAuthorizationHeader } from './utils';
+import { getImageApi } from './utils/api/image-api';
+// NOTE: This import is used for TSDoc
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+import type { ImageUrlsApi } from './utils/api/image-urls-api';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 
@@ -78,6 +82,7 @@ export class Api {
 
 	/**
 	 * Get an item image URL.
+	 * @deprecated Use {@link ImageUrlsApi.getItemImageUrlById} instead.
 	 * @param itemId The Item ID.
 	 * @param imageType An optional Image Type (Primary by default).
 	 * @param params Additional request parameters.
@@ -88,10 +93,12 @@ export class Api {
 		imageType: ImageType = ImageType.Primary,
 		params: ImageRequestParameters = {}
 	): string | undefined {
-		// TODO: We could probably use ImageApiAxiosParamCreator to make this more robust
-		return globalInstance.create({
-			baseURL: this.basePath
-		}).getUri({ url: `/Items/${itemId}/Images/${imageType}`, params });
+		return getImageApi(this)
+			.getItemImageUrlById(
+				itemId,
+				imageType,
+				params
+			);
 	}
 
 	get authorizationHeader(): string {
