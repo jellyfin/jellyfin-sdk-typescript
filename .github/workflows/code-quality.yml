@@ -1,5 +1,9 @@
 name: Code quality
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
 on:
   push:
     branches: [ master ]
@@ -48,35 +52,3 @@ jobs:
 
       - name: Run TypeScript build
         run: npx tsc --noEmit
-
-  jest:
-    name: Test
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Check out Git repository
-        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
-
-      - name: Set up Node.js
-        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
-        with:
-          node-version: 16
-          check-latest: true
-          cache: npm
-
-      - name: Install Node.js dependencies
-        run: npm ci --no-audit
-
-      - name: Run jest
-        run: npx jest --coverage --group=unit
-
-      - name: SonarCloud scan
-        if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
-        uses: SonarSource/sonarcloud-github-action@c25d2e7e3def96d0d1781000d3c429da22cd6252 # v2.0.2
-        env:
-          GITHUB_TOKEN: ${{ secrets.JF_BOT_TOKEN }}
-          SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-
-      - name: Upload coverage
-        if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
-        uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
