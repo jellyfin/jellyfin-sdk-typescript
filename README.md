@@ -10,8 +10,8 @@
 <a href="https://github.com/jellyfin/jellyfin-sdk-typescript/blob/master/LICENSE"><img alt="MPL-2.0 license" src="https://img.shields.io/github/license/jellyfin/jellyfin-sdk-typescript"></a>
 <a href="https://github.com/jellyfin/jellyfin-sdk-typescript/releases"><img alt="Current Release" src="https://img.shields.io/github/release/jellyfin/jellyfin-sdk-typescript.svg"/></a>
 <a href="https://www.npmjs.com/package/@jellyfin/sdk"><img alt="npm" src="https://img.shields.io/npm/v/@jellyfin/sdk"></a>
-<a href="https://codecov.io/gh/jellyfin/jellyfin-sdk-typescript">
-<img alt="Codecov" src="https://img.shields.io/codecov/c/github/jellyfin/jellyfin-sdk-typescript?token=eFF0jvWiyq">
+<a href="https://sonarcloud.io/component_measures?metric=coverage&id=jellyfin_jellyfin-sdk-typescript">
+<img alt="Sonar Coverage" src="https://img.shields.io/sonar/coverage/jellyfin_jellyfin-sdk-typescript/master?server=https%3A%2F%2Fsonarcloud.io">
 </a>
 </p>
 
