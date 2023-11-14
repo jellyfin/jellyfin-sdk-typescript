@@ -48,7 +48,3 @@ jobs:
             -Dsonar.pullrequest.key=${{ github.event.pull_request.number }}
             -Dsonar.pullrequest.branch=${{ github.event.pull_request.head.ref }}
             -Dsonar.pullrequest.base=${{ github.event.pull_request.base.ref }}
-
-      - name: Upload coverage
-        if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
-        uses: codecov/codecov-action@eaaf4bedf32dbdc6b720b63067d99c4d77d6047d # v3.1.4
