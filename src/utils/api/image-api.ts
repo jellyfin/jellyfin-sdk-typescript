@@ -5,8 +5,9 @@
  */
 
 import type { Api } from '../../api';
-import { ImageApi } from '../../generated-client/api/image-api';
 
-export function getImageApi(api: Api): ImageApi {
-	return new ImageApi(api.configuration, undefined, api.axiosInstance);
+import { ImageUrlsApi } from './image-urls-api';
+
+export function getImageApi(api: Api): ImageUrlsApi {
+	return new ImageUrlsApi(api.configuration, undefined, api.axiosInstance);
 }
