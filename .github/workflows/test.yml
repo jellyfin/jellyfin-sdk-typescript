@@ -22,7 +22,7 @@ jobs:
           ref: ${{ github.event.pull_request.head.sha }}
 
       - name: Set up Node.js
-        uses: actions/setup-node@8f152de45cc393bb48ce5d89d36b731f54556e65 # v4.0.0
+        uses: actions/setup-node@b39b52d1213e96004bfcb1c61a8a6fa8ab84f3e8 # v4.0.1
         with:
           node-version: 16
           check-latest: true
@@ -36,7 +36,7 @@ jobs:
 
       - name: SonarCloud scan
         if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
-        uses: SonarSource/sonarcloud-github-action@c25d2e7e3def96d0d1781000d3c429da22cd6252 # v2.0.2
+        uses: SonarSource/sonarcloud-github-action@49e6cd3b187936a73b8280d59ffd9da69df63ec9 # v2.1.1
         env:
           GITHUB_TOKEN: ${{ secrets.JF_BOT_TOKEN }}
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
