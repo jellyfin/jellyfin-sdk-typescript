@@ -19,7 +19,7 @@ openapi-templates
 .eslintignore
 .eslintrc.cjs
 codecov.yml
-jest.config.cjs
+vitest.config.ts
 rollup.config.js
 sonar-project.properties
 .sonarcloud.properties
