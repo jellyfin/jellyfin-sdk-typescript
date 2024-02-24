@@ -19,8 +19,8 @@ vi.mock('axios', async () => {
 			getUri: actual.getUri,
 			request: vi.fn()
 		}
-	}
-})
+	};
+});
 const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
 
 /**
