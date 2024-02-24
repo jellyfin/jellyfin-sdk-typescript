@@ -4,6 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
+import { it, expect, describe } from 'vitest';
+
 import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 
 import { Jellyfin } from '../jellyfin';

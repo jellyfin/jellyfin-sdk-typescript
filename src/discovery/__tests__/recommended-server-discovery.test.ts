@@ -5,6 +5,7 @@
  */
 
 import axios from 'axios';
+import { vi, it, expect, describe } from 'vitest';
 
 import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { itIf } from '../../__helpers__/it-if';
@@ -15,8 +16,7 @@ import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIss
 import { API_VERSION, MINIMUM_VERSION } from '../../versions';
 import { RecommendedServerDiscovery } from '../recommended-server-discovery';
 
-jest.mock('axios');
-const mockAxios = jest.mocked(axios, { shallow: false });
+vi.mock('axios');
 
 const ADDRESS = 'https://example.com';
 const PRODUCT_NAME = 'Jellyfin Server';
@@ -39,7 +39,8 @@ describe('RecommendedServerDiscovery', () => {
 				ProductName: PRODUCT_NAME
 			};
 
-			mockAxios.request.mockResolvedValueOnce({ data: systemInfo });
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy.mockResolvedValueOnce({ data: systemInfo });
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
 
 			expect(info.address).toBe(ADDRESS);
@@ -55,7 +56,8 @@ describe('RecommendedServerDiscovery', () => {
 				ProductName: 'Invalid Server'
 			};
 
-			mockAxios.request.mockResolvedValueOnce({ data: systemInfo });
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy.mockResolvedValueOnce({ data: systemInfo });
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
 
 			expect(info.address).toBe(ADDRESS);
@@ -68,7 +70,6 @@ describe('RecommendedServerDiscovery', () => {
 			expect(info.systemInfo).toBe(systemInfo);
 		});
 
-		/* eslint-disable jest/no-standalone-expect */
 		// NOTE: This test will only work if API_VERSION and MINIMUM_VERSION are not the same!
 		itIf(API_VERSION.toString() !== MINIMUM_VERSION.toString(), 'should return an issue for outdated versions', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);
@@ -77,7 +78,8 @@ describe('RecommendedServerDiscovery', () => {
 				ProductName: PRODUCT_NAME
 			};
 
-			mockAxios.request.mockResolvedValueOnce({ data: systemInfo });
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy.mockResolvedValueOnce({ data: systemInfo });
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
 
 			expect(info.address).toBe(ADDRESS);
@@ -87,7 +89,6 @@ describe('RecommendedServerDiscovery', () => {
 			expect(info.score).toBe(RecommendedServerInfoScore.GOOD);
 			expect(info.systemInfo).toBe(systemInfo);
 		});
-		/* eslint-enable jest/no-standalone-expect */
 
 		it('should return an issue for slow responses', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);
@@ -97,11 +98,11 @@ describe('RecommendedServerDiscovery', () => {
 			};
 
 			const now = Date.now();
-			jest.useFakeTimers()
-				.setSystemTime(now);
+			vi.useFakeTimers().setSystemTime(now);
 
-			mockAxios.request.mockImplementationOnce(() => {
-				jest.setSystemTime(now + 3001);
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy.mockImplementationOnce(() => {
+				vi.setSystemTime(now + 3001)
 				return Promise.resolve({ data: systemInfo });
 			});
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
@@ -113,14 +114,15 @@ describe('RecommendedServerDiscovery', () => {
 			expect(info.score).toBe(RecommendedServerInfoScore.GOOD);
 			expect(info.systemInfo).toBe(systemInfo);
 
-			jest.useRealTimers();
+			vi.useRealTimers();
 		});
 
 		it('should return an issue for failed requests', async () => {
 			const serverDiscovery = new RecommendedServerDiscovery(SDK_INSTANCE);
 			const error = 'Error';
 
-			mockAxios.request.mockRejectedValueOnce(error);
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy.mockRejectedValueOnce(error);
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
 
 			expect(info.address).toBe(ADDRESS);
@@ -141,7 +143,8 @@ describe('RecommendedServerDiscovery', () => {
 				ProductName: PRODUCT_NAME
 			};
 
-			mockAxios.request
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy
 				.mockResolvedValueOnce({ data: systemInfo })
 				.mockRejectedValueOnce('Error');
 
@@ -157,7 +160,8 @@ describe('RecommendedServerDiscovery', () => {
 				ProductName: PRODUCT_NAME
 			};
 
-			mockAxios.request
+			const requestSpy = vi.spyOn(axios, 'request');
+			requestSpy
 				.mockResolvedValueOnce({ data: systemInfo })
 				.mockRejectedValueOnce('Error');
 

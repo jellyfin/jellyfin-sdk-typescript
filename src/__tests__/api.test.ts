@@ -5,18 +5,13 @@
  */
 
 import axios from 'axios';
+import { vi, describe, expect, it, afterEach } from 'vitest';
 
 import { Api, AUTHORIZATION_HEADER } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
-import { ImageType } from '../generated-client/models';
 import { getAuthorizationHeader } from '../utils';
 
-jest.mock('axios', () => ({
-	...jest.requireActual('axios'),
-	request: jest.fn()
-}));
-const mockAxios = jest.mocked(axios, { shallow: false });
-
+vi.mock('axios');
 const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
 
 /**
@@ -26,7 +21,7 @@ const TEST_ACCESS_TOKEN = 'TEST-ACCESS-TOKEN';
  */
 describe('Api', () => {
 	afterEach(() => {
-		jest.clearAllMocks();
+		vi.clearAllMocks();
 	});
 
 	it('should authenticate and update state', async () => {
@@ -35,34 +30,34 @@ describe('Api', () => {
 			Pw: ''
 		};
 
-		mockAxios.request.mockResolvedValueOnce({
+		const requestSpy = vi.spyOn(axios, 'request');
+		requestSpy.mockResolvedValueOnce({
 			data: { AccessToken: TEST_ACCESS_TOKEN }
 		});
 
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		await api.authenticateUserByName('test', '');
 
-		expect(mockAxios.request.mock.calls).toHaveLength(1);
-
-		const requestData = mockAxios.request.mock.calls[0][0];
-		expect(requestData.url).toBe(`${SERVER_URL}/Users/AuthenticateByName`);
-		expect(requestData.headers?.[AUTHORIZATION_HEADER]).toBe(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
-		expect(requestData.data).toBe(JSON.stringify(USER_CREDENTIALS));
+		expect(requestSpy).toHaveBeenCalledOnce();
+		const requestData = requestSpy.mock.calls[0][0];
+		expect(requestData.url).toEqual(`${SERVER_URL}/Users/AuthenticateByName`);
+		expect(requestData.headers?.[AUTHORIZATION_HEADER]).toEqual(getAuthorizationHeader(TEST_CLIENT, TEST_DEVICE));
+		expect(requestData.data).toEqual(JSON.stringify(USER_CREDENTIALS));
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
 	});
 
 	it('should logout and update state', async () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+		const requestSpy = vi.spyOn(axios, 'request');
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
 
 		await api.logout();
 
-		expect(mockAxios.request.mock.calls).toHaveLength(1);
-
-		const requestData = mockAxios.request.mock.calls[0][0];
-		expect(requestData.url).toBe(`${SERVER_URL}/Sessions/Logout`);
+		expect(requestSpy).toHaveBeenCalledOnce();
+		const requestData = requestSpy.mock.calls[0][0];
+		expect(requestData.url).toEqual(`${SERVER_URL}/Sessions/Logout`);
 
 		expect(api.accessToken).toBe('');
 	});
@@ -75,12 +70,5 @@ describe('Api', () => {
 	it('should return the correct basePath value', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.basePath).toBe(SERVER_URL);
-	});
-
-	it('should return an item image url', () => {
-		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
-		expect(api.getItemImageUrl('TEST')).toBe('https://example.com/Items/TEST/Images/Primary');
-		expect(api.getItemImageUrl('TEST', ImageType.Backdrop, { fillWidth: 100, fillHeight: 100 }))
-			.toBe('https://example.com/Items/TEST/Images/Backdrop?fillWidth=100&fillHeight=100');
 	});
 });

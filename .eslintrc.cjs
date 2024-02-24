@@ -3,7 +3,8 @@ module.exports = {
 	parser: '@typescript-eslint/parser',
 	plugins: [
 		'@typescript-eslint',
-		'import'
+		'import',
+		'vitest'
 	],
 	env: {
 		node: true
@@ -66,20 +67,18 @@ module.exports = {
 		},
 		{
 			files: [ './**/*.test.ts' ],
-			plugins: [ 'jest' ],
+			plugins: [ 'vitest' ],
 			env: {
-				node: false,
+				node: true,
 				browser: false,
-				'jest/globals': true
 			},
 			extends: [
-				'plugin:jest/recommended',
-				'plugin:jest/style'
+				'plugin:vitest/recommended'
 			],
 			rules: {
-				'jest/consistent-test-it': [ 'error' ],
-				'jest/prefer-lowercase-title': [ 'error', { 'ignoreTopLevelDescribe': true } ],
-				'jest/require-top-level-describe': [ 'error' ]
+				'vitest/consistent-test-it': [ 'error' ],
+				'vitest/prefer-lowercase-title': [ 'error', { 'ignoreTopLevelDescribe': true } ],
+				'vitest/require-top-level-describe': [ 'error' ]
 			}
 		}
 	]

@@ -6,7 +6,8 @@
     "moduleResolution": "Node",
     "declaration": true,
     "noImplicitAny": true,
-    "outDir": "lib"
+    "outDir": "lib",
+    "types": ["vitest/globals"]
   },
   "typedocOptions": {
     "entryPoints": [
