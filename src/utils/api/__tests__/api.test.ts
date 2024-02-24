@@ -3,6 +3,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
+import { describe, it, expect } from 'vitest';
 
 import { getActivityLogApi, getApiKeyApi, getArtistsApi, getAudioApi, getBrandingApi, getChannelsApi, getClientLogApi, getCollectionApi, getConfigurationApi, getDashboardApi, getDevicesApi, getDisplayPreferencesApi, getDlnaApi, getDlnaServerApi, getDynamicHlsApi, getEnvironmentApi, getFilterApi, getGenresApi, getHlsSegmentApi, getImageApi, getImageByNameApi, getInstantMixApi, getItemLookupApi, getItemRefreshApi, getItemUpdateApi, getItemsApi, getLibraryApi, getLibraryStructureApi, getLiveTvApi, getLocalizationApi, getMediaInfoApi, getMoviesApi, getMusicGenresApi, getNotificationsApi, getPackageApi, getPersonsApi, getPlaylistsApi, getPlaystateApi, getPluginsApi, getQuickConnectApi, getRemoteImageApi, getScheduledTasksApi, getSearchApi, getSessionApi, getStartupApi, getStudiosApi, getSubtitleApi, getSuggestionsApi, getSyncPlayApi, getSystemApi, getTimeSyncApi, getTmdbApi, getTrailersApi, getTvShowsApi, getUniversalAudioApi, getUserApi, getUserLibraryApi, getUserViewsApi, getVideoAttachmentsApi, getVideosApi, getYearsApi } from '..';
 

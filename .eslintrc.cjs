@@ -70,7 +70,7 @@ module.exports = {
 			plugins: [ 'vitest' ],
 			env: {
 				node: true,
-				browser: false,
+				browser: false
 			},
 			extends: [
 				'plugin:vitest/recommended'
