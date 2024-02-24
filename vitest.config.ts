@@ -7,7 +7,8 @@ export default defineConfig({
 	test: {
 		environment: 'node',
 		coverage: {
-			exclude: ['__helpers__', 'generated-client']
+			include: ['src'],
+			exclude: ['**/__helpers__/**', '**/generated-client/**']
 		}
 	}
 });
