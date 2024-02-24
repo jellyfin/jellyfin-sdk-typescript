@@ -102,7 +102,7 @@ describe('RecommendedServerDiscovery', () => {
 
 			const requestSpy = vi.spyOn(axios, 'request');
 			requestSpy.mockImplementationOnce(() => {
-				vi.setSystemTime(now + 3001)
+				vi.setSystemTime(now + 3001);
 				return Promise.resolve({ data: systemInfo });
 			});
 			const info = await serverDiscovery.fetchRecommendedServerInfo(ADDRESS);
