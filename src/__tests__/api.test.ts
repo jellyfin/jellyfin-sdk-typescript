@@ -82,7 +82,6 @@ describe('Api', () => {
 	});
 
 	it('should return an item image url', () => {
-		vi.restoreAllMocks();
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.getItemImageUrl('TEST')).toBe('https://example.com/Items/TEST/Images/Primary');
 		expect(api.getItemImageUrl('TEST', ImageType.Backdrop, { fillWidth: 100, fillHeight: 100 }))
