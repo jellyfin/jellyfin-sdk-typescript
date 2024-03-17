@@ -4,19 +4,20 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
+import { vi, describe, it, expect, afterEach } from 'vitest';
 
+import { TEST_CLIENT, TEST_DEVICE } from '../../__helpers__/common';
 import { Jellyfin } from '../../jellyfin';
 import { RecommendedServerInfoScore } from '../../models/recommended-server-info';
 import { getAddressCandidates } from '../../utils/address-candidates';
 import { DiscoveryService } from '../discovery-service';
 import { RecommendedServerDiscovery } from '../recommended-server-discovery';
 
-jest.mock('../../utils/address-candidates');
-const mockGetAddressCandidates = jest.mocked(getAddressCandidates);
+vi.mock('../../utils/address-candidates');
+const mockGetAddressCandidates = vi.mocked(getAddressCandidates);
 
-jest.mock('../recommended-server-discovery');
-const mockRecommendedServerDiscovery = jest.mocked(RecommendedServerDiscovery);
+vi.mock('../recommended-server-discovery');
+const mockRecommendedServerDiscovery = vi.mocked(RecommendedServerDiscovery);
 
 const TEST_URLS = [
 	'https://example.com',
@@ -30,7 +31,7 @@ const TEST_URLS = [
  */
 describe('DiscoveryService', () => {
 	afterEach(() => {
-		jest.clearAllMocks();
+		vi.clearAllMocks();
 	});
 
 	describe('findBestServer()', () => {
