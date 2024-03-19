@@ -8,7 +8,8 @@ export default defineConfig({
 		environment: 'node',
 		coverage: {
 			include: ['src'],
-			exclude: ['**/__helpers__/**', '**/generated-client/**']
+			exclude: ['**/__helpers__/**', '**/generated-client/**'],
+			reporter: [ 'text', 'html', 'lcov', 'json' ]
 		}
 	}
 });
