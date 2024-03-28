@@ -14,6 +14,7 @@
 
 import { BaseItemDto } from './base-item-dto';
 import { PlayMethod } from './play-method';
+import { PlaybackOrder } from './playback-order';
 import { QueueItem } from './queue-item';
 import { RepeatMode } from './repeat-mode';
 
@@ -131,6 +132,12 @@ export interface PlaybackProgressInfo {
      * @memberof PlaybackProgressInfo
      */
     'RepeatMode'?: RepeatMode;
+    /**
+     * 
+     * @type {PlaybackOrder}
+     * @memberof PlaybackProgressInfo
+     */
+    'PlaybackOrder'?: PlaybackOrder;
     /**
      * 
      * @type {Array<QueueItem>}

@@ -61,7 +61,8 @@ export const GeneralCommandType = {
     PlayNext: 'PlayNext',
     ToggleOsdMenu: 'ToggleOsdMenu',
     Play: 'Play',
-    SetMaxStreamingBitrate: 'SetMaxStreamingBitrate'
+    SetMaxStreamingBitrate: 'SetMaxStreamingBitrate',
+    SetPlaybackOrder: 'SetPlaybackOrder'
 } as const;
 
 export type GeneralCommandType = typeof GeneralCommandType[keyof typeof GeneralCommandType];

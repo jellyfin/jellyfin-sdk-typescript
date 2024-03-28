@@ -30,7 +30,11 @@ import { ItemFields } from '../models';
 // @ts-ignore
 import { ItemFilter } from '../models';
 // @ts-ignore
+import { ItemSortBy } from '../models';
+// @ts-ignore
 import { LocationType } from '../models';
+// @ts-ignore
+import { MediaType } from '../models';
 // @ts-ignore
 import { SeriesStatus } from '../models';
 // @ts-ignore
@@ -46,7 +50,7 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -69,9 +73,9 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -82,15 +86,15 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<ImageType>} [imageTypes] Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {boolean} [isPlayed] Optional filter by items that are played, or not.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -133,7 +137,7 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrailers: async (userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, imageTypes?: Array<ImageType>, sortBy?: Array<string>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getTrailers: async (userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Trailers`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -517,7 +521,7 @@ export const TrailersApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -540,9 +544,9 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -553,15 +557,15 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<ImageType>} [imageTypes] Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {boolean} [isPlayed] Optional filter by items that are played, or not.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -604,7 +608,7 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, imageTypes?: Array<ImageType>, sortBy?: Array<string>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTrailers(userId, maxOfficialRating, hasThemeSong, hasThemeVideo, hasSubtitles, hasSpecialFeature, hasTrailer, adjacentTo, parentIndexNumber, hasParentalRating, isHd, is4K, locationTypes, excludeLocationTypes, isMissing, isUnaired, minCommunityRating, minCriticRating, minPremiereDate, minDateLastSaved, minDateLastSavedForUser, maxPremiereDate, hasOverview, hasImdbId, hasTmdbId, hasTvdbId, isMovie, isSeries, isNews, isKids, isSports, excludeItemIds, startIndex, limit, recursive, searchTerm, sortOrder, parentId, fields, excludeItemTypes, filters, isFavorite, mediaTypes, imageTypes, sortBy, isPlayed, genres, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, artists, excludeArtistIds, artistIds, albumArtistIds, contributingArtistIds, albums, albumIds, ids, videoTypes, minOfficialRating, isLocked, isPlaceHolder, hasOfficialRating, collapseBoxSetItems, minWidth, minHeight, maxWidth, maxHeight, is3D, seriesStatus, nameStartsWithOrGreater, nameStartsWith, nameLessThan, studioIds, genreIds, enableTotalRecordCount, enableImages, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -621,7 +625,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {string} [userId] The user id.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
          * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
          * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
          * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
@@ -644,9 +648,9 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
          * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
          * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
          * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
-         * @param {boolean} [hasImdbId] Optional filter by items that have an imdb id or not.
-         * @param {boolean} [hasTmdbId] Optional filter by items that have a tmdb id or not.
-         * @param {boolean} [hasTvdbId] Optional filter by items that have a tvdb id or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
          * @param {boolean} [isMovie] Optional filter for live tv movies.
          * @param {boolean} [isSeries] Optional filter for live tv series.
          * @param {boolean} [isNews] Optional filter for live tv news.
@@ -657,15 +661,15 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
          * @param {string} [searchTerm] Optional. Filter based on a search term.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<ImageType>} [imageTypes] Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {boolean} [isPlayed] Optional filter by items that are played, or not.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -708,7 +712,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, imageTypes?: Array<ImageType>, sortBy?: Array<string>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getTrailers(userId, maxOfficialRating, hasThemeSong, hasThemeVideo, hasSubtitles, hasSpecialFeature, hasTrailer, adjacentTo, parentIndexNumber, hasParentalRating, isHd, is4K, locationTypes, excludeLocationTypes, isMissing, isUnaired, minCommunityRating, minCriticRating, minPremiereDate, minDateLastSaved, minDateLastSavedForUser, maxPremiereDate, hasOverview, hasImdbId, hasTmdbId, hasTvdbId, isMovie, isSeries, isNews, isKids, isSports, excludeItemIds, startIndex, limit, recursive, searchTerm, sortOrder, parentId, fields, excludeItemTypes, filters, isFavorite, mediaTypes, imageTypes, sortBy, isPlayed, genres, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, artists, excludeArtistIds, artistIds, albumArtistIds, contributingArtistIds, albums, albumIds, ids, videoTypes, minOfficialRating, isLocked, isPlaceHolder, hasOfficialRating, collapseBoxSetItems, minWidth, minHeight, maxWidth, maxHeight, is3D, seriesStatus, nameStartsWithOrGreater, nameStartsWith, nameLessThan, studioIds, genreIds, enableTotalRecordCount, enableImages, options).then((request) => request(axios, basePath));
         },
     };
@@ -721,7 +725,7 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
  */
 export interface TrailersApiGetTrailersRequest {
     /**
-     * The user id.
+     * The user id supplied as query parameter; this is required when not using an API key.
      * @type {string}
      * @memberof TrailersApiGetTrailers
      */
@@ -882,21 +886,21 @@ export interface TrailersApiGetTrailersRequest {
     readonly hasOverview?: boolean
 
     /**
-     * Optional filter by items that have an imdb id or not.
+     * Optional filter by items that have an IMDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
     readonly hasImdbId?: boolean
 
     /**
-     * Optional filter by items that have a tmdb id or not.
+     * Optional filter by items that have a TMDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
     readonly hasTmdbId?: boolean
 
     /**
-     * Optional filter by items that have a tvdb id or not.
+     * Optional filter by items that have a TVDb id or not.
      * @type {boolean}
      * @memberof TrailersApiGetTrailers
      */
@@ -973,7 +977,7 @@ export interface TrailersApiGetTrailersRequest {
     readonly searchTerm?: string
 
     /**
-     * Sort Order - Ascending,Descending.
+     * Sort Order - Ascending, Descending.
      * @type {Array<SortOrder>}
      * @memberof TrailersApiGetTrailers
      */
@@ -1016,10 +1020,10 @@ export interface TrailersApiGetTrailersRequest {
 
     /**
      * Optional filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof TrailersApiGetTrailers
      */
-    readonly mediaTypes?: Array<string>
+    readonly mediaTypes?: Array<MediaType>
 
     /**
      * Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
@@ -1030,10 +1034,10 @@ export interface TrailersApiGetTrailersRequest {
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof TrailersApiGetTrailers
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional filter by items that are played, or not.

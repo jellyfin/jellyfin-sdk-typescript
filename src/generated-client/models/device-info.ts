@@ -27,6 +27,12 @@ export interface DeviceInfo {
      */
     'Name'?: string | null;
     /**
+     * 
+     * @type {string}
+     * @memberof DeviceInfo
+     */
+    'CustomName'?: string | null;
+    /**
      * Gets or sets the access token.
      * @type {string}
      * @memberof DeviceInfo

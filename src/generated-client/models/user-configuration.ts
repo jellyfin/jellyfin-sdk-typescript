@@ -110,5 +110,11 @@ export interface UserConfiguration {
      * @memberof UserConfiguration
      */
     'EnableNextEpisodeAutoPlay'?: boolean;
+    /**
+     * Gets or sets the id of the selected cast receiver.
+     * @type {string}
+     * @memberof UserConfiguration
+     */
+    'CastReceiverId'?: string | null;
 }
 

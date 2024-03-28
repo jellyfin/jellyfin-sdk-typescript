@@ -12,11 +12,14 @@
  */
 
 
+import { CastReceiverApplication } from './cast-receiver-application';
+import { ImageResolution } from './image-resolution';
 import { ImageSavingConvention } from './image-saving-convention';
 import { MetadataOptions } from './metadata-options';
 import { NameValuePair } from './name-value-pair';
 import { PathSubstitution } from './path-substitution';
 import { RepositoryInfo } from './repository-info';
+import { TrickplayOptions } from './trickplay-options';
 
 /**
  * Represents the server configuration.
@@ -163,11 +166,23 @@ export interface ServerConfiguration {
      */
     'MaxAudiobookResume'?: number;
     /**
+     * Gets or sets the threshold in minutes after a inactive session gets closed automatically.  If set to 0 the check for inactive sessions gets disabled.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'InactiveSessionThreshold'?: number;
+    /**
      * Gets or sets the delay in seconds that we will wait after a file system change to try and discover what has been added/removed  Some delay is necessary with some items because their creation is not atomic.  It involves the creation of several  different directories and files.
      * @type {number}
      * @memberof ServerConfiguration
      */
     'LibraryMonitorDelay'?: number;
+    /**
+     * Gets or sets the duration in seconds that we will wait after a library updated event before executing the library changed notification.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'LibraryUpdateDuration'?: number;
     /**
      * 
      * @type {ImageSavingConvention}
@@ -312,5 +327,35 @@ export interface ServerConfiguration {
      * @memberof ServerConfiguration
      */
     'AllowClientLogUpload'?: boolean;
+    /**
+     * Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation alltogether.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'DummyChapterDuration'?: number;
+    /**
+     * 
+     * @type {ImageResolution}
+     * @memberof ServerConfiguration
+     */
+    'ChapterImageResolution'?: ImageResolution;
+    /**
+     * Gets or sets the limit for parallel image encoding.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'ParallelImageEncodingLimit'?: number;
+    /**
+     * Gets or sets the list of cast receiver applications.
+     * @type {Array<CastReceiverApplication>}
+     * @memberof ServerConfiguration
+     */
+    'CastReceiverApplications'?: Array<CastReceiverApplication>;
+    /**
+     * 
+     * @type {TrickplayOptions}
+     * @memberof ServerConfiguration
+     */
+    'TrickplayOptions'?: TrickplayOptions;
 }
 

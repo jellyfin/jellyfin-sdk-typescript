@@ -80,11 +80,5 @@ export interface BaseItem {
      * @memberof BaseItem
      */
     'RemoteTrailers'?: Array<MediaUrl> | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof BaseItem
-     */
-    'SupportsExternalTransfer'?: boolean;
 }
 

@@ -28,6 +28,8 @@ import { GeneralCommand } from '../models';
 // @ts-ignore
 import { GeneralCommandType } from '../models';
 // @ts-ignore
+import { MediaType } from '../models';
+// @ts-ignore
 import { MessageCommand } from '../models';
 // @ts-ignore
 import { NameIdPair } from '../models';
@@ -336,15 +338,14 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Updates capabilities for a device.
          * @param {string} [id] The session id.
-         * @param {Array<string>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
+         * @param {Array<MediaType>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
          * @param {Array<GeneralCommandType>} [supportedCommands] A list of supported remote control commands, comma delimited.
          * @param {boolean} [supportsMediaControl] Determines whether media can be played remotely..
-         * @param {boolean} [supportsSync] Determines whether sync is supported.
          * @param {boolean} [supportsPersistentIdentifier] Determines whether the device supports a unique identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCapabilities: async (id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postCapabilities: async (id?: string, playableMediaTypes?: Array<MediaType>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsPersistentIdentifier?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Capabilities`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -374,10 +375,6 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
             if (supportsMediaControl !== undefined) {
                 localVarQueryParameter['supportsMediaControl'] = supportsMediaControl;
-            }
-
-            if (supportsSync !== undefined) {
-                localVarQueryParameter['supportsSync'] = supportsSync;
             }
 
             if (supportsPersistentIdentifier !== undefined) {
@@ -868,16 +865,15 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * 
          * @summary Updates capabilities for a device.
          * @param {string} [id] The session id.
-         * @param {Array<string>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
+         * @param {Array<MediaType>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
          * @param {Array<GeneralCommandType>} [supportedCommands] A list of supported remote control commands, comma delimited.
          * @param {boolean} [supportsMediaControl] Determines whether media can be played remotely..
-         * @param {boolean} [supportsSync] Determines whether sync is supported.
          * @param {boolean} [supportsPersistentIdentifier] Determines whether the device supports a unique identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postCapabilities(id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsSync, supportsPersistentIdentifier, options);
+        async postCapabilities(id?: string, playableMediaTypes?: Array<MediaType>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsPersistentIdentifier?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsPersistentIdentifier, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -1073,16 +1069,15 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Updates capabilities for a device.
          * @param {string} [id] The session id.
-         * @param {Array<string>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
+         * @param {Array<MediaType>} [playableMediaTypes] A list of playable media types, comma delimited. Audio, Video, Book, Photo.
          * @param {Array<GeneralCommandType>} [supportedCommands] A list of supported remote control commands, comma delimited.
          * @param {boolean} [supportsMediaControl] Determines whether media can be played remotely..
-         * @param {boolean} [supportsSync] Determines whether sync is supported.
          * @param {boolean} [supportsPersistentIdentifier] Determines whether the device supports a unique identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postCapabilities(id?: string, playableMediaTypes?: Array<string>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsSync?: boolean, supportsPersistentIdentifier?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsSync, supportsPersistentIdentifier, options).then((request) => request(axios, basePath));
+        postCapabilities(id?: string, playableMediaTypes?: Array<MediaType>, supportedCommands?: Array<GeneralCommandType>, supportsMediaControl?: boolean, supportsPersistentIdentifier?: boolean, options?: any): AxiosPromise<void> {
+            return localVarFp.postCapabilities(id, playableMediaTypes, supportedCommands, supportsMediaControl, supportsPersistentIdentifier, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1348,10 +1343,10 @@ export interface SessionApiPostCapabilitiesRequest {
 
     /**
      * A list of playable media types, comma delimited. Audio, Video, Book, Photo.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof SessionApiPostCapabilities
      */
-    readonly playableMediaTypes?: Array<string>
+    readonly playableMediaTypes?: Array<MediaType>
 
     /**
      * A list of supported remote control commands, comma delimited.
@@ -1366,13 +1361,6 @@ export interface SessionApiPostCapabilitiesRequest {
      * @memberof SessionApiPostCapabilities
      */
     readonly supportsMediaControl?: boolean
-
-    /**
-     * Determines whether sync is supported.
-     * @type {boolean}
-     * @memberof SessionApiPostCapabilities
-     */
-    readonly supportsSync?: boolean
 
     /**
      * Determines whether the device supports a unique identifier.
@@ -1650,7 +1638,7 @@ export class SessionApi extends BaseAPI {
      * @memberof SessionApi
      */
     public postCapabilities(requestParameters: SessionApiPostCapabilitiesRequest = {}, options?: AxiosRequestConfig) {
-        return SessionApiFp(this.configuration).postCapabilities(requestParameters.id, requestParameters.playableMediaTypes, requestParameters.supportedCommands, requestParameters.supportsMediaControl, requestParameters.supportsSync, requestParameters.supportsPersistentIdentifier, options).then((request) => request(this.axios, this.basePath));
+        return SessionApiFp(this.configuration).postCapabilities(requestParameters.id, requestParameters.playableMediaTypes, requestParameters.supportedCommands, requestParameters.supportsMediaControl, requestParameters.supportsPersistentIdentifier, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

@@ -24,7 +24,8 @@ export const ImageFormat = {
     Gif: 'Gif',
     Jpg: 'Jpg',
     Png: 'Png',
-    Webp: 'Webp'
+    Webp: 'Webp',
+    Svg: 'Svg'
 } as const;
 
 export type ImageFormat = typeof ImageFormat[keyof typeof ImageFormat];

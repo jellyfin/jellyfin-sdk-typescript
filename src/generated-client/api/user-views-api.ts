@@ -22,6 +22,8 @@ import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } fr
 // @ts-ignore
 import { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
+import { CollectionType } from '../models';
+// @ts-ignore
 import { ProblemDetails } from '../models';
 // @ts-ignore
 import { SpecialViewOptionDto } from '../models';
@@ -34,15 +36,12 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Get user view grouping options.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGroupingOptions: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getGroupingOptions', 'userId', userId)
-            const localVarPath = `/Users/{userId}/GroupingOptions`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+        getGroupingOptions: async (userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/UserViews/GroupingOptions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -56,6 +55,10 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -71,18 +74,15 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Get user views.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {boolean} [includeExternalContent] Whether or not to include external views such as channels or live tv.
-         * @param {Array<string>} [presetViews] Preset views.
+         * @param {Array<CollectionType>} [presetViews] Preset views.
          * @param {boolean} [includeHidden] Whether or not to include hidden content.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserViews: async (userId: string, includeExternalContent?: boolean, presetViews?: Array<string>, includeHidden?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getUserViews', 'userId', userId)
-            const localVarPath = `/Users/{userId}/Views`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+        getUserViews: async (userId?: string, includeExternalContent?: boolean, presetViews?: Array<CollectionType>, includeHidden?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/UserViews`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -96,6 +96,10 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
             if (includeExternalContent !== undefined) {
                 localVarQueryParameter['includeExternalContent'] = includeExternalContent;
@@ -133,25 +137,25 @@ export const UserViewsApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Get user view grouping options.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getGroupingOptions(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SpecialViewOptionDto>>> {
+        async getGroupingOptions(userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SpecialViewOptionDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getGroupingOptions(userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Get user views.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {boolean} [includeExternalContent] Whether or not to include external views such as channels or live tv.
-         * @param {Array<string>} [presetViews] Preset views.
+         * @param {Array<CollectionType>} [presetViews] Preset views.
          * @param {boolean} [includeHidden] Whether or not to include hidden content.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUserViews(userId: string, includeExternalContent?: boolean, presetViews?: Array<string>, includeHidden?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getUserViews(userId?: string, includeExternalContent?: boolean, presetViews?: Array<CollectionType>, includeHidden?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUserViews(userId, includeExternalContent, presetViews, includeHidden, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -168,24 +172,24 @@ export const UserViewsApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Get user view grouping options.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGroupingOptions(userId: string, options?: any): AxiosPromise<Array<SpecialViewOptionDto>> {
+        getGroupingOptions(userId?: string, options?: any): AxiosPromise<Array<SpecialViewOptionDto>> {
             return localVarFp.getGroupingOptions(userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get user views.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {boolean} [includeExternalContent] Whether or not to include external views such as channels or live tv.
-         * @param {Array<string>} [presetViews] Preset views.
+         * @param {Array<CollectionType>} [presetViews] Preset views.
          * @param {boolean} [includeHidden] Whether or not to include hidden content.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserViews(userId: string, includeExternalContent?: boolean, presetViews?: Array<string>, includeHidden?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getUserViews(userId?: string, includeExternalContent?: boolean, presetViews?: Array<CollectionType>, includeHidden?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getUserViews(userId, includeExternalContent, presetViews, includeHidden, options).then((request) => request(axios, basePath));
         },
     };
@@ -202,7 +206,7 @@ export interface UserViewsApiGetGroupingOptionsRequest {
      * @type {string}
      * @memberof UserViewsApiGetGroupingOptions
      */
-    readonly userId: string
+    readonly userId?: string
 }
 
 /**
@@ -216,7 +220,7 @@ export interface UserViewsApiGetUserViewsRequest {
      * @type {string}
      * @memberof UserViewsApiGetUserViews
      */
-    readonly userId: string
+    readonly userId?: string
 
     /**
      * Whether or not to include external views such as channels or live tv.
@@ -227,10 +231,10 @@ export interface UserViewsApiGetUserViewsRequest {
 
     /**
      * Preset views.
-     * @type {Array<string>}
+     * @type {Array<CollectionType>}
      * @memberof UserViewsApiGetUserViews
      */
-    readonly presetViews?: Array<string>
+    readonly presetViews?: Array<CollectionType>
 
     /**
      * Whether or not to include hidden content.
@@ -255,7 +259,7 @@ export class UserViewsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserViewsApi
      */
-    public getGroupingOptions(requestParameters: UserViewsApiGetGroupingOptionsRequest, options?: AxiosRequestConfig) {
+    public getGroupingOptions(requestParameters: UserViewsApiGetGroupingOptionsRequest = {}, options?: AxiosRequestConfig) {
         return UserViewsApiFp(this.configuration).getGroupingOptions(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -267,7 +271,7 @@ export class UserViewsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserViewsApi
      */
-    public getUserViews(requestParameters: UserViewsApiGetUserViewsRequest, options?: AxiosRequestConfig) {
+    public getUserViews(requestParameters: UserViewsApiGetUserViewsRequest = {}, options?: AxiosRequestConfig) {
         return UserViewsApiFp(this.configuration).getUserViews(requestParameters.userId, requestParameters.includeExternalContent, requestParameters.presetViews, requestParameters.includeHidden, options).then((request) => request(this.axios, this.basePath));
     }
 }

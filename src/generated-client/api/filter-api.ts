@@ -22,6 +22,8 @@ import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } fr
 // @ts-ignore
 import { BaseItemKind } from '../models';
 // @ts-ignore
+import { MediaType } from '../models';
+// @ts-ignore
 import { QueryFilters } from '../models';
 // @ts-ignore
 import { QueryFiltersLegacy } from '../models';
@@ -120,11 +122,11 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {string} [userId] Optional. User id.
          * @param {string} [parentId] Optional. Parent id.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {Array<string>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFiltersLegacy: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getQueryFiltersLegacy: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Filters`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -203,11 +205,11 @@ export const FilterApiFp = function(configuration?: Configuration) {
          * @param {string} [userId] Optional. User id.
          * @param {string} [parentId] Optional. Parent id.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {Array<string>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFiltersLegacy>> {
+        async getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFiltersLegacy>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getQueryFiltersLegacy(userId, parentId, includeItemTypes, mediaTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -246,11 +248,11 @@ export const FilterApiFactory = function (configuration?: Configuration, basePat
          * @param {string} [userId] Optional. User id.
          * @param {string} [parentId] Optional. Parent id.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {Array<string>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<string>, options?: any): AxiosPromise<QueryFiltersLegacy> {
+        getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options?: any): AxiosPromise<QueryFiltersLegacy> {
             return localVarFp.getQueryFiltersLegacy(userId, parentId, includeItemTypes, mediaTypes, options).then((request) => request(axios, basePath));
         },
     };
@@ -362,10 +364,10 @@ export interface FilterApiGetQueryFiltersLegacyRequest {
 
     /**
      * Optional. Filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof FilterApiGetQueryFiltersLegacy
      */
-    readonly mediaTypes?: Array<string>
+    readonly mediaTypes?: Array<MediaType>
 }
 
 /**

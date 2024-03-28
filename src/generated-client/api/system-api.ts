@@ -24,6 +24,8 @@ import { EndPointInfo } from '../models';
 // @ts-ignore
 import { LogFile } from '../models';
 // @ts-ignore
+import { ProblemDetails } from '../models';
+// @ts-ignore
 import { PublicSystemInfo } from '../models';
 // @ts-ignore
 import { SystemInfo } from '../models';

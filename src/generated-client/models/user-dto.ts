@@ -67,6 +67,7 @@ export interface UserDto {
      * Gets or sets a value indicating whether this instance has configured easy password.
      * @type {boolean}
      * @memberof UserDto
+     * @deprecated
      */
     'HasConfiguredEasyPassword'?: boolean;
     /**

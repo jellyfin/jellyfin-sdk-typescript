@@ -14,6 +14,7 @@
 
 import { DlnaProfileType } from './dlna-profile-type';
 import { EncodingContext } from './encoding-context';
+import { MediaStreamProtocol } from './media-stream-protocol';
 import { ProfileCondition } from './profile-condition';
 import { TranscodeSeekInfo } from './transcode-seek-info';
 
@@ -49,10 +50,10 @@ export interface TranscodingProfile {
     'AudioCodec'?: string;
     /**
      * 
-     * @type {string}
+     * @type {MediaStreamProtocol}
      * @memberof TranscodingProfile
      */
-    'Protocol'?: string;
+    'Protocol'?: MediaStreamProtocol;
     /**
      * 
      * @type {boolean}

@@ -158,12 +158,11 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Get Devices.
-         * @param {boolean} [supportsSync] Gets or sets a value indicating whether [supports synchronize].
          * @param {string} [userId] Gets or sets the user identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDevices: async (supportsSync?: boolean, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getDevices: async (userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Devices`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -178,10 +177,6 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            if (supportsSync !== undefined) {
-                localVarQueryParameter['supportsSync'] = supportsSync;
-            }
 
             if (userId !== undefined) {
                 localVarQueryParameter['userId'] = userId;
@@ -290,13 +285,12 @@ export const DevicesApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Get Devices.
-         * @param {boolean} [supportsSync] Gets or sets a value indicating whether [supports synchronize].
          * @param {string} [userId] Gets or sets the user identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDevices(supportsSync?: boolean, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getDevices(supportsSync, userId, options);
+        async getDevices(userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getDevices(userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -354,13 +348,12 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Get Devices.
-         * @param {boolean} [supportsSync] Gets or sets a value indicating whether [supports synchronize].
          * @param {string} [userId] Gets or sets the user identifier.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDevices(supportsSync?: boolean, userId?: string, options?: any): AxiosPromise<DeviceInfoQueryResult> {
-            return localVarFp.getDevices(supportsSync, userId, options).then((request) => request(axios, basePath));
+        getDevices(userId?: string, options?: any): AxiosPromise<DeviceInfoQueryResult> {
+            return localVarFp.getDevices(userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -424,13 +417,6 @@ export interface DevicesApiGetDeviceOptionsRequest {
  * @interface DevicesApiGetDevicesRequest
  */
 export interface DevicesApiGetDevicesRequest {
-    /**
-     * Gets or sets a value indicating whether [supports synchronize].
-     * @type {boolean}
-     * @memberof DevicesApiGetDevices
-     */
-    readonly supportsSync?: boolean
-
     /**
      * Gets or sets the user identifier.
      * @type {string}
@@ -512,7 +498,7 @@ export class DevicesApi extends BaseAPI {
      * @memberof DevicesApi
      */
     public getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: AxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).getDevices(requestParameters.supportsSync, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+        return DevicesApiFp(this.configuration).getDevices(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

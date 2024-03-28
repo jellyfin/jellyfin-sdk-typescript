@@ -12,6 +12,7 @@
  */
 
 
+import { MediaType } from './media-type';
 
 /**
  * Create new playlist dto.
@@ -38,10 +39,10 @@ export interface CreatePlaylistDto {
      */
     'UserId'?: string | null;
     /**
-     * Gets or sets the media type.
-     * @type {string}
+     * 
+     * @type {MediaType}
      * @memberof CreatePlaylistDto
      */
-    'MediaType'?: string | null;
+    'MediaType'?: MediaType;
 }
 

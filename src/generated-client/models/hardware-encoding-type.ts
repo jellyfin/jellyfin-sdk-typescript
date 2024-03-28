@@ -25,7 +25,8 @@ export const HardwareEncodingType = {
     Nvenc: 'NVENC',
     V4L2M2M: 'V4L2M2M',
     Vaapi: 'VAAPI',
-    VideoToolBox: 'VideoToolBox'
+    VideoToolBox: 'VideoToolBox',
+    Rkmpp: 'RKMPP'
 } as const;
 
 export type HardwareEncodingType = typeof HardwareEncodingType[keyof typeof HardwareEncodingType];

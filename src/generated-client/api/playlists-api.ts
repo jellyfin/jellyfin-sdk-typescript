@@ -28,7 +28,11 @@ import { ImageType } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
 // @ts-ignore
+import { MediaType } from '../models';
+// @ts-ignore
 import { PlaylistCreationResult } from '../models';
+// @ts-ignore
+import { ProblemDetails } from '../models';
 /**
  * PlaylistsApi - axios parameter creator
  * @export
@@ -88,12 +92,12 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Playlists`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -143,7 +147,7 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -154,11 +158,9 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaylistItems: async (playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPlaylistItems: async (playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playlistId' is not null or undefined
             assertParamExists('getPlaylistItems', 'playlistId', playlistId)
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getPlaylistItems', 'userId', userId)
             const localVarPath = `/Playlists/{playlistId}/Items`
                 .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -334,12 +336,12 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
+        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -347,7 +349,7 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -358,7 +360,7 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPlaylistItems(playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getPlaylistItems(playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaylistItems(playlistId, userId, startIndex, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -415,19 +417,19 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: any): AxiosPromise<PlaylistCreationResult> {
+        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options?: any): AxiosPromise<PlaylistCreationResult> {
             return localVarFp.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -438,7 +440,7 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaylistItems(playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getPlaylistItems(playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getPlaylistItems(playlistId, userId, startIndex, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
         /**
@@ -524,10 +526,10 @@ export interface PlaylistsApiCreatePlaylistRequest {
 
     /**
      * The media type.
-     * @type {string}
+     * @type {MediaType}
      * @memberof PlaylistsApiCreatePlaylist
      */
-    readonly mediaType?: string
+    readonly mediaType?: MediaType
 
     /**
      * The create playlist payload.
@@ -555,7 +557,7 @@ export interface PlaylistsApiGetPlaylistItemsRequest {
      * @type {string}
      * @memberof PlaylistsApiGetPlaylistItems
      */
-    readonly userId: string
+    readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.

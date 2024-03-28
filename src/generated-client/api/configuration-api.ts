@@ -178,7 +178,6 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @summary Updates the path to the media encoder.
          * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
         updateMediaEncoderPath: async (mediaEncoderPathDto: MediaEncoderPathDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -313,7 +312,6 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @summary Updates the path to the media encoder.
          * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
         async updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -385,7 +383,6 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
          * @summary Updates the path to the media encoder.
          * @param {MediaEncoderPathDto} mediaEncoderPathDto Media encoder path form body.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
         updateMediaEncoderPath(mediaEncoderPathDto: MediaEncoderPathDto, options?: any): AxiosPromise<void> {
@@ -526,7 +523,6 @@ export class ConfigurationApi extends BaseAPI {
      * @summary Updates the path to the media encoder.
      * @param {ConfigurationApiUpdateMediaEncoderPathRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
-     * @deprecated
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */

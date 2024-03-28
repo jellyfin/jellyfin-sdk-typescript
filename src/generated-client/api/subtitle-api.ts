@@ -188,15 +188,15 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
         /**
          * 
          * @summary Gets the remote subtitles.
-         * @param {string} id The item id.
+         * @param {string} subtitleId The item id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteSubtitles: async (id: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getRemoteSubtitles', 'id', id)
-            const localVarPath = `/Providers/Subtitles/Subtitles/{id}`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getRemoteSubtitles: async (subtitleId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'subtitleId' is not null or undefined
+            assertParamExists('getRemoteSubtitles', 'subtitleId', subtitleId)
+            const localVarPath = `/Providers/Subtitles/Subtitles/{subtitleId}`
+                .replace(`{${"subtitleId"}}`, encodeURIComponent(String(subtitleId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -597,12 +597,12 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Gets the remote subtitles.
-         * @param {string} id The item id.
+         * @param {string} subtitleId The item id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRemoteSubtitles(id: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteSubtitles(id, options);
+        async getRemoteSubtitles(subtitleId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteSubtitles(subtitleId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -743,12 +743,12 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Gets the remote subtitles.
-         * @param {string} id The item id.
+         * @param {string} subtitleId The item id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteSubtitles(id: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getRemoteSubtitles(id, options).then((request) => request(axios, basePath));
+        getRemoteSubtitles(subtitleId: string, options?: any): AxiosPromise<any> {
+            return localVarFp.getRemoteSubtitles(subtitleId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -899,7 +899,7 @@ export interface SubtitleApiGetRemoteSubtitlesRequest {
      * @type {string}
      * @memberof SubtitleApiGetRemoteSubtitles
      */
-    readonly id: string
+    readonly subtitleId: string
 }
 
 /**
@@ -1238,7 +1238,7 @@ export class SubtitleApi extends BaseAPI {
      * @memberof SubtitleApi
      */
     public getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: AxiosRequestConfig) {
-        return SubtitleApiFp(this.configuration).getRemoteSubtitles(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+        return SubtitleApiFp(this.configuration).getRemoteSubtitles(requestParameters.subtitleId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

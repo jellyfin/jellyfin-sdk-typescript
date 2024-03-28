@@ -99,5 +99,17 @@ export interface LiveTvOptions {
      * @memberof LiveTvOptions
      */
     'RecordingPostProcessorArguments'?: string | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof LiveTvOptions
+     */
+    'SaveRecordingNFO'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof LiveTvOptions
+     */
+    'SaveRecordingImages'?: boolean;
 }
 
