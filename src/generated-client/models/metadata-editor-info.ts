@@ -12,6 +12,7 @@
  */
 
 
+import { CollectionType } from './collection-type';
 import { CountryInfo } from './country-info';
 import { CultureDto } from './culture-dto';
 import { ExternalIdInfo } from './external-id-info';
@@ -50,10 +51,10 @@ export interface MetadataEditorInfo {
     'ExternalIdInfos'?: Array<ExternalIdInfo>;
     /**
      * 
-     * @type {string}
+     * @type {CollectionType}
      * @memberof MetadataEditorInfo
      */
-    'ContentType'?: string | null;
+    'ContentType'?: CollectionType;
     /**
      * 
      * @type {Array<NameValuePair>}

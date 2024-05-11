@@ -38,8 +38,6 @@ import { ProblemDetails } from '../models';
 // @ts-ignore
 import { QuickConnectDto } from '../models';
 // @ts-ignore
-import { UpdateUserEasyPassword } from '../models';
-// @ts-ignore
 import { UpdateUserPassword } from '../models';
 // @ts-ignore
 import { UserConfiguration } from '../models';
@@ -53,52 +51,6 @@ import { UserPolicy } from '../models';
  */
 export const UserApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
-        /**
-         * 
-         * @summary Authenticates a user.
-         * @param {string} userId The user id.
-         * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        authenticateUser: async (userId: string, pw: string, password?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('authenticateUser', 'userId', userId)
-            // verify required parameter 'pw' is not null or undefined
-            assertParamExists('authenticateUser', 'pw', pw)
-            const localVarPath = `/Users/{userId}/Authenticate`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            if (pw !== undefined) {
-                localVarQueryParameter['pw'] = pw;
-            }
-
-            if (password !== undefined) {
-                localVarQueryParameter['password'] = password;
-            }
-
-
-    
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
         /**
          * 
          * @summary Authenticates a user by name.
@@ -465,18 +417,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Updates a user.
-         * @param {string} userId The user id.
          * @param {UserDto} userDto The updated user model.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser: async (userId: string, userDto: UserDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('updateUser', 'userId', userId)
+        updateUser: async (userDto: UserDto, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userDto' is not null or undefined
             assertParamExists('updateUser', 'userDto', userDto)
-            const localVarPath = `/Users/{userId}`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            const localVarPath = `/Users`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -490,6 +439,10 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -508,18 +461,15 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         /**
          * 
          * @summary Updates a user configuration.
-         * @param {string} userId The user id.
          * @param {UserConfiguration} userConfiguration The new user configuration.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration: async (userId: string, userConfiguration: UserConfiguration, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('updateUserConfiguration', 'userId', userId)
+        updateUserConfiguration: async (userConfiguration: UserConfiguration, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userConfiguration' is not null or undefined
             assertParamExists('updateUserConfiguration', 'userConfiguration', userConfiguration)
-            const localVarPath = `/Users/{userId}/Configuration`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            const localVarPath = `/Users/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -533,6 +483,10 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -550,62 +504,16 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
         },
         /**
          * 
-         * @summary Updates a user\'s easy password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        updateUserEasyPassword: async (userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('updateUserEasyPassword', 'userId', userId)
-            // verify required parameter 'updateUserEasyPassword' is not null or undefined
-            assertParamExists('updateUserEasyPassword', 'updateUserEasyPassword', updateUserEasyPassword)
-            const localVarPath = `/Users/{userId}/EasyPassword`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-
-    
-            localVarHeaderParameter['Content-Type'] = 'application/json';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(updateUserEasyPassword, localVarRequestOptions, configuration)
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Updates a user\'s password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Nullable{System.Guid},Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword: async (userId: string, updateUserPassword: UpdateUserPassword, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('updateUserPassword', 'userId', userId)
+        updateUserPassword: async (updateUserPassword: UpdateUserPassword, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'updateUserPassword' is not null or undefined
             assertParamExists('updateUserPassword', 'updateUserPassword', updateUserPassword)
-            const localVarPath = `/Users/{userId}/Password`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            const localVarPath = `/Users/Password`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -619,6 +527,10 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -687,19 +599,6 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
 export const UserApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = UserApiAxiosParamCreator(configuration)
     return {
-        /**
-         * 
-         * @summary Authenticates a user.
-         * @param {string} userId The user id.
-         * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async authenticateUser(userId: string, pw: string, password?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUser(userId, pw, password, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
-        },
         /**
          * 
          * @summary Authenticates a user by name.
@@ -812,49 +711,37 @@ export const UserApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Updates a user.
-         * @param {string} userId The user id.
          * @param {UserDto} userDto The updated user model.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUser(userId: string, userDto: UserDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userId, userDto, options);
+        async updateUser(userDto: UserDto, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userDto, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user configuration.
-         * @param {string} userId The user id.
          * @param {UserConfiguration} userConfiguration The new user configuration.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userId, userConfiguration, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
-        },
-        /**
-         * 
-         * @summary Updates a user\'s easy password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserEasyPassword(userId, updateUserEasyPassword, options);
+        async updateUserConfiguration(userConfiguration: UserConfiguration, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userConfiguration, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user\'s password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Nullable{System.Guid},Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(userId, updateUserPassword, options);
+        async updateUserPassword(updateUserPassword: UpdateUserPassword, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(updateUserPassword, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -879,18 +766,6 @@ export const UserApiFp = function(configuration?: Configuration) {
 export const UserApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = UserApiFp(configuration)
     return {
-        /**
-         * 
-         * @summary Authenticates a user.
-         * @param {string} userId The user id.
-         * @param {string} pw The password as plain text.
-         * @param {string} [password] The password sha1-hash.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        authenticateUser(userId: string, pw: string, password?: string, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUser(userId, pw, password, options).then((request) => request(axios, basePath));
-        },
         /**
          * 
          * @summary Authenticates a user by name.
@@ -993,46 +868,35 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Updates a user.
-         * @param {string} userId The user id.
          * @param {UserDto} userDto The updated user model.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser(userId: string, userDto: UserDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUser(userId, userDto, options).then((request) => request(axios, basePath));
+        updateUser(userDto: UserDto, userId?: string, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUser(userDto, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user configuration.
-         * @param {string} userId The user id.
          * @param {UserConfiguration} userConfiguration The new user configuration.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration(userId: string, userConfiguration: UserConfiguration, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserConfiguration(userId, userConfiguration, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @summary Updates a user\'s easy password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserEasyPassword} updateUserEasyPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        updateUserEasyPassword(userId: string, updateUserEasyPassword: UpdateUserEasyPassword, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserEasyPassword(userId, updateUserEasyPassword, options).then((request) => request(axios, basePath));
+        updateUserConfiguration(userConfiguration: UserConfiguration, userId?: string, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserConfiguration(userConfiguration, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s password.
-         * @param {string} userId The user id.
-         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Nullable{System.Guid},Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword(userId: string, updateUserPassword: UpdateUserPassword, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPassword(userId, updateUserPassword, options).then((request) => request(axios, basePath));
+        updateUserPassword(updateUserPassword: UpdateUserPassword, userId?: string, options?: any): AxiosPromise<void> {
+            return localVarFp.updateUserPassword(updateUserPassword, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1047,34 +911,6 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         },
     };
 };
-
-/**
- * Request parameters for authenticateUser operation in UserApi.
- * @export
- * @interface UserApiAuthenticateUserRequest
- */
-export interface UserApiAuthenticateUserRequest {
-    /**
-     * The user id.
-     * @type {string}
-     * @memberof UserApiAuthenticateUser
-     */
-    readonly userId: string
-
-    /**
-     * The password as plain text.
-     * @type {string}
-     * @memberof UserApiAuthenticateUser
-     */
-    readonly pw: string
-
-    /**
-     * The password sha1-hash.
-     * @type {string}
-     * @memberof UserApiAuthenticateUser
-     */
-    readonly password?: string
-}
 
 /**
  * Request parameters for authenticateUserByName operation in UserApi.
@@ -1202,18 +1038,18 @@ export interface UserApiGetUsersRequest {
  */
 export interface UserApiUpdateUserRequest {
     /**
-     * The user id.
-     * @type {string}
-     * @memberof UserApiUpdateUser
-     */
-    readonly userId: string
-
-    /**
      * The updated user model.
      * @type {UserDto}
      * @memberof UserApiUpdateUser
      */
     readonly userDto: UserDto
+
+    /**
+     * The user id.
+     * @type {string}
+     * @memberof UserApiUpdateUser
+     */
+    readonly userId?: string
 }
 
 /**
@@ -1223,39 +1059,18 @@ export interface UserApiUpdateUserRequest {
  */
 export interface UserApiUpdateUserConfigurationRequest {
     /**
-     * The user id.
-     * @type {string}
-     * @memberof UserApiUpdateUserConfiguration
-     */
-    readonly userId: string
-
-    /**
      * The new user configuration.
      * @type {UserConfiguration}
      * @memberof UserApiUpdateUserConfiguration
      */
     readonly userConfiguration: UserConfiguration
-}
 
-/**
- * Request parameters for updateUserEasyPassword operation in UserApi.
- * @export
- * @interface UserApiUpdateUserEasyPasswordRequest
- */
-export interface UserApiUpdateUserEasyPasswordRequest {
     /**
      * The user id.
      * @type {string}
-     * @memberof UserApiUpdateUserEasyPassword
+     * @memberof UserApiUpdateUserConfiguration
      */
-    readonly userId: string
-
-    /**
-     * The M:Jellyfin.Api.Controllers.UserController.UpdateUserEasyPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserEasyPassword) request.
-     * @type {UpdateUserEasyPassword}
-     * @memberof UserApiUpdateUserEasyPassword
-     */
-    readonly updateUserEasyPassword: UpdateUserEasyPassword
+    readonly userId?: string
 }
 
 /**
@@ -1265,18 +1080,18 @@ export interface UserApiUpdateUserEasyPasswordRequest {
  */
 export interface UserApiUpdateUserPasswordRequest {
     /**
-     * The user id.
-     * @type {string}
-     * @memberof UserApiUpdateUserPassword
-     */
-    readonly userId: string
-
-    /**
-     * The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Guid,Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
+     * The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Nullable{System.Guid},Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
      * @type {UpdateUserPassword}
      * @memberof UserApiUpdateUserPassword
      */
     readonly updateUserPassword: UpdateUserPassword
+
+    /**
+     * The user id.
+     * @type {string}
+     * @memberof UserApiUpdateUserPassword
+     */
+    readonly userId?: string
 }
 
 /**
@@ -1307,18 +1122,6 @@ export interface UserApiUpdateUserPolicyRequest {
  * @extends {BaseAPI}
  */
 export class UserApi extends BaseAPI {
-    /**
-     * 
-     * @summary Authenticates a user.
-     * @param {UserApiAuthenticateUserRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof UserApi
-     */
-    public authenticateUser(requestParameters: UserApiAuthenticateUserRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).authenticateUser(requestParameters.userId, requestParameters.pw, requestParameters.password, options).then((request) => request(this.axios, this.basePath));
-    }
-
     /**
      * 
      * @summary Authenticates a user by name.
@@ -1446,7 +1249,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUser(requestParameters: UserApiUpdateUserRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).updateUser(requestParameters.userId, requestParameters.userDto, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUser(requestParameters.userDto, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1458,19 +1261,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userId, requestParameters.userConfiguration, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Updates a user\'s easy password.
-     * @param {UserApiUpdateUserEasyPasswordRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     * @memberof UserApi
-     */
-    public updateUserEasyPassword(requestParameters: UserApiUpdateUserEasyPasswordRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).updateUserEasyPassword(requestParameters.userId, requestParameters.updateUserEasyPassword, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userConfiguration, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1482,7 +1273,7 @@ export class UserApi extends BaseAPI {
      * @memberof UserApi
      */
     public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: AxiosRequestConfig) {
-        return UserApiFp(this.configuration).updateUserPassword(requestParameters.userId, requestParameters.updateUserPassword, options).then((request) => request(this.axios, this.basePath));
+        return UserApiFp(this.configuration).updateUserPassword(requestParameters.updateUserPassword, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

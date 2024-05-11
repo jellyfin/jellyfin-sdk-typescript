@@ -13,6 +13,7 @@
 
 
 import { PlayMethod } from './play-method';
+import { PlaybackOrder } from './playback-order';
 import { RepeatMode } from './repeat-mode';
 
 /**
@@ -81,6 +82,12 @@ export interface PlayerStateInfo {
      * @memberof PlayerStateInfo
      */
     'RepeatMode'?: RepeatMode;
+    /**
+     * 
+     * @type {PlaybackOrder}
+     * @memberof PlayerStateInfo
+     */
+    'PlaybackOrder'?: PlaybackOrder;
     /**
      * Gets or sets the now playing live stream identifier.
      * @type {string}

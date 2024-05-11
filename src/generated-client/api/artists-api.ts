@@ -32,6 +32,10 @@ import { ItemFields } from '../models';
 // @ts-ignore
 import { ItemFilter } from '../models';
 // @ts-ignore
+import { ItemSortBy } from '../models';
+// @ts-ignore
+import { MediaType } from '../models';
+// @ts-ignore
 import { SortOrder } from '../models';
 /**
  * ArtistsApi - axios parameter creator
@@ -52,7 +56,7 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -70,14 +74,14 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAlbumArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getAlbumArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Artists/AlbumArtists`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -287,7 +291,7 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -305,14 +309,14 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Artists`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -490,7 +494,7 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -508,14 +512,14 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getAlbumArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getAlbumArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAlbumArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -544,7 +548,7 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -562,14 +566,14 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -596,7 +600,7 @@ export const ArtistsApiFactory = function (configuration?: Configuration, basePa
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -614,14 +618,14 @@ export const ArtistsApiFactory = function (configuration?: Configuration, basePa
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAlbumArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getAlbumArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getAlbumArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
@@ -648,7 +652,7 @@ export const ArtistsApiFactory = function (configuration?: Configuration, basePa
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
-         * @param {Array<string>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
          * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
          * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
@@ -666,14 +670,14 @@ export const ArtistsApiFactory = function (configuration?: Configuration, basePa
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<string>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
@@ -757,10 +761,10 @@ export interface ArtistsApiGetAlbumArtistsRequest {
 
     /**
      * Optional filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof ArtistsApiGetAlbumArtists
      */
-    readonly mediaTypes?: Array<string>
+    readonly mediaTypes?: Array<MediaType>
 
     /**
      * Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
@@ -883,10 +887,10 @@ export interface ArtistsApiGetAlbumArtistsRequest {
 
     /**
      * Optional. Specify one or more sort orders, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof ArtistsApiGetAlbumArtists
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.
@@ -1009,10 +1013,10 @@ export interface ArtistsApiGetArtistsRequest {
 
     /**
      * Optional filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof ArtistsApiGetArtists
      */
-    readonly mediaTypes?: Array<string>
+    readonly mediaTypes?: Array<MediaType>
 
     /**
      * Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
@@ -1135,10 +1139,10 @@ export interface ArtistsApiGetArtistsRequest {
 
     /**
      * Optional. Specify one or more sort orders, comma delimited.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof ArtistsApiGetArtists
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.

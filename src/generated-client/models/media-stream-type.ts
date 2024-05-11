@@ -24,7 +24,8 @@ export const MediaStreamType = {
     Video: 'Video',
     Subtitle: 'Subtitle',
     EmbeddedImage: 'EmbeddedImage',
-    Data: 'Data'
+    Data: 'Data',
+    Lyric: 'Lyric'
 } as const;
 
 export type MediaStreamType = typeof MediaStreamType[keyof typeof MediaStreamType];

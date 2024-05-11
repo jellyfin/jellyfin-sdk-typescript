@@ -30,6 +30,6 @@ export interface ParentalRating {
      * @type {number}
      * @memberof ParentalRating
      */
-    'Value'?: number;
+    'Value'?: number | null;
 }
 

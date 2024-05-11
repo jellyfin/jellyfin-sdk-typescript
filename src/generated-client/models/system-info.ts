@@ -12,8 +12,7 @@
  */
 
 
-import { Architecture } from './architecture';
-import { FFmpegLocation } from './ffmpeg-location';
+import { CastReceiverApplication } from './cast-receiver-application';
 import { InstallationInfo } from './installation-info';
 
 /**
@@ -50,6 +49,7 @@ export interface SystemInfo {
      * Gets or sets the operating system.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'OperatingSystem'?: string | null;
     /**
@@ -68,6 +68,7 @@ export interface SystemInfo {
      * Gets or sets the display name of the operating system.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'OperatingSystemDisplayName'?: string | null;
     /**
@@ -110,12 +111,14 @@ export interface SystemInfo {
      * Gets or sets a value indicating whether this instance can self restart.
      * @type {boolean}
      * @memberof SystemInfo
+     * @deprecated
      */
     'CanSelfRestart'?: boolean;
     /**
      * 
      * @type {boolean}
      * @memberof SystemInfo
+     * @deprecated
      */
     'CanLaunchWebBrowser'?: boolean;
     /**
@@ -161,6 +164,12 @@ export interface SystemInfo {
      */
     'TranscodingTempPath'?: string | null;
     /**
+     * Gets or sets the list of cast receiver applications.
+     * @type {Array<CastReceiverApplication>}
+     * @memberof SystemInfo
+     */
+    'CastReceiverApplications'?: Array<CastReceiverApplication> | null;
+    /**
      * Gets or sets a value indicating whether this instance has update available.
      * @type {boolean}
      * @memberof SystemInfo
@@ -169,15 +178,17 @@ export interface SystemInfo {
     'HasUpdateAvailable'?: boolean;
     /**
      * 
-     * @type {FFmpegLocation}
+     * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
-    'EncoderLocation'?: FFmpegLocation;
+    'EncoderLocation'?: string | null;
     /**
      * 
-     * @type {Architecture}
+     * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
-    'SystemArchitecture'?: Architecture;
+    'SystemArchitecture'?: string | null;
 }
 

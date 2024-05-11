@@ -27,6 +27,8 @@ import { OpenLiveStreamDto } from '../models';
 import { PlaybackInfoDto } from '../models';
 // @ts-ignore
 import { PlaybackInfoResponse } from '../models';
+// @ts-ignore
+import { ProblemDetails } from '../models';
 /**
  * MediaInfoApi - axios parameter creator
  * @export
@@ -115,15 +117,13 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
          * 
          * @summary Gets live playback media info for an item.
          * @param {string} itemId The item id.
-         * @param {string} userId The user id.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaybackInfo: async (itemId: string, userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPlaybackInfo: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getPlaybackInfo', 'itemId', itemId)
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getPlaybackInfo', 'userId', userId)
             const localVarPath = `/Items/{itemId}/PlaybackInfo`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -394,11 +394,11 @@ export const MediaInfoApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets live playback media info for an item.
          * @param {string} itemId The item id.
-         * @param {string} userId The user id.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPlaybackInfo(itemId: string, userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaybackInfoResponse>> {
+        async getPlaybackInfo(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaybackInfoResponse>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaybackInfo(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -484,11 +484,11 @@ export const MediaInfoApiFactory = function (configuration?: Configuration, base
          * 
          * @summary Gets live playback media info for an item.
          * @param {string} itemId The item id.
-         * @param {string} userId The user id.
+         * @param {string} [userId] The user id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaybackInfo(itemId: string, userId: string, options?: any): AxiosPromise<PlaybackInfoResponse> {
+        getPlaybackInfo(itemId: string, userId?: string, options?: any): AxiosPromise<PlaybackInfoResponse> {
             return localVarFp.getPlaybackInfo(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
@@ -586,7 +586,7 @@ export interface MediaInfoApiGetPlaybackInfoRequest {
      * @type {string}
      * @memberof MediaInfoApiGetPlaybackInfo
      */
-    readonly userId: string
+    readonly userId?: string
 }
 
 /**

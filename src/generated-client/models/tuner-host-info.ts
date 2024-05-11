@@ -85,5 +85,11 @@ export interface TunerHostInfo {
      * @memberof TunerHostInfo
      */
     'UserAgent'?: string | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof TunerHostInfo
+     */
+    'IgnoreDts'?: boolean;
 }
 

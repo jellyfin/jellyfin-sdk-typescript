@@ -28,7 +28,17 @@ import { ImageType } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
 // @ts-ignore
+import { MediaType } from '../models';
+// @ts-ignore
 import { PlaylistCreationResult } from '../models';
+// @ts-ignore
+import { PlaylistUserPermissions } from '../models';
+// @ts-ignore
+import { ProblemDetails } from '../models';
+// @ts-ignore
+import { UpdatePlaylistDto } from '../models';
+// @ts-ignore
+import { UpdatePlaylistUserDto } from '../models';
 /**
  * PlaylistsApi - axios parameter creator
  * @export
@@ -44,9 +54,9 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addToPlaylist: async (playlistId: string, ids?: Array<string>, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        addItemToPlaylist: async (playlistId: string, ids?: Array<string>, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playlistId' is not null or undefined
-            assertParamExists('addToPlaylist', 'playlistId', playlistId)
+            assertParamExists('addItemToPlaylist', 'playlistId', playlistId)
             const localVarPath = `/Playlists/{playlistId}/Items`
                 .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -88,12 +98,12 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        createPlaylist: async (name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Playlists`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -143,7 +153,7 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -154,11 +164,9 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaylistItems: async (playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPlaylistItems: async (playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playlistId' is not null or undefined
             assertParamExists('getPlaylistItems', 'playlistId', playlistId)
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getPlaylistItems', 'userId', userId)
             const localVarPath = `/Playlists/{playlistId}/Items`
                 .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -206,6 +214,84 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             if (enableImageTypes) {
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get a playlist user.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylistUser: async (playlistId: string, userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('getPlaylistUser', 'playlistId', playlistId)
+            // verify required parameter 'userId' is not null or undefined
+            assertParamExists('getPlaylistUser', 'userId', userId)
+            const localVarPath = `/Playlists/{playlistId}/Users/{userId}`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)))
+                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylistUsers: async (playlistId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('getPlaylistUsers', 'playlistId', playlistId)
+            const localVarPath = `/Playlists/{playlistId}/Users`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
 
     
@@ -271,9 +357,9 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeFromPlaylist: async (playlistId: string, entryIds?: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        removeItemFromPlaylist: async (playlistId: string, entryIds?: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playlistId' is not null or undefined
-            assertParamExists('removeFromPlaylist', 'playlistId', playlistId)
+            assertParamExists('removeItemFromPlaylist', 'playlistId', playlistId)
             const localVarPath = `/Playlists/{playlistId}/Items`
                 .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
@@ -305,6 +391,137 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 options: localVarRequestOptions,
             };
         },
+        /**
+         * 
+         * @summary Remove a user from a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        removeUserFromPlaylist: async (playlistId: string, userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('removeUserFromPlaylist', 'playlistId', playlistId)
+            // verify required parameter 'userId' is not null or undefined
+            assertParamExists('removeUserFromPlaylist', 'userId', userId)
+            const localVarPath = `/Playlists/{playlistId}/Users/{userId}`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)))
+                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates a playlist.
+         * @param {string} playlistId The playlist id.
+         * @param {UpdatePlaylistDto} updatePlaylistDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updatePlaylist: async (playlistId: string, updatePlaylistDto: UpdatePlaylistDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('updatePlaylist', 'playlistId', playlistId)
+            // verify required parameter 'updatePlaylistDto' is not null or undefined
+            assertParamExists('updatePlaylist', 'updatePlaylistDto', updatePlaylistDto)
+            const localVarPath = `/Playlists/{playlistId}`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(updatePlaylistDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Modify a user of a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {UpdatePlaylistUserDto} updatePlaylistUserDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updatePlaylistUser: async (playlistId: string, userId: string, updatePlaylistUserDto: UpdatePlaylistUserDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('updatePlaylistUser', 'playlistId', playlistId)
+            // verify required parameter 'userId' is not null or undefined
+            assertParamExists('updatePlaylistUser', 'userId', userId)
+            // verify required parameter 'updatePlaylistUserDto' is not null or undefined
+            assertParamExists('updatePlaylistUser', 'updatePlaylistUserDto', updatePlaylistUserDto)
+            const localVarPath = `/Playlists/{playlistId}/Users/{userId}`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)))
+                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(updatePlaylistUserDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
     }
 };
 
@@ -324,8 +541,8 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addToPlaylist(playlistId: string, ids?: Array<string>, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.addToPlaylist(playlistId, ids, userId, options);
+        async addItemToPlaylist(playlistId: string, ids?: Array<string>, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.addItemToPlaylist(playlistId, ids, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -334,12 +551,12 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
+        async createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistCreationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -347,7 +564,7 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -358,8 +575,31 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPlaylistItems(playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getPlaylistItems(playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaylistItems(playlistId, userId, startIndex, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
+         * @summary Get a playlist user.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getPlaylistUser(playlistId: string, userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistUserPermissions>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaylistUser(playlistId, userId, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
+         * @summary Get a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getPlaylistUsers(playlistId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<PlaylistUserPermissions>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaylistUsers(playlistId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -383,8 +623,45 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async removeFromPlaylist(playlistId: string, entryIds?: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.removeFromPlaylist(playlistId, entryIds, options);
+        async removeItemFromPlaylist(playlistId: string, entryIds?: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.removeItemFromPlaylist(playlistId, entryIds, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
+         * @summary Remove a user from a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async removeUserFromPlaylist(playlistId: string, userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.removeUserFromPlaylist(playlistId, userId, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
+         * @summary Updates a playlist.
+         * @param {string} playlistId The playlist id.
+         * @param {UpdatePlaylistDto} updatePlaylistDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updatePlaylist(playlistId: string, updatePlaylistDto: UpdatePlaylistDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updatePlaylist(playlistId, updatePlaylistDto, options);
+            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+        },
+        /**
+         * 
+         * @summary Modify a user of a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {UpdatePlaylistUserDto} updatePlaylistUserDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updatePlaylistUser(playlistId: string, userId: string, updatePlaylistUserDto: UpdatePlaylistUserDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updatePlaylistUser(playlistId, userId, updatePlaylistUserDto, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -406,8 +683,8 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addToPlaylist(playlistId: string, ids?: Array<string>, userId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.addToPlaylist(playlistId, ids, userId, options).then((request) => request(axios, basePath));
+        addItemToPlaylist(playlistId: string, ids?: Array<string>, userId?: string, options?: any): AxiosPromise<void> {
+            return localVarFp.addItemToPlaylist(playlistId, ids, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
@@ -415,19 +692,19 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
          * @param {string} [userId] The user id.
-         * @param {string} [mediaType] The media type.
+         * @param {MediaType} [mediaType] The media type.
          * @param {CreatePlaylistDto} [createPlaylistDto] The create playlist payload.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: string, createPlaylistDto?: CreatePlaylistDto, options?: any): AxiosPromise<PlaylistCreationResult> {
+        createPlaylist(name?: string, ids?: Array<string>, userId?: string, mediaType?: MediaType, createPlaylistDto?: CreatePlaylistDto, options?: any): AxiosPromise<PlaylistCreationResult> {
             return localVarFp.createPlaylist(name, ids, userId, mediaType, createPlaylistDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -438,8 +715,29 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPlaylistItems(playlistId: string, userId: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getPlaylistItems(playlistId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getPlaylistItems(playlistId, userId, startIndex, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get a playlist user.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylistUser(playlistId: string, userId: string, options?: any): AxiosPromise<PlaylistUserPermissions> {
+            return localVarFp.getPlaylistUser(playlistId, userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylistUsers(playlistId: string, options?: any): AxiosPromise<Array<PlaylistUserPermissions>> {
+            return localVarFp.getPlaylistUsers(playlistId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -461,36 +759,70 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeFromPlaylist(playlistId: string, entryIds?: Array<string>, options?: any): AxiosPromise<void> {
-            return localVarFp.removeFromPlaylist(playlistId, entryIds, options).then((request) => request(axios, basePath));
+        removeItemFromPlaylist(playlistId: string, entryIds?: Array<string>, options?: any): AxiosPromise<void> {
+            return localVarFp.removeItemFromPlaylist(playlistId, entryIds, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Remove a user from a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        removeUserFromPlaylist(playlistId: string, userId: string, options?: any): AxiosPromise<void> {
+            return localVarFp.removeUserFromPlaylist(playlistId, userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates a playlist.
+         * @param {string} playlistId The playlist id.
+         * @param {UpdatePlaylistDto} updatePlaylistDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updatePlaylist(playlistId: string, updatePlaylistDto: UpdatePlaylistDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updatePlaylist(playlistId, updatePlaylistDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Modify a user of a playlist\'s users.
+         * @param {string} playlistId The playlist id.
+         * @param {string} userId The user id.
+         * @param {UpdatePlaylistUserDto} updatePlaylistUserDto The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updatePlaylistUser(playlistId: string, userId: string, updatePlaylistUserDto: UpdatePlaylistUserDto, options?: any): AxiosPromise<void> {
+            return localVarFp.updatePlaylistUser(playlistId, userId, updatePlaylistUserDto, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for addToPlaylist operation in PlaylistsApi.
+ * Request parameters for addItemToPlaylist operation in PlaylistsApi.
  * @export
- * @interface PlaylistsApiAddToPlaylistRequest
+ * @interface PlaylistsApiAddItemToPlaylistRequest
  */
-export interface PlaylistsApiAddToPlaylistRequest {
+export interface PlaylistsApiAddItemToPlaylistRequest {
     /**
      * The playlist id.
      * @type {string}
-     * @memberof PlaylistsApiAddToPlaylist
+     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly playlistId: string
 
     /**
      * Item id, comma delimited.
      * @type {Array<string>}
-     * @memberof PlaylistsApiAddToPlaylist
+     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly ids?: Array<string>
 
     /**
      * The userId.
      * @type {string}
-     * @memberof PlaylistsApiAddToPlaylist
+     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly userId?: string
 }
@@ -524,10 +856,10 @@ export interface PlaylistsApiCreatePlaylistRequest {
 
     /**
      * The media type.
-     * @type {string}
+     * @type {MediaType}
      * @memberof PlaylistsApiCreatePlaylist
      */
-    readonly mediaType?: string
+    readonly mediaType?: MediaType
 
     /**
      * The create playlist payload.
@@ -555,7 +887,7 @@ export interface PlaylistsApiGetPlaylistItemsRequest {
      * @type {string}
      * @memberof PlaylistsApiGetPlaylistItems
      */
-    readonly userId: string
+    readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
@@ -608,6 +940,41 @@ export interface PlaylistsApiGetPlaylistItemsRequest {
 }
 
 /**
+ * Request parameters for getPlaylistUser operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiGetPlaylistUserRequest
+ */
+export interface PlaylistsApiGetPlaylistUserRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiGetPlaylistUser
+     */
+    readonly playlistId: string
+
+    /**
+     * The user id.
+     * @type {string}
+     * @memberof PlaylistsApiGetPlaylistUser
+     */
+    readonly userId: string
+}
+
+/**
+ * Request parameters for getPlaylistUsers operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiGetPlaylistUsersRequest
+ */
+export interface PlaylistsApiGetPlaylistUsersRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiGetPlaylistUsers
+     */
+    readonly playlistId: string
+}
+
+/**
  * Request parameters for moveItem operation in PlaylistsApi.
  * @export
  * @interface PlaylistsApiMoveItemRequest
@@ -636,24 +1003,94 @@ export interface PlaylistsApiMoveItemRequest {
 }
 
 /**
- * Request parameters for removeFromPlaylist operation in PlaylistsApi.
+ * Request parameters for removeItemFromPlaylist operation in PlaylistsApi.
  * @export
- * @interface PlaylistsApiRemoveFromPlaylistRequest
+ * @interface PlaylistsApiRemoveItemFromPlaylistRequest
  */
-export interface PlaylistsApiRemoveFromPlaylistRequest {
+export interface PlaylistsApiRemoveItemFromPlaylistRequest {
     /**
      * The playlist id.
      * @type {string}
-     * @memberof PlaylistsApiRemoveFromPlaylist
+     * @memberof PlaylistsApiRemoveItemFromPlaylist
      */
     readonly playlistId: string
 
     /**
      * The item ids, comma delimited.
      * @type {Array<string>}
-     * @memberof PlaylistsApiRemoveFromPlaylist
+     * @memberof PlaylistsApiRemoveItemFromPlaylist
      */
     readonly entryIds?: Array<string>
+}
+
+/**
+ * Request parameters for removeUserFromPlaylist operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiRemoveUserFromPlaylistRequest
+ */
+export interface PlaylistsApiRemoveUserFromPlaylistRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiRemoveUserFromPlaylist
+     */
+    readonly playlistId: string
+
+    /**
+     * The user id.
+     * @type {string}
+     * @memberof PlaylistsApiRemoveUserFromPlaylist
+     */
+    readonly userId: string
+}
+
+/**
+ * Request parameters for updatePlaylist operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiUpdatePlaylistRequest
+ */
+export interface PlaylistsApiUpdatePlaylistRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiUpdatePlaylist
+     */
+    readonly playlistId: string
+
+    /**
+     * The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
+     * @type {UpdatePlaylistDto}
+     * @memberof PlaylistsApiUpdatePlaylist
+     */
+    readonly updatePlaylistDto: UpdatePlaylistDto
+}
+
+/**
+ * Request parameters for updatePlaylistUser operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiUpdatePlaylistUserRequest
+ */
+export interface PlaylistsApiUpdatePlaylistUserRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiUpdatePlaylistUser
+     */
+    readonly playlistId: string
+
+    /**
+     * The user id.
+     * @type {string}
+     * @memberof PlaylistsApiUpdatePlaylistUser
+     */
+    readonly userId: string
+
+    /**
+     * The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
+     * @type {UpdatePlaylistUserDto}
+     * @memberof PlaylistsApiUpdatePlaylistUser
+     */
+    readonly updatePlaylistUserDto: UpdatePlaylistUserDto
 }
 
 /**
@@ -666,13 +1103,13 @@ export class PlaylistsApi extends BaseAPI {
     /**
      * 
      * @summary Adds items to a playlist.
-     * @param {PlaylistsApiAddToPlaylistRequest} requestParameters Request parameters.
+     * @param {PlaylistsApiAddItemToPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PlaylistsApi
      */
-    public addToPlaylist(requestParameters: PlaylistsApiAddToPlaylistRequest, options?: AxiosRequestConfig) {
-        return PlaylistsApiFp(this.configuration).addToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public addItemToPlaylist(requestParameters: PlaylistsApiAddItemToPlaylistRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -701,6 +1138,30 @@ export class PlaylistsApi extends BaseAPI {
 
     /**
      * 
+     * @summary Get a playlist user.
+     * @param {PlaylistsApiGetPlaylistUserRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public getPlaylistUser(requestParameters: PlaylistsApiGetPlaylistUserRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).getPlaylistUser(requestParameters.playlistId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get a playlist\'s users.
+     * @param {PlaylistsApiGetPlaylistUsersRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public getPlaylistUsers(requestParameters: PlaylistsApiGetPlaylistUsersRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).getPlaylistUsers(requestParameters.playlistId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Moves a playlist item.
      * @param {PlaylistsApiMoveItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -714,12 +1175,48 @@ export class PlaylistsApi extends BaseAPI {
     /**
      * 
      * @summary Removes items from a playlist.
-     * @param {PlaylistsApiRemoveFromPlaylistRequest} requestParameters Request parameters.
+     * @param {PlaylistsApiRemoveItemFromPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof PlaylistsApi
      */
-    public removeFromPlaylist(requestParameters: PlaylistsApiRemoveFromPlaylistRequest, options?: AxiosRequestConfig) {
-        return PlaylistsApiFp(this.configuration).removeFromPlaylist(requestParameters.playlistId, requestParameters.entryIds, options).then((request) => request(this.axios, this.basePath));
+    public removeItemFromPlaylist(requestParameters: PlaylistsApiRemoveItemFromPlaylistRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).removeItemFromPlaylist(requestParameters.playlistId, requestParameters.entryIds, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Remove a user from a playlist\'s users.
+     * @param {PlaylistsApiRemoveUserFromPlaylistRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public removeUserFromPlaylist(requestParameters: PlaylistsApiRemoveUserFromPlaylistRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).removeUserFromPlaylist(requestParameters.playlistId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates a playlist.
+     * @param {PlaylistsApiUpdatePlaylistRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public updatePlaylist(requestParameters: PlaylistsApiUpdatePlaylistRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).updatePlaylist(requestParameters.playlistId, requestParameters.updatePlaylistDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Modify a user of a playlist\'s users.
+     * @param {PlaylistsApiUpdatePlaylistUserRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public updatePlaylistUser(requestParameters: PlaylistsApiUpdatePlaylistUserRequest, options?: AxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).updatePlaylistUser(requestParameters.playlistId, requestParameters.userId, requestParameters.updatePlaylistUserDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
