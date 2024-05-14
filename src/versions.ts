@@ -8,4 +8,4 @@
 export const API_VERSION = '10.9.1';
 
 /** The minimum supported server version. */
-export const MINIMUM_VERSION = '10.8.1';
+export const MINIMUM_VERSION = '10.9.0';
