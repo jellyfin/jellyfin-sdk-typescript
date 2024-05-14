@@ -14,20 +14,20 @@
 
 
 /**
- * 
+ * The collection type options.
  * @export
  * @enum {string}
  */
 
 export const CollectionTypeOptions = {
-    Movies: 'Movies',
-    TvShows: 'TvShows',
-    Music: 'Music',
-    MusicVideos: 'MusicVideos',
-    HomeVideos: 'HomeVideos',
-    BoxSets: 'BoxSets',
-    Books: 'Books',
-    Mixed: 'Mixed'
+    Movies: 'movies',
+    Tvshows: 'tvshows',
+    Music: 'music',
+    Musicvideos: 'musicvideos',
+    Homevideos: 'homevideos',
+    Boxsets: 'boxsets',
+    Books: 'books',
+    Mixed: 'mixed'
 } as const;
 
 export type CollectionTypeOptions = typeof CollectionTypeOptions[keyof typeof CollectionTypeOptions];

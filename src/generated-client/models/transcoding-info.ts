@@ -98,6 +98,12 @@ export interface TranscodingInfo {
      * @type {Array<TranscodeReason>}
      * @memberof TranscodingInfo
      */
-    'TranscodeReasons'?: Array<TranscodeReason>;
+    'TranscodeReasons'?: TranscodingInfoTranscodeReasonsEnum;
 }
+
+export const TranscodingInfoTranscodeReasonsEnum = {
+} as const;
+
+export type TranscodingInfoTranscodeReasonsEnum = typeof TranscodingInfoTranscodeReasonsEnum[keyof typeof TranscodingInfoTranscodeReasonsEnum];
+
 

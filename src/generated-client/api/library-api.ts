@@ -26,6 +26,8 @@ import { BaseItemDto } from '../models';
 // @ts-ignore
 import { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
+import { CollectionType } from '../models';
+// @ts-ignore
 import { ItemCounts } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
@@ -318,12 +320,12 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Gets the library options info.
-         * @param {string} [libraryContentType] Library content type.
+         * @param {CollectionType} [libraryContentType] Library content type.
          * @param {boolean} [isNewLibrary] Whether this is a new library.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLibraryOptionsInfo: async (libraryContentType?: string, isNewLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLibraryOptionsInfo: async (libraryContentType?: CollectionType, isNewLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Libraries/AvailableOptions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1239,12 +1241,12 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Gets the library options info.
-         * @param {string} [libraryContentType] Library content type.
+         * @param {CollectionType} [libraryContentType] Library content type.
          * @param {boolean} [isNewLibrary] Whether this is a new library.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLibraryOptionsInfo(libraryContentType?: string, isNewLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LibraryOptionsResultDto>> {
+        async getLibraryOptionsInfo(libraryContentType?: CollectionType, isNewLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LibraryOptionsResultDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -1551,12 +1553,12 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Gets the library options info.
-         * @param {string} [libraryContentType] Library content type.
+         * @param {CollectionType} [libraryContentType] Library content type.
          * @param {boolean} [isNewLibrary] Whether this is a new library.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLibraryOptionsInfo(libraryContentType?: string, isNewLibrary?: boolean, options?: any): AxiosPromise<LibraryOptionsResultDto> {
+        getLibraryOptionsInfo(libraryContentType?: CollectionType, isNewLibrary?: boolean, options?: any): AxiosPromise<LibraryOptionsResultDto> {
             return localVarFp.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options).then((request) => request(axios, basePath));
         },
         /**
@@ -1882,10 +1884,10 @@ export interface LibraryApiGetItemCountsRequest {
 export interface LibraryApiGetLibraryOptionsInfoRequest {
     /**
      * Library content type.
-     * @type {string}
+     * @type {CollectionType}
      * @memberof LibraryApiGetLibraryOptionsInfo
      */
-    readonly libraryContentType?: string
+    readonly libraryContentType?: CollectionType
 
     /**
      * Whether this is a new library.

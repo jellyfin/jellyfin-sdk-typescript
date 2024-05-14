@@ -17,6 +17,7 @@ import { MediaAttachment } from './media-attachment';
 import { MediaProtocol } from './media-protocol';
 import { MediaSourceType } from './media-source-type';
 import { MediaStream } from './media-stream';
+import { MediaStreamProtocol } from './media-stream-protocol';
 import { TransportStreamTimestamp } from './transport-stream-timestamp';
 import { Video3DFormat } from './video3-dformat';
 import { VideoType } from './video-type';
@@ -251,10 +252,10 @@ export interface MediaSourceInfo {
     'TranscodingUrl'?: string | null;
     /**
      * 
-     * @type {string}
+     * @type {MediaStreamProtocol}
      * @memberof MediaSourceInfo
      */
-    'TranscodingSubProtocol'?: string | null;
+    'TranscodingSubProtocol'?: MediaStreamProtocol;
     /**
      * 
      * @type {string}

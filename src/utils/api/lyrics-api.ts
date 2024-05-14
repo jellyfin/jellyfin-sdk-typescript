@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { DlnaServerApi } from '../../generated-client/api/dlna-server-api';
+import { LyricsApi } from '../../generated-client/api/lyrics-api';
 
-export function getDlnaServerApi(api: Api): DlnaServerApi {
-	return new DlnaServerApi(api.configuration, undefined, api.axiosInstance);
+export function getLyricsApi(api: Api): LyricsApi {
+	return new LyricsApi(api.configuration, undefined, api.axiosInstance);
 }

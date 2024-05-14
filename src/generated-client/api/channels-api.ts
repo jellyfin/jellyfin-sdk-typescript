@@ -28,6 +28,8 @@ import { ItemFields } from '../models';
 // @ts-ignore
 import { ItemFilter } from '../models';
 // @ts-ignore
+import { ItemSortBy } from '../models';
+// @ts-ignore
 import { SortOrder } from '../models';
 /**
  * ChannelsApi - axios parameter creator
@@ -115,12 +117,12 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelItems: async (channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<string>, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getChannelItems: async (channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'channelId' is not null or undefined
             assertParamExists('getChannelItems', 'channelId', channelId)
             const localVarPath = `/Channels/{channelId}/Items`
@@ -349,12 +351,12 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<string>, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getChannelItems(channelId, folderId, userId, startIndex, limit, sortOrder, filters, sortBy, fields, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -429,12 +431,12 @@ export const ChannelsApiFactory = function (configuration?: Configuration, baseP
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<string>, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getChannelItems(channelId, folderId, userId, startIndex, limit, sortOrder, filters, sortBy, fields, options).then((request) => request(axios, basePath));
         },
         /**
@@ -541,10 +543,10 @@ export interface ChannelsApiGetChannelItemsRequest {
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof ChannelsApiGetChannelItems
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional. Specify additional fields of information to return in the output.

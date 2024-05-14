@@ -36,6 +36,8 @@ import { ImageType } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
 // @ts-ignore
+import { ItemSortBy } from '../models';
+// @ts-ignore
 import { ListingsProviderInfo } from '../models';
 // @ts-ignore
 import { LiveTvInfo } from '../models';
@@ -822,14 +824,14 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {Array<ImageType>} [enableImageTypes] \&quot;Optional. The image types to include in the output.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {Array<string>} [sortBy] Optional. Key to sort by.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Key to sort by.
          * @param {SortOrder} [sortOrder] Optional. Sort order.
          * @param {boolean} [enableFavoriteSorting] Optional. Incorporate favorite and like status into channel sorting.
          * @param {boolean} [addCurrentProgram] Optional. Adds current program info to each channel.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvChannels: async (type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<string>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLiveTvChannels: async (type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<ItemSortBy>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/Channels`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -991,7 +993,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {boolean} [isSports] Optional. Filter for sports.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {Array<string>} [genres] The genres to return guide information for.
          * @param {Array<string>} [genreIds] The genre ids to return guide information for.
@@ -1006,7 +1008,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvPrograms: async (channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLiveTvPrograms: async (channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/Programs`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -2369,14 +2371,14 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * @param {Array<ImageType>} [enableImageTypes] \&quot;Optional. The image types to include in the output.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {Array<string>} [sortBy] Optional. Key to sort by.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Key to sort by.
          * @param {SortOrder} [sortOrder] Optional. Sort order.
          * @param {boolean} [enableFavoriteSorting] Optional. Incorporate favorite and like status into channel sorting.
          * @param {boolean} [addCurrentProgram] Optional. Adds current program info to each channel.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLiveTvChannels(type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<string>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getLiveTvChannels(type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<ItemSortBy>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLiveTvChannels(type, userId, startIndex, isMovie, isSeries, isNews, isKids, isSports, limit, isFavorite, isLiked, isDisliked, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, sortBy, sortOrder, enableFavoriteSorting, addCurrentProgram, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -2408,7 +2410,7 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * @param {boolean} [isSports] Optional. Filter for sports.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {Array<string>} [genres] The genres to return guide information for.
          * @param {Array<string>} [genreIds] The genre ids to return guide information for.
@@ -2423,7 +2425,7 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLiveTvPrograms(channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getLiveTvPrograms(channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLiveTvPrograms(channelIds, userId, minStartDate, hasAired, isAiring, maxStartDate, minEndDate, maxEndDate, isMovie, isSeries, isNews, isKids, isSports, startIndex, limit, sortBy, sortOrder, genres, genreIds, enableImages, imageTypeLimit, enableImageTypes, enableUserData, seriesTimerId, librarySeriesId, fields, enableTotalRecordCount, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
@@ -2917,14 +2919,14 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {Array<ImageType>} [enableImageTypes] \&quot;Optional. The image types to include in the output.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {Array<string>} [sortBy] Optional. Key to sort by.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Key to sort by.
          * @param {SortOrder} [sortOrder] Optional. Sort order.
          * @param {boolean} [enableFavoriteSorting] Optional. Incorporate favorite and like status into channel sorting.
          * @param {boolean} [addCurrentProgram] Optional. Adds current program info to each channel.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvChannels(type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<string>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getLiveTvChannels(type?: ChannelType, userId?: string, startIndex?: number, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, limit?: number, isFavorite?: boolean, isLiked?: boolean, isDisliked?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, sortBy?: Array<ItemSortBy>, sortOrder?: SortOrder, enableFavoriteSorting?: boolean, addCurrentProgram?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getLiveTvChannels(type, userId, startIndex, isMovie, isSeries, isNews, isKids, isSports, limit, isFavorite, isLiked, isDisliked, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, sortBy, sortOrder, enableFavoriteSorting, addCurrentProgram, options).then((request) => request(axios, basePath));
         },
         /**
@@ -2954,7 +2956,7 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {boolean} [isSports] Optional. Filter for sports.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<string>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
          * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {Array<string>} [genres] The genres to return guide information for.
          * @param {Array<string>} [genreIds] The genre ids to return guide information for.
@@ -2969,7 +2971,7 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLiveTvPrograms(channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<string>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+        getLiveTvPrograms(channelIds?: Array<string>, userId?: string, minStartDate?: string, hasAired?: boolean, isAiring?: boolean, maxStartDate?: string, minEndDate?: string, maxEndDate?: string, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, startIndex?: number, limit?: number, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, genres?: Array<string>, genreIds?: Array<string>, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, seriesTimerId?: string, librarySeriesId?: string, fields?: Array<ItemFields>, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getLiveTvPrograms(channelIds, userId, minStartDate, hasAired, isAiring, maxStartDate, minEndDate, maxEndDate, isMovie, isSeries, isNews, isKids, isSports, startIndex, limit, sortBy, sortOrder, genres, genreIds, enableImages, imageTypeLimit, enableImageTypes, enableUserData, seriesTimerId, librarySeriesId, fields, enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
@@ -3641,10 +3643,10 @@ export interface LiveTvApiGetLiveTvChannelsRequest {
 
     /**
      * Optional. Key to sort by.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof LiveTvApiGetLiveTvChannels
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional. Sort order.
@@ -3781,10 +3783,10 @@ export interface LiveTvApiGetLiveTvProgramsRequest {
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof LiveTvApiGetLiveTvPrograms
      */
-    readonly sortBy?: Array<string>
+    readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.

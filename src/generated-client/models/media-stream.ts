@@ -12,8 +12,11 @@
  */
 
 
+import { AudioSpatialFormat } from './audio-spatial-format';
 import { MediaStreamType } from './media-stream-type';
 import { SubtitleDeliveryMethod } from './subtitle-delivery-method';
+import { VideoRange } from './video-range';
+import { VideoRangeType } from './video-range-type';
 
 /**
  * Class MediaStream.
@@ -136,23 +139,29 @@ export interface MediaStream {
      */
     'Title'?: string | null;
     /**
-     * Gets the video range.
-     * @type {string}
+     * 
+     * @type {VideoRange}
      * @memberof MediaStream
      */
-    'VideoRange'?: string | null;
+    'VideoRange'?: VideoRange;
     /**
-     * Gets the video range type.
-     * @type {string}
+     * 
+     * @type {VideoRangeType}
      * @memberof MediaStream
      */
-    'VideoRangeType'?: string | null;
+    'VideoRangeType'?: VideoRangeType;
     /**
      * Gets the video dovi title.
      * @type {string}
      * @memberof MediaStream
      */
     'VideoDoViTitle'?: string | null;
+    /**
+     * 
+     * @type {AudioSpatialFormat}
+     * @memberof MediaStream
+     */
+    'AudioSpatialFormat'?: AudioSpatialFormat;
     /**
      * 
      * @type {string}
@@ -177,6 +186,12 @@ export interface MediaStream {
      * @memberof MediaStream
      */
     'LocalizedExternal'?: string | null;
+    /**
+     * 
+     * @type {string}
+     * @memberof MediaStream
+     */
+    'LocalizedHearingImpaired'?: string | null;
     /**
      * 
      * @type {string}
@@ -255,6 +270,12 @@ export interface MediaStream {
      * @memberof MediaStream
      */
     'IsForced'?: boolean;
+    /**
+     * Gets or sets a value indicating whether this instance is for the hearing impaired.
+     * @type {boolean}
+     * @memberof MediaStream
+     */
+    'IsHearingImpaired'?: boolean;
     /**
      * Gets or sets the height.
      * @type {number}

@@ -32,7 +32,7 @@ export interface ContainerProfile {
      * @type {Array<ProfileCondition>}
      * @memberof ContainerProfile
      */
-    'Conditions'?: Array<ProfileCondition> | null;
+    'Conditions'?: Array<ProfileCondition>;
     /**
      * 
      * @type {string}

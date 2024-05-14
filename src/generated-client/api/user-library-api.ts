@@ -40,18 +40,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Deletes a user\'s saved personal rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUserItemRating: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('deleteUserItemRating', 'userId', userId)
+        deleteUserItemRating: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('deleteUserItemRating', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}/Rating`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/UserItems/{itemId}/Rating`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -67,6 +64,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -81,18 +82,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets intros to play before the main media item plays.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIntros: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getIntros', 'userId', userId)
+        getIntros: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getIntros', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}/Intros`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/Items/{itemId}/Intros`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -107,6 +105,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -122,18 +124,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets an item from a user\'s library.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItem: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getItem', 'userId', userId)
+        getItem: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getItem', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/Items/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -149,6 +148,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -163,7 +166,7 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets latest media.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -177,11 +180,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLatestMedia: async (userId: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getLatestMedia', 'userId', userId)
-            const localVarPath = `/Users/{userId}/Items/Latest`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+        getLatestMedia: async (userId?: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Items/Latest`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -195,6 +195,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
             if (parentId !== undefined) {
                 localVarQueryParameter['parentId'] = parentId;
@@ -250,18 +254,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets local trailers for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLocalTrailers: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getLocalTrailers', 'userId', userId)
+        getLocalTrailers: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getLocalTrailers', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}/LocalTrailers`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/Items/{itemId}/LocalTrailers`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -276,6 +277,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -291,15 +296,12 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets the root folder from a user\'s library.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRootFolder: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getRootFolder', 'userId', userId)
-            const localVarPath = `/Users/{userId}/Items/Root`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)));
+        getRootFolder: async (userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Items/Root`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -313,6 +315,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -328,18 +334,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Gets special features for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSpecialFeatures: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('getSpecialFeatures', 'userId', userId)
+        getSpecialFeatures: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSpecialFeatures', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}/SpecialFeatures`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/Items/{itemId}/SpecialFeatures`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -355,6 +358,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -369,18 +376,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Marks an item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markFavoriteItem: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('markFavoriteItem', 'userId', userId)
+        markFavoriteItem: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('markFavoriteItem', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/FavoriteItems/{itemId}`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/UserFavoriteItems/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -395,6 +399,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
 
     
@@ -410,18 +418,15 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Unmarks item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        unmarkFavoriteItem: async (userId: string, itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('unmarkFavoriteItem', 'userId', userId)
+        unmarkFavoriteItem: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('unmarkFavoriteItem', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/FavoriteItems/{itemId}`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/UserFavoriteItems/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -437,6 +442,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -451,19 +460,16 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         /**
          * 
          * @summary Updates a user\'s rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
-         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Guid,System.Guid,System.Nullable{System.Boolean}) is likes.
+         * @param {string} [userId] User id.
+         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Nullable{System.Guid},System.Guid,System.Nullable{System.Boolean}) is likes.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserItemRating: async (userId: string, itemId: string, likes?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'userId' is not null or undefined
-            assertParamExists('updateUserItemRating', 'userId', userId)
+        updateUserItemRating: async (itemId: string, userId?: string, likes?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('updateUserItemRating', 'itemId', itemId)
-            const localVarPath = `/Users/{userId}/Items/{itemId}/Rating`
-                .replace(`{${"userId"}}`, encodeURIComponent(String(userId)))
+            const localVarPath = `/UserItems/{itemId}/Rating`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -478,6 +484,10 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
             if (likes !== undefined) {
                 localVarQueryParameter['likes'] = likes;
@@ -507,43 +517,43 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Deletes a user\'s saved personal rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteUserItemRating(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.deleteUserItemRating(userId, itemId, options);
+        async deleteUserItemRating(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.deleteUserItemRating(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets intros to play before the main media item plays.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getIntros(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getIntros(userId, itemId, options);
+        async getIntros(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getIntros(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets an item from a user\'s library.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getItem(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getItem(userId, itemId, options);
+        async getItem(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getItem(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets latest media.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -557,80 +567,80 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLatestMedia(userId: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+        async getLatestMedia(userId?: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLatestMedia(userId, parentId, fields, includeItemTypes, isPlayed, enableImages, imageTypeLimit, enableImageTypes, enableUserData, limit, groupItems, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets local trailers for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLocalTrailers(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getLocalTrailers(userId, itemId, options);
+        async getLocalTrailers(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLocalTrailers(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets the root folder from a user\'s library.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRootFolder(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+        async getRootFolder(userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRootFolder(userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Gets special features for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSpecialFeatures(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getSpecialFeatures(userId, itemId, options);
+        async getSpecialFeatures(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSpecialFeatures(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Marks an item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async markFavoriteItem(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.markFavoriteItem(userId, itemId, options);
+        async markFavoriteItem(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.markFavoriteItem(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Unmarks item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async unmarkFavoriteItem(userId: string, itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.unmarkFavoriteItem(userId, itemId, options);
+        async unmarkFavoriteItem(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.unmarkFavoriteItem(itemId, userId, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Updates a user\'s rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
-         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Guid,System.Guid,System.Nullable{System.Boolean}) is likes.
+         * @param {string} [userId] User id.
+         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Nullable{System.Guid},System.Guid,System.Nullable{System.Boolean}) is likes.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserItemRating(userId: string, itemId: string, likes?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserItemRating(userId, itemId, likes, options);
+        async updateUserItemRating(itemId: string, userId?: string, likes?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserItemRating(itemId, userId, likes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -646,40 +656,40 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Deletes a user\'s saved personal rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUserItemRating(userId: string, itemId: string, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.deleteUserItemRating(userId, itemId, options).then((request) => request(axios, basePath));
+        deleteUserItemRating(itemId: string, userId?: string, options?: any): AxiosPromise<UserItemDataDto> {
+            return localVarFp.deleteUserItemRating(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets intros to play before the main media item plays.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getIntros(userId: string, itemId: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getIntros(userId, itemId, options).then((request) => request(axios, basePath));
+        getIntros(itemId: string, userId?: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getIntros(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an item from a user\'s library.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItem(userId: string, itemId: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getItem(userId, itemId, options).then((request) => request(axios, basePath));
+        getItem(itemId: string, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
+            return localVarFp.getItem(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets latest media.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
@@ -693,74 +703,74 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLatestMedia(userId: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options?: any): AxiosPromise<Array<BaseItemDto>> {
+        getLatestMedia(userId?: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options?: any): AxiosPromise<Array<BaseItemDto>> {
             return localVarFp.getLatestMedia(userId, parentId, fields, includeItemTypes, isPlayed, enableImages, imageTypeLimit, enableImageTypes, enableUserData, limit, groupItems, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets local trailers for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLocalTrailers(userId: string, itemId: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
-            return localVarFp.getLocalTrailers(userId, itemId, options).then((request) => request(axios, basePath));
+        getLocalTrailers(itemId: string, userId?: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getLocalTrailers(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the root folder from a user\'s library.
-         * @param {string} userId User id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRootFolder(userId: string, options?: any): AxiosPromise<BaseItemDto> {
+        getRootFolder(userId?: string, options?: any): AxiosPromise<BaseItemDto> {
             return localVarFp.getRootFolder(userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets special features for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSpecialFeatures(userId: string, itemId: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
-            return localVarFp.getSpecialFeatures(userId, itemId, options).then((request) => request(axios, basePath));
+        getSpecialFeatures(itemId: string, userId?: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getSpecialFeatures(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Marks an item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markFavoriteItem(userId: string, itemId: string, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.markFavoriteItem(userId, itemId, options).then((request) => request(axios, basePath));
+        markFavoriteItem(itemId: string, userId?: string, options?: any): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markFavoriteItem(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Unmarks item as a favorite.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        unmarkFavoriteItem(userId: string, itemId: string, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.unmarkFavoriteItem(userId, itemId, options).then((request) => request(axios, basePath));
+        unmarkFavoriteItem(itemId: string, userId?: string, options?: any): AxiosPromise<UserItemDataDto> {
+            return localVarFp.unmarkFavoriteItem(itemId, userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s rating for an item.
-         * @param {string} userId User id.
          * @param {string} itemId Item id.
-         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Guid,System.Guid,System.Nullable{System.Boolean}) is likes.
+         * @param {string} [userId] User id.
+         * @param {boolean} [likes] Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Nullable{System.Guid},System.Guid,System.Nullable{System.Boolean}) is likes.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserItemRating(userId: string, itemId: string, likes?: boolean, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.updateUserItemRating(userId, itemId, likes, options).then((request) => request(axios, basePath));
+        updateUserItemRating(itemId: string, userId?: string, likes?: boolean, options?: any): AxiosPromise<UserItemDataDto> {
+            return localVarFp.updateUserItemRating(itemId, userId, likes, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -772,18 +782,18 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
  */
 export interface UserLibraryApiDeleteUserItemRatingRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiDeleteUserItemRating
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiDeleteUserItemRating
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiDeleteUserItemRating
+     */
+    readonly userId?: string
 }
 
 /**
@@ -793,18 +803,18 @@ export interface UserLibraryApiDeleteUserItemRatingRequest {
  */
 export interface UserLibraryApiGetIntrosRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetIntros
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiGetIntros
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiGetIntros
+     */
+    readonly userId?: string
 }
 
 /**
@@ -814,18 +824,18 @@ export interface UserLibraryApiGetIntrosRequest {
  */
 export interface UserLibraryApiGetItemRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetItem
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiGetItem
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiGetItem
+     */
+    readonly userId?: string
 }
 
 /**
@@ -839,7 +849,7 @@ export interface UserLibraryApiGetLatestMediaRequest {
      * @type {string}
      * @memberof UserLibraryApiGetLatestMedia
      */
-    readonly userId: string
+    readonly userId?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
@@ -919,18 +929,18 @@ export interface UserLibraryApiGetLatestMediaRequest {
  */
 export interface UserLibraryApiGetLocalTrailersRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetLocalTrailers
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiGetLocalTrailers
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiGetLocalTrailers
+     */
+    readonly userId?: string
 }
 
 /**
@@ -944,7 +954,7 @@ export interface UserLibraryApiGetRootFolderRequest {
      * @type {string}
      * @memberof UserLibraryApiGetRootFolder
      */
-    readonly userId: string
+    readonly userId?: string
 }
 
 /**
@@ -954,18 +964,18 @@ export interface UserLibraryApiGetRootFolderRequest {
  */
 export interface UserLibraryApiGetSpecialFeaturesRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetSpecialFeatures
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiGetSpecialFeatures
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiGetSpecialFeatures
+     */
+    readonly userId?: string
 }
 
 /**
@@ -975,18 +985,18 @@ export interface UserLibraryApiGetSpecialFeaturesRequest {
  */
 export interface UserLibraryApiMarkFavoriteItemRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiMarkFavoriteItem
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiMarkFavoriteItem
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiMarkFavoriteItem
+     */
+    readonly userId?: string
 }
 
 /**
@@ -996,18 +1006,18 @@ export interface UserLibraryApiMarkFavoriteItemRequest {
  */
 export interface UserLibraryApiUnmarkFavoriteItemRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiUnmarkFavoriteItem
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiUnmarkFavoriteItem
      */
     readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiUnmarkFavoriteItem
+     */
+    readonly userId?: string
 }
 
 /**
@@ -1017,13 +1027,6 @@ export interface UserLibraryApiUnmarkFavoriteItemRequest {
  */
 export interface UserLibraryApiUpdateUserItemRatingRequest {
     /**
-     * User id.
-     * @type {string}
-     * @memberof UserLibraryApiUpdateUserItemRating
-     */
-    readonly userId: string
-
-    /**
      * Item id.
      * @type {string}
      * @memberof UserLibraryApiUpdateUserItemRating
@@ -1031,7 +1034,14 @@ export interface UserLibraryApiUpdateUserItemRatingRequest {
     readonly itemId: string
 
     /**
-     * Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Guid,System.Guid,System.Nullable{System.Boolean}) is likes.
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiUpdateUserItemRating
+     */
+    readonly userId?: string
+
+    /**
+     * Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Nullable{System.Guid},System.Guid,System.Nullable{System.Boolean}) is likes.
      * @type {boolean}
      * @memberof UserLibraryApiUpdateUserItemRating
      */
@@ -1054,7 +1064,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public deleteUserItemRating(requestParameters: UserLibraryApiDeleteUserItemRatingRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).deleteUserItemRating(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).deleteUserItemRating(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1066,7 +1076,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public getIntros(requestParameters: UserLibraryApiGetIntrosRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).getIntros(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).getIntros(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1078,7 +1088,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public getItem(requestParameters: UserLibraryApiGetItemRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).getItem(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).getItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1089,7 +1099,7 @@ export class UserLibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserLibraryApi
      */
-    public getLatestMedia(requestParameters: UserLibraryApiGetLatestMediaRequest, options?: AxiosRequestConfig) {
+    public getLatestMedia(requestParameters: UserLibraryApiGetLatestMediaRequest = {}, options?: AxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getLatestMedia(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.includeItemTypes, requestParameters.isPlayed, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.limit, requestParameters.groupItems, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1102,7 +1112,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public getLocalTrailers(requestParameters: UserLibraryApiGetLocalTrailersRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).getLocalTrailers(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).getLocalTrailers(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1113,7 +1123,7 @@ export class UserLibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserLibraryApi
      */
-    public getRootFolder(requestParameters: UserLibraryApiGetRootFolderRequest, options?: AxiosRequestConfig) {
+    public getRootFolder(requestParameters: UserLibraryApiGetRootFolderRequest = {}, options?: AxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getRootFolder(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1126,7 +1136,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public getSpecialFeatures(requestParameters: UserLibraryApiGetSpecialFeaturesRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).getSpecialFeatures(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).getSpecialFeatures(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1138,7 +1148,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public markFavoriteItem(requestParameters: UserLibraryApiMarkFavoriteItemRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).markFavoriteItem(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).markFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1150,7 +1160,7 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public unmarkFavoriteItem(requestParameters: UserLibraryApiUnmarkFavoriteItemRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).unmarkFavoriteItem(requestParameters.userId, requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).unmarkFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1162,6 +1172,6 @@ export class UserLibraryApi extends BaseAPI {
      * @memberof UserLibraryApi
      */
     public updateUserItemRating(requestParameters: UserLibraryApiUpdateUserItemRatingRequest, options?: AxiosRequestConfig) {
-        return UserLibraryApiFp(this.configuration).updateUserItemRating(requestParameters.userId, requestParameters.itemId, requestParameters.likes, options).then((request) => request(this.axios, this.basePath));
+        return UserLibraryApiFp(this.configuration).updateUserItemRating(requestParameters.itemId, requestParameters.userId, requestParameters.likes, options).then((request) => request(this.axios, this.basePath));
     }
 }

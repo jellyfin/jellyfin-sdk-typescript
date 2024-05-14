@@ -38,6 +38,12 @@ export interface UploadSubtitleDto {
      */
     'IsForced': boolean;
     /**
+     * Gets or sets a value indicating whether the subtitle is for hearing impaired.
+     * @type {boolean}
+     * @memberof UploadSubtitleDto
+     */
+    'IsHearingImpaired': boolean;
+    /**
      * Gets or sets the subtitle data.
      * @type {string}
      * @memberof UploadSubtitleDto

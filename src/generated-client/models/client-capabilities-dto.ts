@@ -14,6 +14,7 @@
 
 import { DeviceProfile } from './device-profile';
 import { GeneralCommandType } from './general-command-type';
+import { MediaType } from './media-type';
 
 /**
  * Client capabilities dto.
@@ -23,10 +24,10 @@ import { GeneralCommandType } from './general-command-type';
 export interface ClientCapabilitiesDto {
     /**
      * Gets or sets the list of playable media types.
-     * @type {Array<string>}
+     * @type {Array<MediaType>}
      * @memberof ClientCapabilitiesDto
      */
-    'PlayableMediaTypes'?: Array<string>;
+    'PlayableMediaTypes'?: Array<MediaType>;
     /**
      * Gets or sets the list of supported commands.
      * @type {Array<GeneralCommandType>}
@@ -40,29 +41,11 @@ export interface ClientCapabilitiesDto {
      */
     'SupportsMediaControl'?: boolean;
     /**
-     * Gets or sets a value indicating whether session supports content uploading.
-     * @type {boolean}
-     * @memberof ClientCapabilitiesDto
-     */
-    'SupportsContentUploading'?: boolean;
-    /**
-     * Gets or sets the message callback url.
-     * @type {string}
-     * @memberof ClientCapabilitiesDto
-     */
-    'MessageCallbackUrl'?: string | null;
-    /**
      * Gets or sets a value indicating whether session supports a persistent identifier.
      * @type {boolean}
      * @memberof ClientCapabilitiesDto
      */
     'SupportsPersistentIdentifier'?: boolean;
-    /**
-     * Gets or sets a value indicating whether session supports sync.
-     * @type {boolean}
-     * @memberof ClientCapabilitiesDto
-     */
-    'SupportsSync'?: boolean;
     /**
      * 
      * @type {DeviceProfile}
@@ -81,5 +64,19 @@ export interface ClientCapabilitiesDto {
      * @memberof ClientCapabilitiesDto
      */
     'IconUrl'?: string | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof ClientCapabilitiesDto
+     * @deprecated
+     */
+    'SupportsContentUploading'?: boolean | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof ClientCapabilitiesDto
+     * @deprecated
+     */
+    'SupportsSync'?: boolean | null;
 }
 

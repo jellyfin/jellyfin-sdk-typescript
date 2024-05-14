@@ -20,7 +20,7 @@
  */
 export interface RemoveFromPlaylistRequestDto {
     /**
-     * Gets or sets the playlist identifiers ot the items. Ignored when clearing the playlist.
+     * Gets or sets the playlist identifiers of the items. Ignored when clearing the playlist.
      * @type {Array<string>}
      * @memberof RemoveFromPlaylistRequestDto
      */

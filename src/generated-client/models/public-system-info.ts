@@ -47,6 +47,7 @@ export interface PublicSystemInfo {
      * Gets or sets the operating system.
      * @type {string}
      * @memberof PublicSystemInfo
+     * @deprecated
      */
     'OperatingSystem'?: string | null;
     /**

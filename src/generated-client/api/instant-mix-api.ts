@@ -25,6 +25,8 @@ import { BaseItemDtoQueryResult } from '../models';
 import { ImageType } from '../models';
 // @ts-ignore
 import { ItemFields } from '../models';
+// @ts-ignore
+import { ProblemDetails } from '../models';
 /**
  * InstantMixApi - axios parameter creator
  * @export
@@ -34,7 +36,7 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Creates an instant playlist based on a given album.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -45,11 +47,11 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromAlbum: async (id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getInstantMixFromAlbum', 'id', id)
-            const localVarPath = `/Albums/{id}/InstantMix`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getInstantMixFromAlbum: async (itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getInstantMixFromAlbum', 'itemId', itemId)
+            const localVarPath = `/Albums/{itemId}/InstantMix`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -106,7 +108,7 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Creates an instant playlist based on a given artist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -117,11 +119,11 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromArtists: async (id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getInstantMixFromArtists', 'id', id)
-            const localVarPath = `/Artists/{id}/InstantMix`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getInstantMixFromArtists: async (itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getInstantMixFromArtists', 'itemId', itemId)
+            const localVarPath = `/Artists/{itemId}/InstantMix`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -254,7 +256,7 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Creates an instant playlist based on a given item.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -265,11 +267,11 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromItem: async (id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getInstantMixFromItem', 'id', id)
-            const localVarPath = `/Items/{id}/InstantMix`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getInstantMixFromItem: async (itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getInstantMixFromItem', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/InstantMix`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -473,7 +475,7 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Creates an instant playlist based on a given playlist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -484,11 +486,11 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromPlaylist: async (id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getInstantMixFromPlaylist', 'id', id)
-            const localVarPath = `/Playlists/{id}/InstantMix`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getInstantMixFromPlaylist: async (itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getInstantMixFromPlaylist', 'itemId', itemId)
+            const localVarPath = `/Playlists/{itemId}/InstantMix`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -545,7 +547,7 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
         /**
          * 
          * @summary Creates an instant playlist based on a given song.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -556,11 +558,11 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromSong: async (id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('getInstantMixFromSong', 'id', id)
-            const localVarPath = `/Songs/{id}/InstantMix`
-                .replace(`{${"id"}}`, encodeURIComponent(String(id)));
+        getInstantMixFromSong: async (itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getInstantMixFromSong', 'itemId', itemId)
+            const localVarPath = `/Songs/{itemId}/InstantMix`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -627,7 +629,7 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Creates an instant playlist based on a given album.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -638,14 +640,14 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getInstantMixFromAlbum(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromAlbum(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+        async getInstantMixFromAlbum(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromAlbum(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Creates an instant playlist based on a given artist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -656,8 +658,8 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getInstantMixFromArtists(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromArtists(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+        async getInstantMixFromArtists(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromArtists(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -682,7 +684,7 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Creates an instant playlist based on a given item.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -693,8 +695,8 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getInstantMixFromItem(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromItem(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+        async getInstantMixFromItem(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromItem(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
@@ -736,7 +738,7 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Creates an instant playlist based on a given playlist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -747,14 +749,14 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getInstantMixFromPlaylist(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromPlaylist(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+        async getInstantMixFromPlaylist(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromPlaylist(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
         /**
          * 
          * @summary Creates an instant playlist based on a given song.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -765,8 +767,8 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getInstantMixFromSong(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromSong(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
+        async getInstantMixFromSong(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getInstantMixFromSong(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options);
             return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
         },
     }
@@ -782,7 +784,7 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Creates an instant playlist based on a given album.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -793,13 +795,13 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromAlbum(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getInstantMixFromAlbum(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        getInstantMixFromAlbum(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getInstantMixFromAlbum(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates an instant playlist based on a given artist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -810,8 +812,8 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromArtists(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getInstantMixFromArtists(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        getInstantMixFromArtists(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getInstantMixFromArtists(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -834,7 +836,7 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Creates an instant playlist based on a given item.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -845,8 +847,8 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromItem(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getInstantMixFromItem(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        getInstantMixFromItem(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getInstantMixFromItem(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -885,7 +887,7 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Creates an instant playlist based on a given playlist.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -896,13 +898,13 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromPlaylist(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getInstantMixFromPlaylist(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        getInstantMixFromPlaylist(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getInstantMixFromPlaylist(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates an instant playlist based on a given song.
-         * @param {string} id The item id.
+         * @param {string} itemId The item id.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
@@ -913,8 +915,8 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getInstantMixFromSong(id: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getInstantMixFromSong(id, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
+        getInstantMixFromSong(itemId: string, userId?: string, limit?: number, fields?: Array<ItemFields>, enableImages?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getInstantMixFromSong(itemId, userId, limit, fields, enableImages, enableUserData, imageTypeLimit, enableImageTypes, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -930,7 +932,7 @@ export interface InstantMixApiGetInstantMixFromAlbumRequest {
      * @type {string}
      * @memberof InstantMixApiGetInstantMixFromAlbum
      */
-    readonly id: string
+    readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
@@ -993,7 +995,7 @@ export interface InstantMixApiGetInstantMixFromArtistsRequest {
      * @type {string}
      * @memberof InstantMixApiGetInstantMixFromArtists
      */
-    readonly id: string
+    readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
@@ -1119,7 +1121,7 @@ export interface InstantMixApiGetInstantMixFromItemRequest {
      * @type {string}
      * @memberof InstantMixApiGetInstantMixFromItem
      */
-    readonly id: string
+    readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
@@ -1308,7 +1310,7 @@ export interface InstantMixApiGetInstantMixFromPlaylistRequest {
      * @type {string}
      * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
-    readonly id: string
+    readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
@@ -1371,7 +1373,7 @@ export interface InstantMixApiGetInstantMixFromSongRequest {
      * @type {string}
      * @memberof InstantMixApiGetInstantMixFromSong
      */
-    readonly id: string
+    readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
@@ -1439,7 +1441,7 @@ export class InstantMixApi extends BaseAPI {
      * @memberof InstantMixApi
      */
     public getInstantMixFromAlbum(requestParameters: InstantMixApiGetInstantMixFromAlbumRequest, options?: AxiosRequestConfig) {
-        return InstantMixApiFp(this.configuration).getInstantMixFromAlbum(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
+        return InstantMixApiFp(this.configuration).getInstantMixFromAlbum(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1451,7 +1453,7 @@ export class InstantMixApi extends BaseAPI {
      * @memberof InstantMixApi
      */
     public getInstantMixFromArtists(requestParameters: InstantMixApiGetInstantMixFromArtistsRequest, options?: AxiosRequestConfig) {
-        return InstantMixApiFp(this.configuration).getInstantMixFromArtists(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
+        return InstantMixApiFp(this.configuration).getInstantMixFromArtists(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1476,7 +1478,7 @@ export class InstantMixApi extends BaseAPI {
      * @memberof InstantMixApi
      */
     public getInstantMixFromItem(requestParameters: InstantMixApiGetInstantMixFromItemRequest, options?: AxiosRequestConfig) {
-        return InstantMixApiFp(this.configuration).getInstantMixFromItem(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
+        return InstantMixApiFp(this.configuration).getInstantMixFromItem(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1512,7 +1514,7 @@ export class InstantMixApi extends BaseAPI {
      * @memberof InstantMixApi
      */
     public getInstantMixFromPlaylist(requestParameters: InstantMixApiGetInstantMixFromPlaylistRequest, options?: AxiosRequestConfig) {
-        return InstantMixApiFp(this.configuration).getInstantMixFromPlaylist(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
+        return InstantMixApiFp(this.configuration).getInstantMixFromPlaylist(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1524,6 +1526,6 @@ export class InstantMixApi extends BaseAPI {
      * @memberof InstantMixApi
      */
     public getInstantMixFromSong(requestParameters: InstantMixApiGetInstantMixFromSongRequest, options?: AxiosRequestConfig) {
-        return InstantMixApiFp(this.configuration).getInstantMixFromSong(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
+        return InstantMixApiFp(this.configuration).getInstantMixFromSong(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
     }
 }

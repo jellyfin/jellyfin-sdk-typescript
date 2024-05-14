@@ -14,14 +14,15 @@
 
 
 /**
- * Enum SeriesStatus.
+ * The status of a series.
  * @export
  * @enum {string}
  */
 
 export const SeriesStatus = {
     Continuing: 'Continuing',
-    Ended: 'Ended'
+    Ended: 'Ended',
+    Unreleased: 'Unreleased'
 } as const;
 
 export type SeriesStatus = typeof SeriesStatus[keyof typeof SeriesStatus];

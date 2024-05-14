@@ -5,12 +5,12 @@
  */
 import { describe, it, expect } from 'vitest';
 
-import { getActivityLogApi, getApiKeyApi, getArtistsApi, getAudioApi, getBrandingApi, getChannelsApi, getClientLogApi, getCollectionApi, getConfigurationApi, getDashboardApi, getDevicesApi, getDisplayPreferencesApi, getDlnaApi, getDlnaServerApi, getDynamicHlsApi, getEnvironmentApi, getFilterApi, getGenresApi, getHlsSegmentApi, getImageApi, getImageByNameApi, getInstantMixApi, getItemLookupApi, getItemRefreshApi, getItemUpdateApi, getItemsApi, getLibraryApi, getLibraryStructureApi, getLiveTvApi, getLocalizationApi, getMediaInfoApi, getMoviesApi, getMusicGenresApi, getNotificationsApi, getPackageApi, getPersonsApi, getPlaylistsApi, getPlaystateApi, getPluginsApi, getQuickConnectApi, getRemoteImageApi, getScheduledTasksApi, getSearchApi, getSessionApi, getStartupApi, getStudiosApi, getSubtitleApi, getSuggestionsApi, getSyncPlayApi, getSystemApi, getTimeSyncApi, getTmdbApi, getTrailersApi, getTvShowsApi, getUniversalAudioApi, getUserApi, getUserLibraryApi, getUserViewsApi, getVideoAttachmentsApi, getVideosApi, getYearsApi } from '..';
+import { getActivityLogApi, getApiKeyApi, getArtistsApi, getAudioApi, getBrandingApi, getChannelsApi, getClientLogApi, getCollectionApi, getConfigurationApi, getDashboardApi, getDevicesApi, getDisplayPreferencesApi, getDynamicHlsApi, getEnvironmentApi, getFilterApi, getGenresApi, getHlsSegmentApi, getImageApi, getInstantMixApi, getItemLookupApi, getItemRefreshApi, getItemUpdateApi, getItemsApi, getLibraryApi, getLibraryStructureApi, getLiveTvApi, getLocalizationApi, getLyricsApi, getMediaInfoApi, getMoviesApi, getMusicGenresApi, getPackageApi, getPersonsApi, getPlaylistsApi, getPlaystateApi, getPluginsApi, getQuickConnectApi, getRemoteImageApi, getScheduledTasksApi, getSearchApi, getSessionApi, getStartupApi, getStudiosApi, getSubtitleApi, getSuggestionsApi, getSyncPlayApi, getSystemApi, getTimeSyncApi, getTmdbApi, getTrailersApi, getTrickplayApi, getTvShowsApi, getUniversalAudioApi, getUserApi, getUserLibraryApi, getUserViewsApi, getVideoAttachmentsApi, getVideosApi, getYearsApi } from '..';
 
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../../../__helpers__/common';
 
 import { Api } from '../../../api';
-import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, ClientLogApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DlnaApi, DlnaServerApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, ImageByNameApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, MediaInfoApi, MoviesApi, MusicGenresApi, NotificationsApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TmdbApi, TrailersApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideosApi, YearsApi } from '../../../generated-client/api';
+import { ActivityLogApi, ApiKeyApi, ArtistsApi, AudioApi, BrandingApi, ChannelsApi, ClientLogApi, CollectionApi, ConfigurationApi, DashboardApi, DevicesApi, DisplayPreferencesApi, DynamicHlsApi, EnvironmentApi, FilterApi, GenresApi, HlsSegmentApi, ImageApi, InstantMixApi, ItemLookupApi, ItemRefreshApi, ItemsApi, ItemUpdateApi, LibraryApi, LibraryStructureApi, LiveTvApi, LocalizationApi, LyricsApi, MediaInfoApi, MoviesApi, MusicGenresApi, PackageApi, PersonsApi, PlaylistsApi, PlaystateApi, PluginsApi, QuickConnectApi, RemoteImageApi, ScheduledTasksApi, SearchApi, SessionApi, StartupApi, StudiosApi, SubtitleApi, SuggestionsApi, SyncPlayApi, SystemApi, TimeSyncApi, TmdbApi, TrailersApi, TrickplayApi, TvShowsApi, UniversalAudioApi, UserApi, UserLibraryApi, UserViewsApi, VideoAttachmentsApi, VideosApi, YearsApi } from '../../../generated-client/api';
 
 /**
  * Api helper function tests.
@@ -33,15 +33,12 @@ describe('Api Utilities', () => {
 		expect(getDashboardApi(api)).toBeInstanceOf(DashboardApi);
 		expect(getDevicesApi(api)).toBeInstanceOf(DevicesApi);
 		expect(getDisplayPreferencesApi(api)).toBeInstanceOf(DisplayPreferencesApi);
-		expect(getDlnaApi(api)).toBeInstanceOf(DlnaApi);
-		expect(getDlnaServerApi(api)).toBeInstanceOf(DlnaServerApi);
 		expect(getDynamicHlsApi(api)).toBeInstanceOf(DynamicHlsApi);
 		expect(getEnvironmentApi(api)).toBeInstanceOf(EnvironmentApi);
 		expect(getFilterApi(api)).toBeInstanceOf(FilterApi);
 		expect(getGenresApi(api)).toBeInstanceOf(GenresApi);
 		expect(getHlsSegmentApi(api)).toBeInstanceOf(HlsSegmentApi);
 		expect(getImageApi(api)).toBeInstanceOf(ImageApi);
-		expect(getImageByNameApi(api)).toBeInstanceOf(ImageByNameApi);
 		expect(getInstantMixApi(api)).toBeInstanceOf(InstantMixApi);
 		expect(getItemLookupApi(api)).toBeInstanceOf(ItemLookupApi);
 		expect(getItemRefreshApi(api)).toBeInstanceOf(ItemRefreshApi);
@@ -51,10 +48,10 @@ describe('Api Utilities', () => {
 		expect(getLibraryStructureApi(api)).toBeInstanceOf(LibraryStructureApi);
 		expect(getLiveTvApi(api)).toBeInstanceOf(LiveTvApi);
 		expect(getLocalizationApi(api)).toBeInstanceOf(LocalizationApi);
+		expect(getLyricsApi(api)).toBeInstanceOf(LyricsApi);
 		expect(getMediaInfoApi(api)).toBeInstanceOf(MediaInfoApi);
 		expect(getMoviesApi(api)).toBeInstanceOf(MoviesApi);
 		expect(getMusicGenresApi(api)).toBeInstanceOf(MusicGenresApi);
-		expect(getNotificationsApi(api)).toBeInstanceOf(NotificationsApi);
 		expect(getPackageApi(api)).toBeInstanceOf(PackageApi);
 		expect(getPersonsApi(api)).toBeInstanceOf(PersonsApi);
 		expect(getPlaylistsApi(api)).toBeInstanceOf(PlaylistsApi);
@@ -74,6 +71,7 @@ describe('Api Utilities', () => {
 		expect(getTimeSyncApi(api)).toBeInstanceOf(TimeSyncApi);
 		expect(getTmdbApi(api)).toBeInstanceOf(TmdbApi);
 		expect(getTrailersApi(api)).toBeInstanceOf(TrailersApi);
+		expect(getTrickplayApi(api)).toBeInstanceOf(TrickplayApi);
 		expect(getTvShowsApi(api)).toBeInstanceOf(TvShowsApi);
 		expect(getUniversalAudioApi(api)).toBeInstanceOf(UniversalAudioApi);
 		expect(getUserApi(api)).toBeInstanceOf(UserApi);

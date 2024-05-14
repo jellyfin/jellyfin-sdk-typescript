@@ -14,6 +14,7 @@
 
 import { ImageType } from './image-type';
 import { ItemFields } from './item-fields';
+import { ItemSortBy } from './item-sort-by';
 import { SortOrder } from './sort-order';
 
 /**
@@ -33,7 +34,7 @@ export interface GetProgramsDto {
      * @type {string}
      * @memberof GetProgramsDto
      */
-    'UserId'?: string;
+    'UserId'?: string | null;
     /**
      * Gets or sets the minimum premiere start date.  Optional.
      * @type {string}
@@ -114,10 +115,10 @@ export interface GetProgramsDto {
     'Limit'?: number | null;
     /**
      * Gets or sets specify one or more sort orders, comma delimited. Options: Name, StartDate.  Optional.
-     * @type {Array<string>}
+     * @type {Array<ItemSortBy>}
      * @memberof GetProgramsDto
      */
-    'SortBy'?: Array<string>;
+    'SortBy'?: Array<ItemSortBy>;
     /**
      * Gets or sets sort Order - Ascending,Descending.
      * @type {Array<SortOrder>}
