@@ -1,0 +1,19 @@
+changelog:
+  categories:
+    - title: Features
+      labels:
+        - '*'
+      exclude:
+        labels:
+          - api-spec
+          - dependencies
+          - documentation
+    - title: API Updates
+      labels:
+        - api-spec
+    - title: Documentation Updates
+      labels:
+        - documentation
+    - title: Dependency Updates
+      labels:
+        - dependencies
