@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { ImageByNameApi } from '../../generated-client/api/image-by-name-api';
+import { TrickplayApi } from '../../generated-client/api/trickplay-api';
 
-export function getImageByNameApi(api: Api): ImageByNameApi {
-	return new ImageByNameApi(api.configuration, undefined, api.axiosInstance);
+export function getTrickplayApi(api: Api): TrickplayApi {
+	return new TrickplayApi(api.configuration, undefined, api.axiosInstance);
 }
