@@ -37,7 +37,7 @@
     "glob": "10.3.15",
     "rimraf": "5.0.5",
     "rollup": "4.17.2",
-    "typedoc": "0.25.12",
+    "typedoc": "0.25.13",
     "typescript": "5.4.5",
     "vitest": "1.6.0"
   },
