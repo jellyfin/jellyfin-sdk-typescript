@@ -45,7 +45,7 @@ export interface SearchHint {
      * @type {string}
      * @memberof SearchHint
      */
-    'MatchedTerm'?: string;
+    'MatchedTerm'?: string | null;
     /**
      * Gets or sets the index number.
      * @type {number}
