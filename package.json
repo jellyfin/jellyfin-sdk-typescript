@@ -34,7 +34,7 @@
     "eslint": "8.57.0",
     "eslint-plugin-import": "2.29.1",
     "eslint-plugin-vitest": "0.3.26",
-    "glob": "10.3.15",
+    "glob": "10.3.16",
     "rimraf": "5.0.7",
     "rollup": "4.17.2",
     "typedoc": "0.25.13",
