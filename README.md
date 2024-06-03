@@ -35,6 +35,7 @@ yarn add @jellyfin/sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
+| 0.10.0 | 10.9.x |
 | 0.9.0 | 10.9.x |
 | 0.8.2 - 0.6.0 | 10.8.1 - 10.8.13 |
 | 0.5.0 | 10.8.0 |
@@ -106,6 +107,10 @@ await api.logout();
 ```
 
 ## Breaking Changes
+
+### v0.10.0
+
+* Updated build target to ES2018. [#712](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/712)
 
 ### v0.9.0
 
