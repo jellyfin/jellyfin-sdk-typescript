@@ -210,10 +210,10 @@ export interface SeriesTimerInfoDto {
     'DayPattern'?: DayPattern;
     /**
      * Gets or sets the image tags.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof SeriesTimerInfoDto
      */
-    'ImageTags'?: { [key: string]: string; } | null;
+    'ImageTags'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the parent thumb item id.
      * @type {string}

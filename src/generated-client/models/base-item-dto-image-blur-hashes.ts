@@ -21,81 +21,81 @@
 export interface BaseItemDtoImageBlurHashes {
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Primary'?: { [key: string]: string; };
+    'Primary'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Art'?: { [key: string]: string; };
+    'Art'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Backdrop'?: { [key: string]: string; };
+    'Backdrop'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Banner'?: { [key: string]: string; };
+    'Banner'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Logo'?: { [key: string]: string; };
+    'Logo'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Thumb'?: { [key: string]: string; };
+    'Thumb'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Disc'?: { [key: string]: string; };
+    'Disc'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Box'?: { [key: string]: string; };
+    'Box'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Screenshot'?: { [key: string]: string; };
+    'Screenshot'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Menu'?: { [key: string]: string; };
+    'Menu'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Chapter'?: { [key: string]: string; };
+    'Chapter'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'BoxRear'?: { [key: string]: string; };
+    'BoxRear'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDtoImageBlurHashes
      */
-    'Profile'?: { [key: string]: string; };
+    'Profile'?: { [key: string]: string | null; };
 }
 

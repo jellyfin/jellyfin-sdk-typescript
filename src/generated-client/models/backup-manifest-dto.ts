@@ -27,30 +27,30 @@ export interface BackupManifestDto {
      * @type {string}
      * @memberof BackupManifestDto
      */
-    'ServerVersion'?: string;
+    'ServerVersion': string;
     /**
      * Gets or sets the backup engine version this backup was created with.
      * @type {string}
      * @memberof BackupManifestDto
      */
-    'BackupEngineVersion'?: string;
+    'BackupEngineVersion': string;
     /**
      * Gets or sets the date this backup was created with.
      * @type {string}
      * @memberof BackupManifestDto
      */
-    'DateCreated'?: string;
+    'DateCreated': string;
     /**
      * Gets or sets the path to the backup on the system.
      * @type {string}
      * @memberof BackupManifestDto
      */
-    'Path'?: string;
+    'Path': string;
     /**
      * 
      * @type {BackupOptionsDto}
      * @memberof BackupManifestDto
      */
-    'Options'?: BackupOptionsDto;
+    'Options': BackupOptionsDto;
 }
 

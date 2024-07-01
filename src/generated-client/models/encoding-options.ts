@@ -311,6 +311,12 @@ export interface EncodingOptions {
      */
     'EnableSubtitleExtraction'?: boolean;
     /**
+     * Gets or sets the timeout for subtitle extraction in minutes.
+     * @type {number}
+     * @memberof EncodingOptions
+     */
+    'SubtitleExtractionTimeoutMinutes'?: number;
+    /**
      * Gets or sets the codecs hardware encoding is used for.
      * @type {Array<string>}
      * @memberof EncodingOptions

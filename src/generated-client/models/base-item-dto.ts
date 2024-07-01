@@ -633,10 +633,10 @@ export interface BaseItemDto {
     'MediaSourceCount'?: number | null;
     /**
      * Gets or sets the image tags.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDto
      */
-    'ImageTags'?: { [key: string]: string; } | null;
+    'ImageTags'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the backdrop image tags.
      * @type {Array<string>}
@@ -717,10 +717,10 @@ export interface BaseItemDto {
     'Chapters'?: Array<ChapterInfo> | null;
     /**
      * Gets or sets the trickplay manifest.
-     * @type {{ [key: string]: { [key: string]: TrickplayInfoDto; }; }}
+     * @type {{ [key: string]: { [key: string]: TrickplayInfoDto; } | null; }}
      * @memberof BaseItemDto
      */
-    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfoDto; }; } | null;
+    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfoDto; } | null; } | null;
     /**
      * 
      * @type {LocationType}

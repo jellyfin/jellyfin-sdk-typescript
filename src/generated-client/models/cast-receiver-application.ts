@@ -24,12 +24,12 @@ export interface CastReceiverApplication {
      * @type {string}
      * @memberof CastReceiverApplication
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets or sets the cast receiver application name.
      * @type {string}
      * @memberof CastReceiverApplication
      */
-    'Name'?: string;
+    'Name': string;
 }
 

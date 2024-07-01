@@ -33,12 +33,12 @@ export interface PlaylistDto {
      * @type {Array<PlaylistUserPermissions>}
      * @memberof PlaylistDto
      */
-    'Shares'?: Array<PlaylistUserPermissions>;
+    'Shares': Array<PlaylistUserPermissions>;
     /**
      * Gets or sets the item ids.
      * @type {Array<string>}
      * @memberof PlaylistDto
      */
-    'ItemIds'?: Array<string>;
+    'ItemIds': Array<string>;
 }
 

@@ -30,7 +30,7 @@ export interface DatabaseConfigurationOptions {
      * @type {string}
      * @memberof DatabaseConfigurationOptions
      */
-    'DatabaseType'?: string;
+    'DatabaseType': string;
     /**
      * 
      * @type {CustomDatabaseOptions}
