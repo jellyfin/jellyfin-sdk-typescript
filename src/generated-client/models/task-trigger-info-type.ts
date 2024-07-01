@@ -14,24 +14,19 @@
 
 
 /**
- * Enum GroupUpdateType.
+ * Enum TaskTriggerInfoType.
  * @export
  * @enum {string}
  */
 
-export const GroupUpdateType = {
-    UserJoined: 'UserJoined',
-    UserLeft: 'UserLeft',
-    GroupJoined: 'GroupJoined',
-    GroupLeft: 'GroupLeft',
-    StateUpdate: 'StateUpdate',
-    PlayQueue: 'PlayQueue',
-    NotInGroup: 'NotInGroup',
-    GroupDoesNotExist: 'GroupDoesNotExist',
-    LibraryAccessDenied: 'LibraryAccessDenied'
+export const TaskTriggerInfoType = {
+    DailyTrigger: 'DailyTrigger',
+    WeeklyTrigger: 'WeeklyTrigger',
+    IntervalTrigger: 'IntervalTrigger',
+    StartupTrigger: 'StartupTrigger'
 } as const;
 
-export type GroupUpdateType = typeof GroupUpdateType[keyof typeof GroupUpdateType];
+export type TaskTriggerInfoType = typeof TaskTriggerInfoType[keyof typeof TaskTriggerInfoType];
 
 
 
