@@ -14,20 +14,26 @@
 
 
 /**
- * An enum representing an algorithm to downmix surround sound to stereo.
+ * Enum containing encoder presets.
  * @export
  * @enum {string}
  */
 
-export const DownMixStereoAlgorithms = {
-    None: 'None',
-    Dave750: 'Dave750',
-    NightmodeDialogue: 'NightmodeDialogue',
-    Rfc7845: 'Rfc7845',
-    Ac4: 'Ac4'
+export const EncoderPreset = {
+    Auto: 'auto',
+    Placebo: 'placebo',
+    Veryslow: 'veryslow',
+    Slower: 'slower',
+    Slow: 'slow',
+    Medium: 'medium',
+    Fast: 'fast',
+    Faster: 'faster',
+    Veryfast: 'veryfast',
+    Superfast: 'superfast',
+    Ultrafast: 'ultrafast'
 } as const;
 
-export type DownMixStereoAlgorithms = typeof DownMixStereoAlgorithms[keyof typeof DownMixStereoAlgorithms];
+export type EncoderPreset = typeof EncoderPreset[keyof typeof EncoderPreset];
 
 
 
