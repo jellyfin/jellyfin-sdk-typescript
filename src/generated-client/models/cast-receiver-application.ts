@@ -20,10 +20,10 @@ export interface CastReceiverApplication {
     /**
      * Gets or sets the cast receiver application id.
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets or sets the cast receiver application name.
      */
-    'Name'?: string;
+    'Name': string;
 }
 

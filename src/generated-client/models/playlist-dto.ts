@@ -27,10 +27,10 @@ export interface PlaylistDto {
     /**
      * Gets or sets the share permissions.
      */
-    'Shares'?: Array<PlaylistUserPermissions>;
+    'Shares': Array<PlaylistUserPermissions>;
     /**
      * Gets or sets the item ids.
      */
-    'ItemIds'?: Array<string>;
+    'ItemIds': Array<string>;
 }
 

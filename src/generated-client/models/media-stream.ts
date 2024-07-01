@@ -125,6 +125,8 @@ export interface MediaStream {
     'LocalizedForced'?: string | null;
     'LocalizedExternal'?: string | null;
     'LocalizedHearingImpaired'?: string | null;
+    'LocalizedLanguage'?: string | null;
+    'LocalizedOriginal'?: string | null;
     'DisplayTitle'?: string | null;
     'NalLengthSize'?: string | null;
     /**
@@ -173,6 +175,10 @@ export interface MediaStream {
      */
     'IsHearingImpaired'?: boolean;
     /**
+     * Gets or sets a value indicating whether this instance is original.
+     */
+    'IsOriginal'?: boolean;
+    /**
      * Gets or sets the height.
      */
     'Height'?: number | null;
@@ -189,7 +195,7 @@ export interface MediaStream {
      */
     'RealFrameRate'?: number | null;
     /**
-     * Gets the framerate used as reference.  Prefer AverageFrameRate, if that is null or an unrealistic value  then fallback to RealFrameRate.
+     * Gets the framerate used as reference. Prefer AverageFrameRate, if that is null or an unrealistic value then fallback to RealFrameRate.
      */
     'ReferenceFrameRate'?: number | null;
     /**

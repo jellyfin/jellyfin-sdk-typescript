@@ -23,16 +23,16 @@ import type { LibraryStorageDto } from './library-storage-dto';
  * Contains informations about the systems storage.
  */
 export interface SystemStorageDto {
-    'ProgramDataFolder'?: FolderStorageDto;
-    'WebFolder'?: FolderStorageDto;
-    'ImageCacheFolder'?: FolderStorageDto;
-    'CacheFolder'?: FolderStorageDto;
-    'LogFolder'?: FolderStorageDto;
-    'InternalMetadataFolder'?: FolderStorageDto;
-    'TranscodingTempFolder'?: FolderStorageDto;
+    'ProgramDataFolder': FolderStorageDto;
+    'WebFolder': FolderStorageDto;
+    'ImageCacheFolder': FolderStorageDto;
+    'CacheFolder': FolderStorageDto;
+    'LogFolder': FolderStorageDto;
+    'InternalMetadataFolder': FolderStorageDto;
+    'TranscodingTempFolder': FolderStorageDto;
     /**
      * Gets or sets the storage informations of all libraries.
      */
-    'Libraries'?: Array<LibraryStorageDto>;
+    'Libraries': Array<LibraryStorageDto>;
 }
 

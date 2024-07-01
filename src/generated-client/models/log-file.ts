@@ -29,6 +29,6 @@ export interface LogFile {
     /**
      * Gets or sets the name.
      */
-    'Name'?: string;
+    'Name': string;
 }
 
