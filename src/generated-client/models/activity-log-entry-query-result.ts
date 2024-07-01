@@ -17,7 +17,7 @@
 import type { ActivityLogEntry } from './activity-log-entry';
 
 /**
- * 
+ * Query result container.
  * @export
  * @interface ActivityLogEntryQueryResult
  */
@@ -27,7 +27,7 @@ export interface ActivityLogEntryQueryResult {
      * @type {Array<ActivityLogEntry>}
      * @memberof ActivityLogEntryQueryResult
      */
-    'Items'?: Array<ActivityLogEntry> | null;
+    'Items'?: Array<ActivityLogEntry>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}

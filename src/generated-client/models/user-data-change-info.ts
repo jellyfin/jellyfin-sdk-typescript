@@ -27,12 +27,12 @@ export interface UserDataChangeInfo {
      * @type {string}
      * @memberof UserDataChangeInfo
      */
-    'UserId'?: string | null;
+    'UserId'?: string;
     /**
      * Gets or sets the user data list.
      * @type {Array<UserItemDataDto>}
      * @memberof UserDataChangeInfo
      */
-    'UserDataList'?: Array<UserItemDataDto> | null;
+    'UserDataList'?: Array<UserItemDataDto>;
 }
 

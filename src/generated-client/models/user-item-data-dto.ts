@@ -78,12 +78,12 @@ export interface UserItemDataDto {
      * @type {string}
      * @memberof UserItemDataDto
      */
-    'Key'?: string | null;
+    'Key'?: string;
     /**
      * Gets or sets the item identifier.
      * @type {string}
      * @memberof UserItemDataDto
      */
-    'ItemId'?: string | null;
+    'ItemId'?: string;
 }
 

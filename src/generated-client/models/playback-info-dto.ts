@@ -112,5 +112,11 @@ export interface PlaybackInfoDto {
      * @memberof PlaybackInfoDto
      */
     'AutoOpenLiveStream'?: boolean | null;
+    /**
+     * Gets or sets a value indicating whether always burn in subtitles when transcoding.
+     * @type {boolean}
+     * @memberof PlaybackInfoDto
+     */
+    'AlwaysBurnInSubtitleWhenTranscoding'?: boolean | null;
 }
 
