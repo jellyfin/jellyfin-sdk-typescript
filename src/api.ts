@@ -8,14 +8,8 @@ import globalInstance from 'axios';
 
 import { Configuration } from './generated-client/configuration';
 import type { AuthenticationResult } from './generated-client/models/authentication-result';
-import { ImageType } from './generated-client/models/image-type';
 import type { ClientInfo, DeviceInfo } from './models';
-import type { ImageRequestParameters } from './models/api/image-request-parameters';
 import { getAuthorizationHeader } from './utils';
-import { getImageApi } from './utils/api/image-api';
-// NOTE: This import is used for TSDoc
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-import type { ImageUrlsApi } from './utils/api/image-urls-api';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 
@@ -78,27 +72,6 @@ export class Api {
 			this.accessToken = '';
 			return response;
 		});
-	}
-
-	/**
-	 * Get an item image URL.
-	 * @deprecated Use {@link ImageUrlsApi.getItemImageUrlById} instead.
-	 * @param itemId The Item ID.
-	 * @param imageType An optional Image Type (Primary by default).
-	 * @param params Additional request parameters.
-	 * @returns The image URL.
-	 */
-	getItemImageUrl(
-		itemId: string,
-		imageType: ImageType = ImageType.Primary,
-		params: ImageRequestParameters = {}
-	): string | undefined {
-		return getImageApi(this)
-			.getItemImageUrlById(
-				itemId,
-				imageType,
-				params
-			);
 	}
 
 	get authorizationHeader(): string {

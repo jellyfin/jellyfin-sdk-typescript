@@ -9,7 +9,6 @@ import { vi, describe, expect, it, afterEach } from 'vitest';
 
 import { Api, AUTHORIZATION_HEADER } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
-import { ImageType } from '../generated-client/models';
 import { getAuthorizationHeader } from '../utils';
 
 vi.mock('axios', async () => {
@@ -79,12 +78,5 @@ describe('Api', () => {
 	it('should return the correct basePath value', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.basePath).toBe(SERVER_URL);
-	});
-
-	it('should return an item image url', () => {
-		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
-		expect(api.getItemImageUrl('TEST')).toBe('https://example.com/Items/TEST/Images/Primary');
-		expect(api.getItemImageUrl('TEST', ImageType.Backdrop, { fillWidth: 100, fillHeight: 100 }))
-			.toBe('https://example.com/Items/TEST/Images/Backdrop?fillWidth=100&fillHeight=100');
 	});
 });
