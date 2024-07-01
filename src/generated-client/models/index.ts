@@ -324,7 +324,7 @@ export * from './transcode-seek-info';
 export * from './transcoding-info';
 export * from './transcoding-profile';
 export * from './transport-stream-timestamp';
-export * from './trickplay-info';
+export * from './trickplay-info-dto';
 export * from './trickplay-options';
 export * from './trickplay-scan-behavior';
 export * from './tuner-channel-mapping';

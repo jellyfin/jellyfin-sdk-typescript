@@ -74,7 +74,7 @@ import type { PlayAccess } from './play-access';
 import type { ProgramAudio } from './program-audio';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { TrickplayInfo } from './trickplay-info';
+import type { TrickplayInfoDto } from './trickplay-info-dto';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { UserItemDataDto } from './user-item-data-dto';
@@ -717,10 +717,10 @@ export interface BaseItemDto {
     'Chapters'?: Array<ChapterInfo> | null;
     /**
      * Gets or sets the trickplay manifest.
-     * @type {{ [key: string]: { [key: string]: TrickplayInfo; }; }}
+     * @type {{ [key: string]: { [key: string]: TrickplayInfoDto; }; }}
      * @memberof BaseItemDto
      */
-    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfo; }; } | null;
+    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfoDto; }; } | null;
     /**
      * 
      * @type {LocationType}
