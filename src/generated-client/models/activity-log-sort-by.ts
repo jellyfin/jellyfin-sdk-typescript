@@ -14,22 +14,22 @@
 
 
 /**
- * The custom value option for custom database providers.
+ * Activity log sorting options.
  * @export
- * @interface CustomDatabaseOption
+ * @enum {string}
  */
-export interface CustomDatabaseOption {
-    /**
-     * Gets or sets the key of the value.
-     * @type {string}
-     * @memberof CustomDatabaseOption
-     */
-    'Key': string;
-    /**
-     * Gets or sets the value.
-     * @type {string}
-     * @memberof CustomDatabaseOption
-     */
-    'Value': string;
-}
+
+export const ActivityLogSortBy = {
+    Name: 'Name',
+    Overiew: 'Overiew',
+    ShortOverview: 'ShortOverview',
+    Type: 'Type',
+    DateCreated: 'DateCreated',
+    Username: 'Username',
+    LogSeverity: 'LogSeverity'
+} as const;
+
+export type ActivityLogSortBy = typeof ActivityLogSortBy[keyof typeof ActivityLogSortBy];
+
+
 
