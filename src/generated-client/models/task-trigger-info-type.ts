@@ -14,23 +14,19 @@
 
 
 /**
- * Plugin load status.
+ * Enum TaskTriggerInfoType.
  * @export
  * @enum {string}
  */
 
-export const PluginStatus = {
-    Active: 'Active',
-    Restart: 'Restart',
-    Deleted: 'Deleted',
-    Superseded: 'Superseded',
-    Superceded: 'Superceded',
-    Malfunctioned: 'Malfunctioned',
-    NotSupported: 'NotSupported',
-    Disabled: 'Disabled'
+export const TaskTriggerInfoType = {
+    DailyTrigger: 'DailyTrigger',
+    WeeklyTrigger: 'WeeklyTrigger',
+    IntervalTrigger: 'IntervalTrigger',
+    StartupTrigger: 'StartupTrigger'
 } as const;
 
-export type PluginStatus = typeof PluginStatus[keyof typeof PluginStatus];
+export type TaskTriggerInfoType = typeof TaskTriggerInfoType[keyof typeof TaskTriggerInfoType];
 
 
 
