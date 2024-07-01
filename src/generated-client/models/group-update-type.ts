@@ -28,8 +28,6 @@ export const GroupUpdateType = {
     PlayQueue: 'PlayQueue',
     NotInGroup: 'NotInGroup',
     GroupDoesNotExist: 'GroupDoesNotExist',
-    CreateGroupDenied: 'CreateGroupDenied',
-    JoinGroupDenied: 'JoinGroupDenied',
     LibraryAccessDenied: 'LibraryAccessDenied'
 } as const;
 
