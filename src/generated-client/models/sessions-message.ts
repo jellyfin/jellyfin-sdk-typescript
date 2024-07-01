@@ -14,7 +14,7 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SessionInfo } from './session-info';
+import type { SessionInfoDto } from './session-info-dto';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { SessionMessageType } from './session-message-type';
@@ -27,10 +27,10 @@ import type { SessionMessageType } from './session-message-type';
 export interface SessionsMessage {
     /**
      * Gets or sets the data.
-     * @type {Array<SessionInfo>}
+     * @type {Array<SessionInfoDto>}
      * @memberof SessionsMessage
      */
-    'Data'?: Array<SessionInfo> | null;
+    'Data'?: Array<SessionInfoDto> | null;
     /**
      * Gets or sets the message id.
      * @type {string}

@@ -17,7 +17,7 @@
 import type { AuthenticationInfo } from './authentication-info';
 
 /**
- * 
+ * Query result container.
  * @export
  * @interface AuthenticationInfoQueryResult
  */
@@ -27,7 +27,7 @@ export interface AuthenticationInfoQueryResult {
      * @type {Array<AuthenticationInfo>}
      * @memberof AuthenticationInfoQueryResult
      */
-    'Items'?: Array<AuthenticationInfo> | null;
+    'Items'?: Array<AuthenticationInfo>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}

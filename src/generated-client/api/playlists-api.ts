@@ -33,6 +33,8 @@ import type { MediaType } from '../models';
 // @ts-ignore
 import type { PlaylistCreationResult } from '../models';
 // @ts-ignore
+import type { PlaylistDto } from '../models';
+// @ts-ignore
 import type { PlaylistUserPermissions } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
@@ -144,6 +146,43 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
             localVarRequestOptions.data = serializeDataIfNeeded(createPlaylistDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Get a playlist.
+         * @param {string} playlistId The playlist id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylist: async (playlistId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playlistId' is not null or undefined
+            assertParamExists('getPlaylist', 'playlistId', playlistId)
+            const localVarPath = `/Playlists/{playlistId}`
+                .replace(`{${"playlistId"}}`, encodeURIComponent(String(playlistId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -567,6 +606,19 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Get a playlist.
+         * @param {string} playlistId The playlist id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getPlaylist(playlistId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PlaylistDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPlaylist(playlistId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaylistsApi.getPlaylist']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Gets the original items of a playlist.
          * @param {string} playlistId The playlist id.
          * @param {string} [userId] User id.
@@ -714,6 +766,16 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          */
         createPlaylist(requestParameters: PlaylistsApiCreatePlaylistRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<PlaylistCreationResult> {
             return localVarFp.createPlaylist(requestParameters.name, requestParameters.ids, requestParameters.userId, requestParameters.mediaType, requestParameters.createPlaylistDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Get a playlist.
+         * @param {PlaylistsApiGetPlaylistRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getPlaylist(requestParameters: PlaylistsApiGetPlaylistRequest, options?: RawAxiosRequestConfig): AxiosPromise<PlaylistDto> {
+            return localVarFp.getPlaylist(requestParameters.playlistId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -866,6 +928,20 @@ export interface PlaylistsApiCreatePlaylistRequest {
      * @memberof PlaylistsApiCreatePlaylist
      */
     readonly createPlaylistDto?: CreatePlaylistDto
+}
+
+/**
+ * Request parameters for getPlaylist operation in PlaylistsApi.
+ * @export
+ * @interface PlaylistsApiGetPlaylistRequest
+ */
+export interface PlaylistsApiGetPlaylistRequest {
+    /**
+     * The playlist id.
+     * @type {string}
+     * @memberof PlaylistsApiGetPlaylist
+     */
+    readonly playlistId: string
 }
 
 /**
@@ -1121,6 +1197,18 @@ export class PlaylistsApi extends BaseAPI {
      */
     public createPlaylist(requestParameters: PlaylistsApiCreatePlaylistRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).createPlaylist(requestParameters.name, requestParameters.ids, requestParameters.userId, requestParameters.mediaType, requestParameters.createPlaylistDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Get a playlist.
+     * @param {PlaylistsApiGetPlaylistRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof PlaylistsApi
+     */
+    public getPlaylist(requestParameters: PlaylistsApiGetPlaylistRequest, options?: RawAxiosRequestConfig) {
+        return PlaylistsApiFp(this.configuration).getPlaylist(requestParameters.playlistId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

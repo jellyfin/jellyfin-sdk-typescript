@@ -21,11 +21,9 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import type { DeviceInfo } from '../models';
+import type { DeviceInfoDto } from '../models';
 // @ts-ignore
-import type { DeviceInfoQueryResult } from '../models';
-// @ts-ignore
-import type { DeviceOptions } from '../models';
+import type { DeviceInfoDtoQueryResult } from '../models';
 // @ts-ignore
 import type { DeviceOptionsDto } from '../models';
 // @ts-ignore
@@ -270,7 +268,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDeviceInfo(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfo>> {
+        async getDeviceInfo(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDeviceInfo(id, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDeviceInfo']?.[localVarOperationServerIndex]?.url;
@@ -283,7 +281,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDeviceOptions(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceOptions>> {
+        async getDeviceOptions(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceOptionsDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDeviceOptions(id, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDeviceOptions']?.[localVarOperationServerIndex]?.url;
@@ -296,7 +294,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDevices(userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoQueryResult>> {
+        async getDevices(userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDevices(userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDevices']?.[localVarOperationServerIndex]?.url;
@@ -343,7 +341,7 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDeviceInfo(requestParameters: DevicesApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfo> {
+        getDeviceInfo(requestParameters: DevicesApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDto> {
             return localVarFp.getDeviceInfo(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
@@ -353,7 +351,7 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDeviceOptions(requestParameters: DevicesApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceOptions> {
+        getDeviceOptions(requestParameters: DevicesApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceOptionsDto> {
             return localVarFp.getDeviceOptions(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
@@ -363,7 +361,7 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoQueryResult> {
+        getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDtoQueryResult> {
             return localVarFp.getDevices(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**

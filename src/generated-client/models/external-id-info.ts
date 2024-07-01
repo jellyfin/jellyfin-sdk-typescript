@@ -44,6 +44,7 @@ export interface ExternalIdInfo {
      * Gets or sets the URL format string.
      * @type {string}
      * @memberof ExternalIdInfo
+     * @deprecated
      */
     'UrlFormatString'?: string | null;
 }

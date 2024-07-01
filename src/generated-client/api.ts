@@ -42,6 +42,7 @@ export * from './api/live-tv-api';
 export * from './api/localization-api';
 export * from './api/lyrics-api';
 export * from './api/media-info-api';
+export * from './api/media-segments-api';
 export * from './api/movies-api';
 export * from './api/music-genres-api';
 export * from './api/package-api';
