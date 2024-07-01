@@ -39,7 +39,7 @@ import type { PlayCommand } from '../models';
 // @ts-ignore
 import type { PlaystateCommand } from '../models';
 // @ts-ignore
-import type { SessionInfo } from '../models';
+import type { SessionInfoDto } from '../models';
 /**
  * SessionApi - axios parameter creator
  * @export
@@ -848,7 +848,7 @@ export const SessionApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSessions(controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SessionInfo>>> {
+        async getSessions(controllableByUserId?: string, deviceId?: string, activeWithinSeconds?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<SessionInfoDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSessions(controllableByUserId, deviceId, activeWithinSeconds, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SessionApi.getSessions']?.[localVarOperationServerIndex]?.url;
@@ -1072,7 +1072,7 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<SessionInfo>> {
+        getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<SessionInfoDto>> {
             return localVarFp.getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(axios, basePath));
         },
         /**

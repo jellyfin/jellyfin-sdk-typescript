@@ -14,16 +14,20 @@
 
 
 /**
- * 
+ * Enum containing tonemapping modes.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const TonemappingMode = {
+    Auto: 'auto',
+    Max: 'max',
+    Rgb: 'rgb',
+    Lum: 'lum',
+    Itp: 'itp'
+} as const;
+
+export type TonemappingMode = typeof TonemappingMode[keyof typeof TonemappingMode];
+
+
 

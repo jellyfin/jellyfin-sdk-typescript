@@ -171,6 +171,12 @@ export interface MediaSourceInfo {
      * @type {boolean}
      * @memberof MediaSourceInfo
      */
+    'UseMostCompatibleTranscodingProfile'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof MediaSourceInfo
+     */
     'RequiresOpening'?: boolean;
     /**
      * 
@@ -252,6 +258,12 @@ export interface MediaSourceInfo {
     'Bitrate'?: number | null;
     /**
      * 
+     * @type {number}
+     * @memberof MediaSourceInfo
+     */
+    'FallbackMaxStreamingBitrate'?: number | null;
+    /**
+     * 
      * @type {TransportStreamTimestamp}
      * @memberof MediaSourceInfo
      */
@@ -298,6 +310,12 @@ export interface MediaSourceInfo {
      * @memberof MediaSourceInfo
      */
     'DefaultSubtitleStreamIndex'?: number | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof MediaSourceInfo
+     */
+    'HasSegments'?: boolean;
 }
 
 
