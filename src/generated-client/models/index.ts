@@ -290,6 +290,7 @@ export * from './task-info';
 export * from './task-result';
 export * from './task-state';
 export * from './task-trigger-info';
+export * from './task-trigger-info-type';
 export * from './theme-media-result';
 export * from './timer-cancelled-message';
 export * from './timer-created-message';

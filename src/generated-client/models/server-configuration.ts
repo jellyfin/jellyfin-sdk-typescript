@@ -326,12 +326,6 @@ export interface ServerConfiguration {
      */
     'LibraryMetadataRefreshConcurrency'?: number;
     /**
-     * Gets or sets a value indicating whether older plugins should automatically be deleted from the plugin folder.
-     * @type {boolean}
-     * @memberof ServerConfiguration
-     */
-    'RemoveOldPlugins'?: boolean;
-    /**
      * Gets or sets a value indicating whether clients should be allowed to upload logs.
      * @type {boolean}
      * @memberof ServerConfiguration
@@ -367,6 +361,12 @@ export interface ServerConfiguration {
      * @memberof ServerConfiguration
      */
     'TrickplayOptions'?: TrickplayOptions;
+    /**
+     * Gets or sets a value indicating whether old authorization methods are allowed.
+     * @type {boolean}
+     * @memberof ServerConfiguration
+     */
+    'EnableLegacyAuthorization'?: boolean;
 }
 
 
