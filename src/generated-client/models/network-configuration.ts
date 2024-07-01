@@ -83,6 +83,7 @@ export interface NetworkConfiguration {
      * Gets or sets a value indicating whether to enable automatic port forwarding.
      * @type {boolean}
      * @memberof NetworkConfiguration
+     * @deprecated
      */
     'EnableUPnP'?: boolean;
     /**

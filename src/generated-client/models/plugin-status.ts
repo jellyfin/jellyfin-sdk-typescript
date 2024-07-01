@@ -23,6 +23,7 @@ export const PluginStatus = {
     Active: 'Active',
     Restart: 'Restart',
     Deleted: 'Deleted',
+    Superseded: 'Superseded',
     Superceded: 'Superceded',
     Malfunctioned: 'Malfunctioned',
     NotSupported: 'NotSupported',

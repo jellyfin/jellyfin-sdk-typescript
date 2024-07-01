@@ -117,6 +117,7 @@ models/country-info.ts
 models/create-playlist-dto.ts
 models/create-user-by-name.ts
 models/culture-dto.ts
+models/database-configuration-options.ts
 models/day-of-week.ts
 models/day-pattern.ts
 models/default-directory-browser-info-dto.ts
@@ -358,6 +359,7 @@ models/task-completion-status.ts
 models/task-info.ts
 models/task-result.ts
 models/task-state.ts
+models/task-trigger-info-type.ts
 models/task-trigger-info.ts
 models/theme-media-result.ts
 models/timer-cancelled-message.ts
@@ -405,6 +407,5 @@ models/video-range.ts
 models/video-type.ts
 models/video3-dformat.ts
 models/virtual-folder-info.ts
-models/wake-on-lan-info.ts
 models/web-socket-message.ts
 models/xbmc-metadata-options.ts
