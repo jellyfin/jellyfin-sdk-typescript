@@ -14,21 +14,19 @@
 
 
 /**
- * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
+ * Enum TaskTriggerInfoType.
  * @export
  * @enum {string}
  */
 
-export const MediaSegmentType = {
-    Unknown: 'Unknown',
-    Commercial: 'Commercial',
-    Preview: 'Preview',
-    Recap: 'Recap',
-    Outro: 'Outro',
-    Intro: 'Intro'
+export const TaskTriggerInfoType = {
+    DailyTrigger: 'DailyTrigger',
+    WeeklyTrigger: 'WeeklyTrigger',
+    IntervalTrigger: 'IntervalTrigger',
+    StartupTrigger: 'StartupTrigger'
 } as const;
 
-export type MediaSegmentType = typeof MediaSegmentType[keyof typeof MediaSegmentType];
+export type TaskTriggerInfoType = typeof TaskTriggerInfoType[keyof typeof TaskTriggerInfoType];
 
 
 

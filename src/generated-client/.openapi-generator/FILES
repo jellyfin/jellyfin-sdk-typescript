@@ -93,7 +93,7 @@ models/book-info-remote-search-query.ts
 models/book-info.ts
 models/box-set-info-remote-search-query.ts
 models/box-set-info.ts
-models/branding-options.ts
+models/branding-options-dto.ts
 models/buffer-request-dto.ts
 models/cast-receiver-application.ts
 models/channel-features.ts
@@ -117,6 +117,7 @@ models/country-info.ts
 models/create-playlist-dto.ts
 models/create-user-by-name.ts
 models/culture-dto.ts
+models/database-configuration-options.ts
 models/day-of-week.ts
 models/day-pattern.ts
 models/default-directory-browser-info-dto.ts
@@ -201,6 +202,7 @@ models/location-type.ts
 models/log-file.ts
 models/log-level.ts
 models/lyric-dto.ts
+models/lyric-line-cue.ts
 models/lyric-line.ts
 models/lyric-metadata.ts
 models/media-attachment.ts
@@ -240,6 +242,7 @@ models/open-live-stream-dto.ts
 models/outbound-keep-alive-message.ts
 models/outbound-web-socket-message.ts
 models/package-info.ts
+models/parental-rating-score.ts
 models/parental-rating.ts
 models/path-substitution.ts
 models/person-kind.ts
@@ -358,6 +361,7 @@ models/task-completion-status.ts
 models/task-info.ts
 models/task-result.ts
 models/task-state.ts
+models/task-trigger-info-type.ts
 models/task-trigger-info.ts
 models/theme-media-result.ts
 models/timer-cancelled-message.ts
@@ -405,6 +409,5 @@ models/video-range.ts
 models/video-type.ts
 models/video3-dformat.ts
 models/virtual-folder-info.ts
-models/wake-on-lan-info.ts
 models/web-socket-message.ts
 models/xbmc-metadata-options.ts
