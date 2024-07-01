@@ -326,12 +326,6 @@ export interface ServerConfiguration {
      */
     'LibraryMetadataRefreshConcurrency'?: number;
     /**
-     * Gets or sets a value indicating whether older plugins should automatically be deleted from the plugin folder.
-     * @type {boolean}
-     * @memberof ServerConfiguration
-     */
-    'RemoveOldPlugins'?: boolean;
-    /**
      * Gets or sets a value indicating whether clients should be allowed to upload logs.
      * @type {boolean}
      * @memberof ServerConfiguration
