@@ -19,8 +19,11 @@ jobs:
       - name: Check out Git repository
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
-          ref: master
+          ref: openapi-unstable
           token: ${{ secrets.JF_BOT_TOKEN }}
+
+      - name: Update unstable branch from master
+        run: git rebase master
 
       - name: Set up Node.js
         uses: actions/setup-node@60edb5dd545a775178f52524783378180af0d1f8 # v4.0.2
@@ -50,10 +53,12 @@ jobs:
           sed -i "s/API_VERSION = '.*'/API_VERSION = '${{ env.UNSTABLE_API_VERSION }}'/" src/versions.ts
 
       - name: Commit changes
+        continue-on-error: true
         run: |
+          ! git diff --exit-code --no-patch
           git config user.name jellyfin-bot
           git config user.email team@jellyfin.org
-          git checkout -B openapi-unstable
-          git add .
-          git commit --allow-empty -m "Update OpenAPI to unstable"
-          git push --force origin openapi-unstable
+          git commit --all --amend -m "Update OpenAPI to unstable"
+
+      - name: Push changes
+        run: git push --force origin openapi-unstable
