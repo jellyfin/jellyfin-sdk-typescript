@@ -22,7 +22,7 @@ jobs:
 
       - name: Download stable OpenAPI schema
         run: |
-          curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-stable.json -o openapi.json
+          curl -sL https://api.jellyfin.org/openapi/jellyfin-openapi-stable.json -o openapi.json
           npm run fix-schema
           cp openapi.json $HOME
 
