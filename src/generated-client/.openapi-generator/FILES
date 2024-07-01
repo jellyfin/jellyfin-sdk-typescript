@@ -358,6 +358,7 @@ models/task-completion-status.ts
 models/task-info.ts
 models/task-result.ts
 models/task-state.ts
+models/task-trigger-info-type.ts
 models/task-trigger-info.ts
 models/theme-media-result.ts
 models/timer-cancelled-message.ts
