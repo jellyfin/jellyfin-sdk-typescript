@@ -31,7 +31,7 @@ jobs:
 
       - name: Download unstable OpenAPI schema
         run: |
-          curl -sL https://repo.jellyfin.org/releases/openapi/jellyfin-openapi-unstable.json -o openapi.json
+          curl -sL https://api.jellyfin.org/openapi/jellyfin-openapi-unstable.json -o openapi.json
           npm run fix-schema
           cp openapi.json $HOME
 
