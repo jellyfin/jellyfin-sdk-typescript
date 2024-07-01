@@ -14,7 +14,7 @@
 
 
 /**
- * Media streaming protocol.  Lowercase for backwards compatibility.
+ * Media streaming protocol. Lowercase for backwards compatibility.
  * @export
  * @enum {string}
  */

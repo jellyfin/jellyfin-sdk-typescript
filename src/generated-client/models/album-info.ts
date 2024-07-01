@@ -96,10 +96,10 @@ export interface AlbumInfo {
     'AlbumArtists'?: Array<string>;
     /**
      * Gets or sets the artist provider ids.
-     * @type {{ [key: string]: string | null; }}
+     * @type {{ [key: string]: string; }}
      * @memberof AlbumInfo
      */
-    'ArtistProviderIds'?: { [key: string]: string | null; };
+    'ArtistProviderIds'?: { [key: string]: string; };
     /**
      * 
      * @type {Array<SongInfo>}

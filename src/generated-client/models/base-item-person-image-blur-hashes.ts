@@ -21,81 +21,81 @@
 export interface BaseItemPersonImageBlurHashes {
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Primary'?: { [key: string]: string; };
+    'Primary'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Art'?: { [key: string]: string; };
+    'Art'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Backdrop'?: { [key: string]: string; };
+    'Backdrop'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Banner'?: { [key: string]: string; };
+    'Banner'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Logo'?: { [key: string]: string; };
+    'Logo'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Thumb'?: { [key: string]: string; };
+    'Thumb'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Disc'?: { [key: string]: string; };
+    'Disc'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Box'?: { [key: string]: string; };
+    'Box'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Screenshot'?: { [key: string]: string; };
+    'Screenshot'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Menu'?: { [key: string]: string; };
+    'Menu'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Chapter'?: { [key: string]: string; };
+    'Chapter'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'BoxRear'?: { [key: string]: string; };
+    'BoxRear'?: { [key: string]: string | null; };
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemPersonImageBlurHashes
      */
-    'Profile'?: { [key: string]: string; };
+    'Profile'?: { [key: string]: string | null; };
 }
 

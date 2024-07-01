@@ -24,7 +24,7 @@ export interface FolderStorageDto {
      * @type {string}
      * @memberof FolderStorageDto
      */
-    'Path'?: string;
+    'Path': string;
     /**
      * Gets the free space of the underlying storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.
      * @type {number}

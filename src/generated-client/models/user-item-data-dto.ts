@@ -78,7 +78,7 @@ export interface UserItemDataDto {
      * @type {string}
      * @memberof UserItemDataDto
      */
-    'Key'?: string;
+    'Key': string;
     /**
      * Gets or sets the item identifier.
      * @type {string}

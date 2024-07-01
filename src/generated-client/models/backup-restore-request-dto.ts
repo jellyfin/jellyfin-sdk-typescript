@@ -24,6 +24,6 @@ export interface BackupRestoreRequestDto {
      * @type {string}
      * @memberof BackupRestoreRequestDto
      */
-    'ArchiveFileName'?: string;
+    'ArchiveFileName': string;
 }
 

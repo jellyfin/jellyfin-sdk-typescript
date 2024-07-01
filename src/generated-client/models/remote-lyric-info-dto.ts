@@ -27,18 +27,18 @@ export interface RemoteLyricInfoDto {
      * @type {string}
      * @memberof RemoteLyricInfoDto
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets the provider name.
      * @type {string}
      * @memberof RemoteLyricInfoDto
      */
-    'ProviderName'?: string;
+    'ProviderName': string;
     /**
      * 
      * @type {LyricDto}
      * @memberof RemoteLyricInfoDto
      */
-    'Lyrics'?: LyricDto;
+    'Lyrics': LyricDto;
 }
 

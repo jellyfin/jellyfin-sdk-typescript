@@ -30,7 +30,7 @@ export interface CreatePlaylistDto {
      * @type {string}
      * @memberof CreatePlaylistDto
      */
-    'Name'?: string;
+    'Name': string;
     /**
      * Gets or sets item ids to add to the playlist.
      * @type {Array<string>}

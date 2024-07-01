@@ -38,7 +38,7 @@ export interface UserDto {
      */
     'ServerId'?: string | null;
     /**
-     * Gets or sets the name of the server.  This is not used by the server and is for client-side usage only.
+     * Gets or sets the name of the server. This is not used by the server and is for client-side usage only.
      * @type {string}
      * @memberof UserDto
      */
@@ -59,21 +59,23 @@ export interface UserDto {
      * Gets or sets a value indicating whether this instance has password.
      * @type {boolean}
      * @memberof UserDto
+     * @deprecated
      */
-    'HasPassword'?: boolean;
+    'HasPassword'?: boolean | null;
     /**
      * Gets or sets a value indicating whether this instance has configured password.
      * @type {boolean}
      * @memberof UserDto
+     * @deprecated
      */
-    'HasConfiguredPassword'?: boolean;
+    'HasConfiguredPassword'?: boolean | null;
     /**
      * Gets or sets a value indicating whether this instance has configured easy password.
      * @type {boolean}
      * @memberof UserDto
      * @deprecated
      */
-    'HasConfiguredEasyPassword'?: boolean;
+    'HasConfiguredEasyPassword'?: boolean | null;
     /**
      * Gets or sets whether async login is enabled or not.
      * @type {boolean}

@@ -3239,7 +3239,7 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
         },
         /**
          * 
-         * @summary Uploads a custom splashscreen.  The body is expected to the image contents base64 encoded.
+         * @summary Uploads a custom splashscreen. The body is expected to the image contents base64 encoded.
          * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4155,7 +4155,7 @@ export const ImageApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Uploads a custom splashscreen.  The body is expected to the image contents base64 encoded.
+         * @summary Uploads a custom splashscreen. The body is expected to the image contents base64 encoded.
          * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -4537,7 +4537,7 @@ export const ImageApiFactory = function (configuration?: Configuration, basePath
         },
         /**
          * 
-         * @summary Uploads a custom splashscreen.  The body is expected to the image contents base64 encoded.
+         * @summary Uploads a custom splashscreen. The body is expected to the image contents base64 encoded.
          * @param {ImageApiUploadCustomSplashscreenRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -8306,7 +8306,7 @@ export class ImageApi extends BaseAPI {
 
     /**
      * 
-     * @summary Uploads a custom splashscreen.  The body is expected to the image contents base64 encoded.
+     * @summary Uploads a custom splashscreen. The body is expected to the image contents base64 encoded.
      * @param {ImageApiUploadCustomSplashscreenRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}

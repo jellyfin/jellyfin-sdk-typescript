@@ -141,7 +141,7 @@ export interface NetworkConfiguration {
      */
     'EnablePublishedServerUriByRequest'?: boolean;
     /**
-     * Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to advertise for specific subnets.
+     * Gets or sets the PublishedServerUriBySubnet Gets or sets PublishedServerUri to advertise for specific subnets.
      * @type {Array<string>}
      * @memberof NetworkConfiguration
      */

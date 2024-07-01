@@ -157,7 +157,7 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
             };
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Gets live playback media info for an item.
          * @param {string} itemId The item id.
          * @param {string} [userId] The user id.
@@ -415,7 +415,7 @@ export const MediaInfoApiFp = function(configuration?: Configuration) {
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Gets live playback media info for an item.
          * @param {string} itemId The item id.
          * @param {string} [userId] The user id.
@@ -508,7 +508,7 @@ export const MediaInfoApiFactory = function (configuration?: Configuration, base
             return localVarFp.getPlaybackInfo(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Gets live playback media info for an item.
          * @param {MediaInfoApiGetPostedPlaybackInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -840,7 +840,7 @@ export class MediaInfoApi extends BaseAPI {
     }
 
     /**
-     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
      * @summary Gets live playback media info for an item.
      * @param {MediaInfoApiGetPostedPlaybackInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.

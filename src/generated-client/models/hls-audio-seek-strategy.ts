@@ -14,16 +14,17 @@
 
 
 /**
- * Startup remote access dto.
+ * An enum representing the options to seek the input audio stream when transcoding HLS segments.
  * @export
- * @interface StartupRemoteAccessDto
+ * @enum {string}
  */
-export interface StartupRemoteAccessDto {
-    /**
-     * Gets or sets a value indicating whether enable remote access.
-     * @type {boolean}
-     * @memberof StartupRemoteAccessDto
-     */
-    'EnableRemoteAccess': boolean;
-}
+
+export const HlsAudioSeekStrategy = {
+    DisableAccurateSeek: 'DisableAccurateSeek',
+    TranscodeAudio: 'TranscodeAudio'
+} as const;
+
+export type HlsAudioSeekStrategy = typeof HlsAudioSeekStrategy[keyof typeof HlsAudioSeekStrategy];
+
+
 

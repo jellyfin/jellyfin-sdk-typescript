@@ -36,10 +36,10 @@ export interface GeneralCommand {
     'ControllingUserId'?: string;
     /**
      * 
-     * @type {{ [key: string]: string | null; }}
+     * @type {{ [key: string]: string; }}
      * @memberof GeneralCommand
      */
-    'Arguments'?: { [key: string]: string | null; };
+    'Arguments'?: { [key: string]: string; };
 }
 
 

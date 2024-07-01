@@ -26,6 +26,9 @@ import type { EncoderPreset } from './encoder-preset';
 import type { HardwareAccelerationType } from './hardware-acceleration-type';
 // May contain unused imports in some cases
 // @ts-ignore
+import type { HlsAudioSeekStrategy } from './hls-audio-seek-strategy';
+// May contain unused imports in some cases
+// @ts-ignore
 import type { TonemappingAlgorithm } from './tonemapping-algorithm';
 // May contain unused imports in some cases
 // @ts-ignore
@@ -311,6 +314,12 @@ export interface EncodingOptions {
      */
     'EnableSubtitleExtraction'?: boolean;
     /**
+     * Gets or sets the timeout for subtitle extraction in minutes.
+     * @type {number}
+     * @memberof EncodingOptions
+     */
+    'SubtitleExtractionTimeoutMinutes'?: number;
+    /**
      * Gets or sets the codecs hardware encoding is used for.
      * @type {Array<string>}
      * @memberof EncodingOptions
@@ -322,6 +331,12 @@ export interface EncodingOptions {
      * @memberof EncodingOptions
      */
     'AllowOnDemandMetadataBasedKeyframeExtractionForExtensions'?: Array<string> | null;
+    /**
+     * 
+     * @type {HlsAudioSeekStrategy}
+     * @memberof EncodingOptions
+     */
+    'HlsAudioSeekStrategy'?: HlsAudioSeekStrategy;
 }
 
 

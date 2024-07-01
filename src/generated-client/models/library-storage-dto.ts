@@ -27,18 +27,18 @@ export interface LibraryStorageDto {
      * @type {string}
      * @memberof LibraryStorageDto
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets or sets the name of the library.
      * @type {string}
      * @memberof LibraryStorageDto
      */
-    'Name'?: string;
+    'Name': string;
     /**
      * Gets or sets the storage informations about the folders used in a library.
      * @type {Array<FolderStorageDto>}
      * @memberof LibraryStorageDto
      */
-    'Folders'?: Array<FolderStorageDto>;
+    'Folders': Array<FolderStorageDto>;
 }
 

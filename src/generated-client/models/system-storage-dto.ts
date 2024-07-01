@@ -30,48 +30,48 @@ export interface SystemStorageDto {
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'ProgramDataFolder'?: FolderStorageDto;
+    'ProgramDataFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'WebFolder'?: FolderStorageDto;
+    'WebFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'ImageCacheFolder'?: FolderStorageDto;
+    'ImageCacheFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'CacheFolder'?: FolderStorageDto;
+    'CacheFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'LogFolder'?: FolderStorageDto;
+    'LogFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'InternalMetadataFolder'?: FolderStorageDto;
+    'InternalMetadataFolder': FolderStorageDto;
     /**
      * 
      * @type {FolderStorageDto}
      * @memberof SystemStorageDto
      */
-    'TranscodingTempFolder'?: FolderStorageDto;
+    'TranscodingTempFolder': FolderStorageDto;
     /**
      * Gets or sets the storage informations of all libraries.
      * @type {Array<LibraryStorageDto>}
      * @memberof SystemStorageDto
      */
-    'Libraries'?: Array<LibraryStorageDto>;
+    'Libraries': Array<LibraryStorageDto>;
 }
 

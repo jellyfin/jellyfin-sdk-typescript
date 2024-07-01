@@ -33,6 +33,6 @@ export interface UserDataChangeInfo {
      * @type {Array<UserItemDataDto>}
      * @memberof UserDataChangeInfo
      */
-    'UserDataList'?: Array<UserItemDataDto>;
+    'UserDataList': Array<UserItemDataDto>;
 }
 

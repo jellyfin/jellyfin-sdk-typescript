@@ -27,10 +27,10 @@ export interface RemoteSearchResult {
     'Name'?: string | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string | null; }}
+     * @type {{ [key: string]: string; }}
      * @memberof RemoteSearchResult
      */
-    'ProviderIds'?: { [key: string]: string | null; } | null;
+    'ProviderIds'?: { [key: string]: string; };
     /**
      * Gets or sets the year.
      * @type {number}
@@ -90,6 +90,6 @@ export interface RemoteSearchResult {
      * @type {Array<RemoteSearchResult>}
      * @memberof RemoteSearchResult
      */
-    'Artists'?: Array<RemoteSearchResult> | null;
+    'Artists'?: Array<RemoteSearchResult>;
 }
 

@@ -27,19 +27,19 @@ export interface CustomDatabaseOptions {
      * @type {string}
      * @memberof CustomDatabaseOptions
      */
-    'PluginName'?: string;
+    'PluginName': string;
     /**
      * Gets or sets the plugin assembly to search for providers.
      * @type {string}
      * @memberof CustomDatabaseOptions
      */
-    'PluginAssembly'?: string;
+    'PluginAssembly': string;
     /**
      * Gets or sets the connection string for the custom database provider.
      * @type {string}
      * @memberof CustomDatabaseOptions
      */
-    'ConnectionString'?: string;
+    'ConnectionString': string;
     /**
      * Gets or sets the list of extra options for the custom provider.
      * @type {Array<CustomDatabaseOption>}
