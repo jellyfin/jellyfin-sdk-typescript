@@ -86,7 +86,7 @@ import type { Video3DFormat } from './video3-dformat';
 import type { VideoType } from './video-type';
 
 /**
- * This is strictly used as a data transfer object from the api layer.  This holds information about a BaseItem in a format that is convenient for the client.
+ * This is strictly used as a data transfer object from the api layer. This holds information about a BaseItem in a format that is convenient for the client.
  */
 export interface BaseItemDto {
     /**
@@ -374,7 +374,7 @@ export interface BaseItemDto {
     /**
      * Gets or sets the image tags.
      */
-    'ImageTags'?: { [key: string]: string; } | null;
+    'ImageTags'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the backdrop image tags.
      */
@@ -427,7 +427,7 @@ export interface BaseItemDto {
     /**
      * Gets or sets the trickplay manifest.
      */
-    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfoDto; }; } | null;
+    'Trickplay'?: { [key: string]: { [key: string]: TrickplayInfoDto; } | null; } | null;
     'LocationType'?: LocationType;
     'IsoType'?: IsoType;
     'MediaType'?: MediaType;
@@ -553,6 +553,10 @@ export interface BaseItemDto {
      * Gets or sets the gain required for audio normalization.
      */
     'NormalizationGain'?: number | null;
+    /**
+     * Gets or sets the gain required for audio normalization. This field is inherited from music album normalization gain.
+     */
+    'AlbumNormalizationGain'?: number | null;
     'CurrentProgram'?: BaseItemDto;
 }
 

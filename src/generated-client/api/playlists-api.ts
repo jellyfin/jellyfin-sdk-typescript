@@ -52,11 +52,12 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
          * @summary Adds items to a playlist.
          * @param {string} playlistId The playlist id.
          * @param {Array<string>} [ids] Item id, comma delimited.
+         * @param {number} [position] Optional. 0-based index where to place the items or at the end if &#x60;null&#x60;.
          * @param {string} [userId] The userId.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addItemToPlaylist: async (playlistId: string, ids?: Array<string>, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        addItemToPlaylist: async (playlistId: string, ids?: Array<string>, position?: number, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playlistId' is not null or undefined
             assertParamExists('addItemToPlaylist', 'playlistId', playlistId)
             const localVarPath = `/Playlists/{playlistId}/Items`
@@ -79,6 +80,10 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['ids'] = ids;
             }
 
+            if (position !== undefined) {
+                localVarQueryParameter['position'] = position;
+            }
+
             if (userId !== undefined) {
                 localVarQueryParameter['userId'] = userId;
             }
@@ -95,7 +100,7 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             };
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
@@ -572,18 +577,19 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
          * @summary Adds items to a playlist.
          * @param {string} playlistId The playlist id.
          * @param {Array<string>} [ids] Item id, comma delimited.
+         * @param {number} [position] Optional. 0-based index where to place the items or at the end if &#x60;null&#x60;.
          * @param {string} [userId] The userId.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addItemToPlaylist(playlistId: string, ids?: Array<string>, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.addItemToPlaylist(playlistId, ids, userId, options);
+        async addItemToPlaylist(playlistId: string, ids?: Array<string>, position?: number, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.addItemToPlaylist(playlistId, ids, position, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['PlaylistsApi.addItemToPlaylist']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
@@ -749,10 +755,10 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
          * @throws {RequiredError}
          */
         addItemToPlaylist(requestParameters: PlaylistsApiAddItemToPlaylistRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(axios, basePath));
+            return localVarFp.addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.position, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {PlaylistsApiCreatePlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -867,6 +873,11 @@ export interface PlaylistsApiAddItemToPlaylistRequest {
      * Item id, comma delimited.
      */
     readonly ids?: Array<string>
+
+    /**
+     * Optional. 0-based index where to place the items or at the end if &#x60;null&#x60;.
+     */
+    readonly position?: number
 
     /**
      * The userId.
@@ -1086,11 +1097,11 @@ export class PlaylistsApi extends BaseAPI {
      * @throws {RequiredError}
      */
     public addItemToPlaylist(requestParameters: PlaylistsApiAddItemToPlaylistRequest, options?: RawAxiosRequestConfig) {
-        return PlaylistsApiFp(this.configuration).addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+        return PlaylistsApiFp(this.configuration).addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.position, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
-     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
      * @summary Creates a new playlist.
      * @param {PlaylistsApiCreatePlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.

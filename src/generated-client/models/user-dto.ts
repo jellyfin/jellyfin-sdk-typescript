@@ -32,7 +32,7 @@ export interface UserDto {
      */
     'ServerId'?: string | null;
     /**
-     * Gets or sets the name of the server.  This is not used by the server and is for client-side usage only.
+     * Gets or sets the name of the server. This is not used by the server and is for client-side usage only.
      */
     'ServerName'?: string | null;
     /**
@@ -45,17 +45,19 @@ export interface UserDto {
     'PrimaryImageTag'?: string | null;
     /**
      * Gets or sets a value indicating whether this instance has password.
+     * @deprecated
      */
-    'HasPassword'?: boolean;
+    'HasPassword'?: boolean | null;
     /**
      * Gets or sets a value indicating whether this instance has configured password.
+     * @deprecated
      */
-    'HasConfiguredPassword'?: boolean;
+    'HasConfiguredPassword'?: boolean | null;
     /**
      * Gets or sets a value indicating whether this instance has configured easy password.
      * @deprecated
      */
-    'HasConfiguredEasyPassword'?: boolean;
+    'HasConfiguredEasyPassword'?: boolean | null;
     /**
      * Gets or sets whether async login is enabled or not.
      */

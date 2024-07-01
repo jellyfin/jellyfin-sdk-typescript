@@ -168,44 +168,6 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {string} itemId 
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getCriticReviews: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'itemId' is not null or undefined
-            assertParamExists('getCriticReviews', 'itemId', itemId)
-            const localVarPath = `/Items/{itemId}/CriticReviews`
-                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {string} itemId The item id.
          * @param {*} [options] Override http request option.
@@ -1232,20 +1194,6 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {string} itemId 
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getCriticReviews(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getCriticReviews(itemId, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getCriticReviews']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {string} itemId The item id.
          * @param {*} [options] Override http request option.
@@ -1596,17 +1544,6 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getCriticReviews(requestParameters.itemId, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {LibraryApiGetDownloadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1849,13 +1786,6 @@ export interface LibraryApiGetAncestorsRequest {
      * Optional. Filter by user id, and attach user data.
      */
     readonly userId?: string
-}
-
-/**
- * Request parameters for getCriticReviews operation in LibraryApi.
- */
-export interface LibraryApiGetCriticReviewsRequest {
-    readonly itemId: string
 }
 
 /**
@@ -2283,18 +2213,6 @@ export class LibraryApi extends BaseAPI {
      */
     public getAncestors(requestParameters: LibraryApiGetAncestorsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getAncestors(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Gets critic review for an item.
-     * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     */
-    public getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig) {
-        return LibraryApiFp(this.configuration).getCriticReviews(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

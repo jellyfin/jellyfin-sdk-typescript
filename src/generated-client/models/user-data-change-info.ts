@@ -27,6 +27,6 @@ export interface UserDataChangeInfo {
     /**
      * Gets or sets the user data list.
      */
-    'UserDataList'?: Array<UserItemDataDto>;
+    'UserDataList': Array<UserItemDataDto>;
 }
 

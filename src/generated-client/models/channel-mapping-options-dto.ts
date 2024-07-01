@@ -29,11 +29,11 @@ export interface ChannelMappingOptionsDto {
     /**
      * Gets or sets list of tuner channels.
      */
-    'TunerChannels'?: Array<TunerChannelMapping>;
+    'TunerChannels': Array<TunerChannelMapping>;
     /**
      * Gets or sets list of provider channels.
      */
-    'ProviderChannels'?: Array<NameIdPair>;
+    'ProviderChannels': Array<NameIdPair>;
     /**
      * Gets or sets list of mappings.
      */

@@ -125,6 +125,7 @@ export interface MediaStream {
     'LocalizedForced'?: string | null;
     'LocalizedExternal'?: string | null;
     'LocalizedHearingImpaired'?: string | null;
+    'LocalizedLanguage'?: string | null;
     'DisplayTitle'?: string | null;
     'NalLengthSize'?: string | null;
     /**
@@ -189,7 +190,7 @@ export interface MediaStream {
      */
     'RealFrameRate'?: number | null;
     /**
-     * Gets the framerate used as reference.  Prefer AverageFrameRate, if that is null or an unrealistic value  then fallback to RealFrameRate.
+     * Gets the framerate used as reference. Prefer AverageFrameRate, if that is null or an unrealistic value then fallback to RealFrameRate.
      */
     'ReferenceFrameRate'?: number | null;
     /**

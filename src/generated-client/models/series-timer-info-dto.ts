@@ -131,7 +131,7 @@ export interface SeriesTimerInfoDto {
     /**
      * Gets or sets the image tags.
      */
-    'ImageTags'?: { [key: string]: string; } | null;
+    'ImageTags'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the parent thumb item id.
      */

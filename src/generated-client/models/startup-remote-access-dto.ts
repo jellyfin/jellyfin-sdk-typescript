@@ -21,10 +21,5 @@ export interface StartupRemoteAccessDto {
      * Gets or sets a value indicating whether enable remote access.
      */
     'EnableRemoteAccess': boolean;
-    /**
-     * Gets or sets a value indicating whether enable automatic port mapping.
-     * @deprecated
-     */
-    'EnableAutomaticPortMapping': boolean;
 }
 

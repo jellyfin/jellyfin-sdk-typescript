@@ -37,9 +37,19 @@ import type { NameIdPair } from '../models';
 // @ts-ignore
 import type { PlayCommand } from '../models';
 // @ts-ignore
+import type { PlaybackProgressInfo } from '../models';
+// @ts-ignore
+import type { PlaybackStartInfo } from '../models';
+// @ts-ignore
+import type { PlaybackStopInfo } from '../models';
+// @ts-ignore
 import type { PlaystateCommand } from '../models';
 // @ts-ignore
+import type { ProblemDetails } from '../models';
+// @ts-ignore
 import type { SessionInfoDto } from '../models';
+// @ts-ignore
+import type { UserItemDataDto } from '../models';
 /**
  * SessionApi - axios parameter creator
  */
@@ -248,6 +258,137 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Marks an item as played for user.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {string} [datePlayed] Optional. The date the item was played.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markPlayedItem: async (itemId: string, userId?: string, datePlayed?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('markPlayedItem', 'itemId', itemId)
+            const localVarPath = `/UserPlayedItems/{itemId}`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            if (datePlayed !== undefined) {
+                localVarQueryParameter['datePlayed'] = (datePlayed as any instanceof Date) ?
+                    (datePlayed as any).toISOString() :
+                    datePlayed;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Marks an item as unplayed for user.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markUnplayedItem: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('markUnplayedItem', 'itemId', itemId)
+            const localVarPath = `/UserPlayedItems/{itemId}`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {string} playSessionId Playback session id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        pingPlaybackSession: async (playSessionId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playSessionId' is not null or undefined
+            assertParamExists('pingPlaybackSession', 'playSessionId', playSessionId)
+            const localVarPath = `/Sessions/Playing/Ping`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (playSessionId !== undefined) {
+                localVarQueryParameter['playSessionId'] = playSessionId;
+            }
+
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -470,6 +611,114 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackProgress: async (playbackProgressInfo?: PlaybackProgressInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing/Progress`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackProgressInfo, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStart: async (playbackStartInfo?: PlaybackStartInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStartInfo, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStopped: async (playbackStopInfo?: PlaybackStopInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing/Stopped`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStopInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -851,6 +1100,48 @@ export const SessionApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Marks an item as played for user.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {string} [datePlayed] Optional. The date the item was played.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async markPlayedItem(itemId: string, userId?: string, datePlayed?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.markPlayedItem(itemId, userId, datePlayed, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.markPlayedItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Marks an item as unplayed for user.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async markUnplayedItem(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.markUnplayedItem(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.markUnplayedItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {string} playSessionId Playback session id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async pingPlaybackSession(playSessionId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.pingPlaybackSession(playSessionId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.pingPlaybackSession']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Instructs a session to play an item.
          * @param {string} sessionId The session id.
          * @param {PlayCommand} playCommand The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who have not yet implemented play next and play last may play now.
@@ -912,6 +1203,45 @@ export const SessionApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeUserFromSession(sessionId, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SessionApi.removeUserFromSession']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackProgress(playbackProgressInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackProgress']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStart(playbackStartInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackStart']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStopped(playbackStopInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackStopped']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -1071,6 +1401,36 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
+         * @summary Marks an item as played for user.
+         * @param {SessionApiMarkPlayedItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markPlayedItem(requestParameters: SessionApiMarkPlayedItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markPlayedItem(requestParameters.itemId, requestParameters.userId, requestParameters.datePlayed, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Marks an item as unplayed for user.
+         * @param {SessionApiMarkUnplayedItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markUnplayedItem(requestParameters: SessionApiMarkUnplayedItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markUnplayedItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {SessionApiPingPlaybackSessionRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        pingPlaybackSession(requestParameters: SessionApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Instructs a session to play an item.
          * @param {SessionApiPlayRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1108,6 +1468,36 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          */
         removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {SessionApiReportPlaybackProgressRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackProgress(requestParameters: SessionApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {SessionApiReportPlaybackStartRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStart(requestParameters: SessionApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {SessionApiReportPlaybackStoppedRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStopped(requestParameters: SessionApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1242,6 +1632,51 @@ export interface SessionApiGetSessionsRequest {
 }
 
 /**
+ * Request parameters for markPlayedItem operation in SessionApi.
+ */
+export interface SessionApiMarkPlayedItemRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+
+    /**
+     * Optional. The date the item was played.
+     */
+    readonly datePlayed?: string
+}
+
+/**
+ * Request parameters for markUnplayedItem operation in SessionApi.
+ */
+export interface SessionApiMarkUnplayedItemRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+}
+
+/**
+ * Request parameters for pingPlaybackSession operation in SessionApi.
+ */
+export interface SessionApiPingPlaybackSessionRequest {
+    /**
+     * Playback session id.
+     */
+    readonly playSessionId: string
+}
+
+/**
  * Request parameters for play operation in SessionApi.
  */
 export interface SessionApiPlayRequest {
@@ -1344,6 +1779,36 @@ export interface SessionApiRemoveUserFromSessionRequest {
      * The user id.
      */
     readonly userId: string
+}
+
+/**
+ * Request parameters for reportPlaybackProgress operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackProgressRequest {
+    /**
+     * The playback progress info.
+     */
+    readonly playbackProgressInfo?: PlaybackProgressInfo
+}
+
+/**
+ * Request parameters for reportPlaybackStart operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackStartRequest {
+    /**
+     * The playback start info.
+     */
+    readonly playbackStartInfo?: PlaybackStartInfo
+}
+
+/**
+ * Request parameters for reportPlaybackStopped operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackStoppedRequest {
+    /**
+     * The playback stop info.
+     */
+    readonly playbackStopInfo?: PlaybackStopInfo
 }
 
 /**
@@ -1505,6 +1970,39 @@ export class SessionApi extends BaseAPI {
 
     /**
      * 
+     * @summary Marks an item as played for user.
+     * @param {SessionApiMarkPlayedItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public markPlayedItem(requestParameters: SessionApiMarkPlayedItemRequest, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).markPlayedItem(requestParameters.itemId, requestParameters.userId, requestParameters.datePlayed, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Marks an item as unplayed for user.
+     * @param {SessionApiMarkUnplayedItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public markUnplayedItem(requestParameters: SessionApiMarkUnplayedItemRequest, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).markUnplayedItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Pings a playback session.
+     * @param {SessionApiPingPlaybackSessionRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public pingPlaybackSession(requestParameters: SessionApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Instructs a session to play an item.
      * @param {SessionApiPlayRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -1545,6 +2043,39 @@ export class SessionApi extends BaseAPI {
      */
     public removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback progress within a session.
+     * @param {SessionApiReportPlaybackProgressRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackProgress(requestParameters: SessionApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback has started within a session.
+     * @param {SessionApiReportPlaybackStartRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackStart(requestParameters: SessionApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback has stopped within a session.
+     * @param {SessionApiReportPlaybackStoppedRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackStopped(requestParameters: SessionApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
