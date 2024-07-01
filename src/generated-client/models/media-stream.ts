@@ -291,7 +291,7 @@ export interface MediaStream {
      * @type {boolean}
      * @memberof MediaStream
      */
-    'IsHearingImpaired'?: boolean;
+    'IsHearingImpaired'?: boolean | null;
     /**
      * Gets or sets the height.
      * @type {number}
