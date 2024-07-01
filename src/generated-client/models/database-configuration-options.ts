@@ -14,21 +14,16 @@
 
 
 /**
- * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
+ * Options to configure jellyfins managed database.
  * @export
- * @enum {string}
+ * @interface DatabaseConfigurationOptions
  */
-
-export const MediaSegmentType = {
-    Unknown: 'Unknown',
-    Commercial: 'Commercial',
-    Preview: 'Preview',
-    Recap: 'Recap',
-    Outro: 'Outro',
-    Intro: 'Intro'
-} as const;
-
-export type MediaSegmentType = typeof MediaSegmentType[keyof typeof MediaSegmentType];
-
-
+export interface DatabaseConfigurationOptions {
+    /**
+     * Gets or Sets the type of database jellyfin should use.
+     * @type {string}
+     * @memberof DatabaseConfigurationOptions
+     */
+    'DatabaseType'?: string;
+}
 

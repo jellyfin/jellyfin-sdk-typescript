@@ -14,31 +14,33 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { LyricLineCue } from './lyric-line-cue';
+import type { GroupUpdateType } from './group-update-type';
 
 /**
- * Lyric model.
+ * 
  * @export
- * @interface LyricLine
+ * @interface SyncPlayNotInGroupUpdate
  */
-export interface LyricLine {
+export interface SyncPlayNotInGroupUpdate {
     /**
-     * Gets the text of this lyric line.
+     * Gets the group identifier.
      * @type {string}
-     * @memberof LyricLine
+     * @memberof SyncPlayNotInGroupUpdate
      */
-    'Text'?: string;
+    'GroupId'?: string;
     /**
-     * Gets the start time in ticks.
-     * @type {number}
-     * @memberof LyricLine
+     * Gets the update data.
+     * @type {string}
+     * @memberof SyncPlayNotInGroupUpdate
      */
-    'Start'?: number | null;
+    'Data'?: string;
     /**
-     * Gets the time-aligned cues for the song\'s lyrics.
-     * @type {Array<LyricLineCue>}
-     * @memberof LyricLine
+     * 
+     * @type {GroupUpdateType}
+     * @memberof SyncPlayNotInGroupUpdate
      */
-    'Cues'?: Array<LyricLineCue> | null;
+    'Type'?: GroupUpdateType;
 }
+
+
 
