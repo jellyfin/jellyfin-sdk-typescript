@@ -147,6 +147,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {boolean} [isPaused] Indicates if the player is paused.
          * @param {boolean} [isMuted] Indicates if the player is muted.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackProgress: async (itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -235,6 +236,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} [playSessionId] The play session id.
          * @param {boolean} [canSeek] Indicates if the client can seek.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackStart: async (itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -305,6 +307,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} [liveStreamId] The live stream id.
          * @param {string} [playSessionId] The play session id.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackStopped: async (itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -563,6 +566,7 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {boolean} [isPaused] Indicates if the player is paused.
          * @param {boolean} [isMuted] Indicates if the player is muted.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async onPlaybackProgress(itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -583,6 +587,7 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {string} [playSessionId] The play session id.
          * @param {boolean} [canSeek] Indicates if the client can seek.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async onPlaybackStart(itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -601,6 +606,7 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {string} [liveStreamId] The live stream id.
          * @param {string} [playSessionId] The play session id.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async onPlaybackStopped(itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -696,6 +702,7 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
          * @summary Reports a session\'s playback progress.
          * @param {PlaystateApiOnPlaybackProgressRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackProgress(requestParameters: PlaystateApiOnPlaybackProgressRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
@@ -706,6 +713,7 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
          * @summary Reports that a session has begun playing an item.
          * @param {PlaystateApiOnPlaybackStartRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackStart(requestParameters: PlaystateApiOnPlaybackStartRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
@@ -716,6 +724,7 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
          * @summary Reports that a session has stopped playing an item.
          * @param {PlaystateApiOnPlaybackStoppedRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         onPlaybackStopped(requestParameters: PlaystateApiOnPlaybackStoppedRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
@@ -1108,6 +1117,7 @@ export class PlaystateApi extends BaseAPI {
      * @summary Reports a session\'s playback progress.
      * @param {PlaystateApiOnPlaybackProgressRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
@@ -1120,6 +1130,7 @@ export class PlaystateApi extends BaseAPI {
      * @summary Reports that a session has begun playing an item.
      * @param {PlaystateApiOnPlaybackStartRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
@@ -1132,6 +1143,7 @@ export class PlaystateApi extends BaseAPI {
      * @summary Reports that a session has stopped playing an item.
      * @param {PlaystateApiOnPlaybackStoppedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */

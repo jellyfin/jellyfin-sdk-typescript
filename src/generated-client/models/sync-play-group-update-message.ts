@@ -17,19 +17,33 @@
 import type { GroupUpdate } from './group-update';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { InboundWebSocketMessage } from './inbound-web-socket-message';
-// May contain unused imports in some cases
-// @ts-ignore
-import type { OutboundWebSocketMessage } from './outbound-web-socket-message';
-// May contain unused imports in some cases
-// @ts-ignore
 import type { SessionMessageType } from './session-message-type';
 
 /**
- * @type WebSocketMessage
- * Represents the possible websocket types
+ * Untyped sync play command.
  * @export
+ * @interface SyncPlayGroupUpdateMessage
  */
-export type WebSocketMessage = InboundWebSocketMessage | OutboundWebSocketMessage;
+export interface SyncPlayGroupUpdateMessage {
+    /**
+     * 
+     * @type {GroupUpdate}
+     * @memberof SyncPlayGroupUpdateMessage
+     */
+    'Data'?: GroupUpdate;
+    /**
+     * Gets or sets the message id.
+     * @type {string}
+     * @memberof SyncPlayGroupUpdateMessage
+     */
+    'MessageId'?: string;
+    /**
+     * 
+     * @type {SessionMessageType}
+     * @memberof SyncPlayGroupUpdateMessage
+     */
+    'MessageType'?: SessionMessageType;
+}
+
 
 

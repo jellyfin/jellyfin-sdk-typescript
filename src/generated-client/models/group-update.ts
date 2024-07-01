@@ -14,28 +14,40 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { GroupInfoDtoGroupUpdate } from './group-info-dto-group-update';
-// May contain unused imports in some cases
-// @ts-ignore
-import type { GroupStateUpdateGroupUpdate } from './group-state-update-group-update';
-// May contain unused imports in some cases
-// @ts-ignore
 import type { GroupUpdateType } from './group-update-type';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { PlayQueueUpdate } from './play-queue-update';
+import type { SyncPlayGroupDoesNotExistUpdate } from './sync-play-group-does-not-exist-update';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { PlayQueueUpdateGroupUpdate } from './play-queue-update-group-update';
+import type { SyncPlayGroupJoinedUpdate } from './sync-play-group-joined-update';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { StringGroupUpdate } from './string-group-update';
+import type { SyncPlayGroupLeftUpdate } from './sync-play-group-left-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayLibraryAccessDeniedUpdate } from './sync-play-library-access-denied-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayNotInGroupUpdate } from './sync-play-not-in-group-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayPlayQueueUpdate } from './sync-play-play-queue-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayStateUpdate } from './sync-play-state-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayUserJoinedUpdate } from './sync-play-user-joined-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayUserLeftUpdate } from './sync-play-user-left-update';
 
 /**
  * @type GroupUpdate
- * Group update without data.
+ * Represents the list of possible group update types
  * @export
  */
-export type GroupUpdate = { Type: 'GroupDoesNotExist' } & StringGroupUpdate | { Type: 'GroupJoined' } & GroupInfoDtoGroupUpdate | { Type: 'GroupLeft' } & StringGroupUpdate | { Type: 'LibraryAccessDenied' } & StringGroupUpdate | { Type: 'NotInGroup' } & StringGroupUpdate | { Type: 'PlayQueue' } & PlayQueueUpdateGroupUpdate | { Type: 'StateUpdate' } & GroupStateUpdateGroupUpdate | { Type: 'UserJoined' } & StringGroupUpdate | { Type: 'UserLeft' } & StringGroupUpdate;
+export type GroupUpdate = { Type: 'GroupDoesNotExist' } & SyncPlayGroupDoesNotExistUpdate | { Type: 'GroupJoined' } & SyncPlayGroupJoinedUpdate | { Type: 'GroupLeft' } & SyncPlayGroupLeftUpdate | { Type: 'LibraryAccessDenied' } & SyncPlayLibraryAccessDeniedUpdate | { Type: 'NotInGroup' } & SyncPlayNotInGroupUpdate | { Type: 'PlayQueue' } & SyncPlayPlayQueueUpdate | { Type: 'StateUpdate' } & SyncPlayStateUpdate | { Type: 'UserJoined' } & SyncPlayUserJoinedUpdate | { Type: 'UserLeft' } & SyncPlayUserLeftUpdate;
 
 
