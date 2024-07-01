@@ -4,6 +4,7 @@ export * from './activity-log-entry-message';
 export * from './activity-log-entry-query-result';
 export * from './activity-log-entry-start-message';
 export * from './activity-log-entry-stop-message';
+export * from './activity-log-sort-by';
 export * from './add-virtual-folder-dto';
 export * from './album-info';
 export * from './album-info-remote-search-query';
