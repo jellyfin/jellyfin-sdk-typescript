@@ -101,7 +101,7 @@ export interface MediaSourceInfo {
      */
     'Name'?: string | null;
     /**
-     * Gets or sets a value indicating whether the media is remote.  Differentiate internet url vs local network.
+     * Gets or sets a value indicating whether the media is remote. Differentiate internet url vs local network.
      * @type {boolean}
      * @memberof MediaSourceInfo
      */

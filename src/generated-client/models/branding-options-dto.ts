@@ -14,7 +14,7 @@
 
 
 /**
- * The branding options DTO for API use.  This DTO excludes SplashscreenLocation to prevent it from being updated via API.
+ * The branding options DTO for API use. This DTO excludes SplashscreenLocation to prevent it from being updated via API.
  * @export
  * @interface BrandingOptionsDto
  */

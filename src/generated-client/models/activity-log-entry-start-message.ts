@@ -17,7 +17,7 @@
 import type { SessionMessageType } from './session-message-type';
 
 /**
- * Activity log entry start message.  Data is the timing data encoded as \"$initialDelay,$interval\" in ms.
+ * Activity log entry start message. Data is the timing data encoded as \"$initialDelay,$interval\" in ms.
  * @export
  * @interface ActivityLogEntryStartMessage
  */

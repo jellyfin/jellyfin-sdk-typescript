@@ -96,7 +96,7 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             };
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
@@ -588,7 +588,7 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {string} [name] The playlist name.
          * @param {Array<string>} [ids] The item ids.
@@ -758,7 +758,7 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
             return localVarFp.addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
-         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+         * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
          * @summary Creates a new playlist.
          * @param {PlaylistsApiCreatePlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1188,7 +1188,7 @@ export class PlaylistsApi extends BaseAPI {
     }
 
     /**
-     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence.  Query parameters are obsolete.
+     * For backwards compatibility parameters can be sent via Query or Body, with Query having higher precedence. Query parameters are obsolete.
      * @summary Creates a new playlist.
      * @param {PlaylistsApiCreatePlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.

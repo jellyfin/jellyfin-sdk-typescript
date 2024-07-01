@@ -42,6 +42,6 @@ export interface LogFile {
      * @type {string}
      * @memberof LogFile
      */
-    'Name'?: string;
+    'Name': string;
 }
 

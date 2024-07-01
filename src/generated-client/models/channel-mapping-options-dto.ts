@@ -33,13 +33,13 @@ export interface ChannelMappingOptionsDto {
      * @type {Array<TunerChannelMapping>}
      * @memberof ChannelMappingOptionsDto
      */
-    'TunerChannels'?: Array<TunerChannelMapping>;
+    'TunerChannels': Array<TunerChannelMapping>;
     /**
      * Gets or sets list of provider channels.
      * @type {Array<NameIdPair>}
      * @memberof ChannelMappingOptionsDto
      */
-    'ProviderChannels'?: Array<NameIdPair>;
+    'ProviderChannels': Array<NameIdPair>;
     /**
      * Gets or sets list of mappings.
      * @type {Array<NameValuePair>}

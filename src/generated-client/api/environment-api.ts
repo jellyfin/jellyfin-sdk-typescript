@@ -152,40 +152,6 @@ export const EnvironmentApiAxiosParamCreator = function (configuration?: Configu
         },
         /**
          * 
-         * @summary Gets network paths.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getNetworkShares: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/Environment/NetworkShares`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-
-    
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Gets the parent path of a given path.
          * @param {string} path The path.
          * @param {*} [options] Override http request option.
@@ -314,19 +280,6 @@ export const EnvironmentApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Gets network paths.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getNetworkShares(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<FileSystemEntryInfo>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getNetworkShares(options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['EnvironmentApi.getNetworkShares']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary Gets the parent path of a given path.
          * @param {string} path The path.
          * @param {*} [options] Override http request option.
@@ -388,16 +341,6 @@ export const EnvironmentApiFactory = function (configuration?: Configuration, ba
          */
         getDrives(options?: RawAxiosRequestConfig): AxiosPromise<Array<FileSystemEntryInfo>> {
             return localVarFp.getDrives(options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @summary Gets network paths.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getNetworkShares(options?: RawAxiosRequestConfig): AxiosPromise<Array<FileSystemEntryInfo>> {
-            return localVarFp.getNetworkShares(options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -517,18 +460,6 @@ export class EnvironmentApi extends BaseAPI {
      */
     public getDrives(options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getDrives(options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Gets network paths.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     * @memberof EnvironmentApi
-     */
-    public getNetworkShares(options?: RawAxiosRequestConfig) {
-        return EnvironmentApiFp(this.configuration).getNetworkShares(options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

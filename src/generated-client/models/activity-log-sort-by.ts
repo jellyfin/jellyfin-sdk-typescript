@@ -14,16 +14,22 @@
 
 
 /**
- * Startup remote access dto.
+ * Activity log sorting options.
  * @export
- * @interface StartupRemoteAccessDto
+ * @enum {string}
  */
-export interface StartupRemoteAccessDto {
-    /**
-     * Gets or sets a value indicating whether enable remote access.
-     * @type {boolean}
-     * @memberof StartupRemoteAccessDto
-     */
-    'EnableRemoteAccess': boolean;
-}
+
+export const ActivityLogSortBy = {
+    Name: 'Name',
+    Overiew: 'Overiew',
+    ShortOverview: 'ShortOverview',
+    Type: 'Type',
+    DateCreated: 'DateCreated',
+    Username: 'Username',
+    LogSeverity: 'LogSeverity'
+} as const;
+
+export type ActivityLogSortBy = typeof ActivityLogSortBy[keyof typeof ActivityLogSortBy];
+
+
 

@@ -17,7 +17,7 @@
 import type { SessionMessageType } from './session-message-type';
 
 /**
- * Sessions start message.  Data is the timing data encoded as \"$initialDelay,$interval\" in ms.
+ * Sessions start message. Data is the timing data encoded as \"$initialDelay,$interval\" in ms.
  * @export
  * @interface SessionsStartMessage
  */

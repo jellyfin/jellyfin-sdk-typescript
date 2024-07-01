@@ -73,6 +73,7 @@ models/activity-log-entry-query-result.ts
 models/activity-log-entry-start-message.ts
 models/activity-log-entry-stop-message.ts
 models/activity-log-entry.ts
+models/activity-log-sort-by.ts
 models/add-virtual-folder-dto.ts
 models/album-info-remote-search-query.ts
 models/album-info.ts
@@ -170,6 +171,7 @@ models/group-update-type.ts
 models/group-update.ts
 models/guide-info.ts
 models/hardware-acceleration-type.ts
+models/hls-audio-seek-strategy.ts
 models/ignore-wait-request-dto.ts
 models/image-format.ts
 models/image-info.ts

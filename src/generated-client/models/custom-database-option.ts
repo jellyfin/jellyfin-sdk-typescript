@@ -24,12 +24,12 @@ export interface CustomDatabaseOption {
      * @type {string}
      * @memberof CustomDatabaseOption
      */
-    'Key'?: string;
+    'Key': string;
     /**
      * Gets or sets the value.
      * @type {string}
      * @memberof CustomDatabaseOption
      */
-    'Value'?: string;
+    'Value': string;
 }
 
