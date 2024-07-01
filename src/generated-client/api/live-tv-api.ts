@@ -649,7 +649,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -2337,7 +2337,7 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -2937,7 +2937,7 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -4645,7 +4645,7 @@ export class LiveTvApi extends BaseAPI {
 
     /**
      * 
-     * @summary Get guid info.
+     * @summary Get guide info.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LiveTvApi
