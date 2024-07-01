@@ -17,7 +17,7 @@
 import type { DeviceInfo } from './device-info';
 
 /**
- * 
+ * Query result container.
  * @export
  * @interface DeviceInfoQueryResult
  */
@@ -27,7 +27,7 @@ export interface DeviceInfoQueryResult {
      * @type {Array<DeviceInfo>}
      * @memberof DeviceInfoQueryResult
      */
-    'Items'?: Array<DeviceInfo> | null;
+    'Items'?: Array<DeviceInfo>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}

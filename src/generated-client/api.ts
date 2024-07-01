@@ -17,6 +17,7 @@ export * from './api/activity-log-api';
 export * from './api/api-key-api';
 export * from './api/artists-api';
 export * from './api/audio-api';
+export * from './api/backup-api';
 export * from './api/branding-api';
 export * from './api/channels-api';
 export * from './api/client-log-api';

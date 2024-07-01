@@ -20,6 +20,12 @@
  */
 export interface StartupConfigurationDto {
     /**
+     * Gets or sets the server name.
+     * @type {string}
+     * @memberof StartupConfigurationDto
+     */
+    'ServerName'?: string | null;
+    /**
      * Gets or sets UI language culture.
      * @type {string}
      * @memberof StartupConfigurationDto
