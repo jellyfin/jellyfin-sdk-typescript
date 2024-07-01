@@ -20,6 +20,7 @@ jobs:
         uses: actions/checkout@692973e3d937129bcbf40652eb9f2f61becf3332 # v4.1.7
         with:
           ref: openapi-unstable
+          fetch-depth: 0
           token: ${{ secrets.JF_BOT_TOKEN }}
 
       - name: Update unstable branch from master
