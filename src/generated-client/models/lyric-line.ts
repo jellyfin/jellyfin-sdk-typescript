@@ -12,6 +12,9 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LyricLineCue } from './lyric-line-cue';
 
 /**
  * Lyric model.
@@ -31,5 +34,11 @@ export interface LyricLine {
      * @memberof LyricLine
      */
     'Start'?: number | null;
+    /**
+     * Gets the time-aligned cues for the song\'s lyrics.
+     * @type {Array<LyricLineCue>}
+     * @memberof LyricLine
+     */
+    'Cues'?: Array<LyricLineCue> | null;
 }
 
