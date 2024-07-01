@@ -56,7 +56,7 @@ export interface TrickplayInfo {
      */
     'Interval'?: number;
     /**
-     * Gets or sets peak bandwith usage in bits per second.
+     * Gets or sets peak bandwidth usage in bits per second.
      * @type {number}
      * @memberof TrickplayInfo
      */
