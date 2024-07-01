@@ -14,21 +14,16 @@
 
 
 /**
- * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
+ * Defines properties used to start a restore process.
  * @export
- * @enum {string}
+ * @interface BackupRestoreRequestDto
  */
-
-export const MediaSegmentType = {
-    Unknown: 'Unknown',
-    Commercial: 'Commercial',
-    Preview: 'Preview',
-    Recap: 'Recap',
-    Outro: 'Outro',
-    Intro: 'Intro'
-} as const;
-
-export type MediaSegmentType = typeof MediaSegmentType[keyof typeof MediaSegmentType];
-
-
+export interface BackupRestoreRequestDto {
+    /**
+     * Gets or Sets the name of the backup archive to restore from. Must be present in MediaBrowser.Common.Configuration.IApplicationPaths.BackupPath.
+     * @type {string}
+     * @memberof BackupRestoreRequestDto
+     */
+    'ArchiveFileName'?: string;
+}
 

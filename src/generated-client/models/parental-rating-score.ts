@@ -14,21 +14,22 @@
 
 
 /**
- * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
+ * A class representing an parental rating score.
  * @export
- * @enum {string}
+ * @interface ParentalRatingScore
  */
-
-export const MediaSegmentType = {
-    Unknown: 'Unknown',
-    Commercial: 'Commercial',
-    Preview: 'Preview',
-    Recap: 'Recap',
-    Outro: 'Outro',
-    Intro: 'Intro'
-} as const;
-
-export type MediaSegmentType = typeof MediaSegmentType[keyof typeof MediaSegmentType];
-
-
+export interface ParentalRatingScore {
+    /**
+     * Gets or sets the score.
+     * @type {number}
+     * @memberof ParentalRatingScore
+     */
+    'score'?: number;
+    /**
+     * Gets or sets the sub score.
+     * @type {number}
+     * @memberof ParentalRatingScore
+     */
+    'subScore'?: number | null;
+}
 

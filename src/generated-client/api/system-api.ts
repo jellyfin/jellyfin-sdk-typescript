@@ -31,7 +31,7 @@ import type { PublicSystemInfo } from '../models';
 // @ts-ignore
 import type { SystemInfo } from '../models';
 // @ts-ignore
-import type { WakeOnLanInfo } from '../models';
+import type { SystemStorageDto } from '../models';
 /**
  * SystemApi - axios parameter creator
  * @export
@@ -239,13 +239,12 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Gets wake on lan information.
+         * @summary Gets information about the server.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
-        getWakeOnLanInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/System/WakeOnLanInfo`;
+        getSystemStorage: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Info/Storage`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -452,15 +451,14 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Gets wake on lan information.
+         * @summary Gets information about the server.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
-        async getWakeOnLanInfo(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<WakeOnLanInfo>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getWakeOnLanInfo(options);
+        async getSystemStorage(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SystemStorageDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSystemStorage(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SystemApi.getWakeOnLanInfo']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getSystemStorage']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -566,13 +564,12 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
-         * @summary Gets wake on lan information.
+         * @summary Gets information about the server.
          * @param {*} [options] Override http request option.
-         * @deprecated
          * @throws {RequiredError}
          */
-        getWakeOnLanInfo(options?: RawAxiosRequestConfig): AxiosPromise<Array<WakeOnLanInfo>> {
-            return localVarFp.getWakeOnLanInfo(options).then((request) => request(axios, basePath));
+        getSystemStorage(options?: RawAxiosRequestConfig): AxiosPromise<SystemStorageDto> {
+            return localVarFp.getSystemStorage(options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -694,14 +691,13 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
-     * @summary Gets wake on lan information.
+     * @summary Gets information about the server.
      * @param {*} [options] Override http request option.
-     * @deprecated
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getWakeOnLanInfo(options?: RawAxiosRequestConfig) {
-        return SystemApiFp(this.configuration).getWakeOnLanInfo(options).then((request) => request(this.axios, this.basePath));
+    public getSystemStorage(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getSystemStorage(options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

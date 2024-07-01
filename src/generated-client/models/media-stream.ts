@@ -156,6 +156,12 @@ export interface MediaStream {
     'Title'?: string | null;
     /**
      * 
+     * @type {boolean}
+     * @memberof MediaStream
+     */
+    'Hdr10PlusPresentFlag'?: boolean | null;
+    /**
+     * 
      * @type {VideoRange}
      * @memberof MediaStream
      */

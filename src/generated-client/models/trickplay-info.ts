@@ -20,6 +20,12 @@
  */
 export interface TrickplayInfo {
     /**
+     * Gets or sets the id of the associated item.
+     * @type {string}
+     * @memberof TrickplayInfo
+     */
+    'ItemId'?: string;
+    /**
      * Gets or sets width of an individual thumbnail.
      * @type {number}
      * @memberof TrickplayInfo
@@ -56,7 +62,7 @@ export interface TrickplayInfo {
      */
     'Interval'?: number;
     /**
-     * Gets or sets peak bandwith usage in bits per second.
+     * Gets or sets peak bandwidth usage in bits per second.
      * @type {number}
      * @memberof TrickplayInfo
      */

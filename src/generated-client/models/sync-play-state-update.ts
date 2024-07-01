@@ -14,31 +14,36 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { ParentalRatingScore } from './parental-rating-score';
+import type { GroupStateUpdate } from './group-state-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupUpdateType } from './group-update-type';
 
 /**
- * Class ParentalRating.
+ * 
  * @export
- * @interface ParentalRating
+ * @interface SyncPlayStateUpdate
  */
-export interface ParentalRating {
+export interface SyncPlayStateUpdate {
     /**
-     * Gets or sets the name.
+     * Gets the group identifier.
      * @type {string}
-     * @memberof ParentalRating
+     * @memberof SyncPlayStateUpdate
      */
-    'Name'?: string;
-    /**
-     * Gets or sets the value.
-     * @type {number}
-     * @memberof ParentalRating
-     */
-    'Value'?: number | null;
+    'GroupId'?: string;
     /**
      * 
-     * @type {ParentalRatingScore}
-     * @memberof ParentalRating
+     * @type {GroupStateUpdate}
+     * @memberof SyncPlayStateUpdate
      */
-    'RatingScore'?: ParentalRatingScore;
+    'Data'?: GroupStateUpdate;
+    /**
+     * 
+     * @type {GroupUpdateType}
+     * @memberof SyncPlayStateUpdate
+     */
+    'Type'?: GroupUpdateType;
 }
+
+
 
