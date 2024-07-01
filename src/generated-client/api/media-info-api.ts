@@ -281,11 +281,12 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
          * @param {string} [itemId] The item id.
          * @param {boolean} [enableDirectPlay] Whether to enable direct play. Default: true.
          * @param {boolean} [enableDirectStream] Whether to enable direct stream. Default: true.
+         * @param {boolean} [alwaysBurnInSubtitleWhenTranscoding] Always burn-in subtitle when transcoding.
          * @param {OpenLiveStreamDto} [openLiveStreamDto] The open live stream dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        openLiveStream: async (openToken?: string, userId?: string, playSessionId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, itemId?: string, enableDirectPlay?: boolean, enableDirectStream?: boolean, openLiveStreamDto?: OpenLiveStreamDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        openLiveStream: async (openToken?: string, userId?: string, playSessionId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, itemId?: string, enableDirectPlay?: boolean, enableDirectStream?: boolean, alwaysBurnInSubtitleWhenTranscoding?: boolean, openLiveStreamDto?: OpenLiveStreamDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveStreams/Open`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -343,6 +344,10 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
 
             if (enableDirectStream !== undefined) {
                 localVarQueryParameter['enableDirectStream'] = enableDirectStream;
+            }
+
+            if (alwaysBurnInSubtitleWhenTranscoding !== undefined) {
+                localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
 
@@ -451,12 +456,13 @@ export const MediaInfoApiFp = function(configuration?: Configuration) {
          * @param {string} [itemId] The item id.
          * @param {boolean} [enableDirectPlay] Whether to enable direct play. Default: true.
          * @param {boolean} [enableDirectStream] Whether to enable direct stream. Default: true.
+         * @param {boolean} [alwaysBurnInSubtitleWhenTranscoding] Always burn-in subtitle when transcoding.
          * @param {OpenLiveStreamDto} [openLiveStreamDto] The open live stream dto.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async openLiveStream(openToken?: string, userId?: string, playSessionId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, itemId?: string, enableDirectPlay?: boolean, enableDirectStream?: boolean, openLiveStreamDto?: OpenLiveStreamDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LiveStreamResponse>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.openLiveStream(openToken, userId, playSessionId, maxStreamingBitrate, startTimeTicks, audioStreamIndex, subtitleStreamIndex, maxAudioChannels, itemId, enableDirectPlay, enableDirectStream, openLiveStreamDto, options);
+        async openLiveStream(openToken?: string, userId?: string, playSessionId?: string, maxStreamingBitrate?: number, startTimeTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, maxAudioChannels?: number, itemId?: string, enableDirectPlay?: boolean, enableDirectStream?: boolean, alwaysBurnInSubtitleWhenTranscoding?: boolean, openLiveStreamDto?: OpenLiveStreamDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LiveStreamResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.openLiveStream(openToken, userId, playSessionId, maxStreamingBitrate, startTimeTicks, audioStreamIndex, subtitleStreamIndex, maxAudioChannels, itemId, enableDirectPlay, enableDirectStream, alwaysBurnInSubtitleWhenTranscoding, openLiveStreamDto, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['MediaInfoApi.openLiveStream']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -519,7 +525,7 @@ export const MediaInfoApiFactory = function (configuration?: Configuration, base
          * @throws {RequiredError}
          */
         openLiveStream(requestParameters: MediaInfoApiOpenLiveStreamRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<LiveStreamResponse> {
-            return localVarFp.openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.openLiveStreamDto, options).then((request) => request(axios, basePath));
+            return localVarFp.openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.alwaysBurnInSubtitleWhenTranscoding, requestParameters.openLiveStreamDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -776,6 +782,13 @@ export interface MediaInfoApiOpenLiveStreamRequest {
     readonly enableDirectStream?: boolean
 
     /**
+     * Always burn-in subtitle when transcoding.
+     * @type {boolean}
+     * @memberof MediaInfoApiOpenLiveStream
+     */
+    readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
+
+    /**
      * The open live stream dto.
      * @type {OpenLiveStreamDto}
      * @memberof MediaInfoApiOpenLiveStream
@@ -847,7 +860,7 @@ export class MediaInfoApi extends BaseAPI {
      * @memberof MediaInfoApi
      */
     public openLiveStream(requestParameters: MediaInfoApiOpenLiveStreamRequest = {}, options?: RawAxiosRequestConfig) {
-        return MediaInfoApiFp(this.configuration).openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.openLiveStreamDto, options).then((request) => request(this.axios, this.basePath));
+        return MediaInfoApiFp(this.configuration).openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.alwaysBurnInSubtitleWhenTranscoding, requestParameters.openLiveStreamDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

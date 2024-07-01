@@ -30,6 +30,7 @@ api/live-tv-api.ts
 api/localization-api.ts
 api/lyrics-api.ts
 api/media-info-api.ts
+api/media-segments-api.ts
 api/movies-api.ts
 api/music-genres-api.ts
 api/package-api.ts
@@ -103,7 +104,6 @@ models/channel-media-type.ts
 models/channel-type.ts
 models/chapter-info.ts
 models/client-capabilities-dto.ts
-models/client-capabilities.ts
 models/client-log-document-response-dto.ts
 models/codec-profile.ts
 models/codec-type.ts
@@ -120,10 +120,10 @@ models/culture-dto.ts
 models/day-of-week.ts
 models/day-pattern.ts
 models/default-directory-browser-info-dto.ts
-models/device-info-query-result.ts
-models/device-info.ts
+models/deinterlace-method.ts
+models/device-info-dto-query-result.ts
+models/device-info-dto.ts
 models/device-options-dto.ts
-models/device-options.ts
 models/device-profile.ts
 models/direct-play-profile.ts
 models/display-preferences-dto.ts
@@ -131,6 +131,7 @@ models/dlna-profile-type.ts
 models/down-mix-stereo-algorithms.ts
 models/dynamic-day-of-week.ts
 models/embedded-subtitle-options.ts
+models/encoder-preset.ts
 models/encoding-context.ts
 models/encoding-options.ts
 models/end-point-info.ts
@@ -161,7 +162,7 @@ models/group-state-update.ts
 models/group-update-type.ts
 models/group-update.ts
 models/guide-info.ts
-models/hardware-encoding-type.ts
+models/hardware-acceleration-type.ts
 models/ignore-wait-request-dto.ts
 models/image-format.ts
 models/image-info.ts
@@ -206,6 +207,9 @@ models/media-attachment.ts
 models/media-path-dto.ts
 models/media-path-info.ts
 models/media-protocol.ts
+models/media-segment-dto-query-result.ts
+models/media-segment-dto.ts
+models/media-segment-type.ts
 models/media-source-info.ts
 models/media-source-type.ts
 models/media-stream-protocol.ts
@@ -262,6 +266,7 @@ models/playback-start-info.ts
 models/playback-stop-info.ts
 models/player-state-info.ts
 models/playlist-creation-result.ts
+models/playlist-dto.ts
 models/playlist-user-permissions.ts
 models/playstate-command.ts
 models/playstate-message.ts
@@ -323,7 +328,7 @@ models/server-configuration.ts
 models/server-discovery-info.ts
 models/server-restarting-message.ts
 models/server-shutting-down-message.ts
-models/session-info.ts
+models/session-info-dto.ts
 models/session-message-type.ts
 models/session-user-info.ts
 models/sessions-message.ts
@@ -360,6 +365,9 @@ models/timer-created-message.ts
 models/timer-event-info.ts
 models/timer-info-dto-query-result.ts
 models/timer-info-dto.ts
+models/tonemapping-algorithm.ts
+models/tonemapping-mode.ts
+models/tonemapping-range.ts
 models/trailer-info-remote-search-query.ts
 models/trailer-info.ts
 models/transcode-reason.ts

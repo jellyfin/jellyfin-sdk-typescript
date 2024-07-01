@@ -14,16 +14,17 @@
 
 
 /**
- * 
+ * Enum containing deinterlace methods.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const DeinterlaceMethod = {
+    Yadif: 'yadif',
+    Bwdif: 'bwdif'
+} as const;
+
+export type DeinterlaceMethod = typeof DeinterlaceMethod[keyof typeof DeinterlaceMethod];
+
+
 

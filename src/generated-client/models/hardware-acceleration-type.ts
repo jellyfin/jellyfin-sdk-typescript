@@ -14,16 +14,23 @@
 
 
 /**
- * 
+ * Enum containing hardware acceleration types.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const HardwareAccelerationType = {
+    None: 'none',
+    Amf: 'amf',
+    Qsv: 'qsv',
+    Nvenc: 'nvenc',
+    V4l2m2m: 'v4l2m2m',
+    Vaapi: 'vaapi',
+    Videotoolbox: 'videotoolbox',
+    Rkmpp: 'rkmpp'
+} as const;
+
+export type HardwareAccelerationType = typeof HardwareAccelerationType[keyof typeof HardwareAccelerationType];
+
+
 
