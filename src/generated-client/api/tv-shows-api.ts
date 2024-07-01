@@ -157,13 +157,12 @@ export const TvShowsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {boolean} [enableUserData] Optional. Include user data.
          * @param {string} [nextUpDateCutoff] Optional. Starting date of shows to show in Next Up section.
          * @param {boolean} [enableTotalRecordCount] Whether to enable the total records count. Defaults to true.
-         * @param {boolean} [disableFirstEpisode] Whether to disable sending the first episode in a series as next up.
          * @param {boolean} [enableResumable] Whether to include resumable episodes in next up results.
          * @param {boolean} [enableRewatching] Whether to include watched episodes in next up results.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNextUp: async (userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, seriesId?: string, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, nextUpDateCutoff?: string, enableTotalRecordCount?: boolean, disableFirstEpisode?: boolean, enableResumable?: boolean, enableRewatching?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getNextUp: async (userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, seriesId?: string, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, nextUpDateCutoff?: string, enableTotalRecordCount?: boolean, enableResumable?: boolean, enableRewatching?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Shows/NextUp`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -227,10 +226,6 @@ export const TvShowsApiAxiosParamCreator = function (configuration?: Configurati
 
             if (enableTotalRecordCount !== undefined) {
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
-            }
-
-            if (disableFirstEpisode !== undefined) {
-                localVarQueryParameter['disableFirstEpisode'] = disableFirstEpisode;
             }
 
             if (enableResumable !== undefined) {
@@ -463,14 +458,13 @@ export const TvShowsApiFp = function(configuration?: Configuration) {
          * @param {boolean} [enableUserData] Optional. Include user data.
          * @param {string} [nextUpDateCutoff] Optional. Starting date of shows to show in Next Up section.
          * @param {boolean} [enableTotalRecordCount] Whether to enable the total records count. Defaults to true.
-         * @param {boolean} [disableFirstEpisode] Whether to disable sending the first episode in a series as next up.
          * @param {boolean} [enableResumable] Whether to include resumable episodes in next up results.
          * @param {boolean} [enableRewatching] Whether to include watched episodes in next up results.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getNextUp(userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, seriesId?: string, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, nextUpDateCutoff?: string, enableTotalRecordCount?: boolean, disableFirstEpisode?: boolean, enableResumable?: boolean, enableRewatching?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getNextUp(userId, startIndex, limit, fields, seriesId, parentId, enableImages, imageTypeLimit, enableImageTypes, enableUserData, nextUpDateCutoff, enableTotalRecordCount, disableFirstEpisode, enableResumable, enableRewatching, options);
+        async getNextUp(userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, seriesId?: string, parentId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, nextUpDateCutoff?: string, enableTotalRecordCount?: boolean, enableResumable?: boolean, enableRewatching?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getNextUp(userId, startIndex, limit, fields, seriesId, parentId, enableImages, imageTypeLimit, enableImageTypes, enableUserData, nextUpDateCutoff, enableTotalRecordCount, enableResumable, enableRewatching, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['TvShowsApi.getNextUp']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -545,7 +539,7 @@ export const TvShowsApiFactory = function (configuration?: Configuration, basePa
          * @throws {RequiredError}
          */
         getNextUp(requestParameters: TvShowsApiGetNextUpRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getNextUp(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.seriesId, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.nextUpDateCutoff, requestParameters.enableTotalRecordCount, requestParameters.disableFirstEpisode, requestParameters.enableResumable, requestParameters.enableRewatching, options).then((request) => request(axios, basePath));
+            return localVarFp.getNextUp(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.seriesId, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.nextUpDateCutoff, requestParameters.enableTotalRecordCount, requestParameters.enableResumable, requestParameters.enableRewatching, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -715,11 +709,6 @@ export interface TvShowsApiGetNextUpRequest {
     readonly enableTotalRecordCount?: boolean
 
     /**
-     * Whether to disable sending the first episode in a series as next up.
-     */
-    readonly disableFirstEpisode?: boolean
-
-    /**
      * Whether to include resumable episodes in next up results.
      */
     readonly enableResumable?: boolean
@@ -858,7 +847,7 @@ export class TvShowsApi extends BaseAPI {
      * @throws {RequiredError}
      */
     public getNextUp(requestParameters: TvShowsApiGetNextUpRequest = {}, options?: RawAxiosRequestConfig) {
-        return TvShowsApiFp(this.configuration).getNextUp(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.seriesId, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.nextUpDateCutoff, requestParameters.enableTotalRecordCount, requestParameters.disableFirstEpisode, requestParameters.enableResumable, requestParameters.enableRewatching, options).then((request) => request(this.axios, this.basePath));
+        return TvShowsApiFp(this.configuration).getNextUp(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.seriesId, requestParameters.parentId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.nextUpDateCutoff, requestParameters.enableTotalRecordCount, requestParameters.enableResumable, requestParameters.enableRewatching, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

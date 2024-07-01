@@ -14,15 +14,15 @@
 
 
 /**
- * Media streaming protocol. Lowercase for backwards compatibility.
+ * An enum representing the options to seek the input audio stream when transcoding HLS segments.
  */
 
-export const MediaStreamProtocol = {
-    Http: 'http',
-    Hls: 'hls'
+export const HlsAudioSeekStrategy = {
+    DisableAccurateSeek: 'DisableAccurateSeek',
+    TranscodeAudio: 'TranscodeAudio'
 } as const;
 
-export type MediaStreamProtocol = typeof MediaStreamProtocol[keyof typeof MediaStreamProtocol];
+export type HlsAudioSeekStrategy = typeof HlsAudioSeekStrategy[keyof typeof HlsAudioSeekStrategy];
 
 
 

@@ -21,7 +21,7 @@ export interface RemoteSearchResult {
     /**
      * Gets or sets the provider ids.
      */
-    'ProviderIds'?: { [key: string]: string | null; } | null;
+    'ProviderIds'?: { [key: string]: string; };
     /**
      * Gets or sets the year.
      */
@@ -34,6 +34,6 @@ export interface RemoteSearchResult {
     'SearchProviderName'?: string | null;
     'Overview'?: string | null;
     'AlbumArtist'?: RemoteSearchResult;
-    'Artists'?: Array<RemoteSearchResult> | null;
+    'Artists'?: Array<RemoteSearchResult>;
 }
 
