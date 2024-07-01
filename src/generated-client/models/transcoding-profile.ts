@@ -130,6 +130,12 @@ export interface TranscodingProfile {
      * @memberof TranscodingProfile
      */
     'Conditions'?: Array<ProfileCondition>;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof TranscodingProfile
+     */
+    'EnableAudioVbrEncoding'?: boolean;
 }
 
 

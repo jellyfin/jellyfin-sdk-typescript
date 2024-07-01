@@ -30,6 +30,7 @@ api/live-tv-api.ts
 api/localization-api.ts
 api/lyrics-api.ts
 api/media-info-api.ts
+api/media-segments-api.ts
 api/movies-api.ts
 api/music-genres-api.ts
 api/package-api.ts
@@ -206,6 +207,9 @@ models/media-attachment.ts
 models/media-path-dto.ts
 models/media-path-info.ts
 models/media-protocol.ts
+models/media-segment-dto-query-result.ts
+models/media-segment-dto.ts
+models/media-segment-type.ts
 models/media-source-info.ts
 models/media-source-type.ts
 models/media-stream-protocol.ts

@@ -298,6 +298,12 @@ export interface MediaSourceInfo {
      * @memberof MediaSourceInfo
      */
     'DefaultSubtitleStreamIndex'?: number | null;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof MediaSourceInfo
+     */
+    'HasSegments'?: boolean;
 }
 
 

@@ -14,7 +14,7 @@
 
 
 /**
- * An enum representing an algorithm to downmix 6ch+ to stereo.  Algorithms sourced from https://superuser.com/questions/852400/properly-downmix-5-1-to-stereo-using-ffmpeg/1410620#1410620.
+ * An enum representing an algorithm to downmix surround sound to stereo.
  * @export
  * @enum {string}
  */
@@ -22,7 +22,9 @@
 export const DownMixStereoAlgorithms = {
     None: 'None',
     Dave750: 'Dave750',
-    NightmodeDialogue: 'NightmodeDialogue'
+    NightmodeDialogue: 'NightmodeDialogue',
+    Rfc7845: 'Rfc7845',
+    Ac4: 'Ac4'
 } as const;
 
 export type DownMixStereoAlgorithms = typeof DownMixStereoAlgorithms[keyof typeof DownMixStereoAlgorithms];
