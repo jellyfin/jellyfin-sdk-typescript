@@ -52,6 +52,12 @@ export default function normalizeUrl(urlString: string): string {
 
 	const urlObject = new URL(urlString);
 
+	// Set port to 0 if the URL specifies the default port for HTTPS (443)
+	// This ensures that the URL class doesn't remove it, allowing for later manipulation in server discovery.
+	if (!urlObject.port && urlObject.protocol === 'https:' && urlString.match(/:443/)) {
+		urlObject.port = '0';
+	}
+
 	// Remove hash
 	urlObject.hash = '';
 

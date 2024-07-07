@@ -39,6 +39,12 @@ describe('Address Candidates', () => {
 			expect(candidates[1]).toBe('http://example.com:8888/');
 		});
 
+		it('should return one candidate for an https url with the default port specified', () => {
+			const candidates = getAddressCandidates('https://example.com:443');
+			expect(candidates).toHaveLength(1);
+			expect(candidates[0]).toBe('https://example.com/');
+		});
+
 		it('should return an empty list for urls with non http(s) protocols', () => {
 			const candidates = getAddressCandidates('ftp://example.com');
 			expect(candidates).toHaveLength(0);

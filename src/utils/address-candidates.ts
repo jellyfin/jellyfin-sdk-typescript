@@ -56,6 +56,7 @@ export function getAddressCandidates(input: string): Array<string> {
 		const url = parseUrl(input);
 		candidates.push(url);
 
+
 		if (url.protocol === HTTP_PROTOCOL) {
 			const copy = copyUrl(url);
 			copy.protocol = HTTPS_PROTOCOL;
@@ -81,7 +82,12 @@ export function getAddressCandidates(input: string): Array<string> {
 
 		return candidates
 			.sort((a, b) => getScore(b) - getScore(a))
-			.map(candidate => candidate.toString());
+			.map(candidate => {
+				if (candidate.port === '0') {
+					candidate.port = '';
+				}
+				return candidate.toString();
+			});
 	} catch (err) {
 		console.warn(err);
 		return [];
