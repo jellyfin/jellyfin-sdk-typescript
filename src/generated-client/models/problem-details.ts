@@ -19,7 +19,7 @@
  * @interface ProblemDetails
  */
 export interface ProblemDetails {
-    [key: string]: any | any;
+    [key: string]: any;
 
     /**
      * 
