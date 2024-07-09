@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { HTTPS_PORT, HTTP_PORT, HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort, hasProtocolAndPort } from './url';
+import { HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, hasProtocolAndPort, isDefaultPort } from './url';
 
 /** The default http port for Jellyfin servers. */
 export const JF_HTTP_PORT = 8096;
@@ -34,9 +34,7 @@ function getScore(url: URL): number {
 	}
 
 	// Prefer default ports for http(s) protocols
-	if (url.protocol === HTTPS_PROTOCOL && (!url.port || url.port === HTTPS_PORT.toString())) {
-		score += 3;
-	} else if (url.protocol === HTTP_PROTOCOL && (!url.port || url.port === HTTP_PORT.toString())) {
+	if (isDefaultPort(url)) {
 		score += 3;
 	}
 
@@ -72,7 +70,7 @@ export function getAddressCandidates(input: string): Array<string> {
 
 		// Add candidates with JF default ports for candidates using the protocol default port
 		candidates
-			.filter(val => !val.port || val.port === getDefaultPort(val.protocol).toString())
+			.filter(isDefaultPort)
 			.forEach(val => {
 				if (val.protocol === HTTP_PROTOCOL) {
 					const copy = copyUrl(val);
