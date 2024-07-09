@@ -6,7 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl } from '..';
+import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl, hasProtocolAndPort } from '..';
 
 /**
  * Url tests.
@@ -37,6 +37,26 @@ describe('Url', () => {
 			expect(() => {
 				getDefaultPort('FOO');
 			}).toThrow();
+		});
+	});
+
+	describe('hasProtocolAndPort()', () => {
+		it('should return true if the protocol and port are specified', () => {
+			const urlString = 'https://example.com:443';
+			const url = parseUrl(urlString);
+			expect(hasProtocolAndPort(urlString, url)).toBe(true);
+		});
+
+		it('should return false if the port is not specified', () => {
+			const urlString = 'https://example.com';
+			const url = parseUrl(urlString);
+			expect(hasProtocolAndPort(urlString, url)).toBe(false);
+		});
+
+		it('should return false if the protocol is not specified', () => {
+			const urlString = 'example.com:443';
+			const url = parseUrl(urlString);
+			expect(hasProtocolAndPort(urlString, url)).toBe(false);
 		});
 	});
 

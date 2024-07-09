@@ -31,6 +31,20 @@ export function getDefaultPort(protocol: string): number {
 }
 
 /**
+ * Checks if the url string specifies the protocol and port.
+ * @param urlString The url string to test.
+ * @param url The parsed url object.
+ * @returns True if the the url string includes the protocol and port.
+ */
+export function hasProtocolAndPort(urlString: string, url: URL): boolean {
+	// The parsed URL object drops the default port
+	const port = url.port || getDefaultPort(url.protocol);
+	return urlString
+		.toLowerCase()
+		.startsWith(`${url.protocol}//${url.hostname.toLowerCase()}:${port}`);
+}
+
+/**
  * Parses a string to a Url object.
  * @param input A string representing a url.
  * @returns The Url object.
