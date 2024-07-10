@@ -15,7 +15,10 @@
       "src/models/api/index.ts",
       "src/utils/api/index.ts"
     ],
-    "out": "docs"
+    "out": "docs",
+    "projectDocuments": [
+      "CHANGELOG.md"
+    ]
   },
   "include": [
     "src/**/*"
