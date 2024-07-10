@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { HTTPS_PORT, HTTP_PORT, HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort } from './url';
+import { HTTPS_PORT, HTTP_PORT, HTTP_PROTOCOL, HTTPS_PROTOCOL, parseUrl, copyUrl, getDefaultPort, hasProtocolAndPort } from './url';
 
 /** The default http port for Jellyfin servers. */
 export const JF_HTTP_PORT = 8096;
@@ -54,14 +54,23 @@ export function getAddressCandidates(input: string): Array<string> {
 
 	try {
 		const url = parseUrl(input);
+
+		// If the input specifies the protocol and port return it directly
+		if (hasProtocolAndPort(input, url)) {
+			return [ url.toString() ];
+		}
+
+		// Add the parsed url as a candidate
 		candidates.push(url);
 
+		// Always try https if http is specified
 		if (url.protocol === HTTP_PROTOCOL) {
 			const copy = copyUrl(url);
 			copy.protocol = HTTPS_PROTOCOL;
 			candidates.push(copy);
 		}
 
+		// Add candidates with JF default ports for candidates using the protocol default port
 		candidates
 			.filter(val => !val.port || val.port === getDefaultPort(val.protocol).toString())
 			.forEach(val => {
@@ -79,9 +88,11 @@ export function getAddressCandidates(input: string): Array<string> {
 				}
 			});
 
-		return candidates
-			.sort((a, b) => getScore(b) - getScore(a))
-			.map(candidate => candidate.toString());
+		// Sort by score
+		candidates.sort((a, b) => getScore(b) - getScore(a));
+
+		// Return the list of candidate urls as strings
+		return candidates.map(candidate => candidate.toString());
 	} catch (err) {
 		console.warn(err);
 		return [];
