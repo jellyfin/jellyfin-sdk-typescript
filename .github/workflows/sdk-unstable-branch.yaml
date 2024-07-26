@@ -27,7 +27,7 @@ jobs:
         run: |
           git config user.name jellyfin-bot
           git config user.email team@jellyfin.org
-          git rebase origin/master
+          git rebase --strategy-option theirs origin/master
 
       - name: Set up Node.js
         uses: actions/setup-node@1e60f620b9541d16bece96c5465dc8ee9832be0b # v4.0.3
@@ -35,6 +35,9 @@ jobs:
           node-version: 20
           check-latest: true
           cache: npm
+
+      - name: Install Node.js dependencies
+        run: npm ci --no-audit
 
       - name: Download unstable OpenAPI schema
         run: |
@@ -47,9 +50,6 @@ jobs:
           VERSION=$(jq -r .info.version openapi.json)
           echo "UNSTABLE_API_VERSION=${VERSION}" >> $GITHUB_ENV
 
-      - name: Install Node.js dependencies
-        run: npm ci --no-audit
-
       - name: Update generated sources
         run: |
           cp $HOME/openapi.json .
@@ -59,8 +59,7 @@ jobs:
       - name: Commit changes
         continue-on-error: true
         run: |
-          ! git diff --exit-code
-          git commit --all --amend -m "Update OpenAPI to unstable"
+          ! git diff --exit-code && git commit --all --amend -m "Update OpenAPI to unstable"
 
       - name: Push changes
         run: git push --force origin openapi-unstable
