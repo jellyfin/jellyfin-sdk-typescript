@@ -36,7 +36,7 @@
     "eslint-plugin-vitest": "0.3.26",
     "glob": "10.4.5",
     "rimraf": "5.0.9",
-    "rollup": "4.18.1",
+    "rollup": "4.19.0",
     "typedoc": "0.26.4",
     "typescript": "5.5.3",
     "vitest": "2.0.4"
