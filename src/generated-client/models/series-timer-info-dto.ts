@@ -12,9 +12,15 @@
  */
 
 
-import { DayOfWeek } from './day-of-week';
-import { DayPattern } from './day-pattern';
-import { KeepUntil } from './keep-until';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DayOfWeek } from './day-of-week';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DayPattern } from './day-pattern';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { KeepUntil } from './keep-until';
 
 /**
  * Class SeriesTimerInfoDto.
@@ -233,4 +239,6 @@ export interface SeriesTimerInfoDto {
      */
     'ParentPrimaryImageTag'?: string | null;
 }
+
+
 

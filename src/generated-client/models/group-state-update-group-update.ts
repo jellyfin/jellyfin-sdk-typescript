@@ -12,8 +12,12 @@
  */
 
 
-import { GroupStateUpdate } from './group-state-update';
-import { GroupUpdateType } from './group-update-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupStateUpdate } from './group-state-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupUpdateType } from './group-update-type';
 
 /**
  * Class GroupUpdate.
@@ -40,4 +44,6 @@ export interface GroupStateUpdateGroupUpdate {
      */
     'Data'?: GroupStateUpdate;
 }
+
+
 

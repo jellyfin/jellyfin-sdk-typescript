@@ -12,9 +12,15 @@
  */
 
 
-import { EmbeddedSubtitleOptions } from './embedded-subtitle-options';
-import { MediaPathInfo } from './media-path-info';
-import { TypeOptions } from './type-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { EmbeddedSubtitleOptions } from './embedded-subtitle-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaPathInfo } from './media-path-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TypeOptions } from './type-options';
 
 /**
  * 
@@ -222,4 +228,6 @@ export interface LibraryOptions {
      */
     'TypeOptions'?: Array<TypeOptions>;
 }
+
+
 

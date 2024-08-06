@@ -12,8 +12,12 @@
  */
 
 
-import { CollectionTypeOptions } from './collection-type-options';
-import { LibraryOptions } from './library-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CollectionTypeOptions } from './collection-type-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LibraryOptions } from './library-options';
 
 /**
  * Used to hold information about a user\'s list of configured virtual folders.
@@ -70,4 +74,6 @@ export interface VirtualFolderInfo {
      */
     'RefreshStatus'?: string | null;
 }
+
+
 

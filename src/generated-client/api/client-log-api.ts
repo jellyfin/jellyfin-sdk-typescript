@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ClientLogDocumentResponseDto } from '../models';
+import type { ClientLogDocumentResponseDto } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * ClientLogApi - axios parameter creator
  * @export
@@ -32,11 +33,11 @@ export const ClientLogApiAxiosParamCreator = function (configuration?: Configura
         /**
          * 
          * @summary Upload a document.
-         * @param {any} [body] 
+         * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logFile: async (body?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        logFile: async (body?: File, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/ClientLog/Document`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -79,13 +80,15 @@ export const ClientLogApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Upload a document.
-         * @param {any} [body] 
+         * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async logFile(body?: any, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClientLogDocumentResponseDto>> {
+        async logFile(body?: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClientLogDocumentResponseDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.logFile(body, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ClientLogApi.logFile']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -100,12 +103,12 @@ export const ClientLogApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Upload a document.
-         * @param {any} [body] 
+         * @param {ClientLogApiLogFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        logFile(body?: any, options?: any): AxiosPromise<ClientLogDocumentResponseDto> {
-            return localVarFp.logFile(body, options).then((request) => request(axios, basePath));
+        logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ClientLogDocumentResponseDto> {
+            return localVarFp.logFile(requestParameters.body, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -118,10 +121,10 @@ export const ClientLogApiFactory = function (configuration?: Configuration, base
 export interface ClientLogApiLogFileRequest {
     /**
      * 
-     * @type {any}
+     * @type {File}
      * @memberof ClientLogApiLogFile
      */
-    readonly body?: any
+    readonly body?: File
 }
 
 /**
@@ -139,7 +142,8 @@ export class ClientLogApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ClientLogApi
      */
-    public logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: AxiosRequestConfig) {
+    public logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: RawAxiosRequestConfig) {
         return ClientLogApiFp(this.configuration).logFile(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

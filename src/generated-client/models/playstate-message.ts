@@ -12,8 +12,12 @@
  */
 
 
-import { PlaystateRequest } from './playstate-request';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaystateRequest } from './playstate-request';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Playstate message.
@@ -40,4 +44,6 @@ export interface PlaystateMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

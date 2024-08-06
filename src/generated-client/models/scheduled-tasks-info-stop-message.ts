@@ -12,7 +12,9 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Scheduled tasks info stop message.
@@ -27,4 +29,6 @@ export interface ScheduledTasksInfoStopMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

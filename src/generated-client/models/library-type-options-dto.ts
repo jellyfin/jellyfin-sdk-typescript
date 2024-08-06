@@ -12,9 +12,15 @@
  */
 
 
-import { ImageOption } from './image-option';
-import { ImageType } from './image-type';
-import { LibraryOptionInfoDto } from './library-option-info-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageOption } from './image-option';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageType } from './image-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LibraryOptionInfoDto } from './library-option-info-dto';
 
 /**
  * Library type options dto.

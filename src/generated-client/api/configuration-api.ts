@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { MetadataOptions } from '../models';
+import type { MetadataOptions } from '../models';
 // @ts-ignore
-import { ServerConfiguration } from '../models';
+import type { ServerConfiguration } from '../models';
 /**
  * ConfigurationApi - axios parameter creator
  * @export
@@ -35,7 +36,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfiguration: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -68,7 +69,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultMetadataOptions: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getDefaultMetadataOptions: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Configuration/MetadataOptions/Default`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -102,7 +103,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration: async (key: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getNamedConfiguration: async (key: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'key' is not null or undefined
             assertParamExists('getNamedConfiguration', 'key', key)
             const localVarPath = `/System/Configuration/{key}`
@@ -139,7 +140,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'serverConfiguration' is not null or undefined
             assertParamExists('updateConfiguration', 'serverConfiguration', serverConfiguration)
             const localVarPath = `/System/Configuration`;
@@ -179,7 +180,7 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration: async (key: string, body: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateNamedConfiguration: async (key: string, body: any, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'key' is not null or undefined
             assertParamExists('updateNamedConfiguration', 'key', key)
             // verify required parameter 'body' is not null or undefined
@@ -230,9 +231,11 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConfiguration(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
+        async getConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConfiguration(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.getConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -240,9 +243,11 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDefaultMetadataOptions(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataOptions>> {
+        async getDefaultMetadataOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataOptions>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDefaultMetadataOptions(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.getDefaultMetadataOptions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -251,9 +256,11 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getNamedConfiguration(key: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getNamedConfiguration(key: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getNamedConfiguration(key, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.getNamedConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -262,9 +269,11 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfiguration, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.updateConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -274,9 +283,11 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateNamedConfiguration(key: string, body: any, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateNamedConfiguration(key: string, body: any, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateNamedConfiguration(key, body, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.updateNamedConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -294,7 +305,7 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfiguration(options?: any): AxiosPromise<ServerConfiguration> {
+        getConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<ServerConfiguration> {
             return localVarFp.getConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
@@ -303,39 +314,38 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDefaultMetadataOptions(options?: any): AxiosPromise<MetadataOptions> {
+        getDefaultMetadataOptions(options?: RawAxiosRequestConfig): AxiosPromise<MetadataOptions> {
             return localVarFp.getDefaultMetadataOptions(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a named configuration.
-         * @param {string} key Configuration key.
+         * @param {ConfigurationApiGetNamedConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration(key: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getNamedConfiguration(key, options).then((request) => request(axios, basePath));
+        getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getNamedConfiguration(requestParameters.key, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates application configuration.
-         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {ConfigurationApiUpdateConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration(serverConfiguration: ServerConfiguration, options?: any): AxiosPromise<void> {
-            return localVarFp.updateConfiguration(serverConfiguration, options).then((request) => request(axios, basePath));
+        updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates named configuration.
-         * @param {string} key Configuration key.
-         * @param {any} body Configuration.
+         * @param {ConfigurationApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration(key: string, body: any, options?: any): AxiosPromise<void> {
-            return localVarFp.updateNamedConfiguration(key, body, options).then((request) => request(axios, basePath));
+        updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -403,7 +413,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getConfiguration(options?: AxiosRequestConfig) {
+    public getConfiguration(options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -414,7 +424,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getDefaultMetadataOptions(options?: AxiosRequestConfig) {
+    public getDefaultMetadataOptions(options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getDefaultMetadataOptions(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -426,7 +436,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: AxiosRequestConfig) {
+    public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -438,7 +448,7 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: AxiosRequestConfig) {
+    public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -450,7 +460,8 @@ export class ConfigurationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ConfigurationApi
      */
-    public updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: AxiosRequestConfig) {
+    public updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

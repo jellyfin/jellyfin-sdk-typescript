@@ -12,33 +12,34 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { AllThemeMediaResult } from '../models';
+import type { AllThemeMediaResult } from '../models';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import type { BaseItemDto } from '../models';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import type { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
-import { CollectionType } from '../models';
+import type { CollectionType } from '../models';
 // @ts-ignore
-import { ItemCounts } from '../models';
+import type { ItemCounts } from '../models';
 // @ts-ignore
-import { ItemFields } from '../models';
+import type { ItemFields } from '../models';
 // @ts-ignore
-import { LibraryOptionsResultDto } from '../models';
+import type { LibraryOptionsResultDto } from '../models';
 // @ts-ignore
-import { MediaUpdateInfoDto } from '../models';
+import type { MediaUpdateInfoDto } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { ThemeMediaResult } from '../models';
+import type { ThemeMediaResult } from '../models';
 /**
  * LibraryApi - axios parameter creator
  * @export
@@ -52,7 +53,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItem: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteItem: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('deleteItem', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}`
@@ -89,7 +90,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItems: async (ids?: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteItems: async (ids?: Array<string>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -128,7 +129,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAncestors: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getAncestors: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getAncestors', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/Ancestors`
@@ -170,7 +171,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @deprecated
          * @throws {RequiredError}
          */
-        getCriticReviews: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getCriticReviews: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getCriticReviews', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/CriticReviews`
@@ -207,7 +208,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDownload: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getDownload: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getDownload', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/Download`
@@ -244,7 +245,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFile: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getFile: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getFile', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/File`
@@ -282,7 +283,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItemCounts: async (userId?: string, isFavorite?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getItemCounts: async (userId?: string, isFavorite?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Counts`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -325,7 +326,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLibraryOptionsInfo: async (libraryContentType?: CollectionType, isNewLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLibraryOptionsInfo: async (libraryContentType?: CollectionType, isNewLibrary?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Libraries/AvailableOptions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -367,7 +368,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaFolders: async (isHidden?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getMediaFolders: async (isHidden?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/MediaFolders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -404,7 +405,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPhysicalPaths: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPhysicalPaths: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/PhysicalPaths`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -442,7 +443,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarAlbums: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarAlbums: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarAlbums', 'itemId', itemId)
             const localVarPath = `/Albums/{itemId}/Similar`
@@ -499,7 +500,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarArtists: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarArtists: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarArtists', 'itemId', itemId)
             const localVarPath = `/Artists/{itemId}/Similar`
@@ -556,7 +557,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarItems: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarItems: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarItems', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/Similar`
@@ -613,7 +614,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarMovies: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarMovies: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarMovies', 'itemId', itemId)
             const localVarPath = `/Movies/{itemId}/Similar`
@@ -670,7 +671,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarShows: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarShows: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarShows', 'itemId', itemId)
             const localVarPath = `/Shows/{itemId}/Similar`
@@ -727,7 +728,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarTrailers: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSimilarTrailers: async (itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSimilarTrailers', 'itemId', itemId)
             const localVarPath = `/Trailers/{itemId}/Similar`
@@ -782,7 +783,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeMedia: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getThemeMedia: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getThemeMedia', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/ThemeMedia`
@@ -829,7 +830,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeSongs: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getThemeSongs: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getThemeSongs', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/ThemeSongs`
@@ -876,7 +877,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeVideos: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getThemeVideos: async (itemId: string, userId?: string, inheritFromParent?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getThemeVideos', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/ThemeVideos`
@@ -922,7 +923,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedMovies: async (tmdbId?: string, imdbId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postAddedMovies: async (tmdbId?: string, imdbId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/Movies/Added`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -964,7 +965,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedSeries: async (tvdbId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postAddedSeries: async (tvdbId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/Series/Added`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1002,7 +1003,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMedia: async (mediaUpdateInfoDto: MediaUpdateInfoDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postUpdatedMedia: async (mediaUpdateInfoDto: MediaUpdateInfoDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'mediaUpdateInfoDto' is not null or undefined
             assertParamExists('postUpdatedMedia', 'mediaUpdateInfoDto', mediaUpdateInfoDto)
             const localVarPath = `/Library/Media/Updated`;
@@ -1042,7 +1043,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMovies: async (tmdbId?: string, imdbId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postUpdatedMovies: async (tmdbId?: string, imdbId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/Movies/Updated`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1084,7 +1085,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedSeries: async (tvdbId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postUpdatedSeries: async (tvdbId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/Series/Updated`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1121,7 +1122,7 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        refreshLibrary: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        refreshLibrary: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/Refresh`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1165,9 +1166,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteItem(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteItem(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteItem(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.deleteItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1176,9 +1179,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteItems(ids?: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteItems(ids?: Array<string>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteItems(ids, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.deleteItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1188,9 +1193,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getAncestors(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+        async getAncestors(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAncestors(itemId, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getAncestors']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1200,9 +1207,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @deprecated
          * @throws {RequiredError}
          */
-        async getCriticReviews(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getCriticReviews(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCriticReviews(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getCriticReviews']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1211,9 +1220,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDownload(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getDownload(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDownload(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getDownload']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1222,9 +1233,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getFile(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getFile(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getFile(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getFile']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1234,9 +1247,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getItemCounts(userId?: string, isFavorite?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ItemCounts>> {
+        async getItemCounts(userId?: string, isFavorite?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ItemCounts>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getItemCounts(userId, isFavorite, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getItemCounts']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1246,9 +1261,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLibraryOptionsInfo(libraryContentType?: CollectionType, isNewLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LibraryOptionsResultDto>> {
+        async getLibraryOptionsInfo(libraryContentType?: CollectionType, isNewLibrary?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LibraryOptionsResultDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getLibraryOptionsInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1257,9 +1274,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMediaFolders(isHidden?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getMediaFolders(isHidden?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMediaFolders(isHidden, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getMediaFolders']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1267,9 +1286,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPhysicalPaths(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<string>>> {
+        async getPhysicalPaths(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<string>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPhysicalPaths(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getPhysicalPaths']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1282,9 +1303,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarAlbums(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarAlbums(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarAlbums(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarAlbums']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1297,9 +1320,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarArtists(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarArtists(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarArtists(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarArtists']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1312,9 +1337,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarItems(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarItems(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarItems(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1327,9 +1354,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarMovies(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarMovies(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarMovies(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarMovies']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1342,9 +1371,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarShows(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarShows(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarShows(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarShows']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1357,9 +1388,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSimilarTrailers(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSimilarTrailers(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarTrailers(itemId, excludeArtistIds, userId, limit, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarTrailers']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1370,9 +1403,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getThemeMedia(itemId: string, userId?: string, inheritFromParent?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AllThemeMediaResult>> {
+        async getThemeMedia(itemId: string, userId?: string, inheritFromParent?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AllThemeMediaResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getThemeMedia(itemId, userId, inheritFromParent, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getThemeMedia']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1383,9 +1418,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getThemeSongs(itemId: string, userId?: string, inheritFromParent?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ThemeMediaResult>> {
+        async getThemeSongs(itemId: string, userId?: string, inheritFromParent?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ThemeMediaResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getThemeSongs(itemId, userId, inheritFromParent, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getThemeSongs']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1396,9 +1433,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getThemeVideos(itemId: string, userId?: string, inheritFromParent?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ThemeMediaResult>> {
+        async getThemeVideos(itemId: string, userId?: string, inheritFromParent?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ThemeMediaResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getThemeVideos(itemId, userId, inheritFromParent, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getThemeVideos']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1408,9 +1447,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postAddedMovies(tmdbId?: string, imdbId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postAddedMovies(tmdbId?: string, imdbId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postAddedMovies(tmdbId, imdbId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.postAddedMovies']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1419,9 +1460,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postAddedSeries(tvdbId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postAddedSeries(tvdbId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postAddedSeries(tvdbId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.postAddedSeries']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1430,9 +1473,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postUpdatedMedia(mediaUpdateInfoDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.postUpdatedMedia']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1442,9 +1487,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postUpdatedMovies(tmdbId?: string, imdbId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postUpdatedMovies(tmdbId?: string, imdbId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postUpdatedMovies(tmdbId, imdbId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.postUpdatedMovies']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1453,9 +1500,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postUpdatedSeries(tvdbId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async postUpdatedSeries(tvdbId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postUpdatedSeries(tvdbId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.postUpdatedSeries']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -1463,9 +1512,11 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async refreshLibrary(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async refreshLibrary(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.refreshLibrary(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.refreshLibrary']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -1480,96 +1531,93 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         /**
          * 
          * @summary Deletes an item from the library and filesystem.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiDeleteItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItem(itemId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteItem(itemId, options).then((request) => request(axios, basePath));
+        deleteItem(requestParameters: LibraryApiDeleteItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteItem(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes items from the library and filesystem.
-         * @param {Array<string>} [ids] The item ids.
+         * @param {LibraryApiDeleteItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteItems(ids?: Array<string>, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteItems(ids, options).then((request) => request(axios, basePath));
+        deleteItems(requestParameters: LibraryApiDeleteItemsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteItems(requestParameters.ids, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all parents of an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {LibraryApiGetAncestorsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAncestors(itemId: string, userId?: string, options?: any): AxiosPromise<Array<BaseItemDto>> {
-            return localVarFp.getAncestors(itemId, userId, options).then((request) => request(axios, basePath));
+        getAncestors(requestParameters: LibraryApiGetAncestorsRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getAncestors(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets critic review for an item.
-         * @param {string} itemId 
+         * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @deprecated
          * @throws {RequiredError}
          */
-        getCriticReviews(itemId: string, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getCriticReviews(itemId, options).then((request) => request(axios, basePath));
+        getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getCriticReviews(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Downloads item media.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiGetDownloadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDownload(itemId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDownload(itemId, options).then((request) => request(axios, basePath));
+        getDownload(requestParameters: LibraryApiGetDownloadRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getDownload(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get the original file of an item.
-         * @param {string} itemId The item id.
+         * @param {LibraryApiGetFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFile(itemId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getFile(itemId, options).then((request) => request(axios, basePath));
+        getFile(requestParameters: LibraryApiGetFileRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getFile(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get item counts.
-         * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
-         * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
+         * @param {LibraryApiGetItemCountsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItemCounts(userId?: string, isFavorite?: boolean, options?: any): AxiosPromise<ItemCounts> {
-            return localVarFp.getItemCounts(userId, isFavorite, options).then((request) => request(axios, basePath));
+        getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ItemCounts> {
+            return localVarFp.getItemCounts(requestParameters.userId, requestParameters.isFavorite, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the library options info.
-         * @param {CollectionType} [libraryContentType] Library content type.
-         * @param {boolean} [isNewLibrary] Whether this is a new library.
+         * @param {LibraryApiGetLibraryOptionsInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLibraryOptionsInfo(libraryContentType?: CollectionType, isNewLibrary?: boolean, options?: any): AxiosPromise<LibraryOptionsResultDto> {
-            return localVarFp.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options).then((request) => request(axios, basePath));
+        getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<LibraryOptionsResultDto> {
+            return localVarFp.getLibraryOptionsInfo(requestParameters.libraryContentType, requestParameters.isNewLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all user media folders.
-         * @param {boolean} [isHidden] Optional. Filter by folders that are marked hidden, or not.
+         * @param {LibraryApiGetMediaFoldersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMediaFolders(isHidden?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getMediaFolders(isHidden, options).then((request) => request(axios, basePath));
+        getMediaFolders(requestParameters: LibraryApiGetMediaFoldersRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getMediaFolders(requestParameters.isHidden, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1577,180 +1625,148 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPhysicalPaths(options?: any): AxiosPromise<Array<string>> {
+        getPhysicalPaths(options?: RawAxiosRequestConfig): AxiosPromise<Array<string>> {
             return localVarFp.getPhysicalPaths(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarAlbumsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarAlbums(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarAlbums(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarAlbums(requestParameters: LibraryApiGetSimilarAlbumsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarAlbums(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarArtistsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarArtists(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarArtists(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarArtists(requestParameters: LibraryApiGetSimilarArtistsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarArtists(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarItems(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarItems(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarItems(requestParameters: LibraryApiGetSimilarItemsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarItems(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarMovies(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarMovies(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarMovies(requestParameters: LibraryApiGetSimilarMoviesRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarMovies(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarShowsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarShows(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarShows(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarShows(requestParameters: LibraryApiGetSimilarShowsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarShows(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets similar items.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [excludeArtistIds] Exclude artist ids.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines, TrailerUrls.
+         * @param {LibraryApiGetSimilarTrailersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSimilarTrailers(itemId: string, excludeArtistIds?: Array<string>, userId?: string, limit?: number, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSimilarTrailers(itemId, excludeArtistIds, userId, limit, fields, options).then((request) => request(axios, basePath));
+        getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSimilarTrailers(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme songs and videos for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeMediaRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeMedia(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<AllThemeMediaResult> {
-            return localVarFp.getThemeMedia(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeMedia(requestParameters: LibraryApiGetThemeMediaRequest, options?: RawAxiosRequestConfig): AxiosPromise<AllThemeMediaResult> {
+            return localVarFp.getThemeMedia(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme songs for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeSongsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeSongs(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<ThemeMediaResult> {
-            return localVarFp.getThemeSongs(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeSongs(requestParameters: LibraryApiGetThemeSongsRequest, options?: RawAxiosRequestConfig): AxiosPromise<ThemeMediaResult> {
+            return localVarFp.getThemeSongs(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get theme videos for an item.
-         * @param {string} itemId The item id.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {boolean} [inheritFromParent] Optional. Determines whether or not parent items should be searched for theme media.
+         * @param {LibraryApiGetThemeVideosRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getThemeVideos(itemId: string, userId?: string, inheritFromParent?: boolean, options?: any): AxiosPromise<ThemeMediaResult> {
-            return localVarFp.getThemeVideos(itemId, userId, inheritFromParent, options).then((request) => request(axios, basePath));
+        getThemeVideos(requestParameters: LibraryApiGetThemeVideosRequest, options?: RawAxiosRequestConfig): AxiosPromise<ThemeMediaResult> {
+            return localVarFp.getThemeVideos(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {string} [tmdbId] The tmdbId.
-         * @param {string} [imdbId] The imdbId.
+         * @param {LibraryApiPostAddedMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedMovies(tmdbId?: string, imdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postAddedMovies(tmdbId, imdbId, options).then((request) => request(axios, basePath));
+        postAddedMovies(requestParameters: LibraryApiPostAddedMoviesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postAddedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new episodes of a series have been added by an external source.
-         * @param {string} [tvdbId] The tvdbId.
+         * @param {LibraryApiPostAddedSeriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postAddedSeries(tvdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postAddedSeries(tvdbId, options).then((request) => request(axios, basePath));
+        postAddedSeries(requestParameters: LibraryApiPostAddedSeriesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postAddedSeries(requestParameters.tvdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {MediaUpdateInfoDto} mediaUpdateInfoDto The update paths.
+         * @param {LibraryApiPostUpdatedMediaRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMedia(mediaUpdateInfoDto: MediaUpdateInfoDto, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedMedia(mediaUpdateInfoDto, options).then((request) => request(axios, basePath));
+        postUpdatedMedia(requestParameters: LibraryApiPostUpdatedMediaRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedMedia(requestParameters.mediaUpdateInfoDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new movies have been added by an external source.
-         * @param {string} [tmdbId] The tmdbId.
-         * @param {string} [imdbId] The imdbId.
+         * @param {LibraryApiPostUpdatedMoviesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedMovies(tmdbId?: string, imdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedMovies(tmdbId, imdbId, options).then((request) => request(axios, basePath));
+        postUpdatedMovies(requestParameters: LibraryApiPostUpdatedMoviesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that new episodes of a series have been added by an external source.
-         * @param {string} [tvdbId] The tvdbId.
+         * @param {LibraryApiPostUpdatedSeriesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postUpdatedSeries(tvdbId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.postUpdatedSeries(tvdbId, options).then((request) => request(axios, basePath));
+        postUpdatedSeries(requestParameters: LibraryApiPostUpdatedSeriesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.postUpdatedSeries(requestParameters.tvdbId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1758,7 +1774,7 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        refreshLibrary(options?: any): AxiosPromise<void> {
+        refreshLibrary(options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.refreshLibrary(options).then((request) => request(axios, basePath));
         },
     };
@@ -2346,7 +2362,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public deleteItem(requestParameters: LibraryApiDeleteItemRequest, options?: AxiosRequestConfig) {
+    public deleteItem(requestParameters: LibraryApiDeleteItemRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).deleteItem(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2358,7 +2374,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public deleteItems(requestParameters: LibraryApiDeleteItemsRequest = {}, options?: AxiosRequestConfig) {
+    public deleteItems(requestParameters: LibraryApiDeleteItemsRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).deleteItems(requestParameters.ids, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2370,7 +2386,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getAncestors(requestParameters: LibraryApiGetAncestorsRequest, options?: AxiosRequestConfig) {
+    public getAncestors(requestParameters: LibraryApiGetAncestorsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getAncestors(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2383,7 +2399,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: AxiosRequestConfig) {
+    public getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getCriticReviews(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2395,7 +2411,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getDownload(requestParameters: LibraryApiGetDownloadRequest, options?: AxiosRequestConfig) {
+    public getDownload(requestParameters: LibraryApiGetDownloadRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getDownload(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2407,7 +2423,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getFile(requestParameters: LibraryApiGetFileRequest, options?: AxiosRequestConfig) {
+    public getFile(requestParameters: LibraryApiGetFileRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getFile(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2419,7 +2435,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: AxiosRequestConfig) {
+    public getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getItemCounts(requestParameters.userId, requestParameters.isFavorite, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2431,7 +2447,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: AxiosRequestConfig) {
+    public getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getLibraryOptionsInfo(requestParameters.libraryContentType, requestParameters.isNewLibrary, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2443,7 +2459,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getMediaFolders(requestParameters: LibraryApiGetMediaFoldersRequest = {}, options?: AxiosRequestConfig) {
+    public getMediaFolders(requestParameters: LibraryApiGetMediaFoldersRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getMediaFolders(requestParameters.isHidden, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2454,7 +2470,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getPhysicalPaths(options?: AxiosRequestConfig) {
+    public getPhysicalPaths(options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getPhysicalPaths(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2466,7 +2482,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarAlbums(requestParameters: LibraryApiGetSimilarAlbumsRequest, options?: AxiosRequestConfig) {
+    public getSimilarAlbums(requestParameters: LibraryApiGetSimilarAlbumsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarAlbums(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2478,7 +2494,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarArtists(requestParameters: LibraryApiGetSimilarArtistsRequest, options?: AxiosRequestConfig) {
+    public getSimilarArtists(requestParameters: LibraryApiGetSimilarArtistsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarArtists(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2490,7 +2506,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarItems(requestParameters: LibraryApiGetSimilarItemsRequest, options?: AxiosRequestConfig) {
+    public getSimilarItems(requestParameters: LibraryApiGetSimilarItemsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarItems(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2502,7 +2518,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarMovies(requestParameters: LibraryApiGetSimilarMoviesRequest, options?: AxiosRequestConfig) {
+    public getSimilarMovies(requestParameters: LibraryApiGetSimilarMoviesRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarMovies(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2514,7 +2530,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarShows(requestParameters: LibraryApiGetSimilarShowsRequest, options?: AxiosRequestConfig) {
+    public getSimilarShows(requestParameters: LibraryApiGetSimilarShowsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarShows(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2526,7 +2542,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: AxiosRequestConfig) {
+    public getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarTrailers(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2538,7 +2554,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getThemeMedia(requestParameters: LibraryApiGetThemeMediaRequest, options?: AxiosRequestConfig) {
+    public getThemeMedia(requestParameters: LibraryApiGetThemeMediaRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getThemeMedia(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2550,7 +2566,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getThemeSongs(requestParameters: LibraryApiGetThemeSongsRequest, options?: AxiosRequestConfig) {
+    public getThemeSongs(requestParameters: LibraryApiGetThemeSongsRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getThemeSongs(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2562,7 +2578,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public getThemeVideos(requestParameters: LibraryApiGetThemeVideosRequest, options?: AxiosRequestConfig) {
+    public getThemeVideos(requestParameters: LibraryApiGetThemeVideosRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getThemeVideos(requestParameters.itemId, requestParameters.userId, requestParameters.inheritFromParent, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2574,7 +2590,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public postAddedMovies(requestParameters: LibraryApiPostAddedMoviesRequest = {}, options?: AxiosRequestConfig) {
+    public postAddedMovies(requestParameters: LibraryApiPostAddedMoviesRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postAddedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2586,7 +2602,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public postAddedSeries(requestParameters: LibraryApiPostAddedSeriesRequest = {}, options?: AxiosRequestConfig) {
+    public postAddedSeries(requestParameters: LibraryApiPostAddedSeriesRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postAddedSeries(requestParameters.tvdbId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2598,7 +2614,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public postUpdatedMedia(requestParameters: LibraryApiPostUpdatedMediaRequest, options?: AxiosRequestConfig) {
+    public postUpdatedMedia(requestParameters: LibraryApiPostUpdatedMediaRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postUpdatedMedia(requestParameters.mediaUpdateInfoDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2610,7 +2626,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public postUpdatedMovies(requestParameters: LibraryApiPostUpdatedMoviesRequest = {}, options?: AxiosRequestConfig) {
+    public postUpdatedMovies(requestParameters: LibraryApiPostUpdatedMoviesRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postUpdatedMovies(requestParameters.tmdbId, requestParameters.imdbId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2622,7 +2638,7 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public postUpdatedSeries(requestParameters: LibraryApiPostUpdatedSeriesRequest = {}, options?: AxiosRequestConfig) {
+    public postUpdatedSeries(requestParameters: LibraryApiPostUpdatedSeriesRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postUpdatedSeries(requestParameters.tvdbId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -2633,7 +2649,8 @@ export class LibraryApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryApi
      */
-    public refreshLibrary(options?: AxiosRequestConfig) {
+    public refreshLibrary(options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).refreshLibrary(options).then((request) => request(this.axios, this.basePath));
     }
 }
+

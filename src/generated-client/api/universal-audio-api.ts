@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { MediaStreamProtocol } from '../models';
+import type { MediaStreamProtocol } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * UniversalAudioApi - axios parameter creator
  * @export
@@ -53,7 +54,7 @@ export const UniversalAudioApiAxiosParamCreator = function (configuration?: Conf
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUniversalAudioStream: async (itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getUniversalAudioStream: async (itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getUniversalAudioStream', 'itemId', itemId)
             const localVarPath = `/Audio/{itemId}/universal`
@@ -175,7 +176,7 @@ export const UniversalAudioApiAxiosParamCreator = function (configuration?: Conf
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        headUniversalAudioStream: async (itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        headUniversalAudioStream: async (itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('headUniversalAudioStream', 'itemId', itemId)
             const localVarPath = `/Audio/{itemId}/universal`
@@ -307,9 +308,11 @@ export const UniversalAudioApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUniversalAudioStream(itemId, container, mediaSourceId, deviceId, userId, audioCodec, maxAudioChannels, transcodingAudioChannels, maxStreamingBitrate, audioBitRate, startTimeTicks, transcodingContainer, transcodingProtocol, maxAudioSampleRate, maxAudioBitDepth, enableRemoteMedia, breakOnNonKeyFrames, enableRedirection, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UniversalAudioApi.getUniversalAudioStream']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -335,9 +338,11 @@ export const UniversalAudioApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async headUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async headUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.headUniversalAudioStream(itemId, container, mediaSourceId, deviceId, userId, audioCodec, maxAudioChannels, transcodingAudioChannels, maxStreamingBitrate, audioBitRate, startTimeTicks, transcodingContainer, transcodingProtocol, maxAudioSampleRate, maxAudioBitDepth, enableRemoteMedia, breakOnNonKeyFrames, enableRedirection, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UniversalAudioApi.headUniversalAudioStream']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -352,56 +357,22 @@ export const UniversalAudioApiFactory = function (configuration?: Configuration,
         /**
          * 
          * @summary Gets an audio stream.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [container] Optional. The audio container.
-         * @param {string} [mediaSourceId] The media version id, if playing an alternate version.
-         * @param {string} [deviceId] The device id of the client requesting. Used to stop encoding processes when needed.
-         * @param {string} [userId] Optional. The user id.
-         * @param {string} [audioCodec] Optional. The audio codec to transcode to.
-         * @param {number} [maxAudioChannels] Optional. The maximum number of audio channels.
-         * @param {number} [transcodingAudioChannels] Optional. The number of how many audio channels to transcode to.
-         * @param {number} [maxStreamingBitrate] Optional. The maximum streaming bitrate.
-         * @param {number} [audioBitRate] Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-         * @param {number} [startTimeTicks] Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-         * @param {string} [transcodingContainer] Optional. The container to transcode to.
-         * @param {MediaStreamProtocol} [transcodingProtocol] Optional. The transcoding protocol.
-         * @param {number} [maxAudioSampleRate] Optional. The maximum audio sample rate.
-         * @param {number} [maxAudioBitDepth] Optional. The maximum audio bit depth.
-         * @param {boolean} [enableRemoteMedia] Optional. Whether to enable remote media.
-         * @param {boolean} [breakOnNonKeyFrames] Optional. Whether to break on non key frames.
-         * @param {boolean} [enableRedirection] Whether to enable redirection. Defaults to true.
+         * @param {UniversalAudioApiGetUniversalAudioStreamRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: any): AxiosPromise<any> {
-            return localVarFp.getUniversalAudioStream(itemId, container, mediaSourceId, deviceId, userId, audioCodec, maxAudioChannels, transcodingAudioChannels, maxStreamingBitrate, audioBitRate, startTimeTicks, transcodingContainer, transcodingProtocol, maxAudioSampleRate, maxAudioBitDepth, enableRemoteMedia, breakOnNonKeyFrames, enableRedirection, options).then((request) => request(axios, basePath));
+        getUniversalAudioStream(requestParameters: UniversalAudioApiGetUniversalAudioStreamRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getUniversalAudioStream(requestParameters.itemId, requestParameters.container, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.userId, requestParameters.audioCodec, requestParameters.maxAudioChannels, requestParameters.transcodingAudioChannels, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.startTimeTicks, requestParameters.transcodingContainer, requestParameters.transcodingProtocol, requestParameters.maxAudioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.enableRemoteMedia, requestParameters.breakOnNonKeyFrames, requestParameters.enableRedirection, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an audio stream.
-         * @param {string} itemId The item id.
-         * @param {Array<string>} [container] Optional. The audio container.
-         * @param {string} [mediaSourceId] The media version id, if playing an alternate version.
-         * @param {string} [deviceId] The device id of the client requesting. Used to stop encoding processes when needed.
-         * @param {string} [userId] Optional. The user id.
-         * @param {string} [audioCodec] Optional. The audio codec to transcode to.
-         * @param {number} [maxAudioChannels] Optional. The maximum number of audio channels.
-         * @param {number} [transcodingAudioChannels] Optional. The number of how many audio channels to transcode to.
-         * @param {number} [maxStreamingBitrate] Optional. The maximum streaming bitrate.
-         * @param {number} [audioBitRate] Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-         * @param {number} [startTimeTicks] Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-         * @param {string} [transcodingContainer] Optional. The container to transcode to.
-         * @param {MediaStreamProtocol} [transcodingProtocol] Optional. The transcoding protocol.
-         * @param {number} [maxAudioSampleRate] Optional. The maximum audio sample rate.
-         * @param {number} [maxAudioBitDepth] Optional. The maximum audio bit depth.
-         * @param {boolean} [enableRemoteMedia] Optional. Whether to enable remote media.
-         * @param {boolean} [breakOnNonKeyFrames] Optional. Whether to break on non key frames.
-         * @param {boolean} [enableRedirection] Whether to enable redirection. Defaults to true.
+         * @param {UniversalAudioApiHeadUniversalAudioStreamRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        headUniversalAudioStream(itemId: string, container?: Array<string>, mediaSourceId?: string, deviceId?: string, userId?: string, audioCodec?: string, maxAudioChannels?: number, transcodingAudioChannels?: number, maxStreamingBitrate?: number, audioBitRate?: number, startTimeTicks?: number, transcodingContainer?: string, transcodingProtocol?: MediaStreamProtocol, maxAudioSampleRate?: number, maxAudioBitDepth?: number, enableRemoteMedia?: boolean, breakOnNonKeyFrames?: boolean, enableRedirection?: boolean, options?: any): AxiosPromise<any> {
-            return localVarFp.headUniversalAudioStream(itemId, container, mediaSourceId, deviceId, userId, audioCodec, maxAudioChannels, transcodingAudioChannels, maxStreamingBitrate, audioBitRate, startTimeTicks, transcodingContainer, transcodingProtocol, maxAudioSampleRate, maxAudioBitDepth, enableRemoteMedia, breakOnNonKeyFrames, enableRedirection, options).then((request) => request(axios, basePath));
+        headUniversalAudioStream(requestParameters: UniversalAudioApiHeadUniversalAudioStreamRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.headUniversalAudioStream(requestParameters.itemId, requestParameters.container, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.userId, requestParameters.audioCodec, requestParameters.maxAudioChannels, requestParameters.transcodingAudioChannels, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.startTimeTicks, requestParameters.transcodingContainer, requestParameters.transcodingProtocol, requestParameters.maxAudioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.enableRemoteMedia, requestParameters.breakOnNonKeyFrames, requestParameters.enableRedirection, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -687,7 +658,7 @@ export class UniversalAudioApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UniversalAudioApi
      */
-    public getUniversalAudioStream(requestParameters: UniversalAudioApiGetUniversalAudioStreamRequest, options?: AxiosRequestConfig) {
+    public getUniversalAudioStream(requestParameters: UniversalAudioApiGetUniversalAudioStreamRequest, options?: RawAxiosRequestConfig) {
         return UniversalAudioApiFp(this.configuration).getUniversalAudioStream(requestParameters.itemId, requestParameters.container, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.userId, requestParameters.audioCodec, requestParameters.maxAudioChannels, requestParameters.transcodingAudioChannels, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.startTimeTicks, requestParameters.transcodingContainer, requestParameters.transcodingProtocol, requestParameters.maxAudioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.enableRemoteMedia, requestParameters.breakOnNonKeyFrames, requestParameters.enableRedirection, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -699,7 +670,8 @@ export class UniversalAudioApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UniversalAudioApi
      */
-    public headUniversalAudioStream(requestParameters: UniversalAudioApiHeadUniversalAudioStreamRequest, options?: AxiosRequestConfig) {
+    public headUniversalAudioStream(requestParameters: UniversalAudioApiHeadUniversalAudioStreamRequest, options?: RawAxiosRequestConfig) {
         return UniversalAudioApiFp(this.configuration).headUniversalAudioStream(requestParameters.itemId, requestParameters.container, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.userId, requestParameters.audioCodec, requestParameters.maxAudioChannels, requestParameters.transcodingAudioChannels, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.startTimeTicks, requestParameters.transcodingContainer, requestParameters.transcodingProtocol, requestParameters.maxAudioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.enableRemoteMedia, requestParameters.breakOnNonKeyFrames, requestParameters.enableRedirection, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

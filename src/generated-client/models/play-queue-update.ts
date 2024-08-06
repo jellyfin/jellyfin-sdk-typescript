@@ -12,10 +12,18 @@
  */
 
 
-import { GroupRepeatMode } from './group-repeat-mode';
-import { GroupShuffleMode } from './group-shuffle-mode';
-import { PlayQueueUpdateReason } from './play-queue-update-reason';
-import { SyncPlayQueueItem } from './sync-play-queue-item';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupRepeatMode } from './group-repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupShuffleMode } from './group-shuffle-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayQueueUpdateReason } from './play-queue-update-reason';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayQueueItem } from './sync-play-queue-item';
 
 /**
  * Class PlayQueueUpdate.
@@ -72,4 +80,6 @@ export interface PlayQueueUpdate {
      */
     'RepeatMode'?: GroupRepeatMode;
 }
+
+
 

@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ConfigurationPageInfo } from '../models';
+import type { ConfigurationPageInfo } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * DashboardApi - axios parameter creator
  * @export
@@ -36,7 +37,7 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfigurationPages: async (enableInMainMenu?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getConfigurationPages: async (enableInMainMenu?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/web/ConfigurationPages`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -74,7 +75,7 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDashboardConfigurationPage: async (name?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getDashboardConfigurationPage: async (name?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/web/ConfigurationPage`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -119,9 +120,11 @@ export const DashboardApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConfigurationPages(enableInMainMenu?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ConfigurationPageInfo>>> {
+        async getConfigurationPages(enableInMainMenu?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ConfigurationPageInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConfigurationPages(enableInMainMenu, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DashboardApi.getConfigurationPages']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -130,9 +133,11 @@ export const DashboardApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getDashboardConfigurationPage(name?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getDashboardConfigurationPage(name?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDashboardConfigurationPage(name, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['DashboardApi.getDashboardConfigurationPage']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -147,22 +152,22 @@ export const DashboardApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Gets the configuration pages.
-         * @param {boolean} [enableInMainMenu] Whether to enable in the main menu.
+         * @param {DashboardApiGetConfigurationPagesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfigurationPages(enableInMainMenu?: boolean, options?: any): AxiosPromise<Array<ConfigurationPageInfo>> {
-            return localVarFp.getConfigurationPages(enableInMainMenu, options).then((request) => request(axios, basePath));
+        getConfigurationPages(requestParameters: DashboardApiGetConfigurationPagesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<ConfigurationPageInfo>> {
+            return localVarFp.getConfigurationPages(requestParameters.enableInMainMenu, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a dashboard configuration page.
-         * @param {string} [name] The name of the page.
+         * @param {DashboardApiGetDashboardConfigurationPageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDashboardConfigurationPage(name?: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getDashboardConfigurationPage(name, options).then((request) => request(axios, basePath));
+        getDashboardConfigurationPage(requestParameters: DashboardApiGetDashboardConfigurationPageRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getDashboardConfigurationPage(requestParameters.name, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -210,7 +215,7 @@ export class DashboardApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DashboardApi
      */
-    public getConfigurationPages(requestParameters: DashboardApiGetConfigurationPagesRequest = {}, options?: AxiosRequestConfig) {
+    public getConfigurationPages(requestParameters: DashboardApiGetConfigurationPagesRequest = {}, options?: RawAxiosRequestConfig) {
         return DashboardApiFp(this.configuration).getConfigurationPages(requestParameters.enableInMainMenu, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -222,7 +227,8 @@ export class DashboardApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof DashboardApi
      */
-    public getDashboardConfigurationPage(requestParameters: DashboardApiGetDashboardConfigurationPageRequest = {}, options?: AxiosRequestConfig) {
+    public getDashboardConfigurationPage(requestParameters: DashboardApiGetDashboardConfigurationPageRequest = {}, options?: RawAxiosRequestConfig) {
         return DashboardApiFp(this.configuration).getDashboardConfigurationPage(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

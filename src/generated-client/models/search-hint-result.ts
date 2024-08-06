@@ -12,7 +12,9 @@
  */
 
 
-import { SearchHint } from './search-hint';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SearchHint } from './search-hint';
 
 /**
  * Class SearchHintResult.

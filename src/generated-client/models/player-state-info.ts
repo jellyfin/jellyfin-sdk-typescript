@@ -12,9 +12,15 @@
  */
 
 
-import { PlayMethod } from './play-method';
-import { PlaybackOrder } from './playback-order';
-import { RepeatMode } from './repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayMethod } from './play-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaybackOrder } from './playback-order';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RepeatMode } from './repeat-mode';
 
 /**
  * 
@@ -95,4 +101,6 @@ export interface PlayerStateInfo {
      */
     'LiveStreamId'?: string | null;
 }
+
+
 

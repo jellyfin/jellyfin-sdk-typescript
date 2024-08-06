@@ -12,7 +12,9 @@
  */
 
 
-import { SongInfo } from './song-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SongInfo } from './song-info';
 
 /**
  * 
@@ -52,10 +54,10 @@ export interface ArtistInfo {
     'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof ArtistInfo
      */
-    'ProviderIds'?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the year.
      * @type {number}

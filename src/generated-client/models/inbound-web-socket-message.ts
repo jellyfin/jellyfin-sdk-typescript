@@ -12,20 +12,36 @@
  */
 
 
-import { ActivityLogEntryStartMessage } from './activity-log-entry-start-message';
-import { ActivityLogEntryStopMessage } from './activity-log-entry-stop-message';
-import { InboundKeepAliveMessage } from './inbound-keep-alive-message';
-import { ScheduledTasksInfoStartMessage } from './scheduled-tasks-info-start-message';
-import { ScheduledTasksInfoStopMessage } from './scheduled-tasks-info-stop-message';
-import { SessionMessageType } from './session-message-type';
-import { SessionsStartMessage } from './sessions-start-message';
-import { SessionsStopMessage } from './sessions-stop-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ActivityLogEntryStartMessage } from './activity-log-entry-start-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ActivityLogEntryStopMessage } from './activity-log-entry-stop-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { InboundKeepAliveMessage } from './inbound-keep-alive-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ScheduledTasksInfoStartMessage } from './scheduled-tasks-info-start-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ScheduledTasksInfoStopMessage } from './scheduled-tasks-info-stop-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionsStartMessage } from './sessions-start-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionsStopMessage } from './sessions-stop-message';
 
 /**
  * @type InboundWebSocketMessage
  * Represents the list of possible inbound websocket types
  * @export
  */
-export type InboundWebSocketMessage = ActivityLogEntryStartMessage | ActivityLogEntryStopMessage | InboundKeepAliveMessage | ScheduledTasksInfoStartMessage | ScheduledTasksInfoStopMessage | SessionsStartMessage | SessionsStopMessage;
+export type InboundWebSocketMessage = { MessageType: 'ActivityLogEntryStart' } & ActivityLogEntryStartMessage | { MessageType: 'ActivityLogEntryStop' } & ActivityLogEntryStopMessage | { MessageType: 'KeepAlive' } & InboundKeepAliveMessage | { MessageType: 'ScheduledTasksInfoStart' } & ScheduledTasksInfoStartMessage | { MessageType: 'ScheduledTasksInfoStop' } & ScheduledTasksInfoStopMessage | { MessageType: 'SessionsStart' } & SessionsStartMessage | { MessageType: 'SessionsStop' } & SessionsStopMessage;
 
 

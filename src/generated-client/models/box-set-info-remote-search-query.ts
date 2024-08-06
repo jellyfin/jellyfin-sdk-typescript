@@ -12,7 +12,9 @@
  */
 
 
-import { BoxSetInfo } from './box-set-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BoxSetInfo } from './box-set-info';
 
 /**
  * 

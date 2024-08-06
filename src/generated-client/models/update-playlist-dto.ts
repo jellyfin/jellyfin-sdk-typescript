@@ -12,7 +12,9 @@
  */
 
 
-import { PlaylistUserPermissions } from './playlist-user-permissions';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaylistUserPermissions } from './playlist-user-permissions';
 
 /**
  * Update existing playlist dto. Fields set to `null` will not be updated and keep their current values.

@@ -12,9 +12,15 @@
  */
 
 
-import { TaskResult } from './task-result';
-import { TaskState } from './task-state';
-import { TaskTriggerInfo } from './task-trigger-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TaskResult } from './task-result';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TaskState } from './task-state';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TaskTriggerInfo } from './task-trigger-info';
 
 /**
  * Class TaskInfo.
@@ -83,4 +89,6 @@ export interface TaskInfo {
      */
     'Key'?: string | null;
 }
+
+
 

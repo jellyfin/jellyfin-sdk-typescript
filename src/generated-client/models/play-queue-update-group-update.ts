@@ -12,8 +12,12 @@
  */
 
 
-import { GroupUpdateType } from './group-update-type';
-import { PlayQueueUpdate } from './play-queue-update';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupUpdateType } from './group-update-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayQueueUpdate } from './play-queue-update';
 
 /**
  * Class GroupUpdate.
@@ -40,4 +44,6 @@ export interface PlayQueueUpdateGroupUpdate {
      */
     'Data'?: PlayQueueUpdate;
 }
+
+
 

@@ -12,7 +12,9 @@
  */
 
 
-import { SendCommandType } from './send-command-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SendCommandType } from './send-command-type';
 
 /**
  * Class SendCommand.
@@ -57,4 +59,6 @@ export interface SendCommand {
      */
     'EmittedAt'?: string;
 }
+
+
 

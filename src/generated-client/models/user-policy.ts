@@ -12,9 +12,15 @@
  */
 
 
-import { AccessSchedule } from './access-schedule';
-import { SyncPlayUserAccessType } from './sync-play-user-access-type';
-import { UnratedItem } from './unrated-item';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { AccessSchedule } from './access-schedule';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayUserAccessType } from './sync-play-user-access-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UnratedItem } from './unrated-item';
 
 /**
  * 
@@ -281,4 +287,6 @@ export interface UserPolicy {
      */
     'SyncPlayAccess'?: SyncPlayUserAccessType;
 }
+
+
 

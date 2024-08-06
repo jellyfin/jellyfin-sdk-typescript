@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { CountryInfo } from '../models';
+import type { CountryInfo } from '../models';
 // @ts-ignore
-import { CultureDto } from '../models';
+import type { CultureDto } from '../models';
 // @ts-ignore
-import { LocalizationOption } from '../models';
+import type { LocalizationOption } from '../models';
 // @ts-ignore
-import { ParentalRating } from '../models';
+import type { ParentalRating } from '../models';
 /**
  * LocalizationApi - axios parameter creator
  * @export
@@ -39,7 +40,7 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCountries: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getCountries: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Localization/Countries`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -72,7 +73,7 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCultures: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getCultures: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Localization/Cultures`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -105,7 +106,7 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLocalizationOptions: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLocalizationOptions: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Localization/Options`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -138,7 +139,7 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParentalRatings: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getParentalRatings: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Localization/ParentalRatings`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -181,9 +182,11 @@ export const LocalizationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCountries(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CountryInfo>>> {
+        async getCountries(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CountryInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCountries(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LocalizationApi.getCountries']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -191,9 +194,11 @@ export const LocalizationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCultures(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CultureDto>>> {
+        async getCultures(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<CultureDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCultures(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LocalizationApi.getCultures']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -201,9 +206,11 @@ export const LocalizationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLocalizationOptions(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<LocalizationOption>>> {
+        async getLocalizationOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<LocalizationOption>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLocalizationOptions(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LocalizationApi.getLocalizationOptions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -211,9 +218,11 @@ export const LocalizationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getParentalRatings(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ParentalRating>>> {
+        async getParentalRatings(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ParentalRating>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getParentalRatings(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LocalizationApi.getParentalRatings']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -231,7 +240,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCountries(options?: any): AxiosPromise<Array<CountryInfo>> {
+        getCountries(options?: RawAxiosRequestConfig): AxiosPromise<Array<CountryInfo>> {
             return localVarFp.getCountries(options).then((request) => request(axios, basePath));
         },
         /**
@@ -240,7 +249,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCultures(options?: any): AxiosPromise<Array<CultureDto>> {
+        getCultures(options?: RawAxiosRequestConfig): AxiosPromise<Array<CultureDto>> {
             return localVarFp.getCultures(options).then((request) => request(axios, basePath));
         },
         /**
@@ -249,7 +258,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLocalizationOptions(options?: any): AxiosPromise<Array<LocalizationOption>> {
+        getLocalizationOptions(options?: RawAxiosRequestConfig): AxiosPromise<Array<LocalizationOption>> {
             return localVarFp.getLocalizationOptions(options).then((request) => request(axios, basePath));
         },
         /**
@@ -258,7 +267,7 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getParentalRatings(options?: any): AxiosPromise<Array<ParentalRating>> {
+        getParentalRatings(options?: RawAxiosRequestConfig): AxiosPromise<Array<ParentalRating>> {
             return localVarFp.getParentalRatings(options).then((request) => request(axios, basePath));
         },
     };
@@ -278,7 +287,7 @@ export class LocalizationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LocalizationApi
      */
-    public getCountries(options?: AxiosRequestConfig) {
+    public getCountries(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getCountries(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -289,7 +298,7 @@ export class LocalizationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LocalizationApi
      */
-    public getCultures(options?: AxiosRequestConfig) {
+    public getCultures(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getCultures(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -300,7 +309,7 @@ export class LocalizationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LocalizationApi
      */
-    public getLocalizationOptions(options?: AxiosRequestConfig) {
+    public getLocalizationOptions(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getLocalizationOptions(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -311,7 +320,8 @@ export class LocalizationApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LocalizationApi
      */
-    public getParentalRatings(options?: AxiosRequestConfig) {
+    public getParentalRatings(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getParentalRatings(options).then((request) => request(this.axios, this.basePath));
     }
 }
+

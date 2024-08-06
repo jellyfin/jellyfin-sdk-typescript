@@ -12,9 +12,15 @@
  */
 
 
-import { NameIdPair } from './name-id-pair';
-import { NameValuePair } from './name-value-pair';
-import { TunerChannelMapping } from './tuner-channel-mapping';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { NameIdPair } from './name-id-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { NameValuePair } from './name-value-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TunerChannelMapping } from './tuner-channel-mapping';
 
 /**
  * Channel mapping options dto.

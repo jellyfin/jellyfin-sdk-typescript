@@ -12,7 +12,9 @@
  */
 
 
-import { PluginStatus } from './plugin-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginStatus } from './plugin-status';
 
 /**
  * This is a serializable stub class that is used by the api to provide information about installed plugins.
@@ -69,4 +71,6 @@ export interface PluginInfo {
      */
     'Status'?: PluginStatus;
 }
+
+
 

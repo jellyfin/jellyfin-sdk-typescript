@@ -12,7 +12,9 @@
  */
 
 
-import { DlnaProfileType } from './dlna-profile-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DlnaProfileType } from './dlna-profile-type';
 
 /**
  * 
@@ -45,4 +47,6 @@ export interface DirectPlayProfile {
      */
     'Type'?: DlnaProfileType;
 }
+
+
 

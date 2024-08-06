@@ -12,27 +12,28 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { PlayMethod } from '../models';
+import type { PlayMethod } from '../models';
 // @ts-ignore
-import { PlaybackProgressInfo } from '../models';
+import type { PlaybackProgressInfo } from '../models';
 // @ts-ignore
-import { PlaybackStartInfo } from '../models';
+import type { PlaybackStartInfo } from '../models';
 // @ts-ignore
-import { PlaybackStopInfo } from '../models';
+import type { PlaybackStopInfo } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { RepeatMode } from '../models';
+import type { RepeatMode } from '../models';
 // @ts-ignore
-import { UserItemDataDto } from '../models';
+import type { UserItemDataDto } from '../models';
 /**
  * PlaystateApi - axios parameter creator
  * @export
@@ -48,7 +49,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markPlayedItem: async (itemId: string, userId?: string, datePlayed?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        markPlayedItem: async (itemId: string, userId?: string, datePlayed?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('markPlayedItem', 'itemId', itemId)
             const localVarPath = `/UserPlayedItems/{itemId}`
@@ -96,7 +97,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markUnplayedItem: async (itemId: string, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        markUnplayedItem: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('markUnplayedItem', 'itemId', itemId)
             const localVarPath = `/UserPlayedItems/{itemId}`
@@ -148,7 +149,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackProgress: async (itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        onPlaybackProgress: async (itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('onPlaybackProgress', 'itemId', itemId)
             const localVarPath = `/PlayingItems/{itemId}/Progress`
@@ -236,7 +237,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackStart: async (itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        onPlaybackStart: async (itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('onPlaybackStart', 'itemId', itemId)
             const localVarPath = `/PlayingItems/{itemId}`
@@ -306,7 +307,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackStopped: async (itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        onPlaybackStopped: async (itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('onPlaybackStopped', 'itemId', itemId)
             const localVarPath = `/PlayingItems/{itemId}`
@@ -363,7 +364,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        pingPlaybackSession: async (playSessionId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        pingPlaybackSession: async (playSessionId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'playSessionId' is not null or undefined
             assertParamExists('pingPlaybackSession', 'playSessionId', playSessionId)
             const localVarPath = `/Sessions/Playing/Ping`;
@@ -403,7 +404,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackProgress: async (playbackProgressInfo?: PlaybackProgressInfo, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        reportPlaybackProgress: async (playbackProgressInfo?: PlaybackProgressInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing/Progress`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -440,7 +441,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStart: async (playbackStartInfo?: PlaybackStartInfo, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        reportPlaybackStart: async (playbackStartInfo?: PlaybackStartInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -477,7 +478,7 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStopped: async (playbackStopInfo?: PlaybackStopInfo, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        reportPlaybackStopped: async (playbackStopInfo?: PlaybackStopInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Sessions/Playing/Stopped`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -526,9 +527,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async markPlayedItem(itemId: string, userId?: string, datePlayed?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+        async markPlayedItem(itemId: string, userId?: string, datePlayed?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.markPlayedItem(itemId, userId, datePlayed, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.markPlayedItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -538,9 +541,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async markUnplayedItem(itemId: string, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+        async markUnplayedItem(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.markUnplayedItem(itemId, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.markUnplayedItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -560,9 +565,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async onPlaybackProgress(itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async onPlaybackProgress(itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.onPlaybackProgress(itemId, mediaSourceId, positionTicks, audioStreamIndex, subtitleStreamIndex, volumeLevel, playMethod, liveStreamId, playSessionId, repeatMode, isPaused, isMuted, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.onPlaybackProgress']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -578,9 +585,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async onPlaybackStart(itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async onPlaybackStart(itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.onPlaybackStart(itemId, mediaSourceId, audioStreamIndex, subtitleStreamIndex, playMethod, liveStreamId, playSessionId, canSeek, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.onPlaybackStart']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -594,9 +603,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async onPlaybackStopped(itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async onPlaybackStopped(itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.onPlaybackStopped(itemId, mediaSourceId, nextMediaType, positionTicks, liveStreamId, playSessionId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.onPlaybackStopped']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -605,9 +616,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async pingPlaybackSession(playSessionId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async pingPlaybackSession(playSessionId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.pingPlaybackSession(playSessionId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.pingPlaybackSession']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -616,9 +629,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackProgress(playbackProgressInfo, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.reportPlaybackProgress']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -627,9 +642,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStart(playbackStartInfo, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.reportPlaybackStart']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -638,9 +655,11 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStopped(playbackStopInfo, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['PlaystateApi.reportPlaybackStopped']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -655,118 +674,92 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Marks an item as played for user.
-         * @param {string} itemId Item id.
-         * @param {string} [userId] User id.
-         * @param {string} [datePlayed] Optional. The date the item was played.
+         * @param {PlaystateApiMarkPlayedItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markPlayedItem(itemId: string, userId?: string, datePlayed?: string, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.markPlayedItem(itemId, userId, datePlayed, options).then((request) => request(axios, basePath));
+        markPlayedItem(requestParameters: PlaystateApiMarkPlayedItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markPlayedItem(requestParameters.itemId, requestParameters.userId, requestParameters.datePlayed, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Marks an item as unplayed for user.
-         * @param {string} itemId Item id.
-         * @param {string} [userId] User id.
+         * @param {PlaystateApiMarkUnplayedItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        markUnplayedItem(itemId: string, userId?: string, options?: any): AxiosPromise<UserItemDataDto> {
-            return localVarFp.markUnplayedItem(itemId, userId, options).then((request) => request(axios, basePath));
+        markUnplayedItem(requestParameters: PlaystateApiMarkUnplayedItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markUnplayedItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports a session\'s playback progress.
-         * @param {string} itemId Item id.
-         * @param {string} [mediaSourceId] The id of the MediaSource.
-         * @param {number} [positionTicks] Optional. The current position, in ticks. 1 tick &#x3D; 10000 ms.
-         * @param {number} [audioStreamIndex] The audio stream index.
-         * @param {number} [subtitleStreamIndex] The subtitle stream index.
-         * @param {number} [volumeLevel] Scale of 0-100.
-         * @param {PlayMethod} [playMethod] The play method.
-         * @param {string} [liveStreamId] The live stream id.
-         * @param {string} [playSessionId] The play session id.
-         * @param {RepeatMode} [repeatMode] The repeat mode.
-         * @param {boolean} [isPaused] Indicates if the player is paused.
-         * @param {boolean} [isMuted] Indicates if the player is muted.
+         * @param {PlaystateApiOnPlaybackProgressRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackProgress(itemId: string, mediaSourceId?: string, positionTicks?: number, audioStreamIndex?: number, subtitleStreamIndex?: number, volumeLevel?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, repeatMode?: RepeatMode, isPaused?: boolean, isMuted?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.onPlaybackProgress(itemId, mediaSourceId, positionTicks, audioStreamIndex, subtitleStreamIndex, volumeLevel, playMethod, liveStreamId, playSessionId, repeatMode, isPaused, isMuted, options).then((request) => request(axios, basePath));
+        onPlaybackProgress(requestParameters: PlaystateApiOnPlaybackProgressRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.onPlaybackProgress(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.positionTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.volumeLevel, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.repeatMode, requestParameters.isPaused, requestParameters.isMuted, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that a session has begun playing an item.
-         * @param {string} itemId Item id.
-         * @param {string} [mediaSourceId] The id of the MediaSource.
-         * @param {number} [audioStreamIndex] The audio stream index.
-         * @param {number} [subtitleStreamIndex] The subtitle stream index.
-         * @param {PlayMethod} [playMethod] The play method.
-         * @param {string} [liveStreamId] The live stream id.
-         * @param {string} [playSessionId] The play session id.
-         * @param {boolean} [canSeek] Indicates if the client can seek.
+         * @param {PlaystateApiOnPlaybackStartRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackStart(itemId: string, mediaSourceId?: string, audioStreamIndex?: number, subtitleStreamIndex?: number, playMethod?: PlayMethod, liveStreamId?: string, playSessionId?: string, canSeek?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.onPlaybackStart(itemId, mediaSourceId, audioStreamIndex, subtitleStreamIndex, playMethod, liveStreamId, playSessionId, canSeek, options).then((request) => request(axios, basePath));
+        onPlaybackStart(requestParameters: PlaystateApiOnPlaybackStartRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.onPlaybackStart(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.canSeek, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports that a session has stopped playing an item.
-         * @param {string} itemId Item id.
-         * @param {string} [mediaSourceId] The id of the MediaSource.
-         * @param {string} [nextMediaType] The next media type that will play.
-         * @param {number} [positionTicks] Optional. The position, in ticks, where playback stopped. 1 tick &#x3D; 10000 ms.
-         * @param {string} [liveStreamId] The live stream id.
-         * @param {string} [playSessionId] The play session id.
+         * @param {PlaystateApiOnPlaybackStoppedRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        onPlaybackStopped(itemId: string, mediaSourceId?: string, nextMediaType?: string, positionTicks?: number, liveStreamId?: string, playSessionId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.onPlaybackStopped(itemId, mediaSourceId, nextMediaType, positionTicks, liveStreamId, playSessionId, options).then((request) => request(axios, basePath));
+        onPlaybackStopped(requestParameters: PlaystateApiOnPlaybackStoppedRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.onPlaybackStopped(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.nextMediaType, requestParameters.positionTicks, requestParameters.liveStreamId, requestParameters.playSessionId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Pings a playback session.
-         * @param {string} playSessionId Playback session id.
+         * @param {PlaystateApiPingPlaybackSessionRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        pingPlaybackSession(playSessionId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.pingPlaybackSession(playSessionId, options).then((request) => request(axios, basePath));
+        pingPlaybackSession(requestParameters: PlaystateApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports playback progress within a session.
-         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
+         * @param {PlaystateApiReportPlaybackProgressRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackProgress(playbackProgressInfo, options).then((request) => request(axios, basePath));
+        reportPlaybackProgress(requestParameters: PlaystateApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports playback has started within a session.
-         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
+         * @param {PlaystateApiReportPlaybackStartRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackStart(playbackStartInfo, options).then((request) => request(axios, basePath));
+        reportPlaybackStart(requestParameters: PlaystateApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Reports playback has stopped within a session.
-         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
+         * @param {PlaystateApiReportPlaybackStoppedRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: any): AxiosPromise<void> {
-            return localVarFp.reportPlaybackStopped(playbackStopInfo, options).then((request) => request(axios, basePath));
+        reportPlaybackStopped(requestParameters: PlaystateApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1094,7 +1087,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public markPlayedItem(requestParameters: PlaystateApiMarkPlayedItemRequest, options?: AxiosRequestConfig) {
+    public markPlayedItem(requestParameters: PlaystateApiMarkPlayedItemRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).markPlayedItem(requestParameters.itemId, requestParameters.userId, requestParameters.datePlayed, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1106,7 +1099,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public markUnplayedItem(requestParameters: PlaystateApiMarkUnplayedItemRequest, options?: AxiosRequestConfig) {
+    public markUnplayedItem(requestParameters: PlaystateApiMarkUnplayedItemRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).markUnplayedItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1118,7 +1111,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public onPlaybackProgress(requestParameters: PlaystateApiOnPlaybackProgressRequest, options?: AxiosRequestConfig) {
+    public onPlaybackProgress(requestParameters: PlaystateApiOnPlaybackProgressRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackProgress(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.positionTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.volumeLevel, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.repeatMode, requestParameters.isPaused, requestParameters.isMuted, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1130,7 +1123,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public onPlaybackStart(requestParameters: PlaystateApiOnPlaybackStartRequest, options?: AxiosRequestConfig) {
+    public onPlaybackStart(requestParameters: PlaystateApiOnPlaybackStartRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackStart(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.canSeek, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1142,7 +1135,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public onPlaybackStopped(requestParameters: PlaystateApiOnPlaybackStoppedRequest, options?: AxiosRequestConfig) {
+    public onPlaybackStopped(requestParameters: PlaystateApiOnPlaybackStoppedRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackStopped(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.nextMediaType, requestParameters.positionTicks, requestParameters.liveStreamId, requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1154,7 +1147,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public pingPlaybackSession(requestParameters: PlaystateApiPingPlaybackSessionRequest, options?: AxiosRequestConfig) {
+    public pingPlaybackSession(requestParameters: PlaystateApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1166,7 +1159,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public reportPlaybackProgress(requestParameters: PlaystateApiReportPlaybackProgressRequest = {}, options?: AxiosRequestConfig) {
+    public reportPlaybackProgress(requestParameters: PlaystateApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1178,7 +1171,7 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public reportPlaybackStart(requestParameters: PlaystateApiReportPlaybackStartRequest = {}, options?: AxiosRequestConfig) {
+    public reportPlaybackStart(requestParameters: PlaystateApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1190,7 +1183,8 @@ export class PlaystateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof PlaystateApi
      */
-    public reportPlaybackStopped(requestParameters: PlaystateApiReportPlaybackStoppedRequest = {}, options?: AxiosRequestConfig) {
+    public reportPlaybackStopped(requestParameters: PlaystateApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

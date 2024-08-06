@@ -12,7 +12,9 @@
  */
 
 
-import { PackageInfo } from './package-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PackageInfo } from './package-info';
 
 /**
  * Class InstallationInfo.

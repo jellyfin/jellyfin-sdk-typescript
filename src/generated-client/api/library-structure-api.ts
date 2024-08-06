@@ -12,27 +12,28 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { AddVirtualFolderDto } from '../models';
+import type { AddVirtualFolderDto } from '../models';
 // @ts-ignore
-import { CollectionTypeOptions } from '../models';
+import type { CollectionTypeOptions } from '../models';
 // @ts-ignore
-import { MediaPathDto } from '../models';
+import type { MediaPathDto } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { UpdateLibraryOptionsDto } from '../models';
+import type { UpdateLibraryOptionsDto } from '../models';
 // @ts-ignore
-import { UpdateMediaPathRequestDto } from '../models';
+import type { UpdateMediaPathRequestDto } from '../models';
 // @ts-ignore
-import { VirtualFolderInfo } from '../models';
+import type { VirtualFolderInfo } from '../models';
 /**
  * LibraryStructureApi - axios parameter creator
  * @export
@@ -47,7 +48,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addMediaPath: async (mediaPathDto: MediaPathDto, refreshLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        addMediaPath: async (mediaPathDto: MediaPathDto, refreshLibrary?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'mediaPathDto' is not null or undefined
             assertParamExists('addMediaPath', 'mediaPathDto', mediaPathDto)
             const localVarPath = `/Library/VirtualFolders/Paths`;
@@ -94,7 +95,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addVirtualFolder: async (name?: string, collectionType?: CollectionTypeOptions, paths?: Array<string>, refreshLibrary?: boolean, addVirtualFolderDto?: AddVirtualFolderDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        addVirtualFolder: async (name?: string, collectionType?: CollectionTypeOptions, paths?: Array<string>, refreshLibrary?: boolean, addVirtualFolderDto?: AddVirtualFolderDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -146,7 +147,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getVirtualFolders: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getVirtualFolders: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -182,7 +183,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeMediaPath: async (name?: string, path?: string, refreshLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        removeMediaPath: async (name?: string, path?: string, refreshLibrary?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders/Paths`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -229,7 +230,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeVirtualFolder: async (name?: string, refreshLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        removeVirtualFolder: async (name?: string, refreshLibrary?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -273,7 +274,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        renameVirtualFolder: async (name?: string, newName?: string, refreshLibrary?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        renameVirtualFolder: async (name?: string, newName?: string, refreshLibrary?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders/Name`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -319,7 +320,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateLibraryOptions: async (updateLibraryOptionsDto?: UpdateLibraryOptionsDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateLibraryOptions: async (updateLibraryOptionsDto?: UpdateLibraryOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Library/VirtualFolders/LibraryOptions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -356,7 +357,7 @@ export const LibraryStructureApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaPath: async (updateMediaPathRequestDto: UpdateMediaPathRequestDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateMediaPath: async (updateMediaPathRequestDto: UpdateMediaPathRequestDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'updateMediaPathRequestDto' is not null or undefined
             assertParamExists('updateMediaPath', 'updateMediaPathRequestDto', updateMediaPathRequestDto)
             const localVarPath = `/Library/VirtualFolders/Paths/Update`;
@@ -406,9 +407,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addMediaPath(mediaPathDto: MediaPathDto, refreshLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async addMediaPath(mediaPathDto: MediaPathDto, refreshLibrary?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.addMediaPath(mediaPathDto, refreshLibrary, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.addMediaPath']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -421,9 +424,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async addVirtualFolder(name?: string, collectionType?: CollectionTypeOptions, paths?: Array<string>, refreshLibrary?: boolean, addVirtualFolderDto?: AddVirtualFolderDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async addVirtualFolder(name?: string, collectionType?: CollectionTypeOptions, paths?: Array<string>, refreshLibrary?: boolean, addVirtualFolderDto?: AddVirtualFolderDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.addVirtualFolder(name, collectionType, paths, refreshLibrary, addVirtualFolderDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.addVirtualFolder']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -431,9 +436,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getVirtualFolders(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<VirtualFolderInfo>>> {
+        async getVirtualFolders(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<VirtualFolderInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getVirtualFolders(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.getVirtualFolders']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -444,9 +451,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async removeMediaPath(name?: string, path?: string, refreshLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async removeMediaPath(name?: string, path?: string, refreshLibrary?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeMediaPath(name, path, refreshLibrary, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.removeMediaPath']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -456,9 +465,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async removeVirtualFolder(name?: string, refreshLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async removeVirtualFolder(name?: string, refreshLibrary?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeVirtualFolder(name, refreshLibrary, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.removeVirtualFolder']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -469,9 +480,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async renameVirtualFolder(name?: string, newName?: string, refreshLibrary?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async renameVirtualFolder(name?: string, newName?: string, refreshLibrary?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.renameVirtualFolder(name, newName, refreshLibrary, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.renameVirtualFolder']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -480,9 +493,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateLibraryOptions(updateLibraryOptionsDto?: UpdateLibraryOptionsDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateLibraryOptions(updateLibraryOptionsDto?: UpdateLibraryOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateLibraryOptions(updateLibraryOptionsDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.updateLibraryOptions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -491,9 +506,11 @@ export const LibraryStructureApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateMediaPath(updateMediaPathRequestDto: UpdateMediaPathRequestDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateMediaPath(updateMediaPathRequestDto: UpdateMediaPathRequestDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateMediaPath(updateMediaPathRequestDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryStructureApi.updateMediaPath']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -508,27 +525,22 @@ export const LibraryStructureApiFactory = function (configuration?: Configuratio
         /**
          * 
          * @summary Add a media path to a library.
-         * @param {MediaPathDto} mediaPathDto The media path dto.
-         * @param {boolean} [refreshLibrary] Whether to refresh the library.
+         * @param {LibraryStructureApiAddMediaPathRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addMediaPath(mediaPathDto: MediaPathDto, refreshLibrary?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.addMediaPath(mediaPathDto, refreshLibrary, options).then((request) => request(axios, basePath));
+        addMediaPath(requestParameters: LibraryStructureApiAddMediaPathRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.addMediaPath(requestParameters.mediaPathDto, requestParameters.refreshLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Adds a virtual folder.
-         * @param {string} [name] The name of the virtual folder.
-         * @param {CollectionTypeOptions} [collectionType] The type of the collection.
-         * @param {Array<string>} [paths] The paths of the virtual folder.
-         * @param {boolean} [refreshLibrary] Whether to refresh the library.
-         * @param {AddVirtualFolderDto} [addVirtualFolderDto] The library options.
+         * @param {LibraryStructureApiAddVirtualFolderRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        addVirtualFolder(name?: string, collectionType?: CollectionTypeOptions, paths?: Array<string>, refreshLibrary?: boolean, addVirtualFolderDto?: AddVirtualFolderDto, options?: any): AxiosPromise<void> {
-            return localVarFp.addVirtualFolder(name, collectionType, paths, refreshLibrary, addVirtualFolderDto, options).then((request) => request(axios, basePath));
+        addVirtualFolder(requestParameters: LibraryStructureApiAddVirtualFolderRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.addVirtualFolder(requestParameters.name, requestParameters.collectionType, requestParameters.paths, requestParameters.refreshLibrary, requestParameters.addVirtualFolderDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -536,63 +548,58 @@ export const LibraryStructureApiFactory = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getVirtualFolders(options?: any): AxiosPromise<Array<VirtualFolderInfo>> {
+        getVirtualFolders(options?: RawAxiosRequestConfig): AxiosPromise<Array<VirtualFolderInfo>> {
             return localVarFp.getVirtualFolders(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Remove a media path.
-         * @param {string} [name] The name of the library.
-         * @param {string} [path] The path to remove.
-         * @param {boolean} [refreshLibrary] Whether to refresh the library.
+         * @param {LibraryStructureApiRemoveMediaPathRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeMediaPath(name?: string, path?: string, refreshLibrary?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.removeMediaPath(name, path, refreshLibrary, options).then((request) => request(axios, basePath));
+        removeMediaPath(requestParameters: LibraryStructureApiRemoveMediaPathRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.removeMediaPath(requestParameters.name, requestParameters.path, requestParameters.refreshLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Removes a virtual folder.
-         * @param {string} [name] The name of the folder.
-         * @param {boolean} [refreshLibrary] Whether to refresh the library.
+         * @param {LibraryStructureApiRemoveVirtualFolderRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        removeVirtualFolder(name?: string, refreshLibrary?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.removeVirtualFolder(name, refreshLibrary, options).then((request) => request(axios, basePath));
+        removeVirtualFolder(requestParameters: LibraryStructureApiRemoveVirtualFolderRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.removeVirtualFolder(requestParameters.name, requestParameters.refreshLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Renames a virtual folder.
-         * @param {string} [name] The name of the virtual folder.
-         * @param {string} [newName] The new name.
-         * @param {boolean} [refreshLibrary] Whether to refresh the library.
+         * @param {LibraryStructureApiRenameVirtualFolderRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        renameVirtualFolder(name?: string, newName?: string, refreshLibrary?: boolean, options?: any): AxiosPromise<void> {
-            return localVarFp.renameVirtualFolder(name, newName, refreshLibrary, options).then((request) => request(axios, basePath));
+        renameVirtualFolder(requestParameters: LibraryStructureApiRenameVirtualFolderRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.renameVirtualFolder(requestParameters.name, requestParameters.newName, requestParameters.refreshLibrary, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update library options.
-         * @param {UpdateLibraryOptionsDto} [updateLibraryOptionsDto] The library name and options.
+         * @param {LibraryStructureApiUpdateLibraryOptionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateLibraryOptions(updateLibraryOptionsDto?: UpdateLibraryOptionsDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateLibraryOptions(updateLibraryOptionsDto, options).then((request) => request(axios, basePath));
+        updateLibraryOptions(requestParameters: LibraryStructureApiUpdateLibraryOptionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateLibraryOptions(requestParameters.updateLibraryOptionsDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a media path.
-         * @param {UpdateMediaPathRequestDto} updateMediaPathRequestDto The name of the library and path infos.
+         * @param {LibraryStructureApiUpdateMediaPathRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateMediaPath(updateMediaPathRequestDto: UpdateMediaPathRequestDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateMediaPath(updateMediaPathRequestDto, options).then((request) => request(axios, basePath));
+        updateMediaPath(requestParameters: LibraryStructureApiUpdateMediaPathRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateMediaPath(requestParameters.updateMediaPathRequestDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -780,7 +787,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public addMediaPath(requestParameters: LibraryStructureApiAddMediaPathRequest, options?: AxiosRequestConfig) {
+    public addMediaPath(requestParameters: LibraryStructureApiAddMediaPathRequest, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).addMediaPath(requestParameters.mediaPathDto, requestParameters.refreshLibrary, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -792,7 +799,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public addVirtualFolder(requestParameters: LibraryStructureApiAddVirtualFolderRequest = {}, options?: AxiosRequestConfig) {
+    public addVirtualFolder(requestParameters: LibraryStructureApiAddVirtualFolderRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).addVirtualFolder(requestParameters.name, requestParameters.collectionType, requestParameters.paths, requestParameters.refreshLibrary, requestParameters.addVirtualFolderDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -803,7 +810,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public getVirtualFolders(options?: AxiosRequestConfig) {
+    public getVirtualFolders(options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).getVirtualFolders(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -815,7 +822,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public removeMediaPath(requestParameters: LibraryStructureApiRemoveMediaPathRequest = {}, options?: AxiosRequestConfig) {
+    public removeMediaPath(requestParameters: LibraryStructureApiRemoveMediaPathRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).removeMediaPath(requestParameters.name, requestParameters.path, requestParameters.refreshLibrary, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -827,7 +834,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public removeVirtualFolder(requestParameters: LibraryStructureApiRemoveVirtualFolderRequest = {}, options?: AxiosRequestConfig) {
+    public removeVirtualFolder(requestParameters: LibraryStructureApiRemoveVirtualFolderRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).removeVirtualFolder(requestParameters.name, requestParameters.refreshLibrary, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -839,7 +846,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public renameVirtualFolder(requestParameters: LibraryStructureApiRenameVirtualFolderRequest = {}, options?: AxiosRequestConfig) {
+    public renameVirtualFolder(requestParameters: LibraryStructureApiRenameVirtualFolderRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).renameVirtualFolder(requestParameters.name, requestParameters.newName, requestParameters.refreshLibrary, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -851,7 +858,7 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public updateLibraryOptions(requestParameters: LibraryStructureApiUpdateLibraryOptionsRequest = {}, options?: AxiosRequestConfig) {
+    public updateLibraryOptions(requestParameters: LibraryStructureApiUpdateLibraryOptionsRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).updateLibraryOptions(requestParameters.updateLibraryOptionsDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -863,7 +870,8 @@ export class LibraryStructureApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LibraryStructureApi
      */
-    public updateMediaPath(requestParameters: LibraryStructureApiUpdateMediaPathRequest, options?: AxiosRequestConfig) {
+    public updateMediaPath(requestParameters: LibraryStructureApiUpdateMediaPathRequest, options?: RawAxiosRequestConfig) {
         return LibraryStructureApiFp(this.configuration).updateMediaPath(requestParameters.updateMediaPathRequestDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

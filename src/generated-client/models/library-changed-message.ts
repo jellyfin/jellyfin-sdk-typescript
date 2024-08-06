@@ -12,8 +12,12 @@
  */
 
 
-import { LibraryUpdateInfo } from './library-update-info';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LibraryUpdateInfo } from './library-update-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Library changed message.
@@ -40,4 +44,6 @@ export interface LibraryChangedMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

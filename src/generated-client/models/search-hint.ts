@@ -12,8 +12,12 @@
  */
 
 
-import { BaseItemKind } from './base-item-kind';
-import { MediaType } from './media-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemKind } from './base-item-kind';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaType } from './media-type';
 
 /**
  * Class SearchHintResult.
@@ -197,4 +201,6 @@ export interface SearchHint {
      */
     'PrimaryImageAspectRatio'?: number | null;
 }
+
+
 

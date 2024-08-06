@@ -12,14 +12,30 @@
  */
 
 
-import { CastReceiverApplication } from './cast-receiver-application';
-import { ImageResolution } from './image-resolution';
-import { ImageSavingConvention } from './image-saving-convention';
-import { MetadataOptions } from './metadata-options';
-import { NameValuePair } from './name-value-pair';
-import { PathSubstitution } from './path-substitution';
-import { RepositoryInfo } from './repository-info';
-import { TrickplayOptions } from './trickplay-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CastReceiverApplication } from './cast-receiver-application';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageResolution } from './image-resolution';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageSavingConvention } from './image-saving-convention';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MetadataOptions } from './metadata-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { NameValuePair } from './name-value-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PathSubstitution } from './path-substitution';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RepositoryInfo } from './repository-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TrickplayOptions } from './trickplay-options';
 
 /**
  * Represents the server configuration.
@@ -358,4 +374,6 @@ export interface ServerConfiguration {
      */
     'TrickplayOptions'?: TrickplayOptions;
 }
+
+
 

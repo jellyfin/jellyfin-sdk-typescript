@@ -12,8 +12,12 @@
  */
 
 
-import { ScrollDirection } from './scroll-direction';
-import { SortOrder } from './sort-order';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ScrollDirection } from './scroll-direction';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SortOrder } from './sort-order';
 
 /**
  * Defines the display preferences for any item that supports them (usually Folders).
@@ -65,10 +69,10 @@ export interface DisplayPreferencesDto {
     'PrimaryImageWidth'?: number;
     /**
      * Gets or sets the custom prefs.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof DisplayPreferencesDto
      */
-    'CustomPrefs'?: { [key: string]: string; };
+    'CustomPrefs'?: { [key: string]: string | null; };
     /**
      * 
      * @type {ScrollDirection}
@@ -106,4 +110,6 @@ export interface DisplayPreferencesDto {
      */
     'Client'?: string | null;
 }
+
+
 

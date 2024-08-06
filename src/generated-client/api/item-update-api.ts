@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import type { BaseItemDto } from '../models';
 // @ts-ignore
-import { MetadataEditorInfo } from '../models';
+import type { MetadataEditorInfo } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * ItemUpdateApi - axios parameter creator
  * @export
@@ -38,7 +39,7 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMetadataEditorInfo: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getMetadataEditorInfo: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getMetadataEditorInfo', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/MetadataEditor`
@@ -76,7 +77,7 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItem: async (itemId: string, baseItemDto: BaseItemDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateItem: async (itemId: string, baseItemDto: BaseItemDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('updateItem', 'itemId', itemId)
             // verify required parameter 'baseItemDto' is not null or undefined
@@ -119,7 +120,7 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItemContentType: async (itemId: string, contentType?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateItemContentType: async (itemId: string, contentType?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('updateItemContentType', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/ContentType`
@@ -170,9 +171,11 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMetadataEditorInfo(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataEditorInfo>> {
+        async getMetadataEditorInfo(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataEditorInfo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMetadataEditorInfo(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ItemUpdateApi.getMetadataEditorInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -182,9 +185,11 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateItem(itemId: string, baseItemDto: BaseItemDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateItem(itemId: string, baseItemDto: BaseItemDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateItem(itemId, baseItemDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ItemUpdateApi.updateItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -194,9 +199,11 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateItemContentType(itemId: string, contentType?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateItemContentType(itemId: string, contentType?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateItemContentType(itemId, contentType, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ItemUpdateApi.updateItemContentType']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -211,34 +218,32 @@ export const ItemUpdateApiFactory = function (configuration?: Configuration, bas
         /**
          * 
          * @summary Gets metadata editor info for an item.
-         * @param {string} itemId The item id.
+         * @param {ItemUpdateApiGetMetadataEditorInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMetadataEditorInfo(itemId: string, options?: any): AxiosPromise<MetadataEditorInfo> {
-            return localVarFp.getMetadataEditorInfo(itemId, options).then((request) => request(axios, basePath));
+        getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: RawAxiosRequestConfig): AxiosPromise<MetadataEditorInfo> {
+            return localVarFp.getMetadataEditorInfo(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates an item.
-         * @param {string} itemId The item id.
-         * @param {BaseItemDto} baseItemDto The new item properties.
+         * @param {ItemUpdateApiUpdateItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItem(itemId: string, baseItemDto: BaseItemDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateItem(itemId, baseItemDto, options).then((request) => request(axios, basePath));
+        updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates an item\'s content type.
-         * @param {string} itemId The item id.
-         * @param {string} [contentType] The content type of the item.
+         * @param {ItemUpdateApiUpdateItemContentTypeRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateItemContentType(itemId: string, contentType?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updateItemContentType(itemId, contentType, options).then((request) => request(axios, basePath));
+        updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateItemContentType(requestParameters.itemId, requestParameters.contentType, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -314,7 +319,7 @@ export class ItemUpdateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ItemUpdateApi
      */
-    public getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: AxiosRequestConfig) {
+    public getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).getMetadataEditorInfo(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -326,7 +331,7 @@ export class ItemUpdateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ItemUpdateApi
      */
-    public updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: AxiosRequestConfig) {
+    public updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -338,7 +343,8 @@ export class ItemUpdateApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ItemUpdateApi
      */
-    public updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: AxiosRequestConfig) {
+    public updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItemContentType(requestParameters.itemId, requestParameters.contentType, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

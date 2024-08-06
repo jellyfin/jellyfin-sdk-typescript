@@ -12,7 +12,9 @@
  */
 
 
-import { LogLevel } from './log-level';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LogLevel } from './log-level';
 
 /**
  * An activity log entry.
@@ -82,4 +84,6 @@ export interface ActivityLogEntry {
      */
     'Severity'?: LogLevel;
 }
+
+
 

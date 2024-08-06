@@ -12,7 +12,9 @@
  */
 
 
-import { FileSystemEntryType } from './file-system-entry-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { FileSystemEntryType } from './file-system-entry-type';
 
 /**
  * Class FileSystemEntryInfo.
@@ -39,4 +41,6 @@ export interface FileSystemEntryInfo {
      */
     'Type'?: FileSystemEntryType;
 }
+
+
 

@@ -12,11 +12,21 @@
  */
 
 
-import { DlnaProfileType } from './dlna-profile-type';
-import { EncodingContext } from './encoding-context';
-import { MediaStreamProtocol } from './media-stream-protocol';
-import { ProfileCondition } from './profile-condition';
-import { TranscodeSeekInfo } from './transcode-seek-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DlnaProfileType } from './dlna-profile-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { EncodingContext } from './encoding-context';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaStreamProtocol } from './media-stream-protocol';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProfileCondition } from './profile-condition';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TranscodeSeekInfo } from './transcode-seek-info';
 
 /**
  * 
@@ -121,4 +131,6 @@ export interface TranscodingProfile {
      */
     'Conditions'?: Array<ProfileCondition>;
 }
+
+
 

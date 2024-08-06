@@ -51,10 +51,10 @@ export interface MusicVideoInfo {
     'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof MusicVideoInfo
      */
-    'ProviderIds'?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the year.
      * @type {number}

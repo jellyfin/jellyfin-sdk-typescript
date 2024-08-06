@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * TrickplayApi - axios parameter creator
  * @export
@@ -36,7 +37,7 @@ export const TrickplayApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrickplayHlsPlaylist: async (itemId: string, width: number, mediaSourceId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getTrickplayHlsPlaylist: async (itemId: string, width: number, mediaSourceId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getTrickplayHlsPlaylist', 'itemId', itemId)
             // verify required parameter 'width' is not null or undefined
@@ -83,7 +84,7 @@ export const TrickplayApiAxiosParamCreator = function (configuration?: Configura
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrickplayTileImage: async (itemId: string, width: number, index: number, mediaSourceId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getTrickplayTileImage: async (itemId: string, width: number, index: number, mediaSourceId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getTrickplayTileImage', 'itemId', itemId)
             // verify required parameter 'width' is not null or undefined
@@ -142,9 +143,11 @@ export const TrickplayApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTrickplayHlsPlaylist(itemId: string, width: number, mediaSourceId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getTrickplayHlsPlaylist(itemId: string, width: number, mediaSourceId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTrickplayHlsPlaylist(itemId, width, mediaSourceId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['TrickplayApi.getTrickplayHlsPlaylist']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -156,9 +159,11 @@ export const TrickplayApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getTrickplayTileImage(itemId: string, width: number, index: number, mediaSourceId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getTrickplayTileImage(itemId: string, width: number, index: number, mediaSourceId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTrickplayTileImage(itemId, width, index, mediaSourceId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['TrickplayApi.getTrickplayTileImage']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -173,27 +178,22 @@ export const TrickplayApiFactory = function (configuration?: Configuration, base
         /**
          * 
          * @summary Gets an image tiles playlist for trickplay.
-         * @param {string} itemId The item id.
-         * @param {number} width The width of a single tile.
-         * @param {string} [mediaSourceId] The media version id, if using an alternate version.
+         * @param {TrickplayApiGetTrickplayHlsPlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrickplayHlsPlaylist(itemId: string, width: number, mediaSourceId?: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getTrickplayHlsPlaylist(itemId, width, mediaSourceId, options).then((request) => request(axios, basePath));
+        getTrickplayHlsPlaylist(requestParameters: TrickplayApiGetTrickplayHlsPlaylistRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getTrickplayHlsPlaylist(requestParameters.itemId, requestParameters.width, requestParameters.mediaSourceId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a trickplay tile image.
-         * @param {string} itemId The item id.
-         * @param {number} width The width of a single tile.
-         * @param {number} index The index of the desired tile.
-         * @param {string} [mediaSourceId] The media version id, if using an alternate version.
+         * @param {TrickplayApiGetTrickplayTileImageRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTrickplayTileImage(itemId: string, width: number, index: number, mediaSourceId?: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getTrickplayTileImage(itemId, width, index, mediaSourceId, options).then((request) => request(axios, basePath));
+        getTrickplayTileImage(requestParameters: TrickplayApiGetTrickplayTileImageRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getTrickplayTileImage(requestParameters.itemId, requestParameters.width, requestParameters.index, requestParameters.mediaSourceId, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -276,7 +276,7 @@ export class TrickplayApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof TrickplayApi
      */
-    public getTrickplayHlsPlaylist(requestParameters: TrickplayApiGetTrickplayHlsPlaylistRequest, options?: AxiosRequestConfig) {
+    public getTrickplayHlsPlaylist(requestParameters: TrickplayApiGetTrickplayHlsPlaylistRequest, options?: RawAxiosRequestConfig) {
         return TrickplayApiFp(this.configuration).getTrickplayHlsPlaylist(requestParameters.itemId, requestParameters.width, requestParameters.mediaSourceId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -288,7 +288,8 @@ export class TrickplayApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof TrickplayApi
      */
-    public getTrickplayTileImage(requestParameters: TrickplayApiGetTrickplayTileImageRequest, options?: AxiosRequestConfig) {
+    public getTrickplayTileImage(requestParameters: TrickplayApiGetTrickplayTileImageRequest, options?: RawAxiosRequestConfig) {
         return TrickplayApiFp(this.configuration).getTrickplayTileImage(requestParameters.itemId, requestParameters.width, requestParameters.index, requestParameters.mediaSourceId, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

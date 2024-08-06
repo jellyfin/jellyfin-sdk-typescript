@@ -12,7 +12,9 @@
  */
 
 
-import { PlaystateCommand } from './playstate-command';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaystateCommand } from './playstate-command';
 
 /**
  * 
@@ -39,4 +41,6 @@ export interface PlaystateRequest {
      */
     'ControllingUserId'?: string | null;
 }
+
+
 

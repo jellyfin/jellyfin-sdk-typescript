@@ -12,7 +12,9 @@
  */
 
 
-import { DeviceProfile } from './device-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DeviceProfile } from './device-profile';
 
 /**
  * Plabyback info dto.

@@ -12,11 +12,21 @@
  */
 
 
-import { CodecProfile } from './codec-profile';
-import { ContainerProfile } from './container-profile';
-import { DirectPlayProfile } from './direct-play-profile';
-import { SubtitleProfile } from './subtitle-profile';
-import { TranscodingProfile } from './transcoding-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CodecProfile } from './codec-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ContainerProfile } from './container-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DirectPlayProfile } from './direct-play-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SubtitleProfile } from './subtitle-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TranscodingProfile } from './transcoding-profile';
 
 /**
  * A MediaBrowser.Model.Dlna.DeviceProfile represents a set of metadata which determines which content a certain device is able to play.  <br />  Specifically, it defines the supported <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.ContainerProfiles\">containers</see> and  <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.CodecProfiles\">codecs</see> (video and/or audio, including codec profiles and levels)  the device is able to direct play (without transcoding or remuxing),  as well as which <see cref=\"P:MediaBrowser.Model.Dlna.DeviceProfile.TranscodingProfiles\">containers/codecs to transcode to</see> in case it isn\'t.

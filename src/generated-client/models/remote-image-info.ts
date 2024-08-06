@@ -12,8 +12,12 @@
  */
 
 
-import { ImageType } from './image-type';
-import { RatingType } from './rating-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageType } from './image-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RatingType } from './rating-type';
 
 /**
  * Class RemoteImageInfo.
@@ -82,4 +86,6 @@ export interface RemoteImageInfo {
      */
     'RatingType'?: RatingType;
 }
+
+
 

@@ -12,7 +12,9 @@
  */
 
 
-import { DayOfWeek } from './day-of-week';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DayOfWeek } from './day-of-week';
 
 /**
  * Class TaskTriggerInfo.
@@ -51,4 +53,6 @@ export interface TaskTriggerInfo {
      */
     'MaxRuntimeTicks'?: number | null;
 }
+
+
 

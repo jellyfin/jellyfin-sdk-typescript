@@ -12,7 +12,9 @@
  */
 
 
-import { DownMixStereoAlgorithms } from './down-mix-stereo-algorithms';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DownMixStereoAlgorithms } from './down-mix-stereo-algorithms';
 
 /**
  * Class EncodingOptions.
@@ -285,4 +287,6 @@ export interface EncodingOptions {
      */
     'AllowOnDemandMetadataBasedKeyframeExtractionForExtensions'?: Array<string> | null;
 }
+
+
 

@@ -12,7 +12,9 @@
  */
 
 
-import { MediaUpdateInfoPathDto } from './media-update-info-path-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaUpdateInfoPathDto } from './media-update-info-path-dto';
 
 /**
  * Media Update Info Dto.

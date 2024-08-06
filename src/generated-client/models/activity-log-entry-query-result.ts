@@ -12,7 +12,9 @@
  */
 
 
-import { ActivityLogEntry } from './activity-log-entry';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ActivityLogEntry } from './activity-log-entry';
 
 /**
  * 

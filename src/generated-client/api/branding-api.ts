@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BrandingOptions } from '../models';
+import type { BrandingOptions } from '../models';
 /**
  * BrandingApi - axios parameter creator
  * @export
@@ -33,7 +34,7 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingCss: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getBrandingCss: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Branding/Css`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -63,7 +64,7 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingCss2: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getBrandingCss2: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Branding/Css.css`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -93,7 +94,7 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingOptions: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getBrandingOptions: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Branding/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -133,9 +134,11 @@ export const BrandingApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBrandingCss(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
+        async getBrandingCss(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getBrandingCss(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BrandingApi.getBrandingCss']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -143,9 +146,11 @@ export const BrandingApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBrandingCss2(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
+        async getBrandingCss2(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getBrandingCss2(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BrandingApi.getBrandingCss2']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -153,9 +158,11 @@ export const BrandingApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBrandingOptions(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BrandingOptions>> {
+        async getBrandingOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BrandingOptions>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getBrandingOptions(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['BrandingApi.getBrandingOptions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -173,7 +180,7 @@ export const BrandingApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingCss(options?: any): AxiosPromise<string> {
+        getBrandingCss(options?: RawAxiosRequestConfig): AxiosPromise<string> {
             return localVarFp.getBrandingCss(options).then((request) => request(axios, basePath));
         },
         /**
@@ -182,7 +189,7 @@ export const BrandingApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingCss2(options?: any): AxiosPromise<string> {
+        getBrandingCss2(options?: RawAxiosRequestConfig): AxiosPromise<string> {
             return localVarFp.getBrandingCss2(options).then((request) => request(axios, basePath));
         },
         /**
@@ -191,7 +198,7 @@ export const BrandingApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingOptions(options?: any): AxiosPromise<BrandingOptions> {
+        getBrandingOptions(options?: RawAxiosRequestConfig): AxiosPromise<BrandingOptions> {
             return localVarFp.getBrandingOptions(options).then((request) => request(axios, basePath));
         },
     };
@@ -211,7 +218,7 @@ export class BrandingApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof BrandingApi
      */
-    public getBrandingCss(options?: AxiosRequestConfig) {
+    public getBrandingCss(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingCss(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -222,7 +229,7 @@ export class BrandingApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof BrandingApi
      */
-    public getBrandingCss2(options?: AxiosRequestConfig) {
+    public getBrandingCss2(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingCss2(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -233,7 +240,8 @@ export class BrandingApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof BrandingApi
      */
-    public getBrandingOptions(options?: AxiosRequestConfig) {
+    public getBrandingOptions(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingOptions(options).then((request) => request(this.axios, this.basePath));
     }
 }
+

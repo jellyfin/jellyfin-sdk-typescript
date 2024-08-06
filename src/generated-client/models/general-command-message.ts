@@ -12,8 +12,12 @@
  */
 
 
-import { GeneralCommand } from './general-command';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GeneralCommand } from './general-command';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * General command websocket message.
@@ -40,4 +44,6 @@ export interface GeneralCommandMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

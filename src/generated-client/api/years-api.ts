@@ -12,31 +12,32 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BaseItemDto } from '../models';
+import type { BaseItemDto } from '../models';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import type { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import type { BaseItemKind } from '../models';
 // @ts-ignore
-import { ImageType } from '../models';
+import type { ImageType } from '../models';
 // @ts-ignore
-import { ItemFields } from '../models';
+import type { ItemFields } from '../models';
 // @ts-ignore
-import { ItemSortBy } from '../models';
+import type { ItemSortBy } from '../models';
 // @ts-ignore
-import { MediaType } from '../models';
+import type { MediaType } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { SortOrder } from '../models';
+import type { SortOrder } from '../models';
 /**
  * YearsApi - axios parameter creator
  * @export
@@ -51,7 +52,7 @@ export const YearsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getYear: async (year: number, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getYear: async (year: number, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'year' is not null or undefined
             assertParamExists('getYear', 'year', year)
             const localVarPath = `/Years/{year}`
@@ -106,7 +107,7 @@ export const YearsApiAxiosParamCreator = function (configuration?: Configuration
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getYears: async (startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, sortBy?: Array<ItemSortBy>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, recursive?: boolean, enableImages?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getYears: async (startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, sortBy?: Array<ItemSortBy>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, recursive?: boolean, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Years`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -211,9 +212,11 @@ export const YearsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getYear(year: number, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+        async getYear(year: number, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getYear(year, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['YearsApi.getYear']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -236,9 +239,11 @@ export const YearsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getYears(startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, sortBy?: Array<ItemSortBy>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, recursive?: boolean, enableImages?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getYears(startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, sortBy?: Array<ItemSortBy>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, recursive?: boolean, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getYears(startIndex, limit, sortOrder, parentId, fields, excludeItemTypes, includeItemTypes, mediaTypes, sortBy, enableUserData, imageTypeLimit, enableImageTypes, userId, recursive, enableImages, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['YearsApi.getYears']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -253,37 +258,22 @@ export const YearsApiFactory = function (configuration?: Configuration, basePath
         /**
          * 
          * @summary Gets a year.
-         * @param {number} year The year.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {YearsApiGetYearRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getYear(year: number, userId?: string, options?: any): AxiosPromise<BaseItemDto> {
-            return localVarFp.getYear(year, userId, options).then((request) => request(axios, basePath));
+        getYear(requestParameters: YearsApiGetYearRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getYear(requestParameters.year, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get years.
-         * @param {number} [startIndex] Skips over a given number of items within the results. Use for paging.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
-         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be excluded based on item type. This allows multiple, comma delimited.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be included based on item type. This allows multiple, comma delimited.
-         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
-         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {string} [userId] User Id.
-         * @param {boolean} [recursive] Search recursively.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
+         * @param {YearsApiGetYearsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getYears(startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, sortBy?: Array<ItemSortBy>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, recursive?: boolean, enableImages?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getYears(startIndex, limit, sortOrder, parentId, fields, excludeItemTypes, includeItemTypes, mediaTypes, sortBy, enableUserData, imageTypeLimit, enableImageTypes, userId, recursive, enableImages, options).then((request) => request(axios, basePath));
+        getYears(requestParameters: YearsApiGetYearsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getYears(requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.mediaTypes, requestParameters.sortBy, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.recursive, requestParameters.enableImages, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -436,7 +426,7 @@ export class YearsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof YearsApi
      */
-    public getYear(requestParameters: YearsApiGetYearRequest, options?: AxiosRequestConfig) {
+    public getYear(requestParameters: YearsApiGetYearRequest, options?: RawAxiosRequestConfig) {
         return YearsApiFp(this.configuration).getYear(requestParameters.year, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -448,7 +438,8 @@ export class YearsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof YearsApi
      */
-    public getYears(requestParameters: YearsApiGetYearsRequest = {}, options?: AxiosRequestConfig) {
+    public getYears(requestParameters: YearsApiGetYearsRequest = {}, options?: RawAxiosRequestConfig) {
         return YearsApiFp(this.configuration).getYears(requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.mediaTypes, requestParameters.sortBy, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.recursive, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

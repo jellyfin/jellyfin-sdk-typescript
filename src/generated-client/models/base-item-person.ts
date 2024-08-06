@@ -12,8 +12,12 @@
  */
 
 
-import { BaseItemPersonImageBlurHashes } from './base-item-person-image-blur-hashes';
-import { PersonKind } from './person-kind';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemPersonImageBlurHashes } from './base-item-person-image-blur-hashes';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PersonKind } from './person-kind';
 
 /**
  * This is used by the api to get information about a Person within a BaseItem.
@@ -58,4 +62,6 @@ export interface BaseItemPerson {
      */
     'ImageBlurHashes'?: BaseItemPersonImageBlurHashes | null;
 }
+
+
 

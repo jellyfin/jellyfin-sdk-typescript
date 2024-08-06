@@ -12,7 +12,9 @@
  */
 
 
-import { MediaPathInfo } from './media-path-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaPathInfo } from './media-path-info';
 
 /**
  * Update library options dto.

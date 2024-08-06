@@ -12,7 +12,9 @@
  */
 
 
-import { GroupStateType } from './group-state-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupStateType } from './group-state-type';
 
 /**
  * Class GroupInfoDto.
@@ -51,4 +53,6 @@ export interface GroupInfoDto {
      */
     'LastUpdatedAt'?: string;
 }
+
+
 

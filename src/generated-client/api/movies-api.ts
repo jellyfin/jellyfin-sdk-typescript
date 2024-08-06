@@ -12,17 +12,18 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ItemFields } from '../models';
+import type { ItemFields } from '../models';
 // @ts-ignore
-import { RecommendationDto } from '../models';
+import type { RecommendationDto } from '../models';
 /**
  * MoviesApi - axios parameter creator
  * @export
@@ -40,7 +41,7 @@ export const MoviesApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRecommendations: async (userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getMovieRecommendations: async (userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Movies/Recommendations`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -108,9 +109,11 @@ export const MoviesApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getMovieRecommendations(userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RecommendationDto>>> {
+        async getMovieRecommendations(userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RecommendationDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMovieRecommendations(userId, parentId, fields, categoryLimit, itemLimit, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['MoviesApi.getMovieRecommendations']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -125,16 +128,12 @@ export const MoviesApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets movie recommendations.
-         * @param {string} [userId] Optional. Filter by user id, and attach user data.
-         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {Array<ItemFields>} [fields] Optional. The fields to return.
-         * @param {number} [categoryLimit] The max number of categories to return.
-         * @param {number} [itemLimit] The max number of items to return per category.
+         * @param {MoviesApiGetMovieRecommendationsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRecommendations(userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options?: any): AxiosPromise<Array<RecommendationDto>> {
-            return localVarFp.getMovieRecommendations(userId, parentId, fields, categoryLimit, itemLimit, options).then((request) => request(axios, basePath));
+        getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<RecommendationDto>> {
+            return localVarFp.getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -196,7 +195,8 @@ export class MoviesApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof MoviesApi
      */
-    public getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: AxiosRequestConfig) {
+    public getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig) {
         return MoviesApiFp(this.configuration).getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

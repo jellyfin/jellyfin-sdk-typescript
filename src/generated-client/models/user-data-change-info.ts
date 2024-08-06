@@ -12,7 +12,9 @@
  */
 
 
-import { UserItemDataDto } from './user-item-data-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserItemDataDto } from './user-item-data-dto';
 
 /**
  * Class UserDataChangeInfo.

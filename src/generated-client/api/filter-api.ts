@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import type { BaseItemKind } from '../models';
 // @ts-ignore
-import { MediaType } from '../models';
+import type { MediaType } from '../models';
 // @ts-ignore
-import { QueryFilters } from '../models';
+import type { QueryFilters } from '../models';
 // @ts-ignore
-import { QueryFiltersLegacy } from '../models';
+import type { QueryFiltersLegacy } from '../models';
 /**
  * FilterApi - axios parameter creator
  * @export
@@ -49,7 +50,7 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFilters: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getQueryFilters: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Filters2`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -126,7 +127,7 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFiltersLegacy: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getQueryFiltersLegacy: async (userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Filters`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -195,9 +196,11 @@ export const FilterApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getQueryFilters(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFilters>> {
+        async getQueryFilters(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFilters>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getQueryFilters(userId, parentId, includeItemTypes, isAiring, isMovie, isSports, isKids, isNews, isSeries, recursive, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['FilterApi.getQueryFilters']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -209,9 +212,11 @@ export const FilterApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFiltersLegacy>> {
+        async getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<QueryFiltersLegacy>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getQueryFiltersLegacy(userId, parentId, includeItemTypes, mediaTypes, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['FilterApi.getQueryFiltersLegacy']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -226,34 +231,22 @@ export const FilterApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Gets query filters.
-         * @param {string} [userId] Optional. User id.
-         * @param {string} [parentId] Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {boolean} [isAiring] Optional. Is item airing.
-         * @param {boolean} [isMovie] Optional. Is item movie.
-         * @param {boolean} [isSports] Optional. Is item sports.
-         * @param {boolean} [isKids] Optional. Is item kids.
-         * @param {boolean} [isNews] Optional. Is item news.
-         * @param {boolean} [isSeries] Optional. Is item series.
-         * @param {boolean} [recursive] Optional. Search recursive.
+         * @param {FilterApiGetQueryFiltersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFilters(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, isAiring?: boolean, isMovie?: boolean, isSports?: boolean, isKids?: boolean, isNews?: boolean, isSeries?: boolean, recursive?: boolean, options?: any): AxiosPromise<QueryFilters> {
-            return localVarFp.getQueryFilters(userId, parentId, includeItemTypes, isAiring, isMovie, isSports, isKids, isNews, isSeries, recursive, options).then((request) => request(axios, basePath));
+        getQueryFilters(requestParameters: FilterApiGetQueryFiltersRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<QueryFilters> {
+            return localVarFp.getQueryFilters(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.isAiring, requestParameters.isMovie, requestParameters.isSports, requestParameters.isKids, requestParameters.isNews, requestParameters.isSeries, requestParameters.recursive, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets legacy query filters.
-         * @param {string} [userId] Optional. User id.
-         * @param {string} [parentId] Optional. Parent id.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {FilterApiGetQueryFiltersLegacyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getQueryFiltersLegacy(userId?: string, parentId?: string, includeItemTypes?: Array<BaseItemKind>, mediaTypes?: Array<MediaType>, options?: any): AxiosPromise<QueryFiltersLegacy> {
-            return localVarFp.getQueryFiltersLegacy(userId, parentId, includeItemTypes, mediaTypes, options).then((request) => request(axios, basePath));
+        getQueryFiltersLegacy(requestParameters: FilterApiGetQueryFiltersLegacyRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<QueryFiltersLegacy> {
+            return localVarFp.getQueryFiltersLegacy(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.mediaTypes, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -385,7 +378,7 @@ export class FilterApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof FilterApi
      */
-    public getQueryFilters(requestParameters: FilterApiGetQueryFiltersRequest = {}, options?: AxiosRequestConfig) {
+    public getQueryFilters(requestParameters: FilterApiGetQueryFiltersRequest = {}, options?: RawAxiosRequestConfig) {
         return FilterApiFp(this.configuration).getQueryFilters(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.isAiring, requestParameters.isMovie, requestParameters.isSports, requestParameters.isKids, requestParameters.isNews, requestParameters.isSeries, requestParameters.recursive, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -397,7 +390,8 @@ export class FilterApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof FilterApi
      */
-    public getQueryFiltersLegacy(requestParameters: FilterApiGetQueryFiltersLegacyRequest = {}, options?: AxiosRequestConfig) {
+    public getQueryFiltersLegacy(requestParameters: FilterApiGetQueryFiltersLegacyRequest = {}, options?: RawAxiosRequestConfig) {
         return FilterApiFp(this.configuration).getQueryFiltersLegacy(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.mediaTypes, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

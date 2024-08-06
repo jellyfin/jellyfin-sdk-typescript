@@ -12,7 +12,9 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemDto } from './base-item-dto';
 
 /**
  * Class ThemeMediaResult.

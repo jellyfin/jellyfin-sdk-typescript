@@ -12,8 +12,12 @@
  */
 
 
-import { CodecType } from './codec-type';
-import { ProfileCondition } from './profile-condition';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CodecType } from './codec-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProfileCondition } from './profile-condition';
 
 /**
  * 
@@ -52,4 +56,6 @@ export interface CodecProfile {
      */
     'Container'?: string | null;
 }
+
+
 

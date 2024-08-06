@@ -12,12 +12,24 @@
  */
 
 
-import { CollectionType } from './collection-type';
-import { CountryInfo } from './country-info';
-import { CultureDto } from './culture-dto';
-import { ExternalIdInfo } from './external-id-info';
-import { NameValuePair } from './name-value-pair';
-import { ParentalRating } from './parental-rating';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CollectionType } from './collection-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CountryInfo } from './country-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CultureDto } from './culture-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ExternalIdInfo } from './external-id-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { NameValuePair } from './name-value-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ParentalRating } from './parental-rating';
 
 /**
  * 
@@ -62,4 +74,6 @@ export interface MetadataEditorInfo {
      */
     'ContentTypeOptions'?: Array<NameValuePair>;
 }
+
+
 
