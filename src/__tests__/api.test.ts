@@ -16,7 +16,8 @@ vi.mock('axios', async () => {
 	return {
 		default: {
 			getUri: actual.getUri,
-			request: vi.fn()
+			request: vi.fn(),
+			defaults: {}
 		}
 	};
 });
