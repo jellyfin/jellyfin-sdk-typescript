@@ -10,9 +10,9 @@ import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 
 import { Jellyfin } from '../jellyfin';
 import { RecommendedServerInfoScore } from '../models/recommended-server-info';
-import { getLibraryApi } from '../utils/api/library-api';
 import { getSystemApi } from '../utils/api/system-api';
 import { getUserApi } from '../utils/api/user-api';
+import { getUserViewsApi } from '../utils/api/user-views-api';
 
 const SERVER_URL = 'https://demo.jellyfin.org/stable';
 
@@ -74,7 +74,7 @@ describe('Test the Base SDK', () => {
 		await api.logout();
 	});
 
-	it('library api', async () => {
+	it('user views api', async () => {
 		const jellyfin = new Jellyfin({
 			clientInfo: TEST_CLIENT,
 			deviceInfo: TEST_DEVICE
@@ -83,9 +83,9 @@ describe('Test the Base SDK', () => {
 
 		await api.authenticateUserByName('demo');
 
-		const libraries = await getLibraryApi(api).getMediaFolders();
-		// console.log('Libraries =>', libraries.data);
-		expect(libraries.data).toBeTruthy();
+		const views = await getUserViewsApi(api).getUserViews();
+		// console.log('User Views =>', views.data);
+		expect(views.data).toBeTruthy();
 
 		await api.logout();
 	});
