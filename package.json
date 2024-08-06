@@ -22,7 +22,8 @@
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "lint": "eslint \".\"",
     "prepublishOnly": "npm run clean:build:sdk",
-    "test": "vitest --exclude **/integration.test.ts"
+    "test": "vitest --exclude **/integration.test.ts",
+    "test:integration": "vitest integration"
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "2.13.4",
