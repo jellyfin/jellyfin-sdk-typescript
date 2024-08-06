@@ -12,7 +12,9 @@
  */
 
 
-import { LiveTvServiceStatus } from './live-tv-service-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LiveTvServiceStatus } from './live-tv-service-status';
 
 /**
  * Class ServiceInfo.
@@ -69,4 +71,6 @@ export interface LiveTvServiceInfo {
      */
     'Tuners'?: Array<string> | null;
 }
+
+
 

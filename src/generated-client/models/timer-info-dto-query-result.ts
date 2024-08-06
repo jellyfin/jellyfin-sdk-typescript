@@ -12,7 +12,9 @@
  */
 
 
-import { TimerInfoDto } from './timer-info-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TimerInfoDto } from './timer-info-dto';
 
 /**
  * 

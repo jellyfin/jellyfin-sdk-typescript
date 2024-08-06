@@ -12,8 +12,12 @@
  */
 
 
-import { ProcessPriorityClass } from './process-priority-class';
-import { TrickplayScanBehavior } from './trickplay-scan-behavior';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProcessPriorityClass } from './process-priority-class';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TrickplayScanBehavior } from './trickplay-scan-behavior';
 
 /**
  * Class TrickplayOptions.
@@ -88,4 +92,6 @@ export interface TrickplayOptions {
      */
     'ProcessThreads'?: number;
 }
+
+
 

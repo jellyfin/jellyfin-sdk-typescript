@@ -12,7 +12,9 @@
  */
 
 
-import { LiveTvServiceInfo } from './live-tv-service-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LiveTvServiceInfo } from './live-tv-service-info';
 
 /**
  * 

@@ -12,25 +12,26 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import type { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
-import { ChannelFeatures } from '../models';
+import type { ChannelFeatures } from '../models';
 // @ts-ignore
-import { ItemFields } from '../models';
+import type { ItemFields } from '../models';
 // @ts-ignore
-import { ItemFilter } from '../models';
+import type { ItemFilter } from '../models';
 // @ts-ignore
-import { ItemSortBy } from '../models';
+import type { ItemSortBy } from '../models';
 // @ts-ignore
-import { SortOrder } from '../models';
+import type { SortOrder } from '../models';
 /**
  * ChannelsApi - axios parameter creator
  * @export
@@ -43,7 +44,7 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAllChannelFeatures: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getAllChannelFeatures: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Channels/Features`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -77,7 +78,7 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelFeatures: async (channelId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getChannelFeatures: async (channelId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'channelId' is not null or undefined
             assertParamExists('getChannelFeatures', 'channelId', channelId)
             const localVarPath = `/Channels/{channelId}/Features`
@@ -122,7 +123,7 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelItems: async (channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getChannelItems: async (channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'channelId' is not null or undefined
             assertParamExists('getChannelItems', 'channelId', channelId)
             const localVarPath = `/Channels/{channelId}/Items`
@@ -196,7 +197,7 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannels: async (userId?: string, startIndex?: number, limit?: number, supportsLatestItems?: boolean, supportsMediaDeletion?: boolean, isFavorite?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getChannels: async (userId?: string, startIndex?: number, limit?: number, supportsLatestItems?: boolean, supportsMediaDeletion?: boolean, isFavorite?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Channels`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -259,7 +260,7 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLatestChannelItems: async (userId?: string, startIndex?: number, limit?: number, filters?: Array<ItemFilter>, fields?: Array<ItemFields>, channelIds?: Array<string>, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLatestChannelItems: async (userId?: string, startIndex?: number, limit?: number, filters?: Array<ItemFilter>, fields?: Array<ItemFields>, channelIds?: Array<string>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Channels/Items/Latest`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -326,9 +327,11 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getAllChannelFeatures(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ChannelFeatures>>> {
+        async getAllChannelFeatures(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<ChannelFeatures>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAllChannelFeatures(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ChannelsApi.getAllChannelFeatures']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -337,9 +340,11 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getChannelFeatures(channelId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ChannelFeatures>> {
+        async getChannelFeatures(channelId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ChannelFeatures>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getChannelFeatures(channelId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ChannelsApi.getChannelFeatures']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -356,9 +361,11 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getChannelItems(channelId, folderId, userId, startIndex, limit, sortOrder, filters, sortBy, fields, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ChannelsApi.getChannelItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -372,9 +379,11 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getChannels(userId?: string, startIndex?: number, limit?: number, supportsLatestItems?: boolean, supportsMediaDeletion?: boolean, isFavorite?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getChannels(userId?: string, startIndex?: number, limit?: number, supportsLatestItems?: boolean, supportsMediaDeletion?: boolean, isFavorite?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getChannels(userId, startIndex, limit, supportsLatestItems, supportsMediaDeletion, isFavorite, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ChannelsApi.getChannels']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -388,9 +397,11 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLatestChannelItems(userId?: string, startIndex?: number, limit?: number, filters?: Array<ItemFilter>, fields?: Array<ItemFields>, channelIds?: Array<string>, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getLatestChannelItems(userId?: string, startIndex?: number, limit?: number, filters?: Array<ItemFilter>, fields?: Array<ItemFields>, channelIds?: Array<string>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLatestChannelItems(userId, startIndex, limit, filters, fields, channelIds, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ChannelsApi.getLatestChannelItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -408,66 +419,48 @@ export const ChannelsApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAllChannelFeatures(options?: any): AxiosPromise<Array<ChannelFeatures>> {
+        getAllChannelFeatures(options?: RawAxiosRequestConfig): AxiosPromise<Array<ChannelFeatures>> {
             return localVarFp.getAllChannelFeatures(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get channel features.
-         * @param {string} channelId Channel id.
+         * @param {ChannelsApiGetChannelFeaturesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelFeatures(channelId: string, options?: any): AxiosPromise<ChannelFeatures> {
-            return localVarFp.getChannelFeatures(channelId, options).then((request) => request(axios, basePath));
+        getChannelFeatures(requestParameters: ChannelsApiGetChannelFeaturesRequest, options?: RawAxiosRequestConfig): AxiosPromise<ChannelFeatures> {
+            return localVarFp.getChannelFeatures(requestParameters.channelId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get channel items.
-         * @param {string} channelId Channel Id.
-         * @param {string} [folderId] Optional. Folder Id.
-         * @param {string} [userId] Optional. User Id.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
-         * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
+         * @param {ChannelsApiGetChannelItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannelItems(channelId: string, folderId?: string, userId?: string, startIndex?: number, limit?: number, sortOrder?: Array<SortOrder>, filters?: Array<ItemFilter>, sortBy?: Array<ItemSortBy>, fields?: Array<ItemFields>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getChannelItems(channelId, folderId, userId, startIndex, limit, sortOrder, filters, sortBy, fields, options).then((request) => request(axios, basePath));
+        getChannelItems(requestParameters: ChannelsApiGetChannelItemsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getChannelItems(requestParameters.channelId, requestParameters.folderId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.filters, requestParameters.sortBy, requestParameters.fields, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets available channels.
-         * @param {string} [userId] User Id to filter by. Use System.Guid.Empty to not filter by user.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {boolean} [supportsLatestItems] Optional. Filter by channels that support getting latest items.
-         * @param {boolean} [supportsMediaDeletion] Optional. Filter by channels that support media deletion.
-         * @param {boolean} [isFavorite] Optional. Filter by channels that are favorite.
+         * @param {ChannelsApiGetChannelsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getChannels(userId?: string, startIndex?: number, limit?: number, supportsLatestItems?: boolean, supportsMediaDeletion?: boolean, isFavorite?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getChannels(userId, startIndex, limit, supportsLatestItems, supportsMediaDeletion, isFavorite, options).then((request) => request(axios, basePath));
+        getChannels(requestParameters: ChannelsApiGetChannelsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getChannels(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.supportsLatestItems, requestParameters.supportsMediaDeletion, requestParameters.isFavorite, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets latest channel items.
-         * @param {string} [userId] Optional. User Id.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {Array<string>} [channelIds] Optional. Specify one or more channel id\&#39;s, comma delimited.
+         * @param {ChannelsApiGetLatestChannelItemsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLatestChannelItems(userId?: string, startIndex?: number, limit?: number, filters?: Array<ItemFilter>, fields?: Array<ItemFields>, channelIds?: Array<string>, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getLatestChannelItems(userId, startIndex, limit, filters, fields, channelIds, options).then((request) => request(axios, basePath));
+        getLatestChannelItems(requestParameters: ChannelsApiGetLatestChannelItemsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getLatestChannelItems(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.filters, requestParameters.fields, requestParameters.channelIds, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -668,7 +661,7 @@ export class ChannelsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ChannelsApi
      */
-    public getAllChannelFeatures(options?: AxiosRequestConfig) {
+    public getAllChannelFeatures(options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getAllChannelFeatures(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -680,7 +673,7 @@ export class ChannelsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ChannelsApi
      */
-    public getChannelFeatures(requestParameters: ChannelsApiGetChannelFeaturesRequest, options?: AxiosRequestConfig) {
+    public getChannelFeatures(requestParameters: ChannelsApiGetChannelFeaturesRequest, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannelFeatures(requestParameters.channelId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -692,7 +685,7 @@ export class ChannelsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ChannelsApi
      */
-    public getChannelItems(requestParameters: ChannelsApiGetChannelItemsRequest, options?: AxiosRequestConfig) {
+    public getChannelItems(requestParameters: ChannelsApiGetChannelItemsRequest, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannelItems(requestParameters.channelId, requestParameters.folderId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.filters, requestParameters.sortBy, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -704,7 +697,7 @@ export class ChannelsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ChannelsApi
      */
-    public getChannels(requestParameters: ChannelsApiGetChannelsRequest = {}, options?: AxiosRequestConfig) {
+    public getChannels(requestParameters: ChannelsApiGetChannelsRequest = {}, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannels(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.supportsLatestItems, requestParameters.supportsMediaDeletion, requestParameters.isFavorite, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -716,7 +709,8 @@ export class ChannelsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof ChannelsApi
      */
-    public getLatestChannelItems(requestParameters: ChannelsApiGetLatestChannelItemsRequest = {}, options?: AxiosRequestConfig) {
+    public getLatestChannelItems(requestParameters: ChannelsApiGetLatestChannelItemsRequest = {}, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getLatestChannelItems(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.filters, requestParameters.fields, requestParameters.channelIds, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

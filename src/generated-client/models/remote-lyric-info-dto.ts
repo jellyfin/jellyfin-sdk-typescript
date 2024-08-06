@@ -12,7 +12,9 @@
  */
 
 
-import { LyricDto } from './lyric-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LyricDto } from './lyric-dto';
 
 /**
  * The remote lyric info dto.

@@ -12,8 +12,12 @@
  */
 
 
-import { SessionInfo } from './session-info';
-import { UserDto } from './user-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionInfo } from './session-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDto } from './user-dto';
 
 /**
  * 

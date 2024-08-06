@@ -12,21 +12,22 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { FontFile } from '../models';
+import type { FontFile } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { RemoteSubtitleInfo } from '../models';
+import type { RemoteSubtitleInfo } from '../models';
 // @ts-ignore
-import { UploadSubtitleDto } from '../models';
+import type { UploadSubtitleDto } from '../models';
 /**
  * SubtitleApi - axios parameter creator
  * @export
@@ -41,7 +42,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteSubtitle: async (itemId: string, index: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteSubtitle: async (itemId: string, index: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('deleteSubtitle', 'itemId', itemId)
             // verify required parameter 'index' is not null or undefined
@@ -82,7 +83,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteSubtitles: async (itemId: string, subtitleId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        downloadRemoteSubtitles: async (itemId: string, subtitleId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('downloadRemoteSubtitles', 'itemId', itemId)
             // verify required parameter 'subtitleId' is not null or undefined
@@ -122,7 +123,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFont: async (name: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getFallbackFont: async (name: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'name' is not null or undefined
             assertParamExists('getFallbackFont', 'name', name)
             const localVarPath = `/FallbackFont/Fonts/{name}`
@@ -158,7 +159,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFontList: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getFallbackFontList: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/FallbackFont/Fonts`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -192,7 +193,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteSubtitles: async (subtitleId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getRemoteSubtitles: async (subtitleId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'subtitleId' is not null or undefined
             assertParamExists('getRemoteSubtitles', 'subtitleId', subtitleId)
             const localVarPath = `/Providers/Subtitles/Subtitles/{subtitleId}`
@@ -240,7 +241,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitle: async (routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSubtitle: async (routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'routeItemId' is not null or undefined
             assertParamExists('getSubtitle', 'routeItemId', routeItemId)
             // verify required parameter 'routeMediaSourceId' is not null or undefined
@@ -318,7 +319,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitlePlaylist: async (itemId: string, index: number, mediaSourceId: string, segmentLength: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSubtitlePlaylist: async (itemId: string, index: number, mediaSourceId: string, segmentLength: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getSubtitlePlaylist', 'itemId', itemId)
             // verify required parameter 'index' is not null or undefined
@@ -379,7 +380,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitleWithTicks: async (routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSubtitleWithTicks: async (routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'routeItemId' is not null or undefined
             assertParamExists('getSubtitleWithTicks', 'routeItemId', routeItemId)
             // verify required parameter 'routeMediaSourceId' is not null or undefined
@@ -459,7 +460,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        searchRemoteSubtitles: async (itemId: string, language: string, isPerfectMatch?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        searchRemoteSubtitles: async (itemId: string, language: string, isPerfectMatch?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('searchRemoteSubtitles', 'itemId', itemId)
             // verify required parameter 'language' is not null or undefined
@@ -504,7 +505,7 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadSubtitle: async (itemId: string, uploadSubtitleDto: UploadSubtitleDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        uploadSubtitle: async (itemId: string, uploadSubtitleDto: UploadSubtitleDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('uploadSubtitle', 'itemId', itemId)
             // verify required parameter 'uploadSubtitleDto' is not null or undefined
@@ -557,9 +558,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteSubtitle(itemId: string, index: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteSubtitle(itemId: string, index: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteSubtitle(itemId, index, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.deleteSubtitle']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -569,9 +572,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async downloadRemoteSubtitles(itemId: string, subtitleId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async downloadRemoteSubtitles(itemId: string, subtitleId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.downloadRemoteSubtitles(itemId, subtitleId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.downloadRemoteSubtitles']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -580,9 +585,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getFallbackFont(name: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getFallbackFont(name: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getFallbackFont(name, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getFallbackFont']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -590,9 +597,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getFallbackFontList(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<FontFile>>> {
+        async getFallbackFontList(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<FontFile>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getFallbackFontList(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getFallbackFontList']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -601,9 +610,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRemoteSubtitles(subtitleId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getRemoteSubtitles(subtitleId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteSubtitles(subtitleId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getRemoteSubtitles']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -623,9 +634,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSubtitle(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getSubtitle(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSubtitle(routeItemId, routeMediaSourceId, routeIndex, routeFormat, itemId, mediaSourceId, index, format, endPositionTicks, copyTimestamps, addVttTimeMap, startPositionTicks, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getSubtitle']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -637,9 +650,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSubtitlePlaylist(itemId: string, index: number, mediaSourceId: string, segmentLength: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getSubtitlePlaylist(itemId: string, index: number, mediaSourceId: string, segmentLength: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSubtitlePlaylist(itemId, index, mediaSourceId, segmentLength, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getSubtitlePlaylist']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -660,9 +675,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSubtitleWithTicks(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getSubtitleWithTicks(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSubtitleWithTicks(routeItemId, routeMediaSourceId, routeIndex, routeStartPositionTicks, routeFormat, itemId, mediaSourceId, index, startPositionTicks, format, endPositionTicks, copyTimestamps, addVttTimeMap, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.getSubtitleWithTicks']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -673,9 +690,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async searchRemoteSubtitles(itemId: string, language: string, isPerfectMatch?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSubtitleInfo>>> {
+        async searchRemoteSubtitles(itemId: string, language: string, isPerfectMatch?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteSubtitleInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.searchRemoteSubtitles(itemId, language, isPerfectMatch, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.searchRemoteSubtitles']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -685,9 +704,11 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.uploadSubtitle(itemId, uploadSubtitleDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SubtitleApi.uploadSubtitle']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -702,34 +723,32 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
         /**
          * 
          * @summary Deletes an external subtitle file.
-         * @param {string} itemId The item id.
-         * @param {number} index The index of the subtitle file.
+         * @param {SubtitleApiDeleteSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteSubtitle(itemId: string, index: number, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteSubtitle(itemId, index, options).then((request) => request(axios, basePath));
+        deleteSubtitle(requestParameters: SubtitleApiDeleteSubtitleRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteSubtitle(requestParameters.itemId, requestParameters.index, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Downloads a remote subtitle.
-         * @param {string} itemId The item id.
-         * @param {string} subtitleId The subtitle id.
+         * @param {SubtitleApiDownloadRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteSubtitles(itemId: string, subtitleId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.downloadRemoteSubtitles(itemId, subtitleId, options).then((request) => request(axios, basePath));
+        downloadRemoteSubtitles(requestParameters: SubtitleApiDownloadRemoteSubtitlesRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.downloadRemoteSubtitles(requestParameters.itemId, requestParameters.subtitleId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a fallback font file.
-         * @param {string} name The name of the fallback font file to get.
+         * @param {SubtitleApiGetFallbackFontRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFont(name: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getFallbackFont(name, options).then((request) => request(axios, basePath));
+        getFallbackFont(requestParameters: SubtitleApiGetFallbackFontRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getFallbackFont(requestParameters.name, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -737,97 +756,68 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFallbackFontList(options?: any): AxiosPromise<Array<FontFile>> {
+        getFallbackFontList(options?: RawAxiosRequestConfig): AxiosPromise<Array<FontFile>> {
             return localVarFp.getFallbackFontList(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the remote subtitles.
-         * @param {string} subtitleId The item id.
+         * @param {SubtitleApiGetRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteSubtitles(subtitleId: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getRemoteSubtitles(subtitleId, options).then((request) => request(axios, basePath));
+        getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getRemoteSubtitles(requestParameters.subtitleId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets subtitles in a specified format.
-         * @param {string} routeItemId The (route) item id.
-         * @param {string} routeMediaSourceId The (route) media source id.
-         * @param {number} routeIndex The (route) subtitle stream index.
-         * @param {string} routeFormat The (route) format of the returned subtitle.
-         * @param {string} [itemId] The item id.
-         * @param {string} [mediaSourceId] The media source id.
-         * @param {number} [index] The subtitle stream index.
-         * @param {string} [format] The format of the returned subtitle.
-         * @param {number} [endPositionTicks] Optional. The end position of the subtitle in ticks.
-         * @param {boolean} [copyTimestamps] Optional. Whether to copy the timestamps.
-         * @param {boolean} [addVttTimeMap] Optional. Whether to add a VTT time map.
-         * @param {number} [startPositionTicks] The start position of the subtitle in ticks.
+         * @param {SubtitleApiGetSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitle(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, startPositionTicks?: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitle(routeItemId, routeMediaSourceId, routeIndex, routeFormat, itemId, mediaSourceId, index, format, endPositionTicks, copyTimestamps, addVttTimeMap, startPositionTicks, options).then((request) => request(axios, basePath));
+        getSubtitle(requestParameters: SubtitleApiGetSubtitleRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getSubtitle(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, requestParameters.startPositionTicks, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an HLS subtitle playlist.
-         * @param {string} itemId The item id.
-         * @param {number} index The subtitle stream index.
-         * @param {string} mediaSourceId The media source id.
-         * @param {number} segmentLength The subtitle segment length.
+         * @param {SubtitleApiGetSubtitlePlaylistRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitlePlaylist(itemId: string, index: number, mediaSourceId: string, segmentLength: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitlePlaylist(itemId, index, mediaSourceId, segmentLength, options).then((request) => request(axios, basePath));
+        getSubtitlePlaylist(requestParameters: SubtitleApiGetSubtitlePlaylistRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getSubtitlePlaylist(requestParameters.itemId, requestParameters.index, requestParameters.mediaSourceId, requestParameters.segmentLength, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets subtitles in a specified format.
-         * @param {string} routeItemId The (route) item id.
-         * @param {string} routeMediaSourceId The (route) media source id.
-         * @param {number} routeIndex The (route) subtitle stream index.
-         * @param {number} routeStartPositionTicks The (route) start position of the subtitle in ticks.
-         * @param {string} routeFormat The (route) format of the returned subtitle.
-         * @param {string} [itemId] The item id.
-         * @param {string} [mediaSourceId] The media source id.
-         * @param {number} [index] The subtitle stream index.
-         * @param {number} [startPositionTicks] The start position of the subtitle in ticks.
-         * @param {string} [format] The format of the returned subtitle.
-         * @param {number} [endPositionTicks] Optional. The end position of the subtitle in ticks.
-         * @param {boolean} [copyTimestamps] Optional. Whether to copy the timestamps.
-         * @param {boolean} [addVttTimeMap] Optional. Whether to add a VTT time map.
+         * @param {SubtitleApiGetSubtitleWithTicksRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSubtitleWithTicks(routeItemId: string, routeMediaSourceId: string, routeIndex: number, routeStartPositionTicks: number, routeFormat: string, itemId?: string, mediaSourceId?: string, index?: number, startPositionTicks?: number, format?: string, endPositionTicks?: number, copyTimestamps?: boolean, addVttTimeMap?: boolean, options?: any): AxiosPromise<any> {
-            return localVarFp.getSubtitleWithTicks(routeItemId, routeMediaSourceId, routeIndex, routeStartPositionTicks, routeFormat, itemId, mediaSourceId, index, startPositionTicks, format, endPositionTicks, copyTimestamps, addVttTimeMap, options).then((request) => request(axios, basePath));
+        getSubtitleWithTicks(requestParameters: SubtitleApiGetSubtitleWithTicksRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getSubtitleWithTicks(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeStartPositionTicks, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.startPositionTicks, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Search remote subtitles.
-         * @param {string} itemId The item id.
-         * @param {string} language The language of the subtitles.
-         * @param {boolean} [isPerfectMatch] Optional. Only show subtitles which are a perfect match.
+         * @param {SubtitleApiSearchRemoteSubtitlesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        searchRemoteSubtitles(itemId: string, language: string, isPerfectMatch?: boolean, options?: any): AxiosPromise<Array<RemoteSubtitleInfo>> {
-            return localVarFp.searchRemoteSubtitles(itemId, language, isPerfectMatch, options).then((request) => request(axios, basePath));
+        searchRemoteSubtitles(requestParameters: SubtitleApiSearchRemoteSubtitlesRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<RemoteSubtitleInfo>> {
+            return localVarFp.searchRemoteSubtitles(requestParameters.itemId, requestParameters.language, requestParameters.isPerfectMatch, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Upload an external subtitle file.
-         * @param {string} itemId The item the subtitle belongs to.
-         * @param {UploadSubtitleDto} uploadSubtitleDto The request body.
+         * @param {SubtitleApiUploadSubtitleRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadSubtitle(itemId: string, uploadSubtitleDto: UploadSubtitleDto, options?: any): AxiosPromise<void> {
-            return localVarFp.uploadSubtitle(itemId, uploadSubtitleDto, options).then((request) => request(axios, basePath));
+        uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.uploadSubtitle(requestParameters.itemId, requestParameters.uploadSubtitleDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1190,7 +1180,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public deleteSubtitle(requestParameters: SubtitleApiDeleteSubtitleRequest, options?: AxiosRequestConfig) {
+    public deleteSubtitle(requestParameters: SubtitleApiDeleteSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).deleteSubtitle(requestParameters.itemId, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1202,7 +1192,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public downloadRemoteSubtitles(requestParameters: SubtitleApiDownloadRemoteSubtitlesRequest, options?: AxiosRequestConfig) {
+    public downloadRemoteSubtitles(requestParameters: SubtitleApiDownloadRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).downloadRemoteSubtitles(requestParameters.itemId, requestParameters.subtitleId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1214,7 +1204,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getFallbackFont(requestParameters: SubtitleApiGetFallbackFontRequest, options?: AxiosRequestConfig) {
+    public getFallbackFont(requestParameters: SubtitleApiGetFallbackFontRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getFallbackFont(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1225,7 +1215,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getFallbackFontList(options?: AxiosRequestConfig) {
+    public getFallbackFontList(options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getFallbackFontList(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1237,7 +1227,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: AxiosRequestConfig) {
+    public getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getRemoteSubtitles(requestParameters.subtitleId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1249,7 +1239,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getSubtitle(requestParameters: SubtitleApiGetSubtitleRequest, options?: AxiosRequestConfig) {
+    public getSubtitle(requestParameters: SubtitleApiGetSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitle(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, requestParameters.startPositionTicks, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1261,7 +1251,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getSubtitlePlaylist(requestParameters: SubtitleApiGetSubtitlePlaylistRequest, options?: AxiosRequestConfig) {
+    public getSubtitlePlaylist(requestParameters: SubtitleApiGetSubtitlePlaylistRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitlePlaylist(requestParameters.itemId, requestParameters.index, requestParameters.mediaSourceId, requestParameters.segmentLength, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1273,7 +1263,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public getSubtitleWithTicks(requestParameters: SubtitleApiGetSubtitleWithTicksRequest, options?: AxiosRequestConfig) {
+    public getSubtitleWithTicks(requestParameters: SubtitleApiGetSubtitleWithTicksRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitleWithTicks(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeStartPositionTicks, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.startPositionTicks, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1285,7 +1275,7 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public searchRemoteSubtitles(requestParameters: SubtitleApiSearchRemoteSubtitlesRequest, options?: AxiosRequestConfig) {
+    public searchRemoteSubtitles(requestParameters: SubtitleApiSearchRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).searchRemoteSubtitles(requestParameters.itemId, requestParameters.language, requestParameters.isPerfectMatch, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1297,7 +1287,8 @@ export class SubtitleApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SubtitleApi
      */
-    public uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: AxiosRequestConfig) {
+    public uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).uploadSubtitle(requestParameters.itemId, requestParameters.uploadSubtitleDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

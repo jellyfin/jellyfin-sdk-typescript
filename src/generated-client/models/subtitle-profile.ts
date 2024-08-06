@@ -12,7 +12,9 @@
  */
 
 
-import { SubtitleDeliveryMethod } from './subtitle-delivery-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SubtitleDeliveryMethod } from './subtitle-delivery-method';
 
 /**
  * 
@@ -51,4 +53,6 @@ export interface SubtitleProfile {
      */
     'Container'?: string | null;
 }
+
+
 

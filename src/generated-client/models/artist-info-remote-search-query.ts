@@ -12,7 +12,9 @@
  */
 
 
-import { ArtistInfo } from './artist-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ArtistInfo } from './artist-info';
 
 /**
  * 

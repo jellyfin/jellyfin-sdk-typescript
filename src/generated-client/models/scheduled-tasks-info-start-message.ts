@@ -12,7 +12,9 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Scheduled tasks info start message.  Data is the timing data encoded as \"$initialDelay,$interval\" in ms.
@@ -33,4 +35,6 @@ export interface ScheduledTasksInfoStartMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

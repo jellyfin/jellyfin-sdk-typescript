@@ -12,7 +12,9 @@
  */
 
 
-import { TaskCompletionStatus } from './task-completion-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TaskCompletionStatus } from './task-completion-status';
 
 /**
  * Class TaskExecutionInfo.
@@ -69,4 +71,6 @@ export interface TaskResult {
      */
     'LongErrorMessage'?: string | null;
 }
+
+
 

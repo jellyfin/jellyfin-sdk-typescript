@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { LyricDto } from '../models';
+import type { LyricDto } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { RemoteLyricInfoDto } from '../models';
+import type { RemoteLyricInfoDto } from '../models';
 /**
  * LyricsApi - axios parameter creator
  * @export
@@ -38,7 +39,7 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteLyrics: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteLyrics: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('deleteLyrics', 'itemId', itemId)
             const localVarPath = `/Audio/{itemId}/Lyrics`
@@ -76,7 +77,7 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteLyrics: async (itemId: string, lyricId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        downloadRemoteLyrics: async (itemId: string, lyricId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('downloadRemoteLyrics', 'itemId', itemId)
             // verify required parameter 'lyricId' is not null or undefined
@@ -116,7 +117,7 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLyrics: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLyrics: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('getLyrics', 'itemId', itemId)
             const localVarPath = `/Audio/{itemId}/Lyrics`
@@ -153,7 +154,7 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteLyrics: async (lyricId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getRemoteLyrics: async (lyricId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'lyricId' is not null or undefined
             assertParamExists('getRemoteLyrics', 'lyricId', lyricId)
             const localVarPath = `/Providers/Lyrics/{lyricId}`
@@ -190,7 +191,7 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        searchRemoteLyrics: async (itemId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        searchRemoteLyrics: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('searchRemoteLyrics', 'itemId', itemId)
             const localVarPath = `/Audio/{itemId}/RemoteSearch/Lyrics`
@@ -225,11 +226,11 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
          * @summary Upload an external lyric file.
          * @param {string} itemId The item the lyric belongs to.
          * @param {string} fileName Name of the file being uploaded.
-         * @param {any} [body] 
+         * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadLyrics: async (itemId: string, fileName: string, body?: any, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        uploadLyrics: async (itemId: string, fileName: string, body?: File, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('uploadLyrics', 'itemId', itemId)
             // verify required parameter 'fileName' is not null or undefined
@@ -285,9 +286,11 @@ export const LyricsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteLyrics(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteLyrics(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteLyrics(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.deleteLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -297,9 +300,11 @@ export const LyricsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async downloadRemoteLyrics(itemId: string, lyricId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
+        async downloadRemoteLyrics(itemId: string, lyricId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.downloadRemoteLyrics(itemId, lyricId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.downloadRemoteLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -308,9 +313,11 @@ export const LyricsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLyrics(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
+        async getLyrics(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLyrics(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.getLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -319,9 +326,11 @@ export const LyricsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRemoteLyrics(lyricId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
+        async getRemoteLyrics(lyricId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRemoteLyrics(lyricId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.getRemoteLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -330,22 +339,26 @@ export const LyricsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async searchRemoteLyrics(itemId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteLyricInfoDto>>> {
+        async searchRemoteLyrics(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RemoteLyricInfoDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.searchRemoteLyrics(itemId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.searchRemoteLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
          * @summary Upload an external lyric file.
          * @param {string} itemId The item the lyric belongs to.
          * @param {string} fileName Name of the file being uploaded.
-         * @param {any} [body] 
+         * @param {File} [body] 
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async uploadLyrics(itemId: string, fileName: string, body?: any, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
+        async uploadLyrics(itemId: string, fileName: string, body?: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LyricDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.uploadLyrics(itemId, fileName, body, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LyricsApi.uploadLyrics']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -360,65 +373,62 @@ export const LyricsApiFactory = function (configuration?: Configuration, basePat
         /**
          * 
          * @summary Deletes an external lyric file.
-         * @param {string} itemId The item id.
+         * @param {LyricsApiDeleteLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteLyrics(itemId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteLyrics(itemId, options).then((request) => request(axios, basePath));
+        deleteLyrics(requestParameters: LyricsApiDeleteLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteLyrics(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Downloads a remote lyric.
-         * @param {string} itemId The item id.
-         * @param {string} lyricId The lyric id.
+         * @param {LyricsApiDownloadRemoteLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        downloadRemoteLyrics(itemId: string, lyricId: string, options?: any): AxiosPromise<LyricDto> {
-            return localVarFp.downloadRemoteLyrics(itemId, lyricId, options).then((request) => request(axios, basePath));
+        downloadRemoteLyrics(requestParameters: LyricsApiDownloadRemoteLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<LyricDto> {
+            return localVarFp.downloadRemoteLyrics(requestParameters.itemId, requestParameters.lyricId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an item\'s lyrics.
-         * @param {string} itemId Item id.
+         * @param {LyricsApiGetLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLyrics(itemId: string, options?: any): AxiosPromise<LyricDto> {
-            return localVarFp.getLyrics(itemId, options).then((request) => request(axios, basePath));
+        getLyrics(requestParameters: LyricsApiGetLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<LyricDto> {
+            return localVarFp.getLyrics(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets the remote lyrics.
-         * @param {string} lyricId The remote provider item id.
+         * @param {LyricsApiGetRemoteLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRemoteLyrics(lyricId: string, options?: any): AxiosPromise<LyricDto> {
-            return localVarFp.getRemoteLyrics(lyricId, options).then((request) => request(axios, basePath));
+        getRemoteLyrics(requestParameters: LyricsApiGetRemoteLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<LyricDto> {
+            return localVarFp.getRemoteLyrics(requestParameters.lyricId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Search remote lyrics.
-         * @param {string} itemId The item id.
+         * @param {LyricsApiSearchRemoteLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        searchRemoteLyrics(itemId: string, options?: any): AxiosPromise<Array<RemoteLyricInfoDto>> {
-            return localVarFp.searchRemoteLyrics(itemId, options).then((request) => request(axios, basePath));
+        searchRemoteLyrics(requestParameters: LyricsApiSearchRemoteLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<RemoteLyricInfoDto>> {
+            return localVarFp.searchRemoteLyrics(requestParameters.itemId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Upload an external lyric file.
-         * @param {string} itemId The item the lyric belongs to.
-         * @param {string} fileName Name of the file being uploaded.
-         * @param {any} [body] 
+         * @param {LyricsApiUploadLyricsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        uploadLyrics(itemId: string, fileName: string, body?: any, options?: any): AxiosPromise<LyricDto> {
-            return localVarFp.uploadLyrics(itemId, fileName, body, options).then((request) => request(axios, basePath));
+        uploadLyrics(requestParameters: LyricsApiUploadLyricsRequest, options?: RawAxiosRequestConfig): AxiosPromise<LyricDto> {
+            return localVarFp.uploadLyrics(requestParameters.itemId, requestParameters.fileName, requestParameters.body, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -522,10 +532,10 @@ export interface LyricsApiUploadLyricsRequest {
 
     /**
      * 
-     * @type {any}
+     * @type {File}
      * @memberof LyricsApiUploadLyrics
      */
-    readonly body?: any
+    readonly body?: File
 }
 
 /**
@@ -543,7 +553,7 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public deleteLyrics(requestParameters: LyricsApiDeleteLyricsRequest, options?: AxiosRequestConfig) {
+    public deleteLyrics(requestParameters: LyricsApiDeleteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).deleteLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -555,7 +565,7 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public downloadRemoteLyrics(requestParameters: LyricsApiDownloadRemoteLyricsRequest, options?: AxiosRequestConfig) {
+    public downloadRemoteLyrics(requestParameters: LyricsApiDownloadRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).downloadRemoteLyrics(requestParameters.itemId, requestParameters.lyricId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -567,7 +577,7 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public getLyrics(requestParameters: LyricsApiGetLyricsRequest, options?: AxiosRequestConfig) {
+    public getLyrics(requestParameters: LyricsApiGetLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).getLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -579,7 +589,7 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public getRemoteLyrics(requestParameters: LyricsApiGetRemoteLyricsRequest, options?: AxiosRequestConfig) {
+    public getRemoteLyrics(requestParameters: LyricsApiGetRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).getRemoteLyrics(requestParameters.lyricId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -591,7 +601,7 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public searchRemoteLyrics(requestParameters: LyricsApiSearchRemoteLyricsRequest, options?: AxiosRequestConfig) {
+    public searchRemoteLyrics(requestParameters: LyricsApiSearchRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).searchRemoteLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -603,7 +613,8 @@ export class LyricsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof LyricsApi
      */
-    public uploadLyrics(requestParameters: LyricsApiUploadLyricsRequest, options?: AxiosRequestConfig) {
+    public uploadLyrics(requestParameters: LyricsApiUploadLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).uploadLyrics(requestParameters.itemId, requestParameters.fileName, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

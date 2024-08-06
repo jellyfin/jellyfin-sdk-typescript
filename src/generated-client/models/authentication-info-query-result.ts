@@ -12,7 +12,9 @@
  */
 
 
-import { AuthenticationInfo } from './authentication-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { AuthenticationInfo } from './authentication-info';
 
 /**
  * 

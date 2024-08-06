@@ -12,7 +12,9 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * User deleted message.
@@ -39,4 +41,6 @@ export interface UserDeletedMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

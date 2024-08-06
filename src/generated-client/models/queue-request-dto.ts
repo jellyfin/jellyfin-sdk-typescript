@@ -12,7 +12,9 @@
  */
 
 
-import { GroupQueueMode } from './group-queue-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupQueueMode } from './group-queue-mode';
 
 /**
  * Class QueueRequestDto.
@@ -33,4 +35,6 @@ export interface QueueRequestDto {
      */
     'Mode'?: GroupQueueMode;
 }
+
+
 

@@ -12,10 +12,18 @@
  */
 
 
-import { InboundWebSocketMessage } from './inbound-web-socket-message';
-import { OutboundWebSocketMessage } from './outbound-web-socket-message';
-import { SessionMessageType } from './session-message-type';
-import { UserDto } from './user-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { InboundWebSocketMessage } from './inbound-web-socket-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { OutboundWebSocketMessage } from './outbound-web-socket-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDto } from './user-dto';
 
 /**
  * @type WebSocketMessage

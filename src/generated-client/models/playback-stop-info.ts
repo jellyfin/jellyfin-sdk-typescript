@@ -12,8 +12,12 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { QueueItem } from './queue-item';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemDto } from './base-item-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { QueueItem } from './queue-item';
 
 /**
  * Class PlaybackStopInfo.

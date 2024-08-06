@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { StartupConfigurationDto } from '../models';
+import type { StartupConfigurationDto } from '../models';
 // @ts-ignore
-import { StartupRemoteAccessDto } from '../models';
+import type { StartupRemoteAccessDto } from '../models';
 // @ts-ignore
-import { StartupUserDto } from '../models';
+import type { StartupUserDto } from '../models';
 /**
  * StartupApi - axios parameter creator
  * @export
@@ -37,7 +38,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        completeWizard: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        completeWizard: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/Complete`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -70,7 +71,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getFirstUser: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/User`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -103,7 +104,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser2: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getFirstUser2: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/FirstUser`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -136,7 +137,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getStartupConfiguration: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getStartupConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -170,7 +171,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRemoteAccess: async (startupRemoteAccessDto: StartupRemoteAccessDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        setRemoteAccess: async (startupRemoteAccessDto: StartupRemoteAccessDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'startupRemoteAccessDto' is not null or undefined
             assertParamExists('setRemoteAccess', 'startupRemoteAccessDto', startupRemoteAccessDto)
             const localVarPath = `/Startup/RemoteAccess`;
@@ -209,7 +210,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateInitialConfiguration: async (startupConfigurationDto: StartupConfigurationDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateInitialConfiguration: async (startupConfigurationDto: StartupConfigurationDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'startupConfigurationDto' is not null or undefined
             assertParamExists('updateInitialConfiguration', 'startupConfigurationDto', startupConfigurationDto)
             const localVarPath = `/Startup/Configuration`;
@@ -248,7 +249,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateStartupUser: async (startupUserDto?: StartupUserDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateStartupUser: async (startupUserDto?: StartupUserDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Startup/User`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -294,9 +295,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async completeWizard(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async completeWizard(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.completeWizard(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.completeWizard']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -304,9 +307,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getFirstUser(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
+        async getFirstUser(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getFirstUser(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.getFirstUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -314,9 +319,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getFirstUser2(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
+        async getFirstUser2(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getFirstUser2(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.getFirstUser2']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -324,9 +331,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getStartupConfiguration(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupConfigurationDto>> {
+        async getStartupConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupConfigurationDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getStartupConfiguration(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.getStartupConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -335,9 +344,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.setRemoteAccess(startupRemoteAccessDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.setRemoteAccess']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -346,9 +357,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateInitialConfiguration(startupConfigurationDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.updateInitialConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -357,9 +370,11 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateStartupUser(startupUserDto?: StartupUserDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateStartupUser(startupUserDto?: StartupUserDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateStartupUser(startupUserDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['StartupApi.updateStartupUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -377,7 +392,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        completeWizard(options?: any): AxiosPromise<void> {
+        completeWizard(options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.completeWizard(options).then((request) => request(axios, basePath));
         },
         /**
@@ -386,7 +401,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser(options?: any): AxiosPromise<StartupUserDto> {
+        getFirstUser(options?: RawAxiosRequestConfig): AxiosPromise<StartupUserDto> {
             return localVarFp.getFirstUser(options).then((request) => request(axios, basePath));
         },
         /**
@@ -395,7 +410,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getFirstUser2(options?: any): AxiosPromise<StartupUserDto> {
+        getFirstUser2(options?: RawAxiosRequestConfig): AxiosPromise<StartupUserDto> {
             return localVarFp.getFirstUser2(options).then((request) => request(axios, basePath));
         },
         /**
@@ -404,38 +419,38 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getStartupConfiguration(options?: any): AxiosPromise<StartupConfigurationDto> {
+        getStartupConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<StartupConfigurationDto> {
             return localVarFp.getStartupConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets remote access and UPnP.
-         * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
+         * @param {StartupApiSetRemoteAccessRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: any): AxiosPromise<void> {
-            return localVarFp.setRemoteAccess(startupRemoteAccessDto, options).then((request) => request(axios, basePath));
+        setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.setRemoteAccess(requestParameters.startupRemoteAccessDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the initial startup wizard configuration.
-         * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
+         * @param {StartupApiUpdateInitialConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateInitialConfiguration(startupConfigurationDto, options).then((request) => request(axios, basePath));
+        updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateInitialConfiguration(requestParameters.startupConfigurationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Sets the user name and password.
-         * @param {StartupUserDto} [startupUserDto] The DTO containing username and password.
+         * @param {StartupApiUpdateStartupUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateStartupUser(startupUserDto?: StartupUserDto, options?: any): AxiosPromise<void> {
-            return localVarFp.updateStartupUser(startupUserDto, options).then((request) => request(axios, basePath));
+        updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateStartupUser(requestParameters.startupUserDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -496,7 +511,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public completeWizard(options?: AxiosRequestConfig) {
+    public completeWizard(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).completeWizard(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -507,7 +522,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public getFirstUser(options?: AxiosRequestConfig) {
+    public getFirstUser(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getFirstUser(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -518,7 +533,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public getFirstUser2(options?: AxiosRequestConfig) {
+    public getFirstUser2(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getFirstUser2(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -529,7 +544,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public getStartupConfiguration(options?: AxiosRequestConfig) {
+    public getStartupConfiguration(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getStartupConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -541,7 +556,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: AxiosRequestConfig) {
+    public setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).setRemoteAccess(requestParameters.startupRemoteAccessDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -553,7 +568,7 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: AxiosRequestConfig) {
+    public updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).updateInitialConfiguration(requestParameters.startupConfigurationDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -565,7 +580,8 @@ export class StartupApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof StartupApi
      */
-    public updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: AxiosRequestConfig) {
+    public updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).updateStartupUser(requestParameters.startupUserDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

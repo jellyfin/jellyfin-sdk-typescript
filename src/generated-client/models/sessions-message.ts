@@ -12,8 +12,12 @@
  */
 
 
-import { SessionInfo } from './session-info';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionInfo } from './session-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Sessions message.
@@ -40,4 +44,6 @@ export interface SessionsMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

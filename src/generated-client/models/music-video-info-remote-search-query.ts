@@ -12,7 +12,9 @@
  */
 
 
-import { MusicVideoInfo } from './music-video-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MusicVideoInfo } from './music-video-info';
 
 /**
  * 

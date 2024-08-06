@@ -12,7 +12,9 @@
  */
 
 
-import { PlayCommand } from './play-command';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayCommand } from './play-command';
 
 /**
  * Class PlayRequest.
@@ -69,4 +71,6 @@ export interface PlayRequest {
      */
     'StartIndex'?: number | null;
 }
+
+
 

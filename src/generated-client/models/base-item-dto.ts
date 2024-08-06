@@ -12,30 +12,78 @@
  */
 
 
-import { BaseItemDtoImageBlurHashes } from './base-item-dto-image-blur-hashes';
-import { BaseItemKind } from './base-item-kind';
-import { BaseItemPerson } from './base-item-person';
-import { ChannelType } from './channel-type';
-import { ChapterInfo } from './chapter-info';
-import { CollectionType } from './collection-type';
-import { DayOfWeek } from './day-of-week';
-import { ExternalUrl } from './external-url';
-import { ExtraType } from './extra-type';
-import { ImageOrientation } from './image-orientation';
-import { IsoType } from './iso-type';
-import { LocationType } from './location-type';
-import { MediaSourceInfo } from './media-source-info';
-import { MediaStream } from './media-stream';
-import { MediaType } from './media-type';
-import { MediaUrl } from './media-url';
-import { MetadataField } from './metadata-field';
-import { NameGuidPair } from './name-guid-pair';
-import { PlayAccess } from './play-access';
-import { ProgramAudio } from './program-audio';
-import { TrickplayInfo } from './trickplay-info';
-import { UserItemDataDto } from './user-item-data-dto';
-import { Video3DFormat } from './video3-dformat';
-import { VideoType } from './video-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemDtoImageBlurHashes } from './base-item-dto-image-blur-hashes';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemKind } from './base-item-kind';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemPerson } from './base-item-person';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ChannelType } from './channel-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ChapterInfo } from './chapter-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CollectionType } from './collection-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DayOfWeek } from './day-of-week';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ExternalUrl } from './external-url';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ExtraType } from './extra-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageOrientation } from './image-orientation';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { IsoType } from './iso-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LocationType } from './location-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaSourceInfo } from './media-source-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaStream } from './media-stream';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaType } from './media-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaUrl } from './media-url';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MetadataField } from './metadata-field';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { NameGuidPair } from './name-guid-pair';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayAccess } from './play-access';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProgramAudio } from './program-audio';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TrickplayInfo } from './trickplay-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserItemDataDto } from './user-item-data-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { Video3DFormat } from './video3-dformat';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { VideoType } from './video-type';
 
 /**
  * This is strictly used as a data transfer object from the api layer.  This holds information about a BaseItem in a format that is convenient for the client.
@@ -345,10 +393,10 @@ export interface BaseItemDto {
     'RemoteTrailers'?: Array<MediaUrl> | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof BaseItemDto
      */
-    'ProviderIds'?: { [key: string]: string; } | null;
+    'ProviderIds'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets a value indicating whether this instance is HD.
      * @type {boolean}
@@ -962,4 +1010,6 @@ export interface BaseItemDto {
      */
     'CurrentProgram'?: BaseItemDto;
 }
+
+
 

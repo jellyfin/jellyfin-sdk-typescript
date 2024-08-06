@@ -12,10 +12,18 @@
  */
 
 
-import { ImageType } from './image-type';
-import { ItemFields } from './item-fields';
-import { ItemSortBy } from './item-sort-by';
-import { SortOrder } from './sort-order';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageType } from './image-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ItemFields } from './item-fields';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ItemSortBy } from './item-sort-by';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SortOrder } from './sort-order';
 
 /**
  * Get programs dto.

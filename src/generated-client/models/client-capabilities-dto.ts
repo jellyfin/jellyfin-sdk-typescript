@@ -12,9 +12,15 @@
  */
 
 
-import { DeviceProfile } from './device-profile';
-import { GeneralCommandType } from './general-command-type';
-import { MediaType } from './media-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DeviceProfile } from './device-profile';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GeneralCommandType } from './general-command-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaType } from './media-type';
 
 /**
  * Client capabilities dto.

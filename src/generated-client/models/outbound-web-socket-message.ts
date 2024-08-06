@@ -12,42 +12,102 @@
  */
 
 
-import { ActivityLogEntryMessage } from './activity-log-entry-message';
-import { ForceKeepAliveMessage } from './force-keep-alive-message';
-import { GeneralCommandMessage } from './general-command-message';
-import { LibraryChangedMessage } from './library-changed-message';
-import { OutboundKeepAliveMessage } from './outbound-keep-alive-message';
-import { PlayMessage } from './play-message';
-import { PlaystateMessage } from './playstate-message';
-import { PluginInstallationCancelledMessage } from './plugin-installation-cancelled-message';
-import { PluginInstallationCompletedMessage } from './plugin-installation-completed-message';
-import { PluginInstallationFailedMessage } from './plugin-installation-failed-message';
-import { PluginInstallingMessage } from './plugin-installing-message';
-import { PluginUninstalledMessage } from './plugin-uninstalled-message';
-import { RefreshProgressMessage } from './refresh-progress-message';
-import { RestartRequiredMessage } from './restart-required-message';
-import { ScheduledTaskEndedMessage } from './scheduled-task-ended-message';
-import { ScheduledTasksInfoMessage } from './scheduled-tasks-info-message';
-import { SeriesTimerCancelledMessage } from './series-timer-cancelled-message';
-import { SeriesTimerCreatedMessage } from './series-timer-created-message';
-import { ServerRestartingMessage } from './server-restarting-message';
-import { ServerShuttingDownMessage } from './server-shutting-down-message';
-import { SessionMessageType } from './session-message-type';
-import { SessionsMessage } from './sessions-message';
-import { SyncPlayCommandMessage } from './sync-play-command-message';
-import { SyncPlayGroupUpdateCommandMessage } from './sync-play-group-update-command-message';
-import { TimerCancelledMessage } from './timer-cancelled-message';
-import { TimerCreatedMessage } from './timer-created-message';
-import { UserDataChangedMessage } from './user-data-changed-message';
-import { UserDeletedMessage } from './user-deleted-message';
-import { UserDto } from './user-dto';
-import { UserUpdatedMessage } from './user-updated-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ActivityLogEntryMessage } from './activity-log-entry-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ForceKeepAliveMessage } from './force-keep-alive-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GeneralCommandMessage } from './general-command-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LibraryChangedMessage } from './library-changed-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { OutboundKeepAliveMessage } from './outbound-keep-alive-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayMessage } from './play-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaystateMessage } from './playstate-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginInstallationCancelledMessage } from './plugin-installation-cancelled-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginInstallationCompletedMessage } from './plugin-installation-completed-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginInstallationFailedMessage } from './plugin-installation-failed-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginInstallingMessage } from './plugin-installing-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginUninstalledMessage } from './plugin-uninstalled-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RefreshProgressMessage } from './refresh-progress-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RestartRequiredMessage } from './restart-required-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ScheduledTaskEndedMessage } from './scheduled-task-ended-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ScheduledTasksInfoMessage } from './scheduled-tasks-info-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SeriesTimerCancelledMessage } from './series-timer-cancelled-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SeriesTimerCreatedMessage } from './series-timer-created-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ServerRestartingMessage } from './server-restarting-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ServerShuttingDownMessage } from './server-shutting-down-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionsMessage } from './sessions-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayCommandMessage } from './sync-play-command-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SyncPlayGroupUpdateCommandMessage } from './sync-play-group-update-command-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TimerCancelledMessage } from './timer-cancelled-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TimerCreatedMessage } from './timer-created-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDataChangedMessage } from './user-data-changed-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDeletedMessage } from './user-deleted-message';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDto } from './user-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserUpdatedMessage } from './user-updated-message';
 
 /**
  * @type OutboundWebSocketMessage
  * Represents the list of possible outbound websocket types
  * @export
  */
-export type OutboundWebSocketMessage = ActivityLogEntryMessage | ForceKeepAliveMessage | GeneralCommandMessage | LibraryChangedMessage | OutboundKeepAliveMessage | PlayMessage | PlaystateMessage | PluginInstallationCancelledMessage | PluginInstallationCompletedMessage | PluginInstallationFailedMessage | PluginInstallingMessage | PluginUninstalledMessage | RefreshProgressMessage | RestartRequiredMessage | ScheduledTaskEndedMessage | ScheduledTasksInfoMessage | SeriesTimerCancelledMessage | SeriesTimerCreatedMessage | ServerRestartingMessage | ServerShuttingDownMessage | SessionsMessage | SyncPlayCommandMessage | SyncPlayGroupUpdateCommandMessage | TimerCancelledMessage | TimerCreatedMessage | UserDataChangedMessage | UserDeletedMessage | UserUpdatedMessage;
+export type OutboundWebSocketMessage = { MessageType: 'ActivityLogEntry' } & ActivityLogEntryMessage | { MessageType: 'ForceKeepAlive' } & ForceKeepAliveMessage | { MessageType: 'GeneralCommand' } & GeneralCommandMessage | { MessageType: 'KeepAlive' } & OutboundKeepAliveMessage | { MessageType: 'LibraryChanged' } & LibraryChangedMessage | { MessageType: 'PackageInstallationCancelled' } & PluginInstallationCancelledMessage | { MessageType: 'PackageInstallationCompleted' } & PluginInstallationCompletedMessage | { MessageType: 'PackageInstallationFailed' } & PluginInstallationFailedMessage | { MessageType: 'PackageInstalling' } & PluginInstallingMessage | { MessageType: 'PackageUninstalled' } & PluginUninstalledMessage | { MessageType: 'Play' } & PlayMessage | { MessageType: 'Playstate' } & PlaystateMessage | { MessageType: 'RefreshProgress' } & RefreshProgressMessage | { MessageType: 'RestartRequired' } & RestartRequiredMessage | { MessageType: 'ScheduledTaskEnded' } & ScheduledTaskEndedMessage | { MessageType: 'ScheduledTasksInfo' } & ScheduledTasksInfoMessage | { MessageType: 'SeriesTimerCancelled' } & SeriesTimerCancelledMessage | { MessageType: 'SeriesTimerCreated' } & SeriesTimerCreatedMessage | { MessageType: 'ServerRestarting' } & ServerRestartingMessage | { MessageType: 'ServerShuttingDown' } & ServerShuttingDownMessage | { MessageType: 'Sessions' } & SessionsMessage | { MessageType: 'SyncPlayCommand' } & SyncPlayCommandMessage | { MessageType: 'SyncPlayGroupUpdate' } & SyncPlayGroupUpdateCommandMessage | { MessageType: 'TimerCancelled' } & TimerCancelledMessage | { MessageType: 'TimerCreated' } & TimerCreatedMessage | { MessageType: 'UserDataChanged' } & UserDataChangedMessage | { MessageType: 'UserDeleted' } & UserDeletedMessage | { MessageType: 'UserUpdated' } & UserUpdatedMessage;
 
 

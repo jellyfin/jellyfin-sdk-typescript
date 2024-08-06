@@ -12,8 +12,12 @@
  */
 
 
-import { GroupInfoDto } from './group-info-dto';
-import { GroupUpdateType } from './group-update-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupInfoDto } from './group-info-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupUpdateType } from './group-update-type';
 
 /**
  * Class GroupUpdate.
@@ -40,4 +44,6 @@ export interface GroupInfoDtoGroupUpdate {
      */
     'Data'?: GroupInfoDto;
 }
+
+
 

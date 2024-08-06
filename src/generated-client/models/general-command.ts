@@ -12,7 +12,9 @@
  */
 
 
-import { GeneralCommandType } from './general-command-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GeneralCommandType } from './general-command-type';
 
 /**
  * 
@@ -34,9 +36,11 @@ export interface GeneralCommand {
     'ControllingUserId'?: string;
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof GeneralCommand
      */
-    'Arguments'?: { [key: string]: string; };
+    'Arguments'?: { [key: string]: string | null; };
 }
+
+
 

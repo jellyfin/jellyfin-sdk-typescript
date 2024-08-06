@@ -12,8 +12,12 @@
  */
 
 
-import { CastReceiverApplication } from './cast-receiver-application';
-import { InstallationInfo } from './installation-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { CastReceiverApplication } from './cast-receiver-application';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { InstallationInfo } from './installation-info';
 
 /**
  * Class SystemInfo.

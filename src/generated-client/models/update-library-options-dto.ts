@@ -12,7 +12,9 @@
  */
 
 
-import { LibraryOptions } from './library-options';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LibraryOptions } from './library-options';
 
 /**
  * Update library options dto.

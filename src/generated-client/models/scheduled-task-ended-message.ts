@@ -12,8 +12,12 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
-import { TaskResult } from './task-result';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TaskResult } from './task-result';
 
 /**
  * Scheduled task ended message.
@@ -40,4 +44,6 @@ export interface ScheduledTaskEndedMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

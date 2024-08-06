@@ -12,39 +12,40 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { AuthenticateUserByName } from '../models';
+import type { AuthenticateUserByName } from '../models';
 // @ts-ignore
-import { AuthenticationResult } from '../models';
+import type { AuthenticationResult } from '../models';
 // @ts-ignore
-import { CreateUserByName } from '../models';
+import type { CreateUserByName } from '../models';
 // @ts-ignore
-import { ForgotPasswordDto } from '../models';
+import type { ForgotPasswordDto } from '../models';
 // @ts-ignore
-import { ForgotPasswordPinDto } from '../models';
+import type { ForgotPasswordPinDto } from '../models';
 // @ts-ignore
-import { ForgotPasswordResult } from '../models';
+import type { ForgotPasswordResult } from '../models';
 // @ts-ignore
-import { PinRedeemResult } from '../models';
+import type { PinRedeemResult } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { QuickConnectDto } from '../models';
+import type { QuickConnectDto } from '../models';
 // @ts-ignore
-import { UpdateUserPassword } from '../models';
+import type { UpdateUserPassword } from '../models';
 // @ts-ignore
-import { UserConfiguration } from '../models';
+import type { UserConfiguration } from '../models';
 // @ts-ignore
-import { UserDto } from '../models';
+import type { UserDto } from '../models';
 // @ts-ignore
-import { UserPolicy } from '../models';
+import type { UserPolicy } from '../models';
 /**
  * UserApi - axios parameter creator
  * @export
@@ -58,7 +59,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName: async (authenticateUserByName: AuthenticateUserByName, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        authenticateUserByName: async (authenticateUserByName: AuthenticateUserByName, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'authenticateUserByName' is not null or undefined
             assertParamExists('authenticateUserByName', 'authenticateUserByName', authenticateUserByName)
             const localVarPath = `/Users/AuthenticateByName`;
@@ -94,7 +95,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect: async (quickConnectDto: QuickConnectDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        authenticateWithQuickConnect: async (quickConnectDto: QuickConnectDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'quickConnectDto' is not null or undefined
             assertParamExists('authenticateWithQuickConnect', 'quickConnectDto', quickConnectDto)
             const localVarPath = `/Users/AuthenticateWithQuickConnect`;
@@ -130,7 +131,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName: async (createUserByName: CreateUserByName, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        createUserByName: async (createUserByName: CreateUserByName, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'createUserByName' is not null or undefined
             assertParamExists('createUserByName', 'createUserByName', createUserByName)
             const localVarPath = `/Users/New`;
@@ -169,7 +170,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUser: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        deleteUser: async (userId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('deleteUser', 'userId', userId)
             const localVarPath = `/Users/{userId}`
@@ -206,7 +207,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword: async (forgotPasswordDto: ForgotPasswordDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        forgotPassword: async (forgotPasswordDto: ForgotPasswordDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'forgotPasswordDto' is not null or undefined
             assertParamExists('forgotPassword', 'forgotPasswordDto', forgotPasswordDto)
             const localVarPath = `/Users/ForgotPassword`;
@@ -242,7 +243,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin: async (forgotPasswordPinDto: ForgotPasswordPinDto, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        forgotPasswordPin: async (forgotPasswordPinDto: ForgotPasswordPinDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'forgotPasswordPinDto' is not null or undefined
             assertParamExists('forgotPasswordPin', 'forgotPasswordPinDto', forgotPasswordPinDto)
             const localVarPath = `/Users/ForgotPassword/Pin`;
@@ -277,7 +278,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCurrentUser: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getCurrentUser: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users/Me`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -310,7 +311,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicUsers: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPublicUsers: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users/Public`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -341,7 +342,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserById: async (userId: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getUserById: async (userId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('getUserById', 'userId', userId)
             const localVarPath = `/Users/{userId}`
@@ -379,7 +380,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUsers: async (isHidden?: boolean, isDisabled?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getUsers: async (isHidden?: boolean, isDisabled?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Users`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -422,7 +423,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser: async (userDto: UserDto, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateUser: async (userDto: UserDto, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userDto' is not null or undefined
             assertParamExists('updateUser', 'userDto', userDto)
             const localVarPath = `/Users`;
@@ -466,7 +467,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration: async (userConfiguration: UserConfiguration, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateUserConfiguration: async (userConfiguration: UserConfiguration, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userConfiguration' is not null or undefined
             assertParamExists('updateUserConfiguration', 'userConfiguration', userConfiguration)
             const localVarPath = `/Users/Configuration`;
@@ -510,7 +511,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword: async (updateUserPassword: UpdateUserPassword, userId?: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateUserPassword: async (updateUserPassword: UpdateUserPassword, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'updateUserPassword' is not null or undefined
             assertParamExists('updateUserPassword', 'updateUserPassword', updateUserPassword)
             const localVarPath = `/Users/Password`;
@@ -554,7 +555,7 @@ export const UserApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy: async (userId: string, userPolicy: UserPolicy, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        updateUserPolicy: async (userId: string, userPolicy: UserPolicy, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'userId' is not null or undefined
             assertParamExists('updateUserPolicy', 'userId', userId)
             // verify required parameter 'userPolicy' is not null or undefined
@@ -606,9 +607,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+        async authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateUserByName(authenticateUserByName, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.authenticateUserByName']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -617,9 +620,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
+        async authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.authenticateWithQuickConnect(quickConnectDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.authenticateWithQuickConnect']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -628,9 +633,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createUserByName(createUserByName: CreateUserByName, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async createUserByName(createUserByName: CreateUserByName, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createUserByName(createUserByName, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.createUserByName']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -639,9 +646,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteUser(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteUser(userId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteUser(userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.deleteUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -650,9 +659,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
+        async forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ForgotPasswordResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPassword(forgotPasswordDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.forgotPassword']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -661,9 +672,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
+        async forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PinRedeemResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.forgotPasswordPin(forgotPasswordPinDto, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.forgotPasswordPin']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -671,9 +684,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getCurrentUser(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async getCurrentUser(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getCurrentUser(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.getCurrentUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -681,9 +696,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPublicUsers(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
+        async getPublicUsers(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPublicUsers(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.getPublicUsers']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -692,9 +709,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUserById(userId: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
+        async getUserById(userId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUserById(userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.getUserById']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -704,9 +723,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUsers(isHidden?: boolean, isDisabled?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
+        async getUsers(isHidden?: boolean, isDisabled?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<UserDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getUsers(isHidden, isDisabled, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.getUsers']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -716,9 +737,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUser(userDto: UserDto, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUser(userDto: UserDto, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUser(userDto, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.updateUser']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -728,9 +751,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserConfiguration(userConfiguration: UserConfiguration, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserConfiguration(userConfiguration: UserConfiguration, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserConfiguration(userConfiguration, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.updateUserConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -740,9 +765,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPassword(updateUserPassword: UpdateUserPassword, userId?: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserPassword(updateUserPassword: UpdateUserPassword, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPassword(updateUserPassword, userId, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.updateUserPassword']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -752,9 +779,11 @@ export const UserApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateUserPolicy(userId, userPolicy, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserApi.updateUserPolicy']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -769,62 +798,62 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
         /**
          * 
          * @summary Authenticates a user by name.
-         * @param {AuthenticateUserByName} authenticateUserByName The M:Jellyfin.Api.Controllers.UserController.AuthenticateUserByName(Jellyfin.Api.Models.UserDtos.AuthenticateUserByName) request.
+         * @param {UserApiAuthenticateUserByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateUserByName(authenticateUserByName: AuthenticateUserByName, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateUserByName(authenticateUserByName, options).then((request) => request(axios, basePath));
+        authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: RawAxiosRequestConfig): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateUserByName(requestParameters.authenticateUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Authenticates a user with quick connect.
-         * @param {QuickConnectDto} quickConnectDto The Jellyfin.Api.Models.UserDtos.QuickConnectDto request.
+         * @param {UserApiAuthenticateWithQuickConnectRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        authenticateWithQuickConnect(quickConnectDto: QuickConnectDto, options?: any): AxiosPromise<AuthenticationResult> {
-            return localVarFp.authenticateWithQuickConnect(quickConnectDto, options).then((request) => request(axios, basePath));
+        authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: RawAxiosRequestConfig): AxiosPromise<AuthenticationResult> {
+            return localVarFp.authenticateWithQuickConnect(requestParameters.quickConnectDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Creates a user.
-         * @param {CreateUserByName} createUserByName The create user by name request body.
+         * @param {UserApiCreateUserByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createUserByName(createUserByName: CreateUserByName, options?: any): AxiosPromise<UserDto> {
-            return localVarFp.createUserByName(createUserByName, options).then((request) => request(axios, basePath));
+        createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserDto> {
+            return localVarFp.createUserByName(requestParameters.createUserByName, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Deletes a user.
-         * @param {string} userId The user id.
+         * @param {UserApiDeleteUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteUser(userId: string, options?: any): AxiosPromise<void> {
-            return localVarFp.deleteUser(userId, options).then((request) => request(axios, basePath));
+        deleteUser(requestParameters: UserApiDeleteUserRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.deleteUser(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Initiates the forgot password process for a local user.
-         * @param {ForgotPasswordDto} forgotPasswordDto The forgot password request containing the entered username.
+         * @param {UserApiForgotPasswordRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPassword(forgotPasswordDto: ForgotPasswordDto, options?: any): AxiosPromise<ForgotPasswordResult> {
-            return localVarFp.forgotPassword(forgotPasswordDto, options).then((request) => request(axios, basePath));
+        forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: RawAxiosRequestConfig): AxiosPromise<ForgotPasswordResult> {
+            return localVarFp.forgotPassword(requestParameters.forgotPasswordDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Redeems a forgot password pin.
-         * @param {ForgotPasswordPinDto} forgotPasswordPinDto The forgot password pin request containing the entered pin.
+         * @param {UserApiForgotPasswordPinRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        forgotPasswordPin(forgotPasswordPinDto: ForgotPasswordPinDto, options?: any): AxiosPromise<PinRedeemResult> {
-            return localVarFp.forgotPasswordPin(forgotPasswordPinDto, options).then((request) => request(axios, basePath));
+        forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: RawAxiosRequestConfig): AxiosPromise<PinRedeemResult> {
+            return localVarFp.forgotPasswordPin(requestParameters.forgotPasswordPinDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -832,7 +861,7 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getCurrentUser(options?: any): AxiosPromise<UserDto> {
+        getCurrentUser(options?: RawAxiosRequestConfig): AxiosPromise<UserDto> {
             return localVarFp.getCurrentUser(options).then((request) => request(axios, basePath));
         },
         /**
@@ -841,73 +870,68 @@ export const UserApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicUsers(options?: any): AxiosPromise<Array<UserDto>> {
+        getPublicUsers(options?: RawAxiosRequestConfig): AxiosPromise<Array<UserDto>> {
             return localVarFp.getPublicUsers(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a user by Id.
-         * @param {string} userId The user id.
+         * @param {UserApiGetUserByIdRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserById(userId: string, options?: any): AxiosPromise<UserDto> {
-            return localVarFp.getUserById(userId, options).then((request) => request(axios, basePath));
+        getUserById(requestParameters: UserApiGetUserByIdRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserDto> {
+            return localVarFp.getUserById(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a list of users.
-         * @param {boolean} [isHidden] Optional filter by IsHidden&#x3D;true or false.
-         * @param {boolean} [isDisabled] Optional filter by IsDisabled&#x3D;true or false.
+         * @param {UserApiGetUsersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUsers(isHidden?: boolean, isDisabled?: boolean, options?: any): AxiosPromise<Array<UserDto>> {
-            return localVarFp.getUsers(isHidden, isDisabled, options).then((request) => request(axios, basePath));
+        getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<UserDto>> {
+            return localVarFp.getUsers(requestParameters.isHidden, requestParameters.isDisabled, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user.
-         * @param {UserDto} userDto The updated user model.
-         * @param {string} [userId] The user id.
+         * @param {UserApiUpdateUserRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUser(userDto: UserDto, userId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUser(userDto, userId, options).then((request) => request(axios, basePath));
+        updateUser(requestParameters: UserApiUpdateUserRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUser(requestParameters.userDto, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user configuration.
-         * @param {UserConfiguration} userConfiguration The new user configuration.
-         * @param {string} [userId] The user id.
+         * @param {UserApiUpdateUserConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserConfiguration(userConfiguration: UserConfiguration, userId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserConfiguration(userConfiguration, userId, options).then((request) => request(axios, basePath));
+        updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserConfiguration(requestParameters.userConfiguration, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user\'s password.
-         * @param {UpdateUserPassword} updateUserPassword The M:Jellyfin.Api.Controllers.UserController.UpdateUserPassword(System.Nullable{System.Guid},Jellyfin.Api.Models.UserDtos.UpdateUserPassword) request.
-         * @param {string} [userId] The user id.
+         * @param {UserApiUpdateUserPasswordRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPassword(updateUserPassword: UpdateUserPassword, userId?: string, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPassword(updateUserPassword, userId, options).then((request) => request(axios, basePath));
+        updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserPassword(requestParameters.updateUserPassword, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Updates a user policy.
-         * @param {string} userId The user id.
-         * @param {UserPolicy} userPolicy The new user policy.
+         * @param {UserApiUpdateUserPolicyRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateUserPolicy(userId: string, userPolicy: UserPolicy, options?: any): AxiosPromise<void> {
-            return localVarFp.updateUserPolicy(userId, userPolicy, options).then((request) => request(axios, basePath));
+        updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateUserPolicy(requestParameters.userId, requestParameters.userPolicy, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1130,7 +1154,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: AxiosRequestConfig) {
+    public authenticateUserByName(requestParameters: UserApiAuthenticateUserByNameRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).authenticateUserByName(requestParameters.authenticateUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1142,7 +1166,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: AxiosRequestConfig) {
+    public authenticateWithQuickConnect(requestParameters: UserApiAuthenticateWithQuickConnectRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).authenticateWithQuickConnect(requestParameters.quickConnectDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1154,7 +1178,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: AxiosRequestConfig) {
+    public createUserByName(requestParameters: UserApiCreateUserByNameRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).createUserByName(requestParameters.createUserByName, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1166,7 +1190,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public deleteUser(requestParameters: UserApiDeleteUserRequest, options?: AxiosRequestConfig) {
+    public deleteUser(requestParameters: UserApiDeleteUserRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).deleteUser(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1178,7 +1202,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: AxiosRequestConfig) {
+    public forgotPassword(requestParameters: UserApiForgotPasswordRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).forgotPassword(requestParameters.forgotPasswordDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1190,7 +1214,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: AxiosRequestConfig) {
+    public forgotPasswordPin(requestParameters: UserApiForgotPasswordPinRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).forgotPasswordPin(requestParameters.forgotPasswordPinDto, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1201,7 +1225,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getCurrentUser(options?: AxiosRequestConfig) {
+    public getCurrentUser(options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).getCurrentUser(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1212,7 +1236,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getPublicUsers(options?: AxiosRequestConfig) {
+    public getPublicUsers(options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).getPublicUsers(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1224,7 +1248,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getUserById(requestParameters: UserApiGetUserByIdRequest, options?: AxiosRequestConfig) {
+    public getUserById(requestParameters: UserApiGetUserByIdRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).getUserById(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1236,7 +1260,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: AxiosRequestConfig) {
+    public getUsers(requestParameters: UserApiGetUsersRequest = {}, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).getUsers(requestParameters.isHidden, requestParameters.isDisabled, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1248,7 +1272,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUser(requestParameters: UserApiUpdateUserRequest, options?: AxiosRequestConfig) {
+    public updateUser(requestParameters: UserApiUpdateUserRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUser(requestParameters.userDto, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1260,7 +1284,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: AxiosRequestConfig) {
+    public updateUserConfiguration(requestParameters: UserApiUpdateUserConfigurationRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserConfiguration(requestParameters.userConfiguration, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1272,7 +1296,7 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: AxiosRequestConfig) {
+    public updateUserPassword(requestParameters: UserApiUpdateUserPasswordRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserPassword(requestParameters.updateUserPassword, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -1284,7 +1308,8 @@ export class UserApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof UserApi
      */
-    public updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: AxiosRequestConfig) {
+    public updateUserPolicy(requestParameters: UserApiUpdateUserPolicyRequest, options?: RawAxiosRequestConfig) {
         return UserApiFp(this.configuration).updateUserPolicy(requestParameters.userId, requestParameters.userPolicy, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

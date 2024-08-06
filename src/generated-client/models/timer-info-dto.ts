@@ -12,9 +12,15 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { KeepUntil } from './keep-until';
-import { RecordingStatus } from './recording-status';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemDto } from './base-item-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { KeepUntil } from './keep-until';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RecordingStatus } from './recording-status';
 
 /**
  * 
@@ -191,4 +197,6 @@ export interface TimerInfoDto {
      */
     'ProgramInfo'?: BaseItemDto;
 }
+
+
 

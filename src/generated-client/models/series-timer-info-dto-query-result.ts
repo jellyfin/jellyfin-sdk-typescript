@@ -12,7 +12,9 @@
  */
 
 
-import { SeriesTimerInfoDto } from './series-timer-info-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SeriesTimerInfoDto } from './series-timer-info-dto';
 
 /**
  * 

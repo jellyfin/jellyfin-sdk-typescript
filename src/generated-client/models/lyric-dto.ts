@@ -12,8 +12,12 @@
  */
 
 
-import { LyricLine } from './lyric-line';
-import { LyricMetadata } from './lyric-metadata';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LyricLine } from './lyric-line';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { LyricMetadata } from './lyric-metadata';
 
 /**
  * LyricResponse model.

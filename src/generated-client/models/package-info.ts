@@ -12,7 +12,9 @@
  */
 
 
-import { VersionInfo } from './version-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { VersionInfo } from './version-info';
 
 /**
  * Class PackageInfo.

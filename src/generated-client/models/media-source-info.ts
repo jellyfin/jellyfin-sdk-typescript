@@ -12,15 +12,33 @@
  */
 
 
-import { IsoType } from './iso-type';
-import { MediaAttachment } from './media-attachment';
-import { MediaProtocol } from './media-protocol';
-import { MediaSourceType } from './media-source-type';
-import { MediaStream } from './media-stream';
-import { MediaStreamProtocol } from './media-stream-protocol';
-import { TransportStreamTimestamp } from './transport-stream-timestamp';
-import { Video3DFormat } from './video3-dformat';
-import { VideoType } from './video-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { IsoType } from './iso-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaAttachment } from './media-attachment';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaProtocol } from './media-protocol';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaSourceType } from './media-source-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaStream } from './media-stream';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaStreamProtocol } from './media-stream-protocol';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TransportStreamTimestamp } from './transport-stream-timestamp';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { Video3DFormat } from './video3-dformat';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { VideoType } from './video-type';
 
 /**
  * 
@@ -240,10 +258,10 @@ export interface MediaSourceInfo {
     'Timestamp'?: TransportStreamTimestamp;
     /**
      * 
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof MediaSourceInfo
      */
-    'RequiredHttpHeaders'?: { [key: string]: string; } | null;
+    'RequiredHttpHeaders'?: { [key: string]: string | null; } | null;
     /**
      * 
      * @type {string}
@@ -281,4 +299,6 @@ export interface MediaSourceInfo {
      */
     'DefaultSubtitleStreamIndex'?: number | null;
 }
+
+
 

@@ -12,8 +12,12 @@
  */
 
 
-import { MediaSourceInfo } from './media-source-info';
-import { PlaybackErrorCode } from './playback-error-code';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaSourceInfo } from './media-source-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaybackErrorCode } from './playback-error-code';
 
 /**
  * Class PlaybackInfoResponse.
@@ -40,4 +44,6 @@ export interface PlaybackInfoResponse {
      */
     'ErrorCode'?: PlaybackErrorCode;
 }
+
+
 

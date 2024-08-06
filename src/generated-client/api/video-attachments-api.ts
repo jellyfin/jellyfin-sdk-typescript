@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 /**
  * VideoAttachmentsApi - axios parameter creator
  * @export
@@ -36,7 +37,7 @@ export const VideoAttachmentsApiAxiosParamCreator = function (configuration?: Co
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAttachment: async (videoId: string, mediaSourceId: string, index: number, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getAttachment: async (videoId: string, mediaSourceId: string, index: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'videoId' is not null or undefined
             assertParamExists('getAttachment', 'videoId', videoId)
             // verify required parameter 'mediaSourceId' is not null or undefined
@@ -88,9 +89,11 @@ export const VideoAttachmentsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getAttachment(videoId: string, mediaSourceId: string, index: number, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getAttachment(videoId: string, mediaSourceId: string, index: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAttachment(videoId, mediaSourceId, index, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['VideoAttachmentsApi.getAttachment']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -105,14 +108,12 @@ export const VideoAttachmentsApiFactory = function (configuration?: Configuratio
         /**
          * 
          * @summary Get video attachment.
-         * @param {string} videoId Video ID.
-         * @param {string} mediaSourceId Media Source ID.
-         * @param {number} index Attachment Index.
+         * @param {VideoAttachmentsApiGetAttachmentRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getAttachment(videoId: string, mediaSourceId: string, index: number, options?: any): AxiosPromise<any> {
-            return localVarFp.getAttachment(videoId, mediaSourceId, index, options).then((request) => request(axios, basePath));
+        getAttachment(requestParameters: VideoAttachmentsApiGetAttachmentRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getAttachment(requestParameters.videoId, requestParameters.mediaSourceId, requestParameters.index, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -160,7 +161,8 @@ export class VideoAttachmentsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof VideoAttachmentsApi
      */
-    public getAttachment(requestParameters: VideoAttachmentsApiGetAttachmentRequest, options?: AxiosRequestConfig) {
+    public getAttachment(requestParameters: VideoAttachmentsApiGetAttachmentRequest, options?: RawAxiosRequestConfig) {
         return VideoAttachmentsApiFp(this.configuration).getAttachment(requestParameters.videoId, requestParameters.mediaSourceId, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

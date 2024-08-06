@@ -12,19 +12,20 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { BaseItemDtoQueryResult } from '../models';
+import type { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
-import { BaseItemKind } from '../models';
+import type { BaseItemKind } from '../models';
 // @ts-ignore
-import { MediaType } from '../models';
+import type { MediaType } from '../models';
 /**
  * SuggestionsApi - axios parameter creator
  * @export
@@ -43,7 +44,7 @@ export const SuggestionsApiAxiosParamCreator = function (configuration?: Configu
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSuggestions: async (userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSuggestions: async (userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Suggestions`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -116,9 +117,11 @@ export const SuggestionsApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSuggestions(userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+        async getSuggestions(userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSuggestions(userId, mediaType, type, startIndex, limit, enableTotalRecordCount, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SuggestionsApi.getSuggestions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -133,17 +136,12 @@ export const SuggestionsApiFactory = function (configuration?: Configuration, ba
         /**
          * 
          * @summary Gets suggestions.
-         * @param {string} [userId] The user id.
-         * @param {Array<MediaType>} [mediaType] The media types.
-         * @param {Array<BaseItemKind>} [type] The type.
-         * @param {number} [startIndex] Optional. The start index.
-         * @param {number} [limit] Optional. The limit.
-         * @param {boolean} [enableTotalRecordCount] Whether to enable the total record count.
+         * @param {SuggestionsApiGetSuggestionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSuggestions(userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options?: any): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getSuggestions(userId, mediaType, type, startIndex, limit, enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -212,7 +210,8 @@ export class SuggestionsApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SuggestionsApi
      */
-    public getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: AxiosRequestConfig) {
+    public getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig) {
         return SuggestionsApiFp(this.configuration).getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 }
+

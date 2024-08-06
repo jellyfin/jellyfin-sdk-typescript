@@ -12,7 +12,9 @@
  */
 
 
-import { ImageOption } from './image-option';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageOption } from './image-option';
 
 /**
  * 

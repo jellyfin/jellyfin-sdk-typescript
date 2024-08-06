@@ -12,7 +12,9 @@
  */
 
 
-import { ImageType } from './image-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ImageType } from './image-type';
 
 /**
  * Class ImageInfo.
@@ -69,4 +71,6 @@ export interface ImageInfo {
      */
     'Size'?: number;
 }
+
+
 

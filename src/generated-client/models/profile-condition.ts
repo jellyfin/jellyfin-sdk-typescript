@@ -12,8 +12,12 @@
  */
 
 
-import { ProfileConditionType } from './profile-condition-type';
-import { ProfileConditionValue } from './profile-condition-value';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProfileConditionType } from './profile-condition-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ProfileConditionValue } from './profile-condition-value';
 
 /**
  * 
@@ -46,4 +50,6 @@ export interface ProfileCondition {
      */
     'IsRequired'?: boolean;
 }
+
+
 

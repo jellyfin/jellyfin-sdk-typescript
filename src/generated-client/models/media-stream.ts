@@ -12,11 +12,21 @@
  */
 
 
-import { AudioSpatialFormat } from './audio-spatial-format';
-import { MediaStreamType } from './media-stream-type';
-import { SubtitleDeliveryMethod } from './subtitle-delivery-method';
-import { VideoRange } from './video-range';
-import { VideoRangeType } from './video-range-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { AudioSpatialFormat } from './audio-spatial-format';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaStreamType } from './media-stream-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SubtitleDeliveryMethod } from './subtitle-delivery-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { VideoRange } from './video-range';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { VideoRangeType } from './video-range-type';
 
 /**
  * Class MediaStream.
@@ -391,4 +401,6 @@ export interface MediaStream {
      */
     'IsAnamorphic'?: boolean | null;
 }
+
+
 

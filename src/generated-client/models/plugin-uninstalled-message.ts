@@ -12,8 +12,12 @@
  */
 
 
-import { PluginInfo } from './plugin-info';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PluginInfo } from './plugin-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin uninstalled message.
@@ -40,4 +44,6 @@ export interface PluginUninstalledMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

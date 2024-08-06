@@ -12,7 +12,9 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Refresh progress message.
@@ -22,10 +24,10 @@ import { SessionMessageType } from './session-message-type';
 export interface RefreshProgressMessage {
     /**
      * Gets or sets the data.
-     * @type {{ [key: string]: string; }}
+     * @type {{ [key: string]: string | null; }}
      * @memberof RefreshProgressMessage
      */
-    'Data'?: { [key: string]: string; } | null;
+    'Data'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the message id.
      * @type {string}
@@ -39,4 +41,6 @@ export interface RefreshProgressMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

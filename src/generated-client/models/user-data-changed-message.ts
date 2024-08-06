@@ -12,8 +12,12 @@
  */
 
 
-import { SessionMessageType } from './session-message-type';
-import { UserDataChangeInfo } from './user-data-change-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { UserDataChangeInfo } from './user-data-change-info';
 
 /**
  * User data changed message.
@@ -40,4 +44,6 @@ export interface UserDataChangedMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

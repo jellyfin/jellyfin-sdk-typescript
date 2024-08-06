@@ -12,7 +12,9 @@
  */
 
 
-import { SeriesInfo } from './series-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SeriesInfo } from './series-info';
 
 /**
  * 

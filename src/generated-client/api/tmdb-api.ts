@@ -12,15 +12,16 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { ConfigImageTypes } from '../models';
+import type { ConfigImageTypes } from '../models';
 /**
  * TmdbApi - axios parameter creator
  * @export
@@ -33,7 +34,7 @@ export const TmdbApiAxiosParamCreator = function (configuration?: Configuration)
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        tmdbClientConfiguration: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        tmdbClientConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Tmdb/ClientConfiguration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -76,9 +77,11 @@ export const TmdbApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async tmdbClientConfiguration(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ConfigImageTypes>> {
+        async tmdbClientConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ConfigImageTypes>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.tmdbClientConfiguration(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['TmdbApi.tmdbClientConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -96,7 +99,7 @@ export const TmdbApiFactory = function (configuration?: Configuration, basePath?
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        tmdbClientConfiguration(options?: any): AxiosPromise<ConfigImageTypes> {
+        tmdbClientConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<ConfigImageTypes> {
             return localVarFp.tmdbClientConfiguration(options).then((request) => request(axios, basePath));
         },
     };
@@ -116,7 +119,8 @@ export class TmdbApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof TmdbApi
      */
-    public tmdbClientConfiguration(options?: AxiosRequestConfig) {
+    public tmdbClientConfiguration(options?: RawAxiosRequestConfig) {
         return TmdbApiFp(this.configuration).tmdbClientConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 }
+

@@ -12,8 +12,12 @@
  */
 
 
-import { GroupStateType } from './group-state-type';
-import { PlaybackRequestType } from './playback-request-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupStateType } from './group-state-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaybackRequestType } from './playback-request-type';
 
 /**
  * Class GroupStateUpdate.
@@ -34,4 +38,6 @@ export interface GroupStateUpdate {
      */
     'Reason'?: PlaybackRequestType;
 }
+
+
 

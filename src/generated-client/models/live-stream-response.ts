@@ -12,7 +12,9 @@
  */
 
 
-import { MediaSourceInfo } from './media-source-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { MediaSourceInfo } from './media-source-info';
 
 /**
  * 

@@ -12,11 +12,21 @@
  */
 
 
-import { BaseItemDto } from './base-item-dto';
-import { PlayMethod } from './play-method';
-import { PlaybackOrder } from './playback-order';
-import { QueueItem } from './queue-item';
-import { RepeatMode } from './repeat-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { BaseItemDto } from './base-item-dto';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlayMethod } from './play-method';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { PlaybackOrder } from './playback-order';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { QueueItem } from './queue-item';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { RepeatMode } from './repeat-mode';
 
 /**
  * Class PlaybackStartInfo.
@@ -151,4 +161,6 @@ export interface PlaybackStartInfo {
      */
     'PlaylistItemId'?: string | null;
 }
+
+
 

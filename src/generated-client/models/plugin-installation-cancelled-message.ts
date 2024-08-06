@@ -12,8 +12,12 @@
  */
 
 
-import { InstallationInfo } from './installation-info';
-import { SessionMessageType } from './session-message-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { InstallationInfo } from './installation-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin installation cancelled message.
@@ -40,4 +44,6 @@ export interface PluginInstallationCancelledMessage {
      */
     'MessageType'?: SessionMessageType;
 }
+
+
 

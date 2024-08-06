@@ -12,7 +12,9 @@
  */
 
 
-import { GroupShuffleMode } from './group-shuffle-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { GroupShuffleMode } from './group-shuffle-mode';
 
 /**
  * Class SetShuffleModeRequestDto.
@@ -27,4 +29,6 @@ export interface SetShuffleModeRequestDto {
      */
     'Mode'?: GroupShuffleMode;
 }
+
+
 

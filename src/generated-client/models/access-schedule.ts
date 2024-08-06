@@ -12,7 +12,9 @@
  */
 
 
-import { DynamicDayOfWeek } from './dynamic-day-of-week';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { DynamicDayOfWeek } from './dynamic-day-of-week';
 
 /**
  * An entity representing a user\'s access schedule.
@@ -51,4 +53,6 @@ export interface AccessSchedule {
      */
     'EndHour'?: number;
 }
+
+
 

@@ -12,25 +12,26 @@
  */
 
 
-import globalAxios, { AxiosPromise, AxiosInstance, AxiosRequestConfig } from 'axios';
-import { Configuration } from '../configuration';
+import type { Configuration } from '../configuration';
+import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
+import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
 import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
 // @ts-ignore
-import { BASE_PATH, COLLECTION_FORMATS, RequestArgs, BaseAPI, RequiredError } from '../base';
+import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import { EndPointInfo } from '../models';
+import type { EndPointInfo } from '../models';
 // @ts-ignore
-import { LogFile } from '../models';
+import type { LogFile } from '../models';
 // @ts-ignore
-import { ProblemDetails } from '../models';
+import type { ProblemDetails } from '../models';
 // @ts-ignore
-import { PublicSystemInfo } from '../models';
+import type { PublicSystemInfo } from '../models';
 // @ts-ignore
-import { SystemInfo } from '../models';
+import type { SystemInfo } from '../models';
 // @ts-ignore
-import { WakeOnLanInfo } from '../models';
+import type { WakeOnLanInfo } from '../models';
 /**
  * SystemApi - axios parameter creator
  * @export
@@ -43,7 +44,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getEndpointInfo: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getEndpointInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Endpoint`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -77,7 +78,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLogFile: async (name: string, options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLogFile: async (name: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'name' is not null or undefined
             assertParamExists('getLogFile', 'name', name)
             const localVarPath = `/System/Logs/Log`;
@@ -116,7 +117,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPingSystem: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPingSystem: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Ping`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -146,7 +147,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicSystemInfo: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPublicSystemInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Info/Public`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -176,7 +177,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getServerLogs: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getServerLogs: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Logs`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -209,7 +210,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSystemInfo: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSystemInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Info`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -243,7 +244,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @deprecated
          * @throws {RequiredError}
          */
-        getWakeOnLanInfo: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getWakeOnLanInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/WakeOnLanInfo`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -276,7 +277,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postPingSystem: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        postPingSystem: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Ping`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -306,7 +307,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        restartApplication: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        restartApplication: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Restart`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -339,7 +340,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        shutdownApplication: async (options: AxiosRequestConfig = {}): Promise<RequestArgs> => {
+        shutdownApplication: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Shutdown`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -382,9 +383,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getEndpointInfo(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<EndPointInfo>> {
+        async getEndpointInfo(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<EndPointInfo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getEndpointInfo(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getEndpointInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -393,9 +396,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLogFile(name: string, options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<any>> {
+        async getLogFile(name: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLogFile(name, options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getLogFile']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -403,9 +408,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPingSystem(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
+        async getPingSystem(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPingSystem(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getPingSystem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -413,9 +420,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPublicSystemInfo(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PublicSystemInfo>> {
+        async getPublicSystemInfo(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<PublicSystemInfo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPublicSystemInfo(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getPublicSystemInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -423,9 +432,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getServerLogs(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<LogFile>>> {
+        async getServerLogs(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<LogFile>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getServerLogs(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getServerLogs']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -433,9 +444,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSystemInfo(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SystemInfo>> {
+        async getSystemInfo(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<SystemInfo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSystemInfo(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getSystemInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -444,9 +457,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @deprecated
          * @throws {RequiredError}
          */
-        async getWakeOnLanInfo(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<WakeOnLanInfo>>> {
+        async getWakeOnLanInfo(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<WakeOnLanInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getWakeOnLanInfo(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getWakeOnLanInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -454,9 +469,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async postPingSystem(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
+        async postPingSystem(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<string>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.postPingSystem(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.postPingSystem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -464,9 +481,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async restartApplication(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async restartApplication(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.restartApplication(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.restartApplication']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
@@ -474,9 +493,11 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async shutdownApplication(options?: AxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async shutdownApplication(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.shutdownApplication(options);
-            return createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.shutdownApplication']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
@@ -494,18 +515,18 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getEndpointInfo(options?: any): AxiosPromise<EndPointInfo> {
+        getEndpointInfo(options?: RawAxiosRequestConfig): AxiosPromise<EndPointInfo> {
             return localVarFp.getEndpointInfo(options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets a log file.
-         * @param {string} name The name of the log file to get.
+         * @param {SystemApiGetLogFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLogFile(name: string, options?: any): AxiosPromise<any> {
-            return localVarFp.getLogFile(name, options).then((request) => request(axios, basePath));
+        getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getLogFile(requestParameters.name, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -513,7 +534,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPingSystem(options?: any): AxiosPromise<string> {
+        getPingSystem(options?: RawAxiosRequestConfig): AxiosPromise<string> {
             return localVarFp.getPingSystem(options).then((request) => request(axios, basePath));
         },
         /**
@@ -522,7 +543,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPublicSystemInfo(options?: any): AxiosPromise<PublicSystemInfo> {
+        getPublicSystemInfo(options?: RawAxiosRequestConfig): AxiosPromise<PublicSystemInfo> {
             return localVarFp.getPublicSystemInfo(options).then((request) => request(axios, basePath));
         },
         /**
@@ -531,7 +552,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getServerLogs(options?: any): AxiosPromise<Array<LogFile>> {
+        getServerLogs(options?: RawAxiosRequestConfig): AxiosPromise<Array<LogFile>> {
             return localVarFp.getServerLogs(options).then((request) => request(axios, basePath));
         },
         /**
@@ -540,7 +561,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSystemInfo(options?: any): AxiosPromise<SystemInfo> {
+        getSystemInfo(options?: RawAxiosRequestConfig): AxiosPromise<SystemInfo> {
             return localVarFp.getSystemInfo(options).then((request) => request(axios, basePath));
         },
         /**
@@ -550,7 +571,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @deprecated
          * @throws {RequiredError}
          */
-        getWakeOnLanInfo(options?: any): AxiosPromise<Array<WakeOnLanInfo>> {
+        getWakeOnLanInfo(options?: RawAxiosRequestConfig): AxiosPromise<Array<WakeOnLanInfo>> {
             return localVarFp.getWakeOnLanInfo(options).then((request) => request(axios, basePath));
         },
         /**
@@ -559,7 +580,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        postPingSystem(options?: any): AxiosPromise<string> {
+        postPingSystem(options?: RawAxiosRequestConfig): AxiosPromise<string> {
             return localVarFp.postPingSystem(options).then((request) => request(axios, basePath));
         },
         /**
@@ -568,7 +589,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        restartApplication(options?: any): AxiosPromise<void> {
+        restartApplication(options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.restartApplication(options).then((request) => request(axios, basePath));
         },
         /**
@@ -577,7 +598,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        shutdownApplication(options?: any): AxiosPromise<void> {
+        shutdownApplication(options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.shutdownApplication(options).then((request) => request(axios, basePath));
         },
     };
@@ -611,7 +632,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getEndpointInfo(options?: AxiosRequestConfig) {
+    public getEndpointInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getEndpointInfo(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -623,7 +644,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: AxiosRequestConfig) {
+    public getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getLogFile(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -634,7 +655,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getPingSystem(options?: AxiosRequestConfig) {
+    public getPingSystem(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getPingSystem(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -645,7 +666,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getPublicSystemInfo(options?: AxiosRequestConfig) {
+    public getPublicSystemInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getPublicSystemInfo(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -656,7 +677,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getServerLogs(options?: AxiosRequestConfig) {
+    public getServerLogs(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getServerLogs(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -667,7 +688,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getSystemInfo(options?: AxiosRequestConfig) {
+    public getSystemInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getSystemInfo(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -679,7 +700,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public getWakeOnLanInfo(options?: AxiosRequestConfig) {
+    public getWakeOnLanInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getWakeOnLanInfo(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -690,7 +711,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public postPingSystem(options?: AxiosRequestConfig) {
+    public postPingSystem(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).postPingSystem(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -701,7 +722,7 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public restartApplication(options?: AxiosRequestConfig) {
+    public restartApplication(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).restartApplication(options).then((request) => request(this.axios, this.basePath));
     }
 
@@ -712,7 +733,8 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      * @memberof SystemApi
      */
-    public shutdownApplication(options?: AxiosRequestConfig) {
+    public shutdownApplication(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).shutdownApplication(options).then((request) => request(this.axios, this.basePath));
     }
 }
+

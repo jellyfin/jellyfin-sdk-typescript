@@ -12,7 +12,9 @@
  */
 
 
-import { AlbumInfo } from './album-info';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { AlbumInfo } from './album-info';
 
 /**
  * 
