@@ -26,4 +26,4 @@ jobs:
         run: npm ci --no-audit
 
       - name: Run Vitest
-        run: npx vitest **/integration.test.ts
+        run: npm run test:integration
