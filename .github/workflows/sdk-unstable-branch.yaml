@@ -59,7 +59,7 @@ jobs:
       - name: Commit changes
         continue-on-error: true
         run: |
-          ! git diff --exit-code && git add --all && git commit --amend -m "Update OpenAPI to unstable"
+          [[ -n $(git status --porcelain) ]] && git add --all && git commit --amend -m "Update OpenAPI to unstable"
 
       - name: Push changes
         run: git push --force origin openapi-unstable
