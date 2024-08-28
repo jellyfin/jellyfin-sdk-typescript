@@ -26,7 +26,7 @@
     "test:integration": "vitest integration"
   },
   "devDependencies": {
-    "@openapitools/openapi-generator-cli": "2.13.4",
+    "@openapitools/openapi-generator-cli": "2.13.5",
     "@rollup/plugin-typescript": "11.1.6",
     "@tsconfig/recommended": "1.0.7",
     "@typescript-eslint/eslint-plugin": "7.3.1",
