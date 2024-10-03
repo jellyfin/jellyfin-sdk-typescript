@@ -23,6 +23,7 @@ export enum ItemSortBy {
 	DateLastContentAdded = 'DateLastContentAdded',
 	DatePlayed = 'DatePlayed',
 	IsFavoriteOrLiked = 'IsFavoriteOrLiked',
+	IsWatchlisted = 'IsWatchlisted',
 	IsFolder = 'IsFolder',
 	IsPlayed = 'IsPlayed',
 	IsUnplayed = 'IsUnplayed',

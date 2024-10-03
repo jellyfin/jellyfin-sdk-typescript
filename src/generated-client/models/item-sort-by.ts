@@ -51,7 +51,8 @@ export const ItemSortBy = {
     ParentIndexNumber: 'ParentIndexNumber',
     IndexNumber: 'IndexNumber',
     SimilarityScore: 'SimilarityScore',
-    SearchScore: 'SearchScore'
+    SearchScore: 'SearchScore',
+    IsWatchlisted: 'IsWatchlisted'
 } as const;
 
 export type ItemSortBy = typeof ItemSortBy[keyof typeof ItemSortBy];

@@ -25,6 +25,7 @@ export const ItemFilter = {
     IsUnplayed: 'IsUnplayed',
     IsPlayed: 'IsPlayed',
     IsFavorite: 'IsFavorite',
+    IsWatchlisted: 'IsWatchlisted',
     IsResumable: 'IsResumable',
     Likes: 'Likes',
     Dislikes: 'Dislikes',

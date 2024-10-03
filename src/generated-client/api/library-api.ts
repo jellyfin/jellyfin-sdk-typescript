@@ -280,10 +280,11 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
          * @summary Get item counts.
          * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
          * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
+         * @param {boolean} [isWatchlisted] Optional. Get counts of watchlisted items.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItemCounts: async (userId?: string, isFavorite?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getItemCounts: async (userId?: string, isFavorite?: boolean, isWatchlisted?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Items/Counts`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -305,6 +306,10 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
 
             if (isFavorite !== undefined) {
                 localVarQueryParameter['isFavorite'] = isFavorite;
+            }
+
+            if (isWatchlisted !== undefined) {
+                localVarQueryParameter['isWatchlisted'] = isWatchlisted;
             }
 
 
@@ -1244,11 +1249,12 @@ export const LibraryApiFp = function(configuration?: Configuration) {
          * @summary Get item counts.
          * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
          * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
+         * @param {boolean} [isWatchlisted] Optional. Get counts of watchlisted items.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getItemCounts(userId?: string, isFavorite?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ItemCounts>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getItemCounts(userId, isFavorite, options);
+        async getItemCounts(userId?: string, isFavorite?: boolean, isWatchlisted?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ItemCounts>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getItemCounts(userId, isFavorite, isWatchlisted, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LibraryApi.getItemCounts']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -1597,7 +1603,7 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          * @throws {RequiredError}
          */
         getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ItemCounts> {
-            return localVarFp.getItemCounts(requestParameters.userId, requestParameters.isFavorite, options).then((request) => request(axios, basePath));
+            return localVarFp.getItemCounts(requestParameters.userId, requestParameters.isFavorite, requestParameters.isWatchlisted, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1890,6 +1896,13 @@ export interface LibraryApiGetItemCountsRequest {
      * @memberof LibraryApiGetItemCounts
      */
     readonly isFavorite?: boolean
+
+    /**
+     * Optional. Get counts of watchlisted items.
+     * @type {boolean}
+     * @memberof LibraryApiGetItemCounts
+     */
+    readonly isWatchlisted?: boolean
 }
 
 /**
@@ -2436,7 +2449,7 @@ export class LibraryApi extends BaseAPI {
      * @memberof LibraryApi
      */
     public getItemCounts(requestParameters: LibraryApiGetItemCountsRequest = {}, options?: RawAxiosRequestConfig) {
-        return LibraryApiFp(this.configuration).getItemCounts(requestParameters.userId, requestParameters.isFavorite, options).then((request) => request(this.axios, this.basePath));
+        return LibraryApiFp(this.configuration).getItemCounts(requestParameters.userId, requestParameters.isFavorite, requestParameters.isWatchlisted, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

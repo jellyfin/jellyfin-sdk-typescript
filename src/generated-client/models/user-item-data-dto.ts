@@ -56,6 +56,12 @@ export interface UserItemDataDto {
      */
     'IsFavorite'?: boolean;
     /**
+     * Gets or sets a value indicating whether this instance is watchlisted.
+     * @type {boolean}
+     * @memberof UserItemDataDto
+     */
+    'IsWatchlisted'?: boolean;
+    /**
      * Gets or sets a value indicating whether this MediaBrowser.Model.Dto.UserItemDataDto is likes.
      * @type {boolean}
      * @memberof UserItemDataDto

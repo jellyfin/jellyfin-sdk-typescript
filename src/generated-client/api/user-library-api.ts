@@ -418,6 +418,48 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
         },
         /**
          * 
+         * @summary Adds an item to the user\'s watchlist.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markWatchlistItem: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('markWatchlistItem', 'itemId', itemId)
+            const localVarPath = `/UserWatchlistItems/{itemId}`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Unmarks item as a favorite.
          * @param {string} itemId Item id.
          * @param {string} [userId] User id.
@@ -428,6 +470,48 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('unmarkFavoriteItem', 'itemId', itemId)
             const localVarPath = `/UserFavoriteItems/{itemId}`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'DELETE', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+
+    
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Removes an item from the user\'s watchlist.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        unmarkWatchlistItem: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('unmarkWatchlistItem', 'itemId', itemId)
+            const localVarPath = `/UserWatchlistItems/{itemId}`
                 .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -637,6 +721,20 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Adds an item to the user\'s watchlist.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async markWatchlistItem(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.markWatchlistItem(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserLibraryApi.markWatchlistItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Unmarks item as a favorite.
          * @param {string} itemId Item id.
          * @param {string} [userId] User id.
@@ -647,6 +745,20 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.unmarkFavoriteItem(itemId, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['UserLibraryApi.unmarkFavoriteItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Removes an item from the user\'s watchlist.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async unmarkWatchlistItem(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UserItemDataDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.unmarkWatchlistItem(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['UserLibraryApi.unmarkWatchlistItem']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -756,6 +868,16 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
         },
         /**
          * 
+         * @summary Adds an item to the user\'s watchlist.
+         * @param {UserLibraryApiMarkWatchlistItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        markWatchlistItem(requestParameters: UserLibraryApiMarkWatchlistItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.markWatchlistItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Unmarks item as a favorite.
          * @param {UserLibraryApiUnmarkFavoriteItemRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -763,6 +885,16 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
          */
         unmarkFavoriteItem(requestParameters: UserLibraryApiUnmarkFavoriteItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
             return localVarFp.unmarkFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Removes an item from the user\'s watchlist.
+         * @param {UserLibraryApiUnmarkWatchlistItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        unmarkWatchlistItem(requestParameters: UserLibraryApiUnmarkWatchlistItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<UserItemDataDto> {
+            return localVarFp.unmarkWatchlistItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1002,6 +1134,27 @@ export interface UserLibraryApiMarkFavoriteItemRequest {
 }
 
 /**
+ * Request parameters for markWatchlistItem operation in UserLibraryApi.
+ * @export
+ * @interface UserLibraryApiMarkWatchlistItemRequest
+ */
+export interface UserLibraryApiMarkWatchlistItemRequest {
+    /**
+     * Item id.
+     * @type {string}
+     * @memberof UserLibraryApiMarkWatchlistItem
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiMarkWatchlistItem
+     */
+    readonly userId?: string
+}
+
+/**
  * Request parameters for unmarkFavoriteItem operation in UserLibraryApi.
  * @export
  * @interface UserLibraryApiUnmarkFavoriteItemRequest
@@ -1018,6 +1171,27 @@ export interface UserLibraryApiUnmarkFavoriteItemRequest {
      * User id.
      * @type {string}
      * @memberof UserLibraryApiUnmarkFavoriteItem
+     */
+    readonly userId?: string
+}
+
+/**
+ * Request parameters for unmarkWatchlistItem operation in UserLibraryApi.
+ * @export
+ * @interface UserLibraryApiUnmarkWatchlistItemRequest
+ */
+export interface UserLibraryApiUnmarkWatchlistItemRequest {
+    /**
+     * Item id.
+     * @type {string}
+     * @memberof UserLibraryApiUnmarkWatchlistItem
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     * @type {string}
+     * @memberof UserLibraryApiUnmarkWatchlistItem
      */
     readonly userId?: string
 }
@@ -1155,6 +1329,18 @@ export class UserLibraryApi extends BaseAPI {
 
     /**
      * 
+     * @summary Adds an item to the user\'s watchlist.
+     * @param {UserLibraryApiMarkWatchlistItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof UserLibraryApi
+     */
+    public markWatchlistItem(requestParameters: UserLibraryApiMarkWatchlistItemRequest, options?: RawAxiosRequestConfig) {
+        return UserLibraryApiFp(this.configuration).markWatchlistItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Unmarks item as a favorite.
      * @param {UserLibraryApiUnmarkFavoriteItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -1163,6 +1349,18 @@ export class UserLibraryApi extends BaseAPI {
      */
     public unmarkFavoriteItem(requestParameters: UserLibraryApiUnmarkFavoriteItemRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).unmarkFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Removes an item from the user\'s watchlist.
+     * @param {UserLibraryApiUnmarkWatchlistItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof UserLibraryApi
+     */
+    public unmarkWatchlistItem(requestParameters: UserLibraryApiUnmarkWatchlistItemRequest, options?: RawAxiosRequestConfig) {
+        return UserLibraryApiFp(this.configuration).unmarkWatchlistItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
