@@ -44,6 +44,12 @@ export interface LibraryOptionsResultDto {
      */
     'SubtitleFetchers'?: Array<LibraryOptionInfoDto>;
     /**
+     * Gets or sets the list of lyric fetchers.
+     * @type {Array<LibraryOptionInfoDto>}
+     * @memberof LibraryOptionsResultDto
+     */
+    'LyricFetchers'?: Array<LibraryOptionInfoDto>;
+    /**
      * Gets or sets the type options.
      * @type {Array<LibraryTypeOptionsDto>}
      * @memberof LibraryOptionsResultDto

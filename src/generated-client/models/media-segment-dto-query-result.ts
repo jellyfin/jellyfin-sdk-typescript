@@ -14,30 +14,30 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { TimerInfoDto } from './timer-info-dto';
+import type { MediaSegmentDto } from './media-segment-dto';
 
 /**
  * Query result container.
  * @export
- * @interface TimerInfoDtoQueryResult
+ * @interface MediaSegmentDtoQueryResult
  */
-export interface TimerInfoDtoQueryResult {
+export interface MediaSegmentDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<TimerInfoDto>}
-     * @memberof TimerInfoDtoQueryResult
+     * @type {Array<MediaSegmentDto>}
+     * @memberof MediaSegmentDtoQueryResult
      */
-    'Items'?: Array<TimerInfoDto>;
+    'Items'?: Array<MediaSegmentDto>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}
-     * @memberof TimerInfoDtoQueryResult
+     * @memberof MediaSegmentDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
      * @type {number}
-     * @memberof TimerInfoDtoQueryResult
+     * @memberof MediaSegmentDtoQueryResult
      */
     'StartIndex'?: number;
 }

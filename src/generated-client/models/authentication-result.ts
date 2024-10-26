@@ -14,13 +14,13 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SessionInfo } from './session-info';
+import type { SessionInfoDto } from './session-info-dto';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { UserDto } from './user-dto';
 
 /**
- * 
+ * A class representing an authentication result.
  * @export
  * @interface AuthenticationResult
  */
@@ -33,18 +33,18 @@ export interface AuthenticationResult {
     'User'?: UserDto;
     /**
      * 
-     * @type {SessionInfo}
+     * @type {SessionInfoDto}
      * @memberof AuthenticationResult
      */
-    'SessionInfo'?: SessionInfo;
+    'SessionInfo'?: SessionInfoDto;
     /**
-     * 
+     * Gets or sets the access token.
      * @type {string}
      * @memberof AuthenticationResult
      */
     'AccessToken'?: string | null;
     /**
-     * 
+     * Gets or sets the server id.
      * @type {string}
      * @memberof AuthenticationResult
      */

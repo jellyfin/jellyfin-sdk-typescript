@@ -14,16 +14,23 @@
 
 
 /**
- * 
+ * Enum containing tonemapping algorithms.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const TonemappingAlgorithm = {
+    None: 'none',
+    Clip: 'clip',
+    Linear: 'linear',
+    Gamma: 'gamma',
+    Reinhard: 'reinhard',
+    Hable: 'hable',
+    Mobius: 'mobius',
+    Bt2390: 'bt2390'
+} as const;
+
+export type TonemappingAlgorithm = typeof TonemappingAlgorithm[keyof typeof TonemappingAlgorithm];
+
+
 

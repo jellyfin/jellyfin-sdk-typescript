@@ -35,13 +35,13 @@ import type { TranscodingProfile } from './transcoding-profile';
  */
 export interface DeviceProfile {
     /**
-     * Gets or sets the name of this device profile.
+     * Gets or sets the name of this device profile. User profiles must have a unique name.
      * @type {string}
      * @memberof DeviceProfile
      */
     'Name'?: string | null;
     /**
-     * Gets or sets the Id.
+     * Gets or sets the unique internal identifier.
      * @type {string}
      * @memberof DeviceProfile
      */
@@ -83,7 +83,7 @@ export interface DeviceProfile {
      */
     'TranscodingProfiles'?: Array<TranscodingProfile>;
     /**
-     * Gets or sets the container profiles.
+     * Gets or sets the container profiles. Failing to meet these optional conditions causes transcoding to occur.
      * @type {Array<ContainerProfile>}
      * @memberof DeviceProfile
      */

@@ -17,7 +17,7 @@
 import type { BaseItemDto } from './base-item-dto';
 
 /**
- * 
+ * Query result container.
  * @export
  * @interface BaseItemDtoQueryResult
  */
@@ -27,7 +27,7 @@ export interface BaseItemDtoQueryResult {
      * @type {Array<BaseItemDto>}
      * @memberof BaseItemDtoQueryResult
      */
-    'Items'?: Array<BaseItemDto> | null;
+    'Items'?: Array<BaseItemDto>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}

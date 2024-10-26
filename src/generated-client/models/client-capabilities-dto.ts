@@ -70,19 +70,5 @@ export interface ClientCapabilitiesDto {
      * @memberof ClientCapabilitiesDto
      */
     'IconUrl'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof ClientCapabilitiesDto
-     * @deprecated
-     */
-    'SupportsContentUploading'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof ClientCapabilitiesDto
-     * @deprecated
-     */
-    'SupportsSync'?: boolean | null;
 }
 

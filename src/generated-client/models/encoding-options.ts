@@ -14,7 +14,25 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
+import type { DeinterlaceMethod } from './deinterlace-method';
+// May contain unused imports in some cases
+// @ts-ignore
 import type { DownMixStereoAlgorithms } from './down-mix-stereo-algorithms';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { EncoderPreset } from './encoder-preset';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { HardwareAccelerationType } from './hardware-acceleration-type';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TonemappingAlgorithm } from './tonemapping-algorithm';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TonemappingMode } from './tonemapping-mode';
+// May contain unused imports in some cases
+// @ts-ignore
+import type { TonemappingRange } from './tonemapping-range';
 
 /**
  * Class EncodingOptions.
@@ -95,11 +113,11 @@ export interface EncodingOptions {
      */
     'SegmentKeepSeconds'?: number;
     /**
-     * Gets or sets the hardware acceleration type.
-     * @type {string}
+     * 
+     * @type {HardwareAccelerationType}
      * @memberof EncodingOptions
      */
-    'HardwareAccelerationType'?: string | null;
+    'HardwareAccelerationType'?: HardwareAccelerationType;
     /**
      * Gets or sets the FFmpeg path as set by the user via the UI.
      * @type {string}
@@ -119,6 +137,12 @@ export interface EncodingOptions {
      */
     'VaapiDevice'?: string | null;
     /**
+     * Gets or sets the QSV device.
+     * @type {string}
+     * @memberof EncodingOptions
+     */
+    'QsvDevice'?: string | null;
+    /**
      * Gets or sets a value indicating whether tonemapping is enabled.
      * @type {boolean}
      * @memberof EncodingOptions
@@ -137,23 +161,23 @@ export interface EncodingOptions {
      */
     'EnableVideoToolboxTonemapping'?: boolean;
     /**
-     * Gets or sets the tone-mapping algorithm.
-     * @type {string}
+     * 
+     * @type {TonemappingAlgorithm}
      * @memberof EncodingOptions
      */
-    'TonemappingAlgorithm'?: string | null;
+    'TonemappingAlgorithm'?: TonemappingAlgorithm;
     /**
-     * Gets or sets the tone-mapping mode.
-     * @type {string}
+     * 
+     * @type {TonemappingMode}
      * @memberof EncodingOptions
      */
-    'TonemappingMode'?: string | null;
+    'TonemappingMode'?: TonemappingMode;
     /**
-     * Gets or sets the tone-mapping range.
-     * @type {string}
+     * 
+     * @type {TonemappingRange}
      * @memberof EncodingOptions
      */
-    'TonemappingRange'?: string | null;
+    'TonemappingRange'?: TonemappingRange;
     /**
      * Gets or sets the tone-mapping desaturation.
      * @type {number}
@@ -197,11 +221,11 @@ export interface EncodingOptions {
      */
     'H265Crf'?: number;
     /**
-     * Gets or sets the encoder preset.
-     * @type {string}
+     * 
+     * @type {EncoderPreset}
      * @memberof EncodingOptions
      */
-    'EncoderPreset'?: string | null;
+    'EncoderPreset'?: EncoderPreset;
     /**
      * Gets or sets a value indicating whether the framerate is doubled when deinterlacing.
      * @type {boolean}
@@ -209,11 +233,11 @@ export interface EncodingOptions {
      */
     'DeinterlaceDoubleRate'?: boolean;
     /**
-     * Gets or sets the deinterlace method.
-     * @type {string}
+     * 
+     * @type {DeinterlaceMethod}
      * @memberof EncodingOptions
      */
-    'DeinterlaceMethod'?: string | null;
+    'DeinterlaceMethod'?: DeinterlaceMethod;
     /**
      * Gets or sets a value indicating whether 10bit HEVC decoding is enabled.
      * @type {boolean}
@@ -226,6 +250,18 @@ export interface EncodingOptions {
      * @memberof EncodingOptions
      */
     'EnableDecodingColorDepth10Vp9'?: boolean;
+    /**
+     * Gets or sets a value indicating whether 8/10bit HEVC RExt decoding is enabled.
+     * @type {boolean}
+     * @memberof EncodingOptions
+     */
+    'EnableDecodingColorDepth10HevcRext'?: boolean;
+    /**
+     * Gets or sets a value indicating whether 12bit HEVC RExt decoding is enabled.
+     * @type {boolean}
+     * @memberof EncodingOptions
+     */
+    'EnableDecodingColorDepth12HevcRext'?: boolean;
     /**
      * Gets or sets a value indicating whether the enhanced NVDEC is enabled.
      * @type {boolean}

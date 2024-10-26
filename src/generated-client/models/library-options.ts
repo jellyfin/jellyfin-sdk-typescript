@@ -175,6 +175,18 @@ export interface LibraryOptions {
     'SubtitleFetcherOrder'?: Array<string>;
     /**
      * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'DisabledMediaSegmentProviders'?: Array<string>;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'MediaSegmentProvideOrder'?: Array<string>;
+    /**
+     * 
      * @type {boolean}
      * @memberof LibraryOptions
      */
@@ -209,6 +221,48 @@ export interface LibraryOptions {
      * @memberof LibraryOptions
      */
     'SaveLyricsWithMedia'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof LibraryOptions
+     */
+    'SaveTrickplayWithMedia'?: boolean;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'DisabledLyricFetchers'?: Array<string>;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'LyricFetcherOrder'?: Array<string>;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof LibraryOptions
+     */
+    'PreferNonstandardArtistsTag'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof LibraryOptions
+     */
+    'UseCustomTagDelimiters'?: boolean;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'CustomTagDelimiters'?: Array<string>;
+    /**
+     * 
+     * @type {Array<string>}
+     * @memberof LibraryOptions
+     */
+    'DelimiterWhitelist'?: Array<string>;
     /**
      * 
      * @type {boolean}

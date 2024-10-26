@@ -125,6 +125,12 @@ export interface MediaStream {
      */
     'DvBlSignalCompatibilityId'?: number | null;
     /**
+     * Gets or sets the Rotation in degrees.
+     * @type {number}
+     * @memberof MediaStream
+     */
+    'Rotation'?: number | null;
+    /**
      * Gets or sets the comment.
      * @type {string}
      * @memberof MediaStream
@@ -310,6 +316,12 @@ export interface MediaStream {
      * @memberof MediaStream
      */
     'RealFrameRate'?: number | null;
+    /**
+     * Gets the framerate used as reference.  Prefer AverageFrameRate, if that is null or an unrealistic value  then fallback to RealFrameRate.
+     * @type {number}
+     * @memberof MediaStream
+     */
+    'ReferenceFrameRate'?: number | null;
     /**
      * Gets or sets the profile.
      * @type {string}

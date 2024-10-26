@@ -27,7 +27,7 @@ export interface ThemeMediaResult {
      * @type {Array<BaseItemDto>}
      * @memberof ThemeMediaResult
      */
-    'Items'?: Array<BaseItemDto> | null;
+    'Items'?: Array<BaseItemDto>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}

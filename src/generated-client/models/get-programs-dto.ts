@@ -36,7 +36,7 @@ export interface GetProgramsDto {
      * @type {Array<string>}
      * @memberof GetProgramsDto
      */
-    'ChannelIds'?: Array<string>;
+    'ChannelIds'?: Array<string> | null;
     /**
      * Gets or sets optional. Filter by user id.
      * @type {string}
@@ -44,109 +44,109 @@ export interface GetProgramsDto {
      */
     'UserId'?: string | null;
     /**
-     * Gets or sets the minimum premiere start date.  Optional.
+     * Gets or sets the minimum premiere start date.
      * @type {string}
      * @memberof GetProgramsDto
      */
     'MinStartDate'?: string | null;
     /**
-     * Gets or sets filter by programs that have completed airing, or not.  Optional.
+     * Gets or sets filter by programs that have completed airing, or not.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'HasAired'?: boolean | null;
     /**
-     * Gets or sets filter by programs that are currently airing, or not.  Optional.
+     * Gets or sets filter by programs that are currently airing, or not.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsAiring'?: boolean | null;
     /**
-     * Gets or sets the maximum premiere start date.  Optional.
+     * Gets or sets the maximum premiere start date.
      * @type {string}
      * @memberof GetProgramsDto
      */
     'MaxStartDate'?: string | null;
     /**
-     * Gets or sets the minimum premiere end date.  Optional.
+     * Gets or sets the minimum premiere end date.
      * @type {string}
      * @memberof GetProgramsDto
      */
     'MinEndDate'?: string | null;
     /**
-     * Gets or sets the maximum premiere end date.  Optional.
+     * Gets or sets the maximum premiere end date.
      * @type {string}
      * @memberof GetProgramsDto
      */
     'MaxEndDate'?: string | null;
     /**
-     * Gets or sets filter for movies.  Optional.
+     * Gets or sets filter for movies.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsMovie'?: boolean | null;
     /**
-     * Gets or sets filter for series.  Optional.
+     * Gets or sets filter for series.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsSeries'?: boolean | null;
     /**
-     * Gets or sets filter for news.  Optional.
+     * Gets or sets filter for news.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsNews'?: boolean | null;
     /**
-     * Gets or sets filter for kids.  Optional.
+     * Gets or sets filter for kids.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsKids'?: boolean | null;
     /**
-     * Gets or sets filter for sports.  Optional.
+     * Gets or sets filter for sports.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'IsSports'?: boolean | null;
     /**
-     * Gets or sets the record index to start at. All items with a lower index will be dropped from the results.  Optional.
+     * Gets or sets the record index to start at. All items with a lower index will be dropped from the results.
      * @type {number}
      * @memberof GetProgramsDto
      */
     'StartIndex'?: number | null;
     /**
-     * Gets or sets the maximum number of records to return.  Optional.
+     * Gets or sets the maximum number of records to return.
      * @type {number}
      * @memberof GetProgramsDto
      */
     'Limit'?: number | null;
     /**
-     * Gets or sets specify one or more sort orders, comma delimited. Options: Name, StartDate.  Optional.
+     * Gets or sets specify one or more sort orders, comma delimited. Options: Name, StartDate.
      * @type {Array<ItemSortBy>}
      * @memberof GetProgramsDto
      */
-    'SortBy'?: Array<ItemSortBy>;
+    'SortBy'?: Array<ItemSortBy> | null;
     /**
-     * Gets or sets sort Order - Ascending,Descending.
+     * Gets or sets sort order.
      * @type {Array<SortOrder>}
      * @memberof GetProgramsDto
      */
-    'SortOrder'?: Array<SortOrder>;
+    'SortOrder'?: Array<SortOrder> | null;
     /**
      * Gets or sets the genres to return guide information for.
      * @type {Array<string>}
      * @memberof GetProgramsDto
      */
-    'Genres'?: Array<string>;
+    'Genres'?: Array<string> | null;
     /**
      * Gets or sets the genre ids to return guide information for.
      * @type {Array<string>}
      * @memberof GetProgramsDto
      */
-    'GenreIds'?: Array<string>;
+    'GenreIds'?: Array<string> | null;
     /**
-     * Gets or sets include image information in output.  Optional.
+     * Gets or sets include image information in output.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
@@ -158,40 +158,40 @@ export interface GetProgramsDto {
      */
     'EnableTotalRecordCount'?: boolean;
     /**
-     * Gets or sets the max number of images to return, per image type.  Optional.
+     * Gets or sets the max number of images to return, per image type.
      * @type {number}
      * @memberof GetProgramsDto
      */
     'ImageTypeLimit'?: number | null;
     /**
-     * Gets or sets the image types to include in the output.  Optional.
+     * Gets or sets the image types to include in the output.
      * @type {Array<ImageType>}
      * @memberof GetProgramsDto
      */
-    'EnableImageTypes'?: Array<ImageType>;
+    'EnableImageTypes'?: Array<ImageType> | null;
     /**
-     * Gets or sets include user data.  Optional.
+     * Gets or sets include user data.
      * @type {boolean}
      * @memberof GetProgramsDto
      */
     'EnableUserData'?: boolean | null;
     /**
-     * Gets or sets filter by series timer id.  Optional.
+     * Gets or sets filter by series timer id.
      * @type {string}
      * @memberof GetProgramsDto
      */
     'SeriesTimerId'?: string | null;
     /**
-     * Gets or sets filter by library series id.  Optional.
+     * Gets or sets filter by library series id.
      * @type {string}
      * @memberof GetProgramsDto
      */
-    'LibrarySeriesId'?: string;
+    'LibrarySeriesId'?: string | null;
     /**
-     * Gets or sets specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.  Optional.
+     * Gets or sets specify additional fields of information to return in the output.
      * @type {Array<ItemFields>}
      * @memberof GetProgramsDto
      */
-    'Fields'?: Array<ItemFields>;
+    'Fields'?: Array<ItemFields> | null;
 }
 

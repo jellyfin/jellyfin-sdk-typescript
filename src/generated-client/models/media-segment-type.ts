@@ -14,16 +14,21 @@
 
 
 /**
- * 
+ * Defines the types of content an individual Jellyfin.Data.Entities.MediaSegment represents.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const MediaSegmentType = {
+    Unknown: 'Unknown',
+    Commercial: 'Commercial',
+    Preview: 'Preview',
+    Recap: 'Recap',
+    Outro: 'Outro',
+    Intro: 'Intro'
+} as const;
+
+export type MediaSegmentType = typeof MediaSegmentType[keyof typeof MediaSegmentType];
+
+
 

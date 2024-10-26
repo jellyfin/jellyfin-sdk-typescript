@@ -92,6 +92,12 @@ export interface OpenLiveStreamDto {
      */
     'EnableDirectStream'?: boolean | null;
     /**
+     * Gets or sets a value indicating whether always burn in subtitles when transcoding.
+     * @type {boolean}
+     * @memberof OpenLiveStreamDto
+     */
+    'AlwaysBurnInSubtitleWhenTranscoding'?: boolean | null;
+    /**
      * 
      * @type {DeviceProfile}
      * @memberof OpenLiveStreamDto
