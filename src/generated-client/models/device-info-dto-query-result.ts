@@ -14,30 +14,30 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { TimerInfoDto } from './timer-info-dto';
+import type { DeviceInfoDto } from './device-info-dto';
 
 /**
  * Query result container.
  * @export
- * @interface TimerInfoDtoQueryResult
+ * @interface DeviceInfoDtoQueryResult
  */
-export interface TimerInfoDtoQueryResult {
+export interface DeviceInfoDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<TimerInfoDto>}
-     * @memberof TimerInfoDtoQueryResult
+     * @type {Array<DeviceInfoDto>}
+     * @memberof DeviceInfoDtoQueryResult
      */
-    'Items'?: Array<TimerInfoDto>;
+    'Items'?: Array<DeviceInfoDto>;
     /**
      * Gets or sets the total number of records available.
      * @type {number}
-     * @memberof TimerInfoDtoQueryResult
+     * @memberof DeviceInfoDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
      * @type {number}
-     * @memberof TimerInfoDtoQueryResult
+     * @memberof DeviceInfoDtoQueryResult
      */
     'StartIndex'?: number;
 }

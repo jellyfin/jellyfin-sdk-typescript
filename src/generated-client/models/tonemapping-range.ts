@@ -14,16 +14,18 @@
 
 
 /**
- * 
+ * Enum containing tonemapping ranges.
  * @export
- * @interface MediaPathInfo
+ * @enum {string}
  */
-export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
-    'Path'?: string;
-}
+
+export const TonemappingRange = {
+    Auto: 'auto',
+    Tv: 'tv',
+    Pc: 'pc'
+} as const;
+
+export type TonemappingRange = typeof TonemappingRange[keyof typeof TonemappingRange];
+
+
 

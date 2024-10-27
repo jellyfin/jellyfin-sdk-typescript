@@ -116,12 +116,6 @@ export interface ServerConfiguration {
      */
     'MetadataPath'?: string;
     /**
-     * 
-     * @type {string}
-     * @memberof ServerConfiguration
-     */
-    'MetadataNetworkPath'?: string;
-    /**
      * Gets or sets the preferred metadata language.
      * @type {string}
      * @memberof ServerConfiguration

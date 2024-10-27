@@ -66,6 +66,24 @@ export interface TunerHostInfo {
      * @type {boolean}
      * @memberof TunerHostInfo
      */
+    'AllowFmp4TranscodingContainer'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof TunerHostInfo
+     */
+    'AllowStreamSharing'?: boolean;
+    /**
+     * 
+     * @type {number}
+     * @memberof TunerHostInfo
+     */
+    'FallbackMaxStreamingBitrate'?: number;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof TunerHostInfo
+     */
     'EnableStreamLooping'?: boolean;
     /**
      * 
