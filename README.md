@@ -35,6 +35,7 @@ yarn add @jellyfin/sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
+| 0.11.0 | 10.10.x |
 | 0.10.0 | 10.9.x |
 | 0.9.0 | 10.9.x |
 | 0.8.2 - 0.6.0 | 10.8.1 - 10.8.13 |
@@ -107,6 +108,10 @@ await api.logout();
 ```
 
 ## Breaking Changes
+
+### v0.11.0
+
+* Updated OpenAPI spec for Jellyfin 10.10.0. [#816](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/816)
 
 ### v0.10.0
 
