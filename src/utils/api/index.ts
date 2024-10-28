@@ -33,6 +33,7 @@ export * from './live-tv-api';
 export * from './localization-api';
 export * from './lyrics-api';
 export * from './media-info-api';
+export * from './media-segments-api';
 export * from './movies-api';
 export * from './music-genres-api';
 export * from './package-api';
