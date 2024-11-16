@@ -38,10 +38,11 @@ export const ItemRefreshApiAxiosParamCreator = function (configuration?: Configu
          * @param {MetadataRefreshMode} [imageRefreshMode] (Optional) Specifies the image refresh mode.
          * @param {boolean} [replaceAllMetadata] (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
          * @param {boolean} [replaceAllImages] (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [regenerateTrickplay] (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        refreshItem: async (itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        refreshItem: async (itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, regenerateTrickplay?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             // verify required parameter 'itemId' is not null or undefined
             assertParamExists('refreshItem', 'itemId', itemId)
             const localVarPath = `/Items/{itemId}/Refresh`
@@ -76,6 +77,10 @@ export const ItemRefreshApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['replaceAllImages'] = replaceAllImages;
             }
 
+            if (regenerateTrickplay !== undefined) {
+                localVarQueryParameter['regenerateTrickplay'] = regenerateTrickplay;
+            }
+
 
     
             setSearchParams(localVarUrlObj, localVarQueryParameter);
@@ -105,11 +110,12 @@ export const ItemRefreshApiFp = function(configuration?: Configuration) {
          * @param {MetadataRefreshMode} [imageRefreshMode] (Optional) Specifies the image refresh mode.
          * @param {boolean} [replaceAllMetadata] (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
          * @param {boolean} [replaceAllImages] (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [regenerateTrickplay] (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async refreshItem(itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.refreshItem(itemId, metadataRefreshMode, imageRefreshMode, replaceAllMetadata, replaceAllImages, options);
+        async refreshItem(itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, regenerateTrickplay?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.refreshItem(itemId, metadataRefreshMode, imageRefreshMode, replaceAllMetadata, replaceAllImages, regenerateTrickplay, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ItemRefreshApi.refreshItem']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -132,7 +138,7 @@ export const ItemRefreshApiFactory = function (configuration?: Configuration, ba
          * @throws {RequiredError}
          */
         refreshItem(requestParameters: ItemRefreshApiRefreshItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, options).then((request) => request(axios, basePath));
+            return localVarFp.refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, requestParameters.regenerateTrickplay, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -177,6 +183,13 @@ export interface ItemRefreshApiRefreshItemRequest {
      * @memberof ItemRefreshApiRefreshItem
      */
     readonly replaceAllImages?: boolean
+
+    /**
+     * (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
+     * @type {boolean}
+     * @memberof ItemRefreshApiRefreshItem
+     */
+    readonly regenerateTrickplay?: boolean
 }
 
 /**
@@ -195,7 +208,7 @@ export class ItemRefreshApi extends BaseAPI {
      * @memberof ItemRefreshApi
      */
     public refreshItem(requestParameters: ItemRefreshApiRefreshItemRequest, options?: RawAxiosRequestConfig) {
-        return ItemRefreshApiFp(this.configuration).refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, options).then((request) => request(this.axios, this.basePath));
+        return ItemRefreshApiFp(this.configuration).refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, requestParameters.regenerateTrickplay, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
