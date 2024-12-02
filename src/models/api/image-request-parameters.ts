@@ -21,7 +21,6 @@ export interface ImageRequestParameters {
 	tag?: string,
 	cropWhitespace?: boolean,
 	format?: ImageFormat,
-	addPlayedIndicator?: boolean,
 	percentPlayed?: number,
 	unplayedCount?: number,
 	blur?: number,
