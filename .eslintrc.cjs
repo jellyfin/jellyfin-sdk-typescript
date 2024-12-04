@@ -23,7 +23,6 @@ module.exports = {
 		}],
 
 		'@typescript-eslint/consistent-type-imports': ['error'],
-		'@typescript-eslint/type-annotation-spacing': ['error'],
 
 		'array-callback-return': ['error'],
 		'arrow-spacing': ['error'],
