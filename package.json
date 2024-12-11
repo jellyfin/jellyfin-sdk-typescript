@@ -39,7 +39,7 @@
     "rimraf": "5.0.10",
     "rollup": "4.28.0",
     "typedoc": "0.27.3",
-    "typescript": "5.6.3",
+    "typescript": "5.7.2",
     "vitest": "2.1.8"
   },
   "peerDependencies": {
