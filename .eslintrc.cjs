@@ -2,6 +2,7 @@ module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
 	plugins: [
+		'@stylistic',
 		'@typescript-eslint',
 		'import',
 		'vitest'
@@ -22,8 +23,9 @@ module.exports = {
 			'newlines-between': 'always-and-inside-groups'
 		}],
 
+		'@stylistic/type-annotation-spacing': ['error'],
+
 		'@typescript-eslint/consistent-type-imports': ['error'],
-		'@typescript-eslint/type-annotation-spacing': ['error'],
 
 		'array-callback-return': ['error'],
 		'arrow-spacing': ['error'],
