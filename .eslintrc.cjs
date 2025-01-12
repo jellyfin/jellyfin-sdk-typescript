@@ -23,6 +23,8 @@ module.exports = {
 			'newlines-between': 'always-and-inside-groups'
 		}],
 
+		'@stylistic/type-annotation-spacing': ['error'],
+
 		'@typescript-eslint/consistent-type-imports': ['error'],
 
 		'array-callback-return': ['error'],
