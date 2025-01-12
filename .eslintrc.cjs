@@ -2,6 +2,7 @@ module.exports = {
 	root: true,
 	parser: '@typescript-eslint/parser',
 	plugins: [
+		'@stylistic',
 		'@typescript-eslint',
 		'import',
 		'vitest'
