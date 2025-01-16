@@ -80,4 +80,10 @@ describe('Api', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		expect(api.basePath).toBe(SERVER_URL);
 	});
+
+	it('should return the correct uri', () => {
+		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
+		const uri = api.getUri('/api/url', { param1: 'bar', param2: 'baz 123;xyz' });
+		expect(uri).toBe(`${SERVER_URL}/api/url?param1=bar&param2=baz+123%3Bxyz`);
+	});
 });
