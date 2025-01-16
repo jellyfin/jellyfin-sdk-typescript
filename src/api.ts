@@ -65,6 +65,20 @@ export class Api {
 	}
 
 	/**
+	 * Gets a full URI for a relative URL to the Jellyfin server for a given SDK Api instance.
+	 * @param url The relative URL.
+	 * @param params Any URL parameters.
+	 * @returns The complete URI with protocol, host, and base URL (if any).
+	 */
+	getUri(url: string, params?: object) {
+		return this.axiosInstance.getUri({
+			baseURL: this.basePath,
+			url,
+			params
+		});
+	}
+
+	/**
 	 * Convenience method for logging out and updating the internal state.
 	 */
 	logout(): Promise<AxiosResponse<never> | AxiosResponse<void>> {
