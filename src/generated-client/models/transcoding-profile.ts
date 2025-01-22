@@ -29,7 +29,7 @@ import type { ProfileCondition } from './profile-condition';
 import type { TranscodeSeekInfo } from './transcode-seek-info';
 
 /**
- * A class for transcoding profile information.
+ * A class for transcoding profile information.  Note for client developers: Conditions defined in MediaBrowser.Model.Dlna.CodecProfile has higher priority and can override values defined here.
  * @export
  * @interface TranscodingProfile
  */
