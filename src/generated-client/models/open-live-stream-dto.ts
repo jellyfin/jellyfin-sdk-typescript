@@ -86,7 +86,7 @@ export interface OpenLiveStreamDto {
      */
     'EnableDirectPlay'?: boolean | null;
     /**
-     * Gets or sets a value indicating whether to enale direct stream.
+     * Gets or sets a value indicating whether to enable direct stream.
      * @type {boolean}
      * @memberof OpenLiveStreamDto
      */

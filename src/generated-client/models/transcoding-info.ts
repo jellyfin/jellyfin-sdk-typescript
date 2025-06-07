@@ -20,7 +20,7 @@ import type { HardwareAccelerationType } from './hardware-acceleration-type';
 import type { TranscodeReason } from './transcode-reason';
 
 /**
- * Class holding information on a runnning transcode.
+ * Class holding information on a running transcode.
  * @export
  * @interface TranscodingInfo
  */

@@ -17,7 +17,7 @@
 import type { DeviceProfile } from './device-profile';
 
 /**
- * Plabyback info dto.
+ * Playback info dto.
  * @export
  * @interface PlaybackInfoDto
  */

@@ -50,6 +50,12 @@ export interface LibraryOptionsResultDto {
      */
     'LyricFetchers'?: Array<LibraryOptionInfoDto>;
     /**
+     * Gets or sets the list of MediaSegment Providers.
+     * @type {Array<LibraryOptionInfoDto>}
+     * @memberof LibraryOptionsResultDto
+     */
+    'MediaSegmentProviders'?: Array<LibraryOptionInfoDto>;
+    /**
      * Gets or sets the type options.
      * @type {Array<LibraryTypeOptionsDto>}
      * @memberof LibraryOptionsResultDto

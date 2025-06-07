@@ -21,7 +21,7 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
-import type { BrandingOptions } from '../models';
+import type { BrandingOptionsDto } from '../models';
 /**
  * BrandingApi - axios parameter creator
  * @export
@@ -158,7 +158,7 @@ export const BrandingApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getBrandingOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BrandingOptions>> {
+        async getBrandingOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BrandingOptionsDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getBrandingOptions(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['BrandingApi.getBrandingOptions']?.[localVarOperationServerIndex]?.url;
@@ -198,7 +198,7 @@ export const BrandingApiFactory = function (configuration?: Configuration, baseP
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getBrandingOptions(options?: RawAxiosRequestConfig): AxiosPromise<BrandingOptions> {
+        getBrandingOptions(options?: RawAxiosRequestConfig): AxiosPromise<BrandingOptionsDto> {
             return localVarFp.getBrandingOptions(options).then((request) => request(axios, basePath));
         },
     };

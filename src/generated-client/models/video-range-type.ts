@@ -28,6 +28,10 @@ export const VideoRangeType = {
     DoviWithHdr10: 'DOVIWithHDR10',
     DoviWithHlg: 'DOVIWithHLG',
     DoviWithSdr: 'DOVIWithSDR',
+    DoviWithEl: 'DOVIWithEL',
+    DoviWithHdr10Plus: 'DOVIWithHDR10Plus',
+    DoviWithElhdr10Plus: 'DOVIWithELHDR10Plus',
+    DoviInvalid: 'DOVIInvalid',
     Hdr10Plus: 'HDR10Plus'
 } as const;
 

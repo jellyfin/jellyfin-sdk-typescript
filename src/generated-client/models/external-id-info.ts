@@ -40,13 +40,6 @@ export interface ExternalIdInfo {
      * @memberof ExternalIdInfo
      */
     'Type'?: ExternalIdMediaType;
-    /**
-     * Gets or sets the URL format string.
-     * @type {string}
-     * @memberof ExternalIdInfo
-     * @deprecated
-     */
-    'UrlFormatString'?: string | null;
 }
 
 

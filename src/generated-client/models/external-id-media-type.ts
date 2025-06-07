@@ -32,7 +32,8 @@ export const ExternalIdMediaType = {
     Season: 'Season',
     Series: 'Series',
     Track: 'Track',
-    Book: 'Book'
+    Book: 'Book',
+    Recording: 'Recording'
 } as const;
 
 export type ExternalIdMediaType = typeof ExternalIdMediaType[keyof typeof ExternalIdMediaType];

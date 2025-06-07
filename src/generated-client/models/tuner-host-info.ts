@@ -109,5 +109,11 @@ export interface TunerHostInfo {
      * @memberof TunerHostInfo
      */
     'IgnoreDts'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof TunerHostInfo
+     */
+    'ReadAtNativeFramerate'?: boolean;
 }
 
