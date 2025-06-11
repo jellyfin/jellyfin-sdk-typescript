@@ -23,6 +23,9 @@ import type { ForceKeepAliveMessage } from './force-keep-alive-message';
 import type { GeneralCommandMessage } from './general-command-message';
 // May contain unused imports in some cases
 // @ts-ignore
+import type { GroupUpdate } from './group-update';
+// May contain unused imports in some cases
+// @ts-ignore
 import type { LibraryChangedMessage } from './library-changed-message';
 // May contain unused imports in some cases
 // @ts-ignore
@@ -83,7 +86,7 @@ import type { SessionsMessage } from './sessions-message';
 import type { SyncPlayCommandMessage } from './sync-play-command-message';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { SyncPlayGroupUpdateCommandMessage } from './sync-play-group-update-command-message';
+import type { SyncPlayGroupUpdateMessage } from './sync-play-group-update-message';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { TimerCancelledMessage } from './timer-cancelled-message';
@@ -98,9 +101,6 @@ import type { UserDataChangedMessage } from './user-data-changed-message';
 import type { UserDeletedMessage } from './user-deleted-message';
 // May contain unused imports in some cases
 // @ts-ignore
-import type { UserDto } from './user-dto';
-// May contain unused imports in some cases
-// @ts-ignore
 import type { UserUpdatedMessage } from './user-updated-message';
 
 /**
@@ -108,6 +108,6 @@ import type { UserUpdatedMessage } from './user-updated-message';
  * Represents the list of possible outbound websocket types
  * @export
  */
-export type OutboundWebSocketMessage = { MessageType: 'ActivityLogEntry' } & ActivityLogEntryMessage | { MessageType: 'ForceKeepAlive' } & ForceKeepAliveMessage | { MessageType: 'GeneralCommand' } & GeneralCommandMessage | { MessageType: 'KeepAlive' } & OutboundKeepAliveMessage | { MessageType: 'LibraryChanged' } & LibraryChangedMessage | { MessageType: 'PackageInstallationCancelled' } & PluginInstallationCancelledMessage | { MessageType: 'PackageInstallationCompleted' } & PluginInstallationCompletedMessage | { MessageType: 'PackageInstallationFailed' } & PluginInstallationFailedMessage | { MessageType: 'PackageInstalling' } & PluginInstallingMessage | { MessageType: 'PackageUninstalled' } & PluginUninstalledMessage | { MessageType: 'Play' } & PlayMessage | { MessageType: 'Playstate' } & PlaystateMessage | { MessageType: 'RefreshProgress' } & RefreshProgressMessage | { MessageType: 'RestartRequired' } & RestartRequiredMessage | { MessageType: 'ScheduledTaskEnded' } & ScheduledTaskEndedMessage | { MessageType: 'ScheduledTasksInfo' } & ScheduledTasksInfoMessage | { MessageType: 'SeriesTimerCancelled' } & SeriesTimerCancelledMessage | { MessageType: 'SeriesTimerCreated' } & SeriesTimerCreatedMessage | { MessageType: 'ServerRestarting' } & ServerRestartingMessage | { MessageType: 'ServerShuttingDown' } & ServerShuttingDownMessage | { MessageType: 'Sessions' } & SessionsMessage | { MessageType: 'SyncPlayCommand' } & SyncPlayCommandMessage | { MessageType: 'SyncPlayGroupUpdate' } & SyncPlayGroupUpdateCommandMessage | { MessageType: 'TimerCancelled' } & TimerCancelledMessage | { MessageType: 'TimerCreated' } & TimerCreatedMessage | { MessageType: 'UserDataChanged' } & UserDataChangedMessage | { MessageType: 'UserDeleted' } & UserDeletedMessage | { MessageType: 'UserUpdated' } & UserUpdatedMessage;
+export type OutboundWebSocketMessage = { MessageType: 'ActivityLogEntry' } & ActivityLogEntryMessage | { MessageType: 'ForceKeepAlive' } & ForceKeepAliveMessage | { MessageType: 'GeneralCommand' } & GeneralCommandMessage | { MessageType: 'KeepAlive' } & OutboundKeepAliveMessage | { MessageType: 'LibraryChanged' } & LibraryChangedMessage | { MessageType: 'PackageInstallationCancelled' } & PluginInstallationCancelledMessage | { MessageType: 'PackageInstallationCompleted' } & PluginInstallationCompletedMessage | { MessageType: 'PackageInstallationFailed' } & PluginInstallationFailedMessage | { MessageType: 'PackageInstalling' } & PluginInstallingMessage | { MessageType: 'PackageUninstalled' } & PluginUninstalledMessage | { MessageType: 'Play' } & PlayMessage | { MessageType: 'Playstate' } & PlaystateMessage | { MessageType: 'RefreshProgress' } & RefreshProgressMessage | { MessageType: 'RestartRequired' } & RestartRequiredMessage | { MessageType: 'ScheduledTaskEnded' } & ScheduledTaskEndedMessage | { MessageType: 'ScheduledTasksInfo' } & ScheduledTasksInfoMessage | { MessageType: 'SeriesTimerCancelled' } & SeriesTimerCancelledMessage | { MessageType: 'SeriesTimerCreated' } & SeriesTimerCreatedMessage | { MessageType: 'ServerRestarting' } & ServerRestartingMessage | { MessageType: 'ServerShuttingDown' } & ServerShuttingDownMessage | { MessageType: 'Sessions' } & SessionsMessage | { MessageType: 'SyncPlayCommand' } & SyncPlayCommandMessage | { MessageType: 'SyncPlayGroupUpdate' } & SyncPlayGroupUpdateMessage | { MessageType: 'TimerCancelled' } & TimerCancelledMessage | { MessageType: 'TimerCreated' } & TimerCreatedMessage | { MessageType: 'UserDataChanged' } & UserDataChangedMessage | { MessageType: 'UserDeleted' } & UserDeletedMessage | { MessageType: 'UserUpdated' } & UserUpdatedMessage;
 
 

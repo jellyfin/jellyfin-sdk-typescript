@@ -129,42 +129,49 @@ export interface SystemInfo {
      * Gets or sets the program data path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'ProgramDataPath'?: string | null;
     /**
      * Gets or sets the web UI resources path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'WebPath'?: string | null;
     /**
      * Gets or sets the items by name path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'ItemsByNamePath'?: string | null;
     /**
      * Gets or sets the cache path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'CachePath'?: string | null;
     /**
      * Gets or sets the log path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'LogPath'?: string | null;
     /**
      * Gets or sets the internal metadata path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'InternalMetadataPath'?: string | null;
     /**
      * Gets or sets the transcode path.
      * @type {string}
      * @memberof SystemInfo
+     * @deprecated
      */
     'TranscodingTempPath'?: string | null;
     /**
