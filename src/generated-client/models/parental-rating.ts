@@ -12,6 +12,9 @@
  */
 
 
+// May contain unused imports in some cases
+// @ts-ignore
+import type { ParentalRatingScore } from './parental-rating-score';
 
 /**
  * Class ParentalRating.
@@ -24,12 +27,18 @@ export interface ParentalRating {
      * @type {string}
      * @memberof ParentalRating
      */
-    'Name'?: string | null;
+    'Name'?: string;
     /**
      * Gets or sets the value.
      * @type {number}
      * @memberof ParentalRating
      */
     'Value'?: number | null;
+    /**
+     * 
+     * @type {ParentalRatingScore}
+     * @memberof ParentalRating
+     */
+    'RatingScore'?: ParentalRatingScore;
 }
 

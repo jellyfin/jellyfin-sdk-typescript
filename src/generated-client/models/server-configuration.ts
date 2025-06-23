@@ -98,7 +98,7 @@ export interface ServerConfiguration {
      */
     'QuickConnectAvailable'?: boolean;
     /**
-     * Gets or sets a value indicating whether [enable case sensitive item ids].
+     * Gets or sets a value indicating whether [enable case-sensitive item ids].
      * @type {boolean}
      * @memberof ServerConfiguration
      */
@@ -194,6 +194,12 @@ export interface ServerConfiguration {
      */
     'LibraryUpdateDuration'?: number;
     /**
+     * Gets or sets the maximum amount of items to cache.
+     * @type {number}
+     * @memberof ServerConfiguration
+     */
+    'CacheSize'?: number;
+    /**
      * 
      * @type {ImageSavingConvention}
      * @memberof ServerConfiguration
@@ -252,7 +258,13 @@ export interface ServerConfiguration {
      * @type {boolean}
      * @memberof ServerConfiguration
      */
-    'EnableGroupingIntoCollections'?: boolean;
+    'EnableGroupingMoviesIntoCollections'?: boolean;
+    /**
+     * 
+     * @type {boolean}
+     * @memberof ServerConfiguration
+     */
+    'EnableGroupingShowsIntoCollections'?: boolean;
     /**
      * 
      * @type {boolean}
@@ -326,19 +338,13 @@ export interface ServerConfiguration {
      */
     'LibraryMetadataRefreshConcurrency'?: number;
     /**
-     * Gets or sets a value indicating whether older plugins should automatically be deleted from the plugin folder.
-     * @type {boolean}
-     * @memberof ServerConfiguration
-     */
-    'RemoveOldPlugins'?: boolean;
-    /**
      * Gets or sets a value indicating whether clients should be allowed to upload logs.
      * @type {boolean}
      * @memberof ServerConfiguration
      */
     'AllowClientLogUpload'?: boolean;
     /**
-     * Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation alltogether.
+     * Gets or sets the dummy chapter duration in seconds, use 0 (zero) or less to disable generation altogether.
      * @type {number}
      * @memberof ServerConfiguration
      */
@@ -367,6 +373,12 @@ export interface ServerConfiguration {
      * @memberof ServerConfiguration
      */
     'TrickplayOptions'?: TrickplayOptions;
+    /**
+     * Gets or sets a value indicating whether old authorization methods are allowed.
+     * @type {boolean}
+     * @memberof ServerConfiguration
+     */
+    'EnableLegacyAuthorization'?: boolean;
 }
 
 

@@ -649,7 +649,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -1235,6 +1235,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * 
          * @summary Gets recommended live tv epgs.
          * @param {string} [userId] Optional. filter by user id.
+         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [isAiring] Optional. Filter by programs that are currently airing, or not.
          * @param {boolean} [hasAired] Optional. Filter by programs that have completed airing, or not.
@@ -1253,7 +1254,7 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getRecommendedPrograms: async (userId?: string, limit?: number, isAiring?: boolean, hasAired?: boolean, isSeries?: boolean, isMovie?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, genreIds?: Array<string>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getRecommendedPrograms: async (userId?: string, startIndex?: number, limit?: number, isAiring?: boolean, hasAired?: boolean, isSeries?: boolean, isMovie?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, genreIds?: Array<string>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/LiveTv/Programs/Recommended`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1271,6 +1272,10 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
 
             if (userId !== undefined) {
                 localVarQueryParameter['userId'] = userId;
+            }
+
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
             }
 
             if (limit !== undefined) {
@@ -2337,7 +2342,7 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -2505,6 +2510,7 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets recommended live tv epgs.
          * @param {string} [userId] Optional. filter by user id.
+         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {boolean} [isAiring] Optional. Filter by programs that are currently airing, or not.
          * @param {boolean} [hasAired] Optional. Filter by programs that have completed airing, or not.
@@ -2523,8 +2529,8 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getRecommendedPrograms(userId?: string, limit?: number, isAiring?: boolean, hasAired?: boolean, isSeries?: boolean, isMovie?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, genreIds?: Array<string>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getRecommendedPrograms(userId, limit, isAiring, hasAired, isSeries, isMovie, isNews, isKids, isSports, enableImages, imageTypeLimit, enableImageTypes, genreIds, fields, enableUserData, enableTotalRecordCount, options);
+        async getRecommendedPrograms(userId?: string, startIndex?: number, limit?: number, isAiring?: boolean, hasAired?: boolean, isSeries?: boolean, isMovie?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, genreIds?: Array<string>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getRecommendedPrograms(userId, startIndex, limit, isAiring, hasAired, isSeries, isMovie, isNews, isKids, isSports, enableImages, imageTypeLimit, enableImageTypes, genreIds, fields, enableUserData, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LiveTvApi.getRecommendedPrograms']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -2937,7 +2943,7 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
-         * @summary Get guid info.
+         * @summary Get guide info.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
@@ -3031,7 +3037,7 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          * @throws {RequiredError}
          */
         getRecommendedPrograms(requestParameters: LiveTvApiGetRecommendedProgramsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecommendedPrograms(requestParameters.userId, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
+            return localVarFp.getRecommendedPrograms(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3890,6 +3896,13 @@ export interface LiveTvApiGetRecommendedProgramsRequest {
     readonly userId?: string
 
     /**
+     * Optional. The record index to start at. All items with a lower index will be dropped from the results.
+     * @type {number}
+     * @memberof LiveTvApiGetRecommendedPrograms
+     */
+    readonly startIndex?: number
+
+    /**
      * Optional. The maximum number of records to return.
      * @type {number}
      * @memberof LiveTvApiGetRecommendedPrograms
@@ -4645,7 +4658,7 @@ export class LiveTvApi extends BaseAPI {
 
     /**
      * 
-     * @summary Get guid info.
+     * @summary Get guide info.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      * @memberof LiveTvApi
@@ -4758,7 +4771,7 @@ export class LiveTvApi extends BaseAPI {
      * @memberof LiveTvApi
      */
     public getRecommendedPrograms(requestParameters: LiveTvApiGetRecommendedProgramsRequest = {}, options?: RawAxiosRequestConfig) {
-        return LiveTvApiFp(this.configuration).getRecommendedPrograms(requestParameters.userId, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
+        return LiveTvApiFp(this.configuration).getRecommendedPrograms(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

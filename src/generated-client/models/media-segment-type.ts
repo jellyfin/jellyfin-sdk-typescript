@@ -14,7 +14,7 @@
 
 
 /**
- * Defines the types of content an individual Jellyfin.Data.Entities.MediaSegment represents.
+ * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
  * @export
  * @enum {string}
  */

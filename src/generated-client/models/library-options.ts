@@ -184,7 +184,7 @@ export interface LibraryOptions {
      * @type {Array<string>}
      * @memberof LibraryOptions
      */
-    'MediaSegmentProvideOrder'?: Array<string>;
+    'MediaSegmentProviderOrder'?: Array<string>;
     /**
      * 
      * @type {boolean}

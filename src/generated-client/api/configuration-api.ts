@@ -21,6 +21,8 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
+import type { BrandingOptionsDto } from '../models';
+// @ts-ignore
 import type { MetadataOptions } from '../models';
 // @ts-ignore
 import type { ServerConfiguration } from '../models';
@@ -127,6 +129,45 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates branding configuration.
+         * @param {BrandingOptionsDto} brandingOptionsDto Branding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateBrandingConfiguration: async (brandingOptionsDto: BrandingOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'brandingOptionsDto' is not null or undefined
+            assertParamExists('updateBrandingConfiguration', 'brandingOptionsDto', brandingOptionsDto)
+            const localVarPath = `/System/Configuration/Branding`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+
+    
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(brandingOptionsDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -264,6 +305,19 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Updates branding configuration.
+         * @param {BrandingOptionsDto} brandingOptionsDto Branding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateBrandingConfiguration(brandingOptionsDto: BrandingOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateBrandingConfiguration(brandingOptionsDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['ConfigurationApi.updateBrandingConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Updates application configuration.
          * @param {ServerConfiguration} serverConfiguration Configuration.
          * @param {*} [options] Override http request option.
@@ -329,6 +383,16 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
         },
         /**
          * 
+         * @summary Updates branding configuration.
+         * @param {ConfigurationApiUpdateBrandingConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateBrandingConfiguration(requestParameters: ConfigurationApiUpdateBrandingConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateBrandingConfiguration(requestParameters.brandingOptionsDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Updates application configuration.
          * @param {ConfigurationApiUpdateConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -362,6 +426,20 @@ export interface ConfigurationApiGetNamedConfigurationRequest {
      * @memberof ConfigurationApiGetNamedConfiguration
      */
     readonly key: string
+}
+
+/**
+ * Request parameters for updateBrandingConfiguration operation in ConfigurationApi.
+ * @export
+ * @interface ConfigurationApiUpdateBrandingConfigurationRequest
+ */
+export interface ConfigurationApiUpdateBrandingConfigurationRequest {
+    /**
+     * Branding configuration.
+     * @type {BrandingOptionsDto}
+     * @memberof ConfigurationApiUpdateBrandingConfiguration
+     */
+    readonly brandingOptionsDto: BrandingOptionsDto
 }
 
 /**
@@ -438,6 +516,18 @@ export class ConfigurationApi extends BaseAPI {
      */
     public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates branding configuration.
+     * @param {ConfigurationApiUpdateBrandingConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     * @memberof ConfigurationApi
+     */
+    public updateBrandingConfiguration(requestParameters: ConfigurationApiUpdateBrandingConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return ConfigurationApiFp(this.configuration).updateBrandingConfiguration(requestParameters.brandingOptionsDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

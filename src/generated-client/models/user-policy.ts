@@ -72,6 +72,12 @@ export interface UserPolicy {
     'MaxParentalRating'?: number | null;
     /**
      * 
+     * @type {number}
+     * @memberof UserPolicy
+     */
+    'MaxParentalSubRating'?: number | null;
+    /**
+     * 
      * @type {Array<string>}
      * @memberof UserPolicy
      */

@@ -45,7 +45,8 @@ export const TranscodeReason = {
     UnknownAudioStreamInfo: 'UnknownAudioStreamInfo',
     DirectPlayError: 'DirectPlayError',
     VideoRangeTypeNotSupported: 'VideoRangeTypeNotSupported',
-    VideoCodecTagNotSupported: 'VideoCodecTagNotSupported'
+    VideoCodecTagNotSupported: 'VideoCodecTagNotSupported',
+    StreamCountExceedsLimit: 'StreamCountExceedsLimit'
 } as const;
 
 export type TranscodeReason = typeof TranscodeReason[keyof typeof TranscodeReason];

@@ -351,7 +351,7 @@ export const AudioApiAxiosParamCreator = function (configuration?: Configuration
          * @param {number} [maxVideoBitDepth] Optional. The maximum video bit depth.
          * @param {boolean} [requireAvc] Optional. Whether to require avc.
          * @param {boolean} [deInterlace] Optional. Whether to deinterlace the video.
-         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamporphic stream.
+         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamorphic stream.
          * @param {number} [transcodingMaxAudioChannels] Optional. The maximum number of audio channels to transcode.
          * @param {number} [cpuCoreLimit] Optional. The limit of how many cpu cores to use.
          * @param {string} [liveStreamId] The live stream id.
@@ -912,7 +912,7 @@ export const AudioApiAxiosParamCreator = function (configuration?: Configuration
          * @param {number} [maxVideoBitDepth] Optional. The maximum video bit depth.
          * @param {boolean} [requireAvc] Optional. Whether to require avc.
          * @param {boolean} [deInterlace] Optional. Whether to deinterlace the video.
-         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamporphic stream.
+         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamorphic stream.
          * @param {number} [transcodingMaxAudioChannels] Optional. The maximum number of audio channels to transcode.
          * @param {number} [cpuCoreLimit] Optional. The limit of how many cpu cores to use.
          * @param {string} [liveStreamId] The live stream id.
@@ -1264,7 +1264,7 @@ export const AudioApiFp = function(configuration?: Configuration) {
          * @param {number} [maxVideoBitDepth] Optional. The maximum video bit depth.
          * @param {boolean} [requireAvc] Optional. Whether to require avc.
          * @param {boolean} [deInterlace] Optional. Whether to deinterlace the video.
-         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamporphic stream.
+         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamorphic stream.
          * @param {number} [transcodingMaxAudioChannels] Optional. The maximum number of audio channels to transcode.
          * @param {number} [cpuCoreLimit] Optional. The limit of how many cpu cores to use.
          * @param {string} [liveStreamId] The live stream id.
@@ -1388,7 +1388,7 @@ export const AudioApiFp = function(configuration?: Configuration) {
          * @param {number} [maxVideoBitDepth] Optional. The maximum video bit depth.
          * @param {boolean} [requireAvc] Optional. Whether to require avc.
          * @param {boolean} [deInterlace] Optional. Whether to deinterlace the video.
-         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamporphic stream.
+         * @param {boolean} [requireNonAnamorphic] Optional. Whether to require a non anamorphic stream.
          * @param {number} [transcodingMaxAudioChannels] Optional. The maximum number of audio channels to transcode.
          * @param {number} [cpuCoreLimit] Optional. The limit of how many cpu cores to use.
          * @param {string} [liveStreamId] The live stream id.
@@ -2086,7 +2086,7 @@ export interface AudioApiGetAudioStreamByContainerRequest {
     readonly deInterlace?: boolean
 
     /**
-     * Optional. Whether to require a non anamporphic stream.
+     * Optional. Whether to require a non anamorphic stream.
      * @type {boolean}
      * @memberof AudioApiGetAudioStreamByContainer
      */
@@ -2800,7 +2800,7 @@ export interface AudioApiHeadAudioStreamByContainerRequest {
     readonly deInterlace?: boolean
 
     /**
-     * Optional. Whether to require a non anamporphic stream.
+     * Optional. Whether to require a non anamorphic stream.
      * @type {boolean}
      * @memberof AudioApiHeadAudioStreamByContainer
      */

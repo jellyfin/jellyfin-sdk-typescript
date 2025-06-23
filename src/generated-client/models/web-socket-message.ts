@@ -14,6 +14,9 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
+import type { GroupUpdate } from './group-update';
+// May contain unused imports in some cases
+// @ts-ignore
 import type { InboundWebSocketMessage } from './inbound-web-socket-message';
 // May contain unused imports in some cases
 // @ts-ignore
@@ -21,9 +24,6 @@ import type { OutboundWebSocketMessage } from './outbound-web-socket-message';
 // May contain unused imports in some cases
 // @ts-ignore
 import type { SessionMessageType } from './session-message-type';
-// May contain unused imports in some cases
-// @ts-ignore
-import type { UserDto } from './user-dto';
 
 /**
  * @type WebSocketMessage
