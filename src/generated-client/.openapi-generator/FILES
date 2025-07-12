@@ -394,7 +394,7 @@ models/transcode-seek-info.ts
 models/transcoding-info.ts
 models/transcoding-profile.ts
 models/transport-stream-timestamp.ts
-models/trickplay-info.ts
+models/trickplay-info-dto.ts
 models/trickplay-options.ts
 models/trickplay-scan-behavior.ts
 models/tuner-channel-mapping.ts

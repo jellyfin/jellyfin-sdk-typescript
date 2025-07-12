@@ -20,11 +20,17 @@
  */
 export interface LyricLineCue {
     /**
-     * Gets the character index of the lyric.
+     * Gets the start character index of the cue.
      * @type {number}
      * @memberof LyricLineCue
      */
     'Position'?: number;
+    /**
+     * Gets the end character index of the cue.
+     * @type {number}
+     * @memberof LyricLineCue
+     */
+    'EndPosition'?: number;
     /**
      * Gets the timestamp the lyric is synced to in ticks.
      * @type {number}
