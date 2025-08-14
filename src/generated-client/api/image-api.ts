@@ -1356,20 +1356,10 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
          * @summary Generates or gets the splashscreen.
          * @param {string} [tag] Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Blur image.
-         * @param {string} [backgroundColor] Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Apply a foreground layer on top of the image.
-         * @param {number} [quality] Quality setting, from 0-100.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSplashscreen: async (tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, width?: number, height?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, quality?: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getSplashscreen: async (tag?: string, format?: ImageFormat, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Branding/Splashscreen`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1388,46 +1378,6 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
 
             if (format !== undefined) {
                 localVarQueryParameter['format'] = format;
-            }
-
-            if (maxWidth !== undefined) {
-                localVarQueryParameter['maxWidth'] = maxWidth;
-            }
-
-            if (maxHeight !== undefined) {
-                localVarQueryParameter['maxHeight'] = maxHeight;
-            }
-
-            if (width !== undefined) {
-                localVarQueryParameter['width'] = width;
-            }
-
-            if (height !== undefined) {
-                localVarQueryParameter['height'] = height;
-            }
-
-            if (fillWidth !== undefined) {
-                localVarQueryParameter['fillWidth'] = fillWidth;
-            }
-
-            if (fillHeight !== undefined) {
-                localVarQueryParameter['fillHeight'] = fillHeight;
-            }
-
-            if (blur !== undefined) {
-                localVarQueryParameter['blur'] = blur;
-            }
-
-            if (backgroundColor !== undefined) {
-                localVarQueryParameter['backgroundColor'] = backgroundColor;
-            }
-
-            if (foregroundLayer !== undefined) {
-                localVarQueryParameter['foregroundLayer'] = foregroundLayer;
-            }
-
-            if (quality !== undefined) {
-                localVarQueryParameter['quality'] = quality;
             }
 
 
@@ -1672,23 +1622,10 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
          * @param {string} [userId] User id.
          * @param {string} [tag] Optional. Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [percentPlayed] Optional. Percent to render for the percent played overlay.
-         * @param {number} [unplayedCount] Optional. Unplayed count overlay to render.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [quality] Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Optional. Blur image.
-         * @param {string} [backgroundColor] Optional. Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Optional. Apply a foreground layer on top of the image.
-         * @param {number} [imageIndex] Image index.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getUserImage: async (userId?: string, tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, percentPlayed?: number, unplayedCount?: number, width?: number, height?: number, quality?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, imageIndex?: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getUserImage: async (userId?: string, tag?: string, format?: ImageFormat, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/UserImage`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -1711,58 +1648,6 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
 
             if (format !== undefined) {
                 localVarQueryParameter['format'] = format;
-            }
-
-            if (maxWidth !== undefined) {
-                localVarQueryParameter['maxWidth'] = maxWidth;
-            }
-
-            if (maxHeight !== undefined) {
-                localVarQueryParameter['maxHeight'] = maxHeight;
-            }
-
-            if (percentPlayed !== undefined) {
-                localVarQueryParameter['percentPlayed'] = percentPlayed;
-            }
-
-            if (unplayedCount !== undefined) {
-                localVarQueryParameter['unplayedCount'] = unplayedCount;
-            }
-
-            if (width !== undefined) {
-                localVarQueryParameter['width'] = width;
-            }
-
-            if (height !== undefined) {
-                localVarQueryParameter['height'] = height;
-            }
-
-            if (quality !== undefined) {
-                localVarQueryParameter['quality'] = quality;
-            }
-
-            if (fillWidth !== undefined) {
-                localVarQueryParameter['fillWidth'] = fillWidth;
-            }
-
-            if (fillHeight !== undefined) {
-                localVarQueryParameter['fillHeight'] = fillHeight;
-            }
-
-            if (blur !== undefined) {
-                localVarQueryParameter['blur'] = blur;
-            }
-
-            if (backgroundColor !== undefined) {
-                localVarQueryParameter['backgroundColor'] = backgroundColor;
-            }
-
-            if (foregroundLayer !== undefined) {
-                localVarQueryParameter['foregroundLayer'] = foregroundLayer;
-            }
-
-            if (imageIndex !== undefined) {
-                localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
 
@@ -3125,23 +3010,10 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
          * @param {string} [userId] User id.
          * @param {string} [tag] Optional. Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [percentPlayed] Optional. Percent to render for the percent played overlay.
-         * @param {number} [unplayedCount] Optional. Unplayed count overlay to render.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [quality] Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Optional. Blur image.
-         * @param {string} [backgroundColor] Optional. Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Optional. Apply a foreground layer on top of the image.
-         * @param {number} [imageIndex] Image index.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        headUserImage: async (userId?: string, tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, percentPlayed?: number, unplayedCount?: number, width?: number, height?: number, quality?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, imageIndex?: number, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        headUserImage: async (userId?: string, tag?: string, format?: ImageFormat, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/UserImage`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -3164,58 +3036,6 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
 
             if (format !== undefined) {
                 localVarQueryParameter['format'] = format;
-            }
-
-            if (maxWidth !== undefined) {
-                localVarQueryParameter['maxWidth'] = maxWidth;
-            }
-
-            if (maxHeight !== undefined) {
-                localVarQueryParameter['maxHeight'] = maxHeight;
-            }
-
-            if (percentPlayed !== undefined) {
-                localVarQueryParameter['percentPlayed'] = percentPlayed;
-            }
-
-            if (unplayedCount !== undefined) {
-                localVarQueryParameter['unplayedCount'] = unplayedCount;
-            }
-
-            if (width !== undefined) {
-                localVarQueryParameter['width'] = width;
-            }
-
-            if (height !== undefined) {
-                localVarQueryParameter['height'] = height;
-            }
-
-            if (quality !== undefined) {
-                localVarQueryParameter['quality'] = quality;
-            }
-
-            if (fillWidth !== undefined) {
-                localVarQueryParameter['fillWidth'] = fillWidth;
-            }
-
-            if (fillHeight !== undefined) {
-                localVarQueryParameter['fillHeight'] = fillHeight;
-            }
-
-            if (blur !== undefined) {
-                localVarQueryParameter['blur'] = blur;
-            }
-
-            if (backgroundColor !== undefined) {
-                localVarQueryParameter['backgroundColor'] = backgroundColor;
-            }
-
-            if (foregroundLayer !== undefined) {
-                localVarQueryParameter['foregroundLayer'] = foregroundLayer;
-            }
-
-            if (imageIndex !== undefined) {
-                localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
 
@@ -3827,21 +3647,11 @@ export const ImageApiFp = function(configuration?: Configuration) {
          * @summary Generates or gets the splashscreen.
          * @param {string} [tag] Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Blur image.
-         * @param {string} [backgroundColor] Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Apply a foreground layer on top of the image.
-         * @param {number} [quality] Quality setting, from 0-100.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getSplashscreen(tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, width?: number, height?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, quality?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getSplashscreen(tag, format, maxWidth, maxHeight, width, height, fillWidth, fillHeight, blur, backgroundColor, foregroundLayer, quality, options);
+        async getSplashscreen(tag?: string, format?: ImageFormat, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSplashscreen(tag, format, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ImageApi.getSplashscreen']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -3910,24 +3720,11 @@ export const ImageApiFp = function(configuration?: Configuration) {
          * @param {string} [userId] User id.
          * @param {string} [tag] Optional. Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [percentPlayed] Optional. Percent to render for the percent played overlay.
-         * @param {number} [unplayedCount] Optional. Unplayed count overlay to render.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [quality] Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Optional. Blur image.
-         * @param {string} [backgroundColor] Optional. Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Optional. Apply a foreground layer on top of the image.
-         * @param {number} [imageIndex] Image index.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getUserImage(userId?: string, tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, percentPlayed?: number, unplayedCount?: number, width?: number, height?: number, quality?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, imageIndex?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getUserImage(userId, tag, format, maxWidth, maxHeight, percentPlayed, unplayedCount, width, height, quality, fillWidth, fillHeight, blur, backgroundColor, foregroundLayer, imageIndex, options);
+        async getUserImage(userId?: string, tag?: string, format?: ImageFormat, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getUserImage(userId, tag, format, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ImageApi.getUserImage']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -4286,24 +4083,11 @@ export const ImageApiFp = function(configuration?: Configuration) {
          * @param {string} [userId] User id.
          * @param {string} [tag] Optional. Supply the cache tag from the item object to receive strong caching headers.
          * @param {ImageFormat} [format] Determines the output format of the image - original,gif,jpg,png.
-         * @param {number} [maxWidth] The maximum image width to return.
-         * @param {number} [maxHeight] The maximum image height to return.
-         * @param {number} [percentPlayed] Optional. Percent to render for the percent played overlay.
-         * @param {number} [unplayedCount] Optional. Unplayed count overlay to render.
-         * @param {number} [width] The fixed image width to return.
-         * @param {number} [height] The fixed image height to return.
-         * @param {number} [quality] Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-         * @param {number} [fillWidth] Width of box to fill.
-         * @param {number} [fillHeight] Height of box to fill.
-         * @param {number} [blur] Optional. Blur image.
-         * @param {string} [backgroundColor] Optional. Apply a background color for transparent images.
-         * @param {string} [foregroundLayer] Optional. Apply a foreground layer on top of the image.
-         * @param {number} [imageIndex] Image index.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async headUserImage(userId?: string, tag?: string, format?: ImageFormat, maxWidth?: number, maxHeight?: number, percentPlayed?: number, unplayedCount?: number, width?: number, height?: number, quality?: number, fillWidth?: number, fillHeight?: number, blur?: number, backgroundColor?: string, foregroundLayer?: string, imageIndex?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.headUserImage(userId, tag, format, maxWidth, maxHeight, percentPlayed, unplayedCount, width, height, quality, fillWidth, fillHeight, blur, backgroundColor, foregroundLayer, imageIndex, options);
+        async headUserImage(userId?: string, tag?: string, format?: ImageFormat, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.headUserImage(userId, tag, format, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ImageApi.headUserImage']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -4549,7 +4333,7 @@ export const ImageApiFactory = function (configuration?: Configuration, basePath
          * @throws {RequiredError}
          */
         getSplashscreen(requestParameters: ImageApiGetSplashscreenRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<File> {
-            return localVarFp.getSplashscreen(requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.quality, options).then((request) => request(axios, basePath));
+            return localVarFp.getSplashscreen(requestParameters.tag, requestParameters.format, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -4579,7 +4363,7 @@ export const ImageApiFactory = function (configuration?: Configuration, basePath
          * @throws {RequiredError}
          */
         getUserImage(requestParameters: ImageApiGetUserImageRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<File> {
-            return localVarFp.getUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(axios, basePath));
+            return localVarFp.getUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -4709,7 +4493,7 @@ export const ImageApiFactory = function (configuration?: Configuration, basePath
          * @throws {RequiredError}
          */
         headUserImage(requestParameters: ImageApiHeadUserImageRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<File> {
-            return localVarFp.headUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(axios, basePath));
+            return localVarFp.headUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -6127,76 +5911,6 @@ export interface ImageApiGetSplashscreenRequest {
      * @memberof ImageApiGetSplashscreen
      */
     readonly format?: ImageFormat
-
-    /**
-     * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly maxWidth?: number
-
-    /**
-     * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly maxHeight?: number
-
-    /**
-     * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly width?: number
-
-    /**
-     * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly height?: number
-
-    /**
-     * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly fillWidth?: number
-
-    /**
-     * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly fillHeight?: number
-
-    /**
-     * Blur image.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly blur?: number
-
-    /**
-     * Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly backgroundColor?: string
-
-    /**
-     * Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly foregroundLayer?: string
-
-    /**
-     * Quality setting, from 0-100.
-     * @type {number}
-     * @memberof ImageApiGetSplashscreen
-     */
-    readonly quality?: number
 }
 
 /**
@@ -6477,97 +6191,6 @@ export interface ImageApiGetUserImageRequest {
      * @memberof ImageApiGetUserImage
      */
     readonly format?: ImageFormat
-
-    /**
-     * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly maxWidth?: number
-
-    /**
-     * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly maxHeight?: number
-
-    /**
-     * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly percentPlayed?: number
-
-    /**
-     * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly unplayedCount?: number
-
-    /**
-     * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly width?: number
-
-    /**
-     * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly height?: number
-
-    /**
-     * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly quality?: number
-
-    /**
-     * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly fillWidth?: number
-
-    /**
-     * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly fillHeight?: number
-
-    /**
-     * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly blur?: number
-
-    /**
-     * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly backgroundColor?: string
-
-    /**
-     * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly foregroundLayer?: string
-
-    /**
-     * Image index.
-     * @type {number}
-     * @memberof ImageApiGetUserImage
-     */
-    readonly imageIndex?: number
 }
 
 /**
@@ -8108,97 +7731,6 @@ export interface ImageApiHeadUserImageRequest {
      * @memberof ImageApiHeadUserImage
      */
     readonly format?: ImageFormat
-
-    /**
-     * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly maxWidth?: number
-
-    /**
-     * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly maxHeight?: number
-
-    /**
-     * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly percentPlayed?: number
-
-    /**
-     * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly unplayedCount?: number
-
-    /**
-     * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly width?: number
-
-    /**
-     * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly height?: number
-
-    /**
-     * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly quality?: number
-
-    /**
-     * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly fillWidth?: number
-
-    /**
-     * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly fillHeight?: number
-
-    /**
-     * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly blur?: number
-
-    /**
-     * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly backgroundColor?: string
-
-    /**
-     * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly foregroundLayer?: string
-
-    /**
-     * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadUserImage
-     */
-    readonly imageIndex?: number
 }
 
 /**
@@ -8529,7 +8061,7 @@ export class ImageApi extends BaseAPI {
      * @memberof ImageApi
      */
     public getSplashscreen(requestParameters: ImageApiGetSplashscreenRequest = {}, options?: RawAxiosRequestConfig) {
-        return ImageApiFp(this.configuration).getSplashscreen(requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.quality, options).then((request) => request(this.axios, this.basePath));
+        return ImageApiFp(this.configuration).getSplashscreen(requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -8565,7 +8097,7 @@ export class ImageApi extends BaseAPI {
      * @memberof ImageApi
      */
     public getUserImage(requestParameters: ImageApiGetUserImageRequest = {}, options?: RawAxiosRequestConfig) {
-        return ImageApiFp(this.configuration).getUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
+        return ImageApiFp(this.configuration).getUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -8721,7 +8253,7 @@ export class ImageApi extends BaseAPI {
      * @memberof ImageApi
      */
     public headUserImage(requestParameters: ImageApiHeadUserImageRequest = {}, options?: RawAxiosRequestConfig) {
-        return ImageApiFp(this.configuration).headUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
+        return ImageApiFp(this.configuration).headUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
