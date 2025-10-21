@@ -35,6 +35,7 @@ yarn add @jellyfin/sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
+| 0.12.0 | 10.11.x |
 | 0.11.0 | 10.10.x |
 | 0.10.0 | 10.9.x |
 | 0.9.0 | 10.9.x |

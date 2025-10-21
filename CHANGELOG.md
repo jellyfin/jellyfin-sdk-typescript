@@ -7,9 +7,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [0.12.0] - 2025-10-21
+
+### Security
+
+* Bumped axios peer dependency version ([#939](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/939)). Note that this axios vulnerability only affected applications running in node.js.
+
+### Added
+
+* `getUri` utility method ([#867](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/867)).
+
 ### Changed
 
+* Updated minimum Jellyfin version to 10.10.0 ([#942](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/942)).
 * Updated OpenAPI spec for Jellyfin 10.11.0 ([#931](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/931)).
+
+### Removed
+
+* Duplicate `ItemSortBy` enum ([#842](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/842)).
+* `addPlayedIndicator` from `ImageRequestParameters` ([#841](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/841)).
 
 ## [0.11.0] - 2024-10-28
 
@@ -19,7 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Removed
 
-* Removed deprecated image url function ([#731](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/731)).
+* Deprecated image url function ([#731](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/731)).
 
 ## [0.10.0] - 2024-06-03
 
@@ -90,7 +106,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.1.0] - 2021-09-19
 
-[unreleased]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.11.0...HEAD
+[unreleased]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.12.0...HEAD
+[0.12.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.11.0...v0.12.0
 [0.11.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.10.0...v0.11.0
 [0.10.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.9.0...v0.10.0
 [0.9.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.8.2...v0.9.0
