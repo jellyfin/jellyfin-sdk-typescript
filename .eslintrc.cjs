@@ -5,7 +5,7 @@ module.exports = {
 		'@stylistic',
 		'@typescript-eslint',
 		'import',
-		'vitest'
+		'@vitest'
 	],
 	env: {
 		node: true
@@ -69,18 +69,18 @@ module.exports = {
 		},
 		{
 			files: [ './**/*.test.ts' ],
-			plugins: [ 'vitest' ],
+			plugins: [ '@vitest' ],
 			env: {
 				node: true,
 				browser: false
 			},
 			extends: [
-				'plugin:vitest/legacy-recommended'
+				'plugin:@vitest/legacy-recommended'
 			],
 			rules: {
-				'vitest/consistent-test-it': [ 'error' ],
-				'vitest/prefer-lowercase-title': [ 'error', { 'ignoreTopLevelDescribe': true } ],
-				'vitest/require-top-level-describe': [ 'error' ]
+				'@vitest/consistent-test-it': [ 'error' ],
+				'@vitest/prefer-lowercase-title': [ 'error', { 'ignoreTopLevelDescribe': true } ],
+				'@vitest/require-top-level-describe': [ 'error' ]
 			}
 		}
 	]
