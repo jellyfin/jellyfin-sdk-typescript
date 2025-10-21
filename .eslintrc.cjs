@@ -75,7 +75,7 @@ module.exports = {
 				browser: false
 			},
 			extends: [
-				'plugin:vitest/recommended'
+				'plugin:vitest/legacy-recommended'
 			],
 			rules: {
 				'vitest/consistent-test-it': [ 'error' ],
