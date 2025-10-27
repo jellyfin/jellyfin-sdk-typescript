@@ -10,6 +10,7 @@ import { TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 
 import { Jellyfin } from '../jellyfin';
 import { RecommendedServerInfoScore } from '../models/recommended-server-info';
+import { getSessionApi } from '../utils/api/session-api';
 import { getSystemApi } from '../utils/api/system-api';
 import { getUserApi } from '../utils/api/user-api';
 import { getUserViewsApi } from '../utils/api/user-views-api';
@@ -70,11 +71,14 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		const auth = await api.authenticateUserByName(USERNAME, PASSWORD);
+		const auth = await getUserApi(api)
+			.authenticateUserByName({ authenticateUserByName: { Username: USERNAME, Pw: PASSWORD } });
 		// console.log('Auth =>', auth.data);
 		expect(auth.data).toBeTruthy();
+		expect(api.accessToken).not.toBe('');
 
-		await api.logout();
+		await getSessionApi(api).reportSessionEnded();
+		expect(api.accessToken).toBe('');
 	});
 
 	it('user views api', async () => {
@@ -84,12 +88,13 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		await api.authenticateUserByName(USERNAME, PASSWORD);
+		await getUserApi(api)
+			.authenticateUserByName({ authenticateUserByName: { Username: USERNAME, Pw: PASSWORD } });
 
 		const views = await getUserViewsApi(api).getUserViews();
 		// console.log('User Views =>', views.data);
 		expect(views.data).toBeTruthy();
 
-		await api.logout();
+		await getSessionApi(api).reportSessionEnded();
 	});
 });

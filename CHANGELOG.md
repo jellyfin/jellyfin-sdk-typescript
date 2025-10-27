@@ -7,6 +7,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Changed
+
+* Ensure `Authorization` header is sent for all requests ([#948](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/948)).
+
+### Deprecated
+
+* Deprecate authentication helper methods in `Api` class ([#949](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/948)). Updating the `accessToken` is now handled transparently.
+
 ## [0.12.0] - 2025-10-21
 
 ### Security
