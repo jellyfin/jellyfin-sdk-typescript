@@ -42,7 +42,11 @@ export class Api {
 	get configuration(): Configuration {
 		return new Configuration({
 			basePath: this.basePath,
-			apiKey: this.authorizationHeader
+			baseOptions: {
+				headers: {
+					[AUTHORIZATION_HEADER]: this.authorizationHeader
+				}
+			}
 		});
 	}
 
@@ -54,9 +58,7 @@ export class Api {
 	authenticateUserByName(username: string, password?: string): Promise<AxiosResponse<AuthenticationResult>> {
 		return getUserApi(this).authenticateUserByName(
 			// The axios client does some strange wrapping of the param object
-			{ authenticateUserByName: { Username: username, Pw: password } },
-			// The authorization header is required for the request to succeed
-			{ headers: { [AUTHORIZATION_HEADER]: this.authorizationHeader } }
+			{ authenticateUserByName: { Username: username, Pw: password } }
 		).then(response => {
 			// Update the current token and configuration object
 			this.accessToken = response.data.AccessToken || '';
