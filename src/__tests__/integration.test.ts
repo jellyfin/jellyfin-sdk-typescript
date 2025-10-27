@@ -14,7 +14,9 @@ import { getSystemApi } from '../utils/api/system-api';
 import { getUserApi } from '../utils/api/user-api';
 import { getUserViewsApi } from '../utils/api/user-views-api';
 
-const SERVER_URL = 'https://demo.jellyfin.org/stable';
+const SERVER_URL = process.env.JF_TS_SDK_SERVER || 'https://demo.jellyfin.org/stable';
+const USERNAME = process.env.JF_TS_SDK_USER_NAME || 'demo';
+const PASSWORD = process.env.JF_TS_SDK_USER_PWD;
 
 /**
  * SDK integration tests.
@@ -28,7 +30,8 @@ describe('Test the Base SDK', () => {
 			deviceInfo: TEST_DEVICE
 		});
 
-		const servers = await jellyfin.discovery.getRecommendedServerCandidates('demo.jellyfin.org/stable');
+		const url = new URL(SERVER_URL);
+		const servers = await jellyfin.discovery.getRecommendedServerCandidates(url.host + url.pathname);
 		expect(servers).toHaveLength(5);
 		expect(servers[0].score).toBe(RecommendedServerInfoScore.GREAT);
 
@@ -67,7 +70,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		const auth = await api.authenticateUserByName('demo');
+		const auth = await api.authenticateUserByName(USERNAME, PASSWORD);
 		// console.log('Auth =>', auth.data);
 		expect(auth.data).toBeTruthy();
 
@@ -81,7 +84,7 @@ describe('Test the Base SDK', () => {
 		});
 		const api = jellyfin.createApi(SERVER_URL);
 
-		await api.authenticateUserByName('demo');
+		await api.authenticateUserByName(USERNAME, PASSWORD);
 
 		const views = await getUserViewsApi(api).getUserViews();
 		// console.log('User Views =>', views.data);
