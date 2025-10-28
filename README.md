@@ -35,6 +35,7 @@ yarn add @jellyfin/sdk
 
 | SDK Version | Jellyfin Version |
 |:-:|:-:|
+| 0.13.0 | 10.11.x |
 | 0.12.0 | 10.11.x |
 | 0.11.0 | 10.10.x |
 | 0.10.0 | 10.9.x |
@@ -92,10 +93,8 @@ console.log('Info =>', info.data);
 const users = await getUserApi(api).getPublicUsers();
 console.log('Users =>', users.data);
 
-// A helper method for authentication has been added to the SDK because
-// the default method exposed in the generated Axios client is rather
-// cumbersome to use.
-const auth = await api.authenticateUserByName('demo', '');
+// Login with a username and password.
+const auth = await getUserApi(this).authenticateUserByName({ authenticateUserByName: { Username: 'demo', Pw: '' } });
 console.log('Auth =>', auth.data);
 
 // Authentication state is stored internally in the Api class, so now
@@ -103,12 +102,11 @@ console.log('Auth =>', auth.data);
 const libraries = await getLibraryApi(api).getMediaFolders();
 console.log('Libraries =>', libraries.data);
 
-// A helper method for logging out the current user has been added to the
-// SDK so the internal state is updated correctly.
-await api.logout();
+// Logout the current user.
+await getSessionApi(api).reportSessionEnded();
 ```
 
-## Breaking Changes
+## Significant Changes
 
 [See the CHANGELOG](./CHANGELOG.md)
 
