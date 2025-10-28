@@ -1,6 +1,6 @@
 {
   "name": "@jellyfin/sdk",
-  "version": "0.12.0",
+  "version": "0.13.0",
   "description": "A TypeScript SDK for Jellyfin.",
   "keywords": [
     "jellyfin"
