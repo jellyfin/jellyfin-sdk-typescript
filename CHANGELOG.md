@@ -13,13 +13,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Deprecated
 
-* Deprecate authentication helper methods in `Api` class ([#949](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/948)). Updating the `accessToken` is now handled transparently.
+* Deprecate authentication helper methods in `Api` class ([#949](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/948)).
+  Updating the `accessToken` is now handled transparently in `getUserApi` and `getSessionApi`. If you need to handle
+  authentication manually, then you should manually create `UserApi` and `SessionApi` instances.
 
 ## [0.12.0] - 2025-10-21
 
 ### Security
 
-* Bumped axios peer dependency version ([#939](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/939)). Note that this axios vulnerability only affected applications running in node.js.
+* Bumped axios peer dependency version ([#939](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/939)).
+  Note that this axios vulnerability only affected applications running in node.js.
 
 ### Added
 
@@ -89,7 +92,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 * API classes are no longer exposed via getters.
   Instead you need to call a function passing the `Api` instance as a parameter.
   For example: `getSystemApi(api)`.
-  While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking ([#149](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/149)).
+  While I do feel this is a slightly worse developer experience, it was a necessary change to support tree-shaking
+  ([#149](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/149)).
 * `BaseItemKind` is now included in the generated client.
   Imports will need updated ([#187](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/187)).
 
