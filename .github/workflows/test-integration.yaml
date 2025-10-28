@@ -27,3 +27,7 @@ jobs:
 
       - name: Run Vitest
         run: npm run test:integration
+        env:
+          JF_TS_SDK_SERVER: ${{ secrets.TEST_SERVER }}
+          JF_TS_SDK_USER_NAME: ${{ secrets.TEST_USER_NAME }}
+          JF_TS_SDK_USER_PWD: ${{ secrets.TEST_USER_PWD }}
