@@ -51,7 +51,8 @@ export class Api {
 	}
 
 	/**
-	 * Convenience method for authenticating a user by name and updating the internal state.
+	 * Convenience method for authenticating a user by name.
+	 * @deprecated Use `getUserApi().authenticateUserByName()` instead.
 	 * @param username The username.
 	 * @param password The user password if required.
 	 */
@@ -59,11 +60,7 @@ export class Api {
 		return getUserApi(this).authenticateUserByName(
 			// The axios client does some strange wrapping of the param object
 			{ authenticateUserByName: { Username: username, Pw: password } }
-		).then(response => {
-			// Update the current token and configuration object
-			this.accessToken = response.data.AccessToken || '';
-			return response;
-		});
+		);
 	}
 
 	/**
@@ -81,13 +78,11 @@ export class Api {
 	}
 
 	/**
-	 * Convenience method for logging out and updating the internal state.
+	 * Convenience method for logging out.
+	 * @deprecated Use `getSessionApi().reportSessionEnded()` instead.
 	 */
 	logout(): Promise<AxiosResponse<never> | AxiosResponse<void>> {
-		return getSessionApi(this).reportSessionEnded().then(response => {
-			this.accessToken = '';
-			return response;
-		});
+		return getSessionApi(this).reportSessionEnded();
 	}
 
 	get authorizationHeader(): string {
