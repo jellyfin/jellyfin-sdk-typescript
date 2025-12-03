@@ -27,7 +27,7 @@
   },
   "devDependencies": {
     "@openapitools/openapi-generator-cli": "2.25.0",
-    "@rollup/plugin-typescript": "12.1.4",
+    "@rollup/plugin-typescript": "12.3.0",
     "@stylistic/eslint-plugin": "2.13.0",
     "@tsconfig/recommended": "1.0.10",
     "@types/node": "24.9.1",
