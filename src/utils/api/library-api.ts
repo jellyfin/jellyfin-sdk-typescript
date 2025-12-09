@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import type { Api } from '../../api';
+import { AUTHORIZATION_PARAMETER, type Api } from '../../api';
 import { LibraryApi, type LibraryApiGetDownloadRequest } from '../../generated-client/api/library-api';
 
 /** An augmented LibraryApi with URL helpers. */
@@ -24,7 +24,7 @@ class AugmentedLibraryApi extends LibraryApi {
 	public getDownloadUrl(requestParameters: LibraryApiGetDownloadRequest): string {
 		return this.api.getUri(
 			`/Items/${requestParameters.itemId}/Download`,
-			{ ApiKey: this.api.accessToken }
+			{ [AUTHORIZATION_PARAMETER]: this.api.accessToken }
 		);
 	}
 }

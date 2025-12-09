@@ -16,6 +16,9 @@ import { getUserApi } from './utils/api/user-api';
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'Authorization';
 
+/** The authorization query parameter name. */
+export const AUTHORIZATION_PARAMETER = 'ApiKey';
+
 /** Class representing the Jellyfin API. */
 export class Api {
 	basePath;

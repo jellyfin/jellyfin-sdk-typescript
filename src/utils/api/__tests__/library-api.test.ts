@@ -7,13 +7,14 @@
 import { describe, expect, it } from 'vitest';
 
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../../../__helpers__/common';
-import { Api } from '../../../api';
+import { Api, AUTHORIZATION_PARAMETER } from '../../../api';
 import { getLibraryApi } from '../library-api';
 
 describe('LibraryApi', () => {
 	it('should return a download URL', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		const libraryApi = getLibraryApi(api);
-		expect(libraryApi.getDownloadUrl({ itemId: '123456' })).toBe(`${SERVER_URL}/Items/123456/Download?ApiKey=`);
+		expect(libraryApi.getDownloadUrl({ itemId: '123456' }))
+			.toBe(`${SERVER_URL}/Items/123456/Download?${AUTHORIZATION_PARAMETER}=`);
 	});
 });
