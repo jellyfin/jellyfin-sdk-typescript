@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+* `getLibraryApi` now returns an augmented class with a `getDownloadUrl` method ([#967](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/967)).
+
 ## [0.13.0] - 2025-10-28
 
 ### Changed
@@ -15,7 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Deprecated
 
-* Deprecate authentication helper methods in `Api` class ([#949](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/948)).
+* Deprecate authentication helper methods in `Api` class ([#949](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/949)).
   Updating the `accessToken` is now handled transparently in `getUserApi` and `getSessionApi`. If you need to handle
   authentication manually, then you should manually create `UserApi` and `SessionApi` instances.
 
