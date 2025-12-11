@@ -4,18 +4,19 @@ import { Api } from "../../api";
 
 /**
  * 
- * @param basePath The {@link Api.basePath} to connect to
+ * @param param0 The authenticated {@link Api} instance
  */
-export default function getWebSocketUrl(basePath: string) : URL {
+export default function getWebSocketUrl({ accessToken, basePath } : Api) : URL {
 
     let protocol;
 
     const baseUrl = parseUrl(basePath)
 
-    if (baseUrl.protocol.startsWith(HTTP_PROTOCOL)) 
-        protocol = WS_PROTOCOL
-    else 
-        protocol = WSS_PROTOCOL
+    if (baseUrl.protocol.startsWith(HTTP_PROTOCOL)) protocol = WS_PROTOCOL
+    else protocol = WSS_PROTOCOL
 
-    return new URL(`${protocol}//${baseUrl.host}`)
+    let url = new URL(`${protocol}//${baseUrl.host}/socket`)
+    url.searchParams.append("api_key", accessToken)
+
+    return url
 }

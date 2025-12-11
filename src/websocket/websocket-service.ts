@@ -28,17 +28,20 @@ export class WebSocketService {
      * Ensures a websocket connection to the server is active by establishing a new connection
      * if a connection doesn't already exist or the previous connection is closed.
      * 
-     * Depends on the {@link Api.basePath} and {@link Api.accessToken} being valid and
+     * Depends on the {@link Api.accessToken} being valid and
      * populated.
      * 
      * @param onOpen An optional callback to run when the socket is opened
      * @param onClose An optional callback to run when the socket is closed
      */
-    ensureWebSocket(onOpen?: () => Promise<void>, onClose?: () => Promise<void>) {
+    ensureWebSocket(
+        onOpen?: (e?: Event) => Promise<void>, 
+        onClose?: (e?: CloseEvent) => Promise<void>
+    ) {
 
         if (this.shouldOpenWebSocket(this.api.accessToken)) {
 
-            const webSocketUrl = getWebSocketUrl(this.api.basePath)
+            const webSocketUrl = getWebSocketUrl(this.api)
             
             this.socket = new WebSocket(webSocketUrl)
         }
@@ -48,6 +51,6 @@ export class WebSocketService {
     }
 
     sendMessage(message: SessionsMessage) {
-        
+        this.socket.send(JSON.stringify(message))
     } 
 }
