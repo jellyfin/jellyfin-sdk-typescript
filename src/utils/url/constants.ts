@@ -10,6 +10,16 @@ export const HTTP_PROTOCOL = 'http:';
 /** The https protocol string. */
 export const HTTPS_PROTOCOL = 'https:';
 
+/**
+ * The websocket protocol string
+ */
+export const WS_PROTOCOL = 'ws:';
+
+/**
+ * The secure websocket protocol string
+ */
+export const WSS_PROTOCOL = 'wss:';
+
 /** The default port for the http protocol. */
 export const HTTP_PORT = 80;
 
