@@ -15,8 +15,8 @@ export default function getWebSocketUrl({ accessToken, basePath } : Api) : URL {
     if (baseUrl.protocol.startsWith(HTTP_PROTOCOL)) protocol = WS_PROTOCOL
     else protocol = WSS_PROTOCOL
 
-    let url = new URL(`${protocol}//${baseUrl.host}/socket`)
-    url.searchParams.append("api_key", accessToken)
+    const url = new URL(`${protocol}//${baseUrl.host}/socket`);
+    url.searchParams.append("api_key", accessToken);
 
     return url
 }

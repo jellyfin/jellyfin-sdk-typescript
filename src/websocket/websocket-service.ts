@@ -18,10 +18,10 @@ export class WebSocketService {
 
     private shouldOpenWebSocket(accessToken : string) { 
 
-        const socketClosed = this.socket === undefined || this.socket.readyState === WebSocket.CLOSED
+        const socketClosed = this.socket === undefined || this.socket.readyState === WebSocket.CLOSED;
 
         // TODO: Add validation around accessToken
-        return socketClosed && accessToken.length > 0
+        return socketClosed && accessToken.length > 0;
     }
 
     /**
@@ -35,22 +35,23 @@ export class WebSocketService {
      * @param onClose An optional callback to run when the socket is closed
      */
     ensureWebSocket(
-        onOpen?: (e?: Event) => Promise<void>, 
-        onClose?: (e?: CloseEvent) => Promise<void>
+        onOpen: (e?: Event) => Promise<void>, 
+        onMessage: (e: MessageEvent<SessionsMessage>) => Promise<void>,
+        onClose: (e?: CloseEvent) => Promise<void>
     ) {
 
         if (this.shouldOpenWebSocket(this.api.accessToken)) {
 
-            const webSocketUrl = getWebSocketUrl(this.api)
+            const webSocketUrl = getWebSocketUrl(this.api);
             
-            this.socket = new WebSocket(webSocketUrl)
+            this.socket = new WebSocket(webSocketUrl);
+            this.socket.onopen = onOpen;
+            this.socket.onclose = onClose;
+            this.socket.onmessage = onMessage;
         }
-
-        this.socket.onopen = onOpen
-        this.socket.onclose = onClose
     }
 
     sendMessage(message: SessionsMessage) {
-        this.socket.send(JSON.stringify(message))
+        this.socket?.send(JSON.stringify(message));
     } 
 }
