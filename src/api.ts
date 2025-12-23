@@ -12,6 +12,7 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
+import { WebSocketService } from './websocket';
 
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'Authorization';
@@ -26,6 +27,7 @@ export class Api {
 	deviceInfo;
 	accessToken;
 	axiosInstance;
+	webSocket;
 
 	constructor(
 		basePath: string,
@@ -40,6 +42,7 @@ export class Api {
 		this.deviceInfo = deviceInfo;
 		this.accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+		this.webSocket = new WebSocketService(this)
 	}
 
 	get configuration(): Configuration {
