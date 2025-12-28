@@ -1,5 +1,6 @@
 import { Api, AUTHORIZATION_PARAMETER } from "../api";
-import { OutboundWebSocketMessage, SessionsMessage } from "../generated-client";
+import { ActivityLogEntryStartMessage, OutboundWebSocketMessage, ScheduledTasksInfoStartMessage, SessionsMessage, SessionsStartMessage } from "../generated-client";
+import { getActivityLogApi, getDashboardApi, getSessionApi } from "../utils/api";
 
 
 /**
@@ -35,9 +36,8 @@ export class WebSocketService {
      */
     private getWebSocketUrl(api: Api) : URL {
         return new URL(
-            api.getUri("socket", {
-                [AUTHORIZATION_PARAMETER]: api.accessToken
-            }).replace(/^http/, "ws")
+            api.getUri("socket", { [AUTHORIZATION_PARAMETER]: api.accessToken })
+                .replace(/^http/, "ws")
         );
     }
 
@@ -69,15 +69,33 @@ export class WebSocketService {
             this.socket = new WebSocket(url.toString());
         }
 
-        // Send startMessages and stopMessages to the server for three specific message types
-        // Sessions
-        // ActivityLogEntry 
-        // ScheduledTaskSSSSSSSSSSSSSSSSSS🐍Info 
-
         this.socket.addEventListener('message', (event) => {
             const message = JSON.parse(event.data) as OutboundWebSocketMessage;
             if (messageTypes.includes(message.MessageType as T)) {
                 onMessage(message as Extract<OutboundWebSocketMessage, { MessageType: T }>);
+            }
+        });
+
+        
+        this.socket.addEventListener('open', () => {
+            for (const messageType of messageTypes) {
+                switch (messageType) {
+                    case 'Sessions':
+                        this.socket?.send(JSON.stringify({
+                            MessageType: 'SessionsStart',
+                        } as SessionsStartMessage))
+                        break;
+                    case 'ActivityLogEntry':
+                        this.socket?.send(JSON.stringify({
+                            MessageType: 'ActivityLogEntryStart',
+                        } as ActivityLogEntryStartMessage));
+                        break;
+                    case 'ScheduledTasksInfo':
+                        this.socket?.send(JSON.stringify({
+                            MessageType: 'ScheduledTasksInfoStart',
+                        } as ScheduledTasksInfoStartMessage));
+                        break;
+                }
             }
         });
 
