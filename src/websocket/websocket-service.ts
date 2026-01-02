@@ -1,6 +1,8 @@
 import { Api, AUTHORIZATION_PARAMETER } from "../api";
-import { ActivityLogEntryStartMessage, OutboundWebSocketMessage, ScheduledTasksInfoStartMessage, SessionsMessage, SessionsStartMessage } from "../generated-client";
+import { ActivityLogEntryStartMessage, InboundWebSocketMessage, OutboundWebSocketMessage, ScheduledTasksInfoStartMessage, SessionsMessage, SessionsStartMessage } from "../generated-client";
 import { getActivityLogApi, getDashboardApi, getSessionApi } from "../utils/api";
+import { SUBSCRIPTION_REGISTRY } from "./constants";
+import { SocketMessageHandler } from "./types";
 
 
 /**
@@ -41,6 +43,38 @@ export class WebSocketService {
         );
     }
 
+    private initSocket() {
+        const url = this.getWebSocketUrl(this.api);
+        this.socket = new WebSocket(url.toString());
+
+        this.socket.onopen = () => {
+            // Attach all subscriptions, sending start messages as needed
+            for (const type of this.subscriptions.keys()) {
+                const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessage['MessageType']];
+                if (mapping) this.sendMessage(mapping.createStartMessage());
+            }
+        };
+
+        this.socket.onmessage = (event) => {
+            const data = JSON.parse(event.data) as OutboundWebSocketMessage;
+            const handlers = this.subscriptions.get(data.MessageType);
+            handlers?.forEach(handler => handler(data));
+        };
+
+        this.socket.onclose = () => {
+            // Reconnect after 5 seconds
+            if (this.subscriptions.size > 0) {
+                setTimeout(() => this.initSocket(), 5000);
+            }
+        };
+    }
+
+    private sendMessage(message: InboundWebSocketMessage) {
+        if (this.socket?.readyState === WebSocket.OPEN) {
+            this.socket.send(JSON.stringify(message))
+        }
+    }
+
     /**
      * Gets the current status of the websocket connection
      * @returns The {@link WebSocket.readyState} status
@@ -64,103 +98,46 @@ export class WebSocketService {
      * @returns A function which can be invoked to remove the added listeners
      */
     subscribe<T extends OutboundWebSocketMessage['MessageType']>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-        if (!this.socket || this.socket.readyState !== WebSocket.OPEN) {
-            const url = this.getWebSocketUrl(this.api);
-            this.socket = new WebSocket(url.toString());
+        if (!this.socket || this.socket.readyState === WebSocket.CLOSED) {
+            this.initSocket();
         }
 
-        this.socket.addEventListener('message', (event) => {
-            const message = JSON.parse(event.data) as OutboundWebSocketMessage;
-            if (messageTypes.includes(message.MessageType as T)) {
-                onMessage(message as Extract<OutboundWebSocketMessage, { MessageType: T }>);
-            }
-        });
-
-        
-        this.socket.addEventListener('open', () => {
-            for (const messageType of messageTypes) {
-                switch (messageType) {
-                    case 'Sessions':
-                        this.socket?.send(JSON.stringify({
-                            MessageType: 'SessionsStart',
-                        } as SessionsStartMessage))
-                        break;
-                    case 'ActivityLogEntry':
-                        this.socket?.send(JSON.stringify({
-                            MessageType: 'ActivityLogEntryStart',
-                        } as ActivityLogEntryStartMessage));
-                        break;
-                    case 'ScheduledTasksInfo':
-                        this.socket?.send(JSON.stringify({
-                            MessageType: 'ScheduledTasksInfoStart',
-                        } as ScheduledTasksInfoStartMessage));
-                        break;
+        for (const type of messageTypes) {
+            const isNewType = !this.subscriptions.has(type);
+            
+            if (isNewType) {
+                this.subscriptions.set(type, []);
+ 
+                // Send start message as needed, depending on the messageType
+                const mapping = SUBSCRIPTION_REGISTRY[type];
+                if (mapping && this.socket?.readyState === WebSocket.OPEN) {
+                    this.sendMessage(mapping.createStartMessage());
                 }
             }
-        });
-
-        this.socket.addEventListener('close', () => {
-            /**
-             * If the socket is closed, reopen it if there are subscriptions 
-             * and re-add the listeners
-             */ 
-            if (this.subscriptions.size > 0) {
-                const url = this.getWebSocketUrl(this.api);
-                this.socket = new WebSocket(url.toString());
-
-                this.socket.addEventListener('open', () => {
-                    for (const [messageType, handlers] of this.subscriptions.entries()) {
-                        for (const handler of handlers) {
-                            this.socket?.addEventListener('message', (event) => {
-                                const message = JSON.parse(event.data) as OutboundWebSocketMessage;
-                                if (message.MessageType === messageType) {
-                                    handler(message);
-                                }
-                            });
-                        }
-                    }
-                });
-            } 
-            // Else close and dispose
-            else {
-                this.socket?.close();
-                this.socket = undefined;
-            }
-        });
-
-        // If the last subscription has been removed, close the socket
-        
-
-        // Catalog all existing subscriptions for the given message types
-        for (const messageType of messageTypes) {
-            if (!this.subscriptions.has(messageType)) {
-                this.subscriptions.set(messageType, []);
-            }
-            this.subscriptions.get(messageType)!.push(onMessage);
+            
+            this.subscriptions.get(type)!.push(onMessage);
         }
 
-        // Return an unsubscribe function
+        // Return an unsubscription function
         return () => {
-            for (const messageType of messageTypes) {
-                const handlers = this.subscriptions.get(messageType);
-                if (handlers) {
-                    const index = handlers.indexOf(onMessage);
-                    if (index !== -1) {
-                        handlers.splice(index, 1);
-                    }
-                    if (handlers.length === 0) {
-                        this.subscriptions.delete(messageType);
-                    }
+            for (const type of messageTypes) {
+                const handlers = this.subscriptions.get(type);
+                if (!handlers) continue;
+
+                const index = handlers.indexOf(onMessage);
+                if (index !== -1) handlers.splice(index, 1);
+
+                if (handlers.length === 0) {
+                    this.subscriptions.delete(type);
+                    // Send Stop Message
+                    const mapping = SUBSCRIPTION_REGISTRY[type];
+                    if (mapping) this.sendMessage(mapping.createStopMessage());
                 }
             }
 
-            // If there are no more subscriptions, close the socket
             if (this.subscriptions.size === 0) {
                 this.socket?.close();
-                this.socket = undefined;
             }
-        }
+        };
     }
 }
-
-type SocketMessageHandler<T extends OutboundWebSocketMessage['MessageType']> = (message: Extract<OutboundWebSocketMessage, { MessageType: T }>) => void
