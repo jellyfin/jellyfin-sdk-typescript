@@ -42,8 +42,8 @@ export class Api {
 		this.deviceInfo = deviceInfo;
 		this.accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
-		
-		if (accessToken.length > 0) this.webSocket = new WebSocketService(this)
+
+		if (accessToken.length > 0) this.webSocket = new WebSocketService(this);
 	}
 
 	get configuration(): Configuration {

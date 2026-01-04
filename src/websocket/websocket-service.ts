@@ -1,207 +1,206 @@
-import { Api, AUTHORIZATION_PARAMETER } from "../api";
-import { InboundWebSocketMessage, OutboundWebSocketMessage } from "../generated-client";
-import { RECONNECT_TIMEOUT_INTERVAL } from "./configs";
-import { SUBSCRIPTION_REGISTRY } from "./constants";
-import { SocketMessageHandler, SocketStatusHandler } from "./types";
+import type { Api } from '../api';
+import { AUTHORIZATION_PARAMETER } from '../api';
+import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 
+import { RECONNECT_TIMEOUT_INTERVAL } from './configs';
+import { SUBSCRIPTION_REGISTRY } from './constants';
+import type { SocketMessageHandler, SocketStatusHandler } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
  * to Jellyfin
  */
 export class WebSocketService {
-    
-    /**
+	/**
      * The URL to connect to, supplied by the {@link Api} instance
      */
-    private url : URL;
+	private readonly url: URL;
 
-    /**
+	/**
      * The active websocket connection, if one exists
      */
-    private socket : WebSocket | undefined;
+	private socket: WebSocket | undefined;
 
-    private keepAlive : NodeJS.Timeout | undefined
+	private keepAlive: NodeJS.Timeout | undefined;
 
-    /**
-     * A map of message type subscriptions to their respective handlers
-     */
-    private subscriptions: Map<string, SocketMessageHandler<any>[]> = new Map();
+	/**
+	 * A map of message type subscriptions to their respective handlers
+	 */
+	// eslint-disable-next-line @typescript-eslint/no-explicit-any
+	private readonly subscriptions: Map<string, SocketMessageHandler<any>[]> = new Map();
 
-    /**
+	/**
      * Status change event listeners
      */
-    private statusListeners: SocketStatusHandler[] = [];
+	private readonly statusListeners: SocketStatusHandler[] = [];
 
-    /**
+	/**
      * Current connection status
      */
-    private currentStatus: WebSocket['readyState'] | 'disconnected' = 'disconnected';
+	private currentStatus: WebSocket['readyState'] | 'disconnected' = 'disconnected';
 
-    /**
+	/**
      * Constructs a new instance of the {@link WebSocketService}
-     * 
+     *
      * Uses the authenticated {@link Api} instance for constructing a URI
      * that will be used to establish socket connections.
-     * 
+     *
      * @param api The authenticated {@link Api} instance
      */
-    constructor(api: Api) {
-        this.url = new URL(
-            api.getUri("socket", { [AUTHORIZATION_PARAMETER]: api.accessToken })
-                .replace(/^http/, "ws")
-        );
-    }
+	constructor(api: Api) {
+		this.url = new URL(
+			api.getUri('socket', { [AUTHORIZATION_PARAMETER]: api.accessToken })
+				.replace(/^http/, 'ws')
+		);
+	}
 
-    private initSocket() {
-        this.socket = new WebSocket(this.url.toString());
+	private initSocket() {
+		this.socket = new WebSocket(this.url.toString());
 
-        this.socket.onopen = () => {
-            // Update status and notify listeners
-            this.setStatus(WebSocket.OPEN);
-            
-            // Attach all subscriptions, sending start messages as needed
-            for (const type of this.subscriptions.keys()) {
-                const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessage['MessageType']];
-                if (mapping) this.sendMessage(mapping.createStartMessage());
-            }
-        };
+		this.socket.onopen = () => {
+			// Update status and notify listeners
+			this.setStatus(WebSocket.OPEN);
 
-        this.socket.onmessage = (event) => {
-            const data = JSON.parse(event.data) as OutboundWebSocketMessage;
+			// Attach all subscriptions, sending start messages as needed
+			for (const type of this.subscriptions.keys()) {
+				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessage['MessageType']];
+				if (mapping) this.sendMessage(mapping.createStartMessage());
+			}
+		};
 
-            const { MessageType } = data
+		this.socket.onmessage = (event) => {
+			const data = JSON.parse(event.data) as OutboundWebSocketMessage;
 
-            if (MessageType === 'ForceKeepAlive' && data.Data) {
-                // Clear any existing keep-alive timeout
-                if (this.keepAlive) clearTimeout(this.keepAlive);
-                
-                this.keepAlive = setTimeout(() => 
-                    this.sendMessage({
-                        MessageType: 'KeepAlive',
-                    }), data.Data / 2
-                )
-            }
-            else {
-                const handlers = this.subscriptions.get(MessageType);
-                handlers?.forEach(handler => handler(data));
-            }
-        };
+			const { MessageType } = data;
 
-        this.socket.onclose = () => {
-            // Update status and notify listeners
-            this.setStatus('disconnected');
-            
-            // Reconnect after 5 seconds if there are active subscriptions
-            if (this.subscriptions.size > 0) {
-                setTimeout(() => this.initSocket(), RECONNECT_TIMEOUT_INTERVAL);
-            } 
-            // Else, close and dispose
-            else {
-                this.socket = undefined
-                if (this.keepAlive) {
-                    clearTimeout(this.keepAlive)
-                    this.keepAlive = undefined
-                }
-            }
-        };
-    }
+			if (MessageType === 'ForceKeepAlive' && data.Data) {
+				// Clear any existing keep-alive timeout
+				if (this.keepAlive) clearTimeout(this.keepAlive);
 
-    private sendMessage(message: InboundWebSocketMessage) {
-        if (this.socket?.readyState === WebSocket.OPEN) {
-            this.socket.send(JSON.stringify(message));
-        }
-    }
+				this.keepAlive = setTimeout(() =>
+					this.sendMessage({
+						MessageType: 'KeepAlive'
+					}), data.Data / 2
+				);
+			} else {
+				const handlers = this.subscriptions.get(MessageType);
+				handlers?.forEach(handler => handler(data));
+			}
+		};
 
-    /**
+		this.socket.onclose = () => {
+			// Update status and notify listeners
+			this.setStatus('disconnected');
+
+			// Reconnect after 5 seconds if there are active subscriptions
+			if (this.subscriptions.size > 0) {
+				setTimeout(() => this.initSocket(), RECONNECT_TIMEOUT_INTERVAL);
+			} else {
+				// Else, close and dispose
+				this.socket = undefined;
+				if (this.keepAlive) {
+					clearTimeout(this.keepAlive);
+					this.keepAlive = undefined;
+				}
+			}
+		};
+	}
+
+	private sendMessage(message: InboundWebSocketMessage) {
+		if (this.socket?.readyState === WebSocket.OPEN) {
+			this.socket.send(JSON.stringify(message));
+		}
+	}
+
+	/**
      * Gets the current status of the websocket connection
      * @returns The connection status
      */
-    getSocketStatus() : WebSocket['readyState'] | 'disconnected' | undefined {
-        return this.currentStatus;
-    }
+	getSocketStatus(): WebSocket['readyState'] | 'disconnected' | undefined {
+		return this.currentStatus;
+	}
 
-    /**
+	/**
      * Adds a listener for websocket status changes
-     * 
+     *
      * @param onStatusChange Callback invoked when the connection status changes
      * @returns A function which can be invoked to remove the listener
      */
-    onStatusChange(onStatusChange: SocketStatusHandler) : () => void {
-        this.statusListeners.push(onStatusChange);
-        return () => {
-            const index = this.statusListeners.indexOf(onStatusChange);
-            if (index !== -1) {
-                this.statusListeners.splice(index, 1);
-            }
-        };
-    }
+	onStatusChange(onStatusChange: SocketStatusHandler): () => void {
+		this.statusListeners.push(onStatusChange);
+		return () => {
+			const index = this.statusListeners.indexOf(onStatusChange);
+			if (index !== -1) {
+				this.statusListeners.splice(index, 1);
+			}
+		};
+	}
 
-    /**
+	/**
      * Internal method to update status and notify all listeners
      */
-    private setStatus(status: WebSocket['readyState'] | 'disconnected') {
-        if (this.currentStatus !== status) {
-            this.currentStatus = status;
-            this.statusListeners.forEach(listener => listener(status));
-        }
-    }
+	private setStatus(status: WebSocket['readyState'] | 'disconnected') {
+		if (this.currentStatus !== status) {
+			this.currentStatus = status;
+			this.statusListeners.forEach(listener => listener(status));
+		}
+	}
 
-    /**
+	/**
      * Adds message listeners for the provided message types
-     * 
+     *
      * Adding a listener will establish a websocket connection if one does not already exist
-     * 
+     *
      * Listeners will be automatically re-added if the connection is lost and re-established
-     * 
+     *
      * Listeners can be removed by invoking the returned unsubscribe function
-     * 
+     *
      * @param messageTypes Any array of {@link OutboundWebSocketMessage} message types to listen for
      * @param onMessage The callback to invoke when a message is received
-     * 
+     *
      * @returns A function which can be invoked to remove the added listeners
      */
-    subscribe<T extends OutboundWebSocketMessage['MessageType']>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-        if (!this.socket || this.socket.readyState === WebSocket.CLOSED) {
-            this.initSocket();
-        }
+	subscribe<T extends OutboundWebSocketMessage['MessageType']>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
+		if (!this.socket || this.socket.readyState === WebSocket.CLOSED) {
+			this.initSocket();
+		}
 
-        for (const type of messageTypes) {
-            const isNewType = !this.subscriptions.has(type);
-            
-            if (isNewType) {
-                this.subscriptions.set(type, []);
- 
-                // Send start message as needed, depending on the messageType
-                const mapping = SUBSCRIPTION_REGISTRY[type];
-                if (mapping && this.socket?.readyState === WebSocket.OPEN) {
-                    this.sendMessage(mapping.createStartMessage());
-                }
-            }
-            
+		for (const type of messageTypes) {
+			const isNewType = !this.subscriptions.has(type);
+
+			if (isNewType) {
+				this.subscriptions.set(type, []);
+
+				// Send start message as needed, depending on the messageType
+				const mapping = SUBSCRIPTION_REGISTRY[type];
+				if (mapping && this.socket?.readyState === WebSocket.OPEN) {
+					this.sendMessage(mapping.createStartMessage());
+				}
+			}
+
             this.subscriptions.get(type)!.push(onMessage);
-        }
+		}
 
-        // Return an unsubscription function
-        return () => {
-            for (const type of messageTypes) {
-                const handlers = this.subscriptions.get(type);
-                if (!handlers) continue;
+		// Return an unsubscription function
+		return () => {
+			for (const type of messageTypes) {
+				const handlers = this.subscriptions.get(type);
+				if (!handlers) continue;
 
-                const index = handlers.indexOf(onMessage);
-                if (index !== -1) handlers.splice(index, 1);
+				const index = handlers.indexOf(onMessage);
+				if (index !== -1) handlers.splice(index, 1);
 
-                if (handlers.length === 0) {
-                    this.subscriptions.delete(type);
-                    // Send Stop Message
-                    const mapping = SUBSCRIPTION_REGISTRY[type];
-                    if (mapping) this.sendMessage(mapping.createStopMessage());
-                }
-            }
+				if (handlers.length === 0) {
+					this.subscriptions.delete(type);
+					// Send Stop Message
+					const mapping = SUBSCRIPTION_REGISTRY[type];
+					if (mapping) this.sendMessage(mapping.createStopMessage());
+				}
+			}
 
-            if (this.subscriptions.size === 0) {
-                this.socket?.close();
-            }
-        };
-    }
+			if (this.subscriptions.size === 0) {
+				this.socket?.close();
+			}
+		};
+	}
 }
