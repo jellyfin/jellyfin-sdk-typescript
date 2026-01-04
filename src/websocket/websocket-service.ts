@@ -1,7 +1,8 @@
 import { Api, AUTHORIZATION_PARAMETER } from "../api";
 import { InboundWebSocketMessage, OutboundWebSocketMessage } from "../generated-client";
+import { RECONNECT_TIMEOUT_INTERVAL } from "./configs";
 import { SUBSCRIPTION_REGISTRY } from "./constants";
-import { SocketMessageHandler } from "./types";
+import { SocketMessageHandler, SocketStatusHandler } from "./types";
 
 
 /**
@@ -20,10 +21,22 @@ export class WebSocketService {
      */
     private socket : WebSocket | undefined;
 
+    private keepAlive : NodeJS.Timeout | undefined
+
     /**
      * A map of message type subscriptions to their respective handlers
      */
     private subscriptions: Map<string, SocketMessageHandler<any>[]> = new Map();
+
+    /**
+     * Status change event listeners
+     */
+    private statusListeners: SocketStatusHandler[] = [];
+
+    /**
+     * Current connection status
+     */
+    private currentStatus: WebSocket['readyState'] | 'disconnected' = 'disconnected';
 
     /**
      * Constructs a new instance of the {@link WebSocketService}
@@ -44,6 +57,9 @@ export class WebSocketService {
         this.socket = new WebSocket(this.url.toString());
 
         this.socket.onopen = () => {
+            // Update status and notify listeners
+            this.setStatus(WebSocket.OPEN);
+            
             // Attach all subscriptions, sending start messages as needed
             for (const type of this.subscriptions.keys()) {
                 const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessage['MessageType']];
@@ -53,14 +69,40 @@ export class WebSocketService {
 
         this.socket.onmessage = (event) => {
             const data = JSON.parse(event.data) as OutboundWebSocketMessage;
-            const handlers = this.subscriptions.get(data.MessageType);
-            handlers?.forEach(handler => handler(data));
+
+            const { MessageType } = data
+
+            if (MessageType === 'ForceKeepAlive' && data.Data) {
+                // Clear any existing keep-alive timeout
+                if (this.keepAlive) clearTimeout(this.keepAlive);
+                
+                this.keepAlive = setTimeout(() => 
+                    this.sendMessage({
+                        MessageType: 'KeepAlive',
+                    }), data.Data / 2
+                )
+            }
+            else {
+                const handlers = this.subscriptions.get(MessageType);
+                handlers?.forEach(handler => handler(data));
+            }
         };
 
         this.socket.onclose = () => {
-            // Reconnect after 5 seconds
+            // Update status and notify listeners
+            this.setStatus('disconnected');
+            
+            // Reconnect after 5 seconds if there are active subscriptions
             if (this.subscriptions.size > 0) {
-                setTimeout(() => this.initSocket(), 5000);
+                setTimeout(() => this.initSocket(), RECONNECT_TIMEOUT_INTERVAL);
+            } 
+            // Else, close and dispose
+            else {
+                this.socket = undefined
+                if (this.keepAlive) {
+                    clearTimeout(this.keepAlive)
+                    this.keepAlive = undefined
+                }
             }
         };
     }
@@ -73,10 +115,36 @@ export class WebSocketService {
 
     /**
      * Gets the current status of the websocket connection
-     * @returns The {@link WebSocket.readyState} status
+     * @returns The connection status
      */
-    getSocketStatus() : WebSocket['readyState'] | undefined {
-        return this.socket?.readyState;
+    getSocketStatus() : WebSocket['readyState'] | 'disconnected' | undefined {
+        return this.currentStatus;
+    }
+
+    /**
+     * Adds a listener for websocket status changes
+     * 
+     * @param onStatusChange Callback invoked when the connection status changes
+     * @returns A function which can be invoked to remove the listener
+     */
+    onStatusChange(onStatusChange: SocketStatusHandler) : () => void {
+        this.statusListeners.push(onStatusChange);
+        return () => {
+            const index = this.statusListeners.indexOf(onStatusChange);
+            if (index !== -1) {
+                this.statusListeners.splice(index, 1);
+            }
+        };
+    }
+
+    /**
+     * Internal method to update status and notify all listeners
+     */
+    private setStatus(status: WebSocket['readyState'] | 'disconnected') {
+        if (this.currentStatus !== status) {
+            this.currentStatus = status;
+            this.statusListeners.forEach(listener => listener(status));
+        }
     }
 
     /**
