@@ -1,6 +1,7 @@
 import { afterEach, beforeEach, describe, it, vi } from "vitest";
 import { expect } from "vitest";
 import { WebSocketService } from "../websocket-service";
+import { SessionsStartMessage } from "../../generated-client";
 
 // Mock WebSocket
 global.WebSocket = vi.fn() as any;
@@ -77,7 +78,7 @@ describe("WebSocketService", () => {
 
             // Simulate receiving a message
             mockWebSocket.readyState = WebSocket.OPEN;
-            const message = { MessageType: "Sessions" } as any;
+            const message = { MessageType: "Sessions", Data: '0,5000' } as SessionsStartMessage;
             mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
             expect(handler).toHaveBeenCalledWith(message);
@@ -88,7 +89,7 @@ describe("WebSocketService", () => {
             service.subscribe(["Sessions"], () => {});
 
             expect(mockWebSocket.send).toHaveBeenCalledWith(
-                JSON.stringify({ MessageType: "SessionsStart" })
+                JSON.stringify({ MessageType: "SessionsStart", Data: "0,5000" })
             );
         });
 
@@ -111,7 +112,7 @@ describe("WebSocketService", () => {
             service.subscribe(["Sessions"], handler2);
 
             mockWebSocket.readyState = WebSocket.OPEN;
-            const message = { MessageType: "Sessions" } as any;
+            const message = { MessageType: "Sessions", Data: '0,5000' } as SessionsStartMessage;
             mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
             expect(handler1).toHaveBeenCalledWith(message);
@@ -132,7 +133,7 @@ describe("WebSocketService", () => {
 
             unsubscribe();
 
-            const message = { MessageType: "Sessions" } as any;
+            const message = { MessageType: "Sessions", Data: '0,5000' } as SessionsStartMessage;
             mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
             expect(handler).not.toHaveBeenCalled();
@@ -181,7 +182,7 @@ describe("WebSocketService", () => {
             mockWebSocket.onopen();
 
             expect(mockWebSocket.send).toHaveBeenCalledWith(
-                JSON.stringify({ MessageType: "SessionsStart" })
+                JSON.stringify({ MessageType: "SessionsStart", Data: "0,5000" })
             );
         });
 

@@ -37,7 +37,7 @@ export class WebSocketService {
         this.url = new URL(
             api.getUri("socket", { [AUTHORIZATION_PARAMETER]: api.accessToken })
                 .replace(/^http/, "ws")
-        )
+        );
     }
 
     private initSocket() {
@@ -67,7 +67,7 @@ export class WebSocketService {
 
     private sendMessage(message: InboundWebSocketMessage) {
         if (this.socket?.readyState === WebSocket.OPEN) {
-            this.socket.send(JSON.stringify(message))
+            this.socket.send(JSON.stringify(message));
         }
     }
 
