@@ -18,7 +18,7 @@ export interface ImageRequestParameters {
 	quality?: number,
 	fillWidth?: number,
 	fillHeight?: number,
-	tag?: string,
+	tag?: string | null,
 	cropWhitespace?: boolean,
 	format?: ImageFormat,
 	percentPlayed?: number,
