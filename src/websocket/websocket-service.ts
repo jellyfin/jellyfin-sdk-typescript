@@ -1,6 +1,5 @@
 import { Api, AUTHORIZATION_PARAMETER } from "../api";
-import { ActivityLogEntryStartMessage, InboundWebSocketMessage, OutboundWebSocketMessage, ScheduledTasksInfoStartMessage, SessionsMessage, SessionsStartMessage } from "../generated-client";
-import { getActivityLogApi, getDashboardApi, getSessionApi } from "../utils/api";
+import { InboundWebSocketMessage, OutboundWebSocketMessage } from "../generated-client";
 import { SUBSCRIPTION_REGISTRY } from "./constants";
 import { SocketMessageHandler } from "./types";
 
@@ -12,40 +11,37 @@ import { SocketMessageHandler } from "./types";
 export class WebSocketService {
     
     /**
-     * The {@link Api} instance used to construct the websocket URL
+     * The URL to connect to, supplied by the {@link Api} instance
      */
-    private api;
+    private url : URL;
 
     /**
      * The active websocket connection, if one exists
      */
-    private socket : WebSocket | undefined
+    private socket : WebSocket | undefined;
 
     /**
      * A map of message type subscriptions to their respective handlers
      */
     private subscriptions: Map<string, SocketMessageHandler<any>[]> = new Map();
 
-    constructor(api : Api) {
-        this.api = api
-    }
-
     /**
-     * Gets the websocket URL for the given API instance
+     * Constructs a new instance of the {@link WebSocketService}
+     * 
+     * Uses the authenticated {@link Api} instance for constructing a URI
+     * that will be used to establish socket connections.
      * 
      * @param api The authenticated {@link Api} instance
-     * @returns The websocket URL
      */
-    private getWebSocketUrl(api: Api) : URL {
-        return new URL(
+    constructor(api: Api) {
+        this.url = new URL(
             api.getUri("socket", { [AUTHORIZATION_PARAMETER]: api.accessToken })
                 .replace(/^http/, "ws")
-        );
+        )
     }
 
     private initSocket() {
-        const url = this.getWebSocketUrl(this.api);
-        this.socket = new WebSocket(url.toString());
+        this.socket = new WebSocket(this.url.toString());
 
         this.socket.onopen = () => {
             // Attach all subscriptions, sending start messages as needed
