@@ -1,20 +1,20 @@
-import type { OutboundWebSocketMessage } from '../generated-client/models/outbound-web-socket-message';
+import { OutboundWebSocketMessageType } from '../generated-client';
 
 import type { WebSocketSubscription } from './types';
 
-export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessage['MessageType'], WebSocketSubscription<OutboundWebSocketMessage['MessageType']>>> = {
+export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
 	'Sessions': {
-		messageType: 'Sessions',
+		messageType: OutboundWebSocketMessageType.Sessions,
 		createStartMessage: () => ({ MessageType: 'SessionsStart', Data: '0,5000' }),
 		createStopMessage: () => ({ MessageType: 'SessionsStop' })
 	},
 	'ActivityLogEntry': {
-		messageType: 'ActivityLogEntry',
+		messageType: OutboundWebSocketMessageType.ActivityLogEntry,
 		createStartMessage: () => ({ MessageType: 'ActivityLogEntryStart', Data: '0,5000' }),
 		createStopMessage: () => ({ MessageType: 'ActivityLogEntryStop' })
 	},
 	'ScheduledTasksInfo': {
-		messageType: 'ScheduledTasksInfo',
+		messageType: OutboundWebSocketMessageType.ScheduledTasksInfo,
 		createStartMessage: () => ({ MessageType: 'ScheduledTasksInfoStart', Data: '0,5000' }),
 		createStopMessage: () => ({ MessageType: 'ScheduledTasksInfoStop' })
 	}

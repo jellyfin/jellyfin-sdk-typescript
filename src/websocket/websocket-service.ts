@@ -1,6 +1,6 @@
 import type { Api } from '../api';
 import { AUTHORIZATION_PARAMETER } from '../api';
-import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
+import type { InboundWebSocketMessage, OutboundWebSocketMessage, OutboundWebSocketMessageType } from '../generated-client';
 
 import { RECONNECT_TIMEOUT_INTERVAL } from './configs';
 import { SUBSCRIPTION_REGISTRY } from './constants';
@@ -63,7 +63,7 @@ export class WebSocketService {
 
 			// Attach all subscriptions, sending start messages as needed
 			for (const type of this.subscriptions.keys()) {
-				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessage['MessageType']];
+				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
 				if (mapping) this.sendMessage(mapping.createStartMessage());
 			}
 		};
@@ -160,7 +160,7 @@ export class WebSocketService {
      *
      * @returns A function which can be invoked to remove the added listeners
      */
-	subscribe<T extends OutboundWebSocketMessage['MessageType']>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
+	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
 		if (!this.socket || this.socket.readyState === WebSocket.CLOSED) {
 			this.initSocket();
 		}
