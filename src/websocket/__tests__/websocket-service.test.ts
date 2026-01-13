@@ -2,8 +2,9 @@ import { afterEach, beforeEach, describe, it, vi } from 'vitest';
 import { expect } from 'vitest';
 
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
-import { PERIODIC_LISTENER_INTERVAL } from '../configs';
+import { PERIODIC_LISTENER_INTERVAL, WEBSOCKET_URL_PATH } from '../configs';
 import { WebSocketService } from '../websocket-service';
+import { AUTHORIZATION_HEADER } from '../../constants';
 
 vi.mock('../../api');
 
@@ -46,7 +47,11 @@ describe('WebSocketService', () => {
 			dispatchEvent: vi.fn()
 		};
 
-		service = new WebSocketService(mockApi.getUri, mockApi.accessToken);
+		service = new WebSocketService(
+			mockApi.getUri(WEBSOCKET_URL_PATH, { 
+				[AUTHORIZATION_HEADER]: mockApi.accessToken }
+			)
+		);
 	});
 
 	afterEach(() => {

@@ -48,19 +48,13 @@ export class WebSocketService {
 	/**
      * Constructs a new instance of the {@link WebSocketService}
      *
-     * Uses the authenticated Api instance fields for constructing a URI
-     * that will be used to establish socket connections.
-     *
-     * @param getUri The function to get full URIs from paths and query parameters from the Api instance
-	 * @param accessToken The access token to use for authentication
+     * @param uri The full URI path with the Authorization Header included as a query parameter
      */
 	constructor(
-		getUri: (path: string, queryParams?: Record<string, string>) => string, 
-		accessToken: string
+		uri: string, 
 	) {
 		this.url = new URL(
-			getUri(WEBSOCKET_URL_PATH, { [AUTHORIZATION_PARAMETER]: accessToken })
-				.replace(/^http/, 'ws')
+			uri.replace(/^http/, 'ws')
 		);
 	}
 
