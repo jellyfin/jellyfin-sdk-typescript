@@ -19,6 +19,44 @@ A TypeScript SDK for Jellyfin.
 
 > Warning: This project is under active development, so API changes may occur.
 
+## Building Locally
+
+If you want to build the SDK locally (for development, testing, or contributing), follow the steps below.
+
+### 1. Replace `openapi.json` file
+
+Obtain the latest `openapi.json` from the Jellyfin server repository.
+The easiest way to get this is to download it from the github actions on a specific commit.
+
+Once you have the new file, replace the existing `openapi.json` in this repository with the new one.
+
+### 2. Build the project
+
+You can now build the project by executing the following commands
+
+    ```sh
+    npm run fix-schema
+    npm run build
+    ```
+
+This should then generate a compiled output in the `lib` folder
+
+### 3. Use the local build in another project
+
+You can reference your local build in another repository using `npm link`:
+
+   ```sh
+   npm link
+   ```
+
+Then, in the consuming project:
+
+   ```sh
+   npm link @jellyfin/sdk
+   ```
+
+This allows you to test changes to the SDK without publishing it to npm.
+
 ## Install
 
 ```sh
@@ -33,16 +71,16 @@ yarn add @jellyfin/sdk
 
 ### Supported Jellyfin Versions
 
-| SDK Version | Jellyfin Version |
-|:-:|:-:|
-| 0.13.0 | 10.11.x |
-| 0.12.0 | 10.11.x |
-| 0.11.0 | 10.10.x |
-| 0.10.0 | 10.9.x |
-| 0.9.0 | 10.9.x |
+|  SDK Version  | Jellyfin Version |
+|:-------------:|:----------------:|
+|    0.13.0     |     10.11.x      |
+|    0.12.0     |     10.11.x      |
+|    0.11.0     |     10.10.x      |
+|    0.10.0     |      10.9.x      |
+|     0.9.0     |      10.9.x      |
 | 0.8.2 - 0.6.0 | 10.8.1 - 10.8.13 |
-| 0.5.0 | 10.8.0 |
-| <0.5.0 | 10.7.x |
+|     0.5.0     |      10.8.0      |
+|    <0.5.0     |      10.7.x      |
 
 > Note: Versions prior to 0.7.0 were published as `@thornbill/jellyfin-sdk`.
 
