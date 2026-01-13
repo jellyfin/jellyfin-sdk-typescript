@@ -25,7 +25,7 @@ export class Api {
 
 	readonly axiosInstance;
 
-	private _webSocket?: WebSocketService;
+	webSocket?: WebSocketService;
 
 	constructor(
 		basePath: string,
@@ -56,19 +56,6 @@ export class Api {
 
 	get deviceInfo(): DeviceInfo {
 		return this._deviceInfo;
-	}
-
-	get webSocket(): WebSocketService {
-		if (!this._webSocket) {
-			this._webSocket = new WebSocketService(
-				this.getUri(
-					WEBSOCKET_URL_PATH, { 
-						[AUTHORIZATION_PARAMETER]: this.accessToken 
-					}
-				)
-			);
-		}
-		return this._webSocket;
 	}
 
 	get configuration(): Configuration {
@@ -147,10 +134,10 @@ export class Api {
 		}
 
 		if (this.accessToken.length === 0) {
-			this._webSocket?.close();
-			this._webSocket = undefined;
+			this.webSocket?.close();
+			this.webSocket = undefined;
 		} else {
-			this._webSocket = new WebSocketService(
+			this.webSocket = new WebSocketService(
 				this.getUri(
 					WEBSOCKET_URL_PATH, { 
 						[AUTHORIZATION_PARAMETER]: this.accessToken 
