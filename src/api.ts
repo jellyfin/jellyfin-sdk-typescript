@@ -25,6 +25,14 @@ export class Api {
 
 	readonly axiosInstance;
 
+	/**
+	 * Service for managing subscriptions to Outbound WebSocket events.
+	 * 
+	 * This service is automatically instantiated when an access token is present.
+	 * 
+	 * If the access token is cleared via the {@link update} method, the WebSocket
+	 * connection will be closed and this value will be set to `undefined`.
+	 */
 	webSocket?: WebSocketService;
 
 	constructor(
@@ -105,12 +113,12 @@ export class Api {
 	}
 
 	/**
-	 * Updates the API instance with new data.
+	 * Updates this {@link Api} instance with new data.
 	 * 
 	 * If the access token is cleared, any existing WebSocket connection will be closed.
 	 * 
-	 * If a new access token is provided, a new {@link WebSocketService} will be established
-	 * and ready for subscriptions.
+	 * If a new access token is provided, any existing WebSocket subscriptions will be closed and
+	 * a new {@link WebSocketService} will be established, ready for subscriptions.
 	 * 
 	 * @param data The data to update.
 	 */
@@ -137,6 +145,10 @@ export class Api {
 			this.webSocket?.close();
 			this.webSocket = undefined;
 		} else {
+			if (this.webSocket) {
+				this.webSocket.close();
+			}
+
 			this.webSocket = new WebSocketService(
 				this.getUri(
 					WEBSOCKET_URL_PATH, { 
