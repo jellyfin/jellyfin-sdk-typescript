@@ -29,7 +29,8 @@ describe('WebSocketService', () => {
 			getUri: vi.fn((endpoint: string, params: object) => {
 				return `http://example.com/api/${endpoint}?token=${params.toString()}`;
 			}),
-			accessToken: 'test-token-123'
+			accessToken: 'test-token-123',
+			axiosInstance: {}
 		};
 
 		// Setup mock WebSocket
@@ -45,7 +46,7 @@ describe('WebSocketService', () => {
 			dispatchEvent: vi.fn()
 		};
 
-		service = new WebSocketService(mockApi);
+		service = new WebSocketService(mockApi.getUri, mockApi.accessToken);
 	});
 
 	afterEach(() => {

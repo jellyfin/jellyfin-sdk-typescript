@@ -4,7 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { AUTHORIZATION_PARAMETER, type Api } from '../../api';
+import type { Api } from '../../api';
+import { AUTHORIZATION_PARAMETER } from '../../constants';
 import { LibraryApi, type LibraryApiGetDownloadRequest } from '../../generated-client/api/library-api';
 
 /** An augmented LibraryApi with URL helpers. */

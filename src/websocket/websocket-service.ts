@@ -1,5 +1,4 @@
-import type { Api } from '../api';
-import { AUTHORIZATION_PARAMETER } from '../api';
+import { AUTHORIZATION_PARAMETER } from '../constants';
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 
 import { RECONNECT_TIMEOUT_INTERVAL, WEBSOCKET_URL_PATH } from './configs';
@@ -14,7 +13,7 @@ export class WebSocketService {
 	/**
      * The URL to connect to.
 	 *
-	 * Created in the constructor, using the authenticated {@link Api} instance.
+	 * Created in the constructor, using the fields from the authenticated Api instance.
      */
 	private readonly url: URL;
 
@@ -49,14 +48,18 @@ export class WebSocketService {
 	/**
      * Constructs a new instance of the {@link WebSocketService}
      *
-     * Uses the authenticated {@link Api} instance for constructing a URI
+     * Uses the authenticated Api instance fields for constructing a URI
      * that will be used to establish socket connections.
      *
-     * @param api The authenticated {@link Api} instance
+     * @param getUri The function to get full URIs from paths and query parameters from the Api instance
+	 * @param accessToken The access token to use for authentication
      */
-	constructor(api: Api) {
+	constructor(
+		getUri: (path: string, queryParams?: Record<string, string>) => string, 
+		accessToken: string
+	) {
 		this.url = new URL(
-			api.getUri(WEBSOCKET_URL_PATH, { [AUTHORIZATION_PARAMETER]: api.accessToken })
+			getUri(WEBSOCKET_URL_PATH, { [AUTHORIZATION_PARAMETER]: accessToken })
 				.replace(/^http/, 'ws')
 		);
 	}

@@ -7,7 +7,8 @@
 import axios from 'axios';
 import { vi, describe, expect, it, afterEach } from 'vitest';
 
-import { Api, AUTHORIZATION_HEADER } from '..';
+import { AUTHORIZATION_HEADER } from '../constants';
+import { Api } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { getAuthorizationHeader } from '../utils';
 

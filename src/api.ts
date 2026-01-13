@@ -13,12 +13,7 @@ import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 import { WebSocketService } from './websocket';
-
-/** The authorization header field name. */
-export const AUTHORIZATION_HEADER = 'Authorization';
-
-/** The authorization query parameter name. */
-export const AUTHORIZATION_PARAMETER = 'ApiKey';
+import { AUTHORIZATION_HEADER } from './constants';
 
 /** Class representing the Jellyfin API. */
 export class Api {
@@ -64,7 +59,7 @@ export class Api {
 
 	get webSocket(): WebSocketService {
 		if (!this._webSocket) {
-			this._webSocket = new WebSocketService(this);
+			this._webSocket = new WebSocketService(this.getUri.bind(this), this.accessToken);
 		}
 		return this._webSocket;
 	}
@@ -148,7 +143,7 @@ export class Api {
 			this._webSocket?.close();
 			this._webSocket = undefined;
 		} else {
-			this._webSocket = new WebSocketService(this);
+			this._webSocket = new WebSocketService(this.getUri.bind(this), this.accessToken);
 		}
 	}
 
