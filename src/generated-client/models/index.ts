@@ -178,7 +178,6 @@ export * from './next-item-request-dto';
 export * from './open-live-stream-dto';
 export * from './outbound-keep-alive-message';
 export * from './outbound-web-socket-message';
-export * from './outbound-web-socket-message-type';
 export * from './package-info';
 export * from './parental-rating';
 export * from './parental-rating-score';

@@ -23,6 +23,7 @@ class AugmentedSessionApi extends SessionApi {
 		return super.reportSessionEnded(options)
 			.then(response => {
 				this.api.accessToken = '';
+				this.api.webSocket?.close();
 				return response;
 			});
 	}

@@ -27,7 +27,8 @@ export class Api {
 	deviceInfo;
 	accessToken;
 	axiosInstance;
-	webSocket?;
+
+	private _webSocket?: WebSocketService;
 
 	constructor(
 		basePath: string,
@@ -42,8 +43,13 @@ export class Api {
 		this.deviceInfo = deviceInfo;
 		this.accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+	}
 
-		if (accessToken.length > 0) this.webSocket = new WebSocketService(this);
+	get webSocket(): WebSocketService {
+		if (!this._webSocket) {
+			this._webSocket = new WebSocketService(this);
+		}
+		return this._webSocket;
 	}
 
 	get configuration(): Configuration {

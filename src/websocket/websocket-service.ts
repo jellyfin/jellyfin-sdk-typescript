@@ -1,10 +1,10 @@
 import type { Api } from '../api';
 import { AUTHORIZATION_PARAMETER } from '../api';
-import type { InboundWebSocketMessage, OutboundWebSocketMessage, OutboundWebSocketMessageType } from '../generated-client';
+import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 
-import { RECONNECT_TIMEOUT_INTERVAL } from './configs';
+import { RECONNECT_TIMEOUT_INTERVAL, WEBSOCKET_URL_PATH } from './configs';
 import { SUBSCRIPTION_REGISTRY } from './constants';
-import type { SocketMessageHandler, SocketStatusHandler } from './types';
+import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
@@ -12,15 +12,22 @@ import type { SocketMessageHandler, SocketStatusHandler } from './types';
  */
 export class WebSocketService {
 	/**
-     * The URL to connect to, supplied by the {@link Api} instance
+     * The URL to connect to.
+	 * 
+	 * Created in the constructor, using the authenticated {@link Api} instance.
      */
 	private readonly url: URL;
 
 	/**
-     * The active websocket connection, if one exists
+     * The active websocket connection, if one exists.
      */
 	private socket: WebSocket | undefined;
 
+	/**
+	 * The keep-alive timeout handle.
+	 * 
+	 * Indicates when the next keep-alive message should be sent.
+	 */
 	private keepAlive: NodeJS.Timeout | undefined;
 
 	/**
@@ -37,7 +44,7 @@ export class WebSocketService {
 	/**
      * Current connection status
      */
-	private currentStatus: WebSocket['readyState'] | 'disconnected' = 'disconnected';
+	private currentStatus: WebSocketStatus = 'disconnected';
 
 	/**
      * Constructs a new instance of the {@link WebSocketService}
@@ -49,7 +56,7 @@ export class WebSocketService {
      */
 	constructor(api: Api) {
 		this.url = new URL(
-			api.getUri('socket', { [AUTHORIZATION_PARAMETER]: api.accessToken })
+			api.getUri(WEBSOCKET_URL_PATH, { [AUTHORIZATION_PARAMETER]: api.accessToken })
 				.replace(/^http/, 'ws')
 		);
 	}
@@ -73,13 +80,13 @@ export class WebSocketService {
 
 			const { MessageType } = data;
 
-			if (MessageType === 'ForceKeepAlive' && data.Data) {
+			if (MessageType === OutboundWebSocketMessageType.ForceKeepAlive && data.Data) {
 				// Clear any existing keep-alive timeout
 				if (this.keepAlive) clearTimeout(this.keepAlive);
 
 				this.keepAlive = setTimeout(() =>
 					this.sendMessage({
-						MessageType: 'KeepAlive'
+						MessageType: OutboundWebSocketMessageType.KeepAlive
 					}), data.Data / 2
 				);
 			} else {
@@ -113,11 +120,47 @@ export class WebSocketService {
 	}
 
 	/**
+     * Internal method to update status and notify all listeners
+     */
+	private setStatus(status: WebSocketStatus) {
+		if (this.currentStatus !== status) {
+			this.currentStatus = status;
+			this.statusListeners.forEach(listener => listener(status));
+		}
+	}
+
+	/**
      * Gets the current status of the websocket connection
      * @returns The connection status
      */
-	getSocketStatus(): WebSocket['readyState'] | 'disconnected' | undefined {
+	get socketStatus(): WebSocketStatus | undefined {
 		return this.currentStatus;
+	}
+
+	close() : void {
+		// Send stop messages for all active subscriptions
+		for (const type of this.subscriptions.keys()) {
+			const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
+			if (mapping) this.sendMessage(mapping.createStopMessage());
+		}
+
+		// Clear all subscriptions
+		this.subscriptions.clear();
+
+		// Close the socket
+		if (this.socket) {
+			this.socket.close();
+			this.socket = undefined;
+		}
+
+		// Clear keep-alive timeout
+		if (this.keepAlive) {
+			clearTimeout(this.keepAlive);
+			this.keepAlive = undefined;
+		}
+
+		// Update status
+		this.setStatus('disconnected');
 	}
 
 	/**
@@ -134,16 +177,6 @@ export class WebSocketService {
 				this.statusListeners.splice(index, 1);
 			}
 		};
-	}
-
-	/**
-     * Internal method to update status and notify all listeners
-     */
-	private setStatus(status: WebSocket['readyState'] | 'disconnected') {
-		if (this.currentStatus !== status) {
-			this.currentStatus = status;
-			this.statusListeners.forEach(listener => listener(status));
-		}
 	}
 
 	/**
@@ -200,6 +233,7 @@ export class WebSocketService {
 
 			if (this.subscriptions.size === 0) {
 				this.socket?.close();
+				this.setStatus('disconnected');
 			}
 		};
 	}
