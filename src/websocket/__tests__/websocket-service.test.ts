@@ -2,6 +2,7 @@ import { afterEach, beforeEach, describe, it, vi } from 'vitest';
 import { expect } from 'vitest';
 
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
+import { PERIODIC_LISTENER_INTERVAL } from '../configs';
 import { WebSocketService } from '../websocket-service';
 
 vi.mock('../../api');
@@ -57,13 +58,13 @@ describe('WebSocketService', () => {
 		});
 
 		it('should start in disconnected status', () => {
-			expect(service.getSocketStatus()).toBe('disconnected');
+			expect(service.socketStatus).toBe('disconnected');
 		});
 	});
 
 	describe('getSocketStatus()', () => {
 		it('should return disconnected when no socket exists', () => {
-			expect(service.getSocketStatus()).toBe('disconnected');
+			expect(service.socketStatus).toBe('disconnected');
 		});
 
 		it('should return socket readyState when socket exists', () => {
@@ -71,7 +72,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 			// The status should be updated to OPEN after socket opens
 			mockWebSocket.onopen();
-			expect(service.getSocketStatus()).toBe(WebSocket.OPEN);
+			expect(service.socketStatus).toBe(WebSocket.OPEN);
 		});
 	});
 
@@ -88,7 +89,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], handler);
 
 			// Simulate receiving a message
-			const message = { MessageType: 'Sessions', Data: '0,5000' } as SessionsStartMessage;
+			const message = { MessageType: 'Sessions', Data: PERIODIC_LISTENER_INTERVAL } as SessionsStartMessage;
 			mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
 			expect(handler).toHaveBeenCalledWith(message);
@@ -99,7 +100,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,5000' })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: PERIODIC_LISTENER_INTERVAL })
 			);
 		});
 
@@ -195,7 +196,7 @@ describe('WebSocketService', () => {
 			mockWebSocket.onopen();
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,5000' })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: PERIODIC_LISTENER_INTERVAL })
 			);
 		});
 

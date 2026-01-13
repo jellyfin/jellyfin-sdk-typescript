@@ -1,6 +1,7 @@
 import { PERIODIC_LISTENER_INTERVAL } from './configs';
 
-import { OutboundWebSocketMessageType, WebSocketSubscription } from './types';
+import type { WebSocketSubscription } from './types';
+import { OutboundWebSocketMessageType } from './types';
 
 export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
 	'Sessions': {
@@ -10,7 +11,7 @@ export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType,
 	},
 	'ActivityLogEntry': {
 		messageType: OutboundWebSocketMessageType.ActivityLogEntry,
-		createStartMessage: () => ({ MessageType: 'ActivityLogEntryStart', Data: PERIODIC_LISTENER_INTERVAL}),
+		createStartMessage: () => ({ MessageType: 'ActivityLogEntryStart', Data: PERIODIC_LISTENER_INTERVAL }),
 		createStopMessage: () => ({ MessageType: 'ActivityLogEntryStop' })
 	},
 	'ScheduledTasksInfo': {

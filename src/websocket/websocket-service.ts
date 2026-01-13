@@ -13,7 +13,7 @@ import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketSta
 export class WebSocketService {
 	/**
      * The URL to connect to.
-	 * 
+	 *
 	 * Created in the constructor, using the authenticated {@link Api} instance.
      */
 	private readonly url: URL;
@@ -25,7 +25,7 @@ export class WebSocketService {
 
 	/**
 	 * The keep-alive timeout handle.
-	 * 
+	 *
 	 * Indicates when the next keep-alive message should be sent.
 	 */
 	private keepAlive: NodeJS.Timeout | undefined;
@@ -137,7 +137,7 @@ export class WebSocketService {
 		return this.currentStatus;
 	}
 
-	close() : void {
+	close(): void {
 		// Send stop messages for all active subscriptions
 		for (const type of this.subscriptions.keys()) {
 			const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];

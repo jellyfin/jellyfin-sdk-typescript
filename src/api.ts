@@ -22,11 +22,12 @@ export const AUTHORIZATION_PARAMETER = 'ApiKey';
 
 /** Class representing the Jellyfin API. */
 export class Api {
-	basePath;
-	clientInfo;
-	deviceInfo;
-	accessToken;
-	axiosInstance;
+	private _basePath;
+	private _clientInfo;
+	private _deviceInfo;
+	private _accessToken;
+
+	readonly axiosInstance;
 
 	private _webSocket?: WebSocketService;
 
@@ -38,11 +39,27 @@ export class Api {
 		axiosInstance: AxiosInstance = globalInstance
 	) {
 		// Remove trailing slash if present
-		this.basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
-		this.clientInfo = clientInfo;
-		this.deviceInfo = deviceInfo;
-		this.accessToken = accessToken;
+		this._basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
+		this._clientInfo = clientInfo;
+		this._deviceInfo = deviceInfo;
+		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+	}
+
+	get accessToken(): string {
+		return this._accessToken;
+	}
+
+	get basePath(): string {
+		return this._basePath;
+	}
+
+	get clientInfo(): ClientInfo {
+		return this._clientInfo;
+	}
+
+	get deviceInfo(): DeviceInfo {
+		return this._deviceInfo;
 	}
 
 	get webSocket(): WebSocketService {
@@ -54,7 +71,7 @@ export class Api {
 
 	get configuration(): Configuration {
 		return new Configuration({
-			basePath: this.basePath,
+			basePath: this._basePath,
 			baseOptions: {
 				headers: {
 					[AUTHORIZATION_HEADER]: this.authorizationHeader
@@ -84,7 +101,7 @@ export class Api {
 	 */
 	getUri(url: string, params?: object) {
 		return this.axiosInstance.getUri({
-			baseURL: this.basePath,
+			baseURL: this._basePath,
 			url,
 			params
 		});
@@ -98,7 +115,44 @@ export class Api {
 		return getSessionApi(this).reportSessionEnded();
 	}
 
+	/**
+	 * Updates the API instance with new data.
+	 * 
+	 * If the access token is cleared, any existing WebSocket connection will be closed.
+	 * 
+	 * If a new access token is provided, a new {@link WebSocketService} will be established
+	 * and ready for subscriptions.
+	 * 
+	 * @param data The data to update.
+	 */
+	update(data: Partial<{ 
+		basePath: string; 
+		clientInfo: ClientInfo; 
+		deviceInfo: DeviceInfo; 
+		accessToken: string 
+	}>): void {
+		if (data.basePath !== undefined) {
+			this._basePath = data.basePath;
+		}
+		if (data.clientInfo !== undefined) {
+			this._clientInfo = data.clientInfo;
+		}
+		if (data.deviceInfo !== undefined) {
+			this._deviceInfo = data.deviceInfo;
+		}
+		if (data.accessToken !== undefined) {
+			this._accessToken = data.accessToken;
+		}
+
+		if (this.accessToken.length === 0) {
+			this._webSocket?.close();
+			this._webSocket = undefined;
+		} else {
+			this._webSocket = new WebSocketService(this);
+		}
+	}
+
 	get authorizationHeader(): string {
-		return getAuthorizationHeader(this.clientInfo, this.deviceInfo, this.accessToken);
+		return getAuthorizationHeader(this._clientInfo, this._deviceInfo, this._accessToken);
 	}
 }
