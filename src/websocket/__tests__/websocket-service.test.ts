@@ -1,10 +1,10 @@
 import { afterEach, beforeEach, describe, it, vi } from 'vitest';
 import { expect } from 'vitest';
 
+import { AUTHORIZATION_HEADER } from '../../constants';
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
 import { PERIODIC_LISTENER_INTERVAL, WEBSOCKET_URL_PATH } from '../configs';
 import { WebSocketService } from '../websocket-service';
-import { AUTHORIZATION_HEADER } from '../../constants';
 
 vi.mock('../../api');
 
@@ -48,7 +48,7 @@ describe('WebSocketService', () => {
 		};
 
 		service = new WebSocketService(
-			mockApi.getUri(WEBSOCKET_URL_PATH, { 
+			mockApi.getUri(WEBSOCKET_URL_PATH, {
 				[AUTHORIZATION_HEADER]: mockApi.accessToken }
 			)
 		);

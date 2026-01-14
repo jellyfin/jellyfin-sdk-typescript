@@ -6,6 +6,7 @@
 import type { AxiosInstance, AxiosResponse } from 'axios';
 import globalInstance from 'axios';
 
+import { AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
 import { Configuration } from './generated-client/configuration';
 import type { AuthenticationResult } from './generated-client/models/authentication-result';
 import type { ClientInfo, DeviceInfo } from './models';
@@ -13,7 +14,6 @@ import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 import { WebSocketService } from './websocket';
-import { AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
 import { WEBSOCKET_URL_PATH } from './websocket/configs';
 
 /** Class representing the Jellyfin API. */
@@ -27,9 +27,9 @@ export class Api {
 
 	/**
 	 * Service for managing subscriptions to Outbound WebSocket events.
-	 * 
+	 *
 	 * This service is automatically instantiated when an access token is present.
-	 * 
+	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
 	 * connection will be closed and this value will be set to `undefined`.
 	 */
@@ -114,19 +114,19 @@ export class Api {
 
 	/**
 	 * Updates this {@link Api} instance with new data.
-	 * 
+	 *
 	 * If the access token is cleared, any existing WebSocket connection will be closed.
-	 * 
+	 *
 	 * If the base path or access token changes while a WebSocket connection is active,
 	 * the connection will be reconnected with the new credentials.
-\	 * 
+\	 *
 	 * @param data The data to update.
 	 */
-	update(data: Partial<{ 
-		basePath: string; 
-		clientInfo: ClientInfo; 
-		deviceInfo: DeviceInfo; 
-		accessToken: string 
+	update(data: Partial<{
+		basePath: string;
+		clientInfo: ClientInfo;
+		deviceInfo: DeviceInfo;
+		accessToken: string
 	}>): void {
 		if (data.basePath !== undefined) {
 			this._basePath = data.basePath;

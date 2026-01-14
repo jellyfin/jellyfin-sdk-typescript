@@ -1,7 +1,6 @@
-import { AUTHORIZATION_PARAMETER } from '../constants';
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 
-import { RECONNECT_TIMEOUT_INTERVAL, WEBSOCKET_URL_PATH } from './configs';
+import { RECONNECT_TIMEOUT_INTERVAL } from './configs';
 import { SUBSCRIPTION_REGISTRY } from './constants';
 import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
@@ -51,7 +50,7 @@ export class WebSocketService {
      * @param uri The full URI path with the Authorization Header included as a query parameter
      */
 	constructor(
-		uri: string, 
+		uri: string
 	) {
 		this.url = new URL(
 			uri.replace(/^http/, 'ws')
