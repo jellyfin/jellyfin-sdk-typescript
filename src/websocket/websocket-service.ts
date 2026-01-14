@@ -151,7 +151,9 @@ export class WebSocketService {
 			uri.replace(/^http/, 'ws')
 		);
 
-		this.initSocket();
+		if (this.subscriptions.size > 0) {
+			this.initSocket();
+		}
 	}
 
 	/**
