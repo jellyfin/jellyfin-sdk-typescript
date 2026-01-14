@@ -134,15 +134,23 @@ export class WebSocketService {
 		return this.currentStatus;
 	}
 
-	disconnect() : void {
+	disconnect(): void {
 		this.socket?.close();
 		this.setStatus('disconnected');
+		this.socket = undefined;
+		if (this.keepAlive) {
+			clearTimeout(this.keepAlive);
+			this.keepAlive = undefined;
+		}
 	}
 
-	reconnect(uri: string) : void {
+	updateUrl(uri: string) {
+		this.socket?.close();
+
 		this.url = new URL(
 			uri.replace(/^http/, 'ws')
 		);
+
 		this.initSocket();
 	}
 

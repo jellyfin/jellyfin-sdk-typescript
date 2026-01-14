@@ -11,6 +11,7 @@ import { AUTHORIZATION_HEADER } from '../constants';
 import { Api } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { getAuthorizationHeader } from '../utils';
+import { OutboundWebSocketMessageType } from '../websocket';
 
 vi.mock('axios', async () => {
 	const actual = await vi.importActual('axios');
@@ -55,7 +56,7 @@ describe('Api', () => {
 		expect(requestData.data).toEqual(JSON.stringify(USER_CREDENTIALS));
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
-		
+				
 		expect(api.webSocket).toBeDefined();
 	});
 

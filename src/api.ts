@@ -117,9 +117,9 @@ export class Api {
 	 * 
 	 * If the access token is cleared, any existing WebSocket connection will be closed.
 	 * 
-	 * If a new access token is provided, any existing WebSocket subscriptions will be closed and
-	 * a new {@link WebSocketService} will be established, ready for subscriptions.
-	 * 
+	 * If the base path or access token changes while a WebSocket connection is active,
+	 * the connection will be reconnected with the new credentials.
+\	 * 
 	 * @param data The data to update.
 	 */
 	update(data: Partial<{ 
@@ -141,16 +141,26 @@ export class Api {
 			this._accessToken = data.accessToken;
 		}
 
-		if (this.accessToken.length === 0) {
-			this.webSocket?.disconnect();
+		if (this.accessToken.length !== 0) {
+			// Token is present, reconnect if socket exists
+			if (this.webSocket) {
+				this.webSocket.updateUrl(
+					this.getUri(WEBSOCKET_URL_PATH, {
+						[AUTHORIZATION_PARAMETER]: this.accessToken
+					})
+				);
+			} else {
+				this.webSocket = new WebSocketService(
+					this.getUri(WEBSOCKET_URL_PATH, {
+						[AUTHORIZATION_PARAMETER]: this.accessToken
+					})
+				);
+			}
 		} else {
-			this.webSocket = new WebSocketService(
-				this.getUri(
-					WEBSOCKET_URL_PATH, { 
-						[AUTHORIZATION_PARAMETER]: this.accessToken 
-					}
-				)
-			);
+			// Token was cleared, dispose of WebSocket
+			if (this.webSocket) {
+				this.webSocket.disconnect();
+			}
 		}
 	}
 
