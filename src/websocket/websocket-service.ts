@@ -15,7 +15,7 @@ export class WebSocketService {
 	 *
 	 * Created in the constructor, using the fields from the authenticated Api instance.
      */
-	private readonly url: URL;
+	private url: URL;
 
 	/**
      * The active websocket connection, if one exists.
@@ -134,30 +134,16 @@ export class WebSocketService {
 		return this.currentStatus;
 	}
 
-	close(): void {
-		// Send stop messages for all active subscriptions
-		for (const type of this.subscriptions.keys()) {
-			const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
-			if (mapping) this.sendMessage(mapping.createStopMessage());
-		}
-
-		// Clear all subscriptions
-		this.subscriptions.clear();
-
-		// Close the socket
-		if (this.socket) {
-			this.socket.close();
-			this.socket = undefined;
-		}
-
-		// Clear keep-alive timeout
-		if (this.keepAlive) {
-			clearTimeout(this.keepAlive);
-			this.keepAlive = undefined;
-		}
-
-		// Update status
+	disconnect() : void {
+		this.socket?.close();
 		this.setStatus('disconnected');
+	}
+
+	reconnect(uri: string) : void {
+		this.url = new URL(
+			uri.replace(/^http/, 'ws')
+		);
+		this.initSocket();
 	}
 
 	/**

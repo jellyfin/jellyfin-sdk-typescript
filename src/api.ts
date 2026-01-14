@@ -142,13 +142,8 @@ export class Api {
 		}
 
 		if (this.accessToken.length === 0) {
-			this.webSocket?.close();
-			this.webSocket = undefined;
+			this.webSocket?.disconnect();
 		} else {
-			if (this.webSocket) {
-				this.webSocket.close();
-			}
-
 			this.webSocket = new WebSocketService(
 				this.getUri(
 					WEBSOCKET_URL_PATH, { 
