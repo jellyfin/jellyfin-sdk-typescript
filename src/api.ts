@@ -48,6 +48,14 @@ export class Api {
 		this._deviceInfo = deviceInfo;
 		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+
+		if (this.accessToken.length !== 0) {
+			this.webSocket = new WebSocketService(
+				this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				})
+			);
+		}
 	}
 
 	get accessToken(): string {
@@ -119,14 +127,14 @@ export class Api {
 	 *
 	 * If the base path or access token changes while a WebSocket connection is active,
 	 * the connection will be reconnected with the new credentials.
-\	 *
+	 *
 	 * @param data The data to update.
 	 */
 	update(data: Partial<{
 		basePath: string;
 		clientInfo: ClientInfo;
 		deviceInfo: DeviceInfo;
-		accessToken: string
+		accessToken: string;
 	}>): void {
 		if (data.basePath !== undefined) {
 			this._basePath = data.basePath;
