@@ -22,7 +22,9 @@ class AugmentedSessionApi extends SessionApi {
 	public reportSessionEnded(options?: RawAxiosRequestConfig): Promise<AxiosResponse<void, any, {}>> {
 		return super.reportSessionEnded(options)
 			.then(response => {
-				this.api.accessToken = '';
+				this.api.update({
+					accessToken: ''
+				});
 				return response;
 			});
 	}
