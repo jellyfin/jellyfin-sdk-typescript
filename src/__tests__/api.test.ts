@@ -73,7 +73,7 @@ describe('Api', () => {
 
 		expect(api.accessToken).toBe('');
 
-		expect(api.webSocket).toBeUndefined();
+		expect(api.webSocket).toBeDefined();
 	});
 
 	it('should return the correct authorization header value', () => {

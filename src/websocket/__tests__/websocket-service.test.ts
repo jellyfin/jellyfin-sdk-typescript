@@ -1,3 +1,9 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
 import { afterEach, beforeEach, describe, it, vi } from 'vitest';
 import { expect } from 'vitest';
 
@@ -11,7 +17,7 @@ vi.mock('../../api');
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 let mockWebSocket: any;
 
-global.WebSocket = vi.fn(function() {
+globalThis.WebSocket = vi.fn(function() {
 	return mockWebSocket;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 }) as any;
@@ -86,7 +92,7 @@ describe('WebSocketService', () => {
 		it('should create a websocket connection if one does not exist', () => {
 			mockWebSocket.readyState = WebSocket.CONNECTING;
 			service.subscribe(['Sessions'], () => {});
-			expect(global.WebSocket).toHaveBeenCalled();
+			expect(globalThis.WebSocket).toHaveBeenCalled();
 		});
 
 		it('should register a handler for a message type', () => {
@@ -216,7 +222,7 @@ describe('WebSocketService', () => {
 
 			vi.advanceTimersByTime(5000);
 
-			expect(global.WebSocket).toHaveBeenCalledTimes(2); // Once for initial, once for reconnect
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2); // Once for initial, once for reconnect
 
 			vi.useRealTimers();
 		});
@@ -232,7 +238,7 @@ describe('WebSocketService', () => {
 			mockWebSocket.onclose();
 			vi.advanceTimersByTime(5000);
 
-			expect(global.WebSocket).toHaveBeenCalledTimes(1);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
 
 			vi.useRealTimers();
 		});
