@@ -31,7 +31,7 @@ export class Api {
 	 * This service is automatically instantiated when an access token is present.
 	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
-	 * connection will be closed and this value will be set to `undefined`.
+	 * connection will be closed but subscriptions will remain intact.
 	 */
 	webSocket?: WebSocketService;
 
