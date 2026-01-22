@@ -13,9 +13,19 @@ import { OutboundWebSocketMessageType } from './types';
 export const WEBSOCKET_URL_PATH = 'socket';
 
 /**
- * The timeout interval in which the websocket connections will be reconnected
+ * The initial timeout interval in milliseconds for exponential backoff reconnection
  */
-export const RECONNECT_TIMEOUT_INTERVAL = 5000;
+export const RECONNECT_INITIAL_DELAY = 1000;
+
+/**
+ * The multiplier for exponential backoff on each reconnection attempt
+ */
+export const RECONNECT_DELAY_FACTOR = 1.5;
+
+/**
+ * The maximum timeout interval in milliseconds for reconnection attempts
+ */
+export const RECONNECT_MAX_DELAY = 60000 * 5;
 
 export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
 	[OutboundWebSocketMessageType.Sessions]: {

@@ -7,7 +7,7 @@
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 import { buildWebSocketUrl } from '../utils';
 
-import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
+import { RECONNECT_INITIAL_DELAY, RECONNECT_DELAY_FACTOR, RECONNECT_MAX_DELAY } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
 import type { WebSocketSubscriptionIntervals } from './types';
 import { OutboundWebSocketMessageType, PeriodicListenerInterval, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
@@ -45,6 +45,16 @@ export class WebSocketService {
 	private subscriptionIntervals?: WebSocketSubscriptionIntervals;
 
 	/**
+	 * The number of consecutive reconnection attempts
+	 */
+	private reconnectionAttempts = 0;
+
+	/**
+	 * The timeout handle for reconnection
+	 */
+	private reconnectionTimeout: NodeJS.Timeout | undefined;
+
+	/**
      * Status change event listeners
      */
 	private readonly statusListeners: SocketStatusHandler[] = [];
@@ -71,6 +81,9 @@ export class WebSocketService {
 		this.socket = new WebSocket(this.url.toString());
 
 		this.socket.onopen = () => {
+			// Reset reconnection attempts on successful connection
+			this.reconnectionAttempts = 0;
+
 			// Update status and notify listeners
 			this.setStatus(WebSocket.OPEN);
 
@@ -112,9 +125,11 @@ export class WebSocketService {
 			// Update status and notify listeners
 			this.setStatus('disconnected');
 
-			// Reconnect after 5 seconds if there are active subscriptions
+			// Reconnect with exponential backoff if there are active subscriptions
 			if (this.subscriptions.size > 0) {
-				setTimeout(() => this.initSocket(), RECONNECT_TIMEOUT_INTERVAL);
+				this.reconnectionAttempts++;
+				const delay = this.calculateBackoffDelay();
+				this.reconnectionTimeout = setTimeout(() => this.initSocket(), delay);
 			} else {
 				// Else, close and dispose
 				this.socket = undefined;
@@ -124,6 +139,15 @@ export class WebSocketService {
 				}
 			}
 		};
+	}
+
+	/**
+	 * Calculates the exponential backoff delay for reconnection attempts
+	 * @returns The delay in milliseconds, capped at the maximum
+	 */
+	private calculateBackoffDelay(): number {
+		const exponentialDelay = RECONNECT_INITIAL_DELAY * Math.pow(RECONNECT_DELAY_FACTOR, this.reconnectionAttempts - 1);
+		return Math.min(exponentialDelay, RECONNECT_MAX_DELAY);
 	}
 
 	private sendMessage(message: InboundWebSocketMessage) {
@@ -154,6 +178,11 @@ export class WebSocketService {
 		this.socket?.close();
 		this.setStatus('disconnected');
 		this.socket = undefined;
+		this.reconnectionAttempts = 0;
+		if (this.reconnectionTimeout) {
+			clearTimeout(this.reconnectionTimeout);
+			this.reconnectionTimeout = undefined;
+		}
 		if (this.keepAlive) {
 			clearTimeout(this.keepAlive);
 			this.keepAlive = undefined;
@@ -251,6 +280,11 @@ export class WebSocketService {
 			if (this.subscriptions.size === 0) {
 				this.socket?.close();
 				this.setStatus('disconnected');
+				this.reconnectionAttempts = 0;
+				if (this.reconnectionTimeout) {
+					clearTimeout(this.reconnectionTimeout);
+					this.reconnectionTimeout = undefined;
+				}
 			}
 		};
 	}
