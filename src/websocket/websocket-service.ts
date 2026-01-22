@@ -5,6 +5,7 @@
  */
 
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
+import { buildWebSocketUrl } from '../utils';
 
 import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
 import { SUBSCRIPTION_INTERVALS, SUBSCRIPTION_REGISTRY } from './constants';
@@ -58,9 +59,7 @@ export class WebSocketService {
 	constructor(
 		uri: string
 	) {
-		this.url = new URL(
-			uri.replace(/^http/, 'ws')
-		);
+		this.url = buildWebSocketUrl(uri);
 	}
 
 	private initSocket() {
@@ -152,9 +151,7 @@ export class WebSocketService {
 	updateUrl(uri: string) {
 		this.socket?.close();
 
-		this.url = new URL(
-			uri.replace(/^http/, 'ws')
-		);
+		this.url = buildWebSocketUrl(uri);
 
 		if (this.subscriptions.size > 0) {
 			this.initSocket();

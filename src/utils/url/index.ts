@@ -68,3 +68,9 @@ export function parseUrl(input: string): URL {
 		normalizeUrl(input)
 	);
 }
+
+export function buildWebSocketUrl(uri: string): URL {
+	return new URL(
+		uri.replace(/^http/, 'ws')
+	);
+}
