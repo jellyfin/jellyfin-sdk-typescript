@@ -14,7 +14,7 @@ import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
 import { WebSocketService } from './websocket';
-import { WEBSOCKET_URL_PATH } from './websocket/configs';
+import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
 /** Class representing the Jellyfin API. */
 export class Api {

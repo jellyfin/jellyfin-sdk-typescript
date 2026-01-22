@@ -9,7 +9,7 @@ import { expect } from 'vitest';
 
 import { AUTHORIZATION_HEADER } from '../../constants';
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
-import { PERIODIC_LISTENER_INTERVAL, WEBSOCKET_URL_PATH } from '../configs';
+import { WEBSOCKET_URL_PATH } from '../constants';
 import { WebSocketService } from '../websocket-service';
 
 vi.mock('../../api');
@@ -101,7 +101,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], handler);
 
 			// Simulate receiving a message
-			const message = { MessageType: 'Sessions', Data: PERIODIC_LISTENER_INTERVAL } as SessionsStartMessage;
+			const message = { MessageType: 'Sessions', Data: '0,1500' } as SessionsStartMessage;
 			mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
 			expect(handler).toHaveBeenCalledWith(message);
@@ -112,7 +112,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: PERIODIC_LISTENER_INTERVAL })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
 			);
 		});
 
@@ -136,7 +136,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], handler2);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
-			const message = { MessageType: 'Sessions', Data: '0,5000' } as SessionsStartMessage;
+			const message = { MessageType: 'Sessions', Data: '0,800' } as SessionsStartMessage;
 			mockWebSocket.onmessage({ data: JSON.stringify(message) });
 
 			expect(handler1).toHaveBeenCalledWith(message);
@@ -208,7 +208,7 @@ describe('WebSocketService', () => {
 			mockWebSocket.onopen();
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: PERIODIC_LISTENER_INTERVAL })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
 			);
 		});
 

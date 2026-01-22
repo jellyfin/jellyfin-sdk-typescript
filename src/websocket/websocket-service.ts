@@ -6,8 +6,8 @@
 
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 
-import { RECONNECT_TIMEOUT_INTERVAL } from './configs';
-import { SUBSCRIPTION_REGISTRY } from './constants';
+import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
+import { SUBSCRIPTION_INTERVALS, SUBSCRIPTION_REGISTRY } from './constants';
 import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
@@ -73,7 +73,7 @@ export class WebSocketService {
 			// Attach all subscriptions, sending start messages as needed
 			for (const type of this.subscriptions.keys()) {
 				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
-				if (mapping) this.sendMessage(mapping.createStartMessage());
+				if (mapping) this.sendMessage(mapping.createStartMessage(SUBSCRIPTION_INTERVALS[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
 			}
 		};
 
@@ -205,7 +205,7 @@ export class WebSocketService {
 				// Send start message as needed, depending on the messageType
 				const mapping = SUBSCRIPTION_REGISTRY[type];
 				if (mapping && this.socket?.readyState === WebSocket.OPEN) {
-					this.sendMessage(mapping.createStartMessage());
+					this.sendMessage(mapping.createStartMessage(SUBSCRIPTION_INTERVALS[type]?.toString() ?? '0,1000'));
 				}
 			}
 

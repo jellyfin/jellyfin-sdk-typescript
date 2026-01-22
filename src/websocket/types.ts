@@ -17,7 +17,7 @@ export type WebSocketSubscription<
     T extends OutboundWebSocketMessageType
 > = {
     messageType: T,
-    createStartMessage: () => InboundWebSocketMessage,
+    createStartMessage: (interval: string) => InboundWebSocketMessage,
     createStopMessage: () => InboundWebSocketMessage
 }
 
@@ -58,3 +58,17 @@ export const OutboundWebSocketMessageType: { [T in OutboundWebSocketMessageType]
 } as const;
 
 export type OutboundWebSocketMessageType = OutboundWebSocketMessage['MessageType'];
+
+export class PeriodicListenerInterval {
+	initialDelay: number;
+	interval: number;
+
+	constructor(initialDelay: number, interval: number) {
+		this.initialDelay = initialDelay;
+		this.interval = interval;
+	}
+
+	toString(): string {
+		return `${this.initialDelay},${this.interval}`;
+	}
+}

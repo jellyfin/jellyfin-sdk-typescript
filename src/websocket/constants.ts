@@ -4,25 +4,41 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import { PERIODIC_LISTENER_INTERVAL } from './configs';
-
 import type { WebSocketSubscription } from './types';
-import { OutboundWebSocketMessageType } from './types';
+import { OutboundWebSocketMessageType, PeriodicListenerInterval } from './types';
+
+/**
+ * The URL path segment for websocket connections
+ */
+export const WEBSOCKET_URL_PATH = 'socket';
+
+/**
+ * The timeout interval in which the websocket connections will be reconnected
+ */
+export const RECONNECT_TIMEOUT_INTERVAL = 5000;
 
 export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
-	'Sessions': {
+	[OutboundWebSocketMessageType.Sessions]: {
 		messageType: OutboundWebSocketMessageType.Sessions,
-		createStartMessage: () => ({ MessageType: 'SessionsStart', Data: PERIODIC_LISTENER_INTERVAL }),
+		createStartMessage: (interval: string) => ({ MessageType: 'SessionsStart', Data: interval }),
 		createStopMessage: () => ({ MessageType: 'SessionsStop' })
 	},
-	'ActivityLogEntry': {
+	[OutboundWebSocketMessageType.ActivityLogEntry]: {
 		messageType: OutboundWebSocketMessageType.ActivityLogEntry,
-		createStartMessage: () => ({ MessageType: 'ActivityLogEntryStart', Data: PERIODIC_LISTENER_INTERVAL }),
+		createStartMessage: (interval: string) => ({ MessageType: 'ActivityLogEntryStart', Data: interval }),
 		createStopMessage: () => ({ MessageType: 'ActivityLogEntryStop' })
 	},
-	'ScheduledTasksInfo': {
+	[OutboundWebSocketMessageType.ScheduledTasksInfo]: {
 		messageType: OutboundWebSocketMessageType.ScheduledTasksInfo,
-		createStartMessage: () => ({ MessageType: 'ScheduledTasksInfoStart', Data: PERIODIC_LISTENER_INTERVAL }),
+		createStartMessage: (interval: string) => ({ MessageType: 'ScheduledTasksInfoStart', Data: interval }),
 		createStopMessage: () => ({ MessageType: 'ScheduledTasksInfoStop' })
 	}
+};
+
+type WebSocketSubscriptionInterval = Partial<Record<OutboundWebSocketMessageType, PeriodicListenerInterval>>;
+
+export const SUBSCRIPTION_INTERVALS: WebSocketSubscriptionInterval = {
+	[OutboundWebSocketMessageType.Sessions]: new PeriodicListenerInterval(0, 1500),
+	[OutboundWebSocketMessageType.ActivityLogEntry]: new PeriodicListenerInterval(0, 1000),
+	[OutboundWebSocketMessageType.ScheduledTasksInfo]: new PeriodicListenerInterval(1000, 1000)
 };
