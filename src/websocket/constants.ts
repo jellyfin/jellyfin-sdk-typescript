@@ -34,11 +34,3 @@ export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType,
 		createStopMessage: () => ({ MessageType: 'ScheduledTasksInfoStop' })
 	}
 };
-
-type WebSocketSubscriptionInterval = Partial<Record<OutboundWebSocketMessageType, PeriodicListenerInterval>>;
-
-export const SUBSCRIPTION_INTERVALS: WebSocketSubscriptionInterval = {
-	[OutboundWebSocketMessageType.Sessions]: new PeriodicListenerInterval(0, 1500),
-	[OutboundWebSocketMessageType.ActivityLogEntry]: new PeriodicListenerInterval(0, 1000),
-	[OutboundWebSocketMessageType.ScheduledTasksInfo]: new PeriodicListenerInterval(1000, 1000)
-};

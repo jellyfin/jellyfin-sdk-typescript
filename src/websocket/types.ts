@@ -72,3 +72,14 @@ export class PeriodicListenerInterval {
 		return `${this.initialDelay},${this.interval}`;
 	}
 }
+
+/**
+ * A mapping of outbound WebSocket message types to their respective periodic listener intervals.
+ * 
+ * @example
+ * const intervals: WebSocketSubscriptionIntervals = {
+ *   [OutboundWebSocketMessageType.ActivityLogEntry]: new PeriodicListenerInterval(0, 1000),
+ *   [OutboundWebSocketMessageType.Sessions]: new PeriodicListenerInterval(0, 5000)
+ * };
+ */
+export type WebSocketSubscriptionIntervals = Partial<Record<OutboundWebSocketMessageType, PeriodicListenerInterval>>;

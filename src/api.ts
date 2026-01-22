@@ -13,7 +13,7 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
-import { WebSocketService } from './websocket';
+import { WebSocketService, WebSocketSubscriptionIntervals } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
 /** Class representing the Jellyfin API. */
@@ -33,14 +33,15 @@ export class Api {
 	 * If the access token is cleared via the {@link update} method, the WebSocket
 	 * connection will be closed but subscriptions will remain intact.
 	 */
-	webSocket?: WebSocketService;
+	readonly webSocket: WebSocketService;
 
 	constructor(
 		basePath: string,
 		clientInfo: ClientInfo,
 		deviceInfo: DeviceInfo,
 		accessToken = '',
-		axiosInstance: AxiosInstance = globalInstance
+		axiosInstance: AxiosInstance = globalInstance,
+		webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals
 	) {
 		// Remove trailing slash if present
 		this._basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
@@ -49,13 +50,12 @@ export class Api {
 		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
 
-		if (this.accessToken.length !== 0) {
-			this.webSocket = new WebSocketService(
-				this.getUri(WEBSOCKET_URL_PATH, {
-					[AUTHORIZATION_PARAMETER]: this.accessToken
-				})
-			);
-		}
+		this.webSocket = new WebSocketService(
+			this.getUri(WEBSOCKET_URL_PATH, {
+				[AUTHORIZATION_PARAMETER]: this.accessToken
+			}),
+			webSocketSubscriptionIntervals
+		);
 	}
 
 	get accessToken(): string {
@@ -151,19 +151,11 @@ export class Api {
 
 		if (this.accessToken.length !== 0) {
 			// Token is present, reconnect if socket exists
-			if (this.webSocket) {
-				this.webSocket.updateUrl(
-					this.getUri(WEBSOCKET_URL_PATH, {
-						[AUTHORIZATION_PARAMETER]: this.accessToken
-					})
-				);
-			} else {
-				this.webSocket = new WebSocketService(
-					this.getUri(WEBSOCKET_URL_PATH, {
-						[AUTHORIZATION_PARAMETER]: this.accessToken
-					})
-				);
-			}
+			this.webSocket.updateUrl(
+				this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				})
+			);
 		} else {
 			// Token was cleared, dispose of WebSocket
 			if (this.webSocket) {

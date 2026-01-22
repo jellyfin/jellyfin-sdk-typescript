@@ -10,6 +10,7 @@ import { expect } from 'vitest';
 import { AUTHORIZATION_HEADER } from '../../constants';
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
 import { WEBSOCKET_URL_PATH } from '../constants';
+import { PeriodicListenerInterval } from '../types';
 import { WebSocketService } from '../websocket-service';
 
 vi.mock('../../api');
@@ -112,7 +113,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
 			);
 		});
 
@@ -208,7 +209,7 @@ describe('WebSocketService', () => {
 			mockWebSocket.onopen();
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
 			);
 		});
 
@@ -478,6 +479,126 @@ describe('WebSocketService', () => {
 			vi.advanceTimersByTime(501);
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'KeepAlive' })
+			);
+
+			vi.useRealTimers();
+		});
+	});
+
+	describe('config parameter', () => {
+		it('should use custom interval from config for a specific message type', () => {
+			const customConfig = {
+				Sessions: new PeriodicListenerInterval(100, 2000)
+			};
+
+			const configuredService = new WebSocketService(
+				mockApi.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_HEADER]: mockApi.accessToken
+				}),
+				customConfig
+			);
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			configuredService.subscribe(['Sessions'], () => {});
+
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '100,2000' })
+			);
+		});
+
+		it('should use default interval when config is not provided', () => {
+			const defaultService = new WebSocketService(
+				mockApi.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_HEADER]: mockApi.accessToken
+				})
+			);
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			defaultService.subscribe(['Sessions'], () => {});
+
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
+			);
+		});
+
+		it('should use default interval for message types not in config', () => {
+			const partialConfig = {
+				Sessions: new PeriodicListenerInterval(50, 3000)
+			};
+
+			const configuredService = new WebSocketService(
+				mockApi.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_HEADER]: mockApi.accessToken
+				}),
+				partialConfig
+			);
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			configuredService.subscribe(['ActivityLogEntry'], () => {});
+
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'ActivityLogEntryStart', Data: '0,1000' })
+			);
+		});
+
+		it('should use different intervals for different message types', () => {
+			const customConfig = {
+				Sessions: new PeriodicListenerInterval(0, 1500),
+				ActivityLogEntry: new PeriodicListenerInterval(100, 5000)
+			};
+
+			const configuredService = new WebSocketService(
+				mockApi.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_HEADER]: mockApi.accessToken
+				}),
+				customConfig
+			);
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			configuredService.subscribe(['Sessions', 'ActivityLogEntry'], () => {});
+
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
+			);
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'ActivityLogEntryStart', Data: '100,5000' })
+			);
+		});
+
+		it('should apply config intervals when socket reconnects', () => {
+			vi.useFakeTimers();
+
+			const customConfig = {
+				Sessions: new PeriodicListenerInterval(200, 4000)
+			};
+
+			const configuredService = new WebSocketService(
+				mockApi.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_HEADER]: mockApi.accessToken
+				}),
+				customConfig
+			);
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			configuredService.subscribe(['Sessions'], () => {});
+
+			// Clear previous send calls
+			mockWebSocket.send.mockClear();
+
+			// Simulate socket close
+			mockWebSocket.readyState = WebSocket.CLOSED;
+			mockWebSocket.onclose();
+
+			// Advance time to trigger reconnect
+			vi.advanceTimersByTime(5000);
+
+			// Simulate new socket opening
+			mockWebSocket.readyState = WebSocket.OPEN;
+			mockWebSocket.onopen();
+
+			// Should use the same config interval after reconnect
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '200,4000' })
 			);
 
 			vi.useRealTimers();

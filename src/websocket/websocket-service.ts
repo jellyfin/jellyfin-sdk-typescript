@@ -8,8 +8,8 @@ import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../gener
 import { buildWebSocketUrl } from '../utils';
 
 import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
-import { SUBSCRIPTION_INTERVALS, SUBSCRIPTION_REGISTRY } from './constants';
-import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
+import { SUBSCRIPTION_REGISTRY } from './constants';
+import { OutboundWebSocketMessageType, WebSocketSubscriptionIntervals, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
@@ -41,6 +41,8 @@ export class WebSocketService {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any
 	private readonly subscriptions: Map<string, SocketMessageHandler<any>[]> = new Map();
 
+	private subscriptionIntervals?: WebSocketSubscriptionIntervals;
+
 	/**
      * Status change event listeners
      */
@@ -57,9 +59,11 @@ export class WebSocketService {
      * @param uri The full URI path with the Authorization Header included as a query parameter
      */
 	constructor(
-		uri: string
+		uri: string,
+		config?: WebSocketSubscriptionIntervals
 	) {
 		this.url = buildWebSocketUrl(uri);
+		this.subscriptionIntervals = config;
 	}
 
 	private initSocket() {
@@ -72,7 +76,7 @@ export class WebSocketService {
 			// Attach all subscriptions, sending start messages as needed
 			for (const type of this.subscriptions.keys()) {
 				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
-				if (mapping) this.sendMessage(mapping.createStartMessage(SUBSCRIPTION_INTERVALS[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
+				if (mapping) this.sendMessage(mapping.createStartMessage(this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
 			}
 		};
 
@@ -175,17 +179,22 @@ export class WebSocketService {
 	}
 
 	/**
-     * Adds message listeners for the provided message types
+     * Adds message listeners for the provided message types.
      *
-     * Adding a listener will establish a websocket connection if one does not already exist
+     * Adding a listener will establish a websocket connection if one does not already exist.
      *
-     * Listeners will be automatically re-added if the connection is lost and re-established
+     * Listeners will be automatically resubscribed if the connection is lost and re-established.
      *
-     * Listeners can be removed by invoking the returned unsubscribe function
+     * Listeners can be removed by invoking the returned unsubscribe function.
      *
      * @param messageTypes Any array of {@link OutboundWebSocketMessage} message types to listen for
      * @param onMessage The callback to invoke when a message is received
      *
+	 * @example
+	 * const unsubscribe = api.webSocket.subscribe([OutboundWebSocketMessageType.Sessions], (message) => {
+	 *   console.log('Received session update:', message);
+	 * });
+	 * 
      * @returns A function which can be invoked to remove the added listeners
      */
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
@@ -202,7 +211,7 @@ export class WebSocketService {
 				// Send start message as needed, depending on the messageType
 				const mapping = SUBSCRIPTION_REGISTRY[type];
 				if (mapping && this.socket?.readyState === WebSocket.OPEN) {
-					this.sendMessage(mapping.createStartMessage(SUBSCRIPTION_INTERVALS[type]?.toString() ?? '0,1000'));
+					this.sendMessage(mapping.createStartMessage(this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
 				}
 			}
 

@@ -9,6 +9,7 @@ import type { AxiosInstance } from 'axios';
 import { Api } from './api';
 import { DiscoveryService } from './discovery/discovery-service';
 import type { ClientInfo, DeviceInfo } from './models';
+import { WebSocketSubscriptionIntervals } from './websocket';
 
 /** Supported server version constants */
 export * from './versions';
@@ -36,9 +37,10 @@ export class Jellyfin {
 	 * @param basePath A base path of a server.
 	 * @param accessToken An (optional) access token to use for authentication.
 	 * @param axiosInstance An (optional) Axios instance for the Api to use.
+	 * @param webSocketSubscriptionIntervals An (optional) {@link WebSocketSubscriptionIntervals} object for defining message subscription intervals.
 	 * @returns An Api instance.
 	 */
-	createApi(basePath: string, accessToken?: string, axiosInstance?: AxiosInstance): Api {
-		return new Api(basePath, this.clientInfo, this.deviceInfo, accessToken, axiosInstance);
+	createApi(basePath: string, accessToken?: string, axiosInstance?: AxiosInstance, webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals): Api {
+		return new Api(basePath, this.clientInfo, this.deviceInfo, accessToken, axiosInstance, webSocketSubscriptionIntervals);
 	}
 }
