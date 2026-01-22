@@ -9,7 +9,7 @@ import type { AxiosInstance } from 'axios';
 import { Api } from './api';
 import { DiscoveryService } from './discovery/discovery-service';
 import type { ClientInfo, DeviceInfo } from './models';
-import { WebSocketSubscriptionIntervals } from './websocket';
+import type { WebSocketSubscriptionIntervals } from './websocket';
 
 /** Supported server version constants */
 export * from './versions';

@@ -5,7 +5,7 @@
  */
 
 import type { WebSocketSubscription } from './types';
-import { OutboundWebSocketMessageType, PeriodicListenerInterval } from './types';
+import { OutboundWebSocketMessageType } from './types';
 
 /**
  * The URL path segment for websocket connections

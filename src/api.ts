@@ -13,7 +13,8 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
-import { WebSocketService, WebSocketSubscriptionIntervals } from './websocket';
+import type { WebSocketSubscriptionIntervals } from './websocket';
+import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
 /** Class representing the Jellyfin API. */

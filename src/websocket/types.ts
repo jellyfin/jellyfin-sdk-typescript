@@ -75,7 +75,7 @@ export class PeriodicListenerInterval {
 
 /**
  * A mapping of outbound WebSocket message types to their respective periodic listener intervals.
- * 
+ *
  * @example
  * const intervals: WebSocketSubscriptionIntervals = {
  *   [OutboundWebSocketMessageType.ActivityLogEntry]: new PeriodicListenerInterval(0, 1000),

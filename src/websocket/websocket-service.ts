@@ -9,7 +9,8 @@ import { buildWebSocketUrl } from '../utils';
 
 import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
-import { OutboundWebSocketMessageType, WebSocketSubscriptionIntervals, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
+import type { WebSocketSubscriptionIntervals } from './types';
+import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
@@ -194,7 +195,7 @@ export class WebSocketService {
 	 * const unsubscribe = api.webSocket.subscribe([OutboundWebSocketMessageType.Sessions], (message) => {
 	 *   console.log('Received session update:', message);
 	 * });
-	 * 
+	 *
      * @returns A function which can be invoked to remove the added listeners
      */
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
