@@ -4,7 +4,7 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import type { WebSocketSubscription } from './types';
+import type { PeriodicListenerInterval, WebSocketSubscription } from './types';
 import { OutboundWebSocketMessageType } from './types';
 
 /**
@@ -20,17 +20,17 @@ export const RECONNECT_TIMEOUT_INTERVAL = 5000;
 export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
 	[OutboundWebSocketMessageType.Sessions]: {
 		messageType: OutboundWebSocketMessageType.Sessions,
-		createStartMessage: (interval: string) => ({ MessageType: 'SessionsStart', Data: interval }),
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'SessionsStart', Data: interval.toString() }),
 		createStopMessage: () => ({ MessageType: 'SessionsStop' })
 	},
 	[OutboundWebSocketMessageType.ActivityLogEntry]: {
 		messageType: OutboundWebSocketMessageType.ActivityLogEntry,
-		createStartMessage: (interval: string) => ({ MessageType: 'ActivityLogEntryStart', Data: interval }),
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'ActivityLogEntryStart', Data: interval.toString() }),
 		createStopMessage: () => ({ MessageType: 'ActivityLogEntryStop' })
 	},
 	[OutboundWebSocketMessageType.ScheduledTasksInfo]: {
 		messageType: OutboundWebSocketMessageType.ScheduledTasksInfo,
-		createStartMessage: (interval: string) => ({ MessageType: 'ScheduledTasksInfoStart', Data: interval }),
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'ScheduledTasksInfoStart', Data: interval.toString() }),
 		createStopMessage: () => ({ MessageType: 'ScheduledTasksInfoStop' })
 	}
 };

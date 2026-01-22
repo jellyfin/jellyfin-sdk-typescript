@@ -10,7 +10,7 @@ import { buildWebSocketUrl } from '../utils';
 import { RECONNECT_TIMEOUT_INTERVAL } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
 import type { WebSocketSubscriptionIntervals } from './types';
-import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
+import { OutboundWebSocketMessageType, PeriodicListenerInterval, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
@@ -77,7 +77,14 @@ export class WebSocketService {
 			// Attach all subscriptions, sending start messages as needed
 			for (const type of this.subscriptions.keys()) {
 				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
-				if (mapping) this.sendMessage(mapping.createStartMessage(this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
+				if (mapping) {
+					this.sendMessage(
+						mapping.createStartMessage(
+							this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]
+							?? new PeriodicListenerInterval(0, 1000)
+						)
+					);
+				}
 			}
 		};
 
@@ -212,7 +219,12 @@ export class WebSocketService {
 				// Send start message as needed, depending on the messageType
 				const mapping = SUBSCRIPTION_REGISTRY[type];
 				if (mapping && this.socket?.readyState === WebSocket.OPEN) {
-					this.sendMessage(mapping.createStartMessage(this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]?.toString() ?? '0,1000'));
+					this.sendMessage(
+						mapping.createStartMessage(
+							this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]
+							?? new PeriodicListenerInterval(0, 1000)
+						)
+					);
 				}
 			}
 

@@ -17,7 +17,7 @@ export type WebSocketSubscription<
     T extends OutboundWebSocketMessageType
 > = {
     messageType: T,
-    createStartMessage: (interval: string) => InboundWebSocketMessage,
+    createStartMessage: (interval: PeriodicListenerInterval) => InboundWebSocketMessage,
     createStopMessage: () => InboundWebSocketMessage
 }
 
