@@ -29,15 +29,15 @@ export class Api {
 	/**
 	 * Service for managing subscriptions to Outbound WebSocket events.
 	 *
-	 * This service is automatically instantiated when an access token is present
-	 * and the service is invoked for the first time.
+	 * This service is automatically instantiated when the service is invoked 
+	 * for the first time.
 	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
 	 * connection will be closed but subscriptions will remain intact.
 	 */
-	_webSocket: WebSocketService | undefined;
+	 _webSocket: WebSocketService | undefined;
 
-	webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals;
+	 readonly webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals;
 
 	constructor(
 		basePath: string,
@@ -84,8 +84,8 @@ export class Api {
 		});
 	}
 
-	get webSocket(): WebSocketService | undefined {
-		if (!this._webSocket && this.accessToken.length > 0) {
+	get webSocket(): WebSocketService {
+		if (!this._webSocket) {
 			this._webSocket = new WebSocketService(
 				this.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_PARAMETER]: this.accessToken
