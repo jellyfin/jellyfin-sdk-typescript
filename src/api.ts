@@ -29,7 +29,7 @@ export class Api {
 	/**
 	 * Service for managing subscriptions to Outbound WebSocket events.
 	 *
-	 * This service is automatically instantiated when the service is invoked 
+	 * This service is automatically instantiated when the service is invoked
 	 * for the first time.
 	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
