@@ -41,7 +41,13 @@ describe('WebSocketService', () => {
 			axiosInstance: {}
 		};
 
-		// Setup mock WebSocket
+		// Setup mock WebSocket with proper event handling
+		const eventListeners: Record<string, ((event: Event) => void)[]> = {
+			open: [],
+			message: [],
+			close: []
+		};
+
 		mockWebSocket = {
 			readyState: WebSocket.CONNECTING,
 			send: vi.fn(),
@@ -49,9 +55,23 @@ describe('WebSocketService', () => {
 			onopen: null,
 			onmessage: null,
 			onclose: null,
-			addEventListener: vi.fn(),
+			addEventListener: vi.fn((event: string, handler: (event: Event) => void) => {
+				if (event in eventListeners) {
+					eventListeners[event].push(handler);
+				}
+			}),
 			removeEventListener: vi.fn(),
-			dispatchEvent: vi.fn()
+			dispatchEvent: vi.fn(),
+			// Helper to trigger events
+			__triggerOpen: () => {
+				eventListeners.open.forEach(handler => handler(new Event('open')));
+			},
+			__triggerMessage: (data: string) => {
+				eventListeners.message.forEach(handler => handler(new MessageEvent('message', { data })));
+			},
+			__triggerClose: () => {
+				eventListeners.close.forEach(handler => handler(new Event('close')));
+			}
 		};
 
 		service = new WebSocketService(
@@ -84,7 +104,7 @@ describe('WebSocketService', () => {
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
 			// The status should be updated to OPEN after socket opens
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 			expect(service.socketStatus).toBe(WebSocket.OPEN);
 		});
 	});
@@ -103,7 +123,7 @@ describe('WebSocketService', () => {
 
 			// Simulate receiving a message
 			const message = { MessageType: 'Sessions', Data: '0,1500' } as SessionsStartMessage;
-			mockWebSocket.onmessage({ data: JSON.stringify(message) });
+			mockWebSocket.__triggerMessage(JSON.stringify(message));
 
 			expect(handler).toHaveBeenCalledWith(message);
 		});
@@ -138,7 +158,7 @@ describe('WebSocketService', () => {
 
 			mockWebSocket.readyState = WebSocket.OPEN;
 			const message = { MessageType: 'Sessions', Data: '0,800' } as SessionsStartMessage;
-			mockWebSocket.onmessage({ data: JSON.stringify(message) });
+			mockWebSocket.__triggerMessage(JSON.stringify(message));
 
 			expect(handler1).toHaveBeenCalledWith(message);
 			expect(handler2).toHaveBeenCalledWith(message);
@@ -160,7 +180,7 @@ describe('WebSocketService', () => {
 			unsubscribe();
 
 			const message = { MessageType: 'Sessions', Data: '0,5000' } as SessionsStartMessage;
-			mockWebSocket.onmessage({ data: JSON.stringify(message) });
+			mockWebSocket.__triggerMessage(JSON.stringify(message));
 
 			expect(handler).not.toHaveBeenCalled();
 		});
@@ -206,7 +226,7 @@ describe('WebSocketService', () => {
 
 			// Simulate socket opening
 			mockWebSocket.readyState = WebSocket.OPEN;
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
@@ -219,7 +239,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 
 			mockWebSocket.readyState = WebSocket.CLOSED;
-			mockWebSocket.onclose();
+			mockWebSocket.__triggerClose();
 
 			vi.advanceTimersByTime(5000);
 
@@ -236,7 +256,7 @@ describe('WebSocketService', () => {
 			unsubscribe();
 			mockWebSocket.readyState = WebSocket.CLOSED;
 
-			mockWebSocket.onclose();
+			mockWebSocket.__triggerClose();
 			vi.advanceTimersByTime(5000);
 
 			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
@@ -256,9 +276,7 @@ describe('WebSocketService', () => {
 				data: { userId: '123' }
 			} as SessionsStartMessage;
 
-			mockWebSocket.onmessage({
-				data: JSON.stringify(message)
-			});
+			mockWebSocket.__triggerMessage(JSON.stringify(message));
 
 			expect(handler).toHaveBeenCalledWith(message);
 		});
@@ -272,7 +290,7 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], handler2);
 
 			const message = { MessageType: 'Sessions' } as SessionsStartMessage;
-			mockWebSocket.onmessage({ data: JSON.stringify(message) });
+			mockWebSocket.__triggerMessage(JSON.stringify(message));
 
 			expect(handler1).toHaveBeenCalledWith(message);
 			expect(handler2).toHaveBeenCalledWith(message);
@@ -286,7 +304,7 @@ describe('WebSocketService', () => {
 
 			service.onStatusChange(statusListener);
 			service.subscribe(['Sessions'], () => {});
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			expect(statusListener).toHaveBeenCalledWith(WebSocket.OPEN);
 		});
@@ -297,13 +315,13 @@ describe('WebSocketService', () => {
 
 			service.onStatusChange(statusListener);
 			service.subscribe(['Sessions'], () => {});
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			// Clear calls from onopen
 			statusListener.mockClear();
 
 			// Trigger disconnect
-			mockWebSocket.onclose();
+			mockWebSocket.__triggerClose();
 
 			expect(statusListener).toHaveBeenCalledWith('disconnected');
 		});
@@ -316,15 +334,15 @@ describe('WebSocketService', () => {
 
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			expect(statusListener).toHaveBeenCalled();
 
 			statusListener.mockClear();
 			unsubscribe();
 
-			mockWebSocket.onclose();
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerClose();
+			mockWebSocket.__triggerOpen();
 
 			expect(statusListener).not.toHaveBeenCalled();
 		});
@@ -338,7 +356,7 @@ describe('WebSocketService', () => {
 
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			expect(listener1).toHaveBeenCalledWith(WebSocket.OPEN);
 			expect(listener2).toHaveBeenCalledWith(WebSocket.OPEN);
@@ -351,8 +369,8 @@ describe('WebSocketService', () => {
 			// Trigger duplicate status changes
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
-			mockWebSocket.onopen();
-			mockWebSocket.onopen(); // Call again
+			mockWebSocket.__triggerOpen();
+			mockWebSocket.__triggerOpen();
 
 			// Should only be called once
 			expect(statusListener).toHaveBeenCalledTimes(1);
@@ -373,9 +391,7 @@ describe('WebSocketService', () => {
 				Data: 5000
 			} as ForceKeepAliveMessage;
 
-			mockWebSocket.onmessage({
-				data: JSON.stringify(forceKeepAliveMessage)
-			});
+			mockWebSocket.__triggerMessage(JSON.stringify(forceKeepAliveMessage));
 
 			// Verify no KeepAlive sent immediately
 			expect(mockWebSocket.send).not.toHaveBeenCalled();
@@ -405,9 +421,7 @@ describe('WebSocketService', () => {
 				Data: 500
 			} as ForceKeepAliveMessage;
 
-			mockWebSocket.onmessage({
-				data: JSON.stringify(forceKeepAliveMessage)
-			});
+			mockWebSocket.__triggerMessage(JSON.stringify(forceKeepAliveMessage));
 
 			// Handler should not be called for ForceKeepAlive
 			expect(handler).not.toHaveBeenCalled();
@@ -428,23 +442,23 @@ describe('WebSocketService', () => {
 			mockWebSocket.send.mockClear();
 
 			// Send first ForceKeepAlive with 1000ms delay
-			mockWebSocket.onmessage({
-				data: JSON.stringify({
+			mockWebSocket.__triggerMessage(
+				JSON.stringify({
 					MessageType: 'ForceKeepAlive',
 					Data: 1000
 				} as ForceKeepAliveMessage)
-			});
+			);
 
 			// Advance 500ms (halfway through our threshold)
 			vi.advanceTimersByTime(200);
 
 			// Send another ForceKeepAlive with 500ms delay
-			mockWebSocket.onmessage({
-				data: JSON.stringify({
+			mockWebSocket.__triggerMessage(
+				JSON.stringify({
 					MessageType: 'ForceKeepAlive',
 					Data: 500
 				} as ForceKeepAliveMessage)
-			});
+			);
 
 			// Advance 250ms more (total 450ms from start, but only 250ms from second message)
 			vi.advanceTimersByTime(250);
@@ -466,12 +480,12 @@ describe('WebSocketService', () => {
 			mockWebSocket.send.mockClear();
 
 			// Test with 2000ms delay
-			mockWebSocket.onmessage({
-				data: JSON.stringify({
+			mockWebSocket.__triggerMessage(
+				JSON.stringify({
 					MessageType: 'ForceKeepAlive',
 					Data: 5000
 				} as ForceKeepAliveMessage)
-			});
+			);
 
 			vi.advanceTimersByTime(1999);
 			expect(mockWebSocket.send).not.toHaveBeenCalled();
@@ -587,14 +601,14 @@ describe('WebSocketService', () => {
 
 			// Simulate socket close
 			mockWebSocket.readyState = WebSocket.CLOSED;
-			mockWebSocket.onclose();
+			mockWebSocket.__triggerClose();
 
 			// Advance time to trigger reconnect
 			vi.advanceTimersByTime(5000);
 
 			// Simulate new socket opening
 			mockWebSocket.readyState = WebSocket.OPEN;
-			mockWebSocket.onopen();
+			mockWebSocket.__triggerOpen();
 
 			// Should use the same config interval after reconnect
 			expect(mockWebSocket.send).toHaveBeenCalledWith(

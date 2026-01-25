@@ -29,12 +29,15 @@ export class Api {
 	/**
 	 * Service for managing subscriptions to Outbound WebSocket events.
 	 *
-	 * This service is automatically instantiated when an access token is present.
+	 * This service is automatically instantiated when an access token is present
+	 * and the service is invoked for the first time.
 	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
 	 * connection will be closed but subscriptions will remain intact.
 	 */
-	readonly webSocket: WebSocketService;
+	_webSocket: WebSocketService | undefined;
+
+	webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals;
 
 	constructor(
 		basePath: string,
@@ -51,12 +54,7 @@ export class Api {
 		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
 
-		this.webSocket = new WebSocketService(
-			this.getUri(WEBSOCKET_URL_PATH, {
-				[AUTHORIZATION_PARAMETER]: this.accessToken
-			}),
-			webSocketSubscriptionIntervals
-		);
+		this.webSocketSubscriptionIntervals = webSocketSubscriptionIntervals;
 	}
 
 	get accessToken(): string {
@@ -84,6 +82,19 @@ export class Api {
 				}
 			}
 		});
+	}
+
+	get webSocket(): WebSocketService | undefined {
+		if (!this._webSocket && this.accessToken.length > 0) {
+			this._webSocket = new WebSocketService(
+				this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				}),
+				this.webSocketSubscriptionIntervals
+			);
+		}
+
+		return this._webSocket;
 	}
 
 	/**
@@ -152,16 +163,14 @@ export class Api {
 
 		if (this.accessToken.length !== 0) {
 			// Token is present, reconnect if socket exists
-			this.webSocket.updateUrl(
+			this._webSocket?.updateUrl(
 				this.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_PARAMETER]: this.accessToken
 				})
 			);
 		} else {
 			// Token was cleared, dispose of WebSocket
-			if (this.webSocket) {
-				this.webSocket.disconnect();
-			}
+			this._webSocket?.disconnect();
 		}
 	}
 

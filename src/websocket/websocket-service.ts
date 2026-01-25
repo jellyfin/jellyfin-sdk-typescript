@@ -80,7 +80,7 @@ export class WebSocketService {
 	private initSocket() {
 		this.socket = new WebSocket(this.url.toString());
 
-		this.socket.onopen = () => {
+		this.socket.addEventListener('open', () => {
 			// Reset reconnection attempts on successful connection
 			this.reconnectionAttempts = 0;
 
@@ -99,9 +99,9 @@ export class WebSocketService {
 					);
 				}
 			}
-		};
+		});
 
-		this.socket.onmessage = (event) => {
+		this.socket.addEventListener('message', (event) => {
 			const data = JSON.parse(event.data) as OutboundWebSocketMessage;
 
 			const { MessageType } = data;
@@ -119,9 +119,9 @@ export class WebSocketService {
 				const handlers = this.subscriptions.get(MessageType);
 				handlers?.forEach(handler => handler(data));
 			}
-		};
+		});
 
-		this.socket.onclose = () => {
+		this.socket.addEventListener('close', () => {
 			// Update status and notify listeners
 			this.setStatus('disconnected');
 
@@ -138,7 +138,7 @@ export class WebSocketService {
 					this.keepAlive = undefined;
 				}
 			}
-		};
+		});
 	}
 
 	/**
