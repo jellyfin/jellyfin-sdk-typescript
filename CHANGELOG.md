@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 ### Added
 
 * `getLibraryApi` now returns an augmented class with a `getDownloadUrl` method ([#967](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/967)).
+* The `Api` class now contains a `webSocket` field, of which `OutboundWebSocketMessageType`s can be subscribed to for handling WebSocket messages ([#966](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/966)).
 
 ## [0.13.0] - 2025-10-28
 

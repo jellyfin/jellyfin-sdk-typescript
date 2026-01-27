@@ -6,51 +6,96 @@
 import type { AxiosInstance, AxiosResponse } from 'axios';
 import globalInstance from 'axios';
 
+import { AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
 import { Configuration } from './generated-client/configuration';
 import type { AuthenticationResult } from './generated-client/models/authentication-result';
 import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
-
-/** The authorization header field name. */
-export const AUTHORIZATION_HEADER = 'Authorization';
-
-/** The authorization query parameter name. */
-export const AUTHORIZATION_PARAMETER = 'ApiKey';
+import type { WebSocketSubscriptionIntervals } from './websocket';
+import { WebSocketService } from './websocket';
+import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
 /** Class representing the Jellyfin API. */
 export class Api {
-	basePath;
-	clientInfo;
-	deviceInfo;
-	accessToken;
-	axiosInstance;
+	private _basePath;
+	private _clientInfo;
+	private _deviceInfo;
+	private _accessToken;
+
+	readonly axiosInstance;
+
+	private _webSocket: WebSocketService | undefined;
+	private readonly webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals;
 
 	constructor(
 		basePath: string,
 		clientInfo: ClientInfo,
 		deviceInfo: DeviceInfo,
 		accessToken = '',
-		axiosInstance: AxiosInstance = globalInstance
+		axiosInstance: AxiosInstance = globalInstance,
+		webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals
 	) {
 		// Remove trailing slash if present
-		this.basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
-		this.clientInfo = clientInfo;
-		this.deviceInfo = deviceInfo;
-		this.accessToken = accessToken;
+		this._basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
+		this._clientInfo = clientInfo;
+		this._deviceInfo = deviceInfo;
+		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
+
+		this.webSocketSubscriptionIntervals = webSocketSubscriptionIntervals;
+	}
+
+	get accessToken(): string {
+		return this._accessToken;
+	}
+
+	get basePath(): string {
+		return this._basePath;
+	}
+
+	get clientInfo(): ClientInfo {
+		return this._clientInfo;
+	}
+
+	get deviceInfo(): DeviceInfo {
+		return this._deviceInfo;
 	}
 
 	get configuration(): Configuration {
 		return new Configuration({
-			basePath: this.basePath,
+			basePath: this._basePath,
 			baseOptions: {
 				headers: {
 					[AUTHORIZATION_HEADER]: this.authorizationHeader
 				}
 			}
 		});
+	}
+
+	/**
+	 * Service for managing subscriptions to Outbound WebSocket events.
+	 *
+	 * This service is automatically instantiated when the service is invoked
+	 * for the first time, provided that an access token is present.
+	 *
+	 * If the access token is cleared via the {@link update} method, the WebSocket
+	 * connection will be closed but subscriptions will remain intact.
+	 *
+	 * @see {@link WebSocketService.subscribe}
+	 */
+	get webSocket(): WebSocketService {
+		if (!this._webSocket) {
+			this._webSocket = new WebSocketService(
+				this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				}),
+				this.webSocketSubscriptionIntervals
+			);
+		}
+
+		return this._webSocket;
 	}
 
 	/**
@@ -74,7 +119,7 @@ export class Api {
 	 */
 	getUri(url: string, params?: object) {
 		return this.axiosInstance.getUri({
-			baseURL: this.basePath,
+			baseURL: this._basePath,
 			url,
 			params
 		});
@@ -88,7 +133,50 @@ export class Api {
 		return getSessionApi(this).reportSessionEnded();
 	}
 
+	/**
+	 * Updates this {@link Api} instance with new data.
+	 *
+	 * If the access token is cleared, any existing WebSocket connection will be closed.
+	 *
+	 * If the base path or access token changes while a WebSocket connection is active,
+	 * the connection will be reconnected with the new credentials.
+	 *
+	 * @param data The data to update.
+	 */
+	update(data: Partial<{
+		basePath: string;
+		clientInfo: ClientInfo;
+		deviceInfo: DeviceInfo;
+		accessToken: string;
+	}>): void {
+		if (data.basePath) {
+			this._basePath = data.basePath;
+		}
+		if (data.clientInfo) {
+			this._clientInfo = data.clientInfo;
+		}
+		if (data.deviceInfo) {
+			this._deviceInfo = data.deviceInfo;
+		}
+		if (data.accessToken !== undefined) {
+			this._accessToken = data.accessToken;
+		}
+
+		if (data.basePath ||
+			(data.accessToken && data.accessToken !== '')
+		) {
+			this._webSocket?.updateUrl(
+				this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				})
+			);
+		} else if (data.accessToken === '') {
+			// Token was cleared, dispose of WebSocket
+			this._webSocket?.disconnect();
+		}
+	}
+
 	get authorizationHeader(): string {
-		return getAuthorizationHeader(this.clientInfo, this.deviceInfo, this.accessToken);
+		return getAuthorizationHeader(this._clientInfo, this._deviceInfo, this._accessToken);
 	}
 }
