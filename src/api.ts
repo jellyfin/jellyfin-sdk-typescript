@@ -82,7 +82,7 @@ export class Api {
 	 *
 	 * If the access token is cleared via the {@link update} method, the WebSocket
 	 * connection will be closed but subscriptions will remain intact.
-	 * 
+	 *
 	 * @see {@link WebSocketService.subscribe}
 	 */
 	get webSocket(): WebSocketService | undefined {
