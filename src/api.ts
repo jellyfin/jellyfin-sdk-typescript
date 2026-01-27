@@ -85,8 +85,8 @@ export class Api {
 	 *
 	 * @see {@link WebSocketService.subscribe}
 	 */
-	get webSocket(): WebSocketService | undefined {
-		if (!this._webSocket && this.accessToken.length > 0) {
+	get webSocket(): WebSocketService {
+		if (!this._webSocket) {
 			this._webSocket = new WebSocketService(
 				this.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_PARAMETER]: this.accessToken
@@ -149,20 +149,22 @@ export class Api {
 		deviceInfo: DeviceInfo;
 		accessToken: string;
 	}>): void {
-		if (data.basePath !== undefined) {
+		if (data.basePath) {
 			this._basePath = data.basePath;
 		}
-		if (data.clientInfo !== undefined) {
+		if (data.clientInfo) {
 			this._clientInfo = data.clientInfo;
 		}
-		if (data.deviceInfo !== undefined) {
+		if (data.deviceInfo) {
 			this._deviceInfo = data.deviceInfo;
 		}
 		if (data.accessToken !== undefined) {
 			this._accessToken = data.accessToken;
 		}
 
-		if (data.basePath !== undefined || data.accessToken !== undefined) {
+		if (data.basePath ||
+			(data.accessToken && data.accessToken !== '')
+		) {
 			this._webSocket?.updateUrl(
 				this.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_PARAMETER]: this.accessToken

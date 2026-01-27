@@ -10,7 +10,7 @@ import { expect } from 'vitest';
 import { AUTHORIZATION_HEADER } from '../../constants';
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
 import { WEBSOCKET_URL_PATH } from '../constants';
-import { PeriodicListenerInterval } from '../types';
+import { PeriodicListenerInterval } from '../models';
 import { WebSocketService } from '../websocket-service';
 
 vi.mock('../../api');
@@ -614,6 +614,107 @@ describe('WebSocketService', () => {
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'SessionsStart', Data: '200,4000' })
 			);
+
+			vi.useRealTimers();
+		});
+	});
+
+	describe('disconnect()', () => {
+		it('should disconnect but preserve subscriptions', () => {
+			vi.useFakeTimers();
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			const handler = vi.fn();
+			service.subscribe(['Sessions'], handler);
+
+			// Disconnect (simulating token cleared)
+			service.disconnect();
+
+			expect(mockWebSocket.close).toHaveBeenCalled();
+
+			// Advance time - should NOT attempt to reconnect
+			vi.advanceTimersByTime(10000);
+
+			// Should only have been called once for initial connection
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
+
+			vi.useRealTimers();
+		});
+
+		it('should reconnect with subscriptions when updateUrl is called after disconnect', () => {
+			vi.useFakeTimers();
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			const handler = vi.fn();
+			service.subscribe(['Sessions'], handler);
+
+			// Disconnect (simulating token cleared)
+			service.disconnect();
+
+			// Update URL (simulating new token provided)
+			service.updateUrl('http://example.com/new-url');
+
+			// Should have created a new WebSocket connection
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+
+			// Simulate new socket opening
+			mockWebSocket.readyState = WebSocket.OPEN;
+			mockWebSocket.__triggerOpen();
+
+			// Should send start message for existing subscription
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
+			);
+
+			vi.useRealTimers();
+		});
+
+		it('should re-enable auto-reconnect after updateUrl', () => {
+			vi.useFakeTimers();
+
+			// Create fresh mock for this test to avoid shared state issues
+			const localEventListeners: Record<string, ((event: Event) => void)[]> = {
+				open: [],
+				message: [],
+				close: []
+			};
+
+			mockWebSocket.addEventListener = vi.fn((event: string, handler: (event: Event) => void) => {
+				if (event in localEventListeners) {
+					localEventListeners[event].push(handler);
+				}
+			});
+			mockWebSocket.__triggerClose = () => {
+				localEventListeners.close.forEach(handler => handler(new Event('close')));
+			};
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			service.subscribe(['Sessions'], () => {});
+
+			// Disconnect (simulating token cleared)
+			service.disconnect();
+
+			// Reset for clean state
+			vi.mocked(globalThis.WebSocket).mockClear();
+			localEventListeners.open = [];
+			localEventListeners.message = [];
+			localEventListeners.close = [];
+
+			// Update URL (simulating new token provided)
+			service.updateUrl('http://example.com/new-url');
+
+			// Should have created a new socket
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
+
+			// Simulate connection closing unexpectedly
+			mockWebSocket.readyState = WebSocket.CLOSED;
+			mockWebSocket.__triggerClose();
+
+			// Advance time to trigger reconnect
+			vi.advanceTimersByTime(5000);
+
+			// Should have attempted to reconnect (auto-reconnect re-enabled)
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
 
 			vi.useRealTimers();
 		});

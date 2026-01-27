@@ -7,6 +7,8 @@
 import type { InboundWebSocketMessage } from '../generated-client';
 import type { OutboundWebSocketMessage } from '../generated-client/models/outbound-web-socket-message';
 
+import type { PeriodicListenerInterval } from './models';
+
 export type WebSocketStatus = WebSocket['readyState'] | 'disconnected';
 
 export type SocketMessageHandler<T extends OutboundWebSocketMessageType> = (message: Extract<OutboundWebSocketMessage, { MessageType: T }>) => void
@@ -58,20 +60,6 @@ export const OutboundWebSocketMessageType: { [T in OutboundWebSocketMessageType]
 } as const;
 
 export type OutboundWebSocketMessageType = OutboundWebSocketMessage['MessageType'];
-
-export class PeriodicListenerInterval {
-	initialDelay: number;
-	interval: number;
-
-	constructor(initialDelay: number, interval: number) {
-		this.initialDelay = initialDelay;
-		this.interval = interval;
-	}
-
-	toString(): string {
-		return `${this.initialDelay},${this.interval}`;
-	}
-}
 
 /**
  * A mapping of outbound WebSocket message types to their respective periodic listener intervals.

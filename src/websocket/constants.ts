@@ -4,7 +4,8 @@
  * file, You can obtain one at http://mozilla.org/MPL/2.0/.
  */
 
-import type { PeriodicListenerInterval, WebSocketSubscription } from './types';
+import type { PeriodicListenerInterval } from './models';
+import type { WebSocketSubscription } from './types';
 import { OutboundWebSocketMessageType } from './types';
 
 /**

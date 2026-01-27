@@ -9,8 +9,9 @@ import { buildWebSocketUrl } from '../utils';
 
 import { RECONNECT_INITIAL_DELAY, RECONNECT_DELAY_FACTOR, RECONNECT_MAX_DELAY } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
+import { PeriodicListenerInterval } from './models';
 import type { WebSocketSubscriptionIntervals } from './types';
-import { OutboundWebSocketMessageType, PeriodicListenerInterval, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
+import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
  * A class used for managing the lifecycle of websocket connections
@@ -53,6 +54,11 @@ export class WebSocketService {
 	 * The timeout handle for reconnection
 	 */
 	private reconnectionTimeout: NodeJS.Timeout | undefined;
+
+	/**
+	 * Whether auto-reconnection is disabled (e.g., when token is cleared)
+	 */
+	private autoReconnectDisabled = false;
 
 	/**
      * Status change event listeners
@@ -126,7 +132,8 @@ export class WebSocketService {
 			this.setStatus('disconnected');
 
 			// Reconnect with exponential backoff if there are active subscriptions
-			if (this.subscriptions.size > 0) {
+			// and auto-reconnect is not disabled
+			if (this.subscriptions.size > 0 && !this.autoReconnectDisabled) {
 				this.reconnectionAttempts++;
 				const delay = this.calculateBackoffDelay();
 				this.reconnectionTimeout = setTimeout(() => this.initSocket(), delay);
@@ -174,7 +181,14 @@ export class WebSocketService {
 		return this.currentStatus;
 	}
 
+	/**
+	 * Disconnects the WebSocket connection.
+	 *
+	 * Subscriptions are preserved and can be automatically restored
+	 * when `updateUrl` is called with a new valid URL.
+	 */
 	disconnect(): void {
+		this.autoReconnectDisabled = true;
 		this.socket?.close();
 		this.setStatus('disconnected');
 		this.socket = undefined;
@@ -189,10 +203,26 @@ export class WebSocketService {
 		}
 	}
 
+	/**
+	 * Updates the WebSocket URL and reconnects if there are active subscriptions.
+	 *
+	 * This re-enables auto-reconnection if it was previously disabled.
+	 */
 	updateUrl(uri: string) {
+		this.autoReconnectDisabled = true;
 		this.socket?.close();
+		this.socket = undefined;
+
+		// Clear any pending reconnection timeout
+		if (this.reconnectionTimeout) {
+			clearTimeout(this.reconnectionTimeout);
+			this.reconnectionTimeout = undefined;
+		}
 
 		this.url = buildWebSocketUrl(uri);
+
+		// Re-disable auto-reconnect
+		this.autoReconnectDisabled = false;
 
 		if (this.subscriptions.size > 0) {
 			this.initSocket();
