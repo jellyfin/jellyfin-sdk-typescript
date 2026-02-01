@@ -37,3 +37,13 @@ jobs:
         with:
           name: coverage
           path: coverage/
+          retention-days: 1
+
+      - name: Upload source artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: source
+          path: |
+            src/
+            sonar-project.properties
+          retention-days: 1
