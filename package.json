@@ -39,7 +39,7 @@
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
     "glob": "13.0.0",
-    "globals": "16.5.0",
+    "globals": "17.3.0",
     "rimraf": "5.0.10",
     "rollup": "4.54.0",
     "typedoc": "0.28.15",
