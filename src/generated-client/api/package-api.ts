@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -57,8 +57,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -99,8 +99,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['assemblyGuid'] = assemblyGuid;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -132,8 +132,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -165,8 +165,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -217,8 +217,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['repositoryUrl'] = repositoryUrl;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -253,9 +253,8 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -56,8 +56,8 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['enableInMainMenu'] = enableInMainMenu;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -91,8 +91,8 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['name'] = name;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html,application/x-javascript,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};

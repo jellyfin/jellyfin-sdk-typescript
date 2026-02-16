@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -55,8 +55,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -101,8 +101,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -146,8 +146,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -184,8 +184,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -296,8 +296,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -409,8 +409,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -521,8 +521,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -634,8 +634,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -740,8 +740,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -852,8 +852,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -889,8 +889,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1002,8 +1002,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1114,8 +1114,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1227,8 +1227,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1339,8 +1339,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1379,8 +1379,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1492,8 +1492,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1604,8 +1604,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1649,8 +1649,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1761,8 +1761,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1874,8 +1874,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1986,8 +1986,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2099,8 +2099,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2205,8 +2205,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2317,8 +2317,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2430,8 +2430,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2542,8 +2542,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2655,8 +2655,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2767,8 +2767,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2880,8 +2880,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2992,8 +2992,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3037,8 +3037,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3076,9 +3076,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['userId'] = userId;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3121,9 +3120,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3170,9 +3168,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3225,8 +3222,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['newIndex'] = newIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3259,9 +3256,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};

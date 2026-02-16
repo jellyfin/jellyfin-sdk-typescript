@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -64,8 +64,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['liveStreamId'] = liveStreamId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -102,8 +102,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['size'] = size;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/octet-stream,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -144,8 +144,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -252,9 +252,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['allowAudioStreamCopy'] = allowAudioStreamCopy;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -349,9 +348,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
