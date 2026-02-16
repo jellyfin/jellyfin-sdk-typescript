@@ -13,17 +13,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface MediaPathInfo
- */
 export interface MediaPathInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof MediaPathInfo
-     */
     'Path'?: string;
 }
 

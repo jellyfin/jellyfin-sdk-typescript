@@ -24,7 +24,6 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 import type { CollectionCreationResult } from '../models';
 /**
  * CollectionApi - axios parameter creator
- * @export
  */
 export const CollectionApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -174,7 +173,6 @@ export const CollectionApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * CollectionApi - functional programming interface
- * @export
  */
 export const CollectionApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = CollectionApiAxiosParamCreator(configuration)
@@ -228,7 +226,6 @@ export const CollectionApiFp = function(configuration?: Configuration) {
 
 /**
  * CollectionApi - factory interface
- * @export
  */
 export const CollectionApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = CollectionApiFp(configuration)
@@ -268,86 +265,61 @@ export const CollectionApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for addToCollection operation in CollectionApi.
- * @export
- * @interface CollectionApiAddToCollectionRequest
  */
 export interface CollectionApiAddToCollectionRequest {
     /**
      * The collection id.
-     * @type {string}
-     * @memberof CollectionApiAddToCollection
      */
     readonly collectionId: string
 
     /**
      * Item ids, comma delimited.
-     * @type {Array<string>}
-     * @memberof CollectionApiAddToCollection
      */
     readonly ids: Array<string>
 }
 
 /**
  * Request parameters for createCollection operation in CollectionApi.
- * @export
- * @interface CollectionApiCreateCollectionRequest
  */
 export interface CollectionApiCreateCollectionRequest {
     /**
      * The name of the collection.
-     * @type {string}
-     * @memberof CollectionApiCreateCollection
      */
     readonly name?: string
 
     /**
      * Item Ids to add to the collection.
-     * @type {Array<string>}
-     * @memberof CollectionApiCreateCollection
      */
     readonly ids?: Array<string>
 
     /**
      * Optional. Create the collection within a specific folder.
-     * @type {string}
-     * @memberof CollectionApiCreateCollection
      */
     readonly parentId?: string
 
     /**
      * Whether or not to lock the new collection.
-     * @type {boolean}
-     * @memberof CollectionApiCreateCollection
      */
     readonly isLocked?: boolean
 }
 
 /**
  * Request parameters for removeFromCollection operation in CollectionApi.
- * @export
- * @interface CollectionApiRemoveFromCollectionRequest
  */
 export interface CollectionApiRemoveFromCollectionRequest {
     /**
      * The collection id.
-     * @type {string}
-     * @memberof CollectionApiRemoveFromCollection
      */
     readonly collectionId: string
 
     /**
      * Item ids, comma delimited.
-     * @type {Array<string>}
-     * @memberof CollectionApiRemoveFromCollection
      */
     readonly ids: Array<string>
 }
 
 /**
  * CollectionApi - object-oriented interface
- * @export
- * @class CollectionApi
- * @extends {BaseAPI}
  */
 export class CollectionApi extends BaseAPI {
     /**
@@ -356,7 +328,6 @@ export class CollectionApi extends BaseAPI {
      * @param {CollectionApiAddToCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CollectionApi
      */
     public addToCollection(requestParameters: CollectionApiAddToCollectionRequest, options?: RawAxiosRequestConfig) {
         return CollectionApiFp(this.configuration).addToCollection(requestParameters.collectionId, requestParameters.ids, options).then((request) => request(this.axios, this.basePath));
@@ -368,7 +339,6 @@ export class CollectionApi extends BaseAPI {
      * @param {CollectionApiCreateCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CollectionApi
      */
     public createCollection(requestParameters: CollectionApiCreateCollectionRequest = {}, options?: RawAxiosRequestConfig) {
         return CollectionApiFp(this.configuration).createCollection(requestParameters.name, requestParameters.ids, requestParameters.parentId, requestParameters.isLocked, options).then((request) => request(this.axios, this.basePath));
@@ -380,7 +350,6 @@ export class CollectionApi extends BaseAPI {
      * @param {CollectionApiRemoveFromCollectionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof CollectionApi
      */
     public removeFromCollection(requestParameters: CollectionApiRemoveFromCollectionRequest, options?: RawAxiosRequestConfig) {
         return CollectionApiFp(this.configuration).removeFromCollection(requestParameters.collectionId, requestParameters.ids, options).then((request) => request(this.axios, this.basePath));

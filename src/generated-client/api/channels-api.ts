@@ -34,7 +34,6 @@ import type { ItemSortBy } from '../models';
 import type { SortOrder } from '../models';
 /**
  * ChannelsApi - axios parameter creator
- * @export
  */
 export const ChannelsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -316,7 +315,6 @@ export const ChannelsApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * ChannelsApi - functional programming interface
- * @export
  */
 export const ChannelsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ChannelsApiAxiosParamCreator(configuration)
@@ -408,7 +406,6 @@ export const ChannelsApiFp = function(configuration?: Configuration) {
 
 /**
  * ChannelsApi - factory interface
- * @export
  */
 export const ChannelsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ChannelsApiFp(configuration)
@@ -467,191 +464,136 @@ export const ChannelsApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * Request parameters for getChannelFeatures operation in ChannelsApi.
- * @export
- * @interface ChannelsApiGetChannelFeaturesRequest
  */
 export interface ChannelsApiGetChannelFeaturesRequest {
     /**
      * Channel id.
-     * @type {string}
-     * @memberof ChannelsApiGetChannelFeatures
      */
     readonly channelId: string
 }
 
 /**
  * Request parameters for getChannelItems operation in ChannelsApi.
- * @export
- * @interface ChannelsApiGetChannelItemsRequest
  */
 export interface ChannelsApiGetChannelItemsRequest {
     /**
      * Channel Id.
-     * @type {string}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly channelId: string
 
     /**
      * Optional. Folder Id.
-     * @type {string}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly folderId?: string
 
     /**
      * Optional. User Id.
-     * @type {string}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly limit?: number
 
     /**
      * Optional. Sort Order - Ascending,Descending.
-     * @type {Array<SortOrder>}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * Optional. Specify additional filters to apply.
-     * @type {Array<ItemFilter>}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly filters?: Array<ItemFilter>
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-     * @type {Array<ItemSortBy>}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof ChannelsApiGetChannelItems
      */
     readonly fields?: Array<ItemFields>
 }
 
 /**
  * Request parameters for getChannels operation in ChannelsApi.
- * @export
- * @interface ChannelsApiGetChannelsRequest
  */
 export interface ChannelsApiGetChannelsRequest {
     /**
      * User Id to filter by. Use System.Guid.Empty to not filter by user.
-     * @type {string}
-     * @memberof ChannelsApiGetChannels
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof ChannelsApiGetChannels
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof ChannelsApiGetChannels
      */
     readonly limit?: number
 
     /**
      * Optional. Filter by channels that support getting latest items.
-     * @type {boolean}
-     * @memberof ChannelsApiGetChannels
      */
     readonly supportsLatestItems?: boolean
 
     /**
      * Optional. Filter by channels that support media deletion.
-     * @type {boolean}
-     * @memberof ChannelsApiGetChannels
      */
     readonly supportsMediaDeletion?: boolean
 
     /**
      * Optional. Filter by channels that are favorite.
-     * @type {boolean}
-     * @memberof ChannelsApiGetChannels
      */
     readonly isFavorite?: boolean
 }
 
 /**
  * Request parameters for getLatestChannelItems operation in ChannelsApi.
- * @export
- * @interface ChannelsApiGetLatestChannelItemsRequest
  */
 export interface ChannelsApiGetLatestChannelItemsRequest {
     /**
      * Optional. User Id.
-     * @type {string}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional filters to apply.
-     * @type {Array<ItemFilter>}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly filters?: Array<ItemFilter>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Specify one or more channel id\&#39;s, comma delimited.
-     * @type {Array<string>}
-     * @memberof ChannelsApiGetLatestChannelItems
      */
     readonly channelIds?: Array<string>
 }
 
 /**
  * ChannelsApi - object-oriented interface
- * @export
- * @class ChannelsApi
- * @extends {BaseAPI}
  */
 export class ChannelsApi extends BaseAPI {
     /**
@@ -659,7 +601,6 @@ export class ChannelsApi extends BaseAPI {
      * @summary Get all channel features.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ChannelsApi
      */
     public getAllChannelFeatures(options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getAllChannelFeatures(options).then((request) => request(this.axios, this.basePath));
@@ -671,7 +612,6 @@ export class ChannelsApi extends BaseAPI {
      * @param {ChannelsApiGetChannelFeaturesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ChannelsApi
      */
     public getChannelFeatures(requestParameters: ChannelsApiGetChannelFeaturesRequest, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannelFeatures(requestParameters.channelId, options).then((request) => request(this.axios, this.basePath));
@@ -683,7 +623,6 @@ export class ChannelsApi extends BaseAPI {
      * @param {ChannelsApiGetChannelItemsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ChannelsApi
      */
     public getChannelItems(requestParameters: ChannelsApiGetChannelItemsRequest, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannelItems(requestParameters.channelId, requestParameters.folderId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.filters, requestParameters.sortBy, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
@@ -695,7 +634,6 @@ export class ChannelsApi extends BaseAPI {
      * @param {ChannelsApiGetChannelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ChannelsApi
      */
     public getChannels(requestParameters: ChannelsApiGetChannelsRequest = {}, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getChannels(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.supportsLatestItems, requestParameters.supportsMediaDeletion, requestParameters.isFavorite, options).then((request) => request(this.axios, this.basePath));
@@ -707,7 +645,6 @@ export class ChannelsApi extends BaseAPI {
      * @param {ChannelsApiGetLatestChannelItemsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ChannelsApi
      */
     public getLatestChannelItems(requestParameters: ChannelsApiGetLatestChannelItemsRequest = {}, options?: RawAxiosRequestConfig) {
         return ChannelsApiFp(this.configuration).getLatestChannelItems(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.filters, requestParameters.fields, requestParameters.channelIds, options).then((request) => request(this.axios, this.basePath));

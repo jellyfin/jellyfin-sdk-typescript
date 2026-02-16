@@ -16,34 +16,15 @@
 // @ts-ignore
 import type { BookInfo } from './book-info';
 
-/**
- * 
- * @export
- * @interface BookInfoRemoteSearchQuery
- */
 export interface BookInfoRemoteSearchQuery {
-    /**
-     * 
-     * @type {BookInfo}
-     * @memberof BookInfoRemoteSearchQuery
-     */
     'SearchInfo'?: BookInfo;
-    /**
-     * 
-     * @type {string}
-     * @memberof BookInfoRemoteSearchQuery
-     */
     'ItemId'?: string;
     /**
      * Gets or sets the provider name to search within if set.
-     * @type {string}
-     * @memberof BookInfoRemoteSearchQuery
      */
     'SearchProviderName'?: string | null;
     /**
      * Gets or sets a value indicating whether disabled providers should be included.
-     * @type {boolean}
-     * @memberof BookInfoRemoteSearchQuery
      */
     'IncludeDisabledProviders'?: boolean;
 }

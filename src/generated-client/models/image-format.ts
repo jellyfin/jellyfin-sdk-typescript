@@ -15,8 +15,6 @@
 
 /**
  * Enum ImageOutputFormat.
- * @export
- * @enum {string}
  */
 
 export const ImageFormat = {

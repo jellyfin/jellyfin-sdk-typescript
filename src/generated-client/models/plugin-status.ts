@@ -15,8 +15,6 @@
 
 /**
  * Plugin load status.
- * @export
- * @enum {string}
  */
 
 export const PluginStatus = {

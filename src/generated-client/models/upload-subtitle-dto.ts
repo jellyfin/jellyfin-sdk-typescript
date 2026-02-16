@@ -15,38 +15,26 @@
 
 /**
  * Upload subtitles dto.
- * @export
- * @interface UploadSubtitleDto
  */
 export interface UploadSubtitleDto {
     /**
      * Gets or sets the subtitle language.
-     * @type {string}
-     * @memberof UploadSubtitleDto
      */
     'Language': string;
     /**
      * Gets or sets the subtitle format.
-     * @type {string}
-     * @memberof UploadSubtitleDto
      */
     'Format': string;
     /**
      * Gets or sets a value indicating whether the subtitle is forced.
-     * @type {boolean}
-     * @memberof UploadSubtitleDto
      */
     'IsForced': boolean;
     /**
      * Gets or sets a value indicating whether the subtitle is for hearing impaired.
-     * @type {boolean}
-     * @memberof UploadSubtitleDto
      */
     'IsHearingImpaired': boolean;
     /**
      * Gets or sets the subtitle data.
-     * @type {string}
-     * @memberof UploadSubtitleDto
      */
     'Data': string;
 }

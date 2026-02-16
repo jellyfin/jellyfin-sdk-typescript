@@ -18,27 +18,16 @@ import type { LyricDto } from './lyric-dto';
 
 /**
  * The remote lyric info dto.
- * @export
- * @interface RemoteLyricInfoDto
  */
 export interface RemoteLyricInfoDto {
     /**
      * Gets or sets the id for the lyric.
-     * @type {string}
-     * @memberof RemoteLyricInfoDto
      */
     'Id'?: string;
     /**
      * Gets the provider name.
-     * @type {string}
-     * @memberof RemoteLyricInfoDto
      */
     'ProviderName'?: string;
-    /**
-     * 
-     * @type {LyricDto}
-     * @memberof RemoteLyricInfoDto
-     */
     'Lyrics'?: LyricDto;
 }
 

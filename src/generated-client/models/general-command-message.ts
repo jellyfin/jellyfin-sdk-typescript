@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * General command websocket message.
- * @export
- * @interface GeneralCommandMessage
  */
 export interface GeneralCommandMessage {
-    /**
-     * 
-     * @type {GeneralCommand}
-     * @memberof GeneralCommandMessage
-     */
     'Data'?: GeneralCommand;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof GeneralCommandMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof GeneralCommandMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

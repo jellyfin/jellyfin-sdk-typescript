@@ -18,20 +18,14 @@ import type { ImageType } from './image-type';
 
 /**
  * Class ImageProviderInfo.
- * @export
- * @interface ImageProviderInfo
  */
 export interface ImageProviderInfo {
     /**
      * Gets the name.
-     * @type {string}
-     * @memberof ImageProviderInfo
      */
     'Name'?: string;
     /**
      * Gets the supported image types.
-     * @type {Array<ImageType>}
-     * @memberof ImageProviderInfo
      */
     'SupportedImages'?: Array<ImageType>;
 }

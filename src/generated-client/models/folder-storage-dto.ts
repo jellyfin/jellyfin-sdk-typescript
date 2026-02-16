@@ -15,38 +15,26 @@
 
 /**
  * Contains information about a specific folder.
- * @export
- * @interface FolderStorageDto
  */
 export interface FolderStorageDto {
     /**
      * Gets the path of the folder in question.
-     * @type {string}
-     * @memberof FolderStorageDto
      */
     'Path'?: string;
     /**
      * Gets the free space of the underlying storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.
-     * @type {number}
-     * @memberof FolderStorageDto
      */
     'FreeSpace'?: number;
     /**
      * Gets the used space of the underlying storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.
-     * @type {number}
-     * @memberof FolderStorageDto
      */
     'UsedSpace'?: number;
     /**
      * Gets the kind of storage device of the Jellyfin.Api.Models.SystemInfoDtos.FolderStorageDto.Path.
-     * @type {string}
-     * @memberof FolderStorageDto
      */
     'StorageType'?: string | null;
     /**
      * Gets the Device Identifier.
-     * @type {string}
-     * @memberof FolderStorageDto
      */
     'DeviceId'?: string | null;
 }

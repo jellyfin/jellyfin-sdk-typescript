@@ -13,107 +13,22 @@
 
 
 
-/**
- * 
- * @export
- * @interface TunerHostInfo
- */
 export interface TunerHostInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'Id'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'Url'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'Type'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'DeviceId'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'FriendlyName'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'ImportFavoritesOnly'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'AllowHWTranscoding'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'AllowFmp4TranscodingContainer'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'AllowStreamSharing'?: boolean;
-    /**
-     * 
-     * @type {number}
-     * @memberof TunerHostInfo
-     */
     'FallbackMaxStreamingBitrate'?: number;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'EnableStreamLooping'?: boolean;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'Source'?: string | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof TunerHostInfo
-     */
     'TunerCount'?: number;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerHostInfo
-     */
     'UserAgent'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'IgnoreDts'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TunerHostInfo
-     */
     'ReadAtNativeFramerate'?: boolean;
 }
 

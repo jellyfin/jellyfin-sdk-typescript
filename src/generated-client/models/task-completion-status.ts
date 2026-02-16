@@ -15,8 +15,6 @@
 
 /**
  * Enum TaskCompletionStatus.
- * @export
- * @enum {string}
  */
 
 export const TaskCompletionStatus = {

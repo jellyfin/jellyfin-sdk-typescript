@@ -18,38 +18,23 @@ import type { MediaSegmentType } from './media-segment-type';
 
 /**
  * Api model for MediaSegment\'s.
- * @export
- * @interface MediaSegmentDto
  */
 export interface MediaSegmentDto {
     /**
      * Gets or sets the id of the media segment.
-     * @type {string}
-     * @memberof MediaSegmentDto
      */
     'Id'?: string;
     /**
      * Gets or sets the id of the associated item.
-     * @type {string}
-     * @memberof MediaSegmentDto
      */
     'ItemId'?: string;
-    /**
-     * 
-     * @type {MediaSegmentType}
-     * @memberof MediaSegmentDto
-     */
     'Type'?: MediaSegmentType;
     /**
      * Gets or sets the start of the segment.
-     * @type {number}
-     * @memberof MediaSegmentDto
      */
     'StartTicks'?: number;
     /**
      * Gets or sets the end of the segment.
-     * @type {number}
-     * @memberof MediaSegmentDto
      */
     'EndTicks'?: number;
 }

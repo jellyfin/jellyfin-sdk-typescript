@@ -21,27 +21,16 @@ import type { TaskInfo } from './task-info';
 
 /**
  * Scheduled tasks info message.
- * @export
- * @interface ScheduledTasksInfoMessage
  */
 export interface ScheduledTasksInfoMessage {
     /**
      * Gets or sets the data.
-     * @type {Array<TaskInfo>}
-     * @memberof ScheduledTasksInfoMessage
      */
     'Data'?: Array<TaskInfo> | null;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof ScheduledTasksInfoMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ScheduledTasksInfoMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

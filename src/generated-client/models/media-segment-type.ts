@@ -15,8 +15,6 @@
 
 /**
  * Defines the types of content an individual Jellyfin.Database.Implementations.Entities.MediaSegment represents.
- * @export
- * @enum {string}
  */
 
 export const MediaSegmentType = {

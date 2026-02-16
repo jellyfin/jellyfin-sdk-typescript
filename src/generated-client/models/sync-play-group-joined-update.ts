@@ -19,29 +19,12 @@ import type { GroupInfoDto } from './group-info-dto';
 // @ts-ignore
 import type { GroupUpdateType } from './group-update-type';
 
-/**
- * 
- * @export
- * @interface SyncPlayGroupJoinedUpdate
- */
 export interface SyncPlayGroupJoinedUpdate {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof SyncPlayGroupJoinedUpdate
      */
     'GroupId'?: string;
-    /**
-     * 
-     * @type {GroupInfoDto}
-     * @memberof SyncPlayGroupJoinedUpdate
-     */
     'Data'?: GroupInfoDto;
-    /**
-     * 
-     * @type {GroupUpdateType}
-     * @memberof SyncPlayGroupJoinedUpdate
-     */
     'Type'?: GroupUpdateType;
 }
 

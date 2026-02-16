@@ -15,8 +15,6 @@
 
 /**
  * An enum representing the options to disable embedded subs.
- * @export
- * @enum {string}
  */
 
 export const EmbeddedSubtitleOptions = {

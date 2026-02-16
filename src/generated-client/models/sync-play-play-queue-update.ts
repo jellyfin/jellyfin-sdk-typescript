@@ -19,29 +19,12 @@ import type { GroupUpdateType } from './group-update-type';
 // @ts-ignore
 import type { PlayQueueUpdate } from './play-queue-update';
 
-/**
- * 
- * @export
- * @interface SyncPlayPlayQueueUpdate
- */
 export interface SyncPlayPlayQueueUpdate {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof SyncPlayPlayQueueUpdate
      */
     'GroupId'?: string;
-    /**
-     * 
-     * @type {PlayQueueUpdate}
-     * @memberof SyncPlayPlayQueueUpdate
-     */
     'Data'?: PlayQueueUpdate;
-    /**
-     * 
-     * @type {GroupUpdateType}
-     * @memberof SyncPlayPlayQueueUpdate
-     */
     'Type'?: GroupUpdateType;
 }
 

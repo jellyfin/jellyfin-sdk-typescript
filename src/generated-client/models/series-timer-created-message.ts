@@ -21,27 +21,13 @@ import type { TimerEventInfo } from './timer-event-info';
 
 /**
  * Series timer created message.
- * @export
- * @interface SeriesTimerCreatedMessage
  */
 export interface SeriesTimerCreatedMessage {
-    /**
-     * 
-     * @type {TimerEventInfo}
-     * @memberof SeriesTimerCreatedMessage
-     */
     'Data'?: TimerEventInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof SeriesTimerCreatedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof SeriesTimerCreatedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

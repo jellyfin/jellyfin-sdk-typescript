@@ -30,7 +30,6 @@ import type { ProblemDetails } from '../models';
 import type { ValidatePathDto } from '../models';
 /**
  * EnvironmentApi - axios parameter creator
- * @export
  */
 export const EnvironmentApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -268,7 +267,6 @@ export const EnvironmentApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * EnvironmentApi - functional programming interface
- * @export
  */
 export const EnvironmentApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = EnvironmentApiAxiosParamCreator(configuration)
@@ -356,7 +354,6 @@ export const EnvironmentApiFp = function(configuration?: Configuration) {
 
 /**
  * EnvironmentApi - factory interface
- * @export
  */
 export const EnvironmentApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = EnvironmentApiFp(configuration)
@@ -424,65 +421,46 @@ export const EnvironmentApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for getDirectoryContents operation in EnvironmentApi.
- * @export
- * @interface EnvironmentApiGetDirectoryContentsRequest
  */
 export interface EnvironmentApiGetDirectoryContentsRequest {
     /**
      * The path.
-     * @type {string}
-     * @memberof EnvironmentApiGetDirectoryContents
      */
     readonly path: string
 
     /**
      * An optional filter to include or exclude files from the results. true/false.
-     * @type {boolean}
-     * @memberof EnvironmentApiGetDirectoryContents
      */
     readonly includeFiles?: boolean
 
     /**
      * An optional filter to include or exclude folders from the results. true/false.
-     * @type {boolean}
-     * @memberof EnvironmentApiGetDirectoryContents
      */
     readonly includeDirectories?: boolean
 }
 
 /**
  * Request parameters for getParentPath operation in EnvironmentApi.
- * @export
- * @interface EnvironmentApiGetParentPathRequest
  */
 export interface EnvironmentApiGetParentPathRequest {
     /**
      * The path.
-     * @type {string}
-     * @memberof EnvironmentApiGetParentPath
      */
     readonly path: string
 }
 
 /**
  * Request parameters for validatePath operation in EnvironmentApi.
- * @export
- * @interface EnvironmentApiValidatePathRequest
  */
 export interface EnvironmentApiValidatePathRequest {
     /**
      * Validate request object.
-     * @type {ValidatePathDto}
-     * @memberof EnvironmentApiValidatePath
      */
     readonly validatePathDto: ValidatePathDto
 }
 
 /**
  * EnvironmentApi - object-oriented interface
- * @export
- * @class EnvironmentApi
- * @extends {BaseAPI}
  */
 export class EnvironmentApi extends BaseAPI {
     /**
@@ -490,7 +468,6 @@ export class EnvironmentApi extends BaseAPI {
      * @summary Get Default directory browser.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public getDefaultDirectoryBrowser(options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getDefaultDirectoryBrowser(options).then((request) => request(this.axios, this.basePath));
@@ -502,7 +479,6 @@ export class EnvironmentApi extends BaseAPI {
      * @param {EnvironmentApiGetDirectoryContentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public getDirectoryContents(requestParameters: EnvironmentApiGetDirectoryContentsRequest, options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getDirectoryContents(requestParameters.path, requestParameters.includeFiles, requestParameters.includeDirectories, options).then((request) => request(this.axios, this.basePath));
@@ -513,7 +489,6 @@ export class EnvironmentApi extends BaseAPI {
      * @summary Gets available drives from the server\'s file system.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public getDrives(options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getDrives(options).then((request) => request(this.axios, this.basePath));
@@ -525,7 +500,6 @@ export class EnvironmentApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public getNetworkShares(options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getNetworkShares(options).then((request) => request(this.axios, this.basePath));
@@ -537,7 +511,6 @@ export class EnvironmentApi extends BaseAPI {
      * @param {EnvironmentApiGetParentPathRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public getParentPath(requestParameters: EnvironmentApiGetParentPathRequest, options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).getParentPath(requestParameters.path, options).then((request) => request(this.axios, this.basePath));
@@ -549,7 +522,6 @@ export class EnvironmentApi extends BaseAPI {
      * @param {EnvironmentApiValidatePathRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof EnvironmentApi
      */
     public validatePath(requestParameters: EnvironmentApiValidatePathRequest, options?: RawAxiosRequestConfig) {
         return EnvironmentApiFp(this.configuration).validatePath(requestParameters.validatePathDto, options).then((request) => request(this.axios, this.basePath));

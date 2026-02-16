@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin installation failed message.
- * @export
- * @interface PluginInstallationFailedMessage
  */
 export interface PluginInstallationFailedMessage {
-    /**
-     * 
-     * @type {InstallationInfo}
-     * @memberof PluginInstallationFailedMessage
-     */
     'Data'?: InstallationInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PluginInstallationFailedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PluginInstallationFailedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

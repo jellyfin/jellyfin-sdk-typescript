@@ -15,8 +15,6 @@
 
 /**
  * Enum MetadataFields.
- * @export
- * @enum {string}
  */
 
 export const MetadataField = {

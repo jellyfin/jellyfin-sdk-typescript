@@ -15,8 +15,6 @@
 
 /**
  * Delivery method to use during playback of a specific subtitle format.
- * @export
- * @enum {string}
  */
 
 export const SubtitleDeliveryMethod = {

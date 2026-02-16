@@ -18,38 +18,23 @@ import type { SubtitleDeliveryMethod } from './subtitle-delivery-method';
 
 /**
  * A class for subtitle profile information.
- * @export
- * @interface SubtitleProfile
  */
 export interface SubtitleProfile {
     /**
      * Gets or sets the format.
-     * @type {string}
-     * @memberof SubtitleProfile
      */
     'Format'?: string | null;
-    /**
-     * 
-     * @type {SubtitleDeliveryMethod}
-     * @memberof SubtitleProfile
-     */
     'Method'?: SubtitleDeliveryMethod;
     /**
      * Gets or sets the DIDL mode.
-     * @type {string}
-     * @memberof SubtitleProfile
      */
     'DidlMode'?: string | null;
     /**
      * Gets or sets the language.
-     * @type {string}
-     * @memberof SubtitleProfile
      */
     'Language'?: string | null;
     /**
      * Gets or sets the container.
-     * @type {string}
-     * @memberof SubtitleProfile
      */
     'Container'?: string | null;
 }

@@ -15,8 +15,6 @@
 
 /**
  * Enum containing tonemapping modes.
- * @export
- * @enum {string}
  */
 
 export const TonemappingMode = {

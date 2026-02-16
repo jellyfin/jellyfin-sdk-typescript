@@ -15,8 +15,6 @@
 
 /**
  * Collection type.
- * @export
- * @enum {string}
  */
 
 export const CollectionType = {

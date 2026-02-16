@@ -28,7 +28,6 @@ import type { MetadataEditorInfo } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * ItemUpdateApi - axios parameter creator
- * @export
  */
 export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -159,7 +158,6 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * ItemUpdateApi - functional programming interface
- * @export
  */
 export const ItemUpdateApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ItemUpdateApiAxiosParamCreator(configuration)
@@ -210,7 +208,6 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
 
 /**
  * ItemUpdateApi - factory interface
- * @export
  */
 export const ItemUpdateApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ItemUpdateApiFp(configuration)
@@ -250,65 +247,46 @@ export const ItemUpdateApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for getMetadataEditorInfo operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiGetMetadataEditorInfoRequest
  */
 export interface ItemUpdateApiGetMetadataEditorInfoRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiGetMetadataEditorInfo
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for updateItem operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiUpdateItemRequest
  */
 export interface ItemUpdateApiUpdateItemRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItem
      */
     readonly itemId: string
 
     /**
      * The new item properties.
-     * @type {BaseItemDto}
-     * @memberof ItemUpdateApiUpdateItem
      */
     readonly baseItemDto: BaseItemDto
 }
 
 /**
  * Request parameters for updateItemContentType operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiUpdateItemContentTypeRequest
  */
 export interface ItemUpdateApiUpdateItemContentTypeRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItemContentType
      */
     readonly itemId: string
 
     /**
      * The content type of the item.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItemContentType
      */
     readonly contentType?: string
 }
 
 /**
  * ItemUpdateApi - object-oriented interface
- * @export
- * @class ItemUpdateApi
- * @extends {BaseAPI}
  */
 export class ItemUpdateApi extends BaseAPI {
     /**
@@ -317,7 +295,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiGetMetadataEditorInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).getMetadataEditorInfo(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -329,7 +306,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiUpdateItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(this.axios, this.basePath));
@@ -341,7 +317,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiUpdateItemContentTypeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItemContentType(requestParameters.itemId, requestParameters.contentType, options).then((request) => request(this.axios, this.basePath));

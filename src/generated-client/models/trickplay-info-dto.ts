@@ -15,50 +15,34 @@
 
 /**
  * The trickplay api model.
- * @export
- * @interface TrickplayInfoDto
  */
 export interface TrickplayInfoDto {
     /**
      * Gets the width of an individual thumbnail.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'Width'?: number;
     /**
      * Gets the height of an individual thumbnail.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'Height'?: number;
     /**
      * Gets the amount of thumbnails per row.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'TileWidth'?: number;
     /**
      * Gets the amount of thumbnails per column.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'TileHeight'?: number;
     /**
      * Gets the total amount of non-black thumbnails.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'ThumbnailCount'?: number;
     /**
      * Gets the interval in milliseconds between each trickplay thumbnail.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'Interval'?: number;
     /**
      * Gets the peak bandwidth usage in bits per second.
-     * @type {number}
-     * @memberof TrickplayInfoDto
      */
     'Bandwidth'?: number;
 }

@@ -24,7 +24,6 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 import type { ProblemDetails } from '../models';
 /**
  * TrickplayApi - axios parameter creator
- * @export
  */
 export const TrickplayApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -129,7 +128,6 @@ export const TrickplayApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * TrickplayApi - functional programming interface
- * @export
  */
 export const TrickplayApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TrickplayApiAxiosParamCreator(configuration)
@@ -170,7 +168,6 @@ export const TrickplayApiFp = function(configuration?: Configuration) {
 
 /**
  * TrickplayApi - factory interface
- * @export
  */
 export const TrickplayApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TrickplayApiFp(configuration)
@@ -200,72 +197,51 @@ export const TrickplayApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for getTrickplayHlsPlaylist operation in TrickplayApi.
- * @export
- * @interface TrickplayApiGetTrickplayHlsPlaylistRequest
  */
 export interface TrickplayApiGetTrickplayHlsPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof TrickplayApiGetTrickplayHlsPlaylist
      */
     readonly itemId: string
 
     /**
      * The width of a single tile.
-     * @type {number}
-     * @memberof TrickplayApiGetTrickplayHlsPlaylist
      */
     readonly width: number
 
     /**
      * The media version id, if using an alternate version.
-     * @type {string}
-     * @memberof TrickplayApiGetTrickplayHlsPlaylist
      */
     readonly mediaSourceId?: string
 }
 
 /**
  * Request parameters for getTrickplayTileImage operation in TrickplayApi.
- * @export
- * @interface TrickplayApiGetTrickplayTileImageRequest
  */
 export interface TrickplayApiGetTrickplayTileImageRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof TrickplayApiGetTrickplayTileImage
      */
     readonly itemId: string
 
     /**
      * The width of a single tile.
-     * @type {number}
-     * @memberof TrickplayApiGetTrickplayTileImage
      */
     readonly width: number
 
     /**
      * The index of the desired tile.
-     * @type {number}
-     * @memberof TrickplayApiGetTrickplayTileImage
      */
     readonly index: number
 
     /**
      * The media version id, if using an alternate version.
-     * @type {string}
-     * @memberof TrickplayApiGetTrickplayTileImage
      */
     readonly mediaSourceId?: string
 }
 
 /**
  * TrickplayApi - object-oriented interface
- * @export
- * @class TrickplayApi
- * @extends {BaseAPI}
  */
 export class TrickplayApi extends BaseAPI {
     /**
@@ -274,7 +250,6 @@ export class TrickplayApi extends BaseAPI {
      * @param {TrickplayApiGetTrickplayHlsPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TrickplayApi
      */
     public getTrickplayHlsPlaylist(requestParameters: TrickplayApiGetTrickplayHlsPlaylistRequest, options?: RawAxiosRequestConfig) {
         return TrickplayApiFp(this.configuration).getTrickplayHlsPlaylist(requestParameters.itemId, requestParameters.width, requestParameters.mediaSourceId, options).then((request) => request(this.axios, this.basePath));
@@ -286,7 +261,6 @@ export class TrickplayApi extends BaseAPI {
      * @param {TrickplayApiGetTrickplayTileImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TrickplayApi
      */
     public getTrickplayTileImage(requestParameters: TrickplayApiGetTrickplayTileImageRequest, options?: RawAxiosRequestConfig) {
         return TrickplayApiFp(this.configuration).getTrickplayTileImage(requestParameters.itemId, requestParameters.width, requestParameters.index, requestParameters.mediaSourceId, options).then((request) => request(this.axios, this.basePath));

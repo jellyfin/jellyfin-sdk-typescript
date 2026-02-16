@@ -15,8 +15,6 @@
 
 /**
  * An enum representing video ranges.
- * @export
- * @enum {string}
  */
 
 export const VideoRange = {

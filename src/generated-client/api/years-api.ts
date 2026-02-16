@@ -40,7 +40,6 @@ import type { ProblemDetails } from '../models';
 import type { SortOrder } from '../models';
 /**
  * YearsApi - axios parameter creator
- * @export
  */
 export const YearsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -199,7 +198,6 @@ export const YearsApiAxiosParamCreator = function (configuration?: Configuration
 
 /**
  * YearsApi - functional programming interface
- * @export
  */
 export const YearsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = YearsApiAxiosParamCreator(configuration)
@@ -250,7 +248,6 @@ export const YearsApiFp = function(configuration?: Configuration) {
 
 /**
  * YearsApi - factory interface
- * @export
  */
 export const YearsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = YearsApiFp(configuration)
@@ -280,142 +277,101 @@ export const YearsApiFactory = function (configuration?: Configuration, basePath
 
 /**
  * Request parameters for getYear operation in YearsApi.
- * @export
- * @interface YearsApiGetYearRequest
  */
 export interface YearsApiGetYearRequest {
     /**
      * The year.
-     * @type {number}
-     * @memberof YearsApiGetYear
      */
     readonly year: number
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof YearsApiGetYear
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getYears operation in YearsApi.
- * @export
- * @interface YearsApiGetYearsRequest
  */
 export interface YearsApiGetYearsRequest {
     /**
      * Skips over a given number of items within the results. Use for paging.
-     * @type {number}
-     * @memberof YearsApiGetYears
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof YearsApiGetYears
      */
     readonly limit?: number
 
     /**
      * Sort Order - Ascending,Descending.
-     * @type {Array<SortOrder>}
-     * @memberof YearsApiGetYears
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof YearsApiGetYears
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof YearsApiGetYears
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be excluded based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof YearsApiGetYears
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. If specified, results will be included based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof YearsApiGetYears
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. Filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<MediaType>}
-     * @memberof YearsApiGetYears
      */
     readonly mediaTypes?: Array<MediaType>
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-     * @type {Array<ItemSortBy>}
-     * @memberof YearsApiGetYears
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof YearsApiGetYears
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof YearsApiGetYears
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof YearsApiGetYears
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * User Id.
-     * @type {string}
-     * @memberof YearsApiGetYears
      */
     readonly userId?: string
 
     /**
      * Search recursively.
-     * @type {boolean}
-     * @memberof YearsApiGetYears
      */
     readonly recursive?: boolean
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof YearsApiGetYears
      */
     readonly enableImages?: boolean
 }
 
 /**
  * YearsApi - object-oriented interface
- * @export
- * @class YearsApi
- * @extends {BaseAPI}
  */
 export class YearsApi extends BaseAPI {
     /**
@@ -424,7 +380,6 @@ export class YearsApi extends BaseAPI {
      * @param {YearsApiGetYearRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof YearsApi
      */
     public getYear(requestParameters: YearsApiGetYearRequest, options?: RawAxiosRequestConfig) {
         return YearsApiFp(this.configuration).getYear(requestParameters.year, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -436,7 +391,6 @@ export class YearsApi extends BaseAPI {
      * @param {YearsApiGetYearsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof YearsApi
      */
     public getYears(requestParameters: YearsApiGetYearsRequest = {}, options?: RawAxiosRequestConfig) {
         return YearsApiFp(this.configuration).getYears(requestParameters.startIndex, requestParameters.limit, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.mediaTypes, requestParameters.sortBy, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.recursive, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));

@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin uninstalled message.
- * @export
- * @interface PluginUninstalledMessage
  */
 export interface PluginUninstalledMessage {
-    /**
-     * 
-     * @type {PluginInfo}
-     * @memberof PluginUninstalledMessage
-     */
     'Data'?: PluginInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PluginUninstalledMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PluginUninstalledMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

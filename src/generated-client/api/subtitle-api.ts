@@ -30,7 +30,6 @@ import type { RemoteSubtitleInfo } from '../models';
 import type { UploadSubtitleDto } from '../models';
 /**
  * SubtitleApi - axios parameter creator
- * @export
  */
 export const SubtitleApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -545,7 +544,6 @@ export const SubtitleApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * SubtitleApi - functional programming interface
- * @export
  */
 export const SubtitleApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SubtitleApiAxiosParamCreator(configuration)
@@ -715,7 +713,6 @@ export const SubtitleApiFp = function(configuration?: Configuration) {
 
 /**
  * SubtitleApi - factory interface
- * @export
  */
 export const SubtitleApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SubtitleApiFp(configuration)
@@ -824,352 +821,251 @@ export const SubtitleApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * Request parameters for deleteSubtitle operation in SubtitleApi.
- * @export
- * @interface SubtitleApiDeleteSubtitleRequest
  */
 export interface SubtitleApiDeleteSubtitleRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiDeleteSubtitle
      */
     readonly itemId: string
 
     /**
      * The index of the subtitle file.
-     * @type {number}
-     * @memberof SubtitleApiDeleteSubtitle
      */
     readonly index: number
 }
 
 /**
  * Request parameters for downloadRemoteSubtitles operation in SubtitleApi.
- * @export
- * @interface SubtitleApiDownloadRemoteSubtitlesRequest
  */
 export interface SubtitleApiDownloadRemoteSubtitlesRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiDownloadRemoteSubtitles
      */
     readonly itemId: string
 
     /**
      * The subtitle id.
-     * @type {string}
-     * @memberof SubtitleApiDownloadRemoteSubtitles
      */
     readonly subtitleId: string
 }
 
 /**
  * Request parameters for getFallbackFont operation in SubtitleApi.
- * @export
- * @interface SubtitleApiGetFallbackFontRequest
  */
 export interface SubtitleApiGetFallbackFontRequest {
     /**
      * The name of the fallback font file to get.
-     * @type {string}
-     * @memberof SubtitleApiGetFallbackFont
      */
     readonly name: string
 }
 
 /**
  * Request parameters for getRemoteSubtitles operation in SubtitleApi.
- * @export
- * @interface SubtitleApiGetRemoteSubtitlesRequest
  */
 export interface SubtitleApiGetRemoteSubtitlesRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiGetRemoteSubtitles
      */
     readonly subtitleId: string
 }
 
 /**
  * Request parameters for getSubtitle operation in SubtitleApi.
- * @export
- * @interface SubtitleApiGetSubtitleRequest
  */
 export interface SubtitleApiGetSubtitleRequest {
     /**
      * The (route) item id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly routeItemId: string
 
     /**
      * The (route) media source id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly routeMediaSourceId: string
 
     /**
      * The (route) subtitle stream index.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly routeIndex: number
 
     /**
      * The (route) format of the returned subtitle.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly routeFormat: string
 
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly itemId?: string
 
     /**
      * The media source id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly mediaSourceId?: string
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly index?: number
 
     /**
      * The format of the returned subtitle.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly format?: string
 
     /**
      * Optional. The end position of the subtitle in ticks.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly endPositionTicks?: number
 
     /**
      * Optional. Whether to copy the timestamps.
-     * @type {boolean}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Whether to add a VTT time map.
-     * @type {boolean}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly addVttTimeMap?: boolean
 
     /**
      * The start position of the subtitle in ticks.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitle
      */
     readonly startPositionTicks?: number
 }
 
 /**
  * Request parameters for getSubtitlePlaylist operation in SubtitleApi.
- * @export
- * @interface SubtitleApiGetSubtitlePlaylistRequest
  */
 export interface SubtitleApiGetSubtitlePlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitlePlaylist
      */
     readonly itemId: string
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitlePlaylist
      */
     readonly index: number
 
     /**
      * The media source id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitlePlaylist
      */
     readonly mediaSourceId: string
 
     /**
      * The subtitle segment length.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitlePlaylist
      */
     readonly segmentLength: number
 }
 
 /**
  * Request parameters for getSubtitleWithTicks operation in SubtitleApi.
- * @export
- * @interface SubtitleApiGetSubtitleWithTicksRequest
  */
 export interface SubtitleApiGetSubtitleWithTicksRequest {
     /**
      * The (route) item id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly routeItemId: string
 
     /**
      * The (route) media source id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly routeMediaSourceId: string
 
     /**
      * The (route) subtitle stream index.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly routeIndex: number
 
     /**
      * The (route) start position of the subtitle in ticks.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly routeStartPositionTicks: number
 
     /**
      * The (route) format of the returned subtitle.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly routeFormat: string
 
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly itemId?: string
 
     /**
      * The media source id.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly mediaSourceId?: string
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly index?: number
 
     /**
      * The start position of the subtitle in ticks.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly startPositionTicks?: number
 
     /**
      * The format of the returned subtitle.
-     * @type {string}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly format?: string
 
     /**
      * Optional. The end position of the subtitle in ticks.
-     * @type {number}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly endPositionTicks?: number
 
     /**
      * Optional. Whether to copy the timestamps.
-     * @type {boolean}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Whether to add a VTT time map.
-     * @type {boolean}
-     * @memberof SubtitleApiGetSubtitleWithTicks
      */
     readonly addVttTimeMap?: boolean
 }
 
 /**
  * Request parameters for searchRemoteSubtitles operation in SubtitleApi.
- * @export
- * @interface SubtitleApiSearchRemoteSubtitlesRequest
  */
 export interface SubtitleApiSearchRemoteSubtitlesRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SubtitleApiSearchRemoteSubtitles
      */
     readonly itemId: string
 
     /**
      * The language of the subtitles.
-     * @type {string}
-     * @memberof SubtitleApiSearchRemoteSubtitles
      */
     readonly language: string
 
     /**
      * Optional. Only show subtitles which are a perfect match.
-     * @type {boolean}
-     * @memberof SubtitleApiSearchRemoteSubtitles
      */
     readonly isPerfectMatch?: boolean
 }
 
 /**
  * Request parameters for uploadSubtitle operation in SubtitleApi.
- * @export
- * @interface SubtitleApiUploadSubtitleRequest
  */
 export interface SubtitleApiUploadSubtitleRequest {
     /**
      * The item the subtitle belongs to.
-     * @type {string}
-     * @memberof SubtitleApiUploadSubtitle
      */
     readonly itemId: string
 
     /**
      * The request body.
-     * @type {UploadSubtitleDto}
-     * @memberof SubtitleApiUploadSubtitle
      */
     readonly uploadSubtitleDto: UploadSubtitleDto
 }
 
 /**
  * SubtitleApi - object-oriented interface
- * @export
- * @class SubtitleApi
- * @extends {BaseAPI}
  */
 export class SubtitleApi extends BaseAPI {
     /**
@@ -1178,7 +1074,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiDeleteSubtitleRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public deleteSubtitle(requestParameters: SubtitleApiDeleteSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).deleteSubtitle(requestParameters.itemId, requestParameters.index, options).then((request) => request(this.axios, this.basePath));
@@ -1190,7 +1085,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiDownloadRemoteSubtitlesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public downloadRemoteSubtitles(requestParameters: SubtitleApiDownloadRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).downloadRemoteSubtitles(requestParameters.itemId, requestParameters.subtitleId, options).then((request) => request(this.axios, this.basePath));
@@ -1202,7 +1096,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiGetFallbackFontRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getFallbackFont(requestParameters: SubtitleApiGetFallbackFontRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getFallbackFont(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
@@ -1213,7 +1106,6 @@ export class SubtitleApi extends BaseAPI {
      * @summary Gets a list of available fallback font files.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getFallbackFontList(options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getFallbackFontList(options).then((request) => request(this.axios, this.basePath));
@@ -1225,7 +1117,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiGetRemoteSubtitlesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getRemoteSubtitles(requestParameters: SubtitleApiGetRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getRemoteSubtitles(requestParameters.subtitleId, options).then((request) => request(this.axios, this.basePath));
@@ -1237,7 +1128,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiGetSubtitleRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getSubtitle(requestParameters: SubtitleApiGetSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitle(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, requestParameters.startPositionTicks, options).then((request) => request(this.axios, this.basePath));
@@ -1249,7 +1139,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiGetSubtitlePlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getSubtitlePlaylist(requestParameters: SubtitleApiGetSubtitlePlaylistRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitlePlaylist(requestParameters.itemId, requestParameters.index, requestParameters.mediaSourceId, requestParameters.segmentLength, options).then((request) => request(this.axios, this.basePath));
@@ -1261,7 +1150,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiGetSubtitleWithTicksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public getSubtitleWithTicks(requestParameters: SubtitleApiGetSubtitleWithTicksRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).getSubtitleWithTicks(requestParameters.routeItemId, requestParameters.routeMediaSourceId, requestParameters.routeIndex, requestParameters.routeStartPositionTicks, requestParameters.routeFormat, requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.index, requestParameters.startPositionTicks, requestParameters.format, requestParameters.endPositionTicks, requestParameters.copyTimestamps, requestParameters.addVttTimeMap, options).then((request) => request(this.axios, this.basePath));
@@ -1273,7 +1161,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiSearchRemoteSubtitlesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public searchRemoteSubtitles(requestParameters: SubtitleApiSearchRemoteSubtitlesRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).searchRemoteSubtitles(requestParameters.itemId, requestParameters.language, requestParameters.isPerfectMatch, options).then((request) => request(this.axios, this.basePath));
@@ -1285,7 +1172,6 @@ export class SubtitleApi extends BaseAPI {
      * @param {SubtitleApiUploadSubtitleRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SubtitleApi
      */
     public uploadSubtitle(requestParameters: SubtitleApiUploadSubtitleRequest, options?: RawAxiosRequestConfig) {
         return SubtitleApiFp(this.configuration).uploadSubtitle(requestParameters.itemId, requestParameters.uploadSubtitleDto, options).then((request) => request(this.axios, this.basePath));

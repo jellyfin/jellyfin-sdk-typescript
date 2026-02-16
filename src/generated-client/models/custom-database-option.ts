@@ -15,20 +15,14 @@
 
 /**
  * The custom value option for custom database providers.
- * @export
- * @interface CustomDatabaseOption
  */
 export interface CustomDatabaseOption {
     /**
      * Gets or sets the key of the value.
-     * @type {string}
-     * @memberof CustomDatabaseOption
      */
     'Key'?: string;
     /**
      * Gets or sets the value.
-     * @type {string}
-     * @memberof CustomDatabaseOption
      */
     'Value'?: string;
 }

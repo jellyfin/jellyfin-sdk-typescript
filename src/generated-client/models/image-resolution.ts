@@ -15,8 +15,6 @@
 
 /**
  * Enum ImageResolution.
- * @export
- * @enum {string}
  */
 
 export const ImageResolution = {

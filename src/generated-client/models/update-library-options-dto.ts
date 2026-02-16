@@ -18,21 +18,12 @@ import type { LibraryOptions } from './library-options';
 
 /**
  * Update library options dto.
- * @export
- * @interface UpdateLibraryOptionsDto
  */
 export interface UpdateLibraryOptionsDto {
     /**
      * Gets or sets the library item id.
-     * @type {string}
-     * @memberof UpdateLibraryOptionsDto
      */
     'Id'?: string;
-    /**
-     * 
-     * @type {LibraryOptions}
-     * @memberof UpdateLibraryOptionsDto
-     */
     'LibraryOptions'?: LibraryOptions;
 }
 

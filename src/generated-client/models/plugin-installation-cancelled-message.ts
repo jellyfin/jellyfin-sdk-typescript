@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin installation cancelled message.
- * @export
- * @interface PluginInstallationCancelledMessage
  */
 export interface PluginInstallationCancelledMessage {
-    /**
-     * 
-     * @type {InstallationInfo}
-     * @memberof PluginInstallationCancelledMessage
-     */
     'Data'?: InstallationInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PluginInstallationCancelledMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PluginInstallationCancelledMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

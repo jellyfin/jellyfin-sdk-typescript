@@ -15,8 +15,6 @@
 
 /**
  * Enum containing hardware acceleration types.
- * @export
- * @enum {string}
  */
 
 export const HardwareAccelerationType = {

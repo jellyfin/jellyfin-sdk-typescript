@@ -15,8 +15,6 @@
 
 /**
  * Enum IsoType.
- * @export
- * @enum {string}
  */
 
 export const IsoType = {

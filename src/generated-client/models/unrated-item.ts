@@ -15,8 +15,6 @@
 
 /**
  * An enum representing an unrated item.
- * @export
- * @enum {string}
  */
 
 export const UnratedItem = {

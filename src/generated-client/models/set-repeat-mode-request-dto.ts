@@ -18,15 +18,8 @@ import type { GroupRepeatMode } from './group-repeat-mode';
 
 /**
  * Class SetRepeatModeRequestDto.
- * @export
- * @interface SetRepeatModeRequestDto
  */
 export interface SetRepeatModeRequestDto {
-    /**
-     * 
-     * @type {GroupRepeatMode}
-     * @memberof SetRepeatModeRequestDto
-     */
     'Mode'?: GroupRepeatMode;
 }
 

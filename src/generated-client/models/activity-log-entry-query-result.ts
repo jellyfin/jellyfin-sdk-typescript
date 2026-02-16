@@ -18,26 +18,18 @@ import type { ActivityLogEntry } from './activity-log-entry';
 
 /**
  * Query result container.
- * @export
- * @interface ActivityLogEntryQueryResult
  */
 export interface ActivityLogEntryQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<ActivityLogEntry>}
-     * @memberof ActivityLogEntryQueryResult
      */
     'Items'?: Array<ActivityLogEntry>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof ActivityLogEntryQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof ActivityLogEntryQueryResult
      */
     'StartIndex'?: number;
 }

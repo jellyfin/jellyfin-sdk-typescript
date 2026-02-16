@@ -15,20 +15,14 @@
 
 /**
  * Startup remote access dto.
- * @export
- * @interface StartupRemoteAccessDto
  */
 export interface StartupRemoteAccessDto {
     /**
      * Gets or sets a value indicating whether enable remote access.
-     * @type {boolean}
-     * @memberof StartupRemoteAccessDto
      */
     'EnableRemoteAccess': boolean;
     /**
      * Gets or sets a value indicating whether enable automatic port mapping.
-     * @type {boolean}
-     * @memberof StartupRemoteAccessDto
      * @deprecated
      */
     'EnableAutomaticPortMapping': boolean;

@@ -13,35 +13,10 @@
 
 
 
-/**
- * 
- * @export
- * @interface TunerChannelMapping
- */
 export interface TunerChannelMapping {
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerChannelMapping
-     */
     'Name'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerChannelMapping
-     */
     'ProviderChannelName'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerChannelMapping
-     */
     'ProviderChannelId'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TunerChannelMapping
-     */
     'Id'?: string | null;
 }
 

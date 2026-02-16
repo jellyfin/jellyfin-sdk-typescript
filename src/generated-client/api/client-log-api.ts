@@ -26,7 +26,6 @@ import type { ClientLogDocumentResponseDto } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * ClientLogApi - axios parameter creator
- * @export
  */
 export const ClientLogApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -72,7 +71,6 @@ export const ClientLogApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * ClientLogApi - functional programming interface
- * @export
  */
 export const ClientLogApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ClientLogApiAxiosParamCreator(configuration)
@@ -95,7 +93,6 @@ export const ClientLogApiFp = function(configuration?: Configuration) {
 
 /**
  * ClientLogApi - factory interface
- * @export
  */
 export const ClientLogApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ClientLogApiFp(configuration)
@@ -115,23 +112,13 @@ export const ClientLogApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for logFile operation in ClientLogApi.
- * @export
- * @interface ClientLogApiLogFileRequest
  */
 export interface ClientLogApiLogFileRequest {
-    /**
-     * 
-     * @type {File}
-     * @memberof ClientLogApiLogFile
-     */
     readonly body?: File
 }
 
 /**
  * ClientLogApi - object-oriented interface
- * @export
- * @class ClientLogApi
- * @extends {BaseAPI}
  */
 export class ClientLogApi extends BaseAPI {
     /**
@@ -140,7 +127,6 @@ export class ClientLogApi extends BaseAPI {
      * @param {ClientLogApiLogFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ClientLogApi
      */
     public logFile(requestParameters: ClientLogApiLogFileRequest = {}, options?: RawAxiosRequestConfig) {
         return ClientLogApiFp(this.configuration).logFile(requestParameters.body, options).then((request) => request(this.axios, this.basePath));

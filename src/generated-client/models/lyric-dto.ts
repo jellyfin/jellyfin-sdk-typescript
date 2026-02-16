@@ -21,20 +21,11 @@ import type { LyricMetadata } from './lyric-metadata';
 
 /**
  * LyricResponse model.
- * @export
- * @interface LyricDto
  */
 export interface LyricDto {
-    /**
-     * 
-     * @type {LyricMetadata}
-     * @memberof LyricDto
-     */
     'Metadata'?: LyricMetadata;
     /**
      * Gets or sets a collection of individual lyric lines.
-     * @type {Array<LyricLine>}
-     * @memberof LyricDto
      */
     'Lyrics'?: Array<LyricLine>;
 }

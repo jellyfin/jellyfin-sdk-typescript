@@ -24,7 +24,6 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 import type { UtcTimeResponse } from '../models';
 /**
  * TimeSyncApi - axios parameter creator
- * @export
  */
 export const TimeSyncApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -63,7 +62,6 @@ export const TimeSyncApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * TimeSyncApi - functional programming interface
- * @export
  */
 export const TimeSyncApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TimeSyncApiAxiosParamCreator(configuration)
@@ -85,7 +83,6 @@ export const TimeSyncApiFp = function(configuration?: Configuration) {
 
 /**
  * TimeSyncApi - factory interface
- * @export
  */
 export const TimeSyncApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TimeSyncApiFp(configuration)
@@ -104,9 +101,6 @@ export const TimeSyncApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * TimeSyncApi - object-oriented interface
- * @export
- * @class TimeSyncApi
- * @extends {BaseAPI}
  */
 export class TimeSyncApi extends BaseAPI {
     /**
@@ -114,7 +108,6 @@ export class TimeSyncApi extends BaseAPI {
      * @summary Gets the current UTC time.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TimeSyncApi
      */
     public getUtcTime(options?: RawAxiosRequestConfig) {
         return TimeSyncApiFp(this.configuration).getUtcTime(options).then((request) => request(this.axios, this.basePath));

@@ -28,7 +28,6 @@ import type { MetadataOptions } from '../models';
 import type { ServerConfiguration } from '../models';
 /**
  * ConfigurationApi - axios parameter creator
- * @export
  */
 export const ConfigurationApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -261,7 +260,6 @@ export const ConfigurationApiAxiosParamCreator = function (configuration?: Confi
 
 /**
  * ConfigurationApi - functional programming interface
- * @export
  */
 export const ConfigurationApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ConfigurationApiAxiosParamCreator(configuration)
@@ -348,7 +346,6 @@ export const ConfigurationApiFp = function(configuration?: Configuration) {
 
 /**
  * ConfigurationApi - factory interface
- * @export
  */
 export const ConfigurationApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ConfigurationApiFp(configuration)
@@ -416,72 +413,51 @@ export const ConfigurationApiFactory = function (configuration?: Configuration, 
 
 /**
  * Request parameters for getNamedConfiguration operation in ConfigurationApi.
- * @export
- * @interface ConfigurationApiGetNamedConfigurationRequest
  */
 export interface ConfigurationApiGetNamedConfigurationRequest {
     /**
      * Configuration key.
-     * @type {string}
-     * @memberof ConfigurationApiGetNamedConfiguration
      */
     readonly key: string
 }
 
 /**
  * Request parameters for updateBrandingConfiguration operation in ConfigurationApi.
- * @export
- * @interface ConfigurationApiUpdateBrandingConfigurationRequest
  */
 export interface ConfigurationApiUpdateBrandingConfigurationRequest {
     /**
      * Branding configuration.
-     * @type {BrandingOptionsDto}
-     * @memberof ConfigurationApiUpdateBrandingConfiguration
      */
     readonly brandingOptionsDto: BrandingOptionsDto
 }
 
 /**
  * Request parameters for updateConfiguration operation in ConfigurationApi.
- * @export
- * @interface ConfigurationApiUpdateConfigurationRequest
  */
 export interface ConfigurationApiUpdateConfigurationRequest {
     /**
      * Configuration.
-     * @type {ServerConfiguration}
-     * @memberof ConfigurationApiUpdateConfiguration
      */
     readonly serverConfiguration: ServerConfiguration
 }
 
 /**
  * Request parameters for updateNamedConfiguration operation in ConfigurationApi.
- * @export
- * @interface ConfigurationApiUpdateNamedConfigurationRequest
  */
 export interface ConfigurationApiUpdateNamedConfigurationRequest {
     /**
      * Configuration key.
-     * @type {string}
-     * @memberof ConfigurationApiUpdateNamedConfiguration
      */
     readonly key: string
 
     /**
      * Configuration.
-     * @type {any}
-     * @memberof ConfigurationApiUpdateNamedConfiguration
      */
     readonly body: any
 }
 
 /**
  * ConfigurationApi - object-oriented interface
- * @export
- * @class ConfigurationApi
- * @extends {BaseAPI}
  */
 export class ConfigurationApi extends BaseAPI {
     /**
@@ -489,7 +465,6 @@ export class ConfigurationApi extends BaseAPI {
      * @summary Gets application configuration.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public getConfiguration(options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getConfiguration(options).then((request) => request(this.axios, this.basePath));
@@ -500,7 +475,6 @@ export class ConfigurationApi extends BaseAPI {
      * @summary Gets a default MetadataOptions object.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public getDefaultMetadataOptions(options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getDefaultMetadataOptions(options).then((request) => request(this.axios, this.basePath));
@@ -512,7 +486,6 @@ export class ConfigurationApi extends BaseAPI {
      * @param {ConfigurationApiGetNamedConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public getNamedConfiguration(requestParameters: ConfigurationApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
@@ -524,7 +497,6 @@ export class ConfigurationApi extends BaseAPI {
      * @param {ConfigurationApiUpdateBrandingConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public updateBrandingConfiguration(requestParameters: ConfigurationApiUpdateBrandingConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateBrandingConfiguration(requestParameters.brandingOptionsDto, options).then((request) => request(this.axios, this.basePath));
@@ -536,7 +508,6 @@ export class ConfigurationApi extends BaseAPI {
      * @param {ConfigurationApiUpdateConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public updateConfiguration(requestParameters: ConfigurationApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
@@ -548,7 +519,6 @@ export class ConfigurationApi extends BaseAPI {
      * @param {ConfigurationApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ConfigurationApi
      */
     public updateNamedConfiguration(requestParameters: ConfigurationApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
         return ConfigurationApiFp(this.configuration).updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(this.axios, this.basePath));

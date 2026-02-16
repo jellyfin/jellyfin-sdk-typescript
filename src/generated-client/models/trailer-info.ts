@@ -13,77 +13,38 @@
 
 
 
-/**
- * 
- * @export
- * @interface TrailerInfo
- */
 export interface TrailerInfo {
     /**
      * Gets or sets the name.
-     * @type {string}
-     * @memberof TrailerInfo
      */
     'Name'?: string | null;
     /**
      * Gets or sets the original title.
-     * @type {string}
-     * @memberof TrailerInfo
      */
     'OriginalTitle'?: string | null;
     /**
      * Gets or sets the path.
-     * @type {string}
-     * @memberof TrailerInfo
      */
     'Path'?: string | null;
     /**
      * Gets or sets the metadata language.
-     * @type {string}
-     * @memberof TrailerInfo
      */
     'MetadataLanguage'?: string | null;
     /**
      * Gets or sets the metadata country code.
-     * @type {string}
-     * @memberof TrailerInfo
      */
     'MetadataCountryCode'?: string | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string | null; }}
-     * @memberof TrailerInfo
      */
     'ProviderIds'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the year.
-     * @type {number}
-     * @memberof TrailerInfo
      */
     'Year'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof TrailerInfo
-     */
     'IndexNumber'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof TrailerInfo
-     */
     'ParentIndexNumber'?: number | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof TrailerInfo
-     */
     'PremiereDate'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof TrailerInfo
-     */
     'IsAutomated'?: boolean;
 }
 

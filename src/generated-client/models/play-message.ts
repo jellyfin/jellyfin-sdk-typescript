@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Play command websocket message.
- * @export
- * @interface PlayMessage
  */
 export interface PlayMessage {
-    /**
-     * 
-     * @type {PlayRequest}
-     * @memberof PlayMessage
-     */
     'Data'?: PlayRequest;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PlayMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PlayMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

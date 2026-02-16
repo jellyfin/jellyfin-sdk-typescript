@@ -15,8 +15,6 @@
 
 /**
  * Enum MediaStreamType.
- * @export
- * @enum {string}
  */
 
 export const MediaStreamType = {

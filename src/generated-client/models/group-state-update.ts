@@ -21,21 +21,9 @@ import type { PlaybackRequestType } from './playback-request-type';
 
 /**
  * Class GroupStateUpdate.
- * @export
- * @interface GroupStateUpdate
  */
 export interface GroupStateUpdate {
-    /**
-     * 
-     * @type {GroupStateType}
-     * @memberof GroupStateUpdate
-     */
     'State'?: GroupStateType;
-    /**
-     * 
-     * @type {PlaybackRequestType}
-     * @memberof GroupStateUpdate
-     */
     'Reason'?: PlaybackRequestType;
 }
 

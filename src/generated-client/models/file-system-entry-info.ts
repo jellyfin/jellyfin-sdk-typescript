@@ -18,27 +18,16 @@ import type { FileSystemEntryType } from './file-system-entry-type';
 
 /**
  * Class FileSystemEntryInfo.
- * @export
- * @interface FileSystemEntryInfo
  */
 export interface FileSystemEntryInfo {
     /**
      * Gets the name.
-     * @type {string}
-     * @memberof FileSystemEntryInfo
      */
     'Name'?: string;
     /**
      * Gets the path.
-     * @type {string}
-     * @memberof FileSystemEntryInfo
      */
     'Path'?: string;
-    /**
-     * 
-     * @type {FileSystemEntryType}
-     * @memberof FileSystemEntryInfo
-     */
     'Type'?: FileSystemEntryType;
 }
 

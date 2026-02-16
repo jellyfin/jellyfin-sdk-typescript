@@ -15,8 +15,6 @@
 
 /**
  * Enum TrickplayScanBehavior.
- * @export
- * @enum {string}
  */
 
 export const TrickplayScanBehavior = {

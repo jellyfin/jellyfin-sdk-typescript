@@ -18,26 +18,18 @@ import type { AuthenticationInfo } from './authentication-info';
 
 /**
  * Query result container.
- * @export
- * @interface AuthenticationInfoQueryResult
  */
 export interface AuthenticationInfoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<AuthenticationInfo>}
-     * @memberof AuthenticationInfoQueryResult
      */
     'Items'?: Array<AuthenticationInfo>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof AuthenticationInfoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof AuthenticationInfoQueryResult
      */
     'StartIndex'?: number;
 }

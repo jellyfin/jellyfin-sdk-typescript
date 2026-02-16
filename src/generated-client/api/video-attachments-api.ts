@@ -24,7 +24,6 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 import type { ProblemDetails } from '../models';
 /**
  * VideoAttachmentsApi - axios parameter creator
- * @export
  */
 export const VideoAttachmentsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -75,7 +74,6 @@ export const VideoAttachmentsApiAxiosParamCreator = function (configuration?: Co
 
 /**
  * VideoAttachmentsApi - functional programming interface
- * @export
  */
 export const VideoAttachmentsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = VideoAttachmentsApiAxiosParamCreator(configuration)
@@ -100,7 +98,6 @@ export const VideoAttachmentsApiFp = function(configuration?: Configuration) {
 
 /**
  * VideoAttachmentsApi - factory interface
- * @export
  */
 export const VideoAttachmentsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = VideoAttachmentsApiFp(configuration)
@@ -120,37 +117,26 @@ export const VideoAttachmentsApiFactory = function (configuration?: Configuratio
 
 /**
  * Request parameters for getAttachment operation in VideoAttachmentsApi.
- * @export
- * @interface VideoAttachmentsApiGetAttachmentRequest
  */
 export interface VideoAttachmentsApiGetAttachmentRequest {
     /**
      * Video ID.
-     * @type {string}
-     * @memberof VideoAttachmentsApiGetAttachment
      */
     readonly videoId: string
 
     /**
      * Media Source ID.
-     * @type {string}
-     * @memberof VideoAttachmentsApiGetAttachment
      */
     readonly mediaSourceId: string
 
     /**
      * Attachment Index.
-     * @type {number}
-     * @memberof VideoAttachmentsApiGetAttachment
      */
     readonly index: number
 }
 
 /**
  * VideoAttachmentsApi - object-oriented interface
- * @export
- * @class VideoAttachmentsApi
- * @extends {BaseAPI}
  */
 export class VideoAttachmentsApi extends BaseAPI {
     /**
@@ -159,7 +145,6 @@ export class VideoAttachmentsApi extends BaseAPI {
      * @param {VideoAttachmentsApiGetAttachmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof VideoAttachmentsApi
      */
     public getAttachment(requestParameters: VideoAttachmentsApiGetAttachmentRequest, options?: RawAxiosRequestConfig) {
         return VideoAttachmentsApiFp(this.configuration).getAttachment(requestParameters.videoId, requestParameters.mediaSourceId, requestParameters.index, options).then((request) => request(this.axios, this.basePath));

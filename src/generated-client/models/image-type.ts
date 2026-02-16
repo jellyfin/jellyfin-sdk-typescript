@@ -15,8 +15,6 @@
 
 /**
  * Enum ImageType.
- * @export
- * @enum {string}
  */
 
 export const ImageType = {

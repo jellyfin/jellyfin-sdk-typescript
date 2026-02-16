@@ -15,14 +15,10 @@
 
 /**
  * Update existing playlist user dto. Fields set to `null` will not be updated and keep their current values.
- * @export
- * @interface UpdatePlaylistUserDto
  */
 export interface UpdatePlaylistUserDto {
     /**
      * Gets or sets a value indicating whether the user can edit the playlist.
-     * @type {boolean}
-     * @memberof UpdatePlaylistUserDto
      */
     'CanEdit'?: boolean | null;
 }

@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Playstate message.
- * @export
- * @interface PlaystateMessage
  */
 export interface PlaystateMessage {
-    /**
-     * 
-     * @type {PlaystateRequest}
-     * @memberof PlaystateMessage
-     */
     'Data'?: PlaystateRequest;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PlaystateMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PlaystateMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

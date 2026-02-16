@@ -18,15 +18,8 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Scheduled tasks info stop message.
- * @export
- * @interface ScheduledTasksInfoStopMessage
  */
 export interface ScheduledTasksInfoStopMessage {
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ScheduledTasksInfoStopMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

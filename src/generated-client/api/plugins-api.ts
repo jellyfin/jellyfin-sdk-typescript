@@ -26,7 +26,6 @@ import type { PluginInfo } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * PluginsApi - axios parameter creator
- * @export
  */
 export const PluginsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -381,7 +380,6 @@ export const PluginsApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * PluginsApi - functional programming interface
- * @export
  */
 export const PluginsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PluginsApiAxiosParamCreator(configuration)
@@ -512,7 +510,6 @@ export const PluginsApiFp = function(configuration?: Configuration) {
 
 /**
  * PluginsApi - factory interface
- * @export
  */
 export const PluginsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PluginsApiFp(configuration)
@@ -612,149 +609,106 @@ export const PluginsApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for disablePlugin operation in PluginsApi.
- * @export
- * @interface PluginsApiDisablePluginRequest
  */
 export interface PluginsApiDisablePluginRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiDisablePlugin
      */
     readonly pluginId: string
 
     /**
      * Plugin version.
-     * @type {string}
-     * @memberof PluginsApiDisablePlugin
      */
     readonly version: string
 }
 
 /**
  * Request parameters for enablePlugin operation in PluginsApi.
- * @export
- * @interface PluginsApiEnablePluginRequest
  */
 export interface PluginsApiEnablePluginRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiEnablePlugin
      */
     readonly pluginId: string
 
     /**
      * Plugin version.
-     * @type {string}
-     * @memberof PluginsApiEnablePlugin
      */
     readonly version: string
 }
 
 /**
  * Request parameters for getPluginConfiguration operation in PluginsApi.
- * @export
- * @interface PluginsApiGetPluginConfigurationRequest
  */
 export interface PluginsApiGetPluginConfigurationRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiGetPluginConfiguration
      */
     readonly pluginId: string
 }
 
 /**
  * Request parameters for getPluginImage operation in PluginsApi.
- * @export
- * @interface PluginsApiGetPluginImageRequest
  */
 export interface PluginsApiGetPluginImageRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiGetPluginImage
      */
     readonly pluginId: string
 
     /**
      * Plugin version.
-     * @type {string}
-     * @memberof PluginsApiGetPluginImage
      */
     readonly version: string
 }
 
 /**
  * Request parameters for getPluginManifest operation in PluginsApi.
- * @export
- * @interface PluginsApiGetPluginManifestRequest
  */
 export interface PluginsApiGetPluginManifestRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiGetPluginManifest
      */
     readonly pluginId: string
 }
 
 /**
  * Request parameters for uninstallPlugin operation in PluginsApi.
- * @export
- * @interface PluginsApiUninstallPluginRequest
  */
 export interface PluginsApiUninstallPluginRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiUninstallPlugin
      */
     readonly pluginId: string
 }
 
 /**
  * Request parameters for uninstallPluginByVersion operation in PluginsApi.
- * @export
- * @interface PluginsApiUninstallPluginByVersionRequest
  */
 export interface PluginsApiUninstallPluginByVersionRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiUninstallPluginByVersion
      */
     readonly pluginId: string
 
     /**
      * Plugin version.
-     * @type {string}
-     * @memberof PluginsApiUninstallPluginByVersion
      */
     readonly version: string
 }
 
 /**
  * Request parameters for updatePluginConfiguration operation in PluginsApi.
- * @export
- * @interface PluginsApiUpdatePluginConfigurationRequest
  */
 export interface PluginsApiUpdatePluginConfigurationRequest {
     /**
      * Plugin id.
-     * @type {string}
-     * @memberof PluginsApiUpdatePluginConfiguration
      */
     readonly pluginId: string
 }
 
 /**
  * PluginsApi - object-oriented interface
- * @export
- * @class PluginsApi
- * @extends {BaseAPI}
  */
 export class PluginsApi extends BaseAPI {
     /**
@@ -763,7 +717,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiDisablePluginRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public disablePlugin(requestParameters: PluginsApiDisablePluginRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).disablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
@@ -775,7 +728,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiEnablePluginRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public enablePlugin(requestParameters: PluginsApiEnablePluginRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).enablePlugin(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
@@ -787,7 +739,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiGetPluginConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public getPluginConfiguration(requestParameters: PluginsApiGetPluginConfigurationRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginConfiguration(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
@@ -799,7 +750,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiGetPluginImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public getPluginImage(requestParameters: PluginsApiGetPluginImageRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginImage(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
@@ -811,7 +761,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiGetPluginManifestRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public getPluginManifest(requestParameters: PluginsApiGetPluginManifestRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPluginManifest(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
@@ -822,7 +771,6 @@ export class PluginsApi extends BaseAPI {
      * @summary Gets a list of currently installed plugins.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public getPlugins(options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).getPlugins(options).then((request) => request(this.axios, this.basePath));
@@ -835,7 +783,6 @@ export class PluginsApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public uninstallPlugin(requestParameters: PluginsApiUninstallPluginRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).uninstallPlugin(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));
@@ -847,7 +794,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiUninstallPluginByVersionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public uninstallPluginByVersion(requestParameters: PluginsApiUninstallPluginByVersionRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).uninstallPluginByVersion(requestParameters.pluginId, requestParameters.version, options).then((request) => request(this.axios, this.basePath));
@@ -859,7 +805,6 @@ export class PluginsApi extends BaseAPI {
      * @param {PluginsApiUpdatePluginConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PluginsApi
      */
     public updatePluginConfiguration(requestParameters: PluginsApiUpdatePluginConfigurationRequest, options?: RawAxiosRequestConfig) {
         return PluginsApiFp(this.configuration).updatePluginConfiguration(requestParameters.pluginId, options).then((request) => request(this.axios, this.basePath));

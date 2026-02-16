@@ -16,47 +16,12 @@
 // @ts-ignore
 import type { ImageOption } from './image-option';
 
-/**
- * 
- * @export
- * @interface TypeOptions
- */
 export interface TypeOptions {
-    /**
-     * 
-     * @type {string}
-     * @memberof TypeOptions
-     */
     'Type'?: string | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof TypeOptions
-     */
     'MetadataFetchers'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof TypeOptions
-     */
     'MetadataFetcherOrder'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof TypeOptions
-     */
     'ImageFetchers'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof TypeOptions
-     */
     'ImageFetcherOrder'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<ImageOption>}
-     * @memberof TypeOptions
-     */
     'ImageOptions'?: Array<ImageOption> | null;
 }
 

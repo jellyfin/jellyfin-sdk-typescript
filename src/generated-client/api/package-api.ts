@@ -28,7 +28,6 @@ import type { ProblemDetails } from '../models';
 import type { RepositoryInfo } from '../models';
 /**
  * PackageApi - axios parameter creator
- * @export
  */
 export const PackageApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -273,7 +272,6 @@ export const PackageApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * PackageApi - functional programming interface
- * @export
  */
 export const PackageApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PackageApiAxiosParamCreator(configuration)
@@ -363,7 +361,6 @@ export const PackageApiFp = function(configuration?: Configuration) {
 
 /**
  * PackageApi - factory interface
- * @export
  */
 export const PackageApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PackageApiFp(configuration)
@@ -431,93 +428,66 @@ export const PackageApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for cancelPackageInstallation operation in PackageApi.
- * @export
- * @interface PackageApiCancelPackageInstallationRequest
  */
 export interface PackageApiCancelPackageInstallationRequest {
     /**
      * Installation Id.
-     * @type {string}
-     * @memberof PackageApiCancelPackageInstallation
      */
     readonly packageId: string
 }
 
 /**
  * Request parameters for getPackageInfo operation in PackageApi.
- * @export
- * @interface PackageApiGetPackageInfoRequest
  */
 export interface PackageApiGetPackageInfoRequest {
     /**
      * The name of the package.
-     * @type {string}
-     * @memberof PackageApiGetPackageInfo
      */
     readonly name: string
 
     /**
      * The GUID of the associated assembly.
-     * @type {string}
-     * @memberof PackageApiGetPackageInfo
      */
     readonly assemblyGuid?: string
 }
 
 /**
  * Request parameters for installPackage operation in PackageApi.
- * @export
- * @interface PackageApiInstallPackageRequest
  */
 export interface PackageApiInstallPackageRequest {
     /**
      * Package name.
-     * @type {string}
-     * @memberof PackageApiInstallPackage
      */
     readonly name: string
 
     /**
      * GUID of the associated assembly.
-     * @type {string}
-     * @memberof PackageApiInstallPackage
      */
     readonly assemblyGuid?: string
 
     /**
      * Optional version. Defaults to latest version.
-     * @type {string}
-     * @memberof PackageApiInstallPackage
      */
     readonly version?: string
 
     /**
      * Optional. Specify the repository to install from.
-     * @type {string}
-     * @memberof PackageApiInstallPackage
      */
     readonly repositoryUrl?: string
 }
 
 /**
  * Request parameters for setRepositories operation in PackageApi.
- * @export
- * @interface PackageApiSetRepositoriesRequest
  */
 export interface PackageApiSetRepositoriesRequest {
     /**
      * The list of package repositories.
-     * @type {Array<RepositoryInfo>}
-     * @memberof PackageApiSetRepositories
      */
     readonly repositoryInfo: Array<RepositoryInfo>
 }
 
 /**
  * PackageApi - object-oriented interface
- * @export
- * @class PackageApi
- * @extends {BaseAPI}
  */
 export class PackageApi extends BaseAPI {
     /**
@@ -526,7 +496,6 @@ export class PackageApi extends BaseAPI {
      * @param {PackageApiCancelPackageInstallationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public cancelPackageInstallation(requestParameters: PackageApiCancelPackageInstallationRequest, options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).cancelPackageInstallation(requestParameters.packageId, options).then((request) => request(this.axios, this.basePath));
@@ -538,7 +507,6 @@ export class PackageApi extends BaseAPI {
      * @param {PackageApiGetPackageInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public getPackageInfo(requestParameters: PackageApiGetPackageInfoRequest, options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).getPackageInfo(requestParameters.name, requestParameters.assemblyGuid, options).then((request) => request(this.axios, this.basePath));
@@ -549,7 +517,6 @@ export class PackageApi extends BaseAPI {
      * @summary Gets available packages.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public getPackages(options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).getPackages(options).then((request) => request(this.axios, this.basePath));
@@ -560,7 +527,6 @@ export class PackageApi extends BaseAPI {
      * @summary Gets all package repositories.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public getRepositories(options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).getRepositories(options).then((request) => request(this.axios, this.basePath));
@@ -572,7 +538,6 @@ export class PackageApi extends BaseAPI {
      * @param {PackageApiInstallPackageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public installPackage(requestParameters: PackageApiInstallPackageRequest, options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).installPackage(requestParameters.name, requestParameters.assemblyGuid, requestParameters.version, requestParameters.repositoryUrl, options).then((request) => request(this.axios, this.basePath));
@@ -584,7 +549,6 @@ export class PackageApi extends BaseAPI {
      * @param {PackageApiSetRepositoriesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PackageApi
      */
     public setRepositories(requestParameters: PackageApiSetRepositoriesRequest, options?: RawAxiosRequestConfig) {
         return PackageApiFp(this.configuration).setRepositories(requestParameters.repositoryInfo, options).then((request) => request(this.axios, this.basePath));

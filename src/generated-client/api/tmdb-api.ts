@@ -24,7 +24,6 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 import type { ConfigImageTypes } from '../models';
 /**
  * TmdbApi - axios parameter creator
- * @export
  */
 export const TmdbApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -66,7 +65,6 @@ export const TmdbApiAxiosParamCreator = function (configuration?: Configuration)
 
 /**
  * TmdbApi - functional programming interface
- * @export
  */
 export const TmdbApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TmdbApiAxiosParamCreator(configuration)
@@ -88,7 +86,6 @@ export const TmdbApiFp = function(configuration?: Configuration) {
 
 /**
  * TmdbApi - factory interface
- * @export
  */
 export const TmdbApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TmdbApiFp(configuration)
@@ -107,9 +104,6 @@ export const TmdbApiFactory = function (configuration?: Configuration, basePath?
 
 /**
  * TmdbApi - object-oriented interface
- * @export
- * @class TmdbApi
- * @extends {BaseAPI}
  */
 export class TmdbApi extends BaseAPI {
     /**
@@ -117,7 +111,6 @@ export class TmdbApi extends BaseAPI {
      * @summary Gets the TMDb image configuration options.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TmdbApi
      */
     public tmdbClientConfiguration(options?: RawAxiosRequestConfig) {
         return TmdbApiFp(this.configuration).tmdbClientConfiguration(options).then((request) => request(this.axios, this.basePath));

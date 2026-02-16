@@ -15,20 +15,14 @@
 
 /**
  * Class QueueItem.
- * @export
- * @interface SyncPlayQueueItem
  */
 export interface SyncPlayQueueItem {
     /**
      * Gets the item identifier.
-     * @type {string}
-     * @memberof SyncPlayQueueItem
      */
     'ItemId'?: string;
     /**
      * Gets the playlist identifier of the item.
-     * @type {string}
-     * @memberof SyncPlayQueueItem
      */
     'PlaylistItemId'?: string;
 }
