@@ -38,7 +38,7 @@
     "eslint": "9.39.2",
     "eslint-import-resolver-typescript": "4.4.4",
     "eslint-plugin-import": "2.32.0",
-    "glob": "13.0.0",
+    "glob": "13.0.3",
     "globals": "16.5.0",
     "rimraf": "5.0.10",
     "rollup": "4.57.1",
