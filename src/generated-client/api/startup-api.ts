@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { StartupRemoteAccessDto } from '../models';
 import type { StartupUserDto } from '../models';
 /**
  * StartupApi - axios parameter creator
- * @export
  */
 export const StartupApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -54,8 +53,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -87,8 +86,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -120,8 +119,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -153,8 +152,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -189,9 +188,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -228,9 +226,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -265,9 +262,8 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -284,7 +280,6 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * StartupApi - functional programming interface
- * @export
  */
 export const StartupApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = StartupApiAxiosParamCreator(configuration)
@@ -381,7 +376,6 @@ export const StartupApiFp = function(configuration?: Configuration) {
 
 /**
  * StartupApi - factory interface
- * @export
  */
 export const StartupApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = StartupApiFp(configuration)
@@ -457,51 +451,36 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for setRemoteAccess operation in StartupApi.
- * @export
- * @interface StartupApiSetRemoteAccessRequest
  */
 export interface StartupApiSetRemoteAccessRequest {
     /**
      * The startup remote access dto.
-     * @type {StartupRemoteAccessDto}
-     * @memberof StartupApiSetRemoteAccess
      */
     readonly startupRemoteAccessDto: StartupRemoteAccessDto
 }
 
 /**
  * Request parameters for updateInitialConfiguration operation in StartupApi.
- * @export
- * @interface StartupApiUpdateInitialConfigurationRequest
  */
 export interface StartupApiUpdateInitialConfigurationRequest {
     /**
      * The updated startup configuration.
-     * @type {StartupConfigurationDto}
-     * @memberof StartupApiUpdateInitialConfiguration
      */
     readonly startupConfigurationDto: StartupConfigurationDto
 }
 
 /**
  * Request parameters for updateStartupUser operation in StartupApi.
- * @export
- * @interface StartupApiUpdateStartupUserRequest
  */
 export interface StartupApiUpdateStartupUserRequest {
     /**
      * The DTO containing username and password.
-     * @type {StartupUserDto}
-     * @memberof StartupApiUpdateStartupUser
      */
     readonly startupUserDto?: StartupUserDto
 }
 
 /**
  * StartupApi - object-oriented interface
- * @export
- * @class StartupApi
- * @extends {BaseAPI}
  */
 export class StartupApi extends BaseAPI {
     /**
@@ -509,7 +488,6 @@ export class StartupApi extends BaseAPI {
      * @summary Completes the startup wizard.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public completeWizard(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).completeWizard(options).then((request) => request(this.axios, this.basePath));
@@ -520,7 +498,6 @@ export class StartupApi extends BaseAPI {
      * @summary Gets the first user.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public getFirstUser(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getFirstUser(options).then((request) => request(this.axios, this.basePath));
@@ -531,7 +508,6 @@ export class StartupApi extends BaseAPI {
      * @summary Gets the first user.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public getFirstUser2(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getFirstUser2(options).then((request) => request(this.axios, this.basePath));
@@ -542,7 +518,6 @@ export class StartupApi extends BaseAPI {
      * @summary Gets the initial startup wizard configuration.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public getStartupConfiguration(options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).getStartupConfiguration(options).then((request) => request(this.axios, this.basePath));
@@ -554,7 +529,6 @@ export class StartupApi extends BaseAPI {
      * @param {StartupApiSetRemoteAccessRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).setRemoteAccess(requestParameters.startupRemoteAccessDto, options).then((request) => request(this.axios, this.basePath));
@@ -566,7 +540,6 @@ export class StartupApi extends BaseAPI {
      * @param {StartupApiUpdateInitialConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).updateInitialConfiguration(requestParameters.startupConfigurationDto, options).then((request) => request(this.axios, this.basePath));
@@ -578,7 +551,6 @@ export class StartupApi extends BaseAPI {
      * @param {StartupApiUpdateStartupUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StartupApi
      */
     public updateStartupUser(requestParameters: StartupApiUpdateStartupUserRequest = {}, options?: RawAxiosRequestConfig) {
         return StartupApiFp(this.configuration).updateStartupUser(requestParameters.startupUserDto, options).then((request) => request(this.axios, this.basePath));

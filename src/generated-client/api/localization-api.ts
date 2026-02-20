@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { LocalizationOption } from '../models';
 import type { ParentalRating } from '../models';
 /**
  * LocalizationApi - axios parameter creator
- * @export
  */
 export const LocalizationApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -56,8 +55,8 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -89,8 +88,8 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -122,8 +121,8 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -155,8 +154,8 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -171,7 +170,6 @@ export const LocalizationApiAxiosParamCreator = function (configuration?: Config
 
 /**
  * LocalizationApi - functional programming interface
- * @export
  */
 export const LocalizationApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = LocalizationApiAxiosParamCreator(configuration)
@@ -229,7 +227,6 @@ export const LocalizationApiFp = function(configuration?: Configuration) {
 
 /**
  * LocalizationApi - factory interface
- * @export
  */
 export const LocalizationApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = LocalizationApiFp(configuration)
@@ -275,9 +272,6 @@ export const LocalizationApiFactory = function (configuration?: Configuration, b
 
 /**
  * LocalizationApi - object-oriented interface
- * @export
- * @class LocalizationApi
- * @extends {BaseAPI}
  */
 export class LocalizationApi extends BaseAPI {
     /**
@@ -285,7 +279,6 @@ export class LocalizationApi extends BaseAPI {
      * @summary Gets known countries.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocalizationApi
      */
     public getCountries(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getCountries(options).then((request) => request(this.axios, this.basePath));
@@ -296,7 +289,6 @@ export class LocalizationApi extends BaseAPI {
      * @summary Gets known cultures.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocalizationApi
      */
     public getCultures(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getCultures(options).then((request) => request(this.axios, this.basePath));
@@ -307,7 +299,6 @@ export class LocalizationApi extends BaseAPI {
      * @summary Gets localization options.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocalizationApi
      */
     public getLocalizationOptions(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getLocalizationOptions(options).then((request) => request(this.axios, this.basePath));
@@ -318,7 +309,6 @@ export class LocalizationApi extends BaseAPI {
      * @summary Gets known parental ratings.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LocalizationApi
      */
     public getParentalRatings(options?: RawAxiosRequestConfig) {
         return LocalizationApiFp(this.configuration).getParentalRatings(options).then((request) => request(this.axios, this.basePath));

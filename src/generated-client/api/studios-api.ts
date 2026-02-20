@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -32,7 +32,6 @@ import type { ImageType } from '../models';
 import type { ItemFields } from '../models';
 /**
  * StudiosApi - axios parameter creator
- * @export
  */
 export const StudiosApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -67,8 +66,8 @@ export const StudiosApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -185,8 +184,8 @@ export const StudiosApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -201,7 +200,6 @@ export const StudiosApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * StudiosApi - functional programming interface
- * @export
  */
 export const StudiosApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = StudiosApiAxiosParamCreator(configuration)
@@ -254,7 +252,6 @@ export const StudiosApiFp = function(configuration?: Configuration) {
 
 /**
  * StudiosApi - factory interface
- * @export
  */
 export const StudiosApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = StudiosApiFp(configuration)
@@ -284,156 +281,111 @@ export const StudiosApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for getStudio operation in StudiosApi.
- * @export
- * @interface StudiosApiGetStudioRequest
  */
 export interface StudiosApiGetStudioRequest {
     /**
      * Studio name.
-     * @type {string}
-     * @memberof StudiosApiGetStudio
      */
     readonly name: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof StudiosApiGetStudio
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getStudios operation in StudiosApi.
- * @export
- * @interface StudiosApiGetStudiosRequest
  */
 export interface StudiosApiGetStudiosRequest {
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof StudiosApiGetStudios
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof StudiosApiGetStudios
      */
     readonly limit?: number
 
     /**
      * Optional. Search term.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly searchTerm?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof StudiosApiGetStudios
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof StudiosApiGetStudios
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof StudiosApiGetStudios
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional filter by items that are marked as favorite, or not.
-     * @type {boolean}
-     * @memberof StudiosApiGetStudios
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional, include user data.
-     * @type {boolean}
-     * @memberof StudiosApiGetStudios
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
-     * @type {number}
-     * @memberof StudiosApiGetStudios
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof StudiosApiGetStudios
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * User id.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly userId?: string
 
     /**
      * Optional filter by items whose name is sorted equally or greater than a given input string.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly nameStartsWithOrGreater?: string
 
     /**
      * Optional filter by items whose name is sorted equally than a given input string.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly nameStartsWith?: string
 
     /**
      * Optional filter by items whose name is equally or lesser than a given input string.
-     * @type {string}
-     * @memberof StudiosApiGetStudios
      */
     readonly nameLessThan?: string
 
     /**
      * Optional, include image information in output.
-     * @type {boolean}
-     * @memberof StudiosApiGetStudios
      */
     readonly enableImages?: boolean
 
     /**
      * Total record count.
-     * @type {boolean}
-     * @memberof StudiosApiGetStudios
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * StudiosApi - object-oriented interface
- * @export
- * @class StudiosApi
- * @extends {BaseAPI}
  */
 export class StudiosApi extends BaseAPI {
     /**
@@ -442,7 +394,6 @@ export class StudiosApi extends BaseAPI {
      * @param {StudiosApiGetStudioRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StudiosApi
      */
     public getStudio(requestParameters: StudiosApiGetStudioRequest, options?: RawAxiosRequestConfig) {
         return StudiosApiFp(this.configuration).getStudio(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -454,7 +405,6 @@ export class StudiosApi extends BaseAPI {
      * @param {StudiosApiGetStudiosRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof StudiosApi
      */
     public getStudios(requestParameters: StudiosApiGetStudiosRequest = {}, options?: RawAxiosRequestConfig) {
         return StudiosApiFp(this.configuration).getStudios(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));

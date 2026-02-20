@@ -15,8 +15,6 @@
 
 /**
  * Enum FileSystemEntryType.
- * @export
- * @enum {string}
  */
 
 export const FileSystemEntryType = {

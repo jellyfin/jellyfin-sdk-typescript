@@ -21,27 +21,16 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Sessions message.
- * @export
- * @interface SessionsMessage
  */
 export interface SessionsMessage {
     /**
      * Gets or sets the data.
-     * @type {Array<SessionInfoDto>}
-     * @memberof SessionsMessage
      */
     'Data'?: Array<SessionInfoDto> | null;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof SessionsMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof SessionsMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

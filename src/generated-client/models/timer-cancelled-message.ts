@@ -21,27 +21,13 @@ import type { TimerEventInfo } from './timer-event-info';
 
 /**
  * Timer cancelled message.
- * @export
- * @interface TimerCancelledMessage
  */
 export interface TimerCancelledMessage {
-    /**
-     * 
-     * @type {TimerEventInfo}
-     * @memberof TimerCancelledMessage
-     */
     'Data'?: TimerEventInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof TimerCancelledMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof TimerCancelledMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

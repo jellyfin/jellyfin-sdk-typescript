@@ -15,20 +15,14 @@
 
 /**
  * Defines the MediaBrowser.Model.Configuration.PathSubstitution.
- * @export
- * @interface PathSubstitution
  */
 export interface PathSubstitution {
     /**
      * Gets or sets the value to substitute.
-     * @type {string}
-     * @memberof PathSubstitution
      */
     'From'?: string;
     /**
      * Gets or sets the value to substitution with.
-     * @type {string}
-     * @memberof PathSubstitution
      */
     'To'?: string;
 }

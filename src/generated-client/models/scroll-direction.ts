@@ -15,8 +15,6 @@
 
 /**
  * An enum representing the axis that should be scrolled.
- * @export
- * @enum {string}
  */
 
 export const ScrollDirection = {

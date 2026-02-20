@@ -15,14 +15,10 @@
 
 /**
  * Class PingRequestDto.
- * @export
- * @interface PingRequestDto
  */
 export interface PingRequestDto {
     /**
      * Gets or sets the ping time.
-     * @type {number}
-     * @memberof PingRequestDto
      */
     'Ping'?: number;
 }

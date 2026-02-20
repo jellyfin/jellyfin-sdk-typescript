@@ -13,43 +13,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface ProblemDetails
- */
 export interface ProblemDetails {
     [key: string]: any;
 
-    /**
-     * 
-     * @type {string}
-     * @memberof ProblemDetails
-     */
     'type'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ProblemDetails
-     */
     'title'?: string | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof ProblemDetails
-     */
     'status'?: number | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ProblemDetails
-     */
     'detail'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ProblemDetails
-     */
     'instance'?: string | null;
 }
 

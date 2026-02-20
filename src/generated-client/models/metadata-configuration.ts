@@ -13,17 +13,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface MetadataConfiguration
- */
 export interface MetadataConfiguration {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof MetadataConfiguration
-     */
     'UseFileCreationTimeForDateAdded'?: boolean;
 }
 

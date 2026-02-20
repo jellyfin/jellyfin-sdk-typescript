@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -36,7 +36,6 @@ import type { RepeatMode } from '../models';
 import type { UserItemDataDto } from '../models';
 /**
  * PlaystateApi - axios parameter creator
- * @export
  */
 export const PlaystateApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -78,8 +77,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                     datePlayed;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -120,8 +119,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -213,8 +212,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['isMuted'] = isMuted;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -286,8 +285,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['canSeek'] = canSeek;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -349,8 +348,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['playSessionId'] = playSessionId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -389,8 +388,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['playSessionId'] = playSessionId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -423,9 +422,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -460,9 +458,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -497,9 +494,8 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -516,7 +512,6 @@ export const PlaystateApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * PlaystateApi - functional programming interface
- * @export
  */
 export const PlaystateApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PlaystateApiAxiosParamCreator(configuration)
@@ -672,7 +667,6 @@ export const PlaystateApiFp = function(configuration?: Configuration) {
 
 /**
  * PlaystateApi - factory interface
- * @export
  */
 export const PlaystateApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PlaystateApiFp(configuration)
@@ -775,317 +769,226 @@ export const PlaystateApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for markPlayedItem operation in PlaystateApi.
- * @export
- * @interface PlaystateApiMarkPlayedItemRequest
  */
 export interface PlaystateApiMarkPlayedItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof PlaystateApiMarkPlayedItem
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof PlaystateApiMarkPlayedItem
      */
     readonly userId?: string
 
     /**
      * Optional. The date the item was played.
-     * @type {string}
-     * @memberof PlaystateApiMarkPlayedItem
      */
     readonly datePlayed?: string
 }
 
 /**
  * Request parameters for markUnplayedItem operation in PlaystateApi.
- * @export
- * @interface PlaystateApiMarkUnplayedItemRequest
  */
 export interface PlaystateApiMarkUnplayedItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof PlaystateApiMarkUnplayedItem
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof PlaystateApiMarkUnplayedItem
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for onPlaybackProgress operation in PlaystateApi.
- * @export
- * @interface PlaystateApiOnPlaybackProgressRequest
  */
 export interface PlaystateApiOnPlaybackProgressRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly itemId: string
 
     /**
      * The id of the MediaSource.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly mediaSourceId?: string
 
     /**
      * Optional. The current position, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly positionTicks?: number
 
     /**
      * The audio stream index.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly audioStreamIndex?: number
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Scale of 0-100.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly volumeLevel?: number
 
     /**
      * The play method.
-     * @type {PlayMethod}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly playMethod?: PlayMethod
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly liveStreamId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly playSessionId?: string
 
     /**
      * The repeat mode.
-     * @type {RepeatMode}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly repeatMode?: RepeatMode
 
     /**
      * Indicates if the player is paused.
-     * @type {boolean}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly isPaused?: boolean
 
     /**
      * Indicates if the player is muted.
-     * @type {boolean}
-     * @memberof PlaystateApiOnPlaybackProgress
      */
     readonly isMuted?: boolean
 }
 
 /**
  * Request parameters for onPlaybackStart operation in PlaystateApi.
- * @export
- * @interface PlaystateApiOnPlaybackStartRequest
  */
 export interface PlaystateApiOnPlaybackStartRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly itemId: string
 
     /**
      * The id of the MediaSource.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly mediaSourceId?: string
 
     /**
      * The audio stream index.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly audioStreamIndex?: number
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * The play method.
-     * @type {PlayMethod}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly playMethod?: PlayMethod
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly liveStreamId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly playSessionId?: string
 
     /**
      * Indicates if the client can seek.
-     * @type {boolean}
-     * @memberof PlaystateApiOnPlaybackStart
      */
     readonly canSeek?: boolean
 }
 
 /**
  * Request parameters for onPlaybackStopped operation in PlaystateApi.
- * @export
- * @interface PlaystateApiOnPlaybackStoppedRequest
  */
 export interface PlaystateApiOnPlaybackStoppedRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly itemId: string
 
     /**
      * The id of the MediaSource.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly mediaSourceId?: string
 
     /**
      * The next media type that will play.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly nextMediaType?: string
 
     /**
      * Optional. The position, in ticks, where playback stopped. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly positionTicks?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly liveStreamId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof PlaystateApiOnPlaybackStopped
      */
     readonly playSessionId?: string
 }
 
 /**
  * Request parameters for pingPlaybackSession operation in PlaystateApi.
- * @export
- * @interface PlaystateApiPingPlaybackSessionRequest
  */
 export interface PlaystateApiPingPlaybackSessionRequest {
     /**
      * Playback session id.
-     * @type {string}
-     * @memberof PlaystateApiPingPlaybackSession
      */
     readonly playSessionId: string
 }
 
 /**
  * Request parameters for reportPlaybackProgress operation in PlaystateApi.
- * @export
- * @interface PlaystateApiReportPlaybackProgressRequest
  */
 export interface PlaystateApiReportPlaybackProgressRequest {
     /**
      * The playback progress info.
-     * @type {PlaybackProgressInfo}
-     * @memberof PlaystateApiReportPlaybackProgress
      */
     readonly playbackProgressInfo?: PlaybackProgressInfo
 }
 
 /**
  * Request parameters for reportPlaybackStart operation in PlaystateApi.
- * @export
- * @interface PlaystateApiReportPlaybackStartRequest
  */
 export interface PlaystateApiReportPlaybackStartRequest {
     /**
      * The playback start info.
-     * @type {PlaybackStartInfo}
-     * @memberof PlaystateApiReportPlaybackStart
      */
     readonly playbackStartInfo?: PlaybackStartInfo
 }
 
 /**
  * Request parameters for reportPlaybackStopped operation in PlaystateApi.
- * @export
- * @interface PlaystateApiReportPlaybackStoppedRequest
  */
 export interface PlaystateApiReportPlaybackStoppedRequest {
     /**
      * The playback stop info.
-     * @type {PlaybackStopInfo}
-     * @memberof PlaystateApiReportPlaybackStopped
      */
     readonly playbackStopInfo?: PlaybackStopInfo
 }
 
 /**
  * PlaystateApi - object-oriented interface
- * @export
- * @class PlaystateApi
- * @extends {BaseAPI}
  */
 export class PlaystateApi extends BaseAPI {
     /**
@@ -1094,7 +997,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiMarkPlayedItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public markPlayedItem(requestParameters: PlaystateApiMarkPlayedItemRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).markPlayedItem(requestParameters.itemId, requestParameters.userId, requestParameters.datePlayed, options).then((request) => request(this.axios, this.basePath));
@@ -1106,7 +1008,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiMarkUnplayedItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public markUnplayedItem(requestParameters: PlaystateApiMarkUnplayedItemRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).markUnplayedItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1119,7 +1020,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public onPlaybackProgress(requestParameters: PlaystateApiOnPlaybackProgressRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackProgress(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.positionTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.volumeLevel, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.repeatMode, requestParameters.isPaused, requestParameters.isMuted, options).then((request) => request(this.axios, this.basePath));
@@ -1132,7 +1032,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public onPlaybackStart(requestParameters: PlaystateApiOnPlaybackStartRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackStart(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.playMethod, requestParameters.liveStreamId, requestParameters.playSessionId, requestParameters.canSeek, options).then((request) => request(this.axios, this.basePath));
@@ -1145,7 +1044,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public onPlaybackStopped(requestParameters: PlaystateApiOnPlaybackStoppedRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).onPlaybackStopped(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters.nextMediaType, requestParameters.positionTicks, requestParameters.liveStreamId, requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
@@ -1157,7 +1055,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiPingPlaybackSessionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public pingPlaybackSession(requestParameters: PlaystateApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
@@ -1169,7 +1066,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiReportPlaybackProgressRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public reportPlaybackProgress(requestParameters: PlaystateApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(this.axios, this.basePath));
@@ -1181,7 +1077,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiReportPlaybackStartRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public reportPlaybackStart(requestParameters: PlaystateApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(this.axios, this.basePath));
@@ -1193,7 +1088,6 @@ export class PlaystateApi extends BaseAPI {
      * @param {PlaystateApiReportPlaybackStoppedRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaystateApi
      */
     public reportPlaybackStopped(requestParameters: PlaystateApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaystateApiFp(this.configuration).reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(this.axios, this.basePath));

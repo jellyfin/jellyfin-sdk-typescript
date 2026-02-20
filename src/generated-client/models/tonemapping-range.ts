@@ -15,8 +15,6 @@
 
 /**
  * Enum containing tonemapping ranges.
- * @export
- * @enum {string}
  */
 
 export const TonemappingRange = {

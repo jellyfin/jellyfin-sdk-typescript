@@ -18,26 +18,18 @@ import type { LyricLineCue } from './lyric-line-cue';
 
 /**
  * Lyric model.
- * @export
- * @interface LyricLine
  */
 export interface LyricLine {
     /**
      * Gets the text of this lyric line.
-     * @type {string}
-     * @memberof LyricLine
      */
     'Text'?: string;
     /**
      * Gets the start time in ticks.
-     * @type {number}
-     * @memberof LyricLine
      */
     'Start'?: number | null;
     /**
      * Gets the time-aligned cues for the song\'s lyrics.
-     * @type {Array<LyricLineCue>}
-     * @memberof LyricLine
      */
     'Cues'?: Array<LyricLineCue> | null;
 }

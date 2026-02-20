@@ -18,15 +18,8 @@ import type { GroupShuffleMode } from './group-shuffle-mode';
 
 /**
  * Class SetShuffleModeRequestDto.
- * @export
- * @interface SetShuffleModeRequestDto
  */
 export interface SetShuffleModeRequestDto {
-    /**
-     * 
-     * @type {GroupShuffleMode}
-     * @memberof SetShuffleModeRequestDto
-     */
     'Mode'?: GroupShuffleMode;
 }
 

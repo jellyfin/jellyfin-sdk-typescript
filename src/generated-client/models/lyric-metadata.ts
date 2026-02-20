@@ -15,68 +15,46 @@
 
 /**
  * LyricMetadata model.
- * @export
- * @interface LyricMetadata
  */
 export interface LyricMetadata {
     /**
      * Gets or sets the song artist.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Artist'?: string | null;
     /**
      * Gets or sets the album this song is on.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Album'?: string | null;
     /**
      * Gets or sets the title of the song.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Title'?: string | null;
     /**
      * Gets or sets the author of the lyric data.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Author'?: string | null;
     /**
      * Gets or sets the length of the song in ticks.
-     * @type {number}
-     * @memberof LyricMetadata
      */
     'Length'?: number | null;
     /**
      * Gets or sets who the LRC file was created by.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'By'?: string | null;
     /**
      * Gets or sets the lyric offset compared to audio in ticks.
-     * @type {number}
-     * @memberof LyricMetadata
      */
     'Offset'?: number | null;
     /**
      * Gets or sets the software used to create the LRC file.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Creator'?: string | null;
     /**
      * Gets or sets the version of the creator used.
-     * @type {string}
-     * @memberof LyricMetadata
      */
     'Version'?: string | null;
     /**
      * Gets or sets a value indicating whether this lyric is synced.
-     * @type {boolean}
-     * @memberof LyricMetadata
      */
     'IsSynced'?: boolean | null;
 }

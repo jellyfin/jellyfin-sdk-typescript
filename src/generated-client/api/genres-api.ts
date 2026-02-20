@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -36,7 +36,6 @@ import type { ItemSortBy } from '../models';
 import type { SortOrder } from '../models';
 /**
  * GenresApi - axios parameter creator
- * @export
  */
 export const GenresApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -71,8 +70,8 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -194,8 +193,8 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -210,7 +209,6 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * GenresApi - functional programming interface
- * @export
  */
 export const GenresApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = GenresApiAxiosParamCreator(configuration)
@@ -264,7 +262,6 @@ export const GenresApiFp = function(configuration?: Configuration) {
 
 /**
  * GenresApi - factory interface
- * @export
  */
 export const GenresApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = GenresApiFp(configuration)
@@ -294,163 +291,116 @@ export const GenresApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for getGenre operation in GenresApi.
- * @export
- * @interface GenresApiGetGenreRequest
  */
 export interface GenresApiGetGenreRequest {
     /**
      * The genre name.
-     * @type {string}
-     * @memberof GenresApiGetGenre
      */
     readonly genreName: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof GenresApiGetGenre
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getGenres operation in GenresApi.
- * @export
- * @interface GenresApiGetGenresRequest
  */
 export interface GenresApiGetGenresRequest {
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof GenresApiGetGenres
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof GenresApiGetGenres
      */
     readonly limit?: number
 
     /**
      * The search term.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly searchTerm?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof GenresApiGetGenres
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof GenresApiGetGenres
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof GenresApiGetGenres
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional filter by items that are marked as favorite, or not.
-     * @type {boolean}
-     * @memberof GenresApiGetGenres
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
-     * @type {number}
-     * @memberof GenresApiGetGenres
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof GenresApiGetGenres
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * User id.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly userId?: string
 
     /**
      * Optional filter by items whose name is sorted equally or greater than a given input string.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly nameStartsWithOrGreater?: string
 
     /**
      * Optional filter by items whose name is sorted equally than a given input string.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly nameStartsWith?: string
 
     /**
      * Optional filter by items whose name is equally or lesser than a given input string.
-     * @type {string}
-     * @memberof GenresApiGetGenres
      */
     readonly nameLessThan?: string
 
     /**
      * Optional. Specify one or more sort orders, comma delimited.
-     * @type {Array<ItemSortBy>}
-     * @memberof GenresApiGetGenres
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.
-     * @type {Array<SortOrder>}
-     * @memberof GenresApiGetGenres
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * Optional, include image information in output.
-     * @type {boolean}
-     * @memberof GenresApiGetGenres
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include total record count.
-     * @type {boolean}
-     * @memberof GenresApiGetGenres
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * GenresApi - object-oriented interface
- * @export
- * @class GenresApi
- * @extends {BaseAPI}
  */
 export class GenresApi extends BaseAPI {
     /**
@@ -459,7 +409,6 @@ export class GenresApi extends BaseAPI {
      * @param {GenresApiGetGenreRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof GenresApi
      */
     public getGenre(requestParameters: GenresApiGetGenreRequest, options?: RawAxiosRequestConfig) {
         return GenresApiFp(this.configuration).getGenre(requestParameters.genreName, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -471,7 +420,6 @@ export class GenresApi extends BaseAPI {
      * @param {GenresApiGetGenresRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof GenresApi
      */
     public getGenres(requestParameters: GenresApiGetGenresRequest = {}, options?: RawAxiosRequestConfig) {
         return GenresApiFp(this.configuration).getGenres(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));

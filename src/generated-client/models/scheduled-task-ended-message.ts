@@ -21,27 +21,13 @@ import type { TaskResult } from './task-result';
 
 /**
  * Scheduled task ended message.
- * @export
- * @interface ScheduledTaskEndedMessage
  */
 export interface ScheduledTaskEndedMessage {
-    /**
-     * 
-     * @type {TaskResult}
-     * @memberof ScheduledTaskEndedMessage
-     */
     'Data'?: TaskResult;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof ScheduledTaskEndedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ScheduledTaskEndedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

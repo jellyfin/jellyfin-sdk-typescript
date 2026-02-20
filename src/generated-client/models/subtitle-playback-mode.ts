@@ -15,8 +15,6 @@
 
 /**
  * An enum representing a subtitle playback mode.
- * @export
- * @enum {string}
  */
 
 export const SubtitlePlaybackMode = {

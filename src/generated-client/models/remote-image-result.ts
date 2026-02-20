@@ -18,26 +18,18 @@ import type { RemoteImageInfo } from './remote-image-info';
 
 /**
  * Class RemoteImageResult.
- * @export
- * @interface RemoteImageResult
  */
 export interface RemoteImageResult {
     /**
      * Gets or sets the images.
-     * @type {Array<RemoteImageInfo>}
-     * @memberof RemoteImageResult
      */
     'Images'?: Array<RemoteImageInfo> | null;
     /**
      * Gets or sets the total record count.
-     * @type {number}
-     * @memberof RemoteImageResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the providers.
-     * @type {Array<string>}
-     * @memberof RemoteImageResult
      */
     'Providers'?: Array<string> | null;
 }

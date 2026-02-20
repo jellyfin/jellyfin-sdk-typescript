@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { TaskInfo } from '../models';
 import type { TaskTriggerInfo } from '../models';
 /**
  * ScheduledTasksApi - axios parameter creator
- * @export
  */
 export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -58,8 +57,8 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -101,8 +100,8 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['isEnabled'] = isEnabled;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -138,8 +137,8 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -175,8 +174,8 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -215,9 +214,8 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -234,7 +232,6 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
 
 /**
  * ScheduledTasksApi - functional programming interface
- * @export
  */
 export const ScheduledTasksApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ScheduledTasksApiAxiosParamCreator(configuration)
@@ -311,7 +308,6 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
 
 /**
  * ScheduledTasksApi - factory interface
- * @export
  */
 export const ScheduledTasksApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ScheduledTasksApiFp(configuration)
@@ -371,93 +367,66 @@ export const ScheduledTasksApiFactory = function (configuration?: Configuration,
 
 /**
  * Request parameters for getTask operation in ScheduledTasksApi.
- * @export
- * @interface ScheduledTasksApiGetTaskRequest
  */
 export interface ScheduledTasksApiGetTaskRequest {
     /**
      * Task Id.
-     * @type {string}
-     * @memberof ScheduledTasksApiGetTask
      */
     readonly taskId: string
 }
 
 /**
  * Request parameters for getTasks operation in ScheduledTasksApi.
- * @export
- * @interface ScheduledTasksApiGetTasksRequest
  */
 export interface ScheduledTasksApiGetTasksRequest {
     /**
      * Optional filter tasks that are hidden, or not.
-     * @type {boolean}
-     * @memberof ScheduledTasksApiGetTasks
      */
     readonly isHidden?: boolean
 
     /**
      * Optional filter tasks that are enabled, or not.
-     * @type {boolean}
-     * @memberof ScheduledTasksApiGetTasks
      */
     readonly isEnabled?: boolean
 }
 
 /**
  * Request parameters for startTask operation in ScheduledTasksApi.
- * @export
- * @interface ScheduledTasksApiStartTaskRequest
  */
 export interface ScheduledTasksApiStartTaskRequest {
     /**
      * Task Id.
-     * @type {string}
-     * @memberof ScheduledTasksApiStartTask
      */
     readonly taskId: string
 }
 
 /**
  * Request parameters for stopTask operation in ScheduledTasksApi.
- * @export
- * @interface ScheduledTasksApiStopTaskRequest
  */
 export interface ScheduledTasksApiStopTaskRequest {
     /**
      * Task Id.
-     * @type {string}
-     * @memberof ScheduledTasksApiStopTask
      */
     readonly taskId: string
 }
 
 /**
  * Request parameters for updateTask operation in ScheduledTasksApi.
- * @export
- * @interface ScheduledTasksApiUpdateTaskRequest
  */
 export interface ScheduledTasksApiUpdateTaskRequest {
     /**
      * Task Id.
-     * @type {string}
-     * @memberof ScheduledTasksApiUpdateTask
      */
     readonly taskId: string
 
     /**
      * Triggers.
-     * @type {Array<TaskTriggerInfo>}
-     * @memberof ScheduledTasksApiUpdateTask
      */
     readonly taskTriggerInfo: Array<TaskTriggerInfo>
 }
 
 /**
  * ScheduledTasksApi - object-oriented interface
- * @export
- * @class ScheduledTasksApi
- * @extends {BaseAPI}
  */
 export class ScheduledTasksApi extends BaseAPI {
     /**
@@ -466,7 +435,6 @@ export class ScheduledTasksApi extends BaseAPI {
      * @param {ScheduledTasksApiGetTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ScheduledTasksApi
      */
     public getTask(requestParameters: ScheduledTasksApiGetTaskRequest, options?: RawAxiosRequestConfig) {
         return ScheduledTasksApiFp(this.configuration).getTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
@@ -478,7 +446,6 @@ export class ScheduledTasksApi extends BaseAPI {
      * @param {ScheduledTasksApiGetTasksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ScheduledTasksApi
      */
     public getTasks(requestParameters: ScheduledTasksApiGetTasksRequest = {}, options?: RawAxiosRequestConfig) {
         return ScheduledTasksApiFp(this.configuration).getTasks(requestParameters.isHidden, requestParameters.isEnabled, options).then((request) => request(this.axios, this.basePath));
@@ -490,7 +457,6 @@ export class ScheduledTasksApi extends BaseAPI {
      * @param {ScheduledTasksApiStartTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ScheduledTasksApi
      */
     public startTask(requestParameters: ScheduledTasksApiStartTaskRequest, options?: RawAxiosRequestConfig) {
         return ScheduledTasksApiFp(this.configuration).startTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
@@ -502,7 +468,6 @@ export class ScheduledTasksApi extends BaseAPI {
      * @param {ScheduledTasksApiStopTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ScheduledTasksApi
      */
     public stopTask(requestParameters: ScheduledTasksApiStopTaskRequest, options?: RawAxiosRequestConfig) {
         return ScheduledTasksApiFp(this.configuration).stopTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
@@ -514,7 +479,6 @@ export class ScheduledTasksApi extends BaseAPI {
      * @param {ScheduledTasksApiUpdateTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ScheduledTasksApi
      */
     public updateTask(requestParameters: ScheduledTasksApiUpdateTaskRequest, options?: RawAxiosRequestConfig) {
         return ScheduledTasksApiFp(this.configuration).updateTask(requestParameters.taskId, requestParameters.taskTriggerInfo, options).then((request) => request(this.axios, this.basePath));

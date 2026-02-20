@@ -18,21 +18,12 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Keep alive websocket messages.
- * @export
- * @interface OutboundKeepAliveMessage
  */
 export interface OutboundKeepAliveMessage {
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof OutboundKeepAliveMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof OutboundKeepAliveMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

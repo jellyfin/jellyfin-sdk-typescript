@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -26,7 +26,6 @@ import type { ConfigurationPageInfo } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * DashboardApi - axios parameter creator
- * @export
  */
 export const DashboardApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -57,8 +56,8 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['enableInMainMenu'] = enableInMainMenu;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -92,8 +91,8 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['name'] = name;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html,application/x-javascript,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -108,7 +107,6 @@ export const DashboardApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * DashboardApi - functional programming interface
- * @export
  */
 export const DashboardApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = DashboardApiAxiosParamCreator(configuration)
@@ -144,7 +142,6 @@ export const DashboardApiFp = function(configuration?: Configuration) {
 
 /**
  * DashboardApi - factory interface
- * @export
  */
 export const DashboardApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = DashboardApiFp(configuration)
@@ -174,37 +171,26 @@ export const DashboardApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for getConfigurationPages operation in DashboardApi.
- * @export
- * @interface DashboardApiGetConfigurationPagesRequest
  */
 export interface DashboardApiGetConfigurationPagesRequest {
     /**
      * Whether to enable in the main menu.
-     * @type {boolean}
-     * @memberof DashboardApiGetConfigurationPages
      */
     readonly enableInMainMenu?: boolean
 }
 
 /**
  * Request parameters for getDashboardConfigurationPage operation in DashboardApi.
- * @export
- * @interface DashboardApiGetDashboardConfigurationPageRequest
  */
 export interface DashboardApiGetDashboardConfigurationPageRequest {
     /**
      * The name of the page.
-     * @type {string}
-     * @memberof DashboardApiGetDashboardConfigurationPage
      */
     readonly name?: string
 }
 
 /**
  * DashboardApi - object-oriented interface
- * @export
- * @class DashboardApi
- * @extends {BaseAPI}
  */
 export class DashboardApi extends BaseAPI {
     /**
@@ -213,7 +199,6 @@ export class DashboardApi extends BaseAPI {
      * @param {DashboardApiGetConfigurationPagesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DashboardApi
      */
     public getConfigurationPages(requestParameters: DashboardApiGetConfigurationPagesRequest = {}, options?: RawAxiosRequestConfig) {
         return DashboardApiFp(this.configuration).getConfigurationPages(requestParameters.enableInMainMenu, options).then((request) => request(this.axios, this.basePath));
@@ -225,7 +210,6 @@ export class DashboardApi extends BaseAPI {
      * @param {DashboardApiGetDashboardConfigurationPageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DashboardApi
      */
     public getDashboardConfigurationPage(requestParameters: DashboardApiGetDashboardConfigurationPageRequest = {}, options?: RawAxiosRequestConfig) {
         return DashboardApiFp(this.configuration).getDashboardConfigurationPage(requestParameters.name, options).then((request) => request(this.axios, this.basePath));

@@ -15,8 +15,6 @@
 
 /**
  * Enum ChannelType.
- * @export
- * @enum {string}
  */
 
 export const ChannelType = {

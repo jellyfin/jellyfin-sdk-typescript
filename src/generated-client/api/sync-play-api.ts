@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -58,7 +58,6 @@ import type { SetRepeatModeRequestDto } from '../models';
 import type { SetShuffleModeRequestDto } from '../models';
 /**
  * SyncPlayApi - axios parameter creator
- * @export
  */
 export const SyncPlayApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -87,9 +86,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -126,9 +124,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -166,8 +163,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -199,8 +196,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -235,9 +232,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -271,8 +267,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -307,9 +303,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -346,9 +341,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -382,8 +376,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -418,9 +412,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -457,9 +450,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -496,9 +488,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -535,9 +526,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -574,9 +564,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -613,9 +602,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -652,9 +640,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -691,9 +678,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -730,9 +716,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -769,9 +754,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -808,9 +792,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -844,8 +827,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -877,8 +860,8 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -893,7 +876,6 @@ export const SyncPlayApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * SyncPlayApi - functional programming interface
- * @export
  */
 export const SyncPlayApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SyncPlayApiAxiosParamCreator(configuration)
@@ -1184,7 +1166,6 @@ export const SyncPlayApiFp = function(configuration?: Configuration) {
 
 /**
  * SyncPlayApi - factory interface
- * @export
  */
 export const SyncPlayApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SyncPlayApiFp(configuration)
@@ -1409,247 +1390,176 @@ export const SyncPlayApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * Request parameters for syncPlayBuffering operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayBufferingRequest
  */
 export interface SyncPlayApiSyncPlayBufferingRequest {
     /**
      * The player status.
-     * @type {BufferRequestDto}
-     * @memberof SyncPlayApiSyncPlayBuffering
      */
     readonly bufferRequestDto: BufferRequestDto
 }
 
 /**
  * Request parameters for syncPlayCreateGroup operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayCreateGroupRequest
  */
 export interface SyncPlayApiSyncPlayCreateGroupRequest {
     /**
      * The settings of the new group.
-     * @type {NewGroupRequestDto}
-     * @memberof SyncPlayApiSyncPlayCreateGroup
      */
     readonly newGroupRequestDto: NewGroupRequestDto
 }
 
 /**
  * Request parameters for syncPlayGetGroup operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayGetGroupRequest
  */
 export interface SyncPlayApiSyncPlayGetGroupRequest {
     /**
      * The id of the group.
-     * @type {string}
-     * @memberof SyncPlayApiSyncPlayGetGroup
      */
     readonly id: string
 }
 
 /**
  * Request parameters for syncPlayJoinGroup operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayJoinGroupRequest
  */
 export interface SyncPlayApiSyncPlayJoinGroupRequest {
     /**
      * The group to join.
-     * @type {JoinGroupRequestDto}
-     * @memberof SyncPlayApiSyncPlayJoinGroup
      */
     readonly joinGroupRequestDto: JoinGroupRequestDto
 }
 
 /**
  * Request parameters for syncPlayMovePlaylistItem operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayMovePlaylistItemRequest
  */
 export interface SyncPlayApiSyncPlayMovePlaylistItemRequest {
     /**
      * The new position for the item.
-     * @type {MovePlaylistItemRequestDto}
-     * @memberof SyncPlayApiSyncPlayMovePlaylistItem
      */
     readonly movePlaylistItemRequestDto: MovePlaylistItemRequestDto
 }
 
 /**
  * Request parameters for syncPlayNextItem operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayNextItemRequest
  */
 export interface SyncPlayApiSyncPlayNextItemRequest {
     /**
      * The current item information.
-     * @type {NextItemRequestDto}
-     * @memberof SyncPlayApiSyncPlayNextItem
      */
     readonly nextItemRequestDto: NextItemRequestDto
 }
 
 /**
  * Request parameters for syncPlayPing operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayPingRequest
  */
 export interface SyncPlayApiSyncPlayPingRequest {
     /**
      * The new ping.
-     * @type {PingRequestDto}
-     * @memberof SyncPlayApiSyncPlayPing
      */
     readonly pingRequestDto: PingRequestDto
 }
 
 /**
  * Request parameters for syncPlayPreviousItem operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayPreviousItemRequest
  */
 export interface SyncPlayApiSyncPlayPreviousItemRequest {
     /**
      * The current item information.
-     * @type {PreviousItemRequestDto}
-     * @memberof SyncPlayApiSyncPlayPreviousItem
      */
     readonly previousItemRequestDto: PreviousItemRequestDto
 }
 
 /**
  * Request parameters for syncPlayQueue operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayQueueRequest
  */
 export interface SyncPlayApiSyncPlayQueueRequest {
     /**
      * The items to add.
-     * @type {QueueRequestDto}
-     * @memberof SyncPlayApiSyncPlayQueue
      */
     readonly queueRequestDto: QueueRequestDto
 }
 
 /**
  * Request parameters for syncPlayReady operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayReadyRequest
  */
 export interface SyncPlayApiSyncPlayReadyRequest {
     /**
      * The player status.
-     * @type {ReadyRequestDto}
-     * @memberof SyncPlayApiSyncPlayReady
      */
     readonly readyRequestDto: ReadyRequestDto
 }
 
 /**
  * Request parameters for syncPlayRemoveFromPlaylist operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlayRemoveFromPlaylistRequest
  */
 export interface SyncPlayApiSyncPlayRemoveFromPlaylistRequest {
     /**
      * The items to remove.
-     * @type {RemoveFromPlaylistRequestDto}
-     * @memberof SyncPlayApiSyncPlayRemoveFromPlaylist
      */
     readonly removeFromPlaylistRequestDto: RemoveFromPlaylistRequestDto
 }
 
 /**
  * Request parameters for syncPlaySeek operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySeekRequest
  */
 export interface SyncPlayApiSyncPlaySeekRequest {
     /**
      * The new playback position.
-     * @type {SeekRequestDto}
-     * @memberof SyncPlayApiSyncPlaySeek
      */
     readonly seekRequestDto: SeekRequestDto
 }
 
 /**
  * Request parameters for syncPlaySetIgnoreWait operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySetIgnoreWaitRequest
  */
 export interface SyncPlayApiSyncPlaySetIgnoreWaitRequest {
     /**
      * The settings to set.
-     * @type {IgnoreWaitRequestDto}
-     * @memberof SyncPlayApiSyncPlaySetIgnoreWait
      */
     readonly ignoreWaitRequestDto: IgnoreWaitRequestDto
 }
 
 /**
  * Request parameters for syncPlaySetNewQueue operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySetNewQueueRequest
  */
 export interface SyncPlayApiSyncPlaySetNewQueueRequest {
     /**
      * The new playlist to play in the group.
-     * @type {PlayRequestDto}
-     * @memberof SyncPlayApiSyncPlaySetNewQueue
      */
     readonly playRequestDto: PlayRequestDto
 }
 
 /**
  * Request parameters for syncPlaySetPlaylistItem operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySetPlaylistItemRequest
  */
 export interface SyncPlayApiSyncPlaySetPlaylistItemRequest {
     /**
      * The new item to play.
-     * @type {SetPlaylistItemRequestDto}
-     * @memberof SyncPlayApiSyncPlaySetPlaylistItem
      */
     readonly setPlaylistItemRequestDto: SetPlaylistItemRequestDto
 }
 
 /**
  * Request parameters for syncPlaySetRepeatMode operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySetRepeatModeRequest
  */
 export interface SyncPlayApiSyncPlaySetRepeatModeRequest {
     /**
      * The new repeat mode.
-     * @type {SetRepeatModeRequestDto}
-     * @memberof SyncPlayApiSyncPlaySetRepeatMode
      */
     readonly setRepeatModeRequestDto: SetRepeatModeRequestDto
 }
 
 /**
  * Request parameters for syncPlaySetShuffleMode operation in SyncPlayApi.
- * @export
- * @interface SyncPlayApiSyncPlaySetShuffleModeRequest
  */
 export interface SyncPlayApiSyncPlaySetShuffleModeRequest {
     /**
      * The new shuffle mode.
-     * @type {SetShuffleModeRequestDto}
-     * @memberof SyncPlayApiSyncPlaySetShuffleMode
      */
     readonly setShuffleModeRequestDto: SetShuffleModeRequestDto
 }
 
 /**
  * SyncPlayApi - object-oriented interface
- * @export
- * @class SyncPlayApi
- * @extends {BaseAPI}
  */
 export class SyncPlayApi extends BaseAPI {
     /**
@@ -1658,7 +1568,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayBufferingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayBuffering(requestParameters: SyncPlayApiSyncPlayBufferingRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayBuffering(requestParameters.bufferRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1670,7 +1579,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayCreateGroupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayCreateGroup(requestParameters: SyncPlayApiSyncPlayCreateGroupRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayCreateGroup(requestParameters.newGroupRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1682,7 +1590,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayGetGroupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayGetGroup(requestParameters: SyncPlayApiSyncPlayGetGroupRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayGetGroup(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -1693,7 +1600,6 @@ export class SyncPlayApi extends BaseAPI {
      * @summary Gets all SyncPlay groups.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayGetGroups(options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayGetGroups(options).then((request) => request(this.axios, this.basePath));
@@ -1705,7 +1611,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayJoinGroupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayJoinGroup(requestParameters: SyncPlayApiSyncPlayJoinGroupRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayJoinGroup(requestParameters.joinGroupRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1716,7 +1621,6 @@ export class SyncPlayApi extends BaseAPI {
      * @summary Leave the joined SyncPlay group.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayLeaveGroup(options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayLeaveGroup(options).then((request) => request(this.axios, this.basePath));
@@ -1728,7 +1632,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayMovePlaylistItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayMovePlaylistItem(requestParameters: SyncPlayApiSyncPlayMovePlaylistItemRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayMovePlaylistItem(requestParameters.movePlaylistItemRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1740,7 +1643,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayNextItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayNextItem(requestParameters: SyncPlayApiSyncPlayNextItemRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayNextItem(requestParameters.nextItemRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1751,7 +1653,6 @@ export class SyncPlayApi extends BaseAPI {
      * @summary Request pause in SyncPlay group.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayPause(options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayPause(options).then((request) => request(this.axios, this.basePath));
@@ -1763,7 +1664,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayPingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayPing(requestParameters: SyncPlayApiSyncPlayPingRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayPing(requestParameters.pingRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1775,7 +1675,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayPreviousItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayPreviousItem(requestParameters: SyncPlayApiSyncPlayPreviousItemRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayPreviousItem(requestParameters.previousItemRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1787,7 +1686,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayQueueRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayQueue(requestParameters: SyncPlayApiSyncPlayQueueRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayQueue(requestParameters.queueRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1799,7 +1697,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayReadyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayReady(requestParameters: SyncPlayApiSyncPlayReadyRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayReady(requestParameters.readyRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1811,7 +1708,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlayRemoveFromPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayRemoveFromPlaylist(requestParameters: SyncPlayApiSyncPlayRemoveFromPlaylistRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayRemoveFromPlaylist(requestParameters.removeFromPlaylistRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1823,7 +1719,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySeekRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySeek(requestParameters: SyncPlayApiSyncPlaySeekRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySeek(requestParameters.seekRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1835,7 +1730,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySetIgnoreWaitRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySetIgnoreWait(requestParameters: SyncPlayApiSyncPlaySetIgnoreWaitRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySetIgnoreWait(requestParameters.ignoreWaitRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1847,7 +1741,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySetNewQueueRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySetNewQueue(requestParameters: SyncPlayApiSyncPlaySetNewQueueRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySetNewQueue(requestParameters.playRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1859,7 +1752,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySetPlaylistItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySetPlaylistItem(requestParameters: SyncPlayApiSyncPlaySetPlaylistItemRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySetPlaylistItem(requestParameters.setPlaylistItemRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1871,7 +1763,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySetRepeatModeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySetRepeatMode(requestParameters: SyncPlayApiSyncPlaySetRepeatModeRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySetRepeatMode(requestParameters.setRepeatModeRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1883,7 +1774,6 @@ export class SyncPlayApi extends BaseAPI {
      * @param {SyncPlayApiSyncPlaySetShuffleModeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlaySetShuffleMode(requestParameters: SyncPlayApiSyncPlaySetShuffleModeRequest, options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlaySetShuffleMode(requestParameters.setShuffleModeRequestDto, options).then((request) => request(this.axios, this.basePath));
@@ -1894,7 +1784,6 @@ export class SyncPlayApi extends BaseAPI {
      * @summary Request stop in SyncPlay group.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayStop(options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayStop(options).then((request) => request(this.axios, this.basePath));
@@ -1905,7 +1794,6 @@ export class SyncPlayApi extends BaseAPI {
      * @summary Request unpause in SyncPlay group.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SyncPlayApi
      */
     public syncPlayUnpause(options?: RawAxiosRequestConfig) {
         return SyncPlayApiFp(this.configuration).syncPlayUnpause(options).then((request) => request(this.axios, this.basePath));

@@ -16,28 +16,17 @@
 // @ts-ignore
 import type { LiveTvServiceInfo } from './live-tv-service-info';
 
-/**
- * 
- * @export
- * @interface LiveTvInfo
- */
 export interface LiveTvInfo {
     /**
      * Gets or sets the services.
-     * @type {Array<LiveTvServiceInfo>}
-     * @memberof LiveTvInfo
      */
     'Services'?: Array<LiveTvServiceInfo>;
     /**
      * Gets or sets a value indicating whether this instance is enabled.
-     * @type {boolean}
-     * @memberof LiveTvInfo
      */
     'IsEnabled'?: boolean;
     /**
      * Gets or sets the enabled users.
-     * @type {Array<string>}
-     * @memberof LiveTvInfo
      */
     'EnabledUsers'?: Array<string>;
 }

@@ -33,44 +33,27 @@ import type { ParentalRating } from './parental-rating';
 
 /**
  * A class representing metadata editor information.
- * @export
- * @interface MetadataEditorInfo
  */
 export interface MetadataEditorInfo {
     /**
      * Gets or sets the parental rating options.
-     * @type {Array<ParentalRating>}
-     * @memberof MetadataEditorInfo
      */
     'ParentalRatingOptions'?: Array<ParentalRating>;
     /**
      * Gets or sets the countries.
-     * @type {Array<CountryInfo>}
-     * @memberof MetadataEditorInfo
      */
     'Countries'?: Array<CountryInfo>;
     /**
      * Gets or sets the cultures.
-     * @type {Array<CultureDto>}
-     * @memberof MetadataEditorInfo
      */
     'Cultures'?: Array<CultureDto>;
     /**
      * Gets or sets the external id infos.
-     * @type {Array<ExternalIdInfo>}
-     * @memberof MetadataEditorInfo
      */
     'ExternalIdInfos'?: Array<ExternalIdInfo>;
-    /**
-     * 
-     * @type {CollectionType}
-     * @memberof MetadataEditorInfo
-     */
     'ContentType'?: CollectionType;
     /**
      * Gets or sets the content type options.
-     * @type {Array<NameValuePair>}
-     * @memberof MetadataEditorInfo
      */
     'ContentTypeOptions'?: Array<NameValuePair>;
 }

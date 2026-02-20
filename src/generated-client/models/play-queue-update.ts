@@ -27,57 +27,30 @@ import type { SyncPlayQueueItem } from './sync-play-queue-item';
 
 /**
  * Class PlayQueueUpdate.
- * @export
- * @interface PlayQueueUpdate
  */
 export interface PlayQueueUpdate {
-    /**
-     * 
-     * @type {PlayQueueUpdateReason}
-     * @memberof PlayQueueUpdate
-     */
     'Reason'?: PlayQueueUpdateReason;
     /**
      * Gets the UTC time of the last change to the playing queue.
-     * @type {string}
-     * @memberof PlayQueueUpdate
      */
     'LastUpdate'?: string;
     /**
      * Gets the playlist.
-     * @type {Array<SyncPlayQueueItem>}
-     * @memberof PlayQueueUpdate
      */
     'Playlist'?: Array<SyncPlayQueueItem>;
     /**
      * Gets the playing item index in the playlist.
-     * @type {number}
-     * @memberof PlayQueueUpdate
      */
     'PlayingItemIndex'?: number;
     /**
      * Gets the start position ticks.
-     * @type {number}
-     * @memberof PlayQueueUpdate
      */
     'StartPositionTicks'?: number;
     /**
      * Gets a value indicating whether the current item is playing.
-     * @type {boolean}
-     * @memberof PlayQueueUpdate
      */
     'IsPlaying'?: boolean;
-    /**
-     * 
-     * @type {GroupShuffleMode}
-     * @memberof PlayQueueUpdate
-     */
     'ShuffleMode'?: GroupShuffleMode;
-    /**
-     * 
-     * @type {GroupRepeatMode}
-     * @memberof PlayQueueUpdate
-     */
     'RepeatMode'?: GroupRepeatMode;
 }
 

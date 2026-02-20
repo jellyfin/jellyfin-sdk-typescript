@@ -15,14 +15,10 @@
 
 /**
  * Class IgnoreWaitRequestDto.
- * @export
- * @interface IgnoreWaitRequestDto
  */
 export interface IgnoreWaitRequestDto {
     /**
      * Gets or sets a value indicating whether the client should be ignored.
-     * @type {boolean}
-     * @memberof IgnoreWaitRequestDto
      */
     'IgnoreWait'?: boolean;
 }

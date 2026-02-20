@@ -15,8 +15,6 @@
 
 /**
  * Enum PlayQueueUpdateReason.
- * @export
- * @enum {string}
  */
 
 export const PlayQueueUpdateReason = {

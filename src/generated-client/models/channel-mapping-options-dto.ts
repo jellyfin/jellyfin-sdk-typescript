@@ -24,32 +24,22 @@ import type { TunerChannelMapping } from './tuner-channel-mapping';
 
 /**
  * Channel mapping options dto.
- * @export
- * @interface ChannelMappingOptionsDto
  */
 export interface ChannelMappingOptionsDto {
     /**
      * Gets or sets list of tuner channels.
-     * @type {Array<TunerChannelMapping>}
-     * @memberof ChannelMappingOptionsDto
      */
     'TunerChannels'?: Array<TunerChannelMapping>;
     /**
      * Gets or sets list of provider channels.
-     * @type {Array<NameIdPair>}
-     * @memberof ChannelMappingOptionsDto
      */
     'ProviderChannels'?: Array<NameIdPair>;
     /**
      * Gets or sets list of mappings.
-     * @type {Array<NameValuePair>}
-     * @memberof ChannelMappingOptionsDto
      */
     'Mappings'?: Array<NameValuePair>;
     /**
      * Gets or sets provider name.
-     * @type {string}
-     * @memberof ChannelMappingOptionsDto
      */
     'ProviderName'?: string | null;
 }

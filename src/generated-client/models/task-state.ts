@@ -15,8 +15,6 @@
 
 /**
  * Enum TaskState.
- * @export
- * @enum {string}
  */
 
 export const TaskState = {

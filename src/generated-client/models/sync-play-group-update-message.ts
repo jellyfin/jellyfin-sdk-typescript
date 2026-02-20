@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Untyped sync play command.
- * @export
- * @interface SyncPlayGroupUpdateMessage
  */
 export interface SyncPlayGroupUpdateMessage {
-    /**
-     * 
-     * @type {GroupUpdate}
-     * @memberof SyncPlayGroupUpdateMessage
-     */
     'Data'?: GroupUpdate;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof SyncPlayGroupUpdateMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof SyncPlayGroupUpdateMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Plugin installation completed message.
- * @export
- * @interface PluginInstallationCompletedMessage
  */
 export interface PluginInstallationCompletedMessage {
-    /**
-     * 
-     * @type {InstallationInfo}
-     * @memberof PluginInstallationCompletedMessage
-     */
     'Data'?: InstallationInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof PluginInstallationCompletedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof PluginInstallationCompletedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -32,7 +32,6 @@ import type { PlaybackInfoResponse } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * MediaInfoApi - axios parameter creator
- * @export
  */
 export const MediaInfoApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -65,8 +64,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['liveStreamId'] = liveStreamId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -103,8 +102,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['size'] = size;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/octet-stream,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -145,8 +144,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -253,9 +252,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['allowAudioStreamCopy'] = allowAudioStreamCopy;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -350,9 +348,8 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -369,7 +366,6 @@ export const MediaInfoApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * MediaInfoApi - functional programming interface
- * @export
  */
 export const MediaInfoApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MediaInfoApiAxiosParamCreator(configuration)
@@ -472,7 +468,6 @@ export const MediaInfoApiFp = function(configuration?: Configuration) {
 
 /**
  * MediaInfoApi - factory interface
- * @export
  */
 export const MediaInfoApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MediaInfoApiFp(configuration)
@@ -532,275 +527,196 @@ export const MediaInfoApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for closeLiveStream operation in MediaInfoApi.
- * @export
- * @interface MediaInfoApiCloseLiveStreamRequest
  */
 export interface MediaInfoApiCloseLiveStreamRequest {
     /**
      * The livestream id.
-     * @type {string}
-     * @memberof MediaInfoApiCloseLiveStream
      */
     readonly liveStreamId: string
 }
 
 /**
  * Request parameters for getBitrateTestBytes operation in MediaInfoApi.
- * @export
- * @interface MediaInfoApiGetBitrateTestBytesRequest
  */
 export interface MediaInfoApiGetBitrateTestBytesRequest {
     /**
      * The bitrate. Defaults to 102400.
-     * @type {number}
-     * @memberof MediaInfoApiGetBitrateTestBytes
      */
     readonly size?: number
 }
 
 /**
  * Request parameters for getPlaybackInfo operation in MediaInfoApi.
- * @export
- * @interface MediaInfoApiGetPlaybackInfoRequest
  */
 export interface MediaInfoApiGetPlaybackInfoRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPlaybackInfo
      */
     readonly itemId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPlaybackInfo
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getPostedPlaybackInfo operation in MediaInfoApi.
- * @export
- * @interface MediaInfoApiGetPostedPlaybackInfoRequest
  */
 export interface MediaInfoApiGetPostedPlaybackInfoRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly itemId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly userId?: string
 
     /**
      * The maximum streaming bitrate.
-     * @type {number}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * The start time in ticks.
-     * @type {number}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly startTimeTicks?: number
 
     /**
      * The audio stream index.
-     * @type {number}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly audioStreamIndex?: number
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * The maximum number of audio channels.
-     * @type {number}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly maxAudioChannels?: number
 
     /**
      * The media source id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly mediaSourceId?: string
 
     /**
      * The livestream id.
-     * @type {string}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly liveStreamId?: string
 
     /**
      * Whether to auto open the livestream.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly autoOpenLiveStream?: boolean
 
     /**
      * Whether to enable direct play. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly enableDirectPlay?: boolean
 
     /**
      * Whether to enable direct stream. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly enableDirectStream?: boolean
 
     /**
      * Whether to enable transcoding. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly enableTranscoding?: boolean
 
     /**
      * Whether to allow to copy the video stream. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether to allow to copy the audio stream. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * The playback info.
-     * @type {PlaybackInfoDto}
-     * @memberof MediaInfoApiGetPostedPlaybackInfo
      */
     readonly playbackInfoDto?: PlaybackInfoDto
 }
 
 /**
  * Request parameters for openLiveStream operation in MediaInfoApi.
- * @export
- * @interface MediaInfoApiOpenLiveStreamRequest
  */
 export interface MediaInfoApiOpenLiveStreamRequest {
     /**
      * The open token.
-     * @type {string}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly openToken?: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly userId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly playSessionId?: string
 
     /**
      * The maximum streaming bitrate.
-     * @type {number}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * The start time in ticks.
-     * @type {number}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly startTimeTicks?: number
 
     /**
      * The audio stream index.
-     * @type {number}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly audioStreamIndex?: number
 
     /**
      * The subtitle stream index.
-     * @type {number}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * The maximum number of audio channels.
-     * @type {number}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly maxAudioChannels?: number
 
     /**
      * The item id.
-     * @type {string}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly itemId?: string
 
     /**
      * Whether to enable direct play. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly enableDirectPlay?: boolean
 
     /**
      * Whether to enable direct stream. Default: true.
-     * @type {boolean}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly enableDirectStream?: boolean
 
     /**
      * Always burn-in subtitle when transcoding.
-     * @type {boolean}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 
     /**
      * The open live stream dto.
-     * @type {OpenLiveStreamDto}
-     * @memberof MediaInfoApiOpenLiveStream
      */
     readonly openLiveStreamDto?: OpenLiveStreamDto
 }
 
 /**
  * MediaInfoApi - object-oriented interface
- * @export
- * @class MediaInfoApi
- * @extends {BaseAPI}
  */
 export class MediaInfoApi extends BaseAPI {
     /**
@@ -809,7 +725,6 @@ export class MediaInfoApi extends BaseAPI {
      * @param {MediaInfoApiCloseLiveStreamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaInfoApi
      */
     public closeLiveStream(requestParameters: MediaInfoApiCloseLiveStreamRequest, options?: RawAxiosRequestConfig) {
         return MediaInfoApiFp(this.configuration).closeLiveStream(requestParameters.liveStreamId, options).then((request) => request(this.axios, this.basePath));
@@ -821,7 +736,6 @@ export class MediaInfoApi extends BaseAPI {
      * @param {MediaInfoApiGetBitrateTestBytesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaInfoApi
      */
     public getBitrateTestBytes(requestParameters: MediaInfoApiGetBitrateTestBytesRequest = {}, options?: RawAxiosRequestConfig) {
         return MediaInfoApiFp(this.configuration).getBitrateTestBytes(requestParameters.size, options).then((request) => request(this.axios, this.basePath));
@@ -833,7 +747,6 @@ export class MediaInfoApi extends BaseAPI {
      * @param {MediaInfoApiGetPlaybackInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaInfoApi
      */
     public getPlaybackInfo(requestParameters: MediaInfoApiGetPlaybackInfoRequest, options?: RawAxiosRequestConfig) {
         return MediaInfoApiFp(this.configuration).getPlaybackInfo(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -845,7 +758,6 @@ export class MediaInfoApi extends BaseAPI {
      * @param {MediaInfoApiGetPostedPlaybackInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaInfoApi
      */
     public getPostedPlaybackInfo(requestParameters: MediaInfoApiGetPostedPlaybackInfoRequest, options?: RawAxiosRequestConfig) {
         return MediaInfoApiFp(this.configuration).getPostedPlaybackInfo(requestParameters.itemId, requestParameters.userId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.mediaSourceId, requestParameters.liveStreamId, requestParameters.autoOpenLiveStream, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.enableTranscoding, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.playbackInfoDto, options).then((request) => request(this.axios, this.basePath));
@@ -857,7 +769,6 @@ export class MediaInfoApi extends BaseAPI {
      * @param {MediaInfoApiOpenLiveStreamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaInfoApi
      */
     public openLiveStream(requestParameters: MediaInfoApiOpenLiveStreamRequest = {}, options?: RawAxiosRequestConfig) {
         return MediaInfoApiFp(this.configuration).openLiveStream(requestParameters.openToken, requestParameters.userId, requestParameters.playSessionId, requestParameters.maxStreamingBitrate, requestParameters.startTimeTicks, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.maxAudioChannels, requestParameters.itemId, requestParameters.enableDirectPlay, requestParameters.enableDirectStream, requestParameters.alwaysBurnInSubtitleWhenTranscoding, requestParameters.openLiveStreamDto, options).then((request) => request(this.axios, this.basePath));

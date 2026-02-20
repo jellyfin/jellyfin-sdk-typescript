@@ -13,107 +13,22 @@
 
 
 
-/**
- * 
- * @export
- * @interface RemoteSubtitleInfo
- */
 export interface RemoteSubtitleInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'ThreeLetterISOLanguageName'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'Id'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'ProviderName'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'Name'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'Format'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'Author'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'Comment'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSubtitleInfo
-     */
     'DateCreated'?: string | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSubtitleInfo
-     */
     'CommunityRating'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSubtitleInfo
-     */
     'FrameRate'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSubtitleInfo
-     */
     'DownloadCount'?: number | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof RemoteSubtitleInfo
-     */
     'IsHashMatch'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof RemoteSubtitleInfo
-     */
     'AiTranslated'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof RemoteSubtitleInfo
-     */
     'MachineTranslated'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof RemoteSubtitleInfo
-     */
     'Forced'?: boolean | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof RemoteSubtitleInfo
-     */
     'HearingImpaired'?: boolean | null;
 }
 

@@ -15,8 +15,6 @@
 
 /**
  * Enum TaskTriggerInfoType.
- * @export
- * @enum {string}
  */
 
 export const TaskTriggerInfoType = {

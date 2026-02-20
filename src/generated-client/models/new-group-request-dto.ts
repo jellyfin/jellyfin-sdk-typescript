@@ -15,14 +15,10 @@
 
 /**
  * Class NewGroupRequestDto.
- * @export
- * @interface NewGroupRequestDto
  */
 export interface NewGroupRequestDto {
     /**
      * Gets or sets the group name.
-     * @type {string}
-     * @memberof NewGroupRequestDto
      */
     'GroupName'?: string;
 }

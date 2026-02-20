@@ -15,8 +15,6 @@
 
 /**
  * Enum LocationType.
- * @export
- * @enum {string}
  */
 
 export const LocationType = {

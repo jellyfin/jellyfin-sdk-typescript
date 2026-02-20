@@ -13,83 +13,27 @@
 
 
 
-/**
- * 
- * @export
- * @interface RemoteSearchResult
- */
 export interface RemoteSearchResult {
     /**
      * Gets or sets the name.
-     * @type {string}
-     * @memberof RemoteSearchResult
      */
     'Name'?: string | null;
     /**
      * Gets or sets the provider ids.
-     * @type {{ [key: string]: string | null; }}
-     * @memberof RemoteSearchResult
      */
     'ProviderIds'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the year.
-     * @type {number}
-     * @memberof RemoteSearchResult
      */
     'ProductionYear'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSearchResult
-     */
     'IndexNumber'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSearchResult
-     */
     'IndexNumberEnd'?: number | null;
-    /**
-     * 
-     * @type {number}
-     * @memberof RemoteSearchResult
-     */
     'ParentIndexNumber'?: number | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSearchResult
-     */
     'PremiereDate'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSearchResult
-     */
     'ImageUrl'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSearchResult
-     */
     'SearchProviderName'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RemoteSearchResult
-     */
     'Overview'?: string | null;
-    /**
-     * 
-     * @type {RemoteSearchResult}
-     * @memberof RemoteSearchResult
-     */
     'AlbumArtist'?: RemoteSearchResult;
-    /**
-     * 
-     * @type {Array<RemoteSearchResult>}
-     * @memberof RemoteSearchResult
-     */
     'Artists'?: Array<RemoteSearchResult> | null;
 }
 

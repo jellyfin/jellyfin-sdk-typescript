@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -42,7 +42,6 @@ import type { PlaystateCommand } from '../models';
 import type { SessionInfoDto } from '../models';
 /**
  * SessionApi - axios parameter creator
- * @export
  */
 export const SessionApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -76,8 +75,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -134,8 +133,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['itemName'] = itemName;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -167,8 +166,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -200,8 +199,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -248,8 +247,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['activeWithinSeconds'] = activeWithinSeconds;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -324,8 +323,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['startIndex'] = startIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -382,8 +381,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['supportsPersistentIdentifier'] = supportsPersistentIdentifier;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -423,9 +422,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['id'] = id;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -467,8 +465,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -500,8 +498,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -545,8 +543,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['itemId'] = itemId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -585,9 +583,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -629,8 +626,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -669,9 +666,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -723,8 +719,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['controllingUserId'] = controllingUserId;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -764,8 +760,8 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -780,7 +776,6 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * SessionApi - functional programming interface
- * @export
  */
 export const SessionApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SessionApiAxiosParamCreator(configuration)
@@ -1022,7 +1017,6 @@ export const SessionApiFp = function(configuration?: Configuration) {
 
 /**
  * SessionApi - factory interface
- * @export
  */
 export const SessionApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SessionApiFp(configuration)
@@ -1189,380 +1183,271 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for addUserToSession operation in SessionApi.
- * @export
- * @interface SessionApiAddUserToSessionRequest
  */
 export interface SessionApiAddUserToSessionRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiAddUserToSession
      */
     readonly sessionId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof SessionApiAddUserToSession
      */
     readonly userId: string
 }
 
 /**
  * Request parameters for displayContent operation in SessionApi.
- * @export
- * @interface SessionApiDisplayContentRequest
  */
 export interface SessionApiDisplayContentRequest {
     /**
      * The session Id.
-     * @type {string}
-     * @memberof SessionApiDisplayContent
      */
     readonly sessionId: string
 
     /**
      * The type of item to browse to.
-     * @type {BaseItemKind}
-     * @memberof SessionApiDisplayContent
      */
     readonly itemType: BaseItemKind
 
     /**
      * The Id of the item.
-     * @type {string}
-     * @memberof SessionApiDisplayContent
      */
     readonly itemId: string
 
     /**
      * The name of the item.
-     * @type {string}
-     * @memberof SessionApiDisplayContent
      */
     readonly itemName: string
 }
 
 /**
  * Request parameters for getSessions operation in SessionApi.
- * @export
- * @interface SessionApiGetSessionsRequest
  */
 export interface SessionApiGetSessionsRequest {
     /**
      * Filter by sessions that a given user is allowed to remote control.
-     * @type {string}
-     * @memberof SessionApiGetSessions
      */
     readonly controllableByUserId?: string
 
     /**
      * Filter by device Id.
-     * @type {string}
-     * @memberof SessionApiGetSessions
      */
     readonly deviceId?: string
 
     /**
      * Optional. Filter by sessions that were active in the last n seconds.
-     * @type {number}
-     * @memberof SessionApiGetSessions
      */
     readonly activeWithinSeconds?: number
 }
 
 /**
  * Request parameters for play operation in SessionApi.
- * @export
- * @interface SessionApiPlayRequest
  */
 export interface SessionApiPlayRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiPlay
      */
     readonly sessionId: string
 
     /**
      * The type of play command to issue (PlayNow, PlayNext, PlayLast). Clients who have not yet implemented play next and play last may play now.
-     * @type {PlayCommand}
-     * @memberof SessionApiPlay
      */
     readonly playCommand: PlayCommand
 
     /**
      * The ids of the items to play, comma delimited.
-     * @type {Array<string>}
-     * @memberof SessionApiPlay
      */
     readonly itemIds: Array<string>
 
     /**
      * The starting position of the first item.
-     * @type {number}
-     * @memberof SessionApiPlay
      */
     readonly startPositionTicks?: number
 
     /**
      * Optional. The media source id.
-     * @type {string}
-     * @memberof SessionApiPlay
      */
     readonly mediaSourceId?: string
 
     /**
      * Optional. The index of the audio stream to play.
-     * @type {number}
-     * @memberof SessionApiPlay
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the subtitle stream to play.
-     * @type {number}
-     * @memberof SessionApiPlay
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. The start index.
-     * @type {number}
-     * @memberof SessionApiPlay
      */
     readonly startIndex?: number
 }
 
 /**
  * Request parameters for postCapabilities operation in SessionApi.
- * @export
- * @interface SessionApiPostCapabilitiesRequest
  */
 export interface SessionApiPostCapabilitiesRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiPostCapabilities
      */
     readonly id?: string
 
     /**
      * A list of playable media types, comma delimited. Audio, Video, Book, Photo.
-     * @type {Array<MediaType>}
-     * @memberof SessionApiPostCapabilities
      */
     readonly playableMediaTypes?: Array<MediaType>
 
     /**
      * A list of supported remote control commands, comma delimited.
-     * @type {Array<GeneralCommandType>}
-     * @memberof SessionApiPostCapabilities
      */
     readonly supportedCommands?: Array<GeneralCommandType>
 
     /**
      * Determines whether media can be played remotely..
-     * @type {boolean}
-     * @memberof SessionApiPostCapabilities
      */
     readonly supportsMediaControl?: boolean
 
     /**
      * Determines whether the device supports a unique identifier.
-     * @type {boolean}
-     * @memberof SessionApiPostCapabilities
      */
     readonly supportsPersistentIdentifier?: boolean
 }
 
 /**
  * Request parameters for postFullCapabilities operation in SessionApi.
- * @export
- * @interface SessionApiPostFullCapabilitiesRequest
  */
 export interface SessionApiPostFullCapabilitiesRequest {
     /**
      * The MediaBrowser.Model.Session.ClientCapabilities.
-     * @type {ClientCapabilitiesDto}
-     * @memberof SessionApiPostFullCapabilities
      */
     readonly clientCapabilitiesDto: ClientCapabilitiesDto
 
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiPostFullCapabilities
      */
     readonly id?: string
 }
 
 /**
  * Request parameters for removeUserFromSession operation in SessionApi.
- * @export
- * @interface SessionApiRemoveUserFromSessionRequest
  */
 export interface SessionApiRemoveUserFromSessionRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiRemoveUserFromSession
      */
     readonly sessionId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof SessionApiRemoveUserFromSession
      */
     readonly userId: string
 }
 
 /**
  * Request parameters for reportViewing operation in SessionApi.
- * @export
- * @interface SessionApiReportViewingRequest
  */
 export interface SessionApiReportViewingRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof SessionApiReportViewing
      */
     readonly itemId: string
 
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiReportViewing
      */
     readonly sessionId?: string
 }
 
 /**
  * Request parameters for sendFullGeneralCommand operation in SessionApi.
- * @export
- * @interface SessionApiSendFullGeneralCommandRequest
  */
 export interface SessionApiSendFullGeneralCommandRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiSendFullGeneralCommand
      */
     readonly sessionId: string
 
     /**
      * The MediaBrowser.Model.Session.GeneralCommand.
-     * @type {GeneralCommand}
-     * @memberof SessionApiSendFullGeneralCommand
      */
     readonly generalCommand: GeneralCommand
 }
 
 /**
  * Request parameters for sendGeneralCommand operation in SessionApi.
- * @export
- * @interface SessionApiSendGeneralCommandRequest
  */
 export interface SessionApiSendGeneralCommandRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiSendGeneralCommand
      */
     readonly sessionId: string
 
     /**
      * The command to send.
-     * @type {GeneralCommandType}
-     * @memberof SessionApiSendGeneralCommand
      */
     readonly command: GeneralCommandType
 }
 
 /**
  * Request parameters for sendMessageCommand operation in SessionApi.
- * @export
- * @interface SessionApiSendMessageCommandRequest
  */
 export interface SessionApiSendMessageCommandRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiSendMessageCommand
      */
     readonly sessionId: string
 
     /**
      * The MediaBrowser.Model.Session.MessageCommand object containing Header, Message Text, and TimeoutMs.
-     * @type {MessageCommand}
-     * @memberof SessionApiSendMessageCommand
      */
     readonly messageCommand: MessageCommand
 }
 
 /**
  * Request parameters for sendPlaystateCommand operation in SessionApi.
- * @export
- * @interface SessionApiSendPlaystateCommandRequest
  */
 export interface SessionApiSendPlaystateCommandRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiSendPlaystateCommand
      */
     readonly sessionId: string
 
     /**
      * The MediaBrowser.Model.Session.PlaystateCommand.
-     * @type {PlaystateCommand}
-     * @memberof SessionApiSendPlaystateCommand
      */
     readonly command: PlaystateCommand
 
     /**
      * The optional position ticks.
-     * @type {number}
-     * @memberof SessionApiSendPlaystateCommand
      */
     readonly seekPositionTicks?: number
 
     /**
      * The optional controlling user id.
-     * @type {string}
-     * @memberof SessionApiSendPlaystateCommand
      */
     readonly controllingUserId?: string
 }
 
 /**
  * Request parameters for sendSystemCommand operation in SessionApi.
- * @export
- * @interface SessionApiSendSystemCommandRequest
  */
 export interface SessionApiSendSystemCommandRequest {
     /**
      * The session id.
-     * @type {string}
-     * @memberof SessionApiSendSystemCommand
      */
     readonly sessionId: string
 
     /**
      * The command to send.
-     * @type {GeneralCommandType}
-     * @memberof SessionApiSendSystemCommand
      */
     readonly command: GeneralCommandType
 }
 
 /**
  * SessionApi - object-oriented interface
- * @export
- * @class SessionApi
- * @extends {BaseAPI}
  */
 export class SessionApi extends BaseAPI {
     /**
@@ -1571,7 +1456,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiAddUserToSessionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public addUserToSession(requestParameters: SessionApiAddUserToSessionRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).addUserToSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1583,7 +1467,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiDisplayContentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public displayContent(requestParameters: SessionApiDisplayContentRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).displayContent(requestParameters.sessionId, requestParameters.itemType, requestParameters.itemId, requestParameters.itemName, options).then((request) => request(this.axios, this.basePath));
@@ -1594,7 +1477,6 @@ export class SessionApi extends BaseAPI {
      * @summary Get all auth providers.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public getAuthProviders(options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).getAuthProviders(options).then((request) => request(this.axios, this.basePath));
@@ -1605,7 +1487,6 @@ export class SessionApi extends BaseAPI {
      * @summary Get all password reset providers.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public getPasswordResetProviders(options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).getPasswordResetProviders(options).then((request) => request(this.axios, this.basePath));
@@ -1617,7 +1498,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiGetSessionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(this.axios, this.basePath));
@@ -1629,7 +1509,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiPlayRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public play(requestParameters: SessionApiPlayRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).play(requestParameters.sessionId, requestParameters.playCommand, requestParameters.itemIds, requestParameters.startPositionTicks, requestParameters.mediaSourceId, requestParameters.audioStreamIndex, requestParameters.subtitleStreamIndex, requestParameters.startIndex, options).then((request) => request(this.axios, this.basePath));
@@ -1641,7 +1520,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiPostCapabilitiesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public postCapabilities(requestParameters: SessionApiPostCapabilitiesRequest = {}, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).postCapabilities(requestParameters.id, requestParameters.playableMediaTypes, requestParameters.supportedCommands, requestParameters.supportsMediaControl, requestParameters.supportsPersistentIdentifier, options).then((request) => request(this.axios, this.basePath));
@@ -1653,7 +1531,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiPostFullCapabilitiesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public postFullCapabilities(requestParameters: SessionApiPostFullCapabilitiesRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).postFullCapabilities(requestParameters.clientCapabilitiesDto, requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -1665,7 +1542,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiRemoveUserFromSessionRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1676,7 +1552,6 @@ export class SessionApi extends BaseAPI {
      * @summary Reports that a session has ended.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public reportSessionEnded(options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).reportSessionEnded(options).then((request) => request(this.axios, this.basePath));
@@ -1688,7 +1563,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiReportViewingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public reportViewing(requestParameters: SessionApiReportViewingRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).reportViewing(requestParameters.itemId, requestParameters.sessionId, options).then((request) => request(this.axios, this.basePath));
@@ -1700,7 +1574,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiSendFullGeneralCommandRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public sendFullGeneralCommand(requestParameters: SessionApiSendFullGeneralCommandRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendFullGeneralCommand(requestParameters.sessionId, requestParameters.generalCommand, options).then((request) => request(this.axios, this.basePath));
@@ -1712,7 +1585,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiSendGeneralCommandRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public sendGeneralCommand(requestParameters: SessionApiSendGeneralCommandRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendGeneralCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(this.axios, this.basePath));
@@ -1724,7 +1596,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiSendMessageCommandRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public sendMessageCommand(requestParameters: SessionApiSendMessageCommandRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendMessageCommand(requestParameters.sessionId, requestParameters.messageCommand, options).then((request) => request(this.axios, this.basePath));
@@ -1736,7 +1607,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiSendPlaystateCommandRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public sendPlaystateCommand(requestParameters: SessionApiSendPlaystateCommandRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendPlaystateCommand(requestParameters.sessionId, requestParameters.command, requestParameters.seekPositionTicks, requestParameters.controllingUserId, options).then((request) => request(this.axios, this.basePath));
@@ -1748,7 +1618,6 @@ export class SessionApi extends BaseAPI {
      * @param {SessionApiSendSystemCommandRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SessionApi
      */
     public sendSystemCommand(requestParameters: SessionApiSendSystemCommandRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).sendSystemCommand(requestParameters.sessionId, requestParameters.command, options).then((request) => request(this.axios, this.basePath));

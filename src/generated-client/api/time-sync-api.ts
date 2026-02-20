@@ -17,14 +17,13 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
 import type { UtcTimeResponse } from '../models';
 /**
  * TimeSyncApi - axios parameter creator
- * @export
  */
 export const TimeSyncApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -47,8 +46,8 @@ export const TimeSyncApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -63,7 +62,6 @@ export const TimeSyncApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * TimeSyncApi - functional programming interface
- * @export
  */
 export const TimeSyncApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TimeSyncApiAxiosParamCreator(configuration)
@@ -85,7 +83,6 @@ export const TimeSyncApiFp = function(configuration?: Configuration) {
 
 /**
  * TimeSyncApi - factory interface
- * @export
  */
 export const TimeSyncApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TimeSyncApiFp(configuration)
@@ -104,9 +101,6 @@ export const TimeSyncApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * TimeSyncApi - object-oriented interface
- * @export
- * @class TimeSyncApi
- * @extends {BaseAPI}
  */
 export class TimeSyncApi extends BaseAPI {
     /**
@@ -114,7 +108,6 @@ export class TimeSyncApi extends BaseAPI {
      * @summary Gets the current UTC time.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TimeSyncApi
      */
     public getUtcTime(options?: RawAxiosRequestConfig) {
         return TimeSyncApiFp(this.configuration).getUtcTime(options).then((request) => request(this.axios, this.basePath));

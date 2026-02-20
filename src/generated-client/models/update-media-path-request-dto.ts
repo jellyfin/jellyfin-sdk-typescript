@@ -18,21 +18,12 @@ import type { MediaPathInfo } from './media-path-info';
 
 /**
  * Update library options dto.
- * @export
- * @interface UpdateMediaPathRequestDto
  */
 export interface UpdateMediaPathRequestDto {
     /**
      * Gets or sets the library name.
-     * @type {string}
-     * @memberof UpdateMediaPathRequestDto
      */
     'Name': string;
-    /**
-     * 
-     * @type {MediaPathInfo}
-     * @memberof UpdateMediaPathRequestDto
-     */
     'PathInfo': MediaPathInfo;
 }
 

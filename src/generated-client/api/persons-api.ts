@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -34,7 +34,6 @@ import type { ItemFilter } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * PersonsApi - axios parameter creator
- * @export
  */
 export const PersonsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -69,8 +68,8 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -167,8 +166,8 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['enableImages'] = enableImages;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -183,7 +182,6 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * PersonsApi - functional programming interface
- * @export
  */
 export const PersonsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PersonsApiAxiosParamCreator(configuration)
@@ -232,7 +230,6 @@ export const PersonsApiFp = function(configuration?: Configuration) {
 
 /**
  * PersonsApi - factory interface
- * @export
  */
 export const PersonsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PersonsApiFp(configuration)
@@ -262,128 +259,91 @@ export const PersonsApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for getPerson operation in PersonsApi.
- * @export
- * @interface PersonsApiGetPersonRequest
  */
 export interface PersonsApiGetPersonRequest {
     /**
      * Person name.
-     * @type {string}
-     * @memberof PersonsApiGetPerson
      */
     readonly name: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof PersonsApiGetPerson
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getPersons operation in PersonsApi.
- * @export
- * @interface PersonsApiGetPersonsRequest
  */
 export interface PersonsApiGetPersonsRequest {
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof PersonsApiGetPersons
      */
     readonly limit?: number
 
     /**
      * The search term.
-     * @type {string}
-     * @memberof PersonsApiGetPersons
      */
     readonly searchTerm?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof PersonsApiGetPersons
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Specify additional filters to apply.
-     * @type {Array<ItemFilter>}
-     * @memberof PersonsApiGetPersons
      */
     readonly filters?: Array<ItemFilter>
 
     /**
      * Optional filter by items that are marked as favorite, or not. userId is required.
-     * @type {boolean}
-     * @memberof PersonsApiGetPersons
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional, include user data.
-     * @type {boolean}
-     * @memberof PersonsApiGetPersons
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
-     * @type {number}
-     * @memberof PersonsApiGetPersons
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof PersonsApiGetPersons
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. If specified results will be filtered to exclude those containing the specified PersonType. Allows multiple, comma-delimited.
-     * @type {Array<string>}
-     * @memberof PersonsApiGetPersons
      */
     readonly excludePersonTypes?: Array<string>
 
     /**
      * Optional. If specified results will be filtered to include only those containing the specified PersonType. Allows multiple, comma-delimited.
-     * @type {Array<string>}
-     * @memberof PersonsApiGetPersons
      */
     readonly personTypes?: Array<string>
 
     /**
      * Optional. If specified, person results will be filtered on items related to said persons.
-     * @type {string}
-     * @memberof PersonsApiGetPersons
      */
     readonly appearsInItemId?: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof PersonsApiGetPersons
      */
     readonly userId?: string
 
     /**
      * Optional, include image information in output.
-     * @type {boolean}
-     * @memberof PersonsApiGetPersons
      */
     readonly enableImages?: boolean
 }
 
 /**
  * PersonsApi - object-oriented interface
- * @export
- * @class PersonsApi
- * @extends {BaseAPI}
  */
 export class PersonsApi extends BaseAPI {
     /**
@@ -392,7 +352,6 @@ export class PersonsApi extends BaseAPI {
      * @param {PersonsApiGetPersonRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PersonsApi
      */
     public getPerson(requestParameters: PersonsApiGetPersonRequest, options?: RawAxiosRequestConfig) {
         return PersonsApiFp(this.configuration).getPerson(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -404,7 +363,6 @@ export class PersonsApi extends BaseAPI {
      * @param {PersonsApiGetPersonsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PersonsApi
      */
     public getPersons(requestParameters: PersonsApiGetPersonsRequest = {}, options?: RawAxiosRequestConfig) {
         return PersonsApiFp(this.configuration).getPersons(requestParameters.limit, requestParameters.searchTerm, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));

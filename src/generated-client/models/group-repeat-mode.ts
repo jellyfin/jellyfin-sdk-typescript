@@ -15,8 +15,6 @@
 
 /**
  * Enum GroupRepeatMode.
- * @export
- * @enum {string}
  */
 
 export const GroupRepeatMode = {

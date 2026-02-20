@@ -13,53 +13,13 @@
 
 
 
-/**
- * 
- * @export
- * @interface ConfigImageTypes
- */
 export interface ConfigImageTypes {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConfigImageTypes
-     */
     'BackdropSizes'?: Array<string> | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ConfigImageTypes
-     */
     'BaseUrl'?: string | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConfigImageTypes
-     */
     'LogoSizes'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConfigImageTypes
-     */
     'PosterSizes'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConfigImageTypes
-     */
     'ProfileSizes'?: Array<string> | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof ConfigImageTypes
-     */
     'SecureBaseUrl'?: string | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof ConfigImageTypes
-     */
     'StillSizes'?: Array<string> | null;
 }
 

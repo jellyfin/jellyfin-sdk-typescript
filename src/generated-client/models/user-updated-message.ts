@@ -21,27 +21,13 @@ import type { UserDto } from './user-dto';
 
 /**
  * User updated message.
- * @export
- * @interface UserUpdatedMessage
  */
 export interface UserUpdatedMessage {
-    /**
-     * 
-     * @type {UserDto}
-     * @memberof UserUpdatedMessage
-     */
     'Data'?: UserDto;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof UserUpdatedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof UserUpdatedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

@@ -30,110 +30,62 @@ import type { TranscodeSeekInfo } from './transcode-seek-info';
 
 /**
  * A class for transcoding profile information.  Note for client developers: Conditions defined in MediaBrowser.Model.Dlna.CodecProfile has higher priority and can override values defined here.
- * @export
- * @interface TranscodingProfile
  */
 export interface TranscodingProfile {
     /**
      * Gets or sets the container.
-     * @type {string}
-     * @memberof TranscodingProfile
      */
     'Container'?: string;
-    /**
-     * 
-     * @type {DlnaProfileType}
-     * @memberof TranscodingProfile
-     */
     'Type'?: DlnaProfileType;
     /**
      * Gets or sets the video codec.
-     * @type {string}
-     * @memberof TranscodingProfile
      */
     'VideoCodec'?: string;
     /**
      * Gets or sets the audio codec.
-     * @type {string}
-     * @memberof TranscodingProfile
      */
     'AudioCodec'?: string;
-    /**
-     * 
-     * @type {MediaStreamProtocol}
-     * @memberof TranscodingProfile
-     */
     'Protocol'?: MediaStreamProtocol;
     /**
      * Gets or sets a value indicating whether the content length should be estimated.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'EstimateContentLength'?: boolean;
     /**
      * Gets or sets a value indicating whether M2TS mode is enabled.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'EnableMpegtsM2TsMode'?: boolean;
-    /**
-     * 
-     * @type {TranscodeSeekInfo}
-     * @memberof TranscodingProfile
-     */
     'TranscodeSeekInfo'?: TranscodeSeekInfo;
     /**
      * Gets or sets a value indicating whether timestamps should be copied.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'CopyTimestamps'?: boolean;
-    /**
-     * 
-     * @type {EncodingContext}
-     * @memberof TranscodingProfile
-     */
     'Context'?: EncodingContext;
     /**
      * Gets or sets a value indicating whether subtitles are allowed in the manifest.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'EnableSubtitlesInManifest'?: boolean;
     /**
      * Gets or sets the maximum audio channels.
-     * @type {string}
-     * @memberof TranscodingProfile
      */
     'MaxAudioChannels'?: string | null;
     /**
      * Gets or sets the minimum amount of segments.
-     * @type {number}
-     * @memberof TranscodingProfile
      */
     'MinSegments'?: number;
     /**
      * Gets or sets the segment length.
-     * @type {number}
-     * @memberof TranscodingProfile
      */
     'SegmentLength'?: number;
     /**
      * Gets or sets a value indicating whether breaking the video stream on non-keyframes is supported.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'BreakOnNonKeyFrames'?: boolean;
     /**
      * Gets or sets the profile conditions.
-     * @type {Array<ProfileCondition>}
-     * @memberof TranscodingProfile
      */
     'Conditions'?: Array<ProfileCondition>;
     /**
      * Gets or sets a value indicating whether variable bitrate encoding is supported.
-     * @type {boolean}
-     * @memberof TranscodingProfile
      */
     'EnableAudioVbrEncoding'?: boolean;
 }

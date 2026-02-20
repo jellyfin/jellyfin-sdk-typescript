@@ -18,21 +18,12 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Restart required.
- * @export
- * @interface RestartRequiredMessage
  */
 export interface RestartRequiredMessage {
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof RestartRequiredMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof RestartRequiredMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

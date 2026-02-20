@@ -15,8 +15,6 @@
 
 /**
  * The person kind.
- * @export
- * @enum {string}
  */
 
 export const PersonKind = {

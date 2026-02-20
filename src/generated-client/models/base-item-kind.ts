@@ -15,8 +15,6 @@
 
 /**
  * The base item kind.
- * @export
- * @enum {string}
  */
 
 export const BaseItemKind = {

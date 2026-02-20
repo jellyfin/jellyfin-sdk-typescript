@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -46,7 +46,6 @@ import type { SeriesInfoRemoteSearchQuery } from '../models';
 import type { TrailerInfoRemoteSearchQuery } from '../models';
 /**
  * ItemLookupApi - axios parameter creator
- * @export
  */
 export const ItemLookupApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -84,9 +83,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['replaceAllImages'] = replaceAllImages;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -123,9 +121,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -162,9 +159,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -202,8 +198,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -238,9 +234,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -277,9 +272,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -316,9 +310,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -355,9 +348,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -394,9 +386,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -433,9 +424,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -472,9 +462,8 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -491,7 +480,6 @@ export const ItemLookupApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * ItemLookupApi - functional programming interface
- * @export
  */
 export const ItemLookupApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ItemLookupApiAxiosParamCreator(configuration)
@@ -646,7 +634,6 @@ export const ItemLookupApiFp = function(configuration?: Configuration) {
 
 /**
  * ItemLookupApi - factory interface
- * @export
  */
 export const ItemLookupApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ItemLookupApiFp(configuration)
@@ -766,177 +753,126 @@ export const ItemLookupApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for applySearchCriteria operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiApplySearchCriteriaRequest
  */
 export interface ItemLookupApiApplySearchCriteriaRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ItemLookupApiApplySearchCriteria
      */
     readonly itemId: string
 
     /**
      * The remote search result.
-     * @type {RemoteSearchResult}
-     * @memberof ItemLookupApiApplySearchCriteria
      */
     readonly remoteSearchResult: RemoteSearchResult
 
     /**
      * Optional. Whether or not to replace all images. Default: True.
-     * @type {boolean}
-     * @memberof ItemLookupApiApplySearchCriteria
      */
     readonly replaceAllImages?: boolean
 }
 
 /**
  * Request parameters for getBookRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetBookRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetBookRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {BookInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetBookRemoteSearchResults
      */
     readonly bookInfoRemoteSearchQuery: BookInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getBoxSetRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetBoxSetRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetBoxSetRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {BoxSetInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetBoxSetRemoteSearchResults
      */
     readonly boxSetInfoRemoteSearchQuery: BoxSetInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getExternalIdInfos operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetExternalIdInfosRequest
  */
 export interface ItemLookupApiGetExternalIdInfosRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ItemLookupApiGetExternalIdInfos
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for getMovieRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetMovieRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetMovieRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {MovieInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetMovieRemoteSearchResults
      */
     readonly movieInfoRemoteSearchQuery: MovieInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getMusicAlbumRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {AlbumInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetMusicAlbumRemoteSearchResults
      */
     readonly albumInfoRemoteSearchQuery: AlbumInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getMusicArtistRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetMusicArtistRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetMusicArtistRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {ArtistInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetMusicArtistRemoteSearchResults
      */
     readonly artistInfoRemoteSearchQuery: ArtistInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getMusicVideoRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetMusicVideoRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetMusicVideoRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {MusicVideoInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetMusicVideoRemoteSearchResults
      */
     readonly musicVideoInfoRemoteSearchQuery: MusicVideoInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getPersonRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetPersonRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetPersonRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {PersonLookupInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetPersonRemoteSearchResults
      */
     readonly personLookupInfoRemoteSearchQuery: PersonLookupInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getSeriesRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetSeriesRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetSeriesRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {SeriesInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetSeriesRemoteSearchResults
      */
     readonly seriesInfoRemoteSearchQuery: SeriesInfoRemoteSearchQuery
 }
 
 /**
  * Request parameters for getTrailerRemoteSearchResults operation in ItemLookupApi.
- * @export
- * @interface ItemLookupApiGetTrailerRemoteSearchResultsRequest
  */
 export interface ItemLookupApiGetTrailerRemoteSearchResultsRequest {
     /**
      * Remote search query.
-     * @type {TrailerInfoRemoteSearchQuery}
-     * @memberof ItemLookupApiGetTrailerRemoteSearchResults
      */
     readonly trailerInfoRemoteSearchQuery: TrailerInfoRemoteSearchQuery
 }
 
 /**
  * ItemLookupApi - object-oriented interface
- * @export
- * @class ItemLookupApi
- * @extends {BaseAPI}
  */
 export class ItemLookupApi extends BaseAPI {
     /**
@@ -945,7 +881,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiApplySearchCriteriaRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public applySearchCriteria(requestParameters: ItemLookupApiApplySearchCriteriaRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).applySearchCriteria(requestParameters.itemId, requestParameters.remoteSearchResult, requestParameters.replaceAllImages, options).then((request) => request(this.axios, this.basePath));
@@ -957,7 +892,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetBookRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getBookRemoteSearchResults(requestParameters: ItemLookupApiGetBookRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getBookRemoteSearchResults(requestParameters.bookInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -969,7 +903,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetBoxSetRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getBoxSetRemoteSearchResults(requestParameters: ItemLookupApiGetBoxSetRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getBoxSetRemoteSearchResults(requestParameters.boxSetInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -981,7 +914,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetExternalIdInfosRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getExternalIdInfos(requestParameters: ItemLookupApiGetExternalIdInfosRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getExternalIdInfos(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -993,7 +925,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetMovieRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getMovieRemoteSearchResults(requestParameters: ItemLookupApiGetMovieRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getMovieRemoteSearchResults(requestParameters.movieInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1005,7 +936,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getMusicAlbumRemoteSearchResults(requestParameters: ItemLookupApiGetMusicAlbumRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getMusicAlbumRemoteSearchResults(requestParameters.albumInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1017,7 +947,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetMusicArtistRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getMusicArtistRemoteSearchResults(requestParameters: ItemLookupApiGetMusicArtistRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getMusicArtistRemoteSearchResults(requestParameters.artistInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1029,7 +958,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetMusicVideoRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getMusicVideoRemoteSearchResults(requestParameters: ItemLookupApiGetMusicVideoRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getMusicVideoRemoteSearchResults(requestParameters.musicVideoInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1041,7 +969,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetPersonRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getPersonRemoteSearchResults(requestParameters: ItemLookupApiGetPersonRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getPersonRemoteSearchResults(requestParameters.personLookupInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1053,7 +980,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetSeriesRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getSeriesRemoteSearchResults(requestParameters: ItemLookupApiGetSeriesRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getSeriesRemoteSearchResults(requestParameters.seriesInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));
@@ -1065,7 +991,6 @@ export class ItemLookupApi extends BaseAPI {
      * @param {ItemLookupApiGetTrailerRemoteSearchResultsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemLookupApi
      */
     public getTrailerRemoteSearchResults(requestParameters: ItemLookupApiGetTrailerRemoteSearchResultsRequest, options?: RawAxiosRequestConfig) {
         return ItemLookupApiFp(this.configuration).getTrailerRemoteSearchResults(requestParameters.trailerInfoRemoteSearchQuery, options).then((request) => request(this.axios, this.basePath));

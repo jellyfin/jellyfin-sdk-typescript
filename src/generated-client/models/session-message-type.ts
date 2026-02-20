@@ -15,8 +15,6 @@
 
 /**
  * The different kinds of messages that are used in the WebSocket api.
- * @export
- * @enum {string}
  */
 
 export const SessionMessageType = {

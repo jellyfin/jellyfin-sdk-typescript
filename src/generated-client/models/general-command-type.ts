@@ -15,8 +15,6 @@
 
 /**
  * This exists simply to identify a set of known commands.
- * @export
- * @enum {string}
  */
 
 export const GeneralCommandType = {

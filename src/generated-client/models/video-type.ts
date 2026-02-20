@@ -15,8 +15,6 @@
 
 /**
  * Enum VideoType.
- * @export
- * @enum {string}
  */
 
 export const VideoType = {

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { MediaSegmentType } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * MediaSegmentsApi - axios parameter creator
- * @export
  */
 export const MediaSegmentsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -63,8 +62,8 @@ export const MediaSegmentsApiAxiosParamCreator = function (configuration?: Confi
                 localVarQueryParameter['includeSegmentTypes'] = includeSegmentTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -79,7 +78,6 @@ export const MediaSegmentsApiAxiosParamCreator = function (configuration?: Confi
 
 /**
  * MediaSegmentsApi - functional programming interface
- * @export
  */
 export const MediaSegmentsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MediaSegmentsApiAxiosParamCreator(configuration)
@@ -103,7 +101,6 @@ export const MediaSegmentsApiFp = function(configuration?: Configuration) {
 
 /**
  * MediaSegmentsApi - factory interface
- * @export
  */
 export const MediaSegmentsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MediaSegmentsApiFp(configuration)
@@ -123,30 +120,21 @@ export const MediaSegmentsApiFactory = function (configuration?: Configuration, 
 
 /**
  * Request parameters for getItemSegments operation in MediaSegmentsApi.
- * @export
- * @interface MediaSegmentsApiGetItemSegmentsRequest
  */
 export interface MediaSegmentsApiGetItemSegmentsRequest {
     /**
      * The ItemId.
-     * @type {string}
-     * @memberof MediaSegmentsApiGetItemSegments
      */
     readonly itemId: string
 
     /**
      * Optional filter of requested segment types.
-     * @type {Array<MediaSegmentType>}
-     * @memberof MediaSegmentsApiGetItemSegments
      */
     readonly includeSegmentTypes?: Array<MediaSegmentType>
 }
 
 /**
  * MediaSegmentsApi - object-oriented interface
- * @export
- * @class MediaSegmentsApi
- * @extends {BaseAPI}
  */
 export class MediaSegmentsApi extends BaseAPI {
     /**
@@ -155,7 +143,6 @@ export class MediaSegmentsApi extends BaseAPI {
      * @param {MediaSegmentsApiGetItemSegmentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MediaSegmentsApi
      */
     public getItemSegments(requestParameters: MediaSegmentsApiGetItemSegmentsRequest, options?: RawAxiosRequestConfig) {
         return MediaSegmentsApiFp(this.configuration).getItemSegments(requestParameters.itemId, requestParameters.includeSegmentTypes, options).then((request) => request(this.axios, this.basePath));

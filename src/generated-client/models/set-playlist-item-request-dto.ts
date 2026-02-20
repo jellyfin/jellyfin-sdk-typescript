@@ -15,14 +15,10 @@
 
 /**
  * Class SetPlaylistItemRequestDto.
- * @export
- * @interface SetPlaylistItemRequestDto
  */
 export interface SetPlaylistItemRequestDto {
     /**
      * Gets or sets the playlist identifier of the playing item.
-     * @type {string}
-     * @memberof SetPlaylistItemRequestDto
      */
     'PlaylistItemId'?: string;
 }

@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Sync play command.
- * @export
- * @interface SyncPlayCommandMessage
  */
 export interface SyncPlayCommandMessage {
-    /**
-     * 
-     * @type {SendCommand}
-     * @memberof SyncPlayCommandMessage
-     */
     'Data'?: SendCommand;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof SyncPlayCommandMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof SyncPlayCommandMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

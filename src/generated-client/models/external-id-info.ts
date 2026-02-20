@@ -18,27 +18,16 @@ import type { ExternalIdMediaType } from './external-id-media-type';
 
 /**
  * Represents the external id information for serialization to the client.
- * @export
- * @interface ExternalIdInfo
  */
 export interface ExternalIdInfo {
     /**
      * Gets or sets the display name of the external id provider (IE: IMDB, MusicBrainz, etc).
-     * @type {string}
-     * @memberof ExternalIdInfo
      */
     'Name'?: string;
     /**
      * Gets or sets the unique key for this id. This key should be unique across all providers.
-     * @type {string}
-     * @memberof ExternalIdInfo
      */
     'Key'?: string;
-    /**
-     * 
-     * @type {ExternalIdMediaType}
-     * @memberof ExternalIdInfo
-     */
     'Type'?: ExternalIdMediaType;
 }
 

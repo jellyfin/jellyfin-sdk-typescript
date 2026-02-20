@@ -15,14 +15,10 @@
 
 /**
  * Class NextItemRequestDto.
- * @export
- * @interface NextItemRequestDto
  */
 export interface NextItemRequestDto {
     /**
      * Gets or sets the playing item identifier.
-     * @type {string}
-     * @memberof NextItemRequestDto
      */
     'PlaylistItemId'?: string;
 }

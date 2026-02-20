@@ -15,8 +15,6 @@
 
 /**
  * An enum representing formats of spatial audio.
- * @export
- * @enum {string}
  */
 
 export const AudioSpatialFormat = {

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -26,7 +26,6 @@ import type { MetadataRefreshMode } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * ItemRefreshApi - axios parameter creator
- * @export
  */
 export const ItemRefreshApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -81,8 +80,8 @@ export const ItemRefreshApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['regenerateTrickplay'] = regenerateTrickplay;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -97,7 +96,6 @@ export const ItemRefreshApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * ItemRefreshApi - functional programming interface
- * @export
  */
 export const ItemRefreshApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ItemRefreshApiAxiosParamCreator(configuration)
@@ -125,7 +123,6 @@ export const ItemRefreshApiFp = function(configuration?: Configuration) {
 
 /**
  * ItemRefreshApi - factory interface
- * @export
  */
 export const ItemRefreshApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ItemRefreshApiFp(configuration)
@@ -145,58 +142,41 @@ export const ItemRefreshApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for refreshItem operation in ItemRefreshApi.
- * @export
- * @interface ItemRefreshApiRefreshItemRequest
  */
 export interface ItemRefreshApiRefreshItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly itemId: string
 
     /**
      * (Optional) Specifies the metadata refresh mode.
-     * @type {MetadataRefreshMode}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly metadataRefreshMode?: MetadataRefreshMode
 
     /**
      * (Optional) Specifies the image refresh mode.
-     * @type {MetadataRefreshMode}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly imageRefreshMode?: MetadataRefreshMode
 
     /**
      * (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
-     * @type {boolean}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly replaceAllMetadata?: boolean
 
     /**
      * (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
-     * @type {boolean}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly replaceAllImages?: boolean
 
     /**
      * (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
-     * @type {boolean}
-     * @memberof ItemRefreshApiRefreshItem
      */
     readonly regenerateTrickplay?: boolean
 }
 
 /**
  * ItemRefreshApi - object-oriented interface
- * @export
- * @class ItemRefreshApi
- * @extends {BaseAPI}
  */
 export class ItemRefreshApi extends BaseAPI {
     /**
@@ -205,7 +185,6 @@ export class ItemRefreshApi extends BaseAPI {
      * @param {ItemRefreshApiRefreshItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemRefreshApi
      */
     public refreshItem(requestParameters: ItemRefreshApiRefreshItemRequest, options?: RawAxiosRequestConfig) {
         return ItemRefreshApiFp(this.configuration).refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, requestParameters.regenerateTrickplay, options).then((request) => request(this.axios, this.basePath));

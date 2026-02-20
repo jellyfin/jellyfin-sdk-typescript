@@ -13,41 +13,11 @@
 
 
 
-/**
- * 
- * @export
- * @interface XbmcMetadataOptions
- */
 export interface XbmcMetadataOptions {
-    /**
-     * 
-     * @type {string}
-     * @memberof XbmcMetadataOptions
-     */
     'UserId'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof XbmcMetadataOptions
-     */
     'ReleaseDateFormat'?: string;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof XbmcMetadataOptions
-     */
     'SaveImagePathsInNfo'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof XbmcMetadataOptions
-     */
     'EnablePathSubstitution'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof XbmcMetadataOptions
-     */
     'EnableExtraThumbsDuplication'?: boolean;
 }
 

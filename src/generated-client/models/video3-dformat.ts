@@ -13,11 +13,6 @@
 
 
 
-/**
- * 
- * @export
- * @enum {string}
- */
 
 export const Video3DFormat = {
     HalfSideBySide: 'HalfSideBySide',

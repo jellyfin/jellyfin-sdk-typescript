@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -44,7 +44,6 @@ import type { UpdatePlaylistDto } from '../models';
 import type { UpdatePlaylistUserDto } from '../models';
 /**
  * PlaylistsApi - axios parameter creator
- * @export
  */
 export const PlaylistsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -84,8 +83,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -138,9 +137,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['mediaType'] = mediaType;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -178,8 +176,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -255,8 +253,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -296,8 +294,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -333,8 +331,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -378,8 +376,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -420,8 +418,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['entryIds'] = entryIds;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -461,8 +459,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -501,9 +499,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -548,9 +545,8 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -567,7 +563,6 @@ export const PlaylistsApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * PlaylistsApi - functional programming interface
- * @export
  */
 export const PlaylistsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = PlaylistsApiAxiosParamCreator(configuration)
@@ -742,7 +737,6 @@ export const PlaylistsApiFp = function(configuration?: Configuration) {
 
 /**
  * PlaylistsApi - factory interface
- * @export
  */
 export const PlaylistsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = PlaylistsApiFp(configuration)
@@ -862,317 +856,226 @@ export const PlaylistsApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for addItemToPlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiAddItemToPlaylistRequest
  */
 export interface PlaylistsApiAddItemToPlaylistRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly playlistId: string
 
     /**
      * Item id, comma delimited.
-     * @type {Array<string>}
-     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly ids?: Array<string>
 
     /**
      * The userId.
-     * @type {string}
-     * @memberof PlaylistsApiAddItemToPlaylist
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for createPlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiCreatePlaylistRequest
  */
 export interface PlaylistsApiCreatePlaylistRequest {
     /**
      * The playlist name.
-     * @type {string}
-     * @memberof PlaylistsApiCreatePlaylist
      */
     readonly name?: string
 
     /**
      * The item ids.
-     * @type {Array<string>}
-     * @memberof PlaylistsApiCreatePlaylist
      */
     readonly ids?: Array<string>
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof PlaylistsApiCreatePlaylist
      */
     readonly userId?: string
 
     /**
      * The media type.
-     * @type {MediaType}
-     * @memberof PlaylistsApiCreatePlaylist
      */
     readonly mediaType?: MediaType
 
     /**
      * The create playlist payload.
-     * @type {CreatePlaylistDto}
-     * @memberof PlaylistsApiCreatePlaylist
      */
     readonly createPlaylistDto?: CreatePlaylistDto
 }
 
 /**
  * Request parameters for getPlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiGetPlaylistRequest
  */
 export interface PlaylistsApiGetPlaylistRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylist
      */
     readonly playlistId: string
 }
 
 /**
  * Request parameters for getPlaylistItems operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiGetPlaylistItemsRequest
  */
 export interface PlaylistsApiGetPlaylistItemsRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly playlistId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof PlaylistsApiGetPlaylistItems
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getPlaylistUser operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiGetPlaylistUserRequest
  */
 export interface PlaylistsApiGetPlaylistUserRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylistUser
      */
     readonly playlistId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylistUser
      */
     readonly userId: string
 }
 
 /**
  * Request parameters for getPlaylistUsers operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiGetPlaylistUsersRequest
  */
 export interface PlaylistsApiGetPlaylistUsersRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiGetPlaylistUsers
      */
     readonly playlistId: string
 }
 
 /**
  * Request parameters for moveItem operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiMoveItemRequest
  */
 export interface PlaylistsApiMoveItemRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiMoveItem
      */
     readonly playlistId: string
 
     /**
      * The item id.
-     * @type {string}
-     * @memberof PlaylistsApiMoveItem
      */
     readonly itemId: string
 
     /**
      * The new index.
-     * @type {number}
-     * @memberof PlaylistsApiMoveItem
      */
     readonly newIndex: number
 }
 
 /**
  * Request parameters for removeItemFromPlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiRemoveItemFromPlaylistRequest
  */
 export interface PlaylistsApiRemoveItemFromPlaylistRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiRemoveItemFromPlaylist
      */
     readonly playlistId: string
 
     /**
      * The item ids, comma delimited.
-     * @type {Array<string>}
-     * @memberof PlaylistsApiRemoveItemFromPlaylist
      */
     readonly entryIds?: Array<string>
 }
 
 /**
  * Request parameters for removeUserFromPlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiRemoveUserFromPlaylistRequest
  */
 export interface PlaylistsApiRemoveUserFromPlaylistRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiRemoveUserFromPlaylist
      */
     readonly playlistId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof PlaylistsApiRemoveUserFromPlaylist
      */
     readonly userId: string
 }
 
 /**
  * Request parameters for updatePlaylist operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiUpdatePlaylistRequest
  */
 export interface PlaylistsApiUpdatePlaylistRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiUpdatePlaylist
      */
     readonly playlistId: string
 
     /**
      * The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistDto id.
-     * @type {UpdatePlaylistDto}
-     * @memberof PlaylistsApiUpdatePlaylist
      */
     readonly updatePlaylistDto: UpdatePlaylistDto
 }
 
 /**
  * Request parameters for updatePlaylistUser operation in PlaylistsApi.
- * @export
- * @interface PlaylistsApiUpdatePlaylistUserRequest
  */
 export interface PlaylistsApiUpdatePlaylistUserRequest {
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof PlaylistsApiUpdatePlaylistUser
      */
     readonly playlistId: string
 
     /**
      * The user id.
-     * @type {string}
-     * @memberof PlaylistsApiUpdatePlaylistUser
      */
     readonly userId: string
 
     /**
      * The Jellyfin.Api.Models.PlaylistDtos.UpdatePlaylistUserDto.
-     * @type {UpdatePlaylistUserDto}
-     * @memberof PlaylistsApiUpdatePlaylistUser
      */
     readonly updatePlaylistUserDto: UpdatePlaylistUserDto
 }
 
 /**
  * PlaylistsApi - object-oriented interface
- * @export
- * @class PlaylistsApi
- * @extends {BaseAPI}
  */
 export class PlaylistsApi extends BaseAPI {
     /**
@@ -1181,7 +1084,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiAddItemToPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public addItemToPlaylist(requestParameters: PlaylistsApiAddItemToPlaylistRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).addItemToPlaylist(requestParameters.playlistId, requestParameters.ids, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1193,7 +1095,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiCreatePlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public createPlaylist(requestParameters: PlaylistsApiCreatePlaylistRequest = {}, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).createPlaylist(requestParameters.name, requestParameters.ids, requestParameters.userId, requestParameters.mediaType, requestParameters.createPlaylistDto, options).then((request) => request(this.axios, this.basePath));
@@ -1205,7 +1106,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiGetPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public getPlaylist(requestParameters: PlaylistsApiGetPlaylistRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).getPlaylist(requestParameters.playlistId, options).then((request) => request(this.axios, this.basePath));
@@ -1217,7 +1117,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiGetPlaylistItemsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public getPlaylistItems(requestParameters: PlaylistsApiGetPlaylistItemsRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).getPlaylistItems(requestParameters.playlistId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1229,7 +1128,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiGetPlaylistUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public getPlaylistUser(requestParameters: PlaylistsApiGetPlaylistUserRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).getPlaylistUser(requestParameters.playlistId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1241,7 +1139,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiGetPlaylistUsersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public getPlaylistUsers(requestParameters: PlaylistsApiGetPlaylistUsersRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).getPlaylistUsers(requestParameters.playlistId, options).then((request) => request(this.axios, this.basePath));
@@ -1253,7 +1150,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiMoveItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public moveItem(requestParameters: PlaylistsApiMoveItemRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).moveItem(requestParameters.playlistId, requestParameters.itemId, requestParameters.newIndex, options).then((request) => request(this.axios, this.basePath));
@@ -1265,7 +1161,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiRemoveItemFromPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public removeItemFromPlaylist(requestParameters: PlaylistsApiRemoveItemFromPlaylistRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).removeItemFromPlaylist(requestParameters.playlistId, requestParameters.entryIds, options).then((request) => request(this.axios, this.basePath));
@@ -1277,7 +1172,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiRemoveUserFromPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public removeUserFromPlaylist(requestParameters: PlaylistsApiRemoveUserFromPlaylistRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).removeUserFromPlaylist(requestParameters.playlistId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1289,7 +1183,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiUpdatePlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public updatePlaylist(requestParameters: PlaylistsApiUpdatePlaylistRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).updatePlaylist(requestParameters.playlistId, requestParameters.updatePlaylistDto, options).then((request) => request(this.axios, this.basePath));
@@ -1301,7 +1194,6 @@ export class PlaylistsApi extends BaseAPI {
      * @param {PlaylistsApiUpdatePlaylistUserRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof PlaylistsApi
      */
     public updatePlaylistUser(requestParameters: PlaylistsApiUpdatePlaylistUserRequest, options?: RawAxiosRequestConfig) {
         return PlaylistsApiFp(this.configuration).updatePlaylistUser(requestParameters.playlistId, requestParameters.userId, requestParameters.updatePlaylistUserDto, options).then((request) => request(this.axios, this.basePath));

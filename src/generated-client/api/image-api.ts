@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { ImageType } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * ImageApi - axios parameter creator
- * @export
  */
 export const ImageApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -56,8 +55,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -102,8 +101,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -147,8 +146,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -185,8 +184,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -297,8 +296,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -410,8 +409,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -522,8 +521,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -635,8 +634,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -741,8 +740,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -853,8 +852,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -890,8 +889,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1003,8 +1002,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1115,8 +1114,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1228,8 +1227,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1340,8 +1339,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1380,8 +1379,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1493,8 +1492,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1605,8 +1604,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1650,8 +1649,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1762,8 +1761,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1875,8 +1874,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1987,8 +1986,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2100,8 +2099,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2206,8 +2205,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2318,8 +2317,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2431,8 +2430,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2543,8 +2542,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2656,8 +2655,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2768,8 +2767,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2881,8 +2880,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['imageIndex'] = imageIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2993,8 +2992,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['foregroundLayer'] = foregroundLayer;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3038,8 +3037,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['format'] = format;
             }
 
+            localVarHeaderParameter['Accept'] = 'image/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3077,9 +3076,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['userId'] = userId;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3122,9 +3120,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3171,9 +3168,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3226,8 +3222,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
                 localVarQueryParameter['newIndex'] = newIndex;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -3260,9 +3256,8 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'image/*';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -3279,7 +3274,6 @@ export const ImageApiAxiosParamCreator = function (configuration?: Configuration
 
 /**
  * ImageApi - functional programming interface
- * @export
  */
 export const ImageApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ImageApiAxiosParamCreator(configuration)
@@ -4171,7 +4165,6 @@ export const ImageApiFp = function(configuration?: Configuration) {
 
 /**
  * ImageApi - factory interface
- * @export
  */
 export const ImageApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ImageApiFp(configuration)
@@ -4550,3327 +4543,2364 @@ export const ImageApiFactory = function (configuration?: Configuration, basePath
 
 /**
  * Request parameters for deleteItemImage operation in ImageApi.
- * @export
- * @interface ImageApiDeleteItemImageRequest
  */
 export interface ImageApiDeleteItemImageRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiDeleteItemImage
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiDeleteItemImage
      */
     readonly imageType: ImageType
 
     /**
      * The image index.
-     * @type {number}
-     * @memberof ImageApiDeleteItemImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for deleteItemImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiDeleteItemImageByIndexRequest
  */
 export interface ImageApiDeleteItemImageByIndexRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiDeleteItemImageByIndex
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiDeleteItemImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * The image index.
-     * @type {number}
-     * @memberof ImageApiDeleteItemImageByIndex
      */
     readonly imageIndex: number
 }
 
 /**
  * Request parameters for deleteUserImage operation in ImageApi.
- * @export
- * @interface ImageApiDeleteUserImageRequest
  */
 export interface ImageApiDeleteUserImageRequest {
     /**
      * User Id.
-     * @type {string}
-     * @memberof ImageApiDeleteUserImage
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getArtistImage operation in ImageApi.
- * @export
- * @interface ImageApiGetArtistImageRequest
  */
 export interface ImageApiGetArtistImageRequest {
     /**
      * Artist name.
-     * @type {string}
-     * @memberof ImageApiGetArtistImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetArtistImage
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetArtistImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetArtistImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetArtistImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetArtistImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetArtistImage
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getGenreImage operation in ImageApi.
- * @export
- * @interface ImageApiGetGenreImageRequest
  */
 export interface ImageApiGetGenreImageRequest {
     /**
      * Genre name.
-     * @type {string}
-     * @memberof ImageApiGetGenreImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetGenreImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetGenreImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetGenreImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetGenreImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetGenreImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetGenreImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for getGenreImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiGetGenreImageByIndexRequest
  */
 export interface ImageApiGetGenreImageByIndexRequest {
     /**
      * Genre name.
-     * @type {string}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetGenreImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getItemImage operation in ImageApi.
- * @export
- * @interface ImageApiGetItemImageRequest
  */
 export interface ImageApiGetItemImageRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiGetItemImage
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetItemImage
      */
     readonly imageType: ImageType
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly maxHeight?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetItemImage
      */
     readonly tag?: string
 
     /**
      * Optional. The MediaBrowser.Model.Drawing.ImageFormat of the returned image.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetItemImage
      */
     readonly format?: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly unplayedCount?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetItemImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetItemImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetItemImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for getItemImage2 operation in ImageApi.
- * @export
- * @interface ImageApiGetItemImage2Request
  */
 export interface ImageApiGetItemImage2Request {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiGetItemImage2
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetItemImage2
      */
     readonly imageType: ImageType
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly maxWidth: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly maxHeight: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetItemImage2
      */
     readonly tag: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetItemImage2
      */
     readonly format: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly percentPlayed: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly unplayedCount: number
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly imageIndex: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetItemImage2
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetItemImage2
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetItemImage2
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getItemImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiGetItemImageByIndexRequest
  */
 export interface ImageApiGetItemImageByIndexRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly tag?: string
 
     /**
      * Optional. The MediaBrowser.Model.Drawing.ImageFormat of the returned image.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetItemImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getItemImageInfos operation in ImageApi.
- * @export
- * @interface ImageApiGetItemImageInfosRequest
  */
 export interface ImageApiGetItemImageInfosRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiGetItemImageInfos
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for getMusicGenreImage operation in ImageApi.
- * @export
- * @interface ImageApiGetMusicGenreImageRequest
  */
 export interface ImageApiGetMusicGenreImageRequest {
     /**
      * Music genre name.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for getMusicGenreImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiGetMusicGenreImageByIndexRequest
  */
 export interface ImageApiGetMusicGenreImageByIndexRequest {
     /**
      * Music genre name.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetMusicGenreImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getPersonImage operation in ImageApi.
- * @export
- * @interface ImageApiGetPersonImageRequest
  */
 export interface ImageApiGetPersonImageRequest {
     /**
      * Person name.
-     * @type {string}
-     * @memberof ImageApiGetPersonImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetPersonImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetPersonImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetPersonImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetPersonImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetPersonImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetPersonImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for getPersonImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiGetPersonImageByIndexRequest
  */
 export interface ImageApiGetPersonImageByIndexRequest {
     /**
      * Person name.
-     * @type {string}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetPersonImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getSplashscreen operation in ImageApi.
- * @export
- * @interface ImageApiGetSplashscreenRequest
  */
 export interface ImageApiGetSplashscreenRequest {
     /**
      * Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetSplashscreen
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetSplashscreen
      */
     readonly format?: ImageFormat
 }
 
 /**
  * Request parameters for getStudioImage operation in ImageApi.
- * @export
- * @interface ImageApiGetStudioImageRequest
  */
 export interface ImageApiGetStudioImageRequest {
     /**
      * Studio name.
-     * @type {string}
-     * @memberof ImageApiGetStudioImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetStudioImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetStudioImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetStudioImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetStudioImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetStudioImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetStudioImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for getStudioImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiGetStudioImageByIndexRequest
  */
 export interface ImageApiGetStudioImageByIndexRequest {
     /**
      * Studio name.
-     * @type {string}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiGetStudioImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for getUserImage operation in ImageApi.
- * @export
- * @interface ImageApiGetUserImageRequest
  */
 export interface ImageApiGetUserImageRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof ImageApiGetUserImage
      */
     readonly userId?: string
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiGetUserImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiGetUserImage
      */
     readonly format?: ImageFormat
 }
 
 /**
  * Request parameters for headArtistImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadArtistImageRequest
  */
 export interface ImageApiHeadArtistImageRequest {
     /**
      * Artist name.
-     * @type {string}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadArtistImage
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headGenreImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadGenreImageRequest
  */
 export interface ImageApiHeadGenreImageRequest {
     /**
      * Genre name.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for headGenreImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiHeadGenreImageByIndexRequest
  */
 export interface ImageApiHeadGenreImageByIndexRequest {
     /**
      * Genre name.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadGenreImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headItemImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadItemImageRequest
  */
 export interface ImageApiHeadItemImageRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadItemImage
      */
     readonly imageType: ImageType
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly maxHeight?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage
      */
     readonly tag?: string
 
     /**
      * Optional. The MediaBrowser.Model.Drawing.ImageFormat of the returned image.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadItemImage
      */
     readonly format?: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly unplayedCount?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for headItemImage2 operation in ImageApi.
- * @export
- * @interface ImageApiHeadItemImage2Request
  */
 export interface ImageApiHeadItemImage2Request {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly imageType: ImageType
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly maxWidth: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly maxHeight: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly tag: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly format: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly percentPlayed: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly unplayedCount: number
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly imageIndex: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadItemImage2
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headItemImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiHeadItemImageByIndexRequest
  */
 export interface ImageApiHeadItemImageByIndexRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly tag?: string
 
     /**
      * Optional. The MediaBrowser.Model.Drawing.ImageFormat of the returned image.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadItemImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headMusicGenreImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadMusicGenreImageRequest
  */
 export interface ImageApiHeadMusicGenreImageRequest {
     /**
      * Music genre name.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for headMusicGenreImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiHeadMusicGenreImageByIndexRequest
  */
 export interface ImageApiHeadMusicGenreImageByIndexRequest {
     /**
      * Music genre name.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadMusicGenreImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headPersonImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadPersonImageRequest
  */
 export interface ImageApiHeadPersonImageRequest {
     /**
      * Person name.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for headPersonImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiHeadPersonImageByIndexRequest
  */
 export interface ImageApiHeadPersonImageByIndexRequest {
     /**
      * Person name.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadPersonImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headStudioImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadStudioImageRequest
  */
 export interface ImageApiHeadStudioImageRequest {
     /**
      * Studio name.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly imageType: ImageType
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly foregroundLayer?: string
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImage
      */
     readonly imageIndex?: number
 }
 
 /**
  * Request parameters for headStudioImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiHeadStudioImageByIndexRequest
  */
 export interface ImageApiHeadStudioImageByIndexRequest {
     /**
      * Studio name.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly name: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * Image index.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly imageIndex: number
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly format?: ImageFormat
 
     /**
      * The maximum image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly maxWidth?: number
 
     /**
      * The maximum image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Percent to render for the percent played overlay.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly percentPlayed?: number
 
     /**
      * Optional. Unplayed count overlay to render.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly unplayedCount?: number
 
     /**
      * The fixed image width to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly width?: number
 
     /**
      * The fixed image height to return.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly height?: number
 
     /**
      * Optional. Quality setting, from 0-100. Defaults to 90 and should suffice in most cases.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly quality?: number
 
     /**
      * Width of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly fillWidth?: number
 
     /**
      * Height of box to fill.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly fillHeight?: number
 
     /**
      * Optional. Blur image.
-     * @type {number}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly blur?: number
 
     /**
      * Optional. Apply a background color for transparent images.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly backgroundColor?: string
 
     /**
      * Optional. Apply a foreground layer on top of the image.
-     * @type {string}
-     * @memberof ImageApiHeadStudioImageByIndex
      */
     readonly foregroundLayer?: string
 }
 
 /**
  * Request parameters for headUserImage operation in ImageApi.
- * @export
- * @interface ImageApiHeadUserImageRequest
  */
 export interface ImageApiHeadUserImageRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof ImageApiHeadUserImage
      */
     readonly userId?: string
 
     /**
      * Optional. Supply the cache tag from the item object to receive strong caching headers.
-     * @type {string}
-     * @memberof ImageApiHeadUserImage
      */
     readonly tag?: string
 
     /**
      * Determines the output format of the image - original,gif,jpg,png.
-     * @type {ImageFormat}
-     * @memberof ImageApiHeadUserImage
      */
     readonly format?: ImageFormat
 }
 
 /**
  * Request parameters for postUserImage operation in ImageApi.
- * @export
- * @interface ImageApiPostUserImageRequest
  */
 export interface ImageApiPostUserImageRequest {
     /**
      * User Id.
-     * @type {string}
-     * @memberof ImageApiPostUserImage
      */
     readonly userId?: string
 
-    /**
-     * 
-     * @type {File}
-     * @memberof ImageApiPostUserImage
-     */
     readonly body?: File
 }
 
 /**
  * Request parameters for setItemImage operation in ImageApi.
- * @export
- * @interface ImageApiSetItemImageRequest
  */
 export interface ImageApiSetItemImageRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiSetItemImage
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiSetItemImage
      */
     readonly imageType: ImageType
 
-    /**
-     * 
-     * @type {File}
-     * @memberof ImageApiSetItemImage
-     */
     readonly body?: File
 }
 
 /**
  * Request parameters for setItemImageByIndex operation in ImageApi.
- * @export
- * @interface ImageApiSetItemImageByIndexRequest
  */
 export interface ImageApiSetItemImageByIndexRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiSetItemImageByIndex
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiSetItemImageByIndex
      */
     readonly imageType: ImageType
 
     /**
      * (Unused) Image index.
-     * @type {number}
-     * @memberof ImageApiSetItemImageByIndex
      */
     readonly imageIndex: number
 
-    /**
-     * 
-     * @type {File}
-     * @memberof ImageApiSetItemImageByIndex
-     */
     readonly body?: File
 }
 
 /**
  * Request parameters for updateItemImageIndex operation in ImageApi.
- * @export
- * @interface ImageApiUpdateItemImageIndexRequest
  */
 export interface ImageApiUpdateItemImageIndexRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof ImageApiUpdateItemImageIndex
      */
     readonly itemId: string
 
     /**
      * Image type.
-     * @type {ImageType}
-     * @memberof ImageApiUpdateItemImageIndex
      */
     readonly imageType: ImageType
 
     /**
      * Old image index.
-     * @type {number}
-     * @memberof ImageApiUpdateItemImageIndex
      */
     readonly imageIndex: number
 
     /**
      * New image index.
-     * @type {number}
-     * @memberof ImageApiUpdateItemImageIndex
      */
     readonly newIndex: number
 }
 
 /**
  * Request parameters for uploadCustomSplashscreen operation in ImageApi.
- * @export
- * @interface ImageApiUploadCustomSplashscreenRequest
  */
 export interface ImageApiUploadCustomSplashscreenRequest {
-    /**
-     * 
-     * @type {File}
-     * @memberof ImageApiUploadCustomSplashscreen
-     */
     readonly body?: File
 }
 
 /**
  * ImageApi - object-oriented interface
- * @export
- * @class ImageApi
- * @extends {BaseAPI}
  */
 export class ImageApi extends BaseAPI {
     /**
@@ -7878,7 +6908,6 @@ export class ImageApi extends BaseAPI {
      * @summary Delete a custom splashscreen.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public deleteCustomSplashscreen(options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).deleteCustomSplashscreen(options).then((request) => request(this.axios, this.basePath));
@@ -7890,7 +6919,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiDeleteItemImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public deleteItemImage(requestParameters: ImageApiDeleteItemImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).deleteItemImage(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -7902,7 +6930,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiDeleteItemImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public deleteItemImageByIndex(requestParameters: ImageApiDeleteItemImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).deleteItemImageByIndex(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -7914,7 +6941,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiDeleteUserImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public deleteUserImage(requestParameters: ImageApiDeleteUserImageRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).deleteUserImage(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -7926,7 +6952,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetArtistImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getArtistImage(requestParameters: ImageApiGetArtistImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getArtistImage(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -7938,7 +6963,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetGenreImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getGenreImage(requestParameters: ImageApiGetGenreImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getGenreImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -7950,7 +6974,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetGenreImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getGenreImageByIndex(requestParameters: ImageApiGetGenreImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getGenreImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -7962,7 +6985,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetItemImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getItemImage(requestParameters: ImageApiGetItemImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getItemImage(requestParameters.itemId, requestParameters.imageType, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -7974,7 +6996,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetItemImage2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getItemImage2(requestParameters: ImageApiGetItemImage2Request, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getItemImage2(requestParameters.itemId, requestParameters.imageType, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.imageIndex, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -7986,7 +7007,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetItemImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getItemImageByIndex(requestParameters: ImageApiGetItemImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getItemImageByIndex(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -7998,7 +7018,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetItemImageInfosRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getItemImageInfos(requestParameters: ImageApiGetItemImageInfosRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getItemImageInfos(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -8010,7 +7029,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetMusicGenreImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getMusicGenreImage(requestParameters: ImageApiGetMusicGenreImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getMusicGenreImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8022,7 +7040,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetMusicGenreImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getMusicGenreImageByIndex(requestParameters: ImageApiGetMusicGenreImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getMusicGenreImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8034,7 +7051,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetPersonImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getPersonImage(requestParameters: ImageApiGetPersonImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getPersonImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8046,7 +7062,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetPersonImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getPersonImageByIndex(requestParameters: ImageApiGetPersonImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getPersonImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8058,7 +7073,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetSplashscreenRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getSplashscreen(requestParameters: ImageApiGetSplashscreenRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getSplashscreen(requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
@@ -8070,7 +7084,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetStudioImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getStudioImage(requestParameters: ImageApiGetStudioImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getStudioImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8082,7 +7095,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetStudioImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getStudioImageByIndex(requestParameters: ImageApiGetStudioImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getStudioImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8094,7 +7106,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiGetUserImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public getUserImage(requestParameters: ImageApiGetUserImageRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).getUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
@@ -8106,7 +7117,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadArtistImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headArtistImage(requestParameters: ImageApiHeadArtistImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headArtistImage(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8118,7 +7128,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadGenreImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headGenreImage(requestParameters: ImageApiHeadGenreImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headGenreImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8130,7 +7139,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadGenreImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headGenreImageByIndex(requestParameters: ImageApiHeadGenreImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headGenreImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8142,7 +7150,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadItemImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headItemImage(requestParameters: ImageApiHeadItemImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headItemImage(requestParameters.itemId, requestParameters.imageType, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8154,7 +7161,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadItemImage2Request} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headItemImage2(requestParameters: ImageApiHeadItemImage2Request, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headItemImage2(requestParameters.itemId, requestParameters.imageType, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.imageIndex, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8166,7 +7172,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadItemImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headItemImageByIndex(requestParameters: ImageApiHeadItemImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headItemImageByIndex(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.tag, requestParameters.format, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8178,7 +7183,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadMusicGenreImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headMusicGenreImage(requestParameters: ImageApiHeadMusicGenreImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headMusicGenreImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8190,7 +7194,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadMusicGenreImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headMusicGenreImageByIndex(requestParameters: ImageApiHeadMusicGenreImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headMusicGenreImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8202,7 +7205,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadPersonImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headPersonImage(requestParameters: ImageApiHeadPersonImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headPersonImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8214,7 +7216,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadPersonImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headPersonImageByIndex(requestParameters: ImageApiHeadPersonImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headPersonImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8226,7 +7227,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadStudioImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headStudioImage(requestParameters: ImageApiHeadStudioImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headStudioImage(requestParameters.name, requestParameters.imageType, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, requestParameters.imageIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8238,7 +7238,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadStudioImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headStudioImageByIndex(requestParameters: ImageApiHeadStudioImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headStudioImageByIndex(requestParameters.name, requestParameters.imageType, requestParameters.imageIndex, requestParameters.tag, requestParameters.format, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.percentPlayed, requestParameters.unplayedCount, requestParameters.width, requestParameters.height, requestParameters.quality, requestParameters.fillWidth, requestParameters.fillHeight, requestParameters.blur, requestParameters.backgroundColor, requestParameters.foregroundLayer, options).then((request) => request(this.axios, this.basePath));
@@ -8250,7 +7249,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiHeadUserImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public headUserImage(requestParameters: ImageApiHeadUserImageRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).headUserImage(requestParameters.userId, requestParameters.tag, requestParameters.format, options).then((request) => request(this.axios, this.basePath));
@@ -8262,7 +7260,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiPostUserImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public postUserImage(requestParameters: ImageApiPostUserImageRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).postUserImage(requestParameters.userId, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
@@ -8274,7 +7271,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiSetItemImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public setItemImage(requestParameters: ImageApiSetItemImageRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).setItemImage(requestParameters.itemId, requestParameters.imageType, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
@@ -8286,7 +7282,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiSetItemImageByIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public setItemImageByIndex(requestParameters: ImageApiSetItemImageByIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).setItemImageByIndex(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
@@ -8298,7 +7293,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiUpdateItemImageIndexRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public updateItemImageIndex(requestParameters: ImageApiUpdateItemImageIndexRequest, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).updateItemImageIndex(requestParameters.itemId, requestParameters.imageType, requestParameters.imageIndex, requestParameters.newIndex, options).then((request) => request(this.axios, this.basePath));
@@ -8310,7 +7304,6 @@ export class ImageApi extends BaseAPI {
      * @param {ImageApiUploadCustomSplashscreenRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ImageApi
      */
     public uploadCustomSplashscreen(requestParameters: ImageApiUploadCustomSplashscreenRequest = {}, options?: RawAxiosRequestConfig) {
         return ImageApiFp(this.configuration).uploadCustomSplashscreen(requestParameters.body, options).then((request) => request(this.axios, this.basePath));

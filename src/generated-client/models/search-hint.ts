@@ -21,183 +21,117 @@ import type { MediaType } from './media-type';
 
 /**
  * Class SearchHintResult.
- * @export
- * @interface SearchHint
  */
 export interface SearchHint {
     /**
      * Gets or sets the item id.
-     * @type {string}
-     * @memberof SearchHint
      * @deprecated
      */
     'ItemId'?: string;
     /**
      * Gets or sets the item id.
-     * @type {string}
-     * @memberof SearchHint
      */
     'Id'?: string;
     /**
      * Gets or sets the name.
-     * @type {string}
-     * @memberof SearchHint
      */
     'Name'?: string;
     /**
      * Gets or sets the matched term.
-     * @type {string}
-     * @memberof SearchHint
      */
     'MatchedTerm'?: string | null;
     /**
      * Gets or sets the index number.
-     * @type {number}
-     * @memberof SearchHint
      */
     'IndexNumber'?: number | null;
     /**
      * Gets or sets the production year.
-     * @type {number}
-     * @memberof SearchHint
      */
     'ProductionYear'?: number | null;
     /**
      * Gets or sets the parent index number.
-     * @type {number}
-     * @memberof SearchHint
      */
     'ParentIndexNumber'?: number | null;
     /**
      * Gets or sets the image tag.
-     * @type {string}
-     * @memberof SearchHint
      */
     'PrimaryImageTag'?: string | null;
     /**
      * Gets or sets the thumb image tag.
-     * @type {string}
-     * @memberof SearchHint
      */
     'ThumbImageTag'?: string | null;
     /**
      * Gets or sets the thumb image item identifier.
-     * @type {string}
-     * @memberof SearchHint
      */
     'ThumbImageItemId'?: string | null;
     /**
      * Gets or sets the backdrop image tag.
-     * @type {string}
-     * @memberof SearchHint
      */
     'BackdropImageTag'?: string | null;
     /**
      * Gets or sets the backdrop image item identifier.
-     * @type {string}
-     * @memberof SearchHint
      */
     'BackdropImageItemId'?: string | null;
-    /**
-     * 
-     * @type {BaseItemKind}
-     * @memberof SearchHint
-     */
     'Type'?: BaseItemKind;
     /**
      * Gets or sets a value indicating whether this instance is folder.
-     * @type {boolean}
-     * @memberof SearchHint
      */
     'IsFolder'?: boolean | null;
     /**
      * Gets or sets the run time ticks.
-     * @type {number}
-     * @memberof SearchHint
      */
     'RunTimeTicks'?: number | null;
-    /**
-     * 
-     * @type {MediaType}
-     * @memberof SearchHint
-     */
     'MediaType'?: MediaType;
     /**
      * Gets or sets the start date.
-     * @type {string}
-     * @memberof SearchHint
      */
     'StartDate'?: string | null;
     /**
      * Gets or sets the end date.
-     * @type {string}
-     * @memberof SearchHint
      */
     'EndDate'?: string | null;
     /**
      * Gets or sets the series.
-     * @type {string}
-     * @memberof SearchHint
      */
     'Series'?: string | null;
     /**
      * Gets or sets the status.
-     * @type {string}
-     * @memberof SearchHint
      */
     'Status'?: string | null;
     /**
      * Gets or sets the album.
-     * @type {string}
-     * @memberof SearchHint
      */
     'Album'?: string | null;
     /**
      * Gets or sets the album id.
-     * @type {string}
-     * @memberof SearchHint
      */
     'AlbumId'?: string | null;
     /**
      * Gets or sets the album artist.
-     * @type {string}
-     * @memberof SearchHint
      */
     'AlbumArtist'?: string | null;
     /**
      * Gets or sets the artists.
-     * @type {Array<string>}
-     * @memberof SearchHint
      */
     'Artists'?: Array<string>;
     /**
      * Gets or sets the song count.
-     * @type {number}
-     * @memberof SearchHint
      */
     'SongCount'?: number | null;
     /**
      * Gets or sets the episode count.
-     * @type {number}
-     * @memberof SearchHint
      */
     'EpisodeCount'?: number | null;
     /**
      * Gets or sets the channel identifier.
-     * @type {string}
-     * @memberof SearchHint
      */
     'ChannelId'?: string | null;
     /**
      * Gets or sets the name of the channel.
-     * @type {string}
-     * @memberof SearchHint
      */
     'ChannelName'?: string | null;
     /**
      * Gets or sets the primary image aspect ratio.
-     * @type {number}
-     * @memberof SearchHint
      */
     'PrimaryImageAspectRatio'?: number | null;
 }

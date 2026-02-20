@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { ProblemDetails } from '../models';
 import type { RemoteImageResult } from '../models';
 /**
  * RemoteImageApi - axios parameter creator
- * @export
  */
 export const RemoteImageApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -72,8 +71,8 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['imageUrl'] = imageUrl;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -109,8 +108,8 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -171,8 +170,8 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['includeAllLanguages'] = includeAllLanguages;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -187,7 +186,6 @@ export const RemoteImageApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * RemoteImageApi - functional programming interface
- * @export
  */
 export const RemoteImageApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = RemoteImageApiAxiosParamCreator(configuration)
@@ -243,7 +241,6 @@ export const RemoteImageApiFp = function(configuration?: Configuration) {
 
 /**
  * RemoteImageApi - factory interface
- * @export
  */
 export const RemoteImageApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = RemoteImageApiFp(configuration)
@@ -283,100 +280,71 @@ export const RemoteImageApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for downloadRemoteImage operation in RemoteImageApi.
- * @export
- * @interface RemoteImageApiDownloadRemoteImageRequest
  */
 export interface RemoteImageApiDownloadRemoteImageRequest {
     /**
      * Item Id.
-     * @type {string}
-     * @memberof RemoteImageApiDownloadRemoteImage
      */
     readonly itemId: string
 
     /**
      * The image type.
-     * @type {ImageType}
-     * @memberof RemoteImageApiDownloadRemoteImage
      */
     readonly type: ImageType
 
     /**
      * The image url.
-     * @type {string}
-     * @memberof RemoteImageApiDownloadRemoteImage
      */
     readonly imageUrl?: string
 }
 
 /**
  * Request parameters for getRemoteImageProviders operation in RemoteImageApi.
- * @export
- * @interface RemoteImageApiGetRemoteImageProvidersRequest
  */
 export interface RemoteImageApiGetRemoteImageProvidersRequest {
     /**
      * Item Id.
-     * @type {string}
-     * @memberof RemoteImageApiGetRemoteImageProviders
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for getRemoteImages operation in RemoteImageApi.
- * @export
- * @interface RemoteImageApiGetRemoteImagesRequest
  */
 export interface RemoteImageApiGetRemoteImagesRequest {
     /**
      * Item Id.
-     * @type {string}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly itemId: string
 
     /**
      * The image type.
-     * @type {ImageType}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly type?: ImageType
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly limit?: number
 
     /**
      * Optional. The image provider to use.
-     * @type {string}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly providerName?: string
 
     /**
      * Optional. Include all languages.
-     * @type {boolean}
-     * @memberof RemoteImageApiGetRemoteImages
      */
     readonly includeAllLanguages?: boolean
 }
 
 /**
  * RemoteImageApi - object-oriented interface
- * @export
- * @class RemoteImageApi
- * @extends {BaseAPI}
  */
 export class RemoteImageApi extends BaseAPI {
     /**
@@ -385,7 +353,6 @@ export class RemoteImageApi extends BaseAPI {
      * @param {RemoteImageApiDownloadRemoteImageRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof RemoteImageApi
      */
     public downloadRemoteImage(requestParameters: RemoteImageApiDownloadRemoteImageRequest, options?: RawAxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).downloadRemoteImage(requestParameters.itemId, requestParameters.type, requestParameters.imageUrl, options).then((request) => request(this.axios, this.basePath));
@@ -397,7 +364,6 @@ export class RemoteImageApi extends BaseAPI {
      * @param {RemoteImageApiGetRemoteImageProvidersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof RemoteImageApi
      */
     public getRemoteImageProviders(requestParameters: RemoteImageApiGetRemoteImageProvidersRequest, options?: RawAxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).getRemoteImageProviders(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -409,7 +375,6 @@ export class RemoteImageApi extends BaseAPI {
      * @param {RemoteImageApiGetRemoteImagesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof RemoteImageApi
      */
     public getRemoteImages(requestParameters: RemoteImageApiGetRemoteImagesRequest, options?: RawAxiosRequestConfig) {
         return RemoteImageApiFp(this.configuration).getRemoteImages(requestParameters.itemId, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.providerName, requestParameters.includeAllLanguages, options).then((request) => request(this.axios, this.basePath));

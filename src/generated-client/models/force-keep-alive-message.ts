@@ -18,27 +18,16 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Force keep alive websocket messages.
- * @export
- * @interface ForceKeepAliveMessage
  */
 export interface ForceKeepAliveMessage {
     /**
      * Gets or sets the data.
-     * @type {number}
-     * @memberof ForceKeepAliveMessage
      */
     'Data'?: number;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof ForceKeepAliveMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ForceKeepAliveMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

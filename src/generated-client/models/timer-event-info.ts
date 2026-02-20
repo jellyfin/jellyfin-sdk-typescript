@@ -13,23 +13,8 @@
 
 
 
-/**
- * 
- * @export
- * @interface TimerEventInfo
- */
 export interface TimerEventInfo {
-    /**
-     * 
-     * @type {string}
-     * @memberof TimerEventInfo
-     */
     'Id'?: string;
-    /**
-     * 
-     * @type {string}
-     * @memberof TimerEventInfo
-     */
     'ProgramId'?: string | null;
 }
 

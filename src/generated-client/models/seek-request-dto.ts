@@ -15,14 +15,10 @@
 
 /**
  * Class SeekRequestDto.
- * @export
- * @interface SeekRequestDto
  */
 export interface SeekRequestDto {
     /**
      * Gets or sets the position ticks.
-     * @type {number}
-     * @memberof SeekRequestDto
      */
     'PositionTicks'?: number;
 }

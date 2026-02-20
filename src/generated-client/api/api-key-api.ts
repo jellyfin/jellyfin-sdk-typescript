@@ -17,14 +17,13 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
 import type { AuthenticationInfoQueryResult } from '../models';
 /**
  * ApiKeyApi - axios parameter creator
- * @export
  */
 export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -57,8 +56,8 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['app'] = app;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -90,8 +89,8 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -127,8 +126,8 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -143,7 +142,6 @@ export const ApiKeyApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * ApiKeyApi - functional programming interface
- * @export
  */
 export const ApiKeyApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ApiKeyApiAxiosParamCreator(configuration)
@@ -191,7 +189,6 @@ export const ApiKeyApiFp = function(configuration?: Configuration) {
 
 /**
  * ApiKeyApi - factory interface
- * @export
  */
 export const ApiKeyApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ApiKeyApiFp(configuration)
@@ -230,37 +227,26 @@ export const ApiKeyApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for createKey operation in ApiKeyApi.
- * @export
- * @interface ApiKeyApiCreateKeyRequest
  */
 export interface ApiKeyApiCreateKeyRequest {
     /**
      * Name of the app using the authentication key.
-     * @type {string}
-     * @memberof ApiKeyApiCreateKey
      */
     readonly app: string
 }
 
 /**
  * Request parameters for revokeKey operation in ApiKeyApi.
- * @export
- * @interface ApiKeyApiRevokeKeyRequest
  */
 export interface ApiKeyApiRevokeKeyRequest {
     /**
      * The access token to delete.
-     * @type {string}
-     * @memberof ApiKeyApiRevokeKey
      */
     readonly key: string
 }
 
 /**
  * ApiKeyApi - object-oriented interface
- * @export
- * @class ApiKeyApi
- * @extends {BaseAPI}
  */
 export class ApiKeyApi extends BaseAPI {
     /**
@@ -269,7 +255,6 @@ export class ApiKeyApi extends BaseAPI {
      * @param {ApiKeyApiCreateKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ApiKeyApi
      */
     public createKey(requestParameters: ApiKeyApiCreateKeyRequest, options?: RawAxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).createKey(requestParameters.app, options).then((request) => request(this.axios, this.basePath));
@@ -280,7 +265,6 @@ export class ApiKeyApi extends BaseAPI {
      * @summary Get all keys.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ApiKeyApi
      */
     public getKeys(options?: RawAxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).getKeys(options).then((request) => request(this.axios, this.basePath));
@@ -292,7 +276,6 @@ export class ApiKeyApi extends BaseAPI {
      * @param {ApiKeyApiRevokeKeyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ApiKeyApi
      */
     public revokeKey(requestParameters: ApiKeyApiRevokeKeyRequest, options?: RawAxiosRequestConfig) {
         return ApiKeyApiFp(this.configuration).revokeKey(requestParameters.key, options).then((request) => request(this.axios, this.basePath));

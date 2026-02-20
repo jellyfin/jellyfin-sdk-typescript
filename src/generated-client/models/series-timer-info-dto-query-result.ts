@@ -18,26 +18,18 @@ import type { SeriesTimerInfoDto } from './series-timer-info-dto';
 
 /**
  * Query result container.
- * @export
- * @interface SeriesTimerInfoDtoQueryResult
  */
 export interface SeriesTimerInfoDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<SeriesTimerInfoDto>}
-     * @memberof SeriesTimerInfoDtoQueryResult
      */
     'Items'?: Array<SeriesTimerInfoDto>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof SeriesTimerInfoDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof SeriesTimerInfoDtoQueryResult
      */
     'StartIndex'?: number;
 }

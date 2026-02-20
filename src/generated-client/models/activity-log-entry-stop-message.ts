@@ -18,15 +18,8 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Activity log entry stop message.
- * @export
- * @interface ActivityLogEntryStopMessage
  */
 export interface ActivityLogEntryStopMessage {
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ActivityLogEntryStopMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 
