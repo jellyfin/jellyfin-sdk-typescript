@@ -25,10 +25,12 @@ If you want to build the SDK locally (for development, testing, or contributing)
 
 ### 1. Replace `openapi.json` file
 
-Obtain the latest `openapi.json` from the Jellyfin server repository.
-The easiest way to get this is to download it from the github actions on a specific commit.
+Obtain the correct `openapi.json` file from the Jellyfin server repository.
 
-Once you have the new file, replace the existing `openapi.json` in this repository with the new one.
+- If working with merged changes, you can download it from the [jellyfin api spec](https://api.jellyfin.org/openapi/jellyfin-openapi-stable.json).
+- If working with unmerged branch changes, download the `openapi.json` artifact generated from that specific branch build.
+
+Once you have the correct file, replace the existing `openapi.json` in this repository with the new one.
 
 ### 2. Build the project
 
