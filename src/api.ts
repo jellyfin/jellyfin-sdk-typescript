@@ -13,7 +13,7 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
-import type { WebSocketSubscriptionIntervals } from './websocket';
+import type { OutboundWebSocketMessageType, SocketMessageHandler, WebSocketSubscriptionIntervals } from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
@@ -26,8 +26,7 @@ export class Api {
 
 	readonly axiosInstance;
 
-	private _webSocket: WebSocketService | undefined;
-	private readonly webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals;
+	private webSocket: WebSocketService | undefined;
 
 	constructor(
 		basePath: string,
@@ -35,7 +34,6 @@ export class Api {
 		deviceInfo: DeviceInfo,
 		accessToken = '',
 		axiosInstance: AxiosInstance = globalInstance,
-		webSocketSubscriptionIntervals?: WebSocketSubscriptionIntervals
 	) {
 		// Remove trailing slash if present
 		this._basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
@@ -43,8 +41,6 @@ export class Api {
 		this._deviceInfo = deviceInfo;
 		this._accessToken = accessToken;
 		this.axiosInstance = axiosInstance;
-
-		this.webSocketSubscriptionIntervals = webSocketSubscriptionIntervals;
 	}
 
 	get accessToken(): string {
@@ -72,30 +68,6 @@ export class Api {
 				}
 			}
 		});
-	}
-
-	/**
-	 * Service for managing subscriptions to Outbound WebSocket events.
-	 *
-	 * This service is automatically instantiated when the service is invoked
-	 * for the first time, provided that an access token is present.
-	 *
-	 * If the access token is cleared via the {@link update} method, the WebSocket
-	 * connection will be closed but subscriptions will remain intact.
-	 *
-	 * @see {@link WebSocketService.subscribe}
-	 */
-	get webSocket(): WebSocketService {
-		if (!this._webSocket) {
-			this._webSocket = new WebSocketService(
-				this.getUri(WEBSOCKET_URL_PATH, {
-					[AUTHORIZATION_PARAMETER]: this.accessToken
-				}),
-				this.webSocketSubscriptionIntervals
-			);
-		}
-
-		return this._webSocket;
 	}
 
 	/**
@@ -165,18 +137,35 @@ export class Api {
 		if (data.basePath ||
 			(data.accessToken && data.accessToken !== '')
 		) {
-			this._webSocket?.updateUrl(
+			this.webSocket?.updateUrl(
 				this.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_PARAMETER]: this.accessToken
 				})
 			);
 		} else if (data.accessToken === '') {
 			// Token was cleared, dispose of WebSocket
-			this._webSocket?.disconnect();
+			this.webSocket?.disconnect();
 		}
 	}
 
 	get authorizationHeader(): string {
 		return getAuthorizationHeader(this._clientInfo, this._deviceInfo, this._accessToken);
+	}
+
+	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
+
+		if (!this.webSocket) {
+			// Pass undefined when there is no access token so subscriptions are stored
+			// but no connection attempt is made until updateUrl() is called later.
+			this.webSocket = new WebSocketService(
+				this.accessToken
+					? this.getUri(WEBSOCKET_URL_PATH, {
+						[AUTHORIZATION_PARAMETER]: this.accessToken
+					})
+					: undefined,
+			);
+		}
+
+		return this.webSocket.subscribe(messageTypes, onMessage);
 	}
 }

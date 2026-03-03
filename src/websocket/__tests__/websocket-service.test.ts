@@ -23,6 +23,13 @@ globalThis.WebSocket = vi.fn(function() {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 }) as any;
 
+// Assign standard WebSocket static constants to the mock so comparisons like
+// `socket.readyState === WebSocket.OPEN` work correctly in tests.
+(globalThis.WebSocket as unknown as Record<string, number>).CONNECTING = 0;
+(globalThis.WebSocket as unknown as Record<string, number>).OPEN = 1;
+(globalThis.WebSocket as unknown as Record<string, number>).CLOSING = 2;
+(globalThis.WebSocket as unknown as Record<string, number>).CLOSED = 3;
+
 describe('WebSocketService', () => {
 	let service: WebSocketService;
 
@@ -509,11 +516,10 @@ describe('WebSocketService', () => {
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
 				}),
-				customConfig
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
-			configuredService.subscribe(['Sessions'], () => {});
+			configuredService.subscribe(['Sessions'], () => {}, customConfig);
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'SessionsStart', Data: '100,2000' })
@@ -544,11 +550,10 @@ describe('WebSocketService', () => {
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
 				}),
-				partialConfig
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
-			configuredService.subscribe(['ActivityLogEntry'], () => {});
+			configuredService.subscribe(['ActivityLogEntry'], () => {}, partialConfig);
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'ActivityLogEntryStart', Data: '0,1000' })
@@ -565,11 +570,10 @@ describe('WebSocketService', () => {
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
 				}),
-				customConfig
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
-			configuredService.subscribe(['Sessions', 'ActivityLogEntry'], () => {});
+			configuredService.subscribe(['Sessions', 'ActivityLogEntry'], () => {}, customConfig);
 
 			expect(mockWebSocket.send).toHaveBeenCalledWith(
 				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1500' })
@@ -590,12 +594,10 @@ describe('WebSocketService', () => {
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
 				}),
-				customConfig
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
-			configuredService.subscribe(['Sessions'], () => {});
-
+			configuredService.subscribe(['Sessions'], () => {}, customConfig);
 			// Clear previous send calls
 			mockWebSocket.send.mockClear();
 
@@ -717,6 +719,65 @@ describe('WebSocketService', () => {
 			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
 
 			vi.useRealTimers();
+		});
+	});
+
+	describe('deferred connection (no access token)', () => {
+		it('should not connect when constructed without a URL', () => {
+			const deferredService = new WebSocketService();
+
+			deferredService.subscribe(['Sessions'], vi.fn());
+
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
+		});
+
+		it('should keep subscriptions intact when constructed without a URL', () => {
+			const deferredService = new WebSocketService();
+			const handler = vi.fn();
+
+			const unsubscribe = deferredService.subscribe(['Sessions'], handler);
+
+			// Ensure unsubscribe is still a callable function
+			expect(unsubscribe).toBeTypeOf('function');
+			// No socket should have been created
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
+		});
+
+		it('should connect and restore subscriptions when updateUrl is called', () => {
+			const deferredService = new WebSocketService();
+			const handler = vi.fn();
+
+			deferredService.subscribe(['Sessions'], handler);
+
+			// Simulate token becoming available
+			deferredService.updateUrl('http://example.com/socket?ApiKey=new-token');
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
+		});
+
+		it('should send start messages for deferred subscriptions once the socket opens', () => {
+			const deferredService = new WebSocketService();
+
+			deferredService.subscribe(['Sessions'], vi.fn());
+
+			// Simulate token becoming available
+			deferredService.updateUrl('http://example.com/socket?ApiKey=new-token');
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			mockWebSocket.__triggerOpen();
+
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
+			);
+		});
+
+		it('should remain disconnected if updateUrl is called with no existing subscriptions', () => {
+			const deferredService = new WebSocketService();
+
+			// No subscriptions added
+			deferredService.updateUrl('http://example.com/socket?ApiKey=new-token');
+
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
 		});
 	});
 });

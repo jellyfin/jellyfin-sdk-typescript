@@ -21,9 +21,11 @@ export class WebSocketService {
 	/**
      * The URL to connect to.
 	 *
-	 * Created in the constructor, using the fields from the authenticated Api instance.
+	 * Created in the constructor (or later via {@link updateUrl}), using the fields from
+	 * the authenticated Api instance. If undefined, the socket will not connect until
+	 * a URL is provided via {@link updateUrl}.
      */
-	private url: URL;
+	private url: URL | undefined;
 
 	/**
      * The active websocket connection, if one exists.
@@ -73,17 +75,30 @@ export class WebSocketService {
 	/**
      * Constructs a new instance of the {@link WebSocketService}
      *
-     * @param uri The full URI path with the Authorization Header included as a query parameter
+     * @param uri The full URI path with the Authorization Header included as a query parameter.
+     *            May be omitted when no access token is available yet — subscriptions will be
+     *            preserved and the socket will connect once {@link updateUrl} is called.
      */
 	constructor(
-		uri: string,
-		config?: WebSocketSubscriptionIntervals
+		uri?: string,
 	) {
-		this.url = buildWebSocketUrl(uri);
-		this.subscriptionIntervals = config;
+		if (uri) {
+			this.url = buildWebSocketUrl(uri);
+		}
 	}
 
+	/**
+	 * Initializes the WebSocket connection and sets up event listeners
+	 * if a valid URL is available. This function also establishes
+	 * reconnection logic with exponential backoff if the connection is lost.
+	 * 
+	 * This method is called internally when a new URL is provided or when 
+	 * the socket needs to be re-initialized.
+	 * 
+	 * @returns void
+	 */
 	private initSocket() {
+		if (!this.url) return;
 		this.socket = new WebSocket(this.url.toString());
 
 		this.socket.addEventListener('open', () => {
@@ -93,7 +108,7 @@ export class WebSocketService {
 			// Update status and notify listeners
 			this.setStatus(WebSocket.OPEN);
 
-			// Attach all subscriptions, sending start messages as needed
+			// Send start messages for subscriptions that were added before the socket opened
 			for (const type of this.subscriptions.keys()) {
 				const mapping = SUBSCRIPTION_REGISTRY[type as OutboundWebSocketMessageType];
 				if (mapping) {
@@ -207,6 +222,10 @@ export class WebSocketService {
 	 * Updates the WebSocket URL and reconnects if there are active subscriptions.
 	 *
 	 * This re-enables auto-reconnection if it was previously disabled.
+	 *
+	 * Also used to supply the initial URL when the service was constructed without one
+	 * (e.g. when no access token was available at construction time). In that case any
+	 * subscriptions that were registered while disconnected will be restored immediately.
 	 */
 	updateUrl(uri: string) {
 		this.autoReconnectDisabled = true;
@@ -264,30 +283,49 @@ export class WebSocketService {
 	 *
      * @returns A function which can be invoked to remove the added listeners
      */
-	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-		if (!this.socket || this.socket.readyState === WebSocket.CLOSED) {
+	subscribe<T extends OutboundWebSocketMessageType>(
+		messageTypes: T[], onMessage: SocketMessageHandler<T>,
+		subscriptionIntervals?: WebSocketSubscriptionIntervals
+	) {
+		// Check if socket needs to be initialized (only when a URL is available)
+		const needsInitialization = !!this.url && (!this.socket || this.socket.readyState === WebSocket.CLOSED);
+
+		// Update subscription intervals as provided
+		for (const interval in subscriptionIntervals) {
+			if (!this.subscriptionIntervals) {
+				this.subscriptionIntervals = subscriptionIntervals as WebSocketSubscriptionIntervals;
+			} else {
+				this.subscriptionIntervals[interval as OutboundWebSocketMessageType] = subscriptionIntervals[interval as OutboundWebSocketMessageType];
+			}
+		}
+
+		if (needsInitialization) {
 			this.initSocket();
 		}
 
+		// Add the new handler for each message type
 		for (const type of messageTypes) {
 			const isNewType = !this.subscriptions.has(type);
 
 			if (isNewType) {
 				this.subscriptions.set(type, []);
+			}
 
-				// Send start message as needed, depending on the messageType
+			this.subscriptions.get(type)!.push(onMessage);
+
+			// Send start message if socket is already open and this is a new type
+			// (if socket not open, it will be sent when the socket opens)
+			if (isNewType && this.socket?.readyState === WebSocket.OPEN) {
 				const mapping = SUBSCRIPTION_REGISTRY[type];
-				if (mapping && this.socket?.readyState === WebSocket.OPEN) {
+				if (mapping) {
 					this.sendMessage(
 						mapping.createStartMessage(
-							this.subscriptionIntervals?.[type as OutboundWebSocketMessageType]
+							subscriptionIntervals?.[type as OutboundWebSocketMessageType]
 							?? new PeriodicListenerInterval(0, 1000)
 						)
 					);
 				}
 			}
-
-            this.subscriptions.get(type)!.push(onMessage);
 		}
 
 		// Return an unsubscription function

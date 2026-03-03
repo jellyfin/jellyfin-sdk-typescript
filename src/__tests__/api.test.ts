@@ -55,8 +55,6 @@ describe('Api', () => {
 		expect(requestData.data).toEqual(JSON.stringify(USER_CREDENTIALS));
 
 		expect(api.accessToken).toBe(TEST_ACCESS_TOKEN);
-
-		expect(api.webSocket).toBeDefined();
 	});
 
 	it('should logout and update state', async () => {
@@ -72,8 +70,6 @@ describe('Api', () => {
 		expect(requestData.url).toEqual(`${SERVER_URL}/Sessions/Logout`);
 
 		expect(api.accessToken).toBe('');
-
-		expect(api.webSocket).toBeDefined();
 	});
 
 	it('should return the correct authorization header value', () => {
