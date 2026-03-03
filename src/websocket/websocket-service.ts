@@ -80,7 +80,7 @@ export class WebSocketService {
      *            preserved and the socket will connect once {@link updateUrl} is called.
      */
 	constructor(
-		uri?: string,
+		uri?: string
 	) {
 		if (uri) {
 			this.url = buildWebSocketUrl(uri);
@@ -91,10 +91,10 @@ export class WebSocketService {
 	 * Initializes the WebSocket connection and sets up event listeners
 	 * if a valid URL is available. This function also establishes
 	 * reconnection logic with exponential backoff if the connection is lost.
-	 * 
-	 * This method is called internally when a new URL is provided or when 
+	 *
+	 * This method is called internally when a new URL is provided or when
 	 * the socket needs to be re-initialized.
-	 * 
+	 *
 	 * @returns void
 	 */
 	private initSocket() {

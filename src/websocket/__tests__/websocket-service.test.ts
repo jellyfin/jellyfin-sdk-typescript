@@ -515,7 +515,7 @@ describe('WebSocketService', () => {
 			const configuredService = new WebSocketService(
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
-				}),
+				})
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
@@ -549,7 +549,7 @@ describe('WebSocketService', () => {
 			const configuredService = new WebSocketService(
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
-				}),
+				})
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
@@ -569,7 +569,7 @@ describe('WebSocketService', () => {
 			const configuredService = new WebSocketService(
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
-				}),
+				})
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;
@@ -593,7 +593,7 @@ describe('WebSocketService', () => {
 			const configuredService = new WebSocketService(
 				mockApi.getUri(WEBSOCKET_URL_PATH, {
 					[AUTHORIZATION_HEADER]: mockApi.accessToken
-				}),
+				})
 			);
 
 			mockWebSocket.readyState = WebSocket.OPEN;

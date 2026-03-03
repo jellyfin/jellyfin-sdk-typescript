@@ -13,7 +13,7 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getSessionApi } from './utils/api/session-api';
 import { getUserApi } from './utils/api/user-api';
-import type { OutboundWebSocketMessageType, SocketMessageHandler, WebSocketSubscriptionIntervals } from './websocket';
+import type { OutboundWebSocketMessageType, SocketMessageHandler } from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
@@ -33,7 +33,7 @@ export class Api {
 		clientInfo: ClientInfo,
 		deviceInfo: DeviceInfo,
 		accessToken = '',
-		axiosInstance: AxiosInstance = globalInstance,
+		axiosInstance: AxiosInstance = globalInstance
 	) {
 		// Remove trailing slash if present
 		this._basePath = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
@@ -153,7 +153,6 @@ export class Api {
 	}
 
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-
 		if (!this.webSocket) {
 			// Pass undefined when there is no access token so subscriptions are stored
 			// but no connection attempt is made until updateUrl() is called later.
@@ -162,7 +161,7 @@ export class Api {
 					? this.getUri(WEBSOCKET_URL_PATH, {
 						[AUTHORIZATION_PARAMETER]: this.accessToken
 					})
-					: undefined,
+					: undefined
 			);
 		}
 
