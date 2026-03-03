@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { BaseItemKind } from '../models';
 import type { MediaType } from '../models';
 /**
  * SuggestionsApi - axios parameter creator
- * @export
  */
 export const SuggestionsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -84,8 +83,8 @@ export const SuggestionsApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -100,7 +99,6 @@ export const SuggestionsApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * SuggestionsApi - functional programming interface
- * @export
  */
 export const SuggestionsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SuggestionsApiAxiosParamCreator(configuration)
@@ -128,7 +126,6 @@ export const SuggestionsApiFp = function(configuration?: Configuration) {
 
 /**
  * SuggestionsApi - factory interface
- * @export
  */
 export const SuggestionsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SuggestionsApiFp(configuration)
@@ -148,58 +145,41 @@ export const SuggestionsApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for getSuggestions operation in SuggestionsApi.
- * @export
- * @interface SuggestionsApiGetSuggestionsRequest
  */
 export interface SuggestionsApiGetSuggestionsRequest {
     /**
      * The user id.
-     * @type {string}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly userId?: string
 
     /**
      * The media types.
-     * @type {Array<MediaType>}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly mediaType?: Array<MediaType>
 
     /**
      * The type.
-     * @type {Array<BaseItemKind>}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly type?: Array<BaseItemKind>
 
     /**
      * Optional. The start index.
-     * @type {number}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly startIndex?: number
 
     /**
      * Optional. The limit.
-     * @type {number}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly limit?: number
 
     /**
      * Whether to enable the total record count.
-     * @type {boolean}
-     * @memberof SuggestionsApiGetSuggestions
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * SuggestionsApi - object-oriented interface
- * @export
- * @class SuggestionsApi
- * @extends {BaseAPI}
  */
 export class SuggestionsApi extends BaseAPI {
     /**
@@ -208,7 +188,6 @@ export class SuggestionsApi extends BaseAPI {
      * @param {SuggestionsApiGetSuggestionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SuggestionsApi
      */
     public getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig) {
         return SuggestionsApiFp(this.configuration).getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));

@@ -13,11 +13,6 @@
 
 
 
-/**
- * 
- * @export
- * @enum {string}
- */
 
 export const TranscodeReason = {
     ContainerNotSupported: 'ContainerNotSupported',

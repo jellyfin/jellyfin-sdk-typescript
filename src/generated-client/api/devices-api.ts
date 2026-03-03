@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { DeviceOptionsDto } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * DevicesApi - axios parameter creator
- * @export
  */
 export const DevicesApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -63,8 +62,8 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['id'] = id;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -103,8 +102,8 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['id'] = id;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -143,8 +142,8 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['id'] = id;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -181,8 +180,8 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -224,9 +223,8 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['id'] = id;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -243,7 +241,6 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
 
 /**
  * DevicesApi - functional programming interface
- * @export
  */
 export const DevicesApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = DevicesApiAxiosParamCreator(configuration)
@@ -319,7 +316,6 @@ export const DevicesApiFp = function(configuration?: Configuration) {
 
 /**
  * DevicesApi - factory interface
- * @export
  */
 export const DevicesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = DevicesApiFp(configuration)
@@ -379,86 +375,61 @@ export const DevicesApiFactory = function (configuration?: Configuration, basePa
 
 /**
  * Request parameters for deleteDevice operation in DevicesApi.
- * @export
- * @interface DevicesApiDeleteDeviceRequest
  */
 export interface DevicesApiDeleteDeviceRequest {
     /**
      * Device Id.
-     * @type {string}
-     * @memberof DevicesApiDeleteDevice
      */
     readonly id: string
 }
 
 /**
  * Request parameters for getDeviceInfo operation in DevicesApi.
- * @export
- * @interface DevicesApiGetDeviceInfoRequest
  */
 export interface DevicesApiGetDeviceInfoRequest {
     /**
      * Device Id.
-     * @type {string}
-     * @memberof DevicesApiGetDeviceInfo
      */
     readonly id: string
 }
 
 /**
  * Request parameters for getDeviceOptions operation in DevicesApi.
- * @export
- * @interface DevicesApiGetDeviceOptionsRequest
  */
 export interface DevicesApiGetDeviceOptionsRequest {
     /**
      * Device Id.
-     * @type {string}
-     * @memberof DevicesApiGetDeviceOptions
      */
     readonly id: string
 }
 
 /**
  * Request parameters for getDevices operation in DevicesApi.
- * @export
- * @interface DevicesApiGetDevicesRequest
  */
 export interface DevicesApiGetDevicesRequest {
     /**
      * Gets or sets the user identifier.
-     * @type {string}
-     * @memberof DevicesApiGetDevices
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for updateDeviceOptions operation in DevicesApi.
- * @export
- * @interface DevicesApiUpdateDeviceOptionsRequest
  */
 export interface DevicesApiUpdateDeviceOptionsRequest {
     /**
      * Device Id.
-     * @type {string}
-     * @memberof DevicesApiUpdateDeviceOptions
      */
     readonly id: string
 
     /**
      * Device Options.
-     * @type {DeviceOptionsDto}
-     * @memberof DevicesApiUpdateDeviceOptions
      */
     readonly deviceOptionsDto: DeviceOptionsDto
 }
 
 /**
  * DevicesApi - object-oriented interface
- * @export
- * @class DevicesApi
- * @extends {BaseAPI}
  */
 export class DevicesApi extends BaseAPI {
     /**
@@ -467,7 +438,6 @@ export class DevicesApi extends BaseAPI {
      * @param {DevicesApiDeleteDeviceRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DevicesApi
      */
     public deleteDevice(requestParameters: DevicesApiDeleteDeviceRequest, options?: RawAxiosRequestConfig) {
         return DevicesApiFp(this.configuration).deleteDevice(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -479,7 +449,6 @@ export class DevicesApi extends BaseAPI {
      * @param {DevicesApiGetDeviceInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DevicesApi
      */
     public getDeviceInfo(requestParameters: DevicesApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig) {
         return DevicesApiFp(this.configuration).getDeviceInfo(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -491,7 +460,6 @@ export class DevicesApi extends BaseAPI {
      * @param {DevicesApiGetDeviceOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DevicesApi
      */
     public getDeviceOptions(requestParameters: DevicesApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
         return DevicesApiFp(this.configuration).getDeviceOptions(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -503,7 +471,6 @@ export class DevicesApi extends BaseAPI {
      * @param {DevicesApiGetDevicesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DevicesApi
      */
     public getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig) {
         return DevicesApiFp(this.configuration).getDevices(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -515,7 +482,6 @@ export class DevicesApi extends BaseAPI {
      * @param {DevicesApiUpdateDeviceOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DevicesApi
      */
     public updateDeviceOptions(requestParameters: DevicesApiUpdateDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
         return DevicesApiFp(this.configuration).updateDeviceOptions(requestParameters.id, requestParameters.deviceOptionsDto, options).then((request) => request(this.axios, this.basePath));

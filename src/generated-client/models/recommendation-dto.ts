@@ -19,35 +19,10 @@ import type { BaseItemDto } from './base-item-dto';
 // @ts-ignore
 import type { RecommendationType } from './recommendation-type';
 
-/**
- * 
- * @export
- * @interface RecommendationDto
- */
 export interface RecommendationDto {
-    /**
-     * 
-     * @type {Array<BaseItemDto>}
-     * @memberof RecommendationDto
-     */
     'Items'?: Array<BaseItemDto> | null;
-    /**
-     * 
-     * @type {RecommendationType}
-     * @memberof RecommendationDto
-     */
     'RecommendationType'?: RecommendationType;
-    /**
-     * 
-     * @type {string}
-     * @memberof RecommendationDto
-     */
     'BaselineItemName'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof RecommendationDto
-     */
     'CategoryId'?: string;
 }
 

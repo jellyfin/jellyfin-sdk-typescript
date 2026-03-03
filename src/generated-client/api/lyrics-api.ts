@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { ProblemDetails } from '../models';
 import type { RemoteLyricInfoDto } from '../models';
 /**
  * LyricsApi - axios parameter creator
- * @export
  */
 export const LyricsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -58,8 +57,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -99,8 +98,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -136,8 +135,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -173,8 +172,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -210,8 +209,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -255,9 +254,8 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['fileName'] = fileName;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'text/plain';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -274,7 +272,6 @@ export const LyricsApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * LyricsApi - functional programming interface
- * @export
  */
 export const LyricsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = LyricsApiAxiosParamCreator(configuration)
@@ -365,7 +362,6 @@ export const LyricsApiFp = function(configuration?: Configuration) {
 
 /**
  * LyricsApi - factory interface
- * @export
  */
 export const LyricsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = LyricsApiFp(configuration)
@@ -435,114 +431,78 @@ export const LyricsApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for deleteLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiDeleteLyricsRequest
  */
 export interface LyricsApiDeleteLyricsRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof LyricsApiDeleteLyrics
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for downloadRemoteLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiDownloadRemoteLyricsRequest
  */
 export interface LyricsApiDownloadRemoteLyricsRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof LyricsApiDownloadRemoteLyrics
      */
     readonly itemId: string
 
     /**
      * The lyric id.
-     * @type {string}
-     * @memberof LyricsApiDownloadRemoteLyrics
      */
     readonly lyricId: string
 }
 
 /**
  * Request parameters for getLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiGetLyricsRequest
  */
 export interface LyricsApiGetLyricsRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof LyricsApiGetLyrics
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for getRemoteLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiGetRemoteLyricsRequest
  */
 export interface LyricsApiGetRemoteLyricsRequest {
     /**
      * The remote provider item id.
-     * @type {string}
-     * @memberof LyricsApiGetRemoteLyrics
      */
     readonly lyricId: string
 }
 
 /**
  * Request parameters for searchRemoteLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiSearchRemoteLyricsRequest
  */
 export interface LyricsApiSearchRemoteLyricsRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof LyricsApiSearchRemoteLyrics
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for uploadLyrics operation in LyricsApi.
- * @export
- * @interface LyricsApiUploadLyricsRequest
  */
 export interface LyricsApiUploadLyricsRequest {
     /**
      * The item the lyric belongs to.
-     * @type {string}
-     * @memberof LyricsApiUploadLyrics
      */
     readonly itemId: string
 
     /**
      * Name of the file being uploaded.
-     * @type {string}
-     * @memberof LyricsApiUploadLyrics
      */
     readonly fileName: string
 
-    /**
-     * 
-     * @type {File}
-     * @memberof LyricsApiUploadLyrics
-     */
     readonly body?: File
 }
 
 /**
  * LyricsApi - object-oriented interface
- * @export
- * @class LyricsApi
- * @extends {BaseAPI}
  */
 export class LyricsApi extends BaseAPI {
     /**
@@ -551,7 +511,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiDeleteLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public deleteLyrics(requestParameters: LyricsApiDeleteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).deleteLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -563,7 +522,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiDownloadRemoteLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public downloadRemoteLyrics(requestParameters: LyricsApiDownloadRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).downloadRemoteLyrics(requestParameters.itemId, requestParameters.lyricId, options).then((request) => request(this.axios, this.basePath));
@@ -575,7 +533,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiGetLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public getLyrics(requestParameters: LyricsApiGetLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).getLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -587,7 +544,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiGetRemoteLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public getRemoteLyrics(requestParameters: LyricsApiGetRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).getRemoteLyrics(requestParameters.lyricId, options).then((request) => request(this.axios, this.basePath));
@@ -599,7 +555,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiSearchRemoteLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public searchRemoteLyrics(requestParameters: LyricsApiSearchRemoteLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).searchRemoteLyrics(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -611,7 +566,6 @@ export class LyricsApi extends BaseAPI {
      * @param {LyricsApiUploadLyricsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LyricsApi
      */
     public uploadLyrics(requestParameters: LyricsApiUploadLyricsRequest, options?: RawAxiosRequestConfig) {
         return LyricsApiFp(this.configuration).uploadLyrics(requestParameters.itemId, requestParameters.fileName, requestParameters.body, options).then((request) => request(this.axios, this.basePath));

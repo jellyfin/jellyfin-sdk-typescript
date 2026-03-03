@@ -15,14 +15,10 @@
 
 /**
  * Defines properties used to start a restore process.
- * @export
- * @interface BackupRestoreRequestDto
  */
 export interface BackupRestoreRequestDto {
     /**
      * Gets or Sets the name of the backup archive to restore from. Must be present in MediaBrowser.Common.Configuration.IApplicationPaths.BackupPath.
-     * @type {string}
-     * @memberof BackupRestoreRequestDto
      */
     'ArchiveFileName'?: string;
 }

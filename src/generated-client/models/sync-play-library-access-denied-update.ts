@@ -16,29 +16,15 @@
 // @ts-ignore
 import type { GroupUpdateType } from './group-update-type';
 
-/**
- * 
- * @export
- * @interface SyncPlayLibraryAccessDeniedUpdate
- */
 export interface SyncPlayLibraryAccessDeniedUpdate {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof SyncPlayLibraryAccessDeniedUpdate
      */
     'GroupId'?: string;
     /**
      * Gets the update data.
-     * @type {string}
-     * @memberof SyncPlayLibraryAccessDeniedUpdate
      */
     'Data'?: string;
-    /**
-     * 
-     * @type {GroupUpdateType}
-     * @memberof SyncPlayLibraryAccessDeniedUpdate
-     */
     'Type'?: GroupUpdateType;
 }
 

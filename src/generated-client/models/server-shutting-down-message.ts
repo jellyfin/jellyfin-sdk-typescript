@@ -18,21 +18,12 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Server shutting down message.
- * @export
- * @interface ServerShuttingDownMessage
  */
 export interface ServerShuttingDownMessage {
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof ServerShuttingDownMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ServerShuttingDownMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

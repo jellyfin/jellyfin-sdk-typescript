@@ -15,32 +15,22 @@
 
 /**
  * Defines the optional contents of the backup archive.
- * @export
- * @interface BackupOptionsDto
  */
 export interface BackupOptionsDto {
     /**
      * Gets or sets a value indicating whether the archive contains the Metadata contents.
-     * @type {boolean}
-     * @memberof BackupOptionsDto
      */
     'Metadata'?: boolean;
     /**
      * Gets or sets a value indicating whether the archive contains the Trickplay contents.
-     * @type {boolean}
-     * @memberof BackupOptionsDto
      */
     'Trickplay'?: boolean;
     /**
      * Gets or sets a value indicating whether the archive contains the Subtitle contents.
-     * @type {boolean}
-     * @memberof BackupOptionsDto
      */
     'Subtitles'?: boolean;
     /**
      * Gets or sets a value indicating whether the archive contains the Database contents.
-     * @type {boolean}
-     * @memberof BackupOptionsDto
      */
     'Database'?: boolean;
 }

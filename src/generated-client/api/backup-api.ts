@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { BackupRestoreRequestDto } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * BackupApi - axios parameter creator
- * @export
  */
 export const BackupApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -57,9 +56,8 @@ export const BackupApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -100,8 +98,8 @@ export const BackupApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['path'] = path;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -133,8 +131,8 @@ export const BackupApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -169,9 +167,8 @@ export const BackupApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -188,7 +185,6 @@ export const BackupApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * BackupApi - functional programming interface
- * @export
  */
 export const BackupApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = BackupApiAxiosParamCreator(configuration)
@@ -249,7 +245,6 @@ export const BackupApiFp = function(configuration?: Configuration) {
 
 /**
  * BackupApi - factory interface
- * @export
  */
 export const BackupApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = BackupApiFp(configuration)
@@ -298,51 +293,36 @@ export const BackupApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for createBackup operation in BackupApi.
- * @export
- * @interface BackupApiCreateBackupRequest
  */
 export interface BackupApiCreateBackupRequest {
     /**
      * The backup options.
-     * @type {BackupOptionsDto}
-     * @memberof BackupApiCreateBackup
      */
     readonly backupOptionsDto?: BackupOptionsDto
 }
 
 /**
  * Request parameters for getBackup operation in BackupApi.
- * @export
- * @interface BackupApiGetBackupRequest
  */
 export interface BackupApiGetBackupRequest {
     /**
      * The data to start a restore process.
-     * @type {string}
-     * @memberof BackupApiGetBackup
      */
     readonly path: string
 }
 
 /**
  * Request parameters for startRestoreBackup operation in BackupApi.
- * @export
- * @interface BackupApiStartRestoreBackupRequest
  */
 export interface BackupApiStartRestoreBackupRequest {
     /**
      * The data to start a restore process.
-     * @type {BackupRestoreRequestDto}
-     * @memberof BackupApiStartRestoreBackup
      */
     readonly backupRestoreRequestDto: BackupRestoreRequestDto
 }
 
 /**
  * BackupApi - object-oriented interface
- * @export
- * @class BackupApi
- * @extends {BaseAPI}
  */
 export class BackupApi extends BaseAPI {
     /**
@@ -351,7 +331,6 @@ export class BackupApi extends BaseAPI {
      * @param {BackupApiCreateBackupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BackupApi
      */
     public createBackup(requestParameters: BackupApiCreateBackupRequest = {}, options?: RawAxiosRequestConfig) {
         return BackupApiFp(this.configuration).createBackup(requestParameters.backupOptionsDto, options).then((request) => request(this.axios, this.basePath));
@@ -363,7 +342,6 @@ export class BackupApi extends BaseAPI {
      * @param {BackupApiGetBackupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BackupApi
      */
     public getBackup(requestParameters: BackupApiGetBackupRequest, options?: RawAxiosRequestConfig) {
         return BackupApiFp(this.configuration).getBackup(requestParameters.path, options).then((request) => request(this.axios, this.basePath));
@@ -374,7 +352,6 @@ export class BackupApi extends BaseAPI {
      * @summary Gets a list of all currently present backups in the backup directory.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BackupApi
      */
     public listBackups(options?: RawAxiosRequestConfig) {
         return BackupApiFp(this.configuration).listBackups(options).then((request) => request(this.axios, this.basePath));
@@ -386,7 +363,6 @@ export class BackupApi extends BaseAPI {
      * @param {BackupApiStartRestoreBackupRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BackupApi
      */
     public startRestoreBackup(requestParameters: BackupApiStartRestoreBackupRequest, options?: RawAxiosRequestConfig) {
         return BackupApiFp(this.configuration).startRestoreBackup(requestParameters.backupRestoreRequestDto, options).then((request) => request(this.axios, this.basePath));

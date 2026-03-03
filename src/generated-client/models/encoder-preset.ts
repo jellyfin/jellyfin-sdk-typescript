@@ -15,8 +15,6 @@
 
 /**
  * Enum containing encoder presets.
- * @export
- * @enum {string}
  */
 
 export const EncoderPreset = {

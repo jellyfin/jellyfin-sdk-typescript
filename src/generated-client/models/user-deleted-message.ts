@@ -18,27 +18,16 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * User deleted message.
- * @export
- * @interface UserDeletedMessage
  */
 export interface UserDeletedMessage {
     /**
      * Gets or sets the data.
-     * @type {string}
-     * @memberof UserDeletedMessage
      */
     'Data'?: string;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof UserDeletedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof UserDeletedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

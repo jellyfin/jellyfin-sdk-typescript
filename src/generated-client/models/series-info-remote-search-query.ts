@@ -16,34 +16,15 @@
 // @ts-ignore
 import type { SeriesInfo } from './series-info';
 
-/**
- * 
- * @export
- * @interface SeriesInfoRemoteSearchQuery
- */
 export interface SeriesInfoRemoteSearchQuery {
-    /**
-     * 
-     * @type {SeriesInfo}
-     * @memberof SeriesInfoRemoteSearchQuery
-     */
     'SearchInfo'?: SeriesInfo;
-    /**
-     * 
-     * @type {string}
-     * @memberof SeriesInfoRemoteSearchQuery
-     */
     'ItemId'?: string;
     /**
      * Gets or sets the provider name to search within if set.
-     * @type {string}
-     * @memberof SeriesInfoRemoteSearchQuery
      */
     'SearchProviderName'?: string | null;
     /**
      * Gets or sets a value indicating whether disabled providers should be included.
-     * @type {boolean}
-     * @memberof SeriesInfoRemoteSearchQuery
      */
     'IncludeDisabledProviders'?: boolean;
 }

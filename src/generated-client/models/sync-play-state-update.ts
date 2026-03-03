@@ -19,29 +19,12 @@ import type { GroupStateUpdate } from './group-state-update';
 // @ts-ignore
 import type { GroupUpdateType } from './group-update-type';
 
-/**
- * 
- * @export
- * @interface SyncPlayStateUpdate
- */
 export interface SyncPlayStateUpdate {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof SyncPlayStateUpdate
      */
     'GroupId'?: string;
-    /**
-     * 
-     * @type {GroupStateUpdate}
-     * @memberof SyncPlayStateUpdate
-     */
     'Data'?: GroupStateUpdate;
-    /**
-     * 
-     * @type {GroupUpdateType}
-     * @memberof SyncPlayStateUpdate
-     */
     'Type'?: GroupUpdateType;
 }
 

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -34,7 +34,6 @@ import type { SystemInfo } from '../models';
 import type { SystemStorageDto } from '../models';
 /**
  * SystemApi - axios parameter creator
- * @export
  */
 export const SystemApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -60,8 +59,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -100,8 +99,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['name'] = name;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/plain,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -130,8 +129,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -160,8 +159,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -193,8 +192,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -226,8 +225,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -259,8 +258,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -289,8 +288,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -322,8 +321,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -355,8 +354,8 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -371,7 +370,6 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * SystemApi - functional programming interface
- * @export
  */
 export const SystemApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SystemApiAxiosParamCreator(configuration)
@@ -502,7 +500,6 @@ export const SystemApiFp = function(configuration?: Configuration) {
 
 /**
  * SystemApi - factory interface
- * @export
  */
 export const SystemApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SystemApiFp(configuration)
@@ -603,23 +600,16 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for getLogFile operation in SystemApi.
- * @export
- * @interface SystemApiGetLogFileRequest
  */
 export interface SystemApiGetLogFileRequest {
     /**
      * The name of the log file to get.
-     * @type {string}
-     * @memberof SystemApiGetLogFile
      */
     readonly name: string
 }
 
 /**
  * SystemApi - object-oriented interface
- * @export
- * @class SystemApi
- * @extends {BaseAPI}
  */
 export class SystemApi extends BaseAPI {
     /**
@@ -627,7 +617,6 @@ export class SystemApi extends BaseAPI {
      * @summary Gets information about the request endpoint.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getEndpointInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getEndpointInfo(options).then((request) => request(this.axios, this.basePath));
@@ -639,7 +628,6 @@ export class SystemApi extends BaseAPI {
      * @param {SystemApiGetLogFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getLogFile(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
@@ -650,7 +638,6 @@ export class SystemApi extends BaseAPI {
      * @summary Pings the system.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getPingSystem(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getPingSystem(options).then((request) => request(this.axios, this.basePath));
@@ -661,7 +648,6 @@ export class SystemApi extends BaseAPI {
      * @summary Gets public information about the server.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getPublicSystemInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getPublicSystemInfo(options).then((request) => request(this.axios, this.basePath));
@@ -672,7 +658,6 @@ export class SystemApi extends BaseAPI {
      * @summary Gets a list of available server log files.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getServerLogs(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getServerLogs(options).then((request) => request(this.axios, this.basePath));
@@ -683,7 +668,6 @@ export class SystemApi extends BaseAPI {
      * @summary Gets information about the server.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getSystemInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getSystemInfo(options).then((request) => request(this.axios, this.basePath));
@@ -694,7 +678,6 @@ export class SystemApi extends BaseAPI {
      * @summary Gets information about the server.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public getSystemStorage(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getSystemStorage(options).then((request) => request(this.axios, this.basePath));
@@ -705,7 +688,6 @@ export class SystemApi extends BaseAPI {
      * @summary Pings the system.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public postPingSystem(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).postPingSystem(options).then((request) => request(this.axios, this.basePath));
@@ -716,7 +698,6 @@ export class SystemApi extends BaseAPI {
      * @summary Restarts the application.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public restartApplication(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).restartApplication(options).then((request) => request(this.axios, this.basePath));
@@ -727,7 +708,6 @@ export class SystemApi extends BaseAPI {
      * @summary Shuts down the application.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SystemApi
      */
     public shutdownApplication(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).shutdownApplication(options).then((request) => request(this.axios, this.basePath));

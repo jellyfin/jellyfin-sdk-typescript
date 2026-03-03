@@ -15,8 +15,6 @@
 
 /**
  * The collection type options.
- * @export
- * @enum {string}
  */
 
 export const CollectionTypeOptions = {

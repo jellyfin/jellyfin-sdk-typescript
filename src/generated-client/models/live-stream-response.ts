@@ -16,17 +16,7 @@
 // @ts-ignore
 import type { MediaSourceInfo } from './media-source-info';
 
-/**
- * 
- * @export
- * @interface LiveStreamResponse
- */
 export interface LiveStreamResponse {
-    /**
-     * 
-     * @type {MediaSourceInfo}
-     * @memberof LiveStreamResponse
-     */
     'MediaSource'?: MediaSourceInfo;
 }
 

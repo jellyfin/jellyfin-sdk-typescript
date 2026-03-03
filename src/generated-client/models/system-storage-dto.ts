@@ -21,56 +21,17 @@ import type { LibraryStorageDto } from './library-storage-dto';
 
 /**
  * Contains informations about the systems storage.
- * @export
- * @interface SystemStorageDto
  */
 export interface SystemStorageDto {
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'ProgramDataFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'WebFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'ImageCacheFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'CacheFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'LogFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'InternalMetadataFolder'?: FolderStorageDto;
-    /**
-     * 
-     * @type {FolderStorageDto}
-     * @memberof SystemStorageDto
-     */
     'TranscodingTempFolder'?: FolderStorageDto;
     /**
      * Gets or sets the storage informations of all libraries.
-     * @type {Array<LibraryStorageDto>}
-     * @memberof SystemStorageDto
      */
     'Libraries'?: Array<LibraryStorageDto>;
 }

@@ -15,20 +15,14 @@
 
 /**
  * Class MovePlaylistItemRequestDto.
- * @export
- * @interface MovePlaylistItemRequestDto
  */
 export interface MovePlaylistItemRequestDto {
     /**
      * Gets or sets the playlist identifier of the item.
-     * @type {string}
-     * @memberof MovePlaylistItemRequestDto
      */
     'PlaylistItemId'?: string;
     /**
      * Gets or sets the new position.
-     * @type {number}
-     * @memberof MovePlaylistItemRequestDto
      */
     'NewIndex'?: number;
 }

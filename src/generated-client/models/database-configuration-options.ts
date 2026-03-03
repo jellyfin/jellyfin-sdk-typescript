@@ -21,27 +21,13 @@ import type { DatabaseLockingBehaviorTypes } from './database-locking-behavior-t
 
 /**
  * Options to configure jellyfins managed database.
- * @export
- * @interface DatabaseConfigurationOptions
  */
 export interface DatabaseConfigurationOptions {
     /**
      * Gets or Sets the type of database jellyfin should use.
-     * @type {string}
-     * @memberof DatabaseConfigurationOptions
      */
     'DatabaseType'?: string;
-    /**
-     * 
-     * @type {CustomDatabaseOptions}
-     * @memberof DatabaseConfigurationOptions
-     */
     'CustomProviderOptions'?: CustomDatabaseOptions;
-    /**
-     * 
-     * @type {DatabaseLockingBehaviorTypes}
-     * @memberof DatabaseConfigurationOptions
-     */
     'LockingBehavior'?: DatabaseLockingBehaviorTypes;
 }
 

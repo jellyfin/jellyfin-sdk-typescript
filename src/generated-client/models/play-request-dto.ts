@@ -15,26 +15,18 @@
 
 /**
  * Class PlayRequestDto.
- * @export
- * @interface PlayRequestDto
  */
 export interface PlayRequestDto {
     /**
      * Gets or sets the playing queue.
-     * @type {Array<string>}
-     * @memberof PlayRequestDto
      */
     'PlayingQueue'?: Array<string>;
     /**
      * Gets or sets the position of the playing item in the queue.
-     * @type {number}
-     * @memberof PlayRequestDto
      */
     'PlayingItemPosition'?: number;
     /**
      * Gets or sets the start position ticks.
-     * @type {number}
-     * @memberof PlayRequestDto
      */
     'StartPositionTicks'?: number;
 }

@@ -18,39 +18,24 @@ import type { BackupOptionsDto } from './backup-options-dto';
 
 /**
  * Manifest type for backups internal structure.
- * @export
- * @interface BackupManifestDto
  */
 export interface BackupManifestDto {
     /**
      * Gets or sets the jellyfin version this backup was created with.
-     * @type {string}
-     * @memberof BackupManifestDto
      */
     'ServerVersion'?: string;
     /**
      * Gets or sets the backup engine version this backup was created with.
-     * @type {string}
-     * @memberof BackupManifestDto
      */
     'BackupEngineVersion'?: string;
     /**
      * Gets or sets the date this backup was created with.
-     * @type {string}
-     * @memberof BackupManifestDto
      */
     'DateCreated'?: string;
     /**
      * Gets or sets the path to the backup on the system.
-     * @type {string}
-     * @memberof BackupManifestDto
      */
     'Path'?: string;
-    /**
-     * 
-     * @type {BackupOptionsDto}
-     * @memberof BackupManifestDto
-     */
     'Options'?: BackupOptionsDto;
 }
 

@@ -15,51 +15,14 @@
 
 /**
  * Class MetadataOptions.
- * @export
- * @interface MetadataOptions
  */
 export interface MetadataOptions {
-    /**
-     * 
-     * @type {string}
-     * @memberof MetadataOptions
-     */
     'ItemType'?: string | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'DisabledMetadataSavers'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'LocalMetadataReaderOrder'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'DisabledMetadataFetchers'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'MetadataFetcherOrder'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'DisabledImageFetchers'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof MetadataOptions
-     */
     'ImageFetcherOrder'?: Array<string> | null;
 }
 

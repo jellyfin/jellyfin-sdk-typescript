@@ -20,10 +20,6 @@ import globalAxios from 'axios';
 
 export const BASE_PATH = "http://localhost".replace(/\/+$/, "");
 
-/**
- *
- * @export
- */
 export const COLLECTION_FORMATS = {
     csv: ",",
     ssv: " ",
@@ -31,21 +27,11 @@ export const COLLECTION_FORMATS = {
     pipes: "|",
 };
 
-/**
- *
- * @export
- * @interface RequestArgs
- */
 export interface RequestArgs {
     url: string;
     options: RawAxiosRequestConfig;
 }
 
-/**
- *
- * @export
- * @class BaseAPI
- */
 export class BaseAPI {
     protected configuration: Configuration | undefined;
 
@@ -57,12 +43,6 @@ export class BaseAPI {
     }
 };
 
-/**
- *
- * @export
- * @class RequiredError
- * @extends {Error}
- */
 export class RequiredError extends Error {
     constructor(public field: string, msg?: string) {
         super(msg);
@@ -77,9 +57,5 @@ interface ServerMap {
     }[];
 }
 
-/**
- *
- * @export
- */
 export const operationServerMap: ServerMap = {
 }

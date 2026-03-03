@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { MetadataEditorInfo } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * ItemUpdateApi - axios parameter creator
- * @export
  */
 export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -58,8 +57,8 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -98,9 +97,8 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -143,8 +141,8 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['contentType'] = contentType;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -159,7 +157,6 @@ export const ItemUpdateApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * ItemUpdateApi - functional programming interface
- * @export
  */
 export const ItemUpdateApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = ItemUpdateApiAxiosParamCreator(configuration)
@@ -210,7 +207,6 @@ export const ItemUpdateApiFp = function(configuration?: Configuration) {
 
 /**
  * ItemUpdateApi - factory interface
- * @export
  */
 export const ItemUpdateApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = ItemUpdateApiFp(configuration)
@@ -250,65 +246,46 @@ export const ItemUpdateApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for getMetadataEditorInfo operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiGetMetadataEditorInfoRequest
  */
 export interface ItemUpdateApiGetMetadataEditorInfoRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiGetMetadataEditorInfo
      */
     readonly itemId: string
 }
 
 /**
  * Request parameters for updateItem operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiUpdateItemRequest
  */
 export interface ItemUpdateApiUpdateItemRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItem
      */
     readonly itemId: string
 
     /**
      * The new item properties.
-     * @type {BaseItemDto}
-     * @memberof ItemUpdateApiUpdateItem
      */
     readonly baseItemDto: BaseItemDto
 }
 
 /**
  * Request parameters for updateItemContentType operation in ItemUpdateApi.
- * @export
- * @interface ItemUpdateApiUpdateItemContentTypeRequest
  */
 export interface ItemUpdateApiUpdateItemContentTypeRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItemContentType
      */
     readonly itemId: string
 
     /**
      * The content type of the item.
-     * @type {string}
-     * @memberof ItemUpdateApiUpdateItemContentType
      */
     readonly contentType?: string
 }
 
 /**
  * ItemUpdateApi - object-oriented interface
- * @export
- * @class ItemUpdateApi
- * @extends {BaseAPI}
  */
 export class ItemUpdateApi extends BaseAPI {
     /**
@@ -317,7 +294,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiGetMetadataEditorInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public getMetadataEditorInfo(requestParameters: ItemUpdateApiGetMetadataEditorInfoRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).getMetadataEditorInfo(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
@@ -329,7 +305,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiUpdateItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public updateItem(requestParameters: ItemUpdateApiUpdateItemRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItem(requestParameters.itemId, requestParameters.baseItemDto, options).then((request) => request(this.axios, this.basePath));
@@ -341,7 +316,6 @@ export class ItemUpdateApi extends BaseAPI {
      * @param {ItemUpdateApiUpdateItemContentTypeRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof ItemUpdateApi
      */
     public updateItemContentType(requestParameters: ItemUpdateApiUpdateItemContentTypeRequest, options?: RawAxiosRequestConfig) {
         return ItemUpdateApiFp(this.configuration).updateItemContentType(requestParameters.itemId, requestParameters.contentType, options).then((request) => request(this.axios, this.basePath));

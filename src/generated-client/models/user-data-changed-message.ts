@@ -21,27 +21,13 @@ import type { UserDataChangeInfo } from './user-data-change-info';
 
 /**
  * User data changed message.
- * @export
- * @interface UserDataChangedMessage
  */
 export interface UserDataChangedMessage {
-    /**
-     * 
-     * @type {UserDataChangeInfo}
-     * @memberof UserDataChangedMessage
-     */
     'Data'?: UserDataChangeInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof UserDataChangedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof UserDataChangedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

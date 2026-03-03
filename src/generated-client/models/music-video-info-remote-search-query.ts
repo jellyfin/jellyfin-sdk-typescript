@@ -16,34 +16,15 @@
 // @ts-ignore
 import type { MusicVideoInfo } from './music-video-info';
 
-/**
- * 
- * @export
- * @interface MusicVideoInfoRemoteSearchQuery
- */
 export interface MusicVideoInfoRemoteSearchQuery {
-    /**
-     * 
-     * @type {MusicVideoInfo}
-     * @memberof MusicVideoInfoRemoteSearchQuery
-     */
     'SearchInfo'?: MusicVideoInfo;
-    /**
-     * 
-     * @type {string}
-     * @memberof MusicVideoInfoRemoteSearchQuery
-     */
     'ItemId'?: string;
     /**
      * Gets or sets the provider name to search within if set.
-     * @type {string}
-     * @memberof MusicVideoInfoRemoteSearchQuery
      */
     'SearchProviderName'?: string | null;
     /**
      * Gets or sets a value indicating whether disabled providers should be included.
-     * @type {boolean}
-     * @memberof MusicVideoInfoRemoteSearchQuery
      */
     'IncludeDisabledProviders'?: boolean;
 }

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -34,7 +34,6 @@ import type { ItemFields } from '../models';
 import type { UserItemDataDto } from '../models';
 /**
  * UserLibraryApi - axios parameter creator
- * @export
  */
 export const UserLibraryApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -69,8 +68,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -111,8 +110,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -153,8 +152,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -241,8 +240,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['groupItems'] = groupItems;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -283,8 +282,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -321,8 +320,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -363,8 +362,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -405,8 +404,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -447,8 +446,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -494,8 +493,8 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['likes'] = likes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -510,7 +509,6 @@ export const UserLibraryApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * UserLibraryApi - functional programming interface
- * @export
  */
 export const UserLibraryApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = UserLibraryApiAxiosParamCreator(configuration)
@@ -669,7 +667,6 @@ export const UserLibraryApiFp = function(configuration?: Configuration) {
 
 /**
  * UserLibraryApi - factory interface
- * @export
  */
 export const UserLibraryApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = UserLibraryApiFp(configuration)
@@ -779,282 +776,201 @@ export const UserLibraryApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for deleteUserItemRating operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiDeleteUserItemRatingRequest
  */
 export interface UserLibraryApiDeleteUserItemRatingRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiDeleteUserItemRating
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiDeleteUserItemRating
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getIntros operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetIntrosRequest
  */
 export interface UserLibraryApiGetIntrosRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiGetIntros
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetIntros
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getItem operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetItemRequest
  */
 export interface UserLibraryApiGetItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiGetItem
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetItem
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getLatestMedia operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetLatestMediaRequest
  */
 export interface UserLibraryApiGetLatestMediaRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly userId?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Filter by items that are played, or not.
-     * @type {boolean}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly isPlayed?: boolean
 
     /**
      * Optional. include image information in output.
-     * @type {boolean}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. the max number of images to return, per image type.
-     * @type {number}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. include user data.
-     * @type {boolean}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly enableUserData?: boolean
 
     /**
      * Return item limit.
-     * @type {number}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly limit?: number
 
     /**
      * Whether or not to group items into a parent container.
-     * @type {boolean}
-     * @memberof UserLibraryApiGetLatestMedia
      */
     readonly groupItems?: boolean
 }
 
 /**
  * Request parameters for getLocalTrailers operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetLocalTrailersRequest
  */
 export interface UserLibraryApiGetLocalTrailersRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiGetLocalTrailers
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetLocalTrailers
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getRootFolder operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetRootFolderRequest
  */
 export interface UserLibraryApiGetRootFolderRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetRootFolder
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getSpecialFeatures operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiGetSpecialFeaturesRequest
  */
 export interface UserLibraryApiGetSpecialFeaturesRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiGetSpecialFeatures
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiGetSpecialFeatures
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for markFavoriteItem operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiMarkFavoriteItemRequest
  */
 export interface UserLibraryApiMarkFavoriteItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiMarkFavoriteItem
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiMarkFavoriteItem
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for unmarkFavoriteItem operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiUnmarkFavoriteItemRequest
  */
 export interface UserLibraryApiUnmarkFavoriteItemRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiUnmarkFavoriteItem
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiUnmarkFavoriteItem
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for updateUserItemRating operation in UserLibraryApi.
- * @export
- * @interface UserLibraryApiUpdateUserItemRatingRequest
  */
 export interface UserLibraryApiUpdateUserItemRatingRequest {
     /**
      * Item id.
-     * @type {string}
-     * @memberof UserLibraryApiUpdateUserItemRating
      */
     readonly itemId: string
 
     /**
      * User id.
-     * @type {string}
-     * @memberof UserLibraryApiUpdateUserItemRating
      */
     readonly userId?: string
 
     /**
      * Whether this M:Jellyfin.Api.Controllers.UserLibraryController.UpdateUserItemRating(System.Nullable{System.Guid},System.Guid,System.Nullable{System.Boolean}) is likes.
-     * @type {boolean}
-     * @memberof UserLibraryApiUpdateUserItemRating
      */
     readonly likes?: boolean
 }
 
 /**
  * UserLibraryApi - object-oriented interface
- * @export
- * @class UserLibraryApi
- * @extends {BaseAPI}
  */
 export class UserLibraryApi extends BaseAPI {
     /**
@@ -1063,7 +979,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiDeleteUserItemRatingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public deleteUserItemRating(requestParameters: UserLibraryApiDeleteUserItemRatingRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).deleteUserItemRating(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1075,7 +990,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetIntrosRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getIntros(requestParameters: UserLibraryApiGetIntrosRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getIntros(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1087,7 +1001,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getItem(requestParameters: UserLibraryApiGetItemRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1099,7 +1012,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetLatestMediaRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getLatestMedia(requestParameters: UserLibraryApiGetLatestMediaRequest = {}, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getLatestMedia(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.includeItemTypes, requestParameters.isPlayed, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.limit, requestParameters.groupItems, options).then((request) => request(this.axios, this.basePath));
@@ -1111,7 +1023,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetLocalTrailersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getLocalTrailers(requestParameters: UserLibraryApiGetLocalTrailersRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getLocalTrailers(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1123,7 +1034,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetRootFolderRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getRootFolder(requestParameters: UserLibraryApiGetRootFolderRequest = {}, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getRootFolder(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1135,7 +1045,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiGetSpecialFeaturesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public getSpecialFeatures(requestParameters: UserLibraryApiGetSpecialFeaturesRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).getSpecialFeatures(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1147,7 +1056,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiMarkFavoriteItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public markFavoriteItem(requestParameters: UserLibraryApiMarkFavoriteItemRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).markFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1159,7 +1067,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiUnmarkFavoriteItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public unmarkFavoriteItem(requestParameters: UserLibraryApiUnmarkFavoriteItemRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).unmarkFavoriteItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -1171,7 +1078,6 @@ export class UserLibraryApi extends BaseAPI {
      * @param {UserLibraryApiUpdateUserItemRatingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserLibraryApi
      */
     public updateUserItemRating(requestParameters: UserLibraryApiUpdateUserItemRatingRequest, options?: RawAxiosRequestConfig) {
         return UserLibraryApiFp(this.configuration).updateUserItemRating(requestParameters.itemId, requestParameters.userId, requestParameters.likes, options).then((request) => request(this.axios, this.basePath));

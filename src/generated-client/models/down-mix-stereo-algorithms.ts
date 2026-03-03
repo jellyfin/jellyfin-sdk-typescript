@@ -15,8 +15,6 @@
 
 /**
  * An enum representing an algorithm to downmix surround sound to stereo.
- * @export
- * @enum {string}
  */
 
 export const DownMixStereoAlgorithms = {

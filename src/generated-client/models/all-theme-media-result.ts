@@ -16,29 +16,9 @@
 // @ts-ignore
 import type { ThemeMediaResult } from './theme-media-result';
 
-/**
- * 
- * @export
- * @interface AllThemeMediaResult
- */
 export interface AllThemeMediaResult {
-    /**
-     * 
-     * @type {ThemeMediaResult}
-     * @memberof AllThemeMediaResult
-     */
     'ThemeVideosResult'?: ThemeMediaResult;
-    /**
-     * 
-     * @type {ThemeMediaResult}
-     * @memberof AllThemeMediaResult
-     */
     'ThemeSongsResult'?: ThemeMediaResult;
-    /**
-     * 
-     * @type {ThemeMediaResult}
-     * @memberof AllThemeMediaResult
-     */
     'SoundtrackSongsResult'?: ThemeMediaResult;
 }
 

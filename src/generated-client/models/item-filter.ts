@@ -15,8 +15,6 @@
 
 /**
  * Enum ItemFilter.
- * @export
- * @enum {string}
  */
 
 export const ItemFilter = {

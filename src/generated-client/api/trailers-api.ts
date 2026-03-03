@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -44,7 +44,6 @@ import type { SortOrder } from '../models';
 import type { VideoType } from '../models';
 /**
  * TrailersApi - axios parameter creator
- * @export
  */
 export const TrailersApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -498,8 +497,8 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['enableImages'] = enableImages;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -514,7 +513,6 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * TrailersApi - functional programming interface
- * @export
  */
 export const TrailersApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TrailersApiAxiosParamCreator(configuration)
@@ -620,7 +618,6 @@ export const TrailersApiFp = function(configuration?: Configuration) {
 
 /**
  * TrailersApi - factory interface
- * @export
  */
 export const TrailersApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TrailersApiFp(configuration)
@@ -640,604 +637,431 @@ export const TrailersApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * Request parameters for getTrailers operation in TrailersApi.
- * @export
- * @interface TrailersApiGetTrailersRequest
  */
 export interface TrailersApiGetTrailersRequest {
     /**
      * The user id supplied as query parameter; this is required when not using an API key.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly userId?: string
 
     /**
      * Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly maxOfficialRating?: string
 
     /**
      * Optional filter by items with theme songs.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasThemeSong?: boolean
 
     /**
      * Optional filter by items with theme videos.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasThemeVideo?: boolean
 
     /**
      * Optional filter by items with subtitles.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasSubtitles?: boolean
 
     /**
      * Optional filter by items with special features.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasSpecialFeature?: boolean
 
     /**
      * Optional filter by items with trailers.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasTrailer?: boolean
 
     /**
      * Optional. Return items that are siblings of a supplied item.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly adjacentTo?: string
 
     /**
      * Optional filter by parent index number.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly parentIndexNumber?: number
 
     /**
      * Optional filter by items that have or do not have a parental rating.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasParentalRating?: boolean
 
     /**
      * Optional filter by items that are HD or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isHd?: boolean
 
     /**
      * Optional filter by items that are 4K or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly is4K?: boolean
 
     /**
      * Optional. If specified, results will be filtered based on LocationType. This allows multiple, comma delimited.
-     * @type {Array<LocationType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly locationTypes?: Array<LocationType>
 
     /**
      * Optional. If specified, results will be filtered based on the LocationType. This allows multiple, comma delimited.
-     * @type {Array<LocationType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly excludeLocationTypes?: Array<LocationType>
 
     /**
      * Optional filter by items that are missing episodes or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isMissing?: boolean
 
     /**
      * Optional filter by items that are unaired episodes or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isUnaired?: boolean
 
     /**
      * Optional filter by minimum community rating.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minCommunityRating?: number
 
     /**
      * Optional filter by minimum critic rating.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minCriticRating?: number
 
     /**
      * Optional. The minimum premiere date. Format &#x3D; ISO.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minPremiereDate?: string
 
     /**
      * Optional. The minimum last saved date. Format &#x3D; ISO.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minDateLastSaved?: string
 
     /**
      * Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minDateLastSavedForUser?: string
 
     /**
      * Optional. The maximum premiere date. Format &#x3D; ISO.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly maxPremiereDate?: string
 
     /**
      * Optional filter by items that have an overview or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasOverview?: boolean
 
     /**
      * Optional filter by items that have an IMDb id or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasImdbId?: boolean
 
     /**
      * Optional filter by items that have a TMDb id or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasTmdbId?: boolean
 
     /**
      * Optional filter by items that have a TVDb id or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasTvdbId?: boolean
 
     /**
      * Optional filter for live tv movies.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isMovie?: boolean
 
     /**
      * Optional filter for live tv series.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isSeries?: boolean
 
     /**
      * Optional filter for live tv news.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isNews?: boolean
 
     /**
      * Optional filter for live tv kids.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isKids?: boolean
 
     /**
      * Optional filter for live tv sports.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isSports?: boolean
 
     /**
      * Optional. If specified, results will be filtered by excluding item ids. This allows multiple, comma delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly excludeItemIds?: Array<string>
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly limit?: number
 
     /**
      * When searching within folders, this determines whether or not the search will be recursive. true/false.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly recursive?: boolean
 
     /**
      * Optional. Filter based on a search term.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly searchTerm?: string
 
     /**
      * Sort Order - Ascending, Descending.
-     * @type {Array<SortOrder>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
-     * @type {Array<ItemFields>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
-     * @type {Array<ItemFilter>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly filters?: Array<ItemFilter>
 
     /**
      * Optional filter by items that are marked as favorite, or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<MediaType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly mediaTypes?: Array<MediaType>
 
     /**
      * Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
-     * @type {Array<ImageType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly imageTypes?: Array<ImageType>
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
-     * @type {Array<ItemSortBy>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional filter by items that are played, or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isPlayed?: boolean
 
     /**
      * Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly genres?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly officialRatings?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on tag. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly tags?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on production year. This allows multiple, comma delimited.
-     * @type {Array<number>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly years?: Array<number>
 
     /**
      * Optional, include user data.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. If specified, results will be filtered to include only those containing the specified person.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly person?: string
 
     /**
      * Optional. If specified, results will be filtered to include only those containing the specified person id.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly personIds?: Array<string>
 
     /**
      * Optional. If specified, along with Person, results will be filtered to include only those containing the specified person and PersonType. Allows multiple, comma-delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly personTypes?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on studio. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly studios?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on artists. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly artists?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on artist id. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly excludeArtistIds?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered to include only those containing the specified artist id.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly artistIds?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered to include only those containing the specified album artist id.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly albumArtistIds?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered to include only those containing the specified contributing artist id.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly contributingArtistIds?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on album. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly albums?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on album id. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly albumIds?: Array<string>
 
     /**
      * Optional. If specific items are needed, specify a list of item id\&#39;s to retrieve. This allows multiple, comma delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly ids?: Array<string>
 
     /**
      * Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, comma delimited.
-     * @type {Array<VideoType>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly videoTypes?: Array<VideoType>
 
     /**
      * Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minOfficialRating?: string
 
     /**
      * Optional filter by items that are locked.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isLocked?: boolean
 
     /**
      * Optional filter by items that are placeholders.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly isPlaceHolder?: boolean
 
     /**
      * Optional filter by items that have official ratings.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly hasOfficialRating?: boolean
 
     /**
      * Whether or not to hide items behind their boxsets.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly collapseBoxSetItems?: boolean
 
     /**
      * Optional. Filter by the minimum width of the item.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minWidth?: number
 
     /**
      * Optional. Filter by the minimum height of the item.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly minHeight?: number
 
     /**
      * Optional. Filter by the maximum width of the item.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly maxWidth?: number
 
     /**
      * Optional. Filter by the maximum height of the item.
-     * @type {number}
-     * @memberof TrailersApiGetTrailers
      */
     readonly maxHeight?: number
 
     /**
      * Optional filter by items that are 3D, or not.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly is3D?: boolean
 
     /**
      * Optional filter by Series Status. Allows multiple, comma delimited.
-     * @type {Array<SeriesStatus>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly seriesStatus?: Array<SeriesStatus>
 
     /**
      * Optional filter by items whose name is sorted equally or greater than a given input string.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly nameStartsWithOrGreater?: string
 
     /**
      * Optional filter by items whose name is sorted equally than a given input string.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly nameStartsWith?: string
 
     /**
      * Optional filter by items whose name is equally or lesser than a given input string.
-     * @type {string}
-     * @memberof TrailersApiGetTrailers
      */
     readonly nameLessThan?: string
 
     /**
      * Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly studioIds?: Array<string>
 
     /**
      * Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
-     * @type {Array<string>}
-     * @memberof TrailersApiGetTrailers
      */
     readonly genreIds?: Array<string>
 
     /**
      * Optional. Enable the total record count.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly enableTotalRecordCount?: boolean
 
     /**
      * Optional, include image information in output.
-     * @type {boolean}
-     * @memberof TrailersApiGetTrailers
      */
     readonly enableImages?: boolean
 }
 
 /**
  * TrailersApi - object-oriented interface
- * @export
- * @class TrailersApi
- * @extends {BaseAPI}
  */
 export class TrailersApi extends BaseAPI {
     /**
@@ -1246,7 +1070,6 @@ export class TrailersApi extends BaseAPI {
      * @param {TrailersApiGetTrailersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TrailersApi
      */
     public getTrailers(requestParameters: TrailersApiGetTrailersRequest = {}, options?: RawAxiosRequestConfig) {
         return TrailersApiFp(this.configuration).getTrailers(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));

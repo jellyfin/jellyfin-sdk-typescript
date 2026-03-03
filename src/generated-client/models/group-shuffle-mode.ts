@@ -15,8 +15,6 @@
 
 /**
  * Enum GroupShuffleMode.
- * @export
- * @enum {string}
  */
 
 export const GroupShuffleMode = {

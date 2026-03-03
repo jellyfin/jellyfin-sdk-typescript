@@ -13,17 +13,7 @@
 
 
 
-/**
- * 
- * @export
- * @interface CollectionCreationResult
- */
 export interface CollectionCreationResult {
-    /**
-     * 
-     * @type {string}
-     * @memberof CollectionCreationResult
-     */
     'Id'?: string;
 }
 

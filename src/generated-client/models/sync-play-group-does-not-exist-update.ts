@@ -16,29 +16,15 @@
 // @ts-ignore
 import type { GroupUpdateType } from './group-update-type';
 
-/**
- * 
- * @export
- * @interface SyncPlayGroupDoesNotExistUpdate
- */
 export interface SyncPlayGroupDoesNotExistUpdate {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof SyncPlayGroupDoesNotExistUpdate
      */
     'GroupId'?: string;
     /**
      * Gets the update data.
-     * @type {string}
-     * @memberof SyncPlayGroupDoesNotExistUpdate
      */
     'Data'?: string;
-    /**
-     * 
-     * @type {GroupUpdateType}
-     * @memberof SyncPlayGroupDoesNotExistUpdate
-     */
     'Type'?: GroupUpdateType;
 }
 

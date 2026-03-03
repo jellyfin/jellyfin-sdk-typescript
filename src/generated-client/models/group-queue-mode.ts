@@ -15,8 +15,6 @@
 
 /**
  * Enum GroupQueueMode.
- * @export
- * @enum {string}
  */
 
 export const GroupQueueMode = {

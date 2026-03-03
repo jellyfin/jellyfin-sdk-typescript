@@ -18,27 +18,16 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Refresh progress message.
- * @export
- * @interface RefreshProgressMessage
  */
 export interface RefreshProgressMessage {
     /**
      * Gets or sets the data.
-     * @type {{ [key: string]: string | null; }}
-     * @memberof RefreshProgressMessage
      */
     'Data'?: { [key: string]: string | null; } | null;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof RefreshProgressMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof RefreshProgressMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { QueryFilters } from '../models';
 import type { QueryFiltersLegacy } from '../models';
 /**
  * FilterApi - axios parameter creator
- * @export
  */
 export const FilterApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -106,8 +105,8 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['recursive'] = recursive;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -159,8 +158,8 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['mediaTypes'] = mediaTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -175,7 +174,6 @@ export const FilterApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * FilterApi - functional programming interface
- * @export
  */
 export const FilterApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = FilterApiAxiosParamCreator(configuration)
@@ -223,7 +221,6 @@ export const FilterApiFp = function(configuration?: Configuration) {
 
 /**
  * FilterApi - factory interface
- * @export
  */
 export const FilterApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = FilterApiFp(configuration)
@@ -253,121 +250,86 @@ export const FilterApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for getQueryFilters operation in FilterApi.
- * @export
- * @interface FilterApiGetQueryFiltersRequest
  */
 export interface FilterApiGetQueryFiltersRequest {
     /**
      * Optional. User id.
-     * @type {string}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly userId?: string
 
     /**
      * Optional. Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly parentId?: string
 
     /**
      * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. Is item airing.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isAiring?: boolean
 
     /**
      * Optional. Is item movie.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isMovie?: boolean
 
     /**
      * Optional. Is item sports.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isSports?: boolean
 
     /**
      * Optional. Is item kids.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isKids?: boolean
 
     /**
      * Optional. Is item news.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isNews?: boolean
 
     /**
      * Optional. Is item series.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly isSeries?: boolean
 
     /**
      * Optional. Search recursive.
-     * @type {boolean}
-     * @memberof FilterApiGetQueryFilters
      */
     readonly recursive?: boolean
 }
 
 /**
  * Request parameters for getQueryFiltersLegacy operation in FilterApi.
- * @export
- * @interface FilterApiGetQueryFiltersLegacyRequest
  */
 export interface FilterApiGetQueryFiltersLegacyRequest {
     /**
      * Optional. User id.
-     * @type {string}
-     * @memberof FilterApiGetQueryFiltersLegacy
      */
     readonly userId?: string
 
     /**
      * Optional. Parent id.
-     * @type {string}
-     * @memberof FilterApiGetQueryFiltersLegacy
      */
     readonly parentId?: string
 
     /**
      * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof FilterApiGetQueryFiltersLegacy
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. Filter by MediaType. Allows multiple, comma delimited.
-     * @type {Array<MediaType>}
-     * @memberof FilterApiGetQueryFiltersLegacy
      */
     readonly mediaTypes?: Array<MediaType>
 }
 
 /**
  * FilterApi - object-oriented interface
- * @export
- * @class FilterApi
- * @extends {BaseAPI}
  */
 export class FilterApi extends BaseAPI {
     /**
@@ -376,7 +338,6 @@ export class FilterApi extends BaseAPI {
      * @param {FilterApiGetQueryFiltersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FilterApi
      */
     public getQueryFilters(requestParameters: FilterApiGetQueryFiltersRequest = {}, options?: RawAxiosRequestConfig) {
         return FilterApiFp(this.configuration).getQueryFilters(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.isAiring, requestParameters.isMovie, requestParameters.isSports, requestParameters.isKids, requestParameters.isNews, requestParameters.isSeries, requestParameters.recursive, options).then((request) => request(this.axios, this.basePath));
@@ -388,7 +349,6 @@ export class FilterApi extends BaseAPI {
      * @param {FilterApiGetQueryFiltersLegacyRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof FilterApi
      */
     public getQueryFiltersLegacy(requestParameters: FilterApiGetQueryFiltersLegacyRequest = {}, options?: RawAxiosRequestConfig) {
         return FilterApiFp(this.configuration).getQueryFiltersLegacy(requestParameters.userId, requestParameters.parentId, requestParameters.includeItemTypes, requestParameters.mediaTypes, options).then((request) => request(this.axios, this.basePath));

@@ -15,8 +15,6 @@
 
 /**
  * These represent sort orders.
- * @export
- * @enum {string}
  */
 
 export const ItemSortBy = {

@@ -15,26 +15,18 @@
 
 /**
  * Class RepositoryInfo.
- * @export
- * @interface RepositoryInfo
  */
 export interface RepositoryInfo {
     /**
      * Gets or sets the name.
-     * @type {string}
-     * @memberof RepositoryInfo
      */
     'Name'?: string | null;
     /**
      * Gets or sets the URL.
-     * @type {string}
-     * @memberof RepositoryInfo
      */
     'Url'?: string | null;
     /**
      * Gets or sets a value indicating whether the repository is enabled.
-     * @type {boolean}
-     * @memberof RepositoryInfo
      */
     'Enabled'?: boolean;
 }

@@ -15,8 +15,6 @@
 
 /**
  * Enum PlaybackRequestType.
- * @export
- * @enum {string}
  */
 
 export const PlaybackRequestType = {

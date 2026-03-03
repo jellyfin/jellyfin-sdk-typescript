@@ -15,8 +15,6 @@
 
 /**
  * The status of a series.
- * @export
- * @enum {string}
  */
 
 export const SeriesStatus = {

@@ -15,8 +15,6 @@
 
 /**
  * The specific media type of an MediaBrowser.Model.Providers.ExternalIdInfo.
- * @export
- * @enum {string}
  */
 
 export const ExternalIdMediaType = {

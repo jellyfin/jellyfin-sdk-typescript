@@ -18,26 +18,18 @@ import type { BaseItemDto } from './base-item-dto';
 
 /**
  * Query result container.
- * @export
- * @interface BaseItemDtoQueryResult
  */
 export interface BaseItemDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<BaseItemDto>}
-     * @memberof BaseItemDtoQueryResult
      */
     'Items'?: Array<BaseItemDto>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof BaseItemDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof BaseItemDtoQueryResult
      */
     'StartIndex'?: number;
 }

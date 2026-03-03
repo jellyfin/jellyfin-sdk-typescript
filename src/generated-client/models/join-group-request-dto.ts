@@ -15,14 +15,10 @@
 
 /**
  * Class JoinGroupRequestDto.
- * @export
- * @interface JoinGroupRequestDto
  */
 export interface JoinGroupRequestDto {
     /**
      * Gets or sets the group identifier.
-     * @type {string}
-     * @memberof JoinGroupRequestDto
      */
     'GroupId'?: string;
 }

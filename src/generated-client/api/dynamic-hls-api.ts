@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -26,7 +26,6 @@ import type { EncodingContext } from '../models';
 import type { SubtitleDeliveryMethod } from '../models';
 /**
  * DynamicHlsApi - axios parameter creator
- * @export
  */
 export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -329,8 +328,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableAudioVbrEncoding'] = enableAudioVbrEncoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'audio/*,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -649,8 +648,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'video/*,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -953,8 +952,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1244,8 +1243,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableAudioVbrEncoding'] = enableAudioVbrEncoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1550,8 +1549,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1834,8 +1833,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableAudioVbrEncoding'] = enableAudioVbrEncoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2128,8 +2127,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2419,8 +2418,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableAudioVbrEncoding'] = enableAudioVbrEncoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2725,8 +2724,8 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['alwaysBurnInSubtitleWhenTranscoding'] = alwaysBurnInSubtitleWhenTranscoding;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/x-mpegURL,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2741,7 +2740,6 @@ export const DynamicHlsApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * DynamicHlsApi - functional programming interface
- * @export
  */
 export const DynamicHlsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = DynamicHlsApiAxiosParamCreator(configuration)
@@ -3337,7 +3335,6 @@ export const DynamicHlsApiFp = function(configuration?: Configuration) {
 
 /**
  * DynamicHlsApi - factory interface
- * @export
  */
 export const DynamicHlsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = DynamicHlsApiFp(configuration)
@@ -3437,3418 +3434,2441 @@ export const DynamicHlsApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for getHlsAudioSegment operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetHlsAudioSegmentRequest
  */
 export interface DynamicHlsApiGetHlsAudioSegmentRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly itemId: string
 
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly playlistId: string
 
     /**
      * The segment id.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly segmentId: number
 
     /**
      * The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly container: string
 
     /**
      * The position of the requested segment in ticks.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly runtimeTicks: number
 
     /**
      * The length of the requested segment in ticks.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly actualSegmentLengthTicks: number
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly minSegments?: number
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly mediaSourceId?: string
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. The maximum streaming bitrate.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly height?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsAudioSegment
      */
     readonly enableAudioVbrEncoding?: boolean
 }
 
 /**
  * Request parameters for getHlsVideoSegment operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetHlsVideoSegmentRequest
  */
 export interface DynamicHlsApiGetHlsVideoSegmentRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly itemId: string
 
     /**
      * The playlist id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly playlistId: string
 
     /**
      * The segment id.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly segmentId: number
 
     /**
      * The video container. Possible values are: ts, webm, asf, wmv, ogv, mp4, m4v, mkv, mpeg, mpg, avi, 3gp, wmv, wtv, m2ts, mov, iso, flv.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly container: string
 
     /**
      * The position of the requested segment in ticks.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly runtimeTicks: number
 
     /**
      * The length of the requested segment in ticks.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly actualSegmentLengthTicks: number
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly segmentContainer?: string
 
     /**
      * The desired segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly minSegments?: number
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly mediaSourceId?: string
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly height?: number
 
     /**
      * Optional. The maximum horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxWidth?: number
 
     /**
      * Optional. The maximum vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly enableAudioVbrEncoding?: boolean
 
     /**
      * Whether to always burn in subtitles when transcoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetHlsVideoSegment
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 }
 
 /**
  * Request parameters for getLiveHlsStream operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetLiveHlsStreamRequest
  */
 export interface DynamicHlsApiGetLiveHlsStreamRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly itemId: string
 
     /**
      * The audio container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly container?: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly minSegments?: number
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly mediaSourceId?: string
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly height?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Optional. The max width.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxWidth?: number
 
     /**
      * Optional. The max height.
-     * @type {number}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Whether to enable subtitles in the manifest.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly enableSubtitlesInManifest?: boolean
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly enableAudioVbrEncoding?: boolean
 
     /**
      * Whether to always burn in subtitles when transcoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetLiveHlsStream
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 }
 
 /**
  * Request parameters for getMasterHlsAudioPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetMasterHlsAudioPlaylistRequest
  */
 export interface DynamicHlsApiGetMasterHlsAudioPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly itemId: string
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly mediaSourceId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. The maximum streaming bitrate.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Enable adaptive bitrate streaming.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly enableAdaptiveBitrateStreaming?: boolean
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsAudioPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 }
 
 /**
  * Request parameters for getMasterHlsVideoPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetMasterHlsVideoPlaylistRequest
  */
 export interface DynamicHlsApiGetMasterHlsVideoPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly itemId: string
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly mediaSourceId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. The maximum horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxWidth?: number
 
     /**
      * Optional. The maximum vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Enable adaptive bitrate streaming.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly enableAdaptiveBitrateStreaming?: boolean
 
     /**
      * Enable trickplay image playlists being added to master playlist.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly enableTrickplay?: boolean
 
     /**
      * Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 
     /**
      * Whether to always burn in subtitles when transcoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetMasterHlsVideoPlaylist
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 }
 
 /**
  * Request parameters for getVariantHlsAudioPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetVariantHlsAudioPlaylistRequest
  */
 export interface DynamicHlsApiGetVariantHlsAudioPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly itemId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly mediaSourceId?: string
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. The maximum streaming bitrate.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsAudioPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 }
 
 /**
  * Request parameters for getVariantHlsVideoPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiGetVariantHlsVideoPlaylistRequest
  */
 export interface DynamicHlsApiGetVariantHlsVideoPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly itemId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly mediaSourceId?: string
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. The maximum horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxWidth?: number
 
     /**
      * Optional. The maximum vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 
     /**
      * Whether to always burn in subtitles when transcoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiGetVariantHlsVideoPlaylist
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 }
 
 /**
  * Request parameters for headMasterHlsAudioPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiHeadMasterHlsAudioPlaylistRequest
  */
 export interface DynamicHlsApiHeadMasterHlsAudioPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly itemId: string
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly mediaSourceId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. The maximum streaming bitrate.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxStreamingBitrate?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Enable adaptive bitrate streaming.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly enableAdaptiveBitrateStreaming?: boolean
 
     /**
      * Optional. Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsAudioPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 }
 
 /**
  * Request parameters for headMasterHlsVideoPlaylist operation in DynamicHlsApi.
- * @export
- * @interface DynamicHlsApiHeadMasterHlsVideoPlaylistRequest
  */
 export interface DynamicHlsApiHeadMasterHlsVideoPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly itemId: string
 
     /**
      * The media version id, if playing an alternate version.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly mediaSourceId: string
 
     /**
      * Optional. If true, the original file will be streamed statically without any encoding. Use either no url extension or the original file extension. true/false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly _static?: boolean
 
     /**
      * The streaming parameters.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly params?: string
 
     /**
      * The tag.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly tag?: string
 
     /**
      * Optional. The dlna device profile id to utilize.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly deviceProfileId?: string
 
     /**
      * The play session id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly playSessionId?: string
 
     /**
      * The segment container.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly segmentContainer?: string
 
     /**
      * The segment length.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly segmentLength?: number
 
     /**
      * The minimum number of segments.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly minSegments?: number
 
     /**
      * The device id of the client requesting. Used to stop encoding processes when needed.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly deviceId?: string
 
     /**
      * Optional. Specify an audio codec to encode to, e.g. mp3.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly audioCodec?: string
 
     /**
      * Whether or not to allow automatic stream copy if requested values match the original source. Defaults to true.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly enableAutoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the video stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly allowVideoStreamCopy?: boolean
 
     /**
      * Whether or not to allow copying of the audio stream url.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly allowAudioStreamCopy?: boolean
 
     /**
      * Optional. Whether to break on non key frames.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly breakOnNonKeyFrames?: boolean
 
     /**
      * Optional. Specify a specific audio sample rate, e.g. 44100.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly audioSampleRate?: number
 
     /**
      * Optional. The maximum audio bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxAudioBitDepth?: number
 
     /**
      * Optional. Specify an audio bitrate to encode to, e.g. 128000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly audioBitRate?: number
 
     /**
      * Optional. Specify a specific number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly audioChannels?: number
 
     /**
      * Optional. Specify a maximum number of audio channels to encode to, e.g. 2.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxAudioChannels?: number
 
     /**
      * Optional. Specify a specific an encoder profile (varies by encoder), e.g. main, baseline, high.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly profile?: string
 
     /**
      * Optional. Specify a level for the encoder profile (varies by encoder), e.g. 3, 3.1.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly level?: string
 
     /**
      * Optional. A specific video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly framerate?: number
 
     /**
      * Optional. A specific maximum video framerate to encode to, e.g. 23.976. Generally this should be omitted unless the device has specific requirements.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxFramerate?: number
 
     /**
      * Whether or not to copy timestamps when transcoding with an offset. Defaults to false.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly copyTimestamps?: boolean
 
     /**
      * Optional. Specify a starting offset, in ticks. 1 tick &#x3D; 10000 ms.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly startTimeTicks?: number
 
     /**
      * Optional. The fixed horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly width?: number
 
     /**
      * Optional. The fixed vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly height?: number
 
     /**
      * Optional. The maximum horizontal resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxWidth?: number
 
     /**
      * Optional. The maximum vertical resolution of the encoded video.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxHeight?: number
 
     /**
      * Optional. Specify a video bitrate to encode to, e.g. 500000. If omitted this will be left to encoder defaults.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly videoBitRate?: number
 
     /**
      * Optional. The index of the subtitle stream to use. If omitted no subtitles will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly subtitleStreamIndex?: number
 
     /**
      * Optional. Specify the subtitle delivery method.
-     * @type {SubtitleDeliveryMethod}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly subtitleMethod?: SubtitleDeliveryMethod
 
     /**
      * Optional.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxRefFrames?: number
 
     /**
      * Optional. The maximum video bit depth.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly maxVideoBitDepth?: number
 
     /**
      * Optional. Whether to require avc.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly requireAvc?: boolean
 
     /**
      * Optional. Whether to deinterlace the video.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly deInterlace?: boolean
 
     /**
      * Optional. Whether to require a non anamorphic stream.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly requireNonAnamorphic?: boolean
 
     /**
      * Optional. The maximum number of audio channels to transcode.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly transcodingMaxAudioChannels?: number
 
     /**
      * Optional. The limit of how many cpu cores to use.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly cpuCoreLimit?: number
 
     /**
      * The live stream id.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly liveStreamId?: string
 
     /**
      * Optional. Whether to enable the MpegtsM2Ts mode.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly enableMpegtsM2TsMode?: boolean
 
     /**
      * Optional. Specify a video codec to encode to, e.g. h264.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly videoCodec?: string
 
     /**
      * Optional. Specify a subtitle codec to encode to.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly subtitleCodec?: string
 
     /**
      * Optional. The transcoding reason.
-     * @type {string}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly transcodeReasons?: string
 
     /**
      * Optional. The index of the audio stream to use. If omitted the first audio stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly audioStreamIndex?: number
 
     /**
      * Optional. The index of the video stream to use. If omitted the first video stream will be used.
-     * @type {number}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly videoStreamIndex?: number
 
     /**
      * Optional. The MediaBrowser.Model.Dlna.EncodingContext.
-     * @type {EncodingContext}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly context?: EncodingContext
 
     /**
      * Optional. The streaming options.
-     * @type {{ [key: string]: string; }}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly streamOptions?: { [key: string]: string; }
 
     /**
      * Enable adaptive bitrate streaming.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly enableAdaptiveBitrateStreaming?: boolean
 
     /**
      * Enable trickplay image playlists being added to master playlist.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly enableTrickplay?: boolean
 
     /**
      * Whether to enable Audio Encoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly enableAudioVbrEncoding?: boolean
 
     /**
      * Whether to always burn in subtitles when transcoding.
-     * @type {boolean}
-     * @memberof DynamicHlsApiHeadMasterHlsVideoPlaylist
      */
     readonly alwaysBurnInSubtitleWhenTranscoding?: boolean
 }
 
 /**
  * DynamicHlsApi - object-oriented interface
- * @export
- * @class DynamicHlsApi
- * @extends {BaseAPI}
  */
 export class DynamicHlsApi extends BaseAPI {
     /**
@@ -6857,7 +5877,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetHlsAudioSegmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getHlsAudioSegment(requestParameters: DynamicHlsApiGetHlsAudioSegmentRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getHlsAudioSegment(requestParameters.itemId, requestParameters.playlistId, requestParameters.segmentId, requestParameters.container, requestParameters.runtimeTicks, requestParameters.actualSegmentLengthTicks, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAudioVbrEncoding, options).then((request) => request(this.axios, this.basePath));
@@ -6869,7 +5888,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetHlsVideoSegmentRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getHlsVideoSegment(requestParameters: DynamicHlsApiGetHlsVideoSegmentRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getHlsVideoSegment(requestParameters.itemId, requestParameters.playlistId, requestParameters.segmentId, requestParameters.container, requestParameters.runtimeTicks, requestParameters.actualSegmentLengthTicks, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAudioVbrEncoding, requestParameters.alwaysBurnInSubtitleWhenTranscoding, options).then((request) => request(this.axios, this.basePath));
@@ -6881,7 +5899,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetLiveHlsStreamRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getLiveHlsStream(requestParameters: DynamicHlsApiGetLiveHlsStreamRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getLiveHlsStream(requestParameters.itemId, requestParameters.container, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.enableSubtitlesInManifest, requestParameters.enableAudioVbrEncoding, requestParameters.alwaysBurnInSubtitleWhenTranscoding, options).then((request) => request(this.axios, this.basePath));
@@ -6893,7 +5910,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetMasterHlsAudioPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getMasterHlsAudioPlaylist(requestParameters: DynamicHlsApiGetMasterHlsAudioPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getMasterHlsAudioPlaylist(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAdaptiveBitrateStreaming, requestParameters.enableAudioVbrEncoding, options).then((request) => request(this.axios, this.basePath));
@@ -6905,7 +5921,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetMasterHlsVideoPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getMasterHlsVideoPlaylist(requestParameters: DynamicHlsApiGetMasterHlsVideoPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getMasterHlsVideoPlaylist(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAdaptiveBitrateStreaming, requestParameters.enableTrickplay, requestParameters.enableAudioVbrEncoding, requestParameters.alwaysBurnInSubtitleWhenTranscoding, options).then((request) => request(this.axios, this.basePath));
@@ -6917,7 +5932,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetVariantHlsAudioPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getVariantHlsAudioPlaylist(requestParameters: DynamicHlsApiGetVariantHlsAudioPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getVariantHlsAudioPlaylist(requestParameters.itemId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAudioVbrEncoding, options).then((request) => request(this.axios, this.basePath));
@@ -6929,7 +5943,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiGetVariantHlsVideoPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public getVariantHlsVideoPlaylist(requestParameters: DynamicHlsApiGetVariantHlsVideoPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).getVariantHlsVideoPlaylist(requestParameters.itemId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.mediaSourceId, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAudioVbrEncoding, requestParameters.alwaysBurnInSubtitleWhenTranscoding, options).then((request) => request(this.axios, this.basePath));
@@ -6941,7 +5954,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiHeadMasterHlsAudioPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public headMasterHlsAudioPlaylist(requestParameters: DynamicHlsApiHeadMasterHlsAudioPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).headMasterHlsAudioPlaylist(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.maxStreamingBitrate, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAdaptiveBitrateStreaming, requestParameters.enableAudioVbrEncoding, options).then((request) => request(this.axios, this.basePath));
@@ -6953,7 +5965,6 @@ export class DynamicHlsApi extends BaseAPI {
      * @param {DynamicHlsApiHeadMasterHlsVideoPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof DynamicHlsApi
      */
     public headMasterHlsVideoPlaylist(requestParameters: DynamicHlsApiHeadMasterHlsVideoPlaylistRequest, options?: RawAxiosRequestConfig) {
         return DynamicHlsApiFp(this.configuration).headMasterHlsVideoPlaylist(requestParameters.itemId, requestParameters.mediaSourceId, requestParameters._static, requestParameters.params, requestParameters.tag, requestParameters.deviceProfileId, requestParameters.playSessionId, requestParameters.segmentContainer, requestParameters.segmentLength, requestParameters.minSegments, requestParameters.deviceId, requestParameters.audioCodec, requestParameters.enableAutoStreamCopy, requestParameters.allowVideoStreamCopy, requestParameters.allowAudioStreamCopy, requestParameters.breakOnNonKeyFrames, requestParameters.audioSampleRate, requestParameters.maxAudioBitDepth, requestParameters.audioBitRate, requestParameters.audioChannels, requestParameters.maxAudioChannels, requestParameters.profile, requestParameters.level, requestParameters.framerate, requestParameters.maxFramerate, requestParameters.copyTimestamps, requestParameters.startTimeTicks, requestParameters.width, requestParameters.height, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.videoBitRate, requestParameters.subtitleStreamIndex, requestParameters.subtitleMethod, requestParameters.maxRefFrames, requestParameters.maxVideoBitDepth, requestParameters.requireAvc, requestParameters.deInterlace, requestParameters.requireNonAnamorphic, requestParameters.transcodingMaxAudioChannels, requestParameters.cpuCoreLimit, requestParameters.liveStreamId, requestParameters.enableMpegtsM2TsMode, requestParameters.videoCodec, requestParameters.subtitleCodec, requestParameters.transcodeReasons, requestParameters.audioStreamIndex, requestParameters.videoStreamIndex, requestParameters.context, requestParameters.streamOptions, requestParameters.enableAdaptiveBitrateStreaming, requestParameters.enableTrickplay, requestParameters.enableAudioVbrEncoding, requestParameters.alwaysBurnInSubtitleWhenTranscoding, options).then((request) => request(this.axios, this.basePath));

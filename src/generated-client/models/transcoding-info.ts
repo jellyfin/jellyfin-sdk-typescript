@@ -21,86 +21,55 @@ import type { TranscodeReason } from './transcode-reason';
 
 /**
  * Class holding information on a running transcode.
- * @export
- * @interface TranscodingInfo
  */
 export interface TranscodingInfo {
     /**
      * Gets or sets the thread count used for encoding.
-     * @type {string}
-     * @memberof TranscodingInfo
      */
     'AudioCodec'?: string | null;
     /**
      * Gets or sets the thread count used for encoding.
-     * @type {string}
-     * @memberof TranscodingInfo
      */
     'VideoCodec'?: string | null;
     /**
      * Gets or sets the thread count used for encoding.
-     * @type {string}
-     * @memberof TranscodingInfo
      */
     'Container'?: string | null;
     /**
      * Gets or sets a value indicating whether the video is passed through.
-     * @type {boolean}
-     * @memberof TranscodingInfo
      */
     'IsVideoDirect'?: boolean;
     /**
      * Gets or sets a value indicating whether the audio is passed through.
-     * @type {boolean}
-     * @memberof TranscodingInfo
      */
     'IsAudioDirect'?: boolean;
     /**
      * Gets or sets the bitrate.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'Bitrate'?: number | null;
     /**
      * Gets or sets the framerate.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'Framerate'?: number | null;
     /**
      * Gets or sets the completion percentage.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'CompletionPercentage'?: number | null;
     /**
      * Gets or sets the video width.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'Width'?: number | null;
     /**
      * Gets or sets the video height.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'Height'?: number | null;
     /**
      * Gets or sets the audio channels.
-     * @type {number}
-     * @memberof TranscodingInfo
      */
     'AudioChannels'?: number | null;
-    /**
-     * 
-     * @type {HardwareAccelerationType}
-     * @memberof TranscodingInfo
-     */
     'HardwareAccelerationType'?: HardwareAccelerationType;
     /**
      * Gets or sets the transcode reasons.
-     * @type {Array<TranscodeReason>}
-     * @memberof TranscodingInfo
      */
     'TranscodeReasons'?: TranscodingInfoTranscodeReasonsEnum;
 }

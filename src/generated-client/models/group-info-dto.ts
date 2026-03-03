@@ -18,38 +18,23 @@ import type { GroupStateType } from './group-state-type';
 
 /**
  * Class GroupInfoDto.
- * @export
- * @interface GroupInfoDto
  */
 export interface GroupInfoDto {
     /**
      * Gets the group identifier.
-     * @type {string}
-     * @memberof GroupInfoDto
      */
     'GroupId'?: string;
     /**
      * Gets the group name.
-     * @type {string}
-     * @memberof GroupInfoDto
      */
     'GroupName'?: string;
-    /**
-     * 
-     * @type {GroupStateType}
-     * @memberof GroupInfoDto
-     */
     'State'?: GroupStateType;
     /**
      * Gets the participants.
-     * @type {Array<string>}
-     * @memberof GroupInfoDto
      */
     'Participants'?: Array<string>;
     /**
      * Gets the date when this DTO has been created.
-     * @type {string}
-     * @memberof GroupInfoDto
      */
     'LastUpdatedAt'?: string;
 }

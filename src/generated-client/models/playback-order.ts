@@ -15,8 +15,6 @@
 
 /**
  * Enum PlaybackOrder.
- * @export
- * @enum {string}
  */
 
 export const PlaybackOrder = {

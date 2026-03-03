@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -36,7 +36,6 @@ import type { ItemSortBy } from '../models';
 import type { SortOrder } from '../models';
 /**
  * MusicGenresApi - axios parameter creator
- * @export
  */
 export const MusicGenresApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -71,8 +70,8 @@ export const MusicGenresApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -195,8 +194,8 @@ export const MusicGenresApiAxiosParamCreator = function (configuration?: Configu
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -211,7 +210,6 @@ export const MusicGenresApiAxiosParamCreator = function (configuration?: Configu
 
 /**
  * MusicGenresApi - functional programming interface
- * @export
  */
 export const MusicGenresApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MusicGenresApiAxiosParamCreator(configuration)
@@ -266,7 +264,6 @@ export const MusicGenresApiFp = function(configuration?: Configuration) {
 
 /**
  * MusicGenresApi - factory interface
- * @export
  */
 export const MusicGenresApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MusicGenresApiFp(configuration)
@@ -297,163 +294,116 @@ export const MusicGenresApiFactory = function (configuration?: Configuration, ba
 
 /**
  * Request parameters for getMusicGenre operation in MusicGenresApi.
- * @export
- * @interface MusicGenresApiGetMusicGenreRequest
  */
 export interface MusicGenresApiGetMusicGenreRequest {
     /**
      * The genre name.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenre
      */
     readonly genreName: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenre
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getMusicGenres operation in MusicGenresApi.
- * @export
- * @interface MusicGenresApiGetMusicGenresRequest
  */
 export interface MusicGenresApiGetMusicGenresRequest {
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly limit?: number
 
     /**
      * The search term.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly searchTerm?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly parentId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * Optional filter by items that are marked as favorite, or not.
-     * @type {boolean}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
-     * @type {number}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * User id.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly userId?: string
 
     /**
      * Optional filter by items whose name is sorted equally or greater than a given input string.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly nameStartsWithOrGreater?: string
 
     /**
      * Optional filter by items whose name is sorted equally than a given input string.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly nameStartsWith?: string
 
     /**
      * Optional filter by items whose name is equally or lesser than a given input string.
-     * @type {string}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly nameLessThan?: string
 
     /**
      * Optional. Specify one or more sort orders, comma delimited.
-     * @type {Array<ItemSortBy>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.
-     * @type {Array<SortOrder>}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * Optional, include image information in output.
-     * @type {boolean}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include total record count.
-     * @type {boolean}
-     * @memberof MusicGenresApiGetMusicGenres
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * MusicGenresApi - object-oriented interface
- * @export
- * @class MusicGenresApi
- * @extends {BaseAPI}
  */
 export class MusicGenresApi extends BaseAPI {
     /**
@@ -462,7 +412,6 @@ export class MusicGenresApi extends BaseAPI {
      * @param {MusicGenresApiGetMusicGenreRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MusicGenresApi
      */
     public getMusicGenre(requestParameters: MusicGenresApiGetMusicGenreRequest, options?: RawAxiosRequestConfig) {
         return MusicGenresApiFp(this.configuration).getMusicGenre(requestParameters.genreName, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -475,7 +424,6 @@ export class MusicGenresApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof MusicGenresApi
      */
     public getMusicGenres(requestParameters: MusicGenresApiGetMusicGenresRequest = {}, options?: RawAxiosRequestConfig) {
         return MusicGenresApiFp(this.configuration).getMusicGenres(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));

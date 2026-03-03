@@ -15,8 +15,6 @@
 
 /**
  * Used to control the data that gets attached to DtoBaseItems.
- * @export
- * @enum {string}
  */
 
 export const ItemFields = {

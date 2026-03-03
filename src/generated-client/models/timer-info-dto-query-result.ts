@@ -18,26 +18,18 @@ import type { TimerInfoDto } from './timer-info-dto';
 
 /**
  * Query result container.
- * @export
- * @interface TimerInfoDtoQueryResult
  */
 export interface TimerInfoDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<TimerInfoDto>}
-     * @memberof TimerInfoDtoQueryResult
      */
     'Items'?: Array<TimerInfoDto>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof TimerInfoDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof TimerInfoDtoQueryResult
      */
     'StartIndex'?: number;
 }

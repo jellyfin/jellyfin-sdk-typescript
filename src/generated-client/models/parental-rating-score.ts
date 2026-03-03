@@ -15,20 +15,14 @@
 
 /**
  * A class representing an parental rating score.
- * @export
- * @interface ParentalRatingScore
  */
 export interface ParentalRatingScore {
     /**
      * Gets or sets the score.
-     * @type {number}
-     * @memberof ParentalRatingScore
      */
     'score'?: number;
     /**
      * Gets or sets the sub score.
-     * @type {number}
-     * @memberof ParentalRatingScore
      */
     'subScore'?: number | null;
 }

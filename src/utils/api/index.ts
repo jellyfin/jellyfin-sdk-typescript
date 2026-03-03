@@ -8,6 +8,7 @@ export * from './activity-log-api';
 export * from './api-key-api';
 export * from './artists-api';
 export * from './audio-api';
+export * from './backup-api';
 export * from './branding-api';
 export * from './channels-api';
 export * from './client-log-api';

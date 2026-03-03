@@ -15,14 +15,10 @@
 
 /**
  * Default directory browser info.
- * @export
- * @interface DefaultDirectoryBrowserInfoDto
  */
 export interface DefaultDirectoryBrowserInfoDto {
     /**
      * Gets or sets the path.
-     * @type {string}
-     * @memberof DefaultDirectoryBrowserInfoDto
      */
     'Path'?: string | null;
 }

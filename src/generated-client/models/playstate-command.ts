@@ -15,8 +15,6 @@
 
 /**
  * Enum PlaystateCommand.
- * @export
- * @enum {string}
  */
 
 export const PlaystateCommand = {

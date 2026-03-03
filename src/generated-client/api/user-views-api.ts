@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { ProblemDetails } from '../models';
 import type { SpecialViewOptionDto } from '../models';
 /**
  * UserViewsApi - axios parameter creator
- * @export
  */
 export const UserViewsApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -61,8 +60,8 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -114,8 +113,8 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
                 localVarQueryParameter['includeHidden'] = includeHidden;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -130,7 +129,6 @@ export const UserViewsApiAxiosParamCreator = function (configuration?: Configura
 
 /**
  * UserViewsApi - functional programming interface
- * @export
  */
 export const UserViewsApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = UserViewsApiAxiosParamCreator(configuration)
@@ -169,7 +167,6 @@ export const UserViewsApiFp = function(configuration?: Configuration) {
 
 /**
  * UserViewsApi - factory interface
- * @export
  */
 export const UserViewsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = UserViewsApiFp(configuration)
@@ -199,58 +196,41 @@ export const UserViewsApiFactory = function (configuration?: Configuration, base
 
 /**
  * Request parameters for getGroupingOptions operation in UserViewsApi.
- * @export
- * @interface UserViewsApiGetGroupingOptionsRequest
  */
 export interface UserViewsApiGetGroupingOptionsRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof UserViewsApiGetGroupingOptions
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getUserViews operation in UserViewsApi.
- * @export
- * @interface UserViewsApiGetUserViewsRequest
  */
 export interface UserViewsApiGetUserViewsRequest {
     /**
      * User id.
-     * @type {string}
-     * @memberof UserViewsApiGetUserViews
      */
     readonly userId?: string
 
     /**
      * Whether or not to include external views such as channels or live tv.
-     * @type {boolean}
-     * @memberof UserViewsApiGetUserViews
      */
     readonly includeExternalContent?: boolean
 
     /**
      * Preset views.
-     * @type {Array<CollectionType>}
-     * @memberof UserViewsApiGetUserViews
      */
     readonly presetViews?: Array<CollectionType>
 
     /**
      * Whether or not to include hidden content.
-     * @type {boolean}
-     * @memberof UserViewsApiGetUserViews
      */
     readonly includeHidden?: boolean
 }
 
 /**
  * UserViewsApi - object-oriented interface
- * @export
- * @class UserViewsApi
- * @extends {BaseAPI}
  */
 export class UserViewsApi extends BaseAPI {
     /**
@@ -259,7 +239,6 @@ export class UserViewsApi extends BaseAPI {
      * @param {UserViewsApiGetGroupingOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserViewsApi
      */
     public getGroupingOptions(requestParameters: UserViewsApiGetGroupingOptionsRequest = {}, options?: RawAxiosRequestConfig) {
         return UserViewsApiFp(this.configuration).getGroupingOptions(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -271,7 +250,6 @@ export class UserViewsApi extends BaseAPI {
      * @param {UserViewsApiGetUserViewsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof UserViewsApi
      */
     public getUserViews(requestParameters: UserViewsApiGetUserViewsRequest = {}, options?: RawAxiosRequestConfig) {
         return UserViewsApiFp(this.configuration).getUserViews(requestParameters.userId, requestParameters.includeExternalContent, requestParameters.presetViews, requestParameters.includeHidden, options).then((request) => request(this.axios, this.basePath));

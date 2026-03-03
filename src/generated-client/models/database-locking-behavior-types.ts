@@ -15,8 +15,6 @@
 
 /**
  * Defines all possible methods for locking database access for concurrent queries.
- * @export
- * @enum {string}
  */
 
 export const DatabaseLockingBehaviorTypes = {

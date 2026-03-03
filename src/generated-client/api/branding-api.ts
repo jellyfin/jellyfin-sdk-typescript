@@ -17,14 +17,13 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
 import type { BrandingOptionsDto } from '../models';
 /**
  * BrandingApi - axios parameter creator
- * @export
  */
 export const BrandingApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -47,8 +46,8 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'text/css,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -77,8 +76,8 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'text/css,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -107,8 +106,8 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -123,7 +122,6 @@ export const BrandingApiAxiosParamCreator = function (configuration?: Configurat
 
 /**
  * BrandingApi - functional programming interface
- * @export
  */
 export const BrandingApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = BrandingApiAxiosParamCreator(configuration)
@@ -169,7 +167,6 @@ export const BrandingApiFp = function(configuration?: Configuration) {
 
 /**
  * BrandingApi - factory interface
- * @export
  */
 export const BrandingApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = BrandingApiFp(configuration)
@@ -206,9 +203,6 @@ export const BrandingApiFactory = function (configuration?: Configuration, baseP
 
 /**
  * BrandingApi - object-oriented interface
- * @export
- * @class BrandingApi
- * @extends {BaseAPI}
  */
 export class BrandingApi extends BaseAPI {
     /**
@@ -216,7 +210,6 @@ export class BrandingApi extends BaseAPI {
      * @summary Gets branding css.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BrandingApi
      */
     public getBrandingCss(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingCss(options).then((request) => request(this.axios, this.basePath));
@@ -227,7 +220,6 @@ export class BrandingApi extends BaseAPI {
      * @summary Gets branding css.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BrandingApi
      */
     public getBrandingCss2(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingCss2(options).then((request) => request(this.axios, this.basePath));
@@ -238,7 +230,6 @@ export class BrandingApi extends BaseAPI {
      * @summary Gets branding configuration.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof BrandingApi
      */
     public getBrandingOptions(options?: RawAxiosRequestConfig) {
         return BrandingApiFp(this.configuration).getBrandingOptions(options).then((request) => request(this.axios, this.basePath));

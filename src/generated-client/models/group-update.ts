@@ -46,7 +46,6 @@ import type { SyncPlayUserLeftUpdate } from './sync-play-user-left-update';
 /**
  * @type GroupUpdate
  * Represents the list of possible group update types
- * @export
  */
 export type GroupUpdate = { Type: 'GroupDoesNotExist' } & SyncPlayGroupDoesNotExistUpdate | { Type: 'GroupJoined' } & SyncPlayGroupJoinedUpdate | { Type: 'GroupLeft' } & SyncPlayGroupLeftUpdate | { Type: 'LibraryAccessDenied' } & SyncPlayLibraryAccessDeniedUpdate | { Type: 'NotInGroup' } & SyncPlayNotInGroupUpdate | { Type: 'PlayQueue' } & SyncPlayPlayQueueUpdate | { Type: 'StateUpdate' } & SyncPlayStateUpdate | { Type: 'UserJoined' } & SyncPlayUserJoinedUpdate | { Type: 'UserLeft' } & SyncPlayUserLeftUpdate;
 

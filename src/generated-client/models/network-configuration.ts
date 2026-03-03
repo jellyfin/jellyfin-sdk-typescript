@@ -15,147 +15,99 @@
 
 /**
  * Defines the MediaBrowser.Common.Net.NetworkConfiguration.
- * @export
- * @interface NetworkConfiguration
  */
 export interface NetworkConfiguration {
     /**
      * Gets or sets a value used to specify the URL prefix that your Jellyfin instance can be accessed at.
-     * @type {string}
-     * @memberof NetworkConfiguration
      */
     'BaseUrl'?: string;
     /**
      * Gets or sets a value indicating whether to use HTTPS.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'EnableHttps'?: boolean;
     /**
      * Gets or sets a value indicating whether the server should force connections over HTTPS.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'RequireHttps'?: boolean;
     /**
      * Gets or sets the filesystem path of an X.509 certificate to use for SSL.
-     * @type {string}
-     * @memberof NetworkConfiguration
      */
     'CertificatePath'?: string;
     /**
      * Gets or sets the password required to access the X.509 certificate data in the file specified by MediaBrowser.Common.Net.NetworkConfiguration.CertificatePath.
-     * @type {string}
-     * @memberof NetworkConfiguration
      */
     'CertificatePassword'?: string;
     /**
      * Gets or sets the internal HTTP server port.
-     * @type {number}
-     * @memberof NetworkConfiguration
      */
     'InternalHttpPort'?: number;
     /**
      * Gets or sets the internal HTTPS server port.
-     * @type {number}
-     * @memberof NetworkConfiguration
      */
     'InternalHttpsPort'?: number;
     /**
      * Gets or sets the public HTTP port.
-     * @type {number}
-     * @memberof NetworkConfiguration
      */
     'PublicHttpPort'?: number;
     /**
      * Gets or sets the public HTTPS port.
-     * @type {number}
-     * @memberof NetworkConfiguration
      */
     'PublicHttpsPort'?: number;
     /**
      * Gets or sets a value indicating whether Autodiscovery is enabled.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'AutoDiscovery'?: boolean;
     /**
      * Gets or sets a value indicating whether to enable automatic port forwarding.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      * @deprecated
      */
     'EnableUPnP'?: boolean;
     /**
      * Gets or sets a value indicating whether IPv6 is enabled.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'EnableIPv4'?: boolean;
     /**
      * Gets or sets a value indicating whether IPv6 is enabled.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'EnableIPv6'?: boolean;
     /**
      * Gets or sets a value indicating whether access from outside of the LAN is permitted.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'EnableRemoteAccess'?: boolean;
     /**
      * Gets or sets the subnets that are deemed to make up the LAN.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'LocalNetworkSubnets'?: Array<string>;
     /**
      * Gets or sets the interface addresses which Jellyfin will bind to. If empty, all interfaces will be used.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'LocalNetworkAddresses'?: Array<string>;
     /**
      * Gets or sets the known proxies.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'KnownProxies'?: Array<string>;
     /**
      * Gets or sets a value indicating whether address names that match MediaBrowser.Common.Net.NetworkConfiguration.VirtualInterfaceNames should be ignored for the purposes of binding.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'IgnoreVirtualInterfaces'?: boolean;
     /**
      * Gets or sets a value indicating the interface name prefixes that should be ignored. The list can be comma separated and values are case-insensitive. <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.IgnoreVirtualInterfaces\" />.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'VirtualInterfaceNames'?: Array<string>;
     /**
      * Gets or sets a value indicating whether the published server uri is based on information in HTTP requests.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'EnablePublishedServerUriByRequest'?: boolean;
     /**
      * Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to advertise for specific subnets.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'PublishedServerUriBySubnet'?: Array<string>;
     /**
      * Gets or sets the filter for remote IP connectivity. Used in conjunction with <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.IsRemoteIPFilterBlacklist\" />.
-     * @type {Array<string>}
-     * @memberof NetworkConfiguration
      */
     'RemoteIPFilter'?: Array<string>;
     /**
      * Gets or sets a value indicating whether <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.RemoteIPFilter\" /> contains a blacklist or a whitelist. Default is a whitelist.
-     * @type {boolean}
-     * @memberof NetworkConfiguration
      */
     'IsRemoteIPFilterBlacklist'?: boolean;
 }

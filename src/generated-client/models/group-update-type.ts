@@ -15,8 +15,6 @@
 
 /**
  * Enum GroupUpdateType.
- * @export
- * @enum {string}
  */
 
 export const GroupUpdateType = {

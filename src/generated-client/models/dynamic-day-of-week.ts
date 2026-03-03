@@ -15,8 +15,6 @@
 
 /**
  * An enum that represents a day of the week, weekdays, weekends, or all days.
- * @export
- * @enum {string}
  */
 
 export const DynamicDayOfWeek = {

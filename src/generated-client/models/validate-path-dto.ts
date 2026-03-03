@@ -15,26 +15,18 @@
 
 /**
  * Validate path object.
- * @export
- * @interface ValidatePathDto
  */
 export interface ValidatePathDto {
     /**
      * Gets or sets a value indicating whether validate if path is writable.
-     * @type {boolean}
-     * @memberof ValidatePathDto
      */
     'ValidateWritable'?: boolean;
     /**
      * Gets or sets the path.
-     * @type {string}
-     * @memberof ValidatePathDto
      */
     'Path'?: string | null;
     /**
      * Gets or sets is path file.
-     * @type {boolean}
-     * @memberof ValidatePathDto
      */
     'IsFile'?: boolean | null;
 }

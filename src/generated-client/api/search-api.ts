@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -28,7 +28,6 @@ import type { MediaType } from '../models';
 import type { SearchHintResult } from '../models';
 /**
  * SearchApi - axios parameter creator
- * @export
  */
 export const SearchApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -146,8 +145,8 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['includeArtists'] = includeArtists;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -162,7 +161,6 @@ export const SearchApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * SearchApi - functional programming interface
- * @export
  */
 export const SearchApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SearchApiAxiosParamCreator(configuration)
@@ -202,7 +200,6 @@ export const SearchApiFp = function(configuration?: Configuration) {
 
 /**
  * SearchApi - factory interface
- * @export
  */
 export const SearchApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = SearchApiFp(configuration)
@@ -222,142 +219,101 @@ export const SearchApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for getSearchHints operation in SearchApi.
- * @export
- * @interface SearchApiGetSearchHintsRequest
  */
 export interface SearchApiGetSearchHintsRequest {
     /**
      * The search term to filter on.
-     * @type {string}
-     * @memberof SearchApiGetSearchHints
      */
     readonly searchTerm: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof SearchApiGetSearchHints
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof SearchApiGetSearchHints
      */
     readonly limit?: number
 
     /**
      * Optional. Supply a user id to search within a user\&#39;s library or omit to search all.
-     * @type {string}
-     * @memberof SearchApiGetSearchHints
      */
     readonly userId?: string
 
     /**
      * If specified, only results with the specified item types are returned. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
     /**
      * If specified, results with these item types are filtered out. This allows multiple, comma delimited.
-     * @type {Array<BaseItemKind>}
-     * @memberof SearchApiGetSearchHints
      */
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
      * If specified, only results with the specified media types are returned. This allows multiple, comma delimited.
-     * @type {Array<MediaType>}
-     * @memberof SearchApiGetSearchHints
      */
     readonly mediaTypes?: Array<MediaType>
 
     /**
      * If specified, only children of the parent are returned.
-     * @type {string}
-     * @memberof SearchApiGetSearchHints
      */
     readonly parentId?: string
 
     /**
      * Optional filter for movies.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly isMovie?: boolean
 
     /**
      * Optional filter for series.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly isSeries?: boolean
 
     /**
      * Optional filter for news.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly isNews?: boolean
 
     /**
      * Optional filter for kids.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly isKids?: boolean
 
     /**
      * Optional filter for sports.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly isSports?: boolean
 
     /**
      * Optional filter whether to include people.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includePeople?: boolean
 
     /**
      * Optional filter whether to include media.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includeMedia?: boolean
 
     /**
      * Optional filter whether to include genres.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includeGenres?: boolean
 
     /**
      * Optional filter whether to include studios.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includeStudios?: boolean
 
     /**
      * Optional filter whether to include artists.
-     * @type {boolean}
-     * @memberof SearchApiGetSearchHints
      */
     readonly includeArtists?: boolean
 }
 
 /**
  * SearchApi - object-oriented interface
- * @export
- * @class SearchApi
- * @extends {BaseAPI}
  */
 export class SearchApi extends BaseAPI {
     /**
@@ -366,7 +322,6 @@ export class SearchApi extends BaseAPI {
      * @param {SearchApiGetSearchHintsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof SearchApi
      */
     public getSearchHints(requestParameters: SearchApiGetSearchHintsRequest, options?: RawAxiosRequestConfig) {
         return SearchApiFp(this.configuration).getSearchHints(requestParameters.searchTerm, requestParameters.startIndex, requestParameters.limit, requestParameters.userId, requestParameters.includeItemTypes, requestParameters.excludeItemTypes, requestParameters.mediaTypes, requestParameters.parentId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.includePeople, requestParameters.includeMedia, requestParameters.includeGenres, requestParameters.includeStudios, requestParameters.includeArtists, options).then((request) => request(this.axios, this.basePath));

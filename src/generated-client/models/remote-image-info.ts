@@ -21,69 +21,41 @@ import type { RatingType } from './rating-type';
 
 /**
  * Class RemoteImageInfo.
- * @export
- * @interface RemoteImageInfo
  */
 export interface RemoteImageInfo {
     /**
      * Gets or sets the name of the provider.
-     * @type {string}
-     * @memberof RemoteImageInfo
      */
     'ProviderName'?: string | null;
     /**
      * Gets or sets the URL.
-     * @type {string}
-     * @memberof RemoteImageInfo
      */
     'Url'?: string | null;
     /**
      * Gets or sets a url used for previewing a smaller version.
-     * @type {string}
-     * @memberof RemoteImageInfo
      */
     'ThumbnailUrl'?: string | null;
     /**
      * Gets or sets the height.
-     * @type {number}
-     * @memberof RemoteImageInfo
      */
     'Height'?: number | null;
     /**
      * Gets or sets the width.
-     * @type {number}
-     * @memberof RemoteImageInfo
      */
     'Width'?: number | null;
     /**
      * Gets or sets the community rating.
-     * @type {number}
-     * @memberof RemoteImageInfo
      */
     'CommunityRating'?: number | null;
     /**
      * Gets or sets the vote count.
-     * @type {number}
-     * @memberof RemoteImageInfo
      */
     'VoteCount'?: number | null;
     /**
      * Gets or sets the language.
-     * @type {string}
-     * @memberof RemoteImageInfo
      */
     'Language'?: string | null;
-    /**
-     * 
-     * @type {ImageType}
-     * @memberof RemoteImageInfo
-     */
     'Type'?: ImageType;
-    /**
-     * 
-     * @type {RatingType}
-     * @memberof RemoteImageInfo
-     */
     'RatingType'?: RatingType;
 }
 

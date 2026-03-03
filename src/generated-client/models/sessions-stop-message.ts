@@ -18,15 +18,8 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Sessions stop message.
- * @export
- * @interface SessionsStopMessage
  */
 export interface SessionsStopMessage {
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof SessionsStopMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

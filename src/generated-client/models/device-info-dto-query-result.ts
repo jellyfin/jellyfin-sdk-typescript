@@ -18,26 +18,18 @@ import type { DeviceInfoDto } from './device-info-dto';
 
 /**
  * Query result container.
- * @export
- * @interface DeviceInfoDtoQueryResult
  */
 export interface DeviceInfoDtoQueryResult {
     /**
      * Gets or sets the items.
-     * @type {Array<DeviceInfoDto>}
-     * @memberof DeviceInfoDtoQueryResult
      */
     'Items'?: Array<DeviceInfoDto>;
     /**
      * Gets or sets the total number of records available.
-     * @type {number}
-     * @memberof DeviceInfoDtoQueryResult
      */
     'TotalRecordCount'?: number;
     /**
      * Gets or sets the index of the first record in Items.
-     * @type {number}
-     * @memberof DeviceInfoDtoQueryResult
      */
     'StartIndex'?: number;
 }

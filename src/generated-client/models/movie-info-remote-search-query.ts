@@ -16,34 +16,15 @@
 // @ts-ignore
 import type { MovieInfo } from './movie-info';
 
-/**
- * 
- * @export
- * @interface MovieInfoRemoteSearchQuery
- */
 export interface MovieInfoRemoteSearchQuery {
-    /**
-     * 
-     * @type {MovieInfo}
-     * @memberof MovieInfoRemoteSearchQuery
-     */
     'SearchInfo'?: MovieInfo;
-    /**
-     * 
-     * @type {string}
-     * @memberof MovieInfoRemoteSearchQuery
-     */
     'ItemId'?: string;
     /**
      * Gets or sets the provider name to search within if set.
-     * @type {string}
-     * @memberof MovieInfoRemoteSearchQuery
      */
     'SearchProviderName'?: string | null;
     /**
      * Gets or sets a value indicating whether disabled providers should be included.
-     * @type {boolean}
-     * @memberof MovieInfoRemoteSearchQuery
      */
     'IncludeDisabledProviders'?: boolean;
 }

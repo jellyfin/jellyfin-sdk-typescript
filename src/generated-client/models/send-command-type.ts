@@ -15,8 +15,6 @@
 
 /**
  * Enum SendCommandType.
- * @export
- * @enum {string}
  */
 
 export const SendCommandType = {

@@ -15,14 +15,10 @@
 
 /**
  * Client log document response dto.
- * @export
- * @interface ClientLogDocumentResponseDto
  */
 export interface ClientLogDocumentResponseDto {
     /**
      * Gets the resulting filename.
-     * @type {string}
-     * @memberof ClientLogDocumentResponseDto
      */
     'FileName'?: string;
 }

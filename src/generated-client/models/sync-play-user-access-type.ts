@@ -15,8 +15,6 @@
 
 /**
  * Enum SyncPlayUserAccessType.
- * @export
- * @enum {string}
  */
 
 export const SyncPlayUserAccessType = {

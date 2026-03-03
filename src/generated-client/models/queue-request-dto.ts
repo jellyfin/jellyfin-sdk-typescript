@@ -18,21 +18,12 @@ import type { GroupQueueMode } from './group-queue-mode';
 
 /**
  * Class QueueRequestDto.
- * @export
- * @interface QueueRequestDto
  */
 export interface QueueRequestDto {
     /**
      * Gets or sets the items to enqueue.
-     * @type {Array<string>}
-     * @memberof QueueRequestDto
      */
     'ItemIds'?: Array<string>;
-    /**
-     * 
-     * @type {GroupQueueMode}
-     * @memberof QueueRequestDto
-     */
     'Mode'?: GroupQueueMode;
 }
 

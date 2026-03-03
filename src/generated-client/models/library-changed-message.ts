@@ -21,27 +21,13 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Library changed message.
- * @export
- * @interface LibraryChangedMessage
  */
 export interface LibraryChangedMessage {
-    /**
-     * 
-     * @type {LibraryUpdateInfo}
-     * @memberof LibraryChangedMessage
-     */
     'Data'?: LibraryUpdateInfo;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof LibraryChangedMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof LibraryChangedMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

@@ -13,35 +13,10 @@
 
 
 
-/**
- * 
- * @export
- * @interface QueryFiltersLegacy
- */
 export interface QueryFiltersLegacy {
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof QueryFiltersLegacy
-     */
     'Genres'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof QueryFiltersLegacy
-     */
     'Tags'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof QueryFiltersLegacy
-     */
     'OfficialRatings'?: Array<string> | null;
-    /**
-     * 
-     * @type {Array<number>}
-     * @memberof QueryFiltersLegacy
-     */
     'Years'?: Array<number> | null;
 }
 

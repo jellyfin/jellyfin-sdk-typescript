@@ -28,7 +28,6 @@ import type { SessionMessageType } from './session-message-type';
 /**
  * @type WebSocketMessage
  * Represents the possible websocket types
- * @export
  */
 export type WebSocketMessage = InboundWebSocketMessage | OutboundWebSocketMessage;
 

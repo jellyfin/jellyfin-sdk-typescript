@@ -15,8 +15,6 @@
 
 /**
  * Enum containing deinterlace methods.
- * @export
- * @enum {string}
  */
 
 export const DeinterlaceMethod = {

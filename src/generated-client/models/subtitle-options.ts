@@ -13,65 +13,15 @@
 
 
 
-/**
- * 
- * @export
- * @interface SubtitleOptions
- */
 export interface SubtitleOptions {
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'SkipIfEmbeddedSubtitlesPresent'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'SkipIfAudioTrackMatches'?: boolean;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof SubtitleOptions
-     */
     'DownloadLanguages'?: Array<string> | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'DownloadMovieSubtitles'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'DownloadEpisodeSubtitles'?: boolean;
-    /**
-     * 
-     * @type {string}
-     * @memberof SubtitleOptions
-     */
     'OpenSubtitlesUsername'?: string | null;
-    /**
-     * 
-     * @type {string}
-     * @memberof SubtitleOptions
-     */
     'OpenSubtitlesPasswordHash'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'IsOpenSubtitleVipAccount'?: boolean;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof SubtitleOptions
-     */
     'RequirePerfectMatch'?: boolean;
 }
 

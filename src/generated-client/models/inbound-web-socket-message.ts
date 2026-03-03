@@ -40,7 +40,6 @@ import type { SessionsStopMessage } from './sessions-stop-message';
 /**
  * @type InboundWebSocketMessage
  * Represents the list of possible inbound websocket types
- * @export
  */
 export type InboundWebSocketMessage = { MessageType: 'ActivityLogEntryStart' } & ActivityLogEntryStartMessage | { MessageType: 'ActivityLogEntryStop' } & ActivityLogEntryStopMessage | { MessageType: 'KeepAlive' } & InboundKeepAliveMessage | { MessageType: 'ScheduledTasksInfoStart' } & ScheduledTasksInfoStartMessage | { MessageType: 'ScheduledTasksInfoStop' } & ScheduledTasksInfoStopMessage | { MessageType: 'SessionsStart' } & SessionsStartMessage | { MessageType: 'SessionsStop' } & SessionsStopMessage;
 

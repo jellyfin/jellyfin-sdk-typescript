@@ -18,32 +18,22 @@ import type { CustomDatabaseOption } from './custom-database-option';
 
 /**
  * Defines the options for a custom database connector.
- * @export
- * @interface CustomDatabaseOptions
  */
 export interface CustomDatabaseOptions {
     /**
      * Gets or sets the Plugin name to search for database providers.
-     * @type {string}
-     * @memberof CustomDatabaseOptions
      */
     'PluginName'?: string;
     /**
      * Gets or sets the plugin assembly to search for providers.
-     * @type {string}
-     * @memberof CustomDatabaseOptions
      */
     'PluginAssembly'?: string;
     /**
      * Gets or sets the connection string for the custom database provider.
-     * @type {string}
-     * @memberof CustomDatabaseOptions
      */
     'ConnectionString'?: string;
     /**
      * Gets or sets the list of extra options for the custom provider.
-     * @type {Array<CustomDatabaseOption>}
-     * @memberof CustomDatabaseOptions
      */
     'Options'?: Array<CustomDatabaseOption>;
 }

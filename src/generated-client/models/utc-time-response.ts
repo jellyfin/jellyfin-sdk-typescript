@@ -15,20 +15,14 @@
 
 /**
  * Class UtcTimeResponse.
- * @export
- * @interface UtcTimeResponse
  */
 export interface UtcTimeResponse {
     /**
      * Gets the UTC time when request has been received.
-     * @type {string}
-     * @memberof UtcTimeResponse
      */
     'RequestReceptionTime'?: string;
     /**
      * Gets the UTC time when response has been sent.
-     * @type {string}
-     * @memberof UtcTimeResponse
      */
     'ResponseTransmissionTime'?: string;
 }

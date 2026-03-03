@@ -15,8 +15,6 @@
 
 /**
  * Enum containing tonemapping algorithms.
- * @export
- * @enum {string}
  */
 
 export const TonemappingAlgorithm = {

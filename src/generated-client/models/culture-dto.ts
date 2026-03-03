@@ -15,39 +15,24 @@
 
 /**
  * Class CultureDto.
- * @export
- * @interface CultureDto
  */
 export interface CultureDto {
     /**
      * Gets the name.
-     * @type {string}
-     * @memberof CultureDto
      */
     'Name'?: string;
     /**
      * Gets the display name.
-     * @type {string}
-     * @memberof CultureDto
      */
     'DisplayName'?: string;
     /**
      * Gets the name of the two letter ISO language.
-     * @type {string}
-     * @memberof CultureDto
      */
     'TwoLetterISOLanguageName'?: string;
     /**
      * Gets the name of the three letter ISO language.
-     * @type {string}
-     * @memberof CultureDto
      */
     'ThreeLetterISOLanguageName'?: string | null;
-    /**
-     * 
-     * @type {Array<string>}
-     * @memberof CultureDto
-     */
     'ThreeLetterISOLanguageNames'?: Array<string>;
 }
 

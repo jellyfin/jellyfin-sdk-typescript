@@ -18,20 +18,14 @@ import type { UserItemDataDto } from './user-item-data-dto';
 
 /**
  * Class UserDataChangeInfo.
- * @export
- * @interface UserDataChangeInfo
  */
 export interface UserDataChangeInfo {
     /**
      * Gets or sets the user id.
-     * @type {string}
-     * @memberof UserDataChangeInfo
      */
     'UserId'?: string;
     /**
      * Gets or sets the user data list.
-     * @type {Array<UserItemDataDto>}
-     * @memberof UserDataChangeInfo
      */
     'UserDataList'?: Array<UserItemDataDto>;
 }

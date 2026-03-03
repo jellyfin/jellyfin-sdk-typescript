@@ -15,8 +15,6 @@
 
 /**
  * Enum GroupState.
- * @export
- * @enum {string}
  */
 
 export const GroupStateType = {

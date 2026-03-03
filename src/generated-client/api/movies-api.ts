@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -26,7 +26,6 @@ import type { ItemFields } from '../models';
 import type { RecommendationDto } from '../models';
 /**
  * MoviesApi - axios parameter creator
- * @export
  */
 export const MoviesApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -77,8 +76,8 @@ export const MoviesApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['itemLimit'] = itemLimit;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -93,7 +92,6 @@ export const MoviesApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * MoviesApi - functional programming interface
- * @export
  */
 export const MoviesApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = MoviesApiAxiosParamCreator(configuration)
@@ -120,7 +118,6 @@ export const MoviesApiFp = function(configuration?: Configuration) {
 
 /**
  * MoviesApi - factory interface
- * @export
  */
 export const MoviesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = MoviesApiFp(configuration)
@@ -140,51 +137,36 @@ export const MoviesApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for getMovieRecommendations operation in MoviesApi.
- * @export
- * @interface MoviesApiGetMovieRecommendationsRequest
  */
 export interface MoviesApiGetMovieRecommendationsRequest {
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof MoviesApiGetMovieRecommendations
      */
     readonly userId?: string
 
     /**
      * Specify this to localize the search to a specific item or folder. Omit to use the root.
-     * @type {string}
-     * @memberof MoviesApiGetMovieRecommendations
      */
     readonly parentId?: string
 
     /**
      * Optional. The fields to return.
-     * @type {Array<ItemFields>}
-     * @memberof MoviesApiGetMovieRecommendations
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * The max number of categories to return.
-     * @type {number}
-     * @memberof MoviesApiGetMovieRecommendations
      */
     readonly categoryLimit?: number
 
     /**
      * The max number of items to return per category.
-     * @type {number}
-     * @memberof MoviesApiGetMovieRecommendations
      */
     readonly itemLimit?: number
 }
 
 /**
  * MoviesApi - object-oriented interface
- * @export
- * @class MoviesApi
- * @extends {BaseAPI}
  */
 export class MoviesApi extends BaseAPI {
     /**
@@ -193,7 +175,6 @@ export class MoviesApi extends BaseAPI {
      * @param {MoviesApiGetMovieRecommendationsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof MoviesApi
      */
     public getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig) {
         return MoviesApiFp(this.configuration).getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(this.axios, this.basePath));

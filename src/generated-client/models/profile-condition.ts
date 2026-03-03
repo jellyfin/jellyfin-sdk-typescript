@@ -19,35 +19,10 @@ import type { ProfileConditionType } from './profile-condition-type';
 // @ts-ignore
 import type { ProfileConditionValue } from './profile-condition-value';
 
-/**
- * 
- * @export
- * @interface ProfileCondition
- */
 export interface ProfileCondition {
-    /**
-     * 
-     * @type {ProfileConditionType}
-     * @memberof ProfileCondition
-     */
     'Condition'?: ProfileConditionType;
-    /**
-     * 
-     * @type {ProfileConditionValue}
-     * @memberof ProfileCondition
-     */
     'Property'?: ProfileConditionValue;
-    /**
-     * 
-     * @type {string}
-     * @memberof ProfileCondition
-     */
     'Value'?: string | null;
-    /**
-     * 
-     * @type {boolean}
-     * @memberof ProfileCondition
-     */
     'IsRequired'?: boolean;
 }
 

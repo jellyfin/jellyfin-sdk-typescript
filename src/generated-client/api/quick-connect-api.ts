@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -26,7 +26,6 @@ import type { ProblemDetails } from '../models';
 import type { QuickConnectResult } from '../models';
 /**
  * QuickConnectApi - axios parameter creator
- * @export
  */
 export const QuickConnectApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -64,8 +63,8 @@ export const QuickConnectApiAxiosParamCreator = function (configuration?: Config
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -94,8 +93,8 @@ export const QuickConnectApiAxiosParamCreator = function (configuration?: Config
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -131,8 +130,8 @@ export const QuickConnectApiAxiosParamCreator = function (configuration?: Config
                 localVarQueryParameter['secret'] = secret;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -161,8 +160,8 @@ export const QuickConnectApiAxiosParamCreator = function (configuration?: Config
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -177,7 +176,6 @@ export const QuickConnectApiAxiosParamCreator = function (configuration?: Config
 
 /**
  * QuickConnectApi - functional programming interface
- * @export
  */
 export const QuickConnectApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = QuickConnectApiAxiosParamCreator(configuration)
@@ -238,7 +236,6 @@ export const QuickConnectApiFp = function(configuration?: Configuration) {
 
 /**
  * QuickConnectApi - factory interface
- * @export
  */
 export const QuickConnectApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = QuickConnectApiFp(configuration)
@@ -286,44 +283,31 @@ export const QuickConnectApiFactory = function (configuration?: Configuration, b
 
 /**
  * Request parameters for authorizeQuickConnect operation in QuickConnectApi.
- * @export
- * @interface QuickConnectApiAuthorizeQuickConnectRequest
  */
 export interface QuickConnectApiAuthorizeQuickConnectRequest {
     /**
      * Quick connect code to authorize.
-     * @type {string}
-     * @memberof QuickConnectApiAuthorizeQuickConnect
      */
     readonly code: string
 
     /**
      * The user the authorize. Access to the requested user is required.
-     * @type {string}
-     * @memberof QuickConnectApiAuthorizeQuickConnect
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getQuickConnectState operation in QuickConnectApi.
- * @export
- * @interface QuickConnectApiGetQuickConnectStateRequest
  */
 export interface QuickConnectApiGetQuickConnectStateRequest {
     /**
      * Secret previously returned from the Initiate endpoint.
-     * @type {string}
-     * @memberof QuickConnectApiGetQuickConnectState
      */
     readonly secret: string
 }
 
 /**
  * QuickConnectApi - object-oriented interface
- * @export
- * @class QuickConnectApi
- * @extends {BaseAPI}
  */
 export class QuickConnectApi extends BaseAPI {
     /**
@@ -332,7 +316,6 @@ export class QuickConnectApi extends BaseAPI {
      * @param {QuickConnectApiAuthorizeQuickConnectRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof QuickConnectApi
      */
     public authorizeQuickConnect(requestParameters: QuickConnectApiAuthorizeQuickConnectRequest, options?: RawAxiosRequestConfig) {
         return QuickConnectApiFp(this.configuration).authorizeQuickConnect(requestParameters.code, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -343,7 +326,6 @@ export class QuickConnectApi extends BaseAPI {
      * @summary Gets the current quick connect state.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof QuickConnectApi
      */
     public getQuickConnectEnabled(options?: RawAxiosRequestConfig) {
         return QuickConnectApiFp(this.configuration).getQuickConnectEnabled(options).then((request) => request(this.axios, this.basePath));
@@ -355,7 +337,6 @@ export class QuickConnectApi extends BaseAPI {
      * @param {QuickConnectApiGetQuickConnectStateRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof QuickConnectApi
      */
     public getQuickConnectState(requestParameters: QuickConnectApiGetQuickConnectStateRequest, options?: RawAxiosRequestConfig) {
         return QuickConnectApiFp(this.configuration).getQuickConnectState(requestParameters.secret, options).then((request) => request(this.axios, this.basePath));
@@ -366,7 +347,6 @@ export class QuickConnectApi extends BaseAPI {
      * @summary Initiate a new quick connect request.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof QuickConnectApi
      */
     public initiateQuickConnect(options?: RawAxiosRequestConfig) {
         return QuickConnectApiFp(this.configuration).initiateQuickConnect(options).then((request) => request(this.axios, this.basePath));

@@ -15,32 +15,22 @@
 
 /**
  * Class FontFile.
- * @export
- * @interface FontFile
  */
 export interface FontFile {
     /**
      * Gets or sets the name.
-     * @type {string}
-     * @memberof FontFile
      */
     'Name'?: string | null;
     /**
      * Gets or sets the size.
-     * @type {number}
-     * @memberof FontFile
      */
     'Size'?: number;
     /**
      * Gets or sets the date created.
-     * @type {string}
-     * @memberof FontFile
      */
     'DateCreated'?: string;
     /**
      * Gets or sets the date modified.
-     * @type {string}
-     * @memberof FontFile
      */
     'DateModified'?: string;
 }

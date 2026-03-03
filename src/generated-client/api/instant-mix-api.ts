@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -30,7 +30,6 @@ import type { ItemFields } from '../models';
 import type { ProblemDetails } from '../models';
 /**
  * InstantMixApi - axios parameter creator
- * @export
  */
 export const InstantMixApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -95,8 +94,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -167,8 +166,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -243,8 +242,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -315,8 +314,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -390,8 +389,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -462,8 +461,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -534,8 +533,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -606,8 +605,8 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
                 localVarQueryParameter['enableImageTypes'] = enableImageTypes;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -622,7 +621,6 @@ export const InstantMixApiAxiosParamCreator = function (configuration?: Configur
 
 /**
  * InstantMixApi - functional programming interface
- * @export
  */
 export const InstantMixApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = InstantMixApiAxiosParamCreator(configuration)
@@ -793,7 +791,6 @@ export const InstantMixApiFp = function(configuration?: Configuration) {
 
 /**
  * InstantMixApi - factory interface
- * @export
  */
 export const InstantMixApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = InstantMixApiFp(configuration)
@@ -884,513 +881,366 @@ export const InstantMixApiFactory = function (configuration?: Configuration, bas
 
 /**
  * Request parameters for getInstantMixFromAlbum operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromAlbumRequest
  */
 export interface InstantMixApiGetInstantMixFromAlbumRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromAlbum
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromArtists operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromArtistsRequest
  */
 export interface InstantMixApiGetInstantMixFromArtistsRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromArtists
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromArtists2 operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromArtists2Request
  */
 export interface InstantMixApiGetInstantMixFromArtists2Request {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly id: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromArtists2
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromItem operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromItemRequest
  */
 export interface InstantMixApiGetInstantMixFromItemRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromItem
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromMusicGenreById operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromMusicGenreByIdRequest
  */
 export interface InstantMixApiGetInstantMixFromMusicGenreByIdRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly id: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreById
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromMusicGenreByName operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromMusicGenreByNameRequest
  */
 export interface InstantMixApiGetInstantMixFromMusicGenreByNameRequest {
     /**
      * The genre name.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly name: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromMusicGenreByName
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromPlaylist operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromPlaylistRequest
  */
 export interface InstantMixApiGetInstantMixFromPlaylistRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromPlaylist
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * Request parameters for getInstantMixFromSong operation in InstantMixApi.
- * @export
- * @interface InstantMixApiGetInstantMixFromSongRequest
  */
 export interface InstantMixApiGetInstantMixFromSongRequest {
     /**
      * The item id.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly itemId: string
 
     /**
      * Optional. Filter by user id, and attach user data.
-     * @type {string}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly userId?: string
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly limit?: number
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof InstantMixApiGetInstantMixFromSong
      */
     readonly enableImageTypes?: Array<ImageType>
 }
 
 /**
  * InstantMixApi - object-oriented interface
- * @export
- * @class InstantMixApi
- * @extends {BaseAPI}
  */
 export class InstantMixApi extends BaseAPI {
     /**
@@ -1399,7 +1249,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromAlbumRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromAlbum(requestParameters: InstantMixApiGetInstantMixFromAlbumRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromAlbum(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1411,7 +1260,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromArtistsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromArtists(requestParameters: InstantMixApiGetInstantMixFromArtistsRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromArtists(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1424,7 +1272,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromArtists2(requestParameters: InstantMixApiGetInstantMixFromArtists2Request, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromArtists2(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1436,7 +1283,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromItemRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromItem(requestParameters: InstantMixApiGetInstantMixFromItemRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromItem(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1448,7 +1294,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromMusicGenreByIdRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromMusicGenreById(requestParameters: InstantMixApiGetInstantMixFromMusicGenreByIdRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromMusicGenreById(requestParameters.id, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1460,7 +1305,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromMusicGenreByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromMusicGenreByName(requestParameters: InstantMixApiGetInstantMixFromMusicGenreByNameRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromMusicGenreByName(requestParameters.name, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1472,7 +1316,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromPlaylistRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromPlaylist(requestParameters: InstantMixApiGetInstantMixFromPlaylistRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromPlaylist(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));
@@ -1484,7 +1327,6 @@ export class InstantMixApi extends BaseAPI {
      * @param {InstantMixApiGetInstantMixFromSongRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof InstantMixApi
      */
     public getInstantMixFromSong(requestParameters: InstantMixApiGetInstantMixFromSongRequest, options?: RawAxiosRequestConfig) {
         return InstantMixApiFp(this.configuration).getInstantMixFromSong(requestParameters.itemId, requestParameters.userId, requestParameters.limit, requestParameters.fields, requestParameters.enableImages, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, options).then((request) => request(this.axios, this.basePath));

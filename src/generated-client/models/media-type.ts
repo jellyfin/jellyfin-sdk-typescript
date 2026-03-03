@@ -15,8 +15,6 @@
 
 /**
  * Media types.
- * @export
- * @enum {string}
  */
 
 export const MediaType = {

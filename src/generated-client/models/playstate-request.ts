@@ -16,28 +16,11 @@
 // @ts-ignore
 import type { PlaystateCommand } from './playstate-command';
 
-/**
- * 
- * @export
- * @interface PlaystateRequest
- */
 export interface PlaystateRequest {
-    /**
-     * 
-     * @type {PlaystateCommand}
-     * @memberof PlaystateRequest
-     */
     'Command'?: PlaystateCommand;
-    /**
-     * 
-     * @type {number}
-     * @memberof PlaystateRequest
-     */
     'SeekPositionTicks'?: number | null;
     /**
      * Gets or sets the controlling user identifier.
-     * @type {string}
-     * @memberof PlaystateRequest
      */
     'ControllingUserId'?: string | null;
 }

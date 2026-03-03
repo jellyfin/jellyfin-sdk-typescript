@@ -21,27 +21,16 @@ import type { SessionMessageType } from './session-message-type';
 
 /**
  * Activity log created message.
- * @export
- * @interface ActivityLogEntryMessage
  */
 export interface ActivityLogEntryMessage {
     /**
      * Gets or sets the data.
-     * @type {Array<ActivityLogEntry>}
-     * @memberof ActivityLogEntryMessage
      */
     'Data'?: Array<ActivityLogEntry> | null;
     /**
      * Gets or sets the message id.
-     * @type {string}
-     * @memberof ActivityLogEntryMessage
      */
     'MessageId'?: string;
-    /**
-     * 
-     * @type {SessionMessageType}
-     * @memberof ActivityLogEntryMessage
-     */
     'MessageType'?: SessionMessageType;
 }
 

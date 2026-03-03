@@ -17,14 +17,13 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
 import type { ConfigImageTypes } from '../models';
 /**
  * TmdbApi - axios parameter creator
- * @export
  */
 export const TmdbApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -50,8 +49,8 @@ export const TmdbApiAxiosParamCreator = function (configuration?: Configuration)
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -66,7 +65,6 @@ export const TmdbApiAxiosParamCreator = function (configuration?: Configuration)
 
 /**
  * TmdbApi - functional programming interface
- * @export
  */
 export const TmdbApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = TmdbApiAxiosParamCreator(configuration)
@@ -88,7 +86,6 @@ export const TmdbApiFp = function(configuration?: Configuration) {
 
 /**
  * TmdbApi - factory interface
- * @export
  */
 export const TmdbApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = TmdbApiFp(configuration)
@@ -107,9 +104,6 @@ export const TmdbApiFactory = function (configuration?: Configuration, basePath?
 
 /**
  * TmdbApi - object-oriented interface
- * @export
- * @class TmdbApi
- * @extends {BaseAPI}
  */
 export class TmdbApi extends BaseAPI {
     /**
@@ -117,7 +111,6 @@ export class TmdbApi extends BaseAPI {
      * @summary Gets the TMDb image configuration options.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof TmdbApi
      */
     public tmdbClientConfiguration(options?: RawAxiosRequestConfig) {
         return TmdbApiFp(this.configuration).tmdbClientConfiguration(options).then((request) => request(this.axios, this.basePath));

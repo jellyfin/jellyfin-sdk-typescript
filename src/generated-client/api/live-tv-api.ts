@@ -17,7 +17,7 @@ import type { AxiosPromise, AxiosInstance, RawAxiosRequestConfig } from 'axios';
 import globalAxios from 'axios';
 // Some imports not used depending on template conditions
 // @ts-ignore
-import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction } from '../common';
+import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObject, setBearerAuthToObject, setOAuthToObject, setSearchParams, serializeDataIfNeeded, toPathString, createRequestFunction, replaceWithSerializableTypeIfNeeded } from '../common';
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
@@ -66,7 +66,6 @@ import type { TunerChannelMapping } from '../models';
 import type { TunerHostInfo } from '../models';
 /**
  * LiveTvApi - axios parameter creator
- * @export
  */
 export const LiveTvApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
@@ -108,9 +107,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['validateLogin'] = validateLogin;
             }
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -145,9 +143,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -185,8 +182,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -222,8 +219,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -256,9 +253,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -293,9 +289,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -334,8 +329,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['id'] = id;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -371,8 +366,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -409,8 +404,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['id'] = id;
             }
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -447,8 +442,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['newDevicesOnly'] = newDevicesOnly;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -485,8 +480,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['newDevicesOnly'] = newDevicesOnly;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -527,8 +522,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -565,8 +560,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['providerId'] = providerId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -598,8 +593,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -636,8 +631,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['programId'] = programId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -669,8 +664,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -722,8 +717,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['country'] = country;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -756,8 +751,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'video/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -794,8 +789,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             const localVarHeaderParameter = {} as any;
             const localVarQueryParameter = {} as any;
 
+            localVarHeaderParameter['Accept'] = 'video/*,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -932,8 +927,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['addCurrentProgram'] = addCurrentProgram;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -965,8 +960,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1141,8 +1136,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1183,8 +1178,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1217,9 +1212,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -1338,8 +1332,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1380,8 +1374,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1418,8 +1412,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1456,8 +1450,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1495,8 +1489,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['userId'] = userId;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1623,8 +1617,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1727,8 +1721,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1760,8 +1754,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1797,8 +1791,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1840,8 +1834,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['sortOrder'] = sortOrder;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1877,8 +1871,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1930,8 +1924,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['isScheduled'] = isScheduled;
             }
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -1963,8 +1957,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2000,8 +1994,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            localVarHeaderParameter['Accept'] = 'text/html';
 
-    
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
@@ -2036,9 +2030,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -2077,9 +2070,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -2118,9 +2110,8 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-
-    
             localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -2137,7 +2128,6 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
 
 /**
  * LiveTvApi - functional programming interface
- * @export
  */
 export const LiveTvApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = LiveTvApiAxiosParamCreator(configuration)
@@ -2787,7 +2777,6 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
 
 /**
  * LiveTvApi - factory interface
- * @export
  */
 export const LiveTvApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
     const localVarFp = LiveTvApiFp(configuration)
@@ -3205,1276 +3194,911 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
 
 /**
  * Request parameters for addListingProvider operation in LiveTvApi.
- * @export
- * @interface LiveTvApiAddListingProviderRequest
  */
 export interface LiveTvApiAddListingProviderRequest {
     /**
      * Password.
-     * @type {string}
-     * @memberof LiveTvApiAddListingProvider
      */
     readonly pw?: string
 
     /**
      * Validate listings.
-     * @type {boolean}
-     * @memberof LiveTvApiAddListingProvider
      */
     readonly validateListings?: boolean
 
     /**
      * Validate login.
-     * @type {boolean}
-     * @memberof LiveTvApiAddListingProvider
      */
     readonly validateLogin?: boolean
 
     /**
      * New listings info.
-     * @type {ListingsProviderInfo}
-     * @memberof LiveTvApiAddListingProvider
      */
     readonly listingsProviderInfo?: ListingsProviderInfo
 }
 
 /**
  * Request parameters for addTunerHost operation in LiveTvApi.
- * @export
- * @interface LiveTvApiAddTunerHostRequest
  */
 export interface LiveTvApiAddTunerHostRequest {
     /**
      * New tuner host.
-     * @type {TunerHostInfo}
-     * @memberof LiveTvApiAddTunerHost
      */
     readonly tunerHostInfo?: TunerHostInfo
 }
 
 /**
  * Request parameters for cancelSeriesTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiCancelSeriesTimerRequest
  */
 export interface LiveTvApiCancelSeriesTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiCancelSeriesTimer
      */
     readonly timerId: string
 }
 
 /**
  * Request parameters for cancelTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiCancelTimerRequest
  */
 export interface LiveTvApiCancelTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiCancelTimer
      */
     readonly timerId: string
 }
 
 /**
  * Request parameters for createSeriesTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiCreateSeriesTimerRequest
  */
 export interface LiveTvApiCreateSeriesTimerRequest {
     /**
      * New series timer info.
-     * @type {SeriesTimerInfoDto}
-     * @memberof LiveTvApiCreateSeriesTimer
      */
     readonly seriesTimerInfoDto?: SeriesTimerInfoDto
 }
 
 /**
  * Request parameters for createTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiCreateTimerRequest
  */
 export interface LiveTvApiCreateTimerRequest {
     /**
      * New timer info.
-     * @type {TimerInfoDto}
-     * @memberof LiveTvApiCreateTimer
      */
     readonly timerInfoDto?: TimerInfoDto
 }
 
 /**
  * Request parameters for deleteListingProvider operation in LiveTvApi.
- * @export
- * @interface LiveTvApiDeleteListingProviderRequest
  */
 export interface LiveTvApiDeleteListingProviderRequest {
     /**
      * Listing provider id.
-     * @type {string}
-     * @memberof LiveTvApiDeleteListingProvider
      */
     readonly id?: string
 }
 
 /**
  * Request parameters for deleteRecording operation in LiveTvApi.
- * @export
- * @interface LiveTvApiDeleteRecordingRequest
  */
 export interface LiveTvApiDeleteRecordingRequest {
     /**
      * Recording id.
-     * @type {string}
-     * @memberof LiveTvApiDeleteRecording
      */
     readonly recordingId: string
 }
 
 /**
  * Request parameters for deleteTunerHost operation in LiveTvApi.
- * @export
- * @interface LiveTvApiDeleteTunerHostRequest
  */
 export interface LiveTvApiDeleteTunerHostRequest {
     /**
      * Tuner host id.
-     * @type {string}
-     * @memberof LiveTvApiDeleteTunerHost
      */
     readonly id?: string
 }
 
 /**
  * Request parameters for discoverTuners operation in LiveTvApi.
- * @export
- * @interface LiveTvApiDiscoverTunersRequest
  */
 export interface LiveTvApiDiscoverTunersRequest {
     /**
      * Only discover new tuners.
-     * @type {boolean}
-     * @memberof LiveTvApiDiscoverTuners
      */
     readonly newDevicesOnly?: boolean
 }
 
 /**
  * Request parameters for discvoverTuners operation in LiveTvApi.
- * @export
- * @interface LiveTvApiDiscvoverTunersRequest
  */
 export interface LiveTvApiDiscvoverTunersRequest {
     /**
      * Only discover new tuners.
-     * @type {boolean}
-     * @memberof LiveTvApiDiscvoverTuners
      */
     readonly newDevicesOnly?: boolean
 }
 
 /**
  * Request parameters for getChannel operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetChannelRequest
  */
 export interface LiveTvApiGetChannelRequest {
     /**
      * Channel id.
-     * @type {string}
-     * @memberof LiveTvApiGetChannel
      */
     readonly channelId: string
 
     /**
      * Optional. Attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetChannel
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getChannelMappingOptions operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetChannelMappingOptionsRequest
  */
 export interface LiveTvApiGetChannelMappingOptionsRequest {
     /**
      * Provider id.
-     * @type {string}
-     * @memberof LiveTvApiGetChannelMappingOptions
      */
     readonly providerId?: string
 }
 
 /**
  * Request parameters for getDefaultTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetDefaultTimerRequest
  */
 export interface LiveTvApiGetDefaultTimerRequest {
     /**
      * Optional. To attach default values based on a program.
-     * @type {string}
-     * @memberof LiveTvApiGetDefaultTimer
      */
     readonly programId?: string
 }
 
 /**
  * Request parameters for getLineups operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetLineupsRequest
  */
 export interface LiveTvApiGetLineupsRequest {
     /**
      * Provider id.
-     * @type {string}
-     * @memberof LiveTvApiGetLineups
      */
     readonly id?: string
 
     /**
      * Provider type.
-     * @type {string}
-     * @memberof LiveTvApiGetLineups
      */
     readonly type?: string
 
     /**
      * Location.
-     * @type {string}
-     * @memberof LiveTvApiGetLineups
      */
     readonly location?: string
 
     /**
      * Country.
-     * @type {string}
-     * @memberof LiveTvApiGetLineups
      */
     readonly country?: string
 }
 
 /**
  * Request parameters for getLiveRecordingFile operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetLiveRecordingFileRequest
  */
 export interface LiveTvApiGetLiveRecordingFileRequest {
     /**
      * Recording id.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveRecordingFile
      */
     readonly recordingId: string
 }
 
 /**
  * Request parameters for getLiveStreamFile operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetLiveStreamFileRequest
  */
 export interface LiveTvApiGetLiveStreamFileRequest {
     /**
      * Stream id.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveStreamFile
      */
     readonly streamId: string
 
     /**
      * Container type.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveStreamFile
      */
     readonly container: string
 }
 
 /**
  * Request parameters for getLiveTvChannels operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetLiveTvChannelsRequest
  */
 export interface LiveTvApiGetLiveTvChannelsRequest {
     /**
      * Optional. Filter by channel type.
-     * @type {ChannelType}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly type?: ChannelType
 
     /**
      * Optional. Filter by user and attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly startIndex?: number
 
     /**
      * Optional. Filter for movies.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isMovie?: boolean
 
     /**
      * Optional. Filter for series.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isSeries?: boolean
 
     /**
      * Optional. Filter for news.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isNews?: boolean
 
     /**
      * Optional. Filter for kids.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isKids?: boolean
 
     /**
      * Optional. Filter for sports.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isSports?: boolean
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly limit?: number
 
     /**
      * Optional. Filter by channels that are favorites, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isFavorite?: boolean
 
     /**
      * Optional. Filter by channels that are liked, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isLiked?: boolean
 
     /**
      * Optional. Filter by channels that are disliked, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly isDisliked?: boolean
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly imageTypeLimit?: number
 
     /**
      * \&quot;Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. Key to sort by.
-     * @type {Array<ItemSortBy>}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Optional. Sort order.
-     * @type {SortOrder}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly sortOrder?: SortOrder
 
     /**
      * Optional. Incorporate favorite and like status into channel sorting.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly enableFavoriteSorting?: boolean
 
     /**
      * Optional. Adds current program info to each channel.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvChannels
      */
     readonly addCurrentProgram?: boolean
 }
 
 /**
  * Request parameters for getLiveTvPrograms operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetLiveTvProgramsRequest
  */
 export interface LiveTvApiGetLiveTvProgramsRequest {
     /**
      * The channels to return guide information for.
-     * @type {Array<string>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly channelIds?: Array<string>
 
     /**
      * Optional. Filter by user id.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly userId?: string
 
     /**
      * Optional. The minimum premiere start date.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly minStartDate?: string
 
     /**
      * Optional. Filter by programs that have completed airing, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly hasAired?: boolean
 
     /**
      * Optional. Filter by programs that are currently airing, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isAiring?: boolean
 
     /**
      * Optional. The maximum premiere start date.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly maxStartDate?: string
 
     /**
      * Optional. The minimum premiere end date.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly minEndDate?: string
 
     /**
      * Optional. The maximum premiere end date.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly maxEndDate?: string
 
     /**
      * Optional. Filter for movies.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isMovie?: boolean
 
     /**
      * Optional. Filter for series.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isSeries?: boolean
 
     /**
      * Optional. Filter for news.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isNews?: boolean
 
     /**
      * Optional. Filter for kids.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isKids?: boolean
 
     /**
      * Optional. Filter for sports.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly isSports?: boolean
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly limit?: number
 
     /**
      * Optional. Specify one or more sort orders, comma delimited. Options: Name, StartDate.
-     * @type {Array<ItemSortBy>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly sortBy?: Array<ItemSortBy>
 
     /**
      * Sort Order - Ascending,Descending.
-     * @type {Array<SortOrder>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly sortOrder?: Array<SortOrder>
 
     /**
      * The genres to return guide information for.
-     * @type {Array<string>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly genres?: Array<string>
 
     /**
      * The genre ids to return guide information for.
-     * @type {Array<string>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly genreIds?: Array<string>
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. Filter by series timer id.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly seriesTimerId?: string
 
     /**
      * Optional. Filter by library series id.
-     * @type {string}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly librarySeriesId?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Retrieve total record count.
-     * @type {boolean}
-     * @memberof LiveTvApiGetLiveTvPrograms
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * Request parameters for getProgram operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetProgramRequest
  */
 export interface LiveTvApiGetProgramRequest {
     /**
      * Program id.
-     * @type {string}
-     * @memberof LiveTvApiGetProgram
      */
     readonly programId: string
 
     /**
      * Optional. Attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetProgram
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getPrograms operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetProgramsRequest
  */
 export interface LiveTvApiGetProgramsRequest {
     /**
      * Request body.
-     * @type {GetProgramsDto}
-     * @memberof LiveTvApiGetPrograms
      */
     readonly getProgramsDto?: GetProgramsDto
 }
 
 /**
  * Request parameters for getRecommendedPrograms operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecommendedProgramsRequest
  */
 export interface LiveTvApiGetRecommendedProgramsRequest {
     /**
      * Optional. filter by user id.
-     * @type {string}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly limit?: number
 
     /**
      * Optional. Filter by programs that are currently airing, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isAiring?: boolean
 
     /**
      * Optional. Filter by programs that have completed airing, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly hasAired?: boolean
 
     /**
      * Optional. Filter for series.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isSeries?: boolean
 
     /**
      * Optional. Filter for movies.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isMovie?: boolean
 
     /**
      * Optional. Filter for news.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isNews?: boolean
 
     /**
      * Optional. Filter for kids.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isKids?: boolean
 
     /**
      * Optional. Filter for sports.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly isSports?: boolean
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * The genres to return guide information for.
-     * @type {Array<string>}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly genreIds?: Array<string>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. include user data.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly enableUserData?: boolean
 
     /**
      * Retrieve total record count.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecommendedPrograms
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * Request parameters for getRecording operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingRequest
  */
 export interface LiveTvApiGetRecordingRequest {
     /**
      * Recording id.
-     * @type {string}
-     * @memberof LiveTvApiGetRecording
      */
     readonly recordingId: string
 
     /**
      * Optional. Attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetRecording
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getRecordingFolders operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingFoldersRequest
  */
 export interface LiveTvApiGetRecordingFoldersRequest {
     /**
      * Optional. Filter by user and attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingFolders
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getRecordingGroup operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingGroupRequest
  */
 export interface LiveTvApiGetRecordingGroupRequest {
     /**
      * Group id.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingGroup
      */
     readonly groupId: string
 }
 
 /**
  * Request parameters for getRecordingGroups operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingGroupsRequest
  */
 export interface LiveTvApiGetRecordingGroupsRequest {
     /**
      * Optional. Filter by user and attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingGroups
      */
     readonly userId?: string
 }
 
 /**
  * Request parameters for getRecordings operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingsRequest
  */
 export interface LiveTvApiGetRecordingsRequest {
     /**
      * Optional. Filter by channel id.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly channelId?: string
 
     /**
      * Optional. Filter by user and attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly userId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly limit?: number
 
     /**
      * Optional. Filter by recording status.
-     * @type {RecordingStatus}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly status?: RecordingStatus
 
     /**
      * Optional. Filter by recordings that are in progress, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isInProgress?: boolean
 
     /**
      * Optional. Filter by recordings belonging to a series timer.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly seriesTimerId?: string
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. Filter for movies.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isMovie?: boolean
 
     /**
      * Optional. Filter for series.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isSeries?: boolean
 
     /**
      * Optional. Filter for kids.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isKids?: boolean
 
     /**
      * Optional. Filter for sports.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isSports?: boolean
 
     /**
      * Optional. Filter for news.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isNews?: boolean
 
     /**
      * Optional. Filter for is library item.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly isLibraryItem?: boolean
 
     /**
      * Optional. Return total record count.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordings
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * Request parameters for getRecordingsSeries operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetRecordingsSeriesRequest
  */
 export interface LiveTvApiGetRecordingsSeriesRequest {
     /**
      * Optional. Filter by channel id.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly channelId?: string
 
     /**
      * Optional. Filter by user and attach user data.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly userId?: string
 
     /**
      * Optional. Filter by recording group.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly groupId?: string
 
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly startIndex?: number
 
     /**
      * Optional. The maximum number of records to return.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly limit?: number
 
     /**
      * Optional. Filter by recording status.
-     * @type {RecordingStatus}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly status?: RecordingStatus
 
     /**
      * Optional. Filter by recordings that are in progress, or not.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly isInProgress?: boolean
 
     /**
      * Optional. Filter by recordings belonging to a series timer.
-     * @type {string}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly seriesTimerId?: string
 
     /**
      * Optional. Include image information in output.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly enableImages?: boolean
 
     /**
      * Optional. The max number of images to return, per image type.
-     * @type {number}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly imageTypeLimit?: number
 
     /**
      * Optional. The image types to include in the output.
-     * @type {Array<ImageType>}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly enableImageTypes?: Array<ImageType>
 
     /**
      * Optional. Specify additional fields of information to return in the output.
-     * @type {Array<ItemFields>}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly fields?: Array<ItemFields>
 
     /**
      * Optional. Include user data.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly enableUserData?: boolean
 
     /**
      * Optional. Return total record count.
-     * @type {boolean}
-     * @memberof LiveTvApiGetRecordingsSeries
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
  * Request parameters for getSeriesTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetSeriesTimerRequest
  */
 export interface LiveTvApiGetSeriesTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiGetSeriesTimer
      */
     readonly timerId: string
 }
 
 /**
  * Request parameters for getSeriesTimers operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetSeriesTimersRequest
  */
 export interface LiveTvApiGetSeriesTimersRequest {
     /**
      * Optional. Sort by SortName or Priority.
-     * @type {string}
-     * @memberof LiveTvApiGetSeriesTimers
      */
     readonly sortBy?: string
 
     /**
      * Optional. Sort in Ascending or Descending order.
-     * @type {SortOrder}
-     * @memberof LiveTvApiGetSeriesTimers
      */
     readonly sortOrder?: SortOrder
 }
 
 /**
  * Request parameters for getTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetTimerRequest
  */
 export interface LiveTvApiGetTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiGetTimer
      */
     readonly timerId: string
 }
 
 /**
  * Request parameters for getTimers operation in LiveTvApi.
- * @export
- * @interface LiveTvApiGetTimersRequest
  */
 export interface LiveTvApiGetTimersRequest {
     /**
      * Optional. Filter by channel id.
-     * @type {string}
-     * @memberof LiveTvApiGetTimers
      */
     readonly channelId?: string
 
     /**
      * Optional. Filter by timers belonging to a series timer.
-     * @type {string}
-     * @memberof LiveTvApiGetTimers
      */
     readonly seriesTimerId?: string
 
     /**
      * Optional. Filter by timers that are active.
-     * @type {boolean}
-     * @memberof LiveTvApiGetTimers
      */
     readonly isActive?: boolean
 
     /**
      * Optional. Filter by timers that are scheduled.
-     * @type {boolean}
-     * @memberof LiveTvApiGetTimers
      */
     readonly isScheduled?: boolean
 }
 
 /**
  * Request parameters for resetTuner operation in LiveTvApi.
- * @export
- * @interface LiveTvApiResetTunerRequest
  */
 export interface LiveTvApiResetTunerRequest {
     /**
      * Tuner id.
-     * @type {string}
-     * @memberof LiveTvApiResetTuner
      */
     readonly tunerId: string
 }
 
 /**
  * Request parameters for setChannelMapping operation in LiveTvApi.
- * @export
- * @interface LiveTvApiSetChannelMappingRequest
  */
 export interface LiveTvApiSetChannelMappingRequest {
     /**
      * The set channel mapping dto.
-     * @type {SetChannelMappingDto}
-     * @memberof LiveTvApiSetChannelMapping
      */
     readonly setChannelMappingDto: SetChannelMappingDto
 }
 
 /**
  * Request parameters for updateSeriesTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiUpdateSeriesTimerRequest
  */
 export interface LiveTvApiUpdateSeriesTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiUpdateSeriesTimer
      */
     readonly timerId: string
 
     /**
      * New series timer info.
-     * @type {SeriesTimerInfoDto}
-     * @memberof LiveTvApiUpdateSeriesTimer
      */
     readonly seriesTimerInfoDto?: SeriesTimerInfoDto
 }
 
 /**
  * Request parameters for updateTimer operation in LiveTvApi.
- * @export
- * @interface LiveTvApiUpdateTimerRequest
  */
 export interface LiveTvApiUpdateTimerRequest {
     /**
      * Timer id.
-     * @type {string}
-     * @memberof LiveTvApiUpdateTimer
      */
     readonly timerId: string
 
     /**
      * New timer info.
-     * @type {TimerInfoDto}
-     * @memberof LiveTvApiUpdateTimer
      */
     readonly timerInfoDto?: TimerInfoDto
 }
 
 /**
  * LiveTvApi - object-oriented interface
- * @export
- * @class LiveTvApi
- * @extends {BaseAPI}
  */
 export class LiveTvApi extends BaseAPI {
     /**
@@ -4483,7 +4107,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiAddListingProviderRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public addListingProvider(requestParameters: LiveTvApiAddListingProviderRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).addListingProvider(requestParameters.pw, requestParameters.validateListings, requestParameters.validateLogin, requestParameters.listingsProviderInfo, options).then((request) => request(this.axios, this.basePath));
@@ -4495,7 +4118,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiAddTunerHostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public addTunerHost(requestParameters: LiveTvApiAddTunerHostRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).addTunerHost(requestParameters.tunerHostInfo, options).then((request) => request(this.axios, this.basePath));
@@ -4507,7 +4129,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiCancelSeriesTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public cancelSeriesTimer(requestParameters: LiveTvApiCancelSeriesTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).cancelSeriesTimer(requestParameters.timerId, options).then((request) => request(this.axios, this.basePath));
@@ -4519,7 +4140,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiCancelTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public cancelTimer(requestParameters: LiveTvApiCancelTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).cancelTimer(requestParameters.timerId, options).then((request) => request(this.axios, this.basePath));
@@ -4531,7 +4151,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiCreateSeriesTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public createSeriesTimer(requestParameters: LiveTvApiCreateSeriesTimerRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).createSeriesTimer(requestParameters.seriesTimerInfoDto, options).then((request) => request(this.axios, this.basePath));
@@ -4543,7 +4162,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiCreateTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public createTimer(requestParameters: LiveTvApiCreateTimerRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).createTimer(requestParameters.timerInfoDto, options).then((request) => request(this.axios, this.basePath));
@@ -4555,7 +4173,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiDeleteListingProviderRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public deleteListingProvider(requestParameters: LiveTvApiDeleteListingProviderRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).deleteListingProvider(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -4567,7 +4184,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiDeleteRecordingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public deleteRecording(requestParameters: LiveTvApiDeleteRecordingRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).deleteRecording(requestParameters.recordingId, options).then((request) => request(this.axios, this.basePath));
@@ -4579,7 +4195,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiDeleteTunerHostRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public deleteTunerHost(requestParameters: LiveTvApiDeleteTunerHostRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).deleteTunerHost(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
@@ -4591,7 +4206,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiDiscoverTunersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public discoverTuners(requestParameters: LiveTvApiDiscoverTunersRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).discoverTuners(requestParameters.newDevicesOnly, options).then((request) => request(this.axios, this.basePath));
@@ -4603,7 +4217,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiDiscvoverTunersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public discvoverTuners(requestParameters: LiveTvApiDiscvoverTunersRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).discvoverTuners(requestParameters.newDevicesOnly, options).then((request) => request(this.axios, this.basePath));
@@ -4615,7 +4228,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetChannelRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getChannel(requestParameters: LiveTvApiGetChannelRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getChannel(requestParameters.channelId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -4627,7 +4239,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetChannelMappingOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getChannelMappingOptions(requestParameters: LiveTvApiGetChannelMappingOptionsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getChannelMappingOptions(requestParameters.providerId, options).then((request) => request(this.axios, this.basePath));
@@ -4638,7 +4249,6 @@ export class LiveTvApi extends BaseAPI {
      * @summary Gets default listings provider info.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getDefaultListingProvider(options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getDefaultListingProvider(options).then((request) => request(this.axios, this.basePath));
@@ -4650,7 +4260,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetDefaultTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getDefaultTimer(requestParameters: LiveTvApiGetDefaultTimerRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getDefaultTimer(requestParameters.programId, options).then((request) => request(this.axios, this.basePath));
@@ -4661,7 +4270,6 @@ export class LiveTvApi extends BaseAPI {
      * @summary Get guide info.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getGuideInfo(options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getGuideInfo(options).then((request) => request(this.axios, this.basePath));
@@ -4673,7 +4281,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetLineupsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLineups(requestParameters: LiveTvApiGetLineupsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLineups(requestParameters.id, requestParameters.type, requestParameters.location, requestParameters.country, options).then((request) => request(this.axios, this.basePath));
@@ -4685,7 +4292,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetLiveRecordingFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLiveRecordingFile(requestParameters: LiveTvApiGetLiveRecordingFileRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLiveRecordingFile(requestParameters.recordingId, options).then((request) => request(this.axios, this.basePath));
@@ -4697,7 +4303,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetLiveStreamFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLiveStreamFile(requestParameters: LiveTvApiGetLiveStreamFileRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLiveStreamFile(requestParameters.streamId, requestParameters.container, options).then((request) => request(this.axios, this.basePath));
@@ -4709,7 +4314,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetLiveTvChannelsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLiveTvChannels(requestParameters: LiveTvApiGetLiveTvChannelsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLiveTvChannels(requestParameters.type, requestParameters.userId, requestParameters.startIndex, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.limit, requestParameters.isFavorite, requestParameters.isLiked, requestParameters.isDisliked, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableFavoriteSorting, requestParameters.addCurrentProgram, options).then((request) => request(this.axios, this.basePath));
@@ -4720,7 +4324,6 @@ export class LiveTvApi extends BaseAPI {
      * @summary Gets available live tv services.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLiveTvInfo(options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLiveTvInfo(options).then((request) => request(this.axios, this.basePath));
@@ -4732,7 +4335,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetLiveTvProgramsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getLiveTvPrograms(requestParameters: LiveTvApiGetLiveTvProgramsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getLiveTvPrograms(requestParameters.channelIds, requestParameters.userId, requestParameters.minStartDate, requestParameters.hasAired, requestParameters.isAiring, requestParameters.maxStartDate, requestParameters.minEndDate, requestParameters.maxEndDate, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.startIndex, requestParameters.limit, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.genres, requestParameters.genreIds, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.seriesTimerId, requestParameters.librarySeriesId, requestParameters.fields, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
@@ -4744,7 +4346,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetProgramRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getProgram(requestParameters: LiveTvApiGetProgramRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getProgram(requestParameters.programId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -4756,7 +4357,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetProgramsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getPrograms(requestParameters: LiveTvApiGetProgramsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getPrograms(requestParameters.getProgramsDto, options).then((request) => request(this.axios, this.basePath));
@@ -4768,7 +4368,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetRecommendedProgramsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecommendedPrograms(requestParameters: LiveTvApiGetRecommendedProgramsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecommendedPrograms(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.isAiring, requestParameters.hasAired, requestParameters.isSeries, requestParameters.isMovie, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.genreIds, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
@@ -4780,7 +4379,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetRecordingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecording(requestParameters: LiveTvApiGetRecordingRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecording(requestParameters.recordingId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -4792,7 +4390,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetRecordingFoldersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecordingFolders(requestParameters: LiveTvApiGetRecordingFoldersRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordingFolders(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -4805,7 +4402,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecordingGroup(requestParameters: LiveTvApiGetRecordingGroupRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordingGroup(requestParameters.groupId, options).then((request) => request(this.axios, this.basePath));
@@ -4818,7 +4414,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecordingGroups(requestParameters: LiveTvApiGetRecordingGroupsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordingGroups(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
@@ -4830,7 +4425,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetRecordingsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecordings(requestParameters: LiveTvApiGetRecordingsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordings(requestParameters.channelId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isKids, requestParameters.isSports, requestParameters.isNews, requestParameters.isLibraryItem, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
@@ -4843,7 +4437,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {*} [options] Override http request option.
      * @deprecated
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getRecordingsSeries(requestParameters: LiveTvApiGetRecordingsSeriesRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordingsSeries(requestParameters.channelId, requestParameters.userId, requestParameters.groupId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
@@ -4854,7 +4447,6 @@ export class LiveTvApi extends BaseAPI {
      * @summary Gets available countries.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getSchedulesDirectCountries(options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getSchedulesDirectCountries(options).then((request) => request(this.axios, this.basePath));
@@ -4866,7 +4458,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetSeriesTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getSeriesTimer(requestParameters: LiveTvApiGetSeriesTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getSeriesTimer(requestParameters.timerId, options).then((request) => request(this.axios, this.basePath));
@@ -4878,7 +4469,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetSeriesTimersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getSeriesTimers(requestParameters: LiveTvApiGetSeriesTimersRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getSeriesTimers(requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(this.axios, this.basePath));
@@ -4890,7 +4480,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getTimer(requestParameters: LiveTvApiGetTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getTimer(requestParameters.timerId, options).then((request) => request(this.axios, this.basePath));
@@ -4902,7 +4491,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiGetTimersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getTimers(requestParameters: LiveTvApiGetTimersRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getTimers(requestParameters.channelId, requestParameters.seriesTimerId, requestParameters.isActive, requestParameters.isScheduled, options).then((request) => request(this.axios, this.basePath));
@@ -4913,7 +4501,6 @@ export class LiveTvApi extends BaseAPI {
      * @summary Get tuner host types.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public getTunerHostTypes(options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getTunerHostTypes(options).then((request) => request(this.axios, this.basePath));
@@ -4925,7 +4512,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiResetTunerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public resetTuner(requestParameters: LiveTvApiResetTunerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).resetTuner(requestParameters.tunerId, options).then((request) => request(this.axios, this.basePath));
@@ -4937,7 +4523,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiSetChannelMappingRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public setChannelMapping(requestParameters: LiveTvApiSetChannelMappingRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).setChannelMapping(requestParameters.setChannelMappingDto, options).then((request) => request(this.axios, this.basePath));
@@ -4949,7 +4534,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiUpdateSeriesTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public updateSeriesTimer(requestParameters: LiveTvApiUpdateSeriesTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).updateSeriesTimer(requestParameters.timerId, requestParameters.seriesTimerInfoDto, options).then((request) => request(this.axios, this.basePath));
@@ -4961,7 +4545,6 @@ export class LiveTvApi extends BaseAPI {
      * @param {LiveTvApiUpdateTimerRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
-     * @memberof LiveTvApi
      */
     public updateTimer(requestParameters: LiveTvApiUpdateTimerRequest, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).updateTimer(requestParameters.timerId, requestParameters.timerInfoDto, options).then((request) => request(this.axios, this.basePath));
