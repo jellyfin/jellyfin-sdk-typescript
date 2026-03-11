@@ -27,7 +27,7 @@ class AugmentedUserApi extends UserApi {
 	): Promise<AxiosResponse<AuthenticationResult, any, {}>> {
 		return super.authenticateUserByName(requestParameters, options)
 			.then(response => {
-				this.api.accessToken = response.data.AccessToken || '';
+				this.api.update({ accessToken: response.data.AccessToken || '' });
 				return response;
 			});
 	}
@@ -39,7 +39,7 @@ class AugmentedUserApi extends UserApi {
 	): Promise<AxiosResponse<AuthenticationResult, any, {}>> {
 		return super.authenticateWithQuickConnect(requestParameters, options)
 			.then(response => {
-				this.api.accessToken = response.data.AccessToken || '';
+				this.api.update({ accessToken: response.data.AccessToken || '' });
 				return response;
 			});
 	}

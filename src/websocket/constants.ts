@@ -1,0 +1,47 @@
+/**
+ * This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/.
+ */
+
+import type { PeriodicListenerInterval } from './models';
+import type { WebSocketSubscription } from './types';
+import { OutboundWebSocketMessageType } from './types';
+
+/**
+ * The URL path segment for websocket connections
+ */
+export const WEBSOCKET_URL_PATH = 'socket';
+
+/**
+ * The initial timeout interval in milliseconds for exponential backoff reconnection
+ */
+export const RECONNECT_INITIAL_DELAY = 1000;
+
+/**
+ * The multiplier for exponential backoff on each reconnection attempt
+ */
+export const RECONNECT_DELAY_FACTOR = 1.5;
+
+/**
+ * The maximum timeout interval in milliseconds for reconnection attempts
+ */
+export const RECONNECT_MAX_DELAY = 60000 * 5;
+
+export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
+	[OutboundWebSocketMessageType.Sessions]: {
+		messageType: OutboundWebSocketMessageType.Sessions,
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'SessionsStart', Data: interval.toString() }),
+		createStopMessage: () => ({ MessageType: 'SessionsStop' })
+	},
+	[OutboundWebSocketMessageType.ActivityLogEntry]: {
+		messageType: OutboundWebSocketMessageType.ActivityLogEntry,
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'ActivityLogEntryStart', Data: interval.toString() }),
+		createStopMessage: () => ({ MessageType: 'ActivityLogEntryStop' })
+	},
+	[OutboundWebSocketMessageType.ScheduledTasksInfo]: {
+		messageType: OutboundWebSocketMessageType.ScheduledTasksInfo,
+		createStartMessage: (interval: PeriodicListenerInterval) => ({ MessageType: 'ScheduledTasksInfoStart', Data: interval.toString() }),
+		createStopMessage: () => ({ MessageType: 'ScheduledTasksInfoStop' })
+	}
+};

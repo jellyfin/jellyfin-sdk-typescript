@@ -6,7 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl, hasProtocolAndPort, isDefaultPort } from '..';
+import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl, hasProtocolAndPort, isDefaultPort, buildWebSocketUrl } from '..';
 
 /**
  * Url tests.
@@ -105,6 +105,39 @@ describe('Url', () => {
 			expect(() => {
 				parseUrl('/');
 			}).toThrow();
+		});
+	});
+
+	describe('buildWebSocketUrl()', () => {
+		it('should convert http to ws', () => {
+			const url = buildWebSocketUrl('http://example.com');
+			expect(url.protocol).toBe('ws:');
+			expect(url.toString()).toBe('ws://example.com/');
+		});
+
+		it('should convert https to wss', () => {
+			const url = buildWebSocketUrl('https://example.com');
+			expect(url.protocol).toBe('wss:');
+			expect(url.toString()).toBe('wss://example.com/');
+		});
+
+		it('should preserve port numbers', () => {
+			const url = buildWebSocketUrl('http://example.com:8096');
+			expect(url.protocol).toBe('ws:');
+			expect(url.port).toBe('8096');
+			expect(url.toString()).toBe('ws://example.com:8096/');
+		});
+
+		it('should preserve path and query parameters', () => {
+			const url = buildWebSocketUrl('https://example.com/socket?accessToken=abc123');
+			expect(url.protocol).toBe('wss:');
+			expect(url.pathname).toBe('/socket');
+			expect(url.search).toBe('?accessToken=abc123');
+		});
+
+		it('should return a URL instance', () => {
+			const url = buildWebSocketUrl('http://example.com');
+			expect(url).toBeInstanceOf(URL);
 		});
 	});
 });

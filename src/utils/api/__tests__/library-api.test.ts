@@ -7,7 +7,8 @@
 import { describe, expect, it } from 'vitest';
 
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../../../__helpers__/common';
-import { Api, AUTHORIZATION_PARAMETER } from '../../../api';
+import { Api } from '../../../api';
+import { AUTHORIZATION_PARAMETER } from '../../../constants';
 import { getLibraryApi } from '../library-api';
 
 describe('LibraryApi', () => {

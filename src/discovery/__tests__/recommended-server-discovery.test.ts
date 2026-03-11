@@ -16,7 +16,16 @@ import { ProductNameIssue, SlowResponseIssue, SystemInfoIssue, VersionMissingIss
 import { API_VERSION, MINIMUM_VERSION } from '../../versions';
 import { RecommendedServerDiscovery } from '../recommended-server-discovery';
 
-vi.mock('axios');
+vi.mock('axios', async () => {
+	const actual = await vi.importActual('axios');
+	return {
+		default: {
+			getUri: actual.getUri,
+			request: vi.fn(),
+			defaults: {}
+		}
+	};
+});
 
 const ADDRESS = 'https://example.com';
 const PRODUCT_NAME = 'Jellyfin Server';
