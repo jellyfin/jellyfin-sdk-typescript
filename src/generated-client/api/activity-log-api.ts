@@ -22,6 +22,12 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
 import type { ActivityLogEntryQueryResult } from '../models';
+// @ts-ignore
+import type { ActivityLogSortBy } from '../models';
+// @ts-ignore
+import type { LogLevel } from '../models';
+// @ts-ignore
+import type { SortOrder } from '../models';
 /**
  * ActivityLogApi - axios parameter creator
  */
@@ -33,11 +39,21 @@ export const ActivityLogApiAxiosParamCreator = function (configuration?: Configu
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [minDate] Optional. The minimum date. Format &#x3D; ISO.
+         * @param {string} [maxDate] Optional. The maximum date. Format &#x3D; ISO.
          * @param {boolean} [hasUserId] Optional. Filter log entries if it has user id, or not.
+         * @param {string} [name] Optional. Filter log entries by the name parameter.
+         * @param {string} [overview] Optional. Filter log entries by the overview parameter.
+         * @param {string} [shortOverview] Optional. Filter log entries by the Short Overview parameter.
+         * @param {string} [type] Optional. Filter log entries by activity type.
+         * @param {string} [itemId] Optional. Filter logs by Item Id.
+         * @param {string} [username] Optional. Filter log entries by the username parameter.
+         * @param {LogLevel} [severity] Optional. Filter log entries by the severity level.
+         * @param {Array<ActivityLogSortBy>} [sortBy] Optional. The order in which to sort the returned logs.
+         * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getLogEntries: async (startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getLogEntries: async (startIndex?: number, limit?: number, minDate?: string, maxDate?: string, hasUserId?: boolean, name?: string, overview?: string, shortOverview?: string, type?: string, itemId?: string, username?: string, severity?: LogLevel, sortBy?: Array<ActivityLogSortBy>, sortOrder?: Array<SortOrder>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/ActivityLog/Entries`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -67,8 +83,50 @@ export const ActivityLogApiAxiosParamCreator = function (configuration?: Configu
                     minDate;
             }
 
+            if (maxDate !== undefined) {
+                localVarQueryParameter['maxDate'] = (maxDate as any instanceof Date) ?
+                    (maxDate as any).toISOString() :
+                    maxDate;
+            }
+
             if (hasUserId !== undefined) {
                 localVarQueryParameter['hasUserId'] = hasUserId;
+            }
+
+            if (name !== undefined) {
+                localVarQueryParameter['name'] = name;
+            }
+
+            if (overview !== undefined) {
+                localVarQueryParameter['overview'] = overview;
+            }
+
+            if (shortOverview !== undefined) {
+                localVarQueryParameter['shortOverview'] = shortOverview;
+            }
+
+            if (type !== undefined) {
+                localVarQueryParameter['type'] = type;
+            }
+
+            if (itemId !== undefined) {
+                localVarQueryParameter['itemId'] = itemId;
+            }
+
+            if (username !== undefined) {
+                localVarQueryParameter['username'] = username;
+            }
+
+            if (severity !== undefined) {
+                localVarQueryParameter['severity'] = severity;
+            }
+
+            if (sortBy) {
+                localVarQueryParameter['sortBy'] = sortBy;
+            }
+
+            if (sortOrder) {
+                localVarQueryParameter['sortOrder'] = sortOrder;
             }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
@@ -97,12 +155,22 @@ export const ActivityLogApiFp = function(configuration?: Configuration) {
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [minDate] Optional. The minimum date. Format &#x3D; ISO.
+         * @param {string} [maxDate] Optional. The maximum date. Format &#x3D; ISO.
          * @param {boolean} [hasUserId] Optional. Filter log entries if it has user id, or not.
+         * @param {string} [name] Optional. Filter log entries by the name parameter.
+         * @param {string} [overview] Optional. Filter log entries by the overview parameter.
+         * @param {string} [shortOverview] Optional. Filter log entries by the Short Overview parameter.
+         * @param {string} [type] Optional. Filter log entries by activity type.
+         * @param {string} [itemId] Optional. Filter logs by Item Id.
+         * @param {string} [username] Optional. Filter log entries by the username parameter.
+         * @param {LogLevel} [severity] Optional. Filter log entries by the severity level.
+         * @param {Array<ActivityLogSortBy>} [sortBy] Optional. The order in which to sort the returned logs.
+         * @param {Array<SortOrder>} [sortOrder] Optional. Sort Order - Ascending,Descending.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getLogEntries(startIndex?: number, limit?: number, minDate?: string, hasUserId?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ActivityLogEntryQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getLogEntries(startIndex, limit, minDate, hasUserId, options);
+        async getLogEntries(startIndex?: number, limit?: number, minDate?: string, maxDate?: string, hasUserId?: boolean, name?: string, overview?: string, shortOverview?: string, type?: string, itemId?: string, username?: string, severity?: LogLevel, sortBy?: Array<ActivityLogSortBy>, sortOrder?: Array<SortOrder>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ActivityLogEntryQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLogEntries(startIndex, limit, minDate, maxDate, hasUserId, name, overview, shortOverview, type, itemId, username, severity, sortBy, sortOrder, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['ActivityLogApi.getLogEntries']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
@@ -124,7 +192,7 @@ export const ActivityLogApiFactory = function (configuration?: Configuration, ba
          * @throws {RequiredError}
          */
         getLogEntries(requestParameters: ActivityLogApiGetLogEntriesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ActivityLogEntryQueryResult> {
-            return localVarFp.getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.hasUserId, options).then((request) => request(axios, basePath));
+            return localVarFp.getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.maxDate, requestParameters.hasUserId, requestParameters.name, requestParameters.overview, requestParameters.shortOverview, requestParameters.type, requestParameters.itemId, requestParameters.username, requestParameters.severity, requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -149,9 +217,59 @@ export interface ActivityLogApiGetLogEntriesRequest {
     readonly minDate?: string
 
     /**
+     * Optional. The maximum date. Format &#x3D; ISO.
+     */
+    readonly maxDate?: string
+
+    /**
      * Optional. Filter log entries if it has user id, or not.
      */
     readonly hasUserId?: boolean
+
+    /**
+     * Optional. Filter log entries by the name parameter.
+     */
+    readonly name?: string
+
+    /**
+     * Optional. Filter log entries by the overview parameter.
+     */
+    readonly overview?: string
+
+    /**
+     * Optional. Filter log entries by the Short Overview parameter.
+     */
+    readonly shortOverview?: string
+
+    /**
+     * Optional. Filter log entries by activity type.
+     */
+    readonly type?: string
+
+    /**
+     * Optional. Filter logs by Item Id.
+     */
+    readonly itemId?: string
+
+    /**
+     * Optional. Filter log entries by the username parameter.
+     */
+    readonly username?: string
+
+    /**
+     * Optional. Filter log entries by the severity level.
+     */
+    readonly severity?: LogLevel
+
+    /**
+     * Optional. The order in which to sort the returned logs.
+     */
+    readonly sortBy?: Array<ActivityLogSortBy>
+
+    /**
+     * Optional. Sort Order - Ascending,Descending.
+     */
+    readonly sortOrder?: Array<SortOrder>
 }
 
 /**
@@ -166,7 +284,7 @@ export class ActivityLogApi extends BaseAPI {
      * @throws {RequiredError}
      */
     public getLogEntries(requestParameters: ActivityLogApiGetLogEntriesRequest = {}, options?: RawAxiosRequestConfig) {
-        return ActivityLogApiFp(this.configuration).getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.hasUserId, options).then((request) => request(this.axios, this.basePath));
+        return ActivityLogApiFp(this.configuration).getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.maxDate, requestParameters.hasUserId, requestParameters.name, requestParameters.overview, requestParameters.shortOverview, requestParameters.type, requestParameters.itemId, requestParameters.username, requestParameters.severity, requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
