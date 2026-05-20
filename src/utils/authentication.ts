@@ -5,15 +5,17 @@
  */
 import type { ClientInfo, DeviceInfo } from '../models';
 
+import { safeEncodeURIComponent } from './url';
+
 /**
  * Returns a valid authorization header string.
  */
 export function getAuthorizationHeader(clientInfo: ClientInfo, deviceInfo: DeviceInfo, accessToken = ''): string {
 	return [
-		`MediaBrowser Client="${encodeURIComponent(clientInfo.name)}"`,
-		`Device="${encodeURIComponent(deviceInfo.name)}"`,
-		`DeviceId="${encodeURIComponent(deviceInfo.id)}"`,
-		`Version="${encodeURIComponent(clientInfo.version)}"`,
-		`Token="${encodeURIComponent(accessToken)}"`
+		`MediaBrowser Client="${safeEncodeURIComponent(clientInfo.name)}"`,
+		`Device="${safeEncodeURIComponent(deviceInfo.name)}"`,
+		`DeviceId="${safeEncodeURIComponent(deviceInfo.id)}"`,
+		`Version="${safeEncodeURIComponent(clientInfo.version)}"`,
+		`Token="${safeEncodeURIComponent(accessToken)}"`
 	].join(', ');
 }

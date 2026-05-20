@@ -6,7 +6,7 @@
 
 import { describe, it, expect } from 'vitest';
 
-import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl, hasProtocolAndPort, isDefaultPort, buildWebSocketUrl } from '..';
+import { getDefaultPort, HTTP_PORT, HTTPS_PORT, HTTPS_PROTOCOL, HTTP_PROTOCOL, copyUrl, parseUrl, hasProtocolAndPort, isDefaultPort, buildWebSocketUrl, safeEncodeURIComponent } from '..';
 
 /**
  * Url tests.
@@ -138,6 +138,19 @@ describe('Url', () => {
 		it('should return a URL instance', () => {
 			const url = buildWebSocketUrl('http://example.com');
 			expect(url).toBeInstanceOf(URL);
+		});
+	});
+
+	describe('safeEncodeURIComponent()', () => {
+		it('should encode reserved characters', () => {
+			const input = 'foo bar/baz?qux=quux&corge=grault';
+			const expected = 'foo%20bar%2Fbaz%3Fqux%3Dquux%26corge%3Dgrault';
+			expect(safeEncodeURIComponent(input)).toBe(expected);
+		});
+
+		it('should not double encode already encoded components', () => {
+			const input = 'foo%20bar%2Fbaz';
+			expect(safeEncodeURIComponent(input)).toBe(input);
 		});
 	});
 });

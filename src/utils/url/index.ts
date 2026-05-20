@@ -69,8 +69,29 @@ export function parseUrl(input: string): URL {
 	);
 }
 
+/**
+ * Builds a WebSocket URL from an HTTP/HTTPS URL.
+ * @param uri The HTTP/HTTPS URL string.
+ * @returns The WebSocket URL object.
+ */
 export function buildWebSocketUrl(uri: string): URL {
 	return new URL(
 		uri.replace(/^http/, 'ws')
 	);
+}
+
+/**
+ * Safely encodes a URL component, avoiding double encoding if the component is already encoded.
+ * @param component The URL component to encode.
+ * @returns The safely encoded URL component.
+ */
+export function safeEncodeURIComponent(component: string): string {
+	try {
+		const decoded = decodeURIComponent(component);
+		// If the decoded component is different than the original, then the original was encoded, so we return it as is.
+		if (decoded !== component) return component;
+	} catch {
+		// If decoding fails, the component is not properly encoded, so we encode it.
+	}
+	return encodeURIComponent(component);
 }
