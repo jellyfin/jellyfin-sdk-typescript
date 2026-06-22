@@ -99,7 +99,7 @@ export interface NetworkConfiguration {
      */
     'EnablePublishedServerUriByRequest'?: boolean;
     /**
-     * Gets or sets the PublishedServerUriBySubnet  Gets or sets PublishedServerUri to advertise for specific subnets.
+     * Gets or sets the PublishedServerUriBySubnet Gets or sets PublishedServerUri to advertise for specific subnets.
      */
     'PublishedServerUriBySubnet'?: Array<string>;
     /**

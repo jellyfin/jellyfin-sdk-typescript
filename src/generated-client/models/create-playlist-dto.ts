@@ -26,7 +26,7 @@ export interface CreatePlaylistDto {
     /**
      * Gets or sets the name of the new playlist.
      */
-    'Name'?: string;
+    'Name': string;
     /**
      * Gets or sets item ids to add to the playlist.
      */

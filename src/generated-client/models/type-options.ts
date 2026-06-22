@@ -23,5 +23,7 @@ export interface TypeOptions {
     'ImageFetchers'?: Array<string> | null;
     'ImageFetcherOrder'?: Array<string> | null;
     'ImageOptions'?: Array<ImageOption> | null;
+    'SimilarItemProviders'?: Array<string> | null;
+    'SimilarItemProviderOrder'?: Array<string> | null;
 }
 
