@@ -119,11 +119,7 @@ export interface SessionInfoDto {
      */
     'NowPlayingQueue'?: Array<QueueItem> | null;
     /**
-     * Gets or sets the now playing queue full items.
-     */
-    'NowPlayingQueueFullItems'?: Array<BaseItemDto> | null;
-    /**
-     * Gets or sets a value indicating whether the session has a custom device name.
+     * Gets or sets a value indicating whether this session has a custom device name.
      */
     'HasCustomDeviceName'?: boolean;
     /**

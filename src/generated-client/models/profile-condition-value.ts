@@ -39,7 +39,8 @@ export const ProfileConditionValue = {
     AudioSampleRate: 'AudioSampleRate',
     AudioBitDepth: 'AudioBitDepth',
     VideoRangeType: 'VideoRangeType',
-    NumStreams: 'NumStreams'
+    NumStreams: 'NumStreams',
+    VideoRotation: 'VideoRotation'
 } as const;
 
 export type ProfileConditionValue = typeof ProfileConditionValue[keyof typeof ProfileConditionValue];

@@ -27,9 +27,9 @@ import type { BaseItemKind } from '../models';
 // @ts-ignore
 import type { MediaType } from '../models';
 /**
- * SuggestionsApi - axios parameter creator
+ * SuggestionApi - axios parameter creator
  */
-export const SuggestionsApiAxiosParamCreator = function (configuration?: Configuration) {
+export const SuggestionApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -98,10 +98,10 @@ export const SuggestionsApiAxiosParamCreator = function (configuration?: Configu
 };
 
 /**
- * SuggestionsApi - functional programming interface
+ * SuggestionApi - functional programming interface
  */
-export const SuggestionsApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = SuggestionsApiAxiosParamCreator(configuration)
+export const SuggestionApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = SuggestionApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -118,35 +118,35 @@ export const SuggestionsApiFp = function(configuration?: Configuration) {
         async getSuggestions(userId?: string, mediaType?: Array<MediaType>, type?: Array<BaseItemKind>, startIndex?: number, limit?: number, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSuggestions(userId, mediaType, type, startIndex, limit, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SuggestionsApi.getSuggestions']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['SuggestionApi.getSuggestions']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * SuggestionsApi - factory interface
+ * SuggestionApi - factory interface
  */
-export const SuggestionsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = SuggestionsApiFp(configuration)
+export const SuggestionApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = SuggestionApiFp(configuration)
     return {
         /**
          * 
          * @summary Gets suggestions.
-         * @param {SuggestionsApiGetSuggestionsRequest} requestParameters Request parameters.
+         * @param {SuggestionApiGetSuggestionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+        getSuggestions(requestParameters: SuggestionApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getSuggestions operation in SuggestionsApi.
+ * Request parameters for getSuggestions operation in SuggestionApi.
  */
-export interface SuggestionsApiGetSuggestionsRequest {
+export interface SuggestionApiGetSuggestionsRequest {
     /**
      * The user id.
      */
@@ -179,18 +179,18 @@ export interface SuggestionsApiGetSuggestionsRequest {
 }
 
 /**
- * SuggestionsApi - object-oriented interface
+ * SuggestionApi - object-oriented interface
  */
-export class SuggestionsApi extends BaseAPI {
+export class SuggestionApi extends BaseAPI {
     /**
      * 
      * @summary Gets suggestions.
-     * @param {SuggestionsApiGetSuggestionsRequest} requestParameters Request parameters.
+     * @param {SuggestionApiGetSuggestionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getSuggestions(requestParameters: SuggestionsApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig) {
-        return SuggestionsApiFp(this.configuration).getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
+    public getSuggestions(requestParameters: SuggestionApiGetSuggestionsRequest = {}, options?: RawAxiosRequestConfig) {
+        return SuggestionApiFp(this.configuration).getSuggestions(requestParameters.userId, requestParameters.mediaType, requestParameters.type, requestParameters.startIndex, requestParameters.limit, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

@@ -14,15 +14,20 @@
 
 
 /**
- * Media streaming protocol. Lowercase for backwards compatibility.
+ * Activity log sorting options.
  */
 
-export const MediaStreamProtocol = {
-    Http: 'http',
-    Hls: 'hls'
+export const ActivityLogSortBy = {
+    Name: 'Name',
+    Overiew: 'Overiew',
+    ShortOverview: 'ShortOverview',
+    Type: 'Type',
+    DateCreated: 'DateCreated',
+    Username: 'Username',
+    LogSeverity: 'LogSeverity'
 } as const;
 
-export type MediaStreamProtocol = typeof MediaStreamProtocol[keyof typeof MediaStreamProtocol];
+export type ActivityLogSortBy = typeof ActivityLogSortBy[keyof typeof ActivityLogSortBy];
 
 
 
