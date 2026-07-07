@@ -27,9 +27,9 @@ import type { MediaSegmentType } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
 /**
- * MediaSegmentsApi - axios parameter creator
+ * MediaSegmentApi - axios parameter creator
  */
-export const MediaSegmentsApiAxiosParamCreator = function (configuration?: Configuration) {
+export const MediaSegmentApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -77,10 +77,10 @@ export const MediaSegmentsApiAxiosParamCreator = function (configuration?: Confi
 };
 
 /**
- * MediaSegmentsApi - functional programming interface
+ * MediaSegmentApi - functional programming interface
  */
-export const MediaSegmentsApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = MediaSegmentsApiAxiosParamCreator(configuration)
+export const MediaSegmentApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = MediaSegmentApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -93,35 +93,35 @@ export const MediaSegmentsApiFp = function(configuration?: Configuration) {
         async getItemSegments(itemId: string, includeSegmentTypes?: Array<MediaSegmentType>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MediaSegmentDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getItemSegments(itemId, includeSegmentTypes, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['MediaSegmentsApi.getItemSegments']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['MediaSegmentApi.getItemSegments']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * MediaSegmentsApi - factory interface
+ * MediaSegmentApi - factory interface
  */
-export const MediaSegmentsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = MediaSegmentsApiFp(configuration)
+export const MediaSegmentApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = MediaSegmentApiFp(configuration)
     return {
         /**
          * 
          * @summary Gets all media segments based on an itemId.
-         * @param {MediaSegmentsApiGetItemSegmentsRequest} requestParameters Request parameters.
+         * @param {MediaSegmentApiGetItemSegmentsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getItemSegments(requestParameters: MediaSegmentsApiGetItemSegmentsRequest, options?: RawAxiosRequestConfig): AxiosPromise<MediaSegmentDtoQueryResult> {
+        getItemSegments(requestParameters: MediaSegmentApiGetItemSegmentsRequest, options?: RawAxiosRequestConfig): AxiosPromise<MediaSegmentDtoQueryResult> {
             return localVarFp.getItemSegments(requestParameters.itemId, requestParameters.includeSegmentTypes, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getItemSegments operation in MediaSegmentsApi.
+ * Request parameters for getItemSegments operation in MediaSegmentApi.
  */
-export interface MediaSegmentsApiGetItemSegmentsRequest {
+export interface MediaSegmentApiGetItemSegmentsRequest {
     /**
      * The ItemId.
      */
@@ -134,18 +134,18 @@ export interface MediaSegmentsApiGetItemSegmentsRequest {
 }
 
 /**
- * MediaSegmentsApi - object-oriented interface
+ * MediaSegmentApi - object-oriented interface
  */
-export class MediaSegmentsApi extends BaseAPI {
+export class MediaSegmentApi extends BaseAPI {
     /**
      * 
      * @summary Gets all media segments based on an itemId.
-     * @param {MediaSegmentsApiGetItemSegmentsRequest} requestParameters Request parameters.
+     * @param {MediaSegmentApiGetItemSegmentsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getItemSegments(requestParameters: MediaSegmentsApiGetItemSegmentsRequest, options?: RawAxiosRequestConfig) {
-        return MediaSegmentsApiFp(this.configuration).getItemSegments(requestParameters.itemId, requestParameters.includeSegmentTypes, options).then((request) => request(this.axios, this.basePath));
+    public getItemSegments(requestParameters: MediaSegmentApiGetItemSegmentsRequest, options?: RawAxiosRequestConfig) {
+        return MediaSegmentApiFp(this.configuration).getItemSegments(requestParameters.itemId, requestParameters.includeSegmentTypes, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

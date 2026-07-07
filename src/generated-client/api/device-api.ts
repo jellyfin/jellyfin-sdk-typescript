@@ -29,20 +29,18 @@ import type { DeviceOptionsDto } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
 /**
- * DevicesApi - axios parameter creator
+ * DeviceApi - axios parameter creator
  */
-export const DevicesApiAxiosParamCreator = function (configuration?: Configuration) {
+export const DeviceApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
-         * @summary Deletes a device.
-         * @param {string} id Device Id.
+         * @summary Deletes devices.
+         * @param {Array<string>} [id] Device Ids.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteDevice: async (id: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'id' is not null or undefined
-            assertParamExists('deleteDevice', 'id', id)
+        deleteDevice: async (id?: Array<string>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Devices`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -58,7 +56,7 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-            if (id !== undefined) {
+            if (id) {
                 localVarQueryParameter['id'] = id;
             }
 
@@ -240,22 +238,22 @@ export const DevicesApiAxiosParamCreator = function (configuration?: Configurati
 };
 
 /**
- * DevicesApi - functional programming interface
+ * DeviceApi - functional programming interface
  */
-export const DevicesApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = DevicesApiAxiosParamCreator(configuration)
+export const DeviceApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = DeviceApiAxiosParamCreator(configuration)
     return {
         /**
          * 
-         * @summary Deletes a device.
-         * @param {string} id Device Id.
+         * @summary Deletes devices.
+         * @param {Array<string>} [id] Device Ids.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async deleteDevice(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async deleteDevice(id?: Array<string>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.deleteDevice(id, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DevicesApi.deleteDevice']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DeviceApi.deleteDevice']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -268,7 +266,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
         async getDeviceInfo(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDeviceInfo(id, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDeviceInfo']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DeviceApi.getDeviceInfo']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -281,7 +279,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
         async getDeviceOptions(id: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceOptionsDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDeviceOptions(id, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDeviceOptions']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DeviceApi.getDeviceOptions']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -294,7 +292,7 @@ export const DevicesApiFp = function(configuration?: Configuration) {
         async getDevices(userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DeviceInfoDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDevices(userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DevicesApi.getDevices']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DeviceApi.getDevices']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -308,75 +306,85 @@ export const DevicesApiFp = function(configuration?: Configuration) {
         async updateDeviceOptions(id: string, deviceOptionsDto: DeviceOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateDeviceOptions(id, deviceOptionsDto, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DevicesApi.updateDeviceOptions']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DeviceApi.updateDeviceOptions']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * DevicesApi - factory interface
+ * DeviceApi - factory interface
  */
-export const DevicesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = DevicesApiFp(configuration)
+export const DeviceApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = DeviceApiFp(configuration)
     return {
         /**
          * 
-         * @summary Deletes a device.
-         * @param {DevicesApiDeleteDeviceRequest} requestParameters Request parameters.
+         * @summary Deletes devices.
+         * @param {DeviceApiDeleteDeviceRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        deleteDevice(requestParameters: DevicesApiDeleteDeviceRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        deleteDevice(requestParameters: DeviceApiDeleteDeviceRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.deleteDevice(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get info for a device.
-         * @param {DevicesApiGetDeviceInfoRequest} requestParameters Request parameters.
+         * @param {DeviceApiGetDeviceInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDeviceInfo(requestParameters: DevicesApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDto> {
+        getDeviceInfo(requestParameters: DeviceApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDto> {
             return localVarFp.getDeviceInfo(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get options for a device.
-         * @param {DevicesApiGetDeviceOptionsRequest} requestParameters Request parameters.
+         * @param {DeviceApiGetDeviceOptionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDeviceOptions(requestParameters: DevicesApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceOptionsDto> {
+        getDeviceOptions(requestParameters: DeviceApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<DeviceOptionsDto> {
             return localVarFp.getDeviceOptions(requestParameters.id, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get Devices.
-         * @param {DevicesApiGetDevicesRequest} requestParameters Request parameters.
+         * @param {DeviceApiGetDevicesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDtoQueryResult> {
+        getDevices(requestParameters: DeviceApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<DeviceInfoDtoQueryResult> {
             return localVarFp.getDevices(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update device options.
-         * @param {DevicesApiUpdateDeviceOptionsRequest} requestParameters Request parameters.
+         * @param {DeviceApiUpdateDeviceOptionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateDeviceOptions(requestParameters: DevicesApiUpdateDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        updateDeviceOptions(requestParameters: DeviceApiUpdateDeviceOptionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.updateDeviceOptions(requestParameters.id, requestParameters.deviceOptionsDto, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for deleteDevice operation in DevicesApi.
+ * Request parameters for deleteDevice operation in DeviceApi.
  */
-export interface DevicesApiDeleteDeviceRequest {
+export interface DeviceApiDeleteDeviceRequest {
+    /**
+     * Device Ids.
+     */
+    readonly id?: Array<string>
+}
+
+/**
+ * Request parameters for getDeviceInfo operation in DeviceApi.
+ */
+export interface DeviceApiGetDeviceInfoRequest {
     /**
      * Device Id.
      */
@@ -384,9 +392,9 @@ export interface DevicesApiDeleteDeviceRequest {
 }
 
 /**
- * Request parameters for getDeviceInfo operation in DevicesApi.
+ * Request parameters for getDeviceOptions operation in DeviceApi.
  */
-export interface DevicesApiGetDeviceInfoRequest {
+export interface DeviceApiGetDeviceOptionsRequest {
     /**
      * Device Id.
      */
@@ -394,19 +402,9 @@ export interface DevicesApiGetDeviceInfoRequest {
 }
 
 /**
- * Request parameters for getDeviceOptions operation in DevicesApi.
+ * Request parameters for getDevices operation in DeviceApi.
  */
-export interface DevicesApiGetDeviceOptionsRequest {
-    /**
-     * Device Id.
-     */
-    readonly id: string
-}
-
-/**
- * Request parameters for getDevices operation in DevicesApi.
- */
-export interface DevicesApiGetDevicesRequest {
+export interface DeviceApiGetDevicesRequest {
     /**
      * Gets or sets the user identifier.
      */
@@ -414,9 +412,9 @@ export interface DevicesApiGetDevicesRequest {
 }
 
 /**
- * Request parameters for updateDeviceOptions operation in DevicesApi.
+ * Request parameters for updateDeviceOptions operation in DeviceApi.
  */
-export interface DevicesApiUpdateDeviceOptionsRequest {
+export interface DeviceApiUpdateDeviceOptionsRequest {
     /**
      * Device Id.
      */
@@ -429,62 +427,62 @@ export interface DevicesApiUpdateDeviceOptionsRequest {
 }
 
 /**
- * DevicesApi - object-oriented interface
+ * DeviceApi - object-oriented interface
  */
-export class DevicesApi extends BaseAPI {
+export class DeviceApi extends BaseAPI {
     /**
      * 
-     * @summary Deletes a device.
-     * @param {DevicesApiDeleteDeviceRequest} requestParameters Request parameters.
+     * @summary Deletes devices.
+     * @param {DeviceApiDeleteDeviceRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public deleteDevice(requestParameters: DevicesApiDeleteDeviceRequest, options?: RawAxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).deleteDevice(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    public deleteDevice(requestParameters: DeviceApiDeleteDeviceRequest = {}, options?: RawAxiosRequestConfig) {
+        return DeviceApiFp(this.configuration).deleteDevice(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get info for a device.
-     * @param {DevicesApiGetDeviceInfoRequest} requestParameters Request parameters.
+     * @param {DeviceApiGetDeviceInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getDeviceInfo(requestParameters: DevicesApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).getDeviceInfo(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    public getDeviceInfo(requestParameters: DeviceApiGetDeviceInfoRequest, options?: RawAxiosRequestConfig) {
+        return DeviceApiFp(this.configuration).getDeviceInfo(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get options for a device.
-     * @param {DevicesApiGetDeviceOptionsRequest} requestParameters Request parameters.
+     * @param {DeviceApiGetDeviceOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getDeviceOptions(requestParameters: DevicesApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).getDeviceOptions(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
+    public getDeviceOptions(requestParameters: DeviceApiGetDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
+        return DeviceApiFp(this.configuration).getDeviceOptions(requestParameters.id, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get Devices.
-     * @param {DevicesApiGetDevicesRequest} requestParameters Request parameters.
+     * @param {DeviceApiGetDevicesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getDevices(requestParameters: DevicesApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).getDevices(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public getDevices(requestParameters: DeviceApiGetDevicesRequest = {}, options?: RawAxiosRequestConfig) {
+        return DeviceApiFp(this.configuration).getDevices(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update device options.
-     * @param {DevicesApiUpdateDeviceOptionsRequest} requestParameters Request parameters.
+     * @param {DeviceApiUpdateDeviceOptionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public updateDeviceOptions(requestParameters: DevicesApiUpdateDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
-        return DevicesApiFp(this.configuration).updateDeviceOptions(requestParameters.id, requestParameters.deviceOptionsDto, options).then((request) => request(this.axios, this.basePath));
+    public updateDeviceOptions(requestParameters: DeviceApiUpdateDeviceOptionsRequest, options?: RawAxiosRequestConfig) {
+        return DeviceApiFp(this.configuration).updateDeviceOptions(requestParameters.id, requestParameters.deviceOptionsDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

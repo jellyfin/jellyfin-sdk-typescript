@@ -33,9 +33,9 @@ import type { ItemFilter } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
 /**
- * PersonsApi - axios parameter creator
+ * PersonApi - axios parameter creator
  */
-export const PersonsApiAxiosParamCreator = function (configuration?: Configuration) {
+export const PersonApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -82,8 +82,12 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
         /**
          * 
          * @summary Gets all persons.
+         * @param {number} [startIndex] Optional. All items with a lower index will be dropped from the response.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [searchTerm] The search term.
+         * @param {string} [nameStartsWith] Optional. Filter by items whose name starts with the given input string.
+         * @param {string} [nameLessThan] Optional. Filter by items whose name will appear before this value when sorted alphabetically.
+         * @param {string} [nameStartsWithOrGreater] Optional. Filter by items whose name will appear after this value when sorted alphabetically.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not. userId is required.
@@ -92,13 +96,14 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
          * @param {Array<string>} [excludePersonTypes] Optional. If specified results will be filtered to exclude those containing the specified PersonType. Allows multiple, comma-delimited.
          * @param {Array<string>} [personTypes] Optional. If specified results will be filtered to include only those containing the specified PersonType. Allows multiple, comma-delimited.
+         * @param {string} [parentId] Optional. Specify this to localize the search to a specific library. Omit to use the root.
          * @param {string} [appearsInItemId] Optional. If specified, person results will be filtered on items related to said persons.
          * @param {string} [userId] User id.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersons: async (limit?: number, searchTerm?: string, fields?: Array<ItemFields>, filters?: Array<ItemFilter>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludePersonTypes?: Array<string>, personTypes?: Array<string>, appearsInItemId?: string, userId?: string, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getPersons: async (startIndex?: number, limit?: number, searchTerm?: string, nameStartsWith?: string, nameLessThan?: string, nameStartsWithOrGreater?: string, fields?: Array<ItemFields>, filters?: Array<ItemFilter>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludePersonTypes?: Array<string>, personTypes?: Array<string>, parentId?: string, appearsInItemId?: string, userId?: string, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Persons`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -114,12 +119,28 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
+            }
+
             if (limit !== undefined) {
                 localVarQueryParameter['limit'] = limit;
             }
 
             if (searchTerm !== undefined) {
                 localVarQueryParameter['searchTerm'] = searchTerm;
+            }
+
+            if (nameStartsWith !== undefined) {
+                localVarQueryParameter['nameStartsWith'] = nameStartsWith;
+            }
+
+            if (nameLessThan !== undefined) {
+                localVarQueryParameter['nameLessThan'] = nameLessThan;
+            }
+
+            if (nameStartsWithOrGreater !== undefined) {
+                localVarQueryParameter['nameStartsWithOrGreater'] = nameStartsWithOrGreater;
             }
 
             if (fields) {
@@ -154,6 +175,10 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
                 localVarQueryParameter['personTypes'] = personTypes;
             }
 
+            if (parentId !== undefined) {
+                localVarQueryParameter['parentId'] = parentId;
+            }
+
             if (appearsInItemId !== undefined) {
                 localVarQueryParameter['appearsInItemId'] = appearsInItemId;
             }
@@ -181,10 +206,10 @@ export const PersonsApiAxiosParamCreator = function (configuration?: Configurati
 };
 
 /**
- * PersonsApi - functional programming interface
+ * PersonApi - functional programming interface
  */
-export const PersonsApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = PersonsApiAxiosParamCreator(configuration)
+export const PersonApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = PersonApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -197,14 +222,18 @@ export const PersonsApiFp = function(configuration?: Configuration) {
         async getPerson(name: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPerson(name, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['PersonsApi.getPerson']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['PersonApi.getPerson']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
          * @summary Gets all persons.
+         * @param {number} [startIndex] Optional. All items with a lower index will be dropped from the response.
          * @param {number} [limit] Optional. The maximum number of records to return.
          * @param {string} [searchTerm] The search term.
+         * @param {string} [nameStartsWith] Optional. Filter by items whose name starts with the given input string.
+         * @param {string} [nameLessThan] Optional. Filter by items whose name will appear before this value when sorted alphabetically.
+         * @param {string} [nameStartsWithOrGreater] Optional. Filter by items whose name will appear after this value when sorted alphabetically.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not. userId is required.
@@ -213,54 +242,55 @@ export const PersonsApiFp = function(configuration?: Configuration) {
          * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
          * @param {Array<string>} [excludePersonTypes] Optional. If specified results will be filtered to exclude those containing the specified PersonType. Allows multiple, comma-delimited.
          * @param {Array<string>} [personTypes] Optional. If specified results will be filtered to include only those containing the specified PersonType. Allows multiple, comma-delimited.
+         * @param {string} [parentId] Optional. Specify this to localize the search to a specific library. Omit to use the root.
          * @param {string} [appearsInItemId] Optional. If specified, person results will be filtered on items related to said persons.
          * @param {string} [userId] User id.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getPersons(limit?: number, searchTerm?: string, fields?: Array<ItemFields>, filters?: Array<ItemFilter>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludePersonTypes?: Array<string>, personTypes?: Array<string>, appearsInItemId?: string, userId?: string, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getPersons(limit, searchTerm, fields, filters, isFavorite, enableUserData, imageTypeLimit, enableImageTypes, excludePersonTypes, personTypes, appearsInItemId, userId, enableImages, options);
+        async getPersons(startIndex?: number, limit?: number, searchTerm?: string, nameStartsWith?: string, nameLessThan?: string, nameStartsWithOrGreater?: string, fields?: Array<ItemFields>, filters?: Array<ItemFilter>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludePersonTypes?: Array<string>, personTypes?: Array<string>, parentId?: string, appearsInItemId?: string, userId?: string, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getPersons(startIndex, limit, searchTerm, nameStartsWith, nameLessThan, nameStartsWithOrGreater, fields, filters, isFavorite, enableUserData, imageTypeLimit, enableImageTypes, excludePersonTypes, personTypes, parentId, appearsInItemId, userId, enableImages, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['PersonsApi.getPersons']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['PersonApi.getPersons']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * PersonsApi - factory interface
+ * PersonApi - factory interface
  */
-export const PersonsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = PersonsApiFp(configuration)
+export const PersonApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = PersonApiFp(configuration)
     return {
         /**
          * 
          * @summary Get person by name.
-         * @param {PersonsApiGetPersonRequest} requestParameters Request parameters.
+         * @param {PersonApiGetPersonRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPerson(requestParameters: PersonsApiGetPersonRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+        getPerson(requestParameters: PersonApiGetPersonRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
             return localVarFp.getPerson(requestParameters.name, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all persons.
-         * @param {PersonsApiGetPersonsRequest} requestParameters Request parameters.
+         * @param {PersonApiGetPersonsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getPersons(requestParameters: PersonsApiGetPersonsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getPersons(requestParameters.limit, requestParameters.searchTerm, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(axios, basePath));
+        getPersons(requestParameters: PersonApiGetPersonsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getPersons(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.nameStartsWithOrGreater, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.parentId, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getPerson operation in PersonsApi.
+ * Request parameters for getPerson operation in PersonApi.
  */
-export interface PersonsApiGetPersonRequest {
+export interface PersonApiGetPersonRequest {
     /**
      * Person name.
      */
@@ -273,9 +303,14 @@ export interface PersonsApiGetPersonRequest {
 }
 
 /**
- * Request parameters for getPersons operation in PersonsApi.
+ * Request parameters for getPersons operation in PersonApi.
  */
-export interface PersonsApiGetPersonsRequest {
+export interface PersonApiGetPersonsRequest {
+    /**
+     * Optional. All items with a lower index will be dropped from the response.
+     */
+    readonly startIndex?: number
+
     /**
      * Optional. The maximum number of records to return.
      */
@@ -285,6 +320,21 @@ export interface PersonsApiGetPersonsRequest {
      * The search term.
      */
     readonly searchTerm?: string
+
+    /**
+     * Optional. Filter by items whose name starts with the given input string.
+     */
+    readonly nameStartsWith?: string
+
+    /**
+     * Optional. Filter by items whose name will appear before this value when sorted alphabetically.
+     */
+    readonly nameLessThan?: string
+
+    /**
+     * Optional. Filter by items whose name will appear after this value when sorted alphabetically.
+     */
+    readonly nameStartsWithOrGreater?: string
 
     /**
      * Optional. Specify additional fields of information to return in the output.
@@ -327,6 +377,11 @@ export interface PersonsApiGetPersonsRequest {
     readonly personTypes?: Array<string>
 
     /**
+     * Optional. Specify this to localize the search to a specific library. Omit to use the root.
+     */
+    readonly parentId?: string
+
+    /**
      * Optional. If specified, person results will be filtered on items related to said persons.
      */
     readonly appearsInItemId?: string
@@ -343,29 +398,29 @@ export interface PersonsApiGetPersonsRequest {
 }
 
 /**
- * PersonsApi - object-oriented interface
+ * PersonApi - object-oriented interface
  */
-export class PersonsApi extends BaseAPI {
+export class PersonApi extends BaseAPI {
     /**
      * 
      * @summary Get person by name.
-     * @param {PersonsApiGetPersonRequest} requestParameters Request parameters.
+     * @param {PersonApiGetPersonRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getPerson(requestParameters: PersonsApiGetPersonRequest, options?: RawAxiosRequestConfig) {
-        return PersonsApiFp(this.configuration).getPerson(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public getPerson(requestParameters: PersonApiGetPersonRequest, options?: RawAxiosRequestConfig) {
+        return PersonApiFp(this.configuration).getPerson(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets all persons.
-     * @param {PersonsApiGetPersonsRequest} requestParameters Request parameters.
+     * @param {PersonApiGetPersonsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getPersons(requestParameters: PersonsApiGetPersonsRequest = {}, options?: RawAxiosRequestConfig) {
-        return PersonsApiFp(this.configuration).getPersons(requestParameters.limit, requestParameters.searchTerm, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
+    public getPersons(requestParameters: PersonApiGetPersonsRequest = {}, options?: RawAxiosRequestConfig) {
+        return PersonApiFp(this.configuration).getPersons(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.nameStartsWithOrGreater, requestParameters.fields, requestParameters.filters, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludePersonTypes, requestParameters.personTypes, requestParameters.parentId, requestParameters.appearsInItemId, requestParameters.userId, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

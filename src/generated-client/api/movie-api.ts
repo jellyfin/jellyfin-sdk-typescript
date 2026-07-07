@@ -25,9 +25,9 @@ import type { ItemFields } from '../models';
 // @ts-ignore
 import type { RecommendationDto } from '../models';
 /**
- * MoviesApi - axios parameter creator
+ * MovieApi - axios parameter creator
  */
-export const MoviesApiAxiosParamCreator = function (configuration?: Configuration) {
+export const MovieApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -91,10 +91,10 @@ export const MoviesApiAxiosParamCreator = function (configuration?: Configuratio
 };
 
 /**
- * MoviesApi - functional programming interface
+ * MovieApi - functional programming interface
  */
-export const MoviesApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = MoviesApiAxiosParamCreator(configuration)
+export const MovieApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = MovieApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -110,35 +110,35 @@ export const MoviesApiFp = function(configuration?: Configuration) {
         async getMovieRecommendations(userId?: string, parentId?: string, fields?: Array<ItemFields>, categoryLimit?: number, itemLimit?: number, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<RecommendationDto>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getMovieRecommendations(userId, parentId, fields, categoryLimit, itemLimit, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['MoviesApi.getMovieRecommendations']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['MovieApi.getMovieRecommendations']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * MoviesApi - factory interface
+ * MovieApi - factory interface
  */
-export const MoviesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = MoviesApiFp(configuration)
+export const MovieApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = MovieApiFp(configuration)
     return {
         /**
          * 
          * @summary Gets movie recommendations.
-         * @param {MoviesApiGetMovieRecommendationsRequest} requestParameters Request parameters.
+         * @param {MovieApiGetMovieRecommendationsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<RecommendationDto>> {
+        getMovieRecommendations(requestParameters: MovieApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<RecommendationDto>> {
             return localVarFp.getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getMovieRecommendations operation in MoviesApi.
+ * Request parameters for getMovieRecommendations operation in MovieApi.
  */
-export interface MoviesApiGetMovieRecommendationsRequest {
+export interface MovieApiGetMovieRecommendationsRequest {
     /**
      * Optional. Filter by user id, and attach user data.
      */
@@ -166,18 +166,18 @@ export interface MoviesApiGetMovieRecommendationsRequest {
 }
 
 /**
- * MoviesApi - object-oriented interface
+ * MovieApi - object-oriented interface
  */
-export class MoviesApi extends BaseAPI {
+export class MovieApi extends BaseAPI {
     /**
      * 
      * @summary Gets movie recommendations.
-     * @param {MoviesApiGetMovieRecommendationsRequest} requestParameters Request parameters.
+     * @param {MovieApiGetMovieRecommendationsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getMovieRecommendations(requestParameters: MoviesApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig) {
-        return MoviesApiFp(this.configuration).getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(this.axios, this.basePath));
+    public getMovieRecommendations(requestParameters: MovieApiGetMovieRecommendationsRequest = {}, options?: RawAxiosRequestConfig) {
+        return MovieApiFp(this.configuration).getMovieRecommendations(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.categoryLimit, requestParameters.itemLimit, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

@@ -30,28 +30,24 @@ import type { BaseItemKind } from '../models';
 import type { ImageType } from '../models';
 // @ts-ignore
 import type { ItemFields } from '../models';
-// @ts-ignore
-import type { ItemSortBy } from '../models';
-// @ts-ignore
-import type { SortOrder } from '../models';
 /**
- * GenresApi - axios parameter creator
+ * StudioApi - axios parameter creator
  */
-export const GenresApiAxiosParamCreator = function (configuration?: Configuration) {
+export const StudioApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
-         * @summary Gets a genre, by name.
-         * @param {string} genreName The genre name.
-         * @param {string} [userId] The user id.
+         * @summary Gets a studio by name.
+         * @param {string} name Studio name.
+         * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGenre: async (genreName: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'genreName' is not null or undefined
-            assertParamExists('getGenre', 'genreName', genreName)
-            const localVarPath = `/Genres/{genreName}`
-                .replace(`{${"genreName"}}`, encodeURIComponent(String(genreName)));
+        getStudio: async (name: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'name' is not null or undefined
+            assertParamExists('getStudio', 'name', name)
+            const localVarPath = `/Studios/{name}`
+                .replace(`{${"name"}}`, encodeURIComponent(String(name)));
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -83,30 +79,29 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Gets all genres from a given item, folder, or the entire library.
+         * @summary Gets all studios from a given item, folder, or the entire library.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {string} [searchTerm] The search term.
+         * @param {string} [searchTerm] Optional. Search term.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
+         * @param {boolean} [enableUserData] Optional, include user data.
          * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
          * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
          * @param {string} [userId] User id.
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
-         * @param {boolean} [enableTotalRecordCount] Optional. Include total record count.
+         * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGenres: async (startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, isFavorite?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/Genres`;
+        getStudios: async (startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, enableImages?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Studios`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -153,6 +148,10 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
                 localVarQueryParameter['isFavorite'] = isFavorite;
             }
 
+            if (enableUserData !== undefined) {
+                localVarQueryParameter['enableUserData'] = enableUserData;
+            }
+
             if (imageTypeLimit !== undefined) {
                 localVarQueryParameter['imageTypeLimit'] = imageTypeLimit;
             }
@@ -175,14 +174,6 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
 
             if (nameLessThan !== undefined) {
                 localVarQueryParameter['nameLessThan'] = nameLessThan;
-            }
-
-            if (sortBy) {
-                localVarQueryParameter['sortBy'] = sortBy;
-            }
-
-            if (sortOrder) {
-                localVarQueryParameter['sortOrder'] = sortOrder;
             }
 
             if (enableImages !== undefined) {
@@ -208,106 +199,105 @@ export const GenresApiAxiosParamCreator = function (configuration?: Configuratio
 };
 
 /**
- * GenresApi - functional programming interface
+ * StudioApi - functional programming interface
  */
-export const GenresApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = GenresApiAxiosParamCreator(configuration)
+export const StudioApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = StudioApiAxiosParamCreator(configuration)
     return {
         /**
          * 
-         * @summary Gets a genre, by name.
-         * @param {string} genreName The genre name.
-         * @param {string} [userId] The user id.
+         * @summary Gets a studio by name.
+         * @param {string} name Studio name.
+         * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getGenre(genreName: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getGenre(genreName, userId, options);
+        async getStudio(name: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getStudio(name, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['GenresApi.getGenre']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['StudioApi.getStudio']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
-         * @summary Gets all genres from a given item, folder, or the entire library.
+         * @summary Gets all studios from a given item, folder, or the entire library.
          * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
          * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {string} [searchTerm] The search term.
+         * @param {string} [searchTerm] Optional. Search term.
          * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
          * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
          * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered out based on item type. This allows multiple, comma delimited.
-         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
          * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
+         * @param {boolean} [enableUserData] Optional, include user data.
          * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
          * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
          * @param {string} [userId] User id.
          * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
          * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
-         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited.
-         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending,Descending.
          * @param {boolean} [enableImages] Optional, include image information in output.
-         * @param {boolean} [enableTotalRecordCount] Optional. Include total record count.
+         * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getGenres(startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, isFavorite?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getGenres(startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, isFavorite, imageTypeLimit, enableImageTypes, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options);
+        async getStudios(startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, isFavorite?: boolean, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getStudios(startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, isFavorite, enableUserData, imageTypeLimit, enableImageTypes, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, enableImages, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['GenresApi.getGenres']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['StudioApi.getStudios']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * GenresApi - factory interface
+ * StudioApi - factory interface
  */
-export const GenresApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = GenresApiFp(configuration)
+export const StudioApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = StudioApiFp(configuration)
     return {
         /**
          * 
-         * @summary Gets a genre, by name.
-         * @param {GenresApiGetGenreRequest} requestParameters Request parameters.
+         * @summary Gets a studio by name.
+         * @param {StudioApiGetStudioRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGenre(requestParameters: GenresApiGetGenreRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
-            return localVarFp.getGenre(requestParameters.genreName, requestParameters.userId, options).then((request) => request(axios, basePath));
+        getStudio(requestParameters: StudioApiGetStudioRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getStudio(requestParameters.name, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
-         * @summary Gets all genres from a given item, folder, or the entire library.
-         * @param {GenresApiGetGenresRequest} requestParameters Request parameters.
+         * @summary Gets all studios from a given item, folder, or the entire library.
+         * @param {StudioApiGetStudiosRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getGenres(requestParameters: GenresApiGetGenresRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getGenres(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
+        getStudios(requestParameters: StudioApiGetStudiosRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getStudios(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getGenre operation in GenresApi.
+ * Request parameters for getStudio operation in StudioApi.
  */
-export interface GenresApiGetGenreRequest {
+export interface StudioApiGetStudioRequest {
     /**
-     * The genre name.
+     * Studio name.
      */
-    readonly genreName: string
+    readonly name: string
 
     /**
-     * The user id.
+     * Optional. Filter by user id, and attach user data.
      */
     readonly userId?: string
 }
 
 /**
- * Request parameters for getGenres operation in GenresApi.
+ * Request parameters for getStudios operation in StudioApi.
  */
-export interface GenresApiGetGenresRequest {
+export interface StudioApiGetStudiosRequest {
     /**
      * Optional. The record index to start at. All items with a lower index will be dropped from the results.
      */
@@ -319,7 +309,7 @@ export interface GenresApiGetGenresRequest {
     readonly limit?: number
 
     /**
-     * The search term.
+     * Optional. Search term.
      */
     readonly searchTerm?: string
 
@@ -339,7 +329,7 @@ export interface GenresApiGetGenresRequest {
     readonly excludeItemTypes?: Array<BaseItemKind>
 
     /**
-     * Optional. If specified, results will be filtered in based on item type. This allows multiple, comma delimited.
+     * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
      */
     readonly includeItemTypes?: Array<BaseItemKind>
 
@@ -347,6 +337,11 @@ export interface GenresApiGetGenresRequest {
      * Optional filter by items that are marked as favorite, or not.
      */
     readonly isFavorite?: boolean
+
+    /**
+     * Optional, include user data.
+     */
+    readonly enableUserData?: boolean
 
     /**
      * Optional, the max number of images to return, per image type.
@@ -379,50 +374,40 @@ export interface GenresApiGetGenresRequest {
     readonly nameLessThan?: string
 
     /**
-     * Optional. Specify one or more sort orders, comma delimited.
-     */
-    readonly sortBy?: Array<ItemSortBy>
-
-    /**
-     * Sort Order - Ascending,Descending.
-     */
-    readonly sortOrder?: Array<SortOrder>
-
-    /**
      * Optional, include image information in output.
      */
     readonly enableImages?: boolean
 
     /**
-     * Optional. Include total record count.
+     * Total record count.
      */
     readonly enableTotalRecordCount?: boolean
 }
 
 /**
- * GenresApi - object-oriented interface
+ * StudioApi - object-oriented interface
  */
-export class GenresApi extends BaseAPI {
+export class StudioApi extends BaseAPI {
     /**
      * 
-     * @summary Gets a genre, by name.
-     * @param {GenresApiGetGenreRequest} requestParameters Request parameters.
+     * @summary Gets a studio by name.
+     * @param {StudioApiGetStudioRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getGenre(requestParameters: GenresApiGetGenreRequest, options?: RawAxiosRequestConfig) {
-        return GenresApiFp(this.configuration).getGenre(requestParameters.genreName, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public getStudio(requestParameters: StudioApiGetStudioRequest, options?: RawAxiosRequestConfig) {
+        return StudioApiFp(this.configuration).getStudio(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
-     * @summary Gets all genres from a given item, folder, or the entire library.
-     * @param {GenresApiGetGenresRequest} requestParameters Request parameters.
+     * @summary Gets all studios from a given item, folder, or the entire library.
+     * @param {StudioApiGetStudiosRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getGenres(requestParameters: GenresApiGetGenresRequest = {}, options?: RawAxiosRequestConfig) {
-        return GenresApiFp(this.configuration).getGenres(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
+    public getStudios(requestParameters: StudioApiGetStudiosRequest = {}, options?: RawAxiosRequestConfig) {
+        return StudioApiFp(this.configuration).getStudios(requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.isFavorite, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

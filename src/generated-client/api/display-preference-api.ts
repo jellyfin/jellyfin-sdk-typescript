@@ -23,9 +23,9 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 // @ts-ignore
 import type { DisplayPreferencesDto } from '../models';
 /**
- * DisplayPreferencesApi - axios parameter creator
+ * DisplayPreferenceApi - axios parameter creator
  */
-export const DisplayPreferencesApiAxiosParamCreator = function (configuration?: Configuration) {
+export const DisplayPreferenceApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -134,10 +134,10 @@ export const DisplayPreferencesApiAxiosParamCreator = function (configuration?: 
 };
 
 /**
- * DisplayPreferencesApi - functional programming interface
+ * DisplayPreferenceApi - functional programming interface
  */
-export const DisplayPreferencesApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = DisplayPreferencesApiAxiosParamCreator(configuration)
+export const DisplayPreferenceApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = DisplayPreferenceApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -151,7 +151,7 @@ export const DisplayPreferencesApiFp = function(configuration?: Configuration) {
         async getDisplayPreferences(displayPreferencesId: string, client: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<DisplayPreferencesDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getDisplayPreferences(displayPreferencesId, client, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DisplayPreferencesApi.getDisplayPreferences']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DisplayPreferenceApi.getDisplayPreferences']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -167,45 +167,45 @@ export const DisplayPreferencesApiFp = function(configuration?: Configuration) {
         async updateDisplayPreferences(displayPreferencesId: string, client: string, displayPreferencesDto: DisplayPreferencesDto, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateDisplayPreferences(displayPreferencesId, client, displayPreferencesDto, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['DisplayPreferencesApi.updateDisplayPreferences']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['DisplayPreferenceApi.updateDisplayPreferences']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * DisplayPreferencesApi - factory interface
+ * DisplayPreferenceApi - factory interface
  */
-export const DisplayPreferencesApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = DisplayPreferencesApiFp(configuration)
+export const DisplayPreferenceApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = DisplayPreferenceApiFp(configuration)
     return {
         /**
          * 
          * @summary Get Display Preferences.
-         * @param {DisplayPreferencesApiGetDisplayPreferencesRequest} requestParameters Request parameters.
+         * @param {DisplayPreferenceApiGetDisplayPreferencesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getDisplayPreferences(requestParameters: DisplayPreferencesApiGetDisplayPreferencesRequest, options?: RawAxiosRequestConfig): AxiosPromise<DisplayPreferencesDto> {
+        getDisplayPreferences(requestParameters: DisplayPreferenceApiGetDisplayPreferencesRequest, options?: RawAxiosRequestConfig): AxiosPromise<DisplayPreferencesDto> {
             return localVarFp.getDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update Display Preferences.
-         * @param {DisplayPreferencesApiUpdateDisplayPreferencesRequest} requestParameters Request parameters.
+         * @param {DisplayPreferenceApiUpdateDisplayPreferencesRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateDisplayPreferences(requestParameters: DisplayPreferencesApiUpdateDisplayPreferencesRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        updateDisplayPreferences(requestParameters: DisplayPreferenceApiUpdateDisplayPreferencesRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.updateDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.displayPreferencesDto, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getDisplayPreferences operation in DisplayPreferencesApi.
+ * Request parameters for getDisplayPreferences operation in DisplayPreferenceApi.
  */
-export interface DisplayPreferencesApiGetDisplayPreferencesRequest {
+export interface DisplayPreferenceApiGetDisplayPreferencesRequest {
     /**
      * Display preferences id.
      */
@@ -223,9 +223,9 @@ export interface DisplayPreferencesApiGetDisplayPreferencesRequest {
 }
 
 /**
- * Request parameters for updateDisplayPreferences operation in DisplayPreferencesApi.
+ * Request parameters for updateDisplayPreferences operation in DisplayPreferenceApi.
  */
-export interface DisplayPreferencesApiUpdateDisplayPreferencesRequest {
+export interface DisplayPreferenceApiUpdateDisplayPreferencesRequest {
     /**
      * Display preferences id.
      */
@@ -248,29 +248,29 @@ export interface DisplayPreferencesApiUpdateDisplayPreferencesRequest {
 }
 
 /**
- * DisplayPreferencesApi - object-oriented interface
+ * DisplayPreferenceApi - object-oriented interface
  */
-export class DisplayPreferencesApi extends BaseAPI {
+export class DisplayPreferenceApi extends BaseAPI {
     /**
      * 
      * @summary Get Display Preferences.
-     * @param {DisplayPreferencesApiGetDisplayPreferencesRequest} requestParameters Request parameters.
+     * @param {DisplayPreferenceApiGetDisplayPreferencesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getDisplayPreferences(requestParameters: DisplayPreferencesApiGetDisplayPreferencesRequest, options?: RawAxiosRequestConfig) {
-        return DisplayPreferencesApiFp(this.configuration).getDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public getDisplayPreferences(requestParameters: DisplayPreferenceApiGetDisplayPreferencesRequest, options?: RawAxiosRequestConfig) {
+        return DisplayPreferenceApiFp(this.configuration).getDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update Display Preferences.
-     * @param {DisplayPreferencesApiUpdateDisplayPreferencesRequest} requestParameters Request parameters.
+     * @param {DisplayPreferenceApiUpdateDisplayPreferencesRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public updateDisplayPreferences(requestParameters: DisplayPreferencesApiUpdateDisplayPreferencesRequest, options?: RawAxiosRequestConfig) {
-        return DisplayPreferencesApiFp(this.configuration).updateDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.displayPreferencesDto, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public updateDisplayPreferences(requestParameters: DisplayPreferenceApiUpdateDisplayPreferencesRequest, options?: RawAxiosRequestConfig) {
+        return DisplayPreferenceApiFp(this.configuration).updateDisplayPreferences(requestParameters.displayPreferencesId, requestParameters.client, requestParameters.displayPreferencesDto, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

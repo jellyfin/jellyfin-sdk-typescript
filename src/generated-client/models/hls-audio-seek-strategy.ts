@@ -13,13 +13,16 @@
 
 
 
-export interface ConfigImageTypes {
-    'BackdropSizes'?: Array<string> | null;
-    'BaseUrl'?: string | null;
-    'LogoSizes'?: Array<string> | null;
-    'PosterSizes'?: Array<string> | null;
-    'ProfileSizes'?: Array<string> | null;
-    'SecureBaseUrl'?: string | null;
-    'StillSizes'?: Array<string> | null;
-}
+/**
+ * An enum representing the options to seek the input audio stream when transcoding HLS segments.
+ */
+
+export const HlsAudioSeekStrategy = {
+    TrimCopiedAudio: 'TrimCopiedAudio',
+    TranscodeAudio: 'TranscodeAudio'
+} as const;
+
+export type HlsAudioSeekStrategy = typeof HlsAudioSeekStrategy[keyof typeof HlsAudioSeekStrategy];
+
+
 

@@ -33,9 +33,13 @@ import type { MediaType } from '../models';
 // @ts-ignore
 import type { MessageCommand } from '../models';
 // @ts-ignore
-import type { NameIdPair } from '../models';
-// @ts-ignore
 import type { PlayCommand } from '../models';
+// @ts-ignore
+import type { PlaybackProgressInfo } from '../models';
+// @ts-ignore
+import type { PlaybackStartInfo } from '../models';
+// @ts-ignore
+import type { PlaybackStopInfo } from '../models';
 // @ts-ignore
 import type { PlaystateCommand } from '../models';
 // @ts-ignore
@@ -146,72 +150,6 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
-         * @summary Get all auth providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getAuthProviders: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/Auth/Providers`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
-         * @summary Get all password reset providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getPasswordResetProviders: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/Auth/PasswordResetProviders`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Gets a list of sessions.
          * @param {string} [controllableByUserId] Filter by sessions that a given user is allowed to remote control.
          * @param {string} [deviceId] Filter by device Id.
@@ -248,6 +186,46 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {string} playSessionId Playback session id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        pingPlaybackSession: async (playSessionId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'playSessionId' is not null or undefined
+            assertParamExists('pingPlaybackSession', 'playSessionId', playSessionId)
+            const localVarPath = `/Sessions/Playing/Ping`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (playSessionId !== undefined) {
+                localVarQueryParameter['playSessionId'] = playSessionId;
+            }
+
+            localVarHeaderParameter['Accept'] = 'text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -470,6 +448,114 @@ export const SessionApiAxiosParamCreator = function (configuration?: Configurati
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackProgress: async (playbackProgressInfo?: PlaybackProgressInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing/Progress`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackProgressInfo, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStart: async (playbackStartInfo?: PlaybackStartInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStartInfo, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStopped: async (playbackStopInfo?: PlaybackStopInfo, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Sessions/Playing/Stopped`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(playbackStopInfo, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -812,30 +898,6 @@ export const SessionApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Get all auth providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async getAuthProviders(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getAuthProviders(options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SessionApi.getAuthProviders']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
-         * @summary Get all password reset providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        async getPasswordResetProviders(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<NameIdPair>>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getPasswordResetProviders(options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SessionApi.getPasswordResetProviders']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary Gets a list of sessions.
          * @param {string} [controllableByUserId] Filter by sessions that a given user is allowed to remote control.
          * @param {string} [deviceId] Filter by device Id.
@@ -847,6 +909,19 @@ export const SessionApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSessions(controllableByUserId, deviceId, activeWithinSeconds, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SessionApi.getSessions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {string} playSessionId Playback session id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async pingPlaybackSession(playSessionId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.pingPlaybackSession(playSessionId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.pingPlaybackSession']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -912,6 +987,45 @@ export const SessionApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.removeUserFromSession(sessionId, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SessionApi.removeUserFromSession']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {PlaybackProgressInfo} [playbackProgressInfo] The playback progress info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackProgress(playbackProgressInfo?: PlaybackProgressInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackProgress(playbackProgressInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackProgress']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {PlaybackStartInfo} [playbackStartInfo] The playback start info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackStart(playbackStartInfo?: PlaybackStartInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStart(playbackStartInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackStart']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {PlaybackStopInfo} [playbackStopInfo] The playback stop info.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async reportPlaybackStopped(playbackStopInfo?: PlaybackStopInfo, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.reportPlaybackStopped(playbackStopInfo, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SessionApi.reportPlaybackStopped']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -1043,24 +1157,6 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
-         * @summary Get all auth providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getAuthProviders(options?: RawAxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
-            return localVarFp.getAuthProviders(options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @summary Get all password reset providers.
-         * @param {*} [options] Override http request option.
-         * @throws {RequiredError}
-         */
-        getPasswordResetProviders(options?: RawAxiosRequestConfig): AxiosPromise<Array<NameIdPair>> {
-            return localVarFp.getPasswordResetProviders(options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
          * @summary Gets a list of sessions.
          * @param {SessionApiGetSessionsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1068,6 +1164,16 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          */
         getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<SessionInfoDto>> {
             return localVarFp.getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Pings a playback session.
+         * @param {SessionApiPingPlaybackSessionRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        pingPlaybackSession(requestParameters: SessionApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1108,6 +1214,36 @@ export const SessionApiFactory = function (configuration?: Configuration, basePa
          */
         removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback progress within a session.
+         * @param {SessionApiReportPlaybackProgressRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackProgress(requestParameters: SessionApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback has started within a session.
+         * @param {SessionApiReportPlaybackStartRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStart(requestParameters: SessionApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Reports playback has stopped within a session.
+         * @param {SessionApiReportPlaybackStoppedRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        reportPlaybackStopped(requestParameters: SessionApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1242,6 +1378,16 @@ export interface SessionApiGetSessionsRequest {
 }
 
 /**
+ * Request parameters for pingPlaybackSession operation in SessionApi.
+ */
+export interface SessionApiPingPlaybackSessionRequest {
+    /**
+     * Playback session id.
+     */
+    readonly playSessionId: string
+}
+
+/**
  * Request parameters for play operation in SessionApi.
  */
 export interface SessionApiPlayRequest {
@@ -1344,6 +1490,36 @@ export interface SessionApiRemoveUserFromSessionRequest {
      * The user id.
      */
     readonly userId: string
+}
+
+/**
+ * Request parameters for reportPlaybackProgress operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackProgressRequest {
+    /**
+     * The playback progress info.
+     */
+    readonly playbackProgressInfo?: PlaybackProgressInfo
+}
+
+/**
+ * Request parameters for reportPlaybackStart operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackStartRequest {
+    /**
+     * The playback start info.
+     */
+    readonly playbackStartInfo?: PlaybackStartInfo
+}
+
+/**
+ * Request parameters for reportPlaybackStopped operation in SessionApi.
+ */
+export interface SessionApiReportPlaybackStoppedRequest {
+    /**
+     * The playback stop info.
+     */
+    readonly playbackStopInfo?: PlaybackStopInfo
 }
 
 /**
@@ -1474,26 +1650,6 @@ export class SessionApi extends BaseAPI {
 
     /**
      * 
-     * @summary Get all auth providers.
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    public getAuthProviders(options?: RawAxiosRequestConfig) {
-        return SessionApiFp(this.configuration).getAuthProviders(options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Get all password reset providers.
-     * @param {*} [options] Override http request option.
-     * @throws {RequiredError}
-     */
-    public getPasswordResetProviders(options?: RawAxiosRequestConfig) {
-        return SessionApiFp(this.configuration).getPasswordResetProviders(options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
      * @summary Gets a list of sessions.
      * @param {SessionApiGetSessionsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -1501,6 +1657,17 @@ export class SessionApi extends BaseAPI {
      */
     public getSessions(requestParameters: SessionApiGetSessionsRequest = {}, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).getSessions(requestParameters.controllableByUserId, requestParameters.deviceId, requestParameters.activeWithinSeconds, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Pings a playback session.
+     * @param {SessionApiPingPlaybackSessionRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public pingPlaybackSession(requestParameters: SessionApiPingPlaybackSessionRequest, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).pingPlaybackSession(requestParameters.playSessionId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1545,6 +1712,39 @@ export class SessionApi extends BaseAPI {
      */
     public removeUserFromSession(requestParameters: SessionApiRemoveUserFromSessionRequest, options?: RawAxiosRequestConfig) {
         return SessionApiFp(this.configuration).removeUserFromSession(requestParameters.sessionId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback progress within a session.
+     * @param {SessionApiReportPlaybackProgressRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackProgress(requestParameters: SessionApiReportPlaybackProgressRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackProgress(requestParameters.playbackProgressInfo, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback has started within a session.
+     * @param {SessionApiReportPlaybackStartRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackStart(requestParameters: SessionApiReportPlaybackStartRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackStart(requestParameters.playbackStartInfo, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Reports playback has stopped within a session.
+     * @param {SessionApiReportPlaybackStoppedRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public reportPlaybackStopped(requestParameters: SessionApiReportPlaybackStoppedRequest = {}, options?: RawAxiosRequestConfig) {
+        return SessionApiFp(this.configuration).reportPlaybackStopped(requestParameters.playbackStopInfo, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

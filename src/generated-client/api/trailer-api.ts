@@ -43,9 +43,9 @@ import type { SortOrder } from '../models';
 // @ts-ignore
 import type { VideoType } from '../models';
 /**
- * TrailersApi - axios parameter creator
+ * TrailerApi - axios parameter creator
  */
-export const TrailersApiAxiosParamCreator = function (configuration?: Configuration) {
+export const TrailerApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -132,12 +132,15 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
          * @param {Array<string>} [studioIds] Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [audioLanguages] Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+         * @param {Array<string>} [subtitleLanguages] Optional. If specified, results will be filtered based on subtitale language. This allows multiple, comma delimited values.
          * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        getTrailers: async (userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+        getTrailers: async (userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, audioLanguages?: Array<string>, subtitleLanguages?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/Trailers`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -489,6 +492,14 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
                 localVarQueryParameter['genreIds'] = genreIds;
             }
 
+            if (audioLanguages) {
+                localVarQueryParameter['audioLanguages'] = audioLanguages;
+            }
+
+            if (subtitleLanguages) {
+                localVarQueryParameter['subtitleLanguages'] = subtitleLanguages;
+            }
+
             if (enableTotalRecordCount !== undefined) {
                 localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
             }
@@ -512,10 +523,10 @@ export const TrailersApiAxiosParamCreator = function (configuration?: Configurat
 };
 
 /**
- * TrailersApi - functional programming interface
+ * TrailerApi - functional programming interface
  */
-export const TrailersApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = TrailersApiAxiosParamCreator(configuration)
+export const TrailerApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = TrailerApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -602,43 +613,47 @@ export const TrailersApiFp = function(configuration?: Configuration) {
          * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
          * @param {Array<string>} [studioIds] Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
          * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [audioLanguages] Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+         * @param {Array<string>} [subtitleLanguages] Optional. If specified, results will be filtered based on subtitale language. This allows multiple, comma delimited values.
          * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        async getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getTrailers(userId, maxOfficialRating, hasThemeSong, hasThemeVideo, hasSubtitles, hasSpecialFeature, hasTrailer, adjacentTo, parentIndexNumber, hasParentalRating, isHd, is4K, locationTypes, excludeLocationTypes, isMissing, isUnaired, minCommunityRating, minCriticRating, minPremiereDate, minDateLastSaved, minDateLastSavedForUser, maxPremiereDate, hasOverview, hasImdbId, hasTmdbId, hasTvdbId, isMovie, isSeries, isNews, isKids, isSports, excludeItemIds, startIndex, limit, recursive, searchTerm, sortOrder, parentId, fields, excludeItemTypes, filters, isFavorite, mediaTypes, imageTypes, sortBy, isPlayed, genres, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, artists, excludeArtistIds, artistIds, albumArtistIds, contributingArtistIds, albums, albumIds, ids, videoTypes, minOfficialRating, isLocked, isPlaceHolder, hasOfficialRating, collapseBoxSetItems, minWidth, minHeight, maxWidth, maxHeight, is3D, seriesStatus, nameStartsWithOrGreater, nameStartsWith, nameLessThan, studioIds, genreIds, enableTotalRecordCount, enableImages, options);
+        async getTrailers(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, audioLanguages?: Array<string>, subtitleLanguages?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getTrailers(userId, maxOfficialRating, hasThemeSong, hasThemeVideo, hasSubtitles, hasSpecialFeature, hasTrailer, adjacentTo, parentIndexNumber, hasParentalRating, isHd, is4K, locationTypes, excludeLocationTypes, isMissing, isUnaired, minCommunityRating, minCriticRating, minPremiereDate, minDateLastSaved, minDateLastSavedForUser, maxPremiereDate, hasOverview, hasImdbId, hasTmdbId, hasTvdbId, isMovie, isSeries, isNews, isKids, isSports, excludeItemIds, startIndex, limit, recursive, searchTerm, sortOrder, parentId, fields, excludeItemTypes, filters, isFavorite, mediaTypes, imageTypes, sortBy, isPlayed, genres, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, artists, excludeArtistIds, artistIds, albumArtistIds, contributingArtistIds, albums, albumIds, ids, videoTypes, minOfficialRating, isLocked, isPlaceHolder, hasOfficialRating, collapseBoxSetItems, minWidth, minHeight, maxWidth, maxHeight, is3D, seriesStatus, nameStartsWithOrGreater, nameStartsWith, nameLessThan, studioIds, genreIds, audioLanguages, subtitleLanguages, enableTotalRecordCount, enableImages, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['TrailersApi.getTrailers']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['TrailerApi.getTrailers']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * TrailersApi - factory interface
+ * TrailerApi - factory interface
  */
-export const TrailersApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = TrailersApiFp(configuration)
+export const TrailerApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = TrailerApiFp(configuration)
     return {
         /**
          * 
          * @summary Finds movies and trailers similar to a given trailer.
-         * @param {TrailersApiGetTrailersRequest} requestParameters Request parameters.
+         * @param {TrailerApiGetTrailersRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        getTrailers(requestParameters: TrailersApiGetTrailersRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getTrailers(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(axios, basePath));
+        getTrailers(requestParameters: TrailerApiGetTrailersRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getTrailers(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.audioLanguages, requestParameters.subtitleLanguages, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getTrailers operation in TrailersApi.
+ * Request parameters for getTrailers operation in TrailerApi.
  */
-export interface TrailersApiGetTrailersRequest {
+export interface TrailerApiGetTrailersRequest {
     /**
      * The user id supplied as query parameter; this is required when not using an API key.
      */
@@ -1050,6 +1065,16 @@ export interface TrailersApiGetTrailersRequest {
     readonly genreIds?: Array<string>
 
     /**
+     * Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+     */
+    readonly audioLanguages?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on subtitale language. This allows multiple, comma delimited values.
+     */
+    readonly subtitleLanguages?: Array<string>
+
+    /**
      * Optional. Enable the total record count.
      */
     readonly enableTotalRecordCount?: boolean
@@ -1061,18 +1086,19 @@ export interface TrailersApiGetTrailersRequest {
 }
 
 /**
- * TrailersApi - object-oriented interface
+ * TrailerApi - object-oriented interface
  */
-export class TrailersApi extends BaseAPI {
+export class TrailerApi extends BaseAPI {
     /**
      * 
      * @summary Finds movies and trailers similar to a given trailer.
-     * @param {TrailersApiGetTrailersRequest} requestParameters Request parameters.
+     * @param {TrailerApiGetTrailersRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
-    public getTrailers(requestParameters: TrailersApiGetTrailersRequest = {}, options?: RawAxiosRequestConfig) {
-        return TrailersApiFp(this.configuration).getTrailers(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
+    public getTrailers(requestParameters: TrailerApiGetTrailersRequest = {}, options?: RawAxiosRequestConfig) {
+        return TrailerApiFp(this.configuration).getTrailers(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.audioLanguages, requestParameters.subtitleLanguages, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

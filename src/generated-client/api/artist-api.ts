@@ -39,9 +39,9 @@ import type { MediaType } from '../models';
 // @ts-ignore
 import type { SortOrder } from '../models';
 /**
- * ArtistsApi - axios parameter creator
+ * ArtistApi - axios parameter creator
  */
-export const ArtistsApiAxiosParamCreator = function (configuration?: Configuration) {
+export const ArtistApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -79,6 +79,7 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getAlbumArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -242,6 +243,7 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {string} name Studio name.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getArtistByName: async (name: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -314,6 +316,7 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getArtists: async (minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -475,10 +478,10 @@ export const ArtistsApiAxiosParamCreator = function (configuration?: Configurati
 };
 
 /**
- * ArtistsApi - functional programming interface
+ * ArtistApi - functional programming interface
  */
-export const ArtistsApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = ArtistsApiAxiosParamCreator(configuration)
+export const ArtistApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = ArtistApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -516,12 +519,13 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getAlbumArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getAlbumArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ArtistsApi.getAlbumArtists']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ArtistApi.getAlbumArtists']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -530,12 +534,13 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {string} name Studio name.
          * @param {string} [userId] Optional. Filter by user id, and attach user data.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getArtistByName(name: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getArtistByName(name, userId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ArtistsApi.getArtistByName']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ArtistApi.getArtistByName']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -574,60 +579,64 @@ export const ArtistsApiFp = function(configuration?: Configuration) {
          * @param {boolean} [enableImages] Optional, include image information in output.
          * @param {boolean} [enableTotalRecordCount] Total record count.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getArtists(minCommunityRating?: number, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, genres?: Array<string>, genreIds?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, studioIds?: Array<string>, userId?: string, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, sortBy?: Array<ItemSortBy>, sortOrder?: Array<SortOrder>, enableImages?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getArtists(minCommunityRating, startIndex, limit, searchTerm, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, genres, genreIds, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, studioIds, userId, nameStartsWithOrGreater, nameStartsWith, nameLessThan, sortBy, sortOrder, enableImages, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ArtistsApi.getArtists']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ArtistApi.getArtists']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * ArtistsApi - factory interface
+ * ArtistApi - factory interface
  */
-export const ArtistsApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = ArtistsApiFp(configuration)
+export const ArtistApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = ArtistApiFp(configuration)
     return {
         /**
          * 
          * @summary Gets all album artists from a given item, folder, or the entire library.
-         * @param {ArtistsApiGetAlbumArtistsRequest} requestParameters Request parameters.
+         * @param {ArtistApiGetAlbumArtistsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        getAlbumArtists(requestParameters: ArtistsApiGetAlbumArtistsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+        getAlbumArtists(requestParameters: ArtistApiGetAlbumArtistsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getAlbumArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets an artist by name.
-         * @param {ArtistsApiGetArtistByNameRequest} requestParameters Request parameters.
+         * @param {ArtistApiGetArtistByNameRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        getArtistByName(requestParameters: ArtistsApiGetArtistByNameRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+        getArtistByName(requestParameters: ArtistApiGetArtistByNameRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
             return localVarFp.getArtistByName(requestParameters.name, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Gets all artists from a given item, folder, or the entire library.
-         * @param {ArtistsApiGetArtistsRequest} requestParameters Request parameters.
+         * @param {ArtistApiGetArtistsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
-        getArtists(requestParameters: ArtistsApiGetArtistsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+        getArtists(requestParameters: ArtistApiGetArtistsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getAlbumArtists operation in ArtistsApi.
+ * Request parameters for getAlbumArtists operation in ArtistApi.
  */
-export interface ArtistsApiGetAlbumArtistsRequest {
+export interface ArtistApiGetAlbumArtistsRequest {
     /**
      * Optional filter by minimum community rating.
      */
@@ -790,9 +799,9 @@ export interface ArtistsApiGetAlbumArtistsRequest {
 }
 
 /**
- * Request parameters for getArtistByName operation in ArtistsApi.
+ * Request parameters for getArtistByName operation in ArtistApi.
  */
-export interface ArtistsApiGetArtistByNameRequest {
+export interface ArtistApiGetArtistByNameRequest {
     /**
      * Studio name.
      */
@@ -805,9 +814,9 @@ export interface ArtistsApiGetArtistByNameRequest {
 }
 
 /**
- * Request parameters for getArtists operation in ArtistsApi.
+ * Request parameters for getArtists operation in ArtistApi.
  */
-export interface ArtistsApiGetArtistsRequest {
+export interface ArtistApiGetArtistsRequest {
     /**
      * Optional filter by minimum community rating.
      */
@@ -970,40 +979,43 @@ export interface ArtistsApiGetArtistsRequest {
 }
 
 /**
- * ArtistsApi - object-oriented interface
+ * ArtistApi - object-oriented interface
  */
-export class ArtistsApi extends BaseAPI {
+export class ArtistApi extends BaseAPI {
     /**
      * 
      * @summary Gets all album artists from a given item, folder, or the entire library.
-     * @param {ArtistsApiGetAlbumArtistsRequest} requestParameters Request parameters.
+     * @param {ArtistApiGetAlbumArtistsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
-    public getAlbumArtists(requestParameters: ArtistsApiGetAlbumArtistsRequest = {}, options?: RawAxiosRequestConfig) {
-        return ArtistsApiFp(this.configuration).getAlbumArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
+    public getAlbumArtists(requestParameters: ArtistApiGetAlbumArtistsRequest = {}, options?: RawAxiosRequestConfig) {
+        return ArtistApiFp(this.configuration).getAlbumArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets an artist by name.
-     * @param {ArtistsApiGetArtistByNameRequest} requestParameters Request parameters.
+     * @param {ArtistApiGetArtistByNameRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
-    public getArtistByName(requestParameters: ArtistsApiGetArtistByNameRequest, options?: RawAxiosRequestConfig) {
-        return ArtistsApiFp(this.configuration).getArtistByName(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    public getArtistByName(requestParameters: ArtistApiGetArtistByNameRequest, options?: RawAxiosRequestConfig) {
+        return ArtistApiFp(this.configuration).getArtistByName(requestParameters.name, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Gets all artists from a given item, folder, or the entire library.
-     * @param {ArtistsApiGetArtistsRequest} requestParameters Request parameters.
+     * @param {ArtistApiGetArtistsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
-    public getArtists(requestParameters: ArtistsApiGetArtistsRequest = {}, options?: RawAxiosRequestConfig) {
-        return ArtistsApiFp(this.configuration).getArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
+    public getArtists(requestParameters: ArtistApiGetArtistsRequest = {}, options?: RawAxiosRequestConfig) {
+        return ArtistApiFp(this.configuration).getArtists(requestParameters.minCommunityRating, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.genres, requestParameters.genreIds, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.studioIds, requestParameters.userId, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.sortBy, requestParameters.sortOrder, requestParameters.enableImages, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

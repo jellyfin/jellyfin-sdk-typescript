@@ -56,7 +56,7 @@ export interface AlbumInfo {
     /**
      * Gets or sets the artist provider ids.
      */
-    'ArtistProviderIds'?: { [key: string]: string | null; };
+    'ArtistProviderIds'?: { [key: string]: string; };
     'SongInfos'?: Array<SongInfo>;
 }
 

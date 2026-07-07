@@ -27,9 +27,9 @@ import type { TaskInfo } from '../models';
 // @ts-ignore
 import type { TaskTriggerInfo } from '../models';
 /**
- * ScheduledTasksApi - axios parameter creator
+ * ScheduledTaskApi - axios parameter creator
  */
-export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Configuration) {
+export const ScheduledTaskApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
         /**
          * 
@@ -231,10 +231,10 @@ export const ScheduledTasksApiAxiosParamCreator = function (configuration?: Conf
 };
 
 /**
- * ScheduledTasksApi - functional programming interface
+ * ScheduledTaskApi - functional programming interface
  */
-export const ScheduledTasksApiFp = function(configuration?: Configuration) {
-    const localVarAxiosParamCreator = ScheduledTasksApiAxiosParamCreator(configuration)
+export const ScheduledTaskApiFp = function(configuration?: Configuration) {
+    const localVarAxiosParamCreator = ScheduledTaskApiAxiosParamCreator(configuration)
     return {
         /**
          * 
@@ -246,7 +246,7 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
         async getTask(taskId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<TaskInfo>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTask(taskId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ScheduledTasksApi.getTask']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ScheduledTaskApi.getTask']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -260,7 +260,7 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
         async getTasks(isHidden?: boolean, isEnabled?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<TaskInfo>>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getTasks(isHidden, isEnabled, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ScheduledTasksApi.getTasks']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ScheduledTaskApi.getTasks']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -273,7 +273,7 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
         async startTask(taskId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.startTask(taskId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ScheduledTasksApi.startTask']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ScheduledTaskApi.startTask']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -286,7 +286,7 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
         async stopTask(taskId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.stopTask(taskId, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ScheduledTasksApi.stopTask']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ScheduledTaskApi.stopTask']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -300,75 +300,75 @@ export const ScheduledTasksApiFp = function(configuration?: Configuration) {
         async updateTask(taskId: string, taskTriggerInfo: Array<TaskTriggerInfo>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.updateTask(taskId, taskTriggerInfo, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['ScheduledTasksApi.updateTask']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['ScheduledTaskApi.updateTask']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
 };
 
 /**
- * ScheduledTasksApi - factory interface
+ * ScheduledTaskApi - factory interface
  */
-export const ScheduledTasksApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
-    const localVarFp = ScheduledTasksApiFp(configuration)
+export const ScheduledTaskApiFactory = function (configuration?: Configuration, basePath?: string, axios?: AxiosInstance) {
+    const localVarFp = ScheduledTaskApiFp(configuration)
     return {
         /**
          * 
          * @summary Get task by id.
-         * @param {ScheduledTasksApiGetTaskRequest} requestParameters Request parameters.
+         * @param {ScheduledTaskApiGetTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTask(requestParameters: ScheduledTasksApiGetTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<TaskInfo> {
+        getTask(requestParameters: ScheduledTaskApiGetTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<TaskInfo> {
             return localVarFp.getTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Get tasks.
-         * @param {ScheduledTasksApiGetTasksRequest} requestParameters Request parameters.
+         * @param {ScheduledTaskApiGetTasksRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getTasks(requestParameters: ScheduledTasksApiGetTasksRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<TaskInfo>> {
+        getTasks(requestParameters: ScheduledTaskApiGetTasksRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<TaskInfo>> {
             return localVarFp.getTasks(requestParameters.isHidden, requestParameters.isEnabled, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Start specified task.
-         * @param {ScheduledTasksApiStartTaskRequest} requestParameters Request parameters.
+         * @param {ScheduledTaskApiStartTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        startTask(requestParameters: ScheduledTasksApiStartTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        startTask(requestParameters: ScheduledTaskApiStartTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.startTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Stop specified task.
-         * @param {ScheduledTasksApiStopTaskRequest} requestParameters Request parameters.
+         * @param {ScheduledTaskApiStopTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        stopTask(requestParameters: ScheduledTasksApiStopTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        stopTask(requestParameters: ScheduledTaskApiStopTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.stopTask(requestParameters.taskId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
          * @summary Update specified task triggers.
-         * @param {ScheduledTasksApiUpdateTaskRequest} requestParameters Request parameters.
+         * @param {ScheduledTaskApiUpdateTaskRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateTask(requestParameters: ScheduledTasksApiUpdateTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        updateTask(requestParameters: ScheduledTaskApiUpdateTaskRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.updateTask(requestParameters.taskId, requestParameters.taskTriggerInfo, options).then((request) => request(axios, basePath));
         },
     };
 };
 
 /**
- * Request parameters for getTask operation in ScheduledTasksApi.
+ * Request parameters for getTask operation in ScheduledTaskApi.
  */
-export interface ScheduledTasksApiGetTaskRequest {
+export interface ScheduledTaskApiGetTaskRequest {
     /**
      * Task Id.
      */
@@ -376,9 +376,9 @@ export interface ScheduledTasksApiGetTaskRequest {
 }
 
 /**
- * Request parameters for getTasks operation in ScheduledTasksApi.
+ * Request parameters for getTasks operation in ScheduledTaskApi.
  */
-export interface ScheduledTasksApiGetTasksRequest {
+export interface ScheduledTaskApiGetTasksRequest {
     /**
      * Optional filter tasks that are hidden, or not.
      */
@@ -391,9 +391,9 @@ export interface ScheduledTasksApiGetTasksRequest {
 }
 
 /**
- * Request parameters for startTask operation in ScheduledTasksApi.
+ * Request parameters for startTask operation in ScheduledTaskApi.
  */
-export interface ScheduledTasksApiStartTaskRequest {
+export interface ScheduledTaskApiStartTaskRequest {
     /**
      * Task Id.
      */
@@ -401,9 +401,9 @@ export interface ScheduledTasksApiStartTaskRequest {
 }
 
 /**
- * Request parameters for stopTask operation in ScheduledTasksApi.
+ * Request parameters for stopTask operation in ScheduledTaskApi.
  */
-export interface ScheduledTasksApiStopTaskRequest {
+export interface ScheduledTaskApiStopTaskRequest {
     /**
      * Task Id.
      */
@@ -411,9 +411,9 @@ export interface ScheduledTasksApiStopTaskRequest {
 }
 
 /**
- * Request parameters for updateTask operation in ScheduledTasksApi.
+ * Request parameters for updateTask operation in ScheduledTaskApi.
  */
-export interface ScheduledTasksApiUpdateTaskRequest {
+export interface ScheduledTaskApiUpdateTaskRequest {
     /**
      * Task Id.
      */
@@ -426,62 +426,62 @@ export interface ScheduledTasksApiUpdateTaskRequest {
 }
 
 /**
- * ScheduledTasksApi - object-oriented interface
+ * ScheduledTaskApi - object-oriented interface
  */
-export class ScheduledTasksApi extends BaseAPI {
+export class ScheduledTaskApi extends BaseAPI {
     /**
      * 
      * @summary Get task by id.
-     * @param {ScheduledTasksApiGetTaskRequest} requestParameters Request parameters.
+     * @param {ScheduledTaskApiGetTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getTask(requestParameters: ScheduledTasksApiGetTaskRequest, options?: RawAxiosRequestConfig) {
-        return ScheduledTasksApiFp(this.configuration).getTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
+    public getTask(requestParameters: ScheduledTaskApiGetTaskRequest, options?: RawAxiosRequestConfig) {
+        return ScheduledTaskApiFp(this.configuration).getTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Get tasks.
-     * @param {ScheduledTasksApiGetTasksRequest} requestParameters Request parameters.
+     * @param {ScheduledTaskApiGetTasksRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getTasks(requestParameters: ScheduledTasksApiGetTasksRequest = {}, options?: RawAxiosRequestConfig) {
-        return ScheduledTasksApiFp(this.configuration).getTasks(requestParameters.isHidden, requestParameters.isEnabled, options).then((request) => request(this.axios, this.basePath));
+    public getTasks(requestParameters: ScheduledTaskApiGetTasksRequest = {}, options?: RawAxiosRequestConfig) {
+        return ScheduledTaskApiFp(this.configuration).getTasks(requestParameters.isHidden, requestParameters.isEnabled, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Start specified task.
-     * @param {ScheduledTasksApiStartTaskRequest} requestParameters Request parameters.
+     * @param {ScheduledTaskApiStartTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public startTask(requestParameters: ScheduledTasksApiStartTaskRequest, options?: RawAxiosRequestConfig) {
-        return ScheduledTasksApiFp(this.configuration).startTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
+    public startTask(requestParameters: ScheduledTaskApiStartTaskRequest, options?: RawAxiosRequestConfig) {
+        return ScheduledTaskApiFp(this.configuration).startTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Stop specified task.
-     * @param {ScheduledTasksApiStopTaskRequest} requestParameters Request parameters.
+     * @param {ScheduledTaskApiStopTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public stopTask(requestParameters: ScheduledTasksApiStopTaskRequest, options?: RawAxiosRequestConfig) {
-        return ScheduledTasksApiFp(this.configuration).stopTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
+    public stopTask(requestParameters: ScheduledTaskApiStopTaskRequest, options?: RawAxiosRequestConfig) {
+        return ScheduledTaskApiFp(this.configuration).stopTask(requestParameters.taskId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
      * @summary Update specified task triggers.
-     * @param {ScheduledTasksApiUpdateTaskRequest} requestParameters Request parameters.
+     * @param {ScheduledTaskApiUpdateTaskRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public updateTask(requestParameters: ScheduledTasksApiUpdateTaskRequest, options?: RawAxiosRequestConfig) {
-        return ScheduledTasksApiFp(this.configuration).updateTask(requestParameters.taskId, requestParameters.taskTriggerInfo, options).then((request) => request(this.axios, this.basePath));
+    public updateTask(requestParameters: ScheduledTaskApiUpdateTaskRequest, options?: RawAxiosRequestConfig) {
+        return ScheduledTaskApiFp(this.configuration).updateTask(requestParameters.taskId, requestParameters.taskTriggerInfo, options).then((request) => request(this.axios, this.basePath));
     }
 }
 
