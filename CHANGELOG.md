@@ -11,11 +11,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 * Added `getBackupApi` utility function ([#997](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/997)).
 * `getLibraryApi` now returns an augmented class with a `getDownloadUrl` method ([#967](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/967)).
-* The `Api` class now contains a `webSocket` field, of which `OutboundWebSocketMessageType`s can be subscribed to for handling WebSocket messages ([#966](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/966)).
+* The `Api` class now contains a `webSocket` field, of which `OutboundWebSocketMessageType`s can be subscribed to for handling WebSocket messages ([#966](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/968)).
 
 ### Changed
 
-* Any usages of `AUTHORIZATION_HEADER` and `AUTHORIZATION_PARAMETER` constants must be updated to be imported from `/constants` ([#966](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/966)).
+* Any usages of `AUTHORIZATION_HEADER` and `AUTHORIZATION_PARAMETER` constants must be updated to be imported from `/constants` ([#966](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/968)).
+* Update OpenAPI spec for Jellyfin 12.0 ([#1071](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1071)).
+  Note that **A LOT** of the APIs were renamed or moved as part of this update.
+  Specific changes can be found in [#1072](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1072).
 
 ## [0.13.0] - 2025-10-28
 
