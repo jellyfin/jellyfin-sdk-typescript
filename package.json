@@ -15,7 +15,7 @@
   },
   "scripts": {
     "build": "npm run build:generated-client && npm run build:sdk",
-    "build:generated-client": "openapi-generator-cli generate",
+    "build:generated-client": "rimraf src/generated-client && openapi-generator-cli generate && openapi-generator-cli generate",
     "build:sdk": "rollup -c",
     "clean:build:sdk": "rimraf lib && rollup -c",
     "docs": "typedoc --tsconfig .",
