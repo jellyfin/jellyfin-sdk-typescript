@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { VideosApi } from '../../generated-client/api/videos-api';
+import { DeviceApi } from '../../generated-client/api/device-api';
 
-export function getVideosApi(api: Api): VideosApi {
-	return new VideosApi(api.configuration, undefined, api.axiosInstance);
+export function getDeviceApi(api: Api): DeviceApi {
+	return new DeviceApi(api.configuration, undefined, api.axiosInstance);
 }

@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { MusicGenresApi } from '../../generated-client/api/music-genres-api';
+import { PersonApi } from '../../generated-client/api/person-api';
 
-export function getMusicGenresApi(api: Api): MusicGenresApi {
-	return new MusicGenresApi(api.configuration, undefined, api.axiosInstance);
+export function getPersonApi(api: Api): PersonApi {
+	return new PersonApi(api.configuration, undefined, api.axiosInstance);
 }

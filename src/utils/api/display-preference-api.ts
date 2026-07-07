@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { PlaylistsApi } from '../../generated-client/api/playlists-api';
+import { DisplayPreferenceApi } from '../../generated-client/api/display-preference-api';
 
-export function getPlaylistsApi(api: Api): PlaylistsApi {
-	return new PlaylistsApi(api.configuration, undefined, api.axiosInstance);
+export function getDisplayPreferenceApi(api: Api): DisplayPreferenceApi {
+	return new DisplayPreferenceApi(api.configuration, undefined, api.axiosInstance);
 }

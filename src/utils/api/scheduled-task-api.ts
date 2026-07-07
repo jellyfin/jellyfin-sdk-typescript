@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { StudiosApi } from '../../generated-client/api/studios-api';
+import { ScheduledTaskApi } from '../../generated-client/api/scheduled-task-api';
 
-export function getStudiosApi(api: Api): StudiosApi {
-	return new StudiosApi(api.configuration, undefined, api.axiosInstance);
+export function getScheduledTaskApi(api: Api): ScheduledTaskApi {
+	return new ScheduledTaskApi(api.configuration, undefined, api.axiosInstance);
 }

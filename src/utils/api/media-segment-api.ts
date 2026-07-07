@@ -5,8 +5,9 @@
  */
 
 import type { Api } from '../../api';
-import { QuickConnectApi } from '../../generated-client/api/quick-connect-api';
 
-export function getQuickConnectApi(api: Api): QuickConnectApi {
-	return new QuickConnectApi(api.configuration, undefined, api.axiosInstance);
+import { MediaSegmentApi } from '../../generated-client/api/media-segment-api';
+
+export function getMediaSegmentApi(api: Api): MediaSegmentApi {
+	return new MediaSegmentApi(api.configuration, undefined, api.axiosInstance);
 }

@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { TvShowsApi } from '../../generated-client/api/tv-shows-api';
+import { PluginApi } from '../../generated-client/api/plugin-api';
 
-export function getTvShowsApi(api: Api): TvShowsApi {
-	return new TvShowsApi(api.configuration, undefined, api.axiosInstance);
+export function getPluginApi(api: Api): PluginApi {
+	return new PluginApi(api.configuration, undefined, api.axiosInstance);
 }

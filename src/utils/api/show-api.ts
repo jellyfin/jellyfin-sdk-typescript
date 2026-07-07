@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { ScheduledTasksApi } from '../../generated-client/api/scheduled-tasks-api';
+import { ShowApi } from '../../generated-client/api/show-api';
 
-export function getScheduledTasksApi(api: Api): ScheduledTasksApi {
-	return new ScheduledTasksApi(api.configuration, undefined, api.axiosInstance);
+export function getShowApi(api: Api): ShowApi {
+	return new ShowApi(api.configuration, undefined, api.axiosInstance);
 }

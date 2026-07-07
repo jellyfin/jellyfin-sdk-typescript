@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { ActivityLogApi } from '../../generated-client/api/activity-log-api';
+import { ArtistApi } from '../../generated-client/api/artist-api';
 
-export function getActivityLogApi(api: Api): ActivityLogApi {
-	return new ActivityLogApi(api.configuration, undefined, api.axiosInstance);
+export function getArtistApi(api: Api): ArtistApi {
+	return new ArtistApi(api.configuration, undefined, api.axiosInstance);
 }
