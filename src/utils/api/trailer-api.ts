@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { YearsApi } from '../../generated-client/api/years-api';
+import { TrailerApi } from '../../generated-client/api/trailer-api';
 
-export function getYearsApi(api: Api): YearsApi {
-	return new YearsApi(api.configuration, undefined, api.axiosInstance);
+export function getTrailerApi(api: Api): TrailerApi {
+	return new TrailerApi(api.configuration, undefined, api.axiosInstance);
 }

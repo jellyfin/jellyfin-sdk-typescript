@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { ChannelsApi } from '../../generated-client/api/channels-api';
+import { UserDataApi } from '../../generated-client/api/user-data-api';
 
-export function getChannelsApi(api: Api): ChannelsApi {
-	return new ChannelsApi(api.configuration, undefined, api.axiosInstance);
+export function getUserDataApi(api: Api): UserDataApi {
+	return new UserDataApi(api.configuration, undefined, api.axiosInstance);
 }

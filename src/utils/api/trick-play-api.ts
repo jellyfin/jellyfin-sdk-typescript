@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { TmdbApi } from '../../generated-client/api/tmdb-api';
+import { TrickPlayApi } from '../../generated-client/api/trick-play-api';
 
-export function getTmdbApi(api: Api): TmdbApi {
-	return new TmdbApi(api.configuration, undefined, api.axiosInstance);
+export function getTrickPlayApi(api: Api): TrickPlayApi {
+	return new TrickPlayApi(api.configuration, undefined, api.axiosInstance);
 }

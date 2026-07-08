@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { UniversalAudioApi } from '../../generated-client/api/universal-audio-api';
+import { SuggestionApi } from '../../generated-client/api/suggestion-api';
 
-export function getUniversalAudioApi(api: Api): UniversalAudioApi {
-	return new UniversalAudioApi(api.configuration, undefined, api.axiosInstance);
+export function getSuggestionApi(api: Api): SuggestionApi {
+	return new SuggestionApi(api.configuration, undefined, api.axiosInstance);
 }

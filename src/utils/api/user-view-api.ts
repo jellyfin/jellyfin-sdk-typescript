@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { VideoAttachmentsApi } from '../../generated-client/api/video-attachments-api';
+import { UserViewApi } from '../../generated-client/api/user-view-api';
 
-export function getVideoAttachmentsApi(api: Api): VideoAttachmentsApi {
-	return new VideoAttachmentsApi(api.configuration, undefined, api.axiosInstance);
+export function getUserViewApi(api: Api): UserViewApi {
+	return new UserViewApi(api.configuration, undefined, api.axiosInstance);
 }

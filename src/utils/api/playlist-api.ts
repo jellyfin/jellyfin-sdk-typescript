@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { DynamicHlsApi } from '../../generated-client/api/dynamic-hls-api';
+import { PlaylistApi } from '../../generated-client/api/playlist-api';
 
-export function getDynamicHlsApi(api: Api): DynamicHlsApi {
-	return new DynamicHlsApi(api.configuration, undefined, api.axiosInstance);
+export function getPlaylistApi(api: Api): PlaylistApi {
+	return new PlaylistApi(api.configuration, undefined, api.axiosInstance);
 }

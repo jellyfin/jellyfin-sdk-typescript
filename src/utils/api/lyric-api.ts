@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { DisplayPreferencesApi } from '../../generated-client/api/display-preferences-api';
+import { LyricApi } from '../../generated-client/api/lyric-api';
 
-export function getDisplayPreferencesApi(api: Api): DisplayPreferencesApi {
-	return new DisplayPreferencesApi(api.configuration, undefined, api.axiosInstance);
+export function getLyricApi(api: Api): LyricApi {
+	return new LyricApi(api.configuration, undefined, api.axiosInstance);
 }

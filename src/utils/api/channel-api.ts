@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { PlaystateApi } from '../../generated-client/api/playstate-api';
+import { ChannelApi } from '../../generated-client/api/channel-api';
 
-export function getPlaystateApi(api: Api): PlaystateApi {
-	return new PlaystateApi(api.configuration, undefined, api.axiosInstance);
+export function getChannelApi(api: Api): ChannelApi {
+	return new ChannelApi(api.configuration, undefined, api.axiosInstance);
 }

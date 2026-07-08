@@ -5,8 +5,8 @@
  */
 
 import type { Api } from '../../api';
-import { SuggestionsApi } from '../../generated-client/api/suggestions-api';
+import { MovieApi } from '../../generated-client/api/movie-api';
 
-export function getSuggestionsApi(api: Api): SuggestionsApi {
-	return new SuggestionsApi(api.configuration, undefined, api.axiosInstance);
+export function getMovieApi(api: Api): MovieApi {
+	return new MovieApi(api.configuration, undefined, api.axiosInstance);
 }
