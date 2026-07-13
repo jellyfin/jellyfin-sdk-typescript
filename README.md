@@ -104,7 +104,7 @@ const jellyfin = new Jellyfin({
     deviceInfo: {
         name: 'Device Name',
         id: 'unique-device-id',
-        languages: ['en']
+        languages: ['en-US']
     }
 });
 
