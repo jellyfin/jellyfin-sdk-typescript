@@ -3,9 +3,11 @@
   "compilerOptions": {
     "target": "ES2018",
     "module": "ES2015",
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
+    "types": ["node"],
     "declaration": true,
     "noImplicitAny": true,
+    "rootDir": "src",
     "outDir": "lib"
   },
   "typedocOptions": {
