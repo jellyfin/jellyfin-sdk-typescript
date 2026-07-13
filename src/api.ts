@@ -155,7 +155,7 @@ export class Api {
 
 	get acceptLanguageHeader(): string | undefined {
 		const languages = this._deviceInfo.languages;
-		if (languages?.length) return languages.join(',');
+		return languages?.length ? languages.join(',') : undefined;
 	}
 
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
