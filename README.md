@@ -103,7 +103,8 @@ const jellyfin = new Jellyfin({
     },
     deviceInfo: {
         name: 'Device Name',
-        id: 'unique-device-id'
+        id: 'unique-device-id',
+        languages: ['en']
     }
 });
 
@@ -134,7 +135,7 @@ const users = await getUserApi(api).getPublicUsers();
 console.log('Users =>', users.data);
 
 // Login with a username and password.
-const auth = await getUserApi(this).authenticateUserByName({ authenticateUserByName: { Username: 'demo', Pw: '' } });
+const auth = await getAuthenticationApi(this).authenticateUserByName({ authenticateUserByName: { Username: 'demo', Pw: '' } });
 console.log('Auth =>', auth.data);
 
 // Authentication state is stored internally in the Api class, so now
@@ -149,14 +150,3 @@ await getSessionApi(api).reportSessionEnded();
 ## Significant Changes
 
 [See the CHANGELOG](./CHANGELOG.md)
-
-## Roadmap to 1.0
-
-* [x] Use custom generator templates for API versions [#231](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/231) (Currently uses sed to update the value could be improved.)
-* [x] Automate OpenAPI spec updates using GitHub [#351](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/351)
-* [x] Create branch tracking unstable Jellyfin builds with automated builds [#354](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/354)
-* [x] Fix authentication header escaping [#564](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/564)
-* [ ] Add WebSocket API support
-* [ ] Add example projects for different ecosystems [#186](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/186)
-* [ ] Add utility function for `getFile` [#164](https://github.com/jellyfin/jellyfin-sdk-typescript/issues/164)
-* [ ] More complete device profile generation utilities
