@@ -6,7 +6,7 @@
 import type { AxiosInstance, AxiosResponse } from 'axios';
 import globalInstance from 'axios';
 
-import { AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
+import { ACCEPT_LANGUAGE_HEADER, AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
 import { Configuration } from './generated-client/configuration';
 import type { AuthenticationResult } from './generated-client/models/authentication-result';
 import type { ClientInfo, DeviceInfo } from './models';
@@ -64,7 +64,8 @@ export class Api {
 			basePath: this._basePath,
 			baseOptions: {
 				headers: {
-					[AUTHORIZATION_HEADER]: this.authorizationHeader
+					[AUTHORIZATION_HEADER]: this.authorizationHeader,
+					[ACCEPT_LANGUAGE_HEADER]: this.acceptLanguageHeader
 				}
 			}
 		});
@@ -150,6 +151,11 @@ export class Api {
 
 	get authorizationHeader(): string {
 		return getAuthorizationHeader(this._clientInfo, this._deviceInfo, this._accessToken);
+	}
+
+	get acceptLanguageHeader(): string | undefined {
+		const languages = this._deviceInfo.languages;
+		return languages?.length ? languages.join(',') : undefined;
 	}
 
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
