@@ -28,6 +28,18 @@ class AugmentedLibraryApi extends LibraryApi {
 			{ [AUTHORIZATION_PARAMETER]: this.api.accessToken }
 		);
 	}
+
+	/**
+	 * Get an Item export URL.
+	 * @param requestParameters The export request parameters.
+	 * @returns The Item export URL.
+	 */
+	public getExportUrl(requestParameters: LibraryApiGetExportRequest): string {
+		return this.api.getUri(
+			`/Items/${requestParameters.itemId}/Export`,
+			{ [AUTHORIZATION_PARAMETER]: this.api.accessToken }
+		);
+	}
 }
 
 export function getLibraryApi(api: Api): AugmentedLibraryApi {
