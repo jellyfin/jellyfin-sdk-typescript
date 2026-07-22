@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for movies.
+ */
 export interface MovieInfo {
     /**
      * Gets or sets the name.

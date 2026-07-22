@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The play method.
+ */
 
 export const PlayMethod = {
     Transcode: 'Transcode',

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The repeat mode of a play queue.
+ */
 
 export const RepeatMode = {
     RepeatNone: 'RepeatNone',

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for trailers.
+ */
 export interface TrailerInfo {
     /**
      * Gets or sets the name.

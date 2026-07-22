@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The encoding context.
+ */
 
 export const EncodingContext = {
     Streaming: 'Streaming',
