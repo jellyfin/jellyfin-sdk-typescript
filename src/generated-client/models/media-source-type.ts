@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The type of a media source.
+ */
 
 export const MediaSourceType = {
     Default: 'Default',

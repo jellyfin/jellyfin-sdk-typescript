@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for series.
+ */
 export interface SeriesInfo {
     /**
      * Gets or sets the name.
