@@ -31,11 +31,11 @@
     "@stylistic/eslint-plugin": "5.10.0",
     "@tsconfig/recommended": "1.0.13",
     "@types/node": "24.13.2",
-    "@typescript-eslint/eslint-plugin": "8.63.0",
-    "@typescript-eslint/parser": "8.63.0",
+    "@typescript-eslint/eslint-plugin": "8.64.0",
+    "@typescript-eslint/parser": "8.64.0",
     "@vitest/coverage-v8": "4.1.10",
     "@vitest/eslint-plugin": "1.6.21",
-    "eslint": "9.39.4",
+    "eslint": "9.39.5",
     "eslint-import-resolver-typescript": "4.4.5",
     "eslint-plugin-import": "2.32.0",
     "glob": "13.0.6",
@@ -44,7 +44,7 @@
     "rollup": "4.62.2",
     "typedoc": "0.28.20",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.63.0",
+    "typescript-eslint": "8.64.0",
     "vitest": "4.1.10"
   },
   "peerDependencies": {
