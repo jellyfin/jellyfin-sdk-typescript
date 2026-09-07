@@ -73,7 +73,6 @@ export class WebSocketService {
 	private currentStatus: WebSocketStatus = 'disconnected';
 
 	onOpen: WebSocketStatusChangeEvent | undefined;
-	onClosing: WebSocketStatusChangeEvent | undefined;
 	onClosed: WebSocketStatusChangeEvent | undefined;
 	onFailure: WebSocketStatusChangeEvent | undefined;
 
