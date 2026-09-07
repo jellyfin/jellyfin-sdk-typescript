@@ -71,3 +71,5 @@ export type OutboundWebSocketMessageType = OutboundWebSocketMessage['MessageType
  * };
  */
 export type WebSocketSubscriptionIntervals = Partial<Record<OutboundWebSocketMessageType, PeriodicListenerInterval>>;
+
+export type WebSocketStatusChangeEvent = () => void

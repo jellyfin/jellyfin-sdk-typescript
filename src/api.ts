@@ -13,7 +13,7 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getAuthenticationApi } from './utils/api/authentication-api';
 import { getSessionApi } from './utils/api/session-api';
-import type { OutboundWebSocketMessageType, SocketMessageHandler } from './websocket';
+import type { OutboundWebSocketMessageType, SocketMessageHandler, WebSocketStatusChangeEvent } from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
@@ -69,6 +69,26 @@ export class Api {
 				}
 			}
 		});
+	}
+
+	private instantiateWebSocket(): WebSocketService {
+		// Pass undefined when there is no access token so subscriptions are stored
+		// but no connection attempt is made until updateUrl() is called later.
+		return new WebSocketService(
+			this.accessToken
+				? this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				})
+				: undefined
+		);
+	}
+
+	private get webSocketService(): WebSocketService {
+		if (!this.webSocket) {
+			this.webSocket = this.instantiateWebSocket();
+		}
+
+		return this.webSocket;
 	}
 
 	/**
@@ -159,18 +179,18 @@ export class Api {
 	}
 
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-		if (!this.webSocket) {
-			// Pass undefined when there is no access token so subscriptions are stored
-			// but no connection attempt is made until updateUrl() is called later.
-			this.webSocket = new WebSocketService(
-				this.accessToken
-					? this.getUri(WEBSOCKET_URL_PATH, {
-						[AUTHORIZATION_PARAMETER]: this.accessToken
-					})
-					: undefined
-			);
-		}
+		return this.webSocketService.subscribe(messageTypes, onMessage);
+	}
 
-		return this.webSocket.subscribe(messageTypes, onMessage);
+	set onOpen(onOpen: WebSocketStatusChangeEvent) {
+		this.webSocketService.onOpen = onOpen;
+	}
+
+	set onClosed(onClosed: WebSocketStatusChangeEvent) {
+		this.webSocketService.onClosed = onClosed;
+	}
+
+	set onFailure(onFailure: WebSocketStatusChangeEvent) {
+		this.webSocketService.onFailure = onFailure;
 	}
 }
