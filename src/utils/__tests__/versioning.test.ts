@@ -5,84 +5,48 @@
  */
 import { describe, it, expect } from 'vitest';
 
-import { isVersionLess } from '..';
+import { compareVersions, getDisplayVersion } from '..';
 
 /**
  * Versioning tests
  *
  * @group unit/utils
  */
-describe('Versioning checks', () => {
-	it("doesn't allow versions with negative numbers", () => {
-		expect(() => isVersionLess('-10.5.3', '10.8.-9')).toThrow(TypeError);
+describe('compareVersions', () => {
+	it('should return 0 for equal versions', () => {
+		expect(compareVersions('1.2.3', '1.2.3')).toBe(0);
 	});
-	it("doesn't allow versions with non-numeric characters", () => {
-		expect(() => isVersionLess('10.2.7-beta', '15.8.9')).toThrow(TypeError);
+
+	it('should return -1 when the first version is lower', () => {
+		expect(compareVersions('1.2.3', '1.2.4')).toBe(-1);
+		expect(compareVersions('1.2.3', '1.3.0')).toBe(-1);
+		expect(compareVersions('1.2.3', '2')).toBe(-1);
 	});
-	/**
-     * Equal
-     */
-	it('false on equal version: 0.0.0', () => {
-		expect(isVersionLess('0.0.0', '0.0.0')).toBe(false);
+
+	it('should return 1 when the first version is higher', () => {
+		expect(compareVersions('1.2.4', '1.2.3')).toBe(1);
+		expect(compareVersions('1.3.0', '1.2.3')).toBe(1);
+		expect(compareVersions('2', '1.2.3')).toBe(1);
 	});
-	it('false on equal version: 0.0.5', () => {
-		expect(isVersionLess('0.0.5', '0.0.5')).toBe(false);
+});
+
+describe('getDisplayVersion', () => {
+	it('should return undefined for null or undefined input', () => {
+		expect(getDisplayVersion(null)).toBeUndefined();
+		expect(getDisplayVersion(undefined)).toBeUndefined();
 	});
-	it('false on equal version: 0.5.0', () => {
-		expect(isVersionLess('0.5.0', '0.5.0')).toBe(false);
+
+	it('should return the full version for versions below 11.0.0', () => {
+		expect(getDisplayVersion('10.11.6')).toBe('10.11.6');
 	});
-	it('false on equal version: 5.0.0', () => {
-		expect(isVersionLess('5.0.0', '5.0.0')).toBe(false);
+
+	it('should return only major.minor for versions above 10.0.0', () => {
+		expect(getDisplayVersion('11.0.0')).toBe('11.0');
+		expect(getDisplayVersion('12.3.0')).toBe('12.3');
 	});
-	it('false on equal version: 10.8.9', () => {
-		expect(isVersionLess('10.8.9', '10.8.9')).toBe(false);
-	});
-	/**
-     * Greater
-     */
-	it('1.0.0 is greater than 0.0.7', () => {
-		expect(isVersionLess('1.0.0', '0.0.7')).toBe(false);
-	});
-	it('1.0.0 is greater than 0.5.0', () => {
-		expect(isVersionLess('1.0.0', '0.5.0')).toBe(false);
-	});
-	it('1.0.0 is greater than 0.5.7', () => {
-		expect(isVersionLess('1.0.0', '0.5.7')).toBe(false);
-	});
-	it('2.0.0 is greater than 1.0.0', () => {
-		expect(isVersionLess('2.0.0', '1.0.0')).toBe(false);
-	});
-	it('0.5.0 is greater than 0.0.7', () => {
-		expect(isVersionLess('0.5.0', '0.0.7')).toBe(false);
-	});
-	it('0.5.7 is greater than 0.0.7', () => {
-		expect(isVersionLess('0.5.7', '0.0.7')).toBe(false);
-	});
-	it('2-digit versions: 12.25.34 is greater than 12.17.89', () => {
-		expect(isVersionLess('12.25.34', '12.17.89')).toBe(false);
-	});
-	/**
-     * Less
-     */
-	it('0.0.7 is less than 1.0.0', () => {
-		expect(isVersionLess('0.0.7', '1.0.0')).toBe(true);
-	});
-	it('0.5.0 is less than 1.0.0', () => {
-		expect(isVersionLess('0.5.0', '1.0.0')).toBe(true);
-	});
-	it('0.5.7 is less than 1.0.0', () => {
-		expect(isVersionLess('0.5.7', '1.0.0')).toBe(true);
-	});
-	it('1.0.0 is less than 2.0.0', () => {
-		expect(isVersionLess('1.0.0', '2.0.0')).toBe(true);
-	});
-	it('0.0.7 is less than 0.5.0', () => {
-		expect(isVersionLess('0.0.7', '0.5.0')).toBe(true);
-	});
-	it('0.0.7 is less than 0.5.7', () => {
-		expect(isVersionLess('0.0.7', '0.5.7')).toBe(true);
-	});
-	it('2-digit versions: 12.17.89 is less than 12.25.34', () => {
-		expect(isVersionLess('12.17.89', '12.25.34')).toBe(true);
+
+	it('should return the full version if there is a non-zero patch version above 10.0.0', () => {
+		expect(getDisplayVersion('11.0.1')).toBe('11.0.1');
+		expect(getDisplayVersion('12.3.4')).toBe('12.3.4');
 	});
 });

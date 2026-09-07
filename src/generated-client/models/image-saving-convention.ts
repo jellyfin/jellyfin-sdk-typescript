@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The convention used for naming saved images.
+ */
 
 export const ImageSavingConvention = {
     Legacy: 'Legacy',

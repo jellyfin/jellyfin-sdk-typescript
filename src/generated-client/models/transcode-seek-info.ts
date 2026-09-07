@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The transcode seek info.
+ */
 
 export const TranscodeSeekInfo = {
     Auto: 'Auto',

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for persons.
+ */
 export interface PersonLookupInfo {
     /**
      * Gets or sets the name.

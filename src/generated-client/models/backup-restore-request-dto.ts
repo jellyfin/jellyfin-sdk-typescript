@@ -20,6 +20,6 @@ export interface BackupRestoreRequestDto {
     /**
      * Gets or Sets the name of the backup archive to restore from. Must be present in MediaBrowser.Common.Configuration.IApplicationPaths.BackupPath.
      */
-    'ArchiveFileName'?: string;
+    'ArchiveFileName': string;
 }
 

@@ -2,7 +2,7 @@ name: SDK Unstable Branch
 
 on:
   schedule:
-    - cron: '0 5 * * *'
+    - cron: "0 5 * * *"
   workflow_dispatch:
   push:
     branches:
@@ -17,7 +17,7 @@ jobs:
     if: ${{ github.repository == 'jellyfin/jellyfin-sdk-typescript' }}
     steps:
       - name: Check out Git repository
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           ref: openapi-unstable
           fetch-depth: 0
@@ -27,10 +27,10 @@ jobs:
         run: |
           git config user.name jellyfin-bot
           git config user.email team@jellyfin.org
-          git rebase --strategy-option theirs origin/master
+          git checkout -b openapi-unstable-tmp --no-track origin/master
 
       - name: Set up Node.js
-        uses: actions/setup-node@6044e13b5dc448c55e2357c09f80417699197238 # v6.2.0
+        uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6.5.0
         with:
           node-version-file: .nvmrc
           check-latest: true
@@ -59,7 +59,8 @@ jobs:
       - name: Commit changes
         continue-on-error: true
         run: |
-          [[ -n $(git status --porcelain) ]] && git add --all && git commit --amend -m "Update OpenAPI to unstable"
+          [[ -n $(git status --porcelain) ]] && git add --all && git commit -m "Update OpenAPI to unstable"
 
       - name: Push changes
-        run: git push --force origin openapi-unstable
+        run: |
+          git diff --quiet openapi-unstable openapi-unstable-tmp || git push --force origin openapi-unstable-tmp:openapi-unstable

@@ -68,6 +68,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getFirstUser: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -101,6 +102,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getFirstUser2: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -134,6 +136,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * 
          * @summary Gets the initial startup wizard configuration.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getStartupConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -168,6 +171,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @summary Sets remote access and UPnP.
          * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         setRemoteAccess: async (startupRemoteAccessDto: StartupRemoteAccessDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -206,6 +210,7 @@ export const StartupApiAxiosParamCreator = function (configuration?: Configurati
          * @summary Sets the initial startup wizard configuration.
          * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         updateInitialConfiguration: async (startupConfigurationDto: StartupConfigurationDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
@@ -300,6 +305,7 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getFirstUser(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
@@ -312,6 +318,7 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getFirstUser2(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupUserDto>> {
@@ -324,6 +331,7 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * 
          * @summary Gets the initial startup wizard configuration.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async getStartupConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<StartupConfigurationDto>> {
@@ -337,6 +345,7 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @summary Sets remote access and UPnP.
          * @param {StartupRemoteAccessDto} startupRemoteAccessDto The startup remote access dto.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async setRemoteAccess(startupRemoteAccessDto: StartupRemoteAccessDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -350,6 +359,7 @@ export const StartupApiFp = function(configuration?: Configuration) {
          * @summary Sets the initial startup wizard configuration.
          * @param {StartupConfigurationDto} startupConfigurationDto The updated startup configuration.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         async updateInitialConfiguration(startupConfigurationDto: StartupConfigurationDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
@@ -393,6 +403,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getFirstUser(options?: RawAxiosRequestConfig): AxiosPromise<StartupUserDto> {
@@ -402,6 +413,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Gets the first user.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getFirstUser2(options?: RawAxiosRequestConfig): AxiosPromise<StartupUserDto> {
@@ -411,6 +423,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * 
          * @summary Gets the initial startup wizard configuration.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         getStartupConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<StartupConfigurationDto> {
@@ -421,6 +434,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @summary Sets remote access and UPnP.
          * @param {StartupApiSetRemoteAccessRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
@@ -431,6 +445,7 @@ export const StartupApiFactory = function (configuration?: Configuration, basePa
          * @summary Sets the initial startup wizard configuration.
          * @param {StartupApiUpdateInitialConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
+         * @deprecated
          * @throws {RequiredError}
          */
         updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
@@ -497,6 +512,7 @@ export class StartupApi extends BaseAPI {
      * 
      * @summary Gets the first user.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
     public getFirstUser(options?: RawAxiosRequestConfig) {
@@ -507,6 +523,7 @@ export class StartupApi extends BaseAPI {
      * 
      * @summary Gets the first user.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
     public getFirstUser2(options?: RawAxiosRequestConfig) {
@@ -517,6 +534,7 @@ export class StartupApi extends BaseAPI {
      * 
      * @summary Gets the initial startup wizard configuration.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
     public getStartupConfiguration(options?: RawAxiosRequestConfig) {
@@ -528,6 +546,7 @@ export class StartupApi extends BaseAPI {
      * @summary Sets remote access and UPnP.
      * @param {StartupApiSetRemoteAccessRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
     public setRemoteAccess(requestParameters: StartupApiSetRemoteAccessRequest, options?: RawAxiosRequestConfig) {
@@ -539,6 +558,7 @@ export class StartupApi extends BaseAPI {
      * @summary Sets the initial startup wizard configuration.
      * @param {StartupApiUpdateInitialConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
+     * @deprecated
      * @throws {RequiredError}
      */
     public updateInitialConfiguration(requestParameters: StartupApiUpdateInitialConfigurationRequest, options?: RawAxiosRequestConfig) {

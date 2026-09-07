@@ -17,18 +17,18 @@
  * Gets or sets the primary image blurhash.
  */
 export interface BaseItemPersonImageBlurHashes {
-    'Primary'?: { [key: string]: string; };
-    'Art'?: { [key: string]: string; };
-    'Backdrop'?: { [key: string]: string; };
-    'Banner'?: { [key: string]: string; };
-    'Logo'?: { [key: string]: string; };
-    'Thumb'?: { [key: string]: string; };
-    'Disc'?: { [key: string]: string; };
-    'Box'?: { [key: string]: string; };
-    'Screenshot'?: { [key: string]: string; };
-    'Menu'?: { [key: string]: string; };
-    'Chapter'?: { [key: string]: string; };
-    'BoxRear'?: { [key: string]: string; };
-    'Profile'?: { [key: string]: string; };
+    'Primary'?: { [key: string]: string | null; };
+    'Art'?: { [key: string]: string | null; };
+    'Backdrop'?: { [key: string]: string | null; };
+    'Banner'?: { [key: string]: string | null; };
+    'Logo'?: { [key: string]: string | null; };
+    'Thumb'?: { [key: string]: string | null; };
+    'Disc'?: { [key: string]: string | null; };
+    'Box'?: { [key: string]: string | null; };
+    'Screenshot'?: { [key: string]: string | null; };
+    'Menu'?: { [key: string]: string | null; };
+    'Chapter'?: { [key: string]: string | null; };
+    'BoxRear'?: { [key: string]: string | null; };
+    'Profile'?: { [key: string]: string | null; };
 }
 

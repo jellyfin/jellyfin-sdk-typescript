@@ -41,7 +41,8 @@ export const TranscodeReason = {
     DirectPlayError: 'DirectPlayError',
     VideoRangeTypeNotSupported: 'VideoRangeTypeNotSupported',
     VideoCodecTagNotSupported: 'VideoCodecTagNotSupported',
-    StreamCountExceedsLimit: 'StreamCountExceedsLimit'
+    StreamCountExceedsLimit: 'StreamCountExceedsLimit',
+    VideoRotationNotSupported: 'VideoRotationNotSupported'
 } as const;
 
 export type TranscodeReason = typeof TranscodeReason[keyof typeof TranscodeReason];

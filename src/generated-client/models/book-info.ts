@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for books.
+ */
 export interface BookInfo {
     /**
      * Gets or sets the name.
@@ -46,6 +49,9 @@ export interface BookInfo {
     'ParentIndexNumber'?: number | null;
     'PremiereDate'?: string | null;
     'IsAutomated'?: boolean;
+    /**
+     * Gets or sets the name of the series the book belongs to.
+     */
     'SeriesName'?: string | null;
 }
 

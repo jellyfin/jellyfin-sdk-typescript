@@ -71,12 +71,8 @@ export interface TranscodingInfo {
     /**
      * Gets or sets the transcode reasons.
      */
-    'TranscodeReasons'?: TranscodingInfoTranscodeReasonsEnum;
+    'TranscodeReasons'?: Array<TranscodeReason>;
 }
 
-export const TranscodingInfoTranscodeReasonsEnum = {
-} as const;
-
-export type TranscodingInfoTranscodeReasonsEnum = typeof TranscodingInfoTranscodeReasonsEnum[keyof typeof TranscodingInfoTranscodeReasonsEnum];
 
 

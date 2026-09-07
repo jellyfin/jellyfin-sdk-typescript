@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The codec type of a codec profile.
+ */
 
 export const CodecType = {
     Video: 'Video',

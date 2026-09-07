@@ -21,22 +21,106 @@ import { DUMMY_BASE_URL, assertParamExists, setApiKeyToObject, setBasicAuthToObj
 // @ts-ignore
 import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError, operationServerMap } from '../base';
 // @ts-ignore
+import type { ActivityLogEntryQueryResult } from '../models';
+// @ts-ignore
+import type { ActivityLogSortBy } from '../models';
+// @ts-ignore
+import type { BrandingOptionsDto } from '../models';
+// @ts-ignore
+import type { ClientLogDocumentResponseDto } from '../models';
+// @ts-ignore
 import type { EndPointInfo } from '../models';
 // @ts-ignore
 import type { LogFile } from '../models';
+// @ts-ignore
+import type { LogLevel } from '../models';
+// @ts-ignore
+import type { MetadataOptions } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
 // @ts-ignore
 import type { PublicSystemInfo } from '../models';
 // @ts-ignore
+import type { ServerConfiguration } from '../models';
+// @ts-ignore
+import type { SortOrder } from '../models';
+// @ts-ignore
 import type { SystemInfo } from '../models';
 // @ts-ignore
 import type { SystemStorageDto } from '../models';
+// @ts-ignore
+import type { UtcTimeResponse } from '../models';
 /**
  * SystemApi - axios parameter creator
  */
 export const SystemApiAxiosParamCreator = function (configuration?: Configuration) {
     return {
+        /**
+         * 
+         * @summary Gets application configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets a default MetadataOptions object.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getDefaultMetadataOptions: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/MetadataOptions/Default`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
         /**
          * 
          * @summary Gets information about the request endpoint.
@@ -58,6 +142,113 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets activity log entries.
+         * @param {number} [startIndex] The record index to start at. All items with a lower index will be dropped from the results.
+         * @param {number} [limit] The maximum number of records to return.
+         * @param {string} [minDate] The minimum date.
+         * @param {string} [maxDate] The maximum date.
+         * @param {boolean} [hasUserId] Filter log entries if it has user id, or not.
+         * @param {string} [name] Filter by name.
+         * @param {string} [overview] Filter by overview.
+         * @param {string} [shortOverview] Filter by short overview.
+         * @param {string} [type] Filter by type.
+         * @param {string} [itemId] Filter by item id.
+         * @param {string} [username] Filter by username.
+         * @param {LogLevel} [severity] Filter by log severity.
+         * @param {Array<ActivityLogSortBy>} [sortBy] Specify one or more sort orders. Format: SortBy&#x3D;Name,Type.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order..
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLogEntries: async (startIndex?: number, limit?: number, minDate?: string, maxDate?: string, hasUserId?: boolean, name?: string, overview?: string, shortOverview?: string, type?: string, itemId?: string, username?: string, severity?: LogLevel, sortBy?: Array<ActivityLogSortBy>, sortOrder?: Array<SortOrder>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/ActivityLog/Entries`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
+            }
+
+            if (limit !== undefined) {
+                localVarQueryParameter['limit'] = limit;
+            }
+
+            if (minDate !== undefined) {
+                localVarQueryParameter['minDate'] = (minDate as any instanceof Date) ?
+                    (minDate as any).toISOString() :
+                    minDate;
+            }
+
+            if (maxDate !== undefined) {
+                localVarQueryParameter['maxDate'] = (maxDate as any instanceof Date) ?
+                    (maxDate as any).toISOString() :
+                    maxDate;
+            }
+
+            if (hasUserId !== undefined) {
+                localVarQueryParameter['hasUserId'] = hasUserId;
+            }
+
+            if (name !== undefined) {
+                localVarQueryParameter['name'] = name;
+            }
+
+            if (overview !== undefined) {
+                localVarQueryParameter['overview'] = overview;
+            }
+
+            if (shortOverview !== undefined) {
+                localVarQueryParameter['shortOverview'] = shortOverview;
+            }
+
+            if (type !== undefined) {
+                localVarQueryParameter['type'] = type;
+            }
+
+            if (itemId !== undefined) {
+                localVarQueryParameter['itemId'] = itemId;
+            }
+
+            if (username !== undefined) {
+                localVarQueryParameter['username'] = username;
+            }
+
+            if (severity !== undefined) {
+                localVarQueryParameter['severity'] = severity;
+            }
+
+            if (sortBy) {
+                localVarQueryParameter['sortBy'] = sortBy;
+            }
+
+            if (sortOrder) {
+                localVarQueryParameter['sortOrder'] = sortOrder;
+            }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
@@ -100,6 +291,43 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             }
 
             localVarHeaderParameter['Accept'] = 'text/plain,application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets a named configuration.
+         * @param {string} key Configuration key.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getNamedConfiguration: async (key: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'key' is not null or undefined
+            assertParamExists('getNamedConfiguration', 'key', key)
+            const localVarPath = `/System/Configuration/{key}`
+                .replace(`{${"key"}}`, encodeURIComponent(String(key)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -271,6 +499,72 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
+         * @summary Gets the current UTC time.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getUtcTime: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/GetUtcTime`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Upload a document.
+         * @param {File} [body] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        logFile: async (body?: File, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/ClientLog/Document`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'text/plain';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(body, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Pings the system.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -365,6 +659,124 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
                 options: localVarRequestOptions,
             };
         },
+        /**
+         * 
+         * @summary Updates branding configuration.
+         * @param {BrandingOptionsDto} brandingOptionsDto Branding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateBrandingConfiguration: async (brandingOptionsDto: BrandingOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'brandingOptionsDto' is not null or undefined
+            assertParamExists('updateBrandingConfiguration', 'brandingOptionsDto', brandingOptionsDto)
+            const localVarPath = `/System/Configuration/Branding`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(brandingOptionsDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates application configuration.
+         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'serverConfiguration' is not null or undefined
+            assertParamExists('updateConfiguration', 'serverConfiguration', serverConfiguration)
+            const localVarPath = `/System/Configuration`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(serverConfiguration, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates named configuration.
+         * @param {string} key Configuration key.
+         * @param {any} body Configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateNamedConfiguration: async (key: string, body: any, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'key' is not null or undefined
+            assertParamExists('updateNamedConfiguration', 'key', key)
+            // verify required parameter 'body' is not null or undefined
+            assertParamExists('updateNamedConfiguration', 'body', body)
+            const localVarPath = `/System/Configuration/{key}`
+                .replace(`{${"key"}}`, encodeURIComponent(String(key)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(body, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
     }
 };
 
@@ -374,6 +786,30 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
 export const SystemApiFp = function(configuration?: Configuration) {
     const localVarAxiosParamCreator = SystemApiAxiosParamCreator(configuration)
     return {
+        /**
+         * 
+         * @summary Gets application configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getConfiguration(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets a default MetadataOptions object.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getDefaultMetadataOptions(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataOptions>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getDefaultMetadataOptions(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getDefaultMetadataOptions']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
         /**
          * 
          * @summary Gets information about the request endpoint.
@@ -388,6 +824,32 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets activity log entries.
+         * @param {number} [startIndex] The record index to start at. All items with a lower index will be dropped from the results.
+         * @param {number} [limit] The maximum number of records to return.
+         * @param {string} [minDate] The minimum date.
+         * @param {string} [maxDate] The maximum date.
+         * @param {boolean} [hasUserId] Filter log entries if it has user id, or not.
+         * @param {string} [name] Filter by name.
+         * @param {string} [overview] Filter by overview.
+         * @param {string} [shortOverview] Filter by short overview.
+         * @param {string} [type] Filter by type.
+         * @param {string} [itemId] Filter by item id.
+         * @param {string} [username] Filter by username.
+         * @param {LogLevel} [severity] Filter by log severity.
+         * @param {Array<ActivityLogSortBy>} [sortBy] Specify one or more sort orders. Format: SortBy&#x3D;Name,Type.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order..
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getLogEntries(startIndex?: number, limit?: number, minDate?: string, maxDate?: string, hasUserId?: boolean, name?: string, overview?: string, shortOverview?: string, type?: string, itemId?: string, username?: string, severity?: LogLevel, sortBy?: Array<ActivityLogSortBy>, sortOrder?: Array<SortOrder>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ActivityLogEntryQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLogEntries(startIndex, limit, minDate, maxDate, hasUserId, name, overview, shortOverview, type, itemId, username, severity, sortBy, sortOrder, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getLogEntries']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Gets a log file.
          * @param {string} name The name of the log file to get.
          * @param {*} [options] Override http request option.
@@ -397,6 +859,19 @@ export const SystemApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLogFile(name, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SystemApi.getLogFile']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets a named configuration.
+         * @param {string} key Configuration key.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getNamedConfiguration(key: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getNamedConfiguration(key, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getNamedConfiguration']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -461,6 +936,31 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets the current UTC time.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getUtcTime(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<UtcTimeResponse>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getUtcTime(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getUtcTime']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Upload a document.
+         * @param {File} [body] 
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async logFile(body?: File, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ClientLogDocumentResponseDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.logFile(body, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.logFile']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Pings the system.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -495,6 +995,46 @@ export const SystemApiFp = function(configuration?: Configuration) {
             const localVarOperationServerBasePath = operationServerMap['SystemApi.shutdownApplication']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
+        /**
+         * 
+         * @summary Updates branding configuration.
+         * @param {BrandingOptionsDto} brandingOptionsDto Branding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateBrandingConfiguration(brandingOptionsDto: BrandingOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateBrandingConfiguration(brandingOptionsDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateBrandingConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates application configuration.
+         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfiguration, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates named configuration.
+         * @param {string} key Configuration key.
+         * @param {any} body Configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateNamedConfiguration(key: string, body: any, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateNamedConfiguration(key, body, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateNamedConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
     }
 };
 
@@ -506,12 +1046,40 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
     return {
         /**
          * 
+         * @summary Gets application configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<ServerConfiguration> {
+            return localVarFp.getConfiguration(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets a default MetadataOptions object.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getDefaultMetadataOptions(options?: RawAxiosRequestConfig): AxiosPromise<MetadataOptions> {
+            return localVarFp.getDefaultMetadataOptions(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Gets information about the request endpoint.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         getEndpointInfo(options?: RawAxiosRequestConfig): AxiosPromise<EndPointInfo> {
             return localVarFp.getEndpointInfo(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets activity log entries.
+         * @param {SystemApiGetLogEntriesRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLogEntries(requestParameters: SystemApiGetLogEntriesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ActivityLogEntryQueryResult> {
+            return localVarFp.getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.maxDate, requestParameters.hasUserId, requestParameters.name, requestParameters.overview, requestParameters.shortOverview, requestParameters.type, requestParameters.itemId, requestParameters.username, requestParameters.severity, requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -522,6 +1090,16 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          */
         getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
             return localVarFp.getLogFile(requestParameters.name, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets a named configuration.
+         * @param {SystemApiGetNamedConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getNamedConfiguration(requestParameters: SystemApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
+            return localVarFp.getNamedConfiguration(requestParameters.key, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -570,6 +1148,25 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
+         * @summary Gets the current UTC time.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getUtcTime(options?: RawAxiosRequestConfig): AxiosPromise<UtcTimeResponse> {
+            return localVarFp.getUtcTime(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Upload a document.
+         * @param {SystemApiLogFileRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        logFile(requestParameters: SystemApiLogFileRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<ClientLogDocumentResponseDto> {
+            return localVarFp.logFile(requestParameters.body, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Pings the system.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -595,8 +1192,113 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         shutdownApplication(options?: RawAxiosRequestConfig): AxiosPromise<void> {
             return localVarFp.shutdownApplication(options).then((request) => request(axios, basePath));
         },
+        /**
+         * 
+         * @summary Updates branding configuration.
+         * @param {SystemApiUpdateBrandingConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateBrandingConfiguration(requestParameters: SystemApiUpdateBrandingConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateBrandingConfiguration(requestParameters.brandingOptionsDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates application configuration.
+         * @param {SystemApiUpdateConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateConfiguration(requestParameters: SystemApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates named configuration.
+         * @param {SystemApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateNamedConfiguration(requestParameters: SystemApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(axios, basePath));
+        },
     };
 };
+
+/**
+ * Request parameters for getLogEntries operation in SystemApi.
+ */
+export interface SystemApiGetLogEntriesRequest {
+    /**
+     * The record index to start at. All items with a lower index will be dropped from the results.
+     */
+    readonly startIndex?: number
+
+    /**
+     * The maximum number of records to return.
+     */
+    readonly limit?: number
+
+    /**
+     * The minimum date.
+     */
+    readonly minDate?: string
+
+    /**
+     * The maximum date.
+     */
+    readonly maxDate?: string
+
+    /**
+     * Filter log entries if it has user id, or not.
+     */
+    readonly hasUserId?: boolean
+
+    /**
+     * Filter by name.
+     */
+    readonly name?: string
+
+    /**
+     * Filter by overview.
+     */
+    readonly overview?: string
+
+    /**
+     * Filter by short overview.
+     */
+    readonly shortOverview?: string
+
+    /**
+     * Filter by type.
+     */
+    readonly type?: string
+
+    /**
+     * Filter by item id.
+     */
+    readonly itemId?: string
+
+    /**
+     * Filter by username.
+     */
+    readonly username?: string
+
+    /**
+     * Filter by log severity.
+     */
+    readonly severity?: LogLevel
+
+    /**
+     * Specify one or more sort orders. Format: SortBy&#x3D;Name,Type.
+     */
+    readonly sortBy?: Array<ActivityLogSortBy>
+
+    /**
+     * Sort Order..
+     */
+    readonly sortOrder?: Array<SortOrder>
+}
 
 /**
  * Request parameters for getLogFile operation in SystemApi.
@@ -609,9 +1311,81 @@ export interface SystemApiGetLogFileRequest {
 }
 
 /**
+ * Request parameters for getNamedConfiguration operation in SystemApi.
+ */
+export interface SystemApiGetNamedConfigurationRequest {
+    /**
+     * Configuration key.
+     */
+    readonly key: string
+}
+
+/**
+ * Request parameters for logFile operation in SystemApi.
+ */
+export interface SystemApiLogFileRequest {
+    readonly body?: File
+}
+
+/**
+ * Request parameters for updateBrandingConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateBrandingConfigurationRequest {
+    /**
+     * Branding configuration.
+     */
+    readonly brandingOptionsDto: BrandingOptionsDto
+}
+
+/**
+ * Request parameters for updateConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateConfigurationRequest {
+    /**
+     * Configuration.
+     */
+    readonly serverConfiguration: ServerConfiguration
+}
+
+/**
+ * Request parameters for updateNamedConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateNamedConfigurationRequest {
+    /**
+     * Configuration key.
+     */
+    readonly key: string
+
+    /**
+     * Configuration.
+     */
+    readonly body: any
+}
+
+/**
  * SystemApi - object-oriented interface
  */
 export class SystemApi extends BaseAPI {
+    /**
+     * 
+     * @summary Gets application configuration.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getConfiguration(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets a default MetadataOptions object.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getDefaultMetadataOptions(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getDefaultMetadataOptions(options).then((request) => request(this.axios, this.basePath));
+    }
+
     /**
      * 
      * @summary Gets information about the request endpoint.
@@ -624,6 +1398,17 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets activity log entries.
+     * @param {SystemApiGetLogEntriesRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getLogEntries(requestParameters: SystemApiGetLogEntriesRequest = {}, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getLogEntries(requestParameters.startIndex, requestParameters.limit, requestParameters.minDate, requestParameters.maxDate, requestParameters.hasUserId, requestParameters.name, requestParameters.overview, requestParameters.shortOverview, requestParameters.type, requestParameters.itemId, requestParameters.username, requestParameters.severity, requestParameters.sortBy, requestParameters.sortOrder, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Gets a log file.
      * @param {SystemApiGetLogFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -631,6 +1416,17 @@ export class SystemApi extends BaseAPI {
      */
     public getLogFile(requestParameters: SystemApiGetLogFileRequest, options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getLogFile(requestParameters.name, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets a named configuration.
+     * @param {SystemApiGetNamedConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getNamedConfiguration(requestParameters: SystemApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -685,6 +1481,27 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets the current UTC time.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getUtcTime(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getUtcTime(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Upload a document.
+     * @param {SystemApiLogFileRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public logFile(requestParameters: SystemApiLogFileRequest = {}, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).logFile(requestParameters.body, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Pings the system.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
@@ -711,6 +1528,39 @@ export class SystemApi extends BaseAPI {
      */
     public shutdownApplication(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).shutdownApplication(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates branding configuration.
+     * @param {SystemApiUpdateBrandingConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateBrandingConfiguration(requestParameters: SystemApiUpdateBrandingConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateBrandingConfiguration(requestParameters.brandingOptionsDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates application configuration.
+     * @param {SystemApiUpdateConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateConfiguration(requestParameters: SystemApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates named configuration.
+     * @param {SystemApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateNamedConfiguration(requestParameters: SystemApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

@@ -56,7 +56,7 @@ export interface UserItemDataDto {
     /**
      * Gets or sets the key.
      */
-    'Key'?: string;
+    'Key': string;
     /**
      * Gets or sets the item identifier.
      */

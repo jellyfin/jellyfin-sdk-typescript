@@ -23,14 +23,14 @@ export interface LibraryStorageDto {
     /**
      * Gets or sets the Library Id.
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets or sets the name of the library.
      */
-    'Name'?: string;
+    'Name': string;
     /**
      * Gets or sets the storage informations about the folders used in a library.
      */
-    'Folders'?: Array<FolderStorageDto>;
+    'Folders': Array<FolderStorageDto>;
 }
 

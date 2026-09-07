@@ -26,7 +26,7 @@ export interface DatabaseConfigurationOptions {
     /**
      * Gets or Sets the type of database jellyfin should use.
      */
-    'DatabaseType'?: string;
+    'DatabaseType': string;
     'CustomProviderOptions'?: CustomDatabaseOptions;
     'LockingBehavior'?: DatabaseLockingBehaviorTypes;
 }

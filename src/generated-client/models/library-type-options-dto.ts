@@ -39,6 +39,10 @@ export interface LibraryTypeOptionsDto {
      */
     'ImageFetchers'?: Array<LibraryOptionInfoDto>;
     /**
+     * Gets or sets the similar item providers.
+     */
+    'SimilarItemProviders'?: Array<LibraryOptionInfoDto>;
+    /**
      * Gets or sets the supported image types.
      */
     'SupportedImageTypes'?: Array<ImageType>;

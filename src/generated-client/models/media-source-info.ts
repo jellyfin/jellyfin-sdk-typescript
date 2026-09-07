@@ -51,7 +51,7 @@ export interface MediaSourceInfo {
     'Size'?: number | null;
     'Name'?: string | null;
     /**
-     * Gets or sets a value indicating whether the media is remote.  Differentiate internet url vs local network.
+     * Gets or sets a value indicating whether the media is remote. Differentiate internet url vs local network.
      */
     'IsRemote'?: boolean;
     'ETag'?: string | null;

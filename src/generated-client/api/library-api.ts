@@ -27,23 +27,39 @@ import type { BaseItemDto } from '../models';
 // @ts-ignore
 import type { BaseItemDtoQueryResult } from '../models';
 // @ts-ignore
+import type { BaseItemKind } from '../models';
+// @ts-ignore
 import type { CollectionType } from '../models';
+// @ts-ignore
+import type { ImageType } from '../models';
 // @ts-ignore
 import type { ItemCounts } from '../models';
 // @ts-ignore
 import type { ItemFields } from '../models';
 // @ts-ignore
+import type { ItemFilter } from '../models';
+// @ts-ignore
 import type { ItemSortBy } from '../models';
 // @ts-ignore
 import type { LibraryOptionsResultDto } from '../models';
 // @ts-ignore
+import type { LocationType } from '../models';
+// @ts-ignore
+import type { MediaType } from '../models';
+// @ts-ignore
 import type { MediaUpdateInfoDto } from '../models';
 // @ts-ignore
+import type { MetadataRefreshMode } from '../models';
+// @ts-ignore
 import type { ProblemDetails } from '../models';
+// @ts-ignore
+import type { SeriesStatus } from '../models';
 // @ts-ignore
 import type { SortOrder } from '../models';
 // @ts-ignore
 import type { ThemeMediaResult } from '../models';
+// @ts-ignore
+import type { VideoType } from '../models';
 /**
  * LibraryApi - axios parameter creator
  */
@@ -168,44 +184,6 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {string} itemId 
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getCriticReviews: async (itemId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'itemId' is not null or undefined
-            assertParamExists('getCriticReviews', 'itemId', itemId)
-            const localVarPath = `/Items/{itemId}/CriticReviews`
-                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {string} itemId The item id.
          * @param {*} [options] Override http request option.
@@ -280,6 +258,147 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
+         * @summary Gets intros to play before the main media item plays.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getIntros: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getIntros', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/Intros`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets an item from a user\'s library.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItem: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getItem', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets the collections that include the specified item.
+         * @param {string} itemId The item id.
+         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {number} [startIndex] Optional. The index of the first record in the output.
+         * @param {number} [limit] Optional. The maximum number of records to return.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItemCollections: async (itemId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getItemCollections', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/Collections`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
+            }
+
+            if (limit !== undefined) {
+                localVarQueryParameter['limit'] = limit;
+            }
+
+            if (fields) {
+                localVarQueryParameter['fields'] = fields;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Get item counts.
          * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
          * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
@@ -323,6 +442,575 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
+         * @summary Gets items based on a query.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
+         * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
+         * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
+         * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
+         * @param {boolean} [hasSubtitles] Optional filter by items with subtitles.
+         * @param {boolean} [hasSpecialFeature] Optional filter by items with special features.
+         * @param {boolean} [hasTrailer] Optional filter by items with trailers.
+         * @param {string} [adjacentTo] Optional. Return items that are siblings of a supplied item.
+         * @param {number} [indexNumber] Optional filter by index number.
+         * @param {number} [parentIndexNumber] Optional filter by parent index number.
+         * @param {boolean} [hasParentalRating] Optional filter by items that have or do not have a parental rating.
+         * @param {boolean} [isHd] Optional filter by items that are HD or not.
+         * @param {boolean} [is4K] Optional filter by items that are 4K or not.
+         * @param {Array<LocationType>} [locationTypes] Optional. If specified, results will be filtered based on LocationType. This allows multiple, comma delimited.
+         * @param {Array<LocationType>} [excludeLocationTypes] Optional. If specified, results will be filtered based on the LocationType. This allows multiple, comma delimited.
+         * @param {boolean} [isMissing] Optional filter by items that are missing episodes or not.
+         * @param {boolean} [isUnaired] Optional filter by items that are unaired episodes or not.
+         * @param {number} [minCommunityRating] Optional filter by minimum community rating.
+         * @param {number} [minCriticRating] Optional filter by minimum critic rating.
+         * @param {string} [minPremiereDate] Optional. The minimum premiere date. Format &#x3D; ISO.
+         * @param {string} [minDateLastSaved] Optional. The minimum last saved date. Format &#x3D; ISO.
+         * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
+         * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
+         * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
+         * @param {boolean} [isMovie] Optional filter for live tv movies.
+         * @param {boolean} [isSeries] Optional filter for live tv series.
+         * @param {boolean} [isNews] Optional filter for live tv news.
+         * @param {boolean} [isKids] Optional filter for live tv kids.
+         * @param {boolean} [isSports] Optional filter for live tv sports.
+         * @param {Array<string>} [excludeItemIds] Optional. If specified, results will be filtered by excluding item ids. This allows multiple, comma delimited.
+         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
+         * @param {number} [limit] Optional. The maximum number of records to return.
+         * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
+         * @param {string} [searchTerm] Optional. Filter based on a search term.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+         * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
+         * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<ImageType>} [imageTypes] Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {boolean} [isPlayed] Optional filter by items that are played, or not.
+         * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
+         * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
+         * @param {Array<string>} [tags] Optional. If specified, results will be filtered based on tag. This allows multiple, pipe delimited.
+         * @param {Array<number>} [years] Optional. If specified, results will be filtered based on production year. This allows multiple, comma delimited.
+         * @param {boolean} [enableUserData] Optional, include user data.
+         * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {string} [person] Optional. If specified, results will be filtered to include only those containing the specified person.
+         * @param {Array<string>} [personIds] Optional. If specified, results will be filtered to include only those containing the specified person id.
+         * @param {Array<string>} [personTypes] Optional. If specified, along with Person, results will be filtered to include only those containing the specified person and PersonType. Allows multiple, comma-delimited.
+         * @param {Array<string>} [studios] Optional. If specified, results will be filtered based on studio. This allows multiple, pipe delimited.
+         * @param {Array<string>} [artists] Optional. If specified, results will be filtered based on artists. This allows multiple, pipe delimited.
+         * @param {Array<string>} [excludeArtistIds] Optional. If specified, results will be filtered based on artist id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [artistIds] Optional. If specified, results will be filtered to include only those containing the specified artist id.
+         * @param {Array<string>} [albumArtistIds] Optional. If specified, results will be filtered to include only those containing the specified album artist id.
+         * @param {Array<string>} [contributingArtistIds] Optional. If specified, results will be filtered to include only those containing the specified contributing artist id.
+         * @param {Array<string>} [albums] Optional. If specified, results will be filtered based on album. This allows multiple, pipe delimited.
+         * @param {Array<string>} [albumIds] Optional. If specified, results will be filtered based on album id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [ids] Optional. If specific items are needed, specify a list of item id\&#39;s to retrieve. This allows multiple, comma delimited.
+         * @param {Array<VideoType>} [videoTypes] Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, comma delimited.
+         * @param {string} [minOfficialRating] Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
+         * @param {boolean} [isLocked] Optional filter by items that are locked.
+         * @param {boolean} [isPlaceHolder] Optional filter by items that are placeholders.
+         * @param {boolean} [hasOfficialRating] Optional filter by items that have official ratings.
+         * @param {boolean} [collapseBoxSetItems] Whether or not to hide items behind their boxsets.
+         * @param {number} [minWidth] Optional. Filter by the minimum width of the item.
+         * @param {number} [minHeight] Optional. Filter by the minimum height of the item.
+         * @param {number} [maxWidth] Optional. Filter by the maximum width of the item.
+         * @param {number} [maxHeight] Optional. Filter by the maximum height of the item.
+         * @param {boolean} [is3D] Optional filter by items that are 3D, or not.
+         * @param {Array<SeriesStatus>} [seriesStatus] Optional filter by Series Status. Allows multiple, comma delimited.
+         * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
+         * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
+         * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
+         * @param {Array<string>} [studioIds] Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [audioLanguages] Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+         * @param {Array<string>} [subtitleLanguages] Optional. If specified, results will be filtered based on subtitle language. This allows multiple, comma delimited values.
+         * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
+         * @param {boolean} [enableImages] Optional, include image information in output.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItems: async (userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, indexNumber?: number, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, audioLanguages?: Array<string>, subtitleLanguages?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Items`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            if (maxOfficialRating !== undefined) {
+                localVarQueryParameter['maxOfficialRating'] = maxOfficialRating;
+            }
+
+            if (hasThemeSong !== undefined) {
+                localVarQueryParameter['hasThemeSong'] = hasThemeSong;
+            }
+
+            if (hasThemeVideo !== undefined) {
+                localVarQueryParameter['hasThemeVideo'] = hasThemeVideo;
+            }
+
+            if (hasSubtitles !== undefined) {
+                localVarQueryParameter['hasSubtitles'] = hasSubtitles;
+            }
+
+            if (hasSpecialFeature !== undefined) {
+                localVarQueryParameter['hasSpecialFeature'] = hasSpecialFeature;
+            }
+
+            if (hasTrailer !== undefined) {
+                localVarQueryParameter['hasTrailer'] = hasTrailer;
+            }
+
+            if (adjacentTo !== undefined) {
+                localVarQueryParameter['adjacentTo'] = adjacentTo;
+            }
+
+            if (indexNumber !== undefined) {
+                localVarQueryParameter['indexNumber'] = indexNumber;
+            }
+
+            if (parentIndexNumber !== undefined) {
+                localVarQueryParameter['parentIndexNumber'] = parentIndexNumber;
+            }
+
+            if (hasParentalRating !== undefined) {
+                localVarQueryParameter['hasParentalRating'] = hasParentalRating;
+            }
+
+            if (isHd !== undefined) {
+                localVarQueryParameter['isHd'] = isHd;
+            }
+
+            if (is4K !== undefined) {
+                localVarQueryParameter['is4K'] = is4K;
+            }
+
+            if (locationTypes) {
+                localVarQueryParameter['locationTypes'] = locationTypes;
+            }
+
+            if (excludeLocationTypes) {
+                localVarQueryParameter['excludeLocationTypes'] = excludeLocationTypes;
+            }
+
+            if (isMissing !== undefined) {
+                localVarQueryParameter['isMissing'] = isMissing;
+            }
+
+            if (isUnaired !== undefined) {
+                localVarQueryParameter['isUnaired'] = isUnaired;
+            }
+
+            if (minCommunityRating !== undefined) {
+                localVarQueryParameter['minCommunityRating'] = minCommunityRating;
+            }
+
+            if (minCriticRating !== undefined) {
+                localVarQueryParameter['minCriticRating'] = minCriticRating;
+            }
+
+            if (minPremiereDate !== undefined) {
+                localVarQueryParameter['minPremiereDate'] = (minPremiereDate as any instanceof Date) ?
+                    (minPremiereDate as any).toISOString() :
+                    minPremiereDate;
+            }
+
+            if (minDateLastSaved !== undefined) {
+                localVarQueryParameter['minDateLastSaved'] = (minDateLastSaved as any instanceof Date) ?
+                    (minDateLastSaved as any).toISOString() :
+                    minDateLastSaved;
+            }
+
+            if (minDateLastSavedForUser !== undefined) {
+                localVarQueryParameter['minDateLastSavedForUser'] = (minDateLastSavedForUser as any instanceof Date) ?
+                    (minDateLastSavedForUser as any).toISOString() :
+                    minDateLastSavedForUser;
+            }
+
+            if (maxPremiereDate !== undefined) {
+                localVarQueryParameter['maxPremiereDate'] = (maxPremiereDate as any instanceof Date) ?
+                    (maxPremiereDate as any).toISOString() :
+                    maxPremiereDate;
+            }
+
+            if (hasOverview !== undefined) {
+                localVarQueryParameter['hasOverview'] = hasOverview;
+            }
+
+            if (hasImdbId !== undefined) {
+                localVarQueryParameter['hasImdbId'] = hasImdbId;
+            }
+
+            if (hasTmdbId !== undefined) {
+                localVarQueryParameter['hasTmdbId'] = hasTmdbId;
+            }
+
+            if (hasTvdbId !== undefined) {
+                localVarQueryParameter['hasTvdbId'] = hasTvdbId;
+            }
+
+            if (isMovie !== undefined) {
+                localVarQueryParameter['isMovie'] = isMovie;
+            }
+
+            if (isSeries !== undefined) {
+                localVarQueryParameter['isSeries'] = isSeries;
+            }
+
+            if (isNews !== undefined) {
+                localVarQueryParameter['isNews'] = isNews;
+            }
+
+            if (isKids !== undefined) {
+                localVarQueryParameter['isKids'] = isKids;
+            }
+
+            if (isSports !== undefined) {
+                localVarQueryParameter['isSports'] = isSports;
+            }
+
+            if (excludeItemIds) {
+                localVarQueryParameter['excludeItemIds'] = excludeItemIds;
+            }
+
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
+            }
+
+            if (limit !== undefined) {
+                localVarQueryParameter['limit'] = limit;
+            }
+
+            if (recursive !== undefined) {
+                localVarQueryParameter['recursive'] = recursive;
+            }
+
+            if (searchTerm !== undefined) {
+                localVarQueryParameter['searchTerm'] = searchTerm;
+            }
+
+            if (sortOrder) {
+                localVarQueryParameter['sortOrder'] = sortOrder;
+            }
+
+            if (parentId !== undefined) {
+                localVarQueryParameter['parentId'] = parentId;
+            }
+
+            if (fields) {
+                localVarQueryParameter['fields'] = fields;
+            }
+
+            if (excludeItemTypes) {
+                localVarQueryParameter['excludeItemTypes'] = excludeItemTypes;
+            }
+
+            if (includeItemTypes) {
+                localVarQueryParameter['includeItemTypes'] = includeItemTypes;
+            }
+
+            if (filters) {
+                localVarQueryParameter['filters'] = filters;
+            }
+
+            if (isFavorite !== undefined) {
+                localVarQueryParameter['isFavorite'] = isFavorite;
+            }
+
+            if (mediaTypes) {
+                localVarQueryParameter['mediaTypes'] = mediaTypes;
+            }
+
+            if (imageTypes) {
+                localVarQueryParameter['imageTypes'] = imageTypes;
+            }
+
+            if (sortBy) {
+                localVarQueryParameter['sortBy'] = sortBy;
+            }
+
+            if (isPlayed !== undefined) {
+                localVarQueryParameter['isPlayed'] = isPlayed;
+            }
+
+            if (genres) {
+                localVarQueryParameter['genres'] = genres;
+            }
+
+            if (officialRatings) {
+                localVarQueryParameter['officialRatings'] = officialRatings;
+            }
+
+            if (tags) {
+                localVarQueryParameter['tags'] = tags;
+            }
+
+            if (years) {
+                localVarQueryParameter['years'] = years;
+            }
+
+            if (enableUserData !== undefined) {
+                localVarQueryParameter['enableUserData'] = enableUserData;
+            }
+
+            if (imageTypeLimit !== undefined) {
+                localVarQueryParameter['imageTypeLimit'] = imageTypeLimit;
+            }
+
+            if (enableImageTypes) {
+                localVarQueryParameter['enableImageTypes'] = enableImageTypes;
+            }
+
+            if (person !== undefined) {
+                localVarQueryParameter['person'] = person;
+            }
+
+            if (personIds) {
+                localVarQueryParameter['personIds'] = personIds;
+            }
+
+            if (personTypes) {
+                localVarQueryParameter['personTypes'] = personTypes;
+            }
+
+            if (studios) {
+                localVarQueryParameter['studios'] = studios;
+            }
+
+            if (artists) {
+                localVarQueryParameter['artists'] = artists;
+            }
+
+            if (excludeArtistIds) {
+                localVarQueryParameter['excludeArtistIds'] = excludeArtistIds;
+            }
+
+            if (artistIds) {
+                localVarQueryParameter['artistIds'] = artistIds;
+            }
+
+            if (albumArtistIds) {
+                localVarQueryParameter['albumArtistIds'] = albumArtistIds;
+            }
+
+            if (contributingArtistIds) {
+                localVarQueryParameter['contributingArtistIds'] = contributingArtistIds;
+            }
+
+            if (albums) {
+                localVarQueryParameter['albums'] = albums;
+            }
+
+            if (albumIds) {
+                localVarQueryParameter['albumIds'] = albumIds;
+            }
+
+            if (ids) {
+                localVarQueryParameter['ids'] = ids;
+            }
+
+            if (videoTypes) {
+                localVarQueryParameter['videoTypes'] = videoTypes;
+            }
+
+            if (minOfficialRating !== undefined) {
+                localVarQueryParameter['minOfficialRating'] = minOfficialRating;
+            }
+
+            if (isLocked !== undefined) {
+                localVarQueryParameter['isLocked'] = isLocked;
+            }
+
+            if (isPlaceHolder !== undefined) {
+                localVarQueryParameter['isPlaceHolder'] = isPlaceHolder;
+            }
+
+            if (hasOfficialRating !== undefined) {
+                localVarQueryParameter['hasOfficialRating'] = hasOfficialRating;
+            }
+
+            if (collapseBoxSetItems !== undefined) {
+                localVarQueryParameter['collapseBoxSetItems'] = collapseBoxSetItems;
+            }
+
+            if (minWidth !== undefined) {
+                localVarQueryParameter['minWidth'] = minWidth;
+            }
+
+            if (minHeight !== undefined) {
+                localVarQueryParameter['minHeight'] = minHeight;
+            }
+
+            if (maxWidth !== undefined) {
+                localVarQueryParameter['maxWidth'] = maxWidth;
+            }
+
+            if (maxHeight !== undefined) {
+                localVarQueryParameter['maxHeight'] = maxHeight;
+            }
+
+            if (is3D !== undefined) {
+                localVarQueryParameter['is3D'] = is3D;
+            }
+
+            if (seriesStatus) {
+                localVarQueryParameter['seriesStatus'] = seriesStatus;
+            }
+
+            if (nameStartsWithOrGreater !== undefined) {
+                localVarQueryParameter['nameStartsWithOrGreater'] = nameStartsWithOrGreater;
+            }
+
+            if (nameStartsWith !== undefined) {
+                localVarQueryParameter['nameStartsWith'] = nameStartsWith;
+            }
+
+            if (nameLessThan !== undefined) {
+                localVarQueryParameter['nameLessThan'] = nameLessThan;
+            }
+
+            if (studioIds) {
+                localVarQueryParameter['studioIds'] = studioIds;
+            }
+
+            if (genreIds) {
+                localVarQueryParameter['genreIds'] = genreIds;
+            }
+
+            if (audioLanguages) {
+                localVarQueryParameter['audioLanguages'] = audioLanguages;
+            }
+
+            if (subtitleLanguages) {
+                localVarQueryParameter['subtitleLanguages'] = subtitleLanguages;
+            }
+
+            if (enableTotalRecordCount !== undefined) {
+                localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
+            }
+
+            if (enableImages !== undefined) {
+                localVarQueryParameter['enableImages'] = enableImages;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets latest media.
+         * @param {string} [userId] User id.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {boolean} [isPlayed] Filter by items that are played, or not.
+         * @param {boolean} [enableImages] Optional. include image information in output.
+         * @param {number} [imageTypeLimit] Optional. the max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {boolean} [enableUserData] Optional. include user data.
+         * @param {number} [limit] Return item limit.
+         * @param {boolean} [groupItems] Whether or not to group items into a parent container.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLatestMedia: async (userId?: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Items/Latest`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            if (parentId !== undefined) {
+                localVarQueryParameter['parentId'] = parentId;
+            }
+
+            if (fields) {
+                localVarQueryParameter['fields'] = fields;
+            }
+
+            if (includeItemTypes) {
+                localVarQueryParameter['includeItemTypes'] = includeItemTypes;
+            }
+
+            if (isPlayed !== undefined) {
+                localVarQueryParameter['isPlayed'] = isPlayed;
+            }
+
+            if (enableImages !== undefined) {
+                localVarQueryParameter['enableImages'] = enableImages;
+            }
+
+            if (imageTypeLimit !== undefined) {
+                localVarQueryParameter['imageTypeLimit'] = imageTypeLimit;
+            }
+
+            if (enableImageTypes) {
+                localVarQueryParameter['enableImageTypes'] = enableImageTypes;
+            }
+
+            if (enableUserData !== undefined) {
+                localVarQueryParameter['enableUserData'] = enableUserData;
+            }
+
+            if (limit !== undefined) {
+                localVarQueryParameter['limit'] = limit;
+            }
+
+            if (groupItems !== undefined) {
+                localVarQueryParameter['groupItems'] = groupItems;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Gets the library options info.
          * @param {CollectionType} [libraryContentType] Library content type.
          * @param {boolean} [isNewLibrary] Whether this is a new library.
@@ -351,6 +1039,48 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
 
             if (isNewLibrary !== undefined) {
                 localVarQueryParameter['isNewLibrary'] = isNewLibrary;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets local trailers for an item.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLocalTrailers: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getLocalTrailers', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/LocalTrailers`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
             }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
@@ -423,6 +1153,152 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
 
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets items based on a query.
+         * @param {string} [userId] The user id.
+         * @param {number} [startIndex] The start index.
+         * @param {number} [limit] The item limit.
+         * @param {string} [searchTerm] The search term.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {boolean} [enableUserData] Optional. Include user data.
+         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+         * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
+         * @param {boolean} [enableImages] Optional. Include image information in output.
+         * @param {boolean} [excludeActiveSessions] Optional. Whether to exclude the currently active sessions.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getResumeItems: async (userId?: string, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, mediaTypes?: Array<MediaType>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, enableTotalRecordCount?: boolean, enableImages?: boolean, excludeActiveSessions?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/UserItems/Resume`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
+
+            if (startIndex !== undefined) {
+                localVarQueryParameter['startIndex'] = startIndex;
+            }
+
+            if (limit !== undefined) {
+                localVarQueryParameter['limit'] = limit;
+            }
+
+            if (searchTerm !== undefined) {
+                localVarQueryParameter['searchTerm'] = searchTerm;
+            }
+
+            if (parentId !== undefined) {
+                localVarQueryParameter['parentId'] = parentId;
+            }
+
+            if (fields) {
+                localVarQueryParameter['fields'] = fields;
+            }
+
+            if (mediaTypes) {
+                localVarQueryParameter['mediaTypes'] = mediaTypes;
+            }
+
+            if (enableUserData !== undefined) {
+                localVarQueryParameter['enableUserData'] = enableUserData;
+            }
+
+            if (imageTypeLimit !== undefined) {
+                localVarQueryParameter['imageTypeLimit'] = imageTypeLimit;
+            }
+
+            if (enableImageTypes) {
+                localVarQueryParameter['enableImageTypes'] = enableImageTypes;
+            }
+
+            if (excludeItemTypes) {
+                localVarQueryParameter['excludeItemTypes'] = excludeItemTypes;
+            }
+
+            if (includeItemTypes) {
+                localVarQueryParameter['includeItemTypes'] = includeItemTypes;
+            }
+
+            if (enableTotalRecordCount !== undefined) {
+                localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
+            }
+
+            if (enableImages !== undefined) {
+                localVarQueryParameter['enableImages'] = enableImages;
+            }
+
+            if (excludeActiveSessions !== undefined) {
+                localVarQueryParameter['excludeActiveSessions'] = excludeActiveSessions;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets the root folder from a user\'s library.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getRootFolder: async (userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/Items/Root`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
+            }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
@@ -764,6 +1640,48 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
 
             if (fields) {
                 localVarQueryParameter['fields'] = fields;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets special features for an item.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getSpecialFeatures: async (itemId: string, userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('getSpecialFeatures', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/SpecialFeatures`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (userId !== undefined) {
+                localVarQueryParameter['userId'] = userId;
             }
 
             localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
@@ -1150,6 +2068,68 @@ export const LibraryApiAxiosParamCreator = function (configuration?: Configurati
         },
         /**
          * 
+         * @summary Refreshes metadata for an item.
+         * @param {string} itemId Item id.
+         * @param {MetadataRefreshMode} [metadataRefreshMode] (Optional) Specifies the metadata refresh mode.
+         * @param {MetadataRefreshMode} [imageRefreshMode] (Optional) Specifies the image refresh mode.
+         * @param {boolean} [replaceAllMetadata] (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [replaceAllImages] (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [regenerateTrickplay] (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        refreshItem: async (itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, regenerateTrickplay?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'itemId' is not null or undefined
+            assertParamExists('refreshItem', 'itemId', itemId)
+            const localVarPath = `/Items/{itemId}/Refresh`
+                .replace(`{${"itemId"}}`, encodeURIComponent(String(itemId)));
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            if (metadataRefreshMode !== undefined) {
+                localVarQueryParameter['metadataRefreshMode'] = metadataRefreshMode;
+            }
+
+            if (imageRefreshMode !== undefined) {
+                localVarQueryParameter['imageRefreshMode'] = imageRefreshMode;
+            }
+
+            if (replaceAllMetadata !== undefined) {
+                localVarQueryParameter['replaceAllMetadata'] = replaceAllMetadata;
+            }
+
+            if (replaceAllImages !== undefined) {
+                localVarQueryParameter['replaceAllImages'] = replaceAllImages;
+            }
+
+            if (regenerateTrickplay !== undefined) {
+                localVarQueryParameter['regenerateTrickplay'] = regenerateTrickplay;
+            }
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Starts a library scan.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1232,20 +2212,6 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {string} itemId 
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getCriticReviews(itemId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getCriticReviews(itemId, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getCriticReviews']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {string} itemId The item id.
          * @param {*} [options] Override http request option.
@@ -1272,6 +2238,51 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets intros to play before the main media item plays.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getIntros(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getIntros(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getIntros']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets an item from a user\'s library.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getItem(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getItem(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets the collections that include the specified item.
+         * @param {string} itemId The item id.
+         * @param {string} [userId] Optional. Filter by user id, and attach user data.
+         * @param {number} [startIndex] Optional. The index of the first record in the output.
+         * @param {number} [limit] Optional. The maximum number of records to return.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getItemCollections(itemId: string, userId?: string, startIndex?: number, limit?: number, fields?: Array<ItemFields>, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getItemCollections(itemId, userId, startIndex, limit, fields, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getItemCollections']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Get item counts.
          * @param {string} [userId] Optional. Get counts from a specific user\&#39;s library.
          * @param {boolean} [isFavorite] Optional. Get counts of favorite items.
@@ -1286,6 +2297,129 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets items based on a query.
+         * @param {string} [userId] The user id supplied as query parameter; this is required when not using an API key.
+         * @param {string} [maxOfficialRating] Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
+         * @param {boolean} [hasThemeSong] Optional filter by items with theme songs.
+         * @param {boolean} [hasThemeVideo] Optional filter by items with theme videos.
+         * @param {boolean} [hasSubtitles] Optional filter by items with subtitles.
+         * @param {boolean} [hasSpecialFeature] Optional filter by items with special features.
+         * @param {boolean} [hasTrailer] Optional filter by items with trailers.
+         * @param {string} [adjacentTo] Optional. Return items that are siblings of a supplied item.
+         * @param {number} [indexNumber] Optional filter by index number.
+         * @param {number} [parentIndexNumber] Optional filter by parent index number.
+         * @param {boolean} [hasParentalRating] Optional filter by items that have or do not have a parental rating.
+         * @param {boolean} [isHd] Optional filter by items that are HD or not.
+         * @param {boolean} [is4K] Optional filter by items that are 4K or not.
+         * @param {Array<LocationType>} [locationTypes] Optional. If specified, results will be filtered based on LocationType. This allows multiple, comma delimited.
+         * @param {Array<LocationType>} [excludeLocationTypes] Optional. If specified, results will be filtered based on the LocationType. This allows multiple, comma delimited.
+         * @param {boolean} [isMissing] Optional filter by items that are missing episodes or not.
+         * @param {boolean} [isUnaired] Optional filter by items that are unaired episodes or not.
+         * @param {number} [minCommunityRating] Optional filter by minimum community rating.
+         * @param {number} [minCriticRating] Optional filter by minimum critic rating.
+         * @param {string} [minPremiereDate] Optional. The minimum premiere date. Format &#x3D; ISO.
+         * @param {string} [minDateLastSaved] Optional. The minimum last saved date. Format &#x3D; ISO.
+         * @param {string} [minDateLastSavedForUser] Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
+         * @param {string} [maxPremiereDate] Optional. The maximum premiere date. Format &#x3D; ISO.
+         * @param {boolean} [hasOverview] Optional filter by items that have an overview or not.
+         * @param {boolean} [hasImdbId] Optional filter by items that have an IMDb id or not.
+         * @param {boolean} [hasTmdbId] Optional filter by items that have a TMDb id or not.
+         * @param {boolean} [hasTvdbId] Optional filter by items that have a TVDb id or not.
+         * @param {boolean} [isMovie] Optional filter for live tv movies.
+         * @param {boolean} [isSeries] Optional filter for live tv series.
+         * @param {boolean} [isNews] Optional filter for live tv news.
+         * @param {boolean} [isKids] Optional filter for live tv kids.
+         * @param {boolean} [isSports] Optional filter for live tv sports.
+         * @param {Array<string>} [excludeItemIds] Optional. If specified, results will be filtered by excluding item ids. This allows multiple, comma delimited.
+         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
+         * @param {number} [limit] Optional. The maximum number of records to return.
+         * @param {boolean} [recursive] When searching within folders, this determines whether or not the search will be recursive. true/false.
+         * @param {string} [searchTerm] Optional. Filter based on a search term.
+         * @param {Array<SortOrder>} [sortOrder] Sort Order - Ascending, Descending.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+         * @param {Array<ItemFilter>} [filters] Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
+         * @param {boolean} [isFavorite] Optional filter by items that are marked as favorite, or not.
+         * @param {Array<MediaType>} [mediaTypes] Optional filter by MediaType. Allows multiple, comma delimited.
+         * @param {Array<ImageType>} [imageTypes] Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
+         * @param {Array<ItemSortBy>} [sortBy] Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+         * @param {boolean} [isPlayed] Optional filter by items that are played, or not.
+         * @param {Array<string>} [genres] Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
+         * @param {Array<string>} [officialRatings] Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
+         * @param {Array<string>} [tags] Optional. If specified, results will be filtered based on tag. This allows multiple, pipe delimited.
+         * @param {Array<number>} [years] Optional. If specified, results will be filtered based on production year. This allows multiple, comma delimited.
+         * @param {boolean} [enableUserData] Optional, include user data.
+         * @param {number} [imageTypeLimit] Optional, the max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {string} [person] Optional. If specified, results will be filtered to include only those containing the specified person.
+         * @param {Array<string>} [personIds] Optional. If specified, results will be filtered to include only those containing the specified person id.
+         * @param {Array<string>} [personTypes] Optional. If specified, along with Person, results will be filtered to include only those containing the specified person and PersonType. Allows multiple, comma-delimited.
+         * @param {Array<string>} [studios] Optional. If specified, results will be filtered based on studio. This allows multiple, pipe delimited.
+         * @param {Array<string>} [artists] Optional. If specified, results will be filtered based on artists. This allows multiple, pipe delimited.
+         * @param {Array<string>} [excludeArtistIds] Optional. If specified, results will be filtered based on artist id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [artistIds] Optional. If specified, results will be filtered to include only those containing the specified artist id.
+         * @param {Array<string>} [albumArtistIds] Optional. If specified, results will be filtered to include only those containing the specified album artist id.
+         * @param {Array<string>} [contributingArtistIds] Optional. If specified, results will be filtered to include only those containing the specified contributing artist id.
+         * @param {Array<string>} [albums] Optional. If specified, results will be filtered based on album. This allows multiple, pipe delimited.
+         * @param {Array<string>} [albumIds] Optional. If specified, results will be filtered based on album id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [ids] Optional. If specific items are needed, specify a list of item id\&#39;s to retrieve. This allows multiple, comma delimited.
+         * @param {Array<VideoType>} [videoTypes] Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, comma delimited.
+         * @param {string} [minOfficialRating] Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
+         * @param {boolean} [isLocked] Optional filter by items that are locked.
+         * @param {boolean} [isPlaceHolder] Optional filter by items that are placeholders.
+         * @param {boolean} [hasOfficialRating] Optional filter by items that have official ratings.
+         * @param {boolean} [collapseBoxSetItems] Whether or not to hide items behind their boxsets.
+         * @param {number} [minWidth] Optional. Filter by the minimum width of the item.
+         * @param {number} [minHeight] Optional. Filter by the minimum height of the item.
+         * @param {number} [maxWidth] Optional. Filter by the maximum width of the item.
+         * @param {number} [maxHeight] Optional. Filter by the maximum height of the item.
+         * @param {boolean} [is3D] Optional filter by items that are 3D, or not.
+         * @param {Array<SeriesStatus>} [seriesStatus] Optional filter by Series Status. Allows multiple, comma delimited.
+         * @param {string} [nameStartsWithOrGreater] Optional filter by items whose name is sorted equally or greater than a given input string.
+         * @param {string} [nameStartsWith] Optional filter by items whose name is sorted equally than a given input string.
+         * @param {string} [nameLessThan] Optional filter by items whose name is equally or lesser than a given input string.
+         * @param {Array<string>} [studioIds] Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [genreIds] Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
+         * @param {Array<string>} [audioLanguages] Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+         * @param {Array<string>} [subtitleLanguages] Optional. If specified, results will be filtered based on subtitle language. This allows multiple, comma delimited values.
+         * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
+         * @param {boolean} [enableImages] Optional, include image information in output.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getItems(userId?: string, maxOfficialRating?: string, hasThemeSong?: boolean, hasThemeVideo?: boolean, hasSubtitles?: boolean, hasSpecialFeature?: boolean, hasTrailer?: boolean, adjacentTo?: string, indexNumber?: number, parentIndexNumber?: number, hasParentalRating?: boolean, isHd?: boolean, is4K?: boolean, locationTypes?: Array<LocationType>, excludeLocationTypes?: Array<LocationType>, isMissing?: boolean, isUnaired?: boolean, minCommunityRating?: number, minCriticRating?: number, minPremiereDate?: string, minDateLastSaved?: string, minDateLastSavedForUser?: string, maxPremiereDate?: string, hasOverview?: boolean, hasImdbId?: boolean, hasTmdbId?: boolean, hasTvdbId?: boolean, isMovie?: boolean, isSeries?: boolean, isNews?: boolean, isKids?: boolean, isSports?: boolean, excludeItemIds?: Array<string>, startIndex?: number, limit?: number, recursive?: boolean, searchTerm?: string, sortOrder?: Array<SortOrder>, parentId?: string, fields?: Array<ItemFields>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, filters?: Array<ItemFilter>, isFavorite?: boolean, mediaTypes?: Array<MediaType>, imageTypes?: Array<ImageType>, sortBy?: Array<ItemSortBy>, isPlayed?: boolean, genres?: Array<string>, officialRatings?: Array<string>, tags?: Array<string>, years?: Array<number>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, person?: string, personIds?: Array<string>, personTypes?: Array<string>, studios?: Array<string>, artists?: Array<string>, excludeArtistIds?: Array<string>, artistIds?: Array<string>, albumArtistIds?: Array<string>, contributingArtistIds?: Array<string>, albums?: Array<string>, albumIds?: Array<string>, ids?: Array<string>, videoTypes?: Array<VideoType>, minOfficialRating?: string, isLocked?: boolean, isPlaceHolder?: boolean, hasOfficialRating?: boolean, collapseBoxSetItems?: boolean, minWidth?: number, minHeight?: number, maxWidth?: number, maxHeight?: number, is3D?: boolean, seriesStatus?: Array<SeriesStatus>, nameStartsWithOrGreater?: string, nameStartsWith?: string, nameLessThan?: string, studioIds?: Array<string>, genreIds?: Array<string>, audioLanguages?: Array<string>, subtitleLanguages?: Array<string>, enableTotalRecordCount?: boolean, enableImages?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getItems(userId, maxOfficialRating, hasThemeSong, hasThemeVideo, hasSubtitles, hasSpecialFeature, hasTrailer, adjacentTo, indexNumber, parentIndexNumber, hasParentalRating, isHd, is4K, locationTypes, excludeLocationTypes, isMissing, isUnaired, minCommunityRating, minCriticRating, minPremiereDate, minDateLastSaved, minDateLastSavedForUser, maxPremiereDate, hasOverview, hasImdbId, hasTmdbId, hasTvdbId, isMovie, isSeries, isNews, isKids, isSports, excludeItemIds, startIndex, limit, recursive, searchTerm, sortOrder, parentId, fields, excludeItemTypes, includeItemTypes, filters, isFavorite, mediaTypes, imageTypes, sortBy, isPlayed, genres, officialRatings, tags, years, enableUserData, imageTypeLimit, enableImageTypes, person, personIds, personTypes, studios, artists, excludeArtistIds, artistIds, albumArtistIds, contributingArtistIds, albums, albumIds, ids, videoTypes, minOfficialRating, isLocked, isPlaceHolder, hasOfficialRating, collapseBoxSetItems, minWidth, minHeight, maxWidth, maxHeight, is3D, seriesStatus, nameStartsWithOrGreater, nameStartsWith, nameLessThan, studioIds, genreIds, audioLanguages, subtitleLanguages, enableTotalRecordCount, enableImages, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets latest media.
+         * @param {string} [userId] User id.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {boolean} [isPlayed] Filter by items that are played, or not.
+         * @param {boolean} [enableImages] Optional. include image information in output.
+         * @param {number} [imageTypeLimit] Optional. the max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {boolean} [enableUserData] Optional. include user data.
+         * @param {number} [limit] Return item limit.
+         * @param {boolean} [groupItems] Whether or not to group items into a parent container.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getLatestMedia(userId?: string, parentId?: string, fields?: Array<ItemFields>, includeItemTypes?: Array<BaseItemKind>, isPlayed?: boolean, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, enableUserData?: boolean, limit?: number, groupItems?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLatestMedia(userId, parentId, fields, includeItemTypes, isPlayed, enableImages, imageTypeLimit, enableImageTypes, enableUserData, limit, groupItems, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getLatestMedia']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Gets the library options info.
          * @param {CollectionType} [libraryContentType] Library content type.
          * @param {boolean} [isNewLibrary] Whether this is a new library.
@@ -1296,6 +2430,20 @@ export const LibraryApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getLibraryOptionsInfo(libraryContentType, isNewLibrary, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LibraryApi.getLibraryOptionsInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets local trailers for an item.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getLocalTrailers(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLocalTrailers(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getLocalTrailers']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -1321,6 +2469,46 @@ export const LibraryApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getPhysicalPaths(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LibraryApi.getPhysicalPaths']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets items based on a query.
+         * @param {string} [userId] The user id.
+         * @param {number} [startIndex] The start index.
+         * @param {number} [limit] The item limit.
+         * @param {string} [searchTerm] The search term.
+         * @param {string} [parentId] Specify this to localize the search to a specific item or folder. Omit to use the root.
+         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+         * @param {Array<MediaType>} [mediaTypes] Optional. Filter by MediaType. Allows multiple, comma delimited.
+         * @param {boolean} [enableUserData] Optional. Include user data.
+         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
+         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
+         * @param {Array<BaseItemKind>} [excludeItemTypes] Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+         * @param {Array<BaseItemKind>} [includeItemTypes] Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+         * @param {boolean} [enableTotalRecordCount] Optional. Enable the total record count.
+         * @param {boolean} [enableImages] Optional. Include image information in output.
+         * @param {boolean} [excludeActiveSessions] Optional. Whether to exclude the currently active sessions.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getResumeItems(userId?: string, startIndex?: number, limit?: number, searchTerm?: string, parentId?: string, fields?: Array<ItemFields>, mediaTypes?: Array<MediaType>, enableUserData?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, excludeItemTypes?: Array<BaseItemKind>, includeItemTypes?: Array<BaseItemKind>, enableTotalRecordCount?: boolean, enableImages?: boolean, excludeActiveSessions?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getResumeItems(userId, startIndex, limit, searchTerm, parentId, fields, mediaTypes, enableUserData, imageTypeLimit, enableImageTypes, excludeItemTypes, includeItemTypes, enableTotalRecordCount, enableImages, excludeActiveSessions, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getResumeItems']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets the root folder from a user\'s library.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getRootFolder(userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getRootFolder(userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getRootFolder']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -1423,6 +2611,20 @@ export const LibraryApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getSimilarTrailers(itemId, excludeArtistIds, userId, limit, fields, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSimilarTrailers']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets special features for an item.
+         * @param {string} itemId Item id.
+         * @param {string} [userId] User id.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getSpecialFeatures(itemId: string, userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<Array<BaseItemDto>>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getSpecialFeatures(itemId, userId, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.getSpecialFeatures']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -1545,6 +2747,24 @@ export const LibraryApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Refreshes metadata for an item.
+         * @param {string} itemId Item id.
+         * @param {MetadataRefreshMode} [metadataRefreshMode] (Optional) Specifies the metadata refresh mode.
+         * @param {MetadataRefreshMode} [imageRefreshMode] (Optional) Specifies the image refresh mode.
+         * @param {boolean} [replaceAllMetadata] (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [replaceAllImages] (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {boolean} [regenerateTrickplay] (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async refreshItem(itemId: string, metadataRefreshMode?: MetadataRefreshMode, imageRefreshMode?: MetadataRefreshMode, replaceAllMetadata?: boolean, replaceAllImages?: boolean, regenerateTrickplay?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.refreshItem(itemId, metadataRefreshMode, imageRefreshMode, replaceAllMetadata, replaceAllImages, regenerateTrickplay, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['LibraryApi.refreshItem']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Starts a library scan.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1596,17 +2816,6 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
-         * @summary Gets critic review for an item.
-         * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getCriticReviews(requestParameters.itemId, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
          * @summary Downloads item media.
          * @param {LibraryApiGetDownloadRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1627,6 +2836,36 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
+         * @summary Gets intros to play before the main media item plays.
+         * @param {LibraryApiGetIntrosRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getIntros(requestParameters: LibraryApiGetIntrosRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getIntros(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets an item from a user\'s library.
+         * @param {LibraryApiGetItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItem(requestParameters: LibraryApiGetItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets the collections that include the specified item.
+         * @param {LibraryApiGetItemCollectionsRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItemCollections(requestParameters: LibraryApiGetItemCollectionsRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getItemCollections(requestParameters.itemId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Get item counts.
          * @param {LibraryApiGetItemCountsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1637,6 +2876,26 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
+         * @summary Gets items based on a query.
+         * @param {LibraryApiGetItemsRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getItems(requestParameters: LibraryApiGetItemsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getItems(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.indexNumber, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.audioLanguages, requestParameters.subtitleLanguages, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets latest media.
+         * @param {LibraryApiGetLatestMediaRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLatestMedia(requestParameters: LibraryApiGetLatestMediaRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getLatestMedia(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.includeItemTypes, requestParameters.isPlayed, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.limit, requestParameters.groupItems, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Gets the library options info.
          * @param {LibraryApiGetLibraryOptionsInfoRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1644,6 +2903,16 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          */
         getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<LibraryOptionsResultDto> {
             return localVarFp.getLibraryOptionsInfo(requestParameters.libraryContentType, requestParameters.isNewLibrary, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets local trailers for an item.
+         * @param {LibraryApiGetLocalTrailersRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLocalTrailers(requestParameters: LibraryApiGetLocalTrailersRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getLocalTrailers(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1663,6 +2932,26 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          */
         getPhysicalPaths(options?: RawAxiosRequestConfig): AxiosPromise<Array<string>> {
             return localVarFp.getPhysicalPaths(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets items based on a query.
+         * @param {LibraryApiGetResumeItemsRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getResumeItems(requestParameters: LibraryApiGetResumeItemsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
+            return localVarFp.getResumeItems(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.mediaTypes, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.enableTotalRecordCount, requestParameters.enableImages, requestParameters.excludeActiveSessions, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets the root folder from a user\'s library.
+         * @param {LibraryApiGetRootFolderRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getRootFolder(requestParameters: LibraryApiGetRootFolderRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDto> {
+            return localVarFp.getRootFolder(requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1723,6 +3012,16 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
          */
         getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getSimilarTrailers(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets special features for an item.
+         * @param {LibraryApiGetSpecialFeaturesRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getSpecialFeatures(requestParameters: LibraryApiGetSpecialFeaturesRequest, options?: RawAxiosRequestConfig): AxiosPromise<Array<BaseItemDto>> {
+            return localVarFp.getSpecialFeatures(requestParameters.itemId, requestParameters.userId, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1806,6 +3105,16 @@ export const LibraryApiFactory = function (configuration?: Configuration, basePa
         },
         /**
          * 
+         * @summary Refreshes metadata for an item.
+         * @param {LibraryApiRefreshItemRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        refreshItem(requestParameters: LibraryApiRefreshItemRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, requestParameters.regenerateTrickplay, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Starts a library scan.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -1852,13 +3161,6 @@ export interface LibraryApiGetAncestorsRequest {
 }
 
 /**
- * Request parameters for getCriticReviews operation in LibraryApi.
- */
-export interface LibraryApiGetCriticReviewsRequest {
-    readonly itemId: string
-}
-
-/**
  * Request parameters for getDownload operation in LibraryApi.
  */
 export interface LibraryApiGetDownloadRequest {
@@ -1879,6 +3181,66 @@ export interface LibraryApiGetFileRequest {
 }
 
 /**
+ * Request parameters for getIntros operation in LibraryApi.
+ */
+export interface LibraryApiGetIntrosRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+}
+
+/**
+ * Request parameters for getItem operation in LibraryApi.
+ */
+export interface LibraryApiGetItemRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+}
+
+/**
+ * Request parameters for getItemCollections operation in LibraryApi.
+ */
+export interface LibraryApiGetItemCollectionsRequest {
+    /**
+     * The item id.
+     */
+    readonly itemId: string
+
+    /**
+     * Optional. Filter by user id, and attach user data.
+     */
+    readonly userId?: string
+
+    /**
+     * Optional. The index of the first record in the output.
+     */
+    readonly startIndex?: number
+
+    /**
+     * Optional. The maximum number of records to return.
+     */
+    readonly limit?: number
+
+    /**
+     * Optional. Specify additional fields of information to return in the output.
+     */
+    readonly fields?: Array<ItemFields>
+}
+
+/**
  * Request parameters for getItemCounts operation in LibraryApi.
  */
 export interface LibraryApiGetItemCountsRequest {
@@ -1891,6 +3253,511 @@ export interface LibraryApiGetItemCountsRequest {
      * Optional. Get counts of favorite items.
      */
     readonly isFavorite?: boolean
+}
+
+/**
+ * Request parameters for getItems operation in LibraryApi.
+ */
+export interface LibraryApiGetItemsRequest {
+    /**
+     * The user id supplied as query parameter; this is required when not using an API key.
+     */
+    readonly userId?: string
+
+    /**
+     * Optional filter by maximum official rating (PG, PG-13, TV-MA, etc).
+     */
+    readonly maxOfficialRating?: string
+
+    /**
+     * Optional filter by items with theme songs.
+     */
+    readonly hasThemeSong?: boolean
+
+    /**
+     * Optional filter by items with theme videos.
+     */
+    readonly hasThemeVideo?: boolean
+
+    /**
+     * Optional filter by items with subtitles.
+     */
+    readonly hasSubtitles?: boolean
+
+    /**
+     * Optional filter by items with special features.
+     */
+    readonly hasSpecialFeature?: boolean
+
+    /**
+     * Optional filter by items with trailers.
+     */
+    readonly hasTrailer?: boolean
+
+    /**
+     * Optional. Return items that are siblings of a supplied item.
+     */
+    readonly adjacentTo?: string
+
+    /**
+     * Optional filter by index number.
+     */
+    readonly indexNumber?: number
+
+    /**
+     * Optional filter by parent index number.
+     */
+    readonly parentIndexNumber?: number
+
+    /**
+     * Optional filter by items that have or do not have a parental rating.
+     */
+    readonly hasParentalRating?: boolean
+
+    /**
+     * Optional filter by items that are HD or not.
+     */
+    readonly isHd?: boolean
+
+    /**
+     * Optional filter by items that are 4K or not.
+     */
+    readonly is4K?: boolean
+
+    /**
+     * Optional. If specified, results will be filtered based on LocationType. This allows multiple, comma delimited.
+     */
+    readonly locationTypes?: Array<LocationType>
+
+    /**
+     * Optional. If specified, results will be filtered based on the LocationType. This allows multiple, comma delimited.
+     */
+    readonly excludeLocationTypes?: Array<LocationType>
+
+    /**
+     * Optional filter by items that are missing episodes or not.
+     */
+    readonly isMissing?: boolean
+
+    /**
+     * Optional filter by items that are unaired episodes or not.
+     */
+    readonly isUnaired?: boolean
+
+    /**
+     * Optional filter by minimum community rating.
+     */
+    readonly minCommunityRating?: number
+
+    /**
+     * Optional filter by minimum critic rating.
+     */
+    readonly minCriticRating?: number
+
+    /**
+     * Optional. The minimum premiere date. Format &#x3D; ISO.
+     */
+    readonly minPremiereDate?: string
+
+    /**
+     * Optional. The minimum last saved date. Format &#x3D; ISO.
+     */
+    readonly minDateLastSaved?: string
+
+    /**
+     * Optional. The minimum last saved date for the current user. Format &#x3D; ISO.
+     */
+    readonly minDateLastSavedForUser?: string
+
+    /**
+     * Optional. The maximum premiere date. Format &#x3D; ISO.
+     */
+    readonly maxPremiereDate?: string
+
+    /**
+     * Optional filter by items that have an overview or not.
+     */
+    readonly hasOverview?: boolean
+
+    /**
+     * Optional filter by items that have an IMDb id or not.
+     */
+    readonly hasImdbId?: boolean
+
+    /**
+     * Optional filter by items that have a TMDb id or not.
+     */
+    readonly hasTmdbId?: boolean
+
+    /**
+     * Optional filter by items that have a TVDb id or not.
+     */
+    readonly hasTvdbId?: boolean
+
+    /**
+     * Optional filter for live tv movies.
+     */
+    readonly isMovie?: boolean
+
+    /**
+     * Optional filter for live tv series.
+     */
+    readonly isSeries?: boolean
+
+    /**
+     * Optional filter for live tv news.
+     */
+    readonly isNews?: boolean
+
+    /**
+     * Optional filter for live tv kids.
+     */
+    readonly isKids?: boolean
+
+    /**
+     * Optional filter for live tv sports.
+     */
+    readonly isSports?: boolean
+
+    /**
+     * Optional. If specified, results will be filtered by excluding item ids. This allows multiple, comma delimited.
+     */
+    readonly excludeItemIds?: Array<string>
+
+    /**
+     * Optional. The record index to start at. All items with a lower index will be dropped from the results.
+     */
+    readonly startIndex?: number
+
+    /**
+     * Optional. The maximum number of records to return.
+     */
+    readonly limit?: number
+
+    /**
+     * When searching within folders, this determines whether or not the search will be recursive. true/false.
+     */
+    readonly recursive?: boolean
+
+    /**
+     * Optional. Filter based on a search term.
+     */
+    readonly searchTerm?: string
+
+    /**
+     * Sort Order - Ascending, Descending.
+     */
+    readonly sortOrder?: Array<SortOrder>
+
+    /**
+     * Specify this to localize the search to a specific item or folder. Omit to use the root.
+     */
+    readonly parentId?: string
+
+    /**
+     * Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+     */
+    readonly fields?: Array<ItemFields>
+
+    /**
+     * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+     */
+    readonly excludeItemTypes?: Array<BaseItemKind>
+
+    /**
+     * Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+     */
+    readonly includeItemTypes?: Array<BaseItemKind>
+
+    /**
+     * Optional. Specify additional filters to apply. This allows multiple, comma delimited. Options: IsFolder, IsNotFolder, IsUnplayed, IsPlayed, IsFavorite, IsResumable, Likes, Dislikes.
+     */
+    readonly filters?: Array<ItemFilter>
+
+    /**
+     * Optional filter by items that are marked as favorite, or not.
+     */
+    readonly isFavorite?: boolean
+
+    /**
+     * Optional filter by MediaType. Allows multiple, comma delimited.
+     */
+    readonly mediaTypes?: Array<MediaType>
+
+    /**
+     * Optional. If specified, results will be filtered based on those containing image types. This allows multiple, comma delimited.
+     */
+    readonly imageTypes?: Array<ImageType>
+
+    /**
+     * Optional. Specify one or more sort orders, comma delimited. Options: Album, AlbumArtist, Artist, Budget, CommunityRating, CriticRating, DateCreated, DatePlayed, PlayCount, PremiereDate, ProductionYear, SortName, Random, Revenue, Runtime.
+     */
+    readonly sortBy?: Array<ItemSortBy>
+
+    /**
+     * Optional filter by items that are played, or not.
+     */
+    readonly isPlayed?: boolean
+
+    /**
+     * Optional. If specified, results will be filtered based on genre. This allows multiple, pipe delimited.
+     */
+    readonly genres?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on OfficialRating. This allows multiple, pipe delimited.
+     */
+    readonly officialRatings?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on tag. This allows multiple, pipe delimited.
+     */
+    readonly tags?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on production year. This allows multiple, comma delimited.
+     */
+    readonly years?: Array<number>
+
+    /**
+     * Optional, include user data.
+     */
+    readonly enableUserData?: boolean
+
+    /**
+     * Optional, the max number of images to return, per image type.
+     */
+    readonly imageTypeLimit?: number
+
+    /**
+     * Optional. The image types to include in the output.
+     */
+    readonly enableImageTypes?: Array<ImageType>
+
+    /**
+     * Optional. If specified, results will be filtered to include only those containing the specified person.
+     */
+    readonly person?: string
+
+    /**
+     * Optional. If specified, results will be filtered to include only those containing the specified person id.
+     */
+    readonly personIds?: Array<string>
+
+    /**
+     * Optional. If specified, along with Person, results will be filtered to include only those containing the specified person and PersonType. Allows multiple, comma-delimited.
+     */
+    readonly personTypes?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on studio. This allows multiple, pipe delimited.
+     */
+    readonly studios?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on artists. This allows multiple, pipe delimited.
+     */
+    readonly artists?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on artist id. This allows multiple, pipe delimited.
+     */
+    readonly excludeArtistIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered to include only those containing the specified artist id.
+     */
+    readonly artistIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered to include only those containing the specified album artist id.
+     */
+    readonly albumArtistIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered to include only those containing the specified contributing artist id.
+     */
+    readonly contributingArtistIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on album. This allows multiple, pipe delimited.
+     */
+    readonly albums?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on album id. This allows multiple, pipe delimited.
+     */
+    readonly albumIds?: Array<string>
+
+    /**
+     * Optional. If specific items are needed, specify a list of item id\&#39;s to retrieve. This allows multiple, comma delimited.
+     */
+    readonly ids?: Array<string>
+
+    /**
+     * Optional filter by VideoType (videofile, dvd, bluray, iso). Allows multiple, comma delimited.
+     */
+    readonly videoTypes?: Array<VideoType>
+
+    /**
+     * Optional filter by minimum official rating (PG, PG-13, TV-MA, etc).
+     */
+    readonly minOfficialRating?: string
+
+    /**
+     * Optional filter by items that are locked.
+     */
+    readonly isLocked?: boolean
+
+    /**
+     * Optional filter by items that are placeholders.
+     */
+    readonly isPlaceHolder?: boolean
+
+    /**
+     * Optional filter by items that have official ratings.
+     */
+    readonly hasOfficialRating?: boolean
+
+    /**
+     * Whether or not to hide items behind their boxsets.
+     */
+    readonly collapseBoxSetItems?: boolean
+
+    /**
+     * Optional. Filter by the minimum width of the item.
+     */
+    readonly minWidth?: number
+
+    /**
+     * Optional. Filter by the minimum height of the item.
+     */
+    readonly minHeight?: number
+
+    /**
+     * Optional. Filter by the maximum width of the item.
+     */
+    readonly maxWidth?: number
+
+    /**
+     * Optional. Filter by the maximum height of the item.
+     */
+    readonly maxHeight?: number
+
+    /**
+     * Optional filter by items that are 3D, or not.
+     */
+    readonly is3D?: boolean
+
+    /**
+     * Optional filter by Series Status. Allows multiple, comma delimited.
+     */
+    readonly seriesStatus?: Array<SeriesStatus>
+
+    /**
+     * Optional filter by items whose name is sorted equally or greater than a given input string.
+     */
+    readonly nameStartsWithOrGreater?: string
+
+    /**
+     * Optional filter by items whose name is sorted equally than a given input string.
+     */
+    readonly nameStartsWith?: string
+
+    /**
+     * Optional filter by items whose name is equally or lesser than a given input string.
+     */
+    readonly nameLessThan?: string
+
+    /**
+     * Optional. If specified, results will be filtered based on studio id. This allows multiple, pipe delimited.
+     */
+    readonly studioIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on genre id. This allows multiple, pipe delimited.
+     */
+    readonly genreIds?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on audio language. This allows multiple, comma delimited values.
+     */
+    readonly audioLanguages?: Array<string>
+
+    /**
+     * Optional. If specified, results will be filtered based on subtitle language. This allows multiple, comma delimited values.
+     */
+    readonly subtitleLanguages?: Array<string>
+
+    /**
+     * Optional. Enable the total record count.
+     */
+    readonly enableTotalRecordCount?: boolean
+
+    /**
+     * Optional, include image information in output.
+     */
+    readonly enableImages?: boolean
+}
+
+/**
+ * Request parameters for getLatestMedia operation in LibraryApi.
+ */
+export interface LibraryApiGetLatestMediaRequest {
+    /**
+     * User id.
+     */
+    readonly userId?: string
+
+    /**
+     * Specify this to localize the search to a specific item or folder. Omit to use the root.
+     */
+    readonly parentId?: string
+
+    /**
+     * Optional. Specify additional fields of information to return in the output.
+     */
+    readonly fields?: Array<ItemFields>
+
+    /**
+     * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+     */
+    readonly includeItemTypes?: Array<BaseItemKind>
+
+    /**
+     * Filter by items that are played, or not.
+     */
+    readonly isPlayed?: boolean
+
+    /**
+     * Optional. include image information in output.
+     */
+    readonly enableImages?: boolean
+
+    /**
+     * Optional. the max number of images to return, per image type.
+     */
+    readonly imageTypeLimit?: number
+
+    /**
+     * Optional. The image types to include in the output.
+     */
+    readonly enableImageTypes?: Array<ImageType>
+
+    /**
+     * Optional. include user data.
+     */
+    readonly enableUserData?: boolean
+
+    /**
+     * Return item limit.
+     */
+    readonly limit?: number
+
+    /**
+     * Whether or not to group items into a parent container.
+     */
+    readonly groupItems?: boolean
 }
 
 /**
@@ -1909,6 +3776,21 @@ export interface LibraryApiGetLibraryOptionsInfoRequest {
 }
 
 /**
+ * Request parameters for getLocalTrailers operation in LibraryApi.
+ */
+export interface LibraryApiGetLocalTrailersRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+}
+
+/**
  * Request parameters for getMediaFolders operation in LibraryApi.
  */
 export interface LibraryApiGetMediaFoldersRequest {
@@ -1916,6 +3798,96 @@ export interface LibraryApiGetMediaFoldersRequest {
      * Optional. Filter by folders that are marked hidden, or not.
      */
     readonly isHidden?: boolean
+}
+
+/**
+ * Request parameters for getResumeItems operation in LibraryApi.
+ */
+export interface LibraryApiGetResumeItemsRequest {
+    /**
+     * The user id.
+     */
+    readonly userId?: string
+
+    /**
+     * The start index.
+     */
+    readonly startIndex?: number
+
+    /**
+     * The item limit.
+     */
+    readonly limit?: number
+
+    /**
+     * The search term.
+     */
+    readonly searchTerm?: string
+
+    /**
+     * Specify this to localize the search to a specific item or folder. Omit to use the root.
+     */
+    readonly parentId?: string
+
+    /**
+     * Optional. Specify additional fields of information to return in the output. This allows multiple, comma delimited. Options: Budget, Chapters, DateCreated, Genres, HomePageUrl, IndexOptions, MediaStreams, Overview, ParentId, Path, People, ProviderIds, PrimaryImageAspectRatio, Revenue, SortName, Studios, Taglines.
+     */
+    readonly fields?: Array<ItemFields>
+
+    /**
+     * Optional. Filter by MediaType. Allows multiple, comma delimited.
+     */
+    readonly mediaTypes?: Array<MediaType>
+
+    /**
+     * Optional. Include user data.
+     */
+    readonly enableUserData?: boolean
+
+    /**
+     * Optional. The max number of images to return, per image type.
+     */
+    readonly imageTypeLimit?: number
+
+    /**
+     * Optional. The image types to include in the output.
+     */
+    readonly enableImageTypes?: Array<ImageType>
+
+    /**
+     * Optional. If specified, results will be filtered based on item type. This allows multiple, comma delimited.
+     */
+    readonly excludeItemTypes?: Array<BaseItemKind>
+
+    /**
+     * Optional. If specified, results will be filtered based on the item type. This allows multiple, comma delimited.
+     */
+    readonly includeItemTypes?: Array<BaseItemKind>
+
+    /**
+     * Optional. Enable the total record count.
+     */
+    readonly enableTotalRecordCount?: boolean
+
+    /**
+     * Optional. Include image information in output.
+     */
+    readonly enableImages?: boolean
+
+    /**
+     * Optional. Whether to exclude the currently active sessions.
+     */
+    readonly excludeActiveSessions?: boolean
+}
+
+/**
+ * Request parameters for getRootFolder operation in LibraryApi.
+ */
+export interface LibraryApiGetRootFolderRequest {
+    /**
+     * User id.
+     */
+    readonly userId?: string
 }
 
 /**
@@ -2099,6 +4071,21 @@ export interface LibraryApiGetSimilarTrailersRequest {
 }
 
 /**
+ * Request parameters for getSpecialFeatures operation in LibraryApi.
+ */
+export interface LibraryApiGetSpecialFeaturesRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * User id.
+     */
+    readonly userId?: string
+}
+
+/**
  * Request parameters for getThemeMedia operation in LibraryApi.
  */
 export interface LibraryApiGetThemeMediaRequest {
@@ -2249,6 +4236,41 @@ export interface LibraryApiPostUpdatedSeriesRequest {
 }
 
 /**
+ * Request parameters for refreshItem operation in LibraryApi.
+ */
+export interface LibraryApiRefreshItemRequest {
+    /**
+     * Item id.
+     */
+    readonly itemId: string
+
+    /**
+     * (Optional) Specifies the metadata refresh mode.
+     */
+    readonly metadataRefreshMode?: MetadataRefreshMode
+
+    /**
+     * (Optional) Specifies the image refresh mode.
+     */
+    readonly imageRefreshMode?: MetadataRefreshMode
+
+    /**
+     * (Optional) Determines if metadata should be replaced. Only applicable if mode is FullRefresh.
+     */
+    readonly replaceAllMetadata?: boolean
+
+    /**
+     * (Optional) Determines if images should be replaced. Only applicable if mode is FullRefresh.
+     */
+    readonly replaceAllImages?: boolean
+
+    /**
+     * (Optional) Determines if trickplay images should be replaced. Only applicable if mode is FullRefresh.
+     */
+    readonly regenerateTrickplay?: boolean
+}
+
+/**
  * LibraryApi - object-oriented interface
  */
 export class LibraryApi extends BaseAPI {
@@ -2287,18 +4309,6 @@ export class LibraryApi extends BaseAPI {
 
     /**
      * 
-     * @summary Gets critic review for an item.
-     * @param {LibraryApiGetCriticReviewsRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     */
-    public getCriticReviews(requestParameters: LibraryApiGetCriticReviewsRequest, options?: RawAxiosRequestConfig) {
-        return LibraryApiFp(this.configuration).getCriticReviews(requestParameters.itemId, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
      * @summary Downloads item media.
      * @param {LibraryApiGetDownloadRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -2321,6 +4331,39 @@ export class LibraryApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets intros to play before the main media item plays.
+     * @param {LibraryApiGetIntrosRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getIntros(requestParameters: LibraryApiGetIntrosRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getIntros(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets an item from a user\'s library.
+     * @param {LibraryApiGetItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getItem(requestParameters: LibraryApiGetItemRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getItem(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets the collections that include the specified item.
+     * @param {LibraryApiGetItemCollectionsRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getItemCollections(requestParameters: LibraryApiGetItemCollectionsRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getItemCollections(requestParameters.itemId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Get item counts.
      * @param {LibraryApiGetItemCountsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -2332,6 +4375,28 @@ export class LibraryApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets items based on a query.
+     * @param {LibraryApiGetItemsRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getItems(requestParameters: LibraryApiGetItemsRequest = {}, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getItems(requestParameters.userId, requestParameters.maxOfficialRating, requestParameters.hasThemeSong, requestParameters.hasThemeVideo, requestParameters.hasSubtitles, requestParameters.hasSpecialFeature, requestParameters.hasTrailer, requestParameters.adjacentTo, requestParameters.indexNumber, requestParameters.parentIndexNumber, requestParameters.hasParentalRating, requestParameters.isHd, requestParameters.is4K, requestParameters.locationTypes, requestParameters.excludeLocationTypes, requestParameters.isMissing, requestParameters.isUnaired, requestParameters.minCommunityRating, requestParameters.minCriticRating, requestParameters.minPremiereDate, requestParameters.minDateLastSaved, requestParameters.minDateLastSavedForUser, requestParameters.maxPremiereDate, requestParameters.hasOverview, requestParameters.hasImdbId, requestParameters.hasTmdbId, requestParameters.hasTvdbId, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isNews, requestParameters.isKids, requestParameters.isSports, requestParameters.excludeItemIds, requestParameters.startIndex, requestParameters.limit, requestParameters.recursive, requestParameters.searchTerm, requestParameters.sortOrder, requestParameters.parentId, requestParameters.fields, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.filters, requestParameters.isFavorite, requestParameters.mediaTypes, requestParameters.imageTypes, requestParameters.sortBy, requestParameters.isPlayed, requestParameters.genres, requestParameters.officialRatings, requestParameters.tags, requestParameters.years, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.person, requestParameters.personIds, requestParameters.personTypes, requestParameters.studios, requestParameters.artists, requestParameters.excludeArtistIds, requestParameters.artistIds, requestParameters.albumArtistIds, requestParameters.contributingArtistIds, requestParameters.albums, requestParameters.albumIds, requestParameters.ids, requestParameters.videoTypes, requestParameters.minOfficialRating, requestParameters.isLocked, requestParameters.isPlaceHolder, requestParameters.hasOfficialRating, requestParameters.collapseBoxSetItems, requestParameters.minWidth, requestParameters.minHeight, requestParameters.maxWidth, requestParameters.maxHeight, requestParameters.is3D, requestParameters.seriesStatus, requestParameters.nameStartsWithOrGreater, requestParameters.nameStartsWith, requestParameters.nameLessThan, requestParameters.studioIds, requestParameters.genreIds, requestParameters.audioLanguages, requestParameters.subtitleLanguages, requestParameters.enableTotalRecordCount, requestParameters.enableImages, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets latest media.
+     * @param {LibraryApiGetLatestMediaRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getLatestMedia(requestParameters: LibraryApiGetLatestMediaRequest = {}, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getLatestMedia(requestParameters.userId, requestParameters.parentId, requestParameters.fields, requestParameters.includeItemTypes, requestParameters.isPlayed, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.enableUserData, requestParameters.limit, requestParameters.groupItems, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Gets the library options info.
      * @param {LibraryApiGetLibraryOptionsInfoRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -2339,6 +4404,17 @@ export class LibraryApi extends BaseAPI {
      */
     public getLibraryOptionsInfo(requestParameters: LibraryApiGetLibraryOptionsInfoRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getLibraryOptionsInfo(requestParameters.libraryContentType, requestParameters.isNewLibrary, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets local trailers for an item.
+     * @param {LibraryApiGetLocalTrailersRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getLocalTrailers(requestParameters: LibraryApiGetLocalTrailersRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getLocalTrailers(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -2360,6 +4436,28 @@ export class LibraryApi extends BaseAPI {
      */
     public getPhysicalPaths(options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getPhysicalPaths(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets items based on a query.
+     * @param {LibraryApiGetResumeItemsRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getResumeItems(requestParameters: LibraryApiGetResumeItemsRequest = {}, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getResumeItems(requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.searchTerm, requestParameters.parentId, requestParameters.fields, requestParameters.mediaTypes, requestParameters.enableUserData, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.excludeItemTypes, requestParameters.includeItemTypes, requestParameters.enableTotalRecordCount, requestParameters.enableImages, requestParameters.excludeActiveSessions, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets the root folder from a user\'s library.
+     * @param {LibraryApiGetRootFolderRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getRootFolder(requestParameters: LibraryApiGetRootFolderRequest = {}, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getRootFolder(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -2426,6 +4524,17 @@ export class LibraryApi extends BaseAPI {
      */
     public getSimilarTrailers(requestParameters: LibraryApiGetSimilarTrailersRequest, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).getSimilarTrailers(requestParameters.itemId, requestParameters.excludeArtistIds, requestParameters.userId, requestParameters.limit, requestParameters.fields, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets special features for an item.
+     * @param {LibraryApiGetSpecialFeaturesRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getSpecialFeatures(requestParameters: LibraryApiGetSpecialFeaturesRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).getSpecialFeatures(requestParameters.itemId, requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -2514,6 +4623,17 @@ export class LibraryApi extends BaseAPI {
      */
     public postUpdatedSeries(requestParameters: LibraryApiPostUpdatedSeriesRequest = {}, options?: RawAxiosRequestConfig) {
         return LibraryApiFp(this.configuration).postUpdatedSeries(requestParameters.tvdbId, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Refreshes metadata for an item.
+     * @param {LibraryApiRefreshItemRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public refreshItem(requestParameters: LibraryApiRefreshItemRequest, options?: RawAxiosRequestConfig) {
+        return LibraryApiFp(this.configuration).refreshItem(requestParameters.itemId, requestParameters.metadataRefreshMode, requestParameters.imageRefreshMode, requestParameters.replaceAllMetadata, requestParameters.replaceAllImages, requestParameters.regenerateTrickplay, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

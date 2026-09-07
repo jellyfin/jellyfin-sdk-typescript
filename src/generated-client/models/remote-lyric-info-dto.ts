@@ -23,11 +23,11 @@ export interface RemoteLyricInfoDto {
     /**
      * Gets or sets the id for the lyric.
      */
-    'Id'?: string;
+    'Id': string;
     /**
      * Gets the provider name.
      */
-    'ProviderName'?: string;
-    'Lyrics'?: LyricDto;
+    'ProviderName': string;
+    'Lyrics': LyricDto;
 }
 

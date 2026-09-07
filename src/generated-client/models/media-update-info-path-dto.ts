@@ -22,7 +22,7 @@ export interface MediaUpdateInfoPathDto {
      */
     'Path'?: string | null;
     /**
-     * Gets or sets media update type.  Created, Modified, Deleted.
+     * Gets or sets media update type. Created, Modified, Deleted.
      */
     'UpdateType'?: string | null;
 }

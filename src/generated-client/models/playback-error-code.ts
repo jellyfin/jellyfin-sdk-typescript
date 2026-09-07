@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The playback error code.
+ */
 
 export const PlaybackErrorCode = {
     NotAllowed: 'NotAllowed',

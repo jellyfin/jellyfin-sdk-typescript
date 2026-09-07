@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The day pattern of a recurring timer.
+ */
 
 export const DayPattern = {
     Daily: 'Daily',

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The status of a live TV service.
+ */
 
 export const LiveTvServiceStatus = {
     Ok: 'Ok',

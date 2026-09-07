@@ -6,13 +6,13 @@
 import type { AxiosInstance, AxiosResponse } from 'axios';
 import globalInstance from 'axios';
 
-import { AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
+import { ACCEPT_LANGUAGE_HEADER, AUTHORIZATION_HEADER, AUTHORIZATION_PARAMETER } from './constants';
 import { Configuration } from './generated-client/configuration';
 import type { AuthenticationResult } from './generated-client/models/authentication-result';
 import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
+import { getAuthenticationApi } from './utils/api/authentication-api';
 import { getSessionApi } from './utils/api/session-api';
-import { getUserApi } from './utils/api/user-api';
 import type { OutboundWebSocketMessageType, SocketMessageHandler, WebSocketStatusChangeEvent } from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
@@ -64,7 +64,8 @@ export class Api {
 			basePath: this._basePath,
 			baseOptions: {
 				headers: {
-					[AUTHORIZATION_HEADER]: this.authorizationHeader
+					[AUTHORIZATION_HEADER]: this.authorizationHeader,
+					[ACCEPT_LANGUAGE_HEADER]: this.acceptLanguageHeader
 				}
 			}
 		});
@@ -92,12 +93,12 @@ export class Api {
 
 	/**
 	 * Convenience method for authenticating a user by name.
-	 * @deprecated Use `getUserApi().authenticateUserByName()` instead.
+	 * @deprecated Use `getAuthenticationApi().authenticateUserByName()` instead.
 	 * @param username The username.
 	 * @param password The user password if required.
 	 */
 	authenticateUserByName(username: string, password?: string): Promise<AxiosResponse<AuthenticationResult>> {
-		return getUserApi(this).authenticateUserByName(
+		return getAuthenticationApi(this).authenticateUserByName(
 			// The axios client does some strange wrapping of the param object
 			{ authenticateUserByName: { Username: username, Pw: password } }
 		);
@@ -170,6 +171,11 @@ export class Api {
 
 	get authorizationHeader(): string {
 		return getAuthorizationHeader(this._clientInfo, this._deviceInfo, this._accessToken);
+	}
+
+	get acceptLanguageHeader(): string | undefined {
+		const languages = this._deviceInfo.languages;
+		return languages?.length ? languages.join(',') : undefined;
 	}
 
 	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {

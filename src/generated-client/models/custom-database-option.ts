@@ -20,10 +20,10 @@ export interface CustomDatabaseOption {
     /**
      * Gets or sets the key of the value.
      */
-    'Key'?: string;
+    'Key': string;
     /**
      * Gets or sets the value.
      */
-    'Value'?: string;
+    'Value': string;
 }
 

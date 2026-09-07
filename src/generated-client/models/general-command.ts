@@ -19,7 +19,7 @@ import type { GeneralCommandType } from './general-command-type';
 export interface GeneralCommand {
     'Name'?: GeneralCommandType;
     'ControllingUserId'?: string;
-    'Arguments'?: { [key: string]: string | null; };
+    'Arguments'?: { [key: string]: string; };
 }
 
 

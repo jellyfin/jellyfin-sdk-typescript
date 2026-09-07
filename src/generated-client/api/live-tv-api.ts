@@ -1425,83 +1425,6 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Get recording group.
-         * @param {string} groupId Group id.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingGroup: async (groupId: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'groupId' is not null or undefined
-            assertParamExists('getRecordingGroup', 'groupId', groupId)
-            const localVarPath = `/LiveTv/Recordings/Groups/{groupId}`
-                .replace(`{${"groupId"}}`, encodeURIComponent(String(groupId)));
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
-         * @summary Gets live tv recording groups.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingGroups: async (userId?: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/LiveTv/Recordings/Groups`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            if (userId !== undefined) {
-                localVarQueryParameter['userId'] = userId;
-            }
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
          * @summary Gets live tv recordings.
          * @param {string} [channelId] Optional. Filter by channel id.
          * @param {string} [userId] Optional. Filter by user and attach user data.
@@ -1611,110 +1534,6 @@ export const LiveTvApiAxiosParamCreator = function (configuration?: Configuratio
 
             if (isLibraryItem !== undefined) {
                 localVarQueryParameter['isLibraryItem'] = isLibraryItem;
-            }
-
-            if (enableTotalRecordCount !== undefined) {
-                localVarQueryParameter['enableTotalRecordCount'] = enableTotalRecordCount;
-            }
-
-            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
-
-            setSearchParams(localVarUrlObj, localVarQueryParameter);
-            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
-            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-
-            return {
-                url: toPathString(localVarUrlObj),
-                options: localVarRequestOptions,
-            };
-        },
-        /**
-         * 
-         * @summary Gets live tv recording series.
-         * @param {string} [channelId] Optional. Filter by channel id.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {string} [groupId] Optional. Filter by recording group.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {RecordingStatus} [status] Optional. Filter by recording status.
-         * @param {boolean} [isInProgress] Optional. Filter by recordings that are in progress, or not.
-         * @param {string} [seriesTimerId] Optional. Filter by recordings belonging to a series timer.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {boolean} [enableTotalRecordCount] Optional. Return total record count.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingsSeries: async (channelId?: string, userId?: string, groupId?: string, startIndex?: number, limit?: number, status?: RecordingStatus, isInProgress?: boolean, seriesTimerId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            const localVarPath = `/LiveTv/Recordings/Series`;
-            // use dummy base URL string because the URL constructor only accepts absolute URLs.
-            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
-            let baseOptions;
-            if (configuration) {
-                baseOptions = configuration.baseOptions;
-            }
-
-            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
-            const localVarHeaderParameter = {} as any;
-            const localVarQueryParameter = {} as any;
-
-            // authentication CustomAuthentication required
-            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
-
-            if (channelId !== undefined) {
-                localVarQueryParameter['channelId'] = channelId;
-            }
-
-            if (userId !== undefined) {
-                localVarQueryParameter['userId'] = userId;
-            }
-
-            if (groupId !== undefined) {
-                localVarQueryParameter['groupId'] = groupId;
-            }
-
-            if (startIndex !== undefined) {
-                localVarQueryParameter['startIndex'] = startIndex;
-            }
-
-            if (limit !== undefined) {
-                localVarQueryParameter['limit'] = limit;
-            }
-
-            if (status !== undefined) {
-                localVarQueryParameter['status'] = status;
-            }
-
-            if (isInProgress !== undefined) {
-                localVarQueryParameter['isInProgress'] = isInProgress;
-            }
-
-            if (seriesTimerId !== undefined) {
-                localVarQueryParameter['seriesTimerId'] = seriesTimerId;
-            }
-
-            if (enableImages !== undefined) {
-                localVarQueryParameter['enableImages'] = enableImages;
-            }
-
-            if (imageTypeLimit !== undefined) {
-                localVarQueryParameter['imageTypeLimit'] = imageTypeLimit;
-            }
-
-            if (enableImageTypes) {
-                localVarQueryParameter['enableImageTypes'] = enableImageTypes;
-            }
-
-            if (fields) {
-                localVarQueryParameter['fields'] = fields;
-            }
-
-            if (enableUserData !== undefined) {
-                localVarQueryParameter['enableUserData'] = enableUserData;
             }
 
             if (enableTotalRecordCount !== undefined) {
@@ -2554,34 +2373,6 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Get recording group.
-         * @param {string} groupId Group id.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getRecordingGroup(groupId: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getRecordingGroup(groupId, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['LiveTvApi.getRecordingGroup']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
-         * @summary Gets live tv recording groups.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getRecordingGroups(userId?: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getRecordingGroups(userId, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['LiveTvApi.getRecordingGroups']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
          * @summary Gets live tv recordings.
          * @param {string} [channelId] Optional. Filter by channel id.
          * @param {string} [userId] Optional. Filter by user and attach user data.
@@ -2609,33 +2400,6 @@ export const LiveTvApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getRecordings(channelId, userId, startIndex, limit, status, isInProgress, seriesTimerId, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, isMovie, isSeries, isKids, isSports, isNews, isLibraryItem, enableTotalRecordCount, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['LiveTvApi.getRecordings']?.[localVarOperationServerIndex]?.url;
-            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
-        },
-        /**
-         * 
-         * @summary Gets live tv recording series.
-         * @param {string} [channelId] Optional. Filter by channel id.
-         * @param {string} [userId] Optional. Filter by user and attach user data.
-         * @param {string} [groupId] Optional. Filter by recording group.
-         * @param {number} [startIndex] Optional. The record index to start at. All items with a lower index will be dropped from the results.
-         * @param {number} [limit] Optional. The maximum number of records to return.
-         * @param {RecordingStatus} [status] Optional. Filter by recording status.
-         * @param {boolean} [isInProgress] Optional. Filter by recordings that are in progress, or not.
-         * @param {string} [seriesTimerId] Optional. Filter by recordings belonging to a series timer.
-         * @param {boolean} [enableImages] Optional. Include image information in output.
-         * @param {number} [imageTypeLimit] Optional. The max number of images to return, per image type.
-         * @param {Array<ImageType>} [enableImageTypes] Optional. The image types to include in the output.
-         * @param {Array<ItemFields>} [fields] Optional. Specify additional fields of information to return in the output.
-         * @param {boolean} [enableUserData] Optional. Include user data.
-         * @param {boolean} [enableTotalRecordCount] Optional. Return total record count.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        async getRecordingsSeries(channelId?: string, userId?: string, groupId?: string, startIndex?: number, limit?: number, status?: RecordingStatus, isInProgress?: boolean, seriesTimerId?: string, enableImages?: boolean, imageTypeLimit?: number, enableImageTypes?: Array<ImageType>, fields?: Array<ItemFields>, enableUserData?: boolean, enableTotalRecordCount?: boolean, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<BaseItemDtoQueryResult>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getRecordingsSeries(channelId, userId, groupId, startIndex, limit, status, isInProgress, seriesTimerId, enableImages, imageTypeLimit, enableImageTypes, fields, enableUserData, enableTotalRecordCount, options);
-            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['LiveTvApi.getRecordingsSeries']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -3050,28 +2814,6 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
-         * @summary Get recording group.
-         * @param {LiveTvApiGetRecordingGroupRequest} requestParameters Request parameters.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingGroup(requestParameters: LiveTvApiGetRecordingGroupRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.getRecordingGroup(requestParameters.groupId, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @summary Gets live tv recording groups.
-         * @param {LiveTvApiGetRecordingGroupsRequest} requestParameters Request parameters.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingGroups(requestParameters: LiveTvApiGetRecordingGroupsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordingGroups(requestParameters.userId, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
          * @summary Gets live tv recordings.
          * @param {LiveTvApiGetRecordingsRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -3079,17 +2821,6 @@ export const LiveTvApiFactory = function (configuration?: Configuration, basePat
          */
         getRecordings(requestParameters: LiveTvApiGetRecordingsRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
             return localVarFp.getRecordings(requestParameters.channelId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isKids, requestParameters.isSports, requestParameters.isNews, requestParameters.isLibraryItem, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
-        },
-        /**
-         * 
-         * @summary Gets live tv recording series.
-         * @param {LiveTvApiGetRecordingsSeriesRequest} requestParameters Request parameters.
-         * @param {*} [options] Override http request option.
-         * @deprecated
-         * @throws {RequiredError}
-         */
-        getRecordingsSeries(requestParameters: LiveTvApiGetRecordingsSeriesRequest = {}, options?: RawAxiosRequestConfig): AxiosPromise<BaseItemDtoQueryResult> {
-            return localVarFp.getRecordingsSeries(requestParameters.channelId, requestParameters.userId, requestParameters.groupId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -3793,26 +3524,6 @@ export interface LiveTvApiGetRecordingFoldersRequest {
 }
 
 /**
- * Request parameters for getRecordingGroup operation in LiveTvApi.
- */
-export interface LiveTvApiGetRecordingGroupRequest {
-    /**
-     * Group id.
-     */
-    readonly groupId: string
-}
-
-/**
- * Request parameters for getRecordingGroups operation in LiveTvApi.
- */
-export interface LiveTvApiGetRecordingGroupsRequest {
-    /**
-     * Optional. Filter by user and attach user data.
-     */
-    readonly userId?: string
-}
-
-/**
  * Request parameters for getRecordings operation in LiveTvApi.
  */
 export interface LiveTvApiGetRecordingsRequest {
@@ -3905,81 +3616,6 @@ export interface LiveTvApiGetRecordingsRequest {
      * Optional. Filter for is library item.
      */
     readonly isLibraryItem?: boolean
-
-    /**
-     * Optional. Return total record count.
-     */
-    readonly enableTotalRecordCount?: boolean
-}
-
-/**
- * Request parameters for getRecordingsSeries operation in LiveTvApi.
- */
-export interface LiveTvApiGetRecordingsSeriesRequest {
-    /**
-     * Optional. Filter by channel id.
-     */
-    readonly channelId?: string
-
-    /**
-     * Optional. Filter by user and attach user data.
-     */
-    readonly userId?: string
-
-    /**
-     * Optional. Filter by recording group.
-     */
-    readonly groupId?: string
-
-    /**
-     * Optional. The record index to start at. All items with a lower index will be dropped from the results.
-     */
-    readonly startIndex?: number
-
-    /**
-     * Optional. The maximum number of records to return.
-     */
-    readonly limit?: number
-
-    /**
-     * Optional. Filter by recording status.
-     */
-    readonly status?: RecordingStatus
-
-    /**
-     * Optional. Filter by recordings that are in progress, or not.
-     */
-    readonly isInProgress?: boolean
-
-    /**
-     * Optional. Filter by recordings belonging to a series timer.
-     */
-    readonly seriesTimerId?: string
-
-    /**
-     * Optional. Include image information in output.
-     */
-    readonly enableImages?: boolean
-
-    /**
-     * Optional. The max number of images to return, per image type.
-     */
-    readonly imageTypeLimit?: number
-
-    /**
-     * Optional. The image types to include in the output.
-     */
-    readonly enableImageTypes?: Array<ImageType>
-
-    /**
-     * Optional. Specify additional fields of information to return in the output.
-     */
-    readonly fields?: Array<ItemFields>
-
-    /**
-     * Optional. Include user data.
-     */
-    readonly enableUserData?: boolean
 
     /**
      * Optional. Return total record count.
@@ -4397,30 +4033,6 @@ export class LiveTvApi extends BaseAPI {
 
     /**
      * 
-     * @summary Get recording group.
-     * @param {LiveTvApiGetRecordingGroupRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     */
-    public getRecordingGroup(requestParameters: LiveTvApiGetRecordingGroupRequest, options?: RawAxiosRequestConfig) {
-        return LiveTvApiFp(this.configuration).getRecordingGroup(requestParameters.groupId, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Gets live tv recording groups.
-     * @param {LiveTvApiGetRecordingGroupsRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     */
-    public getRecordingGroups(requestParameters: LiveTvApiGetRecordingGroupsRequest = {}, options?: RawAxiosRequestConfig) {
-        return LiveTvApiFp(this.configuration).getRecordingGroups(requestParameters.userId, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
      * @summary Gets live tv recordings.
      * @param {LiveTvApiGetRecordingsRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -4428,18 +4040,6 @@ export class LiveTvApi extends BaseAPI {
      */
     public getRecordings(requestParameters: LiveTvApiGetRecordingsRequest = {}, options?: RawAxiosRequestConfig) {
         return LiveTvApiFp(this.configuration).getRecordings(requestParameters.channelId, requestParameters.userId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.isMovie, requestParameters.isSeries, requestParameters.isKids, requestParameters.isSports, requestParameters.isNews, requestParameters.isLibraryItem, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
-    }
-
-    /**
-     * 
-     * @summary Gets live tv recording series.
-     * @param {LiveTvApiGetRecordingsSeriesRequest} requestParameters Request parameters.
-     * @param {*} [options] Override http request option.
-     * @deprecated
-     * @throws {RequiredError}
-     */
-    public getRecordingsSeries(requestParameters: LiveTvApiGetRecordingsSeriesRequest = {}, options?: RawAxiosRequestConfig) {
-        return LiveTvApiFp(this.configuration).getRecordingsSeries(requestParameters.channelId, requestParameters.userId, requestParameters.groupId, requestParameters.startIndex, requestParameters.limit, requestParameters.status, requestParameters.isInProgress, requestParameters.seriesTimerId, requestParameters.enableImages, requestParameters.imageTypeLimit, requestParameters.enableImageTypes, requestParameters.fields, requestParameters.enableUserData, requestParameters.enableTotalRecordCount, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The play access of an item.
+ */
 
 export const PlayAccess = {
     Full: 'Full',

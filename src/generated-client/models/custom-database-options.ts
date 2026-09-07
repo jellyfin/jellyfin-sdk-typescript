@@ -23,15 +23,15 @@ export interface CustomDatabaseOptions {
     /**
      * Gets or sets the Plugin name to search for database providers.
      */
-    'PluginName'?: string;
+    'PluginName': string;
     /**
      * Gets or sets the plugin assembly to search for providers.
      */
-    'PluginAssembly'?: string;
+    'PluginAssembly': string;
     /**
      * Gets or sets the connection string for the custom database provider.
      */
-    'ConnectionString'?: string;
+    'ConnectionString': string;
     /**
      * Gets or sets the list of extra options for the custom provider.
      */

@@ -7,5 +7,8 @@
 /** The authorization header field name. */
 export const AUTHORIZATION_HEADER = 'Authorization';
 
+/** The accept language header field name. */
+export const ACCEPT_LANGUAGE_HEADER = 'Accept-Language';
+
 /** The authorization query parameter name. */
 export const AUTHORIZATION_PARAMETER = 'ApiKey';

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The lookup info for box sets.
+ */
 export interface BoxSetInfo {
     /**
      * Gets or sets the name.

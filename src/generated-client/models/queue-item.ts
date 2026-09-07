@@ -13,8 +13,17 @@
 
 
 
+/**
+ * An item in a play queue.
+ */
 export interface QueueItem {
+    /**
+     * Gets or sets the item id.
+     */
     'Id'?: string;
+    /**
+     * Gets or sets the playlist item id.
+     */
     'PlaylistItemId'?: string | null;
 }
 
