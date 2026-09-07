@@ -43,7 +43,7 @@
     "rimraf": "5.0.10",
     "rollup": "4.62.2",
     "typedoc": "0.28.20",
-    "typescript": "6.0.3",
+    "typescript": "7.0.2",
     "typescript-eslint": "8.63.0",
     "vitest": "4.1.10"
   },
