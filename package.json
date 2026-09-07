@@ -30,7 +30,7 @@
     "@rollup/plugin-typescript": "12.3.0",
     "@stylistic/eslint-plugin": "5.10.0",
     "@tsconfig/recommended": "1.0.13",
-    "@types/node": "24.13.2",
+    "@types/node": "24.13.3",
     "@typescript-eslint/eslint-plugin": "8.63.0",
     "@typescript-eslint/parser": "8.63.0",
     "@vitest/coverage-v8": "4.1.10",
