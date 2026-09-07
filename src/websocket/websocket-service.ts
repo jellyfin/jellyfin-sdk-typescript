@@ -10,7 +10,7 @@ import { buildWebSocketUrl } from '../utils';
 import { RECONNECT_INITIAL_DELAY, RECONNECT_DELAY_FACTOR, RECONNECT_MAX_DELAY } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
 import { PeriodicListenerInterval } from './models';
-import type { WebSocketSubscriptionIntervals } from './types';
+import type { WebSocketStatusChangeEvent, WebSocketSubscriptionIntervals } from './types';
 import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
@@ -72,6 +72,11 @@ export class WebSocketService {
      */
 	private currentStatus: WebSocketStatus = 'disconnected';
 
+	onOpen: WebSocketStatusChangeEvent | undefined;
+	onClosing: WebSocketStatusChangeEvent | undefined;
+	onClosed: WebSocketStatusChangeEvent | undefined;
+	onFailure: WebSocketStatusChangeEvent | undefined;
+
 	/**
      * Constructs a new instance of the {@link WebSocketService}
      *
@@ -107,6 +112,9 @@ export class WebSocketService {
 
 			// Update status and notify listeners
 			this.setStatus(WebSocket.OPEN);
+
+			// Fire event listener (if supplied)
+			this.onOpen?.();
 
 			// Send start messages for subscriptions that were added before the socket opened
 			for (const type of this.subscriptions.keys()) {
@@ -145,21 +153,16 @@ export class WebSocketService {
 		this.socket.addEventListener('close', () => {
 			// Update status and notify listeners
 			this.setStatus('disconnected');
+			this.onClosed?.();
 
-			// Reconnect with exponential backoff if there are active subscriptions
-			// and auto-reconnect is not disabled
-			if (this.subscriptions.size > 0 && !this.autoReconnectDisabled) {
-				this.reconnectionAttempts++;
-				const delay = this.calculateBackoffDelay();
-				this.reconnectionTimeout = setTimeout(() => this.initSocket(), delay);
-			} else {
-				// Else, close and dispose
-				this.socket = undefined;
-				if (this.keepAlive) {
-					clearTimeout(this.keepAlive);
-					this.keepAlive = undefined;
-				}
-			}
+			this.reconnect();
+		});
+
+		this.socket.addEventListener('error', () => {
+			this.setStatus('disconnected');
+			this.onFailure?.();
+
+			this.reconnect();
 		});
 	}
 
@@ -170,6 +173,23 @@ export class WebSocketService {
 	private calculateBackoffDelay(): number {
 		const exponentialDelay = RECONNECT_INITIAL_DELAY * Math.pow(RECONNECT_DELAY_FACTOR, this.reconnectionAttempts - 1);
 		return Math.min(exponentialDelay, RECONNECT_MAX_DELAY);
+	}
+
+	private reconnect() {
+		// Reconnect with exponential backoff if there are active subscriptions
+		// and auto-reconnect is not disabled
+		if (this.subscriptions.size > 0 && !this.autoReconnectDisabled) {
+			this.reconnectionAttempts++;
+			const delay = this.calculateBackoffDelay();
+			this.reconnectionTimeout = setTimeout(() => this.initSocket(), delay);
+		} else {
+			// Else, close and dispose
+			this.socket = undefined;
+			if (this.keepAlive) {
+				clearTimeout(this.keepAlive);
+				this.keepAlive = undefined;
+			}
+		}
 	}
 
 	private sendMessage(message: InboundWebSocketMessage) {
@@ -284,7 +304,8 @@ export class WebSocketService {
      * @returns A function which can be invoked to remove the added listeners
      */
 	subscribe<T extends OutboundWebSocketMessageType>(
-		messageTypes: T[], onMessage: SocketMessageHandler<T>,
+		messageTypes: T[],
+		onMessage: SocketMessageHandler<T>,
 		subscriptionIntervals?: WebSocketSubscriptionIntervals
 	) {
 		// Check if socket needs to be initialized (only when a URL is available)
