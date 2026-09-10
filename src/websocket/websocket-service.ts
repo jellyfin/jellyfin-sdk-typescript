@@ -33,9 +33,9 @@ export class WebSocketService {
 	private socket: WebSocket | undefined;
 
 	/**
-	 * The keep-alive timeout handle.
+	 * The keep-alive interval handle.
 	 *
-	 * Indicates when the next keep-alive message should be sent.
+	 * Sends a keep-alive message for as long as the socket is open.
 	 */
 	private keepAlive: NodeJS.Timeout | undefined;
 
@@ -128,14 +128,9 @@ export class WebSocketService {
 			const { MessageType } = data;
 
 			if (MessageType === OutboundWebSocketMessageType.ForceKeepAlive && data.Data) {
-				// Clear any existing keep-alive timeout
-				if (this.keepAlive) clearTimeout(this.keepAlive);
-
-				this.keepAlive = setTimeout(() =>
-					this.sendMessage({
-						MessageType: OutboundWebSocketMessageType.KeepAlive
-					}), data.Data / 2
-				);
+				this.clearKeepAlive();
+				this.sendKeepAlive();
+				this.keepAlive = setInterval(() => this.sendKeepAlive(), (data.Data * 1000) / 2);
 			} else {
 				const handlers = this.subscriptions.get(MessageType);
 				handlers?.forEach(handler => handler(data));
@@ -155,11 +150,9 @@ export class WebSocketService {
 			} else {
 				// Else, close and dispose
 				this.socket = undefined;
-				if (this.keepAlive) {
-					clearTimeout(this.keepAlive);
-					this.keepAlive = undefined;
-				}
 			}
+
+			this.clearKeepAlive();
 		});
 	}
 
@@ -170,6 +163,25 @@ export class WebSocketService {
 	private calculateBackoffDelay(): number {
 		const exponentialDelay = RECONNECT_INITIAL_DELAY * Math.pow(RECONNECT_DELAY_FACTOR, this.reconnectionAttempts - 1);
 		return Math.min(exponentialDelay, RECONNECT_MAX_DELAY);
+	}
+
+	/**
+	 * Sends a keep-alive message to the server.
+	 */
+	private sendKeepAlive() {
+		this.sendMessage({
+			MessageType: OutboundWebSocketMessageType.KeepAlive
+		});
+	}
+
+	/**
+	 * Stops sending keep-alive messages.
+	 */
+	private clearKeepAlive() {
+		if (this.keepAlive) {
+			clearInterval(this.keepAlive);
+			this.keepAlive = undefined;
+		}
 	}
 
 	private sendMessage(message: InboundWebSocketMessage) {
@@ -212,10 +224,7 @@ export class WebSocketService {
 			clearTimeout(this.reconnectionTimeout);
 			this.reconnectionTimeout = undefined;
 		}
-		if (this.keepAlive) {
-			clearTimeout(this.keepAlive);
-			this.keepAlive = undefined;
-		}
+		this.clearKeepAlive();
 	}
 
 	/**
