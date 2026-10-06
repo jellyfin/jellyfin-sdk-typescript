@@ -8,6 +8,17 @@
   "type": "module",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "default": "./lib/index.js"
+    },
+    "./lib/*": {
+      "types": "./lib/*",
+      "default": "./lib/*"
+    },
+    "./package.json": "./package.json"
+  },
   "license": "MPL-2.0",
   "repository": {
     "type": "git",
@@ -16,8 +27,8 @@
   "scripts": {
     "build": "npm run build:generated-client && npm run build:sdk",
     "build:generated-client": "rimraf src/generated-client && openapi-generator-cli generate",
-    "build:sdk": "rollup -c",
-    "clean:build:sdk": "rimraf lib && rollup -c",
+    "build:sdk": "rollup -c && node scripts/fix-dts-extensions.mjs",
+    "clean:build:sdk": "rimraf lib && rollup -c && node scripts/fix-dts-extensions.mjs",
     "docs": "typedoc --tsconfig .",
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "lint": "eslint \".\"",
