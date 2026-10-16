@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+* Publish CI incorrectly used `openapi-unstable` branch for stable releases ([#1104](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1104)).
+
 ## [1.0.0] - 2026-09-11
 
 ### Added
