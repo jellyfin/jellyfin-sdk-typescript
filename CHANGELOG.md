@@ -7,6 +7,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+## [1.0.2] - 2026-10-23
+
 ### Fixed
 
 * WebSocket calls were attempted without an active session ([#1107](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1107)).
@@ -151,7 +153,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [0.1.0] - 2021-09-19
 
-[unreleased]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v1.0.1...HEAD
+[unreleased]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v1.0.2...HEAD
+[1.0.2]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v1.0.1...v1.0.2
 [1.0.1]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.13.0...v1.0.0
 [0.13.0]: https://github.com/jellyfin/jellyfin-sdk-typescript/compare/v0.12.0...v0.13.0
