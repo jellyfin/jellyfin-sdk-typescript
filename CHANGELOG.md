@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+* WebSocket calls were attempted without an active session ([#1107](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1107)).
+
 ## [1.0.1] - 2026-10-16
 
 ### Fixed
