@@ -19,17 +19,17 @@ import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketSta
  */
 export class WebSocketService {
 	/**
-     * The URL to connect to.
+	 * The URL to connect to.
 	 *
 	 * Created in the constructor (or later via {@link updateUrl}), using the fields from
 	 * the authenticated Api instance. If undefined, the socket will not connect until
 	 * a URL is provided via {@link updateUrl}.
-     */
+	 */
 	private url: URL | undefined;
 
 	/**
-     * The active websocket connection, if one exists.
-     */
+	 * The active websocket connection, if one exists.
+	 */
 	private socket: WebSocket | undefined;
 
 	/**
@@ -63,22 +63,22 @@ export class WebSocketService {
 	private autoReconnectDisabled = false;
 
 	/**
-     * Status change event listeners
-     */
+	 * Status change event listeners
+	 */
 	private readonly statusListeners: SocketStatusHandler[] = [];
 
 	/**
-     * Current connection status
-     */
+	 * Current connection status
+	 */
 	private currentStatus: WebSocketStatus = 'disconnected';
 
 	/**
-     * Constructs a new instance of the {@link WebSocketService}
-     *
-     * @param uri The full URI path with the Authorization Header included as a query parameter.
-     *            May be omitted when no access token is available yet — subscriptions will be
-     *            preserved and the socket will connect once {@link updateUrl} is called.
-     */
+	 * Constructs a new instance of the {@link WebSocketService}
+	 *
+	 * @param uri The full URI path with the Authorization Header included as a query parameter.
+	 *            May be omitted when no access token is available yet — subscriptions will be
+	 *            preserved and the socket will connect once {@link updateUrl} is called.
+	 */
 	constructor(
 		uri?: string
 	) {
@@ -191,8 +191,8 @@ export class WebSocketService {
 	}
 
 	/**
-     * Internal method to update status and notify all listeners
-     */
+	 * Internal method to update status and notify all listeners
+	 */
 	private setStatus(status: WebSocketStatus) {
 		if (this.currentStatus !== status) {
 			this.currentStatus = status;
@@ -201,9 +201,9 @@ export class WebSocketService {
 	}
 
 	/**
-     * Gets the current status of the websocket connection
-     * @returns The connection status
-     */
+	 * Gets the current status of the websocket connection
+	 * @returns The connection status
+	 */
 	get socketStatus(): WebSocketStatus | undefined {
 		return this.currentStatus;
 	}
@@ -215,6 +215,7 @@ export class WebSocketService {
 	 * when `updateUrl` is called with a new valid URL.
 	 */
 	disconnect(): void {
+		this.url = undefined;
 		this.autoReconnectDisabled = true;
 		this.socket?.close();
 		this.setStatus('disconnected');
@@ -258,11 +259,11 @@ export class WebSocketService {
 	}
 
 	/**
-     * Adds a listener for websocket status changes
-     *
-     * @param onStatusChange Callback invoked when the connection status changes
-     * @returns A function which can be invoked to remove the listener
-     */
+	 * Adds a listener for websocket status changes
+	 *
+	 * @param onStatusChange Callback invoked when the connection status changes
+	 * @returns A function which can be invoked to remove the listener
+	 */
 	onStatusChange(onStatusChange: SocketStatusHandler): () => void {
 		this.statusListeners.push(onStatusChange);
 		return () => {
@@ -274,24 +275,24 @@ export class WebSocketService {
 	}
 
 	/**
-     * Adds message listeners for the provided message types.
-     *
-     * Adding a listener will establish a websocket connection if one does not already exist.
-     *
-     * Listeners will be automatically resubscribed if the connection is lost and re-established.
-     *
-     * Listeners can be removed by invoking the returned unsubscribe function.
-     *
-     * @param messageTypes Any array of {@link OutboundWebSocketMessage} message types to listen for
-     * @param onMessage The callback to invoke when a message is received
-     *
+	 * Adds message listeners for the provided message types.
+	 *
+	 * Adding a listener will establish a websocket connection if one does not already exist.
+	 *
+	 * Listeners will be automatically resubscribed if the connection is lost and re-established.
+	 *
+	 * Listeners can be removed by invoking the returned unsubscribe function.
+	 *
+	 * @param messageTypes Any array of {@link OutboundWebSocketMessage} message types to listen for
+	 * @param onMessage The callback to invoke when a message is received
+	 *
 	 * @example
 	 * const unsubscribe = api.webSocket.subscribe([OutboundWebSocketMessageType.Sessions], (message) => {
 	 *   console.log('Received session update:', message);
 	 * });
 	 *
-     * @returns A function which can be invoked to remove the added listeners
-     */
+	 * @returns A function which can be invoked to remove the added listeners
+	 */
 	subscribe<T extends OutboundWebSocketMessageType>(
 		messageTypes: T[], onMessage: SocketMessageHandler<T>,
 		subscriptionIntervals?: WebSocketSubscriptionIntervals

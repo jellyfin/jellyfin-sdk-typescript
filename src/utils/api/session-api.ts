@@ -21,11 +21,10 @@ class AugmentedSessionApi extends SessionApi {
 	// eslint-disable-next-line @typescript-eslint/no-explicit-any, @typescript-eslint/no-empty-object-type
 	public reportSessionEnded(options?: RawAxiosRequestConfig): Promise<AxiosResponse<void, any, {}>> {
 		return super.reportSessionEnded(options)
-			.then(response => {
+			.finally(() => {
 				this.api.update({
 					accessToken: ''
 				});
-				return response;
 			});
 	}
 }
