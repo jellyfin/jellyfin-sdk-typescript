@@ -1,6 +1,6 @@
 {
   "name": "@jellyfin/sdk",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A TypeScript SDK for Jellyfin.",
   "keywords": [
     "jellyfin"
@@ -21,6 +21,7 @@
     "docs": "typedoc --tsconfig .",
     "fix-schema": "node scripts/modify-schema.mjs openapi.json",
     "lint": "eslint \".\"",
+    "postversion": "node scripts/postversion.mjs",
     "prepublishOnly": "npm run clean:build:sdk",
     "test": "vitest --exclude **/integration.test.ts",
     "test:integration": "vitest integration"
