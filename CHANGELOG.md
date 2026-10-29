@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Fixed
+
+* `getUserImageUrl` now returns `undefined` when the user has no primary image tag ([#1111](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1111)).
+
 ## [1.0.2] - 2026-10-23
 
 ### Fixed
