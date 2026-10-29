@@ -23,7 +23,9 @@ import { BASE_PATH, COLLECTION_FORMATS, type RequestArgs, BaseAPI, RequiredError
 // @ts-ignore
 import type { AuthenticateUserByName } from '../models';
 // @ts-ignore
-import type { AuthenticationInfoQueryResult } from '../models';
+import type { AuthenticationInfoDto } from '../models';
+// @ts-ignore
+import type { AuthenticationInfoDtoQueryResult } from '../models';
 // @ts-ignore
 import type { AuthenticationResult } from '../models';
 // @ts-ignore
@@ -191,7 +193,7 @@ export const AuthenticationApiAxiosParamCreator = function (configuration?: Conf
                 localVarQueryParameter['app'] = app;
             }
 
-            localVarHeaderParameter['Accept'] = 'text/html';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -561,7 +563,7 @@ export const AuthenticationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async createKey(app: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+        async createKey(app: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationInfoDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.createKey(app, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['AuthenticationApi.createKey']?.[localVarOperationServerIndex]?.url;
@@ -611,7 +613,7 @@ export const AuthenticationApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getKeys(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationInfoQueryResult>> {
+        async getKeys(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<AuthenticationInfoDtoQueryResult>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getKeys(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['AuthenticationApi.getKeys']?.[localVarOperationServerIndex]?.url;
@@ -725,7 +727,7 @@ export const AuthenticationApiFactory = function (configuration?: Configuration,
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        createKey(requestParameters: AuthenticationApiCreateKeyRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+        createKey(requestParameters: AuthenticationApiCreateKeyRequest, options?: RawAxiosRequestConfig): AxiosPromise<AuthenticationInfoDto> {
             return localVarFp.createKey(requestParameters.app, options).then((request) => request(axios, basePath));
         },
         /**
@@ -763,7 +765,7 @@ export const AuthenticationApiFactory = function (configuration?: Configuration,
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getKeys(options?: RawAxiosRequestConfig): AxiosPromise<AuthenticationInfoQueryResult> {
+        getKeys(options?: RawAxiosRequestConfig): AxiosPromise<AuthenticationInfoDtoQueryResult> {
             return localVarFp.getKeys(options).then((request) => request(axios, basePath));
         },
         /**
