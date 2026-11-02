@@ -124,7 +124,7 @@ export class ImageUrlsApi extends ImageApi {
 	 * @returns The User's primary image URL.
 	 */
 	public getUserImageUrl(user?: UserDto, params: ImageRequestParameters = {}): string | undefined {
-		if (!user?.Id) return;
+		if (!user?.Id || !user.PrimaryImageTag) return;
 
 		return this.axios.getUri({
 			baseURL: this.configuration?.basePath,

@@ -385,31 +385,36 @@ describe('WebSocketService', () => {
 	});
 
 	describe('forceKeepAlive message handling', () => {
-		it('should handle ForceKeepAlive message and schedule KeepAlive response', () => {
+		const KEEP_ALIVE_MESSAGE = JSON.stringify({ MessageType: 'KeepAlive' });
+
+		it('should answer a ForceKeepAlive immediately and keep answering every half timeout', () => {
 			vi.useFakeTimers();
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
 
 			mockWebSocket.send.mockClear();
 
-			// Simulate receiving ForceKeepAlive message with 1000ms delay
+			// The server reports its timeout in seconds
 			const forceKeepAliveMessage = {
 				MessageType: 'ForceKeepAlive',
-				Data: 5000
+				Data: 60
 			} as ForceKeepAliveMessage;
 
 			mockWebSocket.__triggerMessage(JSON.stringify(forceKeepAliveMessage));
 
-			// Verify no KeepAlive sent immediately
-			expect(mockWebSocket.send).not.toHaveBeenCalled();
+			// The server only asks for this when it has not heard from us, so answer at once
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(1);
+			expect(mockWebSocket.send).toHaveBeenCalledWith(KEEP_ALIVE_MESSAGE);
 
-			// Advance timers by the delay
-			vi.advanceTimersByTime(2500);
+			// And then every 30 seconds, well inside the 60 second timeout
+			vi.advanceTimersByTime(29_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(1);
 
-			// Verify KeepAlive message was sent
-			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'KeepAlive' })
-			);
+			vi.advanceTimersByTime(1_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(2);
+
+			vi.advanceTimersByTime(30_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(3);
 
 			vi.useRealTimers();
 		});
@@ -425,7 +430,7 @@ describe('WebSocketService', () => {
 			// Simulate receiving ForceKeepAlive message
 			const forceKeepAliveMessage = {
 				MessageType: 'ForceKeepAlive',
-				Data: 500
+				Data: 60
 			} as ForceKeepAliveMessage;
 
 			mockWebSocket.__triggerMessage(JSON.stringify(forceKeepAliveMessage));
@@ -433,7 +438,7 @@ describe('WebSocketService', () => {
 			// Handler should not be called for ForceKeepAlive
 			expect(handler).not.toHaveBeenCalled();
 
-			vi.advanceTimersByTime(500);
+			vi.advanceTimersByTime(30_000);
 
 			// Handler still should not be called after KeepAlive is sent
 			expect(handler).not.toHaveBeenCalled();
@@ -441,66 +446,67 @@ describe('WebSocketService', () => {
 			vi.useRealTimers();
 		});
 
-		it('should replace previous ForceKeepAlive timer when a new one arrives', () => {
+		it('should replace the previous keep-alive interval when a new ForceKeepAlive arrives', () => {
 			vi.useFakeTimers();
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
 
 			mockWebSocket.send.mockClear();
 
-			// Send first ForceKeepAlive with 1000ms delay
+			// A 60 second timeout, so a keep-alive every 30 seconds
 			mockWebSocket.__triggerMessage(
 				JSON.stringify({
 					MessageType: 'ForceKeepAlive',
-					Data: 1000
+					Data: 60
 				} as ForceKeepAliveMessage)
 			);
-
-			// Advance 500ms (halfway through our threshold)
-			vi.advanceTimersByTime(200);
-
-			// Send another ForceKeepAlive with 500ms delay
-			mockWebSocket.__triggerMessage(
-				JSON.stringify({
-					MessageType: 'ForceKeepAlive',
-					Data: 500
-				} as ForceKeepAliveMessage)
-			);
-
-			// Advance 250ms more (total 450ms from start, but only 250ms from second message)
-			vi.advanceTimersByTime(250);
-
-			// Should only have sent one KeepAlive (from the second ForceKeepAlive)
 			expect(mockWebSocket.send).toHaveBeenCalledTimes(1);
-			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'KeepAlive' })
+
+			vi.advanceTimersByTime(10_000);
+
+			// A 20 second timeout, so a keep-alive every 10 seconds from here on
+			mockWebSocket.__triggerMessage(
+				JSON.stringify({
+					MessageType: 'ForceKeepAlive',
+					Data: 20
+				} as ForceKeepAliveMessage)
 			);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(2);
+
+			// Only the new interval is running, the 30 second one would have fired as well
+			vi.advanceTimersByTime(10_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(3);
+
+			vi.advanceTimersByTime(10_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(4);
+
+			vi.advanceTimersByTime(10_000);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(5);
 
 			vi.useRealTimers();
 		});
 
-		it('should handle ForceKeepAlive with different delay values', () => {
+		it('should stop sending keep-alives once the socket closes', () => {
 			vi.useFakeTimers();
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
 
 			mockWebSocket.send.mockClear();
 
-			// Test with 2000ms delay
 			mockWebSocket.__triggerMessage(
 				JSON.stringify({
 					MessageType: 'ForceKeepAlive',
-					Data: 5000
+					Data: 60
 				} as ForceKeepAliveMessage)
 			);
+			expect(mockWebSocket.send).toHaveBeenCalledTimes(1);
 
-			vi.advanceTimersByTime(1999);
+			mockWebSocket.readyState = WebSocket.CLOSED;
+			mockWebSocket.__triggerClose();
+			mockWebSocket.send.mockClear();
+
+			vi.advanceTimersByTime(120_000);
 			expect(mockWebSocket.send).not.toHaveBeenCalled();
-
-			vi.advanceTimersByTime(501);
-			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'KeepAlive' })
-			);
 
 			vi.useRealTimers();
 		});

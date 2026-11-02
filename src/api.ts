@@ -155,8 +155,9 @@ export class Api {
 			this._accessToken = data.accessToken;
 		}
 
-		if (data.basePath ||
-			(data.accessToken && data.accessToken !== '')
+		if (
+			data.accessToken ||
+			(data.basePath && this.accessToken)
 		) {
 			this.webSocket?.updateUrl(
 				this.getUri(WEBSOCKET_URL_PATH, {

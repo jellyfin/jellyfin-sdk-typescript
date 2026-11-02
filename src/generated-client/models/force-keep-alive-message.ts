@@ -17,7 +17,7 @@
 import type { SessionMessageType } from './session-message-type';
 
 /**
- * Force keep alive websocket messages.
+ * Force keep alive websocket messages. The data is the timeout in seconds after which the server considers the connection lost; clients are expected to answer with a KeepAlive message and to keep sending one at least every half of that timeout.
  */
 export interface ForceKeepAliveMessage {
     /**

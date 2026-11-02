@@ -84,7 +84,7 @@ describe('ImageUrlsApi', () => {
 		// No User
 		expect(IMAGE_API.getUserImageUrl()).toBeUndefined();
 		// User with Id
-		expect(IMAGE_API.getUserImageUrl({ Id: 'TEST' })).toBe('https://example.com/Users/TEST/Images/Primary');
+		expect(IMAGE_API.getUserImageUrl({ Id: 'TEST' })).toBeUndefined();
 		// User with Id and Tag
 		expect(IMAGE_API.getUserImageUrl({ Id: 'TEST', PrimaryImageTag: 'foo' }))
 			.toBe('https://example.com/Users/TEST/Images/Primary?tag=foo');
@@ -110,6 +110,7 @@ describe('ImageUrlsApi', () => {
 		// getSplashscreenImageUrl
 		expect(relativeImageApi.getSplashscreenImageUrl()).toBe('/Branding/Splashscreen');
 		// getUserImageUrl
-		expect(relativeImageApi.getUserImageUrl({ Id: 'TEST' })).toBe('/Users/TEST/Images/Primary');
+		expect(relativeImageApi.getUserImageUrl({ Id: 'TEST', PrimaryImageTag: 'tag' }))
+			.toBe('/Users/TEST/Images/Primary?tag=tag');
 	});
 });
