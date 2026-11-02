@@ -59,7 +59,7 @@ export type WebSocketReconnecting = {
 /**
  * No socket is open and no reconnection is pending.
  *
- * If this was not `intentional`, subscriptions are preserved and can be restored with {@link WebSocketService.reconnect}.
+ * If this was not `intentional`, subscriptions are preserved and are restored by the next subscription or access token update.
  */
 export type WebSocketDisconnected = {
 	status: typeof WebSocketStatuses.Disconnected,

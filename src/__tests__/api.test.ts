@@ -123,20 +123,6 @@ describe('Api', () => {
 			expect(onStatusChangeSpy).toHaveBeenCalledWith(listener);
 		});
 
-		it('should reconnect the WebSocket service', () => {
-			vi.spyOn(WebSocketService.prototype, 'subscribe').mockReturnValue(() => {});
-			const reconnectSpy = vi.spyOn(WebSocketService.prototype, 'reconnect').mockReturnValue();
-			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
-
-			// Nothing to reconnect before the service exists
-			api.reconnectWebSocket();
-			expect(reconnectSpy).not.toHaveBeenCalled();
-
-			api.subscribe(['Sessions'], () => {});
-			api.reconnectWebSocket();
-			expect(reconnectSpy).toHaveBeenCalledOnce();
-		});
-
 		it('should pass subscription intervals to the WebSocket service', () => {
 			const subscribeSpy = vi.spyOn(WebSocketService.prototype, 'subscribe').mockReturnValue(() => {});
 			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);

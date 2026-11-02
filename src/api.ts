@@ -17,7 +17,8 @@ import type {
 	OutboundWebSocketMessageType,
 	SocketMessageHandler,
 	SocketStatusHandler,
-	WebSocketStatus
+	WebSocketStatus,
+	WebSocketSubscriptionIntervals
 } from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
@@ -184,8 +185,16 @@ export class Api {
 		return languages?.length ? languages.join(',') : undefined;
 	}
 
-	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-		return this.webSocketService.subscribe(messageTypes, onMessage);
+	/**
+	 * Subscribes to WebSocket messages of the provided types.
+	 * @see {@link WebSocketService.subscribe}
+	 */
+	subscribe<T extends OutboundWebSocketMessageType>(
+		messageTypes: T[],
+		onMessage: SocketMessageHandler<T>,
+		subscriptionIntervals?: WebSocketSubscriptionIntervals
+	) {
+		return this.webSocketService.subscribe(messageTypes, onMessage, subscriptionIntervals);
 	}
 
 	/**

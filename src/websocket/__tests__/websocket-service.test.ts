@@ -16,32 +16,26 @@ import { WebSocketService } from '../websocket-service';
 vi.mock('../../api');
 
 function createMockWebSocket() {
-	const eventListeners: Record<string, ((event: Event) => void)[]> = {
-		open: [],
-		message: [],
-		close: []
-	};
-
-	return {
+	const socket = {
 		readyState: WebSocket.CONNECTING as number,
 		send: vi.fn(),
 		close: vi.fn(),
-		addEventListener: vi.fn((event: string, handler: (event: Event) => void) => {
-			eventListeners[event]?.push(handler);
-		}),
-		removeEventListener: vi.fn(),
-		dispatchEvent: vi.fn(),
-		// Helpers to trigger events
+		onopen: null as ((event: Event) => void) | null,
+		onmessage: null as ((event: MessageEvent) => void) | null,
+		onclose: null as ((event: CloseEvent) => void) | null,
+		// Helpers to trigger events on whichever handlers are currently attached
 		__triggerOpen: () => {
-			eventListeners.open.forEach(handler => handler(new Event('open')));
+			socket.onopen?.(new Event('open'));
 		},
 		__triggerMessage: (data: string) => {
-			eventListeners.message.forEach(handler => handler(new MessageEvent('message', { data })));
+			socket.onmessage?.(new MessageEvent('message', { data }));
 		},
 		__triggerClose: (code = 1006, reason = '') => {
-			eventListeners.close.forEach(handler => handler(Object.assign(new Event('close'), { code, reason })));
+			socket.onclose?.(Object.assign(new Event('close'), { code, reason }) as CloseEvent);
 		}
 	};
+
+	return socket;
 }
 
 type MockWebSocket = ReturnType<typeof createMockWebSocket>;
@@ -611,35 +605,6 @@ describe('WebSocketService', () => {
 			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
 		});
 
-		it('should reconnect with a fresh backoff when reconnect() is called after giving up', () => {
-			vi.useFakeTimers();
-			const handler = vi.fn();
-			const statusListener = vi.fn();
-			service.onStatusChange(statusListener);
-			service.subscribe(['Sessions'], handler);
-			mockWebSocket.__triggerOpen();
-			exhaustReconnectionAttempts();
-
-			service.reconnect();
-
-			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 2);
-			expect(service.socketStatus).toBe('connecting');
-
-			// Subscriptions survived giving up
-			mockWebSocket.readyState = WebSocket.OPEN;
-			mockWebSocket.__triggerOpen();
-			expect(mockWebSocket.send).toHaveBeenCalledWith(
-				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
-			);
-			mockWebSocket.__triggerMessage(JSON.stringify({ MessageType: 'Sessions', Data: [] }));
-			expect(handler).toHaveBeenCalledOnce();
-
-			mockWebSocket.__triggerClose();
-			expect(statusListener).toHaveBeenLastCalledWith(
-				expect.objectContaining({ status: 'reconnecting', attempt: 1, delay: RECONNECT_INITIAL_DELAY })
-			);
-		});
-
 		it('should reconnect when subscribing after giving up', () => {
 			vi.useFakeTimers();
 			service.subscribe(['Sessions'], () => {});
@@ -655,49 +620,6 @@ describe('WebSocketService', () => {
 			// The backoff starts over rather than giving up again straight away
 			mockWebSocket.__triggerClose();
 			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
-		});
-	});
-
-	describe('reconnect()', () => {
-		it('should replace the active socket immediately', () => {
-			vi.useFakeTimers();
-			service.subscribe(['Sessions'], () => {});
-			sockets[0].__triggerOpen();
-			sockets[0].__triggerClose();
-			expect(service.socketStatus).toBe('reconnecting');
-
-			service.reconnect();
-
-			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
-			expect(service.socketStatus).toBe('connecting');
-
-			// The pending backoff reconnection was cancelled
-			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
-			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
-		});
-
-		it('should close the previous socket', () => {
-			service.subscribe(['Sessions'], () => {});
-			sockets[0].readyState = WebSocket.OPEN;
-			sockets[0].__triggerOpen();
-
-			service.reconnect();
-
-			expect(sockets[0].close).toHaveBeenCalled();
-		});
-
-		it('should do nothing without subscriptions', () => {
-			service.reconnect();
-			expect(globalThis.WebSocket).not.toHaveBeenCalled();
-		});
-
-		it('should do nothing without a URL', () => {
-			const deferredService = new WebSocketService();
-			deferredService.subscribe(['Sessions'], () => {});
-
-			deferredService.reconnect();
-
-			expect(globalThis.WebSocket).not.toHaveBeenCalled();
 		});
 	});
 

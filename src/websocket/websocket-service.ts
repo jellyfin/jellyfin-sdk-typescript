@@ -104,7 +104,7 @@ export class WebSocketService {
 		this.socket = new WebSocket(this.url.toString());
 		this.setStatus({ status: 'connecting' });
 
-		this.socket.addEventListener('open', () => {
+		this.socket.onopen = () => {
 			// Reset reconnection attempts on successful connection
 			this.reconnectionAttempts = 0;
 
@@ -122,9 +122,9 @@ export class WebSocketService {
 					);
 				}
 			}
-		});
+		};
 
-		this.socket.addEventListener('message', (event) => {
+		this.socket.onmessage = (event) => {
 			const data = JSON.parse(event.data) as OutboundWebSocketMessage;
 
 			const { MessageType } = data;
@@ -137,9 +137,9 @@ export class WebSocketService {
 				const handlers = this.subscriptions.get(MessageType);
 				handlers?.forEach(handler => handler(data));
 			}
-		});
+		};
 
-		this.socket.addEventListener('close', ({ code, reason }) => {
+		this.socket.onclose = ({ code, reason }) => {
 			this.clearKeepAlive();
 
 			// Reconnect with exponential backoff if there are active subscriptions,
@@ -155,7 +155,7 @@ export class WebSocketService {
 				this.reconnectionAttempts = 0;
 				this.setStatus({ status: 'disconnected', intentional: false, code, reason });
 			}
-		});
+		};
 	}
 
 	/**
@@ -195,12 +195,17 @@ export class WebSocketService {
 	/**
 	 * Closes and disposes of the active socket, cancelling any pending reconnection.
 	 *
-	 * The socket is detached before closing so its close event is ignored.
+	 * The socket's handlers are removed before closing, since its close event
+	 * arrives later and would otherwise be handled as a lost connection.
 	 */
 	private teardownSocket() {
-		const socket = this.socket;
-		this.socket = undefined;
-		socket?.close();
+		if (this.socket) {
+			this.socket.onopen = null;
+			this.socket.onmessage = null;
+			this.socket.onclose = null;
+			this.socket.close();
+			this.socket = undefined;
+		}
 
 		this.reconnectionAttempts = 0;
 		if (this.reconnectionTimeout) {
