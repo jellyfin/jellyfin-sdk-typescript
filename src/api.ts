@@ -187,7 +187,30 @@ export class Api {
 
 	/**
 	 * Subscribes to WebSocket messages of the provided types.
-	 * @see {@link WebSocketService.subscribe}
+	 *
+	 * Subscribing opens the WebSocket connection if one is not already open. Subscriptions are restored
+	 * automatically after a reconnection, and the connection is closed once every subscription is removed.
+	 *
+	 * @param messageTypes The {@link OutboundWebSocketMessageType}s to listen for
+	 * @param onMessage The callback to invoke when a message is received
+	 * @param subscriptionIntervals Optional intervals for message types the server sends periodically, e.g. `Sessions`
+	 *
+	 * @example
+	 * const unsubscribe = api.subscribe(
+	 *   [OutboundWebSocketMessageType.Sessions],
+	 *   (message) => {
+	 *     console.log('Received session update:', message.Data);
+	 *   },
+	 *   {
+	 *     // Send session updates immediately, then every 5 seconds
+	 *     [OutboundWebSocketMessageType.Sessions]: new PeriodicListenerInterval(0, 5000)
+	 *   }
+	 * );
+	 *
+	 * // Later, stop listening
+	 * unsubscribe();
+	 *
+	 * @returns A function which can be invoked to remove the subscription
 	 */
 	subscribe<T extends OutboundWebSocketMessageType>(
 		messageTypes: T[],
@@ -207,11 +230,30 @@ export class Api {
 	/**
 	 * Adds a listener for WebSocket status changes.
 	 *
-	 * Defined as an arrow function so it can be passed around unbound, e.g. to React's `useSyncExternalStore`.
-	 * @see {@link WebSocketService.onStatusChange}
+	 * The listener is invoked with a {@link WebSocketStatusEvent} each time {@link webSocketStatus} changes.
+	 * Narrow on `status` to access the details of each event, such as the delay before a reconnection attempt.
+	 *
+	 * This is an arrow function, so it can be passed around without binding it to the {@link Api} instance.
+	 *
+	 * @param onStatusChange The callback to invoke when the connection status changes
 	 *
 	 * @example
-	 * const status = useSyncExternalStore(api.onWebSocketStatusChange, () => api.webSocketStatus);
+	 * const removeListener = api.onWebSocketStatusChange((event) => {
+	 *   switch (event.status) {
+	 *     case WebSocketStatus.Open:
+	 *       console.log('Connected');
+	 *       break;
+	 *     case WebSocketStatus.Reconnecting:
+	 *       console.log(`Connection lost, retrying in ${event.delay}ms (attempt ${event.attempt})`);
+	 *       break;
+	 *     case WebSocketStatus.Disconnected:
+	 *       if (!event.intentional) console.log('Gave up reconnecting');
+	 *       break;
+	 *   }
+	 * });
+	 *
+	 * // Later, stop listening
+	 * removeListener();
 	 *
 	 * @returns A function which can be invoked to remove the listener
 	 */
