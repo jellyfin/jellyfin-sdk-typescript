@@ -262,6 +262,21 @@ export class WebSocketService {
 	}
 
 	/**
+	 * Reconnects immediately, restarting the reconnection backoff.
+	 *
+	 * Useful once the service has given up reconnecting (a `disconnected` status that was not intentional),
+	 * or when the network is known to be back, e.g. on the browser `online` event.
+	 *
+	 * Does nothing if there is no URL (e.g. after logging out) or there are no active subscriptions.
+	 */
+	reconnect(): void {
+		if (!this.url || this.subscriptions.size === 0) return;
+
+		this.teardownSocket();
+		this.initSocket();
+	}
+
+	/**
 	 * Adds a listener for websocket status changes.
 	 *
 	 * The listener is invoked with a {@link WebSocketStatusEvent} each time {@link socketStatus} changes.

@@ -605,6 +605,35 @@ describe('WebSocketService', () => {
 			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
 		});
 
+		it('should reconnect with a fresh backoff when reconnect() is called after giving up', () => {
+			vi.useFakeTimers();
+			const handler = vi.fn();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], handler);
+			mockWebSocket.__triggerOpen();
+			exhaustReconnectionAttempts();
+
+			service.reconnect();
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 2);
+			expect(service.socketStatus).toBe('connecting');
+
+			// Subscriptions survived giving up
+			mockWebSocket.readyState = WebSocket.OPEN;
+			mockWebSocket.__triggerOpen();
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
+			);
+			mockWebSocket.__triggerMessage(JSON.stringify({ MessageType: 'Sessions', Data: [] }));
+			expect(handler).toHaveBeenCalledOnce();
+
+			mockWebSocket.__triggerClose();
+			expect(statusListener).toHaveBeenLastCalledWith(
+				expect.objectContaining({ status: 'reconnecting', attempt: 1, delay: RECONNECT_INITIAL_DELAY })
+			);
+		});
+
 		it('should reconnect when subscribing after giving up', () => {
 			vi.useFakeTimers();
 			service.subscribe(['Sessions'], () => {});
@@ -620,6 +649,51 @@ describe('WebSocketService', () => {
 			// The backoff starts over rather than giving up again straight away
 			mockWebSocket.__triggerClose();
 			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
+		});
+	});
+
+	describe('reconnect()', () => {
+		it('should replace the active socket immediately', () => {
+			vi.useFakeTimers();
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].__triggerOpen();
+			sockets[0].__triggerClose();
+			expect(service.socketStatus).toBe('reconnecting');
+
+			service.reconnect();
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+			expect(service.socketStatus).toBe('connecting');
+
+			// The pending backoff reconnection was cancelled
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+		});
+
+		it('should close the previous socket', () => {
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].readyState = WebSocket.OPEN;
+			sockets[0].__triggerOpen();
+
+			service.reconnect();
+
+			expect(sockets[0].close).toHaveBeenCalled();
+		});
+
+		it('should do nothing without subscriptions', () => {
+			service.reconnect();
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
+		});
+
+		it('should do nothing after disconnecting', () => {
+			service.subscribe(['Sessions'], () => {});
+			service.disconnect();
+			vi.mocked(globalThis.WebSocket).mockClear();
+
+			service.reconnect();
+
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
+			expect(service.socketStatus).toBe('disconnected');
 		});
 	});
 

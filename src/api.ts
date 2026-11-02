@@ -240,14 +240,14 @@ export class Api {
 	 * @example
 	 * const removeListener = api.onWebSocketStatusChange((event) => {
 	 *   switch (event.status) {
-	 *     case WebSocketStatus.Open:
+	 *     case WebSocketStatuses.Open:
 	 *       console.log('Connected');
 	 *       break;
-	 *     case WebSocketStatus.Reconnecting:
+	 *     case WebSocketStatuses.Reconnecting:
 	 *       console.log(`Connection lost, retrying in ${event.delay}ms (attempt ${event.attempt})`);
 	 *       break;
-	 *     case WebSocketStatus.Disconnected:
-	 *       if (!event.intentional) console.log('Gave up reconnecting');
+	 *     case WebSocketStatuses.Disconnected:
+	 *       if (!event.intentional) console.log('Gave up reconnecting, see reconnectWebSocket()');
 	 *       break;
 	 *   }
 	 * });
@@ -260,4 +260,29 @@ export class Api {
 	onWebSocketStatusChange = (onStatusChange: SocketStatusHandler): (() => void) => {
 		return this.webSocketService.onStatusChange(onStatusChange);
 	};
+
+	/**
+	 * Reconnects the WebSocket immediately, restarting the reconnection backoff.
+	 *
+	 * The WebSocket stops reconnecting after too many failed attempts and reports an unintentional
+	 * `disconnected` status. Subscriptions are preserved, so calling this restores them, e.g. from a
+	 * "Retry" button or when the network comes back.
+	 *
+	 * Does nothing if there is no access token or there are no active subscriptions.
+	 *
+	 * @example
+	 * // Offer a retry once the WebSocket gives up reconnecting
+	 * api.onWebSocketStatusChange((event) => {
+	 *   if (event.status === WebSocketStatuses.Disconnected && !event.intentional) {
+	 *     showRetryButton(() => api.reconnectWebSocket());
+	 *   }
+	 * });
+	 *
+	 * @example
+	 * // Reconnect straight away when the browser comes back online, rather than waiting for the backoff
+	 * window.addEventListener('online', () => api.reconnectWebSocket());
+	 */
+	reconnectWebSocket(): void {
+		this.webSocket?.reconnect();
+	}
 }
