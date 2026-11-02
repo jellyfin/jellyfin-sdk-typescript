@@ -9,16 +9,59 @@ import { expect } from 'vitest';
 
 import { AUTHORIZATION_HEADER } from '../../constants';
 import type { ForceKeepAliveMessage, SessionsStartMessage } from '../../generated-client';
-import { WEBSOCKET_URL_PATH } from '../constants';
+import { RECONNECT_INITIAL_DELAY, RECONNECT_MAX_ATTEMPTS, RECONNECT_MAX_DELAY, WEBSOCKET_URL_PATH } from '../constants';
 import { PeriodicListenerInterval } from '../models';
 import { WebSocketService } from '../websocket-service';
 
 vi.mock('../../api');
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
-let mockWebSocket: any;
+function createMockWebSocket() {
+	const eventListeners: Record<string, ((event: Event) => void)[]> = {
+		open: [],
+		message: [],
+		close: []
+	};
+
+	return {
+		readyState: WebSocket.CONNECTING as number,
+		send: vi.fn(),
+		close: vi.fn(),
+		addEventListener: vi.fn((event: string, handler: (event: Event) => void) => {
+			eventListeners[event]?.push(handler);
+		}),
+		removeEventListener: vi.fn(),
+		dispatchEvent: vi.fn(),
+		// Helpers to trigger events
+		__triggerOpen: () => {
+			eventListeners.open.forEach(handler => handler(new Event('open')));
+		},
+		__triggerMessage: (data: string) => {
+			eventListeners.message.forEach(handler => handler(new MessageEvent('message', { data })));
+		},
+		__triggerClose: (code = 1006, reason = '') => {
+			eventListeners.close.forEach(handler => handler(Object.assign(new Event('close'), { code, reason })));
+		}
+	};
+}
+
+type MockWebSocket = ReturnType<typeof createMockWebSocket>;
+
+/**
+ * The most recently created socket.
+ *
+ * The first socket is created up front so tests can configure it before the service connects.
+ * Each later connection gets a fresh socket, which then becomes the `mockWebSocket`.
+ */
+let mockWebSocket: MockWebSocket;
+
+/**
+ * Every socket created by the service, in order
+ */
+let sockets: MockWebSocket[];
 
 globalThis.WebSocket = vi.fn(function() {
+	if (sockets.length > 0) mockWebSocket = createMockWebSocket();
+	sockets.push(mockWebSocket);
 	return mockWebSocket;
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 }) as any;
@@ -48,38 +91,8 @@ describe('WebSocketService', () => {
 			axiosInstance: {}
 		};
 
-		// Setup mock WebSocket with proper event handling
-		const eventListeners: Record<string, ((event: Event) => void)[]> = {
-			open: [],
-			message: [],
-			close: []
-		};
-
-		mockWebSocket = {
-			readyState: WebSocket.CONNECTING,
-			send: vi.fn(),
-			close: vi.fn(),
-			onopen: null,
-			onmessage: null,
-			onclose: null,
-			addEventListener: vi.fn((event: string, handler: (event: Event) => void) => {
-				if (event in eventListeners) {
-					eventListeners[event].push(handler);
-				}
-			}),
-			removeEventListener: vi.fn(),
-			dispatchEvent: vi.fn(),
-			// Helper to trigger events
-			__triggerOpen: () => {
-				eventListeners.open.forEach(handler => handler(new Event('open')));
-			},
-			__triggerMessage: (data: string) => {
-				eventListeners.message.forEach(handler => handler(new MessageEvent('message', { data })));
-			},
-			__triggerClose: () => {
-				eventListeners.close.forEach(handler => handler(new Event('close')));
-			}
-		};
+		mockWebSocket = createMockWebSocket();
+		sockets = [];
 
 		service = new WebSocketService(
 			mockApi.getUri(WEBSOCKET_URL_PATH, {
@@ -90,6 +103,7 @@ describe('WebSocketService', () => {
 
 	afterEach(() => {
 		vi.clearAllMocks();
+		vi.useRealTimers();
 	});
 
 	describe('constructor', () => {
@@ -107,12 +121,16 @@ describe('WebSocketService', () => {
 			expect(service.socketStatus).toBe('disconnected');
 		});
 
-		it('should return socket readyState when socket exists', () => {
+		it('should return connecting while the socket is opening', () => {
+			service.subscribe(['Sessions'], () => {});
+			expect(service.socketStatus).toBe('connecting');
+		});
+
+		it('should return open once the socket opens', () => {
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
-			// The status should be updated to OPEN after socket opens
 			mockWebSocket.__triggerOpen();
-			expect(service.socketStatus).toBe(WebSocket.OPEN);
+			expect(service.socketStatus).toBe('open');
 		});
 	});
 
@@ -240,7 +258,7 @@ describe('WebSocketService', () => {
 			);
 		});
 
-		it('should reconnect after 5 seconds on close', async () => {
+		it('should reconnect after the backoff delay on close', async () => {
 			vi.useFakeTimers();
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
@@ -248,8 +266,10 @@ describe('WebSocketService', () => {
 			mockWebSocket.readyState = WebSocket.CLOSED;
 			mockWebSocket.__triggerClose();
 
-			vi.advanceTimersByTime(5000);
+			vi.advanceTimersByTime(RECONNECT_INITIAL_DELAY - 1);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(1);
 
+			vi.advanceTimersByTime(1);
 			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2); // Once for initial, once for reconnect
 
 			vi.useRealTimers();
@@ -305,7 +325,7 @@ describe('WebSocketService', () => {
 	});
 
 	describe('onStatusChange()', () => {
-		it('should notify listener when status changes to OPEN', () => {
+		it('should notify listener when connecting and when the socket opens', () => {
 			const statusListener = vi.fn();
 			mockWebSocket.readyState = WebSocket.OPEN;
 
@@ -313,24 +333,68 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 			mockWebSocket.__triggerOpen();
 
-			expect(statusListener).toHaveBeenCalledWith(WebSocket.OPEN);
+			expect(statusListener).toHaveBeenNthCalledWith(1, { status: 'connecting' });
+			expect(statusListener).toHaveBeenNthCalledWith(2, { status: 'open' });
 		});
 
-		it('should notify listener when status changes to disconnected', () => {
+		it('should notify listener with reconnection details when the connection is lost', () => {
+			vi.useFakeTimers();
 			const statusListener = vi.fn();
 			mockWebSocket.readyState = WebSocket.OPEN;
 
 			service.onStatusChange(statusListener);
 			service.subscribe(['Sessions'], () => {});
 			mockWebSocket.__triggerOpen();
-
-			// Clear calls from onopen
 			statusListener.mockClear();
 
-			// Trigger disconnect
-			mockWebSocket.__triggerClose();
+			mockWebSocket.__triggerClose(1006, 'Abnormal closure');
 
-			expect(statusListener).toHaveBeenCalledWith('disconnected');
+			expect(statusListener).toHaveBeenCalledWith({
+				status: 'reconnecting',
+				attempt: 1,
+				delay: 1000,
+				code: 1006,
+				reason: 'Abnormal closure'
+			});
+			expect(service.socketStatus).toBe('reconnecting');
+
+			vi.advanceTimersByTime(1000);
+			expect(statusListener).toHaveBeenLastCalledWith({ status: 'connecting' });
+
+			vi.useRealTimers();
+		});
+
+		it('should notify listener of an intentional disconnect when all subscriptions are removed', () => {
+			const statusListener = vi.fn();
+			mockWebSocket.readyState = WebSocket.OPEN;
+
+			service.onStatusChange(statusListener);
+			const unsubscribe = service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+			statusListener.mockClear();
+
+			unsubscribe();
+			// The browser fires close after the socket was closed by us
+			mockWebSocket.__triggerClose(1000);
+
+			expect(statusListener).toHaveBeenCalledTimes(1);
+			expect(statusListener).toHaveBeenCalledWith({ status: 'disconnected', intentional: true });
+		});
+
+		it('should notify listener of an intentional disconnect on disconnect()', () => {
+			const statusListener = vi.fn();
+			mockWebSocket.readyState = WebSocket.OPEN;
+
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+			statusListener.mockClear();
+
+			service.disconnect();
+			mockWebSocket.__triggerClose(1000);
+
+			expect(statusListener).toHaveBeenCalledTimes(1);
+			expect(statusListener).toHaveBeenCalledWith({ status: 'disconnected', intentional: true });
 		});
 
 		it('should return unsubscribe function', () => {
@@ -365,8 +429,8 @@ describe('WebSocketService', () => {
 			service.subscribe(['Sessions'], () => {});
 			mockWebSocket.__triggerOpen();
 
-			expect(listener1).toHaveBeenCalledWith(WebSocket.OPEN);
-			expect(listener2).toHaveBeenCalledWith(WebSocket.OPEN);
+			expect(listener1).toHaveBeenCalledWith({ status: 'open' });
+			expect(listener2).toHaveBeenCalledWith({ status: 'open' });
 		});
 
 		it("should not notify listener if status doesn't change", () => {
@@ -379,8 +443,261 @@ describe('WebSocketService', () => {
 			mockWebSocket.__triggerOpen();
 			mockWebSocket.__triggerOpen();
 
-			// Should only be called once
-			expect(statusListener).toHaveBeenCalledTimes(1);
+			// Once for connecting, once for open
+			expect(statusListener).toHaveBeenCalledTimes(2);
+		});
+	});
+
+	describe('replaced sockets', () => {
+		it('should ignore close events from a socket replaced by updateUrl', () => {
+			vi.useFakeTimers();
+
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].__triggerOpen();
+
+			service.updateUrl('http://example.com/new-url');
+			sockets[1].readyState = WebSocket.OPEN;
+			sockets[1].__triggerOpen();
+			statusListener.mockClear();
+
+			// The old socket finishes closing after the new one is open
+			sockets[0].__triggerClose(1000);
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+
+			expect(statusListener).not.toHaveBeenCalled();
+			expect(service.socketStatus).toBe('open');
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+		});
+
+		it('should ignore open events from a socket replaced by updateUrl', () => {
+			const statusListener = vi.fn();
+			service.subscribe(['Sessions'], () => {});
+
+			service.updateUrl('http://example.com/new-url');
+			service.onStatusChange(statusListener);
+
+			// The old socket opens late, while the new one is still connecting
+			sockets[0].__triggerOpen();
+
+			expect(statusListener).not.toHaveBeenCalled();
+			expect(service.socketStatus).toBe('connecting');
+		});
+
+		it('should ignore messages from a socket replaced by updateUrl', () => {
+			const handler = vi.fn();
+			service.subscribe(['Sessions'], handler);
+			sockets[0].__triggerOpen();
+
+			service.updateUrl('http://example.com/new-url');
+
+			sockets[0].__triggerMessage(JSON.stringify({ MessageType: 'Sessions', Data: [] }));
+			expect(handler).not.toHaveBeenCalled();
+
+			sockets[1].__triggerMessage(JSON.stringify({ MessageType: 'Sessions', Data: [] }));
+			expect(handler).toHaveBeenCalledOnce();
+		});
+
+		it('should not open a second socket when subscribing while a reconnection is pending', () => {
+			vi.useFakeTimers();
+
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].readyState = WebSocket.OPEN;
+			sockets[0].__triggerOpen();
+
+			sockets[0].readyState = WebSocket.CLOSED;
+			sockets[0].__triggerClose();
+			expect(service.socketStatus).toBe('reconnecting');
+
+			// Subscribing reconnects immediately rather than waiting for the backoff
+			service.subscribe(['ActivityLogEntry'], () => {});
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+
+			// And the pending reconnection is cancelled
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+		});
+
+		it('should restart the backoff after the socket is torn down', () => {
+			vi.useFakeTimers();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].__triggerOpen();
+
+			// Two consecutive failures
+			sockets[0].__triggerClose();
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			sockets[1].__triggerClose();
+			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 2 }));
+
+			// New credentials, then the new socket fails before ever opening
+			service.updateUrl('http://example.com/new-url');
+			sockets[2].__triggerClose();
+
+			expect(statusListener).toHaveBeenLastCalledWith(
+				expect.objectContaining({ status: 'reconnecting', attempt: 1, delay: RECONNECT_INITIAL_DELAY })
+			);
+		});
+	});
+
+	describe('reconnection limit', () => {
+		/**
+		 * Fails every reconnection attempt until the service gives up
+		 */
+		function exhaustReconnectionAttempts() {
+			for (let attempt = 1; attempt <= RECONNECT_MAX_ATTEMPTS; attempt++) {
+				mockWebSocket.__triggerClose();
+				vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			}
+			mockWebSocket.__triggerClose(1006, 'Server unreachable');
+		}
+
+		it('should retry up to the maximum number of attempts', () => {
+			vi.useFakeTimers();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+
+			for (let attempt = 1; attempt <= RECONNECT_MAX_ATTEMPTS; attempt++) {
+				mockWebSocket.__triggerClose();
+				expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt }));
+				vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			}
+
+			// One initial connection plus every reconnection attempt
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 1);
+		});
+
+		it('should give up and report an unintentional disconnect after the maximum number of attempts', () => {
+			vi.useFakeTimers();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+
+			exhaustReconnectionAttempts();
+
+			expect(statusListener).toHaveBeenLastCalledWith({
+				status: 'disconnected',
+				intentional: false,
+				code: 1006,
+				reason: 'Server unreachable'
+			});
+			expect(service.socketStatus).toBe('disconnected');
+
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 1);
+			expect(vi.getTimerCount()).toBe(0);
+		});
+
+		it('should reset the attempt count after a successful reconnection', () => {
+			vi.useFakeTimers();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+
+			mockWebSocket.__triggerClose();
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+
+			// A successful reconnection resets the count
+			mockWebSocket.__triggerOpen();
+			mockWebSocket.__triggerClose();
+
+			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
+		});
+
+		it('should reconnect with a fresh backoff when reconnect() is called after giving up', () => {
+			vi.useFakeTimers();
+			const handler = vi.fn();
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], handler);
+			mockWebSocket.__triggerOpen();
+			exhaustReconnectionAttempts();
+
+			service.reconnect();
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 2);
+			expect(service.socketStatus).toBe('connecting');
+
+			// Subscriptions survived giving up
+			mockWebSocket.readyState = WebSocket.OPEN;
+			mockWebSocket.__triggerOpen();
+			expect(mockWebSocket.send).toHaveBeenCalledWith(
+				JSON.stringify({ MessageType: 'SessionsStart', Data: '0,1000' })
+			);
+			mockWebSocket.__triggerMessage(JSON.stringify({ MessageType: 'Sessions', Data: [] }));
+			expect(handler).toHaveBeenCalledOnce();
+
+			mockWebSocket.__triggerClose();
+			expect(statusListener).toHaveBeenLastCalledWith(
+				expect.objectContaining({ status: 'reconnecting', attempt: 1, delay: RECONNECT_INITIAL_DELAY })
+			);
+		});
+
+		it('should reconnect when subscribing after giving up', () => {
+			vi.useFakeTimers();
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerOpen();
+			exhaustReconnectionAttempts();
+
+			const statusListener = vi.fn();
+			service.onStatusChange(statusListener);
+			service.subscribe(['Sessions'], () => {});
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(RECONNECT_MAX_ATTEMPTS + 2);
+
+			// The backoff starts over rather than giving up again straight away
+			mockWebSocket.__triggerClose();
+			expect(statusListener).toHaveBeenLastCalledWith(expect.objectContaining({ status: 'reconnecting', attempt: 1 }));
+		});
+	});
+
+	describe('reconnect()', () => {
+		it('should replace the active socket immediately', () => {
+			vi.useFakeTimers();
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].__triggerOpen();
+			sockets[0].__triggerClose();
+			expect(service.socketStatus).toBe('reconnecting');
+
+			service.reconnect();
+
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+			expect(service.socketStatus).toBe('connecting');
+
+			// The pending backoff reconnection was cancelled
+			vi.advanceTimersByTime(RECONNECT_MAX_DELAY);
+			expect(globalThis.WebSocket).toHaveBeenCalledTimes(2);
+		});
+
+		it('should close the previous socket', () => {
+			service.subscribe(['Sessions'], () => {});
+			sockets[0].readyState = WebSocket.OPEN;
+			sockets[0].__triggerOpen();
+
+			service.reconnect();
+
+			expect(sockets[0].close).toHaveBeenCalled();
+		});
+
+		it('should do nothing without subscriptions', () => {
+			service.reconnect();
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
+		});
+
+		it('should do nothing without a URL', () => {
+			const deferredService = new WebSocketService();
+			deferredService.subscribe(['Sessions'], () => {});
+
+			deferredService.reconnect();
+
+			expect(globalThis.WebSocket).not.toHaveBeenCalled();
 		});
 	});
 
@@ -628,6 +945,19 @@ describe('WebSocketService', () => {
 	});
 
 	describe('disconnect()', () => {
+		it('should stop all timers', () => {
+			vi.useFakeTimers();
+
+			mockWebSocket.readyState = WebSocket.OPEN;
+			service.subscribe(['Sessions'], () => {});
+			mockWebSocket.__triggerMessage(JSON.stringify({ MessageType: 'ForceKeepAlive', Data: 60 }));
+			expect(vi.getTimerCount()).toBe(1);
+
+			service.disconnect();
+
+			expect(vi.getTimerCount()).toBe(0);
+		});
+
 		it('should disconnect but preserve subscriptions', () => {
 			vi.useFakeTimers();
 
@@ -680,33 +1010,13 @@ describe('WebSocketService', () => {
 		it('should re-enable auto-reconnect after updateUrl', () => {
 			vi.useFakeTimers();
 
-			// Create fresh mock for this test to avoid shared state issues
-			const localEventListeners: Record<string, ((event: Event) => void)[]> = {
-				open: [],
-				message: [],
-				close: []
-			};
-
-			mockWebSocket.addEventListener = vi.fn((event: string, handler: (event: Event) => void) => {
-				if (event in localEventListeners) {
-					localEventListeners[event].push(handler);
-				}
-			});
-			mockWebSocket.__triggerClose = () => {
-				localEventListeners.close.forEach(handler => handler(new Event('close')));
-			};
-
 			mockWebSocket.readyState = WebSocket.OPEN;
 			service.subscribe(['Sessions'], () => {});
 
 			// Disconnect (simulating token cleared)
 			service.disconnect();
 
-			// Reset for clean state
 			vi.mocked(globalThis.WebSocket).mockClear();
-			localEventListeners.open = [];
-			localEventListeners.message = [];
-			localEventListeners.close = [];
 
 			// Update URL (simulating new token provided)
 			service.updateUrl('http://example.com/new-url');

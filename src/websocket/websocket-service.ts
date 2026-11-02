@@ -7,10 +7,10 @@
 import type { InboundWebSocketMessage, OutboundWebSocketMessage } from '../generated-client';
 import { buildWebSocketUrl } from '../utils';
 
-import { RECONNECT_INITIAL_DELAY, RECONNECT_DELAY_FACTOR, RECONNECT_MAX_DELAY } from './constants';
+import { RECONNECT_INITIAL_DELAY, RECONNECT_DELAY_FACTOR, RECONNECT_MAX_ATTEMPTS, RECONNECT_MAX_DELAY } from './constants';
 import { SUBSCRIPTION_REGISTRY } from './constants';
 import { PeriodicListenerInterval } from './models';
-import type { WebSocketStatusChangeEvent, WebSocketSubscriptionIntervals } from './types';
+import type { WebSocketStatusEvent, WebSocketSubscriptionIntervals } from './types';
 import { OutboundWebSocketMessageType, type SocketMessageHandler, type SocketStatusHandler, type WebSocketStatus } from './types';
 
 /**
@@ -58,11 +58,6 @@ export class WebSocketService {
 	private reconnectionTimeout: NodeJS.Timeout | undefined;
 
 	/**
-	 * Whether auto-reconnection is disabled (e.g., when token is cleared)
-	 */
-	private autoReconnectDisabled = false;
-
-	/**
 	 * Status change event listeners
 	 */
 	private readonly statusListeners: SocketStatusHandler[] = [];
@@ -71,10 +66,6 @@ export class WebSocketService {
 	 * Current connection status
 	 */
 	private currentStatus: WebSocketStatus = 'disconnected';
-
-	onOpen: WebSocketStatusChangeEvent | undefined;
-	onClosed: WebSocketStatusChangeEvent | undefined;
-	onFailure: WebSocketStatusChangeEvent | undefined;
 
 	/**
 	 * Constructs a new instance of the {@link WebSocketService}
@@ -103,17 +94,21 @@ export class WebSocketService {
 	 */
 	private initSocket() {
 		if (!this.url) return;
+
+		// Clear any pending reconnection so only one socket is ever active
+		if (this.reconnectionTimeout) {
+			clearTimeout(this.reconnectionTimeout);
+			this.reconnectionTimeout = undefined;
+		}
+
 		this.socket = new WebSocket(this.url.toString());
+		this.setStatus({ status: 'connecting' });
 
 		this.socket.addEventListener('open', () => {
 			// Reset reconnection attempts on successful connection
 			this.reconnectionAttempts = 0;
 
-			// Update status and notify listeners
-			this.setStatus(WebSocket.OPEN);
-
-			// Fire event listener (if supplied)
-			this.onOpen?.();
+			this.setStatus({ status: 'open' });
 
 			// Send start messages for subscriptions that were added before the socket opened
 			for (const type of this.subscriptions.keys()) {
@@ -144,23 +139,22 @@ export class WebSocketService {
 			}
 		});
 
-		this.socket.addEventListener('close', () => {
-			// Update status and notify listeners
-			this.setStatus('disconnected');
-			this.onClosed?.();
+		this.socket.addEventListener('close', ({ code, reason }) => {
+			this.clearKeepAlive();
 
-			// Reconnect with exponential backoff if there are active subscriptions
-			// and auto-reconnect is not disabled
-			if (this.subscriptions.size > 0 && !this.autoReconnectDisabled) {
+			// Reconnect with exponential backoff if there are active subscriptions,
+			// until the maximum number of attempts is reached
+			if (this.subscriptions.size > 0 && this.reconnectionAttempts < RECONNECT_MAX_ATTEMPTS) {
 				this.reconnectionAttempts++;
 				const delay = this.calculateBackoffDelay();
 				this.reconnectionTimeout = setTimeout(() => this.initSocket(), delay);
+				this.setStatus({ status: 'reconnecting', attempt: this.reconnectionAttempts, delay, code, reason });
 			} else {
-				// Else, close and dispose
+				// Give up; subscriptions are preserved for a later reconnect
 				this.socket = undefined;
+				this.reconnectionAttempts = 0;
+				this.setStatus({ status: 'disconnected', intentional: false, code, reason });
 			}
-
-			this.clearKeepAlive();
 		});
 	}
 
@@ -199,12 +193,30 @@ export class WebSocketService {
 	}
 
 	/**
+	 * Closes and disposes of the active socket, cancelling any pending reconnection.
+	 *
+	 * The socket is detached before closing so its close event is ignored.
+	 */
+	private teardownSocket() {
+		const socket = this.socket;
+		this.socket = undefined;
+		socket?.close();
+
+		this.reconnectionAttempts = 0;
+		if (this.reconnectionTimeout) {
+			clearTimeout(this.reconnectionTimeout);
+			this.reconnectionTimeout = undefined;
+		}
+		this.clearKeepAlive();
+	}
+
+	/**
 	 * Internal method to update status and notify all listeners
 	 */
-	private setStatus(status: WebSocketStatus) {
-		if (this.currentStatus !== status) {
-			this.currentStatus = status;
-			this.statusListeners.forEach(listener => listener(status));
+	private setStatus(event: WebSocketStatusEvent) {
+		if (this.currentStatus !== event.status) {
+			this.currentStatus = event.status;
+			this.statusListeners.forEach(listener => listener(event));
 		}
 	}
 
@@ -212,7 +224,7 @@ export class WebSocketService {
 	 * Gets the current status of the websocket connection
 	 * @returns The connection status
 	 */
-	get socketStatus(): WebSocketStatus | undefined {
+	get socketStatus(): WebSocketStatus {
 		return this.currentStatus;
 	}
 
@@ -224,42 +236,20 @@ export class WebSocketService {
 	 */
 	disconnect(): void {
 		this.url = undefined;
-		this.autoReconnectDisabled = true;
-		this.socket?.close();
-		this.setStatus('disconnected');
-		this.socket = undefined;
-		this.reconnectionAttempts = 0;
-		if (this.reconnectionTimeout) {
-			clearTimeout(this.reconnectionTimeout);
-			this.reconnectionTimeout = undefined;
-		}
-		this.clearKeepAlive();
+		this.teardownSocket();
+		this.setStatus({ status: 'disconnected', intentional: true });
 	}
 
 	/**
 	 * Updates the WebSocket URL and reconnects if there are active subscriptions.
-	 *
-	 * This re-enables auto-reconnection if it was previously disabled.
 	 *
 	 * Also used to supply the initial URL when the service was constructed without one
 	 * (e.g. when no access token was available at construction time). In that case any
 	 * subscriptions that were registered while disconnected will be restored immediately.
 	 */
 	updateUrl(uri: string) {
-		this.autoReconnectDisabled = true;
-		this.socket?.close();
-		this.socket = undefined;
-
-		// Clear any pending reconnection timeout
-		if (this.reconnectionTimeout) {
-			clearTimeout(this.reconnectionTimeout);
-			this.reconnectionTimeout = undefined;
-		}
-
+		this.teardownSocket();
 		this.url = buildWebSocketUrl(uri);
-
-		// Re-disable auto-reconnect
-		this.autoReconnectDisabled = false;
 
 		if (this.subscriptions.size > 0) {
 			this.initSocket();
@@ -267,9 +257,19 @@ export class WebSocketService {
 	}
 
 	/**
-	 * Adds a listener for websocket status changes
+	 * Adds a listener for websocket status changes.
+	 *
+	 * The listener is invoked with a {@link WebSocketStatusEvent} each time {@link socketStatus} changes.
 	 *
 	 * @param onStatusChange Callback invoked when the connection status changes
+	 *
+	 * @example
+	 * const unsubscribe = service.onStatusChange((event) => {
+	 *   if (event.status === 'reconnecting') {
+	 *     console.log(`Connection lost, retrying in ${event.delay}ms`);
+	 *   }
+	 * });
+	 *
 	 * @returns A function which can be invoked to remove the listener
 	 */
 	onStatusChange(onStatusChange: SocketStatusHandler): () => void {
@@ -293,9 +293,10 @@ export class WebSocketService {
 	 *
 	 * @param messageTypes Any array of {@link OutboundWebSocketMessage} message types to listen for
 	 * @param onMessage The callback to invoke when a message is received
+	 * @param subscriptionIntervals Optional intervals for periodic message types
 	 *
 	 * @example
-	 * const unsubscribe = api.webSocket.subscribe([OutboundWebSocketMessageType.Sessions], (message) => {
+	 * const unsubscribe = api.subscribe([OutboundWebSocketMessageType.Sessions], (message) => {
 	 *   console.log('Received session update:', message);
 	 * });
 	 *
@@ -365,13 +366,8 @@ export class WebSocketService {
 			}
 
 			if (this.subscriptions.size === 0) {
-				this.socket?.close();
-				this.setStatus('disconnected');
-				this.reconnectionAttempts = 0;
-				if (this.reconnectionTimeout) {
-					clearTimeout(this.reconnectionTimeout);
-					this.reconnectionTimeout = undefined;
-				}
+				this.teardownSocket();
+				this.setStatus({ status: 'disconnected', intentional: true });
 			}
 		};
 	}

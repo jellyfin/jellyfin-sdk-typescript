@@ -10,3 +10,4 @@ export * as utils from './utils';
 export * from './api';
 export * from './jellyfin';
 export * from './models';
+export * from './websocket';

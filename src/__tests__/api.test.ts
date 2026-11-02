@@ -7,7 +7,7 @@
 import axios from 'axios';
 import { vi, describe, expect, it, afterEach } from 'vitest';
 
-import { Api } from '..';
+import { Api, PeriodicListenerInterval, WebSocketService } from '..';
 import { SERVER_URL, TEST_CLIENT, TEST_DEVICE } from '../__helpers__/common';
 import { AUTHORIZATION_HEADER } from '../constants';
 import { getAuthorizationHeader } from '../utils';
@@ -86,5 +86,66 @@ describe('Api', () => {
 		const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE);
 		const uri = api.getUri('/api/url', { param1: 'bar', param2: 'baz 123;xyz' });
 		expect(uri).toBe(`${SERVER_URL}/api/url?param1=bar&param2=baz+123%3Bxyz`);
+	});
+
+	describe('webSocket', () => {
+		afterEach(() => {
+			vi.restoreAllMocks();
+		});
+
+		it('should report disconnected without creating a WebSocket service', () => {
+			const statusSpy = vi.spyOn(WebSocketService.prototype, 'socketStatus', 'get');
+			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+
+			expect(api.webSocketStatus).toBe('disconnected');
+			expect(statusSpy).not.toHaveBeenCalled();
+		});
+
+		it('should report the WebSocket service status', () => {
+			vi.spyOn(WebSocketService.prototype, 'subscribe').mockReturnValue(() => {});
+			vi.spyOn(WebSocketService.prototype, 'socketStatus', 'get').mockReturnValue('open');
+			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+
+			api.subscribe(['Sessions'], () => {});
+
+			expect(api.webSocketStatus).toBe('open');
+		});
+
+		it('should add status listeners when called unbound', () => {
+			const unsubscribe = vi.fn();
+			const onStatusChangeSpy = vi.spyOn(WebSocketService.prototype, 'onStatusChange').mockReturnValue(unsubscribe);
+			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+			const listener = vi.fn();
+
+			const { onWebSocketStatusChange } = api;
+
+			expect(onWebSocketStatusChange(listener)).toBe(unsubscribe);
+			expect(onStatusChangeSpy).toHaveBeenCalledWith(listener);
+		});
+
+		it('should reconnect the WebSocket service', () => {
+			vi.spyOn(WebSocketService.prototype, 'subscribe').mockReturnValue(() => {});
+			const reconnectSpy = vi.spyOn(WebSocketService.prototype, 'reconnect').mockReturnValue();
+			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+
+			// Nothing to reconnect before the service exists
+			api.reconnectWebSocket();
+			expect(reconnectSpy).not.toHaveBeenCalled();
+
+			api.subscribe(['Sessions'], () => {});
+			api.reconnectWebSocket();
+			expect(reconnectSpy).toHaveBeenCalledOnce();
+		});
+
+		it('should pass subscription intervals to the WebSocket service', () => {
+			const subscribeSpy = vi.spyOn(WebSocketService.prototype, 'subscribe').mockReturnValue(() => {});
+			const api = new Api(SERVER_URL, TEST_CLIENT, TEST_DEVICE, TEST_ACCESS_TOKEN);
+			const handler = vi.fn();
+			const intervals = { Sessions: new PeriodicListenerInterval(0, 5000) };
+
+			api.subscribe(['Sessions'], handler, intervals);
+
+			expect(subscribeSpy).toHaveBeenCalledWith(['Sessions'], handler, intervals);
+		});
 	});
 });

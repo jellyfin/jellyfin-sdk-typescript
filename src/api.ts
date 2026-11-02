@@ -13,7 +13,12 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getAuthenticationApi } from './utils/api/authentication-api';
 import { getSessionApi } from './utils/api/session-api';
-import type { OutboundWebSocketMessageType, SocketMessageHandler, WebSocketStatusChangeEvent } from './websocket';
+import type {
+	OutboundWebSocketMessageType,
+	SocketMessageHandler,
+	SocketStatusHandler,
+	WebSocketStatus
+} from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
@@ -183,15 +188,25 @@ export class Api {
 		return this.webSocketService.subscribe(messageTypes, onMessage);
 	}
 
-	set onOpen(onOpen: WebSocketStatusChangeEvent) {
-		this.webSocketService.onOpen = onOpen;
+	/**
+	 * The current status of the WebSocket connection.
+	 */
+	get webSocketStatus(): WebSocketStatus {
+		return this.webSocket?.socketStatus ?? 'disconnected';
 	}
 
-	set onClosed(onClosed: WebSocketStatusChangeEvent) {
-		this.webSocketService.onClosed = onClosed;
-	}
-
-	set onFailure(onFailure: WebSocketStatusChangeEvent) {
-		this.webSocketService.onFailure = onFailure;
-	}
+	/**
+	 * Adds a listener for WebSocket status changes.
+	 *
+	 * Defined as an arrow function so it can be passed around unbound, e.g. to React's `useSyncExternalStore`.
+	 * @see {@link WebSocketService.onStatusChange}
+	 *
+	 * @example
+	 * const status = useSyncExternalStore(api.onWebSocketStatusChange, () => api.webSocketStatus);
+	 *
+	 * @returns A function which can be invoked to remove the listener
+	 */
+	onWebSocketStatusChange = (onStatusChange: SocketStatusHandler): (() => void) => {
+		return this.webSocketService.onStatusChange(onStatusChange);
+	};
 }

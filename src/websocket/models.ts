@@ -17,3 +17,10 @@ export class PeriodicListenerInterval {
 		return `${this.initialDelay},${this.interval}`;
 	}
 }
+
+export const WebSocketStatuses = {
+	Disconnected: 'disconnected',
+	Reconnecting: 'reconnecting',
+	Open: 'open',
+	Connecting: 'connecting'
+} as const;
