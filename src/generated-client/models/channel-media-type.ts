@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The media type of a channel.
+ */
 
 export const ChannelMediaType = {
     Audio: 'Audio',
