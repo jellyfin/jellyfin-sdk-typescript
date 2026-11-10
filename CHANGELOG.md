@@ -7,6 +7,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+* Added `remoteSearch` helper method to `ItemLookupApi` to simplify remote search by base item type ([#1119](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1119)).
+
 ### Fixed
 
 * `getUserImageUrl` now returns `undefined` when the user has no primary image tag ([#1111](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1111)).
