@@ -34,7 +34,7 @@
     "@types/node": "24.19.2",
     "@typescript-eslint/eslint-plugin": "8.72.1",
     "@typescript-eslint/parser": "8.72.1",
-    "@vitest/coverage-v8": "4.1.10",
+    "@vitest/coverage-v8": "5.1.0",
     "@vitest/eslint-plugin": "1.6.21",
     "eslint": "9.39.5",
     "eslint-import-resolver-typescript": "4.4.5",
