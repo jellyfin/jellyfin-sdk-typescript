@@ -42,7 +42,7 @@
     "glob": "13.0.6",
     "globals": "17.14.0",
     "rimraf": "5.0.10",
-    "rollup": "4.62.2",
+    "rollup": "4.67.4",
     "typedoc": "0.28.20",
     "typescript": "6.0.3",
     "typescript-eslint": "8.72.1",
