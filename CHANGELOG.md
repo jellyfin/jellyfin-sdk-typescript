@@ -9,14 +9,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ### Added
 
-* Added `onWebSocketStatusChange` and `webSocketStatus` to the `Api` class for tracking the WebSocket connection status.
-  Listeners receive a `WebSocketStatusEvent` describing the new status (`connecting`, `open`, `reconnecting` or `disconnected`),
-  including the attempt number and delay when reconnecting, and whether a disconnection was intentional ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
-* Added `reconnectWebSocket` to the `Api` class (and `reconnect` to `WebSocketService`) for reconnecting the WebSocket immediately,
-  e.g. after it has stopped reconnecting or when the network comes back online ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
+* Added `onWebSocketStatusChange` and `webSocketStatus` to the `Api` class for tracking the WebSocket connection status. Status listeners receive a `WebSocketStatusEvent` describing the new socket state ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
 * `Api.subscribe` now accepts `subscriptionIntervals` for configuring how often periodic messages are sent ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
-* The WebSocket API (`WebSocketService`, `OutboundWebSocketMessageType`, `PeriodicListenerInterval`, `WebSocketStatuses` and related types)
-  is now exported from the package root ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
 
 ### Changed
 
