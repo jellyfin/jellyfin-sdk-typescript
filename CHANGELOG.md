@@ -7,9 +7,23 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 
 ## [Unreleased]
 
+### Added
+
+* Added `onWebSocketStatusChange` and `webSocketStatus` to the `Api` class for tracking the WebSocket connection status. Status listeners receive a `WebSocketStatusEvent` describing the new socket state ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
+* `Api.subscribe` now accepts `subscriptionIntervals` for configuring how often periodic messages are sent ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
+
+### Changed
+
+* `WebSocketService.onStatusChange` listeners now receive a `WebSocketStatusEvent` instead of a status value,
+  and `WebSocketStatus` is now a string union instead of a `WebSocket.readyState` number ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
+* WebSocket reconnection now stops after 20 consecutive failed attempts (about 40 minutes) and reports an unintentional `disconnected` status ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
+  Subscriptions are preserved, and the connection is restored by `reconnectWebSocket`, the next subscription or the next access token update.
+
 ### Fixed
 
 * `getUserImageUrl` now returns `undefined` when the user has no primary image tag ([#1111](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1111)).
+* A replaced WebSocket connection could still trigger a reconnection after it closed, opening a duplicate connection or
+  reporting the wrong status after logging out or updating the access token ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
 
 ## [1.0.2] - 2026-10-23
 

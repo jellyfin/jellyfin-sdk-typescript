@@ -28,6 +28,23 @@ export const RECONNECT_DELAY_FACTOR = 1.5;
  */
 export const RECONNECT_MAX_DELAY = 60000 * 5;
 
+/**
+ * The number of consecutive reconnection attempts before giving up.
+ *
+ * With the backoff above this is roughly 40 minutes of retrying.
+ */
+export const RECONNECT_MAX_ATTEMPTS = 20;
+
+/**
+ * The possible statuses of a WebSocket connection
+ */
+export const WebSocketStatuses = {
+	Disconnected: 'disconnected',
+	Reconnecting: 'reconnecting',
+	Open: 'open',
+	Connecting: 'connecting'
+} as const;
+
 export const SUBSCRIPTION_REGISTRY: Partial<Record<OutboundWebSocketMessageType, WebSocketSubscription<OutboundWebSocketMessageType>>> = {
 	[OutboundWebSocketMessageType.Sessions]: {
 		messageType: OutboundWebSocketMessageType.Sessions,
