@@ -7,7 +7,8 @@
 import type { InboundWebSocketMessage } from '../generated-client';
 import type { OutboundWebSocketMessage } from '../generated-client/models/outbound-web-socket-message';
 
-import type { PeriodicListenerInterval, WebSocketStatuses } from './models';
+import type { WebSocketStatuses } from './constants';
+import type { PeriodicListenerInterval } from './models';
 
 /**
  * The connection status of the {@link WebSocketService}, as reported by the `status` of a {@link WebSocketStatusEvent}.
