@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The type of recommendation reason for an item.
+ */
 
 export const RecommendationType = {
     SimilarToRecentlyPlayed: 'SimilarToRecentlyPlayed',
