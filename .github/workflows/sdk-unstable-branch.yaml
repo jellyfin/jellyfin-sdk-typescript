@@ -10,6 +10,7 @@ on:
 
 concurrency:
   group: unstable-branch
+  cancel-in-progress: true
 
 jobs:
   update:
