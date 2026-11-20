@@ -13,11 +13,29 @@
 
 
 
-export interface XbmcMetadataOptions {
+/**
+ * The XBMC metadata options DTO for API use.
+ */
+export interface XbmcMetadataOptionsDto {
+    /**
+     * Gets or sets the user id.
+     */
     'UserId'?: string | null;
+    /**
+     * Gets or sets the release date format.
+     */
     'ReleaseDateFormat'?: string;
+    /**
+     * Gets or sets a value indicating whether to save image paths in NFO.
+     */
     'SaveImagePathsInNfo'?: boolean;
+    /**
+     * Gets or sets a value indicating whether to enable path substitution.
+     */
     'EnablePathSubstitution'?: boolean;
+    /**
+     * Gets or sets a value indicating whether to enable extra thumbs duplication.
+     */
     'EnableExtraThumbsDuplication'?: boolean;
 }
 

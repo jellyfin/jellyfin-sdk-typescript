@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The 3D video layout format.
+ */
 
 export const Video3DFormat = {
     HalfSideBySide: 'HalfSideBySide',

@@ -49,5 +49,9 @@ export interface SeriesInfo {
     'ParentIndexNumber'?: number | null;
     'PremiereDate'?: string | null;
     'IsAutomated'?: boolean;
+    /**
+     * Gets or sets the canned display order group.
+     */
+    'DisplayOrder'?: string | null;
 }
 

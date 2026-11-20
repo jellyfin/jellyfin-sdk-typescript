@@ -38,9 +38,9 @@ import type { TonemappingMode } from './tonemapping-mode';
 import type { TonemappingRange } from './tonemapping-range';
 
 /**
- * Class EncodingOptions.
+ * The encoding options DTO for API use.
  */
-export interface EncodingOptions {
+export interface EncodingOptionsDto {
     /**
      * Gets or sets the thread count used for encoding.
      */

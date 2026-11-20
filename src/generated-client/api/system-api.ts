@@ -29,19 +29,27 @@ import type { BrandingOptionsDto } from '../models';
 // @ts-ignore
 import type { ClientLogDocumentResponseDto } from '../models';
 // @ts-ignore
+import type { EncodingOptionsDto } from '../models';
+// @ts-ignore
 import type { EndPointInfo } from '../models';
+// @ts-ignore
+import type { LiveTvOptionsDto } from '../models';
 // @ts-ignore
 import type { LogFile } from '../models';
 // @ts-ignore
 import type { LogLevel } from '../models';
 // @ts-ignore
+import type { MetadataConfigurationDto } from '../models';
+// @ts-ignore
 import type { MetadataOptions } from '../models';
+// @ts-ignore
+import type { NetworkConfigurationDto } from '../models';
 // @ts-ignore
 import type { ProblemDetails } from '../models';
 // @ts-ignore
 import type { PublicSystemInfo } from '../models';
 // @ts-ignore
-import type { ServerConfiguration } from '../models';
+import type { ServerConfigurationDto } from '../models';
 // @ts-ignore
 import type { SortOrder } from '../models';
 // @ts-ignore
@@ -50,6 +58,8 @@ import type { SystemInfo } from '../models';
 import type { SystemStorageDto } from '../models';
 // @ts-ignore
 import type { UtcTimeResponse } from '../models';
+// @ts-ignore
+import type { XbmcMetadataOptionsDto } from '../models';
 /**
  * SystemApi - axios parameter creator
  */
@@ -123,12 +133,78 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
+         * @summary Gets encoding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getEncodingConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/Encoding`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Gets information about the request endpoint.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         getEndpointInfo: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
             const localVarPath = `/System/Endpoint`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets LiveTv configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLiveTvConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/LiveTv`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -303,16 +379,12 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Gets a named configuration.
-         * @param {string} key Configuration key.
+         * @summary Gets metadata configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration: async (key: string, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'key' is not null or undefined
-            assertParamExists('getNamedConfiguration', 'key', key)
-            const localVarPath = `/System/Configuration/{key}`
-                .replace(`{${"key"}}`, encodeURIComponent(String(key)));
+        getMetadataConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/Metadata`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -327,7 +399,40 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             // authentication CustomAuthentication required
             await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
 
-            localVarHeaderParameter['Accept'] = 'application/json,text/html';
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Gets network configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getNetworkConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/Network`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
 
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
@@ -529,6 +634,39 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
+         * @summary Gets XbmcMetadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getXbmcMetadataConfiguration: async (options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            const localVarPath = `/System/Configuration/XbmcMetadata`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'GET', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Accept'] = 'application/json,application/json; profile=CamelCase,application/json; profile=PascalCase,text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
          * @summary Upload a document.
          * @param {File} [body] 
          * @param {*} [options] Override http request option.
@@ -700,13 +838,13 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         /**
          * 
          * @summary Updates application configuration.
-         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {ServerConfigurationDto} serverConfigurationDto Configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateConfiguration: async (serverConfiguration: ServerConfiguration, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'serverConfiguration' is not null or undefined
-            assertParamExists('updateConfiguration', 'serverConfiguration', serverConfiguration)
+        updateConfiguration: async (serverConfigurationDto: ServerConfigurationDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'serverConfigurationDto' is not null or undefined
+            assertParamExists('updateConfiguration', 'serverConfigurationDto', serverConfigurationDto)
             const localVarPath = `/System/Configuration`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
@@ -728,7 +866,7 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(serverConfiguration, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(serverConfigurationDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -737,19 +875,15 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
         },
         /**
          * 
-         * @summary Updates named configuration.
-         * @param {string} key Configuration key.
-         * @param {any} body Configuration.
+         * @summary Updates encoding configuration.
+         * @param {EncodingOptionsDto} encodingOptionsDto Encoding configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration: async (key: string, body: any, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
-            // verify required parameter 'key' is not null or undefined
-            assertParamExists('updateNamedConfiguration', 'key', key)
-            // verify required parameter 'body' is not null or undefined
-            assertParamExists('updateNamedConfiguration', 'body', body)
-            const localVarPath = `/System/Configuration/{key}`
-                .replace(`{${"key"}}`, encodeURIComponent(String(key)));
+        updateEncodingConfiguration: async (encodingOptionsDto: EncodingOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'encodingOptionsDto' is not null or undefined
+            assertParamExists('updateEncodingConfiguration', 'encodingOptionsDto', encodingOptionsDto)
+            const localVarPath = `/System/Configuration/Encoding`;
             // use dummy base URL string because the URL constructor only accepts absolute URLs.
             const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
             let baseOptions;
@@ -770,7 +904,159 @@ export const SystemApiAxiosParamCreator = function (configuration?: Configuratio
             setSearchParams(localVarUrlObj, localVarQueryParameter);
             let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
             localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
-            localVarRequestOptions.data = serializeDataIfNeeded(body, localVarRequestOptions, configuration)
+            localVarRequestOptions.data = serializeDataIfNeeded(encodingOptionsDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates LiveTv configuration.
+         * @param {LiveTvOptionsDto} liveTvOptionsDto LiveTv configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateLiveTvConfiguration: async (liveTvOptionsDto: LiveTvOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'liveTvOptionsDto' is not null or undefined
+            assertParamExists('updateLiveTvConfiguration', 'liveTvOptionsDto', liveTvOptionsDto)
+            const localVarPath = `/System/Configuration/LiveTv`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(liveTvOptionsDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates metadata configuration.
+         * @param {MetadataConfigurationDto} metadataConfigurationDto Metadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateMetadataConfiguration: async (metadataConfigurationDto: MetadataConfigurationDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'metadataConfigurationDto' is not null or undefined
+            assertParamExists('updateMetadataConfiguration', 'metadataConfigurationDto', metadataConfigurationDto)
+            const localVarPath = `/System/Configuration/Metadata`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(metadataConfigurationDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates network configuration.
+         * @param {NetworkConfigurationDto} networkConfigurationDto Network configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateNetworkConfiguration: async (networkConfigurationDto: NetworkConfigurationDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'networkConfigurationDto' is not null or undefined
+            assertParamExists('updateNetworkConfiguration', 'networkConfigurationDto', networkConfigurationDto)
+            const localVarPath = `/System/Configuration/Network`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(networkConfigurationDto, localVarRequestOptions, configuration)
+
+            return {
+                url: toPathString(localVarUrlObj),
+                options: localVarRequestOptions,
+            };
+        },
+        /**
+         * 
+         * @summary Updates XbmcMetadata configuration.
+         * @param {XbmcMetadataOptionsDto} xbmcMetadataOptionsDto XbmcMetadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateXbmcMetadataConfiguration: async (xbmcMetadataOptionsDto: XbmcMetadataOptionsDto, options: RawAxiosRequestConfig = {}): Promise<RequestArgs> => {
+            // verify required parameter 'xbmcMetadataOptionsDto' is not null or undefined
+            assertParamExists('updateXbmcMetadataConfiguration', 'xbmcMetadataOptionsDto', xbmcMetadataOptionsDto)
+            const localVarPath = `/System/Configuration/XbmcMetadata`;
+            // use dummy base URL string because the URL constructor only accepts absolute URLs.
+            const localVarUrlObj = new URL(localVarPath, DUMMY_BASE_URL);
+            let baseOptions;
+            if (configuration) {
+                baseOptions = configuration.baseOptions;
+            }
+
+            const localVarRequestOptions = { method: 'POST', ...baseOptions, ...options};
+            const localVarHeaderParameter = {} as any;
+            const localVarQueryParameter = {} as any;
+
+            // authentication CustomAuthentication required
+            await setApiKeyToObject(localVarHeaderParameter, "Authorization", configuration)
+
+            localVarHeaderParameter['Content-Type'] = 'application/json';
+            localVarHeaderParameter['Accept'] = 'text/html';
+
+            setSearchParams(localVarUrlObj, localVarQueryParameter);
+            let headersFromBaseOptions = baseOptions && baseOptions.headers ? baseOptions.headers : {};
+            localVarRequestOptions.headers = {...localVarHeaderParameter, ...headersFromBaseOptions, ...options.headers};
+            localVarRequestOptions.data = serializeDataIfNeeded(xbmcMetadataOptionsDto, localVarRequestOptions, configuration)
 
             return {
                 url: toPathString(localVarUrlObj),
@@ -792,7 +1078,7 @@ export const SystemApiFp = function(configuration?: Configuration) {
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfiguration>> {
+        async getConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<ServerConfigurationDto>> {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getConfiguration(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SystemApi.getConfiguration']?.[localVarOperationServerIndex]?.url;
@@ -812,6 +1098,18 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets encoding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getEncodingConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<EncodingOptionsDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getEncodingConfiguration(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getEncodingConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Gets information about the request endpoint.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
@@ -820,6 +1118,18 @@ export const SystemApiFp = function(configuration?: Configuration) {
             const localVarAxiosArgs = await localVarAxiosParamCreator.getEndpointInfo(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SystemApi.getEndpointInfo']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets LiveTv configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getLiveTvConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<LiveTvOptionsDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getLiveTvConfiguration(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getLiveTvConfiguration']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -863,15 +1173,26 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
-         * @summary Gets a named configuration.
-         * @param {string} key Configuration key.
+         * @summary Gets metadata configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async getNamedConfiguration(key: string, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<File>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.getNamedConfiguration(key, options);
+        async getMetadataConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<MetadataConfigurationDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getMetadataConfiguration(options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SystemApi.getNamedConfiguration']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getMetadataConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Gets network configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getNetworkConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<NetworkConfigurationDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getNetworkConfiguration(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getNetworkConfiguration']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
@@ -948,6 +1269,18 @@ export const SystemApiFp = function(configuration?: Configuration) {
         },
         /**
          * 
+         * @summary Gets XbmcMetadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async getXbmcMetadataConfiguration(options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<XbmcMetadataOptionsDto>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.getXbmcMetadataConfiguration(options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.getXbmcMetadataConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
          * @summary Upload a document.
          * @param {File} [body] 
          * @param {*} [options] Override http request option.
@@ -1011,28 +1344,79 @@ export const SystemApiFp = function(configuration?: Configuration) {
         /**
          * 
          * @summary Updates application configuration.
-         * @param {ServerConfiguration} serverConfiguration Configuration.
+         * @param {ServerConfigurationDto} serverConfigurationDto Configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateConfiguration(serverConfiguration: ServerConfiguration, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfiguration, options);
+        async updateConfiguration(serverConfigurationDto: ServerConfigurationDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateConfiguration(serverConfigurationDto, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
             const localVarOperationServerBasePath = operationServerMap['SystemApi.updateConfiguration']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
         /**
          * 
-         * @summary Updates named configuration.
-         * @param {string} key Configuration key.
-         * @param {any} body Configuration.
+         * @summary Updates encoding configuration.
+         * @param {EncodingOptionsDto} encodingOptionsDto Encoding configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        async updateNamedConfiguration(key: string, body: any, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
-            const localVarAxiosArgs = await localVarAxiosParamCreator.updateNamedConfiguration(key, body, options);
+        async updateEncodingConfiguration(encodingOptionsDto: EncodingOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateEncodingConfiguration(encodingOptionsDto, options);
             const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
-            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateNamedConfiguration']?.[localVarOperationServerIndex]?.url;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateEncodingConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates LiveTv configuration.
+         * @param {LiveTvOptionsDto} liveTvOptionsDto LiveTv configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateLiveTvConfiguration(liveTvOptionsDto: LiveTvOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateLiveTvConfiguration(liveTvOptionsDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateLiveTvConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates metadata configuration.
+         * @param {MetadataConfigurationDto} metadataConfigurationDto Metadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateMetadataConfiguration(metadataConfigurationDto: MetadataConfigurationDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateMetadataConfiguration(metadataConfigurationDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateMetadataConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates network configuration.
+         * @param {NetworkConfigurationDto} networkConfigurationDto Network configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateNetworkConfiguration(networkConfigurationDto: NetworkConfigurationDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateNetworkConfiguration(networkConfigurationDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateNetworkConfiguration']?.[localVarOperationServerIndex]?.url;
+            return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
+        },
+        /**
+         * 
+         * @summary Updates XbmcMetadata configuration.
+         * @param {XbmcMetadataOptionsDto} xbmcMetadataOptionsDto XbmcMetadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        async updateXbmcMetadataConfiguration(xbmcMetadataOptionsDto: XbmcMetadataOptionsDto, options?: RawAxiosRequestConfig): Promise<(axios?: AxiosInstance, basePath?: string) => AxiosPromise<void>> {
+            const localVarAxiosArgs = await localVarAxiosParamCreator.updateXbmcMetadataConfiguration(xbmcMetadataOptionsDto, options);
+            const localVarOperationServerIndex = configuration?.serverIndex ?? 0;
+            const localVarOperationServerBasePath = operationServerMap['SystemApi.updateXbmcMetadataConfiguration']?.[localVarOperationServerIndex]?.url;
             return (axios, basePath) => createRequestFunction(localVarAxiosArgs, globalAxios, BASE_PATH, configuration)(axios, localVarOperationServerBasePath || basePath);
         },
     }
@@ -1050,7 +1434,7 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<ServerConfiguration> {
+        getConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<ServerConfigurationDto> {
             return localVarFp.getConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
@@ -1064,12 +1448,30 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
+         * @summary Gets encoding configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getEncodingConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<EncodingOptionsDto> {
+            return localVarFp.getEncodingConfiguration(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Gets information about the request endpoint.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
         getEndpointInfo(options?: RawAxiosRequestConfig): AxiosPromise<EndPointInfo> {
             return localVarFp.getEndpointInfo(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets LiveTv configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getLiveTvConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<LiveTvOptionsDto> {
+            return localVarFp.getLiveTvConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1093,13 +1495,21 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
-         * @summary Gets a named configuration.
-         * @param {SystemApiGetNamedConfigurationRequest} requestParameters Request parameters.
+         * @summary Gets metadata configuration.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        getNamedConfiguration(requestParameters: SystemApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<File> {
-            return localVarFp.getNamedConfiguration(requestParameters.key, options).then((request) => request(axios, basePath));
+        getMetadataConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<MetadataConfigurationDto> {
+            return localVarFp.getMetadataConfiguration(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Gets network configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getNetworkConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<NetworkConfigurationDto> {
+            return localVarFp.getNetworkConfiguration(options).then((request) => request(axios, basePath));
         },
         /**
          * 
@@ -1157,6 +1567,15 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
         },
         /**
          * 
+         * @summary Gets XbmcMetadata configuration.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        getXbmcMetadataConfiguration(options?: RawAxiosRequestConfig): AxiosPromise<XbmcMetadataOptionsDto> {
+            return localVarFp.getXbmcMetadataConfiguration(options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
          * @summary Upload a document.
          * @param {SystemApiLogFileRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
@@ -1210,17 +1629,57 @@ export const SystemApiFactory = function (configuration?: Configuration, basePat
          * @throws {RequiredError}
          */
         updateConfiguration(requestParameters: SystemApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(axios, basePath));
+            return localVarFp.updateConfiguration(requestParameters.serverConfigurationDto, options).then((request) => request(axios, basePath));
         },
         /**
          * 
-         * @summary Updates named configuration.
-         * @param {SystemApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
+         * @summary Updates encoding configuration.
+         * @param {SystemApiUpdateEncodingConfigurationRequest} requestParameters Request parameters.
          * @param {*} [options] Override http request option.
          * @throws {RequiredError}
          */
-        updateNamedConfiguration(requestParameters: SystemApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
-            return localVarFp.updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(axios, basePath));
+        updateEncodingConfiguration(requestParameters: SystemApiUpdateEncodingConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateEncodingConfiguration(requestParameters.encodingOptionsDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates LiveTv configuration.
+         * @param {SystemApiUpdateLiveTvConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateLiveTvConfiguration(requestParameters: SystemApiUpdateLiveTvConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateLiveTvConfiguration(requestParameters.liveTvOptionsDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates metadata configuration.
+         * @param {SystemApiUpdateMetadataConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateMetadataConfiguration(requestParameters: SystemApiUpdateMetadataConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateMetadataConfiguration(requestParameters.metadataConfigurationDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates network configuration.
+         * @param {SystemApiUpdateNetworkConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateNetworkConfiguration(requestParameters: SystemApiUpdateNetworkConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateNetworkConfiguration(requestParameters.networkConfigurationDto, options).then((request) => request(axios, basePath));
+        },
+        /**
+         * 
+         * @summary Updates XbmcMetadata configuration.
+         * @param {SystemApiUpdateXbmcMetadataConfigurationRequest} requestParameters Request parameters.
+         * @param {*} [options] Override http request option.
+         * @throws {RequiredError}
+         */
+        updateXbmcMetadataConfiguration(requestParameters: SystemApiUpdateXbmcMetadataConfigurationRequest, options?: RawAxiosRequestConfig): AxiosPromise<void> {
+            return localVarFp.updateXbmcMetadataConfiguration(requestParameters.xbmcMetadataOptionsDto, options).then((request) => request(axios, basePath));
         },
     };
 };
@@ -1311,16 +1770,6 @@ export interface SystemApiGetLogFileRequest {
 }
 
 /**
- * Request parameters for getNamedConfiguration operation in SystemApi.
- */
-export interface SystemApiGetNamedConfigurationRequest {
-    /**
-     * Configuration key.
-     */
-    readonly key: string
-}
-
-/**
  * Request parameters for logFile operation in SystemApi.
  */
 export interface SystemApiLogFileRequest {
@@ -1344,22 +1793,57 @@ export interface SystemApiUpdateConfigurationRequest {
     /**
      * Configuration.
      */
-    readonly serverConfiguration: ServerConfiguration
+    readonly serverConfigurationDto: ServerConfigurationDto
 }
 
 /**
- * Request parameters for updateNamedConfiguration operation in SystemApi.
+ * Request parameters for updateEncodingConfiguration operation in SystemApi.
  */
-export interface SystemApiUpdateNamedConfigurationRequest {
+export interface SystemApiUpdateEncodingConfigurationRequest {
     /**
-     * Configuration key.
+     * Encoding configuration.
      */
-    readonly key: string
+    readonly encodingOptionsDto: EncodingOptionsDto
+}
 
+/**
+ * Request parameters for updateLiveTvConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateLiveTvConfigurationRequest {
     /**
-     * Configuration.
+     * LiveTv configuration.
      */
-    readonly body: any
+    readonly liveTvOptionsDto: LiveTvOptionsDto
+}
+
+/**
+ * Request parameters for updateMetadataConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateMetadataConfigurationRequest {
+    /**
+     * Metadata configuration.
+     */
+    readonly metadataConfigurationDto: MetadataConfigurationDto
+}
+
+/**
+ * Request parameters for updateNetworkConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateNetworkConfigurationRequest {
+    /**
+     * Network configuration.
+     */
+    readonly networkConfigurationDto: NetworkConfigurationDto
+}
+
+/**
+ * Request parameters for updateXbmcMetadataConfiguration operation in SystemApi.
+ */
+export interface SystemApiUpdateXbmcMetadataConfigurationRequest {
+    /**
+     * XbmcMetadata configuration.
+     */
+    readonly xbmcMetadataOptionsDto: XbmcMetadataOptionsDto
 }
 
 /**
@@ -1388,12 +1872,32 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets encoding configuration.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getEncodingConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getEncodingConfiguration(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Gets information about the request endpoint.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
     public getEndpointInfo(options?: RawAxiosRequestConfig) {
         return SystemApiFp(this.configuration).getEndpointInfo(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets LiveTv configuration.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getLiveTvConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getLiveTvConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1420,13 +1924,22 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
-     * @summary Gets a named configuration.
-     * @param {SystemApiGetNamedConfigurationRequest} requestParameters Request parameters.
+     * @summary Gets metadata configuration.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public getNamedConfiguration(requestParameters: SystemApiGetNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
-        return SystemApiFp(this.configuration).getNamedConfiguration(requestParameters.key, options).then((request) => request(this.axios, this.basePath));
+    public getMetadataConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getMetadataConfiguration(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Gets network configuration.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getNetworkConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getNetworkConfiguration(options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
@@ -1491,6 +2004,16 @@ export class SystemApi extends BaseAPI {
 
     /**
      * 
+     * @summary Gets XbmcMetadata configuration.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public getXbmcMetadataConfiguration(options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).getXbmcMetadataConfiguration(options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
      * @summary Upload a document.
      * @param {SystemApiLogFileRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
@@ -1549,18 +2072,62 @@ export class SystemApi extends BaseAPI {
      * @throws {RequiredError}
      */
     public updateConfiguration(requestParameters: SystemApiUpdateConfigurationRequest, options?: RawAxiosRequestConfig) {
-        return SystemApiFp(this.configuration).updateConfiguration(requestParameters.serverConfiguration, options).then((request) => request(this.axios, this.basePath));
+        return SystemApiFp(this.configuration).updateConfiguration(requestParameters.serverConfigurationDto, options).then((request) => request(this.axios, this.basePath));
     }
 
     /**
      * 
-     * @summary Updates named configuration.
-     * @param {SystemApiUpdateNamedConfigurationRequest} requestParameters Request parameters.
+     * @summary Updates encoding configuration.
+     * @param {SystemApiUpdateEncodingConfigurationRequest} requestParameters Request parameters.
      * @param {*} [options] Override http request option.
      * @throws {RequiredError}
      */
-    public updateNamedConfiguration(requestParameters: SystemApiUpdateNamedConfigurationRequest, options?: RawAxiosRequestConfig) {
-        return SystemApiFp(this.configuration).updateNamedConfiguration(requestParameters.key, requestParameters.body, options).then((request) => request(this.axios, this.basePath));
+    public updateEncodingConfiguration(requestParameters: SystemApiUpdateEncodingConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateEncodingConfiguration(requestParameters.encodingOptionsDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates LiveTv configuration.
+     * @param {SystemApiUpdateLiveTvConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateLiveTvConfiguration(requestParameters: SystemApiUpdateLiveTvConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateLiveTvConfiguration(requestParameters.liveTvOptionsDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates metadata configuration.
+     * @param {SystemApiUpdateMetadataConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateMetadataConfiguration(requestParameters: SystemApiUpdateMetadataConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateMetadataConfiguration(requestParameters.metadataConfigurationDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates network configuration.
+     * @param {SystemApiUpdateNetworkConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateNetworkConfiguration(requestParameters: SystemApiUpdateNetworkConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateNetworkConfiguration(requestParameters.networkConfigurationDto, options).then((request) => request(this.axios, this.basePath));
+    }
+
+    /**
+     * 
+     * @summary Updates XbmcMetadata configuration.
+     * @param {SystemApiUpdateXbmcMetadataConfigurationRequest} requestParameters Request parameters.
+     * @param {*} [options] Override http request option.
+     * @throws {RequiredError}
+     */
+    public updateXbmcMetadataConfiguration(requestParameters: SystemApiUpdateXbmcMetadataConfigurationRequest, options?: RawAxiosRequestConfig) {
+        return SystemApiFp(this.configuration).updateXbmcMetadataConfiguration(requestParameters.xbmcMetadataOptionsDto, options).then((request) => request(this.axios, this.basePath));
     }
 }
 

@@ -14,9 +14,9 @@
 
 
 /**
- * Defines the MediaBrowser.Common.Net.NetworkConfiguration.
+ * The network configuration DTO for API use.
  */
-export interface NetworkConfiguration {
+export interface NetworkConfigurationDto {
     /**
      * Gets or sets a value used to specify the URL prefix that your Jellyfin instance can be accessed at.
      */
@@ -32,11 +32,11 @@ export interface NetworkConfiguration {
     /**
      * Gets or sets the filesystem path of an X.509 certificate to use for SSL.
      */
-    'CertificatePath'?: string;
+    'CertificatePath'?: string | null;
     /**
-     * Gets or sets the password required to access the X.509 certificate data in the file specified by MediaBrowser.Common.Net.NetworkConfiguration.CertificatePath.
+     * Gets or sets the password required to access the X.509 certificate data in the file specified by MediaBrowser.Common.Net.NetworkConfigurationDto.CertificatePath.
      */
-    'CertificatePassword'?: string;
+    'CertificatePassword'?: string | null;
     /**
      * Gets or sets the internal HTTP server port.
      */
@@ -59,11 +59,10 @@ export interface NetworkConfiguration {
     'AutoDiscovery'?: boolean;
     /**
      * Gets or sets a value indicating whether to enable automatic port forwarding.
-     * @deprecated
      */
     'EnableUPnP'?: boolean;
     /**
-     * Gets or sets a value indicating whether IPv6 is enabled.
+     * Gets or sets a value indicating whether IPv4 is enabled.
      */
     'EnableIPv4'?: boolean;
     /**
@@ -87,11 +86,11 @@ export interface NetworkConfiguration {
      */
     'KnownProxies'?: Array<string>;
     /**
-     * Gets or sets a value indicating whether address names that match MediaBrowser.Common.Net.NetworkConfiguration.VirtualInterfaceNames should be ignored for the purposes of binding.
+     * Gets or sets a value indicating whether address names that match MediaBrowser.Common.Net.NetworkConfigurationDto.VirtualInterfaceNames should be ignored for the purposes of binding.
      */
     'IgnoreVirtualInterfaces'?: boolean;
     /**
-     * Gets or sets a value indicating the interface name prefixes that should be ignored. The list can be comma separated and values are case-insensitive. <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.IgnoreVirtualInterfaces\" />.
+     * Gets or sets a value indicating the interface name prefixes that should be ignored.
      */
     'VirtualInterfaceNames'?: Array<string>;
     /**
@@ -99,15 +98,15 @@ export interface NetworkConfiguration {
      */
     'EnablePublishedServerUriByRequest'?: boolean;
     /**
-     * Gets or sets the PublishedServerUriBySubnet Gets or sets PublishedServerUri to advertise for specific subnets.
+     * Gets or sets PublishedServerUri to advertise for specific subnets.
      */
     'PublishedServerUriBySubnet'?: Array<string>;
     /**
-     * Gets or sets the filter for remote IP connectivity. Used in conjunction with <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.IsRemoteIPFilterBlacklist\" />.
+     * Gets or sets the filter for remote IP connectivity. Used in conjunction with <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfigurationDto.IsRemoteIPFilterBlacklist\" />.
      */
     'RemoteIPFilter'?: Array<string>;
     /**
-     * Gets or sets a value indicating whether <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfiguration.RemoteIPFilter\" /> contains a blacklist or a whitelist. Default is a whitelist.
+     * Gets or sets a value indicating whether <seealso cref=\"P:MediaBrowser.Common.Net.NetworkConfigurationDto.RemoteIPFilter\" /> contains a blacklist or a whitelist. Default is a whitelist.
      */
     'IsRemoteIPFilterBlacklist'?: boolean;
 }

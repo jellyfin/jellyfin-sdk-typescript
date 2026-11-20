@@ -13,7 +13,10 @@
 
 
 
-export interface AuthenticationInfo {
+/**
+ * An API key.
+ */
+export interface AuthenticationInfoDto {
     /**
      * Gets or sets the identifier.
      */
@@ -27,7 +30,7 @@ export interface AuthenticationInfo {
      */
     'DeviceId'?: string | null;
     /**
-     * Gets or sets the name of the application.
+     * Gets or sets the name of the app using the key.
      */
     'AppName'?: string | null;
     /**
@@ -47,14 +50,20 @@ export interface AuthenticationInfo {
      */
     'IsActive'?: boolean;
     /**
-     * Gets or sets the date created.
+     * Gets or sets the date the key was created.
      */
     'DateCreated'?: string;
     /**
-     * Gets or sets the date revoked.
+     * Gets or sets the date the key was revoked.
      */
     'DateRevoked'?: string | null;
+    /**
+     * Gets or sets the date of the last activity.
+     */
     'DateLastActivity'?: string;
+    /**
+     * Gets or sets the user name.
+     */
     'UserName'?: string | null;
 }
 
