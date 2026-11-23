@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
   and `WebSocketStatus` is now a string union instead of a `WebSocket.readyState` number ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
 * WebSocket reconnection now stops after 20 consecutive failed attempts (about 40 minutes) and reports an unintentional `disconnected` status ([#1094](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1094)).
   Subscriptions are preserved, and the connection is restored by `reconnectWebSocket`, the next subscription or the next access token update.
+* Added `remoteSearch` helper method to `ItemLookupApi` to simplify remote search by base item type ([#1119](https://github.com/jellyfin/jellyfin-sdk-typescript/pull/1119)).
 
 ### Fixed
 
