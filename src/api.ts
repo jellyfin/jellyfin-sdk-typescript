@@ -13,7 +13,13 @@ import type { ClientInfo, DeviceInfo } from './models';
 import { getAuthorizationHeader } from './utils';
 import { getAuthenticationApi } from './utils/api/authentication-api';
 import { getSessionApi } from './utils/api/session-api';
-import type { OutboundWebSocketMessageType, SocketMessageHandler } from './websocket';
+import type {
+	OutboundWebSocketMessageType,
+	SocketMessageHandler,
+	SocketStatusHandler,
+	WebSocketStatus,
+	WebSocketSubscriptionIntervals
+} from './websocket';
 import { WebSocketService } from './websocket';
 import { WEBSOCKET_URL_PATH } from './websocket/constants';
 
@@ -69,6 +75,26 @@ export class Api {
 				}
 			}
 		});
+	}
+
+	private instantiateWebSocket(): WebSocketService {
+		// Pass undefined when there is no access token so subscriptions are stored
+		// but no connection attempt is made until updateUrl() is called later.
+		return new WebSocketService(
+			this.accessToken
+				? this.getUri(WEBSOCKET_URL_PATH, {
+					[AUTHORIZATION_PARAMETER]: this.accessToken
+				})
+				: undefined
+		);
+	}
+
+	private get webSocketService(): WebSocketService {
+		if (!this.webSocket) {
+			this.webSocket = this.instantiateWebSocket();
+		}
+
+		return this.webSocket;
 	}
 
 	/**
@@ -159,19 +185,104 @@ export class Api {
 		return languages?.length ? languages.join(',') : undefined;
 	}
 
-	subscribe<T extends OutboundWebSocketMessageType>(messageTypes: T[], onMessage: SocketMessageHandler<T>) {
-		if (!this.webSocket) {
-			// Pass undefined when there is no access token so subscriptions are stored
-			// but no connection attempt is made until updateUrl() is called later.
-			this.webSocket = new WebSocketService(
-				this.accessToken
-					? this.getUri(WEBSOCKET_URL_PATH, {
-						[AUTHORIZATION_PARAMETER]: this.accessToken
-					})
-					: undefined
-			);
-		}
+	/**
+	 * Subscribes to WebSocket messages of the provided types.
+	 *
+	 * Subscribing opens the WebSocket connection if one is not already open. Subscriptions are restored
+	 * automatically after a reconnection, and the connection is closed once every subscription is removed.
+	 *
+	 * @param messageTypes The {@link OutboundWebSocketMessageType}s to listen for
+	 * @param onMessage The callback to invoke when a message is received
+	 * @param subscriptionIntervals Optional intervals for message types the server sends periodically, e.g. `Sessions`
+	 *
+	 * @example
+	 * const unsubscribe = api.subscribe(
+	 *   [OutboundWebSocketMessageType.Sessions],
+	 *   (message) => {
+	 *     console.log('Received session update:', message.Data);
+	 *   },
+	 *   {
+	 *     // Send session updates immediately, then every 5 seconds
+	 *     [OutboundWebSocketMessageType.Sessions]: new PeriodicListenerInterval(0, 5000)
+	 *   }
+	 * );
+	 *
+	 * // Later, stop listening
+	 * unsubscribe();
+	 *
+	 * @returns A function which can be invoked to remove the subscription
+	 */
+	subscribe<T extends OutboundWebSocketMessageType>(
+		messageTypes: T[],
+		onMessage: SocketMessageHandler<T>,
+		subscriptionIntervals?: WebSocketSubscriptionIntervals
+	) {
+		return this.webSocketService.subscribe(messageTypes, onMessage, subscriptionIntervals);
+	}
 
-		return this.webSocket.subscribe(messageTypes, onMessage);
+	/**
+	 * The current status of the WebSocket connection.
+	 */
+	get webSocketStatus(): WebSocketStatus {
+		return this.webSocket?.socketStatus ?? 'disconnected';
+	}
+
+	/**
+	 * Adds a listener for WebSocket status changes.
+	 *
+	 * The listener is invoked with a {@link WebSocketStatusEvent} each time {@link webSocketStatus} changes.
+	 * Narrow on `status` to access the details of each event, such as the delay before a reconnection attempt.
+	 *
+	 * This is an arrow function, so it can be passed around without binding it to the {@link Api} instance.
+	 *
+	 * @param onStatusChange The callback to invoke when the connection status changes
+	 *
+	 * @example
+	 * const removeListener = api.onWebSocketStatusChange((event) => {
+	 *   switch (event.status) {
+	 *     case WebSocketStatuses.Open:
+	 *       console.log('Connected');
+	 *       break;
+	 *     case WebSocketStatuses.Reconnecting:
+	 *       console.log(`Connection lost, retrying in ${event.delay}ms (attempt ${event.attempt})`);
+	 *       break;
+	 *     case WebSocketStatuses.Disconnected:
+	 *       if (!event.intentional) console.log('Gave up reconnecting, see reconnectWebSocket()');
+	 *       break;
+	 *   }
+	 * });
+	 *
+	 * // Later, stop listening
+	 * removeListener();
+	 *
+	 * @returns A function which can be invoked to remove the listener
+	 */
+	onWebSocketStatusChange = (onStatusChange: SocketStatusHandler): (() => void) => {
+		return this.webSocketService.onStatusChange(onStatusChange);
+	};
+
+	/**
+	 * Reconnects the WebSocket immediately, restarting the reconnection backoff.
+	 *
+	 * The WebSocket stops reconnecting after too many failed attempts and reports an unintentional
+	 * `disconnected` status. Subscriptions are preserved, so calling this restores them, e.g. from a
+	 * "Retry" button or when the network comes back.
+	 *
+	 * Does nothing if there is no access token or there are no active subscriptions.
+	 *
+	 * @example
+	 * // Offer a retry once the WebSocket gives up reconnecting
+	 * api.onWebSocketStatusChange((event) => {
+	 *   if (event.status === WebSocketStatuses.Disconnected && !event.intentional) {
+	 *     showRetryButton(() => api.reconnectWebSocket());
+	 *   }
+	 * });
+	 *
+	 * @example
+	 * // Reconnect straight away when the browser comes back online, rather than waiting for the backoff
+	 * window.addEventListener('online', () => api.reconnectWebSocket());
+	 */
+	reconnectWebSocket(): void {
+		this.webSocket?.reconnect();
 	}
 }
