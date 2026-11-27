@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The protocol used to access a media source.
+ */
 
 export const MediaProtocol = {
     File: 'File',

@@ -13,6 +13,9 @@
 
 
 
+/**
+ * The type of extra media associated with an item.
+ */
 
 export const ExtraType = {
     Unknown: 'Unknown',

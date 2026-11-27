@@ -14,16 +14,16 @@
 
 // May contain unused imports in some cases
 // @ts-ignore
-import type { AuthenticationInfo } from './authentication-info';
+import type { AuthenticationInfoDto } from './authentication-info-dto';
 
 /**
  * Query result container.
  */
-export interface AuthenticationInfoQueryResult {
+export interface AuthenticationInfoDtoQueryResult {
     /**
      * Gets or sets the items.
      */
-    'Items'?: Array<AuthenticationInfo>;
+    'Items'?: Array<AuthenticationInfoDto>;
     /**
      * Gets or sets the total number of records available.
      */

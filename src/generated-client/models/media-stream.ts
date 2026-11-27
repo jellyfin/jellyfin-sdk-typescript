@@ -23,6 +23,9 @@ import type { MediaStreamType } from './media-stream-type';
 import type { SubtitleDeliveryMethod } from './subtitle-delivery-method';
 // May contain unused imports in some cases
 // @ts-ignore
+import type { TranscodeReason } from './transcode-reason';
+// May contain unused imports in some cases
+// @ts-ignore
 import type { VideoRange } from './video-range';
 // May contain unused imports in some cases
 // @ts-ignore
@@ -249,6 +252,14 @@ export interface MediaStream {
      * Gets or sets whether this instance is anamorphic.
      */
     'IsAnamorphic'?: boolean | null;
+    /**
+     * Gets or sets DirectPlay errors.
+     */
+    'DirectPlayErrors'?: Array<TranscodeReason>;
+    /**
+     * Gets a value indicating whether this instance is compatible with the device.
+     */
+    'SupportsDirectPlay'?: boolean | null;
 }
 
 

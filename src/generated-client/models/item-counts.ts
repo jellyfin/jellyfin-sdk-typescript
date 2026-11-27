@@ -62,6 +62,10 @@ export interface ItemCounts {
      */
     'BookCount'?: number;
     /**
+     * Gets or sets the audio book count.
+     */
+    'AudioBookCount'?: number;
+    /**
      * Gets or sets the item count.
      */
     'ItemCount'?: number;

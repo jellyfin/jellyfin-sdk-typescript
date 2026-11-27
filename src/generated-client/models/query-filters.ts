@@ -24,5 +24,7 @@ export interface QueryFilters {
     'Tags'?: Array<string> | null;
     'AudioLanguages'?: Array<NameValuePair> | null;
     'SubtitleLanguages'?: Array<NameValuePair> | null;
+    'Years'?: Array<number> | null;
+    'OfficialRatings'?: Array<string> | null;
 }
 

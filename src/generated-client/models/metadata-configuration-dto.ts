@@ -14,16 +14,12 @@
 
 
 /**
- * The custom value option for custom database providers.
+ * The metadata configuration DTO for API use.
  */
-export interface CustomDatabaseOption {
+export interface MetadataConfigurationDto {
     /**
-     * Gets or sets the key of the value.
+     * Gets or sets a value indicating whether to use file creation time for date added.
      */
-    'Key': string;
-    /**
-     * Gets or sets the value.
-     */
-    'Value': string;
+    'UseFileCreationTimeForDateAdded'?: boolean;
 }
 
